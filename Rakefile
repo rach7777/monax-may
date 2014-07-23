@@ -5,7 +5,7 @@ task :default => [:publish]
 
 # call with rake site:publish
 desc "Generate and publish blog"
-task :publish => [:generate] do
+task :publish do
   system "git add -A"
   message = "Site updated at #{Time.now.utc}"
   system "git commit -m #{message.shellescape}"
