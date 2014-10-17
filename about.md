@@ -10,7 +10,7 @@ comments:     false
  
 Technology amplifies human potential. It gives individuals both greater power to perform work and improved methods to simplify it.
 
-The beginning of the 20th century “witnessed the rise of two forces: the information revolution and financial markets.” All of this was enabled by vast increases in processing power. But for all our faster computing, we’re remain burdened by layered, siloed complexity. We’re constrained by legacy systems we know to be imperfect, yet refuse to upgrade. There has to be a better way to mediate data-driven interactions at a large scale.
+In the words of the political philosopher Carlota Perez, the beginning of the 20th century “witnessed the... boundless rise of two forces: the information revolution and financial markets.” All of this was enabled by vast increases in processing power. But for all our faster computing, we’re remain burdened by layered, siloed complexity. We’re constrained by legacy systems we know to be imperfect, yet refuse to upgrade. There has to be a better way to mediate data-driven interactions at a large scale.
 
 A smarter world doesn't require more “big data.” It doesn't more Google-scale companies to manage it. It doesn't need platforms with exponentially increasing complexity. It needs a uniform, participatory architecture that simplifies and naturalizes our interactions with information and our capacity to coordinate. 
 
