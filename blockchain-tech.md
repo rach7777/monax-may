@@ -10,4 +10,4 @@ a contract deployment and modification system, and
 
 a custom blockchain layer.
 
-Unlike other blockchain-based platforms, Eris does not incorporate any database management monetisation mechanism of any kind. From the user’s perspective, there is absolutely no reason that an Eris-based platform's functionality should be anything but free to use. 
+Unlike most (if not all) other blockchain-based platforms, there is absolutely no reason that an Eris-based platform's functionality should be anything but free to use. 
