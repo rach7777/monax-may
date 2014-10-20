@@ -10,9 +10,9 @@ As put by Carlota Perez, the beginning of the 20th century “witnessed the... b
 
 A smarter world doesn't require more “big data.” It doesn't more Google-scale companies to manage it. It needs a uniform, participatory architecture that simplifies and naturalizes our interactions with information and our capacity to coordinate, whether through social media, bank infrastructure or even payment processing systems. 
 
-Furthermore, such platform needs to be 
+Furthermore, in order to be useful, any such platform needs to be 
 
-    easy to create, and free to use; 
+    easy to create and free to use; 
     cryptographically secure; and
     capable of full legal compliance by default. 
     
