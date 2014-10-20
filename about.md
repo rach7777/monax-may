@@ -20,7 +20,7 @@ A smarter world doesn't require more “big data.” It doesn't more Google-scal
 
 It needs a uniform, participatory architecture that simplifies our interactions with information while giving users back control over their data. Above all, it needs to be completely free to use. 
 
-Ordinary users and corporations alike deserve to benefit from the interconnectivity of the web and the security of the blockchain without the drawbacks of either platform as they're currently employed.  
+Ordinary users and corporations alike deserve to benefit from the interconnectivity of the web and the security of the blockchain without the drawbacks of either.  
 
 We’re here to make that happen. 
 
