@@ -16,6 +16,6 @@ Where cryptocurrencies like Bitcoin were designed to solve this problem in relat
 
 A smarter, safer world doesn't require more “big data.” It doesn't need another Google-scale company to manage it. It doesn't need Silicon Valley to mine and sell your identity to advertisers. It certainly doesn't need large companies to compromise any more of their customers' personal data than they already do. 
 
-It needs a uniform, participatory architecture that simplifies our interactions with information while giving users back control over their data. 
+It needs a uniform, participatory architecture that simplifies our interactions with information while giving control of personal data to the user - where it belongs. 
 
 Web 3.0 launches in 2015. 
