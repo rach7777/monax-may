@@ -4,7 +4,7 @@ headline:     Eris Industries - About
 comments:     false
 ---
 
-Eris Industries began with a question: is it possible to make web applications which have all the benefits of interconnectedness which we gain with modern web applications, but without servers or the drawbacks of pay-to-play cryptocurrency blockchains? Could such a thing even be done? 
+Eris Industries began with a question: is it possible to make web applications which have all the benefits of interconnectedness which we gain with modern web applications, but without servers or the added cost of pay-to-play cryptocurrency blockchains? Could such a thing even be done? 
 
 The answer is that it can. 
 
