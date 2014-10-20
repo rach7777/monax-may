@@ -8,7 +8,7 @@ Technology amplifies human potential. It gives individuals both greater power to
 
 As put by Carlota Perez, the beginning of the 20th century “witnessed the... boundless rise of two forces: the information revolution and financial markets.” All of this was enabled by vast increases in processing power. But for all our faster computing, we remain burdened by layered, siloed complexity. There has to be a better way to mediate data-driven interactions at a large scale.
 
-A smarter world doesn't require more “big data.” It doesn't more Google-scale companies to manage it. It needs a uniform, participatory architecture that simplifies and naturalizes our interactions with information and our capacity to coordinate, whether through social media, bank infrastructure or even payment processing systems. 
+A smarter world doesn't require more “big data.” It doesn't more Google-scale companies to manage it. It needs a uniform, participatory architecture that simplifies and naturalizes our interactions with information and our capacity to coordinate, whether through social networking, financial infrastructure, or secure communications.
 
 Furthermore, in order to be useful, any such platform needs to be 
 
