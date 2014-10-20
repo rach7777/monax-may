@@ -1,8 +1,9 @@
 
 EI – WEBSITE CONTENT MAP
 
-A) WHAT'S UP
-	i Platform intro
+A) FRONTPAGE
+Like Eth frontpage - scrolling
+	i Platform intro (video)
 	ii. News
 	iii. Twitter
 	iv. Forum [and Wiki]
@@ -15,10 +16,16 @@ B) DOWNLOADS
 
 C) PLATFORM
 
+[Platform video script]
+
 D) DESIGN PHILOSOPHY
 
 [TBD]
 
-E) PRESS 
 
-F) CONTACT
+E) TEAM
+
+F) PRESS 
+
+G) CONTACT
+
