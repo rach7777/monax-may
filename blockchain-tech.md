@@ -1,4 +1,4 @@
-The key component of an Eris system is a database known as a blockchain. 
+One key component of an Eris system is a database known as a blockchain. 
 
 These databases have their origins in cryptocurrency platforms such as Bitcoin, where they represent historical records of verifiable monetary stake.  In second-generation cryptocurrency platforms, such as Ethereum, blockchains are generalized to store arbitrary data and to establish permissions to modify that data through a set of self-enforcing and self-executing scripts. These are known as “smart contracts,” and they allow platform operators to define complex and fully customisable rules which govern the blockchain’s interaction with its users. 
 
