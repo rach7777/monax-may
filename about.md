@@ -16,7 +16,7 @@ This necessity has skewed the internet toward a more centralized infrastructure 
 
 Where cryptocurrencies like Bitcoin were designed to solve this problem in relation to point-of-sale and banking transactions, Eris Industries is working on solving this issue for internet-based communications, social networking and other applications - bearing in mind that for free internet services such as e-mail, social networking, search and "open data," intrusion into users' private lives and the accumulation and centralisation of vast quantities of personal information in centralised silos is not some minor and ancillary nuisance: [data security breaches are positively commonplace, with breaches increasing in number and attendant costs increasing as well](http://www.csoonline.com/article/2130877/data-protection/the-15-worst-data-security-breaches-of-the-21st-century.html).
 
-A smarter world doesn't require more “big data.” It doesn't more Google-scale companies to manage it. It doesn't need Silicon Valley entrepreneurs to mine and sell their users' identities for the sake of advertising revenue. And it certainly doesn't need large companies to compromise any more of their customers' personal data. 
+A smarter, safer world doesn't require more “big data.” It doesn't more Google-scale companies to manage it. It doesn't need Silicon Valley entrepreneurs to mine and sell their users' identities for the sake of advertising revenue. And it certainly doesn't need large companies to compromise any more of their customers' personal data. 
 
 It needs a uniform, participatory architecture that simplifies our interactions with information while giving users back control over their data. Above all, it needs to be completely free to use. 
 
