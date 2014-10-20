@@ -4,7 +4,7 @@ Casey is the CEO and co-founder of Eris Industries. Casey is a qualified lawyer 
 
 Preston Byrne
 
-Preston Byrne is the COO and a c-founder of Eris Industries based at the company's headquarters in Soho, London. He was formerly a securitisation and derivatives lawyer, and lead associate in the cryptocurrency and decentralised computing practice, with Norton Rose Fulbright LLP in London and is currently a Fellow of the Adam Smith Institute. 
+Preston Byrne is the COO and a co-founder of Eris Industries based at the company's headquarters in Soho, London. He was formerly a securitisation and derivatives lawyer, and lead associate in the cryptocurrency and decentralised computing practice, with Norton Rose Fulbright LLP in London and is currently a Fellow of the Adam Smith Institute. 
 
 Tyler Jackson
 
