@@ -14,7 +14,7 @@ In the words of the political philosopher Carlota Perez, the beginning of the 20
 
 A smarter world doesn't require more “big data.” It doesn't more Google-scale companies to manage it. It needs a uniform, participatory architecture that simplifies and naturalizes our interactions with information and our capacity to coordinate, whether through social media, bank infrastructure or even payment processing systems. 
 
-It needs to be secure, compliant with all applicable laws, easy to create and inexpensive to maintain, and designed so that all information is logically structured by default. Ordinary users and corporations alike deserve to benefit from the interconnectivity of the web and the security of the blockchain without the drawbacks either platform presents today. 
+It needs to be secure, legally compliant by default, easy to create and free to use. Ordinary users and corporations alike deserve to benefit from the interconnectivity of the web and the security of the blockchain without the drawbacks either platform presents today. 
 
 We’re here to make that happen. That’s why we built [Eris v 0.1 in June 2014](https://eris.projectdouglas.org) and it is why we are building Eris v 1.0 now. 
 
