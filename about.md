@@ -3,21 +3,23 @@ layout:       main
 headline:     Eris Industries - About
 comments:     false
 ---
- 
-Technology amplifies human potential. It gives individuals both greater power to perform work and improved methods to simplify it.
 
-As put by Carlota Perez, the beginning of the 20th century “witnessed the... boundless rise of two forces: the information revolution and financial markets.” All of this was enabled by vast increases in processing power. But for all our faster computing, we remain burdened by layered, siloed complexity. There has to be a better way to mediate data-driven interactions at a large scale.
+Eris Industries began with a question: is it possible to make web applications which have all the benefits of interconnectedness which we gain with modern web applications, but without servers? Could such a thing even be done? 
 
-A smarter world doesn't require more “big data.” It doesn't more Google-scale companies to manage it. It needs a uniform, participatory architecture that simplifies and naturalizes our interactions with information and our capacity to coordinate, whether through social networking, secure communications or payment processing. 
+The answer is that it can. 
 
-Furthermore, in order to be useful, any such platform needs to be 
+While web technologies have greatly sped up innovation in many areas, the movement of users away from isolated computers using standalone pieces of software toward web applications has raised concerns in some corners as to users' data privacy and resilience of the data silos on which modernity increasingly relies. 
 
-    easy to create and free to use; 
-    cryptographically secure; and
-    capable of full legal compliance by default. 
-    
-Ordinary users and corporations alike deserve to benefit from the interconnectivity of the web and the security of the blockchain without the drawbacks of either platform as they're currently used.  
+Current free-to-use internet services, from search to e-mail to social networking, are dependent on advertising revenue to fund their operations. As a result, companies offering these services must - to paraphrase Satoshi Nakamoto - ‘hassle their users for considerably more information than they would otherwise need.’ This necessity has skewed the internet toward a more centralized infrastructure and usability system than it was intended.
 
-We’re here to make that happen. That’s why we built [Eris v 0.1 in June 2014](https://eris.projectdouglas.org) and it is why we are building Eris v 1.0 now. 
+Where cryptocurrencies like Bitcoin were designed to solve this problem in relation to point-of-sale and banking transactions, Eris Industries is working on solving this issue for internet-based communications, social networking and other applications - bearing in mind that for free internet services such as e-mail, social networking, search and "open data," intrusion into users' private lives and the accumulation and centralisation of vast quantities of personal information in centralised silos is not some minor and ancillary nuisance: [major security breaches are positively commonplace, with breaches increasing in number and attendant costs increasing as well](http://www.csoonline.com/article/2130877/data-protection/the-15-worst-data-security-breaches-of-the-21st-century.html).
+
+A smarter world doesn't require more “big data.” It doesn't more Google-scale companies to manage it. It doesn't need social networks to mine it for advertising revenue. And it certainly doesn't need large companies to compromise any more of their customers' personal data. 
+
+It needs a uniform, participatory architecture that simplifies our interactions with information while securing those interactions and giving users back control over their data, and which is completely free to use. 
+
+Ordinary users and corporations alike deserve to benefit from the interconnectivity of the web and the security of the blockchain without the drawbacks of either platform as they're currently employed.  
+
+We’re here to make that happen. 
 
 Details to follow in 2015.
