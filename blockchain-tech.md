@@ -4,4 +4,4 @@ These databases have their origins in cryptocurrency platforms such as Bitcoin, 
 
 Like the abstracted layer for data processing that is "the cloud", the blockchain is merely an abstracted layer for computation and the delegation of information processing. In an ideal system, with a universal "cloud-chain", backing up your data is as simple as sending a file. In this network, joining is as simple as sending information along with a computable structure file that specifies the intent, or the "contract", upon which the logic applies.
 
-Unlike other projects in the space, however, there is no "pre-sale" and there are no tokens (e.g., bitcoins). Indeed, there is no reason that - unlike practically every other blockchain project in existence - an Eris platform should ever be anything but free to use.
+Unlike other projects in the space, however, there is no "pre-sale" and there are no tokens (e.g., bitcoins). Indeed, there is no reason that - unlike practically every other blockchain project in existence - an Eris platform should ever be anything but free for an ordinary person to use.
