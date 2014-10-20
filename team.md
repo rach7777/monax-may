@@ -1,3 +1,9 @@
+---
+layout:       main
+headline:     Eris Industries - management team
+comments:     false
+---
+
 Casey Kuhlman 
 
 Casey is the CEO and co-founder of Eris Industries. Casey is a qualified lawyer in the United States, a software developer, former combat commander with the U.S. Marines and (more recently) formerly the head of legal informatics for the US Open Data Institute. He is based in the Hague. 
