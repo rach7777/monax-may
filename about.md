@@ -18,4 +18,4 @@ It needs to be secure, compliant with all applicable laws, easy to create and in
 
 We’re here to make that happen. That’s why we built [Eris v 0.1 in June 2014](https://eris.projectdouglas.org) and it is why we are building Eris v 1.0 now. 
 
-Announcements to follow in Q1 2015.
+Details to follow in 2015.
