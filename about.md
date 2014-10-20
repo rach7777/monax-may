@@ -16,6 +16,6 @@ A smarter world doesn't require more “big data.” It doesn't more Google-scal
 
 It needs to be secure, easy to create and maintain, and designed so that all information is logically structured by default. That’s why we built Eris v 0.1 as part of Project Douglas in June 2014. And it is why we are building Eris v 0.2 now. 
 
-There will eventually be millions of blockchains in the technology space - all interacting with each other and other database technologies through oracles or other authorized actors. Ordinary users deserve to benefit from the interconnectivity of the web and the security of the blockchain without the security or commercial drawbacks either platform presents today. We’re going to make that happen. 
+There will eventually be millions of blockchains in the technology space - all interacting with each other and other database technologies. Ordinary users deserve to benefit from the interconnectivity of the web and the security of the blockchain without the drawbacks either platform presents today. We’re here to make that happen. 
 
 Announcements to follow in Q1 2015.
