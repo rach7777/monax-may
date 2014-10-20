@@ -20,4 +20,4 @@ A smarter, safer world doesn't require more “big data.” It doesn't more Goog
 
 Ordinary users and corporations alike deserve open-source solutions which will allow them to benefit from the interconnectivity of the web and the security of the blockchain without the drawbacks of either.  [It's why we built Eris 0.1 in June and it's why we're building Eris 1.0 now.](https://eris.projectdouglas.org/bounty_submission.html) 
 
-Details to follow in 2015.
+Details to follow in early 2015.
