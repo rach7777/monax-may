@@ -16,6 +16,6 @@ A smarter world doesn't require more “big data.” It doesn't more Google-scal
 
 It needs to be secure, compliant with all applicable laws, easy to create and inexpensive to maintain, and designed so that all information is logically structured by default. Ordinary users deserve to benefit from the interconnectivity of the web and the security of the blockchain without the drawbacks either platform presents today. 
 
-We’re here to make that happen. That’s why we built Eris v 0.1 as part of Project Douglas in June 2014. And it is why we are building Eris v 0.2 now. 
+We’re here to make that happen. That’s why we built [Eris v 0.1 in June 2014](https://eris.projectdouglas.org) and it is why we are building Eris v 1.0 now. 
 
 Announcements to follow in Q1 2015.
