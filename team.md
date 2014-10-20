@@ -10,8 +10,4 @@ comments:     false
 
 [Dennis McKinnon](https://projectdouglas.org) is the CIO and a co-founder of Eris Industries. He is currently reading a PhD in quantum information. 
 
-Andreas Olofsson is a core developer (smart contracts) with EI. 
-
-[Ethan Buchman](http://coinculture.com) is a core developer (blockchain) with EI. 
-
-[Matthew Di Ferrante](http://www.mattdf.com) is a core developer (infrastructure) with EI.  
+Eris Industries' Core Developers are [Andreas Olofsson](se.linkedin.com/pub/andreas-olofsson/a4/65b/694),[Ethan Buchman](http://coinculture.com) and [Matthew Di Ferrante](http://www.mattdf.com).  
