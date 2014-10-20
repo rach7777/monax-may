@@ -6,7 +6,7 @@ comments:     false
 
 Eris Industries began with a question: is it possible to make web applications which have all the benefits of interconnectedness which we gain with modern web applications, but without servers or the added cost of pay-to-play cryptocurrency blockchains? Could such a thing even be done? 
 
-The answer is that it can. 
+Yes, it can. 
 
 Current free-to-use internet services, from search to e-mail to social networking, are dependent on advertising revenue to fund their operations. As a result, companies offering these services must - to paraphrase Satoshi Nakamoto - ‘hassle their users for considerably more information than they would otherwise need.’ 
 
