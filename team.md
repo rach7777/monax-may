@@ -1,6 +1,6 @@
 ---
 layout:       main
-headline:     Eris Industries - management team
+headline:     Eris Industries - core team
 comments:     false
 ---
 
