@@ -12,5 +12,5 @@ task :publish do
   system "git push github master"
   system "git push ei master"
   system "git push gandi master  --force"
-	system "ssh 119629@git.dc0.gpaas.net 'deploy erisindustries.com.git master'"
+	system "ssh 83505@git.dc2.gpaas.net 'deploy erisindustries.com.git master'"
 end
