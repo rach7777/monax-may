@@ -10,7 +10,9 @@ Eris Industries designs and builds enterprise-grade software which allows develo
 
 Using **blockchain** [LINK TO GLOSSARY] technology similar to that of Bitcoin protocol and its many imitators and a system of **smart contracts** [LINK TO GLOSSARY], Eris Industries systems allow the creation of web applications that can be safely, securely, and reliably deployed on the public internet at a substantially reduced cost when compared to existing dedicated server or cloud-based solutions. Such applications are known as 'distributed applications,' or **Dapps** [LINK TO GLOSSARY].
 
-Any type of information - whether it be representations of monetary value, asset ownership, or even a web-type application interface – is capable of being securely tracked and transferred on an Eris system. Because Eris Industries uses systems of smart contracts rather than cryptographic tokens to represent this information, Eris systems allow corporates to benefit from blockchain security architecture while complying with any and all applicable regulatory requirements for the first time. 
+Any type of information - whether it be representations of monetary value, asset ownership, or even a web-type application interface – is capable of being securely tracked and transferred on an Eris system. 
+
+Because Eris Industries uses systems of smart contracts rather than cryptographic tokens to represent this information, Eris systems allow corporate, for the first time, to benefit from blockchain security architecture while obtaining substantial functionality which is capable of complying with any and all applicable regulatory requirements. 
 
 #WHAT DOES ERIS CONSIST OF?
 
