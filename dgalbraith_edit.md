@@ -22,13 +22,13 @@ Eris is a full software stack which includes
 #WHY SHOULD I USE ERIS?
  =======
 
-Increasingly complex data-driven relationships between people and business require increasingly complex software design infrastructure. Through the use of blockchain cryptography, Eris Industries simplifies this software design while providing much of the same utility. 
+Complex data-driven relationships between people and business require increasingly complex software design infrastructure. Today, Google-scale infrastructure is required to manage these relationships. Distributed infrastructure, however, can perform these tasks much more efficiently. 
 
-Today, Google-scale infrastructure is required to manage these relationships. Distributed infrastructure, however, can perform these tasks much more efficiently. 
+Through the use of blockchain cryptography, Eris Industries simplifies this software design while providing much of the same utility as traditional, server-based platforms.
 
-Most importantly, unlike existing alternatives in the market, including Bitcoin, Eris systems do not rely on token monetisation to run and secure themselves from external attack. 
+Most importantly, unlike existing alternatives in the market, including Bitcoin, Eris systems do not need to rely on token monetisation to run and secure themselves from external attack. Thelonius is purpose-built so that it can easily be deployed to a variety of contexts, from corporate-level deployments to more decentralized and public deployments, or from deployments which require tokenization to those that only require the utility of a blockchain but not monetized tokenization. A single Thelonious client is all that is required in order to participate in all of these blockchains. 
 
-From a user's perspective, there is no reason that an Eris system should be anything but free to use; from a platform operator’s perspective, Eris means that blockchain technology can be used in a fully legally-compliant fashion in an enterprise context without needing to worry about any of the regulatory hurdles interation with existing blockchain protocols currently involves.
+From a user's perspective, there is thus no reason that an Eris system should be anything but free to use; from a platform operator’s perspective, Eris means that blockchain technology can be used in a fully legally-compliant fashion in an enterprise context without needing to worry about any of the regulatory hurdles interation with existing blockchain protocols currently involves.
 
 #ERIS FOR DEVELOPERS
 
@@ -38,7 +38,7 @@ Most blockchains in use today are built to transfer tokens representing monetary
 
 We at Eris Industries know that "trustlessness" is a misnomer: even the most ardent user of Bitcoin extends trust regularly, whether to the banks and exchanges that process USD transfers, or to the manufacturers of their computers and operating systems. The provision of modern internet services requires flexibility and adaptability on the part of platform operators and service providers, who are incentivised to conduct themselves properly out of good commercial practice. 
 
-Developers wishing to utilise deserve a platform which allows them to benefit from purpose-built distributed blockchain architecture without being tied to stagnant and ossified protocols which 
+Developers wishing to utilise deserve a platform which allows them to benefit from purpose-built distributed blockchain architecture without being tied to stagnant and ossified protocols which are simply not capable of forming the backbone of a distributed internet. 
 
 ##Thelonious
 
@@ -46,6 +46,18 @@ This is why we have designed **Thelonious**, a protocol which is not designed to
 
 We have reconfigured the network protocol used by most blockchains so that Thelonious will work within existing enterprise routing and firewall infrastructure, so the platform should be useable by individuals, small businesses, and large enterprises alike. 
 
+Unlike existing alternatives, Thelonius is purpose-built so that it can easily be deployed to a variety of contexts, from corporate-level deployments to more decentralized and public deployments, or from deployments which require tokenization to those that only require the utility of a blockchain but not monetized tokenization. A single Thelonious client is all that is required in order to participate in all of these blockchains.
+
 #ERIS FOR ENTERPRISE
 
+The benefits of participatory architecture: 
+
+Eris Industries is presently in discussions with a number 
+
+Blockchain technology creates possibilities for fundamental change in business process management by provably automating functions which hitherto required substantial human oversight and agency to carry out. Clearing and settlement, payments and value transfer, and internal audit and accounting are all readily amenable to blockchain automation through smart contracts. 
+
+Eris is the first platform that allows the full potential of blockchain based technologies to be realized in enterprise. By combining blockchains systems of smart contracts, businesses can take any data-driven relationship and reduce it to code – guaranteeing accurate and consistent execution of functions which hitherto required human discretion to manage. 
+
+
+We’re working with a number of corporations to discuss how our technology can assist their businesses. If you have a query relating to how our solutions can be put to use in your firm, please contact the team here
 
