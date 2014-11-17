@@ -38,7 +38,7 @@ Most blockchains in use today are built to transfer tokens representing monetary
 
 We at Eris Industries know that "trustlessness" is a misnomer: even the most ardent user of Bitcoin extends trust regularly, whether to the banks and exchanges that process USD transfers, or to the manufacturers of their computers and operating systems. The provision of modern internet services requires flexibility and adaptability on the part of platform operators and service providers, who are incentivised to conduct themselves properly out of good commercial practice. 
 
-Developers wishing to utilise deserve a platform which allows them to benefit from purpose-built distributed blockchain architecture without being tied to stagnant and ossified protocols which are simply not capable of forming the backbone of a distributed internet. 
+Developers wishing to utilise blockchain technology deserve a platform which allows them to benefit from purpose-built distributed blockchain architecture without being tied to ossified protocols which are not fit for purpose and simply incapable of forming the backbone of a distributed internet. 
 
 ##Thelonious
 
