@@ -1,6 +1,6 @@
 #TITLE
 
-Self-operating, serverless, distributed applications
+**AUTONOMOUS - SERVERLESS - SECURE**
 
 **THELONIOUS** - the world’s first smart contract-controlled blockchain
 
