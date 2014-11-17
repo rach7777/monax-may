@@ -26,7 +26,7 @@ Complex data-driven relationships between people and business require increasing
 
 Through the use of blockchain cryptography, Eris Industries simplifies this software design while providing much of the same utility as traditional, server-based platforms.
 
-Unlike existing alternatives in the market, including Bitcoin, Eris systems do not need to rely on token monetisation to run and secure themselves from external attack. Thelonius is purpose-built so that it can easily be deployed to a variety of contexts.
+Unlike existing alternatives in the market, including Bitcoin, Eris systems do not need to rely on token monetisation to run and secure themselves from external attack. 
 
 From a user's perspective, there is thus no reason that an Eris system should be anything but free to use. 
 
@@ -47,6 +47,11 @@ This is why we have designed **Thelonious**, a protocol which is not designed to
 We have reconfigured the network protocol used by most blockchains so that Thelonious will work within existing enterprise routing and firewall infrastructure, so the platform should be useable by individuals, small businesses, and large enterprises alike. 
 
 Unlike existing alternatives, a single Thelonious client is all that is required in order to participate in and interact with any Thelonious blockchain and other blockchains, such as Ethereum or Bitcoin (functionality for which is included out of the box). 
+
+##Demonstrator applications
+
+**2gather**
+**shittyplace**
 
 #ERIS FOR ENTERPRISE
 
