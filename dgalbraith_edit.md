@@ -8,27 +8,27 @@ Self-operating, serverless, distributed applications
 
 Eris Industries designs and builds enterprise-grade software which allows developers to create applications that leverage all of the utility of the modern internet, but without servers. 
 
-Using blockchain technology similar to that of Bitcoin protocol and its many imitators, Eris Industries systems allow the creation of web applications that can be safely, securely, and reliably deployed on the public internet at a substantially reduced cost compared to existing dedicated server or cloud-based solutions. 
+Using **blockchain** [LINK TO FAQ] technology similar to that of Bitcoin protocol and its many imitators and a system of **smart contracts** [LINK TO FAQ], Eris Industries systems allow the creation of web applications that can be safely, securely, and reliably deployed on the public internet at a substantially reduced cost when compared to existing dedicated server or cloud-based solutions. 
 
-Any type of information - whether it be representations of monetary value, asset ownership, or even a web-type application interface – is capable of being securely tracked and transferred on an Eris system. 
+Any type of information - whether it be representations of monetary value, asset ownership, or even a web-type application interface – is capable of being securely tracked and transferred on an Eris system. Because Eris Industries uses systems of smart contracts rather than cryptographic tokens to represent this information, Eris systems allow corporates to benefit from blockchain security architecture while complying with any and all applicable regulatory requirements for the first time. 
 
 #WHAT DOES ERIS CONSIST OF?
 
 Eris is a full software stack which includes
 
 ...**Thelonious**, the world’s first smart contract-controlled blockchain protocol, and 
+
 ...**the DeCerver**, the world’s first decentralised application server. 
 
 #WHY SHOULD I USE ERIS?
- =======
 
 Complex data-driven relationships between people and business require increasingly complex software design infrastructure. Today, Google-scale infrastructure is required to manage these relationships. Distributed infrastructure, however, can perform these tasks much more efficiently. 
 
 Through the use of blockchain cryptography, Eris Industries simplifies this software design while providing much of the same utility as traditional, server-based platforms.
 
-Most importantly, unlike existing alternatives in the market, including Bitcoin, Eris systems do not need to rely on token monetisation to run and secure themselves from external attack. Thelonius is purpose-built so that it can easily be deployed to a variety of contexts.
+Unlike existing alternatives in the market, including Bitcoin, Eris systems do not need to rely on token monetisation to run and secure themselves from external attack. Thelonius is purpose-built so that it can easily be deployed to a variety of contexts.
 
-From a user's perspective, there is thus no reason that an Eris system should be anything but free to use. From a platform operator’s perspective, Eris means that blockchain technology can be used in a fully legally-compliant fashion in an enterprise context without needing to worry about any of the regulatory hurdles interation with existing blockchain protocols currently involves.
+From a user's perspective, there is thus no reason that an Eris system should be anything but free to use. 
 
 #ERIS FOR DEVELOPERS
 
