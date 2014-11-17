@@ -26,9 +26,9 @@ Complex data-driven relationships between people and business require increasing
 
 Through the use of blockchain cryptography, Eris Industries simplifies this software design while providing much of the same utility as traditional, server-based platforms.
 
-Most importantly, unlike existing alternatives in the market, including Bitcoin, Eris systems do not need to rely on token monetisation to run and secure themselves from external attack. Thelonius is purpose-built so that it can easily be deployed to a variety of contexts, from corporate-level deployments to more decentralized and public deployments, or from deployments which require tokenization to those that only require the utility of a blockchain but not monetized tokenization. A single Thelonious client is all that is required in order to participate in all of these blockchains. 
+Most importantly, unlike existing alternatives in the market, including Bitcoin, Eris systems do not need to rely on token monetisation to run and secure themselves from external attack. Thelonius is purpose-built so that it can easily be deployed to a variety of contexts.
 
-From a user's perspective, there is thus no reason that an Eris system should be anything but free to use; from a platform operator’s perspective, Eris means that blockchain technology can be used in a fully legally-compliant fashion in an enterprise context without needing to worry about any of the regulatory hurdles interation with existing blockchain protocols currently involves.
+From a user's perspective, there is thus no reason that an Eris system should be anything but free to use. From a platform operator’s perspective, Eris means that blockchain technology can be used in a fully legally-compliant fashion in an enterprise context without needing to worry about any of the regulatory hurdles interation with existing blockchain protocols currently involves.
 
 #ERIS FOR DEVELOPERS
 
@@ -46,18 +46,13 @@ This is why we have designed **Thelonious**, a protocol which is not designed to
 
 We have reconfigured the network protocol used by most blockchains so that Thelonious will work within existing enterprise routing and firewall infrastructure, so the platform should be useable by individuals, small businesses, and large enterprises alike. 
 
-Unlike existing alternatives, Thelonius is purpose-built so that it can easily be deployed to a variety of contexts, from corporate-level deployments to more decentralized and public deployments, or from deployments which require tokenization to those that only require the utility of a blockchain but not monetized tokenization. A single Thelonious client is all that is required in order to participate in all of these blockchains.
+Unlike existing alternatives, a single Thelonious client is all that is required in order to participate in and interact with any Thelonious blockchain and other blockchains, such as Ethereum or Bitcoin (functionality for which is included out of the box). 
 
 #ERIS FOR ENTERPRISE
 
-The benefits of participatory architecture: 
+Eris is the first platform that allows the full potential of blockchain based technologies to be realized in enterprise. By combining blockchains systems of smart contracts, businesses can take any data-driven human relationship and reduce it to code – guaranteeing accurate and consistent execution of functions which hitherto required human discretion to manage. 
 
-Eris Industries is presently in discussions with a number 
+Clearing and settlement, payments and value transfer, and internal audit and accounting are all readily amenable to blockchain automation through smart contracts. 
 
-Blockchain technology creates possibilities for fundamental change in business process management by provably automating functions which hitherto required substantial human oversight and agency to carry out. Clearing and settlement, payments and value transfer, and internal audit and accounting are all readily amenable to blockchain automation through smart contracts. 
-
-Eris is the first platform that allows the full potential of blockchain based technologies to be realized in enterprise. By combining blockchains systems of smart contracts, businesses can take any data-driven relationship and reduce it to code – guaranteeing accurate and consistent execution of functions which hitherto required human discretion to manage. 
-
-
-We’re working with a number of corporations to discuss how our technology can assist their businesses. If you have a query relating to how our solutions can be put to use in your firm, please contact the team here
+We’re working with a number of corporations to discuss how our technology can assist their businesses. If you have a query relating to how our solutions can be put to use in your firm, please contact the team at info@erisindustries.com . 
 
