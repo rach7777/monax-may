@@ -30,7 +30,9 @@ Complex data-driven relationships between people and business require increasing
 
 Through the use of blockchain cryptography, Eris Industries simplifies this software design while providing much of the same utility as traditional, server-based platforms. Furthermore, Eris Industries does so without needing to fork or otherwise modify existing blockchain protocols, allowing users to develop blockchain-secure applications which can interact with existing decentralised protocols without needing to rely upon them.
 
-Any type of information - whether it be representations of monetary value, asset ownership, or even a web-type application interface – is capable of being securely tracked and transferred on an Eris system. Because Eris Industries uses systems of smart contracts rather than cryptographic tokens to represent this information, Eris systems allow corporate, for the first time, to benefit from blockchain security architecture while obtaining substantial functionality which is capable of complying with any and all applicable regulatory requirements. 
+Any type of information - whether it be representations of monetary value, asset ownership, or even a web-type application interface – is capable of being securely tracked and transferred on an Eris system. 
+
+Because Eris Industries uses systems of smart contracts rather than cryptographic tokens to represent this information, Eris Industries systems allow corporates, for the first time, to benefit from blockchain security architecture which is functional, modular, and changeable over time, while also designing systems capable of complying with any and all applicable regulatory requirements. 
 
 #ERIS FOR DEVELOPERS
 
