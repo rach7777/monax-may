@@ -32,7 +32,7 @@ In second-generation cryptocurrency platforms, such as Ethereum, blockchains are
 
 Like the abstracted layer for data processing that is "the cloud", the blockchain is merely an abstracted layer for computation and the delegation of information processing. In this network, joining is as simple as sending information along with a computable structure file that specifies the intent, or the "contract", upon which the logic applies. 
 
-Thelonious is such a system, and the first of its kind to reach open beta.
+Thelonious is such a system, and the first of its kind in the world to reach open beta.
 
 ##Thelonious
 
