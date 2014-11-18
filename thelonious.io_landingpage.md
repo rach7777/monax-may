@@ -14,7 +14,11 @@ The difficulty of falsifying historical transactions increases exponentially as 
 
 ###Blockchains and trustlessness
 
-It is said that structuring a blockchain database in this way renders it "trustless": that is to say, transactions are so difficult to falsify, and the transaction history so difficult to fraudulently amend, that users do not need to trust any individual entity, or group of them, to secure the information they want secured on the blockchain database or to impede the addition of new transactional data which has been validly broadcast. This model, however, has significant weaknesses; chief among them is that it requires most blockchains to act as standalone silos, and requires a 'win or die' approach to their design, development, and maintenance. As a consequence, innovation is slow to be adopted by these networks; their security and consensus models are stagnant, and their utility is commensurately limited. 
+It is said that structuring a blockchain database in this way renders it "trustless": that is to say, transactions are so difficult to falsify, and the transaction history so difficult to fraudulently amend, that users do not need to trust any individual entity, or group of them, to secure the information they want secured on the blockchain database or to impede the addition of new transactional data which has been validly broadcast. 
+
+This model, however, has significant weaknesses; chief among them is that it requires most blockchains to act as standalone silos, and requires a 'win or die' approach to their design, development, and maintenance. 
+
+As a consequence, innovation is slow to be adopted by these networks; their security and consensus models are stagnant, and their utility is commensurately limited. 
 
 In our commercial view, "trustless" is a misnomer - and too much of it can be a bad thing. Even for the most ardent regular user of Bitcoin, the most prominent "trustless" network, will extend trust regularly to a certain extent, whether to the banks and exchanges that process USD transfers when they purchase Bitcoin, or to the manufacturers of their computers and operating systems on which they run the Bitcoin client. 
 
