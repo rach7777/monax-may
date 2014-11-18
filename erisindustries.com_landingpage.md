@@ -2,13 +2,11 @@
 
 **AUTONOMOUS - SERVERLESS - SECURE**
 
-**THELONIOUS** - the world’s first smart contract-controlled blockchain
+**THELONIOUS** - the world’s first smart contract-controlled blockchain design
 
 #WHAT IS ERIS?
 
 Eris Industries designs and builds software, utilising enterprise-grade encryption, which allows developers to create applications that leverage all of the utility of the modern internet, but without servers. 
-
-Using **blockchain** [LINK TO GLOSSARY] technology similar to that of Bitcoin protocol and its many imitators and a system of **smart contracts** [LINK TO GLOSSARY], Eris Industries systems allow the creation of web applications that can be safely, securely, and reliably deployed on the public internet at a substantially reduced cost when compared to existing dedicated server or cloud-based solutions. Such applications are known as 'distributed applications,' or **Dapps** [LINK TO GLOSSARY].
 
 Eris' open-source platform is easy to set up, easy to parameterise, and fully functional for immediate use by developers. 
 
@@ -22,6 +20,10 @@ Eris is a full software stack which includes
 
 ...**the DeCerver**, the world’s first decentralised application server. 
 
+Using **blockchain** [LINK TO GLOSSARY] technology similar to that of Bitcoin protocol and its many imitators and a system of **smart contracts** [LINK TO GLOSSARY], the Eris Industries stack allows the creation of web applications that can be safely, securely, and reliably deployed on the public internet at a substantially reduced cost when compared to existing dedicated server or cloud-based solutions. 
+
+Such applications are known as 'distributed applications,' or **Dapps** [LINK TO GLOSSARY].
+
 #WHY SHOULD I USE ERIS?
 
 Complex data-driven relationships between people and business require increasingly complex software design infrastructure. Today, Google-scale infrastructure is required to manage these relationships. Distributed infrastructure, however, can perform these tasks much more efficiently. 
@@ -34,7 +36,7 @@ Any type of information - whether it be representations of monetary value, asset
 
 ##Design philosophy
 
-Most blockchains in use today are built to transfer tokens representing monetary value among a network of mutually untrustworthy actors. As such, they are built to be standalone monoliths and their security and consensus models are stagnant and resistant to change. 
+Most blockchains in use today are built to transfer tokens representing monetary value among a network of mutually untrustworthy actors. As such, they are built to be standalone monoliths, with the result that their security and consensus models are stagnant and resistant to change. 
 
 Modern internet services require flexibility and adaptability on the part of platform operators and service providers, who are incentivised to conduct themselves properly out of good commercial practice. Developers wishing to utilise blockchain technology deserve a platform which allows them to benefit from purpose-built distributed blockchain architecture without being tied to ossified protocols which are not fit for purpose. 
 
@@ -47,6 +49,8 @@ We have reconfigured the network protocol used by most blockchains so that Thelo
 Unlike existing alternatives, a single Thelonious client is all that is required in order to participate in and interact with any Thelonious blockchain and other blockchains, such as Ethereum or Bitcoin (functionality for which is included out of the box). 
 
 ##Demonstrator applications
+
+We have already built a number of demonstrator applications for the Thelonious system. These include:
 
 **2gather**
 **shittyplace**
