@@ -6,7 +6,7 @@
 
 #WHAT IS ERIS?
 
-Eris Industries designs and builds software, utilising enterprise-grade encryption, which allows developers to create applications that leverage all of the utility of the modern internet, but without servers. 
+Eris Industries designs and builds software utilising enterprise-grade encryption which allows developers to create applications that leverage all of the utility of the modern internet, but without servers. 
 
 Eris' open-source platform is easy to set up, easy to parameterise, and fully functional for immediate use by developers. 
 
