@@ -1,7 +1,18 @@
-#Design philosophy
+#Thelonious: the world's first smart contract-controlled blockchain design 
 
-##On trustlessness
-Many blockchains are built to be standalone silos, and as such require a 'win or die' approach to their design, development, and maintenance. As a consequence, their security and consensus models are stagnant, and their utility limited. 
+##The Blockchain: a very brief introduction
+
+One key component of an Eris system is a database known as a blockchain.
+
+These databases have their origins in cryptocurrency platforms such as Bitcoin, where they represent historical records of verifiable monetary stake. In second-generation cryptocurrency platforms, such as Ethereum, blockchains are generalized to store arbitrary data and to establish permissions to modify that data through a set of self-enforcing and self-executing scripts. These are known as “smart contracts,” and they allow platform operators to define complex and fully customisable rules which govern the blockchain’s interaction with its users.
+
+Like the abstracted layer for data processing that is "the cloud", the blockchain is merely an abstracted layer for computation and the delegation of information processing. In this network, joining is as simple as sending information along with a computable structure file that specifies the intent, or the "contract", upon which the logic applies.
+
+###Blockchains and trustlessness
+
+By distributing the computational power necessary to process transactions on the blockchain widely, and by ensuring that no single user (or large number of users working in concert) are able to amend the transaction history, blockchains are referred to as "trustless" systems. [ADD DETAIL] 
+
+This model, however, requires most blockchains to act as  standalone silos, and requires a 'win or die' approach to their design, development, and maintenance. As a consequence, innovation is slow to be adopted by these networks; their security and consensus models are stagnant, and their utility is commensurately limited. 
 
 In our commercial view, "trustless" is a misnomer - and too much of it can be a bad thing. Even for the most ardent regular user of Bitcoin, the most prominent "trustless" network, will extend trust regularly to a certain extent, whether to the banks and exchanges that process USD transfers when they purchase Bitcoin, or to the manufacturers of their computers and operating systems on which they run the Bitcoin client. 
 
@@ -11,10 +22,11 @@ Where commercial considerations render the platform operator trustworthy, we see
 
 Put differently, in most commercial contexts it is not the world that needs protection from platform operators. It is platform operators who need protection from the world. 
 
-##The challenge
+###The challenge
+
 We at Eris Industries wanted to challenge the idea that a blockchain is not useful only if its functions are fully decentralised. To accomplish this, we have designed a blockchain which is not only smart contract enabled, but also smart contract controlled, such that specific instances of the chain can be run for particular applications in such a way that the application benefits from blockchain security logic as well as the technology rationalising [data relationships thereon]. 
 
-#Thelonious
+##Thelonious
 
 Thelonious is Eris Industries' open-source blockchain design. 
 
@@ -28,7 +40,9 @@ Furthermore, in order to make Thelonious more useful for individuals, small busi
 
 Thelonius is purpose-built so that it can easily be deployed to a variety of contexts, from corporate-level deployments to more decentralized and public deployments, or from deployments which require tokenization to those that only require the utility of a blockchain but not monetized tokenization. A single Thelonious client is all that is required in order to participate in all of these blockchains. 
 
-#Try Thelonious for yourself
+##Try Thelonious for yourself
 
-We're not talking about vaporware or white papers here - we're talking about real software that developers can use today. Head over to our GitHub page and try it out for yourself! 
+Unlike other projects in the distributed computing space, there is no "pre-sale" and there are no tokens (e.g., bitcoins) needed to run a Thelonious chain - users will not need to "pay to play". There is no reason that an Eris platform should ever be anything but free for an ordinary person to use.
+
+We're not talking about vaporware or white papers here - we're talking about real software that developers can use today. Head over to our GitHub page and see what you can build! 
 
