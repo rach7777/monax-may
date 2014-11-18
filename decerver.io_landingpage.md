@@ -1,4 +1,4 @@
-#The DeCerver: the world's first decentralised application server
+#The DeCerver: the world's first decentralized application server
 
 ##Design philosophy
 
