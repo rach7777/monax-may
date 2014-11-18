@@ -12,4 +12,8 @@ The DeCerver includes a number of functions straight out of the box, including a
 
 Interaction with existing blockchain protocols, too, is straightforward with the Eris stack: whether developers wish to build systems that utilize Bitcoin, Ethereum, Thelonious, or a combination of these blockchains (all of which are compiled by default), all through a single Thelonious client. If and when other blockchains come online, we will happily accept pull requests for interfaces which wrap those packages as well. 
 
-From a platform operator’s perspective, the Eris stack means blockchain technology is now easily usable in a fully legally-compliant enterprise context for the first time. From a developer's perspective, the DeCerver substantially lowers barriers to entry to new, innovative and secure web application architecture, while allowing users to participate in the scaling and data security of the application.
+From a developer's perspective, the DeCerver substantially lowers barriers to entry to new, innovative and secure web application architecture, while allowing users to participate in the scaling and data security of the application.
+
+From a platform operator’s perspective, the Eris stack means blockchain technology is now easily usable in a fully legally-compliant enterprise context for the first time. 
+
+The only question left is: what will you build first?
