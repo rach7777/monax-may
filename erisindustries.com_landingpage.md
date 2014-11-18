@@ -6,7 +6,7 @@
 
 #WHAT IS ERIS?
 
-Eris Industries designs and builds enterprise-grade software which allows developers to create applications that leverage all of the utility of the modern internet, but without servers. 
+Eris Industries designs and builds software, utilising enterprise-grade encryption, which allows developers to create applications that leverage all of the utility of the modern internet, but without servers. 
 
 Using **blockchain** [LINK TO GLOSSARY] technology similar to that of Bitcoin protocol and its many imitators and a system of **smart contracts** [LINK TO GLOSSARY], Eris Industries systems allow the creation of web applications that can be safely, securely, and reliably deployed on the public internet at a substantially reduced cost when compared to existing dedicated server or cloud-based solutions. Such applications are known as 'distributed applications,' or **Dapps** [LINK TO GLOSSARY].
 
@@ -26,7 +26,7 @@ Eris is a full software stack which includes
 
 Complex data-driven relationships between people and business require increasingly complex software design infrastructure. Today, Google-scale infrastructure is required to manage these relationships. Distributed infrastructure, however, can perform these tasks much more efficiently. 
 
-Through the use of blockchain cryptography, Eris Industries simplifies this software design while providing much of the same utility as traditional, server-based platforms.
+Through the use of blockchain cryptography, Eris Industries simplifies this software design while providing much of the same utility as traditional, server-based platforms. Furthermore, Eris Industries does so without needing to fork or otherwise modify existing blockchain protocols, allowing users to develop blockchain-secure applications which can interact with existing decentralised protocols without needing to rely upon them.
 
 From a user's perspective, there is thus no reason that an Eris system should be anything but free to use. 
 
