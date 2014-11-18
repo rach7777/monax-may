@@ -14,7 +14,7 @@ The difficulty of falsifying historical transactions increases exponentially as 
 
 ###Blockchains and trustlessness
 
-It is said that structuring a database in this way renders it "trustless": that is to say, transactions are so difficult to falsify, and the transaction history so difficult to fraudulently amend, that users do not need to trust any individual entity, or group of them, to secure the information they want secured on the blockchain database or to impede the addition of new transactional data which has been validly broadcast. This model, however, has significant weaknesses; chief among them is that it requires most blockchains to act as standalone silos, and requires a 'win or die' approach to their design, development, and maintenance. As a consequence, innovation is slow to be adopted by these networks; their security and consensus models are stagnant, and their utility is commensurately limited. 
+It is said that structuring a blockchain database in this way renders it "trustless": that is to say, transactions are so difficult to falsify, and the transaction history so difficult to fraudulently amend, that users do not need to trust any individual entity, or group of them, to secure the information they want secured on the blockchain database or to impede the addition of new transactional data which has been validly broadcast. This model, however, has significant weaknesses; chief among them is that it requires most blockchains to act as standalone silos, and requires a 'win or die' approach to their design, development, and maintenance. As a consequence, innovation is slow to be adopted by these networks; their security and consensus models are stagnant, and their utility is commensurately limited. 
 
 In our commercial view, "trustless" is a misnomer - and too much of it can be a bad thing. Even for the most ardent regular user of Bitcoin, the most prominent "trustless" network, will extend trust regularly to a certain extent, whether to the banks and exchanges that process USD transfers when they purchase Bitcoin, or to the manufacturers of their computers and operating systems on which they run the Bitcoin client. 
 
@@ -32,15 +32,15 @@ In second-generation cryptocurrency platforms, such as Ethereum, blockchains are
 
 Like the abstracted layer for data processing that is "the cloud", the blockchain is merely an abstracted layer for computation and the delegation of information processing. In this network, joining is as simple as sending information along with a computable structure file that specifies the intent, or the "contract", upon which the logic applies. 
 
-Thelonious is such a system, and the first of its kind.
+Thelonious is such a system, and the first of its kind to reach open beta.
 
 ##Thelonious
 
 Thelonious is Eris Industries' open-source blockchain design. 
 
-It is designed not to be one blockchain, but rather millions of them; is it meant to complement, rather than compete with, its larger, fully-distributed cousins. Thelonious 1.0 incorporates functionality to interact with both Bitcoin and Ethereum right out of the box, and is capable of being hooked into other protocols 
+It is designed not to be one blockchain, but millions of them: to complement, rather than compete with, its larger, fully-distributed cousins. Thelonious 1.0 incorporates functionality to interact with both Bitcoin and Ethereum right out of the box, and is capable of being hooked into other protocols and APIs with ease.
 
-Thelonious allows developers to design, test and deploy consensus-driven applications without servers and without the expense of mining-driven network security. Although Thelonious' default setting is transaction processing through [proof-of-work], it is designed so that users can set their blockchain to possess a range of consensus parameters from mixed Proof-of-work proof-of-stake, to pure proof of stake, to a "lockdown" mode where mining is dictated only by nodes possessing certain key pairs. 
+Thelonious allows developers to design, test and deploy consensus-driven applications without servers and without the expense of mining-driven network security. Although Thelonious' default setting is transaction processing through a proof-of-work algorithm which will be familiar to anyone in the cryptocurrency space, it is designed so that users can set their blockchain to possess a range of consensus parameters from mixed Proof-of-work proof-of-stake, to pure proof of stake, to a "lockdown" mode where mining is dictated only by nodes possessing certain key pairs. 
 
 Thelonious is able to be interconnected with other blockchains, is able to have its security and consensus parameters change over time, and - because it is meant to be used by a single corporation or application - is fast. 
 
@@ -52,5 +52,5 @@ Thelonius is purpose-built so that it can easily be deployed to a variety of con
 
 Unlike other projects in the distributed computing space, there is no "pre-sale" and there are no tokens (e.g., bitcoins) needed to run a Thelonious chain - users will not need to "pay to play". There is no reason that an Eris platform should ever be anything but free for an ordinary person to use.
 
-We're not talking about vaporware or white papers here - we're talking about real software that developers can use today. Head over to our GitHub page and see what you can build! 
+We're not talking about vaporware or white papers here - we're talking about real software that developers can use, today. Head over to our GitHub page and see what you can build! 
 
