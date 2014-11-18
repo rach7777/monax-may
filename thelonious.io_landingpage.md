@@ -1,0 +1,1 @@
+[We at Eris Industries know that "trustlessness" is a misnomer: even the most ardent user of Bitcoin extends trust regularly, whether to the banks and exchanges that process USD transfers, or to the manufacturers of their computers and operating systems. 
