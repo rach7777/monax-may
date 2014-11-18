@@ -10,7 +10,9 @@ Eris Industries designs and builds software, utilising enterprise-grade encrypti
 
 Using **blockchain** [LINK TO GLOSSARY] technology similar to that of Bitcoin protocol and its many imitators and a system of **smart contracts** [LINK TO GLOSSARY], Eris Industries systems allow the creation of web applications that can be safely, securely, and reliably deployed on the public internet at a substantially reduced cost when compared to existing dedicated server or cloud-based solutions. Such applications are known as 'distributed applications,' or **Dapps** [LINK TO GLOSSARY].
 
-Best of all, Eris' open-source platform is easy to set up, easy to parameterise, and functional. Today. And it's completely free to use.
+Eris' open-source platform is easy to set up, easy to parameterise, and fully functional for immediate use by developers. 
+
+Best of all, it's completely free to use.
 
 #WHAT DOES ERIS CONSIST OF?
 
