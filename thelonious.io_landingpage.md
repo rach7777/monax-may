@@ -2,7 +2,7 @@
 
 ##The Blockchain: a very brief introduction
 
-One key component of an Eris system is a database known as a blockchain.
+One key component of an Eris system is a database known as a blockchain. 
 
 Blockchain databases have their origins in cryptocurrency platforms such as Bitcoin, where they represent historical records of verifiable monetary stake. They are designed to be distributed among hundreds of thousands of network users around the globe, a deliberate design feature which renders them difficult to destroy, while at the same time their cryptographic architecture renders the removal or possession of any individual copy of a blockchain largely ineffectual in terms of the database's continued operation in the hands of other users. 
 
@@ -23,6 +23,8 @@ Furthermore, "trustlessness" is multi-directional: it is not necessarily always 
 Where commercial considerations render the platform operator trustworthy, we see that the question of trust is not between the user and the platform operator - but rather between the user and the platform operator's systems. In such a case, implementing a blockchain-based architecture is capable of enhancing security for the user vis-a-vis both the platform operator (in terms of certainty) and the world (in terms of foiling the efforts of malicious third parties to access that data).
 
 Put differently, in most commercial contexts it will not be the world that needs protection from platform operators. It will be platform operators who need protection from the world. 
+
+Our blockchain design, Thelonious, is different in that is expressly designed with this commercial view in mind.
 
 ###The challenge
 
