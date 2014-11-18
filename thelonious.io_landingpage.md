@@ -12,7 +12,7 @@ Fully decentralised networks such as Bitcoin use distributed computing power to 
 
 The difficulty of falsifying historical transactions increases exponentially as the blockchain grows in size; “for malicious third parties to double-spend a bitcoin without being detected, they would not only have to redo all the work required to compute the block where that bitcoin was spent, but also recompute all the subsequent blocks in the chain.” Each new participant of such networks usually comes into possession of the complete transaction history when they first join it and when they connect to effect subsequent transactions, increasing the number of independent copies of the blockchain in existence and further decentralise network consensus, thus rendering malicious interference with the transaction history still more difficult to achieve.
 
-###Blockchains and trustlessness
+###Trustlessness
 
 It is said that structuring a blockchain database in this way renders it "trustless": that is to say, transactions are so difficult to falsify, and the transaction history so difficult to fraudulently amend, that users do not need to trust any individual entity, or group of them, to secure the information they want secured on the blockchain database or to impede the addition of new transactional data which has been validly broadcast. 
 
