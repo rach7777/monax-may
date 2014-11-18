@@ -12,7 +12,7 @@ Fully decentralised networks such as Bitcoin use distributed computing power to 
 
 The difficulty of falsifying historical transactions increases exponentially as the blockchain grows in size; “for malicious third parties to double-spend a bitcoin without being detected, they would not only have to redo all the work required to compute the block where that bitcoin was spent, but also recompute all the subsequent blocks in the chain.” Each new participant of such networks usually comes into possession of the complete transaction history when they first join it and when they connect to effect subsequent transactions, increasing the number of independent copies of the blockchain in existence and further decentralise network consensus, thus rendering malicious interference with the transaction history still more difficult to achieve.
 
-###Trustlessness
+###Redefining "trustlessness"
 
 It is said that structuring a blockchain database in this way renders it "trustless": that is to say, transactions are so difficult to falsify, and the transaction history so difficult to fraudulently amend, that users do not need to trust any individual entity, or group of them, to secure the information they want secured on the blockchain database or to impede the addition of new transactional data which has been validly broadcast. 
 
@@ -26,7 +26,7 @@ Furthermore, "trustlessness" is multi-directional: it is not necessarily always 
 
 Where commercial considerations render the platform operator trustworthy, we see that the question of trust is not between the user and the platform operator - but rather between the user and the platform operator's systems. In such a case, implementing a blockchain-based architecture is capable of enhancing security for the user vis-a-vis both the platform operator (in terms of certainty) and the world (in terms of foiling the efforts of malicious third parties to access that data).
 
-Put differently, in most commercial contexts it will not be the world that needs protection from platform operators. It will be platform operators who need protection from the world. 
+Put differently, commercially viable trustless networks do not need to protect the world from platform operators. They will need to protect platform operators from the world. 
 
 ###The challenge
 
