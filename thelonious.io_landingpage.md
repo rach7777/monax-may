@@ -24,6 +24,8 @@ In our commercial view, "trustless" is a misnomer - and too much of it can be a 
 
 Furthermore, "trustlessness" is multi-directional: it is not necessarily always the case that trust is a pain point for consumers. When dealing with a bank or a law firm, for example, consumers trust that deposits or funds held on account are safely kept; where these are not, other mechanisms such as insurance or deposit guarantees are available to secure them. When using web-based applications such as social networks and e-mail, they rely on the provider of those services to back up and secure their data.
 
+Finally, "trustlessness" ignores the fact that in commerce, mistakes are made and a degree of human discretion is required to remedy them. A protocol which cannot be broken also cannot be fixed.
+
 Where commercial considerations render the platform operator trustworthy, we see that the question of trust is not between the user and the platform operator - but rather between the user and the platform operator's systems. In such a case, implementing a blockchain-based architecture is capable of enhancing security for the user vis-a-vis both the platform operator (in terms of certainty) and the world (in terms of foiling the efforts of malicious third parties to access that data).
 
 Put differently, commercially viable trustless networks do not need to protect the world from platform operators. They will need to protect platform operators from the world. 
