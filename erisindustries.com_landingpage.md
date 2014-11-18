@@ -10,9 +10,7 @@ Eris Industries designs and builds software, utilising enterprise-grade encrypti
 
 Using **blockchain** [LINK TO GLOSSARY] technology similar to that of Bitcoin protocol and its many imitators and a system of **smart contracts** [LINK TO GLOSSARY], Eris Industries systems allow the creation of web applications that can be safely, securely, and reliably deployed on the public internet at a substantially reduced cost when compared to existing dedicated server or cloud-based solutions. Such applications are known as 'distributed applications,' or **Dapps** [LINK TO GLOSSARY].
 
-Any type of information - whether it be representations of monetary value, asset ownership, or even a web-type application interface – is capable of being securely tracked and transferred on an Eris system. 
-
-Because Eris Industries uses systems of smart contracts rather than cryptographic tokens to represent this information, Eris systems allow corporate, for the first time, to benefit from blockchain security architecture while obtaining substantial functionality which is capable of complying with any and all applicable regulatory requirements. 
+Best of all, there is no reason that an Eris platform has to be anything but free to use - easy to set up, easy to parameterise, and functional. Today. 
 
 #WHAT DOES ERIS CONSIST OF?
 
@@ -28,7 +26,7 @@ Complex data-driven relationships between people and business require increasing
 
 Through the use of blockchain cryptography, Eris Industries simplifies this software design while providing much of the same utility as traditional, server-based platforms. Furthermore, Eris Industries does so without needing to fork or otherwise modify existing blockchain protocols, allowing users to develop blockchain-secure applications which can interact with existing decentralised protocols without needing to rely upon them.
 
-From a user's perspective, there is thus no reason that an Eris system should be anything but free to use. 
+Any type of information - whether it be representations of monetary value, asset ownership, or even a web-type application interface – is capable of being securely tracked and transferred on an Eris system. Because Eris Industries uses systems of smart contracts rather than cryptographic tokens to represent this information, Eris systems allow corporate, for the first time, to benefit from blockchain security architecture while obtaining substantial functionality which is capable of complying with any and all applicable regulatory requirements. 
 
 #ERIS FOR DEVELOPERS
 
@@ -54,8 +52,6 @@ Unlike existing alternatives, a single Thelonious client is all that is required
 #ERIS FOR ENTERPRISE
 
 Eris is the first platform that allows the full potential of blockchain based technologies to be realized in enterprise. By combining blockchains systems of smart contracts, businesses can take any data-driven human relationship and reduce it to code – guaranteeing accurate and consistent execution of functions which hitherto required human discretion to manage. 
-
-Clearing and settlement, payments and value transfer, and internal audit and accounting are all readily amenable to blockchain automation through smart contracts. 
 
 We’re working with a number of corporations to discuss how our technology can assist their businesses. If you have a query relating to how our solutions can be put to use in your firm, please contact the team at info@erisindustries.com . 
 
