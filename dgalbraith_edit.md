@@ -28,8 +28,6 @@ Complex data-driven relationships between people and business require increasing
 
 Through the use of blockchain cryptography, Eris Industries simplifies this software design while providing much of the same utility as traditional, server-based platforms.
 
-Unlike existing alternatives in the market, including Bitcoin, Eris systems do not need to rely on token monetisation to run and secure themselves from external attack. 
-
 From a user's perspective, there is thus no reason that an Eris system should be anything but free to use. 
 
 #ERIS FOR DEVELOPERS
@@ -38,9 +36,7 @@ From a user's perspective, there is thus no reason that an Eris system should be
 
 Most blockchains in use today are built to transfer tokens representing monetary value among a network of mutually untrustworthy actors. As such, they are built to be standalone monoliths and their security and consensus models are stagnant and resistant to change. 
 
-We at Eris Industries know that "trustlessness" is a misnomer: even the most ardent user of Bitcoin extends trust regularly, whether to the banks and exchanges that process USD transfers, or to the manufacturers of their computers and operating systems. The provision of modern internet services requires flexibility and adaptability on the part of platform operators and service providers, who are incentivised to conduct themselves properly out of good commercial practice. 
-
-Developers wishing to utilise blockchain technology deserve a platform which allows them to benefit from purpose-built distributed blockchain architecture without being tied to ossified protocols which are not fit for purpose and simply incapable of forming the backbone of a distributed internet. 
+Modern internet services require flexibility and adaptability on the part of platform operators and service providers, who are incentivised to conduct themselves properly out of good commercial practice. Developers wishing to utilise blockchain technology deserve a platform which allows them to benefit from purpose-built distributed blockchain architecture without being tied to ossified protocols which are not fit for purpose. 
 
 ##Thelonious
 
