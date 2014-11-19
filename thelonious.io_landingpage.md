@@ -54,7 +54,9 @@ It is designed not to be one blockchain, but millions of them: to complement, ra
 
 Combined with the DeCerver, Thelonious is able to interact with othe blockchain protocols and APIs with ease. Functionality for Bitcoin and Ethereum is included right out of the box. Because it is meant to be used by a single corporation or application, it is fast. Additionally, in order to make Thelonious more useful for individuals, small businesses and large enterprises alike, we have reconfigured the network protocol used by most blockchains so that Thelonious will work within existing enterprise routing and firewall infrastructure.
 
-Thelonius is purpose-built with the intent of being deployed in to a variety of contexts, from corporate-level deployments to more decentralized and public deployments, or from deployments which require tokenization to those that only require the utility of a blockchain but not monetized tokenization to compensate miners for automated database management services. A single Thelonious client is all that is required in order to participate in all of these blockchains. 
+Thelonius is purpose-built with the intent of being deployed in to a variety of contexts, from corporate-level deployments to more decentralized and public deployments, or from deployments which require tokenization to those that only require the utility of a blockchain but not monetized tokenization to compensate miners for automated database management services. 
+
+A single Thelonious client is all that is required in order to participate in all of these blockchains. 
 
 ##Try Thelonious for yourself
 
