@@ -35,7 +35,7 @@ Because Eris Industries uses systems of smart contracts rather than cryptographi
 
 ##Design philosophy
 
-Most blockchains in use today are built to transfer tokens representing monetary value among a network of mutually untrustworthy actors. As such, they are built to be standalone monoliths, with the result that their security and consensus models are stagnant and resistant to change. 
+Most blockchains in use today are built to transfer tokens representing monetary value among a network of mutually, and equally, untrustworthy actors. As such, they are built to be standalone monoliths, with the result that their security and consensus models are stagnant and resistant to change. 
 
 But modern internet services require flexibility and adaptability on the part of platform operators and service providers, who are incentivised to conduct themselves properly out of good commercial practice. Developers wishing to utilise blockchain technology deserve a platform which allows them to benefit from purpose-built distributed blockchain architecture without being tied to ossified protocols which are not fit for purpose. 
 
