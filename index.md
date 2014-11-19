@@ -57,7 +57,7 @@ Like Ouroboros, Thelonious provides a Turing complete virtual machine that is it
 
 Thelonious' 'chief of operations' is GenDoug, a smart contract configured in a particular Thelonious chain's genesis block, through which all protocol validation passes. GenDoug enables developers to "lock-down" their blockchains, specifying which public addresses, if not all of them, are permitted to transact, create new smart contracts, or mine the chain. Furthermore, Thelonious comes with a new algorithm for fault-tolerance in semi-trusted distributed systems, permitting developers to balance trustlessness and security against the needs of their application.
 
-**Thelonious** was not designed to be one blockchain, but millions of them, each tailor-made by developers for specific contexts and allowing for the easy and secure deployment of blockchain-absed applications without needing to spend vast sums of money on servers or mining hardware to secure them.
+**Thelonious was not designed to be one blockchain, but millions of them,** each tailor-made by developers for specific contexts and allowing for the easy and secure deployment of blockchain-based applications without needing to spend vast sums of money on servers or mining hardware to secure them.
 
 Furthermore, we have reconfigured the network protocol used by most blockchains so that Thelonious will work within existing enterprise routing and firewall infrastructure, so the platform should be useable by individuals, small businesses, and large enterprises alike, without the need to fiddle with routers or enable insecure port mapping software such as upnp.
 
