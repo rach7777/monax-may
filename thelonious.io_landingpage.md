@@ -30,7 +30,7 @@ In our commercial view, "trustless" is a misnomer - and too much of it can be a 
 
 Furthermore, "trustlessness" is multi-directional: it is not necessarily always the case that trust is a pain point for consumers. When dealing with a bank or a law firm, for example, consumers trust that deposits or funds held on account are safely kept; where these are not, other mechanisms such as insurance or deposit guarantees are available to secure them. When using web-based applications such as social networks and e-mail, they rely on the provider of those services to back up and secure their data.
 
-Finally, "trustlessness" ignores the fact that in commerce, mistakes are made and a degree of human discretion is required to remedy them. A transaction which cannot be broken also cannot be fixed.
+Finally, "trustlessness" ignores the fact that in commerce, mistakes are made and a degree of human discretion is required to remedy them. Contractual mechanics which cannot be broken also cannot be fixed.
 
 ###Redefining "trustlessness"
 
