@@ -1,0 +1,41 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+name:        Eris Industries
+url:         https://erisindustries.com
+formal_name: "Eris Industries, Ltd."
+description: "We build software solutions which empower developers to provide applications which rely on a participatory architecture. Distributed computing, data privacy, and smart contracts are now all possible."
+keywords:    "blockchain,dapp,dao,dac,distributed,computing,participatory,architecture"
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+markdown:    kramdown
+safe:        true
+titlecase:   true
+lsi:         false
+highlighter: false
+permalink:   pretty
+destination: "_site/htdocs"
+
+exclude: [".gitignore", ".ruby-version", ".ruby-gemset", "README.md", "Rakefile", "_drafts"]
+
+# ----------------------- #
+#       Locations         #
+# ----------------------- #
+
+images_dir:  "/assets/images"
+scripts_dir: "/assets/scripts"
+styles_dir:  "/assets/styles"
+sharing_img: "/ei-logo-400.png"
+
+# ----------------------- #
+#       Analytics         #
+# ----------------------- #
+
+analytics :
+  provider : getclicky
+  getclicky :
+    site_id : 66416567
