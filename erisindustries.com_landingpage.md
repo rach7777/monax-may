@@ -2,11 +2,11 @@
 
 **AUTONOMOUS - SERVERLESS - SECURE**
 
-**THELONIOUS** - the world’s first smart contract-controlled blockchain design
+**THELONIOUS & the DECERVER ** - the world’s first smart contract-controlled blockchain design meets the world's first p2p stack for webapp development and deployment.
 
 #WHAT IS ERIS?
 
-Eris Industries designs and builds software utilising enterprise-grade encryption which allows developers to create applications that leverage all of the utility of the modern internet, but without servers. 
+Eris Industries designs and builds software utilising enterprise-grade cryptography which allows developers to create applications that leverage all of the utility of the modern internet, but without servers. 
 
 Eris' open-source platform is easy to set up, easy to parameterise, and fully functional for immediate use by developers. 
 
@@ -20,19 +20,16 @@ Eris is a full software stack which includes
 
 ...**the DeCerver**, the world’s first decentralised application server. 
 
-Using **blockchain** [LINK TO GLOSSARY] technology similar to that of Bitcoin protocol and its many imitators and a system of **smart contracts** [LINK TO GLOSSARY], the Eris Industries stack allows the creation of web applications that can be safely, securely, and reliably deployed on the public internet at a substantially reduced cost when compared to existing dedicated server or cloud-based solutions. 
+Using **blockchain** [LINK TO GLOSSARY] technology similar to that of the Bitcoin protocol and its many imitators, and a system of **smart contracts** [LINK TO GLOSSARY] based on the ethereum design, the Eris Industries stack allows developers to build and deploy web applications, written in javascript, that utilize a full suite of public peer-2-peer protocols and can be safely, securely, and reliably deployed on the public internet. 
 
 Such applications are known as 'distributed applications,' or **Dapps** [LINK TO GLOSSARY].
 
 #WHY SHOULD I USE ERIS?
-
 Complex data-driven relationships between people and business require increasingly complex software design infrastructure. Today, Google-scale infrastructure is required to manage these relationships. Distributed infrastructure, however, can perform these tasks much more efficiently. 
 
-Through the use of blockchain cryptography, Eris Industries simplifies this software design while providing much of the same utility as traditional, server-based platforms. Furthermore, Eris Industries does so without needing to fork or otherwise modify existing blockchain protocols, allowing users to develop blockchain-secure applications which can interact with existing decentralised protocols without needing to rely upon them.
+Through the use of blockchain cryptography, Eris Industries simplifies this software design while providing much of the same utility as traditional, server-based platforms. Any type of information - whether it be representations of monetary value, asset ownership, or even a web-type application interface – is capable of being securely tracked and transferred on an Eris system. 
 
-Any type of information - whether it be representations of monetary value, asset ownership, or even a web-type application interface – is capable of being securely tracked and transferred on an Eris system. 
-
-Because Eris Industries uses systems of smart contracts rather than cryptographic tokens to represent this information, Eris Industries systems allow corporates, for the first time, to benefit from blockchain security architecture which is functional, modular, and changeable over time, while also designing systems capable of complying with any and all applicable regulatory requirements. 
+Because Eris Industries uses systems of smart contracts rather than cryptographic tokens to represent this information, Eris Industries systems allow corporates, for the first time, to benefit from blockchain security architecture which is functional, modular, and changeable over time, while also designing systems capable of complying with any and all applicable regulatory requirements. Furthermore, we enable users to develop blockchain-secure applications which can interact with existing decentralised protocols without needing to rely upon them.
 
 #ERIS FOR DEVELOPERS
 
@@ -40,15 +37,27 @@ Because Eris Industries uses systems of smart contracts rather than cryptographi
 
 Most blockchains in use today are built to transfer tokens representing monetary value among a network of mutually untrustworthy actors. As such, they are built to be standalone monoliths, with the result that their security and consensus models are stagnant and resistant to change. 
 
-Modern internet services require flexibility and adaptability on the part of platform operators and service providers, who are incentivised to conduct themselves properly out of good commercial practice. Developers wishing to utilise blockchain technology deserve a platform which allows them to benefit from purpose-built distributed blockchain architecture without being tied to ossified protocols which are not fit for purpose. 
+But modern internet services require flexibility and adaptability on the part of platform operators and service providers, who are incentivised to conduct themselves properly out of good commercial practice. Developers wishing to utilise blockchain technology deserve a platform which allows them to benefit from purpose-built distributed blockchain architecture without being tied to ossified protocols which are not fit for purpose. 
+
+At Eris Industries, we feel it is tedious, clumsy, and ultimately unnecessary for every aspiring distributed application developer to build entirely atop a public, fully trustless chain like Bitcoin or Ethereum. We give developers the tools to set their own levels of trustlessness and security in their blockchains, and to build applications on top of those chains which easily interface with other blockchains and p2p protocols. 
+
+Think of us as the node.js of p2p.
 
 ##Thelonious
 
-This is why we have designed **Thelonious**, a protocol which is not designed to be one blockchain, but millions of them, each tailor-made by developers for specific contexts. Thelonious allows for the easy and secure deployment of blockchain-absed applications without needing to spend vast sums of money on servers or mining hardware to secure them. 
+Thelonious is our customizable contract-controlled blockchain design. Forked from ethereum to give you the ultimate flexibility over a state-of-the-art blockchain, the Thelonious protocol is specified by smart-contracts themselves. That is, like a dragon eating its own tail, Thelonious provides a Turing complete virtual machine that is itself utilized to define the Thelonious blockchain protocol. 
 
-We have reconfigured the network protocol used by most blockchains so that Thelonious will work within existing enterprise routing and firewall infrastructure, so the platform should be useable by individuals, small businesses, and large enterprises alike. 
+Thelonious' chief of operations is GenDoug, a smart-contract configured in the genesis block, through which all protocol validation passes. GenDoug enables developers to "lock-down" their blockchains, specifying which public addresses, if not all of them, are permitted to transact, create new smart contracts, or mine the chain. Furthermore, Thelonious comes with a new algorithm for fault-tolerance in semi-trusted distributed systems, permitting developers to balance trustlessness and security against the needs of their application.
 
-Unlike existing alternatives, a single Thelonious client is all that is required in order to participate in and interact with any Thelonious blockchain and other blockchains, such as Ethereum or Bitcoin (functionality for which is included out of the box). 
+**Thelonious** was not designed to be one blockchain, but millions of them, each tailor-made by developers for specific contexts and allowing for the easy and secure deployment of blockchain-absed applications without needing to spend vast sums of money on servers or mining hardware to secure them. 
+
+Furthermore, we have reconfigured the network protocol used by most blockchains so that Thelonious will work within existing enterprise routing and firewall infrastructure, so the platform should be useable by individuals, small businesses, and large enterprises alike, without the need to fiddle with routers or enable insecure port mapping software such as upnp.
+
+##DeCerver
+
+The DeCerver is our decentralized application server, designed to provide the simplest and most complete possible development stack for applications built atop a diversity of p2p protocols. By providing a javascript runtime and generalized interfaces for blockchains and distributed file systems, the DeCerver allows developers to build apps (in javascript!) that are agnostic to the specifics of the underlying protocols, enabling them to use a diversity of blockchains and file systems in unison or independently, to whatever effect their application desires.
+
+The DeCerver provides functionality for Thelonious, Bitcoin, Ethereum, IPFS, and BitTorrent out of the box, and is easily extensible to work with other such network protocols simply by writing a module wrapper. What will you plug into your DeCerver?
 
 ##Demonstrator applications
 
