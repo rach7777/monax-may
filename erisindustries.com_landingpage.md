@@ -39,15 +39,17 @@ Most blockchains in use today are built to transfer tokens representing monetary
 
 But modern internet services require flexibility and adaptability on the part of platform operators and service providers, who are incentivised to conduct themselves properly out of good commercial practice. Developers wishing to utilise blockchain technology deserve a platform which allows them to benefit from purpose-built distributed blockchain architecture without being tied to ossified protocols which are not fit for purpose. 
 
-At Eris Industries, we feel it is tedious, clumsy, and ultimately unnecessary for every aspiring distributed application developer to build entirely atop a public, fully trustless chain like Bitcoin or Ethereum. We give developers the tools to set their own levels of trustlessness and security in their blockchains, and to build applications on top of those chains which easily interface with other blockchains and p2p protocols. 
+At Eris Industries, we feel it is tedious, clumsy, and ultimately unnecessary for every aspiring distributed application developer to build entirely atop a public, fully trustless chain like Bitcoin. We give developers the tools to set their own levels of trustlessness and security in their blockchains, and to build applications on top of those chains which easily interface with other blockchains and p2p protocols. 
 
 Think of us as the node.js of p2p.
 
 ##Thelonious
 
-Thelonious is our customizable contract-controlled blockchain design. Forked from ethereum to give you the ultimate flexibility over a state-of-the-art blockchain, the Thelonious protocol is specified by smart-contracts themselves. That is, like a dragon eating its own tail, Thelonious provides a Turing complete virtual machine that is itself utilized to define the Thelonious blockchain protocol. 
+Thelonious is our customizable contract-controlled blockchain design. Forked from the open-source Ethereum protocol to give you the ultimate flexibility over a state-of-the-art blockchain, the Thelonious protocol's security and consensus parameters are determined not by the blockchain, but by smart contracts. 
 
-Thelonious' chief of operations is GenDoug, a smart-contract configured in the genesis block, through which all protocol validation passes. GenDoug enables developers to "lock-down" their blockchains, specifying which public addresses, if not all of them, are permitted to transact, create new smart contracts, or mine the chain. Furthermore, Thelonious comes with a new algorithm for fault-tolerance in semi-trusted distributed systems, permitting developers to balance trustlessness and security against the needs of their application.
+Like Ouroboros, Thelonious provides a Turing complete virtual machine that is itself utilized to define the Thelonious blockchain protocol. 
+
+Thelonious' 'chief of operations' is GenDoug, a smart contract configured in a particular Thelonious chain's genesis block, through which all protocol validation passes. GenDoug enables developers to "lock-down" their blockchains, specifying which public addresses, if not all of them, are permitted to transact, create new smart contracts, or mine the chain. Furthermore, Thelonious comes with a new algorithm for fault-tolerance in semi-trusted distributed systems, permitting developers to balance trustlessness and security against the needs of their application.
 
 **Thelonious** was not designed to be one blockchain, but millions of them, each tailor-made by developers for specific contexts and allowing for the easy and secure deployment of blockchain-absed applications without needing to spend vast sums of money on servers or mining hardware to secure them. 
 
