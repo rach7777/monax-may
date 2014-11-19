@@ -51,7 +51,9 @@ Think of us as the node.js of p2p.
 
 ##Thelonious
 
-Thelonious is our customizable contract-controlled blockchain design. Forked from the open-source Ethereum protocol to give you the ultimate flexibility over a state-of-the-art blockchain, the Thelonious protocol's security and consensus parameters are determined not by the blockchain, but by smart contracts.
+Thelonious is our customizable contract-controlled blockchain design. 
+
+Forked from the open-source Ethereum protocol to give you the ultimate flexibility over a state-of-the-art blockchain, the Thelonious protocol's security and consensus parameters are determined not by the blockchain, but by smart contracts.
 
 Like Ouroboros, Thelonious provides a Turing complete virtual machine that is itself utilized to define the Thelonious blockchain protocol.
 
