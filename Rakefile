@@ -31,12 +31,9 @@ end
 desc "Publish the generated sites"
 task :publish => [:generate] do
   Dir.chdir "_site"
-  system "rm -rf .git"
-  system "git init ."
   system "git add ."
   message = "Site updated at #{Time.now.utc}"
-  system "git remote add origin git+ssh://#{PROD_USER}@#{PROD_SERVER}/#{PROD_HTDOCS}.git"
   system "git commit -m #{message.shellescape}"
-  system "git push origin master --force"
+  system "git push origin master"
   system "ssh #{PROD_USER}@#{PROD_SERVER} 'deploy #{PROD_HTDOCS}.git master'"
 end
