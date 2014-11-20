@@ -3,7 +3,9 @@
 # ----------------------- #
 
 name:        Eris Industries
-url:         https://erisindustries.com
+url:         https://readying.erisindustries.com
+# url:         https://erisindustries.com
+# url:         http://localhost:4000
 formal_name: "Eris Industries, Ltd."
 description: "We build software solutions which empower developers to provide applications which rely on a participatory architecture. Distributed computing, data privacy, and smart contracts are now all possible."
 keywords:    "blockchain,dapp,dao,dac,distributed,computing,participatory,architecture"
@@ -20,7 +22,7 @@ highlighter: false
 permalink:   pretty
 destination: "_site/htdocs"
 
-exclude: [".gitignore", ".ruby-version", ".ruby-gemset", "README.md", "Rakefile", "_drafts"]
+exclude: [".gitignore", ".ruby-version", ".ruby-gemset", "README.md", "Rakefile", "_drafts", "old-text"]
 
 # ----------------------- #
 #       Locations         #
@@ -29,7 +31,7 @@ exclude: [".gitignore", ".ruby-version", ".ruby-gemset", "README.md", "Rakefile"
 images_dir:  "/assets/images"
 scripts_dir: "/assets/scripts"
 styles_dir:  "/assets/styles"
-sharing_img: "/ei-logo-400.png"
+sharing_img: "/logos/ei-logo-sharing-400.png"
 
 # ----------------------- #
 #       Analytics         #

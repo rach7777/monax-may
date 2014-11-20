@@ -1,0 +1,182 @@
+---
+---
+
+{% include home-structure/home-header.html %}
+{% include home-structure/home-navigation.html %}
+<div id="page-top"></div><!-- reference for scrolling -->
+
+<!-- row 1 - the video and headline -->
+<div class="row hidden-xs hidden-sm" id="row-1">
+
+  <div id="video-wrapper">
+    <video preload="auto" loop autoplay>
+      <source type="video/webm" src="{{ site.url }}{{ site.images_dir }}/watch.webm" />
+      <source type="video/mp4" src="{{ site.url }}{{ site.images_dir }}/watch.mp4" />
+    </video>
+  </div><!-- / #video-wrapper -->
+
+  <div id="video-overlay">
+    <h5>SELF-GOVERNING SYSTEMS VIA SMART CONTRACTS</h5>
+    <h5><span class="make-eris-green"> SECURE  <span class="make-white">&#8211;</span> AUTONOMOUS <span class="make-white">&#8211;</span> SERVERLESS</span></h5>
+    <h5>THE WORLD&#8217;S FIRST DECENTRALIZED APPLICATION PLATFORM</h5>
+  </div><!-- / #video-overlay -->
+
+</div><!-- /#row-1 -->
+
+<div class="container-fluid">
+
+  <div id="about">
+    <!-- row 1 - what is eris industries -->
+    <div class="row single-content-box">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2">
+
+        <div class="row-content col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          {% capture block1 %}{% include home-content/home-block1-smarterworld.md %}{% endcapture %}
+          {{ block1 | markdownify }}
+        </div><!-- #row-1-content -->
+
+        <div class="row-prettifier hidden-xs hidden-sm col-md-5 col-md-offset-1 col-lg-5 col-offset-lg-1">
+          <img src="{{ site.url }}{{ site.images_dir }}/prettifiers/eris_branding_images.005.png" alt="Watch Parts 1" />
+        </div><!-- .row-prettifier -->
+
+      </div><!-- spacer div -->
+    </div><!-- #row-1 -->
+
+    <!-- row 2 - what is eris industries -->
+    <div class="row single-content-box">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2">
+
+        <div class="row-prettifier hidden-xs hidden-sm col-md-6 col-lg-6">
+          <img src="{{ site.url }}{{ site.images_dir }}/prettifiers/eris_branding_images.001.png" alt="Watch Parts 1" class="vcenter" />
+        </div><!-- .row-prettifier -->
+
+        <div class="row-content col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          {% capture block2 %}{% include home-content/home-block2-whatis.md %}{% endcapture %}
+          {{ block2 | markdownify }}
+        </div><!-- #row-2-content -->
+
+      </div><!-- spacer div -->
+    </div><!-- #row-2 -->
+
+    <!-- row 3 - what is eris industries -->
+    <div class="row single-content-box">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2">
+
+        <div class="row-content col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          {% capture block3 %}{% include home-content/home-block3-whyuse.md %}{% endcapture %}
+          {{ block3 | markdownify }}
+        </div><!-- #row-3-content -->
+
+        <div class="row-prettifier hidden-xs hidden-sm col-md-5 col-md-offset-1 col-lg-5 col-offset-lg-1">
+          <img src="{{ site.url }}{{ site.images_dir }}/prettifiers/eris_branding_images.002.png" alt="Old Walkman" class="vcenter" />
+        </div><!-- .row-prettifier -->
+
+      </div><!-- spacer div -->
+    </div><!-- #row-3 -->
+  </div><!-- #about -->
+
+  <div id="components">
+    <div class="divider-text">
+      COMPONENTS
+    </div>
+
+    <!-- row 7 - design philosophy -->
+    <div class="row single-content-box">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2">
+
+         <div class="row-content col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+          {% capture block6 %}{% include home-content/home-block4-components.md %}{% endcapture %}
+          {{ block6 | markdownify }}
+        </div><!-- #row-3-content -->
+
+      </div><!-- spacer div -->
+    </div><!-- #row-7 -->
+  </div><!-- #components -->
+
+  <div id="design">
+    <div class="divider-text">
+      DESIGN
+    </div>
+
+    <!-- row 5 - design philosophy -->
+    <div class="row single-content-box">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2">
+
+        <div class="row-prettifier hidden-xs hidden-sm col-md-6 col-lg-6">
+          <img src="{{ site.url }}{{ site.images_dir }}/prettifiers/eris_branding_images.003.png" alt="Watch Parts 2" />
+        </div><!-- .row-prettifier -->
+
+         <div class="row-content col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          {% capture block4 %}{% include home-content/home-block5-designphilos.md %}{% endcapture %}
+          {{ block4 | markdownify }}
+        </div><!-- #row-3-content -->
+
+      </div><!-- spacer div -->
+    </div><!-- #row-5 -->
+
+    <!-- row 6 - why use -->
+    <div class="row single-content-box">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2">
+
+        <div class="row-content col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          {% capture block5 %}{% include home-content/home-block6-enterprise.md %}{% endcapture %}
+          {{ block5 | markdownify }}
+        </div><!-- #row-6-content -->
+
+        <div class="row-prettifier hidden-xs hidden-sm col-md-5 col-md-offset-1 col-lg-5 col-offset-lg-1">
+          <img src="{{ site.url }}{{ site.images_dir }}/prettifiers/eris_branding_images.004.png" alt="Watch Parts 4" />
+        </div><!-- .row-prettifier -->
+
+      </div><!-- spacer div -->
+    </div><!-- #row-6 -->
+  </div><!-- #developers -->
+
+  <div id="team">
+    <div class="divider-text">
+      TEAM
+    </div>
+
+
+    <!-- row 7 - design philosophy -->
+    <div class="row single-content-box">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2">
+
+        <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2">
+          <img class="team-headshot" src="{{ site.url }}{{ site.images_dir }}/team/team-csk.jpeg" alt="Casey Kuhlman" />
+          <div class="team-name">Casey Kuhlman</div>
+          <div class="team-title">CEO</div>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2">
+          <img class="team-headshot" src="{{ site.url }}{{ site.images_dir }}/team/team-pjb.jpeg" alt="Preston Byrne" />
+          <div class="team-name">Preston Byrne</div>
+          <div class="team-title">COO</div>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2">
+          <img class="team-headshot" src="{{ site.url }}{{ site.images_dir }}/team/team-tj.jpeg" alt="Tyler Jackson" />
+          <div class="team-name">Tyler Jackson</div>
+          <div class="team-title">Core Developer<br/>Smart Contracts</div>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2">
+          <img class="team-headshot" src="{{ site.url }}{{ site.images_dir }}/team/team-ao.jpeg" alt="Andreas Olofsson" />
+          <div class="team-name">Andreas Olofsson</div>
+          <div class="team-title">Core Developer<br/>Integration</div>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2">
+          <img class="team-headshot" src="{{ site.url }}{{ site.images_dir }}/team/team-eb.jpeg" alt="Ethan Buchman" />
+          <div class="team-name">Ethan Buchman</div>
+          <div class="team-title">Core Developer<br/>Distributed Systems</div>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2">
+          <img class="team-headshot" src="{{ site.url }}{{ site.images_dir }}/team/team-mdf.jpeg" alt="Matt Di Ferente" />
+          <div class="team-name">Matthew Di Ferente</div>
+          <div class="team-title">Core Developer<br/>Infrastructure</div>
+        </div>
+
+      </div><!-- spacer div -->
+    </div><!-- #row-7 -->
+  </div><!-- #components -->
+
+
+{% include footer.html %}
+{% include home-structure/home-scripts.html %}
+<!-- {% include analytics.html %} -->
