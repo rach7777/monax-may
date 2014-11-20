@@ -3,7 +3,7 @@ require 'shellwords.rb'
 
 PROD_USER   = "83505"
 PROD_SERVER = "git.dc2.gpaas.net"
-PROD_HTDOCS = "erisindustries.com"
+PROD_HTDOCS = "readying.erisindustries.com"
 AUX_REMOTES = %w(github, ei, csk)
 
 task :default => [:publish]
@@ -31,8 +31,11 @@ end
 desc "Publish the generated sites"
 task :publish => [:generate] do
   Dir.chdir "_site"
+  system "rm -rf .git"
+  system "git init ."
   system "git add ."
   message = "Site updated at #{Time.now.utc}"
+  system "git remote add origin git+ssh://#{PROD_USER}@#{PROD_SERVER}/#{PROD_HTDOCS}.git"
   system "git commit -m #{message.shellescape}"
   system "git push origin master --force"
   system "ssh #{PROD_USER}@#{PROD_SERVER} 'deploy #{PROD_HTDOCS}.git master'"

@@ -1,4 +1,9 @@
 RewriteEngine On
 RewriteCond %{SERVER_PORT} !^443$
 RewriteCond %{REQUEST_URI} !^/rss.xml
-RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L] 
+RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+
+AuthType Basic
+AuthName "Behold! Say Thy Name Before Thy Shall Be Permitted to Enter These Hallowed Grounds."
+AuthUserFile /srv/data/web/vhosts/readying.erisindustries.com/htdocs/.htpasswd
+Require valid-user
