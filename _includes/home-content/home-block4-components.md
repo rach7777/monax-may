@@ -30,10 +30,25 @@ Furthermore, we have reconfigured the network protocol used by most blockchains 
 
 #### Smart Contract Package Manager
 
-TODO
+The Eris Package Manager (**EPM**) allows Ethereum contract developers to deploy Thelonious smart contracts straight from sublime to their Thelonious clients via rpc.
+
+In addition to deploying contracts from sublime to the Thelonious client, EPM has other features as well, including:
+• keeping a log of the smart contracts which have been deployed so that you can then easily transact with those smart contracts;
+• allowing users to transact with smart contracts that have been deployed from sublime as well as any others;
+• allowing users to query smart contract storage;
+• allowing users to deploy a sequence of smart contracts; and
+• allowing users to start, stop, and restart servers with predefined options.
+
+All commands are available from the command palette.
 
 ### [LEGAL MARKDOWN](https://lmd.io)
 
 #### Legaling Smart Contracts
 
-TODO
+The LegalMarkdown (LMD) library was built specifically to empower the creation of structured legal documents using simple text based documents and a primary renderer, rather than a bulky and siloed word processor file. As a result, users of LMD will be able to ensure that both the content and style of their documentation are more clearly expressed and less likely to be misinterpreted.
+
+The LMD library provides the user with access to structured headers, internal cross references, optional clauses, mixins, and other features that will greatly simplify the use of text-based documents in legal engineering applications.
+
+Using LMD, contractual agreements can be simply expressed and programmatically linked, with mechanical certainty, to smart contract architecture in such a way that the legal contract's content can be designed to reflect, and be incorporated into, the autonomous smart contract mechanics which are designed to automatically enforce it.
+
+Put differently, LMD puts the "contract" into "smart contract."
