@@ -32,11 +32,8 @@
     <!-- TODO: rationalize styles, gzip, etc. -->
     <link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.styles_dir }}/normalize.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.styles_dir }}/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.styles_dir }}/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.styles_dir }}/stylesheet.css" />
 
-    <!-- TODO: add these an gzip them all. -->
-    <script src="{{ site.url }}{{ site.scripts_dir }}/jquery.min.js"></script>
-    <script src="{{ site.url }}{{ site.scripts_dir }}/bootstrap.min.js"></script>
   </head>
-  <body>
-    <div class="container-fluid">
+  <body data-spy="scroll" data-target=".navbar-inverse" data-offset=50 style="background-image: url({{ site.url }}{{ site.images_dir }}/prettifiers/eris_branding_back-002.png);">
