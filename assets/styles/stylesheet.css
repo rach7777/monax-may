@@ -1,0 +1,189 @@
+/*              */
+/*   General    */
+/*              */
+body {
+  padding-top: 60px;
+  background-color: black;
+  background-position: 0% 0%;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-size: 100%;
+  position: relative;
+}
+
+p a {
+  color: #8CC63F;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-align: justify;
+}
+
+/*              */
+/*     Nav      */
+/*              */
+.navbar-fixed-top {
+  padding: 0.5em 0 0.5em 0;
+}
+
+nav.navbar-inverse {
+  background: #080808;
+}
+
+nav .navbar-brand img {
+  position: absolute;
+  top: 0;
+  padding-top: 0.5em;
+}
+
+nav li.active a {
+  background: #222 !important;
+}
+
+nav ul.dropdown-menu {
+  background: #080808;
+}
+
+nav ul.dropdown-menu li a {
+  color: #9d9d9d;
+}
+
+nav ul.dropdown-menu li a:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+nav ul.dropdown-menu li.divider {
+  background-color: #333;
+}
+
+/*              */
+/*    Video     */
+/*              */
+#row-1 {
+  display: block;
+  overflow: hidden;
+  height: 600px;
+  width: 100%;
+  text-align: center;
+  background: black;
+  margin: -20px auto 0 auto;
+}
+
+#video-wrapper {
+  margin-top: -230px;
+  width: 100%;
+}
+
+#video-overlay {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 250px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+#video-overlay h5 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 10;
+  line-height: 1.4em;
+}
+
+/*              */
+/*     Blks     */
+/*              */
+.single-content-box {
+  background-color: black;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+  margin-top: -2px;
+  margin-bottom: -2px;
+  position: relative;
+}
+
+.row-prettifier img {
+  width: 75%;
+
+}
+
+.row-prettifier img.vcenter {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, 20%);
+}
+
+.row-content {
+  color: #bbb;
+}
+
+.row-content h3 {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.row-content h3 a {
+  color: #6D36F9;
+  text-decoration: none;
+}
+
+.row-content h4 {
+  color: #ddd;
+  font-weight: bold;
+}
+
+.divider-text {
+  height: 150px;
+  background: transparent;
+  padding-top: 50px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 2.8em;
+}
+
+/*              */
+/*     Team     */
+/*              */
+.team-headshot {
+  width: 100%;
+}
+
+.team-name{
+  color: white;
+  font-size: 1.4em;
+  padding-top: 1.4em;
+  text-align: center;
+}
+
+.team-title{
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/*              */
+/*    Footer    */
+/*              */
+footer {
+  background: #040404;
+  padding: 25px 0 12px 0;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+/*              */
+/*     Nuke     */
+/*              */
+.make-eris-green {
+  color: #8cc63f;
+}
+
+.make-white {
+  color: white;
+}
