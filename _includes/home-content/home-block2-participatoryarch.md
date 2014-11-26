@@ -12,4 +12,4 @@ The Eris Stack consists of:
 
 Using **blockchain** [LINK TO GLOSSARY] technology similar to that of the Bitcoin protocol and its many imitators, and a system of **smart contracts** [LINK TO GLOSSARY] based on the ethereum design, the Eris Industries stack allows developers to build and deploy web applications, written in javascript, that utilize a full suite of public peer-2-peer protocols and can be safely, securely, and reliably deployed on the public internet.
 
-Such applications are known as 'distributed applications,' or **Dapps** [LINK TO GLOSSARY].
+Such applications are known as 'distributed applications,' or **Dapps** [LINK TO GLOSSARY]. 1234
