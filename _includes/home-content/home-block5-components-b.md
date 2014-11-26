@@ -10,7 +10,7 @@ If you can build it, EPM can compile, deploy, and test it.
 
 ### Legal Markdown
 
-#### Legalizing Smart Contracts
+#### Legally-Enforceable Smart Contracts
 
 Legal Markdown was built to empower the creation of structured legal documents using text based documents. When combined with EPM and the DeCerver, Legal Markdown provides organizations with an ability to simply express and programmatically link legal contractual agreements to smart contract architecture in such a way that the legal contract's provisions can be designed to reflect, and be incorporated into, the autonomous smart contract mechanics which are designed to automatically enforce them. 
 
