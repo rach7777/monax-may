@@ -1,7 +1,11 @@
 ### Toward a Smarter World
 
-Good technology increases human potential. It empowers individuals to better perform tasks. It improves organizational processes which scale tasks. It enables management of increasingly complex tasks.
+Good technology empowers individuals to better perform tasks. It improves organizational processes which scale tasks. It enables management of increasingly complex tasks.
 
-A smarter world needs less emphasis on data hoarding and more emphasis on data utility. A smarter world requires a reevaluation of how individuals effectively participate in business processes. A smarter world evolves from a participatory architecture which self-manages complex, data-driven interactions.
+Leveraging good technology to work toward a smarter world entails iteratively observing a situation, defining a problem, determining a solution, and testing the result. Over and over again.
 
-Eris Industries builds this architecture.
+The faster we iterate, the more resilient our solutions will be. The more precise our problem definitions, the more effective our solutions will be. The more rigorous our testing is, the more certain our solutions will be.
+
+A smarter world demands less data hoarding and more data utility. It requires effective participation in business processes. It evolves to self-manage complexity.
+
+#### Eris Industries builds this architecture. We'd love for you to join us.
