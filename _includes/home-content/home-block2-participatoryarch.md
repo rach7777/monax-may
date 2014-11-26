@@ -1,15 +1,9 @@
 ### Participatory Software Architecture
 
-Eris Industries designs and builds software utilising enterprise-grade cryptography which allows developers to create applications that leverage all of the utility of the modern internet, but without servers.
+Most modern interactive applications require organizations and developers to provide server costs to secure, manage, and maintain the entire data for the application. The costs for these servers are usually offset by hoarding users' habits, tastes, and relationship data and repackaging that information for advertisers.
 
-Eris' open-source platform is easy to set up, easy to parameterise, and fully functional for immediate use by developers. Best of all, it's completely free to use.
+Applications built using participatory architecture are different. Participatory architecture allows an applications' users to participate in the securing, managing, and maintenance of the applications' data.
 
-The Eris Stack consists of:
+Eris Industries designs and builds a modular framework which makes it easy for developers to embrace participatory architecture. These applications, sometimes called Decentralized Applications, Distributed Applications, or just DAPPs allow developers to leverage all of the utility of the modern internet, but with minimal server costs.
 
-**Thelonious**, the world’s first smart contract-controlled blockchain protocol, and
-
-**the DeCerver**, the world’s first decentralised application server.
-
-Using **blockchain** [LINK TO GLOSSARY] technology similar to that of the Bitcoin protocol and its many imitators, and a system of **smart contracts** [LINK TO GLOSSARY] based on the ethereum design, the Eris Industries stack allows developers to build and deploy web applications, written in javascript, that utilize a full suite of public peer-2-peer protocols and can be safely, securely, and reliably deployed on the public internet.
-
-Such applications are known as 'distributed applications,' or **Dapps** [LINK TO GLOSSARY]. 1234
+Eris' open-source framework is easy to set up, easy to parameterise, and fully functional for immediate use by developers. Best of all, it's completely free to use. Applications built on top of the Eris framework have access to a number of underlying decentralized or peer-to-peer protocols, all of which have been harmonized in an interactive layer that can be accessed via javascript.
