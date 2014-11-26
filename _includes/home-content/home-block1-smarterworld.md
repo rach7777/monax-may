@@ -8,4 +8,4 @@ Existing data solutions accomplish this only after substantial investment in bri
 
 A smarter world demands less data hoarding and more data utility. It operates itself to increase profitability. It evolves to self-manage complexity. And it needs to be better than what already exists.
 
-#### Eris Industries builds this architecture. And with our platform, so can you.
+#### Eris Industries builds this architecture. With our platform, so can you.
