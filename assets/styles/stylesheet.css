@@ -94,46 +94,45 @@ nav ul.dropdown-menu li.divider {
 /*              */
 /*     Blks     */
 /*              */
-.single-content-box {
+.row {
   background-color: black;
   padding-top: 2.5em;
   padding-bottom: 2.5em;
   margin-top: -2px;
   margin-bottom: -2px;
   position: relative;
+  overflow: hidden;
+}
+
+.single-content-box {
+  max-height: 100%;
+}
+
+.row-prettifier {
+  position: relative;
+  max-height: 100%;
 }
 
 .row-prettifier img {
+  position: absolute;
   width: 75%;
-}
-
-.row-prettifier img.vcenter {
-  position: absolute;
+  max-width: 350px;
   top: 50%;
-  transform: translate(0, 20%);
+  transform: translate(0%, 10%);
 }
 
-.row-prettifier img.vcenter-less {
-  position: absolute;
-  top: 25%;
-  transform: translate(0, 10%);
-}
-
-
-.row-prettifier img.vcenter-more {
-  position: absolute;
-  top: 60%;
-  transform: translate(0, 30%);
+.row-prettifier img.downier {
+  transform: translate(0%, 25%);
 }
 
 .row-prettifier img.biggify {
-  width: 95%;
+  max-width: 95%;
 }
-
 
 .row-prettifier img.smallify {
-  width: 60%;
+  max-width: 60%;
 }
+
 
 .row-content {
   color: #bbb;
