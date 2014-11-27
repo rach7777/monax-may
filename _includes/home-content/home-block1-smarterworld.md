@@ -2,7 +2,7 @@
 
 Good technology increases human potential by improving organizational processes which scale tasks, and providing the tools to manage them.
 
-In a data-driven world, commercial problems are increasingly expressible in code, allowing us to define a problem, determine a solution, test the results, and rapidly iterate - over and over again. 
+In our data-driven world, commercial problems are increasingly expressible in code, allowing us to define a problem, determine a solution, test the results, and rapidly iterate - over and over again. 
 
 Existing data solutions accomplish this only after substantial investment in bricks-and-mortar, labour, and computing hardware, relying on advertising revenues to recoup the expense. Blockchain technology, by contrast, achieves certainty and security through the use of mathematics and distributed computing networks alone, while utilising a wide range of parameterisable incentive models.
 
