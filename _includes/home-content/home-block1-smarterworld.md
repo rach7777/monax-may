@@ -4,6 +4,6 @@ Commercial problems are increasingly data-driven. Increases in computing power a
 
 Existing solutions accomplish this only after substantial capital investment in land, labour and hardware. Blockchain technology, by contrast, achieves this through the use of mathematics and distributed computing - and without human oversight. 
 
-Eris Industries uses blockchain technology to design and build self-operating and cryptographically secure distributed software systems.
+Eris Industries uses blockchain technology to design and build self-operating and cryptographically secure internet applications.
 
 #### With our platform, so can you.
