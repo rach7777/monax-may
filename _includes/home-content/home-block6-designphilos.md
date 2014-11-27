@@ -1,9 +1,9 @@
 ### Design Philosophy
 
-Most blockchain systems in use today are built to transfer tokens representing monetary value among a network of mutually, and equally, untrustworthy actors. As such, they are built to be standalone monoliths, with the result that their security and consensus models are stagnant and resistant to change.
+Most blockchain systems in use today are built to transfer tokens representing monetary value among a network of mutually, and equally, untrustworthy actors. They are built to be standalone monoliths, and their security and consensus models are stagnant.
 
-But modern internet services require flexibility and adaptability on the part of platform operators and service providers, who are incentivised to conduct themselves properly out of good commercial practice. Developers wishing to utilise blockchain technology deserve an application stack which allows them to benefit from purpose-built distributed blockchain architecture as well as more public, heavier and more stable blockchains and peer-to-peer protocols.
+Modern internet services, however, require flexibility. Eris' Blockchain Application Software Stack is easy to set up, easy to parameterise, and fully functional for immediate use by developers. Best of all, it's completely free. 
 
-At Eris Industries, we feel it is tedious, clumsy, and ultimately unnecessary for every aspiring distributed application developer to build entirely atop a public, fully trustless chain like Bitcoin. We give developers the tools to not only set their own levels of trustlessness and security on their blockchains but to also build applications on top of other, more established blockchains and peer-to-peer protocols.
+Applications built on top of an Eris stack have access to a number of underlying decentralized or peer-to-peer protocols, all of which have been harmonized in an interactive layer that can be accessed via JavaScript. 
 
 Think of us as the node.js of p2p.
