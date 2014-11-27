@@ -10,7 +10,7 @@ The deployment and testing sequence are controlled via smart contract package de
 
 ### Legal Markdown
 
-#### Legally-Enforceable Smart Contracts
+#### Legal Structuring for Smart Contracts
 
 Legal Markdown puts the "contract" into "smart contract."
 
