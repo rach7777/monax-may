@@ -1,9 +1,9 @@
 ### Towards a Smarter World
 
-In our data-driven world, commercial problems are increasingly expressible in code, allowing us to define a problem, determine a solution, test the results, and rapidly iterate - over and over again. 
+Commercial problems are increasingly data-driven. Increases in computing power allow individuals and businesses to define a problem, determine a solution, test the results, and rapidly iterate - over and over again. 
 
-Existing solutions accomplish this only after substantial capital investment in land, labour and hardware. Blockchain technology, by contrast, achieves this through the use of mathematics and distributed computing.
+Existing solutions accomplish this only after substantial capital investment in land, labour and hardware. Blockchain technology, by contrast, achieves this through the use of mathematics and distributed computing - and without human oversight. 
 
-An architecture for a smarter world demands less data hoarding and more data utility. It needs to operate itself to improve profitability and evolve to self-manage complexity.
+Eris Industries uses blockchain technology to design and build self-operating and cryptographically secure distributed software systems.
 
-#### Eris Industries builds this architecture. With our platform, so can you.
+#### With our platform, so can you.
