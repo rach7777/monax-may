@@ -2,7 +2,7 @@
 
 #### The Decentralized Application Server
 
-The DeCerver is the server for Eris Industries' Blockchain Application Software Stack. It has been designed to provide the simplest way to build applications atop a diverse range of proposed and existing decentralized and peer-to-peer protocols. The Decerver provides a JavaScript runtime which interacts with a variety of blockchains and distributed file systems.
+The DeCerver is the server for Eris Industries' Blockchain Application Software Stack. It has been designed to provide the simplest way to build applications atop a diverse range of proposed and existing decentralized and peer-to-peer protocols, including Bitcoin, Ethereum, BitTorrent and IPFS. 
 
 Using the DeCerver, developers can build blockchain-secure applications which are able to interact with existing decentralised protocols with ease. The DeCerver is easily extensible to work with other network protocols simply by writing a module wrapper.
 
