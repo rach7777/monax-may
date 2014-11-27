@@ -1,7 +1,7 @@
 ### Participatory Software Architecture
 
-Most modern interactive applications require organizations and developers to expend vast sums of money to secure, manage, and maintain. This cost is usually offset by stockpiling users' habits, tastes, and relationship data and repackaging it for advertisers.
+Most modern interactive applications require developers to expend vast sums of money to secure, manage, and maintain; costs that are usually offset by stockpiling users' habits and relationship data and rebundling it for advertisers.
 
-Applications built using participatory architecture are different. Participatory architecture allows an applications' users to participate in securing, managing, and maintenance of the applications' data.
+Applications built using participatory architecture are different. Rather than paying for the application's utility by consenting to deep invasions of their privacy, in participatory architecture users pay for the application's utility by taking part in securing, managing, and maintenance of the applications' data.
 
-Eris Industries' **Blockchain Application Software Stack** makes it easy for developers to embrace and participate in this architecture.
+Eris Industries' **Blockchain Application Software Stack** makes it easy for developers to embrace this architecture.
