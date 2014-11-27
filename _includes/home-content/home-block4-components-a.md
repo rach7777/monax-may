@@ -14,6 +14,6 @@ Using the DeCerver, developers can build blockchain-secure applications which ar
 
 Thelonious is our customizable contract-controlled blockchain design. Derived from the [Ethereum](https://ethereum.org) protocol, but built to meet differing design goals, Thelonious gives developers the ultimate flexibility to define their own state-of-the-art blockchain.
 
-Thelonious was not designed to be one blockchain, but millions of them, each tailor-made by developers for specific contexts and allowing for the easy and secure deployment of applications without needing to spend vast sums of money on servers or mining hardware to secure them.
+Thelonious was not designed to be one blockchain, but millions of them, each one tailor-made for specific applications.
 
 <a type="button" class="btn btn-eris btn-default btn-lg btn-block" href="https://thelonius.io">Learn More About Thelonious</a>
