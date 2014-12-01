@@ -17,3 +17,12 @@ $(function() {
         event.preventDefault();
     });
 });
+
+$(function() {
+    var heightBases = $(".carousel-inner > .item");
+    var makeItThisHeight = Math.round(heightBases[0].offsetHeight * 1.1);
+    $("#about").height(makeItThisHeight);
+    $(".carousel-inner").css("height", "100%");
+    $(".carousel-inner > .item").css("height", "100%");
+    console.log(makeItThisHeight);
+})

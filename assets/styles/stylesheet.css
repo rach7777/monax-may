@@ -104,6 +104,15 @@ nav ul.dropdown-menu li.divider {
   overflow: hidden;
 }
 
+#about {
+  padding: 0 15px 0 15px;
+  margin: 0 -30px 0 -30px;
+}
+
+#about .row-content {
+  padding-bottom: 1.4em;
+}
+
 .single-content-box {
   max-height: 100%;
 }
@@ -133,24 +142,24 @@ nav ul.dropdown-menu li.divider {
   max-width: 60%;
 }
 
-
 .row-content {
-  color: #bbb;
+  color: #fff;
 }
 
 .row-content h3 {
+  color: #fff;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
+}
+
+.row-content h4 {
+  color: #eee;
+  font-weight: bold;
 }
 
 .row-content h3 a {
   color: #6D36F9;
   text-decoration: none;
-}
-
-.row-content h4 {
-  color: #ddd;
-  font-weight: bold;
 }
 
 .divider-text {
