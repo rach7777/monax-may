@@ -1,9 +1,11 @@
-### Today's Challenges are Data-Driven
+### Eris Industries Was Formed to Answer Two Questions
 
-Confronting data-driven challenges has been greatly eased by improvements in computing power, but at great cost in terms of infrastructure expenditure - labour, real estate, and hardware alike. At the same time, the movement of users away from isolated computers using standalone pieces of software towards web applications has raised significant concerns about user privacy as well as the security and resilience of the data silos upon which modern life increasingly relies. 
+First, is it possible to build applications which have the benefits of interconnectedness but without servers? **It is**. Distributed networks can perform the same functions of modern web applications by enlisting the applications' users to participate in the management and security of the applications' data.
 
-Eris Industries thus started with a question: is it possible to make web applications which have all the benefits of interconnectedness which we gain with modern web applications, but without servers? Could such a thing even be done? 
+Second, is it possible to autonomously manage data-driven interactions in a fully compliant manner? **It is**. Data-driven interactions do not require exemption from legal norms and processes which have developed over centuries; indeed, they can be autonomously managed in a fully compliant manner.
 
-The answer is that it can. Distributed, peer-to-peer networks now perform the same functions of legacy infrastructure, but without reliance on centralized silos and at substantially reduced cost. With Eris Industries' open-source **Blockchain Application Software Stack**, developers can for the first time rapidly design, test and deploy novel distributed applications over the public internet which are as flexible and user-friendly as they are secure.
+With Eris Industries' open-source **Blockchain Application Software Stack**, developers can rapidly design, test, and deploy distributed applications which are as flexible, user-friendly, and legally compliant as they are secure.
+
+You can think of us as the node.js of peer-to-peer technology.
 
 What will you build on the Eris Stack?

@@ -1,5 +1,7 @@
 ### Making Smart Contracts Work
 
-Participatory architecture used by the Eris Industries Blockchain Applicaiton Software Stack is made possible due to the invention of a type of computer program known as a smart contract. Smart contracts are self-operating and self-enforcing computer programs that allow users to transact with each other securely over the public internet, with highly predictable outcomes, entirely through a user-friendly web-type interface. 
+Participatory architecture is made possible by smart contracts which allow users to securely interact with each other without centralized servers that must be trusted. Any type of information or interaction – whether a representations of an asset to be transfered, a task to be completed, or a decision to be taken – is capable of being securely managed, audited, and transferred with smart contracts.
 
-Any type of information – whether it be representations of monetary value, asset ownership, or even a web-type application interface – is capable of being securely managed, audited, and transferred with smart contracts. In addition to regulating user interactions from an engineering perspective, they can also be structured to reflect and deal in real-world rights, obligations, and regulatory requirements. Smart contracts thus represent a significant advance on existing public-facing enterprise technology solutions.
+Smart contracts can also be structured to reflect and deal in real-world rights, obligations, and regulatory requirements without having to surrender legal compliance.
+
+Eris Industries' **Blockchain Application Software Stack** makes it easy for developers begin simplifying and automating data-driven interactions in a fully compliant manner. There should not be a compromise between legal compliance and distributed applications; smart contracts present a significant advance on existing enterprise technology solutions.
