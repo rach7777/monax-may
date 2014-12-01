@@ -94,6 +94,10 @@ nav ul.dropdown-menu li.divider {
 /*              */
 /*     Blks     */
 /*              */
+#main-content {
+  /*margin-right: -15px;*/
+}
+
 .row {
   background-color: black;
   padding-top: 2.5em;
