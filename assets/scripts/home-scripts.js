@@ -24,5 +24,13 @@ $(function() {
     $("#about").height(makeItThisHeight);
     $(".carousel-inner").css("height", "100%");
     $(".carousel-inner > .item").css("height", "100%");
-    console.log(makeItThisHeight);
-})
+});
+
+$(function() {
+    if ( document.body.clientWidth <= 992 ) {
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+          document.getElementById('vid-webm').src = "";
+          document.getElementById('vid-mp4').src = "";
+      };
+    };
+});
