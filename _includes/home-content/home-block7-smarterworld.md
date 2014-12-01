@@ -1,9 +1,7 @@
-### Toward a Smarter World
+### Why Do We Do What We Do
 
-[Good technology empowers individuals to better perform tasks. It improves organizational processes which scale tasks. It enables management of increasingly complex tasks.
-
-Leveraging good technology to work toward a smarter world entails observing a situation, defining a problem, determining a solution, and testing the result. Over and over again.
+A better world is a smarter world. Leveraging good technology to work toward a smarter world entails observing a situation, defining a problem, determining a solution, and testing the result. Over and over again.
 
 The more precise our problem definitions, the more effective our solutions will be. The more rigorous our testing is, the more certain our solutions will be. The faster we iterate, the more resilient our solutions will be.
 
-A smarter world demands less data hoarding and more data utility. It requires effective participation in business processes. It evolves to self-manage complexity.]
+Smart contracts and participatory architecture allow developers to rapidly iterate, test, and evolve solutions to complex problems in a cost-effective and simplified manner.
