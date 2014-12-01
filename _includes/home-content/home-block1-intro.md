@@ -1,9 +1,9 @@
 ### Today's Challenges are Data-Driven
 
-Tackling data-driven challenges has been greatly eased by improvements in computing power, but at great cost in terms of infrastructure expenditure - labour, real estate, and hardware alike. 
+Confronting data-driven challenges has been greatly eased by improvements in computing power, but at great cost in terms of infrastructure expenditure - labour, real estate, and hardware alike. At the same time, the movement of users away from isolated computers using standalone pieces of software towards web applications has raised significant concerns about user privacy as well as the security and resilience of the data silos upon which modern life increasingly relies. 
 
-The advent of blockchain and other peer-to-peer technologies, however, demonstrates that mathematics and distributed networks are capable of performing the same functions at substantially reduced cost. These new technologies enable increased participation of users and developers in the security and management of data-driven interactions, allowing users to claim back control over their data, increasing security and privacy, and lowering barriers to entry, while still maintaining the benefits of interconnectedness the Internet provides.
+Eris Industries thus started with a question: is it possible to make web applications which have all the benefits of interconnectedness which we gain with modern web applications, but without servers? Could such a thing even be done? 
 
-Eris Industries designs and builds distributed computing systems which leverage these technologies. 
+The answer is that it can. Distributed, peer-to-peer networks now perform the same functions of legacy infrastructure, but without reliance on centralized silos and at substantially reduced cost. With Eris Industries' open-source **Blockchain Application Software Stack**, developers can for the first time rapidly design, test and deploy novel distributed applications over the public internet which are as flexible and user-friendly as they are secure.
 
-On Eris Industries' open-source **Blockchain Application Software Stack**, so can you.
+What will you build on the Eris Stack?
