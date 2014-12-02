@@ -1,7 +1,7 @@
 ### Making Smart Contracts Work
 
-Participatory architecture is made possible by smart contracts which allow users to securely interact with each other without centralized servers that must be trusted. Any type of information or interaction – whether a representations of an asset to be transfered, a task to be completed, or a decision to be taken – is capable of being securely managed, audited, and transferred with smart contracts.
+Participatory architecture is made possible by smart contracts, cryptographically-secure scripts which allow users to securely interact with each other without centralized servers that must be trusted. Any type of information or interaction – whether a representations of an asset to be transfered, a task to be completed, or a decision to be taken – is capable of being securely managed, audited, and transferred with and by smart contracts.
 
-Smart contracts can also be structured to reflect and deal in real-world rights, obligations, and regulatory requirements without having to surrender legal compliance.
+Smart contracts can also be structured to reflect and deal in real-world rights, obligations, and regulatory requirements.
 
-Eris Industries' **Blockchain Application Software Stack** makes it easy for developers begin simplifying and automating data-driven interactions in a fully compliant manner. There should not be a compromise between legal compliance and distributed applications; smart contracts present a significant advance on existing enterprise technology solutions.
+There should not be a compromise between legal compliance and distributed applications, as we see so often today; smart contracts thus represent a significant advance on existing enterprise technology solutions. Eris Industries' **Blockchain Application Software Stack** makes it easy for developers to gain the utility of distributed networks without exposing platform operators to unnecessary legal risk.
