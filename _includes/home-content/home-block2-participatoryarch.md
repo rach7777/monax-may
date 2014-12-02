@@ -4,4 +4,4 @@ Modern interactive applications require developers to expend vast sums of money 
 
 Participatory architecture allows users to benefit from the interconnectedness of the modern internet without needing to surrender control over their data, or their privacy, to obtain it.
 
-Eris Industries' **Blockchain Application Software Stack** makes it easy for developers to embrace participatory architecture and challenge existing providers of "free" internet services such as streaming video, cloud storage and social networking, as well as to design more traditional industrial applications such as asset management and value transfer, at a substantially lower start-up cost than existing software architecture permits.
+Eris Industries' **Distributed Application Software Stack** makes it easy for developers to embrace participatory architecture and challenge existing providers of "free" internet services such as streaming video, cloud storage and social networking, as well as to design more traditional industrial applications such as asset management and value transfer, at a substantially lower start-up cost than existing software architecture permits.

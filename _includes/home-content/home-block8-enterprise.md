@@ -1,6 +1,6 @@
 ### Enterprise Ready
 
-Eris Industries' **Blockchain Application Software Stack** is the first platform that allows the full potential of blockchain based technologies to be realized in business.
+Eris Industries' **Distributed Application Software Stack** is the first platform that allows the full potential of blockchain based technologies to be realized in business.
 
 By combining blockchain-housed systems of smart contracts, businesses can take many data-driven human relationships and reduce them to code – guaranteeing accurate and consistent execution of functions which previously required human discretion to manage.
 
