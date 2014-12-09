@@ -2,7 +2,7 @@
 
 #### The Distributed Application Server
 
-The Decerver is the application server for Eris Industries' Distributed Application Software Stack. Using the Decerver, developers can build distributed applications which easily interact with a diverse set of blockchain and peer-to-peer protocols, all of which have been harmonized in an interactive layer that can be accessed via JavaScript. The Decerver is easily extensible to work with additional network protocols simply by writing a module wrapper.
+The Decerver is the application server for Eris Industries' Distributed Application Software Stack. Using the Decerver, developers can build distributed applications which easily interact with a diverse set of blockchain and peer-to-peer protocols, all of which have been harmonized in an interactive layer that can be accessed via JavaScript. The Decerver empowers blockchain technology to become usable in a fully legally-compliant context for the first time.
 
 <a type="button" class="btn btn-eris btn-default btn-lg btn-block" href="https://decerver.io">Learn More About the Decerver</a>
 
