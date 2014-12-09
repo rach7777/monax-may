@@ -2,7 +2,7 @@
 
 #### The Smart Contract Package Manager
 
-The Eris Package Manager allows smart contract developers to deploy and test packages of smart contracts to their blockchains, and interact with them once deployed. It is the first developer tool explicitly built for our Distributed Application Software Stack.
+The Eris Package Manager allows smart contract developers to deploy and test packages of smart contracts to their blockchains, and interact with them once deployed. It is the first developer tool explicitly built for our Distributed Application Software Stack and can be most easily analogized as git, but for blockchains.
 
 <a type="button" class="btn btn-eris btn-default btn-lg btn-block" href="https://epm.io">Learn More About EPM</a>
 
