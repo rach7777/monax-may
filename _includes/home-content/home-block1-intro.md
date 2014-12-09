@@ -1,4 +1,4 @@
-### Eris Industries Was Formed to Answer Two Questions
+### When We Started Eris Industries, We Asked Two Questions
 
 1) Is it possible to build applications which have the benefits of interconnectedness, but without servers? **It is**. Distributed applications can perform the same functions of modern web applications by enlisting users to participate in the management and security of these applications' data.
 

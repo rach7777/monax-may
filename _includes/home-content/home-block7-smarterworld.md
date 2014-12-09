@@ -1,4 +1,4 @@
-### Why Do We Do What We Do
+### Why Eris?
 
 A better world is a smarter world. Leveraging good technology to work toward a smarter world entails observing a situation, defining a problem, determining a solution, and testing the result. Over and over again.
 
