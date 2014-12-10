@@ -36,6 +36,11 @@ nav.navbar-inverse {
 
 nav a {
   text-transform: lowercase;
+  color: #fff !important;
+}
+
+nav a:hover {
+  color: #9d9d9d !important;
 }
 
 nav .navbar-brand img {
@@ -53,12 +58,12 @@ nav ul.dropdown-menu {
 }
 
 nav ul.dropdown-menu li a {
-  color: #9d9d9d;
+  color: #fff;
 }
 
 nav ul.dropdown-menu li a:hover {
   background-color: #222;
-  color: #fff;
+  color: #9d9d9d;
 }
 
 nav ul.dropdown-menu li.divider {
@@ -97,8 +102,6 @@ nav ul.dropdown-menu li.divider {
   top: 40%;
   width: 100%;
   letter-spacing: 2px;
-  font-weight: 100;
-  text-transform: lowercase;
 }
 
 #video-overlay h5 {
@@ -106,6 +109,7 @@ nav ul.dropdown-menu li.divider {
   font-size: 2.5em;
   font-weight: 10;
   line-height: 1.4em;
+  font-weight: lighter;
 }
 
 /*              */
