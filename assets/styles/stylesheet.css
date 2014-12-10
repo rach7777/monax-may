@@ -88,12 +88,16 @@ nav ul.dropdown-menu li.divider {
   width: 100%;
 }
 
+#video-wrapper video {
+  width: 100%;
+}
+
 #video-overlay {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.2);
 }
 
 #video-overlay-text {
