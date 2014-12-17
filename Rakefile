@@ -3,7 +3,7 @@ require 'shellwords.rb'
 
 PROD_USER   = "83505"
 PROD_SERVER = "git.dc2.gpaas.net"
-PROD_HTDOCS = "readying.erisindustries.com"
+PROD_HTDOCS = "erisindustries.com"
 AUX_REMOTES = %w(github ei csk)
 
 task :default => [:publish]
