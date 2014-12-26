@@ -31,7 +31,7 @@ exclude: [".gitignore", ".ruby-version", ".ruby-gemset", "README.md", "Rakefile"
 images_dir:  "/assets/images"
 scripts_dir: "/assets/scripts"
 styles_dir:  "/assets/styles"
-sharing_img: "/logos/ei-logo-sharing-400.png"
+sharing_img: "/logos/ei-logo-sharing-square.png"
 
 # ----------------------- #
 #       Analytics         #
