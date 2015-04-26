@@ -5,7 +5,3 @@
 2) Is it possible to create data-driven interactions which are both autonomous and legally compliant? **It is**. Data-driven interactions are not exempt from legal norms and procedures, and platforms capable of operating within existing legal frameworks will be profoundly useful to businesses and individuals alike.
 
 With Eris Industries' open-source **Distributed Application Software Stack**, developers can rapidly design, test, and deploy distributed applications which are as flexible, user-friendly, and legally compliant as they are secure.
-
-Think of us as the node.js of peer-to-peer technology.
-
-What will you build on the Eris Stack?
