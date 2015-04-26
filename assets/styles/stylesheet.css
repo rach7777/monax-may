@@ -76,8 +76,19 @@ nav ul.dropdown-menu li.divider {
 /*              */
 /*     Home     */
 /*              */
+article.step p.step-major {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
 article.step p.step-sub {
   font-size: 1rem;
+  display: block;
+  max-width: 15em;
+}
+
+article.step p.sub-right {
+  float: right;
 }
 
 ul.eris-components {
