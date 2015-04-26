@@ -76,6 +76,15 @@ nav ul.dropdown-menu li.divider {
 /*              */
 /*     Home     */
 /*              */
+article.top-line p.strapline {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+article.top-line .tagline {
+  padding-top: 1.5em;
+}
+
 article.step p.step-major {
   font-size: 1.6em;
   font-weight: bold;
