@@ -1,6 +1,6 @@
 ## Eris Components
 
-Eris is a platform which allows developers to deploy interactive applications where application logic is reliably and securely executed by a distributed network.
+Eris assists developers in build, test, deploy, and operate interactive applications where application logic is reliably and securely executed by a distributed network.
 
 Eris consists of two open source packages.
 
