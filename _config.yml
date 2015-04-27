@@ -18,7 +18,7 @@ markdown:    kramdown
 safe:        true
 titlecase:   true
 lsi:         false
-highlighter: false
+highlighter: pygments
 permalink:   pretty
 destination: "_site/htdocs"
 

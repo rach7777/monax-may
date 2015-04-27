@@ -2,25 +2,26 @@
 /*   General    */
 /*              */
 body {
-  padding-top: 60px;
-  background-color: black;
-  background-position: 0% 0%;
-  background-repeat: repeat-y;
-  background-attachment: fixed;
-  background-size: 100%;
-  position: relative;
   font-family: 'Open Sans', sans-serif;
 }
 
 p {
-  font-size: 1em;
-  font-weight: lighter;
-  line-height: 1.6em;
+  font-size: 1.2em;
+  line-height: 1.4em;
 }
 
-p a {
+a {
   color: #8c663f;
-  font-weight: 600;
+}
+
+a:hover {
+  color: #694c2f;
+  text-decoration: none;
+}
+
+code {
+  color: #5d442a;
+  background-color: #e4d4c4;
 }
 
 /*              */
@@ -28,6 +29,8 @@ p a {
 /*              */
 .navbar-fixed-top {
   padding: 0.5em 0 0.5em 0;
+  font-weight: normal;
+  font-size: 14px;
 }
 
 nav.navbar-inverse {
@@ -71,131 +74,76 @@ nav ul.dropdown-menu li.divider {
 }
 
 /*              */
-/*    Video     */
+/*     Home     */
 /*              */
-#row-1 {
-  display: block;
-  overflow: hidden;
-  height: 600px;
-  width: 100%;
-  text-align: center;
-  background: black;
-  margin: -20px auto 0 auto;
-}
-
-#video-wrapper {
-  margin-top: -230px;
-  width: 100%;
-}
-
-#video-wrapper video {
-  width: 100%;
-}
-
-#video-overlay {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.2);
-}
-
-#video-overlay-text {
-  text-align: center;
-  position: absolute;
-  top: 40%;
-  width: 100%;
-}
-
-#video-overlay h5 {
-  color: white;
-  font-size: 2.5em;
-  font-weight: 10;
-  line-height: 1.4em;
-  font-weight: lighter;
-}
-
-/*              */
-/*     Blks     */
-/*              */
-.row {
-  background-color: black;
-  padding-top: 2.5em;
-  padding-bottom: 2.5em;
-  margin-top: -2px;
-  margin-bottom: -2px;
-  position: relative;
-  overflow: hidden;
-}
-
-#about {
-  padding: 0 15px 0 15px;
-  margin: 0 -30px 0 -30px;
-}
-
-#about .row-content {
-  padding-bottom: 1.4em;
-}
-
-.single-content-box {
-  max-height: 100%;
-}
-
-.row-prettifier {
-  position: relative;
-  height: 100%;
-}
-
-.row-prettifier img {
-  width: 75%;
-  max-width: 350px;
-  max-height: 100%;
-}
-
-.row-content {
-  color: #fff;
-  padding-bottom: 1.5em;
-}
-
-.row-content h3 {
-  color: #fff;
+article.top-line p.strapline {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
 
-.row-content h4 {
-  color: #eee;
+article.top-line .tagline {
+  padding-top: 1.5em;
+}
+
+article.step p.step-major {
+  font-size: 1.6em;
   font-weight: bold;
 }
 
-.divider-text {
-  height: 150px;
-  background: transparent;
-  padding-top: 50px;
-  color: white;
-  text-align: center;
-  width: 100%;
-  font-size: 2.8em;
-  font-weight: 300;
-  letter-spacing: 4px;
+article.step p.step-sub {
+  font-size: 1rem;
+  display: block;
+  max-width: 15em;
 }
 
-.btn-eris {
-  background-color: #bbb;
-  border-color: #bbb;
-  border-radius: 0;
-  margin-top: 30px;
-  padding: 14px;
+article.step p.sub-right {
+  float: right;
 }
 
-.btn-eris:hover {
-  background-color: #999;
-  border-color: #999;
+ul.eris-components {
+  padding-top: 3em;
+}
+
+/*              */
+/*     About    */
+/*              */
+.page-header {
+  margin-top: 1.5em;
+  padding-top: 1.5em;
+  font-style: bold;
+  text-transform: capitalize;
+}
+
+.default-content {
+  background-color: white;
+  position: relative;
+  font-weight: normal;
+}
+
+.about-content p{
+  text-align: left;
+}
+
+.about-content h3{
+  color: #222;
+  font-size: 1.6em;
+  text-transform: capitalize;
 }
 
 /*              */
 /*     Team     */
 /*              */
+.team {
+  background-color: black;
+  padding-bottom: 5em;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+.team h2 {
+  color: white;
+}
+
 .team-headshot {
   width: 100%;
 }
@@ -215,27 +163,12 @@ nav ul.dropdown-menu li.divider {
 }
 
 /*              */
-/*    Footer    */
+/*     Footer   */
 /*              */
-footer {
-  background: #040404;
-  padding: 25px 0 12px 0;
-  width: 100%;
+.mainfooter .erislogo {
+  left: 51%;
 }
 
-footer p {
-  text-align: center;
-  font-size: 14px;
-}
-
-/*              */
-/*     Nuke     */
-/*              */
-.make-eris-green {
-  color: #8c663f;
-  font-weight: 600;
-}
-
-.make-white {
-  color: white;
+.mainfooter .erismascot {
+  top: -56px;
 }
