@@ -1,6 +1,6 @@
 ## Eris Components
 
-Eris assists developers in build, test, deploy, and operate interactive applications where application logic is reliably and securely executed by a distributed network.
+Eris helps developers to build, test, deploy, and operate interactive applications where application logic is reliably and securely executed by a distributed network.
 
 Eris consists of two open source packages.
 
