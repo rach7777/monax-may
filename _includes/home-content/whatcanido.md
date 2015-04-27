@@ -6,4 +6,4 @@ When using default platform architecture, whether marketplaces, exchanges, gover
 
 With Eris, communities, businesses, governments, and anybody else can use smart contracts to manage their data-driven relationships on their own.
 
-### From anywhere, with anyone, for any purpose they see fit.
+### From anywhere. With anyone. For any purpose.
