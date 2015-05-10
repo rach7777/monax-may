@@ -3,23 +3,17 @@ general:
     only:
       - master
 
-machine:
-  ruby:
-    version: 2.0.0-p576
-
-dependencies:
-  override:
-    - gem install jekyll
-
 test:
   override:
-    - rake setup
+    - bundle exec rake prepare
     - git config --global user.email "billings@erisindustries.com"
     - git config --global user.name "Billings the Bot"
-    - rake test
+    - bundle exec scripts/test.rb
 
 deployment:
   master:
     branch: master
     commands:
-      - rake deploy
+      - bundle exec rake setup
+      - bundle exec jekyll build --destination _site/htdocs
+      - bundle exec rake deploy

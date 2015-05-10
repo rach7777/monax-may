@@ -1,100 +1,353 @@
 ---
+
+layout:     home
+css:        home
+javascript: home
+
 ---
 
-{% include header.html %}
-{% include navigation.html %}
-
-<article class="top-line">
-    <div class="wrap">
-        <!-- <h2 class="home-intro">The Distributed Application Platform</h2> -->
-        <h2 class="home-intro">The Distributed Application Platform</h2>
-        <p class="strapline">Eris is free software that allows anyone to build their own secure, low-cost, run-anywhere data infrastructure using blockchain and smart contract technology.</p>
-        <div class="video-wrap">
-            <iframe src="//www.youtube.com/embed/VkYVc1YsGCc?rel=0;modestbranding=1;autohide=1;showinfo=0;controls=1;color=white;theme=dark;"></iframe>
+<div id="container">
+    <article class="top-line">
+        <div class="wrap">
+            <div class="clouds">
+                <b class="x10 y8"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+                <b class="x-5 y1"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+                <b class="x-7 y3"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+                <b class="x8 y9"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+                <b class="x-6 y10"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+            </div>
+            <div class="typists">
+                <div class="y9 x8 blacksprite flip"></div>
+            </div>
+            {% include_relative home/content_blocks/overview.html %}
+            <a href="#loc1" class="down"></a>
         </div>
-        <h3 class="upper tagline">Your smart contracts. Your blockchain. Your application.</h3>
-<!--         <span class="down"></span>
- -->    </div>
-</article>
+    </article>
 
-<article class="bg-grey">
-    <div class="wrap">
-        {% capture whatisit %}{% include home-content/whatisit.md %}{% endcapture %}
-        {{ whatisit | markdownify }}
-<!--         <span class="down"></span>
- -->    </div>
-</article>
+    <article class="bg-grey">
+        <a name="loc1"></a>
+        <div class="wrap thinner">
+            {% capture whatisit %}{% include_relative home/content_blocks/whatisit.md %}{% endcapture %}
+            {{ whatisit | markdownify }}
+            <a href="#loc2" class="down"></a>
+        </div>
+    </article>
 
-<article>
-    <span class="bg" style="background-image: url('{{ site.url }}{{ site.images_dir }}/bg-blockchains-4.png');"></span>
-    <div class="wrap">
-        {% capture whatcanido %}{% include home-content/whatcanido.md %}{% endcapture %}
-        {{ whatcanido | markdownify }}
-<!--         <span class="down"></span>
- -->    </div>
-</article>
+    <article>
+        <a name="loc2"></a>
+        <span class="bg" style="background-image: url('{% asset_path bg-blockchains-4.png %}');">
+             <div class="clouds">
+                <b class="x-5 y0"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+                <b class="x10 y0"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+                <b class="x9 y1"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+                <b class="x8 y7"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+            </div>
 
-<article class="bg-grey step col-2 split-screen">
-    <div class="wrap">
-        <div class="col">
-            <h2>Step <span>1</span></h2>
-            <p class="step-major">Install</p>
-            <p class="step-sub sub-right">Install the complete Eris platform in seconds using <a href="https://www.docker.com/" target="_blank">Docker</a>.</p>
-<!--             <span class="down small-hidden"></span>
- -->        </div>
-        <div class="col">
-          {% capture step1 %}{% include home-code-blocks/step1.md %}{% endcapture %}
-          {{ step1 | markdownify }}
-<!--         <span class="down"></span>
- -->        </div>
-    </div>
-</article>
+            <div class="cubes">
+                <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x6 y0"></b>
+                <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x9 y5"></b>
+                <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x-8    y1"></b>
+            </div>
 
-<article class="bg">
-    <img src="{{ site.url }}{{ site.images_dir }}/bg-blockchains-3.png"/>
-</article>
+            <div class="typists">
+                {% image typist_stage_intro.png alt="" width="150" class="y4 x-8"  %}
+            </div>
+        </span>
 
-<article class="bg-grey step col-2 split-screen reverse-split">
-    <div class="wrap">
-        <div class="col">
-            <h2>Step <span>2</span></h2>
-            <p class="step-major">Roll</p>
-            <p class="step-sub">Deploy your own custom blockchain in seconds or easily connect to an existing one to develop sophisticated financial or legal applications.</p>
-<!--             <span class="down small-hidden"></span>
- -->        </div>
-        <div class="col">
-          {% capture step2 %}{% include home-code-blocks/step2.md %}{% endcapture %}
-          {{ step2 | markdownify }}
-<!--         <span class="down"></span>
- -->        </div>
-    </div>
-</article>
+        <div class="wrap">
+            <div class="thinner">
+                {% capture whatcanido %}{% include_relative home/content_blocks/whatcanido.md %}{% endcapture %}
+                {{ whatcanido | markdownify }}
+                <a href="#loc3" class="down"></a>
+            </div>
+        </div>
+    </article>
 
-<article class="bg">
-    <img src="{{ site.url }}{{ site.images_dir }}/bg-blockchains-2.png" />
-</article>
+    <article class="bg-grey step col-2 split-screen">
+        <a name="loc3"></a>
+        <div class="wrap">
+            <div class="col">
+                {% include_relative home/content_blocks/step1.html %}
+            </div>
+            <div class="col">
+              {% capture step1 %}{% include_relative home/code_blocks/step1.md %}{% endcapture %}
+              {{ step1 | markdownify }}
+            </div>
+        </div>
+        <a href="#loc4" class="down"></a>
+    </article>
 
-<article class="bg-grey step col-2 split-screen">
-    <div class="wrap">
-        <div class="col">
-            <h2>Step <span>3</span></h2>
-            <p class="step-major">Build</p>
-            <p class="step-sub sub-right">Build and run your distributed application using smart contract templates and a simple, web-based user interface.</p>
-<!--             <span class="down small-hidden"></span>
- -->        </div>
-        <div class="col">
-          {% capture step3 %}{% include home-code-blocks/step3.md %}{% endcapture %}
-          {{ step3 | markdownify }}
-<!--         <span class="down"></span>
- -->        </div>
-    </div>
-</article>
+    <article class="bg">
+        <div class="clouds">
+            <b class="x-2 y15"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+            <b class="x7 y0"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+            <b class="x8 y1"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+            <b class="x-8 y6"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+            <b class="x11 y6"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+        </div>
 
-<article class="bg">
-    <img src="{{ site.url }}{{ site.images_dir }}/bg-blockchains.png" />
-</article>
+        <div class="cubes">
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x-8 y0"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x-6 y3"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x-4 y1"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x5 y0"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x8 y3"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x7 y13"></b>
+        </div>
 
+        <div class="typists">
+            {% image typist_stage_intro.png alt="" width="150" class="y7 x9 flip"  %}
+        </div>
 
-{% include footer.html %}
-{% include scripts.html %}
-{% include analytics.html %}
+        <div class="chessboard chessnoblocks">
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y0 x0"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y1 x1"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y2 x2"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y3 x3"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y1 x-1"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y2 x0"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y3 x1"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y4 x2"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y2 x-2"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y3 x-1"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y4 x0"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y5 x1"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y3 x-3"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y4 x-2"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y5 x-1"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y6 x-0"></b>
+            {% image powercable.png alt="" class="powercable" %}
+        </div>
+
+        {% image bg-blockchains-3.png alt="" class="fallbackground" %}
+    </article>
+
+    <article class="bg-grey step col-2 split-screen reverse-split">
+        <a name="loc4"></a>
+        <div class="wrap">
+            <div class="col">
+                {% include_relative home/content_blocks/step2.html %}
+            </div>
+            <div class="col">
+                {% capture step2 %}{% include_relative home/code_blocks/step2.md %}{% endcapture %}
+                {{ step2 | markdownify }}
+            </div>
+        </div>
+        <a href="#loc5" class="down"></a>
+    </article>
+
+    <article class="bg">
+        <div class="clouds">
+            <b class="x-7 y2"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+            <b class="x10 y3"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+            <b class="x9 y10"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+            <b class="x-5 y10"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+            <b class="x9 y27"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+            <b class="x-6 y27"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+            <b class="x10 y22"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+        </div>
+
+        <div class="cubes">
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x-6 y0"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x-3 y1"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x6 y0"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x9 y2"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x-5 y4"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x7 y8"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x7 y27"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x10 y12"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x-4 y14"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x-2 y23"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x-5 y4"></b>
+        </div>
+
+        <div class="chessboard">
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y0 x0"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y1 x1"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y2 x2"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y3 x3"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y1 x-1"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y2 x0"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y3 x1"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y4 x2"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y2 x-2"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y3 x-1"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y4 x0"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y5 x1"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y3 x-3"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y4 x-2"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y5 x-1"></b>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="y6 x-0"></b>
+            <i data-bottom="background-size[bounce]:0%" data-top="background-size:100%;" class="block"></i>
+        </div>
+        <div class="typists">
+            <div class="y5 x-5 blacksprite"></div>
+        </div>
+
+        <div class="blocknest">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="d">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="dl">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="dl">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="dl">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="d">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="dr">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="dr">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="ur">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="ur">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="ur">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="ur">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="ur">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="dr">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="d">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="d">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="dl">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="dl">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="dl">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="dl">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="dl">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="d">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="d">
+            <b data-bottom="background-size[swing]:0%" data-400-top="background-size:100%;" class="d">
+            </b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b>
+        </div>
+
+        {% image bg-blockchains-2.png alt="" class="fallbackground" %}
+    </article>
+
+    <article class="bg-grey step col-2 split-screen">
+        <a name="loc5"></a>
+        <div class="wrap">
+            <div class="col">
+                {% include_relative home/content_blocks/step3.html %}
+            </div>
+            <div class="col">
+                {% capture step3 %}{% include_relative home/code_blocks/step3.md %}{% endcapture %}
+                {{ step3 | markdownify }}
+            </div>
+        </div>
+        <a href="#loc6"class="down"></a>
+    </article>
+
+    <article class="bg">
+        <div class="clouds">
+            <b class="x-8 y1"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+            <b class="x10 y3"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+            <b class="x9 y10"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+            <b class="x-5 y10"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+            <b class="x13 y17"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+            <b class="x-9 y17"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+            <b class="x10 y12"><span data-100-bottom="top:-50px;left:50px" data--400-top="top:50px;left:-100px" ></span></b>
+        </div>
+        <div class="cubes">
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x-6 y0"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x-3 y1"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x6 y0"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x9 y2"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x-5 y4"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x7 y8"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x10 y12"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x-4 y14"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x-2 y23"></b>
+            <b data-bottom="background-size[bounce]:0%;opacity[bounce]:0;" data-400-top="opacity:1;background-size:100%;" class="x-5 y4"></b>
+        </div>
+
+        <div class="typists">
+
+            <div class="y2 x-7 bluesprite"></div>
+            {% image cube-blue.png alt="" class="block y3 x-4" %}
+
+            <div class="y1 x10 purplesprite"></div>
+            {% image cube-purple.png alt="" class="block y4 x8" %}
+
+            {% image typist_green_step3.png alt="" class="typist y10 x7" %}
+            {% image cube-green.png alt="" class="block y9 x6" %}
+
+            <div class="y7 x-4 redsprite"></div>
+            {% image cube-red.png alt="" class="block y8 x-1" %}
+        </div>
+
+        <div class="blocknest biggernest">
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="">
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="bluecubes d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="ul">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="ul">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="ul">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="ul">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="dl">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="dl">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="dl">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="dl">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="dl">
+            </i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="purplecubes d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="ur">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="ur">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="ur">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="dr">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="dr">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="dr">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="dr">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="dr">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="dl">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            </i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="redcubes d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="dl">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="dl">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="dl">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="dl">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="dl">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            </i></i></i></i></i></i></i></i></i></i></i>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="greencubes d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="dr">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="dr">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="dr">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="dr">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="dl">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <i data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            </i></i></i></i></i></i></i></i></i></i>
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            <b data-bottom="background-size[swing]:0%" data-500-top="background-size:100%;" class="d">
+            </b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b></b>
+        </div>
+        {% image bg-blockchains.png alt="" class="fallbackground" %}
+    </article>
+</div><!-- #container -->
