@@ -10,7 +10,7 @@ excerpt:    "The Makers' Blockchain Design"
 
 eris:db is Eris Industries' open-source blockchain design. eris:db is both smart contract enabled as well as smart contract controlled.
 
-eris:db is not *a single blockchain*, it is *a blockchain design*. It is purposely designed not to be one blockchain, but millions of them: to complement, rather than compete with, its larger, fully-distributed cousins. Although at its base level eris:db can deploy a blockchain which has the same parameters as the draft ethereum blockchain, eris:db was designed with a different set of parameters in mind. We have designed eris:db as a corporate-, organisation-, family-, or application-specific blockchain to work in conjunction with the [eris:server]({{ site.url }}/products/erisserver/) and the other components of Eris Industries' **Distributed Application Platform**.
+eris:db is not *a single blockchain*, it is *a blockchain design*. It is purposely designed not to be one blockchain, but millions of them: to complement, rather than compete with, its larger, fully-distributed cousins. Although at its base level eris:db can deploy a blockchain which has the same parameters as the draft ethereum blockchain, eris:db was designed with a different set of parameters in mind. We have designed eris:db as a corporate-, organisation-, family-, or application-specific blockchain to work in conjunction with the [eris:server]({{ site.url }}/products/erisserver/) and the other components of Eris.
 
 eris:db allows developers to use blockchain architecture to design, test, deploy, and operate distributed applications. Developers who use a eris:db client to manage their blockchains are able to benefit from having a parameterized smart contract in the genesis block which is capable of managing the consensus and security mechanism of the blockchain through the use of smart contracts. By moving the block consensus and security mechanism out of the client and placing those parameters and instructions into the blockchain itself, we have been able to significantly diversify the types of blockchains which a single client can manage.
 
@@ -22,33 +22,9 @@ eris:db was designed for deployment in a variety of contexts, from locked-down i
 
 A single eris:db client is all that is required in order to participate in all of these blockchains.
 
-# What is a Blockchain?
+For more on [what a blockchain is](https://docs.erisindustries.com/explainers/blockchains/) please see [our explainer](https://docs.erisindustries.com/explainers/blockchains/).
 
-Blockchains have their origins in cryptocurrency platforms, in particular Bitcoin, where they represent historical records of verifiable monetary stake. They were designed in the first place to solve the double spending problem, that is, to establish consensus in a decentralized network over who owns what and what has already been spent. More generally, blockchains are authenticated records of the history of a network's activity, distributed among the users of the blockchain all around the globe.
-
-A blockchain is an authenticated database which automatically processes, broadcasts, and validates data-driven transactions while also preventing the incorporation of unauthorised transactions. Simultaneously, a blockchain operates as a distributed data store, meaning there is no single master node within the cluster; every node is an equal peer.
-
-Blockchains carry out their functions automatically, requiring neither servers nor human administrators to operate themselves reliably and predictably.  They accomplish this through a process which is often called mining” or "forging" but which we simply call **committing**. This process generally involves bundling the transactions which have come into the system during an established time, along with other parameters into a **block** of transactions and other data which is then placed into the **chain** of blocks that together formulate the world state of data.
-
-Most modern databases store the world state of the data and keep the logs of transactions with the database as a separate "thing". Blockchains, on the other hand, build the world state of the data from "blocks" of authenticated transactions that are "chained" together over time. Thus it is always immediately possible to tell if something is valid, as it must have come from a valid history, and everyone agrees completely on the sequence of valid history.
-
-A blockchain enables anyone to securely store arbitrary information -- in most cases, a token balance -- within the system simply by securing the private keys associated with the addresses at which that information is stored. This has given blockchains the flavour of alternative value-transfer systems that are highly resistant to intervention by regulatory authorities or malicious third parties.
-
-Next generation or blockchain "2.0" technologies such as eris:db place their focus on the fault-tolerant aspect of blockchains, seeing them as a means of reducing the economic impact of server failure, third party attack or the destruction of business premises.
-
-These blockchains are generalized to store arbitrary data and to establish permissions to modify that data through a set of self-administering and self-executing scripts which are executed by a distributed virtual machine which in turn is married to a blockchain. These scripts are known as “smart contracts,” and they allow platform operators to define complex and fully customisable rules which govern the blockchain’s interaction with its users.
-
-## Benefits of Blockchain Technology
-
-What we have when abstracting a blockchain to a certain level is a distributed, self-authenticating, time-stamped store of data. Indeed, the core design of a blockchain is an elegant way in which to overcome many challenges in distributed systems.
-
-Blockchains allow for the development of distributed systems which do not rely on what traditional databases call 'master-slave' clusters. In a blockchain backed system, there is not even a notion of master-slave relationships between the nodes in the cluster. Instead, blockchain backed systems utilize the idea of peer nodes and consensus models to resolve the current world state of the data. Breaking the data-driven transactions into blocks allows the consensus of the database to be negotiated in a reasonable manner rather than on a per-transaction basis.
-
-In addition, blockchains allow for transactional certainty. Traditional databases store the current world state of the data, and if they are programmed to do so, have additional entries covering previous transactions within the data store. In addition, traditional databases are also able to maintain logs of the history of the interactions. Blockchains are designed differently in that the logs of the transactions with the data set are used to formulate the world state of the data. The use of cryptographic authentication of time-stamped blocks of transactions allows the entire network the benefit of certainty of the entire transactional history.
-
-This is an extremely important point when comparing traditional data stores to blockchains. In a traditional database a current entry in a particular field of, say, `10` does not allow us to understand -- without additional programming of the database -- whether the field is currently `10` and whether it used to be `0` and `10` was added to it or whether it was originally `0` and then `15` was added to it and later `5` was taken out of it. If the database is being used simply to track the current world state of the data -- say for a blog or newspaper -- it may not matter whether the data interaction was `0+10=10` or was `0+15-5=10`, but for many applications this difference matters.
-
-The general Blockchain design not only requires that the transactional history of the data store is captured, but that it is cryptographically certain once there is sufficient consensus within the network. In other words, in a blockchain if we know the state of the data at the genesis of the blockchain and we accept the state of the date at `time.Now()` we can be assured that there is one and only one way in which to get from the original state to the current state. Similarly, if we know the state transitions at each phase of the building of the data store (what in blockchains we call blocks) then we can step-by-step recreate the entire world state of data to reach what is the current world state of the data at `time.Now()`.
+For more on [what a smart contract is](https://docs.erisindustries.com/explainers/smart_contracts/) please see [our explainer](https://docs.erisindustries.com/explainers/smart_contracts/).
 
 ## Securing Traditional Blockchains
 
@@ -103,46 +79,6 @@ Put differently, commercially viable reduced-trust networks do not need to prote
 ## From Trustless to Verifiable
 
 While trustlessness is a tricky subject commercially for all the reasons discussed above, increasing the verifiability of data-driven interactions is a goal which all entities and organizations -- whether commercial, corporate, not-for-profit, or individual -- can benefit from. This is why, at Eris, we prefer to focus on increasing verifiability rather than engaging in largely philosophical debates about the quantum of trust. And when it comes to increasing verifiability for all parties to a given data-driven interaction, there are few technologies currently invented which match blockchains.
-
-# What are Smart Contracts?
-
-To begin with, smart contracts are neither particularly smart nor are they, strictly speaking, contracts. That aside, they do provide a fairly well placed metaphor for what they really are: blockchain housed scripts which represent unilateral promises to provide a determinate computation. These scripts are compiled into very low level operation codes and stored in the blockchain's data store at a particular address -- which is determined when the contracts are compiled and deployed to the blockchain. When a transaction is sent to that address the distributed virtual machine executes the script's operation codes and is able to use the data which is sent with the transaction.
-
-Smart contracts are modular, repeatable, autonomous scripts, typically running on a blockchain, which can be used to build distributed applications for yourself, for a community, for a client, for a bounty, or even just for fun. They can be mixed and matched, and easy to iterate, rather like lego bricks combined with pre-set templates.
-
-Smart contracts can be coded to reflect any kind of business or engineering logic which is data-driven: from actions as simple as up-voting a post on a forum, to the more complex such as loan collateralisation and futures contracts, to the highly complex such as repayment prioritisation on a structured note. Relationships and obligations which are 'smart contractified' benefit from blockchain security logic and also the increase in verifiability.
-
-By building business logic in smart contracts, developers and lawyers can give their users and clients an increase in the verifiability and certainty which comes with distributed technology while simultaneously building a system of rules which will be structured so that it can keep up with increases in automation in the world around us.
-
-So, how does one structure a smart contract? Here's a simple overview: take a data-driven interaction -- any interactions you like -- and establish:
-
-* what the different users agree are the specified parameters for the interactions;
-* the data that will be used to measure the interactions;
-* the sequence of the interactions;
-* the rules of the interactions; and
-* what should happens when the limits of the data’s ability to describe the interactions are crossed.
-
-Put that on a distributed data store matched with a distributed virtual machine and you’ve got a smart contract.
-
-## Benefits of Using Smart Contracts
-
-There are many benefits of using smart contracts; not the least of which is a large increase in verifiability of data-driven interactions and their outcomes or knock-on effects. While, at their core, smart contracts are simply software scripts no different than those which may run in any application stack, they have one unique quality to them which any other random software script does not: certainty. Smart contracts have visibility across the blockchain they live on. That is to say, if someone has access to read the blockchain, they will have access to see the compiled script. This is a very different idea than being told that a certain script will operate in a certain way on servers which you may not control.
-
-Let us step back for a moment from the specifics of smart contracts and think about a commercial deal which will involve a dozen entities and many different data-driven interactions throughout the life of the deal. How the IT departments for the commercial entities would likely structure the administration of the data driven aspects of the deal would be to establish a tracking system which is completely under the control of that commercial entity and, perhaps, provide some programmatic interface for others to query records or send new information regarding a record. It is likely that each of these dozen commercial entities will each establish a similar system to monitor and track the data interactions over the course of the deal.
-
-This is where the execution certainty of smart contracts married with the historical transaction certainty of a blockchain should become increasingly interesting for commercial players. If the commercial entities were wise about how they structured the deal, they could track all of their data-driven interactions on a smart contract-enabled blockchain without having to build twelve different systems, ensure their interoperability, and expend labour-time to appropriately categorize and file relevant transactional data. Every entity having access to the blockchain will be able to completely verify the entirety of the interactions as well as the entire history of the data set, which would be automatically maintained over the life of the deal and summarised at its conclusion.
-
-Under the current software design paradigm which would likely be deployed for such a deal, this would never happen. Each entity would keep full control over the scripts or software tracking and executing any downstream functions after a new or update record transaction.
-
-While the different commercial entities may be legally incorporated and would not be required to move to a completely trustless system of the kind described above, they would all experience significant cost savings from the increased verifiability and automation a blockchain-based smart contract system would permit.
-
-## Challenges of Working With Smart Contracts
-
-At the moment, there are two primary limitations to working with smart contracts. The first challenge is temporary, the second challenge is fundamental.
-
-The first challenge of working with smart contracts is that there is something of a prisoner's game with respect to their adoption. That is to say: the most significant benefits of smart contract adoption come when numerous commercial entities begin to automate their data-driven interactions using smart contracts and a blockchain which is purpose-built for that (and preferably only that) multi-party interaction. Given that the number of individuals with the technical proficiency to develop and deploy smart contract systems is few, this challenge should not be underestimated. In a single commercial entity's context, in the short-term the design and deployment of smart contract systems would for many applications be less efficient than carrying on with a centralized software stack with redundancy built-in. However, in the context of multiple commercial entities, the redundancies of data and scripting capabilities required for multiple parties to track and manage a deal tips the efficiency scales heavily toward smart contracts, with marginal returns increasing over time with subsequent iterations and increasing blockchain use throughout a given market.
-
-The second challenge of working with smart contracts is that smart contracts are simply software. They are not the "living, breathing" documents that people generally think about when they think of "contracts" and as such they are not inherently enforceable. Indeed, they can "enforce" or, better, administer some of the state of the data which they have access to on the blockchain on which they reside. Yet, beyond that there is little reach that smart contracts have. For the foreseeable future they will not be enforceable in any court, and few parties will be able to rely on smart contract technology alone to structure all of the terms of a commercial transaction in code.
 
 # eris:db' Design Philosophy
 
