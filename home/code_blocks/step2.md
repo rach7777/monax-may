@@ -1,8 +1,10 @@
 ```javascript
 // Note, this is an incomplete example. Do not copy and paste!
 {
+    // Doug is the smart contract which controls permissions
     "address" : "0000000000THISISDOUG",
-    "doug" : "Genesis DOUG/dendoug-v3.111",
+    // Use this Genesis DOUG contract (or make your own)
+    "doug" : "Genesis DOUG/gendoug-v3.111",
     // Add a genDoug chain permission module to a private chain
     "no-gendoug" : false,
     // turning any of these to `1` makes the action be available to
