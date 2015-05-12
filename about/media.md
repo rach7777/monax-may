@@ -31,7 +31,7 @@ title:      "Media"
 
 "...they have managed to beat to market other proposed systems and it uses agnostic tech (not necessarily Bitcoin 'rails'), to settle/move contracts on a blockchain."
 
--Tim Swanson, "[Eris launches an actual smart contract platform](http://www.ofnumbers.com/2014/12/17/eris-launches-an-actual-smart-contract-decentralized-application-platform/)," 17/12/14
+-Tim Swanson, "[Eris launches an actual smart contract decentralized application platform](http://www.ofnumbers.com/2014/12/17/eris-launches-an-actual-smart-contract-decentralized-application-platform/)," 17/12/14
 
 "Thinking of Eris in terms of building wallets to Bitcoin is somewhat limiting and doesn’t quite explain why you would want to use it. It’s only marginally useful in that case... I feel they are thinking almost 5 years too far ahead. Here’s a definite business goal, especially in terms of enterprise. If you can roll this out and do immense cost savings for companies, it’s a definite winner."
 
