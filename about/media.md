@@ -18,13 +18,13 @@ title:      "Media"
 
 -[*American Banker*](http://www.americanbanker.com/news/bank-technology/practical-ways-to-use-blockchain-technology-could-win-over-banks-1074001-1.html), 27/04/15
 
-"A customized ([ErisDB](https://erisdb.erisindustries.com)) blockchain is used for Microwork.io’s reputation system. (ErisDB) is a blockchain platform built by Eris Industries... The high level of customization offered by ErisDB made it the right choice for Microwork.io during the development process.”
-
--[*Bitcoin Magazine*](https://bitcoinmagazine.com/20313/microwork-io-uses-smart-contracts-coordinate-small-tasks-worldwide/), 07/04/15
-
 “What’s key (with Eris' technology) is the idea of “smart contracts,” which function as a set of automated instructions for a computer to perform if a set of conditions is in place. Blockchain-adjudicated smart contracts can make organizational processes more efficient and integrated. A proprietary blockchain solution could... allow a multinational to fluidly integrate communications between the otherwise independently formed databases and software systems of different subsidiaries in different countries.”
 
 -[*The Wall Street Journal*](http://blogs.wsj.com/moneybeat/2015/04/14/bitbeat-blockchains-without-coins-stir-tensions-in-bitcoin-community/), 14/4/15
+
+"A customized ([ErisDB](https://erisdb.erisindustries.com)) blockchain is used for Microwork.io’s reputation system. (ErisDB) is a blockchain platform built by Eris Industries... The high level of customization offered by ErisDB made it the right choice for Microwork.io during the development process.”
+
+-[*Bitcoin Magazine*](https://bitcoinmagazine.com/20313/microwork-io-uses-smart-contracts-coordinate-small-tasks-worldwide/), 07/05/15
 
 **Industry experts and reports:**
 
