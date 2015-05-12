@@ -37,6 +37,7 @@ title:      "Media"
 -Tim Swanson, "[*Eris launches an actual smart contract decentralized application platform*](http://www.ofnumbers.com/2014/12/17/eris-launches-an-actual-smart-contract-decentralized-application-platform/)," 17/12/14
 
 "...they are thinking almost 5 years too far ahead. Here’s a definite business goal, especially in terms of enterprise. If you can roll this out and do immense cost savings for companies, it’s a definite winner."
+
 -Simon de la Rouviere, "[*Eris and Dapp Infrastructure*](http://simondlr.com/post/105806054868/eris-dapp-infrastructure)", 21/12/14
 
 "For a system like Eris, the security is as good as the person in charge [that] you trust. Now if you do a system where, say you got five different banks on five different continents, each signing blocks in a 3 of 5 system — that can be very secure."
