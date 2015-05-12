@@ -1,7 +1,7 @@
 ---
 
 layout:     wide
-title:      "Eris Industries: Media"
+title:      "Media"
 
 ---
 

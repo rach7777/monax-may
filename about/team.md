@@ -1,7 +1,7 @@
 ---
 
 layout:     wide
-title:      "Eris Industries: Team"
+title:      "Team"
 css:        team
 javascript: team
 
