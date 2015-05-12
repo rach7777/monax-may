@@ -22,7 +22,7 @@ title:      "Media"
 
 -[*The Wall Street Journal*](http://blogs.wsj.com/moneybeat/2015/04/14/bitbeat-blockchains-without-coins-stir-tensions-in-bitcoin-community/), 14/4/15
 
->  "A customized ([ErisDB](https://erisdb.erisindustries.com)) blockchain is used for Microwork.io’s reputation system. (ErisDB) is a blockchain platform built by Eris Industries... The high level of customization offered by ErisDB made it the right choice for Microwork.io during the development process.”
+>  "A customized ([ErisDB](https://erisdb.erisindustries.com)) blockchain is used for Microwork.io’s reputation system. (ErisDB) is a blockchain platform built by Eris Industries... The high level of customization offered by (ErisDB) made it the right choice for Microwork.io during the development process.”
 
 -[*Bitcoin Magazine*](https://bitcoinmagazine.com/20313/microwork-io-uses-smart-contracts-coordinate-small-tasks-worldwide/), 07/05/15
 
@@ -36,10 +36,10 @@ title:      "Media"
 
 -Tim Swanson, "[*Eris launches an actual smart contract decentralized application platform*](http://www.ofnumbers.com/2014/12/17/eris-launches-an-actual-smart-contract-decentralized-application-platform/)," 17/12/14
 
->  "...they are thinking almost 5 years too far ahead. Here’s a definite business goal, especially in terms of enterprise. If you can roll this out and do immense cost savings for companies, it’s a definite winner."
+>  "(Eris is) thinking almost 5 years too far ahead. Here’s a definite business goal, especially in terms of enterprise. If you can roll this out and do immense cost savings for companies, it’s a definite winner."
 
 -Simon de la Rouviere, "[*Eris and Dapp Infrastructure*](http://simondlr.com/post/105806054868/eris-dapp-infrastructure)", 21/12/14
 
->  "For a system like Eris, the security is as good as the person in charge [that] you trust. Now if you do a system where, say you got five different banks on five different continents, each signing blocks in a 3 of 5 system — that can be very secure."
+>  "For a system like Eris, the security is as good as the person in charge [that] you trust. Now if you do a system where, say (you've) got five different banks on five different continents, each signing blocks in a 3 of 5 system — that can be very secure."
 
 -Peter Todd, [*CoinTelegraph interview*](http://cointelegraph.com/news/114156/peter-todd-on-bitgos-patenting-of-multisig-mits-funding-of-core-development-and-innovation), 05/05/14
