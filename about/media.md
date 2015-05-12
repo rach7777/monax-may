@@ -5,7 +5,7 @@ title:      "Media"
 
 ---
 
-"The key point is that (Eris' technology) could be a huge cost-saver in terms of corporate infrastructure."
+"The key point is that (Eris Industries' technology) could be a huge cost-saver in terms of corporate infrastructure."
 
 -[Business Insider](http://www.businessinsider.com.au/europe-15-most-innovative-finance-startups-2015-1#14-eris-industries-all-about-data-2), 16/01/15
 
@@ -21,6 +21,6 @@ title:      "Media"
 
 -[The Wall Street Journal](http://blogs.wsj.com/moneybeat/2015/04/14/bitbeat-blockchains-without-coins-stir-tensions-in-bitcoin-community/), 14/4/15
 
-A customized ([ErisDB](https://erisdb.erisindustries.com) blockchain is used for Microwork.io’s reputation system. (ErisDB) is a blockchain platform built by Eris Industries... The high level of customization offered by ErisDB made it the right choice for Microwork.io during the development process.”
+"A customized ([ErisDB](https://erisdb.erisindustries.com) blockchain is used for Microwork.io’s reputation system. (ErisDB) is a blockchain platform built by Eris Industries... The high level of customization offered by ErisDB made it the right choice for Microwork.io during the development process.”
 
 -[Bitcoin Magazine](https://bitcoinmagazine.com/20313/microwork-io-uses-smart-contracts-coordinate-small-tasks-worldwide/), 07/04/15
