@@ -9,7 +9,7 @@ title:      "Media"
 
 -[*Business Insider*](http://www.businessinsider.com.au/europe-15-most-innovative-finance-startups-2015-1#14-eris-industries-all-about-data-2), 16/01/15
 
-“The nice thing about the Eris proposition is that they see the value of blockchain systems linked to the data structure *and* the use case...combining trust and self-serving utility into the design allows for better and more efficient systems”
+“The nice thing about the Eris proposition is that they see the value of blockchain systems linked to the data structure *and* the use case...combining trust and self-serving utility into the design allows for better and more efficient systems because it allows for reversibility. Flexibility is needed if we these systems are to account for human fallibility.”
 
 -[*Financial Times - Alphaville*](http://ftalphaville.ft.com/2015/03/20/2122415/blockchains-as-a-public-and-private-resource/?Authorised=false5hrwiey), 20/03/15
 
