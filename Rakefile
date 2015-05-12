@@ -62,6 +62,7 @@ task :clean do
 
   src_dir = File.join(File.dirname(__FILE__), '..', 'eris-assets')
   src_files = Dir.glob(File.join(src_dir, '*'))
+  src_files.delete("./../eris-assets/circle.yml")
 
   # Remove the Files
   src_files.each do |f|
