@@ -30,6 +30,7 @@ desc "Merge the Assets Folder with This Folder"
 task :prepare do
   my_dir = File.dirname(__FILE__)
   src_dir = File.join(File.dirname(__FILE__), '..', 'eris-assets')
+  FileUtils.mv('./circle.yml', './circle_here.yml')
 
   Dir.chdir(my_dir)
 
@@ -62,7 +63,6 @@ task :clean do
 
   src_dir = File.join(File.dirname(__FILE__), '..', 'eris-assets')
   src_files = Dir.glob(File.join(src_dir, '*'))
-  src_files.delete("./../eris-assets/circle.yml")
 
   # Remove the Files
   src_files.each do |f|
@@ -74,6 +74,9 @@ task :clean do
   generated.each do |f|
     FileUtils.rm_rf(f)
   end
+
+  # Reset the circle.yml file
+  FileUtils.mv('./circle_here.yml', './circle.yml')
 end
 
 desc "CircleCI Deploy only this site"
