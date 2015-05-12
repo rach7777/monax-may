@@ -5,6 +5,8 @@ title:      "Media"
 
 ---
 
+**Mainstream media:**
+
 "The key point is that (Eris Industries' technology) could be a huge cost-saver in terms of corporate infrastructure."
 
 -[*Business Insider*](http://www.businessinsider.com.au/europe-15-most-innovative-finance-startups-2015-1#14-eris-industries-all-about-data-2), 16/01/15
@@ -25,3 +27,16 @@ title:      "Media"
 
 -[*The Wall Street Journal*](http://blogs.wsj.com/moneybeat/2015/04/14/bitbeat-blockchains-without-coins-stir-tensions-in-bitcoin-community/), 14/4/15
 
+**Industry experts:**
+
+"...they have managed to beat to market other proposed systems and it uses agnostic tech (not necessarily Bitcoin 'rails'), to settle/move contracts on a blockchain."
+
+-Tim Swanson, "[Eris launches an actual smart contract platform](http://www.ofnumbers.com/2014/12/17/eris-launches-an-actual-smart-contract-decentralized-application-platform/)," 17/12/14
+
+"Thinking of Eris in terms of building wallets to Bitcoin is somewhat limiting and doesn’t quite explain why you would want to use it. It’s only marginally useful in that case... I feel they are thinking almost 5 years too far ahead. Here’s a definite business goal, especially in terms of enterprise. If you can roll this out and do immense cost savings for companies, it’s a definite winner."
+
+-Simon de la Rouviere, |Eris and Dapp Infrastructure](http://simondlr.com/post/105806054868/eris-dapp-infrastructure)", 21/12/14
+
+"For a system like Eris, the security is as good as the person in charge [that] you trust. Now if you do a system where, say you got five different banks on five different continents, each signing blocks in a 3 of 5 system — that can be very secure... banks are very interested in putting themselves in a position where they can’t just necessarily change the rules of the system."
+
+Peter Todd, [Cointelegraph interview](http://cointelegraph.com/news/114156/peter-todd-on-bitgos-patenting-of-multisig-mits-funding-of-core-development-and-innovation), 05/05/14
