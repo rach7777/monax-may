@@ -41,4 +41,5 @@ title:      "Media"
 -Simon de la Rouviere, "[*Eris and Dapp Infrastructure*](http://simondlr.com/post/105806054868/eris-dapp-infrastructure)", 21/12/14
 
 "For a system like Eris, the security is as good as the person in charge [that] you trust. Now if you do a system where, say you got five different banks on five different continents, each signing blocks in a 3 of 5 system — that can be very secure."
+
 -Peter Todd, [*CoinTelegraph interview*](http://cointelegraph.com/news/114156/peter-todd-on-bitgos-patenting-of-multisig-mits-funding-of-core-development-and-innovation), 05/05/14
