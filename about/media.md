@@ -35,7 +35,7 @@ title:      "Media"
 
 "Thinking of Eris in terms of building wallets to Bitcoin is somewhat limiting and doesn’t quite explain why you would want to use it. It’s only marginally useful in that case... I feel they are thinking almost 5 years too far ahead. Here’s a definite business goal, especially in terms of enterprise. If you can roll this out and do immense cost savings for companies, it’s a definite winner."
 
--Simon de la Rouviere, |Eris and Dapp Infrastructure](http://simondlr.com/post/105806054868/eris-dapp-infrastructure)", 21/12/14
+-Simon de la Rouviere, "[Eris and Dapp Infrastructure](http://simondlr.com/post/105806054868/eris-dapp-infrastructure)", 21/12/14
 
 "For a system like Eris, the security is as good as the person in charge [that] you trust. Now if you do a system where, say you got five different banks on five different continents, each signing blocks in a 3 of 5 system — that can be very secure... banks are very interested in putting themselves in a position where they can’t just necessarily change the rules of the system."
 
