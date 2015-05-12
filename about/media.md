@@ -31,7 +31,7 @@ title:      "Media"
 
 "(Application) stacks such as... Eris can be distinguished based on their focus. They are the result of the continuous search for ‘non-currency’ applications of blockchain technologies."
 
-EBA Working Group on Electronic and Alternative Payments, "[Cryptotechnologies, a major IT innovation and catalyst for change](https://www.abe-eba.eu/downloads/knowledge-and-research/EBA_20150511_EBA_Cryptotechnologies_a_major_IT_innovation_v1.0.pdf)," 11/04/15
+EBA Working Group on Electronic and Alternative Payments, "[*Cryptotechnologies, a major IT innovation and catalyst for change*](https://www.abe-eba.eu/downloads/knowledge-and-research/EBA_20150511_EBA_Cryptotechnologies_a_major_IT_innovation_v1.0.pdf)," 11/04/15
 
 "...they have managed to beat to market other proposed systems and it uses agnostic tech (not necessarily Bitcoin 'rails'), to settle/move contracts on a blockchain."
 
