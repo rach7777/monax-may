@@ -14,7 +14,7 @@ title:      "Media"
 
 -[*American Banker*](http://www.americanbanker.com/news/bank-technology/practical-ways-to-use-blockchain-technology-could-win-over-banks-1074001-1.html), 27/04/15
 
->  “The nice thing about the Eris proposition is that they see the value of **blockchain systems linked to the data structure *and* the use case**... combining trust and self-serving utility into the design allows for **better and more efficient** systems because it allows for reversibility. Flexibility is needed if we these systems are to account for human fallibility.”
+>  “The nice thing about the Eris proposition is that they see the value of **blockchain systems linked to the data structure *and* the use case**... combining trust and self-serving utility into the design allows for **better and more efficient** systems because it allows for reversibility. **Flexibility is needed** if these systems are to account for human fallibility.”
 
 -[*Financial Times - Alphaville*](http://ftalphaville.ft.com/2015/03/20/2122415/blockchains-as-a-public-and-private-resource/?Authorised=false5hrwiey), 20/03/15
 
