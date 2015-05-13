@@ -6,7 +6,7 @@ title:      "Media"
 ---
 ### **Mainstream media:**
 
->  "The key point is that (Eris Industries' technology) could be a **huge cost-saver** in terms of corporate infrastructure."
+>  "The key point is that (Eris Industries' technology) could be a **huge cost-saver** in terms of **corporate infrastructure**."
 
 -[*Business Insider*](http://www.businessinsider.com.au/europe-15-most-innovative-finance-startups-2015-1#14-eris-industries-all-about-data-2), 16/01/15
 
