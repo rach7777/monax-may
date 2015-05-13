@@ -14,11 +14,11 @@ title:      "Media"
 
 -[*Financial Times - Alphaville*](http://ftalphaville.ft.com/2015/03/20/2122415/blockchains-as-a-public-and-private-resource/?Authorised=false5hrwiey), 20/03/15
 
->  “Eris’ model might actually **change the existing financial industry more so than the solely Bitcoin-based businesses have** done to date.”
+>  “Eris’ model might actually **change the existing financial industry** more so than the solely Bitcoin-based businesses have done to date.”
 
 -[*American Banker*](http://www.americanbanker.com/news/bank-technology/practical-ways-to-use-blockchain-technology-could-win-over-banks-1074001-1.html), 27/04/15
 
->  “What’s key (with Eris' technology) is the idea of “smart contracts,” which function as a set of automated instructions for a computer to perform if a set of conditions is in place. **Blockchain-adjudicated smart contracts can make organizational processes more efficient and integrated.** A proprietary blockchain solution could... allow a multinational to fluidly integrate communications between the otherwise independently formed databases and software systems of different subsidiaries in different countries.”
+>  “What’s key (with Eris' technology) is the idea of “smart contracts,” which function as a set of automated instructions for a computer to perform if a set of conditions is in place. Blockchain-adjudicated smart contracts can **make organizational processes more efficient and integrated.** A proprietary blockchain solution could... allow a multinational to fluidly integrate communications between the otherwise independently formed databases and software systems of different subsidiaries in different countries.”
 
 -[*The Wall Street Journal*](http://blogs.wsj.com/moneybeat/2015/04/14/bitbeat-blockchains-without-coins-stir-tensions-in-bitcoin-community/), 14/4/15
 
@@ -32,7 +32,7 @@ title:      "Media"
 
 -EBA Working Group on Electronic and Alternative Payments, "[*Cryptotechnologies: a major IT innovation and catalyst for change*](https://www.abe-eba.eu/downloads/knowledge-and-research/EBA_20150511_EBA_Cryptotechnologies_a_major_IT_innovation_v1.0.pdf)," 11/04/15
 
-> "For our clients, if they're going to be investing in this stuff, it's not going to be on a whim... so in the short-term, we're going to do this because it saves money on clearing and settlement. But in the long run, we're going to do it because it's going to restructure the way that parts of an industry are going to work... **that's what kind of caught my eye when I first read (Eris') stuff: that this is realistic.**"
+> "For our clients, if they're going to be investing in this stuff, it's not going to be on a whim... so in the short-term, we're going to do this because it saves money on clearing and settlement. But in the long run, we're going to do it because it's going to restructure the way that parts of an industry are going to work... that's what kind of caught my eye when I first read (Eris') stuff: that **this is realistic.**"
 
 -Dave Birch, [*Tomorrow's Transactions*](http://www.chyp.com/podcasts/preston-byrne-eris-industries-27032015/), 27/03/15
 
