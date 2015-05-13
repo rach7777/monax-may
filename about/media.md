@@ -14,7 +14,7 @@ title:      "Media"
 
 -[*Financial Times - Alphaville*](http://ftalphaville.ft.com/2015/03/20/2122415/blockchains-as-a-public-and-private-resource/?Authorised=false5hrwiey), 20/03/15
 
->  “Eris’ model might actually **change the existing financial industry** more so than the solely Bitcoin-based businesses have done to date.”
+>  “Eris’ model might actually **change the existing financial industry more** so than the solely Bitcoin-based businesses have done to date.”
 
 -[*American Banker*](http://www.americanbanker.com/news/bank-technology/practical-ways-to-use-blockchain-technology-could-win-over-banks-1074001-1.html), 27/04/15
 
