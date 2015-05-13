@@ -34,7 +34,7 @@ title:      "Media"
 
 > "For our clients, if they're going to be investing in this stuff, it's not going to be on a whim... so in the short-term, we're going to do this because it saves money on clearing and settlement. But in the long run, we're going to do it because it's going to restructure the way that parts of an industry are going to work... 
 
-> that's what kind of caught my eye when I first read (Eris') stuff: that **this is realistic.**"
+> ...that's what kind of caught my eye when I first read (Eris') stuff: that **this is realistic.**"
 
 -Dave Birch, [*Tomorrow's Transactions*](http://www.chyp.com/podcasts/preston-byrne-eris-industries-27032015/), 27/03/15
 
