@@ -38,7 +38,7 @@ title:      "Media"
 
 -Dave Birch, [*Tomorrow's Transactions*](http://www.chyp.com/podcasts/preston-byrne-eris-industries-27032015/), 27/03/15
 
->  "...they have managed to **beat to market other proposed systems** and it uses agnostic tech (not necessarily Bitcoin 'rails'), to settle/move contracts on a blockchain."
+>  "(Eris Industries has) managed to **beat to market other proposed systems** and it uses agnostic tech (not necessarily Bitcoin 'rails'), to settle/move contracts on a blockchain."
 
 -Tim Swanson, "[*Eris launches an actual smart contract decentralized application platform*](http://www.ofnumbers.com/2014/12/17/eris-launches-an-actual-smart-contract-decentralized-application-platform/)," 17/12/14
 
