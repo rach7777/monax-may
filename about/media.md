@@ -26,7 +26,7 @@ title:      "Media"
 
 -[*Bitcoin Magazine*](https://bitcoinmagazine.com/20313/microwork-io-uses-smart-contracts-coordinate-small-tasks-worldwide/), 07/05/15
 
-### **Industry experts and reports:**
+### **Subject matter and experts:**
 
 >  "(Application) stacks such as... **Eris can be distinguished based on their focus.** They are the result of the continuous search for ‘non-currency’ applications of blockchain technologies."
 
