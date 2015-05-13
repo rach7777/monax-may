@@ -18,7 +18,9 @@ title:      "Media"
 
 -[*Financial Times - Alphaville*](http://ftalphaville.ft.com/2015/03/20/2122415/blockchains-as-a-public-and-private-resource/?Authorised=false5hrwiey), 20/03/15
 
->  “What’s key (with Eris' technology) is the idea of “smart contracts,” which function as a set of automated instructions for a computer to perform if a set of conditions is in place. Blockchain-adjudicated smart contracts can **make organizational processes more efficient and integrated.** A proprietary blockchain solution could... allow a multinational to fluidly integrate communications between the otherwise independently formed databases and software systems of different subsidiaries in different countries.”
+>  “What’s key (with Eris' technology) is the idea of “smart contracts,” which function as a set of automated instructions for a computer to perform if a set of conditions is in place. Blockchain-adjudicated smart contracts can **make organizational processes more efficient and integrated.** 
+
+> A proprietary blockchain solution could... allow a multinational to **fluidly integrate communications** between the otherwise independently formed databases and software systems of different subsidiaries in different countries.”
 
 -[*The Wall Street Journal*](http://blogs.wsj.com/moneybeat/2015/04/14/bitbeat-blockchains-without-coins-stir-tensions-in-bitcoin-community/), 14/4/15
 
