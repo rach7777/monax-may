@@ -22,7 +22,7 @@ title:      "Media"
 
 -[*The Wall Street Journal*](http://blogs.wsj.com/moneybeat/2015/04/14/bitbeat-blockchains-without-coins-stir-tensions-in-bitcoin-community/), 14/4/15
 
->  "A customized ([ErisDB](https://erisdb.erisindustries.com)) blockchain is used for Microwork.io’s reputation system. (ErisDB) is a blockchain platform built by Eris Industries... The **high level of customization** offered by (ErisDB) made it the right choice for Microwork.io during the development process.”
+>  "A customized ([ErisDB](https://erisdb.erisindustries.com)) blockchain is used for Microwork.io’s reputation system. (ErisDB) is a blockchain platform built by Eris Industries... The **high level of customization** offered by (ErisDB) made it the right choice for Microwork.io during the **development process**.”
 
 -[*Bitcoin Magazine*](https://bitcoinmagazine.com/20313/microwork-io-uses-smart-contracts-coordinate-small-tasks-worldwide/), 07/05/15
 
