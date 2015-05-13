@@ -28,7 +28,7 @@ title:      "Media"
 
 ### **Subject-matter experts:**
 
->  "(Blockchain stacks like) **Eris can be distinguished based on their focus.** They are the result of the continuous search for ‘non-currency’ applications of blockchain technologies."
+>  "...**Eris can be distinguished based on their focus.** They are the result of the continuous search for ‘non-currency’ applications of blockchain technologies."
 
 -[EBA](https://www.abe-eba.eu/about-eba/eba-at-a-glance/) Working Group on Electronic and Alternative Payments, "[*Cryptotechnologies: a major IT innovation and catalyst for change*](https://www.abe-eba.eu/downloads/knowledge-and-research/EBA_20150511_EBA_Cryptotechnologies_a_major_IT_innovation_v1.0.pdf)," 11/04/15
 
