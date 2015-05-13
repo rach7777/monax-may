@@ -1,7 +1,7 @@
 ---
 
 layout:     wide
-title:      "Use Cases: Banks"
+title:      "Use Cases | Banks"
 
 ---
 
