@@ -11,6 +11,6 @@ If you feel you have an ability to perform any job title posted below and the wi
 
 Feel free to email these requirements to [jobs@erisindustries.com](mailto:jobs@erisindustries.com); or, **preferably**, encrypt the files fulfilling the requirements with [this key](https://keybase.io/eris_jobs) and ping us with an out of band communication containing an [ipfs](http://ipfs.io) hash(es) from which we can retrieve the encrypted files.
 
-# Currently Accepting Applications For The Follow Positions
+# Currently Accepting Applications For The Following Positions
 
 n/a
