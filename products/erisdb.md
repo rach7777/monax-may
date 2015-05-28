@@ -20,9 +20,9 @@ eris:db was designed for deployment in a variety of contexts, from locked-down i
 
 A single eris:db client is all that is required in order to participate in all of these blockchains.
 
-For more on [what a blockchain is](https://docs.erisindustries.com/explainers/blockchains/) please see [our explainer](https://docs.erisindustries.com/explainers/blockchains/).
+For more on [what a blockchain is]({{ site.data.sites["docs"].url }}/explainers/blockchains/) please see [our explainer]({{ site.data.sites["docs"].url }}/explainers/blockchains/).
 
-For more on [what a smart contract is](https://docs.erisindustries.com/explainers/smart_contracts/) please see [our explainer](https://docs.erisindustries.com/explainers/smart_contracts/).
+For more on [what a smart contract is]({{ site.data.sites["docs"].url }}/explainers/smart_contracts/) please see [our explainer]({{ site.data.sites["docs"].url }}/explainers/smart_contracts/).
 
 ## Securing Traditional Blockchains
 
@@ -106,3 +106,5 @@ eris:db runs on junk. Junk is a token which may or may not have value within the
 eris:db is ready for business. We have designed it so that commercial entities who have hesitated to embrace participatory architecture and blockchain technology can feel comfortable in their ability to control the blockchain while still allowing for the other benefits which come with participatory architecture design.
 
 With one eris:db client, commercial entities will be able to control an innumerable amount of blockchains, each purpose built to solve a particular enterprise challenge.
+
+<a class="action-big" href="{{ site.data.sites["docs"].url }}">Get Started Using eris:db</a>

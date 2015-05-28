@@ -10,7 +10,7 @@ excerpt:    "The Distributed Application Server and Events Manager"
 
 The eris:server helps developers build applications which leverage opt-in data ownership and significantly increased data utility for both customers and businesses -- a software design paradigm we call **Participatory Architecture**. Using peer-to-peer and distributed systems, the eris:server allows the creation of web style, data-driven, interactive distributed applications that can be safely, securely, and reliably deployed and managed. The eris:server significantly lowers the barrier to entry for the production, distribution and maintenance of distributed applications. All while allowing users to participate in the scaling and data security of the application.
 
-More specifically, the eris:server is a distributed application server harmonizes actions across various modules which act as distributed file stores, distributed data stores, or other utility modules. The eris:server integrates distributed data stores (blockchains), a distributed filesystem, a scripting layer, and a legal integrator to incorporate [Eris' Flavor of Legal Markdown]({{ site.url }}/products/erislegal/)-based contracts into the smart contract stack -- effectively putting the "contract" into "smart contracts."
+More specifically, the eris:server is a distributed application server harmonizes actions across various modules which act as distributed file stores, distributed data stores, or other utility modules. The eris:server integrates distributed data stores (blockchains), a distributed filesystem, a scripting layer, and a legal integrator to incorporate [Eris' Flavor of Legal Markdown]({{ site.data.sites["main"].url }}/products/erislegal/)-based contracts into the smart contract stack -- effectively putting the "contract" into "smart contracts."
 
 Applications built for the eris:server are based on web design modalities. In other words, the user interfaces for these applications are written in languages which almost any developer, and even some [heads of state](http://techcrunch.com/2014/12/08/barack-obama-becomes-the-first-president-to-write-code/), can write. Applications for the eris:server use HTML, CSS, and Javascript to provide their user interface.
 
@@ -76,7 +76,7 @@ Developers wishing to build distributed applications on the eris:server are able
 
 as well as the following distributed data stores:
 
-* [eris:db]({{ site.url }}/products/erisdb/)
+* [eris:db]({{ site.data.sites["main"].url }}/products/erisdb/)
 * [tendermint](http://tendermint.com)
 * [BTC](https://bitcoin.org)
 * [ETH](https://ethereum.org)
@@ -108,3 +108,5 @@ Being able to perform authenticated actions across distributed modules has been 
 However, let us say that a single action which a user was to take required querying some information on one blockchain (or distributed data store), sending a transaction to another blockchain and perhaps reading or writing a file to a distributed file store. In the past there was no way in which such an action could be assuredly provided by distributed application developers.
 
 Now, the eris:server makes this possible. Because the eris:server ensures that the model files which are loaded into the Atë layer are exactly what they purport to be using cryptographic finger printing paradigm called checksums, and because users have an ability to review these files and their operations **prior** to the eris:server running the files, the users of a DApp running on the eris:server can have assurance that the actions the DApp will take between the various distributed modules which it has access to will be the same action, all the time.
+
+<a class="action-big" href="{{ site.data.sites["docs"].url }}">Get Started Using eris:server</a>
