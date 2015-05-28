@@ -30,7 +30,6 @@ desc "Merge the Assets Folder with This Folder"
 task :prepare do
   my_dir = File.dirname(__FILE__)
   src_dir = File.join(File.dirname(__FILE__), '..', 'eris-assets')
-  FileUtils.mv('./circle.yml', './circle_here.yml')
 
   Dir.chdir(my_dir)
 
@@ -76,7 +75,7 @@ task :clean do
   end
 
   # Reset the circle.yml file
-  FileUtils.mv('./circle_here.yml', './circle.yml')
+  system "git checkout -- ./circle.yml"
 end
 
 desc "CircleCI Deploy only this site"
