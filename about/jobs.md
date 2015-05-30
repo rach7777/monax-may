@@ -21,7 +21,7 @@ Engaging with distributed application, blockchain, and other developers in your 
 
 We will compensate you for your time in building the community. CMs sought for the following cities/regions:
 
-* New York City (our new [home base](https://blog.erisindustries.com/2015/05/29/ei-comms-data-bill/)
+* New York City (our new [base of marmot operations](https://blog.erisindustries.com/2015/05/29/ei-comms-data-bill/))
 * Tokyo
 * Buenos Aires
 * Moscow
