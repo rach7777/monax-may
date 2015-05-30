@@ -28,5 +28,5 @@ We will compensate you for your time in building the community. CMs sought for t
 * Bangalore/Mumbai
 * Nairobi/Dar es Salaam
 
-Other regions will be considered (Amsterdam, Paris, Berlin, Zurich). As we know a lot of the chaps in those cities already they are welcome to pop us a line if they'd like to get more involved with the company's work.
+Other regions will be considered (Amsterdam, Paris, Berlin, Zurich). As we know a lot of the chaps in those cities already they are welcome to drop us a line if they'd like to get more involved with the company's work.
 
