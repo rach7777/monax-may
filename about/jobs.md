@@ -23,6 +23,7 @@ We will compensate you for your time in building the community. CMs sought for t
 
 * New York City
 * Tokyo
+* Dublin
 * Buenos Aires
 * Moscow
 * Australia
