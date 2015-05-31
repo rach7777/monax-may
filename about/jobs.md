@@ -13,7 +13,13 @@ Feel free to email these requirements to [jobs@erisindustries.com](mailto:jobs@e
 
 # Currently Accepting Applications For The Following Positions
 
-1. **Golang Engineer** (Full-time only) (Location independent). Job description:
+### Golang Engineer
+
+**Commitment Level**: Full-time only
+
+**Location**: anywhere
+
+**Job description**:
 
 Assist in numerous areas of development for the Eris platform. Have demonstrable skills in some of the following areas:
 
@@ -21,13 +27,21 @@ Assist in numerous areas of development for the Eris platform. Have demonstrable
 * Container automation || management
 * Prototyping APIs in golang
 
-2. **Developer Evangelist** (Part-time or full-time). Job description: to be written by applicant.
+### Developer Evangelist
 
-3. **Community Manager** (Part-time). Job description:
+**Commitment Level**: Part-time or full-time
 
-Engaging with distributed application, blockchain, and other developers in your city, hosting meetups, and generally having a good time while messing around with smart contracts to solve commercial, social, or governance problems is the name of the game here! You will have a great deal of autonomy, a working knowledge of the Eris Stack, be outgoing, and know a thing or two about [marmots](https://marmots.org). You'll be a part of the Eris Industries team, invited into our slackroom and get some of our time if you're looking to build projects of your own.
+**Location**: anywhere
 
-We will compensate you for your time in building the community. CMs sought for the following cities/regions:
+**Job description**:
+
+To be written by applicant.
+
+### Community Manager
+
+**Commitment Level**: Part-time only
+
+**Location**: for the following cities/regions:
 
 * New York City
 * Tokyo
@@ -39,4 +53,10 @@ We will compensate you for your time in building the community. CMs sought for t
 * Nairobi/Dar es Salaam
 
 Other regions will be considered (Amsterdam, Paris, Berlin, Zurich). As we know a lot of the chaps in those cities already they are welcome to drop us a line if they'd like to get more involved with the company's work.
+
+**Job description**:
+
+Engaging with distributed application, blockchain, and other developers in your city, hosting meetups, and generally having a good time while messing around with smart contracts to solve commercial, social, or governance problems is the name of the game here! You will have a great deal of autonomy, a working knowledge of the Eris Stack, be outgoing, and know a thing or two about [marmots](https://marmots.org). You'll be a part of the Eris Industries team, invited into our slackroom and get some of our time if you're looking to build projects of your own.
+
+We will compensate you for your time in building the community.
 
