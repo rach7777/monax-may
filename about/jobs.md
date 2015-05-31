@@ -13,6 +13,8 @@ Feel free to email these requirements to [jobs@erisindustries.com](mailto:jobs@e
 
 # Currently Accepting Applications For The Following Positions
 
+<hr />
+
 ### Golang Engineer
 
 **Commitment Level**: Full-time only
@@ -27,6 +29,8 @@ Assist in numerous areas of development for the Eris platform. Have demonstrable
 * Container automation || management
 * Prototyping APIs in golang
 
+<hr />
+
 ### Developer Evangelist
 
 **Commitment Level**: Part-time or full-time
@@ -36,6 +40,8 @@ Assist in numerous areas of development for the Eris platform. Have demonstrable
 **Job description**:
 
 To be written by applicant.
+
+<hr />
 
 ### Community Manager
 
