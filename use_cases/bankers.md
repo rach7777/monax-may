@@ -5,7 +5,9 @@ title:      "Use Cases | Banks"
 
 ---
 
-Just about anything that involves managing data. Some of the things we've tinkered with: 
+Just about anything that involves managing data without scaling up your physical and human infrastructure to do it. 
+
+Some of the things we've tinkered with: 
 
 * [A bank](https://eng.erisindustries.com/tutorials/2015/03/11/solidity-1/).
 * [Back-office process automation](https://github.com/eris-ltd/eris-std-lib/blob/master/examples/payroll.sol).
@@ -14,4 +16,5 @@ Just about anything that involves managing data. Some of the things we've tinker
 * Asset creation and tracking and event control, as implemented by our friends over at [Everledger.io](http://www.everledger.io/smart_contracts).
 * [Corporate decisionmaking](https://github.com/project-douglas/eris) and coordination such as bondholder or shareholder resolutions.
 * Task management and reputation management, as implemented by [Microwork](https://bitcoinmagazine.com/20313/microwork-io-uses-smart-contracts-coordinate-small-tasks-worldwide/).
-* A whole bunch of things we're working on behind the scenes which we can't talk about yet... but will in due course!
+
+Of course, there are a whole bunch of things we're working on behind the scenes for our clients which we can't talk about. But this should give you a good idea of the wide range of things smart contracts can do!
