@@ -17,6 +17,6 @@ Just about anything that involves managing data without scaling up your physical
 * Task management and reputation management, as implemented by [Microwork](https://bitcoinmagazine.com/20313/microwork-io-uses-smart-contracts-coordinate-small-tasks-worldwide/).
 * Digital identity. We're currently in discussions on how Eris can be used for this purpose with our friends at [Identifi.org](http://identifi.org) ([repo](https://github.com/identifi/identifi)).
 * [Corporate decisionmaking](https://github.com/project-douglas/eris) and coordination such as bondholder or shareholder resolutions.
-* Or just making a really [killer interactive web application](http://blog.confluent.io/2015/05/27/using-logs-to-build-a-solid-data-infrastructure-or-why-dual-writes-are-a-bad-idea/). We made a distributed streaming video app we call [2Gather](https://eng.erisindustries.com/tutorials/2015/04/07/2gather/) ([repo here](https://github.com/eris-ltd/2gather)).
+* Or just making a really [killer interactive web application](http://blog.confluent.io/2015/05/27/using-logs-to-build-a-solid-data-infrastructure-or-why-dual-writes-are-a-bad-idea/) like [2Gather](https://eng.erisindustries.com/tutorials/2015/04/07/2gather/) ([repo here](https://github.com/eris-ltd/2gather)).
 
 Of course, there are a whole bunch of things we're working on behind the scenes for our clients which we can't talk about. But this should give you a good idea of the wide range of things smart contracts can do!
