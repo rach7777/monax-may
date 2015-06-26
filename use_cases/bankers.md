@@ -7,7 +7,8 @@ title:      "Use Cases | Banks"
 
 Just about anything that involves managing data without scaling up your physical and human infrastructure to do it. Some of the things we've tinkered with: 
 
-* [A bank](https://eng.erisindustries.com/tutorials/2015/03/11/solidity-1/). ...[Really](https://eng.erisindustries.com/tutorials/2015/03/12/solidity-2/).
+* [An entire bank](https://eng.erisindustries.com/tutorials/2015/03/11/solidity-1/).
+* [Really](https://eng.erisindustries.com/tutorials/2015/03/12/solidity-2/).
 * [Back-office business process automation](https://github.com/eris-ltd/eris-std-lib/blob/master/examples/payroll.sol).
 * [Real-time gross settlement systems](https://bankers.eris.industries/#/26). Clearing and settlement is easy with an ErisDB! Post-trade processing should be possible too. Just write your application, roll your chain [in one command](https://eng.erisindustries.com/tutorials/2015/04/25/make-thelonious-chain/) and you're off to the races. Bye-bye, buildings, servers, and employees.
 * Re clearing this includes FX, securities, whatever else - all doable. If you can write it, an Eris blockchain will run it.
