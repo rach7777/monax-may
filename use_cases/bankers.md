@@ -5,4 +5,10 @@ title:      "Use Cases | Banks"
 
 ---
 
-Coming Soon!
+Just about anything that involves managing data. Some of the things we've tinkered with: 
+
+* [Back-office process automation](https://github.com/eris-ltd/eris-std-lib/blob/master/examples/payroll.sol).
+* [Real-time gross settlement systems](https://bankers.eris.industries/#/26). Clearing and settlement is a pretty straightforward application in our view.
+* [Securitisation and risk transfer](https://db.erisindustries.com/distributed%20business/2015/04/28/smart-securitisation/).
+* Asset creation and tracking and event control, as implemented by our friends over at [Everledger.io](http://www.everledger.io/smart_contracts).
+* A whole bunch of things we're working on behind the scenes which we can't talk about yet... but will in due course!
