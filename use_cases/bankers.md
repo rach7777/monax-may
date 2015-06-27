@@ -17,11 +17,11 @@ Well, you can do just about anything that involves managing data without investi
 
 * For their part, challengers can leverage this technology too as cheapo infrastructure to scale inexpensively. 
 
-* [Back-office business process automation](https://github.com/eris-ltd/eris-std-lib/blob/master/examples/payroll.sol) is something we do at EI.
+* [Back-office business process automation](https://github.com/eris-ltd/eris-std-lib/blob/master/examples/payroll.sol) with smart contracts is therefore one of the things we do at EI.
 
-* [Real-time gross settlement systems](https://bankers.eris.industries/#/26). Clearing and settlement is easy with an ErisDB! Post-trade processing should be possible too. Just write your application, roll your chain [in one command](https://eng.erisindustries.com/tutorials/2015/04/25/make-thelonious-chain/) and you're off to the races. Bye-bye, buildings, servers, and employees.
+* [Real-time gross settlement systems](https://bankers.eris.industries/#/26). Clearing and settlement systems are dead easy to deploy with an ErisDB. Just write your application, roll your chain [in one command](https://eng.erisindustries.com/tutorials/2015/04/25/make-thelonious-chain/) and you're off to the races. Bye-bye, buildings, servers, and employees. 
 
-* Re: clearing, this includes FX, securities, whatever else - all doable. If you can write it, an Eris blockchain will run it.
+* Re: clearing, this includes FX, securities, whatever else - all doable. If you can write it, an Eris blockchain will run it. Post-trade processing should be possible too.
 
 * [Securitisation and risk transfer](https://db.erisindustries.com/distributed%20business/2015/04/28/smart-securitisation/).
 
