@@ -7,7 +7,7 @@ title:      "Use Cases | Banks"
 
 "I'm a bank. What can I do with Eris Industries' free software?"
 
-Well, you can do just about anything that involves managing data without investing heavily in physical and human infrastructure. Some of the things we've tinkered with include: 
+Hello there, bank. Well, you can do just about anything that involves managing data without investing heavily in physical and human infrastructure. Some of the things we've tinkered with include: 
 
 * [Automating a bank](https://eng.erisindustries.com/tutorials/2015/03/11/solidity-1/).
 
