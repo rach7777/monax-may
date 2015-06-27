@@ -11,11 +11,7 @@ Hello there, bank. Well, you can do just about anything that involves managing d
 
 * [Automating a bank](https://eng.erisindustries.com/tutorials/2015/03/11/solidity-1/).
 
-* Really. [We're not kidding](https://eng.erisindustries.com/tutorials/2015/03/12/solidity-2/). Do it. The only way the institutional giants will trim down (which they all want to) is by aggressively tearing down legacy infrastructure - human and machine - and replacing it with fully automatic, low-cost, self-managing databases.
-
-* Smart contract blockchain cryptography [increases the verifiability and certainty of business process](https://db.erisindustries.com/business%20in%20emerging%20markets/2015/01/08/on-increasing-verifiability/) in a way that makes it the obvious choice to accomplish that objective in the medium-term.
-
-* For their part, challengers can leverage this technology too as cheapo infrastructure to scale inexpensively. 
+* Really. [We're not kidding](https://eng.erisindustries.com/tutorials/2015/03/12/solidity-2/). Do it. 
 
 * [Back-office business process automation](https://github.com/eris-ltd/eris-std-lib/blob/master/examples/payroll.sol) with smart contracts is therefore one of the things we do at EI.
 
@@ -34,5 +30,11 @@ Hello there, bank. Well, you can do just about anything that involves managing d
 * [Corporate decisionmaking](https://github.com/project-douglas/eris) and coordination such as bondholder or shareholder resolutions.
 
 * Or just making a really [killer interactive web application](http://blog.confluent.io/2015/05/27/using-logs-to-build-a-solid-data-infrastructure-or-why-dual-writes-are-a-bad-idea/) like [2Gather](https://eng.erisindustries.com/tutorials/2015/04/07/2gather/) ([repo here](https://github.com/eris-ltd/2gather)).
+
+The only way the institutional giants will trim down (which they all want to) is by aggressively tearing down legacy infrastructure - human and machine - and replacing it with fully automatic, low-cost, self-managing databases.
+
+Smart contract blockchain cryptography [increases the verifiability and certainty of business process](https://db.erisindustries.com/business%20in%20emerging%20markets/2015/01/08/on-increasing-verifiability/) in a way that makes it the obvious choice to accomplish that objective in the medium-term. And for their part, challengers - such as the three startups we mentioned above - can leverage this technology too as cheapo infrastructure to scale inexpensively.
+
+"[Disruption](http://www.econlib.org/library/Enc/CreativeDestruction.html)" ahoy.
 
 Of course, there are a whole bunch of things we're working on behind the scenes for our clients which we can't talk about. But this should give you a good idea of the wide range of things smart contracts can do!
