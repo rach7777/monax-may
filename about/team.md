@@ -13,6 +13,7 @@ javascript: team
   <div class="row">
     {% for member in site.data.team %}
       {% assign human = member[1] %}
+      {% if human.display %}
         <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2">
           <div class="team-member">
             <img src="{{ human.gravatar | asset_path }}" alt="{{ human.name }}" class="team-headshot" />
@@ -63,6 +64,7 @@ javascript: team
             </div><!-- .team-details -->
           </div><!-- .team-member -->
         </div><!-- .cols -->
+      {% endif %}
     {% endfor %}
   </div><!-- .row -->
 </div>
