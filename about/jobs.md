@@ -15,22 +15,6 @@ Feel free to email these requirements to [jobs@erisindustries.com](mailto:jobs@e
 
 <hr />
 
-### Golang Engineer
-
-**Commitment Level**: Full-time only
-
-**Location**: anywhere
-
-**Job description**:
-
-Assist in numerous areas of development for the Eris platform. Have demonstrable skills in some of the following areas:
-
-* Golang CLI Applications
-* Container automation || management
-* Prototyping APIs in golang
-
-<hr />
-
 ### Developer Evangelist
 
 **Commitment Level**: Part-time or full-time
