@@ -6,7 +6,7 @@ excerpt:    "The Distributed Application Platform"
 
 ---
 
-# The Distributed Application Server and Events Manager
+# The Distributed Application Platform
 
 The eris:server helps developers build applications which leverage opt-in data ownership and significantly increased data utility for both customers and businesses -- a software design paradigm we call **Participatory Architecture**. Using peer-to-peer and distributed systems, the eris:server allows the creation of web style, data-driven, interactive distributed applications that can be safely, securely, and reliably deployed and managed. The eris:server significantly lowers the barrier to entry for the production, distribution and maintenance of distributed applications. All while allowing users to participate in the scaling and data security of the application.
 
