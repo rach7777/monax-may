@@ -1,8 +1,8 @@
 ---
 
 layout:     content
-title:      "eris:server"
-excerpt:    "The Distributed Application Server and Events Manager"
+title:      "eris:cli"
+excerpt:    "The Distributed Application Platform"
 
 ---
 

@@ -1,4 +1,4 @@
 ```irc
-$ docker pull eris/erisdb
-$ docker pull eris/decerver
+$ go get github.com/eris-ltd/eris-cli/cmd/eris
+$ eris init
 ```
