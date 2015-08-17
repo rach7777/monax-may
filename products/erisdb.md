@@ -67,11 +67,11 @@ While trustlessness is a tricky subject commercially for all the reasons discuss
 
 When it comes to increasing verifiability for all parties to a given data-driven interaction, there are few technologies currently invented which match blockchains.
 
-# eris:db' Design Philosophy
+# eris:db's Design Philosophy
 
 eris:db is the blockchain client purpose built to manage a multitude of chains, each with their own consensus and security mechanisms. eris:db blockchains are also purpose built to be flexibly deployed in more limited context than is currently possible with most blockchain designs which rely on pure proof of work that can be attacked with sufficient processing power.
 
-# Designed with Enterprise in Mind
+# Designed with (Information Age) Enterprise in Mind
 
 eris:db is ready for business. We have designed it so that commercial entities who have hesitated to embrace participatory architecture and blockchain technology can feel comfortable in their ability to control the blockchain while still allowing for the other benefits which come with participatory architecture design.
 
