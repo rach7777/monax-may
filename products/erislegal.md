@@ -1,14 +1,14 @@
 ---
 
 layout:     content
-title:      "eris:legal_markdown"
+title:      "eris:legal"
 excerpt:    "Putting the Contracts in Smart Contracts"
 
 ---
 
 # Putting The Contracts in Smart Contracts
 
-The eris:legal_markdown system is the backbone of the Distributed Application Software Stack’s legal compliance strategy. When combined with [the other elements of the eris platform, ELM provides an ability to link legal contractual agreements to smart contract architecture so that the legal contract’s provisions can be incorporated into the smart contract mechanics.
+The eris:legal_markdown system is the backbone of the Distributed Application Software Stack’s legal compliance strategy. When combined with the other elements of the eris platform, ELM provides an ability to link legal contractual agreements to smart contract architecture so that the legal contract’s provisions can be incorporated into the smart contract mechanics.
 
 To bridge the gap between the legal niceties required in order to enforce an actual contract in an actual court with the automation assistance which comes when using smart contracts to administer an agreement we have built a Go port of Legal Markdown and integrated it into the eris platform.
 
@@ -51,4 +51,4 @@ Text editors, on the other hand, are more simple and purposefully built to be ex
 
 ELM, Eris Industries' implementation of Legal Markdown, not only assists with dual integration of smart contracts and real world contracts, but at its core it was built to simplify the workflow for any transactional documents. It has a range of features which are not only simple to use from a text editor but also will make transactional document creation and maintenance simple and fun.
 
-<a class="action-big" href="{{ site.data.sites["docs"].url }}/tutorials/erislegal/">Get Started Using eris:legal_markdown</a>
+<a class="action-big" href="{{ site.data.sites["docs"].url }}/tutorials/erislegal/">Get Started Using eris:legal</a>
