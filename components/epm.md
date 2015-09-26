@@ -36,4 +36,4 @@ For these reasons, at Eris we feel that smart contracts represent a massive leap
 
 Eris package manager is built to manage, deploy, and test systems of smart contracts. Given the current limitations of how smart contract systems work, tooling which simplifies these interactions is necessary.
 
-<a class="action-big" href="{{ site.data.sites["docs"].url }}">Get Started Using eris:pm</a>
+<a class="action-big" href="{{ site.data.sites["docs"].url }}/tutorials/getting-started/">Get Started Using eris:pm</a>
