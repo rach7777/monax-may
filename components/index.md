@@ -1,6 +1,6 @@
 ---
 
-layout:     content
+layout:     wide
 title:      "eris:platform"
 excerpt:    "Components of the Eris Platform"
 
