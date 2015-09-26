@@ -81,4 +81,4 @@ eris:db is ready for business. We have designed it so that commercial entities w
 
 With one eris:db client, commercial entities will be able to control an innumerable amount of blockchains, each purpose built to solve a particular enterprise challenge.
 
-<a class="action-big" href="{{ site.data.sites["docs"].url }}">Get Started Using eris:db</a>
+<a class="action-big" href="{{ site.data.sites["docs"].url }}/tutorials/getting-started/">Get Started Using eris:db</a>

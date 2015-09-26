@@ -66,4 +66,4 @@ Distributed Application development currently faces a fundamental challenge. It 
 
 There is no reason why it should be so difficult for distributed application developers to move from ideation to implementation. eris was built using very simple design paramaters to purposefully be able to capitalize on existing knowledge and conventions in integrated application development.
 
-<a class="action-big" href="{{ site.data.sites["docs"].url }}">Get Started Using eris</a>
+<a class="action-big" href="{{ site.data.sites["docs"].url }}/tutorials/getting-started/">Get Started Using eris</a>
