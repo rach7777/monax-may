@@ -36,6 +36,14 @@ javascript: team
                 <div class="team-bio">{{ human.bio }}</div>
               {% endif %}
               <div class="team-links">
+                {% if human.keybase %}
+                  <a href="{{ https://twitter.com/human.keybase }}" target="_blank">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-square fa-stack-2x"></i>
+                      <i class="fa fa-key fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                {% endif %}
                 {% if human.site %}
                   <a href="{{ human.site }}" target="_blank">
                     <span class="fa-stack fa-lg">
