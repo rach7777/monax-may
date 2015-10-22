@@ -37,7 +37,7 @@ javascript: team
               {% endif %}
               <div class="team-links">
                 {% if human.keybase %}
-                  <a href="{{ https://twitter.com/human.keybase }}" target="_blank">
+                  <a href="https://twitter.com/{{ human.keybase }}" target="_blank">
                     <span class="fa-stack fa-lg">
                       <i class="fa fa-square fa-stack-2x"></i>
                       <i class="fa fa-key fa-stack-1x fa-inverse"></i>
