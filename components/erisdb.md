@@ -50,7 +50,7 @@ eris:db comes with a sophisticated capabilities based, evolveable permissioning 
 
 <div>
   <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
+  <ul class="nav nav-tabs" role="tablist" id="competitionTabs">
     <li role="presentation" class="active"><a href="#geth" aria-controls="geth" role="tab" data-toggle="tab">eris:db v. geth</a></li>
     <li role="presentation"><a href="#strato" aria-controls="strato" role="tab" data-toggle="tab">eris:db v. strato</a></li>
     <li role="presentation"><a href="#btcd" aria-controls="btcd" role="tab" data-toggle="tab">eris:db v. btcd</a></li>
@@ -108,7 +108,7 @@ eris:db comes with a sophisticated capabilities based, evolveable permissioning 
       </div>
     </div>
 
-    <div role="tabpanel" class="tab-pane fade in active" id="strato">
+    <div role="tabpanel" class="tab-pane fade" id="strato">
       <div class="table-responsive">
         <table class="table table-hover">
           <tr>
@@ -155,7 +155,7 @@ eris:db comes with a sophisticated capabilities based, evolveable permissioning 
       </div>
     </div>
 
-    <div role="tabpanel" class="tab-pane fade in active" id="btcd">
+    <div role="tabpanel" class="tab-pane fade" id="btcd">
       <div class="table-responsive">
         <table class="table table-hover">
           <tr>
@@ -202,7 +202,7 @@ eris:db comes with a sophisticated capabilities based, evolveable permissioning 
       </div>
     </div>
 
-    <div role="tabpanel" class="tab-pane fade in active" id="ripple">
+    <div role="tabpanel" class="tab-pane fade" id="ripple">
       <div class="table-responsive">
         <table class="table table-hover">
           <tr>
@@ -249,7 +249,7 @@ eris:db comes with a sophisticated capabilities based, evolveable permissioning 
       </div>
     </div>
 
-    <div role="tabpanel" class="tab-pane fade in active" id="dah">
+    <div role="tabpanel" class="tab-pane fade" id="dah">
       <div class="table-responsive">
         <table class="table table-hover">
           <tr>
@@ -296,7 +296,7 @@ eris:db comes with a sophisticated capabilities based, evolveable permissioning 
       </div>
     </div>
 
-    <div role="tabpanel" class="tab-pane fade in active" id="chain">
+    <div role="tabpanel" class="tab-pane fade" id="chain">
       <div class="table-responsive">
         <table class="table table-hover">
           <tr>
