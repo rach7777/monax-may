@@ -15,38 +15,4 @@ Feel free to email these requirements to [jobs@erisindustries.com](mailto:jobs@e
 
 <hr />
 
-### Developer Evangelist
-
-**Commitment Level**: Part-time or full-time
-
-**Location**: anywhere
-
-**Job description**:
-
-To be written by applicant.
-
-<hr />
-
-### Community Manager
-
-**Commitment Level**: Part-time only
-
-**Location**: for the following cities/regions:
-
-* New York City
-* Tokyo
-* Dublin
-* Buenos Aires
-* Moscow
-* Australia
-* Bangalore/Mumbai
-* Nairobi/Dar es Salaam
-
-Other regions will be considered (Amsterdam, Paris, Berlin, Zurich). As we know a lot of the chaps in those cities already they are welcome to drop us a line if they'd like to get more involved with the company's work.
-
-**Job description**:
-
-Engaging with distributed application, blockchain, and other developers in your city, hosting meetups, and generally having a good time while messing around with smart contracts to solve commercial, social, or governance problems is the name of the game here! You will have a great deal of autonomy, a working knowledge of the Eris Stack, be outgoing, and know a thing or two about [marmots](https://marmots.org). You'll be a part of the Eris Industries team, invited into our slackroom and get some of our time if you're looking to build projects of your own.
-
-We will compensate you for your time in building the community.
 

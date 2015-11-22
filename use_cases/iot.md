@@ -2,10 +2,11 @@
 
 layout:     wide
 title:      "Use Cases | Internet of Things"
+published: false
 
 ---
 
-Coming soon! 
+Coming soon!
 
 (Although we have already created the DNS of Stuff.)
 
