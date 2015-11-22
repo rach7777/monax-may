@@ -6,7 +6,7 @@ excerpt:    "The Makers' Blockchain Design"
 
 ---
 
-# The Makers' Blockchain Design
+# The Blockchain Client for Information Age Organizations
 
 eris:db is Eris Industries' blockchain client; it is a permission-able, smart contract enabled, proof of stake based blockchain design. eris:db is configurable to work with a wide variety of blockchain networks and as such has remained the first blockchain client designed from the ground up to be a multi-network blockchain client.
 
@@ -14,17 +14,9 @@ Developers who use a eris:db blockchain client along with the eris platform gene
 
 eris:db was designed for deployment in a variety of contexts, from locked-down internal corporate deployments to deployments of a consortium of enterprises to more decentralized and public deployments, or from deployments which require monetized tokenization to those that only require the utility of a blockchain but not monetized tokenization to compensate miners for automated data management services.A single eris:db client is all that is required in order to participate in all of these blockchains.
 
-For more on what a blockchain is please see [our explainer]({{ site.data.sites["docs"].url }}/explainers/blockchains/).
-
-For more on what a smart contract is please see [our explainer]({{ site.data.sites["docs"].url }}/explainers/smart_contracts/).
-
-# Designed with (Information Age) Enterprises in Mind
-
 eris:db is ready for business. We have designed it so that commercial entities who have hesitated to embrace participatory architecture and blockchain technology can feel comfortable in their ability to control the blockchain while still allowing for the other benefits which come with participatory architecture design.
 
 With one eris:db client, commercial entities will be able to control an innumerable amount of blockchains, each purpose built to solve a particular enterprise challenge.
-
-# Features
 
 ## Consensus
 
