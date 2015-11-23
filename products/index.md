@@ -32,7 +32,7 @@ Note: subject to demand, we may start offering public versions of the workshop f
 
 # Eris Build-Outs Program
 
-Eris Industries has already delivered smart contract systems to the world's best companies, ranging from insurance conglomerates to bulge bracket banks. For select clients, we do full application build-outs, either in combination with your existing systems integration partner or one of Eris’ existing partner relationships.
+Eris Industries has already delivered smart contract systems to the world's best companies, ranging from bulge bracket banks to insurance conglomerates. For select clients, we do full application build-outs, either in combination with your existing systems integration partner or one of Eris’ existing partner relationships.
 
 These services can include everything from assessing the use case and the business requirements, to designing the application architecture, to writing smart contract code, to testing and deploying the smart contract applications.
 
