@@ -38,7 +38,7 @@ For select clients, we do full application build-outs, either in combination wit
 
 These services can include everything from assessing the use case and the business requirements, to designing the application architecture, to writing smart contract code, to testing and deploying the smart contract applications.
 
-The projects could range from developing proof-of-concepts to explore how smart contracts could be integrated into the enterprise, to developing pilot or even production-level systems that will handle real-world data.
+The projects could range from developing proofs-of-concept to explore how smart contracts could be integrated into the enterprise, to developing pilot or even production-level systems that will handle real-world data.
 
 Capacity for build-outs is limited and only for pre-selected clients.
 
