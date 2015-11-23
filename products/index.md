@@ -18,7 +18,7 @@ Eris’ Hosted Chains & Premium Support package allows developers to start devel
 
 Eris Industries offers subscription level access to the world’s first smart contract libraries focused on specific industries. By providing high-quality, tested smart contract primitives and templates, this greatly reduces the complexity of creating smart contract applications. For enterprise developers, it will be a matter of simply completing the last-mile configuration for their application.
 
-Our Smart Contract Libraries package will give your organization full access to our smart contract libraries for the purpose of developing proofs-of-concept as well as pilot applications. It will also include all of the services included in the Hosted Chains & Premium Support package together with hosted chains and premium support, meaning your time-to-market with cutting edge smart contract applications will be dramatically reduced.
+Our Smart Contract Libraries package will give your organization full access to our smart contract libraries for the purpose of developing proofs-of-concept as well as pilot applications. It will also include all of the services included in the Hosted Chains & Premium Support package, meaning your time-to-market with cutting edge smart contract applications will be dramatically reduced.
 
 This package is the only choice if your firm is interested in rapidly prototyping smart contract applications. Eris Industries has been a consistent leader in building modular, pluggable, smart contract libraries within the smart contract communities. And this package gives your firm access to much of that work in highly tested, stable, and usable packages.
 
