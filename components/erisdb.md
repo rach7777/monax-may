@@ -2,7 +2,7 @@
 
 layout:     content
 title:      "eris:db"
-excerpt:    "The Makers' Blockchain Design"
+excerpt:    "The Blockchain Client for Information Age Organizations"
 
 ---
 
