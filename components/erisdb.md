@@ -69,9 +69,9 @@ Permissioning your blockchains is more than simply running them behind a gated V
             <td>Ethereum’s Consensus Engine<br />Proof of Work</td>
           </tr>
           <tr>
-            <td>Interface</td>
-            <td>Websockets JSON-RPC<br />HTTPS JSON-RPC<br />Eris Built CLI tooling</td>
-            <td>HTTPS JSON-RPC<br />Js Console<br />Eris Built CLI tooling</td>
+            <td>Interfaces to Client</td>
+            <td>Websockets JSON-RPC<br />HTTPS JSON-RPC<br />Command line tooling</td>
+            <td>HTTPS JSON-RPC<br />Js Console<br />Command line tooling</td>
           </tr>
           <tr>
             <td>Key Types</td>
@@ -116,8 +116,8 @@ Permissioning your blockchains is more than simply running them behind a gated V
             <td>Ethereum’s Consensus Engine<br />Proof of Work</td>
           </tr>
           <tr>
-            <td>Interface</td>
-            <td>Websockets JSON-RPC<br />HTTPS JSON-RPC<br />Eris Built CLI tooling</td>
+            <td>Interfaces to Client</td>
+            <td>Websockets JSON-RPC<br />HTTPS JSON-RPC<br />Command line tooling</td>
             <td>WebApp Interface<br />?</td>
           </tr>
           <tr>
@@ -163,8 +163,8 @@ Permissioning your blockchains is more than simply running them behind a gated V
             <td>Bitcoin's Consensus Engine<br />Proof of Work</td>
           </tr>
           <tr>
-            <td>Interface</td>
-            <td>Websockets JSON-RPC<br />HTTPS JSON-RPC<br />Eris Built CLI tooling</td>
+            <td>Interfaces to Client</td>
+            <td>Websockets JSON-RPC<br />HTTPS JSON-RPC<br />Command line tooling</td>
             <td>HTTPS JSON-RPC</td>
           </tr>
           <tr>
@@ -210,9 +210,9 @@ Permissioning your blockchains is more than simply running them behind a gated V
             <td>Ripple’s Consensus Engine</td>
           </tr>
           <tr>
-            <td>Interface</td>
-            <td>Websockets JSON-RPC<br />HTTPS JSON-RPC<br />Eris Built CLI tooling</td>
-            <td>WebSocket API<br />HTTP/S JSON-RPC<br />Ripple Built CLI tooling</td>
+            <td>Interfaces to Client</td>
+            <td>Websockets JSON-RPC<br />HTTPS JSON-RPC<br />Command line tooling</td>
+            <td>WebSocket API<br />HTTP/S JSON-RPC<br />Command line tooling</td>
           </tr>
           <tr>
             <td>Key Types</td>
@@ -257,8 +257,8 @@ Permissioning your blockchains is more than simply running them behind a gated V
             <td>unclear</td>
           </tr>
           <tr>
-            <td>Interface</td>
-            <td>Websockets JSON-RPC<br />HTTPS JSON-RPC<br />Eris Built CLI tooling</td>
+            <td>Interfaces to Client</td>
+            <td>Websockets JSON-RPC<br />HTTPS JSON-RPC<br />Command line tooling</td>
             <td>unclear</td>
           </tr>
           <tr>
@@ -304,8 +304,8 @@ Permissioning your blockchains is more than simply running them behind a gated V
             <td>unclear</td>
           </tr>
           <tr>
-            <td>Interface</td>
-            <td>Websockets JSON-RPC<br />HTTPS JSON-RPC<br />Eris Built CLI tooling</td>
+            <td>Interfaces to Client</td>
+            <td>Websockets JSON-RPC<br />HTTPS JSON-RPC<br />Command line tooling</td>
             <td>unclear</td>
           </tr>
           <tr>
