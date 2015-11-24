@@ -32,7 +32,9 @@ eris:db comes with a built to specification ethereum virtual machine. It runs an
 
 ## Permission Layer
 
-eris:db comes with a sophisticated capabilities based, evolveable permissioning layer which was the first on the market and by far still the most sophisticated. Permissioning your blockchains is more than simply running them behind a gated VPN; if one is running eris:db.
+eris:db comes with a capabilities-based, evolvable permissioning layer - the first of its kind on the market, and by far, still the most sophisticated. 
+
+Permissioning your blockchains is more than simply running them behind a gated VPN if one is running eris:db.
 
 ## Best of All
 
