@@ -30,13 +30,13 @@ eris:db comes with a range of interfaces from CLI tooling to RPCs. See our [comp
 
 ## Virtual Machine
 
-eris:db comes with a built to specification ethereum virtual machine. It runs any contract which has been compiled with the eris:compilers or any of ethereum's compilers.
+eris:db comes with a built-to-specification Ethereum Virtual Machine. It runs any contract which has been compiled with the eris:compilers or any of Ethereum's compilers.
 
 ## Permission Layer
 
-eris:db comes with a capabilities-based, evolvable permissioning layer - the first of its kind on the market, and by far, still the most sophisticated.
-
 Permissioning your blockchains is more than simply running them behind a gated VPN if one is running eris:db.
+
+eris:db comes with a capabilities-based, evolvable permissioning layer - the first of its kind on the market, and by far, still the most sophisticated.
 
 ## Best of All
 
