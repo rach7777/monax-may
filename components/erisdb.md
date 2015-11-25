@@ -8,7 +8,9 @@ excerpt:    "The Blockchain Client for Information Age Organizations"
 
 # The Blockchain Client for Information Age Organizations
 
-eris:db is Eris Industries' blockchain client. It is a permissionable, smart contract-enabled, proof-of-stake based blockchain design. eris:db can be configured to work with a wide variety of individual blockchain networks. As such, it was, and continues to be, the first blockchain client designed from the ground up to be a multi-network blockchain client.
+eris:db is Eris Industries' blockchain client. 
+
+It is a controllable (permissionable), smart contract-enabled, proof-of-stake based blockchain design. eris:db can be configured to work with a wide variety of individual blockchain networks. As such, it was, and continues to be, the first blockchain client designed from the ground up to be a multi-network blockchain client.
 
 Developers who use a eris:db blockchain client along with the eris platform to manage their blockchains are able to benefit from having an access control layer through the use of smart contracts.
 
