@@ -1,6 +1,6 @@
 ---
 
-layout:     content
+layout:     wide
 title:      "eris:db"
 excerpt:    "The Blockchain Client for Information Age Organizations"
 
@@ -8,7 +8,7 @@ excerpt:    "The Blockchain Client for Information Age Organizations"
 
 # The Blockchain Client for Information Age Organizations
 
-eris:db is Eris Industries' blockchain client. 
+eris:db is Eris Industries' blockchain client.
 
 It is a controllable (permissionable), smart contract-enabled, proof-of-stake based blockchain design. eris:db can be configured to work with a wide variety of individual blockchain networks. As such, it was, and continues to be, the first blockchain client designed from the ground up to be a multi-network blockchain client.
 
@@ -26,7 +26,7 @@ eris:db uses the Tendermint Consensus engine, a deposit based proof of stake pro
 
 ## Interface
 
-eris:db comes with a range of interfaces from CLI tooling to RPCs. See our [comprehensive documentation](https://docs.erisindustries.com) for more.
+eris:db comes with a range of interfaces from CLI tooling to RPCs. See our [comprehensive documentation]({{ sites.data.sites["docs"].url }}/documentation) for more.
 
 ## Virtual Machine
 
@@ -36,7 +36,7 @@ eris:db comes with a built-to-specification Ethereum Virtual Machine. It runs an
 
 Permissioning your blockchains is more than simply running them behind a gated VPN if one is running eris:db.
 
-eris:db comes with a capabilities-based, evolvable permissioning layer - the first of its kind on the market, and by far, still the most sophisticated.
+eris:db comes with a [capabilities-based, evolvable permissioning layer]({{ sites.data.sites["docs"].url }}/documentation/eris-db-permissions/) - the first of its kind on the market, and by far, still the most sophisticated.
 
 ## Best of All
 
@@ -87,7 +87,7 @@ eris:db comes with a capabilities-based, evolvable permissioning layer - the fir
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td>Sophisticated Capabilities Based Permissioning</td>
+            <td><a href="{{sites.data.sites["docs"].url}}/documentation/eris-db-permissions/">Yes</a></td>
             <td>n/a</td>
           </tr>
           <tr>
@@ -134,7 +134,7 @@ eris:db comes with a capabilities-based, evolvable permissioning layer - the fir
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td>Sophisticated Capabilities Based Permissioning</td>
+            <td><a href="{{sites.data.sites["docs"].url}}/documentation/eris-db-permissions/">Yes</a></td>
             <td>unclear</td>
           </tr>
           <tr>
@@ -181,7 +181,7 @@ eris:db comes with a capabilities-based, evolvable permissioning layer - the fir
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td>Sophisticated Capabilities Based Permissioning</td>
+            <td><a href="{{sites.data.sites["docs"].url}}/documentation/eris-db-permissions/">Yes</a></td>
             <td>n/a</td>
           </tr>
           <tr>
@@ -228,7 +228,7 @@ eris:db comes with a capabilities-based, evolvable permissioning layer - the fir
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td>Sophisticated Capabilities Based Permissioning</td>
+            <td><a href="{{sites.data.sites["docs"].url}}/documentation/eris-db-permissions/">Yes</a></td>
             <td>Ripple Gateway Permissioning</td>
           </tr>
           <tr>
@@ -275,7 +275,7 @@ eris:db comes with a capabilities-based, evolvable permissioning layer - the fir
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td>Sophisticated Capabilities Based Permissioning</td>
+            <td><a href="{{sites.data.sites["docs"].url}}/documentation/eris-db-permissions/">Yes</a></td>
             <td>unclear</td>
           </tr>
           <tr>
@@ -322,7 +322,7 @@ eris:db comes with a capabilities-based, evolvable permissioning layer - the fir
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td>Sophisticated Capabilities Based Permissioning</td>
+            <td><a href="{{sites.data.sites["docs"].url}}/documentation/eris-db-permissions/">Yes</a></td>
             <td>unclear</td>
           </tr>
           <tr>

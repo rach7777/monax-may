@@ -7,6 +7,7 @@ GEM
       timers (~> 4.0.0)
     classifier-reborn (2.0.3)
       fast-stemmer (~> 1.0)
+    coderay (1.1.0)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -72,6 +73,7 @@ GEM
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     redcarpet (3.2.3)
+    rouge (1.10.1)
     safe_yaml (1.0.4)
     sass (3.4.13)
     sprockets (2.12.3)
@@ -98,7 +100,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll
+  coderay
+  jekyll (= 2.5.3)
   jekyll-assets
+  jekyll-paginate
+  kramdown
   rake
+  rouge
   uglifier
+
+BUNDLED WITH
+   1.10.6
