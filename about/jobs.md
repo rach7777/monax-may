@@ -43,7 +43,7 @@ This is a full time salaried position, salary, equity, and benefits in connectio
 * Applicants must demonstrate a modicum of understanding of how modern legal systems operate (preference will be given to those with a law degree or currently practicing attorneys).
 * Applicants must demonstrate a modicum of understanding of how modern industrial level modular ERP, CRM, and other systems operate within the largest companies on earth (preference will be given to those who have a history as system architects or similar within industry).
 
-### Application:
+### Application Requirements:
 
 Along with your CV please submit the following information:
 
@@ -75,7 +75,7 @@ This is a full time salaried position, salary, equity, and benefits in connectio
 * Applicants must demonstrate a track record of open source contributions.
 * Applicants must have a background in, or demonstrate a willingness to learn, the [Go programming language](https://golang.org/).
 
-### Application:
+### Application Requirements:
 
 Along with your CV please submit the following information:
 
@@ -106,7 +106,7 @@ This is a full time salaried position, salary, equity, and benefits in connectio
 
 * Applicants must demonstrate a track record of open source contributions.
 
-### Application:
+### Application Requirements:
 
 Along with your CV please submit the following information:
 
@@ -138,7 +138,7 @@ This is a full time salaried position, salary, equity, and benefits in connectio
 
 * Applicants must demonstrate a track record of open source contributions.
 
-### Application:
+### Application Requirements:
 
 Along with your CV please submit the following information:
 
