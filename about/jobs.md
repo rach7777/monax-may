@@ -54,7 +54,7 @@ Along with your CV please submit the following information:
 
 ## <a name="blockchainEngineer"></a>Blockchain Engineer
 
-Eris Industries, the leading platform for industrial applications of smart contract technology, is one blockchain engineer for our platform team.
+Eris Industries, the leading platform for industrial applications of smart contract technology, is hiring one blockchain engineer for our platform team.
 
 Our team has been a leader in the design and implementation of permissionable blockchain designs since we were the first company to open source a permissionable blockchain design in late 2014. We are hiring an additional engineer to work on our blockchain client: [eris:db](https://erisindustries.com/components/erisdb/).
 
@@ -86,7 +86,7 @@ Along with your CV please submit the following information:
 
 ## <a name="toolingEngineers"></a>Go Tooling Engineers
 
-Eris Industries, the leading platform for industrial applications of smart contract technology, is tooling engineers for our platform team.
+Eris Industries, the leading platform for industrial applications of smart contract technology, is hiring tooling engineers for our platform team.
 
 Our team has been a leader in the design and implementation smart contract tooling since we were the first group to connect smart contracts to a distributed file storage system in the original Eris days. We are hiring gophers to work with our modular range of tooling that deals with various aspects of smart contract systems and assists industrial and startup programmers to ease their workflow when building smart contract systems.
 
@@ -117,7 +117,7 @@ Along with your CV please submit the following information:
 
 ## <a name="operationsEngineer"></a>Cloud Operation Engineer
 
-Eris Industries, the leading platform for industrial applications of smart contract technology, is a cloud devOps Engineer for our platform team to assist in the management of our Hosted Chains product.
+Eris Industries, the leading platform for industrial applications of smart contract technology, is hiring a cloud devOps Engineer for our platform team to assist in the management of our Hosted Chains product.
 
 The selected applicant will have co-management responsibilities for the operation of hundreds of containerized smart contract enabled blockchain clients running in the Eris hosted platform.
 
