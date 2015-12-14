@@ -182,4 +182,48 @@ Along with your CV please send answers to the following questions
 * What challenges do you see with selling smart contract applications and how would you address them?
 * How would you go about designing a sales process?
 
+<hr />
+
+## <a name="educationManager"></a>Education Manager
+
+Eris Industries, the leading platform for industrial applications of smart contract technology, is hiring an education manager to build the best resources for building smart contract applications and help us dramatically decrease the time it takes developers to start building.
+
+While there is lots of interest in blockchains and smart contracts in general and Eris in particular, far too little gets built because of the lack of knowledge. Distributed applications are a new technological paradigm and it takes far too long for developers to get up to speed. 
+
+Your job will be to dramatically cut that time down and develop the world's leading learning resources for developers. You'll have to acquire a deep understanding of our tech stack and of where people get stuck. 
+
+This is a full time salaried position, salary, equity, and benefits in connection to your experience. Location need not matter, but we have a modest preference for applicants in one of our three target locations:
+
+* Berlin
+* London
+* New York
+
+### Job Responsibilities
+
+* Manage existing content and improve content quality (blog, documentation, tutorials)
+* Develop, manage and implement a comprehensive content strategy
+* Develop a learning curriculum to help developers go from novice all the way to proficient Eris developer
+* Create content and materials directed at business people to help them understand when/how smart contracts should be integrated into the business structure
+* Develop case studies of existing or potential smart contract / Eris projects
+* Develop metrics and monitoring systems for general engagement and time to learn the technology
+
+We also have a 2-day workshop in which we train the developers of some of our enterprise clients. With regards to that you would
+* Manage the delivery of the workshop
+* Improve and standardize the workshop content
+* Teach the actual workshop (once you're proficient in the tech stack)
+
+### Applicant Requirements:
+
+* B.A. and preferably M.A. in technical subject preferably computer science
+* 2+ years in technology education/curriculum design
+* Deep interest in technology, blockchains and smart contracts
+* Outstanding written and spoken communication skills
+* Teaching experience desired
+
+### Application Requirements:
+
+Along with your CV please send answers to the following questions
+
+* What do you suspect the biggest obstacles are to learning how to develop smart contract applications?
+
 
