@@ -146,3 +146,40 @@ Along with your CV please submit the following information:
 * One page describing your personal view about the current state of container automation tooling and how it can be improved.
 
 <hr />
+
+## <a name="salesManager"></a>Sales Manager
+
+Eris Industries, the leading platform for industrial applications of smart contract technology, is hiring a sales manager to take ownership of the sales process and help us build a world-class enterprise sales team. 
+
+You will be the first dedicated Eris sales manager. Many of the leading financial institutions are our clients and use our technology and tools to drive their blockchain and smart contract efforts. Your job will be to manage the sales process, which includes handling inbound interests and pursuing strategic clients and industries.
+
+Besides managing our current sales process, you will play a critical role in establishing a sales process and scaling our sales team. This will include setting up sytemst to support the sales function, implementing tracking and monitoring systems, designing a training and onboarding process for new sales hires and supporting the hiring process. 
+
+This is a full time salaried position, salary, equity, and benefits in connection to your experience. Location needs to be in North America or Europe, with a slight preference for US-based applicants or applicants based in London or Berlin. You will be required to travel regularly to meet with prospective clients and work with team members.
+
+### Job Responsibilities
+
+* Handle inbound interests and explain our technology stack and help companies understand when to build smart contract applications
+* Develop a sales plan in collaboration wth Brian (Head of BD)
+* Implement a repeatable sales process
+* Develop metrics and monitoring systems for our sales efforts
+* Put in place infrastructure and systems to support the sales function
+* Support designing metrics and compensation structure for the sales team
+* Help with hiring and building out a sales team
+* Manage the design of a training and onboarding process for new sales people
+
+### Applicant Requirements:
+
+* 2+ years of experience in enterprise technology sales
+* Deep interest in technology, blockchains and smart contracts
+* Outstanding communication and leadership skills
+* Understanding of and ability to design a repeatable sales process 
+
+### Application Requirements:
+
+Along with your CV please send answers to the following questions
+
+* What challenges do you see with selling smart contract applications and how would you address them?
+* How would you go about designing a sales process?
+
+
