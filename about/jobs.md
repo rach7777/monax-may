@@ -7,11 +7,11 @@ title:      "Positions"
 
 Eris is not currently among the Top 100 Places to Work; but we aim to be.
 
-If you feel you have an ability to perform any job title posted below and the willingness to join [Team Eris](https://erisindustries.com/about/team) then please send a maximum of 800 words in markdown formatting telling us why you are a good fit for Eris generally and the position specifically along with a record of your past duties and performance as markdown files. If any specific questions or requirements are listed in the position, please satisfy those requirements or answer those questions via a markdown-formatted file.
+If you feel you have an ability to perform any job title posted below and the willingness to join [Team Eris](https://erisindustries.com/about/team) then please send a maximum of 800 words in markdown formatting telling us why you are a good fit for Eris generally and the position specifically along with a record of your past duties and performance as (preferably) markdown files.
 
-Feel free to email these requirements to [jobs@erisindustries.com](mailto:jobs@erisindustries.com); or, **preferably**, encrypt the files fulfilling the requirements with [this key](https://keybase.io/eris_jobs) and ping us with an out of band communication containing an [ipfs](http://ipfs.io) hash(es) from which we can retrieve the encrypted files.
+If any specific questions or requirements are listed in the position, please satisfy those requirements or answer those questions via a markdown-formatted file.
 
-As part of Eris' hiring process, **all applicants** must submit to a process of **Proof of Work** in which we ask that you contribute some effort into the open source community in order to give us a flavour of your work ethic and work product. This proof of work is determined collectively and settled at the beginning of the application process.
+Feel free to email these requirements to [jobs@erisindustries.com](mailto:jobs@erisindustries.com).
 
 # Currently Accepting Applications For The Following Positions
 
@@ -149,11 +149,11 @@ Along with your CV please submit the following information:
 
 ## <a name="salesManager"></a>Sales Manager
 
-Eris Industries, the leading platform for industrial applications of smart contract technology, is hiring a sales manager to take ownership of the sales process and help us build a world-class enterprise sales team. 
+Eris Industries, the leading platform for industrial applications of smart contract technology, is hiring a sales manager to take ownership of the sales process and help us build a world-class enterprise sales team.
 
 You will be the first dedicated Eris sales manager. Many of the leading financial institutions are our clients and use our technology and tools to drive their blockchain and smart contract efforts. Your job will be to manage the sales process, which includes handling inbound interests and pursuing strategic clients and industries.
 
-Besides managing our current sales process, you will play a critical role in establishing a sales process and scaling our sales team. This will include setting up sytemst to support the sales function, implementing tracking and monitoring systems, designing a training and onboarding process for new sales hires and supporting the hiring process. 
+Besides managing our current sales process, you will play a critical role in establishing a sales process and scaling our sales team. This will include setting up sytemst to support the sales function, implementing tracking and monitoring systems, designing a training and onboarding process for new sales hires and supporting the hiring process.
 
 This is a full time salaried position, salary, equity, and benefits in connection to your experience. Location needs to be in North America or Europe, with a slight preference for US-based applicants or applicants based in London or Berlin. You will be required to travel regularly to meet with prospective clients and work with team members.
 
@@ -173,7 +173,7 @@ This is a full time salaried position, salary, equity, and benefits in connectio
 * 2+ years of experience in enterprise technology sales
 * Deep interest in technology, blockchains and smart contracts
 * Outstanding communication and leadership skills
-* Understanding of and ability to design a repeatable sales process 
+* Understanding of and ability to design a repeatable sales process
 
 ### Application Requirements:
 
@@ -188,9 +188,9 @@ Along with your CV please send answers to the following questions
 
 Eris Industries, the leading platform for industrial applications of smart contract technology, is hiring an education manager to build the best resources for building smart contract applications and help us dramatically decrease the time it takes developers to start building.
 
-While there is lots of interest in blockchains and smart contracts in general and Eris in particular, far too little gets built because of the lack of knowledge. Distributed applications are a new technological paradigm and it takes far too long for developers to get up to speed. 
+While there is lots of interest in blockchains and smart contracts in general and Eris in particular, far too little gets built because of the lack of knowledge. Distributed applications are a new technological paradigm and it takes far too long for developers to get up to speed.
 
-Your job will be to dramatically cut that time down and develop the world's leading learning resources for developers. You'll have to acquire a deep understanding of our tech stack and of where people get stuck. 
+Your job will be to dramatically cut that time down and develop the world's leading learning resources for developers. You'll have to acquire a deep understanding of our tech stack and of where people get stuck.
 
 This is a full time salaried position, salary, equity, and benefits in connection to your experience. Location need not matter, but we have a modest preference for applicants in one of our three target locations:
 
