@@ -7,11 +7,11 @@ title:      "Positions"
 
 Eris is not currently among the Top 100 Places to Work; but we aim to be.
 
-If you feel you have an ability to perform any job title posted below and the willingness to join [Team Eris](https://erisindustries.com/about/team) then please send a maximum of 800 words in markdown formatting telling us why you are a good fit for Eris generally and the position specifically along with a record of your past duties and performance as (preferably) markdown files.
+If you feel you have an ability to perform any job title posted below and the willingness to join [Team Eris](https://erisindustries.com/about/team) then please send a maximum of 800 words (preferably in markdown formatting) telling us why you are a good fit for Eris generally and the position specifically along with a record of your past duties and performance (CV or resume) (preferably in markdown formating).
 
-If any specific questions or requirements are listed in the position, please satisfy those requirements or answer those questions via a markdown-formatted file.
+If any specific questions or requirements are listed in the position, please satisfy those requirements or answer those questions (preferably in a markdown-formatted file).
 
-Feel free to email these requirements to [jobs@erisindustries.com](mailto:jobs@erisindustries.com).
+Please email these requirements to [jobs@erisindustries.com](mailto:jobs@erisindustries.com).
 
 # Currently Accepting Applications For The Following Positions
 
