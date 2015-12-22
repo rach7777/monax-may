@@ -26,7 +26,7 @@ eris:db uses the Tendermint Consensus engine, a deposit based proof of stake pro
 
 ## Interface
 
-eris:db comes with a range of interfaces from CLI tooling to RPCs. See our [comprehensive documentation]({{ sites.data.sites["docs"].url }}/documentation) for more.
+eris:db comes with a range of interfaces from CLI tooling to RPCs. See our [comprehensive documentation](https://docs.erisindustries.com/documentation) for more.
 
 ## Virtual Machine
 
