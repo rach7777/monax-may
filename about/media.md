@@ -18,13 +18,13 @@ title:      "Media"
 
 -[*Financial Times - Alphaville*](http://ftalphaville.ft.com/2015/03/20/2122415/blockchains-as-a-public-and-private-resource/?Authorised=false5hrwiey), 20/03/15
 
->  “What’s key (with Eris' technology) is the idea of “smart contracts,” which function as a set of automated instructions for a computer to perform if a set of conditions is in place. Blockchain-adjudicated smart contracts can **make organizational processes more efficient and integrated.** 
+>  “What’s key (with Eris' technology) is the idea of “smart contracts,” which function as a set of automated instructions for a computer to perform if a set of conditions is in place. Blockchain-adjudicated smart contracts can **make organizational processes more efficient and integrated.**
 
 > A proprietary blockchain solution could... allow a multinational to **fluidly integrate communications** between the otherwise independently formed databases and software systems of different subsidiaries in different countries.”
 
 -[*The Wall Street Journal*](http://blogs.wsj.com/moneybeat/2015/04/14/bitbeat-blockchains-without-coins-stir-tensions-in-bitcoin-community/), 14/4/15
 
->  "A customized ([ErisDB](https://erisdb.erisindustries.com)) blockchain is used for Microwork.io’s reputation system... The **high level of customization** offered by (ErisDB) made it the **right choice** for Microwork.io during the **development process**.”
+>  "A customized ([ErisDB](/components/erisdb/)) blockchain is used for Microwork.io’s reputation system... The **high level of customization** offered by (ErisDB) made it the **right choice** for Microwork.io during the **development process**.”
 
 -[*Bitcoin Magazine*](https://bitcoinmagazine.com/20313/microwork-io-uses-smart-contracts-coordinate-small-tasks-worldwide/), 07/05/15
 
@@ -32,9 +32,9 @@ title:      "Media"
 
 >  "...**Eris can be distinguished based on their focus.** They are the result of the continuous search for ‘non-currency’ applications of blockchain technologies."
 
--[EBA](https://www.abe-eba.eu/about-eba/eba-at-a-glance/) Working Group on Electronic and Alternative Payments, "[*Cryptotechnologies: a major IT innovation and catalyst for change*](https://www.abe-eba.eu/downloads/knowledge-and-research/EBA_20150511_EBA_Cryptotechnologies_a_major_IT_innovation_v1.0.pdf)," 11/05/15
+-[EBA](https://www.abe-eba.eu/about-eba/eba-at-a-glance/) Working Group on Electronic and Alternative Payments, "[*Cryptotechnologies: a major IT innovation and catalyst for change*](https://www.abe-eba.eu/downloads/knowledge-and-research/EBA_20150511_EBA_Cryptotechnologies_a_major_IT_innovation_v1_0.pdf)," 11/05/15
 
-> "For our clients, if they're going to be investing in this stuff, it's not going to be on a whim... so in the short-term, we're going to do this because it **saves money on clearing and settlement**. But in the long run, we're going to do it because it's going to restructure the way that parts of an industry are going to work... 
+> "For our clients, if they're going to be investing in this stuff, it's not going to be on a whim... so in the short-term, we're going to do this because it **saves money on clearing and settlement**. But in the long run, we're going to do it because it's going to restructure the way that parts of an industry are going to work...
 
 > ...that's what kind of caught my eye when I first read (Eris') stuff: that **this is realistic.**"
 

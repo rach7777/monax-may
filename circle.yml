@@ -16,4 +16,5 @@ deployment:
     commands:
       - bundle exec rake setup
       - bundle exec jekyll build --destination _site/htdocs
+      - bundle exec check-links '_site'
       - bundle exec rake deploy
