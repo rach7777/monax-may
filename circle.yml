@@ -16,5 +16,5 @@ deployment:
     commands:
       - bundle exec rake setup
       - bundle exec jekyll build --destination _site/htdocs
-      - bundle exec check-links '_site' --no-warnings --max-threads 75
+      - bundle exec check-links '_site' --no-warnings --max-threads 10
       - bundle exec rake deploy
