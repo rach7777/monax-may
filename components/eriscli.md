@@ -1,6 +1,6 @@
 ---
 
-layout:     content
+layout:     wide
 title:      "eris:cli"
 excerpt:    "The Distributed Application Platform"
 

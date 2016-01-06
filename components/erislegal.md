@@ -1,6 +1,6 @@
 ---
 
-layout:     content
+layout:     wide
 title:      "eris:legal"
 excerpt:    "Putting the Contracts in Smart Contracts"
 

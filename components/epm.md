@@ -1,6 +1,6 @@
 ---
 
-layout:     content
+layout:     wide
 title:      "eris:pm"
 excerpt:    "The Smart Contract Package Manager"
 
