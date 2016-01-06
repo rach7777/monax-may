@@ -40,7 +40,7 @@ Eris Industries has already delivered smart contract systems to many of the worl
 
 For select clients, we do full application build-outs, either in combination with your existing systems integration partner or one of Eris’ existing partner relationships.
 
-These services can include everything from assessing the use case and the business requirements, to designing the application architecture, to writing smart contract code, to testing and deploying the smart contract applications. Please note that we **do not** off systems integration or user interface services at all. We are, however, happy to collaborate with your developers or your prefered systems integration partner to provide a cohesive application
+These services can include everything from assessing the use case and the business requirements, to designing the application architecture, to writing smart contract code, to testing and deploying the smart contract applications. Please note that we **do not** offer systems integration or user interface services at all. We are, however, happy to collaborate with your developers or your prefered systems integration partner to provide a cohesive application
 
 The projects could range from developing proofs-of-concept to explore how smart contracts could be integrated into the enterprise, to developing pilot or even production-level systems that will handle real-world data.
 
