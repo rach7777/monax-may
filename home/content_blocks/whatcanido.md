@@ -1,6 +1,6 @@
 ## What can I do with Eris?
 
-When using default platform architecture, whether marketplaces, exchanges, government services, or on-demand commercial services, we wholly rely on a service provider to manage the business process required for the system.
+When using default platform architecture, whether marketplaces, exchanges, government services, or on-demand commercial services, we wholly rely on a service provider to manage the business processes required for the system.
 
 ### **BUT**
 
