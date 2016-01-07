@@ -224,6 +224,6 @@ We also have a 2-day workshop in which we train the developers of some of our en
 
 Along with your CV please send answers to the following questions
 
-* What do you suspect the biggest obstacles are to learning how to develop smart contract applications?
+* What do you suspect are the biggest obstacles to learning how to develop smart contract applications? What would you do to address these obstacles?
 
 
