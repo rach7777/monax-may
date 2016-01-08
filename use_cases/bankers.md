@@ -7,15 +7,15 @@ title:      "Use Cases | Banks"
 
 "I'm a bank. What can I do with Eris Industries' free software?"
 
-Hello there, bank. Well, you can do just about anything that involves managing data without investing heavily in physical and human infrastructure. Some of the things we've tinkered with include: 
+Hello there, bank. Well, you can do just about anything that involves managing data without investing heavily in physical and human infrastructure. Some of the things we've tinkered with include:
 
 * [Automating a bank](https://eng.erisindustries.com/tutorials/2015/03/11/solidity-1/).
 
-* Really. [We're not kidding](https://eng.erisindustries.com/tutorials/2015/03/12/solidity-2/). Do it. 
+* Really. [We're not kidding](https://eng.erisindustries.com/tutorials/2015/03/12/solidity-2/). Do it.
 
 * [Back-office business process automation](https://github.com/eris-ltd/eris-std-lib/blob/master/examples/payroll.sol) with smart contracts is therefore one of the things we do at EI.
 
-* [Real-time gross settlement systems](https://bankers.eris.industries/#/26). Clearing and settlement systems are dead easy to deploy with an ErisDB. Just write your application, roll your chain [in one command](https://eng.erisindustries.com/tutorials/2015/04/25/make-thelonious-chain/) and you're off to the races. Bye-bye, buildings, servers, and employees. 
+* Real-time gross settlement systems. Clearing and settlement systems are dead easy to deploy with an ErisDB. Just write your application, roll your chain [in one command](https://eng.erisindustries.com/tutorials/2015/04/25/make-thelonious-chain/) and you're off to the races. Bye-bye, buildings, servers, and employees.
 
 * Re: clearing, this includes FX, securities, whatever else - all doable. If you can write it, an Eris blockchain will run it. Post-trade processing should be possible too.
 
