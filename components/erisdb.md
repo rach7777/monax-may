@@ -87,7 +87,7 @@ eris:db comes with a [capabilities-based, evolvable permissioning layer](https:/
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="{{sites.data.sites["docs"].url}}/documentation/eris-db-permissions/">Yes</a></td>
+            <td><a href="https://docs.erisindustries.com/documentation/eris-db-permissions/">Yes</a></td>
             <td>n/a</td>
           </tr>
           <tr>
@@ -134,7 +134,7 @@ eris:db comes with a [capabilities-based, evolvable permissioning layer](https:/
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="{{sites.data.sites["docs"].url}}/documentation/eris-db-permissions/">Yes</a></td>
+            <td><a href="https://docs.erisindustries.com/documentation/eris-db-permissions/">Yes</a></td>
             <td>unclear</td>
           </tr>
           <tr>
@@ -181,7 +181,7 @@ eris:db comes with a [capabilities-based, evolvable permissioning layer](https:/
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="{{sites.data.sites["docs"].url}}/documentation/eris-db-permissions/">Yes</a></td>
+            <td><a href="https://docs.erisindustries.com/documentation/eris-db-permissions/">Yes</a></td>
             <td>n/a</td>
           </tr>
           <tr>
@@ -228,7 +228,7 @@ eris:db comes with a [capabilities-based, evolvable permissioning layer](https:/
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="{{sites.data.sites["docs"].url}}/documentation/eris-db-permissions/">Yes</a></td>
+            <td><a href="https://docs.erisindustries.com/documentation/eris-db-permissions/">Yes</a></td>
             <td>Ripple Gateway Permissioning</td>
           </tr>
           <tr>
@@ -275,7 +275,7 @@ eris:db comes with a [capabilities-based, evolvable permissioning layer](https:/
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="{{sites.data.sites["docs"].url}}/documentation/eris-db-permissions/">Yes</a></td>
+            <td><a href="https://docs.erisindustries.com/documentation/eris-db-permissions/">Yes</a></td>
             <td>unclear</td>
           </tr>
           <tr>
@@ -322,7 +322,7 @@ eris:db comes with a [capabilities-based, evolvable permissioning layer](https:/
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="{{sites.data.sites["docs"].url}}/documentation/eris-db-permissions/">Yes</a></td>
+            <td><a href="https://docs.erisindustries.com/documentation/eris-db-permissions/">Yes</a></td>
             <td>unclear</td>
           </tr>
           <tr>
