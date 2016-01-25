@@ -52,38 +52,6 @@ Along with your CV please submit the following information:
 
 <hr />
 
-## <a name="blockchainEngineer"></a>Blockchain Engineer
-
-Eris Industries, the leading platform for industrial applications of smart contract technology, is hiring one blockchain engineer for our platform team.
-
-Our team has been a leader in the design and implementation of permissionable blockchain designs since we were the first company to open source a permissionable blockchain design in late 2014. We are hiring an additional engineer to work on our blockchain client: [eris:db](https://erisindustries.com/components/erisdb/).
-
-This is a full time salaried position, salary, equity, and benefits in connection to your experience. Location need not matter, but we have a modest preference for applicants in one of our three target locations:
-
-* Berlin
-* London
-* New York
-
-### Applicant Requirements:
-
-* Applicants must demonstrate an understanding of how proof of stake blockchain consensus mechanisms work.
-* Applicants must demonstrate an understanding of how ethereum-style virtual machines operate.
-* Applicants must have some existing knowledge, or demonstrate a willingness to learn about, the legally compliant applications of smart contract technology.
-
-### Applicant Background:
-
-* Applicants must demonstrate a track record of open source contributions.
-* Applicants must have a background in, or demonstrate a willingness to learn, the [Go programming language](https://golang.org/).
-
-### Application Requirements:
-
-Along with your CV please submit the following information:
-
-* Your github username or other background of your open source contributions.
-* One page describing your personal view about how the differences between *blockchain* technology alone and *smart contract* technology as a layer on top of a core blockchain protocol.
-
-<hr />
-
 ## <a name="toolingEngineers"></a>Go Tooling Engineers
 
 Eris Industries, the leading platform for industrial applications of smart contract technology, is hiring tooling engineers for our platform team.
