@@ -212,7 +212,7 @@ We also have a 2-day workshop in which we train the developers of some of our en
 * Improve and standardize the workshop content
 * Teach the actual workshop (once you're proficient in the tech stack)
 
-### Applicant Requirements:
+### Desired Skills and Experience
 
 * B.A. and preferably M.A. in technical subject preferably computer science
 * 2+ years in technology education/curriculum design
@@ -225,5 +225,45 @@ We also have a 2-day workshop in which we train the developers of some of our en
 Along with your CV please send answers to the following questions
 
 * What do you suspect are the biggest obstacles to learning how to develop smart contract applications? What would you do to address these obstacles?
+
+<hr />
+
+## <a name="projectManager"></a>Project Manager
+
+At Eris Industries, we believe that smart contracts and blockchains represent a new paradigm in how organizations collaborate. The software and tools we provide are enabling more transparency, automation, decentralization and are enabling enterprises to re-envision their how their organizations are run. From drone startups to the world’s largest banks, many are turning to us to build the applications of the future.  
+
+As we are scaling and increasingly taking on more and bigger projects, we need someone to take charge and make sure that we always exceed the expectations of our clients. You’ll manage existing client relationships and coordinate between our developers and tech teams and our clients to ensure we deliver. This is a great opportunity to get to the forefront of blockchains and smart contracts tech and help the world’s leading companies take advantage of the technology. 
+
+This is a full time salaried position, salary, equity, and benefits in connection to your experience. We have a preference for applicants in one of our three target locations:
+
+* Berlin
+* London
+* New York
+
+### Job Responsibilities
+
+* Lead delivery of complex projects involving various stakeholders
+* Manage existing client relationships with T1 banks and other leading enterprises
+* Coordinate between the needs of our clients and the our developers
+* Write proposals to help us win great projects
+* Design processes to help us plan and visualize our capacities and work load
+* Manage our premium support offering
+* Provide organizational support to our sales team
+* Manage the delivery and organization of our educational engagements
+
+### Desired Skills and Experience
+
+* Very reliable, organized and professional
+* High intelligence, curiosity and adaptability
+* Excellent communication and presentation skills
+* Strong writing skills
+* Ability to manage various projects and obligations simultaneously
+* Bachelor’s degree
+* 2+ years of experience at management consultancy or in a similar role
+
+### Applicant Requirements:
+
+Along with your CV please send answers to the following questions:
+* What smart contract application would you like to see built? What would its benefit be? What resistance would you encounter and how would you deal with it?
 
 
