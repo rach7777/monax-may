@@ -176,6 +176,7 @@ This is a full time salaried position, salary, equity, and benefits in connectio
 * Develop metrics and monitoring systems for general engagement and time to learn the technology
 
 We also have a 2-day workshop in which we train the developers of some of our enterprise clients. With regards to that you would
+
 * Manage the delivery of the workshop
 * Improve and standardize the workshop content
 * Teach the actual workshop (once you're proficient in the tech stack)
@@ -232,6 +233,7 @@ This is a full time salaried position, salary, equity, and benefits in connectio
 ### Applicant Requirements:
 
 Along with your CV please send answers to the following questions:
+
 * What smart contract application would you like to see built? What would its benefit be? What resistance would you encounter and how would you deal with it?
 
 
