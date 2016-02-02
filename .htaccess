@@ -5,3 +5,4 @@ RewriteCond %{REQUEST_URI} !^/rss.xml
 RewriteRule bounty_submission.html https://%{SERVER_NAME} [R=301,NC,L]
 RewriteRule products/erisserver https://%{SERVER_NAME} [R=301,NC,L]
 RewriteRule products/erisdb https://%{SERVER_NAME}/components/erisdb [R=301,NC,L]
+RewriteRule /products/erislegal https://%{SERVER_NAME}/components/erislegal [R=301,NC,L]
