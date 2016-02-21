@@ -13,7 +13,35 @@ If any specific questions or requirements are listed in the position, please sat
 
 Please email these requirements to [jobs@erisindustries.com](mailto:jobs@erisindustries.com).
 
-# Currently Accepting Applications For The Following Positions
+# The Platform Team is Currently Accepting Applications For The Following Positions
+
+<hr />
+
+## <a name="toolingEngineers"></a>Go Tooling Engineers
+
+Eris Industries, the leading platform for industrial applications of smart contract technology, is hiring tooling engineers for our platform team.
+
+Our team has been a leader in the design and implementation smart contract tooling since we were the first group to connect smart contracts to a distributed file storage system in the original Eris days. We are hiring gophers to work with our modular range of tooling that deals with various aspects of smart contract systems and assists industrial and startup programmers to ease their workflow when building smart contract systems.
+
+This is a full time salaried position, salary, equity, and benefits in connection to your experience. Location need not matter, but we have a modest preference for applicants in one of our three target locations:
+
+* Berlin
+* London
+* New York
+
+### Applicant Requirements:
+
+* Applicants must have a background in, or demonstrate a willingness to learn, the [Go programming language](https://golang.org/).
+* Applicants must have a background in, or demonstrate a willingness to learn, about how [Docker](https://www.docker.com/) based systems operate.
+* Applicants must have some existing knowledge, or demonstrate a willingness to learn about, the legally compliant applications of smart contract technology.
+
+### Applicant Background:
+
+* Applicants must demonstrate a track record of open source contributions.
+
+<hr />
+
+# The Libraries Team is Currently Accepting Applications For The Following Positions
 
 <hr />
 
@@ -43,75 +71,13 @@ This is a full time salaried position, salary, equity, and benefits in connectio
 * Applicants must demonstrate a modicum of understanding of how modern legal systems operate (preference will be given to those with a law degree or currently practicing attorneys).
 * Applicants must demonstrate a modicum of understanding of how modern industrial level modular ERP, CRM, and other systems operate within the largest companies on earth (preference will be given to those who have a history as system architects or similar within industry).
 
-### Application Requirements:
+<hr />
 
-Along with your CV please submit the following information:
-
-* Your github username or other background of your open source contributions.
-* One page describing your personal view about how smart contract technology *should* be used in an industrial setting.
+# The Applications Team is Currently Accepting Applications For The Following Positions
 
 <hr />
 
-## <a name="toolingEngineers"></a>Go Tooling Engineers
-
-Eris Industries, the leading platform for industrial applications of smart contract technology, is hiring tooling engineers for our platform team.
-
-Our team has been a leader in the design and implementation smart contract tooling since we were the first group to connect smart contracts to a distributed file storage system in the original Eris days. We are hiring gophers to work with our modular range of tooling that deals with various aspects of smart contract systems and assists industrial and startup programmers to ease their workflow when building smart contract systems.
-
-This is a full time salaried position, salary, equity, and benefits in connection to your experience. Location need not matter, but we have a modest preference for applicants in one of our three target locations:
-
-* Berlin
-* London
-* New York
-
-### Applicant Requirements:
-
-* Applicants must have a background in, or demonstrate a willingness to learn, the [Go programming language](https://golang.org/).
-* Applicants must have a background in, or demonstrate a willingness to learn, about how [Docker](https://www.docker.com/) based systems operate.
-* Applicants must have some existing knowledge, or demonstrate a willingness to learn about, the legally compliant applications of smart contract technology.
-
-### Applicant Background:
-
-* Applicants must demonstrate a track record of open source contributions.
-
-### Application Requirements:
-
-Along with your CV please submit the following information:
-
-* Your github username or other background of your open source contributions.
-* One page describing your personal view about the current state of smart contract tooling and how it can be improved.
-
-<hr />
-
-## <a name="operationsEngineer"></a>Cloud Operation Engineer
-
-Eris Industries, the leading platform for industrial applications of smart contract technology, is hiring a cloud devOps Engineer for our platform team to assist in the management of our Hosted Chains product.
-
-The selected applicant will have co-management responsibilities for the operation of hundreds of containerized smart contract enabled blockchain clients running in the Eris hosted platform.
-
-This is a full time salaried position, salary, equity, and benefits in connection to your experience. Location need not matter, but we have a modest preference for applicants in one of our three target locations:
-
-* Berlin
-* London
-* New York
-
-### Applicant Requirements:
-
-* Applicants must have a background in, or demonstrate a willingness to learn, about how [Docker](https://www.docker.com/) based systems operate.
-* Applicants must have a background in, or demonstrate a willingness to learn, about modern container automation, lifecycle, and management systems.
-* Applicants must have a background in, or demonstrate a willingness to learn, the [Go programming language](https://golang.org/).
-* Applicants must have some existing knowledge, or demonstrate a willingness to learn about, the legally compliant applications of smart contract technology.
-
-### Applicant Background:
-
-* Applicants must demonstrate a track record of open source contributions.
-
-### Application Requirements:
-
-Along with your CV please submit the following information:
-
-* Your github username or other background of your open source contributions.
-* One page describing your personal view about the current state of container automation tooling and how it can be improved.
+# The Success Team is Currently Accepting Applications For The Following Positions
 
 <hr />
 
@@ -199,9 +165,9 @@ Along with your CV please send answers to the following questions
 
 ## <a name="projectManager"></a>Project Manager
 
-At Eris Industries, we believe that smart contracts and blockchains represent a new paradigm in how organizations collaborate. The software and tools we provide are enabling more transparency, automation, decentralization and are enabling enterprises to re-envision their how their organizations are run. From drone startups to the world’s largest banks, many are turning to us to build the applications of the future.  
+At Eris Industries, we believe that smart contracts and blockchains represent a new paradigm in how organizations collaborate. The software and tools we provide are enabling more transparency, automation, decentralization and are enabling enterprises to re-envision their how their organizations are run. From drone startups to the world’s largest banks, many are turning to us to build the applications of the future.
 
-As we are scaling and increasingly taking on more and bigger projects, we need someone to take charge and make sure that we always exceed the expectations of our clients. You’ll manage existing client relationships and coordinate between our developers and tech teams and our clients to ensure we deliver. This is a great opportunity to get to the forefront of blockchains and smart contracts tech and help the world’s leading companies take advantage of the technology. 
+As we are scaling and increasingly taking on more and bigger projects, we need someone to take charge and make sure that we always exceed the expectations of our clients. You’ll manage existing client relationships and coordinate between our developers and tech teams and our clients to ensure we deliver. This is a great opportunity to get to the forefront of blockchains and smart contracts tech and help the world’s leading companies take advantage of the technology.
 
 This is a full time salaried position, salary, equity, and benefits in connection to your experience. We have a preference for applicants in one of our three target locations:
 
@@ -235,5 +201,11 @@ This is a full time salaried position, salary, equity, and benefits in connectio
 Along with your CV please send answers to the following questions:
 
 * What smart contract application would you like to see built? What would its benefit be? What resistance would you encounter and how would you deal with it?
+
+<hr />
+
+# The Support Team is Currently Accepting Applications For The Following Positions
+
+<hr />
 
 
