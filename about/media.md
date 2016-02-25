@@ -4,7 +4,11 @@ layout:     wide
 title:      "Media"
 
 ---
-### **Mainstream media:**
+### **Media:**
+
+>  "The Swiss Army Knife of the blockchain."
+
+-[*Coindesk*](http://www.coindesk.com/pwc-fintech-director-disruptive-blockchain-could-create-winners-and-losers/), 25/02/16
 
 >  "The key point is that (Eris Industries' technology) could be a **huge cost-saver** in terms of **corporate infrastructure**."
 
