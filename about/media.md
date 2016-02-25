@@ -8,7 +8,7 @@ title:      "Media"
 
 >  "The Swiss Army Knife of the blockchain."
 
--[*Coindesk*](http://www.coindesk.com/pwc-fintech-director-disruptive-blockchain-could-create-winners-and-losers/), 25/02/16
+-[*Coindesk*](http://www.coindesk.com/pwc-fintech-director-disruptive-blockchain-could-create-winners-and-losers/), 23/02/16
 
 >  "The key point is that (Eris Industries' technology) could be a **huge cost-saver** in terms of **corporate infrastructure**."
 
@@ -17,6 +17,10 @@ title:      "Media"
 >  “Eris’ model might actually **change the existing financial industry more** so than the solely Bitcoin-based businesses have done to date.”
 
 -[*American Banker*](http://www.americanbanker.com/news/bank-technology/practical-ways-to-use-blockchain-technology-could-win-over-banks-1074001-1.html), 27/04/15
+
+> "In looking at efficiency gains, the potential changes to existing practices and transaction structure in capital markets are expansive. Eris (Industries) sees a host of new realities that could govern how transactions are conducted and managed through blockchain automation."
+
+-[*American Banker*](http://www.americanbanker.com/news/bank-technology/can-blockchain-tech-really-unclog-the-capital-markets-1079545-1.html?zkPrintable=1&nopagination=1), 24/02/16
 
 >  “The nice thing about the Eris proposition is that they see the value of **blockchain systems linked to the data structure *and* the use case**... combining trust and self-serving utility into the design allows for **better and more efficient** systems because it allows for reversibility. **Flexibility is needed** if these systems are to account for human fallibility.”
 
