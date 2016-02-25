@@ -11,13 +11,13 @@ title:      "Media"
 
 -[PricewaterhouseCoopers](https://blog.erisindustries.com/products/2016/01/28/pwc/), as told to [*CoinDesk*](http://www.coindesk.com/pwc-fintech-director-disruptive-blockchain-could-create-winners-and-losers/), 23/02/16
 
+> "The Eris platform greatly reduces the complexity of creating blockchain-based applications... (and) makes it simple and easy for your organization to get started using permissionable, smart contract capable blockchains.”
+
+-[Microsoft](https://azure.microsoft.com/en-in/blog/azure-blockchain-as-a-service-update-4/), 28/01/16
+
 > "Five stars... Eris provides a solid platform for building advanced financial applications based on the of the most interesting and probably misunderstood technologies, namely smart contracts and blockchain."
 
 -[Softpedia](http://www.softpedia.com/get/Programming/Other-Programming-Files/Eris.shtml), 17/02/16 
-
-> "The Eris platform greatly reduces the complexity of creating blockchain-based applications... (and) makes it simple and easy for your organization to get started using permissionable, smart contract capable blockchains.”
-
--[Microsoft Azure](https://azure.microsoft.com/en-in/blog/azure-blockchain-as-a-service-update-4/), 28/01/16
 
 >  "A customized ([ErisDB](/components/erisdb/)) blockchain is used for Microwork.io’s reputation system... The high level of customization offered by (ErisDB) made it the right choice for Microwork.io during the development process.”
 
