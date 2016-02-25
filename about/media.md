@@ -4,11 +4,18 @@ layout:     wide
 title:      "Media"
 
 ---
-### **Media:**
+
+### **Testimonials**
 
 >  "The Swiss Army Knife of the blockchain."
 
--[*Coindesk*](http://www.coindesk.com/pwc-fintech-director-disruptive-blockchain-could-create-winners-and-losers/), 23/02/16
+-PricewaterhouseCoopers, as told to [*CoinDesk*](http://www.coindesk.com/pwc-fintech-director-disruptive-blockchain-could-create-winners-and-losers/), 23/02/16
+
+> "Five stars... Eris provides a solid platform for building advanced financial applications based on the of the most interesting and probably misunderstood technologies, namely smart contracts and blockchain."
+
+-[Softpedia](http://www.softpedia.com/get/Programming/Other-Programming-Files/Eris.shtml), 17/02/16 
+
+### **Media**
 
 >  "The key point is that (Eris Industries' technology) could be a **huge cost-saver** in terms of **corporate infrastructure**."
 
