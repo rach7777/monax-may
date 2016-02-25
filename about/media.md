@@ -19,7 +19,7 @@ title:      "Media"
 
 -[Microsoft Azure](https://azure.microsoft.com/en-in/blog/azure-blockchain-as-a-service-update-4/), 28/01/16
 
->  "A customized ([ErisDB](/components/erisdb/)) blockchain is used for Microwork.io’s reputation system... The high level of customization offered by (ErisDB) made it the right choice for Microwork.io during the **development process.”
+>  "A customized ([ErisDB](/components/erisdb/)) blockchain is used for Microwork.io’s reputation system... The high level of customization offered by (ErisDB) made it the right choice for Microwork.io during the development process.”
 
 -Microwork.io in [*Bitcoin Magazine*](https://bitcoinmagazine.com/20313/microwork-io-uses-smart-contracts-coordinate-small-tasks-worldwide/), 07/05/15
 
