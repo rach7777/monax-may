@@ -15,6 +15,10 @@ title:      "Media"
 
 -[Softpedia](http://www.softpedia.com/get/Programming/Other-Programming-Files/Eris.shtml), 17/02/16 
 
+> "The Eris platform greatly reduces the complexity of creating blockchain-based applications... (and) makes it simple and easy for your organization to get started using permissionable, smart contract capable blockchains.”
+
+- [Microsoft Azure](https://azure.microsoft.com/en-in/blog/azure-blockchain-as-a-service-update-4/), 28/01/16
+
 ### **Media**
 
 >  "The key point is that (Eris Industries' technology) could be a **huge cost-saver** in terms of **corporate infrastructure**."
