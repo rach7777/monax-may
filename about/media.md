@@ -11,7 +11,7 @@ title:      "Media"
 
 -[PricewaterhouseCoopers](https://blog.erisindustries.com/products/2016/01/28/pwc/), as told to [*CoinDesk*](http://www.coindesk.com/pwc-fintech-director-disruptive-blockchain-could-create-winners-and-losers/), 23/02/16
 
-> "Eris Industries (is) a leader in using smart contracts to automate business processes between organizations."
+> "...a leader in using smart contracts to automate business processes between organizations."
 
 -[PricewaterhouseCoopers](http://www.pwc.com/us/en/financial-services/fintech/blockchain.html)
 
