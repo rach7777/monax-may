@@ -17,7 +17,7 @@ title:      "Media"
 
 > "The Eris platform greatly reduces the complexity of creating blockchain-based applications... (and) makes it simple and easy for your organization to get started using permissionable, smart contract capable blockchains.”
 
-- [Microsoft Azure](https://azure.microsoft.com/en-in/blog/azure-blockchain-as-a-service-update-4/), 28/01/16
+-[Microsoft Azure](https://azure.microsoft.com/en-in/blog/azure-blockchain-as-a-service-update-4/), 28/01/16
 
 ### **Media**
 
