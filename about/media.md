@@ -15,7 +15,7 @@ title:      "Media"
 
 -[Microsoft](https://azure.microsoft.com/en-in/blog/azure-blockchain-as-a-service-update-4/), 28/01/16
 
-> "Five stars... Eris provides a solid platform for building advanced financial applications based on the of the most interesting and probably misunderstood technologies, namely smart contracts and blockchain."
+> "Five stars... Eris provides a solid platform for building advanced financial applications based one the of the most interesting and probably misunderstood technologies, namely smart contracts and blockchain."
 
 -[Softpedia](http://www.softpedia.com/get/Programming/Other-Programming-Files/Eris.shtml), 17/02/16 
 
