@@ -11,6 +11,10 @@ title:      "Media"
 
 -[PricewaterhouseCoopers](https://blog.erisindustries.com/products/2016/01/28/pwc/), as told to [*CoinDesk*](http://www.coindesk.com/pwc-fintech-director-disruptive-blockchain-could-create-winners-and-losers/), 23/02/16
 
+> "...a leader in using smart contracts to automate business processes between organizations."
+
+-[PricewaterhouseCoopers](http://www.pwc.com/us/en/financial-services/fintech/blockchain.html)
+
 > "The Eris platform greatly reduces the complexity of creating blockchain-based applications... (and) makes it simple and easy for your organization to get started using permissionable, smart contract capable blockchains.”
 
 -[Microsoft](https://azure.microsoft.com/en-in/blog/azure-blockchain-as-a-service-update-4/), 28/01/16
