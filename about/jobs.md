@@ -17,30 +17,6 @@ Please email these requirements to [jobs@erisindustries.com](mailto:jobs@erisind
 
 <hr />
 
-## <a name="toolingEngineers"></a>Go Tooling Engineers
-
-Eris Industries, the leading platform for industrial applications of smart contract technology, is hiring tooling engineers for our platform team.
-
-Our team has been a leader in the design and implementation smart contract tooling since we were the first group to connect smart contracts to a distributed file storage system in the original Eris days. We are hiring gophers to work with our modular range of tooling that deals with various aspects of smart contract systems and assists industrial and startup programmers to ease their workflow when building smart contract systems.
-
-This is a full time salaried position, salary, equity, and benefits in connection to your experience. Location need not matter, but we have a modest preference for applicants in one of our three target locations:
-
-* Berlin
-* London
-* New York
-
-### Applicant Requirements:
-
-* Applicants must have a background in, or demonstrate a willingness to learn, the [Go programming language](https://golang.org/).
-* Applicants must have a background in, or demonstrate a willingness to learn, about how [Docker](https://www.docker.com/) based systems operate.
-* Applicants must have some existing knowledge, or demonstrate a willingness to learn about, the legally compliant applications of smart contract technology.
-
-### Applicant Background:
-
-* Applicants must demonstrate a track record of open source contributions.
-
-<hr />
-
 # The Libraries Team is Currently Accepting Applications For The Following Positions
 
 <hr />
