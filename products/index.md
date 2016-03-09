@@ -48,13 +48,13 @@ If your firm just needs some hand holding while your developers get up to speed 
 
 Eris Industries has already delivered smart contract systems to many of the world's best companies, ranging from bulge bracket banks to insurance conglomerates.
 
-For select clients, we do full smart contract specification and drafting consulting work, either in combination with your existing systems integration partner or one of Eris’ existing partner relationships.
+For select clients, we do full smart contract specification and drafting work, either in combination with your existing systems integration partner or one of Eris’ existing partner relationships.
 
 These services can include everything from assessing the use case and the business requirements, to designing the application architecture, to writing smart contract code. Please note that we **do not** offer systems integration or user interface services at all. We are, however, happy to collaborate with your developers or your preferred systems integration partner.
 
 Applications could range from developing proofs-of-concept to explore how smart contracts could be integrated into the enterprise, to developing pilot or even production-level systems that will handle real-world data.
 
-Capacity for this is **extremely** limited and only for pre-selected clients.
+Capacity for this is **extremely** limited and only for pre-selected clients. We offer this work in bundles of hours which are pre-purchased by your organization and may be used whenever necessary.
 
 # Eris Partners' Program
 
