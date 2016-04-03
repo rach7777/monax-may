@@ -89,8 +89,7 @@ This is a full time salaried position, salary, equity, and benefits in connectio
 
 Along with your CV please send answers to the following questions
 
-* What challenges do you see with selling smart contract applications and how would you address them?
-* How would you go about designing a sales process?
+* What smart contract application would you like to see built? What would its benefit be? What resistance would you encounter and how would you deal with it?
 
 <hr />
 
