@@ -23,7 +23,7 @@ Please email these requirements to [jobs@erisindustries.com](mailto:jobs@erisind
 
 ## <a name="smartContractWriters"></a>Smart Contract Writers
 
-Eris Industries, the leading platform for industrial applications of smart contract technology, is hiring smart contract writers for our smart contract libraries team.
+Eris Industries, the leading platform for industrial applications of smart contract technology, is hiring smart contract writers for our smart contracts library team.
 
 Our team has built some of the most complex smart contract systems on earth, starting with the original Eris/PRODoug days. This position is an excellent opportunity to learn from some of the best smart contract writers on earth and to significantly participate in the furtherance of this technology in an industrial setting.
 
@@ -45,6 +45,35 @@ This is a full time salaried position, salary, equity, and benefits in connectio
 
 * Applicants must demonstrate a track record of open source contributions (not necessarily at the smart contract level).
 * Applicants must demonstrate a modicum of understanding of how modern legal systems operate (preference will be given to those with a law degree or currently practicing attorneys).
+* Applicants must demonstrate a modicum of understanding of how modern industrial level modular ERP, CRM, and other systems operate within the largest companies on earth (preference will be given to those who have a history as system architects or similar within industry).
+
+<hr />
+
+## <a name="fullStackDeveloper"></a>JavaScript Developer - Full Stack
+
+Eris Industries is looking for a Full Stack JS Developer in our smart contracts library team.
+
+The library team is developing enterprise smart contracts that drive distributed applications and deliver business process automation in low-trust networks. This position provides the opportunity to apply your knowledge of the JavaScript stack to contribute to architecting and building applications on top of a smart contract backend. Be part of a cutting edge software development team and learn how to build solutions on what is probably the most disruptive technology in decades.
+
+If you want to join a new generation of distributed application specialists this is an excellent opportunity to become a marmot. Interest in smart contracts, e.g. Ethereum/Solidity, and blockchain technology is considered advantageous and this position will offer the chance to work in this area as well, if desired.
+
+This is a full time salaried position, salary, equity, and benefits in connection to your experience. Location need not matter, but we have a modest preference for applicants in one of our three target locations:
+
+* Berlin
+* London
+* New York
+
+### Applicant Requirements:
+
+* Applicants must demonstrate thorough knowledge of JS frontend development (any of Angular, React, Meteor).
+* Applicants must demonstrate thorough knowledge of JS server-side developement (Node.js)
+* Applicants must demonstrate a capacity to build modular, fully tested applications.
+* Applicants must have a willingness to learn about the applications of smart contract technology.
+
+### Applicant Background:
+
+* Applicants must demonstrate a track record of open source contributions.
+* Applicants must demonstrate a track record of UX design.
 * Applicants must demonstrate a modicum of understanding of how modern industrial level modular ERP, CRM, and other systems operate within the largest companies on earth (preference will be given to those who have a history as system architects or similar within industry).
 
 <hr />
