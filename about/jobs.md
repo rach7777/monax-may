@@ -18,7 +18,7 @@ Please email these requirements to [jobs@erisindustries.com](mailto:jobs@erisind
 
 # Positions on the Platform Team
 
-All positions on the Platform Team have been filled and there are currently no vacancies. Please check back regularly as new opportunities will come up and are published here. 
+All positions on the Platform Team have been filled and there are currently no vacancies. Please check back regularly as new opportunities will come up and are published here.
 
 <hr />
 
@@ -34,10 +34,8 @@ The library team is developing enterprise smart contracts that drive distributed
 
 If you want to join a new generation of distributed application specialists this is an excellent opportunity to become a marmot. Interest in smart contracts, e.g. Ethereum/Solidity, and blockchain technology is considered advantageous and this position will offer the chance to work in this area as well, if desired.
 
-This is a full time salaried position, salary, equity, and benefits in connection to your experience. Location need not matter, but we have a modest preference for applicants in one of our three target locations:
+This is a full time salaried position, salary, equity, and benefits in connection to your experience. We are hiring this position in:
 
-* Berlin
-* London
 * New York
 
 ### Applicant Requirements:
@@ -57,19 +55,19 @@ This is a full time salaried position, salary, equity, and benefits in connectio
 
 # Positions on the Applications Team
 
-All positions on the Applications Team have been filled and there are currently no vacancies. Please check back regularly as new opportunities will come up and are published here. 
+All positions on the Applications Team have been filled and there are currently no vacancies. Please check back regularly as new opportunities will come up and are published here.
 
 <hr />
 
 # Positions on the Success Team
 
-All positions on the Platform Team have been filled and there are currently no vacancies. Please check back regularly as new opportunities will come up and are published here. 
+All positions on the Platform Team have been filled and there are currently no vacancies. Please check back regularly as new opportunities will come up and are published here.
 
 <hr />
 
 # Positions on the Support Team
 
-All positions on the Support Team have been filled and there are currently no vacancies. Please check back regularly as new opportunities will come up and are published here. 
+All positions on the Support Team have been filled and there are currently no vacancies. Please check back regularly as new opportunities will come up and are published here.
 
 <hr />
 
