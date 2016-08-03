@@ -3,6 +3,11 @@ general:
     only:
       - master
 
+dependencies:
+  pre:
+    - echo "export rvm_ignore_gemsets_flag=1" >> ~/.rvmrc
+    - gem install bundler
+
 test:
   override:
     - bundle exec rake prepare
@@ -16,5 +21,6 @@ deployment:
     commands:
       - bundle exec rake setup
       - bundle exec jekyll build --destination _site/htdocs
-      - bundle exec check-links '_site' --no-warnings --max-threads 10; true
+      # - bundle exec htmlproof ./_site/htdocs/tutorials; true # don't flame out here, usually because of GH rate limiting
+      # - bundle exec htmlproof ./_site/htdocs/explainers; true # don't flame out here, usually because of GH rate limiting
       - bundle exec rake deploy
