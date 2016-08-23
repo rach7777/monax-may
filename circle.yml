@@ -3,24 +3,18 @@ general:
     only:
       - master
 
+machine:
+  ruby:
+    version: 2.1.2
+
 dependencies:
-  pre:
-    - echo "export rvm_ignore_gemsets_flag=1" >> ~/.rvmrc
-    - gem install bundler
+  override:
 
 test:
   override:
-    - bundle exec rake prepare
-    - git config --global user.email "billings@erisindustries.com"
-    - git config --global user.name "Billings the Bot"
-    - bundle exec scripts/test.rb
 
 deployment:
   master:
     branch: master
     commands:
-      - bundle exec rake setup
-      - bundle exec jekyll build --destination _site/htdocs
-      # - bundle exec htmlproof ./_site/htdocs/tutorials; true # don't flame out here, usually because of GH rate limiting
-      # - bundle exec htmlproof ./_site/htdocs/explainers; true # don't flame out here, usually because of GH rate limiting
-      - bundle exec rake deploy
+      - scripts/build-sites.sh

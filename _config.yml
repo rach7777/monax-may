@@ -1,0 +1,89 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+url:         http://localhost:4000
+keywords:    "blockchain,dapp,dao,dac,distributed,computing,participatory,architecture"
+
+author:
+  name:    Eris Industries
+  email:   contact@erisindustries.com
+  site:    https://erisindustries.com
+  github:  eris-ltd
+  twitter: eris_ltd
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+markdown:    kramdown
+safe:        true
+titlecase:   true
+lsi:         false
+highlighter: rouge
+permalink:   pretty
+paginate:    10
+destination: _site
+kramdown:
+  input:              GFM
+  auto_ids:           true
+  footnote_nr:        1
+  entity_output:      as_char
+  toc_levels:         1..6
+  smart_quotes:       lsquo,rsquo,ldquo,rdquo
+  syntax_highlighter: rouge
+  enable_coderay:     false
+
+exclude:
+  - ".gitignore"
+  - ".ruby-version"
+  - ".ruby-gemset"
+  - "README.md"
+  - "Rakefile"
+  - "_drafts"
+  - "scripts"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "_config_this.yml"
+  - "circle.yml"
+  - "vendor"
+  - "blog_base"
+  - "images"
+
+# ----------------------- #
+#       Assets            #
+# ----------------------- #
+assets:
+  autowrite: true
+  cache: false
+  prefix: "/assets"
+  gzip: [ text/css, application/javascript ]
+
+  compress:
+    js: true
+    css: true
+
+  sources:
+    - _assets/fonts
+    - _assets/icons
+    - _assets/images
+    - _assets/scripts
+    - _assets/styles
+    - images
+
+  features:
+    automatic_img_size: false
+    automatic_img_alt : false
+
+# ----------------------- #
+#       Analytics         #
+# ----------------------- #
+
+analytics :
+  provider : clicky
+  clicky :
+    site_id : 100753928
+
+
+
+this: main
+blog: false
+

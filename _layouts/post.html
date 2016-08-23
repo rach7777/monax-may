@@ -1,0 +1,37 @@
+{% assign author = site.data.team[page.author] %}
+
+{% include header.html %}
+{% include navigation.html %}
+
+<div class="container-fluid">
+  {% unless page.no_header %}
+    <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 page-header">
+      <header><h1 class="title" role="title">{{ page.title }}</h1></header>
+    </div>
+  {% endunless %}
+
+  {% include sidebar.html %}
+
+  <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-3 col-lg-6 col-lg-offset-4">
+    <article class="content" id="main-content">
+      {% if page.deprecated %}
+        <h3>Deprecation Warning</h3>
+        <p>Please note this post refers to a deprecated version of the Eris stack. It is retained for historical purposes.</p>
+        <br />
+        <br />
+      {% endif %}
+      {{ content }}
+      {% include post_meta.html %}
+    </article>
+
+    {% if page.comments %}
+      <div class="comments">
+        {% include comments.html %}
+      </div><!-- .comments -->
+    {% endif %}
+  </div>
+</div>
+
+{% include footer.html %}
+{% include scripts.html %}
+{% include analytics.html %}

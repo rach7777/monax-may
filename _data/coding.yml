@@ -1,0 +1,10 @@
+os:
+  authoritative: "UBUNTU:14.04"
+
+golang:
+  minimum: 1.6
+  authoritative: 1.6
+
+docker:
+  minimum: 1.9.1
+  authoritative: 1.11.2

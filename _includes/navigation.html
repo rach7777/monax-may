@@ -1,0 +1,82 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid col-xs-12 col-sm-12 col-med-8 col-med-offset-2 col-lg-8 col-lg-offset-2">
+    <div class="navbar-header">
+      <a class="navbar-brand page-scroll" href="{{ site.data.sites["main"].url }}">{% image ei-logo-long-mobile.png alt="Eris Industries" %}</a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div><!-- .navbar-header -->
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Components <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="{{ site.data.sites["main"].url }}/components/eriscli">eris:cli</a></li>
+            <li><a href="{{ site.data.sites["main"].url }}/components/erisdb">eris:db</a></li>
+            <li><a href="{{ site.data.sites["main"].url }}/components/epm">eris:pm</a></li>
+            <li><a href="{{ site.data.sites["main"].url }}/components/erislegal">eris:legal</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="{{ site.data.sites["main"].url }}/products/">Products <span class="caret"></span></a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="{{ site.data.sites["docs"].url }}">Overview</a></li>
+            <li><a href="{{ site.data.sites["docs"].url }}/tutorials/getting-started/">Get Started</a></li>
+            <li><a href="{{ site.data.sites["docs"].url }}/explainers">Explainers</a></li>
+            <li><a href="{{ site.data.sites["docs"].url }}/tutorials">Tutorials</a></li>
+            <li><a href="{{ site.data.sites["docs"].url }}/documentation">Technical Details</a></li>
+          </ul>
+        </li>
+
+<!--         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Use Cases <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="{{ site.data.sites["main"].url }}/use_cases/bankers">Banks</a></li>
+          </ul>
+        </li>
+ -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blogs <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="{{ site.data.sites["blog_main"].url }}">Company Blog</a></li>
+            <li><a href="{{ site.data.sites["blog_eng"].url }}">Engineering. Distributed.</a></li>
+            <li><a href="{{ site.data.sites["blog_db"].url }}">Doing Distributed Business</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="{{ site.data.sites["main"].url }}/about/team">Team</a></li>
+            <li><a href="{{ site.data.sites["main"].url }}/about/jobs">Positions</a></li>
+            <li><a href="{{ site.data.sites["main"].url }}/about/media">Media</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Connect <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="{{ site.data.sites["support"] }}" target="_blank"><i class="fa fa-ambulance"></i> Support Forums</a></li>
+            <li><a href="{{ site.data.sites["slack"] }}"><i class="fa fa-weixin"></i> Chat Support (Slack)</a></li>
+            <li><a href="mailto:contact@erisindustries.com"><i class="fa fa-envelope"></i> Business Contact Email</a></li>
+            <li class="divider"></li>
+            <li><a href="{{ site.data.sites["github"] }}" target="_blank"><i class="fa fa-github-square"></i> Github</a></li>
+            <li class="divider"></li>
+            <li><a href="{{ site.data.sites["twitter"] }}" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+            <li><a href="{{ site.data.sites["facebook"] }}" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

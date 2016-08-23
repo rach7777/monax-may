@@ -1,0 +1,52 @@
+{% include header.html %}
+{% include navigation.html %}
+
+<div class="container-fluid" id="eris-page">
+  {% unless page.no_header %}
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 page-header">
+        <header><h1 class="title" role="title">{{ page.title }}</h1></header>
+      </div><!-- .cols -->
+    </div><!-- .row -->
+  {% endunless %}
+
+  <div class="row">
+    <article id="main-content">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
+        <aside>
+          <div role='flatdoc-menu' id="toc-container"></div>
+        </aside>
+
+        <div class="content-root" role="flatdoc">
+          <div class="content" id="content-block" role="flatdoc-content">
+          </div><!-- #content-block -->
+        </div><!-- .content-root -->
+
+      </div><!-- .cols -->
+    </article><!-- #main-content -->
+  </div><!-- .row -->
+</div><!-- .container-fluid -->
+</div><!-- /.container-fluid -->
+</div><!-- #container -->
+</body>
+
+{% include scripts.html %}
+{% javascript vendor/flatland %}
+{% if page.github_page %}
+  {% capture repo %}{{ page.github_repo }}{% endcapture %}
+  {% capture doc_to_pull %}{{ page.github_page }}{% endcapture %}
+  <script>
+    Flatdoc.run({
+      fetcher: Flatdoc.github('{{ repo }}', '{{ doc_to_pull }}')
+    });
+  </script>
+{% elsif page.github_repo %}
+  {% capture doc_to_pull %}{{ page.github_repo }}{% endcapture %}
+  <script>
+    Flatdoc.run({
+      fetcher: Flatdoc.github('{{ doc_to_pull }}')
+    });
+  </script>
+{% endif %}
+{% javascript flatdoc %}
+{% include analytics.html %}

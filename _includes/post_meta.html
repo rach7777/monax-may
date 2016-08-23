@@ -1,0 +1,35 @@
+  <div class="entry-meta">
+  {% if page.meta %}
+    <p class="entry-info">
+      {% if author %} Posted by
+        {% if author.twitter %}
+          <span class="byline vcard"><a href="https://twitter.com/{{ author.twitter }}" target="_blank">{{ author.name }}</a></span>
+        {% elsif author.github %}
+          <span class="byline vcard"><a href="https://github.com/{{ author.github }}" target="_blank">{{ author.name }}</a></span>
+        {% else %}
+          <span class="byline vcard">{{ author.name }}</span>
+        {% endif %}
+      {% else %}
+        <span class="byline vcard">Posted by {{ this_site.author.name }}</span>
+      {% endif %}
+      {{ page.date | date: "%d %h %Y" }} </span> | in
+      {% capture category %}{{ page.categories | category_links | size }}{% endcapture %}
+      {% unless category == '0' %}
+        <span class="categories">
+          <a href="{{ this_site.url }}/categories/index.html#{{ page.categories[0] | uri_escape }}-ref">{{ page.categories }}</a>
+        </span>
+      {% endunless %}
+    </p>
+  {% endif %}
+  <hr />
+  <div class="pagination-meta">
+    <p class="entries">
+      {% if page.previous.url %}
+        <a class="prev-entry pull-left col-xs-6" href="{{ this_site.url }}/{{ page.previous.url }}" title="Previous Post: {{ page.previous.title }}">&laquo; {{ page.previous.title }}</a>
+      {% endif %}
+      {% if page.next.url %}
+        <a class="next-entry pull-right col-xs-6" href="{{ this_site.url }}/{{ page.next.url }}" title="Next Post: {{ page.next.title }}">{{page.next.title}} &raquo;</a>
+      {% endif %}
+    </p><!-- .entries -->
+  </div><!-- .pagination-meta -->
+</div><!-- .entry-meta -->
