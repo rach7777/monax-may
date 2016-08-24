@@ -1,0 +1,12 @@
+<!-- Full Page Image Header Area -->
+<div id="top" class="header">
+  <div class="vert-text">
+    <a href="#intro"><img src="{{ .Site.BaseURL }}/images/{{ .Site.Params.mainIcon }}" class="logo"></a>
+    <br />
+    {{ range .Site.Data.sites.social }}
+      <a href="{{ .url }}" class="btn btn-default btn-lg"><i class="fa fa-fw fa-{{ .icon }}" aria-hidden="true"></i> <span class="network-name">{{ .title }}</span></a>
+    {{ end }}
+    </div>
+  </div>
+</div>
+<!-- /Full Page Image Header Area -->

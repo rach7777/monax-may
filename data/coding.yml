@@ -8,3 +8,7 @@ golang:
 docker:
   minimum: 1.9.1
   authoritative: 1.11.2
+
+cli:
+  repository: "https://github.com/eris-ltd/eris-cli.git"
+  releases: "https://github.com/eris-ltd/eris-cli/releases"

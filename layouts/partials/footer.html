@@ -1,6 +1,33 @@
-</div><!-- /.container-fluid -->
-</div><!-- #container -->
-<footer>
-  <p>Copyright &copy; 2014-{{ .Date.Format "2006" }} Eris Industries</p>
+<!-- Footer -->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <img src="/images/ei-logo-long-mobile.png" class="erislogo" />
+        <ul class="linklist">
+          <li><a href="https://docs.erisindustries.com/" class="act-on-this">Get Started Now!</a></li>
+          <li><a href="{{ .Site.Data.sites.main.url }}/components/eriscli">Learn more about eris:cli</a></li>
+          <li><a href="{{ .Site.Data.sites.main.url }}/components/erisdb">Learn more about eris:db</a></li>
+          <li><a href="{{ .Site.Data.sites.main.url }}/components/epm">Learn more about eris:pm</a></li>
+          <li><a href="{{ .Site.Data.sites.main.url }}/components/erislegal">Learn more about eris:legal</a></li>
+          <li><a href="http://marmots.org/" target="_blank">Learn more about Cuddly Marmots</a></li>
+          <li>Copyright &copy; 2014-{{ .Date.Format "2006" }} Eris Industries</li>
+        </ul>
+        <img src="/images/erismascot.png" class="erismascot" alt="eris industries - Solve big problems" />
+      </div>
+    </div>
+  </div>
 </footer>
+<!-- /Footer -->
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{{ .Site.BaseURL }}js/jquery-2.1.1.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/owl.carousel.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/prism.js"></script>
+<script src="{{ .Site.BaseURL }}js/eris.js"></script>
+<!--<script src="/js/bootstrap.min.js"></script>-->
+
+{{ partial "analytics.html" . }}
 </body>
+
+</html>

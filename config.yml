@@ -37,9 +37,8 @@ disableSitemap: false
 enableRobotsTXT: true
 enableEmoji: false
 noTimes: true
-pygmentsCodeFences: true
+pygmentsCodeFences: false
 pygmentsCodeFencesGuessSyntax: false
-pygmentsUseClasses: true
 uglyURLs: false
 
 paginate: 10
@@ -72,7 +71,6 @@ blackfriday:
   extensions:
     - noIntraEmphasis
     - tables
-    - fencedCode
     - autolink
     - strikethrough
     - footnotes
@@ -81,6 +79,7 @@ blackfriday:
     - titleblock
     - autoHeaderIds
     - definitionLists
+    - fencedCode
 
   # extensions not to use -> https://github.com/russross/blackfriday/blob/master/markdown.go
   extensionsmask:
@@ -104,36 +103,46 @@ taxonomies:
 params:
   description: "We empower developers to automate their data driven relationships."
   keywords: "blockchain,smart,contracts,data,driven,relationship,bft"
-  author:
-    name:    Monax Industries
-    email:   contact@monax.industries
-    site:    https://monax.industries
-    github:  eris-ltd
-    twitter: eris_ltd
   clicky:    100753928
+  mainIcon:  ei-logo-long-mobile.png
 
 # ----------------------- #
-#       Assets            #
+#          Menu           #
 # ----------------------- #
-
-assets:
-  autowrite: true
-  cache: false
-  prefix: "/assets"
-  gzip: [ text/css, application/javascript ]
-
-  compress:
-    js: true
-    css: true
-
-  sources:
-    - _assets/fonts
-    - _assets/icons
-    - _assets/images
-    - _assets/scripts
-    - _assets/styles
-    - images
-
-  features:
-    automatic_img_size: false
-    automatic_img_alt : false
+menu:
+  main:
+    # -
+    #   name: "platform"
+    #   pre: "<i class='fa fa-download'></i>"
+    #   url: "/platform/overview/"
+    #   weight: -200
+    -
+      name: "products"
+      pre: "<i class='fa fa-cubes'></i>"
+      url: "/products/overview/"
+      weight: -180
+    -
+      name: "legal engineering"
+      pre: "<i class='fa fa-cubes'></i>"
+      url: "/legal_engineering/dual_integration/"
+      weight: -160
+    -
+      name: "team"
+      pre: "<i class='fa fa-cubes'></i>"
+      url: "/about/team"
+      weight: -120
+    -
+      name: "positions"
+      pre: "<i class='fa fa-cubes'></i>"
+      url: "/about/positions"
+      weight: -100
+    -
+      name: "documentation"
+      pre: "<i class='fa fa-cubes'></i>"
+      url: "/documentation"
+      weight: -80
+    -
+      name: "blog"
+      pre: "<i class='fa fa-cubes'></i>"
+      url: "/blog/"
+      weight: -60

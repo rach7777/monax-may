@@ -3,6 +3,8 @@
 # ----------------------- #
 default:
     name: Monax Industries
+    site: https://monax.industries
+    email: contact@monax.industries
     gravatar: ei-logo-long-mobile.png
     twitter: eris_ltd
     github: eris-ltd
