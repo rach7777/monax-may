@@ -1,0 +1,16 @@
+@import 'eris';
+
+#toc-container {
+  ul {
+    list-style: none;
+  }
+
+  .active {
+    border: none;
+  }
+}
+
+.sidebar-nav {
+  left: 17%;
+  z-index: 10;
+}

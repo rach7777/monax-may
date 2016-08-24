@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Persistence on Monax Industries</title>
+    <link>http://localhost/tags/persistence/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Jun 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/tags/persistence/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Persisting Data with Docker Containers</title>
+      <link>http://localhost/2015/06/17/docker-persistence/</link>
+      <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/06/17/docker-persistence/</guid>
+      <description>&lt;p&gt;After days of wrestling with the concept of persisting data in Docker containers deep in the bowels of that
+now ubiquitous whale, I have been delivered to freedom, a slain blue whale slung over my shoulder, its cargo strewn across the cloud, and a new-found affection (dare I say &amp;ldquo;love&amp;rdquo;) for docker lodged within my fingers and my heart.&lt;/p&gt;
+
+&lt;p&gt;And so, in hopes that I may hasten your own progression from docker-dazed to docker-doer, here are my findings. Please enjoy responsibility.&lt;/p&gt;
+
+&lt;p&gt;The core problem: we have an ephemeral container that we can throw away, update, redeploy, but we want to persist some data.&lt;/p&gt;
+
+&lt;p&gt;The typical solution: mount a host volume like &lt;code&gt;docker run -d -v /home/user/data:/data myapp&lt;/code&gt;. Anything written to &lt;code&gt;/data&lt;/code&gt; in the container will persist in &lt;code&gt;/home/user/data&lt;/code&gt; on the host. Seems legit.&lt;/p&gt;
+
+&lt;p&gt;The problem: THE VOLUME GETS MOUNTED AS ROOT. This is an absolute nightmare if you are not running as root in the container (as you shouldn&amp;rsquo;t be).
+Some people try to solve the issue by setting the uid/gid on the host to match that inside the container. This is not only a nuisance, but destroys portability,
+which is practically the reason you are using docker in the first place. Clearly this is bad. If you&amp;rsquo;re not convinced, try it.&lt;/p&gt;
+
+&lt;p&gt;Note: when you use the &lt;code&gt;VOLUME&lt;/code&gt; command in a Dockerfile, the specified directory will persist somewhere in &lt;code&gt;/var/lib/docker/&lt;/code&gt;. This means you don&amp;rsquo;t have to use &lt;code&gt;-v&lt;/code&gt; to get persistence, but if you&amp;rsquo;re running lots of containers you&amp;rsquo;ll need to &lt;a href=&#34;https://github.com/chadoe/docker-cleanup-volumes&#34; target=&#34;_blank&#34;&gt;clean up after yourself&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now, since you&amp;rsquo;re working with docker, and since anything that&amp;rsquo;s anything in the docker world deserves a container, and since certainly you&amp;rsquo;re data is high up on the ladder of anythings that are anything, you ought to give your data its own container.&lt;/p&gt;
+
+&lt;p&gt;We call it a &amp;ldquo;data-only container&amp;rdquo;, and it&amp;rsquo;s actually the solution to the mounting problem: you create another instance of your container, whose sole purpose is to expose a volume (it doesn&amp;rsquo;t run any processes).
+Then instead of mounting a host volume with &lt;code&gt;-v&lt;/code&gt;,
+we use &lt;code&gt;--volumes-from&lt;/code&gt; to tell our application container to read from the data container.&lt;/p&gt;
+
+&lt;p&gt;You may object: &amp;ldquo;ok, but haven&amp;rsquo;t you just pushed the problem back a step further? Don&amp;rsquo;t we still need to mount the host into the data-only container?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;No. At least not if you do it right. Here&amp;rsquo;s how to do it right.&lt;/p&gt;
+
+&lt;p&gt;You have a dockerfile, it looks something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;FROM ubuntu
+
+ENV user myuser
+ENV data_root /data/myapp
+
+# set user right away for determinism
+RUN groupadd -r $user \
+  &amp;amp;&amp;amp; useradd -r -s /bin/false -g $user $user
+
+# create directory for persistence and give our user ownership
+RUN mkdir -p $data_root \
+  &amp;amp;&amp;amp; chown -R $user:$user $data_root
+
+...
+
+
+# persist data, set user
+VOLUME $data_root
+USER $user
+
+CMD [&amp;quot;./run.sh&amp;quot;]
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note we setup the group and user right away, make the volume directory, and give our user ownership.
+Then when we actually get to &lt;code&gt;VOLUME $data_root&lt;/code&gt;, the directory already has the right permissions. Remember anything written to this directory
+in the container will persist on the host somewhere in &lt;code&gt;/var/lib/docker/&lt;/code&gt; (use &lt;code&gt;docker inspect&lt;/code&gt; to find out).&lt;/p&gt;
+
+&lt;p&gt;Of course, you still need root to get at those files on the host system (docker runs as root, so this makes sense). But inside the container, the permissions are set correctly, because you dealt with them first thing in your Dockerfile (you clever developer you). Now any time you want to touch or see that data, you do it through the data-only container.&lt;/p&gt;
+
+&lt;p&gt;Ok. Let&amp;rsquo;s create some containers. We use the same image for both data-only and application container &lt;a href=&#34;http://container42.com/2014/11/18/data-only-container-madness&#34; target=&#34;_blank&#34;&gt;because it saves space&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker build -t myapp .
+docker run -i --name myapp_data myapp /bin/echo Data-only container for my app
+docker run -d --name myapp --volumes-from myapp_data myapp
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The first line builds the image (duh).
+The second creates the data-only container.
+Note the container doesn&amp;rsquo;t actually have to be running, it just has to exist.
+It will exit right away and that&amp;rsquo;s fine; you can see it in &lt;code&gt;docker ps -a&lt;/code&gt;.
+The data will persist so long as that container exists. So careful if/when you delete it.
+The final line runs our actual application, using the volume exposed by the data-only container.&lt;/p&gt;
+
+&lt;p&gt;So this is all pretty simple (and great). But it get&amp;rsquo;s better.&lt;/p&gt;
+
+&lt;p&gt;First, some classics:&lt;/p&gt;
+
+&lt;p&gt;Want to see what&amp;rsquo;s in your volume?&lt;/p&gt;
+docker run --volumes-from myapp_data myapp ls /data/myapp
+
+&lt;p&gt;Need to cat a file?&lt;/p&gt;
+docker run --volumes-from myapp_data myapp bash -c &#34;cat /data/myapp/file&#34;
+
+&lt;p&gt;Need to back it up?&lt;/p&gt;
+docker run -d --volumes-from myapp_data myapp_backup_service
+
+&lt;p&gt;Ok, you get the picture. But you&amp;rsquo;re still confused, because you still want to mount a volume;
+there&amp;rsquo;s some data on the host and you need it in your container.&lt;/p&gt;
+
+&lt;p&gt;Cool, so don&amp;rsquo;t mount a volume. Copy the data.&lt;/p&gt;
+
+&lt;p&gt;You can do this now using tar:&lt;/p&gt;
+tar cf - . | docker run --rm -i --volumes-from myapp_data myapp tar xvf - -C /data/myapp
+
+&lt;p&gt;Make sure you&amp;rsquo;re in the directory you want to copy (otherwise it doesn&amp;rsquo;t work?!).
+We compress the directory and pipe the compressed byte stream into the container command&amp;rsquo;s stdin,
+which extracts the contents and writes them to our volume in the container.
+And since we used &lt;code&gt;--volumes-from&lt;/code&gt;, it will persist in the data-only container.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s a little simpler if you&amp;rsquo;re only copying one file:&lt;/p&gt;
+cat file | docker run --rm --volumes-from myapp_data -i  myapp bash -c &#34;cat &gt; /data/myapp/file&#34;
+
+&lt;p&gt;You might think, &amp;ldquo;isn&amp;rsquo;t there a &lt;code&gt;docker cp&lt;/code&gt; command?&amp;ldquo;. There is, but it only works &lt;em&gt;from container to host&lt;/em&gt;, and not the other way. Don&amp;rsquo;t worry, &lt;a href=&#34;https://github.com/docker/docker/pull/13171&#34; target=&#34;_blank&#34;&gt;it will work both ways soon&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In the meantime, stick the above commands in shell scripts, or make aliases, or better yet help review &lt;a href=&#34;https://github.com/docker/docker/pull/13171&#34; target=&#34;_blank&#34;&gt;the pull request&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And check out the &lt;a href=&#34;https://github.com/tendermint/tendermint/tree/develop/DOCKER&#34; target=&#34;_blank&#34;&gt;tendermint repo&lt;/a&gt; for an example.&lt;/p&gt;
+
+&lt;p&gt;So there you have it folks. A simple formula for persistence in docker containers. Remember the secret: use more containers, copy data, never mount the host.&lt;/p&gt;
+
+&lt;p&gt;More information:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/23544282/what-is-the-best-way-to-manage-permissions-for-docker-shared-volumes&#34; target=&#34;_blank&#34;&gt;Docker Volume Permissions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/18496940/how-to-deal-with-persistent-storage-e-g-databases-in-docker&#34; target=&#34;_blank&#34;&gt;Docker Persistence&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@ramangupta/why-docker-data-containers-are-good-589b3c6c749e&#34; target=&#34;_blank&#34;&gt;Value of Docker Containers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://container42.com/2014/11/18/data-only-container-madness/&#34; target=&#34;_blank&#34;&gt;Data Only Containers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://container42.com/2013/12/16/persistent-volumes-with-docker-container-as-volume-pattern/&#34; target=&#34;_blank&#34;&gt;Patterns for Docker Volume Containers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

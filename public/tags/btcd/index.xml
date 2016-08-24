@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Btcd on Monax Industries</title>
+    <link>http://localhost/tags/btcd/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/tags/btcd/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Eris CLI Services Walkabout: BTCD</title>
+      <link>http://localhost/2015/09/01/btcd-as-a-service/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/09/01/btcd-as-a-service/</guid>
+      <description>
+
+&lt;p&gt;{% include series.html %}&lt;/p&gt;
+
+&lt;p&gt;We got a question recently on the &lt;a href=&#34;https://support.erisindustries.com/support/discussions/topics/6000011734&#34; target=&#34;_blank&#34;&gt;forum&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;So just to be clear if I wanted to mine with that [btcd] node (and I don&#39;t) what would I configure? Not the service definition file right? Bitcoind has the .conf file and it has commands. When I want to mine using btcd (or mine my test chain) where is this determined?
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Hope the asker doesn&amp;rsquo;t mind that I answer here as answering these questions could help a lot of people.&lt;/p&gt;
+
+&lt;h2 id=&#34;where-to-start-when-investigating-a-service&#34;&gt;Where To Start When Investigating a Service&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Look at the &lt;a href=&#34;https://github.com/eris-ltd/common/blob/master/docker/btcd/Dockerfile&#34; target=&#34;_blank&#34;&gt;Dockerfile&lt;/a&gt; (that link is to the dockerfile for eris/btcd).&lt;/li&gt;
+&lt;li&gt;Look at the start script (if there is one).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Generally Docker images come in two flavours. They have a start script which manages their start sequence. &lt;strong&gt;Or&lt;/strong&gt;. They get started using a config pulled from config files (which means we have to get the config files &amp;ldquo;into&amp;rdquo; the containers). Taking a look at the &lt;code&gt;CMD&lt;/code&gt; or &lt;code&gt;ENTRYPOINT&lt;/code&gt; in the Dockerfile is usually a dead giveaway, if not sometimes more investigation is necessary.&lt;/p&gt;
+
+&lt;p&gt;To investigate farther with &lt;code&gt;eris&lt;/code&gt; built Docker images for services we aren&amp;rsquo;t building, we keep all of these in our &lt;a href=&#34;https://github.com/eris-ltd/common/&#34; target=&#34;_blank&#34;&gt;Eris commons&lt;/a&gt; in the &lt;code&gt;docker&lt;/code&gt; folder. Compare the &lt;code&gt;btcd&lt;/code&gt; folder to the &lt;code&gt;eth&lt;/code&gt; folder if you would like to see a typical start script.&lt;/p&gt;
+
+&lt;p&gt;Since btcd doesn&amp;rsquo;t use a start script we&amp;rsquo;ll save that for another day (Ethan and I now both love shell scripting, well at least I certainly do).&lt;/p&gt;
+
+&lt;h2 id=&#34;if-a-service-starts-with-config-files-what-do-i-do&#34;&gt;If a Service Starts With Config Files What Do I Do?&lt;/h2&gt;
+
+&lt;p&gt;The asker of the original question is right, the &lt;code&gt;btcd&lt;/code&gt; container starts with a config file instead of via the other major &amp;ldquo;Docker way&amp;rdquo; which is a bunch of environment variables passed into a semi-intelligent start script which preconfigures and then runs a binary (for an example of this see Ethan&amp;rsquo;s &lt;a href=&#34;https://github.com/eris-ltd/eris-db/tree/master/DOCKER&#34; target=&#34;_blank&#34;&gt;eris chain manager scripts&lt;/a&gt; which we use for &lt;code&gt;eris chains&lt;/code&gt;). &lt;code&gt;btcd&lt;/code&gt; uses a config file.&lt;/p&gt;
+
+&lt;p&gt;This is where having an understanding of how &lt;code&gt;eris&lt;/code&gt; manages data containers becomes important.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;eris data&lt;/code&gt; is a pretty powerful tool when it is used correctly. What we do with data containers is that we keep a folder in the host&amp;rsquo;s file system at &lt;code&gt;~/.eris/data/NAME&lt;/code&gt; (where &lt;code&gt;NAME&lt;/code&gt; is the name of a service or chain). In that folder you can put whatever files are needed to start a specific &amp;ldquo;program&amp;rdquo; (which will usually be a container). Then you can run &lt;code&gt;eris data import NAME --dest PATH&lt;/code&gt; to &amp;ldquo;put&amp;rdquo; &lt;strong&gt;whatever is in the host location&lt;/strong&gt; &amp;ldquo;into&amp;rdquo; the containers at the &lt;code&gt;--dest&lt;/code&gt; you tell it. (Note, for pure eris programs we use the &lt;code&gt;~/.eris&lt;/code&gt; inside the containers so if you&amp;rsquo;re importing into an erisdb container, for instance, &lt;code&gt;--dest&lt;/code&gt; is not necessary cause automagic.)&lt;/p&gt;
+
+&lt;p&gt;Later, if you want to &amp;ldquo;get&amp;rdquo; files &amp;ldquo;out&amp;rdquo; of the container you will &lt;code&gt;eris data export NAME --src PATH&lt;/code&gt; (again, for eris proper containers, like erisdb, this is unnecessary cause automagic). That command will take whatever is in the volumes of the data container and export them to the host so that you can change them.&lt;/p&gt;
+
+&lt;p&gt;So let&amp;rsquo;s put this together to talk through how to start &lt;code&gt;btcd&lt;/code&gt; with a custom configuration.&lt;/p&gt;
+
+&lt;h2 id=&#34;steps-to-success&#34;&gt;Steps to Success&lt;/h2&gt;
+
+&lt;h3 id=&#34;step-1-eris-services-start-btcd&#34;&gt;Step (1): &lt;code&gt;eris services start btcd&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;First, start the node. This will make it drop its default configuration files in the right location. There is no output here if the command ran correctly.&lt;/p&gt;
+
+&lt;h3 id=&#34;step-2-eris-services-ls&#34;&gt;Step (2): &lt;code&gt;eris services ls&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;Second, check that the node is running. I currently have ipfs running so my output looks like this:&lt;/p&gt;
+ SERVICE NAME     CONTAINER NAME       TYPE     CONTAINER #                                           PORTS
+-------------- --------------------- --------- ------------- ----------------------------------------------------------------------------------------
+ btcd           eris_service_btcd_1   service   1             18332/tcp 18333/tcp 18334/tcp 8332/tcp 0.0.0.0:8333-&gt;8333/tcp 0.0.0.0:8334-&gt;8334/tcp
+ ipfs           eris_service_ipfs_1   service   1             0.0.0.0:4001-&gt;4001/tcp 0.0.0.0:5001-&gt;5001/tcp 0.0.0.0:8080-&gt;8080/tcp
+
+&lt;p&gt;A note about the listing commands. For services (and chains) there are three different listing commands:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;eris services known&lt;/code&gt; will simply read the files in the target folder. In other words your *definition_files. It does not tell you anything about the containers.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;eris services ls&lt;/code&gt; will simply tell you which containers &lt;em&gt;exist&lt;/em&gt; (they may or may not be running).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;eris services ps&lt;/code&gt; will simply tell you which containers &lt;em&gt;are running&lt;/em&gt; (and exist of course).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;step-3-eris-services-stop-btcd&#34;&gt;Step (3): &lt;code&gt;eris services stop btcd&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;Stop the node. There is no output here if the command was successful.&lt;/p&gt;
+
+&lt;p&gt;Run &lt;code&gt;eris services ps&lt;/code&gt; to confirm it stopped by comparing that output to &lt;code&gt;eris services ls&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;step-4-eris-data-ls&#34;&gt;Step (4): &lt;code&gt;eris data ls&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;This will check that the data container was made.&lt;/p&gt;
+
+&lt;h3 id=&#34;step-5-eris-data-export-btcd-src-home-eris-btcd&#34;&gt;Step (5): &lt;code&gt;eris data export btcd --src /home/eris/.btcd&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;This will perform the export of the volumes talked about above. How did I know what source directory? From the &lt;code&gt;VOLUMES&lt;/code&gt; line in the dockerfile.&lt;/p&gt;
+
+&lt;h3 id=&#34;step-6-cd-eris-data-btcd-ls-la&#34;&gt;Step (6): &lt;code&gt;cd ~/.eris/data/btcd/ &amp;amp;&amp;amp; ls -la&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;This will move into the data directory and show you what was exported. (Note you may have some permissions errors depending on your setup, but since its in the user&amp;rsquo;s folder it should be overcomeable).&lt;/p&gt;
+
+&lt;p&gt;You should see a &lt;code&gt;.btcd&lt;/code&gt; directory now. When I exported there was no conf file there (after a bit of investigation I realized that btcd doesn&amp;rsquo;t actually drop a config file). That&amp;rsquo;s fine, we can create one.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;touch ~/.eris/data/btcd/.btcd/btcd.conf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can also edit it however you want in whatever text editor you prefer according to the specification which btcd uses for its config files.&lt;/p&gt;
+
+&lt;h3 id=&#34;step-7-eris-data-import-btcd-dest-home-eris&#34;&gt;Step (7): &lt;code&gt;eris data import btcd --dest /home/eris&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;One thing to note here is that the paths are (slightly) different on the import than they were on the export. The exported volume was the .btcd path &amp;ldquo;inside&amp;rdquo; the container. That gave us the &lt;code&gt;~/.eris/data/btcd/&lt;/code&gt;&lt;strong&gt;&lt;code&gt;.btcd&lt;/code&gt;&lt;/strong&gt; on the host. But when we import from the host &amp;ldquo;into&amp;rdquo; the container we want to put the &lt;code&gt;.btcd&lt;/code&gt; directory into the &lt;code&gt;~&lt;/code&gt; directory so that the result inside the containers is &lt;code&gt;~/.btcd&lt;/code&gt; using a different path for the &lt;code&gt;--src&lt;/code&gt; and &lt;code&gt;--dest&lt;/code&gt; will accomplish this and will properly &amp;ldquo;align&amp;rdquo; the files in the right place inside the conter.&lt;/p&gt;
+
+&lt;h3 id=&#34;step-8-eris-services-start-btcd&#34;&gt;Step (8): &lt;code&gt;eris services start btcd&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;Now your chain should boot with your custom config file.&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;eris&lt;/code&gt; isn&amp;rsquo;t optimized for btcd like containers. It fully runs them, but it does take a bit of work to get set up with containers that us a config file instead of being having a bootable config passed in as environment variables. In general we are of the opinion that start scripts and environment files go further than config files for configuring how things run in containers.&lt;/p&gt;
+
+&lt;p&gt;How could this be improved? Well, for one a start script that would recieve the relevant env vars and dump those into a config before starting btcd would go a long way. We haven&amp;rsquo;t had time to do that yet, but as they say&amp;hellip;. pull requests welcome.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

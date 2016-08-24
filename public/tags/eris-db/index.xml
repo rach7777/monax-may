@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eris Db on Monax Industries</title>
+    <link>http://localhost/tags/eris-db/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Aug 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/tags/eris-db/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Solidity Part V: Modular design and strategies.</title>
+      <link>http://localhost/2015/08/23/solidity-5/</link>
+      <pubDate>Sun, 23 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/08/23/solidity-5/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Note: This tutorial is not updated regularly. Please see our documentation site for &lt;a href=&#34;https://docs.erisindustries.com/tutorials/solidity&#34; target=&#34;_blank&#34;&gt;updated smart contract writing tutorials&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Solidity Part IV: Solid Solidity.</title>
+      <link>http://localhost/2015/08/08/solidity-4/</link>
+      <pubDate>Sat, 08 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/08/08/solidity-4/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Note: This tutorial is not updated regularly. Please see our documentation site for &lt;a href=&#34;https://docs.erisindustries.com/tutorials/solidity&#34; target=&#34;_blank&#34;&gt;updated smart contract writing tutorials&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New eris-db and javascript.</title>
+      <link>http://localhost/2015/06/18/erisdb/</link>
+      <pubDate>Thu, 18 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/06/18/erisdb/</guid>
+      <description>
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;By: &lt;a href=&#34;mailto:andreas@erisindustries.com&#34; target=&#34;_blank&#34;&gt;Andreas Olofsson&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;For the last few months we&amp;rsquo;ve been focusing mainly on two things:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Replacing the Ethereum PoW-based client with Tendermint.&lt;/li&gt;
+&lt;li&gt;Phasing out the deCerver.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Replacing Ethereum with Tendermint is essential, though it&amp;rsquo;s mostly about replacing the consensus system. It still uses the EVM (Ethereum Virtual Machine), which means Solidity code will still work. The reason we needed to switch is that the PoS consensus system in Tendermint is much better suited for our chains, because consensus is generally driven by a set of trusted nodes.&lt;/p&gt;
+
+&lt;p&gt;Phasing out the decerver involves moving dependency management over to docker, and moving the dapp logic into node.js. This means that dapps are just normal node.js applications that uses Eris javascript libraries to access the blockchain client, and the client is (preferably) running in a docker container.&lt;/p&gt;
+
+&lt;p&gt;Some of this will now be released for public testing.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-new-eris-db-server&#34;&gt;The new eris-db server&lt;/h2&gt;
+
+&lt;p&gt;Tendermint is now integrated into our stack, and can be run through a library we call &lt;a href=&#34;https://github.com/eris-ltd/eris-db&#34; target=&#34;_blank&#34;&gt;eris-db&lt;/a&gt;. It is basically a Tendermint node wrapped inside of a simple webserver. You can call the node using JSON-RPC 2.0 (supports both HTTP and websocket), or through a REST-like web-api. It can handle multiple users at once, a mix of http and websocket, etc., so is more like a web-server then a simple RPC component. The purpose of this is to make it easy to set up an environment where one node can serve multiple users that connects via a web-browser.&lt;/p&gt;
+
+&lt;p&gt;We expose most of the functionality of the Tendermint client, like fetching account-, blockchain-, consensus-, and network-data, transacting in various different ways, and subscribing to events. You may also use filters when fetching large sets of data such as accounts and blocks. With JSON-RPC you add these filters as objects, and with the REST-like api you use a query structure similar to that of the &lt;a href=&#34;https://help.github.com/articles/search-syntax/&#34; target=&#34;_blank&#34;&gt;Github API&lt;/a&gt;. A specification of the different web APIs can be found &lt;a href=&#34;https://github.com/eris-ltd/eris-db/blob/master/api.md&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;, along with some info about the different concepts and objects the system uses.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-javascript-library&#34;&gt;The javascript library&lt;/h2&gt;
+
+&lt;p&gt;There is also a new javascript api, &lt;a href=&#34;https://github.com/eris-ltd/eris-db.js&#34; target=&#34;_blank&#34;&gt;eris-db.js&lt;/a&gt;. It can be added to a node.js application through npm or otherwise (&lt;code&gt;npm install eris-db&lt;/code&gt;). It provides binding to all the RPC methods, and a number of helpers for doing things like listening to events.&lt;/p&gt;
+
+&lt;p&gt;This library is not a full set of tools for dapp-development, but more of a back-bone. It has the bindings for eris-db/tendermint. We have chosen to divide it up so that people may choose which tools they like, meaning there will be one node.js library for &amp;ldquo;web3-like&amp;rdquo; solidity contracts, one for remote-compiler bindings, and so on. If there&amp;rsquo;s a demand, we might make a collection library for all the common libraries, but initially it will be possible to choose which ones to import.&lt;/p&gt;
+
+&lt;p&gt;This library is tested in node.js, but will work in a browser as well. This will be the case for all our javascript libraries most likely.&lt;/p&gt;
+
+&lt;h2 id=&#34;extras&#34;&gt;Extras&lt;/h2&gt;
+
+&lt;h3 id=&#34;the-server-server&#34;&gt;The server-server&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;eris-db&lt;/code&gt; comes with a server that makes testing convenient. It accepts POST requests with chain configuration data in the body (validator.json and genesis.json, etc.). When receiving a request it will create a new working directory in the OSs temp directory, write the data into it, start a fresh erisdb in that directory, serve it on a port that is taken from a pool, and return the port in the response. It is then possible to use that node to do the tests.&lt;/p&gt;
+
+&lt;p&gt;This server is meant to solve a few problems that I&amp;rsquo;ve come across, for example: When testing code I usually need a clean, new node to get reliable results. This is the case in 80-90% of all testing that I do. Using an already running node works sometimes, but it is far better when you know that the starting-state of the node will be &lt;strong&gt;exactly the same&lt;/strong&gt; in each test. Of course, some things like timestamps will be more or less random, but most of the output will be exactly the same; new contract addresses and hashes in particular.&lt;/p&gt;
+
+&lt;p&gt;Also, I like to be able to work on web-stuff on my Windows machine. Our remote compiler makes that possible to some extent, but i still have to run a node to do tests, and i like having that set up on a remote that will spin up new nodes in milliseconds when i need them, rather then having to set up boot2docker or some vm locally, or go through CI. I think Mac people would appreciate this as well - to be able to dev in their regular operating systems with their regular IDEs using a simple, out-of-the-box solution.&lt;/p&gt;
+
+&lt;h3 id=&#34;test-data&#34;&gt;Test data&lt;/h3&gt;
+
+&lt;p&gt;We use JSON for test-data, so that it works both with the server and the clients. If someone needs to make a client in some other language they can use the data to make sure it works.&lt;/p&gt;
+
+&lt;h2 id=&#34;todos&#34;&gt;TODOs&lt;/h2&gt;
+
+&lt;p&gt;These are some of the things that needs to be added before we release version &lt;code&gt;1.0&lt;/code&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The most urgent addition is perhaps the web3 javascript contract-objects. They will make it a lot easier to call contracts and listen to solidity events. This requires a PR to Tendermint because solidity events has not yet been  integrated, so it will take a little while.&lt;/li&gt;
+&lt;li&gt;Another urgent addition is javascript bindings for the remote compiler.&lt;/li&gt;
+&lt;li&gt;A docker container, obviously.&lt;/li&gt;
+&lt;li&gt;A new web-UI for viewing and (to some extent) interacting with a running chain.&lt;/li&gt;
+&lt;li&gt;Browser testing of the javascript libraries.&lt;/li&gt;
+&lt;li&gt;Support for CORS and TLS in the server. It&amp;rsquo;s been added but needs testing before we officially support it.&lt;/li&gt;
+&lt;li&gt;Unit testing solidity contracts is useful, at least when working with large systems. My sUnit library allows unit testing from node.js, and can be hooked into whatever testing framework is used. I will port it over to erisdb and upload at some point. This is low priority.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

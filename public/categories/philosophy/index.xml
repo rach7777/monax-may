@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Philosophy on Monax Industries</title>
+    <link>http://localhost/categories/philosophy/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/categories/philosophy/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>On Eris and Tendermint: Application and Consensus</title>
+      <link>http://localhost/2016/03/02/eris-and-tendermint/</link>
+      <pubDate>Wed, 02 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2016/03/02/eris-and-tendermint/</guid>
+      <description>
+
+&lt;p&gt;At Eris and Tendermint, we&amp;rsquo;re often asked: &amp;ldquo;what is the difference between Eris and Tendermint?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Apart from being two different companies and two different products, the simple answer boils down to application and consensus.&lt;/p&gt;
+
+&lt;p&gt;Eris:db is the application layer for blockchain applications. It&amp;rsquo;s the backbone for deploying and interacting with your application logic.&lt;/p&gt;
+
+&lt;p&gt;Tendermint is the consensus layer. It&amp;rsquo;s the engine that drives your application, once built, forward in time and keeps it in synch.&lt;/p&gt;
+
+&lt;p&gt;As an application layer, Eris:db has opinions about what a blockchain should look like. As a consensus layer, tendermint has opinions about how the consensus should operate.&lt;/p&gt;
+
+&lt;p&gt;It is much like the difference between Wordpress (a content management platform) and Apache (a web server); Wordpress is an application platform that has opinions about how to tie together PHP/node &amp;amp; MySQL. Apache is a web server that has opinions about, well, doing what servers do.&lt;/p&gt;
+
+&lt;p&gt;Some developers build custom applications with Wordpress. Indeed, Wordpress makes it easy &lt;em&gt;by making assumptions for you&lt;/em&gt;. Others might not like these assumptions and thus build applications from scratch that talk directly to Apache. Don&amp;rsquo;t like Apache? Use Nginx with Wordpress instead. Don&amp;rsquo;t like Wordpress? Go and use Liferay or Zotonic. As separate modules, the developer has choice and flexibility.&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/eris-tendermint.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;Admittedly, the analogy&amp;rsquo;s not a perfect one - in our view, a content management system such as Wordpress is really more like &lt;a href=&#34;https://erisindustries.com/components/erisdb/&#34; target=&#34;_blank&#34;&gt;eris:db&lt;/a&gt;, whereas &lt;a href=&#34;https://erisindustries.com/components/eriscli/&#34; target=&#34;_blank&#34;&gt;eris:cli&lt;/a&gt; is a more comprehensive blockchain application and database management system.&lt;/p&gt;
+
+&lt;p&gt;This is where, in case you haven&amp;rsquo;t already noticed, eris is all-in on &lt;a href=&#34;https://www.docker.com/&#34; target=&#34;_blank&#34;&gt;Docker&lt;/a&gt;. In the future, this will allow eris:db to plug into any type of consensus. Additionally, eris:cli should simplify the workflow of developing a Tendermint chain &lt;em&gt;sans&lt;/em&gt; eris:db, over &lt;a href=&#34;http://tendermint.com/posts/tendermint-socket-protocol/&#34; target=&#34;_blank&#34;&gt;tmsp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Another way of looking at it might be the difference between an empty toolbox and a Swiss Army Knife. Tendermint gives you a really nice toolbox. You can take this box and put whatever you want in it, and the box will keep your &lt;a href=&#34;https://www.youtube.com/watch?v=jl17CYYSzUw&#34; target=&#34;_blank&#34;&gt;stuff&lt;/a&gt; together and let you get on with the business of building your useful application.&lt;/p&gt;
+
+&lt;p&gt;Eris, by contrast, gives you a ready-to-go Swiss Army knife with plenty of useful tools and services (including BigChainDB, ZCash, Bitcoin, Ethereum, OpenBazaar, Tendermint, and ErisDB). Some you might not want, so don&amp;rsquo;t use them. If you want new ones added, take off the baseplate and add the new tool. And since eris:db may not suit your purposes, building a chain that &lt;a href=&#34;https://github.com/eris-ltd/eris-by-example/blob/master/erisdb_tmsp/run.sh&#34; target=&#34;_blank&#34;&gt;talks directly to Tendermint core over tmsp&lt;/a&gt; might be what you want.&lt;/p&gt;
+
+&lt;p&gt;Either way, eris:cli is intended to make running both eris:db and Tendermint simple. If it isn&amp;rsquo;t, please take to &lt;a href=&#34;https://twitter.com/eris_ltd&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt; and tell us what you&amp;rsquo;d like to see.&lt;/p&gt;
+
+&lt;p&gt;We made these design decisions because &lt;a href=&#34;http://cointelegraph.com/news/proof-of-work-proof-of-stake-and-the-consensus-debate&#34; target=&#34;_blank&#34;&gt;proof-of-work consensus makes zero sense&lt;/a&gt; for enterprise blockchain applications.&lt;/p&gt;
+
+&lt;h3 id=&#34;marmots-and-mint&#34;&gt;Marmots and mint&lt;/h3&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/marmots-and-mint.jpg&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;Eris Industries&amp;rsquo; relationship with Tendermint started shortly after we released our Alpha product in December of 2014 (thelonious/decerver), where we&amp;rsquo;d forked Ethereum, ripped the guts out of its consensus and replaced it with a bunch of smart contracts in order to create Eris:DB&amp;rsquo;s predecessor - a design that was, the first (and for about six months, the only) permissioned blockchain in existence. Those of you who have been following the company for some time will remember we initially called it &amp;ldquo;Thelonious.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;But a fork of an existing proof-of-work design was not going to cut it for us. So Ethan went searching for an alternative and about two months later, he stumbled on Tendermint.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&amp;ldquo;Byzantine Fault Tolerant consensus. With Proof-of-Stake.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;Awesome,&amp;rdquo; thought Ethan. Shortly thereafter Eris Industries and Tendermint began collaborating on the Tendermint codebase and, over the next few months, &lt;a href=&#34;https://erisindustries.com/components/erisdb/&#34; target=&#34;_blank&#34;&gt;eris:db&lt;/a&gt; was born.&lt;/p&gt;
+
+&lt;h3 id=&#34;towards-modularity&#34;&gt;Towards modularity&lt;/h3&gt;
+
+&lt;p&gt;Intimately linked to &lt;a href=&#34;https://github.com/tendermint/tendermint/wiki&#34; target=&#34;_blank&#34;&gt;tendermint consensus&lt;/a&gt;, eris:db has a handful of application state features which reside over and above the consensus layer. This lack of modularity is certainly not ideal, as Casey elaborates &lt;a href=&#34;https://eng.erisindustries.com/explainers/2015/12/31/on-blockchain-clients-in-2016/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;, so we began working to refactor Tendermint.&lt;/p&gt;
+
+&lt;p&gt;Although we didn&amp;rsquo;t know it, things were heading this way for awhile. It was a particularly memorable night in Tel-Aviv during marmot dev retreat this past fall where Ethan laid it all out for me.&lt;/p&gt;
+
+&lt;p&gt;From the tips of his fingers the very next day:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://eng.erisindustries.com/explainers/2016/02/22/apps-and-consensus/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;On Applications and Consensus&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The tl;dr (though you should definitely read it!) for the above is: Two separate processes. Two separate states. Choose your application. Choose your consensus. And because consensus is at a lower level, it is perhaps (in some cases - not others) more important to get right.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s through that lens that we announce today, with mixed emotion, that Ethan will be leaving Eris to co-found Tendermint as CTO. Much like the codebase is being refactored, so are the companies. And we&amp;rsquo;ll certainly be crossing paths again. Indeed, we&amp;rsquo;ve known each other for 5 years, lived together for 3, worked in the same research lab, and have pretty much been shooting the intellectual shit since we first met. And after I dropped out of grad school (because, you know, &lt;a href=&#34;https://www.youtube.com/watch?v=ru-Z5kvd9js&#34; target=&#34;_blank&#34;&gt;Bitcoin&lt;/a&gt; ), he taught me how to code. Bitcoin is cool, no doubt (decentralized money and all), but when it comes down to it, the most exciting aspect of this technology is a plurality of chains with a plurality of consensus&amp;rsquo;. And the ongoing refactor (see again &lt;a href=&#34;https://eng.erisindustries.com/explainers/2016/02/22/apps-and-consensus/&#34; target=&#34;_blank&#34;&gt;On Applications and Consensus&lt;/a&gt;) will help achieve this goal.&lt;/p&gt;
+
+&lt;p&gt;Although this ongoing transition has been a looming burden on several of us, I&amp;rsquo;m actually quite excited for what the future will bring. Even more so following the week Ethan and I spent in San Francisco with Jae and Dustin prior to &lt;a href=&#34;http://www.theblockchainconference.com/&#34; target=&#34;_blank&#34;&gt;The Block Chain Conference&lt;/a&gt;. We discussed at length the distinctions described in this post which should, moving forward, clarify the entrypoint for both developers and business folk looking to build out blockchain applications. I&amp;rsquo;ll offer another analogy: Eris is a mechanic shop (read: Formula 1 pitstop) with most parts of the car built for you and Tendermint is the manufacturer of Ferrari engines. There you have it: application and consensus.&lt;/p&gt;
+
+&lt;p&gt;This shift towards seperation of the application and consensus will likely reap many benefits for the crypto ecosystem as a whole. The Bitcoin community is starting to realize this. In the words of &lt;a href=&#34;https://medium.com/@muneeb/forking-a-network-86d1b766d38d#.a5k2kajx3&#34; target=&#34;_blank&#34;&gt;Muneeb Ali&lt;/a&gt;:&lt;/p&gt;
+We’ll need to cleanly separate consensus-breaking code from non-consensus breaking code and have formal methods to verify implementations against protocol specifications.
+
+&lt;p&gt;So what does this look like from a technical perspective? Bear with us as the design considerations are being fleshed out. Pictured below is an early conceptual overview of how we view the interaction between the various components. We&amp;rsquo;ll have more to say about this in the coming months. Stay tuned!&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/eris-chains-overview.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;How does this fit in with the various components of the stack you already know and love? Awhile back I &lt;a href=&#34;https://twitter.com/cerebralbosons/status/682691657473503233&#34; target=&#34;_blank&#34;&gt;tweeted&lt;/a&gt; a first pass on visualizing the stack as a whole. Here&amp;rsquo;s v2 with a few little additions. With all the moving pieces involved, it ought to be clear why docker is the right choice, despite the pain points.&lt;/p&gt;
+
+&lt;p&gt;Not much will change on the UX of eris:cli, other than additional modularity when it comes to consensus, i.e., ability to &amp;ldquo;plug into&amp;rdquo; whichever consensus you&amp;rsquo;d like. This&amp;rsquo;ll allow for much greater experimentation moving forward, as we &amp;ldquo;transition from first-generation blockchain tech to second-generation blockchain tech&amp;rdquo; to paraphrase IBM&amp;rsquo;s John Wolpert keynote from the conference mentioned above.&lt;/p&gt;
+
+&lt;p&gt;The marmots are excited. Are you?&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/eris-stack-v2.png&amp;rsquo; | img }}&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

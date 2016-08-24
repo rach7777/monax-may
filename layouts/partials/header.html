@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article">
+  <head>
+    <!-- Site Overview -->
+    <meta charset='utf-8'>
+    <title>
+        {{ if .Params.title }}
+            {{ .Site.Title }} | {{ .Title }}
+        {{ else }}
+            {{ .Site.Title }}
+        {{ end }}
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+    {{ partial "sharing_info.html" . }}
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' />
+    {{ if .Params.css }}
+        <link rel="stylesheet" type="text/css" href='/styles/{{ .Params.css }}.css' />
+    {{ else }}
+        <link rel="stylesheet" type="text/css" href='/styles/eris.css' />
+    {{ end }}
+
+    <!-- rss feed -->
+    {{ if .RSSlink }}
+      <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+      <link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ end }}
+  </head>
+<body>

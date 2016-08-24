@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Partnerships on Monax Industries</title>
+    <link>http://localhost/tags/partnerships/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/tags/partnerships/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Eris teams up with Ledger for blockchain hardware security</title>
+      <link>http://localhost/2016/03/18/ledger/</link>
+      <pubDate>Fri, 18 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2016/03/18/ledger/</guid>
+      <description>&lt;p&gt;Although I&amp;rsquo;m cognisant that self-praise is no recommendation, at Eris Industries, we&amp;rsquo;re fast becoming the leading platform provider for enterprise blockchain applications - as evidenced by our recent &lt;a href=&#34;https://blog.erisindustries.com/products/2016/01/28/pwc/&#34; target=&#34;_blank&#34;&gt;strategic partnership with PwC&lt;/a&gt; and successful delivery of a &lt;a href=&#34;https://blog.erisindustries.com/products/2016/01/28/pwc/&#34; target=&#34;_blank&#34;&gt;commercial paper prototype&lt;/a&gt; system for 40 of R3 CEV&amp;rsquo;s 43 member banks.&lt;/p&gt;
+
+&lt;p&gt;That market, by itself, is already too large for any single company to service. And that market will grow, not shrink, as the range of possible use-cases expands. However, rather than try to own 100% of the stack or 100% of every relationship, we at Eris Industries choose to collaborate with the best companies in the market. Yes, we could try to &amp;ldquo;do it all&amp;rdquo; and then bill a lot more. However, by teaming up, we ensure that we do the job right, the first time. And that&amp;rsquo;s the best way to turn a bank into a marmot.&lt;/p&gt;
+
+&lt;p&gt;Doing &amp;ldquo;blockchain&amp;rdquo; properly involves rather a lot more work than forking Bitcoin and bolting a slick UI onto it. Applied cryptography is a &lt;a href=&#34;http://iang.org/papers/fc7.html&#34; target=&#34;_blank&#34;&gt;dauntingly complex&lt;/a&gt; discipline; consulting, legal thinking, engineering, and integrations all need to be brought to bear on a problem at the same time if you&amp;rsquo;re going to get one of these systems really humming along. Only by picking the right friends will you be able to build the right solutions.&lt;/p&gt;
+
+&lt;p&gt;One huge problem facing blockchains (and cryptosystems generally) that not many companies are grappling with well is key management and hardware security. One company, however, is.&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s why today we&amp;rsquo;re pleased to announce that we&amp;rsquo;ve selected &lt;a href=&#34;https://www.ledger.co/&#34; target=&#34;_blank&#34;&gt;Ledger&lt;/a&gt; as our hardware security partner to help protect our clients&amp;rsquo; blockchain-based infrastructure.&lt;/p&gt;
+
+&lt;p&gt;Ledger is a technological leader in the blockchain security industry and provides a wide range of trusted hardware solutions for both consumer and enterprise usage. The company put itself on the map in 2015 with its best-selling smart card-based hardware wallet, and has since extended this to the B2B market with its TEE (Trusted Execution Environment) and HSM (Hardware Security Module) solutions.&lt;/p&gt;
+
+&lt;p&gt;Casey Kuhlman, our CEO, commented for a joint press release issued on behalf of both firms:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;“Ledger is at the forefront of providing tools to secure blockchains and manage private keys. Ledger&amp;rsquo;s BOLOS platform is a crucial security offering which fills a vital security gap in the blockchain ecosystem. We are therefore very pleased to be working with Ledger, and together we will provide our users with the most flexible, capable, and user-friendly application development tooling in the market today.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Similarly, Eric Larchevêque, Ledger&amp;rsquo;s CEO, has some good things to say about us too. Which is nice. He commented:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;“Eris Industries is a fast growing blockchain infrastructure provider for Fortune 500 customers. We are looking forward to deploying our solutions to their infrastructure and bring a strong layer of security to the management of critical workflows and cryptographic primitives.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Of course, press releases are always full of partnering companies saying nice things about each other, but in this case we certainly mean every word of it. 2016 has already been full of exciting developments in the space.&lt;/p&gt;
+
+&lt;p&gt;We very much look forward to working with Ledger as we see just how much more exciting it will become.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

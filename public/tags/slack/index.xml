@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slack on Monax Industries</title>
+    <link>http://localhost/tags/slack/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Aug 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/tags/slack/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The Marmot Den - Our Community Slack - is Open For Business!</title>
+      <link>http://localhost/2016/08/08/the-marmot-den-open-for-business/</link>
+      <pubDate>Mon, 08 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2016/08/08/the-marmot-den-open-for-business/</guid>
+      <description>&lt;p&gt;Today we&amp;rsquo;re excited to announce the launch of our new &lt;a href=&#34;https://slack.eris.industries&#34; target=&#34;_blank&#34;&gt;Slack Community - The Marmot Den&lt;/a&gt;, allowing anyone to easily sign-up and access various discussion/support channels. This decision comes after the realization that the Slack experience we were offering to our users was lackluster. The migration is about providing a harmonized user experience.&lt;/p&gt;
+
+&lt;p&gt;While we provide both an irc channel (freenode: #erisindustries) and a support e-mail, often the easiest way for users to get - and us to provide - support, was in one of several semi-public Slack channels. Once in our Slack, most users were confined to #community-vip. Some power-users eventually made their way into tool/topic specific channels, though as one user pointed out &amp;ldquo;there&amp;rsquo;s a lot of bot activity in here that&amp;rsquo;s useful to devs but not necessarily users, where can I go for updates?&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;In three words: &lt;strong&gt;too much friction&lt;/strong&gt;. These channels were noisy and hard to get to. And the whole process was manual; individual invitations were required.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://slack.eris.industries&#34; target=&#34;_blank&#34;&gt;The Marmot Den is open&lt;/a&gt; to anyone and trims all irrelevant notifications for the various tools that make up our platform.&lt;/p&gt;
+
+&lt;p&gt;We welcome you in to: ask a question, report a bug, request a feature, talk tooling, brainstorm your smart contract backed distributed application, or any other blockchain topic that one may fancy.&lt;/p&gt;
+
+&lt;p&gt;Looking forward to seeing you &lt;a href=&#34;https://slack.eris.industries&#34; target=&#34;_blank&#34;&gt;in The Den&lt;/a&gt;!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

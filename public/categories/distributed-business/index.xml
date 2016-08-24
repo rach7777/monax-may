@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Distributed Business on Monax Industries</title>
+    <link>http://localhost/categories/distributed-business/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 May 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/categories/distributed-business/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Blockchain Legal Engineering</title>
+      <link>http://localhost/2016/05/02/blockchain-legal-engineering/</link>
+      <pubDate>Mon, 02 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2016/05/02/blockchain-legal-engineering/</guid>
+      <description>
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/legal-engineering.jpg&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;h1 id=&#34;blockchain-legal-engineering&#34;&gt;Blockchain Legal Engineering&lt;/h1&gt;
+
+&lt;p&gt;Legal engineering ensures that information gets to the right place at the right time. Technology accelerates the speed of legal engineering by providing ever more reliable and complex models for managing legally significant information and events. Legal technology puts pressure on lawyers to innovate. In &lt;em&gt;The End of Law&lt;/em&gt;, Richard Susskind gives his formula for winning the legal technology contest:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Set the bar of difficulty on your work so high that others are dissuaded from competing.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Avoid bespoke work by creating packages that have value and that may be customized for specialized needs.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Once innovative packages get integrated into the marketplace, they become a commodity, a fungible item for which marketing is necessary to extract value.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;To succeed, legal innovators must continually create new, top-notch packages that lead the industry.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There’s no resting on one’s laurels in legal engineering. Successful legal tech  needs a team with energy, drive, vision, creativity and smarts to keep ahead of imitators who will inevitably create a commodity out of one’s innovative product.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Enter the Eris marmots.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;At Eris, we believe that the mechanism to allow smart contract technology to blossom into a thriving multichain environment is legal engineering, providing a system for distribution of verifiable knowledge when and where it is needed. Legal engineers use knowledge of human systems to build new models for people and their relationships with the world.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tools: Data Certainty and Legal Models&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Smart contracts add to the legal engineer’s toolbox the novel element of &lt;em&gt;data certainty&lt;/em&gt;, the ability to trust the authenticity and provenance of a document stored in decentralized, cryptographic architecture. This seemingly small event, proving data certainty of documentary conditions, consumes a large amount of lawyer and compliance team time. Authentication of documentary conditions is the “low hanging fruit” of smart contract development and a necessary step to managing more complex relationships.&lt;/p&gt;
+
+&lt;p&gt;To perfect the blockchain data certainty model, it is critical to start with the simplest legally effective documents: commercial paper. Commercial paper is a complex system based on promises and documentary conditions. Commercial paper law provides the elements of settlement finality, fungibility and protection against adverse claims, all of which blockchain engineers work hard to achieve. Settlement finality means that once a financial transaction occurs, it cannot be undone because of problems with the underlying transaction. Fungibility means one unit of value is the same as another and can be traded, apples-to-apples, like money. Adverse claims protection means that abiding by commercial paper best practices protects against multiple promises to pay secured by the same collateral, analogous to the bitcoin double-spend.&lt;/p&gt;
+
+&lt;p&gt;These pre-baked commercial paper elements are the rails that will allow chains to interact and are the the focus of Eris’s early endeavors. To build a new ecosystem, we have to get the “paper” right, empowering synergistic growth on top of a stable foundation. With reliable financial models in place, participants will be free to begin building new relationships based on shared participation in blockchain commerce, creating a proliferation of chains and business models.&lt;/p&gt;
+
+&lt;p&gt;Eris’s legal engineers will be right there, leading the way.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;For information on putting Eris smart contracts libraries to work for you, please contact us at&lt;/em&gt; &lt;a href=&#34;mailto:contact@erisindustries.com&#34; target=&#34;_blank&#34;&gt;contact@erisindustries.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Moving The Chains to the Blockchain</title>
+      <link>http://localhost/2016/04/02/moving-the-chains/</link>
+      <pubDate>Sat, 02 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2016/04/02/moving-the-chains/</guid>
+      <description>
+
+&lt;p&gt;What do blockchains and sports have in common? A lot more than one might expect. This post is a think-piece written collaboratively with &lt;a href=&#34;https://twitter.com/samirpatellaw&#34; target=&#34;_blank&#34;&gt;Samir Patel&lt;/a&gt; while we were kicking it marmot style at Michigan State University this weekend. #lawyerswhocode&lt;/p&gt;
+
+&lt;h2 id=&#34;sports-business-practices&#34;&gt;Sports business practices&lt;/h2&gt;
+
+&lt;p&gt;Although professional sport leagues and their affiliated teams are considered businesses under the American laws that govern commerce, there have been particular laws and precedents putting professional sport in a different legal consideration than ordinary business. Investigating these precedents helps to understand how owners have recently strengthened their grip on the monetary flow of sport. Here, we examine how a blockchain may add a layer of accountability to the sports industry.&lt;/p&gt;
+
+&lt;p&gt;In today&amp;rsquo;s sport industry there is a push by stakeholders to maintain an equitable split in revenues to ensure that ownership groups do not exploit them. This has been of particular importance during collective bargaining agreements. When discussing collective bargaining agreements, the concepts of: revenue sharing, player compensation/salary caps, and taxes are seperate. However, they are inextricably linked. Revenue sharing and salary cap restrictions are two examples of particular concern for collective bargaining agreements.&lt;/p&gt;
+
+&lt;p&gt;Revenue sharing is when the league creates revenue streams and requires its teams to contribute to a pool based upon different standards established by each league. Traditionally, shared revenues primarily include local and national television rights. These shared revenues are intended to help lower income franchises and create competitive balance within the league. Recentlly, shared revenues have expand to include most revenue streams for a team.&lt;/p&gt;
+
+&lt;h2 id=&#34;salary-cap-player-compensation&#34;&gt;Salary cap / player compensation&lt;/h2&gt;
+
+&lt;p&gt;This would seem to be great for the Cleveland Browns fan who hopes to one day have a winning season, however, revenue sharing imposes a pressure point on the salary of players. In professional sports, a salary cap is a  rule that places a limit on the total amount of money that a team can spend on its roster of players. The higher the salary cap, the more players can be paid. Any withholding of revenue by the owners can diminish a player&amp;rsquo;s salary, saving the owner money. In fact, in February 2016, an arbitrator ordered the NFL to &lt;a href=&#34;http://fortune.com/2016/02/23/nfl-salary-cap/&#34; target=&#34;_blank&#34;&gt;pay back $120 million to the NFLPA&lt;/a&gt; for what the league called an &amp;ldquo;accounting error&amp;rdquo;. These funds are to be distributed back to the players, at an average of $71000 per player. This is a significant amount to the undrafted rookie playing on a one year contract.&lt;/p&gt;
+
+&lt;p&gt;Player compensation and revenue sharing considerations aside, owners also leverage creative accounting techniques to receive public subsidies from regional governments. Recently, there has been a &lt;a href=&#34;http://www.nytimes.com/2009/12/25/sports/25stadium.html?_r=0&#34; target=&#34;_blank&#34;&gt;stadium boom in professional sports&lt;/a&gt;. Owners have used the &amp;ldquo;need&amp;rdquo; for new stadiums or renovations as a point of emotional leverage with the public, to receive public funding. Tangentially, the NFL head office has exempted: luxury boxes, club seating, and personal seat licenses from the revenue share. These revenue streams have recently grown in size.&lt;/p&gt;
+
+&lt;p&gt;In Santa Clara, the city broke ground on a &lt;a href=&#34;http://www.voiceofsandiego.org/topics/land-use/how-the-49ers-got-a-stadium-and-why-it-wont-work-here/&#34; target=&#34;_blank&#34;&gt;$1.3 billion stadium for the San Francisco 49ers&lt;/a&gt;. The deal included $116 million in public funding (approve by referendum), with private capital making up the rest. However, the team disguised a $950 million loan as coming from institutions led by Goldman Sachs when actually the loan was coming from the Santa Clara Stadium Authority; a government entity. Taxpayers were tricked by the team creative accounting into thinking that the investment towards a new stadium was minimal when actually it was essential. As well, the taxpayers are on the hook for this money if the team goes bankrupt.&lt;/p&gt;
+
+&lt;p&gt;The use of creative accounting practices by teams, take advantage of players and taxpayers. Hidden revenues and expenses paint a picture of poor financial health for the team. This is done to maximize salary efficiency and public subsidization. The following diagram elaborates:&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/sports-accounting-no-chain.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;h2 id=&#34;uncreative-accounting&#34;&gt;Uncreative accounting&lt;/h2&gt;
+
+&lt;p&gt;The problems identified above can be summarized as follows: mutliple parties - each with different interests and motivations - need to agree on a common truth to conduct business. Creative accounting practices and/or errors skew profits in favour of teams. In the case of revenue sharing there is lack of transparency with respect to total revenues, burdening smaller teams and players salaries. In the latter example, cities overpay in subsidies.&lt;/p&gt;
+
+&lt;p&gt;How does a blockchain add value here? When most (if not all) aspects of teams&amp;rsquo; portfolios are tracked on a chain, the innacuracies are easily spotted or prevented; therefore, with the enforced transaparency over the data set the creativity which accountants can practice is rather confined. For revenue sharing, players and smaller teams benefit by getting the correct cut. For stadium financing, taxpayers aren&amp;rsquo;t duped into paying for a stadium that the team owner can easily afford. (#watchthisspace for more on transparency over public moneys!)&lt;/p&gt;
+
+&lt;p&gt;In football, &amp;ldquo;moving the chains&amp;rdquo; is synonymous with first downs and progress. Each time the team moves the chains, it gives itself a new suite of options, opportunities, and knowledge. The playbook opens up. Similarly, a blockchain opens up the playbook of sports business.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-is-a-blockchain&#34;&gt;What is a blockchain?&lt;/h2&gt;
+
+&lt;p&gt;A blockchain is a distributed ledger where transactions are validated and updated through consensus of the participants in that blockchain. For teams and players that are directly affected by the financial disclosings of other teams, blockchains offer a harmonized solution for ensuring transparency over data &amp;ndash; which makes accountability much easier.&lt;/p&gt;
+
+&lt;p&gt;All stakeholders of the revenue streams in the NFL could serve as a validator on the blockchain. Each team would input their revenues on the blockchain. Total team revenues can be updated after each game or immediately as revenue is brought in. Internal auditors for the NFL teams can add an additional layer of validation over the dataset. This allows for teams to project the amount they would need to contribute to revenue sharing quickly and more accurately. Additionally, accurate projections for a team salary cap the following year will be available.&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/sports-accounting-with-chain.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;Players will benefit from the implementation of a blockchain because they can be assured that they are not victim to creative accounting; resulting in the accurate share of the revenue pie. Player unions can have peace of mind knowing that the financial documents outlining the total league revenues are accurate. This data allows the player unions to better negotiate player compensation during collective bargaining negotiations.&lt;/p&gt;
+
+&lt;p&gt;This technology also helps the league maintain parity; the ultimate goal of revenue sharing. First, it ensures that the richer teams are contributing their fair share into the revenue sharing fund. Smart contracts can automatically calculate contributions to the revenue sharing pie and can significantly reduce accounting errors. Small market team owners can know that the richer teams are not hiding revenues from them. Teams can also formalize their rosters sooner (nearly immediately aftert the Superbowl) given access to all the required information in real-time.&lt;/p&gt;
+
+&lt;p&gt;Of course, this is all for nothing if teams don&amp;rsquo;t have a stadium to play in. As alluded to earlier, owners have leveraged the affection of football from fans for taxpayer dollars without much oversight of their financial integrity. The Minnesota Vikings received $506 million from public funds for the &lt;a href=&#34;http://www.startribune.com/vikings-tap-many-sources-for-stadium-funds/311897781/&#34; target=&#34;_blank&#34;&gt;construction of their new $1.1 billion stadium&lt;/a&gt; while, as already mentioned, the 49ers used &lt;a href=&#34;http://www.fieldofschemes.com/news/archives/2012/03/4859_santa_clara_49e_6.html&#34; target=&#34;_blank&#34;&gt;creative accounting to extract $950 million from Santa Clara taxpayers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;With the transparency offered by such a system deployed, cities could demand that any owner seeking funds for a new stadium participate in a blockchain that identifies audited revenue streams over several years&amp;rsquo; time, ensuring authenticity of need for funds.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-about-the-owners&#34;&gt;What about the owners?&lt;/h2&gt;
+
+&lt;p&gt;Professional sports teams - like any other large business - benefit from quality real-time data; data used to support their operational decisions. The ticket department can base ticket prices on data from previous games (and even of other teams!) more easily. In addition, a blockchain can decrease the operating costs in the teams front office.&lt;/p&gt;
+
+&lt;p&gt;Old business practices have caused the United States&amp;rsquo; National Football League to suffer massive public relation hits with both players and common sports fans. Owners are seen as a old boy&amp;rsquo;s club of billionaires who have schemed their way to wealth. By using blockchain and smart contract technology, owners can maintain their place in one of the more lucrative sports leagues while innovating and embracing transparency. Not only can they change the way they are viewed, owners can also change the way the business of sports is conducted. That&amp;rsquo;s moving the chains.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Eris &#43; IPFS</title>
+      <link>http://localhost/2015/11/01/eris-and-ipfs/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/11/01/eris-and-ipfs/</guid>
+      <description>&lt;p&gt;By changing the way different parties cooperate, smart contracts radically improve how complex processes are run. This new paradigm will have wide-reaching effects in many areas.&lt;/p&gt;
+
+&lt;p&gt;When we envision the smart contract stack of the future, some of the components involve radically new paradigms in their own right. The best example of this is the peer-to-peer distributed InterPlanetary File System (IPFS). At once a simple protocol for how to name, host and transfer files in a distributed manner, it also offers an audacious vision of what the fabric of the internet should look like in the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;h1&gt;What is IPFS?&lt;/h1&gt;
+IPFS took some of the most successful ideas of existing systems and formed them into a single, cohesive system. These precursors to IPFS include distributed hash tables (DHT), BitTorrent, the version control system Git, and the Self-Certified Filesystem (SFS).&lt;/p&gt;
+
+&lt;p&gt;The fundamental concept of IPFS is that instead of looking for locations, as with HTTP, you look for the content of a file. As an example, let&amp;rsquo;s say I link to a picture of a baby marmot on Flickr. Now, what your computer does now is call the IP address of Flickr&amp;rsquo;s server and ask for the file hosted at that path. Flickr then hopefully responds with &lt;a href=&#34;https://www.flickr.com/photos/53541558@N00/521987371&#34; target=&#34;_blank&#34;&gt;a picture of baby marmots&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There are two big downsides to this. First, if at some point Flickr stops hosting that picture because of a sudden surge of anti-marmot sentiment, the image will be gone and requests to the path will simply fail. Second, this way of requesting files actually provides very little security. We have no way of making sure that the image that Flickr ends up delivering to you is actually the same as the one that I saw when I originally linked to it.&lt;/p&gt;
+
+&lt;p&gt;IPFS uses the idea of content-addressing to turn this upside down. Content-addressing means that you look for a file by its content and where it’s located. Who delivers it to you is irrelevant. This is accomplished using the hash of a file as the file name. On IPFS each file has a unique name, and if multiple parties were to host the same file, it would also have the same name. Each IPFS node maintains a distributed hash table (DHT) that contains all the hashes of files and all the IP addresses of the nodes that host those files. So by pinging IPFS for a file, it is not only able to located it, but it can simultaneously make sure that the file the node delivers is the correct file by checking its hash.&lt;/p&gt;
+
+&lt;p&gt;&lt;h1&gt;The IPFS Vision&lt;/h1&gt;
+Ultimately, IPFS aims to change the fabric of the internet and replace HTTP. No problem, right? There are several reasons why replacing HTTP could be a good thing, and IPFS has illustrated the benefits through the vision of a Permanent Web. With HTTP the burden of hosting content generally falls on the person who published it. If someone were to create a popular site about comics (see the &lt;a href=&#34;https://ipfs.io/ipfs/QmNhFJjGcMPqpuYfxL62VVB9528NXqDNMFXiqN5bgFYiZ1/its-time-for-the-permanent-web.html&#34; target=&#34;_blank&#34;&gt;great Neocities post about IPFS&lt;/a&gt;), then that content would only continue to be available at the original location if the publisher continued to host it. But over time, interests change, companies go bankrupt, servers fail and content ends up disappearing. The result tends to be that old sites start to look like graveyards, linking to places that have long gone.&lt;/p&gt;
+
+&lt;p&gt;With IPFS, on the other hand, anyone can host content. If you want to make sure a website continues to persist, you can simply host it yourself. No need to ask anyone for permission, and for someone browsing the site no difference would be noticeable. So, if a blogger can host all the pages to which his site links, even years later when some of these other sites have started disintegrating, readers can still access content he references without noticing any change.&lt;/p&gt;
+
+&lt;p&gt;The other reason why HTTP is no longer up to the task is that it simply can’t handle today’s traffic loads and patterns well. With &amp;lsquo;lots of data, accessible everywhere&amp;rsquo;, efficient ways of moving data are needed. Comparing HTTP to BitTorrent makes it easy to see its shortcomings. The more popular a file is on BitTorrent, the more peers host it and the faster the download speed becomes. With HTTP, an increase in popularity results in an increasing number of machines hitting the same server. If this can’t be managed with a costly increase of bandwidth or server capacity, the user is left with slow speed and a disintegration of quality. With IPFS, as with BitTorrent, more popularity means more peers hosting the file and more sources from which different parts of the file can be downloaded simultaneously. This dramatically cuts down redundancy in terms of how often data is moved around the web. It also means less time wasted waiting for downloads. Popular files can also be downloaded from peers near you, ideally on the same network, instead of being sent again and again from a large data center to various users on the same network.&lt;/p&gt;
+
+&lt;p&gt;On a larger scale, IPFS is also about creating a more decentralized internet. This means reducing our reliance on the massive companies that have the economies of scale to move lots of data efficiently under the HTTP paradigm. Agile startups will be able to compete better with cloud computing giants, and government censorship and &lt;a href=&#34;https://blog.erisindustries.com/2015/11/02/IPBill/&#34; target=&#34;_blank&#34;&gt;unlawful mass surveillance&lt;/a&gt; will become much harder.&lt;/p&gt;
+
+&lt;p&gt;&lt;h1&gt;Smart Contracts and IPFS&lt;/h1&gt;
+Where do smart contracts and Eris come in? While blockchains are great at providing verifiability and transparent processes, they are unsuited to hosting large amounts of data. When contracts depend on lots of data, that data needs to be referenced from within the contracts. Such data could range from scans of real-world documents, to images, media files or data sets.&lt;/p&gt;
+
+&lt;p&gt;IPFS is ideally suited for this. The integrity of files that smart contracts reference is often critical. With IPFS&amp;rsquo; content-addressing, the process of automatically verifying files comes out of the box. With a traditional file system, each contract needs to additionally verify the hash of a file that was delivered. IPFS circumnavigates this requirement,  which gets rid of possible attacks. Since anyone can host a file, any party that has an economic interest in the contract can simply choose to host all file dependencies. Using HTTP, you have to either trust the service hosting the file or program complicated fall-back procedures in case a file isn&amp;rsquo;t hosted anymore by the default host or in case the default host delivers the wrong file.&lt;/p&gt;
+
+&lt;p&gt;In the enterprise context, enabling any party to host files is often the best option. In addition, third party companies could potentially provide hosting specifically for smart-contract related files and provide guarantees through SLAs.&lt;/p&gt;
+
+&lt;p&gt;In the future, Protocol Labs, the company behind IPFS, plans to add an incentive layer to the protocol called Filecoin. With Filecoin, nodes hosting content will be compensated for their work. Thus smart contracts will hold Filecoin balances and pay the network for hosting their dependencies. This is particularly interesting for permissionless chains like Ethereum and when censorship resistance is a high priority.&lt;/p&gt;
+
+&lt;p&gt;&lt;h1&gt;Conclusion&lt;/h1&gt;
+IPFS is an exciting prospect for the future of the internet, and it’s an amazing fit for smart contracts. That’s why we have integrated IPFS as an Eris service and why it is the file system of choice for Eris smart contract applications. We look forward to seeing many interesting applications combining the two paradigms in the future. If you want to start playing around with IPFS and Eris, you can get started with &lt;a href=&#34;https://eng.erisindustries.com/tutorials/2015/08/05/ipfs-as-a-service/&#34; target=&#34;_blank&#34;&gt;Zach&amp;rsquo;s IPFS walkabout&lt;/a&gt;.
+&lt;h1&gt;Resources&lt;/h1&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ipfs.io/&#34; target=&#34;_blank&#34;&gt;IPFS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bit.ly/1N7UdAr&#34; target=&#34;_blank&#34;&gt;IPFS Whitepaper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://filecoin.io/&#34; target=&#34;_blank&#34;&gt;Filecoin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bit.ly/1LfB2lq&#34; target=&#34;_blank&#34;&gt;Filecoin Whitepaper PDF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://letstalkbitcoin.com/blog/post/epicenter-bitcoin-100-juan-benet-decentralizing-the-web-with-the-inter-planetary-file-system-ipfs&#34; target=&#34;_blank&#34;&gt;Epicenter Bitcoin Episode with Juan Benet about IPFS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Immutability for Bitcoin and Permissioned Ledgers</title>
+      <link>http://localhost/2015/08/19/immutability-bitcoin-and-permissioned-ledgers/</link>
+      <pubDate>Wed, 19 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/08/19/immutability-bitcoin-and-permissioned-ledgers/</guid>
+      <description>&lt;p&gt;Last week, I gave my first talk about Eris at the &lt;a href=&#34;http://www.meetup.com/Bitcoin-Startups-Berlin/&#34; target=&#34;_blank&#34;&gt;Bitcoin Startups Berlin&lt;/a&gt; meetup. I know most people there so I knew this would be a friendly audience. At the same time, what we do at Eris doesn’t square with the ideologies of some in the Bitcoin space, so I did anticipate some pushback.&lt;/p&gt;
+
+&lt;p&gt;In the end, it was Jörg Platzer, owner of the world’s oldest Bitcoin-accepting establishment, Room 77, who took the most offense. He was obviously displeased at the notion of permissioned ledgers in general, but the one aspect where he debated me the most was the issue of immutability.&lt;/p&gt;
+
+&lt;p&gt;I claimed that public blockchains are fairly immutable. True, there is the risk of a 51% attack or chain reorganization, but that has happened very rarely so far (at least on the Bitcoin network). But what about permissioned chains? My argument was that immutability varies depending on design, whereas Jörg Platzer insisted they are mutable.&lt;/p&gt;
+
+&lt;h1&gt;What is immutability anyway?&lt;/h1&gt;
+But let me take a step back from the technical aspects and look at immutability more generally. ‘Immutable’ means [unable to be changed](http://www.oxforddictionaries.com/definition/english/immutable). In the case of a blockchain, immutability presumably means that it is not possible to go back and rewrite the history. Strictly speaking it is possible to rewrite Bitcoin’s history making Bitcoin mutable. The only caveat is that the attacker has to create a longer chain and that is generally prohibitively expensive.
+ 
+Immutability is an essential trait for Bitcoin. Satoshi described Bitcoin in his [famous whitepaper](https://bitcoin.org/bitcoin.pdf) as a ‘version of electronic cash’. The cash analogy makes it easy to see why things break down when the ledger becomes mutable. If I pay for a coffee with bitcoin, but later the history gets changed and my payment gets reversed, transactions can’t be relied on anymore. If this happened regularly, Bitcoin would becomes useless.
+ 
+&lt;h1&gt;What about permissioned chains?&lt;/h1&gt;
+
+&lt;p&gt;Does immutability have similar importance in the case of permissioned chains? Our thesis at Eris is that blockchains and smart contracts will have wide-reaching implications. &lt;a href=&#34;https://db.erisindustries.com/distributed%20business/2014/12/17/blockchain-your-business/&#34; target=&#34;_blank&#34;&gt;Use cases and application contexts will vary widely&lt;/a&gt; as will the designs and capabilities of chains. Presumably, some of these could include assets that are cash-like, where one would want a similar degree of immutability as in Bitcoin. But what about the rest?&lt;/p&gt;
+
+&lt;p&gt;One way we think about the utility of blockchains, particularly smart contract-enabled ones, is that they provide process assurance. They allow different parties to run a process in a predictable and auditable way with permissions and capabilities being assigned upfront in a transparent way. The benefits of that could include making existing processes more efficient, allowing business relationships to extend to lower trust contexts and enabling completely new applications. Does immutability make sense in that context? Depending on the specific business case, it will be necessary to allow transactions to be reversed on the chain. One can imagine a blockchain tracking real-world ownership. Then it would be essential that some (perhaps the courts of law) have the ability to change ownership on-chain. Otherwise a thief could steal someone’s house by hacking into their computer. Obviously that would have to be prevented.&lt;/p&gt;
+
+&lt;p&gt;The great thing about permissioned chains is that who is allowed to do that can be set up at the beginning. Is is a capabilities-based approach. Thus one could assign a court of law and the asset registry the ability to cosign an ownership transfer.&lt;/p&gt;
+
+&lt;p&gt;However, it is clearly preferable if in this case an additional transaction was created as opposed to any record of the previous transaction being erased. The latter would not prevent a corrupt regime from forging ownership records. The former would also not prevent corrupt governments from forging ownership, nothing really could, but it would create a transparent trace of what happened. This could even include the signatures of the officials responsible.&lt;/p&gt;
+
+&lt;p&gt;I think this applies to any case where we care about auditability, which seems to be the case whenever we care about having process assurance. Therefore, immutability is of critical importance when smart-contract enabled blockchains are used for process assurance.&lt;/p&gt;
+
+&lt;h1&gt;UTXOs versus blockchains with state&lt;/h1&gt;
+
+&lt;p&gt;In this post, I didn’t look at the technical aspects of immutability. I’ve differentiated between permissioned and permissionless chains, but another key distinction is between blockchains like Bitcoin that do not have state and smart-contract blockchains that have a state. In the case of Bitcoin, preventing a reorganization of the blockchain is an essential security concern. But in the case of a smart contract chain, we can distinguish between a transaction log (which only has utility as a forensic tool) and the state of the contracts, which is what actually matters to do transactions.&lt;/p&gt;
+
+&lt;p&gt;While it’s still unclear where blockchains, whatever their type, will eventually have the biggest impact, having a timestamped and cryptographically verified transaction log will be critical for most applications. This is not an aspect where permissioned and permissionless chains differ.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Smart securitisation, or: why it&#39;s time to stop talking tokens and start talking smart contracts</title>
+      <link>http://localhost/2015/04/28/smart-securitisation/</link>
+      <pubDate>Tue, 28 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/04/28/smart-securitisation/</guid>
+      <description>
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/scallthethings.jpg&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;h1 id=&#34;we-need-to-have-a-chat-about-cryptocurrency-tokens&#34;&gt;We need to have a chat about cryptocurrency tokens.&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-you-re-doing-it-wrong-but-don-t-worry-chalk-it-up-as-a-learning-experience&#34;&gt;1. You&amp;rsquo;re doing it wrong (but don&amp;rsquo;t worry - chalk it up as a learning experience)&lt;/h2&gt;
+
+&lt;p&gt;To date, most of the folks in Bitcoin/Crypto have made the rather critical mistake of assuming that asset ownership and/or replacing a bank is as simple as&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;tokenising ALL THE THINGS (a token being also known as a &amp;ldquo;coin&amp;rdquo;, e.g. a bitcoin) and then&lt;/li&gt;
+&lt;li&gt;trading them around on a &amp;ldquo;trustless&amp;rdquo; decentralised network.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I don&amp;rsquo;t think so.&lt;/p&gt;
+
+&lt;p&gt;There are a couple of serious problems with this approach:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;First,&lt;/strong&gt; the fully-decentralised networks such as Bitcoin - being completely open - don&amp;rsquo;t actually provide you with a facility to verify that the thing someone is trading is &lt;em&gt;actually that thing.&lt;/em&gt; A token could represent a car or a house, sure, but unless you can link that token to a certified copy of a title deed - and then ascertain that no other prior interests took priority to yours - when you purchase that token with (e.g.) Bitcoin in a crypto-escrow-thingy you might be taking an encumbered asset. Or the asset may not actually exist. &amp;ldquo;On-chain&amp;rdquo; assets which are secured by, for example, the reputation of anonymous issuers are simply &lt;a href=&#34;http://www.theguardian.com/technology/2015/mar/18/bitcoin-deep-web-evolution-exit-scam-12-million-dollars&#34; target=&#34;_blank&#34;&gt;not commercially viable propositions.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Second,&lt;/strong&gt; blockchains are not super-computers or AI machines - neither Freenet nor Skynet - they&amp;rsquo;re databases, and they are reactive databases at that (i.e., they respond to instructions). They lack the ability to step out into the real world and enforce (that is a people-job for the time being). Where decentralised e.g. Bitcoin or Ethereum, they are fully opt-in and rely on a standalone economy with no real-world nexus in order to function - a high bar which assumes much about the usefulness of decentralised networks and ignores much about how real-world commerce is conducted.&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;Decentralised&amp;rdquo; systems as we&amp;rsquo;ve known them to date are designed to frustrate accountability and intervention. But where a decentralisation advocate might say &amp;ldquo;trust the math,&amp;rdquo; I would counter that for most people that statement actually means &amp;ldquo;be held hostage to the math.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Third,&lt;/strong&gt; in the real world, discretion is allowed. Hell, it&amp;rsquo;s absolutely necessary. This &amp;ldquo;trustless&amp;rdquo; stuff is a bunch of bunk - what it means in practice is that you&amp;rsquo;re trusting a bunch of anonymous &amp;ldquo;miners&amp;rdquo; whose interests may be very different from your own - so trust-limitation or trust-allocation or trust-minimisation is what you want to acheive (in other words: someone&amp;rsquo;s in charge, so rather than trying to circumvent legal control you&amp;rsquo;re trying to use the blockchain to reduce friction - i.e., automate business process).&lt;/p&gt;
+
+&lt;p&gt;In decentralisation-land, this is not what you get. If the network fails from lack of use or external attack, the representations of those assets are suddenly beyond your control. If a &amp;ldquo;smart will&amp;rdquo; locks up some Bitcoin in escrow as part of a decedent&amp;rsquo;s estate and the key is lost, no court on Earth will be able to retrieve it. If a &amp;ldquo;coin&amp;rdquo; or &amp;ldquo;token&amp;rdquo; representing a right to a thing is transferred on the basis of a misrepresentation, the remedy of rescission is impossible.&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip;put differently, blockchains structured like Bitcoin are a really bad deal for practically anyone who uses them. The existence of someone you can sue is, actually, extremely handy. Which is why we&amp;rsquo;re betting that blockchains with identifiable, responsible operators - &lt;strong&gt;permissioned blockchains&lt;/strong&gt; - are the way forward.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Last but not least,&lt;/strong&gt; and what the rest of this post will focus on, &amp;ldquo;crypto-tokens&amp;rdquo; are actually really inadequate ways of expressing real-world financial obligations - even simple ones like a bond instrument. And tokens are, futhermore, completely unnecessary to transfer real-world value on a blockchain.&lt;/p&gt;
+
+&lt;p&gt;Which means maybe we should think about not using them!&lt;/p&gt;
+
+&lt;h2 id=&#34;2-the-limited-usefulness-of-the-token&#34;&gt;2. The limited usefulness of the token&lt;/h2&gt;
+
+&lt;p&gt;If we take the case of, e.g., a bond instrument, the token-driven model falls down immediately on practical points. This is because tokens don&amp;rsquo;t solve a problem that anyone actually has.&lt;/p&gt;
+
+&lt;p&gt;Tokens are just data. Ones and zeroes. However, things like financial instruments are actually pretty complex, event-driven bundles of rights and obligations. ErisDB/Thelonious is a cryptographically-secure event database designed to process these events. We&amp;rsquo;re by no means limiting ourselves to finance but this is where we&amp;rsquo;re starting, as that&amp;rsquo;s where the clients are.&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s not to say you can&amp;rsquo;t &amp;ldquo;hack&amp;rdquo; a decentralised network to get tokens performing more complex value functions - you can, and provided that you can get the legal nexus to ensure that these representations are, in fact, legally binding manifestations of an asset, tokenisation could work - see, e.g., Taariq Lewis&amp;rsquo; DigitalTangible or stuff like Ripple/Stellar gateways.&lt;/p&gt;
+
+&lt;p&gt;It is feasible that such networks could also, at some future date, also operate in a limited IoT capacity, such as smart property, in P2P consumer applications (see, e.g., IoT stuff such as Nick Szabo&amp;rsquo;s example of transferring ownership to a car through a cryptographic escrow contract linking a car&amp;rsquo;s immobiliser/ignition to a write permission of a particular key pair).&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;re not too keen on that at the moment. For two main reasons:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;the market infrastructure simply isn&amp;rsquo;t there, and&lt;/li&gt;
+&lt;li&gt;payments/consumer stuff is pretty dull. At least, it is when compared with structured finance.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Even if we assume that the model works from a legal-technical perspective (which requires structuring around the gate-points which grant access to and from the chain), for the stuff we think blockchains are best at, tokenisation is not the name of the game.&lt;/p&gt;
+
+&lt;h2 id=&#34;3-smart-contractify-the-things-and-actually-solve-a-problem&#34;&gt;3. Smart contractify the things, and actually solve a problem&lt;/h2&gt;
+
+&lt;p&gt;Am I going to outline a smart securitisation in this blogpost, end-to-end? No, because I have a couple of things I&amp;rsquo;d like to do other than write in the next two months (in case you&amp;rsquo;re wondering though, we have thought through these matters and the smart contracts needed to implement them &lt;a href=&#34;https://eng.erisindustries.com/tutorials/2015/03/11/solidity-1/&#34; target=&#34;_blank&#34;&gt;in some detail&lt;/a&gt; while we were in Stealth Mode in 2014).&lt;/p&gt;
+
+&lt;p&gt;What I will do, however, is provide a very high-level, 30,000 foot view of why this most fundamental mainstream financial transaction won&amp;rsquo;t work on a token-driven blockchain - but will work on a purely smart contract-driven one such as ErisDB.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s a link to a &lt;a href=&#34;http://www.ulsterbank.com/content/group/debt_investors/downloads/CELTIC_RESIDENTIAL_IRISH%20MORTGAGE_SECURITISATION_No_12_Limited.pdf&#34; target=&#34;_blank&#34;&gt;prospectus/offering circular of a RMBS deal&lt;/a&gt; I worked on as a young lawyer (&lt;strong&gt;Celtic 12&lt;/strong&gt;) which I think is instructive as to why a token doesn&amp;rsquo;t (and won&amp;rsquo;t ever) cut the mustard for what the banks want to do.&lt;/p&gt;
+
+&lt;p&gt;Assume&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;entitlements to each class of the Celtic 12 Notes (A1, A2, A3, B, and C) are each proportionally held in the form of 100 tokens, and&lt;/li&gt;
+&lt;li&gt;the ICSD (let&amp;rsquo;s say Clearstream, Luxembourg) decides it&amp;rsquo;s going to deal with these tokens on a Bitcoin metaprotocol e.g. Counterparty or a hosted solution like Ripple/Stellar (before anyone freaks out, I know Stellar has just proposed a new PoS algo, but I haven&amp;rsquo;t had time to read up on it just yet).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Then ask yourself:&lt;/p&gt;
+
+&lt;h3 id=&#34;a-does-tokenisation-solve-a-problem-anyone-has&#34;&gt;a) Does tokenisation solve a problem anyone has?&lt;/h3&gt;
+
+&lt;p&gt;No.&lt;/p&gt;
+
+&lt;p&gt;The custodian of the Notes (in this case a &amp;ldquo;Common Safekeeper&amp;rdquo;) will have custody of the notes and will deposit them with Clearstream, who will have a ledger which records that the Common Safekeeper owns the entirety of the issuance. Securities deposited with ICSDs are customarily insolvency-remote vis a vis the ICSD so there&amp;rsquo;s no counterparty risk at this level of the transaction.&lt;/p&gt;
+
+&lt;p&gt;Using a SQL database with digital signatures for this purpose is probably easier/faster than using Bitcoin or a blockchain. You &lt;em&gt;could&lt;/em&gt; use a blockchain if you wanted to, for instance, protect yourself against something like a &lt;a href=&#34;http://www.reddit.com/r/erisindustries/comments/31uuru/blockchain_usecase_1_user_1_instantiation/&#34; target=&#34;_blank&#34;&gt;SQL injection attack&lt;/a&gt; and verify the contents of the database - in which case all the &amp;ldquo;blockchainy&amp;rdquo; things you need are merkleisation and the use of private key write permissions to control access.&lt;/p&gt;
+
+&lt;p&gt;But even if you did that, you still wouldn&amp;rsquo;t need value-tokens. The presence of &lt;a href=&#34;https://eng.erisindustries.com/tutorials/2015/04/25/make-thelonious-chain/&#34; target=&#34;_blank&#34;&gt;database operators/admins&lt;/a&gt; in a commercial blockchain deployment (as surely there will be) means that the only need tokens satisfy - automatic monetary rewards to incentivise security - no longer exists.&lt;/p&gt;
+
+&lt;p&gt;So where we&amp;rsquo;re left is that the &amp;ldquo;counterparty risk&amp;rdquo; problems Bitcoin and its ilk solve really aren&amp;rsquo;t that big an issue with securities or other kinds of financial transactions. Even in a trading context (in which case you&amp;rsquo;re looking at settlement risk), inert tokens are totally inferior to assets constituted as dynamic scripts (smart contracts).&lt;/p&gt;
+
+&lt;p&gt;See ya later, tokens.&lt;/p&gt;
+
+&lt;h3 id=&#34;b-if-there-are-no-tokens-why-are-we-here-shouldn-t-we-just-pack-up-and-go-home&#34;&gt;b) If there are no tokens, why are we here? Shouldn&amp;rsquo;t we just pack up and go home?&lt;/h3&gt;
+
+&lt;p&gt;Nope, because these obligations are highly amenable to smart contractification.**&lt;/p&gt;
+
+&lt;p&gt;As far as value transmission is concerned, smart contract-powered blockchains solve a coordination problem, not an ownership problem. And really, co-ordination - not value storage - is what a blockchain is best at doing:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Blockchain databases have value because their users ascribe value to that data.&lt;/li&gt;
+&lt;li&gt;This value (in the case of the cryptocurrencies) is because the users of the cryptocurrencies think they&amp;rsquo;re worth something through what is called a &amp;ldquo;network effect.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;In the case of high finance (in the case of permissioned blockchains), they&amp;rsquo;ll have value because the rights/obligations a particular blockchain&amp;rsquo;s data represent will be a record of enforceable obligations against the person operating the blockchain.&lt;/li&gt;
+&lt;li&gt;What do Bitcoin and a permissioned blockchain have in common? Easy: they allow users to move data representing value around &lt;strong&gt;reliably, automatically, on certain terms, in a Byzantine fault-tolerant manner.&lt;/strong&gt; (Co-ordination.)&lt;/li&gt;
+&lt;li&gt;The main difference is that permissioned blockchains record value just like regular databases do today. No &amp;ldquo;network effect&amp;rdquo; necessary.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=M0mXUC0cUPg&#34; target=&#34;_blank&#34;&gt;Simples!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In this kind of a transaction, the complexity isn&amp;rsquo;t in &lt;em&gt;who owns what&lt;/em&gt;: it&amp;rsquo;s in getting the payments from the underlying assets (in this case, mortgage loans) where they&amp;rsquo;re meant to go in the way they&amp;rsquo;re meant to get there. Broadly speaking payment flows on a transaction such as Celtic 12 will look something like this (very basically):&lt;/p&gt;
+
+&lt;p&gt;Mortgage borrowers &amp;ndash;&amp;gt; Servicer &amp;ndash;&amp;gt; Account Bank &amp;ndash;&amp;gt; Principal Paying Agent &amp;ndash;&amp;gt; out through Payments Waterfall to transaction parties&lt;/p&gt;
+
+&lt;p&gt;Managing these payment flows involves more than just knowing where the bondholders are and paying them. See terms and conditions starting on p. 85, and in particular Condition 6 (generally) and particularly Condition 6(1)(b) (page 94) (payment prioritisation) of the Celtic 12 OC. Not only are non-bondholders getting paid, but they get paid depending on&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;the type of receipt they are, and&lt;/li&gt;
+&lt;li&gt;in a different order depending on whether an Event of Default, Pro-Rata Trigger Event, or Enforcement of Security has occurred (see Cashflows on page 34 et seq.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Multiple parties (First Active (the Originator) is also the Servicer, Deutsche is in the Trustee/Corp Services roles, and RBS is in most other roles)  are all using separate software stacks and messaging systems to transfer information around as to what should come out of the payments waterfall before the bondholders get paid. Things can get screwed up, misrecorded, miscalculated or lost.&lt;/p&gt;
+
+&lt;p&gt;And when you have to coordinate so many cooks, there&amp;rsquo;s a lot of room for error (one deal I worked on a year ago blew through £100,000 trying to sort out a payment prioritisation interpretation error).&lt;/p&gt;
+
+&lt;p&gt;Each of these parties charges tens of thousands of pounds per role, per deal, per annum to manage this stuff. They have to maintain a huge legacy infrastructure (human and machine) because there&amp;rsquo;s no good way to co-ordinate these various triggers&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;on an open standard&lt;/li&gt;
+&lt;li&gt;in a verifiable and automatic way&lt;/li&gt;
+&lt;li&gt;with a really straightforward security apparatus&lt;/li&gt;
+&lt;li&gt;without exposing themselves to any individual bank&amp;rsquo;s stack.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Three guesses as to what technology can do that really, really well while ensuring really high uptime.&lt;/p&gt;
+
+&lt;p&gt;Blockchain! Correct. How did you guess?&lt;/p&gt;
+
+&lt;h3 id=&#34;c-right-so-you-re-automating-payment-triggers-by-creating-a-system-that-s-maintained-and-observed-by-all-participants-why-do-you-need-that-whole-you-can-modify-the-system-on-command-thing&#34;&gt;c) Right, so you&amp;rsquo;re automating payment triggers by creating a system that&amp;rsquo;s maintained (and observed) by all participants. Why do you need that whole &amp;ldquo;you can modify the system on command&amp;rdquo; thing?&lt;/h3&gt;
+
+&lt;p&gt;Controllable blockchains aren&amp;rsquo;t just a &amp;ldquo;nice-to-have&amp;rdquo; in applications such as high finance. They&amp;rsquo;re an absolute necessity.&lt;/p&gt;
+
+&lt;p&gt;This is because terms of transactions change, often arbitrarily. See Condition 11 (Modification &amp;amp; waiver) generally and Condition 11.8 (unilateral amendment by Trustee in the event of manifest or proven error) of the Celtic 12 OC. Additionally the Trustee calls things like Events of Default and enforcement of security which can change how the payment triggers work, automatically, once called.&lt;/p&gt;
+
+&lt;p&gt;Implementing these changes is a complete pain in the ass and involves a lot of wringing of hands, paperwork, phone calls and lawyers. I should know. I was there.&lt;/p&gt;
+
+&lt;h2 id=&#34;4-so-what-you-re-saying-is-it-s-totally-inadequate-to-use-a-crypto-token-to-describe-virtually-any-mainstream-financial-obligation-and-everyone-has-called-this-one-wrong&#34;&gt;4. So what you&amp;rsquo;re saying is, it&amp;rsquo;s totally inadequate to use a crypto-token to describe virtually any mainstream financial obligation. And everyone has called this one wrong.&lt;/h2&gt;
+
+&lt;p&gt;Pretty much - at least if you want to build something that addresses a problem mainstream financial institutions actually have. Sorry, California.&lt;/p&gt;
+
+&lt;p&gt;This isn&amp;rsquo;t the only co-ordination problem in finance a blockchain could fix - there are many. But it&amp;rsquo;s the best example I can think to illustrate in a blog post!&lt;/p&gt;
+
+&lt;p&gt;Hence: we at Eris Industries see a world with millions of blockchains, each designed for a particular purpose, co-ordinating a particular set of relationships in a reliable and verifiable way.&lt;/p&gt;
+
+&lt;p&gt;Guess which company in the world is the only one that makes free, open-source tools that you can use - today - to solve problems just like this one.&lt;/p&gt;
+
+&lt;p&gt;And no, it isn&amp;rsquo;t &lt;a href=&#34;http://www.marmcorp.com&#34; target=&#34;_blank&#34;&gt;Marmot Corp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Notes.&lt;/em&gt;
+**per Google, this post will be the first to use the term &amp;ldquo;smart contractification.&amp;rdquo; Woohoo!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blockchain your business in just 7 steps</title>
+      <link>http://localhost/2014/12/17/blockchain-your-business/</link>
+      <pubDate>Wed, 17 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2014/12/17/blockchain-your-business/</guid>
+      <description>&lt;p&gt;Can your business &amp;ldquo;go blockchain&amp;rdquo;? You bet it can. Just follow these seven easy steps, distilled from the Eris Industries  distributed systems cookbook, and you&amp;rsquo;re rolling:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;(Re)Assess the landscape.&lt;/li&gt;
+&lt;li&gt;(Re)Define the problem.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Put the user first.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Make it free. Revolutionary software should be free.&lt;/li&gt;
+&lt;li&gt;Engage your best.&lt;/li&gt;
+&lt;li&gt;Join the open-source movement and save the world (and your business).&lt;/li&gt;
+&lt;li&gt;Dive on in. The water&amp;rsquo;s great!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1&gt;Step 1: (Re)Assess the landscape.&lt;/h1&gt;
+
+&lt;p&gt;Let&amp;rsquo;s speak frankly. I can see why the cryptocurrency/blockchain space can be hard for enterprise, the public sector and the non-profit sector to come to grips with.&lt;/p&gt;
+
+&lt;p&gt;But let me venture an alternative view: maybe it&amp;rsquo;s not business that needs to get real about blockchain people, but rather it&amp;rsquo;s blockchain people that need to get real about business. By way of example, I offer my experience with the popular industry podcast, &lt;strong&gt;Let&amp;rsquo;s Talk Bitcoin&lt;/strong&gt;, over the summer.&lt;/p&gt;
+
+&lt;p&gt;The week the podcast was recorded, the New York State Department of Financial Services had issued its first draft of the &amp;ldquo;BitLicence&amp;rdquo; Bitcoin regulation proposal. When asked what I thought of it, I basically said that it shouldn&amp;rsquo;t be a surprise that businesses dealing in Bitcoin - which functions like money - should be regulated like businesses which deal in money.&lt;/p&gt;
+
+&lt;p&gt;It was, I said, a simple matter of consistency.&lt;/p&gt;
+
+&lt;p&gt;When asked to sum up how one could accept the idea that financial regulation was too restrictive at the same time as accepting that such laws should be followed, I said:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Your politics and how you then approach your philosophy of change have to be two separate things. If you’re going to be a political actor who gets taken seriously, if you’re going to be working in commerce, you have to compromise on what you do and your approach to these problems.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This was not a crowd-pleaser. As one commenter put it:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;[Preston] knows full well that the legal and political systems have been captured and corrupted by the fascist central banking cartel. We don’t need their help, we don’t need their permission, we never did.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Regulation has been fact of life since human beings first settled in towns and cities. It&amp;rsquo;s not going anywhere anytime soon, whether we like it or not - and Eris Industries&amp;rsquo; &lt;a href=&#34;https://erisindustries.com&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Distributed Application Software Stack&lt;/strong&gt;&lt;/a&gt; has been designed with this in mind.&lt;/p&gt;
+
+&lt;h1&gt;Step 2: (Re)Define the problem.&lt;/h1&gt;
+
+&lt;p&gt;Can you get the utility of a blockchain in your business,&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;without needing to marshal vast quantities of computing power to secure your blockchain through &amp;ldquo;mining,&amp;rdquo; and&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;without being exposed to excess regulatory or operational risk?&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;You bet you can.&lt;/strong&gt; Why?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Because that&amp;rsquo;s what business thinking demands&lt;/strong&gt;. So that&amp;rsquo;s what we built.&lt;/p&gt;
+
+&lt;p&gt;Eris Industries takes a firmly commercial approach to blockchain technology. Then again, we&amp;rsquo;re not your typical blockchain startup.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;re headquartered in London, the beating heart of international economic activity in many industries. Our three-man founder team includes two lawyers (being Casey Kuhlman, our CEO, a regulatory lawyer, software engineer and former U.S. Marine; and yours truly, a securitisation and derivatives bod by training and current fellow of the &lt;a href=&#34;http://www.adamsmith.org&#34; target=&#34;_blank&#34;&gt;Adam Smith Institute&lt;/a&gt;). This isn&amp;rsquo;t our first rodeo.&lt;/p&gt;
+
+&lt;p&gt;Which means that, before starting our business, we took a hard look at&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;how blockchains &lt;strong&gt;are being&lt;/strong&gt; used,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;how blockchains &lt;strong&gt;should be&lt;/strong&gt; used.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We concluded:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Forget about currency. Forget about payments. Forget about politics. And above all, forget this idea that to be useful, a blockchain can&amp;rsquo;t have an administrator. &lt;strong&gt;Blockchain is about infrastructure and data&lt;/strong&gt;. So start with data. You can work your way up to payments and value from there - and once you do, you&amp;rsquo;ll have a much more secure and inexpensive software stack backing it up.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Blockchains are authentication databases possessing unique properties. They can be used completely legally in mainstream applications if their consensus and security parameters are correctly defined.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;We like Bitcoin and the others, and hope they succeed, but we recognise that their use currently involves high levels of uncertainty and risk - legal/regulatory, reputational, and operational. So we recognise that no corporate, charitable foundation, or public sector body of consequence is going to engage with this technology as more than a curiosity until they can do so while containing their risk within acceptable thresholds.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;In most cases, risk control means &lt;strong&gt;control of the application,&lt;/strong&gt; because what cannot be broken - as with Bitcoin - cannot be fixed. An application-specific chain such as Eris Industries&amp;rsquo; &lt;a href=&#34;https://erisindustries.com/components/erisdb&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Thelonious blockchain design&lt;/strong&gt;&lt;/a&gt; can be parameterised to provide most of this utility while removing much of this risk.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;We know that as complexity in a software stack rises, costs rise even faster. Blockchains have already demonstrated powerfully that they can reduce reliance on physical infrastructure to simplify organisational complexity to scale. Businesses, public sector bodies, and charities do not want to wait for regulatory change to accommodate &amp;ldquo;Blockchain 1.0&amp;rdquo; protocols in order to benefit from their usefulness. With Eris, &lt;strong&gt;they don&amp;rsquo;t have to&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;For many applications, full decentralization - or the use of one jack-of-all-trades &amp;ldquo;master chain&amp;rdquo; - creates more commercial problems than it solves.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;No single piece of software in your stack today tries to solve every conceivable commercial problem you face all at once. Blockchains are no different.&lt;/p&gt;
+
+&lt;h1&gt;Step 3: Put the user first.&lt;/h1&gt;
+
+&lt;h2&gt;A. Eris isn&#39;t a cryptocurrency.&lt;/h2&gt;
+
+&lt;p&gt;We haven&amp;rsquo;t built a currency. We never will. And we’ve made it so you don&amp;rsquo;t need to create one either to secure your Eris deployment.&lt;/p&gt;
+
+&lt;h2&gt;B. So what&#39;s the difference between a cryptocurrency and Eris?&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Cryptocurrencies are DApps utilising blockchain databases to secure themselves by incentivising &amp;ldquo;miners&amp;rdquo; to process transactions and find blocks. This process is run in accordance with rigid, pre-selected rules, in exchange for valuable tokens. Generally they are used as an alternative value transfer protocol.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Eris is a Distributed Application Software Stack which helps developers build useful blockchain-backed DApps, for any purpose, and in respect of any data-driven relationship they can define.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Thanks to EI&amp;rsquo;s original GenDoug smart contract kernel, you don&amp;rsquo;t need tokens or mining incentives to secure a Thelonious chain, you can set its security, consensus and distribution parameters to whatever you wish, and you can change those parameters over time without needing to effect a hard fork, as these parameters (customarily hard-coded into the protocol) are now stored in smart contracts, instead.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Eris is a developer platform, not a single blockchain. You’re in control of your blockchains and applications. Not us.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;A new networking protocol developed from scratch in-house, scheduled for an early 2015 release, will be incorporated into Thelonious to allow Eris-deployed blockchains to work effectively within existing enterprise routing and firewall infrastructure.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;We&amp;rsquo;re also publishing our smart contract library on or shortly after launch – which we call the Eris Standard Library - which we will update (and hopefully you will too - open source!) as time goes on.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In short, an Eris deployment is all about your needs.&lt;/p&gt;
+
+&lt;h2&gt;C. Designed for developers (and industry, too).&lt;/h2&gt;
+
+&lt;p&gt;As a result, we are free to make a blockchain platform that works for you.&lt;/p&gt;
+
+&lt;p&gt;Eris Industries sees a world where there are not hundreds of blockchains, but millions, each helping to secure and automate the data-driven relationship they were created to manage. Through the Stack&amp;rsquo;s Decerver web browser core, you now have a platform to build as many blockchains as you can handle, each one tailored to your exact specifications, rather than needing to use a lone blockchain built to ours.&lt;/p&gt;
+
+&lt;h1&gt;Step 4: Revolutionary software should be free.&lt;/h1&gt;
+
+&lt;p&gt;What we&amp;rsquo;ve built is a platform which allows you to easily build databases to securely and autonomously manage any data-driven relationship you can define:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;simple representations of monetary value,&lt;/li&gt;
+&lt;li&gt;dynamic assets,&lt;/li&gt;
+&lt;li&gt;intellectual property,&lt;/li&gt;
+&lt;li&gt;title deeds,&lt;/li&gt;
+&lt;li&gt;marketplaces,&lt;/li&gt;
+&lt;li&gt;social networks,&lt;/li&gt;
+&lt;li&gt;the interactions between driverless cars and traffic lights,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;hellip;anything.&lt;/p&gt;
+
+&lt;p&gt;All made possible by running on cryptographically-secure scripts called &lt;strong&gt;smart contracts&lt;/strong&gt;. Smart contracts can be designed to manage this data within well-established legal architecture, in much the same way as databases today transfer ownership and other interests entirely in accordance with legal rules.&lt;/p&gt;
+
+&lt;p&gt;The web browser core of Eris, which we call the &lt;strong&gt;decentralised server&lt;/strong&gt; or &lt;strong&gt;Decerver&lt;/strong&gt;, allows you to interface with many blockchains or other APIs as you need with ease, all through one Decerver client.&lt;/p&gt;
+
+&lt;p&gt;So, I hear you ask, how do I start?&lt;/p&gt;
+
+&lt;h1&gt;Step 5: Engage your best.&lt;/h1&gt;
+
+&lt;p&gt;Find your best and brightest - we&amp;rsquo;re talking developers, engineers, and data scientists - and give them a R&amp;amp;D budget and a mandate to work with this stuff for a year. &lt;strong&gt;You won&amp;rsquo;t regret it.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In our experience, businesses looking at blockchains have done a lot of talking - and thinking - without actually &lt;strong&gt;doing&lt;/strong&gt;. Don&amp;rsquo;t let politics relating to business unit budgeting get in your way: tech moves too quickly. There&amp;rsquo;s no time like the present.&lt;/p&gt;
+
+&lt;p&gt;Your people are your most powerful resource: you know them well, and no-one in the world knows your business needs and your systems better than they. Give them the latitude to be creative and you&amp;rsquo;ll see the impact on your bottom line.&lt;/p&gt;
+
+&lt;h1&gt;Step 6: Join the open-source movement and save the world (and your business).&lt;/h1&gt;
+
+&lt;p&gt;You&amp;rsquo;re reading this because you know that you need a way to simplify your complex, layered software stack and build new systems that you can deploy and improve with ease and without incurring vast infrastructure costs.&lt;/p&gt;
+
+&lt;p&gt;Open-source allows your teams and others to collaborate to build new technologies that will help keep your entire industry relevant in the digital age, or for industry challengers to maximise their disruptive potential. Put differently, &lt;a href=&#34;https://www.youtube.com/watch?v=l6YXm4b3H5c&#34; target=&#34;_blank&#34;&gt;get busy coding, or get busy dying.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You also know that purely commercial considerations, such as reducing back- and middle-office overheads, are not the only thing on the table.&lt;/p&gt;
+
+&lt;p&gt;Philanthropic and international development considerations such as financial inclusion, reducing corruption or providing secure communications for people living under oppressive regimes are all on the table with this technology. Bringing low-cost, effective and transparent market infrastructure to developing countries is a win-win for everyone.&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s why we&amp;rsquo;ve built Eris and our Decerver web browser core as open-ended and non-prescriptive as possible, capable of operating within and under the control of a corporation, charity or public sector body. Our platform will allow your developers to solve whatever problems they can define.&lt;/p&gt;
+
+&lt;p&gt;And from our side of things, we promise that we&amp;rsquo;ll keep working to make Eris better.&lt;/p&gt;
+
+&lt;h1&gt;Step 7: Dive on in. The water&#39;s great!&lt;/h1&gt;
+
+&lt;p&gt;The good news is, the Eris Industries platform is open-source, so your people can hop into our &lt;a href=&#34;https://github.com/eris-ltd&#34; target=&#34;_blank&#34;&gt;GitHub Repo&lt;/a&gt;, fork, commit, and contribute with others to their heart&amp;rsquo;s content.&lt;/p&gt;
+
+&lt;p&gt;Eris Industries isn&amp;rsquo;t a dev shop. We can, however, can make ourselves available to get you started and to offer our support.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;re looking forward to working with you.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Smart contracts: a brief introduction for the financial services industry</title>
+      <link>http://localhost/2014/12/17/smart-v-legal/</link>
+      <pubDate>Wed, 17 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2014/12/17/smart-v-legal/</guid>
+      <description>
+
+&lt;h2 id=&#34;before-we-begin-a-recap-of-the-last-12-months-of-bitcoinmania-in-the-blockchain-space&#34;&gt;Before we begin: a recap of the last 12 months of Bitcoinmania in the blockchain space.&lt;/h2&gt;
+
+&lt;p&gt;This time last year, the fever pitch of Bitcoinmania saw the price of a single bitcoin token surge to $1200.&lt;/p&gt;
+
+&lt;p&gt;At its peak, while breathless admirers such as the Winklevoss twins claimed that the currency would reach $40,000 per Bitcoin, a number of other currency-based protocols emerged which offered, or purported to offer, additional functionality above and beyond it on &lt;strong&gt;their&lt;/strong&gt; single Bitcoin-like blockchains. Among these was the idea that a blockchain could be married up to a scripting language so, much as Bitcoin manages what is in effect an automated, uni-directional clearing system, additional coded complexity could be introduced to allow multi-directional, and multi-party, communications through cryptographically-secure scripts called &lt;strong&gt;smart contracts&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Efficient, secure, distributed, no fixed physical infrastructure - what a system that would be!&lt;/p&gt;
+
+&lt;p&gt;But those solutions were flawed. Some companies claim to offer &amp;ldquo;smart contract&amp;rdquo; functionality, but at a fee - meaning that these were not smart contracts at all, just front-end consumer facing platforms that charge you to use their transaction logs. Still other projects were forced by the &amp;ldquo;cryptocurrency&amp;rdquo; design paradigm to go fully decentralised with no central oversight at all, making regulatory compliance impossible.&lt;/p&gt;
+
+&lt;p&gt;Bitcoin was a pretty big deal. We don&amp;rsquo;t think it can - or should - be repeated.&lt;/p&gt;
+
+&lt;h2 id=&#34;so-we-followed-another-path&#34;&gt;So we followed another path.&lt;/h2&gt;
+
+&lt;p&gt;At Eris Industries, we were cautiously skeptical during Bitcoinmania. Don&amp;rsquo;t get me wrong, we like Bitcoin as much as anyone else. And if Bitcoin were the only successful blockchain network in existence, ever, then it might have made sense to go out and buy as many as we could and hope it went up in price.&lt;/p&gt;
+
+&lt;p&gt;That was too easy. We knew that if we could crack &lt;strong&gt;smart contracts&lt;/strong&gt;, it would be possible to secure a distributed blockchain without needing to follow Bitcoin&amp;rsquo;s security model.&lt;/p&gt;
+
+&lt;p&gt;If one peer-to-peer blockchain is hailed as a revolutionary financial innovation, what would you have if you multiplied its properties and put blockchains everywhere - a world where &lt;strong&gt;hundreds of millions&lt;/strong&gt; of blockchains were deployed, each customisable and updatable &lt;strong&gt;on command&lt;/strong&gt;, automatically regulating tasks for which they were custom-built, and operated on a peer-to-peer basis with no reliance on servers and very low reliance on other hardware or infrastructure?&lt;/p&gt;
+
+&lt;p&gt;What if you could get all of the positive security qualities of a blockchain database, except you would control and administer it, would not have to &amp;ldquo;mine&amp;rdquo; to secure it, and could operate it in full compliance with applicable regulations, without ever setting foot in the cryptocurrency space?&lt;/p&gt;
+
+&lt;p&gt;What would the world look like then?&lt;/p&gt;
+
+&lt;p&gt;Could such a thing even be done?&lt;/p&gt;
+
+&lt;h2 id=&#34;you-re-damn-right-it-can&#34;&gt;You&amp;rsquo;re damn right it can.&lt;/h2&gt;
+
+&lt;p&gt;So we cracked smart contracts on a blockchain. Without creating a cryptocurrency. We also figured out that once a blockchain database has an administrator, they become far more useful. So designed them so you can administer them, too.&lt;/p&gt;
+
+&lt;p&gt;Through an ordinary web browser. Thanks to our &lt;a href=&#34;https://erisindustries.com/components/erisdb&#34; target=&#34;_blank&#34;&gt;Decerver&lt;/a&gt; web browser core.&lt;/p&gt;
+
+&lt;p&gt;With our open-source DOUG and Eris Standard Library smart contract templates, and our &lt;a href=&#34;https://erisindustries.com/components/erisdb&#34; target=&#34;_blank&#34;&gt;Thelonious&lt;/a&gt; blockchain design, you can now obtain the efficiency and security of the blockchain right inside the core of your business, efficiently tracking real assets and obligations without needing to go fully-decentralized or creating a cryptocurrency.&lt;/p&gt;
+
+&lt;p&gt;Because you control the system, you can comply with any and all legal or regulatory obligations.&lt;/p&gt;
+
+&lt;p&gt;All you need to do is give your best developers and data scientists the resources to get the job done.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-so-what-s-the-difference-between-a-smart-contract-and-a-legal-contract-anyway&#34;&gt;1. So what&amp;rsquo;s the difference between a smart contract and a legal contract, anyway?&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Smart contracts&lt;/strong&gt; are scripts on a blockchain database which automatically manage data-driven relationships on distributed networks on a peer-to-peer basis, without servers. They can change their parameters and meaning over time, meaning a system upgrade is as simple as broadcasting a signal to the network - instead of purchasing additional hardware.&lt;/p&gt;
+
+&lt;p&gt;Smart contract-enabled blockchain systems are a form of distributed computing architecture which is capable of operating over the public internet which employ public-key cryptography to render the possibility of a successful malicious attack exceedingly low. They can carry out and manage any data-driven interaction a developer can define, and if widely enough distributed, are nearly indestructible. With Eris Industries&amp;rsquo; &lt;a href=&#34;https://erisindustries.com/components/erisdb&#34; target=&#34;_blank&#34;&gt;Thelonious&lt;/a&gt; design, administrators of these databases - unlike existing blockchain databases - can quickly update their consensus and security parameters at will through the broadcast of the relevant private key.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Legal contracts&lt;/strong&gt;, on the other hand, are legal fictions which, if breached, give rise to further imaginary critters known as choses (things) in action. They are customarily evidenced in writing. The threat of enforcement compels their performance. The rights and obligations they create become real when a court orders their enforcement.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s really that simple. As such:&lt;/p&gt;
+
+&lt;h3 id=&#34;2-smart-contracts-govern-data-or-data-driven-relationships-legal-contracts-govern-legal-equitable-statutory-etc-relationships&#34;&gt;2. Smart contracts govern data, or data-driven relationships. Legal contracts govern legal (equitable, statutory, etc.) relationships.&lt;/h3&gt;
+
+&lt;p&gt;Blockchains aren&amp;rsquo;t magical money machines. They&amp;rsquo;re just databases with some very unique properties.&lt;/p&gt;
+
+&lt;p&gt;Smart contracts can help you to administer a blockchain database, and control who interacts with your distributed application software stack - and how. That&amp;rsquo;s where the most immediate efficiency gains from blockchain technology are to be made in the financial services space.&lt;/p&gt;
+
+&lt;p&gt;This means that you don&amp;rsquo;t need to call in the lawyers to make efficiency gains with smart contracts. You need to get hold of your developers, engineers and data scientists. Smart contracts help you manage your data.&lt;/p&gt;
+
+&lt;p&gt;Existing legal arrangements relating to your current database architecture (e.g. clearing system membership agreements) should continue to apply to an Eris database.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-smart-contracts-aren-t-about-asking-third-parties-to-run-hosting-services-that-codify-and-interpret-standard-form-legal-agreements-that-s-just-silly&#34;&gt;3. Smart contracts aren&amp;rsquo;t about asking third parties to run hosting services that codify and interpret standard-form legal agreements. That&amp;rsquo;s just silly.&lt;/h3&gt;
+
+&lt;p&gt;We at Eris Industries understand, unlike other firms in the blockchain space, that a hosted fee-paying solution operated by a third party is not what you want.&lt;/p&gt;
+
+&lt;p&gt;We get your business. That means we understand that what you want is an in-house business process efficiency solution that is tailored to address and automate specific pain points arising from your existing back- and middle-office administration. And you want to be able to iterate and customize that solution, over and over again, for new business problems you face, without spending vast sums on new infrastructure.&lt;/p&gt;
+
+&lt;p&gt;In the long-term, though, automating legal agreements is definitely going to be a &amp;lsquo;thing.&amp;rsquo; We&amp;rsquo;re sure of that. And those can be smart contractified with Eris too, if you can define them.&lt;/p&gt;
+
+&lt;p&gt;With Eris, you can start developing bespoke blockchain-based solutions to those pain points &lt;strong&gt;right now,&lt;/strong&gt; using your own developers - who know your needs and your systems better than anyone in the world.&lt;/p&gt;
+
+&lt;h3 id=&#34;4-code-away-all-manner-of-infrastructure-with-the-blockchain&#34;&gt;4. Code away all manner of infrastructure with the blockchain.&lt;/h3&gt;
+
+&lt;p&gt;Our product is a platform - you know your needs better than we do. All we know is that you need a secure way to automate your business processes. So we designed a system for you to build blockchain-backed distributed applications for enterprise with ease. Call up your best devs and see what you can define:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;FX confirmation, clearing, and settlement. Literally everyone is complaining about this. Why doesn&amp;rsquo;t everyone get together and solve it - before a challenger does?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Want to codify the ISDA Master Agreement and create a negotiation module built on our platform that provides you with a verifiable record of who selected what terms and when? Go right ahead.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Want to automate bond Ts and Cs and integrate them with the custodian&amp;rsquo;s computer systems so, instead of a bondholder meeting, you could just automatically consult them by pinging a signal through a smart contract - and know how they responded, and that it was they who responded, without even needing to know who they are? You could do that too.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Want a customer-facing mobile banking platform in, say, a developing country where you don&amp;rsquo;t want to spend much by way of infrastructure while gaining a lot by way of security? Knock yourself out.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And we won&amp;rsquo;t charge you a penny to use it.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

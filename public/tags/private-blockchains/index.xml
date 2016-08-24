@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Private Blockchains on Monax Industries</title>
+    <link>http://localhost/tags/private-blockchains/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/tags/private-blockchains/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>On Permissioning Your Blockchains</title>
+      <link>http://localhost/2015/09/26/on-permissioned-blockchains/</link>
+      <pubDate>Sat, 26 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/09/26/on-permissioned-blockchains/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/kevincortopassi/3108413681/&#34; target=&#34;_blank&#34;&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/mostpit.jpg&amp;rsquo; | img }}&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;preface&#34;&gt;Preface&lt;/h2&gt;
+
+&lt;p&gt;Permissioned blockchains are now a thing. That&amp;rsquo;s interesting in and of itself, but it is also insufficient to really capture the benefits of this technology along with their unique placement within the fuller spectrum of data management options which organizations have.&lt;/p&gt;
+
+&lt;p&gt;This is an attempt to clarify our position with respect to where permissioned blockchains sit within the spectrum of viable data management solutions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;tl;dr&lt;/strong&gt;: permissioned blockchains sit roughly on a spectrum between permissionless blockchains and &amp;ldquo;traditional&amp;rdquo; distributed databases, providing most of the benefits of permissionless blockchains without some of their constraints.&lt;/p&gt;
+
+&lt;p&gt;What &lt;em&gt;all&lt;/em&gt; blockchains fundamentally do which no other data management solution I know of does, is to provide a level of verifiability out of the box which ensures that every (full) node on the network can &lt;em&gt;independently&lt;/em&gt; verify &lt;strong&gt;what the data is&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Before going deeper, let&amp;rsquo;s first take a look at comparing blockchains to &lt;a href=&#34;https://en.wikipedia.org/wiki/Hub_and_spokes_architecture&#34; target=&#34;_blank&#34;&gt;hub and spoke&lt;/a&gt; data management architecture.&lt;/p&gt;
+
+&lt;h2 id=&#34;blockchains-permissioned-and-permissionless-architecture-v-hub-and-spoke-database-architecture&#34;&gt;Blockchains (Permissioned and Permissionless) Architecture v. Hub and Spoke Database Architecture&lt;/h2&gt;
+
+&lt;p&gt;There are four main areas in which blockchain based applications differ from those which are built using a hub and spoke database architecture. Note these differences apply no matter whether the blockchain in question has a proper access control layer (and as such is conceptualized as a &lt;em&gt;permissioned blockchain&lt;/em&gt;) or does not (and is conceptualized as a &lt;em&gt;permissionless blockchain&lt;/em&gt;).&lt;/p&gt;
+
+&lt;h3 id=&#34;1-assembling-v-receiving-data&#34;&gt;1. Assembling v. Receiving Data&lt;/h3&gt;
+
+&lt;p&gt;Every node in a blockchain network &amp;ldquo;assembles&amp;rdquo; its view of &lt;strong&gt;what the data is&lt;/strong&gt; by ensuring that it has the full, and agreed set of transactions and applying those transactions as state transfer functions over the previous state of the data. In a hub and spoke architecture, the nodes within the network (usually) receive data updates from the hub rather than independently assembling what the world state of the data is via receiving the transactions and assembling the state locally.&lt;/p&gt;
+
+&lt;p&gt;What I mean by this is roughly analogous to the difference between being told a fact in a class and performing a mathematical proof in class based on assumptions provided by a teacher. One only requires acceptance by the &amp;ldquo;receiver&amp;rdquo; while the other requires effort by the &amp;ldquo;assembler&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;The fundamental difference architecturally is, essentially, the &amp;ldquo;freedom&amp;rdquo; which the various nodes on the network have to tell clients which are hooked into them &lt;strong&gt;what the data is&lt;/strong&gt;. By clients in this context I do not mean blockchain peers, but rather clients &lt;em&gt;of the blockchain node&lt;/em&gt; (such as middleware or light clients).&lt;/p&gt;
+
+&lt;p&gt;This &amp;ldquo;freedom&amp;rdquo; is what blockchain-ers are (sometimes) talking about when the speak to the &amp;ldquo;decentralization&amp;rdquo; benefits of the blockchain in question. At other times, the &amp;ldquo;decentralization&amp;rdquo; portion of what blockchain-ers are talking about relates to a different matter: that of whether the blockchain has an access control layer or does not (something which this post will speak to below).&lt;/p&gt;
+
+&lt;h3 id=&#34;2-distributed-cryptographic-verifiability&#34;&gt;2. Distributed Cryptographic Verifiability&lt;/h3&gt;
+
+&lt;p&gt;Blockchains allow nodes on the network to have cryptographic verifiability over the data and state changes entered into the network out of the box. This level of verifiability &lt;strong&gt;can be added&lt;/strong&gt; to a non-blockchain based database back end (as Hyperledger, among others, have purportedly explored). The difference being whether the cryptographic certainty is a first class citizen of the network or whether it is an addon is likely irrelevant for many applications which have lower levels of cryptographic &amp;ldquo;purity&amp;rdquo; and are integrated into real world fact patterns which must, by definition, be less than cryptographically pure.&lt;/p&gt;
+
+&lt;p&gt;With respect to this &amp;ldquo;difference&amp;rdquo; there is likely no huge benefit which blockchains can provide that a properly constructed hub and spoke database architecture cannot provide &lt;em&gt;outside&lt;/em&gt; of a convenience and ease of use function. While blockchains present their own operational challenges to organizations seeking to use them, one thing they are extraordinarily good at is abstracting away digital signing algorithms, state changes, and the cryptographic verification of those into a coherent client for users.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-sharding-computational-effort-parallelizing-and-performance&#34;&gt;3. Sharding, Computational Effort &amp;ldquo;Parallelizing&amp;rdquo;, and Performance&lt;/h3&gt;
+
+&lt;p&gt;Blockchains are (currently) non-shardable. This is a very important difference between blockchains and hub and spoke database architecture. There are theoretical options for addressing shardability such as &lt;a href=&#34;https://github.com/vbuterin/scalability_paper/blob/master/scalability.pdf&#34; target=&#34;_blank&#34;&gt;this proposal by Ethereum&amp;rsquo;s Vitalik Buterin&lt;/a&gt; and an analogous presentation made by Vlad Zamfir at Scaling Bitcoin. However, it must be noted that currently these are theoretical in nature.&lt;/p&gt;
+
+&lt;p&gt;The practical effect of this non-shardability is that every (full) node on the network must perform the &lt;strong&gt;full amount of computational effort&lt;/strong&gt; required to manage, verify, and perform the state change operations which are necessary antecedents to updating the world state of the data post a block of transactions being received. A shorter me would say: all the nodes individually do all the computing for all of the network.&lt;/p&gt;
+
+&lt;p&gt;There is another side to this coin, which is that it is &lt;em&gt;significantly&lt;/em&gt; easier to run blockchain nodes in a &amp;ldquo;cloud-y&amp;rdquo; manner than it is hub and spoke databases. Hub and spoke databases scale vertically due to their design; on the other hand blockchains scale horizontally due to their design &amp;ndash; which exactly how &amp;ldquo;cloud-y&amp;rdquo; applications are meant to scale.&lt;/p&gt;
+
+&lt;p&gt;Hub and spoke database architecture is appealing if you are willing for your data management solution to be fully outsourced to Amazon&amp;rsquo;s DynamoDB or another similar solution provider and/or if your application requires vertical scaling. However, the counter argument also holds, if you need the data management solution to be easily spun up and distributed amongst nodes which are not fully integrated into infrastructure of the data management solution (e.g., if you are in IoT land and worried about device independence) then a blockchain architecture is likely more appealing.&lt;/p&gt;
+
+&lt;p&gt;With &lt;code&gt;eris&lt;/code&gt;, for example, one can add an additional node to a given blockchain with one command and a simple IP address of a peer server that the node in question should use as a connector. This makes nodes easily scalable horizontally in a similar manner to how heroku and other cloud based applications deal with processing.&lt;/p&gt;
+
+&lt;p&gt;The fundamental difference architecturally is, essentially, that blockchains are going to be significantly more constrained in the amount of transaction processing they are able to perform because blockchains are built to be independently redundant with respect to the data management functions; whereas hub and spoke databases can be built to operate using truly parallel computation.&lt;/p&gt;
+
+&lt;p&gt;This consideration may become abrogated over time, but it is the current state of play.&lt;/p&gt;
+
+&lt;h3 id=&#34;4-data-visibility-controls&#34;&gt;4. Data Visibility Controls&lt;/h3&gt;
+
+&lt;p&gt;Blockchains, currently by definition, do not have an ability to restrict access to nodes on the network from reading &lt;strong&gt;what the data is&lt;/strong&gt;. That data, of course, can be obscured or &amp;ldquo;mixed&amp;rdquo; to provide some level of privacy, but at a fundamental level blockchain nodes interacting with a network are unable to control read access to the data as the entire chain of blocks would, by definition, become unverifiable and difference (1) would break down completely.&lt;/p&gt;
+
+&lt;p&gt;Hub and spoke architecture, on the other hand, has a much greater ability to restrict read access to what the data is and as such provide a much higher level of privacy than a blockchain architecture can (currently) attain.&lt;/p&gt;
+
+&lt;h3 id=&#34;overview-of-differences&#34;&gt;Overview of Differences&lt;/h3&gt;
+
+&lt;p&gt;A cursory overview of the above differences would lead many to the conclusion that blockchains do not make any sense as a data management solution. Indeed, it is true that blockchains are awful at performance and privacy; yet, I do not hold the view that they are make no sense as a data management solution. It really, truly, does depend on what the application is trying to achieve.&lt;/p&gt;
+
+&lt;p&gt;If an application is not trying to optimize for performance, because it is a redundancy focused application which needs unified state changes across a distributed network, then one not need to worry about the performance limitations outlined in (3).&lt;/p&gt;
+
+&lt;p&gt;If an application is not trying to achieve privacy, because it is a transparency focused application, then one not need to worry about the privacy limitations outlined in (1) and (4).&lt;/p&gt;
+
+&lt;p&gt;Difference (2) is, admittedly, mostly an operational convenience difference rather than an architectural or technological difference.&lt;/p&gt;
+
+&lt;h2 id=&#34;globally-decentralized-v-locally-decentralized&#34;&gt;&amp;ldquo;Globally Decentralized&amp;rdquo; v. &amp;ldquo;Locally Decentralized&amp;rdquo;&lt;/h2&gt;
+
+&lt;p&gt;I get Meher&amp;rsquo;s critique of the &amp;ldquo;trusted ledger space&amp;rdquo; (which he&amp;rsquo;s using in place of my &amp;ldquo;permissioned blockchain&amp;rdquo; formulation) in this tweet:&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/bedehomender&#34;&gt;@bedehomender&lt;/a&gt; &lt;a href=&#34;https://twitter.com/ethereumproject&#34;&gt;@ethereumproject&lt;/a&gt; &lt;a href=&#34;https://twitter.com/eris_ltd&#34;&gt;@eris_ltd&lt;/a&gt; Trusted ledger space has mostly argued against Bitcoin and not for itself - it&amp;#39;s a big gap.&lt;/p&gt;&amp;mdash; Meher Roy (@MeherRoy) &lt;a href=&#34;https://twitter.com/MeherRoy/status/647495732237336576&#34;&gt;September 25, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;That said, it is semi necessary to consider permissionless blockchains in the context of this piece, because understanding of blockchains is skewed toward their public implementation.&lt;/p&gt;
+
+&lt;p&gt;As I have argued elsewhere, the &amp;ldquo;DNA&amp;rdquo; of a permissioned blockchain is no different than the &amp;ldquo;DNA&amp;rdquo; of a permissionless blockchain if we avoid the discussion of the presence of an access control layer. This is why the section above was formulated to speak about blockchains generally vis a vis hub and spoke blockchain architecture.&lt;/p&gt;
+
+&lt;p&gt;So, as Eris has formulated them, permissioned blockchains differ from permissionless blockchains based on the presence or absence of an access control layer built into the blockchain clients. What are the fundamental implications of having an access control layer?&lt;/p&gt;
+
+&lt;h3 id=&#34;1-consensus-participant-restrictions&#34;&gt;1. Consensus Participant Restrictions&lt;/h3&gt;
+
+&lt;p&gt;The first primary difference between a properly conceived permissioned blockchain and a permissionless blockchain is whether the participants in the blockchain have an ability to restrict who can participate in the consensus mechanism of the blockchain.&lt;/p&gt;
+
+&lt;p&gt;Permissioned blockchain designs (at least as we&amp;rsquo;ve conceived them) allow the network to appoint a group of participants in the network who are given the express authority to provide the validation of blocks of transactions. Or, to participate in the consensus mechanism. What this effectively means is that there indeed &lt;em&gt;is&lt;/em&gt; more control over the network itself.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-capabilities-restrictions&#34;&gt;2. Capabilities Restrictions&lt;/h3&gt;
+
+&lt;p&gt;The second primary difference between a properly conceived permissioned blockchain and a permissionless blockchain is whether the participants in the blockchain have an ability to restrict who can create smart contracts (if the blockchain is &lt;a href=&#34;http://localhost/2015/08/10/how-i-current-explain-blockchains/&#34;&gt;logic optimized&lt;/a&gt;) and/or transact on the blockchain.&lt;/p&gt;
+
+&lt;h3 id=&#34;analogizing-these-fundamental-differences&#34;&gt;Analogizing These Fundamental Differences&lt;/h3&gt;
+
+&lt;p&gt;The easiest way to explain the differences between permissioned and permissionless blockchains is to analogize. Ethan has &lt;a href=&#34;http://localhost/2015/04/30/on-blockchains/&#34;&gt;compared&lt;/a&gt; a blockchain architecture to a hub and spoke architecture via comparing democracy to dictatorship:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;[C]onsider this: democracy can be orders of magnitude less efficient at governing large bodies of humans than hierarchical dictatorships, but for one reason or another countries continue to turn to democracy (granted, weak forms of it) rather than dictatorship because of the kind of culture it produces. Blockchain technology may have a very similar impact on humans: even though they are less efficient than their counterparts at the typical things their counterparts were optimized for, they impose new structural paradigms on human interactions that may be valuable in and of themselves, regardless of the performance of the database, and especially if they result in human behavioural patterns that make culture as a whole more efficient.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;While the analogy isn&amp;rsquo;t 100% perfect, I do think it holds as a mechanism for explaining the differences between technical stacks. Yet the analogy begets the question: if blockchains are slower, less performant, more democratic data management solutions then what level of participation is that democracy operating at?&lt;/p&gt;
+
+&lt;p&gt;In the &amp;ldquo;real world&amp;rdquo; we do not say that local counsels and other lower forms of government are not democratic because they do not allow everyone in the world to participate in the democracy mechanism. In other words, it is not true that the only form of democracy is global democracy.&lt;/p&gt;
+
+&lt;p&gt;Yet, in blockchain land these things often get conflated. Coming from a governance reform background, it is odd to me that folks in blockchain-land make this argument. Political science categorizations of governance mechanisms as &lt;a href=&#34;https://en.wikipedia.org/wiki/Democracy&#34; target=&#34;_blank&#34;&gt;democratic&lt;/a&gt; do not depend in the slightest on whether a set of non-citizens to the group is excluded or not.&lt;/p&gt;
+
+&lt;p&gt;While it is not the most perfect definition in all of political science, if we look at the &amp;ldquo;elements of democracy&amp;rdquo; from Wikipedia (again, this is only used as a basis for analogy and I&amp;rsquo;m not writing a doctorate in polisci here) we have:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A political system for choosing and replacing the government through free and fair elections. (&lt;em&gt;N.B.&lt;/em&gt;, in blockchain-land we usually call this the fork choice rule)&lt;/p&gt;
+
+&lt;p&gt;The active participation of the people, as citizens, in politics and civic life. (&lt;em&gt;N.B.&lt;/em&gt;, in blockchain-land we usually call these full nodes participating in the consensus mechanism)&lt;/p&gt;
+
+&lt;p&gt;Protection of the human rights of all citizens. (&lt;em&gt;N.B.&lt;/em&gt; in blockchain-land we usually call this the protocol&amp;rsquo;s rules)&lt;/p&gt;
+
+&lt;p&gt;A rule of law, in which the laws and procedures apply equally to all citizens. (&lt;em&gt;N.B.&lt;/em&gt; in blockchain-land we usually call this the protocol&amp;rsquo;s rules)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;One is unable to find, by analogy, any less democratic systems which simply exclude non-citizens. So, if in permissioned blockchain-land a group of participants decides to exclude &amp;ldquo;non-citizens&amp;rdquo; of the group, but complies with the remainder of the elements, is it less of a blockchain? I, personally, say no.&lt;/p&gt;
+
+&lt;h3 id=&#34;revisiting-decentralization&#34;&gt;Revisiting Decentralization&lt;/h3&gt;
+
+&lt;p&gt;Now, lets turn to the idea of decentralization itself. The World Bank, who employs some global experts on &lt;em&gt;political&lt;/em&gt; decentralization, breaks this inherently subjective and ambiguous term into three major forms (at least when speaking to the administrative application of governance mechanisms at a sub-state level, which is typically what folks mean when they say &amp;ldquo;decentralization&amp;rdquo; in a political science context).&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;Deconcentration&lt;/code&gt;. Deconcentration &amp;ndash; which is often considered to be the weakest form of decentralization and is used most frequently in unitary states &amp;ndash; redistributes decision making authority and financial and management responsibilities among different levels of the central government&amp;hellip;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Delegation&lt;/code&gt;. Delegation is a more extensive form of decentralization. Through delegation central governments transfer responsibility for decision-making and administration of public functions to semi-autonomous organizations not wholly controlled by the central government, but ultimately accountable to it&amp;hellip;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Devolution&lt;/code&gt;. A third type of administrative decentralization is devolution. When governments devolve functions, they transfer authority for decision-making, finance, and management to quasi-autonomous units of local government with corporate status&amp;hellip;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www1.worldbank.org/publicsector/decentralization/admin.htm&#34; target=&#34;_blank&#34;&gt;Reference for the above&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It is important to note that, at least within the political science community, that decentralization is not equated to &lt;em&gt;devolution&lt;/em&gt;, nor is it equated to everyone has an ability to participate, but rather looked at as a spectrum of possible options for increasing resiliency within the governance network.&lt;/p&gt;
+
+&lt;p&gt;It could perhaps be argued that permissioned blockchains have weaker forms of decentralization than permissionless blockchains, but I would largely disagree with that from a technical perspective because the consensus mechanism is exactly the same. The delta is who can participate in the consensus mechanism.&lt;/p&gt;
+
+&lt;p&gt;On a systemic level, especially as applied in an enterprise, the critique may hold that the decentralization is a weaker form of decentralization. Indeed, a single company blockchain may only avail the enterprise of &lt;em&gt;deconcentration&lt;/em&gt; amongst business units (and perhaps internal audit along with external audit).&lt;/p&gt;
+
+&lt;p&gt;Fundamentally, however, it would still be within the realm of what most folks would consider &amp;ldquo;decentralization&amp;rdquo; even though we have constrained the &amp;ldquo;decision makers&amp;rdquo; in the system. Instead of relying on pure market dynamics and open competition to provide the &amp;ldquo;decentralization&amp;rdquo;, permissioned chains simply rely on preagreement amongst a founders group to provide their &amp;ldquo;decentralization&amp;rdquo;.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-benefits-of-permissioned-blockchains&#34;&gt;The Benefits of Permissioned Blockchains&lt;/h2&gt;
+
+&lt;p&gt;If we are in the land of blockchains (in other words, we have analyzed the differences with hub and spoke architecture and decided that for our given application a blockchain based architecture is more interesting than a hub and spoke architecture). Then we must consider the relative advantages which permissioned blockchains have &lt;em&gt;vis a vis&lt;/em&gt; their permissionless cousins. We must also consider permissioned blockchains have &lt;em&gt;vis a vis&lt;/em&gt; their cousins on the other side of the spectrum: hub and spoke distributed databases.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-performance&#34;&gt;1. Performance&lt;/h3&gt;
+
+&lt;p&gt;Blockchains in general are not very performant. But one can get &lt;em&gt;better&lt;/em&gt; performance from a blockchain system by limiting what that system is actually trying to manage. Because all the full nodes on the network perform all of the computation redundantly rather than in a segregated (traditional parallel computing) fashion, when one is running a full node on a public blockchain such as Ethereum&amp;rsquo;s, one is performing all of the computation for all of the things on the entire network. Should Ethereum explode in popularity, this will be a ton of computing power you would devote to managing the computational effort for &lt;em&gt;not&lt;/em&gt; the application you are trying to use.&lt;/p&gt;
+
+&lt;p&gt;Now for many, that is exactly the point, that all the applications are being ran by all of the full nodes. And it definitely makes sense for some applications. However, it doesn&amp;rsquo;t make sense for every application. Particularly those applications which are enterprise in nature and need to have increased performance.&lt;/p&gt;
+
+&lt;p&gt;Why, for example, would a bank run a bond lifecycle application on a public blockchain? The arguments for it are basically that the &amp;ldquo;network will handle it&amp;rdquo;, but in that sense the bank is outsourcing its data processing costs to the network in a manner which most banks are trying to stop doing (because from the bank&amp;rsquo;s perspective the &amp;ldquo;ethereum network&amp;rdquo; is, functionally, no different from a clearing house in that context).&lt;/p&gt;
+
+&lt;p&gt;Should the bank choose to, as Fred Wilson argued, participate in the data management processes of the network, then they will be devoting significant computing resources to &amp;ldquo;not their application&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;In some situations this may be appropriate. I&amp;rsquo;d say, for example, where identity was concerned this would be very appropriate. However, where there is a mission critical application which needs to have some level of performance and a greater participation by the bank than simply &amp;ldquo;another application&amp;rdquo; on the network, then formulating a smart contract network (I mean, blockchain) focused on managing the computation required for that debt application would likely make more sense.&lt;/p&gt;
+
+&lt;p&gt;Permissioned blockchains do not abrogate the requirement that every (full) node on the network perform all of the computation for all of the network. However, effectively they are breaking the computation requirements for a given meta-network into segments which only apply to that particular application. This is particularly true where the blockchain in question has been checkpointed against a heavy, public blockchain such as bitcoin or ethereum. The difference here is one, fundamentally, of scope rather than implementation.&lt;/p&gt;
+
+&lt;p&gt;If Ethereum is the World&amp;rsquo;s Computer, that also necessitates that it is the UN of computing. Meaning it is, by definition, going to be &lt;em&gt;extremely&lt;/em&gt; slow in comparison to a bunch of servers running scripts against a hub and spoke database. But this isn&amp;rsquo;t the correct lens in which to view Ethereum (as readers who have reached this point in the piece should well realize), as Ethereum is not trying to be a better scripting language.&lt;/p&gt;
+
+&lt;p&gt;A permissioned smart contract network will be more performant than Ethereum for a &lt;em&gt;given&lt;/em&gt; application because each node will only need to perform the computation necessary to support that &lt;em&gt;given&lt;/em&gt; application, but it will also be significantly slower than scripting languages and hub and spoke databases. In this sense permissioned smart contract networks are more like a &amp;ldquo;County&amp;rsquo;s Computer&amp;rdquo; than the &amp;ldquo;World&amp;rsquo;s Computer&amp;rdquo; and as such they do not have the requirements that the UN of computing would have, and they can be built to be more focused and responsive to the &amp;ldquo;County&amp;rsquo;s&amp;rdquo; needs.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-governance-over-process-is-a-challenging-business-problem&#34;&gt;2. Governance Over Process Is A Challenging Business Problem&lt;/h3&gt;
+
+&lt;p&gt;To begin with, let me quote Ethan (again):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Blockchains are neat because they take the old concept of commits, tx logs, and replication in database architecture and replace it with an integrated system of authenticated state transitions. That&amp;rsquo;s valuable, potentially very valuable for core infrastructure and services in our economy, for all kinds of things, like transparency and auditing and accountability and so on. Blockchains make auditing and verification easy. You should be able to use that for more than just currencies. Maybe not for some silly &amp;ldquo;Yo&amp;rdquo; app, but for next generation smart government and auditable economy, that&amp;rsquo;s going to matter.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.reddit.com/r/erisindustries/comments/2pt3ag/decentralisation_for_its_own_sake_good_for_some/cmzthwe&#34; target=&#34;_blank&#34;&gt;Reference&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;When we get to the land of smart contracts instead of simply blockchains and tokens, the focus of effort for Eris since the days when Andreas was working on PRO-Doug and Tyler, Preston and I were prototyping a foundation in smart contracts and Ethan was working on Cryptoswartz (or, proof of custody), what we&amp;rsquo;re essentially talking about (as I&amp;rsquo;ve argued &lt;a href=&#34;http://localhost/2015/09/15/smart-contracts-intro/&#34;&gt;elsewhere&lt;/a&gt;) is &amp;ldquo;business process automation which reaches outside of the glass doors&amp;rdquo;. In other words, across organizations.&lt;/p&gt;
+
+&lt;p&gt;And let&amp;rsquo;s get real for a second. Business process automation is not something which needs to be ran on the Worlds Computer in order to be useful. To be clear, I&amp;rsquo;m not trying to denigrate Eth&amp;rsquo;s messaging, I indeed like that positioning. That said, there is tons of utility in a smart contract network which is completely independent of having a globally decentralized, globally available, permissionless ledger.&lt;/p&gt;
+
+&lt;p&gt;There is a real challenge here for enterprises which are seeking to put in place business process automation in consortium&amp;rsquo;s. They may need to have a space to move in different directions and optimize for different ideas than a public network would be optimized to achieve. Would enterprises seek to build applications on public blockchains the main constraint they&amp;rsquo;ll have is that the blockchain has been optimized for the lowest common (global) denominator rather than being optimized to achieve what the consortium is trying to achieve.&lt;/p&gt;
+
+&lt;p&gt;In this sense, permissioned blockchains can be used iteratively to accomplish very specific business problems and optimized to achieve those solutions rather than having to be built for only the lowest common denominator. The end result here is that it is easier to marry the specific business challenges and governance over business processes to the data management solution used by the network.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-cost-structure&#34;&gt;3. Cost Structure&lt;/h3&gt;
+
+&lt;p&gt;Finally, there is the cost structure. Public blockchains are costly to deal with and they are so for a pretty simple reason: spam control. Ethereum has a pricing structure which is linked to computation operations.&lt;/p&gt;
+
+&lt;p&gt;So every time a contract needs to go into a for loop, users of that contract must to pay to run that for loop. How  much users are required to pay will be determined how many times the contract must iterate through the loop. The more times through the loop, the more computational operations will be required, and the more money must be spent.&lt;/p&gt;
+
+&lt;p&gt;What happens in Ethereum if users do not send enough money to a contract when they interact with it? That transaction does not happen. Plain and simple. Ethereum has a valid reason for why it does this: if a contract has an infinite loop in it and they did not have a pay-per-computing-operation mechanism a single contract could seize up the entire network by throwing all of the full nodes into an infinite loop.&lt;/p&gt;
+
+&lt;p&gt;Controlling this attack vector on a permissioned blockchain can happen in a very different manner than &lt;em&gt;having&lt;/em&gt; to rely on market and pricing dynamics. With erisdb style chains we implement a maxgas per transaction to stop the network from seizing and there are other ways to control this if you have more visibility or control over the smart contract network (oh, sorry, blockchain).&lt;/p&gt;
+
+&lt;h2 id=&#34;securing-permissioned-blockchains&#34;&gt;Securing Permissioned Blockchains&lt;/h2&gt;
+
+&lt;p&gt;There is a fallacy I have heard now and again that permissioned blockchains are significantly less secure than permissionless blockchains which have an economic incentive to &amp;ldquo;mine&amp;rdquo; and protect the integrity of data.&lt;/p&gt;
+
+&lt;p&gt;When people say that permissioned blockchains don&amp;rsquo;t have the same level of security as permissionless blockchains sometimes they are equating blockchains ​_without_​ permissioning systems to &amp;ldquo;permissioned&amp;rdquo; blockchains.&lt;/p&gt;
+
+&lt;p&gt;These are very different things indeed. A blockchain which does not have an access control layer baked in as a first class citizen of the client used to operate it, such as the one recently used by UBS to conduct a smart bond proof of concept, is a very different animal than a blockchain design which expressly whitelists those that are able to participate in the consensus mechanism. In the UBS scenario, an adversary which is able to get into the VPN (assuming this was their architecture for the simple proof of concept; I assume they would not do this in production) and connect into the blockchain could potentially attack the network using increased mining capacity. We had nothing to do with the referenced proof of concept, and everything I just referenced is available publicly on Twitter.&lt;/p&gt;
+
+&lt;p&gt;The security model of public blockchains ​_actually_​ is not their overall hash rate, but rather is the non-predictive distribution of power over ​&lt;em&gt;what is&lt;/em&gt; among nodes unlikely to collude​, meaning the security model ​*is*​ the relative distribution of the pie size of the hash rate rather than the &amp;ldquo;volume&amp;rdquo; of the hash rate. This is why folks get antsy when big mining farms get too close to the redline.&lt;/p&gt;
+
+&lt;p&gt;The hash rate &lt;em&gt;does&lt;/em&gt; provide a barrier to entry and also a barrier to quickly acquiring a sufficiency of the non-predictive distribution of power over &lt;em&gt;what is&lt;/em&gt;. Yet this barrier to entry, and/or barrier to control, can just as easily be provided by a properly conceived access control layer as it can be provided by market dynamics. Free marketeers may not like that I argue that there are many ways to control the relative slices of the overall pie representing the power over &lt;em&gt;what is&lt;/em&gt;, but nevertheless the logic, I&amp;rsquo;m pretty sure, still holds.&lt;/p&gt;
+
+&lt;p&gt;A possible attack vector at this point for overtaking a permissioned blockchain is thieving (or brute forcing) of the private keys for the validator set. This attack vector is &lt;strong&gt;extremely unlikely&lt;/strong&gt; it must be reinforced, however it is mathematically possible.&lt;/p&gt;
+
+&lt;p&gt;Yet, this is a very different matter from the security critique of permissioned blockchains which has largely centered on low hash rates. Indeed, since eris:db is built on a proof of stake backbone, the entire critique with respect to hash rates is wholly unfounded if applied to eris:db chains specifically; but exploring that is for another day.&lt;/p&gt;
+
+&lt;h2 id=&#34;postface&#34;&gt;Postface&lt;/h2&gt;
+
+&lt;p&gt;This is a very hard argument (for me) to encapsulate into a tidy soundbite for folks because it is intricate and subtle. Hopefully, some of these many words make some sense as you continue your exploration of this very interesting and important technology.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Photo Credit&lt;/strong&gt; &lt;a href=&#34;https://www.flickr.com/photos/kevincortopassi/&#34; target=&#34;_blank&#34;&gt;Kevin Cortopassi @ flickr&lt;/a&gt; CC By-ND, 2008&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

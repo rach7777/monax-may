@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2gather on Monax Industries</title>
+    <link>http://localhost/tags/2gather/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Apr 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/tags/2gather/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How 2gather works</title>
+      <link>http://localhost/2015/04/07/2gather/</link>
+      <pubDate>Tue, 07 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/04/07/2gather/</guid>
+      <description>
+
+&lt;h1 id=&#34;note-2gather-is-no-longer-supported-this-blog-post-is-kept-only-for-historical-reasons&#34;&gt;&lt;strong&gt;Note&lt;/strong&gt; &amp;ndash; 2gather is no longer supported. This blog post is kept &lt;strong&gt;ONLY&lt;/strong&gt; for historical reasons.&lt;/h1&gt;
+
+&lt;h2 id=&#34;how-2gather-works&#34;&gt;How 2gather works&lt;/h2&gt;
+
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+
+&lt;p&gt;The 2gather video sharing service is the first real distributed application built on Eris. It uses a number of different components:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;EPM&lt;/strong&gt; A command-line blockchain configuration and smart contract deployment tool.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Thelonious&lt;/strong&gt; A blockchain client.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IPFS&lt;/strong&gt; A p2p file-sharing client.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Atë&lt;/strong&gt; A scripting component.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Decerver&lt;/strong&gt; Contains Ate, some dapp-loading and verification code, and serves the dapp locally in the form of a RESTful web-API.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A web-browser&lt;/strong&gt; Communicates with the decerver over http, and does all the presentation (like in any old webapp).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Docker&lt;/strong&gt; Puts the various different components into containers that can be run on any platform.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tutum&lt;/strong&gt; Is used to host a peer-server for the Eris-run blockchain, and to deploy and coordinate a world-wide network of &amp;ldquo;base nodes&amp;rdquo;. More info can be found &lt;a href=&#34;https://eng.erisindustries.com/blockchains/2015/04/01/peer-server-networks-current-paradigm/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This document focuses on 2gather, but most of it applies to any dapp.&lt;/p&gt;
+
+&lt;h3 id=&#34;starting-2gather&#34;&gt;Starting 2gather&lt;/h3&gt;
+
+&lt;p&gt;Despite all of these different components, the process for starting up and running 2gather is fairly simple. Right now, users must makes sure that &lt;a href=&#34;https://www.docker.com/&#34; target=&#34;_blank&#34;&gt;docker&lt;/a&gt; and &lt;a href=&#34;https://docs.docker.com/compose/&#34; target=&#34;_blank&#34;&gt;docker-compose&lt;/a&gt; are installed. If it&amp;rsquo;s a Windows or Mac machine, then they need to use a tool such as &lt;a href=&#34;http://boot2docker.io/&#34; target=&#34;_blank&#34;&gt;boot2docker&lt;/a&gt;. Once that is taken care of, it&amp;rsquo;s a simple matter of pulling the 2gather repository, cd&amp;rsquo;ing in to the root and typing &lt;code&gt;(sudo) docker-compose up&lt;/code&gt;. This will automatically pull in all the dependency containers from dockerhub (&lt;code&gt;erisdb&lt;/code&gt;, &lt;code&gt;decerver&lt;/code&gt; and &lt;code&gt;ipfs&lt;/code&gt;), and generate the 2gather container and link it up with the dependencies, and start running the dapp.&lt;/p&gt;
+
+&lt;p&gt;The generation of the 2gather container includes the following steps:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Setting up the volumes and ports and all of that, so that it can run.&lt;/li&gt;
+&lt;li&gt;Fetching the (public) 2gather chain from the peer-server, which means initializing a local database and download the current blocks into it, as well as setting up some of the identifiers that the Thelonious blockchain client needs in order to run it.&lt;/li&gt;
+&lt;li&gt;Making sure the &lt;code&gt;package.json&lt;/code&gt; of the containerized dapp is updated with the 2gather chain Id and root contracts.&lt;/li&gt;
+&lt;li&gt;Starting up the decerver, which will in turn start Thelonious and IPFS, make sure Thelonious is given the correct chain and root contract, and that IPFS gets a proper peer id and such. When that&amp;rsquo;s been taken care of it will load in the actual dapp-logic (which is written in javascript) and start the server.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;When all of this is done, the dapp can be interacted with by opening up a web-browser and loading the url &lt;code&gt;localhost:3000/2gather/&lt;/code&gt;. The first time this is done it will have to download all the base containers which usually takes a few minutes. When they are all in place, it normally takes something between 20-30 seconds. A lot of these containers are also shared between a lot of different dapps (and also other docker-based applications), so having them will speed up the loading of other docker-based apps as well.&lt;/p&gt;
+
+&lt;h3 id=&#34;running-2gather&#34;&gt;Running 2gather&lt;/h3&gt;
+
+&lt;p&gt;When 2gather is running it mostly just sits around waiting for things to happen. There are three main entry-ways for events. The first and second is the IPFS and Thelonious peer networks, and the third is browser activity (such as the user clicking on the &amp;lsquo;add new video&amp;rsquo; link.&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/2gather-1.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;It is important to remember that the deCerver only serves locally (by default). It is &lt;strong&gt;not&lt;/strong&gt; how you communicate with other peers. The way you reach other people that are on the same blockchain is over the Thelonious peer network. The way you get actual video files/data, is over the IPFS peer network. It works similar to how a bittorrent client works. It may have a Java Swing/FX or Qt GUI, for example, or in some cases you could have it serve a webpage, and that is how &lt;strong&gt;you&lt;/strong&gt; access the client and send various different commands. The actual networking happens through the peer-to-peer network that the client runs. The big difference here is you have two peer networks running with 2gather - one for the blockchain and one for files. The way these systems are linked and coordinated, though, is through the decerver, and that&amp;rsquo;s what we&amp;rsquo;re going to look at next.&lt;/p&gt;
+
+&lt;h4 id=&#34;example-uploading-a-video&#34;&gt;Example - uploading a video&lt;/h4&gt;
+
+&lt;p&gt;Let&amp;rsquo;s say i click on the link to upload a video. What happens is this:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The browser will take the file url and load the video data into memory.&lt;/li&gt;
+&lt;li&gt;It then sends a POST request to the endpoint &lt;code&gt;{BASE_URL}/users/:whatever/videos/&lt;/code&gt;. The request body will contain the video data and the display name.&lt;/li&gt;
+&lt;li&gt;The decerver receives this request and the router will pass it on to the &lt;code&gt;addVideo&lt;/code&gt; function (or return an error if there are any issues).&lt;/li&gt;
+&lt;li&gt;The addVideo function will write the video data to IPFS, and get a hash in return, which is the file identifier and is used to fetch it.&lt;/li&gt;
+&lt;li&gt;The hash is written to a smart contract along with the file display name and some meta data. This is done by sending a transaction to the Thelonious client. By the way - this write procedure is essentially the same as in &lt;code&gt;hello-world&lt;/code&gt;, although more work is needed before the actual write in order to handle read/write permissions, making sure each user has their own contract, and other things.&lt;/li&gt;
+&lt;li&gt;The transaction is queued right away, and a transaction hash is returned by the thelonious client. This hash is sent back in the response to the client, which will then continue to poll &lt;code&gt;{BASE_URL}/txs/:hash&lt;/code&gt; until it confirms that the tx has been processed.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Step 1 is done in the webpage that comes with 2gather by default, and the code can be found in &lt;code&gt;2gather/script&lt;/code&gt; (&lt;code&gt;index.html&lt;/code&gt;) is in the root). The webpage uses angular + bootstrap. The webAPI (+ tests) can be found in &lt;code&gt;2gather/spec/&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Steps 2-5 are not done automatically by the deCerver; they are part of the back-end javascript that is loaded into and executed by the deCervers javascript interpreter, and can be found in &lt;code&gt;2gather/models/&lt;/code&gt;. The file &lt;code&gt;2gather.js&lt;/code&gt; Has the startup logic and basic routing in it. The file &lt;code&gt;2gatherAPI.js&lt;/code&gt; contains the 2gather api (the actual logic for 2gather), and finally &lt;code&gt;decerver_api.js&lt;/code&gt; has some generic functions for doing transactions and reading/writing to IPFS.&lt;/p&gt;
+
+&lt;h3 id=&#34;an-eris-dapp-now-and-in-the-future&#34;&gt;An Eris dapp - now and in the future&lt;/h3&gt;
+
+&lt;p&gt;When working with 2gather we&amp;rsquo;ve noticed a few issues that needs to be addresed so that building dapps on Eris becomes easier and more intuitive. Some of these issues are:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The use of alpha/pre-alpha dependencies made it difficult to work at times (though we didn&amp;rsquo;t have much of a choice).&lt;/li&gt;
+&lt;li&gt;Manually building Go-programs is not easy. People have been struggling with this.&lt;/li&gt;
+&lt;li&gt;Using our tools is not easy. People have been struggling with deCerver, Thelonious and EPM. There are many components and a lot to keep track of.&lt;/li&gt;
+&lt;li&gt;Using LLL for contract writing is not easy.&lt;/li&gt;
+&lt;li&gt;Continuing to rely on some of our sub-systems/dependencies will make it hard for us to work efficiently.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Some of the solutions we&amp;rsquo;re working towards currently are these:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The dependency problem has been solved by itself to some degree, as IPFS and other libraries are now more mature.&lt;/li&gt;
+&lt;li&gt;Docker is a great deployment tool, that will replace the manual build process for DApps.&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;re switching over to a Node.js-based platform, so that working with dapps becomes more natural to people, mostly for those that are good (or even great) application makers, but haven&amp;rsquo;t really gotten into decentralized stuff yet. The Node.js platform will also include browser-based blockchain creation and management.&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;re switching over to the new Solidity contract writing language that is currently being developed.&lt;/li&gt;
+&lt;li&gt;We will be moving portions of the Thelonious client over to &lt;code&gt;Tendermint&lt;/code&gt;, and some other things.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

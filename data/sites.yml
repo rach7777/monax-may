@@ -1,0 +1,67 @@
+# ----------------------- #
+#        SITES            #
+# ----------------------- #
+main :
+    name:        Monax Industries
+    url:         https://monax.industries
+    url_raw:     monax.industries
+    formal_name: "Monax Industries"
+
+docs :
+    name:        Eris Industries
+    url:         https://docs.erisindustries.com
+    url_raw:     docs.erisindustries.com
+    formal_name: "Eris Industries Documentation"
+    description: "Documentation, Tutorials, and Support for Eris Industries."
+
+blog_main :
+    name:        "Eris Industries' Company Blog"
+    formal_name: "Company Blog"
+    tagline:     "by Eris Industries"
+    description: "This is the primary blog for Eris Industries. It is where we feature our product announcements and other corporate niceties. For our other blogs please see above."
+    url:         https://blog.erisindustries.com
+    url_plain:   http://blog.erisindustries.com
+    url_raw:     blog.erisindustries.com
+    comments :
+      provider : disqus
+      disqus :
+        short_name : erisindustriesblog
+
+blog_eng :
+    name:        "Engineering. Distributed."
+    formal_name: "Engineering. Distributed."
+    tagline:     "by Eris Industries"
+    description: "A discussion of the technical aspects of how to build distributed systems and distributed applications. For our other blogs please see above."
+    url:         https://eng.erisindustries.com
+    url_plain:   http://eng.erisindustries.com
+    url_raw:     eng.erisindustries.com
+    comments :
+      provider : disqus
+      disqus :
+        short_name : engepmio
+
+blog_db :
+    name:        "Doing Distributed Business"
+    formal_name: "Doing Distributed Business"
+    tagline:     "by Eris Industries"
+    description: "On this blog, we write about our experiences running a distributed business including compliance, tax, staffing and other issues which arise when a business is operating in a distributed manner. For our other blogs please see above."
+    url:         https://db.erisindustries.com
+    url_plain:   http://db.erisindustries.com
+    url_raw:     db.erisindustries.com
+    comments :
+      provider : disqus
+      disqus :
+        short_name : ddberis
+
+support:  https://support.erisindustries.com
+github:   https://github.com/eris-ltd
+github-user: eris-ltd
+twitter:  https://twitter.com/eris_ltd
+twitter_user: eris_ltd
+irc_main: irc://freenode.net/#erisindustries
+irc_dev:  irc://freenode.net/#eris-dev
+youtube:  https://www.youtube.com/c/erisindustries-ltd
+facebook: https://www.facebook.com/erisindustries
+reddit:   https://www.reddit.com/r/erisindustries
+meetup:   http://www.meetup.com/erisltd/
+slack:    https://slack.eris.industries

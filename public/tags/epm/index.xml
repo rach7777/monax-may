@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Epm on Monax Industries</title>
+    <link>http://localhost/tags/epm/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/tags/epm/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Release: v0.11</title>
+      <link>http://localhost/2016/01/16/v011-release/</link>
+      <pubDate>Sat, 16 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2016/01/16/v011-release/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/29882791@N02/8300286720/&#34; target=&#34;_blank&#34;&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/monax.jpg&amp;rsquo; | img }}&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It is with great pleasure that I announce that version 0.11 of &lt;code&gt;eris&lt;/code&gt; is officially released. This version represents a significant upgrade from the 0.10 version of eris in two major areas.&lt;/p&gt;
+
+&lt;p&gt;First, the pathways and workflow around smart contracts actually exists rather than being a duct-taped and bubble-gummmed pathway no one could work with. Second, we have improved our documentation, tutorials, and perhaps most importantly, our test coverage across the platform tremendously.&lt;/p&gt;
+
+&lt;p&gt;While the focus of our 0.10 release series was on features as we completely redesigned the entire platform between our 0.9 release and our 0.10 release. That complete redesign meant that our entire suite of documentation and tutorials were completely out of date. That has been drastically improved and eris is much easier for new users to get up to speed than it ever has been in the past.&lt;/p&gt;
+
+&lt;p&gt;There is a definite tension within software development between wanting to have well tested code and not really knowing what you want the code to look like. When one is designing a platform using relatively new software paradigms, one can waste time spending too much time developing tests. Particularly when you don&amp;rsquo;t even really know &amp;ldquo;how&amp;rdquo; to test this new platform because you aren&amp;rsquo;t exactly sure what the platform will look like. This was the tension which we found ourselves in during the devleopment of the 0.10 release sequence.&lt;/p&gt;
+
+&lt;p&gt;However, during the 0.11 sequence we turned our attention away from adding features (with the exception of the smart contracts pathways) and put our attention squarely on testing and stability. And eris is a much stronger tool for it.&lt;/p&gt;
+
+&lt;p&gt;If you haven&amp;rsquo;t taken a look at eris in the past, or if you have had troubles with the complexity required to handle smart contract, permissionable blockchains, take a look again. It&amp;rsquo;s probably easier than you think.&lt;/p&gt;
+
+&lt;p&gt;Eris makes it easy to:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;run nodes for established blockchains&lt;/li&gt;
+&lt;li&gt;run middleware which hooks into established blockchins&lt;/li&gt;
+&lt;li&gt;instantiate new (permissioned) blockchains&lt;/li&gt;
+&lt;li&gt;build, test, and deploy smart contract packages&lt;/li&gt;
+&lt;li&gt;work easily with IPFS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We encourage you to &lt;a href=&#34;https://docs.erisindustries.com/&#34; target=&#34;_blank&#34;&gt;take a look&lt;/a&gt; at the very new and very improved eris! Eris might not be exactly what you thought it was.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/bangdoll/&#34; target=&#34;_blank&#34;&gt;(Photo credit: CC-BY-SA: bangdoll @ Flickr )&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>We (Finally) Built Eris!</title>
+      <link>http://localhost/2015/08/19/v010-release/</link>
+      <pubDate>Wed, 19 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/08/19/v010-release/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s been almost a year since we officially started working on &amp;ldquo;eris&amp;rdquo;, and we are (finally) ready to move a product we are proud to call &amp;ldquo;eris&amp;rdquo; into beta.&lt;/p&gt;
+
+&lt;p&gt;As of today, version 0.10 of the eris platform is released. Parts of the 0.10 release series have been released (which I mean on stable master branches of the requisite repositories) for a while now. But as of today the centerpiece of the platform going forward, a cli tool we call &lt;code&gt;eris&lt;/code&gt; is &amp;ldquo;released&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;The 0.10 release of &lt;code&gt;eris&lt;/code&gt; represents a significant step forward for our work. After our &lt;a href=&#34;https://blog.erisindustries.com/products/2015/05/27/v09-release/&#34; target=&#34;_blank&#34;&gt;0.9 release&lt;/a&gt; we understood that we needed to completely redesign how the platform operated. Some of the reasons for why this was necessary are included in the &lt;a href=&#34;https://docs.erisindustries.com/documentation/eris-cli/&#34; target=&#34;_blank&#34;&gt;platform&amp;rsquo;s Readme&lt;/a&gt; in the Background Section. Other reasons for why this was necessary were included in &lt;a href=&#34;https://blog.erisindustries.com/products/2015/08/09/deprecation-warnings/&#34; target=&#34;_blank&#34;&gt;a blog post about our deprecation warnings&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There are a few portions of this release which I would like to highlight.&lt;/p&gt;
+
+&lt;p&gt;First, we no longer make an eris blockchain &amp;ndash; permissioned or unpermissioned. We are, however, actively supporting the Tendermint open source project where our permissioned smart contract network efforts have continued. At this point &lt;strong&gt;&amp;ldquo;building on eris&amp;rdquo;&lt;/strong&gt; does not imply that a developer is building on a specific blockchain and &lt;strong&gt;&amp;ldquo;eris dapps&amp;rdquo;&lt;/strong&gt; do not imply that the smart contract network involved be built by any one particular project. In other words, we have gone fully blockchain agnostic.&lt;/p&gt;
+
+&lt;p&gt;Eris sits at a layer in the stack between a blockchain client and the operating system. In other words, eris is an &lt;strong&gt;application platform&lt;/strong&gt; it is not a blockchain client.&lt;/p&gt;
+
+&lt;p&gt;Second, we have gone &amp;ldquo;all in&amp;rdquo; on Docker. While some folks have mixed feelings about docker, and while there are still edge cases, it empowers a significant advancement for application developers due to its &amp;ldquo;build once, run the exact same anywhere&amp;rdquo; design structure. One of our alpha testers said about eris, &amp;ldquo;Got a BTC node and an Ethereum node running. Even with the little fiddling, that was FAST!&amp;rdquo; We would not be able to do this without Docker.&lt;/p&gt;
+
+&lt;p&gt;With eris, developers and users can simply and easily build and operate smart contract and blockchain backed applications.&lt;/p&gt;
+
+&lt;p&gt;Eris makes it easy to:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;run nodes for established blockchains&lt;/li&gt;
+&lt;li&gt;run middleware which hooks into established blockchins&lt;/li&gt;
+&lt;li&gt;instantiate new (permissioned) blockchains&lt;/li&gt;
+&lt;li&gt;build, test, and deploy smart contract packages&lt;/li&gt;
+&lt;li&gt;build, test, and deploy dapps based on the following frameworks:
+
+&lt;ul&gt;
+&lt;li&gt;pyepm&lt;/li&gt;
+&lt;li&gt;embark&lt;/li&gt;
+&lt;li&gt;eris-pm (EPM)&lt;/li&gt;
+&lt;li&gt;simple gulp based dapps&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;work easily with IPFS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We encourage you to &lt;a href=&#34;https://docs.erisindustries.com/&#34; target=&#34;_blank&#34;&gt;take a look&lt;/a&gt; at the very new and very improved eris! Eris might not be exactly what you thought it was.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Deprecation Warnings: What Do They Mean</title>
+      <link>http://localhost/2015/08/09/deprecation-warnings/</link>
+      <pubDate>Sun, 09 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/08/09/deprecation-warnings/</guid>
+      <description>&lt;p&gt;We have received some incoming communication with respect to the deprecation notices we have placed onto the readme&amp;rsquo;s of Thelonious and Decerver. This is the explanation of what is replacing those repositories.&lt;/p&gt;
+
+&lt;p&gt;Our permissioned smart contract network (blockchain) design which was called Thelonious has been continued and integrated into the &lt;a href=&#34;https://github.com/tendermint/tendermint&#34; target=&#34;_blank&#34;&gt;Tendermint&lt;/a&gt; project. We have been supporting the Tendermint project by paying one of our Core Developers to work on the Tendermint protocol and blockchain design. Tendermint is a permission-able, proof of stake based blockchain design. More about why we have switched from the old Thelonious design to the new Tendermint design will be forthcoming on our &lt;a href=&#34;https://eng.erisindustries.com&#34; target=&#34;_blank&#34;&gt;Engineering Blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Decerver, the distributed application server, has more or less been tabled. The idea behind the design was to provide a single server that was able to be plugged into various distributed protocol backends. While the goal was laudable, the implementation was awful. We realized quickly that the implementation conflated API client libraries with a router and http end point framework that a frontend could hook into. Both of these pieces can be, in our estimation, better handled by a series of good node-base client APIs and a node framework such as express. The middleware of an application need not (strictly speaking) be written in node, but we are heading in the direction of fully supporting node. The decerver has officially been replaced with a nice API and client library around the Tendermint blockchain in the form of &lt;a href=&#34;https://github.com/eris-ltd/eris-db&#34; target=&#34;_blank&#34;&gt;eris-db&lt;/a&gt; and &lt;a href=&#34;https://github.com/eris-ltd/eris-contracts.js&#34; target=&#34;_blank&#34;&gt;eris-contracts&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;EPM is being replaced by a combination of &lt;a href=&#34;https://github.com/eris-ltd/eris-cli/tree/develop&#34; target=&#34;_blank&#34;&gt;eris-cli&lt;/a&gt; and &lt;a href=&#34;https://github.com/eris-ltd/eris-pm&#34; target=&#34;_blank&#34;&gt;eris-pm&lt;/a&gt;. EPM as a tool became overly bloated and unweidly with three different blockchain designs compiled into the binary and other challenges. The functionality of running, installing, creating, and organizing blockchains is now handled by the eris-cli tool. The smart contract package management functionality of EPM is now handled by eris-pm.&lt;/p&gt;
+
+&lt;p&gt;At this point we are still putting the finishing touches on the 0.10 release and our documentation is not totally where it will be in another month; we are working as quickly as we can to put the pieces of the stack back together for everyone after the major redesign process we have been engaged with over the past three or so months.&lt;/p&gt;
+
+&lt;p&gt;That said, even though Decerver, Thelonious, and EPM have been marked for deprecation, if you still would like to play around with that tool chain we are happy to answer any questions you may have via github or our &lt;a href=&#34;https://support.erisindustries.com&#34; target=&#34;_blank&#34;&gt;support portal&lt;/a&gt;. We are encouraging folks, however, if they are just starting to explore Eris to use the updated stack if they have an ability to work with little documentation or with the older stack if they require a bit more documentation.&lt;/p&gt;
+
+&lt;p&gt;For some of the background as to the overall implementation of the stack and our motivations for this redesign from a platform perspective please &lt;a href=&#34;https://github.com/eris-ltd/eris-cli/tree/develop#why&#34; target=&#34;_blank&#34;&gt;see here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Proud to Announce that Version 0.9 of the Eris Platform Has Been Released</title>
+      <link>http://localhost/2015/05/27/v09-release/</link>
+      <pubDate>Wed, 27 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/05/27/v09-release/</guid>
+      <description>
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/turtles_release.jpg&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m pleased to announce that version &lt;code&gt;0.9&lt;/code&gt; of the Eris Blockchain Application Platform has been released.&lt;/p&gt;
+
+&lt;h2 id=&#34;now-with-moar-blockchains&#34;&gt;Now With Moar Blockchains&lt;/h2&gt;
+
+&lt;p&gt;The highlight of this release (at least for me) is the inclusion of Tendermint into the (growing) list of blockchains which the Eris Platform makes easy for developers to work with.&lt;/p&gt;
+
+&lt;p&gt;If you are not familiar with &lt;a href=&#34;http://tendermint.com&#34; target=&#34;_blank&#34;&gt;Tendermint&lt;/a&gt; definitely give it a look; it is one of the most sophisticated (yet understandable) Proof of Stake consensus algorithms currently available. While it (like many other blockchain technologies) is still in late alpha // early beta stage, it is fully usable from the Eris platform with only a few commands.&lt;/p&gt;
+epm keys gen --type ed25519 mykey
+epm new --type mint --checkout
+epm keys use mykey
+epm --log 5 run
+
+&lt;p&gt;More (and updated) information regarding &lt;a href=&#34;https://support.erisindustries.com/support/solutions/articles/7533&#34; target=&#34;_blank&#34;&gt;running Tendermint chains from eris is available here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;now-with-moar-stability&#34;&gt;Now With Moar Stability&lt;/h2&gt;
+
+&lt;p&gt;Most of the effort during the 0.9 release cycle has been in adding resiliency to &lt;code&gt;epm&lt;/code&gt; our (current) command line tool for managing blockchains and smart contract systems.&lt;/p&gt;
+
+&lt;p&gt;We have drastically increased our test coverage as well as adding a significant amount of integration testing for the entire stack. This work has been combined with many bug fixes along the way as the technology upstream from the Eris Platform, and Eris itself, continues to mature.&lt;/p&gt;
+
+&lt;h2 id=&#34;now-with-moar-smart-contract-joy&#34;&gt;Now With Moar Smart Contract Joy&lt;/h2&gt;
+
+&lt;p&gt;We have increased the power of the EPM lexer and parser. Now nested includes are available as well as Solidity support (via EPM and the eris:compilers microservice). EPM now can deploy smart contract packages directly from github.com without having to have the contracts directory cloned locally. These additions greatly ease and speed smart contract development workflow.&lt;/p&gt;
+
+&lt;h2 id=&#34;upgrading-docker-installs&#34;&gt;Upgrading &amp;ndash; Docker Installs&lt;/h2&gt;
+docker pull eris/erisdb
+docker pull eris/decerver
+docker pull eris/ipfs
+
+&lt;p&gt;It is that easy.&lt;/p&gt;
+
+&lt;h2 id=&#34;upgrading-native-installs&#34;&gt;Upgrading &amp;ndash; Native Installs&lt;/h2&gt;
+cp ~/.decerver ~/.eris
+cd $GOPATH/src/github.com/eris-ltd/decerver/cmd/decerver
+go get -u
+cd ../../../epm-go
+git pull origin master
+make
+
+&lt;p&gt;It is that easy. After you have fully tested Eris then:&lt;/p&gt;
+rm -rf ~/.decerver
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; for native installations, we are moving our default (working) directory from &lt;code&gt;~/.decerver&lt;/code&gt; to &lt;code&gt;~/.eris&lt;/code&gt; so ensure you either move or symlink that directory before upgrading.&lt;/p&gt;
+
+&lt;h2 id=&#34;beginning-the-0-10-release-sequence&#34;&gt;Beginning the 0.10 Release Sequence&lt;/h2&gt;
+
+&lt;p&gt;We are currently planning for 0.10 to be our final major release prior to 1.0. What will change in 0.10?&lt;/p&gt;
+
+&lt;p&gt;The primary change will be the separation of the blockchain executables from the epm tool along with a namechange of &lt;code&gt;epm&lt;/code&gt; to the &lt;code&gt;eris&lt;/code&gt; tool (which will not be so much of a functionality change, more a name change). Currently the blockchain executables are compiled into epm with the make tool. Underneath the hood &lt;code&gt;epm&lt;/code&gt; figures out which blockchain is checked out and calls the executable. This is a fairly fragile system which we are currently working to add more resiliency to. Part of the challenge is how Go statically links libraries during compilation.&lt;/p&gt;
+
+&lt;p&gt;During the 0.10 cycle we will be moving &lt;code&gt;eris:db&lt;/code&gt; over to utilizing Tendermint primitives along with our Doug permission layer. This will be a very powerful and exciting change for commercial and governance blockchain applications who do not want to rely on the excessive energy waste of Proof of Work systems. As part of this change, we are adding a &lt;code&gt;secure-native&lt;/code&gt; smart contract functionality which will be very powerful and increase the speed at which certain actions may be taken with respect to smart contracts.&lt;/p&gt;
+
+&lt;p&gt;We will be adding the &lt;code&gt;eris:worker&lt;/code&gt; to the Eris stack which will be a pure node.js based worker that will be an events manager for information and data which need to flow into a blockchain or bubble up from the blockchain for action out of band.&lt;/p&gt;
+
+&lt;p&gt;Lastly, we will be reworking &lt;code&gt;eris:server&lt;/code&gt; as a pure javascript browser component rather than a go based server. This will make Eris based DApps much more user friendly for developers who are not anxious to rely on potential users to download many megabytes of software and install a full platform just to try something out.&lt;/p&gt;
+
+&lt;p&gt;As they say: #watchthisspace&lt;/p&gt;
+
+&lt;p&gt;Photo credit: &lt;a href=&#34;https://www.flickr.com/photos/jurvetson/8218893828/&#34; target=&#34;_blank&#34;&gt;Steve Jurvetson @ Flicker&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

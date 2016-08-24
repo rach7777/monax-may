@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article">
+  <head>
+    
+    <meta charset='utf-8'>
+    <title>
+        
+            Monax Industries
+        
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="http://localhost/images/favicon.ico">
+
+    
+
+  
+
+
+
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://localhost" />
+  <meta property="og:title" content="Monax Industries" />
+
+
+  <meta property="og:description" content="Learn how to sanely persist data from a docker container using data-only containers." />
+
+
+
+
+
+    <meta name="twitter:card" content="summary" />
+
+<meta name="twitter:site" content="@eris_ltd" />
+<meta name="twitter:title" content="Monax Industries" />
+
+  <meta name="twitter:title" content="Monax Industries" />
+
+
+  <meta name="twitter:description" content="Learn how to sanely persist data from a docker container using data-only containers." />
+
+
+
+  <meta name="twitter:creator" content="@eris_ltd">
+
+
+
+<meta name="keywords" content="blockchain,smart,contracts,data,driven,relationship,bft" />
+
+  <meta itemprop="name" content="Monax Industries" />
+
+
+  <meta name="description" content="Learn how to sanely persist data from a docker container using data-only containers." />
+
+
+
+
+    
+    <link rel="stylesheet" type="text/css" href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' />
+    
+        <link rel="stylesheet" type="text/css" href='http://localhost/styles/eris.css' />
+    
+
+    
+    
+  </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid col-xs-12 col-sm-12 col-med-8 col-med-offset-2 col-lg-8 col-lg-offset-2">
+    <div class="navbar-header">
+      <a class="navbar-brand page-scroll" href="https://monax.industries">{% image ei-logo-long-mobile.png alt="Eris Industries" %}</a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Components <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://monax.industries/components/eriscli">eris:cli</a></li>
+            <li><a href="https://monax.industries/components/erisdb">eris:db</a></li>
+            <li><a href="https://monax.industries/components/epm">eris:pm</a></li>
+            <li><a href="https://monax.industries/components/erislegal">eris:legal</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="https://monax.industries/products/">Products <span class="caret"></span></a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://docs.erisindustries.com">Overview</a></li>
+            <li><a href="https://docs.erisindustries.com/tutorials/getting-started/">Get Started</a></li>
+            <li><a href="https://docs.erisindustries.com/explainers">Explainers</a></li>
+            <li><a href="https://docs.erisindustries.com/tutorials">Tutorials</a></li>
+            <li><a href="https://docs.erisindustries.com/documentation">Technical Details</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="https://monax.industries/products/">Products <span class="caret"></span></a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://monax.industries/about/team">Team</a></li>
+            <li><a href="https://monax.industries/about/jobs">Positions</a></li>
+            <li><a href="https://monax.industries/about/media">Media</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Connect <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://support.erisindustries.com" target="_blank"><i class="fa fa-ambulance"></i> Support Forums</a></li>
+            <li><a href="https://slack.eris.industries"><i class="fa fa-weixin"></i> Chat Support (Slack)</a></li>
+            <li><a href="mailto:contact@erisindustries.com"><i class="fa fa-envelope"></i> Business Contact Email</a></li>
+            <li class="divider"></li>
+            <li><a href="https://github.com/eris-ltd" target="_blank"><i class="fa fa-github-square"></i> Github</a></li>
+            <li class="divider"></li>
+            <li><a href="https://twitter.com/eris_ltd" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+            <li><a href="https://www.facebook.com/erisindustries" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid" id="eris-page">
+  
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 page-header">
+        <header><h1 class="title" role="title">Persisting Data with Docker Containers</h1></header>
+      </div>
+    </div>
+  
+
+  <div class="row">
+    <article id="main-content">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
+        <p>After days of wrestling with the concept of persisting data in Docker containers deep in the bowels of that
+now ubiquitous whale, I have been delivered to freedom, a slain blue whale slung over my shoulder, its cargo strewn across the cloud, and a new-found affection (dare I say &ldquo;love&rdquo;) for docker lodged within my fingers and my heart.</p>
+
+<p>And so, in hopes that I may hasten your own progression from docker-dazed to docker-doer, here are my findings. Please enjoy responsibility.</p>
+
+<p>The core problem: we have an ephemeral container that we can throw away, update, redeploy, but we want to persist some data.</p>
+
+<p>The typical solution: mount a host volume like <code>docker run -d -v /home/user/data:/data myapp</code>. Anything written to <code>/data</code> in the container will persist in <code>/home/user/data</code> on the host. Seems legit.</p>
+
+<p>The problem: THE VOLUME GETS MOUNTED AS ROOT. This is an absolute nightmare if you are not running as root in the container (as you shouldn&rsquo;t be).
+Some people try to solve the issue by setting the uid/gid on the host to match that inside the container. This is not only a nuisance, but destroys portability,
+which is practically the reason you are using docker in the first place. Clearly this is bad. If you&rsquo;re not convinced, try it.</p>
+
+<p>Note: when you use the <code>VOLUME</code> command in a Dockerfile, the specified directory will persist somewhere in <code>/var/lib/docker/</code>. This means you don&rsquo;t have to use <code>-v</code> to get persistence, but if you&rsquo;re running lots of containers you&rsquo;ll need to <a href="https://github.com/chadoe/docker-cleanup-volumes" target="_blank">clean up after yourself</a>.</p>
+
+<p>Now, since you&rsquo;re working with docker, and since anything that&rsquo;s anything in the docker world deserves a container, and since certainly you&rsquo;re data is high up on the ladder of anythings that are anything, you ought to give your data its own container.</p>
+
+<p>We call it a &ldquo;data-only container&rdquo;, and it&rsquo;s actually the solution to the mounting problem: you create another instance of your container, whose sole purpose is to expose a volume (it doesn&rsquo;t run any processes).
+Then instead of mounting a host volume with <code>-v</code>,
+we use <code>--volumes-from</code> to tell our application container to read from the data container.</p>
+
+<p>You may object: &ldquo;ok, but haven&rsquo;t you just pushed the problem back a step further? Don&rsquo;t we still need to mount the host into the data-only container?&rdquo;</p>
+
+<p>No. At least not if you do it right. Here&rsquo;s how to do it right.</p>
+
+<p>You have a dockerfile, it looks something like:</p>
+
+<pre><code>FROM ubuntu
+
+ENV user myuser
+ENV data_root /data/myapp
+
+# set user right away for determinism
+RUN groupadd -r $user \
+  &amp;&amp; useradd -r -s /bin/false -g $user $user
+
+# create directory for persistence and give our user ownership
+RUN mkdir -p $data_root \
+  &amp;&amp; chown -R $user:$user $data_root
+
+...
+
+
+# persist data, set user
+VOLUME $data_root
+USER $user
+
+CMD [&quot;./run.sh&quot;]
+
+</code></pre>
+
+<p>Note we setup the group and user right away, make the volume directory, and give our user ownership.
+Then when we actually get to <code>VOLUME $data_root</code>, the directory already has the right permissions. Remember anything written to this directory
+in the container will persist on the host somewhere in <code>/var/lib/docker/</code> (use <code>docker inspect</code> to find out).</p>
+
+<p>Of course, you still need root to get at those files on the host system (docker runs as root, so this makes sense). But inside the container, the permissions are set correctly, because you dealt with them first thing in your Dockerfile (you clever developer you). Now any time you want to touch or see that data, you do it through the data-only container.</p>
+
+<p>Ok. Let&rsquo;s create some containers. We use the same image for both data-only and application container <a href="http://container42.com/2014/11/18/data-only-container-madness" target="_blank">because it saves space</a>.</p>
+
+<pre><code>docker build -t myapp .
+docker run -i --name myapp_data myapp /bin/echo Data-only container for my app
+docker run -d --name myapp --volumes-from myapp_data myapp
+</code></pre>
+
+<p>The first line builds the image (duh).
+The second creates the data-only container.
+Note the container doesn&rsquo;t actually have to be running, it just has to exist.
+It will exit right away and that&rsquo;s fine; you can see it in <code>docker ps -a</code>.
+The data will persist so long as that container exists. So careful if/when you delete it.
+The final line runs our actual application, using the volume exposed by the data-only container.</p>
+
+<p>So this is all pretty simple (and great). But it get&rsquo;s better.</p>
+
+<p>First, some classics:</p>
+
+<p>Want to see what&rsquo;s in your volume?</p>
+docker run --volumes-from myapp_data myapp ls /data/myapp
+
+<p>Need to cat a file?</p>
+docker run --volumes-from myapp_data myapp bash -c "cat /data/myapp/file"
+
+<p>Need to back it up?</p>
+docker run -d --volumes-from myapp_data myapp_backup_service
+
+<p>Ok, you get the picture. But you&rsquo;re still confused, because you still want to mount a volume;
+there&rsquo;s some data on the host and you need it in your container.</p>
+
+<p>Cool, so don&rsquo;t mount a volume. Copy the data.</p>
+
+<p>You can do this now using tar:</p>
+tar cf - . | docker run --rm -i --volumes-from myapp_data myapp tar xvf - -C /data/myapp
+
+<p>Make sure you&rsquo;re in the directory you want to copy (otherwise it doesn&rsquo;t work?!).
+We compress the directory and pipe the compressed byte stream into the container command&rsquo;s stdin,
+which extracts the contents and writes them to our volume in the container.
+And since we used <code>--volumes-from</code>, it will persist in the data-only container.</p>
+
+<p>It&rsquo;s a little simpler if you&rsquo;re only copying one file:</p>
+cat file | docker run --rm --volumes-from myapp_data -i  myapp bash -c "cat > /data/myapp/file"
+
+<p>You might think, &ldquo;isn&rsquo;t there a <code>docker cp</code> command?&ldquo;. There is, but it only works <em>from container to host</em>, and not the other way. Don&rsquo;t worry, <a href="https://github.com/docker/docker/pull/13171" target="_blank">it will work both ways soon</a>.</p>
+
+<p>In the meantime, stick the above commands in shell scripts, or make aliases, or better yet help review <a href="https://github.com/docker/docker/pull/13171" target="_blank">the pull request</a>.</p>
+
+<p>And check out the <a href="https://github.com/tendermint/tendermint/tree/develop/DOCKER" target="_blank">tendermint repo</a> for an example.</p>
+
+<p>So there you have it folks. A simple formula for persistence in docker containers. Remember the secret: use more containers, copy data, never mount the host.</p>
+
+<p>More information:</p>
+
+<ul>
+<li><a href="https://stackoverflow.com/questions/23544282/what-is-the-best-way-to-manage-permissions-for-docker-shared-volumes" target="_blank">Docker Volume Permissions</a></li>
+<li><a href="https://stackoverflow.com/questions/18496940/how-to-deal-with-persistent-storage-e-g-databases-in-docker" target="_blank">Docker Persistence</a></li>
+<li><a href="https://medium.com/@ramangupta/why-docker-data-containers-are-good-589b3c6c749e" target="_blank">Value of Docker Containers</a></li>
+<li><a href="http://container42.com/2014/11/18/data-only-container-madness/" target="_blank">Data Only Containers</a></li>
+<li><a href="http://container42.com/2013/12/16/persistent-volumes-with-docker-container-as-volume-pattern/" target="_blank">Patterns for Docker Volume Containers</a></li>
+</ul>
+
+      </div>
+    </article>
+  </div>
+</div>
+
+</div>
+</div>
+<footer>
+  <p>Copyright &copy; 2014-2015 Eris Industries</p>
+</footer>
+</body>
+
+
+<div id="toc" class="well col-md-4 col-sm-6">
+
+</div>
+<script type="text/javascript">
+  var clicky_site_ids = clicky_site_ids || [];
+  clicky_site_ids.push( 100753928 );
+  (function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//static.clicky.com/js';
+    ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+  })();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.clicky.com/100753928ns.gif" /></p></noscript>
+</html>

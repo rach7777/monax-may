@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modularity on Monax Industries</title>
+    <link>http://localhost/tags/modularity/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/tags/modularity/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>So Here&#39;s the Problem(s) With Keys</title>
+      <link>http://localhost/2016/03/19/keys-keys-keys/</link>
+      <pubDate>Sat, 19 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2016/03/19/keys-keys-keys/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/curioussiow/182224885/&#34; target=&#34;_blank&#34;&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/keys.keys.keys.jpg&amp;rsquo; | img }}&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The clarity for eris as to what to do about the ever present elephant in the room came from &lt;a href=&#34;https://twitter.com/androlo1980&#34; target=&#34;_blank&#34;&gt;the Viking&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;If we touch the keys we&amp;rsquo;re a security company. Full stop.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;keys-it-s-complicated&#34;&gt;Keys. It&amp;rsquo;s Complicated&lt;/h1&gt;
+
+&lt;p&gt;Let&amp;rsquo;s get real for a second. All this chains and contracts and encryption and verification and all the good stuff that excites us so; it&amp;rsquo;s all predicated on a set of assumptions about keys.&lt;/p&gt;
+
+&lt;p&gt;The most important assumption being that &amp;ldquo;the thing that has the keys can do the thing&amp;rdquo;. Whatever that &amp;ldquo;thing&amp;rdquo; is, whether it is encrypting a message with keybase and pasting it in direct message on slack to protect something sensitive, or its signing a transaction &lt;a href=&#34;https://twitter.com/aliahmadisb/status/711206241402544128&#34; target=&#34;_blank&#34;&gt;to purchase some shoes on Open Bazaar&lt;/a&gt; (which looks terrific, BTW!). No matter, it needs a cryptographic public-private key pair.&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/keybase_encrypt.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;I am able to perform the encryption function pictured above because I have access to keys available to me on the machine which I&amp;rsquo;m working from. The same thing applies if one is signing the byte code of a solidity contract and deploying it to an eris:db (or geth) chain or even working with IPFS. It all depends on keys.&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s all well and good. &lt;em&gt;But&lt;/em&gt; it&amp;rsquo;s also incomplete. There are three big(ger) problems that remain:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;users demand device independent experience&lt;/li&gt;
+&lt;li&gt;stuff breaks and/or gets lost&lt;/li&gt;
+&lt;li&gt;managing individual keys doesn&amp;rsquo;t do anything for the person who has to manage bucket loads of departments and roster changes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The rest of this post will explore these three problems in some more detail. And along the way will touch on many aspects of the eris approach as well as how we envision working with partners in this area (of which we view our upcoming work with Ledger to be foundational).&lt;/p&gt;
+
+&lt;h1 id=&#34;big-problem-1-device-independence&#34;&gt;Big Problem 1. Device Independence&lt;/h1&gt;
+
+&lt;p&gt;The problem is not really that complicated to understand. Modern users of computing expect to move easily between devices. Keys are files, which we generally do not want to be actively syncing between a lot of devices. Mostly because it is impossible to ensure that while it is going over the wire it is safe. If you have access to &lt;code&gt;scp&lt;/code&gt; into the device or something then you are pretty secure, but it is not necessarily a safe assumption that we have an ability to &lt;code&gt;scp&lt;/code&gt; into all of our devices (phones, tablets, internet connected devices, come to mind). That&amp;rsquo;s a big challenge to the chains and contracts communities, particularly when it comes to consumers, luckily there are many folks working on these issues from the cryptocurrency community; others are also working on similar challenges for different types of keys.&lt;/p&gt;
+
+&lt;p&gt;Our focus at eris is, however, more focused on the industrial uses of smart contract technology. In this context there is a fairly established paradigm for folks to be able to work with keys via FOB-USB devices that are common in high security enterprise environments. These devices have generally held keychains containing various key types which been used to identify the person holding the FOB.&lt;/p&gt;
+
+&lt;p&gt;That background established, in a smart contract-ified enterprise, it is not unreasonable to expect that most users, developers, administrators, and the like &lt;a href=&#34;https://www.ledgerwallet.com/products/3-ledger-hw-1&#34; target=&#34;_blank&#34;&gt;will have something like a FOB available to them&lt;/a&gt;, but which has been designed for a smart contract-ified world.&lt;/p&gt;
+
+&lt;p&gt;Access to the keys is only half the battle. To really have device independence you need to have a system on that machine which is capable of talking to the keychain(s) on the USB devices.&lt;/p&gt;
+
+&lt;p&gt;At eris we have been moving in this direction for a while now; to be able to support such an enterprise. All of the components which we at eris build, have been built to utilize a &amp;ldquo;common signing pipe&amp;rdquo;. Eris as currently configured puts a mocked keysigner on the back of the &amp;ldquo;common signing pipe&amp;rdquo; which we call the &lt;code&gt;eris keys service&lt;/code&gt;. This has never been intended, and never will be a secure key signer. It&amp;rsquo;s a developer tool. &lt;strong&gt;It is not a production tool&lt;/strong&gt;. When an enterprise is ready to move to production they will need an industrial key signing solution on the back end of that &amp;ldquo;common signing pipe&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;So what does this mean technically? Technically what will happen is that we will be building the capability to have &lt;code&gt;eris-keys&lt;/code&gt; simply turn off signing mode and turn on proxy mode which will direct inbound traffic to various key signing APIs (of which Ledger.co&amp;rsquo;s will be our first). This emphasizes, in our view, the utility of eris&amp;rsquo; modular platform architecture.&lt;/p&gt;
+
+&lt;p&gt;In our view the combination of eris&amp;rsquo; &amp;ldquo;common signing pipe&amp;rdquo; architecture with hardened solutions will allow a variety of industrial solutions to be built and managed. Overall, this will significantly harden applications that have been built on the eris platform.&lt;/p&gt;
+
+&lt;h1 id=&#34;big-problem-2-stuff-breaks-and-or-gets-lost&#34;&gt;Big Problem 2. Stuff Breaks and/or Gets Lost&lt;/h1&gt;
+
+&lt;p&gt;I have a &lt;a href=&#34;http://coda.caseykuhlman.com//entries/2014/dropbox-as-a-settings-repository.html&#34; target=&#34;_blank&#34;&gt;fairly elaborate system&lt;/a&gt; for being able to both do a full system upgrade on my daily driver, but also to recover from a hardware failure. But that system does not cover my keys; and I have more than 0 keys to manage: ssl certificates and keys, ssh keys, eris keys, pgp keys, aws keys, etc. For that I have a different system which I use that I&amp;rsquo;m comfortable with the security of. However, I have not automated backing up the keys I need on my daily driver (mostly because I don&amp;rsquo;t want my keys backup plugged into my laptop unless absolutely necessary). I recently had a hardware failure at a most inopportune moment and did not have a bunch of current keys backed up properly. This included a set of personal pgp keys which for some reason were not backed up.&lt;/p&gt;
+
+&lt;p&gt;Luckily I route most all my pgp traffic to Keybase which is doing a tremendous job with respect to a whole variety of user experience challenges around managing keys. Using keybase I was able to successfully replace my &amp;ldquo;known&amp;rdquo; pgp key via their &lt;code&gt;key&lt;/code&gt;:&lt;code&gt;identity&lt;/code&gt; mapping. They are also working on another dimension of &lt;a href=&#34;https://keybase.io/blog/keybase-new-key-model&#34; target=&#34;_blank&#34;&gt;Big Problem 1&lt;/a&gt;, which I think is a very workable solution for some keys folks want to register publicly.&lt;/p&gt;
+
+&lt;p&gt;Enterprises which adopt a solution like the one outlined in Problem 1 (namely a FOB like device with local eris keys service in proxy mode) will also go a long way toward solving Problem 2, but it is insufficient alone. Because when the FOB itself breaks or gets lost then we still have the challenge of changing our mapping of &lt;code&gt;key&lt;/code&gt;:&lt;code&gt;identity&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;To be clear, this is not an expose on &lt;code&gt;identity&lt;/code&gt;. I will leave that to others. When I&amp;rsquo;m saying identity in this section, I mean &lt;code&gt;this key is Casey&#39;s key&lt;/code&gt; type of mapping. However &lt;code&gt;Casey&lt;/code&gt; (the identity the key is mapped to) is identified to mean is a discussion for another space.&lt;/p&gt;
+
+&lt;p&gt;When you need to change a mapping of &lt;code&gt;key&lt;/code&gt;:&lt;code&gt;identity&lt;/code&gt; it is generally good practice to move that to a different communication band and or security posture. To change my keybase key I need to login from their quite nice cli and then go through their key replacement process. In an industrial setting it is not necessarily a safe assumption that &amp;ldquo;resorting to the interwebs and social media&amp;rdquo; is a valid &lt;code&gt;key&lt;/code&gt;:&lt;code&gt;identity&lt;/code&gt; management solution. This is where, in our view, vaults on HSMs is likely the base layer of a usable enterprise grade solution. Whatever the &amp;ldquo;out of band&amp;rdquo; solution will be it will likely need to be combined with adminsitrator key management tooling which will need to be &lt;a href=&#34;https://www.ledgerwallet.com/products/9-ledger-blue&#34; target=&#34;_blank&#34;&gt;both utterly safe and extensible with respect to the interface&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;big-problem-3-the-poor-it-person&#34;&gt;Big Problem 3. The Poor IT Person&lt;/h1&gt;
+
+&lt;p&gt;Me managing my own keys and making sure those key pairs are available on the proper machines and also properly mapped to my various online identities is one thing. But what about the human who has to manage departments of dozens, hundreds of folks, constantly coming and going, keys getting lost, etc.? What&amp;rsquo;s that human going to do?&lt;/p&gt;
+
+&lt;p&gt;If I&amp;rsquo;m honest, we don&amp;rsquo;t have an answer for how we can support solutions to this Problem yet, but it may &lt;a href=&#34;http://serverfault.com/questions/304286/centralized-management-system-for-ssh-keys/304322#304322&#34; target=&#34;_blank&#34;&gt;look something like this&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;There are lots of problems to solve. Lots of space for many companies with many solutions to succeed within the emerging smart contractified enterprise! Stay tuned for more; if you&amp;rsquo;re building something that fills one of these identified gaps let us know &lt;a href=&#34;https://twitter.com/eris_ltd&#34; target=&#34;_blank&#34;&gt;on Twitter&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/curioussiow/&#34; target=&#34;_blank&#34;&gt;(Photo credit: CC-BY-ND: SioW @ Flickr )&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>On 2016 Blockchain Clients</title>
+      <link>http://localhost/2015/12/31/on-blockchain-clients-in-2016/</link>
+      <pubDate>Thu, 31 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/12/31/on-blockchain-clients-in-2016/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/42988571@N08/8545407174/&#34; target=&#34;_blank&#34;&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/blockchain_clients_2016.jpg&amp;rsquo; | img }}&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As we reflect on what has been accomplished by the blockchain community in 2015 and look forward to 2016 I&amp;rsquo;m forced to reflect on where we are in blockchain-land.&lt;/p&gt;
+
+&lt;p&gt;This post is a fairly technical post which will look at two critical aspects of blockchain client design moving forward. We will cover how Eris will be approaching an increase to the modularity of our blockchain client: eris:db, as well as how we approach permissioning which is essential for properly running anything but a public blockchain.&lt;/p&gt;
+
+&lt;h2 id=&#34;increasing-modularity&#34;&gt;Increasing Modularity&lt;/h2&gt;
+
+&lt;p&gt;One of the most important aspects of blockchain-ing which we have been pursuing for a long time at Eris is the idea of breaking down the monolithic tendencies of blockchains into a more modular format.&lt;/p&gt;
+
+&lt;p&gt;In the Fall of 2014 Ethan and I were already telling Zach how we wanted to take a ninja sword to all of the pieces of the blockchain client.&lt;/p&gt;
+
+&lt;p&gt;Why? Well, in general modularity is a good thing for software design. Even amongst unichain folks (meaning, those who singularly believe that one blockchain network will become the &amp;ldquo;internet of value&amp;rdquo; and become the only ledger the world needs) there is a realization that the clients operating the network need to be built to be very modular in their design. Amir Taaki was arguing this as far back as early 2014 IIRC. Others continue to argue for the increased modularity of blockchain clients.&lt;/p&gt;
+
+&lt;p&gt;For those of us in the plurality of chains camp, the camp who feels that blockchains are more like databases than they are like TCP-IP and because of that do not think that the world will settle on one particular blockchain but rather that there will be millions of blockchains, for us modularity is even more important because each of these blockchains will be meant to do different things and will have very different network dynamics.&lt;/p&gt;
+
+&lt;p&gt;Despite the differences in philosophies between the unichain folks and the plurality of chains folks as to the blockchain &lt;em&gt;networks&lt;/em&gt;, when it comes to blockchain &lt;em&gt;clients&lt;/em&gt; and modularity, this is something where we can, and should, all agree. This being blockchains, the most religious software camp I&amp;rsquo;ve ever seen, I&amp;rsquo;m not going to hold my breathe for consensus here. But I do feel that all of the community can benefit from it.&lt;/p&gt;
+
+&lt;h3 id=&#34;blockchain-clients-now&#34;&gt;Blockchain Clients Now&lt;/h3&gt;
+
+&lt;p&gt;Let&amp;rsquo;s look at a typical blockchain client as currently conceived from a functional point of view.&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/blockchain_clients_2016_old_style.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;Almost every single blockchain client runs as a singular process which is usually RPC-ed into by its &amp;ldquo;clients&amp;rdquo; (meaning middleware or frontends which need to connect into the blockchain client itself). The single process typically will be responsible for managing a whole range of activities including what I call the &lt;strong&gt;big three&lt;/strong&gt;, namely:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Signing (meaning, transactions which come in via the RPC, and blocks mostly, but also other things depending on the blockchain client in question);&lt;/li&gt;
+&lt;li&gt;Business logic (meaning, verifying signatures, running through the &amp;ldquo;features&amp;rdquo; portions of the blockchain client, or in a smart contract enabled blockchain, running through the &amp;ldquo;smart contract machine&amp;rdquo; or VM); and&lt;/li&gt;
+&lt;li&gt;Consensus logic (namely coordinating with other blockchain clients within the blockchain network to ensure that the world state of data amongst all of the nodes is kept in sync, resolving forks according to a pre-programmed fork choice rule, and performing a few other functions necessary at the consensus level).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Blockchain clients are also responsible for maintaining the history of blocks locally as well as building up the &amp;ldquo;state&amp;rdquo; (namely, what the data &amp;ldquo;is&amp;rdquo;).&lt;/p&gt;
+
+&lt;h3 id=&#34;where-we-see-blockchain-clients-going&#34;&gt;Where We See Blockchain Clients Going&lt;/h3&gt;
+
+&lt;p&gt;I referenced above the &amp;ldquo;big three&amp;rdquo; because these are the three portions of a blockchain client which I think are candidates to move away from a core blockchain client platform. In other words, in 2016, what we at Eris are hoping to achieve is a blockchain client which looks more like this:&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/blockchain_clients_2016_new_style.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;What we will be doing in 2016 is working to move the &amp;ldquo;big three&amp;rdquo; into their own container instances.&lt;/p&gt;
+
+&lt;h4 id=&#34;signing-container&#34;&gt;Signing Container&lt;/h4&gt;
+
+&lt;p&gt;Work has already been well underway to move signing into a standalone signer. The advantages here are clear. In order to enable as wide a range of possible application configurations for which eris:db can support we need to think of signing as happening not within the blockchain client, but rather within a standalone signer. The standalone signer should be booted and available to the core node (or, as we are moving towards calling it, &amp;ldquo;the kernel&amp;rdquo;).&lt;/p&gt;
+
+&lt;p&gt;This opens up a great amount of flexibility because, for example, users can move their signers into HSM modules or in other highly secure zones of their data centers whereas the rest of the blockchain client need not operate in such a location.&lt;/p&gt;
+
+&lt;p&gt;Moving signing out of process also opens up the playing field as we move into a stage of worrying about hardening cryptographic protocols against quantum computing. It means that blockchain designers such as eris, or the bitcoin core developers, or the ethereum core team (such that it currently is) can move away from having to reinvent cryptographic protocols (which is never a good idea, and to be clear very few currently do this) as well as necessarily determining which cryptographic protocols are used by the signing (as long as the VM container, dealt with below, knows how to verify signatures; and the consensus container, also dealt with below, knows as well).&lt;/p&gt;
+
+&lt;p&gt;The added modularity here means that specialization in cryptographic protocols can be isolated and managed by those who understand the intricacies of such matters without having to impact those who are interested in understanding how application states work, or how consensus operates.&lt;/p&gt;
+
+&lt;h4 id=&#34;consensus-container&#34;&gt;Consensus Container&lt;/h4&gt;
+
+&lt;p&gt;Work has also been well underway for us to move consensus into its own container. This will allow us to build a blockchain client with &amp;ldquo;pluggable consensus&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;We aren&amp;rsquo;t the only ones moving in this direction. It is likely that, due to the complexity of Casper, that most of the ethereum clients will move to an out of process &amp;ldquo;consensus engine&amp;rdquo; where one authenticated Casper engine (as we understand it, to be built in Scala) is utilized out of process as a standalone container by ethereum clients. One could also think of the delegated witness project within the bitcoin community as moving in this direction, although it is a different system than what we&amp;rsquo;re talking about here.&lt;/p&gt;
+
+&lt;p&gt;Moving consensus into its own, standalone engine, will allow eris:db to, for example, allow users to utilize a Casper consensus engine, a Tendermint consensus engine, or any other consensus engine which will fulfill the interfaces we put within eris:db. This is will give users a very powerful methodology for running different consensus engines when necessary to connect into different blockchain networks.&lt;/p&gt;
+
+&lt;p&gt;Stemming from the Thelonious days (which was one of our very early efforts in the direction of separating out consensus) we have always been interested in opening up the space for consensus research to happen and moving consensus into its own engine which is utilized by the &amp;ldquo;blockchain kernel&amp;rdquo; will move us fully in that direction.&lt;/p&gt;
+
+&lt;h4 id=&#34;virtual-machine-container&#34;&gt;Virtual Machine Container&lt;/h4&gt;
+
+&lt;p&gt;We have not yet begun, but intend to move toward the final out of process containers of the &amp;ldquo;big three&amp;rdquo; moving the business logic of a particular blockchain network into its own container. This will allow for both &amp;ldquo;generalized&amp;rdquo; smart contract machines, such as an ethereum virtual machine or other metered virtual machines we are aware of, as well as more &amp;ldquo;packaged&amp;rdquo; solutions, such as blockchains which have hard coded &amp;ldquo;features&amp;rdquo; or require faster, native based logic mechanisms.&lt;/p&gt;
+
+&lt;p&gt;Moving the VM into its own engine will not only open up the playing field significantly for a broad range of smart contract based solutions, but it will also lessen the reliance upon the vagaries of the smart contract programming languages which are currently still very immature because business logic will be able to be built in a wider variety of languages than only the current (quite limited) range of smart contract programming languages.&lt;/p&gt;
+
+&lt;h3 id=&#34;blockchain-clients-reconsidered&#34;&gt;Blockchain Clients, Reconsidered&lt;/h3&gt;
+
+&lt;p&gt;This modularity, taken together, will dramatically open up the space for specialization and innovation within the various modules without requiring drastic overhauling of a single blockchain client.&lt;/p&gt;
+
+&lt;p&gt;What is the best metaphor for what we see blockchain clients becoming? We see blockchain clients themselves being akin to what in the linux world are called &amp;ldquo;distros&amp;rdquo;, or distributions. Distros are opinionated, but flexible, packaged mechanisms which allow users to leverage the linux kernel, along with a range of very low level primitives that are added together to formulate a cohesive operating system.&lt;/p&gt;
+
+&lt;p&gt;Distribution owners work to ensure that all of the isolated packages work flawlessly as a collective. This is where we, as Eris, will be putting our efforts as we work to refactor eris:db over the coming months and thereafter.&lt;/p&gt;
+
+&lt;p&gt;Who, then, will build the &amp;ldquo;kernel&amp;rdquo;? We hope, &lt;a href=&#34;http://www.linuxfoundation.org/news-media/announcements/2015/12/linux-foundation-unites-industry-leaders-advance-blockchain&#34; target=&#34;_blank&#34;&gt;these folks&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;permissioning-properly&#34;&gt;Permissioning Properly&lt;/h2&gt;
+
+&lt;p&gt;Lots of movement has happened over 2015 around the idea of less than fully public blockchains. No matter what we call them, less than fully public blockchains require a permission module in order to operate properly.&lt;/p&gt;
+
+&lt;p&gt;But where does one&amp;rsquo;s permission module reside (in a VPN? using some middleware? in the blockchain&amp;rsquo;s VM?) is a crucial question as more and more enterprises come online using permissioned blockchains.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-background-story&#34;&gt;A Background Story&lt;/h3&gt;
+
+&lt;p&gt;Folks that know me, know that I used to be an infantry officer in the United States Marine Corps. During that time, I had the interesting &amp;ldquo;pleasure&amp;rdquo; of being present in the square in 2003 when this happened:&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/firdos.jpg&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;It was a very interesting time. An incredibly difficult time actually. While the few hours in the square when the statute was getting pulled down was a moment of communal celebration (at least for those in the square), the rest of Baghdad was an utter clusterf*ck. Prisoners had been released, old scores were being settled, banks were getting robbed, an absolute mess.&lt;/p&gt;
+
+&lt;p&gt;The way that we dealt with this was by taking our zone and subdividing that zone into various levels. Within each subdivided area we had folks from our unit who were in charge of specific zones. They were out in the community operating with the people.&lt;/p&gt;
+
+&lt;p&gt;As Marines, we had been constantly trained in how to deal with very fluid situations. At the time we called this the &amp;ldquo;three block war&amp;rdquo; where in a single patrol you can go from: (block 1) humanitarian efforts to (block 2) peacekeeping efforts to (block 3) combat efforts all in a very short amount of space and time. We were also trained to be ruthless when we need to take action of the combat variety, but otherwise to have empathy for what was happening around us.&lt;/p&gt;
+
+&lt;p&gt;Taken together this gives Marines a particular reputation within the military. When the situation is volatile, Marines are what you want. But we don&amp;rsquo;t have the formalisms and sheer numbers that were required to &amp;ldquo;police Baghdad&amp;rdquo;. So the decision was made that we would not stay in Baghdad and would be replaced by units from the US Army.&lt;/p&gt;
+
+&lt;p&gt;When we were handing over our areas to the Army unit that was replacing us, friends and I gave our replacements a &amp;ldquo;tour&amp;rdquo; of the zone. Pointing out houses we had been watching, introducing elders and other power brokers we had met, etc. Generally giving them the lay of the land. But the replacements didn&amp;rsquo;t want meet any of these people or to see any of the suspected areas. They simply wanted to know where was the &amp;ldquo;base&amp;rdquo;; where was the safe zones. These questions were antithetical to us in the Marines who are trained to operated not from &amp;ldquo;safe zones&amp;rdquo; but wherever we currently were.&lt;/p&gt;
+
+&lt;p&gt;Our training had given us the confidence to integrate with the community. We knew that when push came to shove if we needed to fight we could. But we also knew that what we were there to do was much more complicated than simply fighting and what was essentially required was that we be as integrated into the community as possible.&lt;/p&gt;
+
+&lt;p&gt;We left. Things went south (for a whole host of reasons I&amp;rsquo;ll leave to historians).&lt;/p&gt;
+
+&lt;p&gt;Fast forward to 2008. I was visiting Aspen where I had lived for a while between the Marines and going to law school and I watched a film with friends. It was a hippy film where a musician had gone to visit Baghdad at the height of when things were bad (2006-2007 was the visit IIRC). One scene in particular stood out to me. The musician asked his cab driver when things had &amp;ldquo;gotten bad&amp;rdquo; in Baghdad. His answer will stick with me until the day I die:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Well, when the Marines were here things were actually OK. They were integrated into the community, they were not scared of us, they treated us like, well, human beings. But when they were replaced by the Army everything changed. Suddenly the Americans became scared, they weren&amp;rsquo;t integrated into the community, and they treated us all like enemies.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;What the hell does this have to do with blockchains? I&amp;rsquo;m getting to that just now.&lt;/p&gt;
+
+&lt;h3 id=&#34;permissioning-blockchain-clients&#34;&gt;Permissioning Blockchain Clients&lt;/h3&gt;
+
+&lt;p&gt;When we put an unpermissionable blockchain client behind a VPN we &lt;em&gt;can&lt;/em&gt; achieve &lt;em&gt;some&lt;/em&gt; level of permissionability. The problem is that when we run blockchains in this manner, we&amp;rsquo;re really forced to &amp;ldquo;find the base&amp;rdquo;. This is because when you take a blockchain client which does not have a permission module built into the client and you try to make a permissioned blockchain network with it then you are forced to rely upon the &amp;ldquo;base&amp;rdquo; of the VPN. The &amp;ldquo;safe zone&amp;rdquo; if you will.&lt;/p&gt;
+
+&lt;p&gt;There is an oft cited critique of permissioned blockchain networks that they are less secure that public blockchains due to &lt;a href=&#34;https://db.erisindustries.com/blockchain%20design/2015/09/26/on-permissioned-blockchains/index.html#securing-permissioned-blockchains&#34; target=&#34;_blank&#34;&gt;their lower hashing power&lt;/a&gt;. This critique holds &lt;strong&gt;only&lt;/strong&gt; under the following scenario: where you have a blockchain client that does not have a permission module, is POW, and a significant amount of hashing power is able to get behind the VPN. Outside of that scenario, the critique as an attack says more about the knowledge level of the attacker than actually communicates something important. If an enterprise has taken a POW based blockchain without a permission module and properly runs it behind a rock solid VPN then the critique is misplaced.&lt;/p&gt;
+
+&lt;p&gt;Yet, and here is the critical point from our point of view at Eris, that enterprise who had taken a POW based blockchain client without a permission module and ran it behind a VPN, is making its blockchain clients operate like the Army officers in the above story. These blockchain clients are susceptible to attack if they are not &amp;ldquo;inside their base&amp;rdquo;. As such, they lose a good amount of their utility.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-vpn-v-a-permission-module&#34;&gt;A VPN v. A Permission Module&lt;/h3&gt;
+
+&lt;p&gt;eris:db is a blockchain client which has a built in permission layer, still one of the only such blockchain clients currently in open source. We have designed eris:db to &amp;ldquo;go into the wild&amp;rdquo; rather than to &amp;ldquo;go to its base&amp;rdquo;. Because of the rock solid, granular, key-driven, capabilities-based permission layer built into eris:db, these blockchains are meant to easily operate outside a VPN without having to worry about mining attacks or other attacks which would mess up the operational consensus.&lt;/p&gt;
+
+&lt;p&gt;This is an incredibly important difference because one of the main benefits of blockchains (in our view) is to provide &lt;strong&gt;increased verifiability over business processes that cut across stakeholders&lt;/strong&gt; and in order to achieve that VPNs likely will get in our way. Perhaps not at first during the experimentation phase, but eventually they will certainly get in our way.&lt;/p&gt;
+
+&lt;p&gt;With an eris:db chain we use key-driven permissioning which means that the same key you use to sign whatever interactions you are sending to the blockchain network also determines your level of permissions (assuming the permission layer is active for a given blockchain network; it can be turned off when it gets in the way). This increases dramatically the overall, systemic verifiability vis a vis having two analog systems which need to operate in parallel (the key-based blockchain network and the &lt;em&gt;usually&lt;/em&gt; password-based VPN).&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s say an organization begins with their blockchain network behind a VPN but uses an unpermissioned blockchain. Over time, as the contracts are stable and as the enterprise wants to increase the access to the other stakeholders involved in the process, the organization decides that it wants to open up the blockchain network to a wide variety of other participants with various levels of permissions. In order to do that the VPN would become so riddled with exceptions and access points as to no longer really be doing its job. And that VPN overload would be simply because the blockchain client chosen did not have a proper permission layer built in that would allow the blockchain client to &amp;ldquo;go out into the population&amp;rdquo; like my fellow Marines had done in Baghdad.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, take the same exact system and change out the blockchain client to one which has a permission layer and when the organization seeks to open up the blockchain network to a wide variety of participants it can simply not run the network behind the VPN any more and send simple, verifiable, and transparent permission altering transactions to the blockchain which will open up various capabilities of the chain.&lt;/p&gt;
+
+&lt;p&gt;What do you see happening in blockchains going forward? Let us know in the comments.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/42988571@N08/&#34; target=&#34;_blank&#34;&gt;(Photo credit: CC-BY: David Luders @ Flickr )&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

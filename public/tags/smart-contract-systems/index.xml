@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Smart Contract Systems on Monax Industries</title>
+    <link>http://localhost/tags/smart-contract-systems/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Jun 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/tags/smart-contract-systems/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Too Big to Mine: benefiting from the Bitcoin network without needing to transact on it</title>
+      <link>http://localhost/2015/06/16/tbtm/</link>
+      <pubDate>Tue, 16 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/06/16/tbtm/</guid>
+      <description>
+
+&lt;p&gt;Fred Wilson of Union Square Ventures caught my attention yesterday with &lt;a href=&#34;http://avc.com/2015/06/banks-and-brokerages-should-be-mining-the-blockchain/&#34; target=&#34;_blank&#34;&gt;this post&lt;/a&gt;, in which he suggested that banks and other financial institutions might want to begin mining Bitcoin in order to contribute to the security of the network.&lt;/p&gt;
+
+&lt;p&gt;I agree with Mr. Wilson that banks should do their own blockchain data processing - blockchains are a great way to set up, secure, and automate a distributed data infrastructure without the need for dedicated hardware. I&amp;rsquo;m not so sure that doing it with Bitcoin &lt;strong&gt;alone&lt;/strong&gt; makes a great deal of sense.&lt;/p&gt;
+
+&lt;p&gt;Using Bitcoin in conjunction with a &lt;a href=&#34;https://eng.erisindustries.com/tutorials/2015/04/25/make-thelonious-chain/&#34; target=&#34;_blank&#34;&gt;private chain&lt;/a&gt;, on the other hand, might make a great deal of sense for commercial transactions, particularly among challenger institutions which need to improve the verifiability of their data without incurring too much expense.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-clarifications-on-mining-and-validation&#34;&gt;A. Clarifications on mining and validation.&lt;/h2&gt;
+
+&lt;h3 id=&#34;1-is-mining-necessary-to-run-a-blockchain&#34;&gt;1. Is mining necessary to run a blockchain?&lt;/h3&gt;
+
+&lt;p&gt;Contrary to popular belief: no.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s a bit of nuance involved here, so bear with me.&lt;/p&gt;
+
+&lt;p&gt;Bitcoin mining isn&amp;rsquo;t &amp;ldquo;transaction processing&amp;rdquo; or &amp;ldquo;transaction validation&amp;rdquo; - this is done on an ongoing basis through its networking protocol (or in the case of the Tendermint-base code we at Eris Industries use, gossip) where nodes propagate valid transactions to each other. With Bitcoin, every transaction broadcast to the network is validated by every node on the network - no matter what.&lt;/p&gt;
+
+&lt;p&gt;What most people call &amp;ldquo;&lt;strong&gt;mining&lt;/strong&gt;&amp;rdquo; is solely the participation of individual computers &amp;ldquo;in a schelling game where &lt;a href=&#34;https://eng.erisindustries.com/blockchain/2015/04/30/on-blockchains/&#34; target=&#34;_blank&#34;&gt;participation is motivated by value at stake&lt;/a&gt;&amp;rdquo; (i.e. the Bitcoins) with a view to choosing which transaction history of the blockchain is valid (i.e. ensuring that only valid blocks are added).&lt;/p&gt;
+
+&lt;p&gt;The problem isn&amp;rsquo;t in validating itself - it&amp;rsquo;s in making sure that valid transactions wind up in a block. There are many ways to skin this cat; in the case of Tendermint-base chains, a &lt;a href=&#34;https://en.wikipedia.org/wiki/Byzantine_fault_tolerance&#34; target=&#34;_blank&#34;&gt;PBFT&lt;/a&gt;-like algorithm suffices.&lt;/p&gt;
+
+&lt;p&gt;That said, if you&amp;rsquo;re using a blockchain where other people are calling the shots on consensus, getting your transactions into a block is by no means guaranteed. This is as true of Bitcoin as it is of any &amp;ldquo;decentralised&amp;rdquo; system where (ostensibly) nobody is in control. The problem being that, in order for the network to satisfy standards most commercial banks would require, the bank (or its collaborators) would need to find every single block!&lt;/p&gt;
+
+&lt;p&gt;In Bitcoin, this is nigh-impossible to do.&lt;/p&gt;
+
+&lt;p&gt;Which means the banks will need their own blockchains. There&amp;rsquo;s no avoiding it.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-wait-so-mining-is-just-about-fork-choice-and-has-nothing-to-do-with-transaction-validation&#34;&gt;2. Wait, so mining is just about fork choice, and has nothing to do with transaction validation?&lt;/h3&gt;
+
+&lt;p&gt;Correct. Getting information back and forth to validate is as simple as sending packets.&lt;/p&gt;
+
+&lt;p&gt;With decentralised systems where nobody is in charge, you need to set up a game-theoretic security structure as permission to add blocks is granted to the entire world.&lt;/p&gt;
+
+&lt;p&gt;With a private blockchain (we prefer the term &amp;ldquo;&lt;strong&gt;permissioned blockchain&lt;/strong&gt;&amp;rdquo;), you don&amp;rsquo;t need to do this: you simply specify which key pairs have permission to add blocks. If you control those nodes or know who runs them, you can use the same cryptography that secures a Bitcoin balance (a write permission to spend bitcoin) to secure the chain (qua a write permission to add a block to the end of the chain).&lt;/p&gt;
+
+&lt;p&gt;All this is &lt;a href=&#34;https://docs.erisindustries.com&#34; target=&#34;_blank&#34;&gt;doable today&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Trust is an extremely efficient way of doing business. The logical solution for a &lt;strong&gt;bank&lt;/strong&gt; is to just use a permissioned chain, which can give greater transactional throughput and more controllability than Bitcoin allows - providing the same functionality, with a design specific to the business&amp;rsquo; specific needs, at effectively nil cost.&lt;/p&gt;
+
+&lt;h2 id=&#34;b-can-i-use-eris-and-bitcoin-together&#34;&gt;B. Can I use Eris and Bitcoin together?&lt;/h2&gt;
+
+&lt;p&gt;&amp;ldquo;But I&amp;rsquo;m a Bitcoin business, not a bank,&amp;rdquo; I hear you say. &amp;ldquo;Can I use your system to accomplish my commercial aims?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Yes, you can. Easily, and free of charge, too. But how you do so needs a little thought ahead of time:&lt;/p&gt;
+
+&lt;h3 id=&#34;1-use-bitcoin-where-context-appropriate&#34;&gt;1. Use Bitcoin where context-appropriate&amp;hellip;&lt;/h3&gt;
+
+&lt;p&gt;You don’t have to use Bitcoin to use a blockchain. Permissioned blockchains do what you tell them to do, and can be set to accomplish very specific tasks with a high degree of efficiency. Deploying this infrastructure, at a fraction of the cost of legacy, is where startups are going to be able to do a lot of damage.&lt;/p&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t want to wait for the Lightning Network, you can get your cheapo distributed infrastructure with a permissioned blockchain - today - to test things out and acquire new users while you wait. As to security, you can probably get most of the way there with your security through key management alone.&lt;/p&gt;
+
+&lt;p&gt;However, Bitcoin and Permissioned blockchains are &lt;strong&gt;not mutually exclusive&lt;/strong&gt; propositions. There are definitely circumstances where Bitcoin can add value to your permissioned blockchain, so you&amp;rsquo;ll want to use both.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-and-you-can-and-should-if-you-want-to-increase-verifiability-and-trust-for-your-users&#34;&gt;2. &amp;hellip;and you can (and should) if you want to increase verifiability and trust for your users&lt;/h3&gt;
+
+&lt;p&gt;Under the right circumstances, Bitcoin can be useful in almost any application - but &lt;strong&gt;not as a payment system&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The best use I can think of for it relates to the fact that it&amp;rsquo;s arguably the most persistent and resilient distributed data store on the planet - in my opinion, it&amp;rsquo;s probably the only network on the planet that would survive a nuclear war. The downside to this is that there is a heavy cost imposed (a) to add blocks, to protect the network from attack and (b) to the Bitcoins themselves (in the form of scarcity), in order to prevent spam.&lt;/p&gt;
+
+&lt;p&gt;If what you&amp;rsquo;re after is&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a high-capacity blockchain to manage your transactions, while&lt;/li&gt;
+&lt;li&gt;leveraging a high-uptime, low-capacity bitcoin as the persistent data store,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;checkpointing by taking a hash of the state of your chain and dropping the hash into Bitcoin is very easy to do.&lt;/p&gt;
+
+&lt;p&gt;This means you can objectively verify the data on an ErisDB, and use Bitcoin&amp;rsquo;s persistent data store to act as a public record that anyone can inspect and refer to if need be.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s a great hack: you&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;leverage the verifiability that Bitcoin miners create,&lt;/li&gt;
+&lt;li&gt;can guarantee your transactions are processed all of the time on your permissioned chain, and&lt;/li&gt;
+&lt;li&gt;do it more cheaply than buying a bunch of mining hardware.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Awesome use-case for Bitcoin (probably the only thing it can do that no other blockchain can). Everybody wins.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-or-don-t-use-bitcoin-at-all&#34;&gt;3. &amp;hellip;or don&amp;rsquo;t use Bitcoin at all.&lt;/h3&gt;
+
+&lt;p&gt;If you&amp;rsquo;re a bank, using the Bitcoin blockchain for your transactional platforms means you have to square off your commercial aims against those constraints. This is a huge commercial problem because (a) you can&amp;rsquo;t ensure your transactions get added into blocks by miners (driving up your costs in transaction fees, but also introducing substantial execution and settlement risk) and (b) you have to pay every time you transact with the network (which means a private blockchain-based service or SQL server can undercut you).&lt;/p&gt;
+
+&lt;p&gt;That said, if you can get comfortable that checkpointing your private transactional database into Bitcoin doesn&amp;rsquo;t contravene any data protection obligations you have, you don&amp;rsquo;t lose anything by having a custom-built Ferrari of a transactional system at your back-end which periodically checkpoints itself into Bitcoin. And you gain a publicly verifiable reference point, if having one of these makes sense.&lt;/p&gt;
+
+&lt;h2 id=&#34;c-what-to-do-it-s-up-to-you&#34;&gt;C. What to do? It&amp;rsquo;s up to you.&lt;/h2&gt;
+
+&lt;p&gt;Instead of using Bitcoin as the single transactional system for all the world&amp;rsquo;s transactions, we can &lt;strong&gt;use Bitcoin as a common reference point&lt;/strong&gt; for many hundreds of thousands of standalone transaction systems - or any other kind of interactive blockchain application, e.g. &lt;a href=&#34;https://github.com/eris-ltd/2gather&#34; target=&#34;_blank&#34;&gt;content distribution&lt;/a&gt;, for that matter.&lt;/p&gt;
+
+&lt;p&gt;A permissioned blockchain gets you most of the way to Bitcoin-style distributed functionality in terms of security through key management alone. However, there are circumstances where Bitcoin can add value.&lt;/p&gt;
+
+&lt;p&gt;If you choose to adopt a hybrid structure, though, what you get is:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a transactional architecture that is purpose-built for your use-case,&lt;/li&gt;
+&lt;li&gt;which is entirely in your control,&lt;/li&gt;
+&lt;li&gt;which leaves Bitcoin alone to do what it does best,&lt;/li&gt;
+&lt;li&gt;which allows your users to verify that you&amp;rsquo;re not misbehaving with their data,&lt;/li&gt;
+&lt;li&gt;and lets you build an application for yourself that does exactly what you need it to do.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Today. Now. With Eris.&lt;/p&gt;
+
+&lt;p&gt;Critically, it provides verification of data integrity more cheaply than a data centre. When you&amp;rsquo;re a startup and you want to be able to prove something has or has not happened without running a lot of metal to do so, Bitcoin&amp;rsquo;s your guy.&lt;/p&gt;
+
+&lt;p&gt;And that, in our view, is pretty cool (we actually know one startup that&amp;rsquo;s leveraging both Eris and Bitcoin in the same application like this - they&amp;rsquo;re coming out of stealth in the very near future so I don&amp;rsquo;t want to blow their cover before they emerge).&lt;/p&gt;
+
+&lt;p&gt;So watch this space!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tracking Digits: How to Design Your Smart Contract Tracking System</title>
+      <link>http://localhost/2015/05/01/tracking-digits/</link>
+      <pubDate>Fri, 01 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/05/01/tracking-digits/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/tom-margie/1299414993/&#34; target=&#34;_blank&#34;&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/racer.jpg&amp;rsquo; | img }}&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Lots of folks are thinking about interesting ways to track digital goods and information back to some vendor of authenticity using blockchains and distributed file storage systems. A number of folks have been working in this area around the idea of physical goods and information as well.&lt;/p&gt;
+
+&lt;p&gt;My background as a lawyer makes me think instantly of a problem legal information systems have, which is authenticity of authorship. In other words, can I rely that the words I&amp;rsquo;m reading are actually what the judge wrote and published? Traditionally the role of assurer of authenticity of authorship was taken by large publishing houses with lucrative contracts. Lately this role has been taken by signed PDF&amp;rsquo;s. But, what about blockchains?&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-partner=&#34;tweetdeck&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;I&amp;#39;m really hyped up on block chain tech right now and its legal info applications. Can&amp;#39;t wait to look more into it. Thanks, &lt;a href=&#34;https://twitter.com/hashtag/futurelaw?src=hash&#34;&gt;#futurelaw&lt;/a&gt;&lt;/p&gt;&amp;mdash; Sarah Glassmeyer (@sglassmeyer) &lt;a href=&#34;https://twitter.com/sglassmeyer/status/594157266091147264&#34;&gt;May 1, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;The rest of this post will speak to a subset of that paradigm (a court decision publishing system) but with minor modifications could be adapted for other types of digital files which are by default public (there&amp;rsquo;s no encryption here, this is built for &lt;strong&gt;public&lt;/strong&gt; data) and require some fount of authenticity.&lt;/p&gt;
+
+&lt;h2 id=&#34;file-sharing&#34;&gt;File Sharing&lt;/h2&gt;
+
+&lt;p&gt;We use a system called &lt;a href=&#34;http://ipfs.io&#34; target=&#34;_blank&#34;&gt;IPFS&lt;/a&gt; which is a significantly improved &lt;code&gt;git&lt;/code&gt; + &lt;code&gt;bit torrent&lt;/code&gt; to share the raw content blobs between nodes on a network using a peer-to-peer paradigm rather than a costly server-client paradigm. In other words, a globally unified, content addressable storage system. Behind the scenes, IPFS understands who has what files and how to get files you need to your computer as fast as possible. Files within IPFS are retrievable from the distributed peer network via their hash, which means when getting files from the distributed peer network via the IPFS protocol, any recipient of the file will have assurances of bit for bit consistency of the file itself because the file hash is a cryptographic fingerprint unique to each file.&lt;/p&gt;
+
+&lt;p&gt;IPFS can be run nearly everywhere and it makes it super simple to &amp;ldquo;hook&amp;rdquo; into a globally distributed file sharing solution. However because it is simply a bunch of hashes (what&amp;rsquo;s called a &lt;code&gt;data lake&lt;/code&gt;), it needs structure. That&amp;rsquo;s where the data schema shared on a blockchain (to utilize its public key architecture and other verifiability characteristics) comes into play.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-data-schema&#34;&gt;The Data Schema&lt;/h2&gt;
+
+&lt;p&gt;In a very simple system like this, we need to really track two things: &lt;code&gt;authenticator&lt;/code&gt; and &lt;code&gt;contentBlob&lt;/code&gt;. That is really all we need to track for this. In the context of a court reporting mechanism &lt;code&gt;authenticator&lt;/code&gt; would be the &lt;strong&gt;court&lt;/strong&gt; (who would have a given public-private keypair of which the public key was known). Similarly, in the same context the &lt;code&gt;contentBlob&lt;/code&gt; would be the &lt;a href=&#34;http://en.wikipedia.org/wiki/Checksum&#34; target=&#34;_blank&#34;&gt;checksum hash&lt;/a&gt; of the file containing the &lt;strong&gt;decision&lt;/strong&gt;. The file could be available in &lt;em&gt;any&lt;/em&gt; format. Plain text, markdown, the dreaded word, the feared pdf. It matters not what the file is, because from the blockchain&amp;rsquo;s perspective its all just hashes.&lt;/p&gt;
+
+&lt;p&gt;Specifically we would form two &lt;code&gt;maps&lt;/code&gt; (which are key:value storage systems). One data mapping would track &lt;code&gt;authenticator&lt;/code&gt; to &lt;code&gt;contentBlob&lt;/code&gt; mappings and be available based on the &lt;code&gt;authenticator&lt;/code&gt;&amp;rsquo;s public key address via a simple &lt;code&gt;get_blob_by_authenticator&lt;/code&gt; function (or a &lt;code&gt;get_decision_by_court&lt;/code&gt; function in this context). The other data mapping would do the reverse and be available via a simple &lt;code&gt;get_blob_autenticator&lt;/code&gt; (or &lt;code&gt;get_decision_author&lt;/code&gt;) function.&lt;/p&gt;
+
+&lt;p&gt;This is a simple minimum viable data schema. Indeed whatever additional information one wanted to add into the data schema would be possible with Eris, because our turing complete smart contract machine housed in &lt;code&gt;eris:db&lt;/code&gt; can do basically any thing programmers tell it to do.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-blockchain&#34;&gt;The Blockchain&lt;/h2&gt;
+
+&lt;p&gt;The blockchain you would design here would be a very simple blockchain. The court itself could make a single node blockchain which only it could amend or write to (for more about blockchain design &lt;a href=&#34;https://docs.erisindustries.com/explainers/blockchains/&#34; target=&#34;_blank&#34;&gt;see this here&lt;/a&gt;). Alternatively, a library or consortium of courts could pool their resources together to run a collective blockchain which was amended or written to by any of the known and registered members.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;eris:db&lt;/code&gt; makes all that &lt;a href=&#34;https://eng.erisindustries.com/tutorials/2015/04/25/make-thelonious-chain/&#34; target=&#34;_blank&#34;&gt;super simple&lt;/a&gt;. And, by the way, our solution will run on nearly &lt;a href=&#34;https://eng.erisindustries.com/blockchains/2015/04/01/peer-server-networks-current-paradigm/&#34; target=&#34;_blank&#34;&gt;anything&lt;/a&gt; (except Windows outside of Docker).&lt;/p&gt;
+
+&lt;h2 id=&#34;the-application-layer&#34;&gt;The Application Layer&lt;/h2&gt;
+
+&lt;p&gt;Functionally the application will work nearly the same as our &lt;a href=&#34;https://eng.erisindustries.com/tutorials/2015/04/07/2gather/&#34; target=&#34;_blank&#34;&gt;2gather&lt;/a&gt; video sharing application works. The basic workflow would look something like this:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Judge finalizes opinion&lt;/li&gt;
+&lt;li&gt;Judge gives finalized opinion to clerk&lt;/li&gt;
+&lt;li&gt;Clerk goes to web browser and uploads the decision&lt;/li&gt;
+&lt;li&gt;(from here on out the humans do nothing) The application layer adds the file to the distributed file storage system (with its built in authenticity of the &lt;em&gt;information&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;The application layer takes the file&amp;rsquo;s hash and adds it to the smart contracts&amp;rsquo; held data schema (with its built in authenticity of &lt;em&gt;identity&lt;/em&gt; &amp;ndash; to a public key address).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;That&amp;rsquo;s it. Now anyone who has access to the blockchain and distributed file storage system has assurances of (a) content has not been changed since entering into the distributed file storage system (thus mitigating man in the middle type attacks) and (b) that the the public key address &amp;ldquo;publishing&amp;rdquo; the content actually added it to the system (via their private key signature on the transactions which entered the ipfs hashes into the blockchain).&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;eris:server&lt;/code&gt; makes it ultra simple to make this application layer and have it usable for non-technical team members from a web browser (with whatever web based interface is needed for the application). Using &lt;code&gt;eris:server&lt;/code&gt; developers are able to build the backend of the application that would perform all of that functionality in about five lines of javascript.&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;At Eris we make it super simple to start building these systems. Today. In three (easy) steps:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Install (the tools)&lt;/li&gt;
+&lt;li&gt;Roll (your blockchain)&lt;/li&gt;
+&lt;li&gt;Build (your application)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For more information as to how to get started &lt;a href=&#34;https://erisserver.erisindustries.com/tutorials/&#34; target=&#34;_blank&#34;&gt;see here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;(Photo credit to: &lt;a href=&#34;https://www.flickr.com/photos/tom-margie/1299414993/&#34; target=&#34;_blank&#34;&gt;Board Track Racer by Insomnia Cured Here @ flickr&lt;/a&gt; &amp;ndash; CC-BY-SA to the author.)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

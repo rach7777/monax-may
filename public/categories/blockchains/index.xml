@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blockchains on Monax Industries</title>
+    <link>http://localhost/categories/blockchains/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 Dec 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/categories/blockchains/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>On 2016 Blockchain Clients</title>
+      <link>http://localhost/2015/12/31/on-blockchain-clients-in-2016/</link>
+      <pubDate>Thu, 31 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/12/31/on-blockchain-clients-in-2016/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/42988571@N08/8545407174/&#34; target=&#34;_blank&#34;&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/blockchain_clients_2016.jpg&amp;rsquo; | img }}&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As we reflect on what has been accomplished by the blockchain community in 2015 and look forward to 2016 I&amp;rsquo;m forced to reflect on where we are in blockchain-land.&lt;/p&gt;
+
+&lt;p&gt;This post is a fairly technical post which will look at two critical aspects of blockchain client design moving forward. We will cover how Eris will be approaching an increase to the modularity of our blockchain client: eris:db, as well as how we approach permissioning which is essential for properly running anything but a public blockchain.&lt;/p&gt;
+
+&lt;h2 id=&#34;increasing-modularity&#34;&gt;Increasing Modularity&lt;/h2&gt;
+
+&lt;p&gt;One of the most important aspects of blockchain-ing which we have been pursuing for a long time at Eris is the idea of breaking down the monolithic tendencies of blockchains into a more modular format.&lt;/p&gt;
+
+&lt;p&gt;In the Fall of 2014 Ethan and I were already telling Zach how we wanted to take a ninja sword to all of the pieces of the blockchain client.&lt;/p&gt;
+
+&lt;p&gt;Why? Well, in general modularity is a good thing for software design. Even amongst unichain folks (meaning, those who singularly believe that one blockchain network will become the &amp;ldquo;internet of value&amp;rdquo; and become the only ledger the world needs) there is a realization that the clients operating the network need to be built to be very modular in their design. Amir Taaki was arguing this as far back as early 2014 IIRC. Others continue to argue for the increased modularity of blockchain clients.&lt;/p&gt;
+
+&lt;p&gt;For those of us in the plurality of chains camp, the camp who feels that blockchains are more like databases than they are like TCP-IP and because of that do not think that the world will settle on one particular blockchain but rather that there will be millions of blockchains, for us modularity is even more important because each of these blockchains will be meant to do different things and will have very different network dynamics.&lt;/p&gt;
+
+&lt;p&gt;Despite the differences in philosophies between the unichain folks and the plurality of chains folks as to the blockchain &lt;em&gt;networks&lt;/em&gt;, when it comes to blockchain &lt;em&gt;clients&lt;/em&gt; and modularity, this is something where we can, and should, all agree. This being blockchains, the most religious software camp I&amp;rsquo;ve ever seen, I&amp;rsquo;m not going to hold my breathe for consensus here. But I do feel that all of the community can benefit from it.&lt;/p&gt;
+
+&lt;h3 id=&#34;blockchain-clients-now&#34;&gt;Blockchain Clients Now&lt;/h3&gt;
+
+&lt;p&gt;Let&amp;rsquo;s look at a typical blockchain client as currently conceived from a functional point of view.&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/blockchain_clients_2016_old_style.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;Almost every single blockchain client runs as a singular process which is usually RPC-ed into by its &amp;ldquo;clients&amp;rdquo; (meaning middleware or frontends which need to connect into the blockchain client itself). The single process typically will be responsible for managing a whole range of activities including what I call the &lt;strong&gt;big three&lt;/strong&gt;, namely:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Signing (meaning, transactions which come in via the RPC, and blocks mostly, but also other things depending on the blockchain client in question);&lt;/li&gt;
+&lt;li&gt;Business logic (meaning, verifying signatures, running through the &amp;ldquo;features&amp;rdquo; portions of the blockchain client, or in a smart contract enabled blockchain, running through the &amp;ldquo;smart contract machine&amp;rdquo; or VM); and&lt;/li&gt;
+&lt;li&gt;Consensus logic (namely coordinating with other blockchain clients within the blockchain network to ensure that the world state of data amongst all of the nodes is kept in sync, resolving forks according to a pre-programmed fork choice rule, and performing a few other functions necessary at the consensus level).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Blockchain clients are also responsible for maintaining the history of blocks locally as well as building up the &amp;ldquo;state&amp;rdquo; (namely, what the data &amp;ldquo;is&amp;rdquo;).&lt;/p&gt;
+
+&lt;h3 id=&#34;where-we-see-blockchain-clients-going&#34;&gt;Where We See Blockchain Clients Going&lt;/h3&gt;
+
+&lt;p&gt;I referenced above the &amp;ldquo;big three&amp;rdquo; because these are the three portions of a blockchain client which I think are candidates to move away from a core blockchain client platform. In other words, in 2016, what we at Eris are hoping to achieve is a blockchain client which looks more like this:&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/blockchain_clients_2016_new_style.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;What we will be doing in 2016 is working to move the &amp;ldquo;big three&amp;rdquo; into their own container instances.&lt;/p&gt;
+
+&lt;h4 id=&#34;signing-container&#34;&gt;Signing Container&lt;/h4&gt;
+
+&lt;p&gt;Work has already been well underway to move signing into a standalone signer. The advantages here are clear. In order to enable as wide a range of possible application configurations for which eris:db can support we need to think of signing as happening not within the blockchain client, but rather within a standalone signer. The standalone signer should be booted and available to the core node (or, as we are moving towards calling it, &amp;ldquo;the kernel&amp;rdquo;).&lt;/p&gt;
+
+&lt;p&gt;This opens up a great amount of flexibility because, for example, users can move their signers into HSM modules or in other highly secure zones of their data centers whereas the rest of the blockchain client need not operate in such a location.&lt;/p&gt;
+
+&lt;p&gt;Moving signing out of process also opens up the playing field as we move into a stage of worrying about hardening cryptographic protocols against quantum computing. It means that blockchain designers such as eris, or the bitcoin core developers, or the ethereum core team (such that it currently is) can move away from having to reinvent cryptographic protocols (which is never a good idea, and to be clear very few currently do this) as well as necessarily determining which cryptographic protocols are used by the signing (as long as the VM container, dealt with below, knows how to verify signatures; and the consensus container, also dealt with below, knows as well).&lt;/p&gt;
+
+&lt;p&gt;The added modularity here means that specialization in cryptographic protocols can be isolated and managed by those who understand the intricacies of such matters without having to impact those who are interested in understanding how application states work, or how consensus operates.&lt;/p&gt;
+
+&lt;h4 id=&#34;consensus-container&#34;&gt;Consensus Container&lt;/h4&gt;
+
+&lt;p&gt;Work has also been well underway for us to move consensus into its own container. This will allow us to build a blockchain client with &amp;ldquo;pluggable consensus&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;We aren&amp;rsquo;t the only ones moving in this direction. It is likely that, due to the complexity of Casper, that most of the ethereum clients will move to an out of process &amp;ldquo;consensus engine&amp;rdquo; where one authenticated Casper engine (as we understand it, to be built in Scala) is utilized out of process as a standalone container by ethereum clients. One could also think of the delegated witness project within the bitcoin community as moving in this direction, although it is a different system than what we&amp;rsquo;re talking about here.&lt;/p&gt;
+
+&lt;p&gt;Moving consensus into its own, standalone engine, will allow eris:db to, for example, allow users to utilize a Casper consensus engine, a Tendermint consensus engine, or any other consensus engine which will fulfill the interfaces we put within eris:db. This is will give users a very powerful methodology for running different consensus engines when necessary to connect into different blockchain networks.&lt;/p&gt;
+
+&lt;p&gt;Stemming from the Thelonious days (which was one of our very early efforts in the direction of separating out consensus) we have always been interested in opening up the space for consensus research to happen and moving consensus into its own engine which is utilized by the &amp;ldquo;blockchain kernel&amp;rdquo; will move us fully in that direction.&lt;/p&gt;
+
+&lt;h4 id=&#34;virtual-machine-container&#34;&gt;Virtual Machine Container&lt;/h4&gt;
+
+&lt;p&gt;We have not yet begun, but intend to move toward the final out of process containers of the &amp;ldquo;big three&amp;rdquo; moving the business logic of a particular blockchain network into its own container. This will allow for both &amp;ldquo;generalized&amp;rdquo; smart contract machines, such as an ethereum virtual machine or other metered virtual machines we are aware of, as well as more &amp;ldquo;packaged&amp;rdquo; solutions, such as blockchains which have hard coded &amp;ldquo;features&amp;rdquo; or require faster, native based logic mechanisms.&lt;/p&gt;
+
+&lt;p&gt;Moving the VM into its own engine will not only open up the playing field significantly for a broad range of smart contract based solutions, but it will also lessen the reliance upon the vagaries of the smart contract programming languages which are currently still very immature because business logic will be able to be built in a wider variety of languages than only the current (quite limited) range of smart contract programming languages.&lt;/p&gt;
+
+&lt;h3 id=&#34;blockchain-clients-reconsidered&#34;&gt;Blockchain Clients, Reconsidered&lt;/h3&gt;
+
+&lt;p&gt;This modularity, taken together, will dramatically open up the space for specialization and innovation within the various modules without requiring drastic overhauling of a single blockchain client.&lt;/p&gt;
+
+&lt;p&gt;What is the best metaphor for what we see blockchain clients becoming? We see blockchain clients themselves being akin to what in the linux world are called &amp;ldquo;distros&amp;rdquo;, or distributions. Distros are opinionated, but flexible, packaged mechanisms which allow users to leverage the linux kernel, along with a range of very low level primitives that are added together to formulate a cohesive operating system.&lt;/p&gt;
+
+&lt;p&gt;Distribution owners work to ensure that all of the isolated packages work flawlessly as a collective. This is where we, as Eris, will be putting our efforts as we work to refactor eris:db over the coming months and thereafter.&lt;/p&gt;
+
+&lt;p&gt;Who, then, will build the &amp;ldquo;kernel&amp;rdquo;? We hope, &lt;a href=&#34;http://www.linuxfoundation.org/news-media/announcements/2015/12/linux-foundation-unites-industry-leaders-advance-blockchain&#34; target=&#34;_blank&#34;&gt;these folks&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;permissioning-properly&#34;&gt;Permissioning Properly&lt;/h2&gt;
+
+&lt;p&gt;Lots of movement has happened over 2015 around the idea of less than fully public blockchains. No matter what we call them, less than fully public blockchains require a permission module in order to operate properly.&lt;/p&gt;
+
+&lt;p&gt;But where does one&amp;rsquo;s permission module reside (in a VPN? using some middleware? in the blockchain&amp;rsquo;s VM?) is a crucial question as more and more enterprises come online using permissioned blockchains.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-background-story&#34;&gt;A Background Story&lt;/h3&gt;
+
+&lt;p&gt;Folks that know me, know that I used to be an infantry officer in the United States Marine Corps. During that time, I had the interesting &amp;ldquo;pleasure&amp;rdquo; of being present in the square in 2003 when this happened:&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/firdos.jpg&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;It was a very interesting time. An incredibly difficult time actually. While the few hours in the square when the statute was getting pulled down was a moment of communal celebration (at least for those in the square), the rest of Baghdad was an utter clusterf*ck. Prisoners had been released, old scores were being settled, banks were getting robbed, an absolute mess.&lt;/p&gt;
+
+&lt;p&gt;The way that we dealt with this was by taking our zone and subdividing that zone into various levels. Within each subdivided area we had folks from our unit who were in charge of specific zones. They were out in the community operating with the people.&lt;/p&gt;
+
+&lt;p&gt;As Marines, we had been constantly trained in how to deal with very fluid situations. At the time we called this the &amp;ldquo;three block war&amp;rdquo; where in a single patrol you can go from: (block 1) humanitarian efforts to (block 2) peacekeeping efforts to (block 3) combat efforts all in a very short amount of space and time. We were also trained to be ruthless when we need to take action of the combat variety, but otherwise to have empathy for what was happening around us.&lt;/p&gt;
+
+&lt;p&gt;Taken together this gives Marines a particular reputation within the military. When the situation is volatile, Marines are what you want. But we don&amp;rsquo;t have the formalisms and sheer numbers that were required to &amp;ldquo;police Baghdad&amp;rdquo;. So the decision was made that we would not stay in Baghdad and would be replaced by units from the US Army.&lt;/p&gt;
+
+&lt;p&gt;When we were handing over our areas to the Army unit that was replacing us, friends and I gave our replacements a &amp;ldquo;tour&amp;rdquo; of the zone. Pointing out houses we had been watching, introducing elders and other power brokers we had met, etc. Generally giving them the lay of the land. But the replacements didn&amp;rsquo;t want meet any of these people or to see any of the suspected areas. They simply wanted to know where was the &amp;ldquo;base&amp;rdquo;; where was the safe zones. These questions were antithetical to us in the Marines who are trained to operated not from &amp;ldquo;safe zones&amp;rdquo; but wherever we currently were.&lt;/p&gt;
+
+&lt;p&gt;Our training had given us the confidence to integrate with the community. We knew that when push came to shove if we needed to fight we could. But we also knew that what we were there to do was much more complicated than simply fighting and what was essentially required was that we be as integrated into the community as possible.&lt;/p&gt;
+
+&lt;p&gt;We left. Things went south (for a whole host of reasons I&amp;rsquo;ll leave to historians).&lt;/p&gt;
+
+&lt;p&gt;Fast forward to 2008. I was visiting Aspen where I had lived for a while between the Marines and going to law school and I watched a film with friends. It was a hippy film where a musician had gone to visit Baghdad at the height of when things were bad (2006-2007 was the visit IIRC). One scene in particular stood out to me. The musician asked his cab driver when things had &amp;ldquo;gotten bad&amp;rdquo; in Baghdad. His answer will stick with me until the day I die:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Well, when the Marines were here things were actually OK. They were integrated into the community, they were not scared of us, they treated us like, well, human beings. But when they were replaced by the Army everything changed. Suddenly the Americans became scared, they weren&amp;rsquo;t integrated into the community, and they treated us all like enemies.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;What the hell does this have to do with blockchains? I&amp;rsquo;m getting to that just now.&lt;/p&gt;
+
+&lt;h3 id=&#34;permissioning-blockchain-clients&#34;&gt;Permissioning Blockchain Clients&lt;/h3&gt;
+
+&lt;p&gt;When we put an unpermissionable blockchain client behind a VPN we &lt;em&gt;can&lt;/em&gt; achieve &lt;em&gt;some&lt;/em&gt; level of permissionability. The problem is that when we run blockchains in this manner, we&amp;rsquo;re really forced to &amp;ldquo;find the base&amp;rdquo;. This is because when you take a blockchain client which does not have a permission module built into the client and you try to make a permissioned blockchain network with it then you are forced to rely upon the &amp;ldquo;base&amp;rdquo; of the VPN. The &amp;ldquo;safe zone&amp;rdquo; if you will.&lt;/p&gt;
+
+&lt;p&gt;There is an oft cited critique of permissioned blockchain networks that they are less secure that public blockchains due to &lt;a href=&#34;https://db.erisindustries.com/blockchain%20design/2015/09/26/on-permissioned-blockchains/index.html#securing-permissioned-blockchains&#34; target=&#34;_blank&#34;&gt;their lower hashing power&lt;/a&gt;. This critique holds &lt;strong&gt;only&lt;/strong&gt; under the following scenario: where you have a blockchain client that does not have a permission module, is POW, and a significant amount of hashing power is able to get behind the VPN. Outside of that scenario, the critique as an attack says more about the knowledge level of the attacker than actually communicates something important. If an enterprise has taken a POW based blockchain without a permission module and properly runs it behind a rock solid VPN then the critique is misplaced.&lt;/p&gt;
+
+&lt;p&gt;Yet, and here is the critical point from our point of view at Eris, that enterprise who had taken a POW based blockchain client without a permission module and ran it behind a VPN, is making its blockchain clients operate like the Army officers in the above story. These blockchain clients are susceptible to attack if they are not &amp;ldquo;inside their base&amp;rdquo;. As such, they lose a good amount of their utility.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-vpn-v-a-permission-module&#34;&gt;A VPN v. A Permission Module&lt;/h3&gt;
+
+&lt;p&gt;eris:db is a blockchain client which has a built in permission layer, still one of the only such blockchain clients currently in open source. We have designed eris:db to &amp;ldquo;go into the wild&amp;rdquo; rather than to &amp;ldquo;go to its base&amp;rdquo;. Because of the rock solid, granular, key-driven, capabilities-based permission layer built into eris:db, these blockchains are meant to easily operate outside a VPN without having to worry about mining attacks or other attacks which would mess up the operational consensus.&lt;/p&gt;
+
+&lt;p&gt;This is an incredibly important difference because one of the main benefits of blockchains (in our view) is to provide &lt;strong&gt;increased verifiability over business processes that cut across stakeholders&lt;/strong&gt; and in order to achieve that VPNs likely will get in our way. Perhaps not at first during the experimentation phase, but eventually they will certainly get in our way.&lt;/p&gt;
+
+&lt;p&gt;With an eris:db chain we use key-driven permissioning which means that the same key you use to sign whatever interactions you are sending to the blockchain network also determines your level of permissions (assuming the permission layer is active for a given blockchain network; it can be turned off when it gets in the way). This increases dramatically the overall, systemic verifiability vis a vis having two analog systems which need to operate in parallel (the key-based blockchain network and the &lt;em&gt;usually&lt;/em&gt; password-based VPN).&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s say an organization begins with their blockchain network behind a VPN but uses an unpermissioned blockchain. Over time, as the contracts are stable and as the enterprise wants to increase the access to the other stakeholders involved in the process, the organization decides that it wants to open up the blockchain network to a wide variety of other participants with various levels of permissions. In order to do that the VPN would become so riddled with exceptions and access points as to no longer really be doing its job. And that VPN overload would be simply because the blockchain client chosen did not have a proper permission layer built in that would allow the blockchain client to &amp;ldquo;go out into the population&amp;rdquo; like my fellow Marines had done in Baghdad.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, take the same exact system and change out the blockchain client to one which has a permission layer and when the organization seeks to open up the blockchain network to a wide variety of participants it can simply not run the network behind the VPN any more and send simple, verifiable, and transparent permission altering transactions to the blockchain which will open up various capabilities of the chain.&lt;/p&gt;
+
+&lt;p&gt;What do you see happening in blockchains going forward? Let us know in the comments.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/42988571@N08/&#34; target=&#34;_blank&#34;&gt;(Photo credit: CC-BY: David Luders @ Flickr )&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An Ecosystems Approach to Blockchaining</title>
+      <link>http://localhost/2015/08/25/on-blockchain-ecosystems/</link>
+      <pubDate>Tue, 25 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/08/25/on-blockchain-ecosystems/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/pierrepocs/5480153734/&#34; target=&#34;_blank&#34;&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/ecosystems.jpg&amp;rsquo; | img }}&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;preface&#34;&gt;Preface&lt;/h2&gt;
+
+&lt;p&gt;One of the reasons I knew that Anthemis would be a good institutional partner for building Eris is they believe deeply in the idea that business is best when it is conducted using an ecosystems approach. After many, many years working with small businesses, diaspora groups, small business investors, and regulators in Somaliland, I had come to appreciate what this means, because this is how business in Africa works. And indeed, it is how business just &lt;em&gt;should&lt;/em&gt; work in my opinion.&lt;/p&gt;
+
+&lt;p&gt;Relatedly, the other day, I was talking to an acquaintance about something and I said that I don&amp;rsquo;t like the tendency I see within the blockchain community to have labels as reductive as &amp;ldquo;competitor&amp;rdquo; v. &amp;ldquo;collaborator&amp;rdquo;. I get of course that the verbs are applicable to any one interaction amongst folks within the ecosystem, but to reduce the complex relationships necessary to be developed if this technology is going to become more widely accepted (&lt;a href=&#34;https://twitter.com/compleatang/status/635568543501840384&#34; target=&#34;_blank&#34;&gt;a goal we&amp;rsquo;ve always been explicitly trying to achieve&lt;/a&gt;) into this binary question is unhelpful in the opinion of this correspondent. The reality is that talent is too slim, the technology is too new, and a few other relavant reasons for any single actor in the blockchain community to fracture relationships between potential allies without a cost both to the single actor as well as the ecosystem.&lt;/p&gt;
+
+&lt;p&gt;That said, the rest of this post is gonna talk about tech.&lt;/p&gt;
+
+&lt;h1 id=&#34;tenet-1-of-an-ecosystems-approach-to-blockchaining&#34;&gt;Tenet 1 of an Ecosystems Approach to Blockchaining&lt;/h1&gt;
+
+&lt;h2 id=&#34;modularize-all-the-things-but-mostly-the-runtimes&#34;&gt;Modularize all the Things (but mostly the runtimes)&lt;/h2&gt;
+
+&lt;p&gt;The promise that smart contract backed systems have is they have deterministic runtimes. There&amp;rsquo;s a lot of interesting things this can do. Particularly when you start thinking about how to better the various &amp;ldquo;engines&amp;rdquo; on which your business&amp;rsquo;s process and data management solutions rely.&lt;/p&gt;
+
+&lt;p&gt;The promise that docker backed systems have is they have deterministic runtimes. There&amp;rsquo;s a lot of interesting things this can do. Particularly when you start thinking about how to better the infrastructure on which your business&amp;rsquo;s data and process management solutions rely.&lt;/p&gt;
+
+&lt;p&gt;The reason we have built &lt;code&gt;eris&lt;/code&gt; the way that we have is to support organizations who are interested in a variety of distributed technology tools. Not only those of the blockchains world, but also those from the &amp;ldquo;cloudy&amp;rdquo; world. Because these two groups have a lot to learn from each other.&lt;/p&gt;
+
+&lt;p&gt;No matter whether your application needs smart contracts or just docker based services, it needs modular, reliable runtimes. To see more about what I mean see our &lt;a href=&#34;https://docs.erisindustries.com&#34; target=&#34;_blank&#34;&gt;getting started documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;tenet-2-of-an-ecosystems-approach-to-blockchaining&#34;&gt;Tenet 2 of an Ecosystems Approach to Blockchaining&lt;/h1&gt;
+
+&lt;h2 id=&#34;configs-are-a-challenge-but-a-doable-challenge&#34;&gt;Configs Are a Challenge, but a Doable Challenge&lt;/h2&gt;
+
+&lt;p&gt;When running a distributed application, one needs an ability to give the runtimes a configuration when they &amp;ldquo;boot&amp;rdquo;. This configuration includes things like, &amp;ldquo;who am i?&amp;rdquo;, &amp;ldquo;where am i?&amp;rdquo;, &amp;ldquo;who am i supposed to talk to?&amp;rdquo;, &amp;ldquo;what private key am i supposed to sign these ssl requests with&amp;rdquo;, etc.&lt;/p&gt;
+
+&lt;p&gt;The way that docker images are generally created gives us an ability to boot up runtimes which answer all of those questions on behalf of users of the eris tooling. That could be an eth chain booting up to talk to the mainnet or to talk to a private net, that could be ipfs doing its thing, that could be a bitcoin node (&lt;a href=&#34;https://twitter.com/eris_ltd/status/632853195673497600&#34; target=&#34;_blank&#34;&gt;or a bitcoinXT if you prefer&lt;/a&gt;), whatever you, your developers, and your users would need to &amp;ldquo;get the things turned on&amp;rdquo; you should be able to do with Eris (given the docker containers were built correctly).&lt;/p&gt;
+
+&lt;p&gt;Wanna share your private config? Encrypt the file to a keybase contact&amp;rsquo;s public key (or oneName, or however you share pgp keys) and:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;eris files put ENCRYPTED_CONFIG.toml.asc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That&amp;rsquo;ll give you a hash, send it to them over slack (or IRC) and the collaborator does&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;eris services import thing_to_boot HASH
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We are also working on a solution we call &lt;code&gt;etcb&lt;/code&gt; (like CoreOS&amp;rsquo;s &lt;code&gt;etcd&lt;/code&gt; but &lt;code&gt;b&lt;/code&gt; &amp;hellip; because its on a blockchain) which will enable better group sharing of configuration files.&lt;/p&gt;
+
+&lt;p&gt;We don&amp;rsquo;t really &amp;ldquo;boot&amp;rdquo; smart contracts themselves and so they do not really need a configuration so to say. But we have built &lt;a href=&#34;https://docs.erisindustries.com/documentation/eris-cli/latest/eris_actions/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;eris actions&lt;/code&gt;&lt;/a&gt; which allows for a prebuilding of complex transaction sequences which would be needed to interact with and test various smart contract suites.&lt;/p&gt;
+
+&lt;h1 id=&#34;tenet-3-of-an-ecosystems-approach-to-blockchaining&#34;&gt;Tenet 3 of an Ecosystems Approach to Blockchaining&lt;/h1&gt;
+
+&lt;h2 id=&#34;the-pipes-matter&#34;&gt;The Pipes Matter&lt;/h2&gt;
+
+&lt;p&gt;For distributed applications to operate correctly, all the things have to know how to talk to the things they&amp;rsquo;re supposed to talk to. This is a non-trivial challenge when you are trying to build applications which will run the same on laptops, cloud instances, and corporate environments.&lt;/p&gt;
+
+&lt;p&gt;Luckily using modern cloud computing techniques provided by Docker, piping things together with Eris is ultra simple. When you build a service definition file, simply add:&lt;/p&gt;
+[services]
+dependencies = [ &#34;thing_i_want_on_and_to_talk_to&#34; ]
+
+&lt;p&gt;then in the code, or in the configuration or wherever the bit is that tells the thing who to talk to you just add:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;quot;http://thing_i_want_on_and_to_talk_to&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Because of the way that docker cleverly manipulates /etc/hosts it makes it very easy when the service which wanted the thing on and to talk to gets booted it will be able to rely that the other thing is on and is ready to be talked.&lt;/p&gt;
+
+&lt;h1 id=&#34;tenet-4-of-an-ecosystems-approach-to-blockchaining&#34;&gt;Tenet 4 of an Ecosystems Approach to Blockchaining&lt;/h1&gt;
+
+&lt;h2 id=&#34;what-blockchain-the-contracts-run-on-is-an-ops-consideration&#34;&gt;What Blockchain the contracts run on is an Ops Consideration&lt;/h2&gt;
+
+&lt;p&gt;The bottom line is that the EVM is the best design (so far) for a distributed logic gateway processor. See etherparty, eris, ethereum, tendermint, (at a minimum). The only difference between these being the consensus layer on which the world state of the network resides.&lt;/p&gt;
+
+&lt;p&gt;This is exciting for smart contract developers, because they shouldn&amp;rsquo;t have to give a shit what the world state harmonization layer for the production application is. All they should be caring about is whether the suite of contracts works and testing those against throwaway chains. Over time, as that smart contract developer is ready to open up to more collaboration he may set up a permissioned smart contract network to control development and access to alpha and beta level subscribers and eventually he may go directly to the eth chain (cause not doing proper prototyping is a bad idea).&lt;/p&gt;
+
+&lt;p&gt;Or not.&lt;/p&gt;
+
+&lt;p&gt;Perhaps that developer finds themself in a corporate context. Perhaps they will start with some throwaway chains to test their contracts and then that will go into a tightly controlled permissioned network that bank level security built around it.&lt;/p&gt;
+
+&lt;p&gt;Or not.&lt;/p&gt;
+
+&lt;p&gt;Perhaps that developer is that guy who just flings crappy contracts onto the eth main chain, posts on reddit, and realizes they had a fatal flaw in their contract.&lt;/p&gt;
+
+&lt;p&gt;But either way, the eventual chain on which the production application is running is an operational consideration, not a developer concern. This is exciting because it lowers the barrier to entry and enables specialization within the blockchain and smart contract network community.&lt;/p&gt;
+
+&lt;h2 id=&#34;postscript&#34;&gt;Postscript&lt;/h2&gt;
+
+&lt;p&gt;It is these four tenets which we think will enable to a vibrant ecosystem which will separate out the power structures between those at the infrastructure layer (a blockchain/smart contract network protocol, or a distributed file system, etc.) and those at the platform layer (the things that run the things you wanna run) and those at the application layer to allow collaboration where necessary and competition where necessary.&lt;/p&gt;
+
+&lt;p&gt;Happy Contract Writing!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How We Set Up Peer Server Networks Using Tutum and Docker</title>
+      <link>http://localhost/2015/04/01/peer-server-networks-current-paradigm/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/04/01/peer-server-networks-current-paradigm/</guid>
+      <description>
+
+&lt;p&gt;Peer server networks are one of the most important aspects of running any distributed system &amp;ndash; of which blockchains can easily be classified. For developers seeking to build application specific blockchains, they will obviously have the responsibility of establishing the peer server networks which their application specific blockchains hook into. Whether developers are also using other blockchains or not, alongside an application specific blockchain the same principles will apply.&lt;/p&gt;
+
+&lt;p&gt;In preparation for our next round of beta testing on our video sharing distributed application &lt;a href=&#34;https://github.com/eris-ltd/2gather&#34; target=&#34;_blank&#34;&gt;2gather&lt;/a&gt; we have been working to understand how to most easily deploy and maintain peer server networks. The rest of this is the current paradigm we are using to establish application specific peer server networks.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-tools&#34;&gt;The Tools&lt;/h2&gt;
+
+&lt;p&gt;We use four tools along this pipeline:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.docker.com/&#34; target=&#34;_blank&#34;&gt;Docker&lt;/a&gt; &amp;ndash; an application specific container format which is lighter than a virtual machine image and is generally the paradigm which most modern cloud based deployment systems are moving toward.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tutum.co/&#34; target=&#34;_blank&#34;&gt;Tutum&lt;/a&gt; &amp;ndash; a docker provisioning and deployment tool which makes it incredibly simple to provision, configure, and deploy containers.&lt;/li&gt;
+&lt;li&gt;AWS and Digital Ocean &amp;ndash; we have established a distributed peer server network using AWS and DO metal and these nodes are connected into Tutum&amp;rsquo;s provisioning and deployment system using AWS and DO API keys.&lt;/li&gt;
+&lt;li&gt;The erisDB container (deprecated) &amp;ndash; this container is a running blockchain node which has been configured to operate in a specific manner.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;These four tools work together along a pipeline which allows us to deploy, configure, and redeploy containers and blockchain peer server nodes very simply and incredibly quickly.&lt;/p&gt;
+
+&lt;p&gt;The erisDB container is built as part of our continuous integration and continuous deployment system so the container is always updated with EPM&amp;rsquo;s master branch: &lt;code&gt;docker pull eris/erisdb:latest&lt;/code&gt;. We also build and push containers for the develop branch using the &lt;code&gt;unstable&lt;/code&gt; tag.&lt;/p&gt;
+
+&lt;p&gt;Using these three tools we set up three different &lt;em&gt;types&lt;/em&gt; of nodes; these different types of nodes all use the same base container but using the erisDB start script (deprecated) we are able to have very flexible deployment and configuration of the blockchain client. I&amp;rsquo;ll work through these three node types.&lt;/p&gt;
+
+&lt;h2 id=&#34;node-type-1-the-genesis-server-node&#34;&gt;Node Type 1: The Genesis Server Node&lt;/h2&gt;
+
+&lt;p&gt;The first type of node we use is what I call the &lt;code&gt;genesis_server&lt;/code&gt; node. It has one, and only one, purpose &amp;ndash; to serve the genesis block to the other nodes. Because of how &lt;a href=&#34;https://erisindustries.com/components/erisdb&#34; target=&#34;_blank&#34;&gt;eris:db&lt;/a&gt; has been designed to sink different contracts into a genesis block; and because of entropy which we add to the genesis block hashing process; each time a new chain is hashed which has contracts in the genesis block (namely, when it is not a simple ethereum clone) the identifier of the chain will be unique.&lt;/p&gt;
+
+&lt;p&gt;All eris:db nodes work off of the concept of a chainID which is simply the genesis block hash. The first thing a eris:db client will do upon connecting to a peer is to ask the peer what chainID that eris:db client is running. If there is a mismatch of chainIDs then the peers will not connect.&lt;/p&gt;
+
+&lt;p&gt;These two concepts: the necessity of maintaining a stable chainID for an application specific blockchain; along with the uniqueness of the chainID hashing process &amp;ndash; are features of the eris:db blockchain client but they must be dealt with carefully.&lt;/p&gt;
+
+&lt;p&gt;The genesis node we use is established to only serve the genesis block. This node hashes the chain and then opens its &lt;code&gt;fetch_port&lt;/code&gt; as we call it which will serve its genesis block. It does not connect into the peer network at all and simply exists only to serve a stable genesis block to the peers whenever the peers boot up.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Why is this node only doing this? Seems like it could be a waste?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That is also what I thought at first. But in our testing we have found that sometimes &amp;ndash; in particular on low density, irregularly committed chains &amp;ndash; the peering process of the blockchain nodes will slowly drop peers to the point where the node will basically shut itself off. This is, again, a feature not a bug which is meant to not overload computers running a node which is &amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;iframe width=&#34;420&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/NGrLb6W5YOM&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;This means, though, that the peer servers sometimes need to be restarted. &lt;strong&gt;But&lt;/strong&gt; when they are restarted, if they are meant to hash a blockchain they will then have a new chainID. So instead, we have a stable, non-peering, genesis block server node which is stable and does not time out.&lt;/p&gt;
+
+&lt;p&gt;Here is how we configure the node:&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/ps-genesis-config-1.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/ps-genesis-config-2.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;As you can see most of the configuration happens using environment variables. These environment variables are used mostly by the start script to configure the node when it boots.&lt;/p&gt;
+
+&lt;h2 id=&#34;node-type-2-peer-server-master&#34;&gt;Node Type 2: Peer Server Master&lt;/h2&gt;
+
+&lt;p&gt;The second type of node we establish to use an application specific blockchain is a master peer server. This is the main access point for the nodes on the chain.&lt;/p&gt;
+
+&lt;p&gt;When this node boots, it first uses &lt;code&gt;epm fetch&lt;/code&gt; to fetch the genesis block from the &lt;code&gt;genesis_node&lt;/code&gt; and then it configures itself and boots up the eris:db chain it needs to run. This process makes it ultra smooth to reset the running container if its peering process times out due to low-density networks and/or irregular committing.&lt;/p&gt;
+
+&lt;p&gt;Here is how we configure the node:&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/ps-master-config-1.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/ps-master-config-2.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;As with the genesis node, these environment variables should make sense when one compares what is passed to the container to the start script linked to above.&lt;/p&gt;
+
+&lt;h2 id=&#34;node-type-3-peer-server-relays&#34;&gt;Node Type 3: Peer Server Relays&lt;/h2&gt;
+
+&lt;p&gt;The final type of node we use when working with application specific blockchains is peer relay nodes. We establish these on a distributed basis using Tutum&amp;rsquo;s very clever deployment tags and deployment strategy features.&lt;/p&gt;
+
+&lt;p&gt;Tutum allows us to deploy individual nodes using AWS and Digital Ocean as I said before. Each of these machines we can give a specific tag. We have deployed machines to data centers in: Northern China, Singapore, Sydney, Frankfurt, Amsterdam, London, Virginia, Oregon, and Sao Paolo which is a pretty reasonable geographical distribution of nodes. These nodes are then tagged using a &lt;code&gt;peer_cluster&lt;/code&gt; tag. For more on deployment tags, see &lt;a href=&#34;https://tutum.freshdesk.com/support/solutions/articles/5000508859-deploy-tags&#34; target=&#34;_blank&#34;&gt;Tutum&amp;rsquo;s documentation on the feature&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We then establish a &lt;a href=&#34;https://tutum.freshdesk.com/support/solutions/articles/5000559793-5-deploy-the-app-as-a-tutum-service&#34; target=&#34;_blank&#34;&gt;Tutum Service&lt;/a&gt; and add the &lt;code&gt;peer_cluster&lt;/code&gt; deployment tag to the Peer Relay service. In addition we use Tutum&amp;rsquo;s &lt;a href=&#34;https://tutum.freshdesk.com/support/solutions/articles/5000520721-deployment-strategies&#34; target=&#34;_blank&#34;&gt;deployment strategy&lt;/a&gt; feature which we set to &amp;ldquo;Emptiest node&amp;rdquo;. This allows us to have a good geographical distribution of the nodes.&lt;/p&gt;
+
+&lt;p&gt;Once the service boots up we can scale it from 0 to 9 relay nodes by simply dragging a slider bar in Tutum&amp;rsquo;s web app or sending a simple API call from Tutum&amp;rsquo;s command line interface. So if we need more relay nodes we can scale the service as simply as folks scale their Heroku apps but with the added benefit of scaling across a geographically distributed set of machines rather than only to Heroku&amp;rsquo;s machines.&lt;/p&gt;
+
+&lt;p&gt;Here is how we configure the relay nodes:&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/ps-relay-config-1.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/ps-relay-config-2.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;One other feature of Tutum we use to establish this network which keen observers will see is that Tutum gives each service its own DNS entry which we can use within the network. This means that if we have to drop a machine from a specific cluster or change a machine within a specific cluster (which will change the IP of the containers running on the machine) that we will not have any problems with the peer network. This is not actually the optimal way to do this. Ideally, we would configure these as linked containers using &lt;a href=&#34;https://tutum.freshdesk.com/support/solutions/articles/5000569899-stacks&#34; target=&#34;_blank&#34;&gt;Tutum&amp;rsquo;s stacks feature&lt;/a&gt; which operates very similarly for cloud deployments to how &lt;a href=&#34;https://docs.docker.com/compose/&#34; target=&#34;_blank&#34;&gt;Docker-Compose&lt;/a&gt; (formerly &lt;code&gt;fig&lt;/code&gt;) works for local development and operation of sets of containers.&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;If you have any questions please drop them below, or, better, stop by &lt;a href=&#34;irc://freenode.net/#erisindustries&#34; target=&#34;_blank&#34;&gt;#erisindustries&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Secrets of Consistent Hashchains II: History on Deposit</title>
+      <link>http://localhost/2015/01/08/secrets-of-consistent-hashchains-ii/</link>
+      <pubDate>Thu, 08 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/01/08/secrets-of-consistent-hashchains-ii/</guid>
+      <description>
+
+&lt;h2 id=&#34;preface&#34;&gt;Preface&lt;/h2&gt;
+
+&lt;p&gt;Some members of the community have (rightly) taken issue with my use of the term &lt;code&gt;eventual consistency&lt;/code&gt;, as it has a well-defined formal meaning in computer science and I am abusing it here. However, as this is an informal expose and not a formal technical document, I will continue to abuse this term, since it has a semantic convenience that roughly expresses a proof-of-work blockchain&amp;rsquo;s philosophy of history.&lt;/p&gt;
+
+&lt;p&gt;I also find it rolls off my fingers more elegantly than &lt;code&gt;strong probabilistic guarantee&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;agreed-eventually&#34;&gt;Agreed (Eventually)&lt;/h2&gt;
+
+&lt;p&gt;In a &lt;a href=&#34;https://eng.erisindustries.com/blockchains/2014/12/22/secrets-of-consistent-hashchains-I/&#34; target=&#34;_blank&#34;&gt;previous post&lt;/a&gt;, we explored the first secret of distributed hash chains: a consensus that hinges on proof-of-work gives you an eventually consistent history. Notwithstanding the obvious inefficiency and tremendous expense incurred by a perennial drive to do a useless computation as absolutely fast as possible, proof-of-work based systems are utterly impervious to what any sensible individual might consider a reasonable definition of history. That&amp;rsquo;s what we mean by eventual it&amp;rsquo;s a history written (or re-written) by whatever ends up being the most work, regardless of what &lt;em&gt;actually&lt;/em&gt; happened.&lt;/p&gt;
+
+&lt;p&gt;In fact, what &lt;em&gt;actually&lt;/em&gt; happened is exactly the matter at stake here. The whole point of a blockchain is to &lt;strong&gt;establish agreement on a canonical ordering of a set of transactions&lt;/strong&gt;, on a timescale that is on the order of the expected network propagation delay, which as at least an order of magnitude or two greater than that of the transactions themselves.&lt;/p&gt;
+
+&lt;p&gt;Blockchains achieve this by assigning someone (possibly multiple people, if it is not well designed) every so often, by way of structured random lottery, to the task of deciding on the ordered set of transactions to appear in the next block, and employing a set of rules to allow others on the network to determine if the proposal is valid. At each step, the ideal is for the network to make an atomic decision about what happened next in history. Bitcoin is a first approximation to this process.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&#34;http://www.blockstream.com/sidechains.pdf&#34; target=&#34;_blank&#34;&gt;Blockstream&lt;/a&gt; team introduced the term &lt;em&gt;Dynamic Membership Multi-party Signature&lt;/em&gt; (DMMS) to describe the cryptographic object resulting from the process of block creation and validation that is a blockchain (more specifically, its headers). Over time, participants in the network &lt;em&gt;sign&lt;/em&gt; the history by solving a partial hash collision, effectively endorsing everything that came before it and adding a new set of entries to the history.&lt;/p&gt;
+
+&lt;p&gt;What this means is that a blockchain itself is really a kind of collective signature, whose membership (the signatory &lt;code&gt;in-group&lt;/code&gt;) is sampled repeatedly from a fluctuating distribution of resources allocated in the network; or &lt;em&gt;a never ending computation in which a group of humans produces a cryptographically signed account of history&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;from-forks-to-knives&#34;&gt;From Forks to Knives&lt;/h2&gt;
+
+&lt;h3 id=&#34;why-should-our-record-of-history-our-collective-signature-ever-be-re-written&#34;&gt;Why should our record of history, our collective signature, ever be re-written?&lt;/h3&gt;
+
+&lt;p&gt;History changes all the time in the real world, whenever an accountant cooks the books, or $60 billion goes missing from a federal budget, or when a mistake is just simple human error. In a blockchain, history changes when a fork emerges and becomes longer than the original chain. So if we want to protect our collective history, we need to protect ourselves from forks.&lt;/p&gt;
+
+&lt;p&gt;In an ideal proof-of-work (PoW) system, embedded in an idealized socioeconomic circumstance, where every single internet enabled device might be able to participate at a proportionally equivalent level, we could possibly avoid malicious forks altogether. If we could embed proof of work at the very heart and fabric of the economy such that for all intents and purposes it was simply not possible to mount a 51% attack, then maybe PoW would work. Good luck figuring that one out! I suspect we&amp;rsquo;re at least 50 years and a couple nanotechnology breakthroughs away from anything like that.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;In the meantime, cryptosystems are here now, complete trustlessness is a facade, and we&amp;rsquo;re already dealing with an energy crisis we don&amp;rsquo;t need digital money to create another one.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;what-to-do&#34;&gt;What to do?&lt;/h3&gt;
+
+&lt;p&gt;A key part of the problem, if you&amp;rsquo;ll recall, is the lack of a secure proof-of-past. But there &lt;em&gt;were&lt;/em&gt; computers online who experienced the past, the real history. If only there were some way for those computers who &lt;em&gt;saw&lt;/em&gt; the &lt;em&gt;real&lt;/em&gt; history to punish those who try to create competing histories.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cue, the knife.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;An essential principle in the design of successful cryptoeconomic protocols is to &lt;em&gt;be slightly fascist&lt;/em&gt;. So the most natural thing to do, at least for a cryptoeconomist, and as &lt;a href=&#34;https://blog.ethereum.org/2014/01/15/slasher-a-punitive-proof-of-stake-algorithm/&#34; target=&#34;_blank&#34;&gt;suggested first&lt;/a&gt; by perhaps the &lt;a href=&#34;https://blog.ethereum.org/author/vitalik-buterin/&#34; target=&#34;_blank&#34;&gt;world&amp;rsquo;s best cryptoeconomist&lt;/a&gt;, is to randomly select potential block signers, and allow them to participate in the DMMS only if they put up a security deposit and sign the new blocks with the key to that deposit. That way, if the signer ever signs off on a fork, anyone else can produce a proof that the key signed two competing blocks. So we can punish the signer by slashing his entire deposit, and incentivize the act of providing evidence by giving some of the slashed deposit to the witness. In the legal world, this is exactly how we incentivize whistleblowing litigation &amp;ndash; which when you think of it is not unlike what we are trying to achieve in the cryptoeconomic realm. Such an approach, of slashing deposits and giving to the &amp;ldquo;witness&amp;rdquo;, is known as &lt;em&gt;Slasher&lt;/em&gt;, and has begun to see &lt;a href=&#34;https://blog.ethereum.org/2014/10/03/slasher-ghost-developments-proof-stake/&#34; target=&#34;_blank&#34;&gt;renewed interest&lt;/a&gt;, including a recent implementation in the form of a new blockchain protocol, aptly named &lt;a href=&#34;http://tendermint.com/&#34; target=&#34;_blank&#34;&gt;Tendermint&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A PoW-based consensus system provides an &lt;a href=&#34;https://socrates1024.s3.amazonaws.com/consensus.pdf&#34; target=&#34;_blank&#34;&gt;anonymous byzantine consensus with security derived from moderately hard puzzles&lt;/a&gt;, as a function of its difficulty. If you can solve the puzzles faster, or can offer the computational power for solving the puzzles as a service that benefits from economies of scale, it&amp;rsquo;s easy to see how the network&amp;rsquo;s security can be compromised. On the other hand, a security-deposit-based consensus provides something more like semi-anonymous byzantine consensus with security derived from moderate wealth at stake, where an attack costs at least half as much as the total capital on deposit, since as soon as we detect a fork, we slash deposits of everyone who double signed. Half the capital on deposit can be much greater than the cost of controlling half the network&amp;rsquo;s hashing power, provided the market cap of the chain is sufficiently high. As of writing, the &lt;a href=&#34;http://www.coinometrics.com/bitcoin/brix&#34; target=&#34;_blank&#34;&gt;cost of attacking bitcoin&lt;/a&gt; is around $500 million while its &lt;a href=&#34;http://coinmarketcap.com/&#34; target=&#34;_blank&#34;&gt;market cap&lt;/a&gt; is nearly 10 times higher.&lt;/p&gt;
+
+&lt;h2 id=&#34;staking-out-history&#34;&gt;Staking out History&lt;/h2&gt;
+
+&lt;p&gt;Consensus based on security deposits draws on an even earlier proposal known as proof-of-stake (PoS). In PoS, the number of times you get to participate in signing a block is proportional to the amount of coins (tokens, stamps, whatever the stake metric is) you have within the network. The problem with such a proof-of-stake system, however, is that it does not even offer eventual consistency in the event of a fork; everyone can still commit blocks on both chains, so there&amp;rsquo;s no reason for one chain to win out over the other. Slasher solves this by punishing those who fork.&lt;/p&gt;
+
+&lt;p&gt;Critically, however, Slasher only works in the short term: once a security deposit is returned (it has to be returned, and fees paid upon it, otherwise no one will put it up in the first place), the signer has nothing at stake, so he cannot be punished by the protocol, and is thus free to go back and start a fork from before he had stake on deposit. Call it the long-range-nothing-at-stake attack (LRNSA); it is a fundamental, possibly insurmountable problem for proof-of-stake systems.&lt;/p&gt;
+
+&lt;p&gt;So how does this work? First, suppose everyone is online all the time (ridiculous, but work with me). We can simply make a rule that says: &amp;ldquo;forks that start before the current deposit period are invalid.&amp;rdquo; Since everyone is online, those who create short term forks will be slashed, while those who create longer term forks will be ignored. We can soften the rule by using what Vitalik calls &lt;a href=&#34;https://blog.ethereum.org/2014/11/25/proof-stake-learned-love-weak-subjectivity/&#34; target=&#34;_blank&#34;&gt;expontential subjective scoring&lt;/a&gt; instead, where the score of a fork according to a user decays exponentially in the difference between the height it starts at and the current blockchain height according to that user. This effectively stifles the LRNSA, &lt;em&gt;so long as&lt;/em&gt; users come online at least as often as the length of a deposit period (which can be on the order of weeks or months, possibly years).&lt;/p&gt;
+
+&lt;p&gt;However, some might appreciate the freedom of being able to go offline for longer. In particular, as my &lt;a href=&#34;https://twitter.com/leashless&#34; target=&#34;_blank&#34;&gt;crypto-grandma&lt;/a&gt; put it while discussing proof-of-stake with &lt;a href=&#34;https://twitter.com/VladZamfir&#34; target=&#34;_blank&#34;&gt;Vlad Zamfir&lt;/a&gt; and I, &amp;ldquo;If your currency breaks because the internet went down, you didn&amp;rsquo;t do a good job.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;For bitcoin, which remember is a pure PoW system, if the internet goes down, or is partitioned, we know what happens when it starts up again or the networks reconnect: whoever ends up with the longest branch is the winner.&lt;/p&gt;
+
+&lt;p&gt;Woopdee-doo for bitcoin.&lt;/p&gt;
+
+&lt;p&gt;In a stake-based system, however, there is much greater opportunity for mischief, and the possibility that the network consensus is forked &amp;ndash; for good. In the meantime, &lt;strong&gt;the fucking internet went down&lt;/strong&gt;, so there are clearly very serious issues that need to dealt with, by humans, almost certainly at an &lt;a href=&#34;http://www.itnewsafrica.com/2012/02/east-africas-cut-internet-cable-causes-disruption/&#34; target=&#34;_blank&#34;&gt;engineering level&lt;/a&gt;, probably at a &lt;a href=&#34;http://techcrunch.com/2014/12/31/indian-government-censorsht/&#34; target=&#34;_blank&#34;&gt;political level&lt;/a&gt;, and with any luck at a &lt;a href=&#34;http://edition.cnn.com/2014/03/27/world/europe/turkey-youtube-blocked/&#34; target=&#34;_blank&#34;&gt;cultural level&lt;/a&gt; too. So maybe if the internet goes down, we take a deep breath, put away the blockchains for a minute, deal with whatever ridiculous event has just transpired, and when we get back online, start talking to everyone and figure out where we all left off last.&lt;/p&gt;
+
+&lt;p&gt;I bet we&amp;rsquo;d pull it off just fine.&lt;/p&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t think that sounds particularly promising, I don&amp;rsquo;t blame you. Maybe proof-of-work is the only way to guarantee consensus in the face of the internet going down. Proof-of-work just works, if you will. But only because it doesn&amp;rsquo;t care about &lt;em&gt;real&lt;/em&gt; history, only whichever group of shmucks managed to do the most work. Maybe there&amp;rsquo;s something better we haven&amp;rsquo;t thought of.&lt;/p&gt;
+
+&lt;p&gt;In the meantime, this is fun, so lets continue with Slasher and Proof-of-stake :)&lt;/p&gt;
+
+&lt;p&gt;Even while the network is up, but new machines are joining it for the first time, or the first time in a very long time, it is a struggle to bring them up to date securely and trustlessly. If you&amp;rsquo;ve been online sometime within the last deposit period, you find some peers and ask them for the current state, &lt;em&gt;and trust them because there is real money at stake&lt;/em&gt; (this is what we mean by secure &amp;ndash; you can calculate how much it would cost you to lie and to be lied to). This scenario works. &lt;em&gt;But&lt;/em&gt;, if you have never been online (e.g., you have had no history of or reason to care about the history of this particular dataset), or you have not been online for multiple deposit periods, you have no such security.&lt;/p&gt;
+
+&lt;h2 id=&#34;digital-history-of-an-analog-system&#34;&gt;Digital History of an Analog System&lt;/h2&gt;
+
+&lt;p&gt;So this is where things get interesting, and where subjectivity, trusted third parties, &lt;em&gt;on boarding&lt;/em&gt;, and out-of-band communication come to the forefront.&lt;/p&gt;
+
+&lt;p&gt;Remember our discussion of bitcoin forking from my previous post, and the out-of-band communication that was engaged to deal with it? It&amp;rsquo;s &lt;a href=&#34;https://github.com/bitcoin/bips/blob/master/bip-0050.mediawiki#what-went-right&#34; target=&#34;_blank&#34;&gt;impressive how much went right&lt;/a&gt; with that.&lt;/p&gt;
+
+&lt;p&gt;So we need to embrace that capacity explicitly as part of our designs; we need to keep better metrics and statistics on our networks; regular broadcast feeds of those metrics on popular media outlets; standardized APIs for using and querying various sets of services to inform an agent&amp;rsquo;s &lt;a href=&#34;https://blog.ethereum.org/2014/11/25/proof-stake-learned-love-weak-subjectivity/&#34; target=&#34;_blank&#34;&gt;subjective role in consensus&lt;/a&gt;; &lt;a href=&#34;https://blog.conformal.com/the-bitcoin-consensus-red-herring/&#34; target=&#34;_blank&#34;&gt;running multiple versions of the software to defend against software bugs&lt;/a&gt;. education, planning, and fire drills for maintaining resiliency and teaching others about how to respond in the event of a fork.&lt;/p&gt;
+
+&lt;p&gt;Real history &amp;ndash; what &lt;em&gt;really&lt;/em&gt; happened &amp;ndash; is a building that is constantly on fire, and we need to work together to put the fire out.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;At the end of the day, a peer-to-peer (p2p) consensus network is a thermodynamic system evolving its state in the face of adversarial and entropic assailants, like malicious actors and inefficient computation.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The production of heat by high speed hashing is one approach to maintaining the consistency of the state by generating sufficient entropy to thermodynamically justify the organized consensus.&lt;/p&gt;
+
+&lt;p&gt;The other approach is to embed additional sensory organs and computational elements into the design of the protocol, to make it smarter, more organized, and vitally (for us) more adaptive to its environment.&lt;/p&gt;
+
+&lt;p&gt;Feedback loops and adaptive organs can work toward offsetting the entropic demands of an organized cryptoeconomic system, engaging layers of processing and execution that descend more elegantly down the ladder of energy gradients than an ASIC ever could. Maybe that&amp;rsquo;s more suited as a &lt;a href=&#34;http://www.ler.esalq.usp.br/aulas/lce1302/life_as_a_manifestation.pdf&#34; target=&#34;_blank&#34;&gt;secret of consistent carbon chains&lt;/a&gt; but what are these hashchains if not extensions of our collective biology?&lt;/p&gt;
+
+&lt;p&gt;Riiiight.&lt;/p&gt;
+
+&lt;p&gt;Finally, another approach to the long-range-nothing-at-stake problem, as suggested and endorsed enthusiastically by our dear Vlad Zamfir, is to have blockchains last only as long as their security deposit period. This becomes the kernel of a fascinating approach to multichain technology.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Secrets of Consistent Hashchains I: Eventual Consistency</title>
+      <link>http://localhost/2014/12/22/secrets-of-consistent-hashchains-i/</link>
+      <pubDate>Mon, 22 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2014/12/22/secrets-of-consistent-hashchains-i/</guid>
+      <description>
+
+&lt;h2 id=&#34;blockchains&#34;&gt;Blockchains&lt;/h2&gt;
+
+&lt;p&gt;A blockchain is a silly sort of a datastructure designed to keep thousands of computers in sync while providing a useful service that is not controlled or owned by anyone in particular. It employs the finite state machine approach, where the state of the system is updated sequentially, via atomic transitions (transactions) that are replicated across every machine, in order. In classic academic work on the subject, with a fixed set of trusted machines, a leader/master is selected from the set and put in charge of committing updates; in the event the leader fails, an election protocol is engaged to choose a new leader. This is useful, for example, for companies that need to maintain a synchronized database across multiple data centers around the world.&lt;/p&gt;
+
+&lt;p&gt;In a decentralized system, where there is no implicit trust across machines, and no one in charge, where we thus expect agents to act &lt;em&gt;byzantine&lt;/em&gt; (malicious), the classic leader election approach is easily foiled. So how can we choose leaders in a way which is secure; that is, how do we design systems where we can quantify and adjust the cost to an attacker of mounting a successful attack?&lt;/p&gt;
+
+&lt;p&gt;The original solution is to pick a new leader every roughly 10 minutes based on a random lottery, the winner of which is determined by their capacity to find partial hash collisions in the SHA256 algorithm. Partial hash collisions were originally conceived as an approach to spam prevention, since they allow one to prove that a certain amount of computation was performed to find the collision, hence the colloquialism proof-of-work (PoW). It was adopted by bitcoin as the lottery mechanism, allowing anyone to participate, such that the system&amp;rsquo;s security derives from the cost and distribution of the computational power itself.&lt;/p&gt;
+
+&lt;h2 id=&#34;ain-t-no-proof-of-past&#34;&gt;Ain&amp;rsquo;t No Proof-of-Past&lt;/h2&gt;
+
+&lt;p&gt;A key property of blockchains is that the present state can be computed by anyone using the protocol, the genesis block, and a particular history. Simply apply each transaction in the history to the genesis block, and the final result should be the current state. So the problem becomes, how do we know what is the right history?&lt;/p&gt;
+
+&lt;p&gt;Bitcoin has a deceptively simple solution. The right history is the one with the most proof of work. So as far as the network is concerned, the correct chain is the longest valid chain available on the network, regardless of what you think you might know about the past. You can&amp;rsquo;t trust the past. Or more specifically, you can&amp;rsquo;t trust others to produce a valid proof-of-past. The only thing you can trust is proof-of-work.&lt;/p&gt;
+
+&lt;p&gt;Bitcoin&amp;rsquo;s adherence to this philosophy renders it &lt;em&gt;eventually consistent&lt;/em&gt;, meaning that the current history you are experiencing might in the future become invalid. The only thing it guarantees is that eventually, everyone will agree. This is nice, in theory, but ideally we&amp;rsquo;d like stronger guarantees on what&amp;rsquo;s happening &lt;em&gt;now&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Bitcoin doesn&amp;rsquo;t deal with now. Its philosophy might be summarized: &amp;ldquo;look, everything is risky and nothing is certain, but here&amp;rsquo;s how much computational power it would take to fuck you. You decide&amp;rdquo;. The result is individuals and businesses waiting different amounts of time for their transactions to clear, according to their particular risk profiles; there is always an (exponentially decaying) chance of a transaction being revoked by a double spend in a successful fork.&lt;/p&gt;
+
+&lt;p&gt;Suppose you&amp;rsquo;re on a blockchain network, and a malicious fork emerges, starting 10 blocks back and gaining steam. Now it&amp;rsquo;s raced ahead of you, so as far as the bitcoin protocol is concerned, it marks the correct history. But clearly its not the correct history. You were there, 10 blocks back, when the real history happened. And now bitcoin is lying to you; naughty, naughty Bitcoin.&lt;/p&gt;
+
+&lt;h2 id=&#34;when-bitcoin-forks&#34;&gt;When Bitcoin Forks&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/bitcoin/bips/blob/master/bip-0050.mediawiki&#34; target=&#34;_blank&#34;&gt;Bitcoin forked by mistake in March 2013&lt;/a&gt;. A block was produced by a new version of the client that triggered a bug on an implementation specific detail of the embedded database library used by older versions of the client. The new version of the client had no problem with the block, and actually exhibited the correct behaviour. So half the network went one way and the other half went the other. And as far as they were concerned, they were both following the rules, quickly becoming oblivious to each other&amp;rsquo;s chains.&lt;/p&gt;
+
+&lt;p&gt;A small team of superheros, bitcoin developers, community members, and business humans reacted quickly. They took to Skype and IRC and other lines of communication to figure out and divulge what happened, working quickly to rectify the problem. Within a matter of hours, miners on the &amp;ldquo;invalid&amp;rdquo; chain (which in this case were those with the newer version of the client, the ones &lt;em&gt;without&lt;/em&gt; the bug!) were convinced to downgrade and switch to the &amp;ldquo;correct&amp;rdquo; chain, giving up a few hours worth of rewards, which at roughly 150 BTC per hour is substantial.&lt;/p&gt;
+
+&lt;p&gt;The point of this story is that real world intervention was required to defend against the inevitable: software bugs. Without the intervention, the chains might have gone on independently. Surely, businesses would eventually find out there was a problem, as some transactions (coming from the other chain) would never be received. Something had clearly gone wrong. If bitcoin is going to survive, it absolutely must be able to handle such circumstances, and the only means it has to do so are through the communications protocols employed by the core developers, and those who control the mining pools and the large bitcoin businesses.&lt;/p&gt;
+
+&lt;p&gt;For those who think bitcoin is a wholly decentralized holy grail, this might be a horrifying discovery. Yet it may be equally horrifying to discover that there is in reality probably no better way to maintain the system&amp;rsquo;s security and integrity in the face of honest failure than by engaging trust networks consisting of very few, very highly skilled, and/or very influential individuals. That&amp;rsquo;s kind of just how specialization works.&lt;/p&gt;
+
+&lt;p&gt;So here&amp;rsquo;s where bitcoin might be lying to itself. Bitcoin is not just a protocol. It is a fluctuating set of computers running a suite of ever evolving implementations of a relatively stable specification of a protocol, which itself makes no accommodation for a notion of history other than that upon which the greatest amount of computational resources have been expended. The source code of the most widely deployed implementation of the protocol is updated through a voting procedure participated in by a small number of parties at &lt;a href=&#34;https://github.com/bitcoin&#34; target=&#34;_blank&#34;&gt;https://github.com/bitcoin&lt;/a&gt; and secured by a reputation based security deposit made by the &lt;a href=&#34;https://github.com/laanwj&#34; target=&#34;_blank&#34;&gt;successor&lt;/a&gt; of the &lt;a href=&#34;https://github.com/gavinandresen&#34; target=&#34;_blank&#34;&gt;successor&lt;/a&gt; of the &lt;a href=&#34;https://github.com/bitcoin/bitcoin/commit/4405b78d6059e536c36974088a8ed4d9f0f29898&#34; target=&#34;_blank&#34;&gt;protocol&amp;rsquo;s inventor&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So at the end of the day, while bitcoin might masquerade to be as secure as its hashing power, its security is actually also a function of the activity of a small number of developers and, in some sense, the security of Github&amp;rsquo;s TLS implementation. I might add that just this week, a major security vulnerability yesterday to &lt;a href=&#34;http://thehackernews.com/2014/12/critical-git-client-vulnerability-allow_19.html&#34; target=&#34;_blank&#34;&gt;git was announced&lt;/a&gt;, and that TLS implementations are not particularly lauded for their correctness.&lt;/p&gt;
+
+&lt;h2 id=&#34;bugs-vs-attacks&#34;&gt;Bugs vs. Attacks&lt;/h2&gt;
+
+&lt;p&gt;Software bugs are a perennial enemy of the human endeavour, and are impossible to mitigate. The proper approach is diversity, to have many different implementations of the protocol, such that a bug in one does not take down the entire network. This is the reasoning behind &lt;a href=&#34;https://github.com/ethereum&#34; target=&#34;_blank&#34;&gt;ethereum&amp;rsquo;s&lt;/a&gt; drive to produce clients in 4 different programming languages. Of course they are all hosted on one website (for now, but stay tuned for github-like smart contracts storing code in &lt;a href=&#34;http://ipfs.io&#34; target=&#34;_blank&#34;&gt;ipfs&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;The best approach to honest failure is one of prevention through diversity: the more redundant diversity in the infrastructure, the less likely catastrophe becomes. But this is a problem for the meta protocol of the community, surrounding the blockchain. In the event of large scale honest failure, the community must be strong enough to come to an out-of-band solution. And that&amp;rsquo;s that.&lt;/p&gt;
+
+&lt;p&gt;Now, while Bitcoin will use all sorts of information to remedy a large scale honest failure by processing out-of-band (i.e., Skype, IRC, Reddit, etc), it has no inbuilt mechanism for resisting proof-of-work based attacks. That is, if a large entity comes online with a &lt;strong&gt;lot&lt;/strong&gt; of hash power and launches a 51% attack against the network, rewriting the history of the last N blocks and racing ahead with the production of the next M, there is nothing in the protocol to handle that. A massive simplification at the programming level, a massive headache in the real world. Real history is sacrificed for proof-of-work.&lt;/p&gt;
+
+&lt;p&gt;Our blockchain&amp;rsquo;s deserve better than that.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-rigid-race-to-the-bottom&#34;&gt;A Rigid Race to the Bottom&lt;/h2&gt;
+
+&lt;p&gt;Bitcoin mining is an obscene way to consume electricity. A fascinating trick, perhaps, but surely not a means upon which to base the future of human socioeconomic organization. At the end of the day, ASIC-wars ignite the same sort of careless race to the bottom engaged in by the likes of subsidy driven mono-cropping in food production, or oil drilling. Unprofitable behaviour subsidized by an inflationary currency creating weird economic incentives and distracting us from what&amp;rsquo;s at hand.&lt;/p&gt;
+
+&lt;p&gt;Face it, bitcoin is an inflationary nightmare, as 2014 will attest. Its security model is one size fits all and an exponentially decreasing reward means it&amp;rsquo;s harder to pay for security in the future, as countless debates in the space are beginning to acknowledge. In the meantime, bitcoin will suffer all the benefits of being first to the masses, embracing its network effect, embracing us with open arms as the previous financial system implodes and the next one is born. Whether or not it will weather that storm is another tornado altogether. Either way, we have some work to do.&lt;/p&gt;
+
+&lt;p&gt;Before I let you go, let&amp;rsquo;s get one thing straight. Bitcoin may be a piece of shit, but she&amp;rsquo;s our piece of shit.&lt;/p&gt;
+
+&lt;p&gt;Our little baby nugget of existential freedom and secret insight into the hidden wonders of large scale co-ordination and the future organization of man.&lt;/p&gt;
+
+&lt;p&gt;And while her economics may be no better than that of a central bank (at least in the short term), her monetary policy is set not by an oligarch, but by a globally distributed consensus of human-computer interfacing.&lt;/p&gt;
+
+&lt;p&gt;She is the internet stepping out of infancy.&lt;/p&gt;
+
+&lt;p&gt;A glitter of hope in the twinkle of the political eye.&lt;/p&gt;
+
+&lt;p&gt;A sign of things to come.&lt;/p&gt;
+
+&lt;p&gt;I love bitcoin.&lt;/p&gt;
+
+&lt;p&gt;But I bet we can do better.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Why We Built Thelonious</title>
+      <link>http://localhost/2014/12/17/why-thelonious/</link>
+      <pubDate>Wed, 17 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2014/12/17/why-thelonious/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://erisindustries.com/components/erisdb&#34; target=&#34;_blank&#34;&gt;Thelonious&lt;/a&gt; began as a fork of the &lt;a href=&#34;hittps://github.com/ethereum/go-ethereum&#34; target=&#34;_blank&#34;&gt;go-ethereum&lt;/a&gt; client that seeks to be the dragon eating its own tail. That is, the intention of Thelonious is to move the protocol level logic of a blockchain into the blockchain&amp;rsquo;s virtual machine itself. In all modern blockchains, the rules of the protocol are defined in the client source code, which is then used to manipulate a database. But in Thelonious, the rules of the protocol are defined in the genesis block, in a special contract called GenDoug, which is, if you will, the kernel of our distributed operating system. The end goal of our Thelonious project is a blockchain client which is &lt;strong&gt;purely a p2p network library and a virtual machine&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;There are a number of reasons we might want to do this.&lt;/p&gt;
+
+&lt;p&gt;First and foremost, we take such a blockchain client for granted whenever we think about the crypto-currency ecosystem, in particular in working on next generation proof of stake systems and multichain interactions with &lt;a href=&#34;https://twitter.com/VladZamfir&#34; target=&#34;_blank&#34;&gt;Sir Vlad Zamfir&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Second, while the ethereum project is building outstanding technology and working hard to produce a single, public facing, rigorously tested and Bitcoin scale blockchain, with a native crypto-economic token and a significant market cap, we want the freedom to experiment with that technology in a multitude of other possible ways, economic or otherwise, to explore the broader potential of authenticated and distributed virtual machine technology in society. So we hope to provide a maximum in flexibility and customization.&lt;/p&gt;
+
+&lt;p&gt;Third, we are moving towards a multichain, multiprotocol ecosystem, an &lt;strong&gt;internet of chains&lt;/strong&gt;, if you will, and we are hopeful that developers will start thinking with us about serious multichain technology. An important part of that will be subjective computations, or client side logic that is not replicated across the network but which informs the client&amp;rsquo;s behaviour. We&amp;rsquo;d like to be able to experiment with and learn to manage that logic, and to better understand the landscape of crypto-economic and crypto-utilitarian systems as they continue to evolve.&lt;/p&gt;
+
+&lt;p&gt;Thus, we seek to write the rules of the blockchain in the same language that we write smart contracts, and to progressively move the totality of the logic into a scripted virtual machine.&lt;/p&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

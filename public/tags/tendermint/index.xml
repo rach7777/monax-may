@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tendermint on Monax Industries</title>
+    <link>http://localhost/tags/tendermint/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/tags/tendermint/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>On Eris and Tendermint: Application and Consensus</title>
+      <link>http://localhost/2016/03/02/eris-and-tendermint/</link>
+      <pubDate>Wed, 02 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2016/03/02/eris-and-tendermint/</guid>
+      <description>
+
+&lt;p&gt;At Eris and Tendermint, we&amp;rsquo;re often asked: &amp;ldquo;what is the difference between Eris and Tendermint?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Apart from being two different companies and two different products, the simple answer boils down to application and consensus.&lt;/p&gt;
+
+&lt;p&gt;Eris:db is the application layer for blockchain applications. It&amp;rsquo;s the backbone for deploying and interacting with your application logic.&lt;/p&gt;
+
+&lt;p&gt;Tendermint is the consensus layer. It&amp;rsquo;s the engine that drives your application, once built, forward in time and keeps it in synch.&lt;/p&gt;
+
+&lt;p&gt;As an application layer, Eris:db has opinions about what a blockchain should look like. As a consensus layer, tendermint has opinions about how the consensus should operate.&lt;/p&gt;
+
+&lt;p&gt;It is much like the difference between Wordpress (a content management platform) and Apache (a web server); Wordpress is an application platform that has opinions about how to tie together PHP/node &amp;amp; MySQL. Apache is a web server that has opinions about, well, doing what servers do.&lt;/p&gt;
+
+&lt;p&gt;Some developers build custom applications with Wordpress. Indeed, Wordpress makes it easy &lt;em&gt;by making assumptions for you&lt;/em&gt;. Others might not like these assumptions and thus build applications from scratch that talk directly to Apache. Don&amp;rsquo;t like Apache? Use Nginx with Wordpress instead. Don&amp;rsquo;t like Wordpress? Go and use Liferay or Zotonic. As separate modules, the developer has choice and flexibility.&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/eris-tendermint.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;Admittedly, the analogy&amp;rsquo;s not a perfect one - in our view, a content management system such as Wordpress is really more like &lt;a href=&#34;https://erisindustries.com/components/erisdb/&#34; target=&#34;_blank&#34;&gt;eris:db&lt;/a&gt;, whereas &lt;a href=&#34;https://erisindustries.com/components/eriscli/&#34; target=&#34;_blank&#34;&gt;eris:cli&lt;/a&gt; is a more comprehensive blockchain application and database management system.&lt;/p&gt;
+
+&lt;p&gt;This is where, in case you haven&amp;rsquo;t already noticed, eris is all-in on &lt;a href=&#34;https://www.docker.com/&#34; target=&#34;_blank&#34;&gt;Docker&lt;/a&gt;. In the future, this will allow eris:db to plug into any type of consensus. Additionally, eris:cli should simplify the workflow of developing a Tendermint chain &lt;em&gt;sans&lt;/em&gt; eris:db, over &lt;a href=&#34;http://tendermint.com/posts/tendermint-socket-protocol/&#34; target=&#34;_blank&#34;&gt;tmsp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Another way of looking at it might be the difference between an empty toolbox and a Swiss Army Knife. Tendermint gives you a really nice toolbox. You can take this box and put whatever you want in it, and the box will keep your &lt;a href=&#34;https://www.youtube.com/watch?v=jl17CYYSzUw&#34; target=&#34;_blank&#34;&gt;stuff&lt;/a&gt; together and let you get on with the business of building your useful application.&lt;/p&gt;
+
+&lt;p&gt;Eris, by contrast, gives you a ready-to-go Swiss Army knife with plenty of useful tools and services (including BigChainDB, ZCash, Bitcoin, Ethereum, OpenBazaar, Tendermint, and ErisDB). Some you might not want, so don&amp;rsquo;t use them. If you want new ones added, take off the baseplate and add the new tool. And since eris:db may not suit your purposes, building a chain that &lt;a href=&#34;https://github.com/eris-ltd/eris-by-example/blob/master/erisdb_tmsp/run.sh&#34; target=&#34;_blank&#34;&gt;talks directly to Tendermint core over tmsp&lt;/a&gt; might be what you want.&lt;/p&gt;
+
+&lt;p&gt;Either way, eris:cli is intended to make running both eris:db and Tendermint simple. If it isn&amp;rsquo;t, please take to &lt;a href=&#34;https://twitter.com/eris_ltd&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt; and tell us what you&amp;rsquo;d like to see.&lt;/p&gt;
+
+&lt;p&gt;We made these design decisions because &lt;a href=&#34;http://cointelegraph.com/news/proof-of-work-proof-of-stake-and-the-consensus-debate&#34; target=&#34;_blank&#34;&gt;proof-of-work consensus makes zero sense&lt;/a&gt; for enterprise blockchain applications.&lt;/p&gt;
+
+&lt;h3 id=&#34;marmots-and-mint&#34;&gt;Marmots and mint&lt;/h3&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/marmots-and-mint.jpg&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;Eris Industries&amp;rsquo; relationship with Tendermint started shortly after we released our Alpha product in December of 2014 (thelonious/decerver), where we&amp;rsquo;d forked Ethereum, ripped the guts out of its consensus and replaced it with a bunch of smart contracts in order to create Eris:DB&amp;rsquo;s predecessor - a design that was, the first (and for about six months, the only) permissioned blockchain in existence. Those of you who have been following the company for some time will remember we initially called it &amp;ldquo;Thelonious.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;But a fork of an existing proof-of-work design was not going to cut it for us. So Ethan went searching for an alternative and about two months later, he stumbled on Tendermint.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&amp;ldquo;Byzantine Fault Tolerant consensus. With Proof-of-Stake.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;Awesome,&amp;rdquo; thought Ethan. Shortly thereafter Eris Industries and Tendermint began collaborating on the Tendermint codebase and, over the next few months, &lt;a href=&#34;https://erisindustries.com/components/erisdb/&#34; target=&#34;_blank&#34;&gt;eris:db&lt;/a&gt; was born.&lt;/p&gt;
+
+&lt;h3 id=&#34;towards-modularity&#34;&gt;Towards modularity&lt;/h3&gt;
+
+&lt;p&gt;Intimately linked to &lt;a href=&#34;https://github.com/tendermint/tendermint/wiki&#34; target=&#34;_blank&#34;&gt;tendermint consensus&lt;/a&gt;, eris:db has a handful of application state features which reside over and above the consensus layer. This lack of modularity is certainly not ideal, as Casey elaborates &lt;a href=&#34;https://eng.erisindustries.com/explainers/2015/12/31/on-blockchain-clients-in-2016/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;, so we began working to refactor Tendermint.&lt;/p&gt;
+
+&lt;p&gt;Although we didn&amp;rsquo;t know it, things were heading this way for awhile. It was a particularly memorable night in Tel-Aviv during marmot dev retreat this past fall where Ethan laid it all out for me.&lt;/p&gt;
+
+&lt;p&gt;From the tips of his fingers the very next day:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://eng.erisindustries.com/explainers/2016/02/22/apps-and-consensus/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;On Applications and Consensus&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The tl;dr (though you should definitely read it!) for the above is: Two separate processes. Two separate states. Choose your application. Choose your consensus. And because consensus is at a lower level, it is perhaps (in some cases - not others) more important to get right.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s through that lens that we announce today, with mixed emotion, that Ethan will be leaving Eris to co-found Tendermint as CTO. Much like the codebase is being refactored, so are the companies. And we&amp;rsquo;ll certainly be crossing paths again. Indeed, we&amp;rsquo;ve known each other for 5 years, lived together for 3, worked in the same research lab, and have pretty much been shooting the intellectual shit since we first met. And after I dropped out of grad school (because, you know, &lt;a href=&#34;https://www.youtube.com/watch?v=ru-Z5kvd9js&#34; target=&#34;_blank&#34;&gt;Bitcoin&lt;/a&gt; ), he taught me how to code. Bitcoin is cool, no doubt (decentralized money and all), but when it comes down to it, the most exciting aspect of this technology is a plurality of chains with a plurality of consensus&amp;rsquo;. And the ongoing refactor (see again &lt;a href=&#34;https://eng.erisindustries.com/explainers/2016/02/22/apps-and-consensus/&#34; target=&#34;_blank&#34;&gt;On Applications and Consensus&lt;/a&gt;) will help achieve this goal.&lt;/p&gt;
+
+&lt;p&gt;Although this ongoing transition has been a looming burden on several of us, I&amp;rsquo;m actually quite excited for what the future will bring. Even more so following the week Ethan and I spent in San Francisco with Jae and Dustin prior to &lt;a href=&#34;http://www.theblockchainconference.com/&#34; target=&#34;_blank&#34;&gt;The Block Chain Conference&lt;/a&gt;. We discussed at length the distinctions described in this post which should, moving forward, clarify the entrypoint for both developers and business folk looking to build out blockchain applications. I&amp;rsquo;ll offer another analogy: Eris is a mechanic shop (read: Formula 1 pitstop) with most parts of the car built for you and Tendermint is the manufacturer of Ferrari engines. There you have it: application and consensus.&lt;/p&gt;
+
+&lt;p&gt;This shift towards seperation of the application and consensus will likely reap many benefits for the crypto ecosystem as a whole. The Bitcoin community is starting to realize this. In the words of &lt;a href=&#34;https://medium.com/@muneeb/forking-a-network-86d1b766d38d#.a5k2kajx3&#34; target=&#34;_blank&#34;&gt;Muneeb Ali&lt;/a&gt;:&lt;/p&gt;
+We’ll need to cleanly separate consensus-breaking code from non-consensus breaking code and have formal methods to verify implementations against protocol specifications.
+
+&lt;p&gt;So what does this look like from a technical perspective? Bear with us as the design considerations are being fleshed out. Pictured below is an early conceptual overview of how we view the interaction between the various components. We&amp;rsquo;ll have more to say about this in the coming months. Stay tuned!&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/eris-chains-overview.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;How does this fit in with the various components of the stack you already know and love? Awhile back I &lt;a href=&#34;https://twitter.com/cerebralbosons/status/682691657473503233&#34; target=&#34;_blank&#34;&gt;tweeted&lt;/a&gt; a first pass on visualizing the stack as a whole. Here&amp;rsquo;s v2 with a few little additions. With all the moving pieces involved, it ought to be clear why docker is the right choice, despite the pain points.&lt;/p&gt;
+
+&lt;p&gt;Not much will change on the UX of eris:cli, other than additional modularity when it comes to consensus, i.e., ability to &amp;ldquo;plug into&amp;rdquo; whichever consensus you&amp;rsquo;d like. This&amp;rsquo;ll allow for much greater experimentation moving forward, as we &amp;ldquo;transition from first-generation blockchain tech to second-generation blockchain tech&amp;rdquo; to paraphrase IBM&amp;rsquo;s John Wolpert keynote from the conference mentioned above.&lt;/p&gt;
+
+&lt;p&gt;The marmots are excited. Are you?&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/eris-stack-v2.png&amp;rsquo; | img }}&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>On Applications and Consensus</title>
+      <link>http://localhost/2016/02/22/apps-and-consensus/</link>
+      <pubDate>Mon, 22 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2016/02/22/apps-and-consensus/</guid>
+      <description>&lt;p&gt;Bitcoin appears to have introduced something new to the world. The question is, what? The term &amp;ldquo;blockchain&amp;rdquo; will be entirely useless to our discussion, so let&amp;rsquo;s dispense with it, for now. Instead, let&amp;rsquo;s treat Bitcoin like any other internet service. It has an application state; in this case, a currency. It has a mechanism to maintain this application state; in this case, a digital consensus engine. What is unique about bitcoin is the relationship between its application state and its consensus engine.
+Almost every major internet service uses a digital consensus engine to support an application state. By application state, we mean any form of application and the set of state transitions it undergoes, be it file sharing, social media, online banking, or financial trading. By digital consensus engine, we mean a network protocol that permits a set of computers to synchronize updates to their state. A digital consensus engine allows an application to be replicated across multiple machines without getting confused.&lt;/p&gt;
+
+&lt;p&gt;Most digital consensus engines are based on a form of the Paxos algorithm. Some might be built on other fault-tolerant algorithms designed over the last few decades, with varying tolerance for various forms of fault. In all these cases, the agents (nodes/machines/peers/participants/whatever) of the consensus are involved in rounds of communication which enable them to determine what information is available to other agents, and thereby come to unanimous agreement on what the next entry in the transaction log should be.&lt;/p&gt;
+
+&lt;p&gt;Unlike other internet services, Bitcoin sought an alternative approach to the consensus problem. In particular, Bitcoin introduced an economic solution whereby consensus is updated not according to the particular information available to other agents, but according to the &lt;em&gt;cost&lt;/em&gt; of producing whatever information is found to be available to them. This is the notorious Proof-of-Work (PoW) algorithm.&lt;/p&gt;
+
+&lt;p&gt;What really makes Bitcoin possible, however, is a unique coupling between the application state and the consensus engine: Bitcoin bootstraps its consensus using the very application state the consensus is intended to support. In other words, it uses the application state to directly incentivize the cost of consensus, by providing new currency units to agents able to prove that they incurred some cost on behalf of the network, and are thereby eligible to be leader of a consensus round (approve a block).&lt;/p&gt;
+
+&lt;p&gt;This is in sharp contrast to every other known internet service, where incentivization takes place outside the application state; typically, the application state is something useful to users, producing a revenue stream for a company which thereby funds the maintenance of hardware/software/network-links that sustains the consensus supporting the application. &lt;strong&gt;That is, there&amp;rsquo;s a third entity, a company, mediating the relationship between consensus and application.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In Bitcoin, tight integration between application state (the currency) and consensus (the economic solution to which is bootstrapped by the currency), without a third party mediator (a company), results in a system where &lt;em&gt;every state transition is recorded in the consensus engine.&lt;/em&gt; Furthermore, each change is accompanied by digital signatures (elliptic curve) and data integrity checks (merkle trees). The recording of every change and its cryptographic verifiability are necessary so that, in the absence of a company, any user can confirm that the consensus is where it should be by re-running the entire history.&lt;/p&gt;
+
+&lt;p&gt;This is an enormous overhead not incurred by a typical internet service; Amazon&amp;rsquo;s consensus engine is far too expensive and slow to record, consistently, every single change made to your shopping cart. Besides, we trust Amazon, because, at least in theory, if they mess up they lose our business.
+So Amazon provides a shopping cart that is always available for new writes, even conflicting ones taking place across a network partition. Recording each such write in the consensus engine, in a manner which demanded consistency (as typical consensus engines do) would make the shopping cart experience unbearably slow. The consensus engine is thus interested only in &amp;ldquo;more important&amp;rdquo; state transitions; perhaps initializing shopping carts for new accounts, following through with payments, scaling up the number of hosts offering the shopping cart service, etc. Things far removed from the actual user experience.&lt;/p&gt;
+
+&lt;p&gt;In principle, then, Bitcoin and the Amazon shopping cart are the same: internet services with an application state supported by a consensus engine.
+The key differences are two-fold:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1) bitcoin bootstraps the consensus by incentivizing it through the application itself
+2) every single state transition in bitcoin is recorded in the consensus engine
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Of course, everyone is most excited about a consequence of the first difference, namely, that the agents of the consensus engine may be a decentralized group of peers, rather than the pawns of Jeff Bezos. But the second difference suggests a means by which socioeconomic systems can standardize
+the production and verification of assurances over the existence and integrity of data and the execution of programs which use and update that data.&lt;/p&gt;
+
+&lt;p&gt;Ok, so if Bitcoin is an application (currency), where every change is recorded and cryptographically verifiable (through merkle trees and digital signatures), and where the consensus is incentivized by the application itself, in a manner which is tolerant of malicious behaviour, what&amp;rsquo;s a blockchain?&lt;/p&gt;
+
+&lt;p&gt;Algorithms tolerant to malicious or arbitrary behaviour by their agents are known as Byzantine Fault Tolerant (BFT). BFT is notoriously expensive and most approaches are impractical.  But beginning in the late 90s, a class of so-called Practical BFT (PBFT) algorithms were discovered, which, combined with efficient cryptography and faster machines, yield production quality optimally fault tolerant byzantine systems.&lt;/p&gt;
+
+&lt;p&gt;Hence, Bitcoin can be summarized as an application where: 1) every change is recorded with digital signatures in a merkle tree, 2) networking is done in a peer-to-peer manner using a BFT consensus protocol, and 3) the guarantee of consensus derives from economic incentivization bootstrapped by the application.&lt;/p&gt;
+
+&lt;p&gt;Let us define a blockchain then, as BFT + merkle trees + digital signatures + p2p, and say that Bitcoin is a blockchain that uses an economic solution to the BFT consensus.&lt;/p&gt;
+
+&lt;p&gt;Now, Bitcoin became popular because of its censorship resistance, its immutability, its transparency, and its privacy. A blockchain alone can provide transparency and privacy, but without an economic element to the consensus, it is arguably impossible to provide censorship resistance or immutability. That being said, virtually every use-case of blockchain proposed today has, at least,  a meta-economic element which may contribute to these properties, if only the consumers and clients demand them. Of course, that is arguably the situation with all modern business and the very notion of competitive markets; the difference is the lack of transparency. The use of merkle trees, digital signatures, and peer-to-peer networking allows diverse sets of agents to record pieces of a transaction log&amp;rsquo;s history, and bring them to light as cryptographic proof in the event of wrong doing.&lt;/p&gt;
+
+&lt;p&gt;It should be immediately apparent that such an arrangement of technologies, tweaked along their degrees of freedom (the consensus protocol, the economics, the application state and its cryptography, the relationship between economics and application state), will yield a versatile set of important networked systems, in particular for the coordination of consortia of organizations, and especially for governance. However, it is critical that we are able to adequately experiment with the components, and that we have the right toolsets and software architectures to do so.&lt;/p&gt;
+
+&lt;p&gt;For this reason, we have introduced a new blockchain architecture, which makes explicit, at the process level, the distinction between the consensus engine and the application state. That is, the application and the consensus engine run in separate processes on the operating system, and communicate with each other via a simple socket protocol. This architecture is similar in spirit to that which has been used to serve websites on the internet for decades, namely, by having an http server and the actual web-application in separate processes: requests are received by the web server, filtered, and forwarded to the application. Our blockchain design is no different, except that the server component is replicated across many nodes and achieves consensus on a request before it is forwarded to the application state. Hence, we can easily write blockchain applications in any programming language, while the networking, consensus, and blockchain storage is all handled under the hood.&lt;/p&gt;
+
+&lt;p&gt;Ethereum, of course, pioneered the notion of arbitrary applicate state on a blockchain. But they did so within their own sandboxed and somewhat cumbersome virtual environment. Our new architecture breaks the shackles of the ethereum virtual machine, allowing developers to use the programming language and tooling ecosystem that works for them.&lt;/p&gt;
+
+&lt;p&gt;To read more about the socket protocol underlying the new architecture, see &lt;a href=&#34;http://tendermint.com/posts/tendermint-socket-protocol/&#34; target=&#34;_blank&#34;&gt;the tendermint blog&lt;/a&gt;. And stay tuned for updates on new applications!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Eris CLI Chains Walkabout: New</title>
+      <link>http://localhost/2015/09/06/introing-eris-chains/</link>
+      <pubDate>Sun, 06 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/09/06/introing-eris-chains/</guid>
+      <description>&lt;p&gt;{% include series.html %}&lt;/p&gt;
+
+&lt;p&gt;We, surprisingly, keep getting inbound communcation which queries why we are not &amp;ldquo;making&amp;rdquo; permissioned blockchains &amp;ldquo;any more&amp;rdquo;. This is surprising to me for two reasons, the first is because many folks seemed to utterly detest the &lt;em&gt;idea&lt;/em&gt; of permissioned blockchains at all. Full Stop. We called this, in the spring, (internally) the great blockchains war. It wasn&amp;rsquo;t really a war to us at all. We do not view permissioned or unpermissioned chains as competitors of one another any more than we view Cassandra and Mongo as competitors of one another. While both exist in the generalized database space, they are very different tools for very different things. Yet, despite the perspective that these are different tools to accomplish different purposes, folks seemed to get very religious about their blockchain designs and feel very passionate about one chain design vis a vis another. At Eris we are not religious about our blockchain designs.&lt;/p&gt;
+
+&lt;p&gt;The second reason that this inbound is surprising to me, is that we haven&amp;rsquo;t actually stopped making permissioned blockchains. We have &lt;strong&gt;continued our work&lt;/strong&gt; in the permissioned blockchain (really, permissioned smart contract network) space only we are doing so in collaboration with the Tendermint open source project rather than under the Eris namespace. Almost all of the learning and effort which we put into crafting thelonious has been captured, improved, and reworked into the Tendermint project&amp;rsquo;s blockchain design. Indeed, that blockchain is fully permissionable out of the box due to our efforts and what we learned while building thelonious.&lt;/p&gt;
+
+&lt;p&gt;Lastly, I&amp;rsquo;d like to remind folks that the &lt;code&gt;eris&lt;/code&gt; tool is &lt;strong&gt;optimized for working with permissioned smart contract networks&lt;/strong&gt;. It does run public blockchains out of the box, and for those that want to run public blockchains which we do not have a service definition file built for, it is as easy as making sure that the blockchain in question has a Docker image and making a service definition file for it (which is usually only a few lines).&lt;/p&gt;
+
+&lt;p&gt;So, how does &lt;code&gt;eris&lt;/code&gt; work with permissioned smart contract networks? In general it provides some very convenient wrapping around the &lt;code&gt;eris chain manager&lt;/code&gt; scripts which we make sure to compile into the the &lt;code&gt;eris/erisdb&lt;/code&gt; Docker image (for more on Docker see the &lt;a href=&#34;https://eng.erisindustries.com/tutorials/2015/09/05/docker-and-eris/&#34; target=&#34;_blank&#34;&gt;Eris CLI Walkabout post on Docker&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;This post will speak to &lt;code&gt;eris chains new&lt;/code&gt; which is how &lt;code&gt;eris&lt;/code&gt; supports hashing a new permissioned smart contract network.&lt;/p&gt;
+
+&lt;p&gt;When one does &lt;code&gt;eris chains new test_chain&lt;/code&gt; then what eris will do, if no flags are given, is to read the default chain configuration files from &lt;code&gt;~/.eris/chains/config/default&lt;/code&gt; and hash a new chain it will call &lt;code&gt;test_chain&lt;/code&gt;. These default configuration files are written to the host hard drive (in the location noted above) during the &lt;code&gt;eris init&lt;/code&gt; process.&lt;/p&gt;
+
+&lt;p&gt;Once the files have been copied into a data container, then eris is ready to start a service which will hash the blockchain into existence. To do this we use the &lt;code&gt;eris/erisdb&lt;/code&gt; container with the volumes from the data container mounted. This separates out the data which the process will run against from the actual operation process (computational sequence) itself.&lt;/p&gt;
+
+&lt;p&gt;When the chain has been hashed, then it will not be started and the service container will be removed, leaving &lt;strong&gt;only&lt;/strong&gt; a container which will likely look something like this: &lt;code&gt;eris_data_test_chain_1&lt;/code&gt;. If you do &lt;code&gt;docker ps -a&lt;/code&gt; after running &lt;code&gt;eris chains new test_chain&lt;/code&gt; this is likely all you will see. We have an issue open to change this default so that after a chain is hashed then the chain starts running, but for now that is not the default behaviour.&lt;/p&gt;
+
+&lt;p&gt;So if you do &lt;code&gt;eris chains ls&lt;/code&gt; after doing &lt;code&gt;eris chains new test_chain&lt;/code&gt; you will not actually see a chain. This is expected behaviour because what &lt;code&gt;eris chains ls&lt;/code&gt; will do is to read from docker the existing chain type containers, but there will not be any chain type containers (unless you have other chains) at this point. In order to start running the chain you just created you will type &lt;code&gt;eris chains start test_chain&lt;/code&gt;. This will create the running service container and use the &lt;code&gt;test_chain&lt;/code&gt; data container. Once you have started the chain running if you do &lt;code&gt;eris chains ls&lt;/code&gt; again you will see &lt;code&gt;test_chain&lt;/code&gt; there.&lt;/p&gt;
+
+&lt;p&gt;Now, you will not always want to have the chain be hashed with the default configuration (which we make sure is available only for quick test chains and it should &lt;strong&gt;never&lt;/strong&gt; be used for non-test chains). To create a chain which you would want to use for your application, rather than simply for quick testing, you will want to update the config files appropriately. To do this, the easiest way to start is to:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cp -r ~/.eris/chains/config/default ~/.eris/chains/config/mychain14
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will copy the default configuration files into a new directory. At this point open the default configuration files in your text editor and edit them as necessary for your setup. At the end then you will do:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;eris chains new mychain14 --dir ~/.eris/chains/config/mychain14
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When the &lt;code&gt;--dir&lt;/code&gt; flag is given to chains new, it will read the configuration files from that directory rather than the &lt;code&gt;~/.eris/chains/config/default&lt;/code&gt; and use those instead of the default configuration files when hashing the new chain. For an even more lightweight solution you can give it a genesis.json and or a set of validator.csv and accounts.csv files to use via different flags. There will be another onboarding post about these files coming soon.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions about the chains hashing process please do not hestitate to visit our &lt;a href=&#34;https://support.erisindustries.com&#34; target=&#34;_blank&#34;&gt;forums&lt;/a&gt; or leave a comment below and we will try to answer as quickly as we can.&lt;/p&gt;
+
+&lt;p&gt;Happy (permissioned) blockchaining!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New eris-db and javascript.</title>
+      <link>http://localhost/2015/06/18/erisdb/</link>
+      <pubDate>Thu, 18 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/06/18/erisdb/</guid>
+      <description>
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;By: &lt;a href=&#34;mailto:andreas@erisindustries.com&#34; target=&#34;_blank&#34;&gt;Andreas Olofsson&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;For the last few months we&amp;rsquo;ve been focusing mainly on two things:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Replacing the Ethereum PoW-based client with Tendermint.&lt;/li&gt;
+&lt;li&gt;Phasing out the deCerver.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Replacing Ethereum with Tendermint is essential, though it&amp;rsquo;s mostly about replacing the consensus system. It still uses the EVM (Ethereum Virtual Machine), which means Solidity code will still work. The reason we needed to switch is that the PoS consensus system in Tendermint is much better suited for our chains, because consensus is generally driven by a set of trusted nodes.&lt;/p&gt;
+
+&lt;p&gt;Phasing out the decerver involves moving dependency management over to docker, and moving the dapp logic into node.js. This means that dapps are just normal node.js applications that uses Eris javascript libraries to access the blockchain client, and the client is (preferably) running in a docker container.&lt;/p&gt;
+
+&lt;p&gt;Some of this will now be released for public testing.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-new-eris-db-server&#34;&gt;The new eris-db server&lt;/h2&gt;
+
+&lt;p&gt;Tendermint is now integrated into our stack, and can be run through a library we call &lt;a href=&#34;https://github.com/eris-ltd/eris-db&#34; target=&#34;_blank&#34;&gt;eris-db&lt;/a&gt;. It is basically a Tendermint node wrapped inside of a simple webserver. You can call the node using JSON-RPC 2.0 (supports both HTTP and websocket), or through a REST-like web-api. It can handle multiple users at once, a mix of http and websocket, etc., so is more like a web-server then a simple RPC component. The purpose of this is to make it easy to set up an environment where one node can serve multiple users that connects via a web-browser.&lt;/p&gt;
+
+&lt;p&gt;We expose most of the functionality of the Tendermint client, like fetching account-, blockchain-, consensus-, and network-data, transacting in various different ways, and subscribing to events. You may also use filters when fetching large sets of data such as accounts and blocks. With JSON-RPC you add these filters as objects, and with the REST-like api you use a query structure similar to that of the &lt;a href=&#34;https://help.github.com/articles/search-syntax/&#34; target=&#34;_blank&#34;&gt;Github API&lt;/a&gt;. A specification of the different web APIs can be found &lt;a href=&#34;https://github.com/eris-ltd/eris-db/blob/master/api.md&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;, along with some info about the different concepts and objects the system uses.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-javascript-library&#34;&gt;The javascript library&lt;/h2&gt;
+
+&lt;p&gt;There is also a new javascript api, &lt;a href=&#34;https://github.com/eris-ltd/eris-db.js&#34; target=&#34;_blank&#34;&gt;eris-db.js&lt;/a&gt;. It can be added to a node.js application through npm or otherwise (&lt;code&gt;npm install eris-db&lt;/code&gt;). It provides binding to all the RPC methods, and a number of helpers for doing things like listening to events.&lt;/p&gt;
+
+&lt;p&gt;This library is not a full set of tools for dapp-development, but more of a back-bone. It has the bindings for eris-db/tendermint. We have chosen to divide it up so that people may choose which tools they like, meaning there will be one node.js library for &amp;ldquo;web3-like&amp;rdquo; solidity contracts, one for remote-compiler bindings, and so on. If there&amp;rsquo;s a demand, we might make a collection library for all the common libraries, but initially it will be possible to choose which ones to import.&lt;/p&gt;
+
+&lt;p&gt;This library is tested in node.js, but will work in a browser as well. This will be the case for all our javascript libraries most likely.&lt;/p&gt;
+
+&lt;h2 id=&#34;extras&#34;&gt;Extras&lt;/h2&gt;
+
+&lt;h3 id=&#34;the-server-server&#34;&gt;The server-server&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;eris-db&lt;/code&gt; comes with a server that makes testing convenient. It accepts POST requests with chain configuration data in the body (validator.json and genesis.json, etc.). When receiving a request it will create a new working directory in the OSs temp directory, write the data into it, start a fresh erisdb in that directory, serve it on a port that is taken from a pool, and return the port in the response. It is then possible to use that node to do the tests.&lt;/p&gt;
+
+&lt;p&gt;This server is meant to solve a few problems that I&amp;rsquo;ve come across, for example: When testing code I usually need a clean, new node to get reliable results. This is the case in 80-90% of all testing that I do. Using an already running node works sometimes, but it is far better when you know that the starting-state of the node will be &lt;strong&gt;exactly the same&lt;/strong&gt; in each test. Of course, some things like timestamps will be more or less random, but most of the output will be exactly the same; new contract addresses and hashes in particular.&lt;/p&gt;
+
+&lt;p&gt;Also, I like to be able to work on web-stuff on my Windows machine. Our remote compiler makes that possible to some extent, but i still have to run a node to do tests, and i like having that set up on a remote that will spin up new nodes in milliseconds when i need them, rather then having to set up boot2docker or some vm locally, or go through CI. I think Mac people would appreciate this as well - to be able to dev in their regular operating systems with their regular IDEs using a simple, out-of-the-box solution.&lt;/p&gt;
+
+&lt;h3 id=&#34;test-data&#34;&gt;Test data&lt;/h3&gt;
+
+&lt;p&gt;We use JSON for test-data, so that it works both with the server and the clients. If someone needs to make a client in some other language they can use the data to make sure it works.&lt;/p&gt;
+
+&lt;h2 id=&#34;todos&#34;&gt;TODOs&lt;/h2&gt;
+
+&lt;p&gt;These are some of the things that needs to be added before we release version &lt;code&gt;1.0&lt;/code&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The most urgent addition is perhaps the web3 javascript contract-objects. They will make it a lot easier to call contracts and listen to solidity events. This requires a PR to Tendermint because solidity events has not yet been  integrated, so it will take a little while.&lt;/li&gt;
+&lt;li&gt;Another urgent addition is javascript bindings for the remote compiler.&lt;/li&gt;
+&lt;li&gt;A docker container, obviously.&lt;/li&gt;
+&lt;li&gt;A new web-UI for viewing and (to some extent) interacting with a running chain.&lt;/li&gt;
+&lt;li&gt;Browser testing of the javascript libraries.&lt;/li&gt;
+&lt;li&gt;Support for CORS and TLS in the server. It&amp;rsquo;s been added but needs testing before we officially support it.&lt;/li&gt;
+&lt;li&gt;Unit testing solidity contracts is useful, at least when working with large systems. My sUnit library allows unit testing from node.js, and can be hooked into whatever testing framework is used. I will port it over to erisdb and upload at some point. This is low priority.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

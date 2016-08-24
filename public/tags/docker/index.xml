@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Monax Industries</title>
+    <link>http://localhost/tags/docker/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Updating Your Application Using Docker Build Containers</title>
+      <link>http://localhost/2016/04/20/build-containers-for-updating/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2016/04/20/build-containers-for-updating/</guid>
+      <description>
+
+&lt;p&gt;In the early days of &lt;a href=&#34;https://github.com/eris-ltd/eris-cli/&#34; target=&#34;_blank&#34;&gt;eris-cli&lt;/a&gt;, before we distributed binaries and users had to build from source, I wanted a simple way to update the tool either to the latest version or a specific branch. The result was &lt;code&gt;eris update&lt;/code&gt; which would update eris, by default, to master. A flag lets users pick a branch (provided it&amp;rsquo;s on GitHub) and &lt;code&gt;eris update --branch=develop&lt;/code&gt;, for example. Under-the-hood, it&amp;rsquo;s a series of shelled out git commands plus &lt;code&gt;go install ./cmd/eris&lt;/code&gt;. This feature is useful for quickly confirming bug fixes or having users test out a new feature, before merging to &lt;code&gt;develop&lt;/code&gt;. It only works for source installations and require git and go locally. What about binary installations you ask?&lt;/p&gt;
+
+&lt;p&gt;Eventually we got our binaries sorted out but the &lt;code&gt;eris update&lt;/code&gt; command still only worked for installations from source. Updating from a binary installation was implemented but the feature hadn&amp;rsquo;t received much love; the latest release was pulled in as a tarball and unpacked, its binary replacing the old one. It was buggy, didn&amp;rsquo;t always work, and the code was messy. Finally, a user who had used the &lt;code&gt;--branch&lt;/code&gt; feature with a source installation also wanted it for updating binary installations.&lt;/p&gt;
+
+&lt;p&gt;I went about &lt;a href=&#34;https://github.com/eris-ltd/eris-cli/pull/617&#34; target=&#34;_blank&#34;&gt;refactoring this code&lt;/a&gt; all while pondering how to update eris to a specific branch from a binary installation (i.e., without requiring git or go installed). Eventually, all the pieces I needed fell together. Here&amp;rsquo;s how it happened with docker build containers:&lt;/p&gt;
+
+&lt;h3 id=&#34;building-an-image&#34;&gt;Building an Image&lt;/h3&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://github.com/fsouza/go-dockerclient&#34; target=&#34;_blank&#34;&gt;go-dockerclient&lt;/a&gt; shines here, as usual. All our docker wrappers are in &lt;code&gt;perform/perform.go&lt;/code&gt;&lt;/p&gt;
+// DockerBuild will build an image with imageName
+// and a Dockerfile passed in as strings, respectively
+// Function is ~ to `docker build -t imageName .`
+// where a Dockerfile is in the `pwd`
+func DockerBuild(imageName, dockerfile string) error {
+	// adapted from: 
+	// https://godoc.org/github.com/fsouza/go-dockerclient#Client.BuildImage
+	t := time.Now()
+	inputbuf := bytes.NewBuffer(nil)
+	writer := os.Stdout
+	tr := tar.NewWriter(inputbuf)
+	sizeDockerfile := int64(len([]byte(dockerfile)))
+	tr.WriteHeader(&amp;tar.Header{Name: &#34;Dockerfile&#34;, Size: sizeDockerfile, ModTime: t, AccessTime: t, ChangeTime: t})
+	tr.Write([]byte(dockerfile))
+	tr.Close()
+
+	r, w := io.Pipe()
+	imgOpts := docker.BuildImageOptions{
+		Name: imageName,
+		RmTmpContainer: true,
+		InputStream: inputbuf,
+		OutputStream: w,
+		RawJSONStream: true,
+	}
+
+	ch := make(chan error, 1)
+	go func() {
+		defer w.Close()
+		defer close(ch)
+
+		if err := util.DockerClient.BuildImage(imgOpts); err != nil {
+			ch &lt;- err
+		}
+	}()
+	jsonmessage.DisplayJSONMessagesStream(r, writer, os.Stdout.Fd(), term.IsTerminal(os.Stdout.Fd()), nil)
+	if err, ok := &lt;-ch; ok {
+		// doesn&#39;t catch the build error; that&#39;s OK, it&#39;ll be displayed to user
+		// from json stream &amp; the image will be checked by checkImageExists
+		return util.DockerError(err)
+	}
+
+	ok, err := checkImageExists(imageName)
+	if err != nil {
+		return err
+	}
+	if !ok {
+		return fmt.Errorf(&#34;Image does not exist. Something went wrong. Exiting&#34;)
+	}
+
+	return nil
+}
+
+&lt;p&gt;The above function, when called, will build a docker image and output the build process to stdout. Let&amp;rsquo;s look at the build options:&lt;/p&gt;
+imgOpts := docker.BuildImageOptions{
+	Name: imageName,
+	RmTmpContainer: true,
+	InputStream: inputbuf,
+	OutputStream: w,
+	RawJSONStream: true,
+}
+
+&lt;p&gt;A few things to note. We name our image, and we remove temporary build containers to clean up. The Dockerfile is written to a tarball &lt;code&gt;tr.Write([]byte(dockerfile))&lt;/code&gt; and passed in as a buffer to &lt;code&gt;InputStream: inputbuf&lt;/code&gt;. Together (with the help of a channel), the &lt;code&gt;OutputStream&lt;/code&gt; and &lt;code&gt;rawJSONStream&lt;/code&gt; pipe the logs to stdout while the build is running.&lt;/p&gt;
+
+&lt;p&gt;After the build is complete, we check the presence of the named image. This is done because the build error is not caught (rather than, say, a docker client error).&lt;/p&gt;
+
+&lt;p&gt;The code to check that the image exists is straight-forward:&lt;/p&gt;
+func checkImageExists(imageName string) (bool, error) {
+	fail := false
+
+	opts := docker.ListImagesOptions{
+		Filter: imageName,
+	}
+
+	anImage, err := util.DockerClient.ListImages(opts)
+	if err != nil {
+		return fail, util.DockerError(err)
+	}
+
+	if len(anImage) != 1 {
+		return fail, nil
+	} else {
+		return true, nil
+	}
+
+	return fail, nil
+}
+
+&lt;p&gt;where &lt;code&gt;Filter : imageName&lt;/code&gt; will list only the image specified, if it exists. If the build failed, the image won&amp;rsquo;t exist and the array of images returned by &lt;code&gt;DockerClient.ListImages()&lt;/code&gt; will be empty.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;re now in a position to build an image given a name and Dockerfile, and check that it does indeed exist after the build.&lt;/p&gt;
+
+&lt;p&gt;To see how to get there, we&amp;rsquo;re going to start from the beginning of the &lt;code&gt;eris update&lt;/code&gt; command (modified from &lt;code&gt;update/update.go&lt;/code&gt; for simplicity).&lt;/p&gt;
+func UpdateEris(do *definitions.Do) error {
+
+	whichEris, binPath, err := GoOrBinary()
+	if err != nil {
+		return err
+	}
+
+	if whichEris == &#34;go&#34; {
+		// ensure git and go are installed
+		hasGit, hasGo := CheckGitAndGo(true, true)
+		if !hasGit || !hasGo {
+			return fmt.Errorf(&#34;either git or go is not installed. both are required for non-binary update&#34;)
+		}
+
+		log.WithField(&#34;branch&#34;, do.Branch).Warn(&#34;Building eris binary via go with:&#34;)
+		if err := UpdateErisGo(do.Branch); err != nil {
+			return err
+		}
+	
+	} else if whichEris == &#34;binary&#34; {
+		if err := UpdateErisViaBinary(do.Branch, binPath); err != nil {
+			return err
+		}
+
+	} else {
+		return fmt.Errorf(&#34;The marmots could not figure out how eris was installed. Exiting.&#34;)
+	}
+}
+
+&lt;p&gt;The command comes in via the do struct (see &lt;code&gt;definitions/do.go&lt;/code&gt;) and everything else can be ignored except:&lt;/p&gt;
+if err := UpdateErisViaBinary(do.Branch, binPath); err != nil {
+	return err
+}
+
+&lt;p&gt;Here, the specified branch (default master) is passed in and the binary path was got above from &lt;code&gt;GoOrBinary()&lt;/code&gt;. The primary purpose of &lt;code&gt;UpdateErisBinary(branch, binPath)&lt;/code&gt; is to call &lt;code&gt;BuildErisContainer(branch, binPath)&lt;/code&gt; so let&amp;rsquo;s take a look at that latter function (from &lt;code&gt;update/binary.go&lt;/code&gt;):&lt;/p&gt;
+// branch to update in build container
+// binaryPath to replace with new binary
+func BuildErisBinContainer(branch, binaryPath string) error {
+
+	dockerfile := MakeDockerfile(branch)
+	imageName := &#34;eris-binary-update:temporary-image&#34;
+	serviceName := &#34;eris-binary-update-temporary-service&#34;
+	if err := perform.DockerBuild(imageName, dockerfile); err != nil {
+		return err
+	}
+
+	// new the service for which the image has just been built
+	doNew := definitions.NowDo()
+	doNew.Name = serviceName
+	doNew.Operations.Args  = []string{imageName}
+	if err := services.NewService(doNew); err != nil {
+		return err
+	}
+
+	// start the service up: binary has already been built
+	doUpdate := definitions.NowDo()
+	doUpdate.Operations.Args = []string{serviceName}
+	if err := services.StartService(doUpdate); err != nil {
+		return nil
+	}
+
+	// copy (export) the binary from serviceName&#39;s data container
+	// into the scratch path to be used later
+	doCp := definitions.NowDo()
+	doCp.Name = serviceName
+	// where the binary will go (temporarily)
+	newPath := filepath.Join(common.ScratchPath, &#34;bin&#34;)
+
+	// $INSTALL_BASE/eris as set by the base image
+	doCp.Source = &#34;/usr/local/bin/eris&#34;
+	doCp.Destination = newPath
+	doCp.Operations.SkipCheck = true
+	
+	if err := data.ExportData(doCp); err != nil {
+		return err
+	}
+
+	// remove all trace of the service and its image
+	doRm := definitions.NowDo()
+	doRm.Operations.Args = []string{serviceName}
+	doRm.RmD = true		// remove data container
+	doRm.Volumes = true	// remove volumes
+	doRm.Force = true	// remove by force (no pesky warnings)
+	doRm.File = true	// remove the service defintion file
+	doRm.RmImage = true	// remove the temporary image
+
+	if err := services.RmService(doRm); err != nil {
+		return err
+	}
+
+	// binaryPath comes in from function
+	if err := ReplaceOldBinaryWithNew(binaryPath, filepath.Join(newPath, &#34;eris&#34;)); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+&lt;p&gt;That&amp;rsquo;s a hefty function. Let&amp;rsquo;s break it down line by line:&lt;/p&gt;
+dockerfile := MakeDockerfile(branch)
+imageName := &#34;eris-binary-update:temporary-image&#34;
+serviceName := &#34;eris-binary-update-temporary-service&#34;
+if err := perform.DockerBuild(imageName, dockerfile); err != nil {
+	return err
+}
+
+&lt;p&gt;For now, ignore &lt;code&gt;MakeDockerfile()&lt;/code&gt; and assume the Dockerfile looks like:&lt;/p&gt;
+FROM quay.io/eris/base
+	
+ENV NAME         eris-cli
+ENV REPO	 eris-ltd/$NAME
+ENV BRANCH       %s
+ENV CLONE_PATH   $GOPATH/src/github.com/$REPO
+ENV GO15VENDOREXPERIMENT 1
+
+RUN mkdir --parents $CLONE_PATH
+
+RUN git clone --quiet https://github.com/$REPO $CLONE_PATH
+RUN cd $CLONE_PATH &amp;&amp; git checkout --quiet -b $BRANCH &amp;&amp; git pull --quiet origin $BRANCH
+RUN cd $CLONE_PATH/cmd/eris &amp;&amp; go build -o $INSTALL_BASE/eris
+
+CMD [&#34;/bin/bash&#34;]
+
+&lt;p&gt;whereby &lt;code&gt;%s&lt;/code&gt; is the branch inserted in &lt;code&gt;MakeDockerfile()&lt;/code&gt; and &lt;code&gt;$INSTALL_BASE&lt;/code&gt; is &lt;code&gt;/usr/bin/local/&lt;/code&gt; from the base image (&lt;code&gt;FROM quay.io/eris/base&lt;/code&gt;). Now that we&amp;rsquo;ve got a Dockerfile and an image name, it&amp;rsquo;s time to build the image; &lt;code&gt;perform.DockerBuild()&lt;/code&gt; will do its thing and output something along the lines of:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Step 1 : FROM quay.io/eris/base
+ ---&amp;gt; 35b611e416c3
+Step 2 : ENV NAME eris-cli
+ ---&amp;gt; Using cache
+ ---&amp;gt; cc13c53892f6
+Step 3 : ENV REPO eris-ltd/$NAME
+ ---&amp;gt; Using cache
+ ---&amp;gt; 28fe09e32b27
+Step 4 : ENV BRANCH anyBranchOnGitHub
+ ---&amp;gt; Running in 0ccb1aacf1b3
+ ---&amp;gt; 0d62f6d0e21d
+Removing intermediate container 0ccb1aacf1b3
+Step 5 : ENV CLONE_PATH $GOPATH/src/github.com/$REPO
+ ---&amp;gt; Running in 79ad3636a36e
+ ---&amp;gt; dd9fd1685386
+Removing intermediate container 79ad3636a36e
+Step 6 : ENV GO15VENDOREXPERIMENT 1
+ ---&amp;gt; Running in d725100d15cb
+ ---&amp;gt; dd82330c2c6f
+Removing intermediate container d725100d15cb
+Step 7 : RUN mkdir --parents $CLONE_PATH
+ ---&amp;gt; Running in 3bf3ea143b10
+ ---&amp;gt; 1dd50a55e4fe
+Removing intermediate container 3bf3ea143b10
+Step 8 : RUN git clone --quiet https://github.com/$REPO $CLONE_PATH
+ ---&amp;gt; Running in 202fe406a34b
+ ---&amp;gt; 5f3746274db1
+Removing intermediate container 202fe406a34b
+Step 9 : RUN cd $CLONE_PATH &amp;amp;&amp;amp; git checkout --quiet -b $BRANCH &amp;amp;&amp;amp; git pull --quiet origin $BRANCH
+ ---&amp;gt; Running in 26fc8d7a2042
+ ---&amp;gt; 76c986901cf2
+Removing intermediate container 26fc8d7a2042
+Step 10 : RUN cd $CLONE_PATH/cmd/eris &amp;amp;&amp;amp; go build -o $INSTALL_BASE/eris
+ ---&amp;gt; Running in b31f73abefc1
+ ---&amp;gt; 83a86896aded
+Removing intermediate container b31f73abefc1
+Step 11 : CMD /bin/bash
+ ---&amp;gt; Running in bc42bec216ad
+ ---&amp;gt; ecb3c836abe1
+Removing intermediate container bc42bec216ad
+Successfully built ecb3c836abe1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;which is the output one would expect from running &lt;code&gt;docker build -t imageName .&lt;/code&gt; with that Dockerfile in &lt;code&gt;pwd&lt;/code&gt;. Now if you stopped there and ran &lt;code&gt;docker images&lt;/code&gt;, you&amp;rsquo;d see the new image: &lt;code&gt;eris-binary-update:temporary-image&lt;/code&gt; listed. Next, we&amp;rsquo;ll run this image with a data container and export the binary that is already in it.&lt;/p&gt;
+
+&lt;h3 id=&#34;services-data-containers&#34;&gt;Services &amp;amp; Data Containers&lt;/h3&gt;
+
+&lt;p&gt;The following part may seem unncessary complex to the seasoned docker user, however, I opted to use our existing plumbing for simplicity in our codebase.&lt;/p&gt;
+
+&lt;p&gt;Recall the &lt;code&gt;BuildErisBinContainer()&lt;/code&gt; function from above. The first part was to build an image that has a binary with a specific branch. Now, we&amp;rsquo;ll need to run the container and copy out the binary. In eris land, running docker containers == starting services. First, we new a service with name and image:&lt;/p&gt;
+// new the service for which the image has just been built
+doNew := definitions.NowDo()
+doNew.Name = serviceName
+doNew.Operations.Args  = []string{imageName}
+if err := services.NewService(doNew); err != nil {
+	return err
+}
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; the above is akin to running &lt;code&gt;eris services new serviceName imageName&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This function will drop a service definition file at &lt;code&gt;~/.eris/services/eris-binary-update-temporary-service.toml&lt;/code&gt; that contains, among other things, these lines:&lt;/p&gt;
+[service]
+name = &#34;eris-binary-update-temporary-service&#34;
+image = &#34;eris-binary-update:temporary-image&#34;
+data_container = true
+
+&lt;p&gt;In eris land, service definition files specify, essentially, how to &lt;code&gt;docker run&lt;/code&gt; a pre-existing image. Thus:&lt;/p&gt;
+doUpdate := definitions.NowDo()
+doUpdate.Operations.Args = []string{serviceName}
+if err := services.StartService(doUpdate); err != nil {
+	return nil
+}
+
+&lt;p&gt;which &lt;strong&gt;note&lt;/strong&gt; is akin to &lt;code&gt;eris services start serviceName&lt;/code&gt; and will start the defined service (i.e., &lt;code&gt;docker run&lt;/code&gt;). Note the line &lt;code&gt;data_container = true&lt;/code&gt;. This means that, along with starting the container, a mounted data container is also created. It is important for the next step, a convenience wrapper around &lt;code&gt;docker cp&lt;/code&gt;:&lt;/p&gt;
+// copy (export) the binary from serviceName&#39;s data container
+// into the scratch path to be used later
+doCp := definitions.NowDo()
+doCp.Name = serviceName
+// where the binary will go (temporarily)
+newPath := filepath.Join(common.ScratchPath, &#34;bin&#34;)
+
+// $INSTALL_BASE/eris as set by the base image
+doCp.Source = &#34;/usr/local/bin/eris&#34;
+doCp.Destination = newPath
+
+// to over-ride default path entry in data container
+doCp.Operations.SkipCheck = true
+
+// `docker cp` from container to host
+if err := data.ExportData(doCp); err != nil {
+	return err
+}
+
+&lt;p&gt;This function will take the binary we have already created in the container and copy it to the host at &lt;code&gt;~/.eris/scratch/bin/eris&lt;/code&gt;. It is roughly equivalent to &lt;code&gt;eris data export serviceName SRC DEST&lt;/code&gt; but with some caveats that have to do with &lt;code&gt;do.Operations.SkipCheck&lt;/code&gt;. Let&amp;rsquo;s not worry about that for now.&lt;/p&gt;
+
+&lt;p&gt;Finally, we remove all trace of the service:&lt;/p&gt;
+doRm := definitions.NowDo()
+doRm.Operations.Args = []string{serviceName}
+doRm.RmD = true		// remove data container
+doRm.Volumes = true	// remove volumes
+doRm.Force = true	// remove by force (no pesky warnings)
+doRm.File = true	// remove the service defintion file
+doRm.RmImage = true	// remove the temporary image
+
+if err := services.RmService(doRm); err != nil {
+	return err
+}
+
+&lt;p&gt;Last but not least, we&amp;rsquo;ll need to delete the old binary and replace it with the new one; the last function called in &lt;code&gt;BuildErisBinContainer()&lt;/code&gt; is:&lt;/p&gt;
+// takes a new binary and replaces the old one
+// prompts windows users to do manually 
+func ReplaceOldBinaryWithNew(oldPath, newPath string) error {
+
+	platform := runtime.GOOS
+	if platform != &#34;windows&#34; {
+		if err := os.Remove(oldPath); err != nil {
+			return err
+		}
+
+		if err := os.Rename(newPath, oldPath); err != nil {
+			return err
+		}
+
+		chmodArgs := []string{&#34;+x&#34;, oldPath}
+		stdOut, err := exec.Command(&#34;chmod&#34;, chmodArgs...).CombinedOutput()
+		if err != nil {
+			return fmt.Errorf(string(stdOut))
+		}
+
+	} else {
+		cpString := fmt.Sprintf(&#34;%s %s&#34;, newPath, oldPath)
+		log.Warn(`
+To complete the update on Windows, run:
+del /f ` + oldPath + `
+ren ` + cpString + `
+`)
+	}
+	return nil
+}
+
+&lt;p&gt;which does exactly what we want it to (except maybe on windows :(). Awesome! But wait. How do you test that &lt;code&gt;eris update&lt;/code&gt; works via a binary installation? After all we&amp;rsquo;ve been developing in go&amp;hellip;&lt;/p&gt;
+
+&lt;h3 id=&#34;docker-machine-wizardy&#34;&gt;Docker-Machine Wizardy&lt;/h3&gt;
+
+&lt;p&gt;It&amp;rsquo;s no secret; we love all things docker. Especially docker-machine though. Having only used it for a few things (&lt;a href=&#34;https://docs.erisindustries.com/tutorials//tool-specific/docker_machine/&#34; target=&#34;_blank&#34;&gt;see our docker-machine tutorial&lt;/a&gt;), I forgot about its handy &lt;code&gt;ssh/scp&lt;/code&gt; commands. Testing that a binary installation could update itself while developing in go proved somewhat incovenient and I had a convoluted process that was wearing my patience thin (nor did I want to be moving things around in &lt;code&gt;/usr/bin&lt;/code&gt; on my local machine).&lt;/p&gt;
+
+&lt;p&gt;The solution: &lt;code&gt;scp&lt;/code&gt; the binary from every &lt;code&gt;go install&lt;/code&gt; into &lt;code&gt;/usr/bin&lt;/code&gt; on a docker-machine. Assume the machine &lt;code&gt;dev-testing&lt;/code&gt; has already been created.&lt;/p&gt;
+
+&lt;p&gt;After writing some code and running &lt;code&gt;go install ./cmd/eris&lt;/code&gt; the go binary is located at &lt;code&gt;which eris&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;So:&lt;/p&gt;
+docker-machine scp $(which eris) dev-testing:/usr/bin
+docker-machine ssh dev-testing
+
+&lt;p&gt;where the first line will copy the binary just created and put it in the binary path on that docker-machine and the second line will drop you into the docker-machine.&lt;/p&gt;
+
+&lt;p&gt;At this point, you can type &lt;code&gt;eris&lt;/code&gt; and be off to the races. However, the goal here is rapid development of the &lt;code&gt;eris update&lt;/code&gt; command. Because the command will now detect a binary installation (rather than go), we can test it easily in a fresh environment without mucking about on a host machine that is using go for development. There was also no need to worry about installing docker and if you break anything on that machine it can easily be destroyed and a new one created.&lt;/p&gt;
+
+&lt;p&gt;After playing around with the command, seeing that it worked (or didn&amp;rsquo;t!) and checking its log outputs, it was simply a matter of (while still ssh&amp;rsquo;ed in dev-testing):&lt;/p&gt;
+rm /usr/bin/eris
+exit
+
+&lt;p&gt;And I&amp;rsquo;m back on the host ready for another round of writing code, compiling via go &amp;amp; testing it on the docker-machine.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Eris CLI Walkabout: Docker &amp; Execution</title>
+      <link>http://localhost/2015/09/05/docker-and-eris/</link>
+      <pubDate>Sat, 05 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/09/05/docker-and-eris/</guid>
+      <description>&lt;p&gt;{% include series.html %}&lt;/p&gt;
+
+&lt;p&gt;Docker is a bit of a strange cat for folks who are just getting up to speed. Many people when they&amp;rsquo;re getting started with Docker think of it in terms of a &amp;ldquo;Virtual Machine&amp;rdquo; as many are used to this idea of execution being constrained into a &amp;ldquo;virtualized&amp;rdquo; environment. The problem is that Docker is not a virtual machine. Indeed, it is a very different animal entirely than virtual machines.&lt;/p&gt;
+
+&lt;p&gt;Virtual machines are a mechanism to provide an isolated interface to a computer where the isolated interface runs an entire OS. That OS is booted from the start and then operates just as if it was the primary operating system on the machine although its &amp;ldquo;connection&amp;rdquo; to the hardware that exists on the computer is mediated by VirtualBox, VMWare, Xen or one of the other virtualization software suites.&lt;/p&gt;
+
+&lt;p&gt;The basic idea (and, for us, the appeal) of using &lt;strong&gt;both&lt;/strong&gt; virtual machines &lt;strong&gt;and&lt;/strong&gt; containers, is that programs are able to get started in a consistent manner. Because we are building &lt;code&gt;eris&lt;/code&gt; to be runnable in a wide variety of situations from large cloud deployments to laptops and many iterations in between, we want to be able to provide users with a harmonized experience across those operating systems. This is an old goal in programming, but because of the large differences across operating systems and host environments there are approximately an infinite amount of edge cases which raise challenges for creating software. Were we a company the size of Microsoft or Oracle then I could tell the platform team to just build natively for each major operating system and be done with it. But we have four engineers at Eris. Yet building a system which can consistently run across a wide variety of host environments &lt;strong&gt;is possible&lt;/strong&gt; because of what Docker and virtual machines offer us.&lt;/p&gt;
+
+&lt;p&gt;Docker is a &amp;ldquo;containerized&amp;rdquo; system where individual &lt;em&gt;processes&lt;/em&gt; are isolated and given direct (unmediated) access to the Kernel according to the terms which Docker allows when a container is started. There is a lot of detail required to fully understand the difference between a full virtual machine and containers (some answers available &lt;a href=&#34;http://stackoverflow.com/a/16048358&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://www.docker.com/whatisdocker&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;) but the basic way that I think about it is that containers are isolated processes running within a Linux operating system whereas virtual machines are isolated operating systems.&lt;/p&gt;
+
+&lt;p&gt;To summarize the links above, the major difference(s) between containers and virtual machines gets at what is actually &amp;ldquo;shared&amp;rdquo; between the host (or other containers) and the running executable inside the isolated environment. A virtual machine isolates the &lt;strong&gt;entire&lt;/strong&gt; operating system. This means that virtual machine images are routinely 1-10GB large and each of them is unique (in other words the host must hold 1-10GB X however many VMs it is operating). On the other hand, Docker containers are built as minimal viable operating processes and as such are usually smaller in size. Containers are able to share a significant amount of their file structure across containers on a single host. But more importantly than having the actual images smaller is &lt;em&gt;how the images are built&lt;/em&gt;. Docker builds its images in layers and when one does &lt;code&gt;docker pull&lt;/code&gt; or &lt;code&gt;docker push&lt;/code&gt; what Docker actually does behind the scenes is to reconcile each of these layers as individual layers. Docker also reuses parts of images across containers.&lt;/p&gt;
+
+&lt;p&gt;So what does this mean? At eris we build almost all of our core images as addendums to the &lt;code&gt;eris/base&lt;/code&gt; image. The &lt;code&gt;eris/base&lt;/code&gt; image is a jessie based image. It does no more than make sure that go is installed and have an eris user built. At the time of this writing, the &lt;code&gt;eris/base&lt;/code&gt; image weighs in at 519.1MB.&lt;/p&gt;
+
+&lt;p&gt;To build data containers we have an &lt;code&gt;eris/data&lt;/code&gt; image. This image is &lt;code&gt;FROM eris/base&lt;/code&gt; and then it establishes a volume which will be used to store data from an operational container. The &lt;code&gt;eris/data&lt;/code&gt; container is also 519.1MB. But when one downloads from Docker the &lt;code&gt;eris/base&lt;/code&gt; image AND the &lt;code&gt;eris/data&lt;/code&gt; image, one will not have to download 519.1MB X2 but rather 519.1MB X1. While it is not ideal that one would have to download 519.1MB at all, it is necessary to get going providing users with a harmonized, isolated environment for running distributed applications.&lt;/p&gt;
+
+&lt;p&gt;Compare this to the &lt;code&gt;eris/ipfs&lt;/code&gt; image which is 572.7MB big. It is also built &lt;code&gt;FROM eris/base&lt;/code&gt; so when a user downloads the &lt;code&gt;eris/ipfs&lt;/code&gt; container, but already had downloaded the &lt;code&gt;eris/base&lt;/code&gt; container, one will only have to download the extra layers which comprise only the ipfs executable and a small start script, or 52.6MB. Go binaries tend to be a bit bigger than other compiled languages because Go compiles the runtime into the binary. That said, 52.6MB is not that large for all the functionality one gets from the IPFS container.&lt;/p&gt;
+
+&lt;p&gt;Similarly, if one has downloaded the &lt;code&gt;eris/ipfs&lt;/code&gt; image and wants to start it, by default &lt;code&gt;eris&lt;/code&gt; will want also start a container based off of the &lt;code&gt;eris/data&lt;/code&gt; image, but since the &lt;code&gt;eris/data&lt;/code&gt; image and the &lt;code&gt;eris/ipfs&lt;/code&gt; image are both &lt;code&gt;FROM eris/base&lt;/code&gt; then there is not really anything (other than a simple establish the volume command) which docker will download when the &lt;code&gt;eris/ipfs&lt;/code&gt; and &lt;code&gt;eris/data&lt;/code&gt; images are used to start containers.&lt;/p&gt;
+
+&lt;p&gt;Right. So with that background in mind. How does Eris interact with Docker and how does Docker interact with the operating system. Let us first take a look at the overall operall design of &lt;code&gt;eris&lt;/code&gt; the tool:&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/eris-docker-overview.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;Eris connects to both a Host&amp;rsquo;s harddrive (usually in the &lt;code&gt;~/.eris&lt;/code&gt; directory is where we keep all of our files needed to run and interact with various distributed applications) as well as a Docker daemon. That Docker daemon then interacts with the (Linux only) operating system. To be a bit more precise what is happening looks like this:&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/eris-docker-kernel.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;Docker is really only able to interact with a Linux kernel. This means that for users who are on Windows or OSX they will need to have a Linux based virtual machine with Docker attached to it. We strongly recommend to folks that they use the &lt;a href=&#34;https://www.docker.com/toolbox&#34; target=&#34;_blank&#34;&gt;Docker Toolbox&lt;/a&gt; which will install everything needed to create Docker only virtual machines (which basically are just a Kernel and a Docker daemon and as such are very small and lightweight) on local or remote boxes. If users run Linux natively on the host running Docker in a virtual machine is fine as is running Docker on the host and connecting into the Daemon that way. Eris will connect to Docker either via an https connection if Docker is running in a virtual machine (whatever the host OS is) or over unix sockets if Docker is running on the Host.&lt;/p&gt;
+
+&lt;p&gt;Finally, when this is all put together it looks something like this:&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/eris-docker-details.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;Of course the Linux Kernel in the above image &lt;strong&gt;may&lt;/strong&gt; be running inside a very lightweight virtual machine &lt;strong&gt;or&lt;/strong&gt; directly on the host, depending on how one is set up.&lt;/p&gt;
+
+&lt;p&gt;The other big learning curve for new users to Docker is the differences between &lt;code&gt;images&lt;/code&gt; and &lt;code&gt;containers&lt;/code&gt;. This is a bit easier to communicate so I&amp;rsquo;ve left it for the end. Docker images are immutable layers of files which define how an isolate process should run. Containers, on the other hand, are the running process itself. Containers, once started, cannot be &amp;ldquo;changed&amp;rdquo; in the sense of what ports they are given access to, what their starting sequence command is supposed to be etc. They can be stopped, started, paused, unpaused, etc. But they cannot change too much of what they can do other than their state in terms of being &amp;ldquo;on&amp;rdquo; or &amp;ldquo;off&amp;rdquo;. For example, to open a new port from the host to a container, one would have to remove the container and make a new container with a new process. Although with &lt;code&gt;eris&lt;/code&gt; we are able to abstract most of this from the user via our service definition files paradigm along with &lt;code&gt;eris services update&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Hope this has helped you understand a bit of the vagaries and nuances of how to work with Docker. Please let us know if you have any questions either on our &lt;a href=&#34;https://support.erisindustries.com&#34; target=&#34;_blank&#34;&gt;forums&lt;/a&gt; or in the comments below.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Eris CLI Tool Walkabout: Services</title>
+      <link>http://localhost/2015/08/05/eris-services/</link>
+      <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/08/05/eris-services/</guid>
+      <description>
+
+&lt;p&gt;{% include series.html %}&lt;/p&gt;
+
+&lt;h2 id=&#34;services-as-a-service&#34;&gt;Services as a Service&lt;/h2&gt;
+
+&lt;p&gt;Services are what you, as a developer, stitch together to build an application. They are the glue that holds everything together, run in docker containers, and can be built on top of other services.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s say you want a blockchain to manage and automate an army of 3d printers. Your service, call it &lt;code&gt;three-dee-printing&lt;/code&gt;, might index CAD files as IPFS objects, each with a bitcoin address and price. A tendermint chain listening for (valid - i.e., paid in full) transactions to those bitcoin addresses could initiate printing by pulling the CAD image from IPFS and adding the print job to the queue. Users could upload any CAD file to your service to get a quote, after which it would be added to the index. There isn&amp;rsquo;t much left for you to do other than ensure your printers are running smoothly.&lt;/p&gt;
+
+&lt;p&gt;The service definition file for &lt;code&gt;three-dee-printing&lt;/code&gt; would have this extra line:&lt;/p&gt;
+[services]
+dependencies = [&#34;ipfs&#34;, &#34;btcd&#34;, &#34;chainName&#34;]
+
+&lt;p&gt;where &lt;code&gt;chainName&lt;/code&gt; is itself a chain running as a service. Yeah, it&amp;rsquo;s that easy. Of course, the bulk of the work goes into making contracts for your chain to manage the process.&lt;/p&gt;
+
+&lt;p&gt;Perhaps Alice operates an army of delivery drones in the warehouse next door. She could have a service that has &lt;code&gt;three-dee-printing&lt;/code&gt; as a dependency and listens for transactions where the user has requested and paid for drone delivery. From order to delivery, services can do it all.&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s a neat example. What&amp;rsquo;s your service?&lt;/p&gt;
+
+&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/eris-ltd/eris-cli/tree/develop#install-eris&#34; target=&#34;_blank&#34;&gt;Install Eris CLI&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Read the &lt;a href=&#34;https://github.com/eris-ltd/eris-cli/tree/develop#services&#34; target=&#34;_blank&#34;&gt;README&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Run&lt;/p&gt;
+eris init
+
+&lt;p&gt;to grab some default service definition files.&lt;/p&gt;
+
+&lt;p&gt;Find out which services are available&lt;/p&gt;
+eris services known
+
+&lt;p&gt;Launch a service&lt;/p&gt;
+eris services start [name]
+
+&lt;p&gt;Docker will do its thing and voila! Your service is running.&lt;/p&gt;
+
+&lt;p&gt;Confirm this is the case&lt;/p&gt;
+eris services ls
+
+&lt;p&gt;Run a Bitcoin node: &lt;code&gt;btcd&lt;/code&gt;, or an ethereum node &lt;code&gt;eth&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Learn more about IPFS as a service &lt;a href=&#34;https://eng.erisindustries.com/tutorials/2015/08/05/ipfs-as-a-service/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Starting a service can also spawn a data container if &lt;code&gt;data_container = true&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;See &lt;a href=&#34;https://github.com/eris-ltd/eris-cli/tree/develop#data&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; for more information about &lt;code&gt;eris data&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Protip: Running too many services at once might crash you operating system: kill a service&lt;/p&gt;
+eris services stop [name]
+
+&lt;p&gt;Add the &lt;code&gt;-x&lt;/code&gt; and &lt;code&gt;-r&lt;/code&gt; flags to get rid of the data containers and containers, respectively. When things really get bloated, run&lt;/p&gt;
+docker rm -v -f $(docker ps -a -q)
+
+&lt;p&gt;but be careful with this command.&lt;/p&gt;
+
+&lt;p&gt;Note to OSX users - save yourself a lot of headache by working on a remote box or use Kitematic.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Persisting Data with Docker Containers</title>
+      <link>http://localhost/2015/06/17/docker-persistence/</link>
+      <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/06/17/docker-persistence/</guid>
+      <description>&lt;p&gt;After days of wrestling with the concept of persisting data in Docker containers deep in the bowels of that
+now ubiquitous whale, I have been delivered to freedom, a slain blue whale slung over my shoulder, its cargo strewn across the cloud, and a new-found affection (dare I say &amp;ldquo;love&amp;rdquo;) for docker lodged within my fingers and my heart.&lt;/p&gt;
+
+&lt;p&gt;And so, in hopes that I may hasten your own progression from docker-dazed to docker-doer, here are my findings. Please enjoy responsibility.&lt;/p&gt;
+
+&lt;p&gt;The core problem: we have an ephemeral container that we can throw away, update, redeploy, but we want to persist some data.&lt;/p&gt;
+
+&lt;p&gt;The typical solution: mount a host volume like &lt;code&gt;docker run -d -v /home/user/data:/data myapp&lt;/code&gt;. Anything written to &lt;code&gt;/data&lt;/code&gt; in the container will persist in &lt;code&gt;/home/user/data&lt;/code&gt; on the host. Seems legit.&lt;/p&gt;
+
+&lt;p&gt;The problem: THE VOLUME GETS MOUNTED AS ROOT. This is an absolute nightmare if you are not running as root in the container (as you shouldn&amp;rsquo;t be).
+Some people try to solve the issue by setting the uid/gid on the host to match that inside the container. This is not only a nuisance, but destroys portability,
+which is practically the reason you are using docker in the first place. Clearly this is bad. If you&amp;rsquo;re not convinced, try it.&lt;/p&gt;
+
+&lt;p&gt;Note: when you use the &lt;code&gt;VOLUME&lt;/code&gt; command in a Dockerfile, the specified directory will persist somewhere in &lt;code&gt;/var/lib/docker/&lt;/code&gt;. This means you don&amp;rsquo;t have to use &lt;code&gt;-v&lt;/code&gt; to get persistence, but if you&amp;rsquo;re running lots of containers you&amp;rsquo;ll need to &lt;a href=&#34;https://github.com/chadoe/docker-cleanup-volumes&#34; target=&#34;_blank&#34;&gt;clean up after yourself&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now, since you&amp;rsquo;re working with docker, and since anything that&amp;rsquo;s anything in the docker world deserves a container, and since certainly you&amp;rsquo;re data is high up on the ladder of anythings that are anything, you ought to give your data its own container.&lt;/p&gt;
+
+&lt;p&gt;We call it a &amp;ldquo;data-only container&amp;rdquo;, and it&amp;rsquo;s actually the solution to the mounting problem: you create another instance of your container, whose sole purpose is to expose a volume (it doesn&amp;rsquo;t run any processes).
+Then instead of mounting a host volume with &lt;code&gt;-v&lt;/code&gt;,
+we use &lt;code&gt;--volumes-from&lt;/code&gt; to tell our application container to read from the data container.&lt;/p&gt;
+
+&lt;p&gt;You may object: &amp;ldquo;ok, but haven&amp;rsquo;t you just pushed the problem back a step further? Don&amp;rsquo;t we still need to mount the host into the data-only container?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;No. At least not if you do it right. Here&amp;rsquo;s how to do it right.&lt;/p&gt;
+
+&lt;p&gt;You have a dockerfile, it looks something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;FROM ubuntu
+
+ENV user myuser
+ENV data_root /data/myapp
+
+# set user right away for determinism
+RUN groupadd -r $user \
+  &amp;amp;&amp;amp; useradd -r -s /bin/false -g $user $user
+
+# create directory for persistence and give our user ownership
+RUN mkdir -p $data_root \
+  &amp;amp;&amp;amp; chown -R $user:$user $data_root
+
+...
+
+
+# persist data, set user
+VOLUME $data_root
+USER $user
+
+CMD [&amp;quot;./run.sh&amp;quot;]
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note we setup the group and user right away, make the volume directory, and give our user ownership.
+Then when we actually get to &lt;code&gt;VOLUME $data_root&lt;/code&gt;, the directory already has the right permissions. Remember anything written to this directory
+in the container will persist on the host somewhere in &lt;code&gt;/var/lib/docker/&lt;/code&gt; (use &lt;code&gt;docker inspect&lt;/code&gt; to find out).&lt;/p&gt;
+
+&lt;p&gt;Of course, you still need root to get at those files on the host system (docker runs as root, so this makes sense). But inside the container, the permissions are set correctly, because you dealt with them first thing in your Dockerfile (you clever developer you). Now any time you want to touch or see that data, you do it through the data-only container.&lt;/p&gt;
+
+&lt;p&gt;Ok. Let&amp;rsquo;s create some containers. We use the same image for both data-only and application container &lt;a href=&#34;http://container42.com/2014/11/18/data-only-container-madness&#34; target=&#34;_blank&#34;&gt;because it saves space&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker build -t myapp .
+docker run -i --name myapp_data myapp /bin/echo Data-only container for my app
+docker run -d --name myapp --volumes-from myapp_data myapp
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The first line builds the image (duh).
+The second creates the data-only container.
+Note the container doesn&amp;rsquo;t actually have to be running, it just has to exist.
+It will exit right away and that&amp;rsquo;s fine; you can see it in &lt;code&gt;docker ps -a&lt;/code&gt;.
+The data will persist so long as that container exists. So careful if/when you delete it.
+The final line runs our actual application, using the volume exposed by the data-only container.&lt;/p&gt;
+
+&lt;p&gt;So this is all pretty simple (and great). But it get&amp;rsquo;s better.&lt;/p&gt;
+
+&lt;p&gt;First, some classics:&lt;/p&gt;
+
+&lt;p&gt;Want to see what&amp;rsquo;s in your volume?&lt;/p&gt;
+docker run --volumes-from myapp_data myapp ls /data/myapp
+
+&lt;p&gt;Need to cat a file?&lt;/p&gt;
+docker run --volumes-from myapp_data myapp bash -c &#34;cat /data/myapp/file&#34;
+
+&lt;p&gt;Need to back it up?&lt;/p&gt;
+docker run -d --volumes-from myapp_data myapp_backup_service
+
+&lt;p&gt;Ok, you get the picture. But you&amp;rsquo;re still confused, because you still want to mount a volume;
+there&amp;rsquo;s some data on the host and you need it in your container.&lt;/p&gt;
+
+&lt;p&gt;Cool, so don&amp;rsquo;t mount a volume. Copy the data.&lt;/p&gt;
+
+&lt;p&gt;You can do this now using tar:&lt;/p&gt;
+tar cf - . | docker run --rm -i --volumes-from myapp_data myapp tar xvf - -C /data/myapp
+
+&lt;p&gt;Make sure you&amp;rsquo;re in the directory you want to copy (otherwise it doesn&amp;rsquo;t work?!).
+We compress the directory and pipe the compressed byte stream into the container command&amp;rsquo;s stdin,
+which extracts the contents and writes them to our volume in the container.
+And since we used &lt;code&gt;--volumes-from&lt;/code&gt;, it will persist in the data-only container.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s a little simpler if you&amp;rsquo;re only copying one file:&lt;/p&gt;
+cat file | docker run --rm --volumes-from myapp_data -i  myapp bash -c &#34;cat &gt; /data/myapp/file&#34;
+
+&lt;p&gt;You might think, &amp;ldquo;isn&amp;rsquo;t there a &lt;code&gt;docker cp&lt;/code&gt; command?&amp;ldquo;. There is, but it only works &lt;em&gt;from container to host&lt;/em&gt;, and not the other way. Don&amp;rsquo;t worry, &lt;a href=&#34;https://github.com/docker/docker/pull/13171&#34; target=&#34;_blank&#34;&gt;it will work both ways soon&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In the meantime, stick the above commands in shell scripts, or make aliases, or better yet help review &lt;a href=&#34;https://github.com/docker/docker/pull/13171&#34; target=&#34;_blank&#34;&gt;the pull request&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And check out the &lt;a href=&#34;https://github.com/tendermint/tendermint/tree/develop/DOCKER&#34; target=&#34;_blank&#34;&gt;tendermint repo&lt;/a&gt; for an example.&lt;/p&gt;
+
+&lt;p&gt;So there you have it folks. A simple formula for persistence in docker containers. Remember the secret: use more containers, copy data, never mount the host.&lt;/p&gt;
+
+&lt;p&gt;More information:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/23544282/what-is-the-best-way-to-manage-permissions-for-docker-shared-volumes&#34; target=&#34;_blank&#34;&gt;Docker Volume Permissions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/18496940/how-to-deal-with-persistent-storage-e-g-databases-in-docker&#34; target=&#34;_blank&#34;&gt;Docker Persistence&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@ramangupta/why-docker-data-containers-are-good-589b3c6c749e&#34; target=&#34;_blank&#34;&gt;Value of Docker Containers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://container42.com/2014/11/18/data-only-container-madness/&#34; target=&#34;_blank&#34;&gt;Data Only Containers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://container42.com/2013/12/16/persistent-volumes-with-docker-container-as-volume-pattern/&#34; target=&#34;_blank&#34;&gt;Patterns for Docker Volume Containers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

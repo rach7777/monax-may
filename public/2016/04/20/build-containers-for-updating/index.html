@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article">
+  <head>
+    
+    <meta charset='utf-8'>
+    <title>
+        
+            Monax Industries
+        
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="http://localhost/images/favicon.ico">
+
+    
+
+  
+
+
+
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://localhost" />
+  <meta property="og:title" content="Monax Industries" />
+
+
+  <meta property="og:description" content="Learn how to update you application using a docker build container, and test it with docker-machine" />
+
+
+
+
+
+    <meta name="twitter:card" content="summary" />
+
+<meta name="twitter:site" content="@eris_ltd" />
+<meta name="twitter:title" content="Monax Industries" />
+
+  <meta name="twitter:title" content="Monax Industries" />
+
+
+  <meta name="twitter:description" content="Learn how to update you application using a docker build container, and test it with docker-machine" />
+
+
+
+  <meta name="twitter:creator" content="@eris_ltd">
+
+
+
+<meta name="keywords" content="blockchain,smart,contracts,data,driven,relationship,bft" />
+
+  <meta itemprop="name" content="Monax Industries" />
+
+
+  <meta name="description" content="Learn how to update you application using a docker build container, and test it with docker-machine" />
+
+
+
+
+    
+    <link rel="stylesheet" type="text/css" href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' />
+    
+        <link rel="stylesheet" type="text/css" href='http://localhost/styles/eris.css' />
+    
+
+    
+    
+  </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid col-xs-12 col-sm-12 col-med-8 col-med-offset-2 col-lg-8 col-lg-offset-2">
+    <div class="navbar-header">
+      <a class="navbar-brand page-scroll" href="https://monax.industries">{% image ei-logo-long-mobile.png alt="Eris Industries" %}</a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Components <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://monax.industries/components/eriscli">eris:cli</a></li>
+            <li><a href="https://monax.industries/components/erisdb">eris:db</a></li>
+            <li><a href="https://monax.industries/components/epm">eris:pm</a></li>
+            <li><a href="https://monax.industries/components/erislegal">eris:legal</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="https://monax.industries/products/">Products <span class="caret"></span></a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://docs.erisindustries.com">Overview</a></li>
+            <li><a href="https://docs.erisindustries.com/tutorials/getting-started/">Get Started</a></li>
+            <li><a href="https://docs.erisindustries.com/explainers">Explainers</a></li>
+            <li><a href="https://docs.erisindustries.com/tutorials">Tutorials</a></li>
+            <li><a href="https://docs.erisindustries.com/documentation">Technical Details</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="https://monax.industries/products/">Products <span class="caret"></span></a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://monax.industries/about/team">Team</a></li>
+            <li><a href="https://monax.industries/about/jobs">Positions</a></li>
+            <li><a href="https://monax.industries/about/media">Media</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Connect <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://support.erisindustries.com" target="_blank"><i class="fa fa-ambulance"></i> Support Forums</a></li>
+            <li><a href="https://slack.eris.industries"><i class="fa fa-weixin"></i> Chat Support (Slack)</a></li>
+            <li><a href="mailto:contact@erisindustries.com"><i class="fa fa-envelope"></i> Business Contact Email</a></li>
+            <li class="divider"></li>
+            <li><a href="https://github.com/eris-ltd" target="_blank"><i class="fa fa-github-square"></i> Github</a></li>
+            <li class="divider"></li>
+            <li><a href="https://twitter.com/eris_ltd" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+            <li><a href="https://www.facebook.com/erisindustries" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid" id="eris-page">
+  
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 page-header">
+        <header><h1 class="title" role="title">Updating Your Application Using Docker Build Containers</h1></header>
+      </div>
+    </div>
+  
+
+  <div class="row">
+    <article id="main-content">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
+        
+
+<p>In the early days of <a href="https://github.com/eris-ltd/eris-cli/" target="_blank">eris-cli</a>, before we distributed binaries and users had to build from source, I wanted a simple way to update the tool either to the latest version or a specific branch. The result was <code>eris update</code> which would update eris, by default, to master. A flag lets users pick a branch (provided it&rsquo;s on GitHub) and <code>eris update --branch=develop</code>, for example. Under-the-hood, it&rsquo;s a series of shelled out git commands plus <code>go install ./cmd/eris</code>. This feature is useful for quickly confirming bug fixes or having users test out a new feature, before merging to <code>develop</code>. It only works for source installations and require git and go locally. What about binary installations you ask?</p>
+
+<p>Eventually we got our binaries sorted out but the <code>eris update</code> command still only worked for installations from source. Updating from a binary installation was implemented but the feature hadn&rsquo;t received much love; the latest release was pulled in as a tarball and unpacked, its binary replacing the old one. It was buggy, didn&rsquo;t always work, and the code was messy. Finally, a user who had used the <code>--branch</code> feature with a source installation also wanted it for updating binary installations.</p>
+
+<p>I went about <a href="https://github.com/eris-ltd/eris-cli/pull/617" target="_blank">refactoring this code</a> all while pondering how to update eris to a specific branch from a binary installation (i.e., without requiring git or go installed). Eventually, all the pieces I needed fell together. Here&rsquo;s how it happened with docker build containers:</p>
+
+<h3 id="building-an-image">Building an Image</h3>
+
+<p>The <a href="https://github.com/fsouza/go-dockerclient" target="_blank">go-dockerclient</a> shines here, as usual. All our docker wrappers are in <code>perform/perform.go</code></p>
+// DockerBuild will build an image with imageName
+// and a Dockerfile passed in as strings, respectively
+// Function is ~ to `docker build -t imageName .`
+// where a Dockerfile is in the `pwd`
+func DockerBuild(imageName, dockerfile string) error {
+	// adapted from: 
+	// https://godoc.org/github.com/fsouza/go-dockerclient#Client.BuildImage
+	t := time.Now()
+	inputbuf := bytes.NewBuffer(nil)
+	writer := os.Stdout
+	tr := tar.NewWriter(inputbuf)
+	sizeDockerfile := int64(len([]byte(dockerfile)))
+	tr.WriteHeader(&tar.Header{Name: "Dockerfile", Size: sizeDockerfile, ModTime: t, AccessTime: t, ChangeTime: t})
+	tr.Write([]byte(dockerfile))
+	tr.Close()
+
+	r, w := io.Pipe()
+	imgOpts := docker.BuildImageOptions{
+		Name: imageName,
+		RmTmpContainer: true,
+		InputStream: inputbuf,
+		OutputStream: w,
+		RawJSONStream: true,
+	}
+
+	ch := make(chan error, 1)
+	go func() {
+		defer w.Close()
+		defer close(ch)
+
+		if err := util.DockerClient.BuildImage(imgOpts); err != nil {
+			ch <- err
+		}
+	}()
+	jsonmessage.DisplayJSONMessagesStream(r, writer, os.Stdout.Fd(), term.IsTerminal(os.Stdout.Fd()), nil)
+	if err, ok := <-ch; ok {
+		// doesn't catch the build error; that's OK, it'll be displayed to user
+		// from json stream & the image will be checked by checkImageExists
+		return util.DockerError(err)
+	}
+
+	ok, err := checkImageExists(imageName)
+	if err != nil {
+		return err
+	}
+	if !ok {
+		return fmt.Errorf("Image does not exist. Something went wrong. Exiting")
+	}
+
+	return nil
+}
+
+<p>The above function, when called, will build a docker image and output the build process to stdout. Let&rsquo;s look at the build options:</p>
+imgOpts := docker.BuildImageOptions{
+	Name: imageName,
+	RmTmpContainer: true,
+	InputStream: inputbuf,
+	OutputStream: w,
+	RawJSONStream: true,
+}
+
+<p>A few things to note. We name our image, and we remove temporary build containers to clean up. The Dockerfile is written to a tarball <code>tr.Write([]byte(dockerfile))</code> and passed in as a buffer to <code>InputStream: inputbuf</code>. Together (with the help of a channel), the <code>OutputStream</code> and <code>rawJSONStream</code> pipe the logs to stdout while the build is running.</p>
+
+<p>After the build is complete, we check the presence of the named image. This is done because the build error is not caught (rather than, say, a docker client error).</p>
+
+<p>The code to check that the image exists is straight-forward:</p>
+func checkImageExists(imageName string) (bool, error) {
+	fail := false
+
+	opts := docker.ListImagesOptions{
+		Filter: imageName,
+	}
+
+	anImage, err := util.DockerClient.ListImages(opts)
+	if err != nil {
+		return fail, util.DockerError(err)
+	}
+
+	if len(anImage) != 1 {
+		return fail, nil
+	} else {
+		return true, nil
+	}
+
+	return fail, nil
+}
+
+<p>where <code>Filter : imageName</code> will list only the image specified, if it exists. If the build failed, the image won&rsquo;t exist and the array of images returned by <code>DockerClient.ListImages()</code> will be empty.</p>
+
+<p>We&rsquo;re now in a position to build an image given a name and Dockerfile, and check that it does indeed exist after the build.</p>
+
+<p>To see how to get there, we&rsquo;re going to start from the beginning of the <code>eris update</code> command (modified from <code>update/update.go</code> for simplicity).</p>
+func UpdateEris(do *definitions.Do) error {
+
+	whichEris, binPath, err := GoOrBinary()
+	if err != nil {
+		return err
+	}
+
+	if whichEris == "go" {
+		// ensure git and go are installed
+		hasGit, hasGo := CheckGitAndGo(true, true)
+		if !hasGit || !hasGo {
+			return fmt.Errorf("either git or go is not installed. both are required for non-binary update")
+		}
+
+		log.WithField("branch", do.Branch).Warn("Building eris binary via go with:")
+		if err := UpdateErisGo(do.Branch); err != nil {
+			return err
+		}
+	
+	} else if whichEris == "binary" {
+		if err := UpdateErisViaBinary(do.Branch, binPath); err != nil {
+			return err
+		}
+
+	} else {
+		return fmt.Errorf("The marmots could not figure out how eris was installed. Exiting.")
+	}
+}
+
+<p>The command comes in via the do struct (see <code>definitions/do.go</code>) and everything else can be ignored except:</p>
+if err := UpdateErisViaBinary(do.Branch, binPath); err != nil {
+	return err
+}
+
+<p>Here, the specified branch (default master) is passed in and the binary path was got above from <code>GoOrBinary()</code>. The primary purpose of <code>UpdateErisBinary(branch, binPath)</code> is to call <code>BuildErisContainer(branch, binPath)</code> so let&rsquo;s take a look at that latter function (from <code>update/binary.go</code>):</p>
+// branch to update in build container
+// binaryPath to replace with new binary
+func BuildErisBinContainer(branch, binaryPath string) error {
+
+	dockerfile := MakeDockerfile(branch)
+	imageName := "eris-binary-update:temporary-image"
+	serviceName := "eris-binary-update-temporary-service"
+	if err := perform.DockerBuild(imageName, dockerfile); err != nil {
+		return err
+	}
+
+	// new the service for which the image has just been built
+	doNew := definitions.NowDo()
+	doNew.Name = serviceName
+	doNew.Operations.Args  = []string{imageName}
+	if err := services.NewService(doNew); err != nil {
+		return err
+	}
+
+	// start the service up: binary has already been built
+	doUpdate := definitions.NowDo()
+	doUpdate.Operations.Args = []string{serviceName}
+	if err := services.StartService(doUpdate); err != nil {
+		return nil
+	}
+
+	// copy (export) the binary from serviceName's data container
+	// into the scratch path to be used later
+	doCp := definitions.NowDo()
+	doCp.Name = serviceName
+	// where the binary will go (temporarily)
+	newPath := filepath.Join(common.ScratchPath, "bin")
+
+	// $INSTALL_BASE/eris as set by the base image
+	doCp.Source = "/usr/local/bin/eris"
+	doCp.Destination = newPath
+	doCp.Operations.SkipCheck = true
+	
+	if err := data.ExportData(doCp); err != nil {
+		return err
+	}
+
+	// remove all trace of the service and its image
+	doRm := definitions.NowDo()
+	doRm.Operations.Args = []string{serviceName}
+	doRm.RmD = true		// remove data container
+	doRm.Volumes = true	// remove volumes
+	doRm.Force = true	// remove by force (no pesky warnings)
+	doRm.File = true	// remove the service defintion file
+	doRm.RmImage = true	// remove the temporary image
+
+	if err := services.RmService(doRm); err != nil {
+		return err
+	}
+
+	// binaryPath comes in from function
+	if err := ReplaceOldBinaryWithNew(binaryPath, filepath.Join(newPath, "eris")); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+<p>That&rsquo;s a hefty function. Let&rsquo;s break it down line by line:</p>
+dockerfile := MakeDockerfile(branch)
+imageName := "eris-binary-update:temporary-image"
+serviceName := "eris-binary-update-temporary-service"
+if err := perform.DockerBuild(imageName, dockerfile); err != nil {
+	return err
+}
+
+<p>For now, ignore <code>MakeDockerfile()</code> and assume the Dockerfile looks like:</p>
+FROM quay.io/eris/base
+	
+ENV NAME         eris-cli
+ENV REPO	 eris-ltd/$NAME
+ENV BRANCH       %s
+ENV CLONE_PATH   $GOPATH/src/github.com/$REPO
+ENV GO15VENDOREXPERIMENT 1
+
+RUN mkdir --parents $CLONE_PATH
+
+RUN git clone --quiet https://github.com/$REPO $CLONE_PATH
+RUN cd $CLONE_PATH && git checkout --quiet -b $BRANCH && git pull --quiet origin $BRANCH
+RUN cd $CLONE_PATH/cmd/eris && go build -o $INSTALL_BASE/eris
+
+CMD ["/bin/bash"]
+
+<p>whereby <code>%s</code> is the branch inserted in <code>MakeDockerfile()</code> and <code>$INSTALL_BASE</code> is <code>/usr/bin/local/</code> from the base image (<code>FROM quay.io/eris/base</code>). Now that we&rsquo;ve got a Dockerfile and an image name, it&rsquo;s time to build the image; <code>perform.DockerBuild()</code> will do its thing and output something along the lines of:</p>
+
+<pre><code>Step 1 : FROM quay.io/eris/base
+ ---&gt; 35b611e416c3
+Step 2 : ENV NAME eris-cli
+ ---&gt; Using cache
+ ---&gt; cc13c53892f6
+Step 3 : ENV REPO eris-ltd/$NAME
+ ---&gt; Using cache
+ ---&gt; 28fe09e32b27
+Step 4 : ENV BRANCH anyBranchOnGitHub
+ ---&gt; Running in 0ccb1aacf1b3
+ ---&gt; 0d62f6d0e21d
+Removing intermediate container 0ccb1aacf1b3
+Step 5 : ENV CLONE_PATH $GOPATH/src/github.com/$REPO
+ ---&gt; Running in 79ad3636a36e
+ ---&gt; dd9fd1685386
+Removing intermediate container 79ad3636a36e
+Step 6 : ENV GO15VENDOREXPERIMENT 1
+ ---&gt; Running in d725100d15cb
+ ---&gt; dd82330c2c6f
+Removing intermediate container d725100d15cb
+Step 7 : RUN mkdir --parents $CLONE_PATH
+ ---&gt; Running in 3bf3ea143b10
+ ---&gt; 1dd50a55e4fe
+Removing intermediate container 3bf3ea143b10
+Step 8 : RUN git clone --quiet https://github.com/$REPO $CLONE_PATH
+ ---&gt; Running in 202fe406a34b
+ ---&gt; 5f3746274db1
+Removing intermediate container 202fe406a34b
+Step 9 : RUN cd $CLONE_PATH &amp;&amp; git checkout --quiet -b $BRANCH &amp;&amp; git pull --quiet origin $BRANCH
+ ---&gt; Running in 26fc8d7a2042
+ ---&gt; 76c986901cf2
+Removing intermediate container 26fc8d7a2042
+Step 10 : RUN cd $CLONE_PATH/cmd/eris &amp;&amp; go build -o $INSTALL_BASE/eris
+ ---&gt; Running in b31f73abefc1
+ ---&gt; 83a86896aded
+Removing intermediate container b31f73abefc1
+Step 11 : CMD /bin/bash
+ ---&gt; Running in bc42bec216ad
+ ---&gt; ecb3c836abe1
+Removing intermediate container bc42bec216ad
+Successfully built ecb3c836abe1
+</code></pre>
+
+<p>which is the output one would expect from running <code>docker build -t imageName .</code> with that Dockerfile in <code>pwd</code>. Now if you stopped there and ran <code>docker images</code>, you&rsquo;d see the new image: <code>eris-binary-update:temporary-image</code> listed. Next, we&rsquo;ll run this image with a data container and export the binary that is already in it.</p>
+
+<h3 id="services-data-containers">Services &amp; Data Containers</h3>
+
+<p>The following part may seem unncessary complex to the seasoned docker user, however, I opted to use our existing plumbing for simplicity in our codebase.</p>
+
+<p>Recall the <code>BuildErisBinContainer()</code> function from above. The first part was to build an image that has a binary with a specific branch. Now, we&rsquo;ll need to run the container and copy out the binary. In eris land, running docker containers == starting services. First, we new a service with name and image:</p>
+// new the service for which the image has just been built
+doNew := definitions.NowDo()
+doNew.Name = serviceName
+doNew.Operations.Args  = []string{imageName}
+if err := services.NewService(doNew); err != nil {
+	return err
+}
+
+<p><strong>Note:</strong> the above is akin to running <code>eris services new serviceName imageName</code></p>
+
+<p>This function will drop a service definition file at <code>~/.eris/services/eris-binary-update-temporary-service.toml</code> that contains, among other things, these lines:</p>
+[service]
+name = "eris-binary-update-temporary-service"
+image = "eris-binary-update:temporary-image"
+data_container = true
+
+<p>In eris land, service definition files specify, essentially, how to <code>docker run</code> a pre-existing image. Thus:</p>
+doUpdate := definitions.NowDo()
+doUpdate.Operations.Args = []string{serviceName}
+if err := services.StartService(doUpdate); err != nil {
+	return nil
+}
+
+<p>which <strong>note</strong> is akin to <code>eris services start serviceName</code> and will start the defined service (i.e., <code>docker run</code>). Note the line <code>data_container = true</code>. This means that, along with starting the container, a mounted data container is also created. It is important for the next step, a convenience wrapper around <code>docker cp</code>:</p>
+// copy (export) the binary from serviceName's data container
+// into the scratch path to be used later
+doCp := definitions.NowDo()
+doCp.Name = serviceName
+// where the binary will go (temporarily)
+newPath := filepath.Join(common.ScratchPath, "bin")
+
+// $INSTALL_BASE/eris as set by the base image
+doCp.Source = "/usr/local/bin/eris"
+doCp.Destination = newPath
+
+// to over-ride default path entry in data container
+doCp.Operations.SkipCheck = true
+
+// `docker cp` from container to host
+if err := data.ExportData(doCp); err != nil {
+	return err
+}
+
+<p>This function will take the binary we have already created in the container and copy it to the host at <code>~/.eris/scratch/bin/eris</code>. It is roughly equivalent to <code>eris data export serviceName SRC DEST</code> but with some caveats that have to do with <code>do.Operations.SkipCheck</code>. Let&rsquo;s not worry about that for now.</p>
+
+<p>Finally, we remove all trace of the service:</p>
+doRm := definitions.NowDo()
+doRm.Operations.Args = []string{serviceName}
+doRm.RmD = true		// remove data container
+doRm.Volumes = true	// remove volumes
+doRm.Force = true	// remove by force (no pesky warnings)
+doRm.File = true	// remove the service defintion file
+doRm.RmImage = true	// remove the temporary image
+
+if err := services.RmService(doRm); err != nil {
+	return err
+}
+
+<p>Last but not least, we&rsquo;ll need to delete the old binary and replace it with the new one; the last function called in <code>BuildErisBinContainer()</code> is:</p>
+// takes a new binary and replaces the old one
+// prompts windows users to do manually 
+func ReplaceOldBinaryWithNew(oldPath, newPath string) error {
+
+	platform := runtime.GOOS
+	if platform != "windows" {
+		if err := os.Remove(oldPath); err != nil {
+			return err
+		}
+
+		if err := os.Rename(newPath, oldPath); err != nil {
+			return err
+		}
+
+		chmodArgs := []string{"+x", oldPath}
+		stdOut, err := exec.Command("chmod", chmodArgs...).CombinedOutput()
+		if err != nil {
+			return fmt.Errorf(string(stdOut))
+		}
+
+	} else {
+		cpString := fmt.Sprintf("%s %s", newPath, oldPath)
+		log.Warn(`
+To complete the update on Windows, run:
+del /f ` + oldPath + `
+ren ` + cpString + `
+`)
+	}
+	return nil
+}
+
+<p>which does exactly what we want it to (except maybe on windows :(). Awesome! But wait. How do you test that <code>eris update</code> works via a binary installation? After all we&rsquo;ve been developing in go&hellip;</p>
+
+<h3 id="docker-machine-wizardy">Docker-Machine Wizardy</h3>
+
+<p>It&rsquo;s no secret; we love all things docker. Especially docker-machine though. Having only used it for a few things (<a href="https://docs.erisindustries.com/tutorials//tool-specific/docker_machine/" target="_blank">see our docker-machine tutorial</a>), I forgot about its handy <code>ssh/scp</code> commands. Testing that a binary installation could update itself while developing in go proved somewhat incovenient and I had a convoluted process that was wearing my patience thin (nor did I want to be moving things around in <code>/usr/bin</code> on my local machine).</p>
+
+<p>The solution: <code>scp</code> the binary from every <code>go install</code> into <code>/usr/bin</code> on a docker-machine. Assume the machine <code>dev-testing</code> has already been created.</p>
+
+<p>After writing some code and running <code>go install ./cmd/eris</code> the go binary is located at <code>which eris</code>.</p>
+
+<p>So:</p>
+docker-machine scp $(which eris) dev-testing:/usr/bin
+docker-machine ssh dev-testing
+
+<p>where the first line will copy the binary just created and put it in the binary path on that docker-machine and the second line will drop you into the docker-machine.</p>
+
+<p>At this point, you can type <code>eris</code> and be off to the races. However, the goal here is rapid development of the <code>eris update</code> command. Because the command will now detect a binary installation (rather than go), we can test it easily in a fresh environment without mucking about on a host machine that is using go for development. There was also no need to worry about installing docker and if you break anything on that machine it can easily be destroyed and a new one created.</p>
+
+<p>After playing around with the command, seeing that it worked (or didn&rsquo;t!) and checking its log outputs, it was simply a matter of (while still ssh&rsquo;ed in dev-testing):</p>
+rm /usr/bin/eris
+exit
+
+<p>And I&rsquo;m back on the host ready for another round of writing code, compiling via go &amp; testing it on the docker-machine.</p>
+
+      </div>
+    </article>
+  </div>
+</div>
+
+</div>
+</div>
+<footer>
+  <p>Copyright &copy; 2014-2016 Eris Industries</p>
+</footer>
+</body>
+
+
+<div id="toc" class="well col-md-4 col-sm-6">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#building-an-image">Building an Image</a></li>
+<li><a href="#services-data-containers">Services &amp; Data Containers</a></li>
+<li><a href="#docker-machine-wizardy">Docker-Machine Wizardy</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+<script type="text/javascript">
+  var clicky_site_ids = clicky_site_ids || [];
+  clicky_site_ids.push( 100753928 );
+  (function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//static.clicky.com/js';
+    ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+  })();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.clicky.com/100753928ns.gif" /></p></noscript>
+</html>

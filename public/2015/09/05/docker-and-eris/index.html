@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article">
+  <head>
+    
+    <meta charset='utf-8'>
+    <title>
+        
+            Monax Industries
+        
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="http://localhost/images/favicon.ico">
+
+    
+
+  
+
+
+
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://localhost" />
+  <meta property="og:title" content="Monax Industries" />
+
+
+  <meta property="og:description" content="The new Eris 0.10 stack is build on a Docker backbone; this post is for those new to Docker and explains a bit more about how execution works in Dockerland." />
+
+
+  <meta property="og:image" content="http://localhost/images//docker.png%!(EXTRA string=2015)" />
+  <meta property="og:image" content="/images/ei-logo-sharing-square.png" />
+
+
+
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+<meta name="twitter:site" content="@eris_ltd" />
+<meta name="twitter:title" content="Monax Industries" />
+
+  <meta name="twitter:title" content="Monax Industries" />
+
+
+  <meta name="twitter:description" content="The new Eris 0.10 stack is build on a Docker backbone; this post is for those new to Docker and explains a bit more about how execution works in Dockerland." />
+
+
+  <meta name="twitter:image" content="http://localhost/images//docker.png%!(EXTRA string=2015)" />
+  <meta name="twitter:image" content="/images/ei-logo-sharing-square.png" />
+
+
+  <meta name="twitter:creator" content="@eris_ltd">
+
+
+
+<meta name="keywords" content="blockchain,smart,contracts,data,driven,relationship,bft" />
+
+  <meta itemprop="name" content="Monax Industries" />
+
+
+  <meta name="description" content="The new Eris 0.10 stack is build on a Docker backbone; this post is for those new to Docker and explains a bit more about how execution works in Dockerland." />
+
+
+  <meta itemprop="image" content="http://localhost/images//docker.png%!(EXTRA string=2015)" />
+  <meta itemprop="image" content="/images/ei-logo-sharing-square.png" />
+
+
+
+    
+    <link rel="stylesheet" type="text/css" href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' />
+    
+        <link rel="stylesheet" type="text/css" href='http://localhost/styles/eris.css' />
+    
+
+    
+    
+  </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid col-xs-12 col-sm-12 col-med-8 col-med-offset-2 col-lg-8 col-lg-offset-2">
+    <div class="navbar-header">
+      <a class="navbar-brand page-scroll" href="https://monax.industries">{% image ei-logo-long-mobile.png alt="Eris Industries" %}</a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Components <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://monax.industries/components/eriscli">eris:cli</a></li>
+            <li><a href="https://monax.industries/components/erisdb">eris:db</a></li>
+            <li><a href="https://monax.industries/components/epm">eris:pm</a></li>
+            <li><a href="https://monax.industries/components/erislegal">eris:legal</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="https://monax.industries/products/">Products <span class="caret"></span></a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://docs.erisindustries.com">Overview</a></li>
+            <li><a href="https://docs.erisindustries.com/tutorials/getting-started/">Get Started</a></li>
+            <li><a href="https://docs.erisindustries.com/explainers">Explainers</a></li>
+            <li><a href="https://docs.erisindustries.com/tutorials">Tutorials</a></li>
+            <li><a href="https://docs.erisindustries.com/documentation">Technical Details</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="https://monax.industries/products/">Products <span class="caret"></span></a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://monax.industries/about/team">Team</a></li>
+            <li><a href="https://monax.industries/about/jobs">Positions</a></li>
+            <li><a href="https://monax.industries/about/media">Media</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Connect <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://support.erisindustries.com" target="_blank"><i class="fa fa-ambulance"></i> Support Forums</a></li>
+            <li><a href="https://slack.eris.industries"><i class="fa fa-weixin"></i> Chat Support (Slack)</a></li>
+            <li><a href="mailto:contact@erisindustries.com"><i class="fa fa-envelope"></i> Business Contact Email</a></li>
+            <li class="divider"></li>
+            <li><a href="https://github.com/eris-ltd" target="_blank"><i class="fa fa-github-square"></i> Github</a></li>
+            <li class="divider"></li>
+            <li><a href="https://twitter.com/eris_ltd" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+            <li><a href="https://www.facebook.com/erisindustries" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid" id="eris-page">
+  
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 page-header">
+        <header><h1 class="title" role="title">Eris CLI Walkabout: Docker &amp; Execution</h1></header>
+      </div>
+    </div>
+  
+
+  <div class="row">
+    <article id="main-content">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
+        <p>{% include series.html %}</p>
+
+<p>Docker is a bit of a strange cat for folks who are just getting up to speed. Many people when they&rsquo;re getting started with Docker think of it in terms of a &ldquo;Virtual Machine&rdquo; as many are used to this idea of execution being constrained into a &ldquo;virtualized&rdquo; environment. The problem is that Docker is not a virtual machine. Indeed, it is a very different animal entirely than virtual machines.</p>
+
+<p>Virtual machines are a mechanism to provide an isolated interface to a computer where the isolated interface runs an entire OS. That OS is booted from the start and then operates just as if it was the primary operating system on the machine although its &ldquo;connection&rdquo; to the hardware that exists on the computer is mediated by VirtualBox, VMWare, Xen or one of the other virtualization software suites.</p>
+
+<p>The basic idea (and, for us, the appeal) of using <strong>both</strong> virtual machines <strong>and</strong> containers, is that programs are able to get started in a consistent manner. Because we are building <code>eris</code> to be runnable in a wide variety of situations from large cloud deployments to laptops and many iterations in between, we want to be able to provide users with a harmonized experience across those operating systems. This is an old goal in programming, but because of the large differences across operating systems and host environments there are approximately an infinite amount of edge cases which raise challenges for creating software. Were we a company the size of Microsoft or Oracle then I could tell the platform team to just build natively for each major operating system and be done with it. But we have four engineers at Eris. Yet building a system which can consistently run across a wide variety of host environments <strong>is possible</strong> because of what Docker and virtual machines offer us.</p>
+
+<p>Docker is a &ldquo;containerized&rdquo; system where individual <em>processes</em> are isolated and given direct (unmediated) access to the Kernel according to the terms which Docker allows when a container is started. There is a lot of detail required to fully understand the difference between a full virtual machine and containers (some answers available <a href="http://stackoverflow.com/a/16048358" target="_blank">here</a> and <a href="https://www.docker.com/whatisdocker" target="_blank">here</a>) but the basic way that I think about it is that containers are isolated processes running within a Linux operating system whereas virtual machines are isolated operating systems.</p>
+
+<p>To summarize the links above, the major difference(s) between containers and virtual machines gets at what is actually &ldquo;shared&rdquo; between the host (or other containers) and the running executable inside the isolated environment. A virtual machine isolates the <strong>entire</strong> operating system. This means that virtual machine images are routinely 1-10GB large and each of them is unique (in other words the host must hold 1-10GB X however many VMs it is operating). On the other hand, Docker containers are built as minimal viable operating processes and as such are usually smaller in size. Containers are able to share a significant amount of their file structure across containers on a single host. But more importantly than having the actual images smaller is <em>how the images are built</em>. Docker builds its images in layers and when one does <code>docker pull</code> or <code>docker push</code> what Docker actually does behind the scenes is to reconcile each of these layers as individual layers. Docker also reuses parts of images across containers.</p>
+
+<p>So what does this mean? At eris we build almost all of our core images as addendums to the <code>eris/base</code> image. The <code>eris/base</code> image is a jessie based image. It does no more than make sure that go is installed and have an eris user built. At the time of this writing, the <code>eris/base</code> image weighs in at 519.1MB.</p>
+
+<p>To build data containers we have an <code>eris/data</code> image. This image is <code>FROM eris/base</code> and then it establishes a volume which will be used to store data from an operational container. The <code>eris/data</code> container is also 519.1MB. But when one downloads from Docker the <code>eris/base</code> image AND the <code>eris/data</code> image, one will not have to download 519.1MB X2 but rather 519.1MB X1. While it is not ideal that one would have to download 519.1MB at all, it is necessary to get going providing users with a harmonized, isolated environment for running distributed applications.</p>
+
+<p>Compare this to the <code>eris/ipfs</code> image which is 572.7MB big. It is also built <code>FROM eris/base</code> so when a user downloads the <code>eris/ipfs</code> container, but already had downloaded the <code>eris/base</code> container, one will only have to download the extra layers which comprise only the ipfs executable and a small start script, or 52.6MB. Go binaries tend to be a bit bigger than other compiled languages because Go compiles the runtime into the binary. That said, 52.6MB is not that large for all the functionality one gets from the IPFS container.</p>
+
+<p>Similarly, if one has downloaded the <code>eris/ipfs</code> image and wants to start it, by default <code>eris</code> will want also start a container based off of the <code>eris/data</code> image, but since the <code>eris/data</code> image and the <code>eris/ipfs</code> image are both <code>FROM eris/base</code> then there is not really anything (other than a simple establish the volume command) which docker will download when the <code>eris/ipfs</code> and <code>eris/data</code> images are used to start containers.</p>
+
+<p>Right. So with that background in mind. How does Eris interact with Docker and how does Docker interact with the operating system. Let us first take a look at the overall operall design of <code>eris</code> the tool:</p>
+
+<p>{{ page.date | date: &ldquo;%Y&rdquo; | append:&lsquo;/eris-docker-overview.png&rsquo; | img }}</p>
+
+<p>Eris connects to both a Host&rsquo;s harddrive (usually in the <code>~/.eris</code> directory is where we keep all of our files needed to run and interact with various distributed applications) as well as a Docker daemon. That Docker daemon then interacts with the (Linux only) operating system. To be a bit more precise what is happening looks like this:</p>
+
+<p>{{ page.date | date: &ldquo;%Y&rdquo; | append:&lsquo;/eris-docker-kernel.png&rsquo; | img }}</p>
+
+<p>Docker is really only able to interact with a Linux kernel. This means that for users who are on Windows or OSX they will need to have a Linux based virtual machine with Docker attached to it. We strongly recommend to folks that they use the <a href="https://www.docker.com/toolbox" target="_blank">Docker Toolbox</a> which will install everything needed to create Docker only virtual machines (which basically are just a Kernel and a Docker daemon and as such are very small and lightweight) on local or remote boxes. If users run Linux natively on the host running Docker in a virtual machine is fine as is running Docker on the host and connecting into the Daemon that way. Eris will connect to Docker either via an https connection if Docker is running in a virtual machine (whatever the host OS is) or over unix sockets if Docker is running on the Host.</p>
+
+<p>Finally, when this is all put together it looks something like this:</p>
+
+<p>{{ page.date | date: &ldquo;%Y&rdquo; | append:&lsquo;/eris-docker-details.png&rsquo; | img }}</p>
+
+<p>Of course the Linux Kernel in the above image <strong>may</strong> be running inside a very lightweight virtual machine <strong>or</strong> directly on the host, depending on how one is set up.</p>
+
+<p>The other big learning curve for new users to Docker is the differences between <code>images</code> and <code>containers</code>. This is a bit easier to communicate so I&rsquo;ve left it for the end. Docker images are immutable layers of files which define how an isolate process should run. Containers, on the other hand, are the running process itself. Containers, once started, cannot be &ldquo;changed&rdquo; in the sense of what ports they are given access to, what their starting sequence command is supposed to be etc. They can be stopped, started, paused, unpaused, etc. But they cannot change too much of what they can do other than their state in terms of being &ldquo;on&rdquo; or &ldquo;off&rdquo;. For example, to open a new port from the host to a container, one would have to remove the container and make a new container with a new process. Although with <code>eris</code> we are able to abstract most of this from the user via our service definition files paradigm along with <code>eris services update</code>).</p>
+
+<p>Hope this has helped you understand a bit of the vagaries and nuances of how to work with Docker. Please let us know if you have any questions either on our <a href="https://support.erisindustries.com" target="_blank">forums</a> or in the comments below.</p>
+
+      </div>
+    </article>
+  </div>
+</div>
+
+</div>
+</div>
+<footer>
+  <p>Copyright &copy; 2014-2015 Eris Industries</p>
+</footer>
+</body>
+
+
+<div id="toc" class="well col-md-4 col-sm-6">
+
+</div>
+<script type="text/javascript">
+  var clicky_site_ids = clicky_site_ids || [];
+  clicky_site_ids.push( 100753928 );
+  (function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//static.clicky.com/js';
+    ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+  })();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.clicky.com/100753928ns.gif" /></p></noscript>
+</html>

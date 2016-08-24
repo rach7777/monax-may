@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>File Sharing on Monax Industries</title>
+    <link>http://localhost/tags/file-sharing/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Aug 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/tags/file-sharing/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Eris CLI Services Walkabout: IPFS</title>
+      <link>http://localhost/2015/08/05/ipfs-as-a-service/</link>
+      <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/08/05/ipfs-as-a-service/</guid>
+      <description>
+
+&lt;p&gt;{% include series.html %}&lt;/p&gt;
+
+&lt;p&gt;Part 1 explains &lt;code&gt;eris files&lt;/code&gt;; the command for working with IPFS.&lt;/p&gt;
+
+&lt;p&gt;Part 2 highlights additional IPFS integrations in the Eris stack.&lt;/p&gt;
+
+&lt;h2 id=&#34;part-1-eris-files&#34;&gt;Part 1: eris files&lt;/h2&gt;
+
+&lt;p&gt;Hello &lt;a href=&#34;https://ipfs.io/&#34; target=&#34;_blank&#34;&gt;IPFS&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;With IPFS &lt;a href=&#34;https://eng.erisindustries.com/tutorials/2015/08/05/eris-services/&#34; target=&#34;_blank&#34;&gt;running as a service&lt;/a&gt;, access IPFS&lt;/p&gt;
+eris files
+
+&lt;p&gt;Check out the webui at &lt;code&gt;http://yourhost:5001/webui&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Add a file to IPFS&lt;/p&gt;
+eris files put [fileName]
+
+&lt;p&gt;It&amp;rsquo;s hash is returned and you can now view its contents through either your nodes&amp;rsquo; webui or through the gateway.&lt;/p&gt;
+
+&lt;p&gt;Download a file from IPFS&lt;/p&gt;
+eris files get [fileHash] [fileName]
+
+&lt;p&gt;where &lt;code&gt;[fileName]&lt;/code&gt; is a new file name for the contents, to be saved in your working directory.&lt;/p&gt;
+
+&lt;p&gt;Want to keep the file around as an IPFS object? (otherwise it&amp;rsquo;ll garbage collect)&lt;/p&gt;
+eris files cache [hash]
+
+&lt;p&gt;All that caching you did, what files are hanging around?&lt;/p&gt;
+eris files cached
+
+&lt;p&gt;Look inside a recusively added directory&lt;/p&gt;
+eris files ls [objectHash]
+
+&lt;p&gt;There you have it; &lt;code&gt;eris files&lt;/code&gt; in five commands.&lt;/p&gt;
+
+&lt;h2 id=&#34;other-ipfs-integrations-in-the-eris-stack&#34;&gt;Other IPFS integrations in the Eris stack&lt;/h2&gt;
+
+&lt;h3 id=&#34;import-export-service-definition-files-from-to-ipfs&#34;&gt;import/export service definition files from/to IPFS&lt;/h3&gt;
+eris services import/export
+
+&lt;p&gt;This is useful for sharing custom service definition files.&lt;/p&gt;
+
+&lt;h3 id=&#34;mintdump&#34;&gt;mintdump&lt;/h3&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://github.com/eris-ltd/mint-client&#34; target=&#34;_blank&#34;&gt;mint client&lt;/a&gt; is used for managing &lt;a href=&#34;https://erisindustries.com/components/erisdb&#34; target=&#34;_blank&#34;&gt;eris:db&lt;/a&gt; chains.
+Dump the chain state to IPFS&lt;/p&gt;
+mintdump dump --ipfs
+
+&lt;p&gt;returns an IPFS hash on stdout&lt;/p&gt;
+
+&lt;p&gt;Restore a chain&lt;/p&gt;
+mintdump restore [new_chain_name] --ipfs=&#34;fileHash&#34;
+
+&lt;p&gt;where &lt;code&gt;fileHash&lt;/code&gt; is the output from &lt;code&gt;dump&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

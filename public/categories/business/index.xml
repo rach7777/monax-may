@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Business on Monax Industries</title>
+    <link>http://localhost/categories/business/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/categories/business/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>What is Eris? 2016 Edition</title>
+      <link>http://localhost/2016/04/03/wtf-is-eris/</link>
+      <pubDate>Sun, 03 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2016/04/03/wtf-is-eris/</guid>
+      <description>
+
+&lt;p&gt;Let&amp;rsquo;s get real. The collective data and process management space (or, as some call it, the &amp;ldquo;blockchain&amp;rdquo; space) (or, as others may call it, the &amp;ldquo;smart contract&amp;rdquo; space), is an emerging market.&lt;/p&gt;
+
+&lt;p&gt;This makes it an immense pleasure to be a part of. There is an undeniable groundswell of interest in this idea:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;that we can work to automate business processes at a network level;&lt;/li&gt;
+&lt;li&gt;that we can build applications that &lt;strong&gt;are&lt;/strong&gt; the network; and&lt;/li&gt;
+&lt;li&gt;that we can bring the management of our data driven relationships (with the world, with peers, with competitors, with customers, with suppliers, etc.) into a collective, efficient space.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This groundswell of interest is happening because the &lt;code&gt;idea&lt;/code&gt; is incredibly appealing. And it is appealing for some very clear groups for some very clear reasons.&lt;/p&gt;
+
+&lt;p&gt;But there is a fundamental equation which must be fulfilled here: &lt;code&gt;ideas != applications&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;As this market emerges, and matures, there will be changes in who is winning at any one time and there will be fluctuations around who solves which problem better. We have already started to see this take place within the enterprise applications of smart contract technology where relationships and reputations are currently being made.&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;In the next two years, an intrepid few will have their careers made. Or lost. Or modestly altered. &lt;a href=&#34;https://twitter.com/hashtag/smartcontracts?src=hash&#34;&gt;#smartcontracts&lt;/a&gt;&lt;/p&gt;&amp;mdash; Casey Kuhlman (@compleatang) &lt;a href=&#34;https://twitter.com/compleatang/status/675736072861696000&#34;&gt;December 12, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;What is probably very clear to most market participants, whether that market is called &amp;ldquo;blockchains&amp;rdquo; or &amp;ldquo;collective process management solutions&amp;rdquo; or &amp;ldquo;smart contracts&amp;rdquo; (a semantic argument better left to the twitter-rena and other such upstanding locales), is that there are currently &lt;strong&gt;a lot of ways&lt;/strong&gt; to skin any one cat.&lt;/p&gt;
+
+&lt;p&gt;If you are working on chains right now, and you are in the business of consuming upstream, you have a lot of choices.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re a developer in a bitcoin + webapp company what&amp;rsquo;s your mix of nodes between the competing options? (Well, not today because the Chinese miners &amp;ldquo;made a statement&amp;rdquo;, but you know, yesterday?) (Also, what&amp;rsquo;s it gonna be tomorrow when the winds of change blow in a different direction&amp;hellip; potentially?)&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re a developer in a blockchain startup who sees a gap in which you can provide value, but you need to quickly and easily refine your value proposition; do you have a mechanism for trying out a Ripple payments layer matched to a merkle tree thing anchored into bitcoin? (Well, not today because the investors really would like more of a focus on bitcoin&amp;rsquo;s blockchain?) (Wait, what&amp;rsquo;s gonna happen tomorrow when ether rises another 20%? :moon:)&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re a developer within a financial services company tasked with a now massive influx of high level interest. You know, folks came back from the conferences all &amp;ldquo;blockchain-ed&amp;rdquo;. If you&amp;rsquo;re in that human&amp;rsquo;s shoes how are you supposed to choose on what to build? There&amp;rsquo;s smart contract chains and tokenized chains? There&amp;rsquo;s hosted chains with APIs, and there&amp;rsquo;s managed chains, and there&amp;rsquo;s build my own chains? Reading blogs and whitepapers may be part of your job, but if you don&amp;rsquo;t just get to building the PoC you&amp;rsquo;ll spend your whole contract just evaluating options.&lt;/p&gt;
+
+&lt;p&gt;This complexity and competition leads directly to what eris &lt;strong&gt;actually is&lt;/strong&gt;, which in many cases is different than what folks &lt;strong&gt;think it is&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;eris-the-vision&#34;&gt;Eris: The Vision&lt;/h1&gt;
+
+&lt;p&gt;Given all the above we have three focusing streams for designing what we build at eris.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Belief 1&lt;/strong&gt;: We are entering a world of a plurality of chains, a plurality of smart contract networks, and a plurality of applications which leverage that ecosystem.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Belief 2&lt;/strong&gt;: Tooling matters.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Belief 3&lt;/strong&gt;: The value that our tech can provide is in automating business processes at a network level.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;All of the design and architecture and most of the reason that eris is built the way that it is, is a reflection of the above vision; which has been developed and refined during two years of building some of the most advanced cross-system distributed applications around.&lt;/p&gt;
+
+&lt;h1 id=&#34;eris-architecture-that-embraces-plurality&#34;&gt;Eris: Architecture That Embraces Plurality&lt;/h1&gt;
+
+&lt;p&gt;Before we talk about &lt;code&gt;eris&lt;/code&gt; let&amp;rsquo;s look at what a blockchain application &amp;ldquo;actually&amp;rdquo; is:&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/wtf-eris-services.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;It should be noted that for any single application some of the pieces may be &amp;ldquo;n/a&amp;rdquo; and the arrows connecting components may work drastically different than in the diagram. The diagram isn&amp;rsquo;t meant to cover the entire field of options, nor any one specific application. But for most of the applications, most of the time it will suffice.&lt;/p&gt;
+
+&lt;p&gt;Pretty much every blockchain application we know can fit somewhere in this framework (even if spread across hardware and does not use docker). Many bitcoin based web apps can easily fit in this paradigm (with the proviso at the top), most ethereum based apps can easily fit in this paradigm (with the proviso at the top), and most &lt;code&gt;eris:runtime&lt;/code&gt; based apps can easily fit in this paradigm (with the proviso at the top) (more on &lt;code&gt;eris:runtime&lt;/code&gt; in a moment).&lt;/p&gt;
+
+&lt;p&gt;The problem, though, becomes: how can the application&amp;rsquo;s users (not to mention developers and contributors interesting in helping) get started?&lt;/p&gt;
+
+&lt;p&gt;Within the community there have been basically three answers to this:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Run everything through traditional webapps and connect the chains as microservices;&lt;/li&gt;
+&lt;li&gt;Run all the things on a single blockchain (by which I mean the one I fancy most&amp;hellip; today); or&lt;/li&gt;
+&lt;li&gt;Use docker and some nice abstractions.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;To be clear, our marmot-y answer is clearly in the camp of Number 3. Why? Because when application builders build using a paradigm such as ours, they get to build their applications on a rich fabric of modules which work together to varying degrees based on a variety of factors.&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/wtf-eris-options.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;This architecture allows eris to embrace a wide variety of developer needs. But it really begins to shine when more &lt;code&gt;super users&lt;/code&gt; are given access to help validate and operate smart contract and blockchain backed applications. Thanks to innovative leaders like many of the &amp;ldquo;Ðapps&amp;rdquo; crowd, as well as others, such as OpenBazaar building on bitcoin&amp;rsquo;s backbone, more and more users will have access to run their blockchain applications wherever they want. This is exciting!&lt;/p&gt;
+
+&lt;p&gt;So, what is eris? It&amp;rsquo;s a blockchain application platform that makes it easy to build, test, and use your blockchain applications.&lt;/p&gt;
+
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+
+&lt;p&gt;While exciting, it also places a fairly large load on a super user to compile, install, configure, etc. all the components and pieces that their applications use. Let&amp;rsquo;s just assume a given &lt;code&gt;super user&lt;/code&gt; wants to run OpenBazaar and a single Geth-IPFS Ðapp. What would be necessary to go from zero to &amp;ldquo;running&amp;rdquo;.&lt;/p&gt;
+
+&lt;h3 id=&#34;openbazaar&#34;&gt;OpenBazaar&lt;/h3&gt;
+
+&lt;p&gt;At the time of writing, their installation instructions are pretty clean! (Well done!)&lt;/p&gt;
+
+&lt;p&gt;Client:&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/wtf-openbazaar1.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;Server:&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/wtf-openbazaar2.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;Not bad. Wanna get started with openbazaar on eris?&lt;/p&gt;
+eris services start openbazaar
+
+&lt;h3 id=&#34;geth-ipfs-ðapp&#34;&gt;Geth-IPFS Ðapp&lt;/h3&gt;
+
+&lt;p&gt;At the time of writing, both of these are easily installed via binaries! (Well done!)&lt;/p&gt;
+
+&lt;p&gt;IPFS:&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/wtf-ipfs.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;Geth:&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/wtf-geth.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;Super clean install paths for both. Obviously, both being go based components, users can be easily build them from scratch.&lt;/p&gt;
+
+&lt;p&gt;Wanna get started with geth-ipfs on eris?&lt;/p&gt;
+eris services start ipfs geth
+
+&lt;p&gt;Multiply that effort across the range of possible components which the emerging plurality of chains, smart contract networks, file systems, and applications will leverage and it should be clear why eris is architected in the way that we are.&lt;/p&gt;
+
+&lt;p&gt;When we say that &lt;code&gt;eris&lt;/code&gt; is a blockchain application platform, this is what we mean. We&amp;rsquo;re making the thing that you can use to make it easy to build, test, and run your blockchain things. No matter the blockchain.&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/wtf-eris-apps.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;To see a full list of the services eris is capable of running out of the box &lt;a href=&#34;https://github.com/eris-ltd/eris-services&#34; target=&#34;_blank&#34;&gt;please see our repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Because &lt;code&gt;eris&lt;/code&gt; leverages docker under the hood, &lt;code&gt;eris&lt;/code&gt; can run (nearly) anywhere via direct install, or even just speaking to a remote docker engine!&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/wtf-eris-remotes.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;h1 id=&#34;eris-runtime&#34;&gt;eris:runtime&lt;/h1&gt;
+
+&lt;p&gt;We have long been leaders in the permissioned smart contract network space. From our early explorations with &lt;code&gt;thelonious&lt;/code&gt; to our latter explorations which led to &lt;code&gt;eris:db&lt;/code&gt; (as well as significant contributions to the previous major version of the tendermint code base), we have understood that automating data driven relationships on a &amp;ldquo;less than global&amp;rdquo; basis was going to be crucial for the success of this technology within industry. &lt;code&gt;eris:runtime&lt;/code&gt; is the next evolution of our efforts.&lt;/p&gt;
+
+&lt;p&gt;In the above framework pictures, in particular this one:&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/wtf-eris-options.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;We reference a component of eris which is currently not in our repositories (&lt;code&gt;eris-rt-XXX&lt;/code&gt; in the above). The components in the above image that are colored green are areas where eris is intending to keep building. This is not a &lt;a href=&#34;https://eng.erisindustries.com/blockchains/2015/12/31/on-blockchain-clients-in-2016/&#34; target=&#34;_blank&#34;&gt;big departure&lt;/a&gt; for us. Indeed, it is the &lt;a href=&#34;https://blog.erisindustries.com/philosophy/2016/03/02/eris-and-tendermint/&#34; target=&#34;_blank&#34;&gt;continuation of a path&lt;/a&gt; we&amp;rsquo;ve been heading for a while.&lt;/p&gt;
+
+&lt;p&gt;So, what exactly, is &lt;code&gt;eris:runtime&lt;/code&gt;? Over the next few release cycles (leading up to our 1.0 release) we will be refactoring our current efforts to fit more cleanly into the modular components outlined here:&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/wtf-eris-rt.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;eris:runtime&lt;/code&gt; will ensure access for blockchain application builders to the best permissionable smart contract network environment in a more modular and extensible framework. &lt;code&gt;eris:runtime&lt;/code&gt; will include all of the relevant default components, wisely connected with sane defaults, besides keys and files, necessary to build a wide variety of blockchain and smart contract backed applications.&lt;/p&gt;
+
+&lt;p&gt;The runtime won&amp;rsquo;t, obviously, be for every blockchain and smart contract backed application, but after building industrial strength blockchain and smart contract backed applications for wee while now, it is what we need, the majority of the time, to continue pushing the envelope as to what this tech can do and can be used for.&lt;/p&gt;
+
+&lt;h2 id=&#34;eris-runtime-contracts&#34;&gt;eris:runtime:contracts&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s start at the top of the diagram. With the smart contracts &amp;ldquo;layer&amp;rdquo;. What does that mean? Well, to us at Eris it means:&lt;/p&gt;
+cryptographically verifiable computation over cryptographically verifiable data
+
+&lt;p&gt;While the term folks use is &amp;ldquo;smart contracts&amp;rdquo;, what we are really talking about is &amp;ldquo;deterministic computation&amp;rdquo; (or &amp;ldquo;verifiable computation&amp;rdquo;). No matter what it is called, it is what is necessary to highly automate business processes &lt;strong&gt;at the network level&lt;/strong&gt; (meaning the entire network performs the computation). The computation must be verified by many actors on the network who come to consensus as to the &amp;ldquo;correct&amp;rdquo; answer should there be any disagreement (or acts of god, or random errors, or malicious actors). In addition, nodes who join a network after its inception will be required to perform an audit function on the system as they &amp;ldquo;catch up&amp;rdquo; with the rest of the network; this means they have to fully verify the computation even much later in time. Which means the computation needs to be highly deterministic.&lt;/p&gt;
+
+&lt;p&gt;This component will (very soon) begin its life as Ethereum&amp;rsquo;s VM and the applications-relevant permissions of eris:db&amp;rsquo;s current permission layer. (It&amp;rsquo;s more or less equivalent in functionality to the &amp;ldquo;top half&amp;rdquo; of the current Tendermint chain client we use, only heavily updated) &lt;code&gt;eris:db&lt;/code&gt; for the record will slowly be phased out as a term we use at eris. But the ideas of &lt;code&gt;eris:db&lt;/code&gt;, like the ideas of &lt;code&gt;thelonious&lt;/code&gt; before it, will be carried forward, extended and improved.&lt;/p&gt;
+
+&lt;p&gt;By default &lt;code&gt;eris:runtime:contracts&lt;/code&gt; will talk TMSP to a Tendermint Engine, which is in the midst of its own refactor to become a more &amp;ldquo;pure&amp;rdquo; consensus engine (It&amp;rsquo;s more or less equivalent in functionality to the &amp;ldquo;bottom half&amp;rdquo; of the current Tendermint chain client we use, only heavily updated). &lt;code&gt;eris:runtime:contracts&lt;/code&gt; is scheduled to be released in our 0.12.0 release.&lt;/p&gt;
+
+&lt;p&gt;We will, over our 1.x release cycles, as more options to perform highly deterministic and verifiable computation come on line, be seeking to integrate additional options as parameters for the runtime (of course they can always be ran as eris services :-) ). But for now Ethereum&amp;rsquo;s VM is, in our experience, still the best highly deterministic interpreter on the market.&lt;/p&gt;
+
+&lt;p&gt;We will also, over our 1.x release cycles, as more options in the transactional and consensus engine compontent come on line, be seeking to integrate additional options as parameters for the runtime (of course they can always be ran as eris services :-) ). But for now Tendermint is, in our experience, still the most mature permissionable proof of stake consensus engine on the market.&lt;/p&gt;
+
+&lt;h2 id=&#34;eris-runtime-workers&#34;&gt;eris:runtime:workers&lt;/h2&gt;
+
+&lt;p&gt;In addition to needing fully verifiable computation, many applications which are automating business processes at a network level need to perform what is, fundamentally:&lt;/p&gt;
+repeatable computation over unverifiable data
+
+&lt;p&gt;In other words, this component of an application needs to be able to do &amp;ldquo;repeatable computation&amp;rdquo;. What am I talking about here? One easy example is a process that every hour makes an API call to a price feed, signs it, and send it to a chain, but there are tons of computation that need to happen in response to various events (which may be clock based events, triggers from the transactional engine, or triggers from the verifiable computation component).&lt;/p&gt;
+
+&lt;p&gt;Although I don&amp;rsquo;t like the term, due to its overuse, workers are meant to provide an easy &lt;code&gt;oracle&lt;/code&gt; framework to application makers. They are repeatable, but effectively subjective scripts which are needed to do things for your application.&lt;/p&gt;
+
+&lt;p&gt;The scripts ran in this portion of the runtime are unverifiable computation because they are not highly deterministic. To that end, they are not, as we would define them, smart contracts, but they are repeatable computation. Meaning that others can also do whatever it is that is to be done (if they have access to the scripts necessary, which may or may not be gated depending on what the application designers needed). Only, in the context of &lt;code&gt;eris:runtime:workers&lt;/code&gt;, the computation that needs to be done would then be signed by a different key (depending on the node and application design) before sending the information back to the chain.&lt;/p&gt;
+
+&lt;p&gt;With the &lt;code&gt;eris:runtime:workers&lt;/code&gt; node-based framework these computations will be quite easy. This component is scheduled to be released in our 1.0.0 release.&lt;/p&gt;
+
+&lt;h2 id=&#34;eris-runtime-gateway&#34;&gt;eris:runtime:gateway&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;eris:db&lt;/code&gt; currently has two RPC ports. One of which talks to our low level, go-based tooling, and the other talks to our javascript tooling. These two RPCs actually are built to operate differently, but there is some overlap. The current code which is most of &lt;code&gt;eris:db&lt;/code&gt;&amp;rsquo;s repository will be reconciled into a component we call &lt;code&gt;eris:runtime:gateway&lt;/code&gt;. It will provide coherent, managed routing of messages amongst the various other components of the runtime while also acting as a simple way to bring reliency and coherence to clients which need to interface with the application.&lt;/p&gt;
+
+&lt;p&gt;By maintaining a gateway which is gauranteed to interface cleanly with eris built client libraries, we can, for example, allow application designers to switch their consensus engine or verifiable computation components over time with minimal impact. Of course, it&amp;rsquo;s all open source so application builder&amp;rsquo;s aren&amp;rsquo;t locked into anything.&lt;/p&gt;
+
+&lt;p&gt;This component is scheduled to be released during our 0.12.x release series.&lt;/p&gt;
+
+&lt;h2 id=&#34;upgrading-to-eris-runtime&#34;&gt;Upgrading to eris:runtime&lt;/h2&gt;
+
+&lt;p&gt;The fundamental components of the &lt;code&gt;eris:runtime&lt;/code&gt; already exist in &lt;code&gt;eris:db&lt;/code&gt; in either the repo itself or in its vendored dependencies, so the upgrade path for current users of &lt;code&gt;eris chains&lt;/code&gt; should be (mostly) seamless. Although, this is pre 1.0 software so we cannot promise that there will not be any breaking changes, we will have upgrade functionality for &lt;code&gt;eris chains&lt;/code&gt; baked into &lt;code&gt;eris&lt;/code&gt; in our 0.12.0 release when the most invasive change (breaking apart the &amp;ldquo;application&amp;rdquo; and &amp;ldquo;consensus&amp;rdquo; components and connecting them over the tendermint socket protocol: TMSP) happens. This upgrade functionality will provide capability to save and import your state as you upgrade a smart contract network.&lt;/p&gt;
+
+&lt;p&gt;The remainder of the changes we will be making should be mostly transparent to users. As always, this is open source. Please feel free to pitch in!&lt;/p&gt;
+
+&lt;h1 id=&#34;eris-tooling-that-matters&#34;&gt;Eris: Tooling That Matters&lt;/h1&gt;
+
+&lt;p&gt;In a world of a plurality of chains and smart contract networks and applications, more tooling is required for builders than simply application management tooling.&lt;/p&gt;
+
+&lt;p&gt;You still need tooling capable of handling smart contract bundles if you&amp;rsquo;re going to be working with smart contract systems. Since we started this journey, &lt;a href=&#34;http://coda.caseykuhlman.com/entries/2014/introducing-ethereum-package-manager.html&#34; target=&#34;_blank&#34;&gt;now more than two years ago&lt;/a&gt;, our interest in legal engineering has forced us to build tooling to handle large systems of smart contracts, or &lt;strong&gt;Verifiable Computation Tooling&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/wtf-eris-pkgs.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;You also need tooling which has been built from the ground up to provide your developers and users with chain lifecycle management tooling.&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/wtf-eris-chains.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;We have a range of tooling that still needs to be built, but in combination with other ecosystems, the range of tools available to application makers is increasing by the day. Which, to be clear, is a wonderful thing. If you are a tool builder looking to interface with the growing eris ecosystem give us a shout on Twitter!&lt;/p&gt;
+
+&lt;h1 id=&#34;eris-build-and-run-networked-based-business-process-automation-applications&#34;&gt;Eris: Build and Run Networked-Based Business Process Automation Applications&lt;/h1&gt;
+
+&lt;p&gt;The other side of &lt;code&gt;eris&lt;/code&gt; is our legal engineering side. That bit &lt;a href=&#34;https://erisindustries.com/products/&#34; target=&#34;_blank&#34;&gt;we don&amp;rsquo;t give away&lt;/a&gt;. Oh, and to be clear, you don&amp;rsquo;t have to use our legal engineering talent &lt;a href=&#34;https://docs.erisindustries.com/tutorials/solidity/&#34; target=&#34;_blank&#34;&gt;to achieve your goals&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;eris-the-bottom-line&#34;&gt;Eris: The Bottom Line&lt;/h1&gt;
+
+&lt;p&gt;Move faster. Move &lt;em&gt;with&lt;/em&gt; the flow of distributed computing. #profit&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

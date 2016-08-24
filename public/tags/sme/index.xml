@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sme on Monax Industries</title>
+    <link>http://localhost/tags/sme/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Mar 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/tags/sme/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Why The &#39;Crypto Will Save Africa&#39; Line Irks Me</title>
+      <link>http://localhost/2015/03/17/btc-and-smbs/</link>
+      <pubDate>Tue, 17 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/03/17/btc-and-smbs/</guid>
+      <description>
+
+&lt;h3 id=&#34;bitcoin-and-emerging-markets&#34;&gt;Bitcoin and Emerging Markets&lt;/h3&gt;
+
+&lt;p&gt;If you&amp;rsquo;ve been around the cryptocurrency space for a hot minute, you&amp;rsquo;ll have heard it. Bitcoin is the solution to the problem of the unbanked.&lt;/p&gt;
+
+&lt;p&gt;I was speaking with someone the other day and I let slip my skepticism about this meme, mantra, selling point, whatever it is and the person asked why. I later posted something along similar lines in our slack and others asked me why was I irked by this mantra. So I decided to log my thoughts and organize them in a (hopefully) more coherent fashion.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Preamble&lt;/em&gt;: To be fair, there&amp;rsquo;s nothing wrong with wanting to help; there&amp;rsquo;s nothing wrong with giving a damn; and I don&amp;rsquo;t &lt;em&gt;dislike&lt;/em&gt; the line.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Do I think that Bitcoin can assist with the unbanked problem?&lt;/em&gt; I see potential here. But also remain skeptical, a skepticism borne of my own experiences and my own perception of the world.&lt;/p&gt;
+
+&lt;h3 id=&#34;hawala-networks-some-background&#34;&gt;Hawala Networks: Some Background&lt;/h3&gt;
+
+&lt;p&gt;Hawala networks have been established over years and (sometimes) decades by leveraging established, and often complex, filial, tribal, class, and other identity mechanisms. These mechanisms were what allowed the early Hawala operators to gain sufficient trust of a sufficient constituency of displaced folks to make it worth their while to take the risk of flying bundles of cash between places (often where security was not a foregone conclusion). As the market for Hawala services has consolidated, these old ties, forged over years of movement and friendships and kinships still exist; and in many places they thrive. Hawala agents in locations where diaspora live are often quasi-community centers which assist in maintaining the vibrancy of many of these relationships. These ties provide a value add to the overall service which the Hawala network provides to its users.&lt;/p&gt;
+
+&lt;p&gt;Hawala networks are, indeed, relatively costly. However, when one looks at the (purely external) costs which Hawala networks must bear, a not insignificant portion of that cost is in compliance costs. These costs will have to be borne by the network no matter the database which logs transmissions of money from a remitter to a remittee. I am doubtful that using blockchain technology will be able to sufficiently address these compliance costs in any meaningful way which will satisfy regulators. One may argue that &amp;ldquo;the regulators are wrong and just need to get with the program&amp;rdquo;, but that is a cop out argument which neither embraces how legal norms develop nor is particularly helpful to the process of legal progress.&lt;/p&gt;
+
+&lt;p&gt;Other costs are due to business process inefficiencies within some networks. Perhaps these costs could be (modestly) reduced by use of blockchain technology. Hawala can be an extraordinarily competitive market and the incentives to reduce costs for the users of the networked service via improved business process efficiencies are present where competition amongst Hawala networks exists. It is also true of course that in other places monopolies or quasi-monopolies have developed and the incentives are less present.&lt;/p&gt;
+
+&lt;p&gt;The World Bank has highlighted the cost structure of remittance and hawala companies, as have others within the professional development community, saying that remittance companies extract an unfair amount of rent out of the network. That critique of Hawala business practices may or may not hold water; but whether or not bitcoin is the solution to this Hawala cost problem is an entirely different matter. An even more remote line of reasoning pits bitcoin not only as the solution to Hawala costs but also as the solution to the (more generalized and harder to address) unbanked problem.&lt;/p&gt;
+
+&lt;p&gt;Again, bitcoin and cryptocurrency may have a positive role to play within this system, but instead of simply assuming that because the technology enables certain behaviours that those behaviours will actualize are different questions. The real questions which the &lt;code&gt;bitcoin_will_solve_this&lt;/code&gt; crowd needs to be asking are:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;what will be the tipping point sociologically, legally, and financially (all three of which probably need to be satisfied) in order to drive mass adoption of bitcoin in the developing world;&lt;/li&gt;
+&lt;li&gt;why would mass adoption of bitcoin in the developing world be a good thing (for users; for bitcoin); and&lt;/li&gt;
+&lt;li&gt;what can be done &lt;strong&gt;now&lt;/strong&gt; to positively contribute toward laying the foundations that iterate toward that tipping point.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;the-unbanked-problem-look-closer&#34;&gt;The Unbanked Problem: Look Closer&lt;/h3&gt;
+
+&lt;p&gt;The unbanked problem? It&amp;rsquo;s a problem indeed. But it is a big, complex problem which will only find a solution via a &lt;a href=&#34;http://oxfamblogs.org/fp2p/what-questions-help-us-understand-how-change-happens/&#34; target=&#34;_blank&#34;&gt;harmonized effort&lt;/a&gt; across numerous verticals and horizontals &amp;ndash; of which technology (meaning, in this context, fintech generally, and bitcoin more specifically) are only one piece. Holistic societal change happens, but most often requires significant coordination and synergy across numerous sectors of society, business, and government.&lt;/p&gt;
+
+&lt;p&gt;One phenomenon which constrains adoption of any technical solution to problems of poverty is that poorer folks have different risk profiles and appetites for change than many people first thought. While the area of risk profiles of the poor is an ongoing (not particularly new) research, folks very often mis-assume that just because technical solutions to problems exist that these will be easily mainstreamed in developing countries.&lt;/p&gt;
+
+&lt;p&gt;This is rarely the case. Even mobile money, one of the most natural fits and impactful technologies to address unbanked issues &amp;ndash; took real effort and patience and iteration to get off the ground. Other technologies which have been airdropped in from afar have received even less adoption. The professional development community has an acryonym for these types of campaigns which seek to &amp;ldquo;help&amp;rdquo; but fail to understand what the real problems are and/or do not engage with affected communities to find workable solutions: #SWEDOW, for &lt;code&gt;S&lt;/code&gt;tuff &lt;code&gt;WE&lt;/code&gt; &lt;code&gt;DO&lt;/code&gt;n&amp;rsquo;t &lt;code&gt;W&lt;/code&gt;ant.&lt;/p&gt;
+
+&lt;p&gt;As a community, I would posit that the blockchain and smart contract technology sector is at the very early stages of actual work, rather than rhetoric. I am pleased to have been invited to participate in a working group convened by the &lt;a href=&#34;http://www.cgdev.org&#34; target=&#34;_blank&#34;&gt;Center for Global Development&lt;/a&gt; who is looking into a small piece of this problem (namely, &lt;a href=&#34;http://www.cgdev.org/blog/are-anti–money-laundering-policies-hurting-poor-countries-new-cgd-working-group-report&#34; target=&#34;_blank&#34;&gt;what effect does developed countries&amp;rsquo;&lt;/a&gt; AML/KYC/AntiTerrorism statutes have on the unbanked/debanked problem).&lt;/p&gt;
+
+&lt;p&gt;Again, while I do believe there is some potential here, I have seen many technologies come and go which were theoretically better and theoretically solved problems (sometimes in quite elegant ways) and were never adopted by even geeky development workers, much less not technically savvy beneficiaries.&lt;/p&gt;
+
+&lt;h3 id=&#34;so-should-we-not-bother&#34;&gt;So Should We Not Bother?&lt;/h3&gt;
+
+&lt;p&gt;Hell no. I bothered. I still bother. You should too. But &lt;strong&gt;only&lt;/strong&gt; if you&amp;rsquo;re genuinely interested in putting in the work necessary to help folks find solutions to problems they actually have. If that&amp;rsquo;s you, here&amp;rsquo;s what I would highly recommend.&lt;/p&gt;
+
+&lt;p&gt;Step 1. Go &amp;ldquo;There&amp;rdquo; (wherever &amp;ldquo;there&amp;rdquo; is to you).&lt;/p&gt;
+
+&lt;p&gt;Step 2. Talk to Folks; Learn Their Problems; Understand Their Constraints.&lt;/p&gt;
+
+&lt;p&gt;Step 3. Talk About Solutions.&lt;/p&gt;
+
+&lt;h3 id=&#34;what-s-one-problem-you-ve-seen&#34;&gt;What&amp;rsquo;s One Problem You&amp;rsquo;ve Seen?&lt;/h3&gt;
+
+&lt;p&gt;Personally, and this is only one human&amp;rsquo;s idea, I would recommend folks within the blockchain technology space take a serious look at how they can assist crafting solutions which small businesses in developing countries face. And there are many.&lt;/p&gt;
+
+&lt;p&gt;To be clear, I don&amp;rsquo;t mean micro businesses.&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/hargeisa-1.jpg&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;I mean small businesses.&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/hargeisa-2.jpg&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;These are an often overlooked, but vital, piece of the economy. Small businesses are also, I think, where blockchain technology really finds a good cost-benefit balance against real, current problems these potential users of a solution face.&lt;/p&gt;
+
+&lt;p&gt;One example (of many): tons of small businesses in Africa conduct cross border trade. Yet Intra-African Trade is a notorious sticking point. There are a variety of reasons for that, some of which blockchain technology could perhaps mitigate, some of which not. But where blockchain technology could be leveraged to provide useful solutions to small businesses, the opportunity could be vast.&lt;/p&gt;
+
+&lt;p&gt;These problems which small businesses face provide a decent starting point and present far fewer problems than the challenges of the unbanked. The challenges faced by small businesses are less holistic, cross-cutting, and &lt;em&gt;hard&lt;/em&gt; than the deep rooted social problems of poverty which the unbanked is part of.&lt;/p&gt;
+
+&lt;p&gt;The problems of small businesses are, simply, more approachable to folks who are not professional development workers. International development is a profession (for better or worse) and folks spend years learning how to work on such systemic problems; to really contribute positively to deep seated poverty problems requires effort, knowledge, presence, and time. Don&amp;rsquo;t believe me? Try applying for a position with any of the big NGOs without a Masters degree in a development related field.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, many business problems are simply business problems. Practicing law in Somaliland for years, I was continually surprised by how small, iterative business process efficiencies could drastically assist my small business clients.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Bottom line&lt;/code&gt;: for those with the blockchain technology sector who are looking to &amp;ldquo;help&amp;rdquo; but who are not professionals, I would encourage them to look at this sector first. Perhaps smart contract and/or blockchain technology could assist.&lt;/p&gt;
+
+&lt;h3 id=&#34;this-is-exactly-what-we-re-trying-to-assist-folks-to-build&#34;&gt;This is Exactly What We&amp;rsquo;re Trying To Assist Folks to Build&lt;/h3&gt;
+
+&lt;p&gt;Depending on the problem one was trying to solve, there is a strong potential that one would use some sort of a token which represents an asset that was callable against a particular bank and/or the world along with some escrow and/or letter of credit function (if one was, say, trying to ease intra-african trade restrictions between consenting corporations). If the deal value of what you were trying to make easier was below a certain threshold, you could probably use some of the functionality of a fully open, heavy, big bad public blockchain; yet on the other side of such a threshold it would be foolhardy to rely upon a BBPB.&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s why we believe in helping DApp makers be able to embrace some level of blockchain agnosticism behind the scenes &amp;ndash; the entire reason we&amp;rsquo;ve built eris.&lt;/p&gt;
+
+&lt;p&gt;So please do, go find some problems, sit with folks and craft some solutions, and feel free to build it on the stack that was made for the problem solvers. The doers.&lt;/p&gt;
+
+&lt;p&gt;~ # ~&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>On Increasing Verifiability of Data For Small Businesses</title>
+      <link>http://localhost/2015/01/08/on-increasing-verifiability/</link>
+      <pubDate>Thu, 08 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/01/08/on-increasing-verifiability/</guid>
+      <description>
+
+&lt;p&gt;The other night, a friend posed the following:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Let us say that I and X other people want to fund a venture in an economy not our own. Let us say the deal was structured so that the funders group gets Y% of revenue until the raise is repaid in full plus Z% interest until the principal is paid. Wouldn&amp;rsquo;t that be a great use case for a smart contract?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So what is happening here? This is fairly standard revenue-linked debt financing, but perhaps with a cross-border, crowd-fund component. This was posed, for the record, in the context of a cryptoequity, cryptoasset, and smart contract discussion. And yes, debt financing could make a very fine use case for a smart contract.&lt;/p&gt;
+
+&lt;p&gt;See, here&amp;rsquo;s the thing though, it wouldn&amp;rsquo;t make a great single smart contract. It would make an adequate smart contract. But it would make a fantastic basis for increasing verifiability for the entire business to be ran on a suite of smart contracts which would be responsible for tracking sales and then calculating interest, revenue distribution, and other things.&lt;/p&gt;
+
+&lt;p&gt;This is crucially important for many businesses in emerging economies as well as many other economies. For years, I was a lawyer for such businesses and/or their investors. The one common theme that I have seen in years of advising small and medium emerging economy businesses, is that they struggle with verifiability. Some may argue that many businesses in such contexts do not have computers so how could they even track things. This is simply not the case in my experience. Most middle class folk, and certainly business owners, even in the most poor countries I&amp;rsquo;ve lived in, have increasingly had access to smart phones and computers. So it is not really a technical problem for many; at least at this point in history.&lt;/p&gt;
+
+&lt;p&gt;While many businesses may not have an interest in increasing the verifiability of many aspects of their businesses, many others do. And investors in those businesses built in emerging economies, which are often (but not exclusively) diaspora or groups of diaspora &lt;em&gt;need&lt;/em&gt; to have increased verifiability as to what is happening with their investments.&lt;/p&gt;
+
+&lt;h3 id=&#34;increasing-verifiability-with-saas-based-solutions&#34;&gt;Increasing Verifiability with SaaS Based Solutions&lt;/h3&gt;
+
+&lt;p&gt;The current answer for how to increase verifiability of business information for many small business in many economies is to use a software as a service (SaaS) solution. This is usually a webapp built by a company which is providing services to another company; this is &lt;em&gt;part&lt;/em&gt; of what people mean when they say &amp;ldquo;the cloud&amp;rdquo;. This makes sense for many business, and for investors, and is certainly a &lt;a href=&#34;http://tekfin.com/2012/05/24/equity-pressure-and-alternative-funding-solutions/&#34; target=&#34;_blank&#34;&gt;positive and important step&lt;/a&gt; toward increasing verifiability of the business.&lt;/p&gt;
+
+&lt;p&gt;The general premise which I have, my operating hypothesis, is that while SaaS solutions do increase verifiability for small businesses, the system which must be established to provide effective coverage of the data of the company &amp;ndash; and how that system is to be built on a SaaS model backbone &amp;ndash; is not ideal. Let me explain.&lt;/p&gt;
+
+&lt;p&gt;When only dealing with a simple accounting system for a small business this system appears to work well. Indeed, a single account on &lt;a href=&#34;https://xero.com&#34; target=&#34;_blank&#34;&gt;Xero&lt;/a&gt; or something similar would go a long way vis a vis keeping accounts on paper, taking photos of those accounts and sending an email with a picture attachment from a single smart phone. And, for the record, yes, I have reviewed accounts for clients under exactly that scenario; sometimes you just have to work with what you have. That alone would be a drastic improvement on using paper based solutions with human agents to track everything. This system could be used to track revenue and expenses of the business and produce a report which could be circulated among the funders of the venture along with their repayments for a given period.&lt;/p&gt;
+
+&lt;p&gt;Next, let&amp;rsquo;s add a bit more complexity to the system managing the company&amp;rsquo;s data. Say the business wanted to use &lt;a href=&#34;https://www.vendhq.com/&#34; target=&#34;_blank&#34;&gt;Vend&lt;/a&gt; as its POS system. Vend scans outgoing products (sales) and provides a point of sale (POS) solution and then is able to sync that data to an accounting system &amp;ndash; like Xero. At this point, what would (functionally) be happening is that the agent responsible for entering sales into the books now would no longer be a human bookkeeper looking at receipt books, but rather would be an automated, robotic agent who (1) keeps records in its system of sales and then (2) uses API interaction to register and send across data to another provider (in this example &amp;ndash; Xero). At this point there are two sets of sales data &amp;ndash; one with the Vend system and one which is used by the accounting system to formulate a portion of the overall bookkeeping system. These data sets, while kept in sync via APIs between the accounting system and the POS system, are redundant.&lt;/p&gt;
+
+&lt;p&gt;Now, let us add one more layer of complexity. A company does not have only revenue. It also has expenses. Let us say that the business wanted to have increased verifiability as to expenses so it integrated a solution like &lt;a href=&#34;https://www.xpenditure.com&#34; target=&#34;_blank&#34;&gt;Xpenditure&lt;/a&gt; into its system. Xpenditure is a solution which allows businesses to take a picture of their receipts and the solution will then translate those into expense reports which can be synced via APIs back to an accounting system &amp;ndash; like, say, Xero. Again, we have a similar thing happening as with the sales side of the business. The agent responsible for &lt;em&gt;tracking&lt;/em&gt; accounts payable would no longer be a human agent writing in books, but rather would be an automated, robotic agent writing to a data set (which in turn is synced to another data set in the accounting system). As with the sales system, the interaction between Xpenditure and Xero would be based on API paradigms which are currently well developed in the SaaS world.&lt;/p&gt;
+
+&lt;p&gt;Each of the companies providing this SaaS solution system is responsible for the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;providing a helpful user interface (what I call data utility, perhaps an arbitrary label)&lt;/li&gt;
+&lt;li&gt;providing an available anywhere data set (partially this is a data transmission function, partially it is a user interface function)&lt;/li&gt;
+&lt;li&gt;doing useful things with that data (again, data utility)&lt;/li&gt;
+&lt;li&gt;storing and securing data (data storage and permissions)&lt;/li&gt;
+&lt;li&gt;providing an interactivity layer with other service providers (usually this is a data transmission function)&lt;/li&gt;
+&lt;li&gt;making sure that the world state of &amp;ldquo;their&amp;rdquo; piece of the data stays properly synchronized with the &amp;ldquo;others&amp;rdquo; pieces of the data (again, a data transmission function)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The result here is a drastic increase in verifiability over a paper based system for the business owners (who no longer need to be in the office at the same time as the bookkeepers to verify all the things) as well as for the funders. The funders are able to verify that receipts from both the accounts receivable (Vend based SaaS system) and accounts payable (Xpenditure based SaaS system) sections result in the profit loss which is calculated by the accounting system (Xero based SaaS system) and then they can see that their repayments are definitely on point by comparing the amount they were transmitted against the sales figures (since that was the agreement that was posited in the hypothetical). This is, undoubtedly, a better solution than currently exists in vast numbers of small businesses all around the world.&lt;/p&gt;
+
+&lt;h3 id=&#34;taking-stock&#34;&gt;Taking Stock&lt;/h3&gt;
+
+&lt;p&gt;Let&amp;rsquo;s take a look at what we have so far.&lt;/p&gt;
+
+&lt;p&gt;We have an increase in &lt;strong&gt;utility&lt;/strong&gt; for the data-driven (financial) interactions of this company by using three cloud-based SaaS solutions which are built to interact with one another.&lt;/p&gt;
+
+&lt;p&gt;We have an increase in &lt;strong&gt;verifiability&lt;/strong&gt; for the data-driven (financial) interactions of this company by moving tracking functions from human agents to robotic agents under human supervision and also because we have distributed the tracking functions and thus have distributed our points of failure over just corrupting one clerk (which is a single point of failure in many paper based accounting systems).&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Well, then, job done, no? The business wins.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Not quite. It benefits from this SaaS based system for sure. But is this structure resilient? Is it flexible? Is it self managing? Can it adapt?&lt;/p&gt;
+
+&lt;h3 id=&#34;the-challenges-of-the-saas-approach&#34;&gt;The Challenges of the SaaS Approach&lt;/h3&gt;
+
+&lt;p&gt;So we have briefly covered the structure and benefits of using a SaaS solution of a fictional business which has distributed funders. Let&amp;rsquo;s look at some of the challenges that system presents.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data portability&lt;/strong&gt; &amp;ndash; many, but certainly not all, SaaS solutions allow some ability to export one&amp;rsquo;s data. But few SaaS solutions make this easy. This is simple, because the business model &amp;ndash; while based on the provision of &lt;em&gt;data utility&lt;/em&gt; functionality &amp;ndash; requires leveraging the &lt;em&gt;data storage&lt;/em&gt; as a factor toward folks continuing to pay for the &lt;em&gt;utility&lt;/em&gt; provided by the service.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data interoperability&lt;/strong&gt; &amp;ndash; the lovely harmony described above works precisely because engineers at the various companies have found it is in their respective company&amp;rsquo;s interests to build APIs between these systems and ensured that they work together. Data is routed between their respective silos; and it is a wonderful thing when the system works. But the challenge here is that there is an &lt;code&gt;in-group&lt;/code&gt; || &lt;code&gt;out-group&lt;/code&gt; mechanism in place in many SaaS ecosystems wherein these integrated systems work really quite well if you stay within the group, but if you do not want to stay within the group then there is often a problem. Let&amp;rsquo;s say the business was located in a jurisdiction that for whatever reason, Xero was forced to stop operating. The business would have to (1) migrate their data to a new service provider (see the above) and &lt;em&gt;also&lt;/em&gt; ensure that (2) the new service provider also had plugins with the other pieces of their SaaS stack (or, migrate those as well).&lt;/p&gt;
+
+&lt;p&gt;This is a challenge for businesses, especially small businesses, and I think it is unnecessary. If a software company wants to provide &lt;em&gt;data utility&lt;/em&gt; services to its customers (which, really, is what most SaaS is about), that is great, but I query whether SaaS providers need to &lt;em&gt;hold&lt;/em&gt; the data.&lt;/p&gt;
+
+&lt;h3 id=&#34;is-there-alternative-architecture&#34;&gt;Is There Alternative Architecture?&lt;/h3&gt;
+
+&lt;p&gt;One possible alternative to the SaaS + API system described above which is slowly developing, is &lt;strong&gt;participatory architecture&lt;/strong&gt; (disclosure, I made this term up out of thin air, mostly because it makes sense to me). One of the tenets of participatory architecture is to try to separate out the layers of data-driven interactions namely:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;data utility&lt;/li&gt;
+&lt;li&gt;data transmission&lt;/li&gt;
+&lt;li&gt;data verifiability&lt;/li&gt;
+&lt;li&gt;data permissions&lt;/li&gt;
+&lt;li&gt;data storage&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;because each of these are distinct challenges.&lt;/p&gt;
+
+&lt;p&gt;With a SaaS based solution, what happens is that the entire data set of an organization is parsed vertically (as in, sectioned into accounting data, expense data, sales data, continuing with our fictional business described above) and then service providers who the organization elects for any given vertical column then become responsible for providing the full vertical stacking of the data-driven interaction for that section of the entire data set of the company. This becomes their zone of responsibility for the fictional business&amp;rsquo;s data. The architecture roughly looks like this:&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/saas-structure.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;There are two things which I am struck by when thinking about this system from an organization&amp;rsquo;s perspective (which, as a consumer of SaaS services for a long time I have done lots of). The first thing is the amount of redundancy in this system. Each of those service providers syncs its data with another service via the data transmission. This creates numerous redundant data sets. This may be a good thing; but it may not be. Secondly, there is a challenge of dealing with bad data points which get into the system and how the various syncing services handle changes to the data set and propagation of those changes across the whole of the data set. This second problem is likely a minor nuisance, but I have experienced it multiple times when dealing with such API driven systems.&lt;/p&gt;
+
+&lt;p&gt;Now, let&amp;rsquo;s look at &lt;strong&gt;one way of many&lt;/strong&gt; ways in which a participatory architecture system could be used to redesign the above paradigm. In participatory architecture the emphasis is more on mastering the horizontal partitions of a data-driven interaction &amp;ndash; the rows in the diagram above. Service providers then are able to specialize in providing, say, transmission from sensor systems back to a &lt;a href=&#34;https://erisindustries.com/components/erisdb&#34; target=&#34;_blank&#34;&gt;Decerver&lt;/a&gt; &amp;ndash; or any receiver of data built on participatory architecture design principles. Specialists in structuring data storage are empowered to work on the best way to store data and the more arbitrary the better. Obviously, the same would apply through the other parts of the stack. The arrangement could look something like this:&lt;/p&gt;
+
+&lt;p&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/pa-structure.png&amp;rsquo; | img }}&lt;/p&gt;
+
+&lt;p&gt;In the above diagram, each of the color overlays is a service provider. They have been arranged just to show that different approaches are possible to deal with the overall dataset, and it does not require that, for example, two and only two consensus mechanisms are used.&lt;/p&gt;
+
+&lt;p&gt;The crucial factor with participatory architecture, is to move away from a vertically arranged silo where a few service providers lend their computation and storage to the client (the business in this narrative) in return for a payment and toward a space where storage and computation are shared between the service provider and the business and the costs of development and operation of a service for a company are somehow realigned. Yet, in order for such an idea &amp;ndash; along with its many predecessors &amp;ndash; to succeed, it would have to happen in a way in which the client business need not have to spin up AWS instances, understand how to migrate a PostgreSQL, MongoDB, and MySQL datastores, etc.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;One &lt;em&gt;theory&lt;/em&gt; that we have at Eris Industries is that participatory architecture could have a chance at reconciling the value add of big data and information aggregation with privacy.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And the privacy issue is a norm that, while I only briefly discussed before, is increasingly important through an increasing number of sectors; as it should. If the computation and storage of a business&amp;rsquo;s data are rebalanced between the service provider and the business, a few things are likely to start happening.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;resiliency increases as the system develops fewer points of failure&lt;/li&gt;
+&lt;li&gt;specifications between the layers of the stack become increasingly important to negotiate between service providers&lt;/li&gt;
+&lt;li&gt;harmony within the dataset increases because the data set is viewed holistically rather than as pieces of different silos&lt;/li&gt;
+&lt;li&gt;using private key encryption increases the utility of the data vis a vis passwords&lt;/li&gt;
+&lt;li&gt;privacy has a chance&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There may be more (or some of these may not apply &amp;ndash; this is, afterall, a think piece).&lt;/p&gt;
+
+&lt;h3 id=&#34;what-role-smart-contracts-can-play-in-increasing-verifiability&#34;&gt;What Role Smart Contracts Can Play in Increasing Verifiability&lt;/h3&gt;
+
+&lt;p&gt;There are two roles which smart contracts can play here.&lt;/p&gt;
+
+&lt;p&gt;The first role is that when the data stack is reformulated along the lines as described above then smart contracts can be structured to determine what the data storage is in a new way which current SaaS solutions do not currently provide for.&lt;/p&gt;
+
+&lt;p&gt;Remember, if you will, the original question this post began with. The idea the question is getting at is how can we bring closer &lt;strong&gt;what is agreed&lt;/strong&gt; (namely the terms of the debt financing) to the &lt;strong&gt;data of the interaction&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s what I mean by that in the context of the fictional agreement hypothetical at the beginning of this piece. The original agreement was that Y% of revenue would be paid (along with Z% interest) to the funder group by the business until the original debt was repaid. Using current SaaS based solutions one can calculate this without a challenge. Xero won&amp;rsquo;t ever know anything about what is to be paid to the funders, but you can enter transactions every repayment period back to the funder group and they can compare that against a statement they could be sent which was calculated within the Xero system. Or, alternatively, they could be granted limited access to the Xero system so that they could have some ability to verify that the reported sales numbers matched what the business actually is telling itself that it sold. Again, there is nothing wrong per se with this setup.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;However, at Eris Industries, we think we can do better bringing the agreements and the data of the interaction more closely aligned.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In a smart contract system a dashboard could be developed which would only need to know the revenue and the terms of the agreement, and the funders could see exactly what they were going to be paid in real time. Also, if the business is doing well and all the parties agreed that the terms of the deal should change, and if the system was built using smart contracts, when those smart contracts (the rule frameworks for what was agreed) change, then the entire data flow can update itself appropriately.&lt;/p&gt;
+
+&lt;p&gt;Smart contracts&amp;rsquo; ability to shuffle data around between permissions groups is a massive win for privacy, and for service providers, because it would mean that service providers would no longer have to keep access to storing data and instead could keep focused on providing utility of data; or in providing really great transmission systems, or really great permissions tables; wherever a service provider is able to add a value add.&lt;/p&gt;
+
+&lt;p&gt;The second role which smart contracts can play is in verifiability of execution. In a smart contract system, an investor would be able to have computers it controls verify every single execution cycle which led to any particular repayment, from expenses logged to sales made to other calculations which resulted in the repayment due to the funder group. Or, it could just let the robots do their super easy jobs, trust that everything was running smoothly, and just rake in the returns from this (now) booming fictional company!&lt;/p&gt;
+
+&lt;p&gt;Together, this dynamic nature (and its resultant adaptability) along with the ability to verify computation (and its resultant certainty) of smart contracts dramatically increases the strength of the entire system as compared to a current SaaS based model.&lt;/p&gt;
+
+&lt;p&gt;How, exactly, to get to a point where we can move beyond such theories as these, is still a work in progress.&lt;/p&gt;
+
+&lt;h3 id=&#34;concluding-thoughts&#34;&gt;Concluding Thoughts&lt;/h3&gt;
+
+&lt;p&gt;This is mostly a think piece, I do not mean to imply that this is the only way to get from A to Z, but I wanted to explain a bit more about how smart contract based systems could assist in further increasing verifiability for small business. I&amp;rsquo;d welcome your input as to where you see increases in verifiability for small business which I may not have included in this narrative. What did I miss? What did I get wrong? Please do let me know.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

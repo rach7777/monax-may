@@ -1,0 +1,18 @@
+{{ partial "header.html" . }}
+{{ partial "navigation.html" . }}
+
+<div class="container-fluid">
+  <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 page-header">
+      <header><h1 class="title" role="title">{{ if isset .Params "title" }}{{ index .Params "title" }}{{ else }}{{ .Site.Title }}{{ end }}</h1></header>
+  </div>
+
+  {{ partial "sidebar.html" . }}
+
+  <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-3 col-lg-6 col-lg-offset-4">
+    {{ .Title }}
+  </div>
+</div>
+
+{{ partial "footer.html" . }}
+{{ partial "scripts.html" . }}
+{{ partial "analytics.html" . }}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arm on Monax Industries</title>
+    <link>http://localhost/tags/arm/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 May 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/tags/arm/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Summer Interns Grow the Burrow</title>
+      <link>http://localhost/2016/05/25/summer-marmots/</link>
+      <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2016/05/25/summer-marmots/</guid>
+      <description>&lt;p&gt;Today, we&amp;rsquo;re excited to announce two summer interns.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/samirpatellaw&#34; target=&#34;_blank&#34;&gt;Samir Patel&lt;/a&gt; joins us as a law student from MSU Law and will be helping out the libraries team with, among other things, the legal accuracy of our smart contracts bundles. My first introduction to Samir was a DM on Slack a few months back, asking for help setting up eris on his computer. After a little hand holding, Samir got things going and was (mostly) off to the races. #lawyerswhocode-eventually.&lt;/p&gt;
+
+&lt;p&gt;Among other things, learning to program has this quirk of requiring one to learn a plethora of tools. One such tool, git, for version control, is essential and really ought to be a required class in high school (but I digress). So while passing through the region, I met up with Samir last month for a weekend of coding and &lt;a href=&#34;https://db.erisindustries.com/distributed%20business/2016/04/02/moving-the-chains/&#34; target=&#34;_blank&#34;&gt;Moving the (Football) Chains to the Blockchain&lt;/a&gt;. Yet another use case, though this one is particularly intriguing given the involvement of public funds in sport (stadiums). Hopefully he still remembers all those git commands.&lt;/p&gt;
+
+&lt;p&gt;We look forward to great things from Samir and if you&amp;rsquo;re in East Lansing or Toronto (yay, another Canadian eh), don&amp;rsquo;t hesitate to buy him a beer and find out how to bring blockchains to sport.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://astro.temple.edu/~tue68607/&#34; target=&#34;_blank&#34;&gt;Shuang Liang&lt;/a&gt; (Lexon) joins us as a PhD student in Android security from Temple University and will be helping out the platform team with setting up a viable IoT/ARM pipeline. Our first encounter with Lexon was through our &lt;a href=&#34;https://support.erisindustries.com&#34; target=&#34;_blank&#34;&gt;Support portal&lt;/a&gt; where he was asking for assistance with building the docker images for ARM platforms, to get eris running on a RaspberryPi. A few pointers from Casey later and Lexon was deploying contracts to a multi-validator chain on a cluster of Pis. Impressed the marmots were with his substantial proof-of-work and intern Lexon became.&lt;/p&gt;
+
+&lt;p&gt;We are very excited to have Lexon on board and the timing couldn&amp;rsquo;t be better as the supply-chain-on-a-blockchain (via IoT) space heats up. I was especially excited when we teamed up with EthEmbedded for day to get a feel for eris on the RaspberryPis first-hand. Save for a few to-be-expected work arounds, things when quite smoothly:&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/marmot?src=hash&#34;&gt;#marmot&lt;/a&gt; hack day in &lt;a href=&#34;https://twitter.com/hashtag/Guelph?src=hash&#34;&gt;#Guelph&lt;/a&gt; with &lt;a href=&#34;https://twitter.com/EthEmbedded&#34;&gt;@EthEmbedded&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/phonikg&#34;&gt;@phonikg&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/eris_ltd&#34;&gt;@eris_ltd&lt;/a&gt;&lt;a href=&#34;https://twitter.com/hashtag/blockchain?src=hash&#34;&gt;#blockchain&lt;/a&gt; on &lt;a href=&#34;https://twitter.com/ARMEmbedded&#34;&gt;@ARMEmbedded&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://twitter.com/Raspberry_Pi&#34;&gt;@Raspberry_Pi&lt;/a&gt; &lt;a href=&#34;https://t.co/j6d9LCs8cX&#34;&gt;pic.twitter.com/j6d9LCs8cX&lt;/a&gt;&lt;/p&gt;&amp;mdash; Zach Ramsay (@cerebralbosons) &lt;a href=&#34;https://twitter.com/cerebralbosons/status/731999423346003968&#34;&gt;May 16, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Since everybody loves demos and the IoT/blockchain space is hot right now, Lexon will be here in our Guelph satellite office next month to prototype an egg-delivery-by-drone blockchain application. The idea is simple: we have chickens and need to sell their eggs. Wouldn&amp;rsquo;t it be fantastic if our customers could request delivery by sending a transaction to what we are affectionately calling: &lt;code&gt;eggChain&lt;/code&gt;, thereby alerting us to load the drone with a dozen eggs (and off it goes!)? Payment received, eggs delivered.&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s kinda cool, though what&amp;rsquo;s perhaps even more exciting is having IPFS running on a RaspberryPi, on a solar powered drone. Only then will files really be &lt;code&gt;in the cloud&lt;/code&gt;, so to speak.&lt;/p&gt;
+
+&lt;p&gt;We look forward to equally great things from Lexon who&amp;rsquo;ll be working out of a top-secret lab in New Jersey this summer. Stay tuned for more details!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

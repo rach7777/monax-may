@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>P2p on Monax Industries</title>
+    <link>http://localhost/tags/p2p/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Aug 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/tags/p2p/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>An Ecosystems Approach to Blockchaining</title>
+      <link>http://localhost/2015/08/25/on-blockchain-ecosystems/</link>
+      <pubDate>Tue, 25 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/08/25/on-blockchain-ecosystems/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/pierrepocs/5480153734/&#34; target=&#34;_blank&#34;&gt;{{ page.date | date: &amp;ldquo;%Y&amp;rdquo; | append:&amp;lsquo;/ecosystems.jpg&amp;rsquo; | img }}&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;preface&#34;&gt;Preface&lt;/h2&gt;
+
+&lt;p&gt;One of the reasons I knew that Anthemis would be a good institutional partner for building Eris is they believe deeply in the idea that business is best when it is conducted using an ecosystems approach. After many, many years working with small businesses, diaspora groups, small business investors, and regulators in Somaliland, I had come to appreciate what this means, because this is how business in Africa works. And indeed, it is how business just &lt;em&gt;should&lt;/em&gt; work in my opinion.&lt;/p&gt;
+
+&lt;p&gt;Relatedly, the other day, I was talking to an acquaintance about something and I said that I don&amp;rsquo;t like the tendency I see within the blockchain community to have labels as reductive as &amp;ldquo;competitor&amp;rdquo; v. &amp;ldquo;collaborator&amp;rdquo;. I get of course that the verbs are applicable to any one interaction amongst folks within the ecosystem, but to reduce the complex relationships necessary to be developed if this technology is going to become more widely accepted (&lt;a href=&#34;https://twitter.com/compleatang/status/635568543501840384&#34; target=&#34;_blank&#34;&gt;a goal we&amp;rsquo;ve always been explicitly trying to achieve&lt;/a&gt;) into this binary question is unhelpful in the opinion of this correspondent. The reality is that talent is too slim, the technology is too new, and a few other relavant reasons for any single actor in the blockchain community to fracture relationships between potential allies without a cost both to the single actor as well as the ecosystem.&lt;/p&gt;
+
+&lt;p&gt;That said, the rest of this post is gonna talk about tech.&lt;/p&gt;
+
+&lt;h1 id=&#34;tenet-1-of-an-ecosystems-approach-to-blockchaining&#34;&gt;Tenet 1 of an Ecosystems Approach to Blockchaining&lt;/h1&gt;
+
+&lt;h2 id=&#34;modularize-all-the-things-but-mostly-the-runtimes&#34;&gt;Modularize all the Things (but mostly the runtimes)&lt;/h2&gt;
+
+&lt;p&gt;The promise that smart contract backed systems have is they have deterministic runtimes. There&amp;rsquo;s a lot of interesting things this can do. Particularly when you start thinking about how to better the various &amp;ldquo;engines&amp;rdquo; on which your business&amp;rsquo;s process and data management solutions rely.&lt;/p&gt;
+
+&lt;p&gt;The promise that docker backed systems have is they have deterministic runtimes. There&amp;rsquo;s a lot of interesting things this can do. Particularly when you start thinking about how to better the infrastructure on which your business&amp;rsquo;s data and process management solutions rely.&lt;/p&gt;
+
+&lt;p&gt;The reason we have built &lt;code&gt;eris&lt;/code&gt; the way that we have is to support organizations who are interested in a variety of distributed technology tools. Not only those of the blockchains world, but also those from the &amp;ldquo;cloudy&amp;rdquo; world. Because these two groups have a lot to learn from each other.&lt;/p&gt;
+
+&lt;p&gt;No matter whether your application needs smart contracts or just docker based services, it needs modular, reliable runtimes. To see more about what I mean see our &lt;a href=&#34;https://docs.erisindustries.com&#34; target=&#34;_blank&#34;&gt;getting started documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;tenet-2-of-an-ecosystems-approach-to-blockchaining&#34;&gt;Tenet 2 of an Ecosystems Approach to Blockchaining&lt;/h1&gt;
+
+&lt;h2 id=&#34;configs-are-a-challenge-but-a-doable-challenge&#34;&gt;Configs Are a Challenge, but a Doable Challenge&lt;/h2&gt;
+
+&lt;p&gt;When running a distributed application, one needs an ability to give the runtimes a configuration when they &amp;ldquo;boot&amp;rdquo;. This configuration includes things like, &amp;ldquo;who am i?&amp;rdquo;, &amp;ldquo;where am i?&amp;rdquo;, &amp;ldquo;who am i supposed to talk to?&amp;rdquo;, &amp;ldquo;what private key am i supposed to sign these ssl requests with&amp;rdquo;, etc.&lt;/p&gt;
+
+&lt;p&gt;The way that docker images are generally created gives us an ability to boot up runtimes which answer all of those questions on behalf of users of the eris tooling. That could be an eth chain booting up to talk to the mainnet or to talk to a private net, that could be ipfs doing its thing, that could be a bitcoin node (&lt;a href=&#34;https://twitter.com/eris_ltd/status/632853195673497600&#34; target=&#34;_blank&#34;&gt;or a bitcoinXT if you prefer&lt;/a&gt;), whatever you, your developers, and your users would need to &amp;ldquo;get the things turned on&amp;rdquo; you should be able to do with Eris (given the docker containers were built correctly).&lt;/p&gt;
+
+&lt;p&gt;Wanna share your private config? Encrypt the file to a keybase contact&amp;rsquo;s public key (or oneName, or however you share pgp keys) and:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;eris files put ENCRYPTED_CONFIG.toml.asc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That&amp;rsquo;ll give you a hash, send it to them over slack (or IRC) and the collaborator does&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;eris services import thing_to_boot HASH
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We are also working on a solution we call &lt;code&gt;etcb&lt;/code&gt; (like CoreOS&amp;rsquo;s &lt;code&gt;etcd&lt;/code&gt; but &lt;code&gt;b&lt;/code&gt; &amp;hellip; because its on a blockchain) which will enable better group sharing of configuration files.&lt;/p&gt;
+
+&lt;p&gt;We don&amp;rsquo;t really &amp;ldquo;boot&amp;rdquo; smart contracts themselves and so they do not really need a configuration so to say. But we have built &lt;a href=&#34;https://docs.erisindustries.com/documentation/eris-cli/latest/eris_actions/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;eris actions&lt;/code&gt;&lt;/a&gt; which allows for a prebuilding of complex transaction sequences which would be needed to interact with and test various smart contract suites.&lt;/p&gt;
+
+&lt;h1 id=&#34;tenet-3-of-an-ecosystems-approach-to-blockchaining&#34;&gt;Tenet 3 of an Ecosystems Approach to Blockchaining&lt;/h1&gt;
+
+&lt;h2 id=&#34;the-pipes-matter&#34;&gt;The Pipes Matter&lt;/h2&gt;
+
+&lt;p&gt;For distributed applications to operate correctly, all the things have to know how to talk to the things they&amp;rsquo;re supposed to talk to. This is a non-trivial challenge when you are trying to build applications which will run the same on laptops, cloud instances, and corporate environments.&lt;/p&gt;
+
+&lt;p&gt;Luckily using modern cloud computing techniques provided by Docker, piping things together with Eris is ultra simple. When you build a service definition file, simply add:&lt;/p&gt;
+[services]
+dependencies = [ &#34;thing_i_want_on_and_to_talk_to&#34; ]
+
+&lt;p&gt;then in the code, or in the configuration or wherever the bit is that tells the thing who to talk to you just add:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;quot;http://thing_i_want_on_and_to_talk_to&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Because of the way that docker cleverly manipulates /etc/hosts it makes it very easy when the service which wanted the thing on and to talk to gets booted it will be able to rely that the other thing is on and is ready to be talked.&lt;/p&gt;
+
+&lt;h1 id=&#34;tenet-4-of-an-ecosystems-approach-to-blockchaining&#34;&gt;Tenet 4 of an Ecosystems Approach to Blockchaining&lt;/h1&gt;
+
+&lt;h2 id=&#34;what-blockchain-the-contracts-run-on-is-an-ops-consideration&#34;&gt;What Blockchain the contracts run on is an Ops Consideration&lt;/h2&gt;
+
+&lt;p&gt;The bottom line is that the EVM is the best design (so far) for a distributed logic gateway processor. See etherparty, eris, ethereum, tendermint, (at a minimum). The only difference between these being the consensus layer on which the world state of the network resides.&lt;/p&gt;
+
+&lt;p&gt;This is exciting for smart contract developers, because they shouldn&amp;rsquo;t have to give a shit what the world state harmonization layer for the production application is. All they should be caring about is whether the suite of contracts works and testing those against throwaway chains. Over time, as that smart contract developer is ready to open up to more collaboration he may set up a permissioned smart contract network to control development and access to alpha and beta level subscribers and eventually he may go directly to the eth chain (cause not doing proper prototyping is a bad idea).&lt;/p&gt;
+
+&lt;p&gt;Or not.&lt;/p&gt;
+
+&lt;p&gt;Perhaps that developer finds themself in a corporate context. Perhaps they will start with some throwaway chains to test their contracts and then that will go into a tightly controlled permissioned network that bank level security built around it.&lt;/p&gt;
+
+&lt;p&gt;Or not.&lt;/p&gt;
+
+&lt;p&gt;Perhaps that developer is that guy who just flings crappy contracts onto the eth main chain, posts on reddit, and realizes they had a fatal flaw in their contract.&lt;/p&gt;
+
+&lt;p&gt;But either way, the eventual chain on which the production application is running is an operational consideration, not a developer concern. This is exciting because it lowers the barrier to entry and enables specialization within the blockchain and smart contract network community.&lt;/p&gt;
+
+&lt;h2 id=&#34;postscript&#34;&gt;Postscript&lt;/h2&gt;
+
+&lt;p&gt;It is these four tenets which we think will enable to a vibrant ecosystem which will separate out the power structures between those at the infrastructure layer (a blockchain/smart contract network protocol, or a distributed file system, etc.) and those at the platform layer (the things that run the things you wanna run) and those at the application layer to allow collaboration where necessary and competition where necessary.&lt;/p&gt;
+
+&lt;p&gt;Happy Contract Writing!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

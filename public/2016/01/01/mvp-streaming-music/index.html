@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article">
+  <head>
+    
+    <meta charset='utf-8'>
+    <title>
+        
+            Monax Industries
+        
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="http://localhost/images/favicon.ico">
+
+    
+
+  
+
+
+
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://localhost" />
+  <meta property="og:title" content="Monax Industries" />
+
+
+  <meta property="og:description" content="Casey explains how he would set up a very simple streaming music MVP using a smart contract backbone to increase the verifiability of all the stakeholders involved in the process." />
+
+
+  <meta property="og:image" content="http://localhost/images//streaming_music.jpg%!(EXTRA string=2016)" />
+  <meta property="og:image" content="/images/ei-logo-sharing-square.png" />
+
+
+
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+<meta name="twitter:site" content="@eris_ltd" />
+<meta name="twitter:title" content="Monax Industries" />
+
+  <meta name="twitter:title" content="Monax Industries" />
+
+
+  <meta name="twitter:description" content="Casey explains how he would set up a very simple streaming music MVP using a smart contract backbone to increase the verifiability of all the stakeholders involved in the process." />
+
+
+  <meta name="twitter:image" content="http://localhost/images//streaming_music.jpg%!(EXTRA string=2016)" />
+  <meta name="twitter:image" content="/images/ei-logo-sharing-square.png" />
+
+
+  <meta name="twitter:creator" content="@eris_ltd">
+
+
+
+<meta name="keywords" content="blockchain,smart,contracts,data,driven,relationship,bft" />
+
+  <meta itemprop="name" content="Monax Industries" />
+
+
+  <meta name="description" content="Casey explains how he would set up a very simple streaming music MVP using a smart contract backbone to increase the verifiability of all the stakeholders involved in the process." />
+
+
+  <meta itemprop="image" content="http://localhost/images//streaming_music.jpg%!(EXTRA string=2016)" />
+  <meta itemprop="image" content="/images/ei-logo-sharing-square.png" />
+
+
+
+    
+    <link rel="stylesheet" type="text/css" href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' />
+    
+        <link rel="stylesheet" type="text/css" href='http://localhost/styles/eris.css' />
+    
+
+    
+    
+  </head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid col-xs-12 col-sm-12 col-med-8 col-med-offset-2 col-lg-8 col-lg-offset-2">
+    <div class="navbar-header">
+      <a class="navbar-brand page-scroll" href="https://monax.industries">{% image ei-logo-long-mobile.png alt="Eris Industries" %}</a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Components <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://monax.industries/components/eriscli">eris:cli</a></li>
+            <li><a href="https://monax.industries/components/erisdb">eris:db</a></li>
+            <li><a href="https://monax.industries/components/epm">eris:pm</a></li>
+            <li><a href="https://monax.industries/components/erislegal">eris:legal</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="https://monax.industries/products/">Products <span class="caret"></span></a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://docs.erisindustries.com">Overview</a></li>
+            <li><a href="https://docs.erisindustries.com/tutorials/getting-started/">Get Started</a></li>
+            <li><a href="https://docs.erisindustries.com/explainers">Explainers</a></li>
+            <li><a href="https://docs.erisindustries.com/tutorials">Tutorials</a></li>
+            <li><a href="https://docs.erisindustries.com/documentation">Technical Details</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="https://monax.industries/products/">Products <span class="caret"></span></a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://monax.industries/about/team">Team</a></li>
+            <li><a href="https://monax.industries/about/jobs">Positions</a></li>
+            <li><a href="https://monax.industries/about/media">Media</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Connect <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://support.erisindustries.com" target="_blank"><i class="fa fa-ambulance"></i> Support Forums</a></li>
+            <li><a href="https://slack.eris.industries"><i class="fa fa-weixin"></i> Chat Support (Slack)</a></li>
+            <li><a href="mailto:contact@erisindustries.com"><i class="fa fa-envelope"></i> Business Contact Email</a></li>
+            <li class="divider"></li>
+            <li><a href="https://github.com/eris-ltd" target="_blank"><i class="fa fa-github-square"></i> Github</a></li>
+            <li class="divider"></li>
+            <li><a href="https://twitter.com/eris_ltd" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+            <li><a href="https://www.facebook.com/erisindustries" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid" id="eris-page">
+  
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 page-header">
+        <header><h1 class="title" role="title">The Smart Contract System MVP Series: Streaming Music</h1></header>
+      </div>
+    </div>
+  
+
+  <div class="row">
+    <article id="main-content">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
+        
+
+<p><a href="https://www.flickr.com/photos/bangdoll/6475249341/" target="_blank">{{ page.date | date: &ldquo;%Y&rdquo; | append:&lsquo;/streaming_music.jpg&rsquo; | img }}</a></p>
+
+<p>{% include series.html %}</p>
+
+<p>Smart contracts give us <strong>increased veribiability over business processes that cut across stakeholders</strong>. But that is, admittedly, an abstract concept. Over this series of posts I will be working to elucidate what such systems look like from our perspective.</p>
+
+<p>When I speak with clients I am constantly noting that there are roughly two ways to leverage smart contract technology. On the one hand you can identify business processes which you would like to automate but have been unable to with current technology (because, as we know, <a href="http://localhost/2015/09/15/smart-contracts-intro/">traditional business process automation stops at your organization&rsquo;s glass doors</a>) and automate those processes in a cost reduction effort using smart contract technology.</p>
+
+<p>But reducing opex is only one way to satisfy corporate duties to maximize shareholder value. The other hand, to me, is equally important. Namely, what new profit centers can open up for service providers if others adopt smart contract technology?</p>
+
+<p>While it is interesting and important that various verticals (finance being the most vocal at the moment) are looking at how they can leverage smart contracts to reduce middle management and back office costs which are indicative of their individual <em>vertical</em>, smart contracts are actually much more interesting when looked at from a slightly different lens. Namely, how can individual <em>firms</em> band together to open up new potential profit centers using smart contract technology.</p>
+
+<h2 id="one-problem-with-streaming-services">One Problem With Streaming Services</h2>
+
+<p>There is an indelible tension within the commercialization of art between an artist usually having comparative disadvantages as to how to commercialize their art and the artist not wanting to lose control of how that commercialization happens. This tension has played out over history and is not particularly new. The rift between global artists such as <a href="https://twitter.com/SwiftOnSecurity" target="_blank">Taylor Swift</a>, or <a href="https://twitter.com/adele" target="_blank">Adele</a>, and streaming services (Spotify being the most prominent) is only the latest incidents in a long history which this tension evokes. Before that we had label wars, ticketmaster wars, agent wars, and on and on.</p>
+
+<p>The challenge which current musicians face with music distribution chanels is that there is a huge variety of services in which they can place their songs, such as:</p>
+
+<ul>
+<li>Youtube</li>
+<li>Spotify</li>
+<li>iTunes</li>
+<li>Google Music</li>
+<li>last.fm</li>
+<li>rdio</li>
+<li><a href="https://en.wikipedia.org/wiki/Comparison_of_on-demand_streaming_music_services" target="_blank">and many more</a></li>
+</ul>
+
+<p>If you are an independent artist and wanted to distribute your music on just the available streaming services, not to mention physical sales or radio distribution, you&rsquo;d either have to sign up for each of these services individually or you&rsquo;d likely use an <a href="http://www.tunecore.com/" target="_blank">aggregator</a> <a href="http://members.cdbaby.com/" target="_blank">service</a> <a href="https://www.recordunion.com/" target="_blank">of some kind</a>. Aggregator services ease the amount of maintenance an artist must do as to their profile, about page, tour dates, current releases, back catalogue, etc. Yet they do so, gasp, for a fee. These aggregator services are prototypical middle-humans, but ones who actually solve a problem which many, many independent artists I know have, and because of that they thrive.</p>
+
+<p>If you are a signed artist rather than an independent artist, it is still likely that your label will use an aggregator service of some kind, although there are typically different aggregators which labels use. Labels, of course are also middle-humans. They typically provide financing for the recording of an album, as well as marketing and distribution support once the album is ready for release, and &ndash; at times &ndash; support during a tour. Obviously, in return for this, the label will also take a cut of proceeds.</p>
+
+<p>But rarely is the making of music a purely solo endeavour. Usually there will be additional stakeholders involved in the creation process of the album. Session players, engineers, producers, and song writers all will typically be given &ldquo;points&rdquo; on the album or a given song on the album.</p>
+
+<p>On top of all this, individual artists will usually have individuals who will be &ldquo;personal&rdquo; to the artist or band. Namely, agents, business managers and the like.</p>
+
+<p>All in all, we can roughly break down the carveouts that artists typically will have to account for into three major categories:</p>
+
+<ol>
+<li>&ldquo;Artist level&rdquo; cuts. Examples:
+
+<ul>
+<li>Business managers</li>
+<li>Agents</li>
+</ul></li>
+<li>&ldquo;Album level&rdquo; cuts. Examples:
+
+<ul>
+<li>Labels</li>
+<li>Producers</li>
+<li>Engineers</li>
+</ul></li>
+<li>&ldquo;Song level&rdquo; cuts. Examples:
+
+<ul>
+<li>Session players</li>
+<li>Song writers</li>
+</ul></li>
+</ol>
+
+<p>The above list is only meant to be illustrative rather than authoritative. Obviously it is only meant to cover the carve-outs/payouts of value which extend from the streaming service itself through the complex network of entities and humans involved.</p>
+
+<p>The amounts and types of payouts will vary greatly based on a complex matrix of contractual obligations which an artist has put in place to support the creation and commercialization of their art. This is very complex because each individual artist, album, and song combination will have its own unique set of cuts which will be taken from whatever value flows to the &ldquo;artist&rdquo; (or, as Spotify&rsquo;s quite pleasant <a href="http://www.spotifyartists.com/spotify-explained/#how-we-pay-royalties-overview" target="_blank">artists portal</a> calls it, the &ldquo;rights holder&rdquo;).</p>
+
+<p>So, from our point of view, there is a real challenge here, which essentially collapses into an accounting challenge. And its a challenge which we think that smart contracts can help to overcome.</p>
+
+<h2 id="the-smart-contract-backed-mvp-stakeholders">The Smart Contract Backed MVP: Stakeholders</h2>
+
+<p>Just because a smart contract backed system <em>could</em> help here, does not mean that it <em>will</em>. Actually building this will require much more than a simple idea. For the purposes of this post, let&rsquo;s set aside some of the political resistance within large industrial actors and assume that we&rsquo;ve successfully engaged with them as to the benefits of a smart contract based approach to solving this problem and then lets see how we would actually build it (which is really what this particular post is supposed to be about).</p>
+
+<p>Who do we need involved in the pilot?</p>
+
+<ol>
+<li>A Streaming Service</li>
+<li>1-5 Labels</li>
+<li>5-10 Independent Artists</li>
+<li>An auditing firm</li>
+<li>The Streaming Service&rsquo;s Bank</li>
+</ol>
+
+<p>Getting the streaming service is obvious. We&rsquo;d think you would want some labels involved in the MVP as well. The larger and more influential the better, but that is by no means a requirement as smaller labels will likely have more flexibility and be more likely to embrace innovation. We&rsquo;d also think you&rsquo;d want some independent artist involved to make sure that whatever was built was not <em>too</em> focused on the problem set which is specific to labels but also included the problem set which independent artists face. On top of that you would likely want an audit service involved to perform internal auditing services in the form of running a node on the network and validating what was happening within the smart contract system.</p>
+
+<p>Finally, and perhaps most controversial, we&rsquo;d think you&rsquo;d want to get the streaming service&rsquo;s bank involved. Why? Isn&rsquo;t blockchains all about replacing the banks? Not to us. To us, blockchains are about increasing the verifiability of business process which cut across stakeholders. If, for example, the bank used by the streaming service was one of the dozens of global banks who was experimenting with and using smart contract technology then the bank may benefit from such an experiment just as much as any other stakeholder involved in the system. This is especially true if the bank also was one of the growing number of banks who had identified that banking of the future involves the &ldquo;<a href="https://petervan.wordpress.com/2012/09/09/banks-as-a-platform/" target="_blank">Bank as a Platform</a>&rdquo; <em><a href="http://www.parkparadigm.com/2009/10/29/platforms-markets-and-bytes/" target="_blank">see also</a></em>. As we will see shortly, the bank as a platform is very relevant to making this system operate in the current regulatory schema with the least possible disruption or opportunities for political challenges to growing the MVP into production.</p>
+
+<h2 id="the-smart-contract-backed-mvp-smart-contract-overview">The Smart Contract Backed MVP: Smart Contract Overview</h2>
+
+<p>The most simple way in which to build the smart contract system, and the way we would recommend as a point of departure for the effort would involve two engines and three factories.</p>
+
+<p>Before I detail what these do, I think it would be helpful if I explain a bit about how we think of smart contracts from a design and high level overview.</p>
+
+<h3 id="understanding-smart-contract-factories">Understanding Smart Contract Factories</h3>
+
+<p>The general way in which I explain smart contract systems to developers coming from a web application background is to start with a typical database-model-controller-view web app stack and to say that, essentially, what happens in smart contract backed applications is that we collapse the database and model layers into the smart contract layer, build a middleware (controller layer) and then a frontend (view layer). This helps communicate how we think of smart contract backed applications. It isn&rsquo;t a perfect analogy as indeed there are differences, but it gets us within the range of proper thought models.</p>
+
+<p>If we adopt an object-oriented paradigm for smart contract backed applications then we need a way to instantiate and track objects. In the Eris paradigm, which we&rsquo;ve been working on for something like 18 months now, how we track objects is to use <strong>smart contract factories</strong>. Factories, in how we build smart contracts, perform two functions.</p>
+
+<p>First they act in a similar way to how Class Definitions work in object oriented programming languages. In other words we use them to instantiate objects. Generally we instantiate single object contracts by using factories to create a unique contract which has the parameters that were included when the instantiation transaction arrived at the factory. To break this down a little bit, a general &ldquo;new&rdquo; function is built into a factory contract which has required parameters that must be sent along with the function call. What the &ldquo;new&rdquo; function generally does is to wrangle those parameters and to create a new, individual object contract, which has all of the required parameters.</p>
+
+<p>Second, we use factories to map &ldquo;where&rdquo; the contract is to a unique identifier of some sort. So if we have a system of bonds we can us the ISIN number of the bond, or if we&rsquo;re tracking songs we can use the UUID from within the streaming services main database as the unique identifier (usually human or machine readable and linked to some other system, such as the streaming service&rsquo;s database). This unique identifier is the key in a key:value store which is kept within the factory. The value of the key:value store is the address where the individual &ldquo;object&rdquo; contract resides.</p>
+
+<p>This allows us to &ldquo;get at&rdquo; any individual object contract by sending a query call to the factory (which is in a more stable and well known address within a smart contract network) with a particular unique identifier (say, the UUID of a song from the streaming service&rsquo;s &ldquo;normal&rdquo; database) and get back the address of the individual object contract.</p>
+
+<h3 id="understanding-smart-contract-engines">Understanding Smart Contract Engines</h3>
+
+<p>On top of needing to track objects, we generally need to build system level functionality which will be guaranteed to (1) satisfy a particular interface and (2) allow us to plug this functionality into what objects &ldquo;do&rdquo;. To build this functionality into smart contract applications we use the idea of <strong>smart contract engines</strong>. These engines are generally, but not always, stateless contracts which are built to do one thing and do it well.</p>
+
+<p>We generally build engines to satisfy an interface and register them with an overall tracker contract (which we, still, call a DOUG contract; <em>n.b.</em>, we generally register factories with the DOUG as well, so any middleware seeking to integrate with the system needs to be given DOUG&rsquo;s contract address and can &ldquo;find&rdquo; the rest of the system via DOUG).</p>
+
+<p>The engines, in this example, would be likely to perform the functionality of calculating the payout. By way of a simple example, Spotify has a fairly transparent formula for how it calculates payouts to artists; which at the time of this blog post looks like this:</p>
+
+<p><a href="http://www.spotifyartists.com/spotify-explained/#royalties-in-detail" target="_blank">{{ page.date | date: &ldquo;%Y&rdquo; | append:&lsquo;/streaming_music_spotify_formula.png&rsquo; | img }}</a></p>
+
+<p><a href="http://www.spotifyartists.com/spotify-explained/#royalties-in-detail" target="_blank">(Photo credit: Spotify)</a></p>
+
+<p>The payouts engine could in this example, be a transparent calculation agent of the set formula for the streaming service.</p>
+
+<h3 id="bringing-it-all-together">Bringing It All Together</h3>
+
+<p>So here is how it <em>could</em> look.</p>
+
+<p>{{ page.date | date: &ldquo;%Y&rdquo; | append:&lsquo;/streaming_music_overview.png&rsquo; | img }}</p>
+
+<p>First, one would utilize the factory contract paradigm to establish mappings of Artists, Albums, and Songs. These mappings would be likely to include the various payouts and &ldquo;points&rdquo; (or percentage payouts) which would go to the various stakeholders involved in the process. Of course, there would need to be some mapping somewhere of the individual entity or individual&rsquo;s payment details so that the bank could eventually send them the money. This would not be wise to be kept within the smart contract system itself but rather within the bank&rsquo;s systems (why and how that would happen I will save for another day).</p>
+
+<p>These factories (in red in the above diagram) will allow the payments engine to identify, based on the unique identifiers from the streaming service&rsquo;s &ldquo;normal&rdquo; database of songs, albums, and artists (a reasonable assumption, but an assumption that the streaming service establishes unique identifiers for such things).</p>
+
+<p>Second, and primarily, one would build a payments calculation engine (in green in the above diagram). This engine would be the primary recipient, of, say, a daily dump of songs that had been played. The contract would then parse that dump, query the individual object to determine what the relative cuts were for all the stakeholders, and then send along a series of payment instructions to a payment engine (in blue in the above diagram) based on whatever formula was negotiated between the streaming service and the artists they were distributing content for. Again, for an example of what this formula would look like, see Spotify&rsquo;s quite transparent formula linked to above.</p>
+
+<p>Third is the payments engine. This engine would generally receive a unique address (or other identifier) which would, within the bank&rsquo;s systems be mapped to real world payment instructions within the jurisdiction (ACH bank details, SWIFT payment details, SEPA payment details, whatever). Along with the unique address where payment was to be sent would be the amount to be sent. This engine could be a very simple tracker engine. While engines are <em>usually</em> stateless, this engine would likely have a state. The idea being that the calculation engine would determine who and how much payments would be sent and would send these transactions into the payments engine. The payments engine would then collect these and then the bank, using whatever real world payments rail it deemed, would then make the payments in the real world from the streaming service&rsquo;s current account (or whatever they currently used to pay artists). When the payment had been made then the bank would notify the payments engine of that and the transaction would be recategorized somehow from a &ldquo;pending&rdquo; state to a &ldquo;paid&rdquo; state.</p>
+
+<p>Perhaps to close the loop then this would all be registered back into the object contracts.</p>
+
+<h2 id="the-smart-contract-backed-mvp-building-the-chain">The Smart Contract Backed MVP: Building the Chain</h2>
+
+<p>In addition to the smart contracts, one also needs to build a blockchain which will work behind the scenes to keep this whole system cryptographically verifiable. For this system we would build a permissioned blockchain design (there is no real need to run this on a public blockchain unless one wants to run the payment rails via the token of endogenous value within that blockchain; however, should one do so, one would be severly limited due to liquidity and capitalization limits which even the largest blockchains when matched against the scope of real world commerce). We would build a network of validators which could be run by, for example:</p>
+
+<ul>
+<li>streaming service (with roughly 25% of the stake);</li>
+<li>streaming service&rsquo;s bank (with roughly 25% of the stake);</li>
+<li>streaming service&rsquo;s outsourced internal audit firm (with roughly 25% of the stake);</li>
+<li>a consortium, or election of representatives amongst the labels involved in the system (with roughly 12.% of the stake); and, last but not least,</li>
+<li>a consortium, or election of representatives amongs the independent artists involved in the system (with roughly 12.5% of the stake)</li>
+</ul>
+
+<p>These validator nodes would work to keep the system in sync. There would also be other accounts, probably for the developers of the streaming service, and the rest of the system would be kept not behind a VPN but in the public sphere so that it would be transparent for all involved in the system. On a daily basis, the only nodes which would really need to &ldquo;interact&rdquo; with the system would be the streaming service (which would need to sign and verify play counts and send those to the payments calculation engine) and the streaming service&rsquo;s bank (which would need to sign and verify when payments had taken place). The rest of the nodes could be given permissions to &ldquo;see&rdquo; the system but not to actually interact with it, thereby ensuring the authenticity of the system. Over time, of course that could be relaxed based on the various permissioning capabilities of the blockchain base that had been used.</p>
+
+<h2 id="the-smart-contract-backed-mvp-the-benefits">The Smart Contract Backed MVP: The Benefits</h2>
+
+<p>The benefits of this system are a few:</p>
+
+<ul>
+<li>simplified accounting for all that happens;</li>
+<li>reduction in lag time for all stakeholders to get paid; and</li>
+<li>more flexibility for the streaming service should it need to establish various payout calculation engines for various artists (we may not like that Taylor Swift gets a better deal that <a href="http://www.last.fm/music/Wax+Fang" target="_blank">Wax Fang</a>, but if we want Taylor Swift on Spotify perhaps that&rsquo;s the market doing what markets do).</li>
+</ul>
+
+<p>Over time, more complex additions to the very simple MVP could be added.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Decentralized purists will get their hackles raised by this post because it is no where near a &ldquo;pure&rdquo; decentralized application. We &ldquo;used&rdquo; established bank payment rails rather than a decentralized cryptocurrency to facilitate the value transfer within the system for one thing. In our view this would be an easier system to sell to a major streaming service than one that included a &ldquo;purely decentralized&rdquo; payment rail such as bitcoin. Yes, we are still using banks, but we are also leveraging banks while also helping banks to understand what their role could look like in a future where smart contract backed systems are part of their &ldquo;bank as a platform&rdquo; play.</p>
+
+<p>The other thing which will raise the hackles of decentralized purists is that this application as currently overviewed does not get at a number of other problems streaming services must face, such as music discovery, gaurantees of play counts, decentralized content distribution, and other things. Those are all interesting problems, and indeed a music streaming service built by decentralized purists could get at some of those challenges, but likely not all of them. In any event, those problems were not among the problem set I was trying to overview within this post.</p>
+
+<p>This post was more about giving folks a bit of a feel for what types of systems Eris will be working towards over the course of 2016. An exiciting year, it will be!</p>
+
+<p><a href="https://www.flickr.com/photos/bangdoll/" target="_blank">(Photo credit: CC-BY-SA: bangdoll @ Flickr )</a></p>
+
+      </div>
+    </article>
+  </div>
+</div>
+
+</div>
+</div>
+<footer>
+  <p>Copyright &copy; 2014-2016 Eris Industries</p>
+</footer>
+</body>
+
+
+<div id="toc" class="well col-md-4 col-sm-6">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#one-problem-with-streaming-services">One Problem With Streaming Services</a></li>
+<li><a href="#the-smart-contract-backed-mvp-stakeholders">The Smart Contract Backed MVP: Stakeholders</a></li>
+<li><a href="#the-smart-contract-backed-mvp-smart-contract-overview">The Smart Contract Backed MVP: Smart Contract Overview</a>
+<ul>
+<li><a href="#understanding-smart-contract-factories">Understanding Smart Contract Factories</a></li>
+<li><a href="#understanding-smart-contract-engines">Understanding Smart Contract Engines</a></li>
+<li><a href="#bringing-it-all-together">Bringing It All Together</a></li>
+</ul></li>
+<li><a href="#the-smart-contract-backed-mvp-building-the-chain">The Smart Contract Backed MVP: Building the Chain</a></li>
+<li><a href="#the-smart-contract-backed-mvp-the-benefits">The Smart Contract Backed MVP: The Benefits</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+<script type="text/javascript">
+  var clicky_site_ids = clicky_site_ids || [];
+  clicky_site_ids.push( 100753928 );
+  (function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//static.clicky.com/js';
+    ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+  })();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.clicky.com/100753928ns.gif" /></p></noscript>
+</html>

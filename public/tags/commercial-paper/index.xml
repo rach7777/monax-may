@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Commercial Paper on Monax Industries</title>
+    <link>http://localhost/tags/commercial-paper/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/tags/commercial-paper/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Eris Commercial Paper Bundles: Toolkit for Financial Engineering</title>
+      <link>http://localhost/2016/03/31/commercial-paper-intro/</link>
+      <pubDate>Thu, 31 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2016/03/31/commercial-paper-intro/</guid>
+      <description>
+
+&lt;h3 id=&#34;eris-commercial-paper-bundles-toolkit-for-financial-engineering&#34;&gt;Eris Commercial Paper Bundles: Toolkit for Financial Engineering&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;An introduction to smart contracts for the digital non-native.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The Hash&lt;/strong&gt;. Computers work because almost any kind of information can be transformed into a string of zeroes and ones called binary code. Once data has been reduced to binary code, computers can apply mathematical operations to it to produce reliable results. Cryptography involves passing the binary code of a piece of data through a series of arithmetic operations to produce a hash, an encoded string of letters and numbers that represents the data.&lt;/p&gt;
+
+&lt;p&gt;Hashing is a one-way operation: while a certain data set will always produce the same unique identifier (the &lt;em&gt;hash&lt;/em&gt;), it is effectively impossible to do the math in reverse to decode the data from just the hash. One must have a key to access cryptographically stored information. Hashing and decentralized distributed data structures can be combined with business logic to make many kinds of applications, for example, value tokens. Value tokens, however, are just one way of using blockchain technology.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Smart Contracts&lt;/strong&gt;. Smart contracts are cryptographically secure computational processes acting on cryptographically secure data in blockchain systems.&lt;/p&gt;
+
+&lt;h3 id=&#34;so-what-s-the-big-deal&#34;&gt;So what&amp;rsquo;s the big deal?&lt;/h3&gt;
+
+&lt;p&gt;Smart contracts enable the technological evolution of existing legal concepts and solutions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Precedent&lt;/strong&gt;. Humans have long understood that history is our best guide, even when blazing new territory. Common law legal systems like the UK and US base their law, especially contract law, on &lt;em&gt;precedent&lt;/em&gt;, an earlier event that acts as a guide for subsequent similar circumstances. The collection, preservation and accessibility of legal precedent is a critical function of common law systems that will be enhanced by smart contracts that combine value creation, storage and transfer with logic and immutability of evidence.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Authenticity, registries, sworn statements and real problems to solve&lt;/strong&gt;. Determining authenticity of data for the purposes of making business and judicial decisions is another critical job of legal systems. To support this, governments often establish registries that give an “official” version of authenticity for property and relationships that are of public importance. This reliable version of important facts allows for predictability and growth in commercial relationships.&lt;/p&gt;
+
+&lt;p&gt;For legal proceedings, choosing what data to consider authentic when making decisions is a critical question. Historically, common law courts have relied on sworn statements of humans to establish significant facts. Large-scale failures of the current authenticity protocol for financial documents can have disastrous effects. For example, the ability to hide bad loans and produce bogus affidavits were important elements in the financial crisis of 2008. Smart contracts can both verify information in certain transactions more reliably than humans and allow a window into commerce for businesspeople and regulators.&lt;/p&gt;
+
+&lt;p&gt;One of the promises of smart contracts is to limit the role of the middleman in commerce, reducing pain points that slow the velocity of money and retard growth. For example, legal due diligence for a simple purchase of company assets can involve checklists of information more than thirty pages long. In a mature smart contract system, these due diligence and compliance tasks may be more effectively and cheaply handled by smart contracts with access to immutable data registries.&lt;/p&gt;
+
+&lt;p&gt;For those whose job is to increase the amount of money in the financial system by creating investments, smart contracts may provide solutions to liquidity problems by reinventing the processes of trading and settlement. Freed from many drains on resources, businesses will be able to concentrate on growth.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The big prize&lt;/strong&gt;. Smart contracts may not deliver the financial utopia many imagine, but they will deliver critical tools: increased data certainty and reliability of business processes. Data certainty means agreement as to the veracity and authenticity of evidence. It has the potential to eliminate the need to reconcile massive data systems and associated cost and delay. A cohesive approach to building such a mammoth blockchain system will require large-scale coordination across myriad sectors but is necessary to avoid a disjointed, siloed result that loses the benefits of smart contract technology.&lt;/p&gt;
+
+&lt;h3 id=&#34;commercial-paper&#34;&gt;Commercial Paper&lt;/h3&gt;
+
+&lt;p&gt;In order for commerce to flow, fungibility of value items is critical, as is careful typing and classifying of rights, obligations and objects. For a value object to function as currency, it must flow through commerce with as few strings attached as possible. Lawyers, businesspeople and governments have grappled with this issue for centuries - and one such set of tools that has evolved is &lt;em&gt;commercial paper,&lt;/em&gt; a type of debt obligation that specifically mimics the fungibility of fiat money while giving protection against adverse property claims (analogous to a cryptocurrency double-spend).&lt;/p&gt;
+
+&lt;p&gt;Commercial paper value is based on a promise and obligation to pay money in the future. The basic unit of commercial paper, the promissory note, may be recombined in infinite ways. The flexibility and reliability of commercial paper systems allows businesses to use these tools for growth. &lt;a href=&#34;https://blog.erisindustries.com/announcements/2016/03/03/r3/&#34; target=&#34;_blank&#34;&gt;Eris debuted commercial paper prototypes with over 40 of the world&amp;rsquo;s largest banks last month.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Eris&amp;rsquo;s inaugural smart contract product, &lt;strong&gt;Eris Industries’ Commercial Paper Software Bundles,&lt;/strong&gt; combines the obligation-based building blocks of commerce with smart contract potential. The ability to create promissory notes, issue shares and keep track of assets creates the toolkit for financial engineering: out of these simple structures flow complex uses like time notes, demand notes, order paper, bearer paper, corporate bonds, securities, stocks, dividends, debentures, certificates of deposit, drafts, loan originations, repurchase agreements, mutual funds, reinsurance and equity options, to name a few.&lt;/p&gt;
+
+&lt;p&gt;Crafted to work in multiple blockchain environments, Eris Commercial Paper Bundles deliver tools to build a strong smart contract use case system. Eris’s Commercial Paper is engineered for multidimensional applications, incorporating the lessons of history and precedent as well as the promise of the future.&lt;/p&gt;
+
+&lt;p&gt;To learn more about Eris Industries&amp;rsquo; Smart Contract Libraries subscriptions, please write us at &lt;a href=&#34;mailto:contact@erisindustries.com&#34; target=&#34;_blank&#34;&gt;contact@erisindustries.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

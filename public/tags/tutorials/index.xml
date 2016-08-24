@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorials on Monax Industries</title>
+    <link>http://localhost/tags/tutorials/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 Apr 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/tags/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How to Roll Your Own (Thelonious) Chain</title>
+      <link>http://localhost/2015/04/25/make-thelonious-chain/</link>
+      <pubDate>Sat, 25 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/04/25/make-thelonious-chain/</guid>
+      <description>&lt;p&gt;We have been updating our messaging to &lt;a href=&#34;https://docs.erisindustries.com/tutorials/getting-started/&#34; target=&#34;_blank&#34;&gt;a simple three step process&lt;/a&gt; for getting up to speed with our stack:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Install&lt;/li&gt;
+&lt;li&gt;Roll&lt;/li&gt;
+&lt;li&gt;Build&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Thelonious is no longer supported. Please see the tutorial series linked to above for working with the Eris platform.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

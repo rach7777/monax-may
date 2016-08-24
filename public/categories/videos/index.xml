@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Videos on Monax Industries</title>
+    <link>http://localhost/categories/videos/</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 May 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost/categories/videos/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Casey Goes to Switzerland to Talk Eris</title>
+      <link>http://localhost/2015/05/27/casey-in-switzerland/</link>
+      <pubDate>Wed, 27 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/05/27/casey-in-switzerland/</guid>
+      <description>&lt;p&gt;Casey was recently in Switzerland to give two talks. The production quality of these videos is not great (and I&amp;rsquo;m to blame). My phone recorder needed a paid upgrade to save more than three minutes of an .ogg file &amp;ndash; which I only realized after the first talk. We will be working on adding in some additional content to help understand what was happening on the slides and whiteboard.&lt;/p&gt;
+
+&lt;p&gt;While both videos are posted here, most said that the second (the technical side) was much more helpful than the first (the political and social side which underpins the Eris development and design philosophy).&lt;/p&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;
+
+&lt;div class=&#34;video-wrap&#34;&gt;
+    &lt;iframe src=&#34;//www.youtube.com/embed/z5iTNP3W9Kg?rel=0;modestbranding=1;autohide=1;showinfo=0;controls=1;color=white;theme=dark;&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://whatis.eris.industries&#34; target=&#34;_blank&#34;&gt;The slides for this video are available here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&#34;video-wrap&#34;&gt;
+    &lt;iframe src=&#34;//www.youtube.com/embed/XB0pHaghPIg?rel=0;modestbranding=1;autohide=1;showinfo=0;controls=1;color=white;theme=dark;&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://socscience.eris.industries&#34; target=&#34;_blank&#34;&gt;The slides for this video are available here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/eris-ltd/2gather&#34; target=&#34;_blank&#34;&gt;The 2gather video sharing DApp used in the demo is available here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ethan Lectures At Blockchain U: Eris, Ethereum, and Tendermint</title>
+      <link>http://localhost/2015/05/12/ethan-at-blockchain-u/</link>
+      <pubDate>Tue, 12 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid isPermaLink="true">http://localhost/2015/05/12/ethan-at-blockchain-u/</guid>
+      <description>&lt;p&gt;Ethan was recently at BlockchainU to give two lectures. Enjoy!&lt;/p&gt;
+
+&lt;div class=&#34;video-wrap&#34;&gt;
+    &lt;iframe src=&#34;//www.youtube.com/embed/6nRQhkja1do?rel=0;modestbranding=1;autohide=1;showinfo=0;controls=1;color=white;theme=dark;&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;video-wrap&#34;&gt;
+    &lt;iframe src=&#34;//www.youtube.com/embed/8KCCg67-2OY?rel=0;modestbranding=1;autohide=1;showinfo=0;controls=1;color=white;theme=dark;&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
