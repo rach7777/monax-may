@@ -1,0 +1,23 @@
+{
+  "name": "monax_industries",
+  "description": "monax industries",
+  "main": "",
+  "authors": [
+    "Monax Industries <support@monax.industries>"
+  ],
+  "license": "n/a",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./source/assets/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.6.3",
+    "octicons": "^4.3.0"
+  }
+}

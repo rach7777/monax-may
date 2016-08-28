@@ -61,25 +61,3 @@ twitter_user: eris_ltd
 youtube:  https://www.youtube.com/c/erisindustries-ltd
 facebook: https://www.facebook.com/erisindustries
 slack:    https://slack.eris.industries
-
-social:
-  -
-    title: twitter
-    url: https://twitter.com/eris_ltd
-    icon: twitter
-  -
-    title: github
-    url: https://github.com/eris-ltd
-    icon: github
-  -
-    title: slack
-    url: https://slack.eris.industries
-    icon: slack
-  -
-    title: support
-    url: https://support.erisindustries.com
-    icon: medkit
-  -
-    title: contact
-    url: mailto:contact@erisindustries.com
-    icon: envelope

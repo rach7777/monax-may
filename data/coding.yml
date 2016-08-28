@@ -12,3 +12,8 @@ docker:
 cli:
   repository: "https://github.com/eris-ltd/eris-cli.git"
   releases: "https://github.com/eris-ltd/eris-cli/releases"
+  pms:
+    - name: Homebrew
+      cmd: "brew install eris"
+    - name: apt-get
+      cmd: "(sudo) apt-get install eris"

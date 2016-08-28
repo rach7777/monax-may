@@ -1,0 +1,317 @@
+$article_color: #000;
+$code: #5d442a;
+$code_back: #e4d4c4;
+$dark_back: #040404;
+
+$khacki: #8c663f;
+$khacki_dark: #694c2f;
+$eris: #8cc63f;
+$erisbright: #a2c771;
+$white: #fff;
+$grey: #999;
+$blue: #afd1f1;
+
+$nav_back: #080808;
+$nav_text: #fff;
+$nav_divider: #333;
+$nav_hover: #9d9d9d;
+$nav_links: #222;
+
+/*              */
+/*   General    */
+/*              */
+body {
+  padding-top: 60px;
+  background-color: white;
+  background-position: 0% 0%;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-size: 100%;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+}
+
+code {
+  color: $code;
+  background-color: $code_back;
+}
+
+a {
+  color: $khacki;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-align: left;
+  padding-bottom: 1em;
+}
+
+li a {
+  color: $khacki;
+}
+
+p a {
+  color: $khacki;
+}
+
+a:hover {
+  color: $khacki_dark;
+  text-decoration: none;
+}
+
+.page-header {
+  margin-top: 1.5em;
+  padding-top: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content img {
+  text-align: center;
+  margin-left: 10%;
+  margin-bottom: 28px;
+  max-width: 80%;
+}
+
+.row {
+  max-width: 100%;
+}
+
+/*              */
+/*     Nav      */
+/*              */
+.navbar-fixed-top {
+  padding: 0.5em 0 0.5em 0;
+}
+
+nav.navbar-inverse {
+  background: $nav_back;
+}
+
+nav a {
+  text-transform: lowercase;
+  color: $nav_text !important;
+}
+
+nav a:hover {
+  color: $nav_hover !important;
+}
+
+nav .navbar-brand img {
+  position: absolute;
+  top: 0;
+  padding-top: 0.5em;
+}
+
+nav li.active a {
+  background: $nav_links !important;
+}
+
+nav ul.dropdown-menu {
+  background: $nav_back;
+}
+
+nav ul.dropdown-menu li a {
+  color: $nav_text;
+}
+
+nav ul.dropdown-menu li a:hover {
+  background-color: $nav_links;
+  color: $nav_hover;
+}
+
+nav ul.dropdown-menu li.divider {
+  background-color: $nav_divider;
+}
+
+/*              */
+/*   Sidebar    */
+/*              */
+aside {
+  position: fixed !important;
+  left: 0;
+  top: 185px;
+}
+
+aside h4 {
+  color: $khacki;
+  font-size: 1.5em;
+  padding: 15px 15px 15px 0;
+}
+
+aside p {
+  font-size: 14px;
+}
+
+aside img.sidebar-gravatar {
+  max-width: 40%;
+  padding-right: 10px;
+}
+
+/*              */
+/*   Content    */
+/*              */
+article {
+  color: $article_color;
+}
+
+#toc-container {
+  position: fixed;
+  top: 215px;
+}
+
+#toc-container a{
+  color: $khacki !important;
+}
+
+#toc-container .active {
+  border-left: $khacki solid 2px;
+}
+
+.sub-menus {
+  padding-left: 5%;
+}
+
+#content-block {
+  padding-bottom: 400px;
+}
+
+#content-block img {
+  max-width: 50%;
+}
+
+.content-image {
+  text-align: center;
+  margin: auto;
+}
+
+#main-content {
+  .video-wrap {
+    width: 100%;
+    padding-bottom: 3em;
+    padding-top: 3em;
+    margin: auto;
+    text-align: center;
+
+    iframe {
+      width: 685px;
+      height: 385px;
+    }
+  }
+
+  img {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  pre {
+    code {
+      color: $white;
+    }
+  }
+
+  p {
+    a.action-big {
+      width: 75%;
+      margin: 1.5em auto 0 auto;
+      text-align: center;
+      background: $khacki;
+      color: $white;
+      padding: 1.5em;
+      display: block;
+    }
+  }
+}
+
+.pagination-meta {
+  margin-bottom: 100px;
+}
+
+.next-entry {
+  text-align: right;
+}
+
+.post-content .thumbnail {
+  float: left;
+  max-width: 20%;
+  margin-right: 14px;
+}
+
+article h1, h2, h3, h4, h5, h6 {
+  margin-top: 36px;
+  margin-bottom: 24px;
+}
+
+article.content p:first-child {
+  margin-top: 36px;
+}
+
+.post-meta p {
+  font-size: 14px;
+}
+
+/*              */
+/*    Footer    */
+/*              */
+footer {
+  background: $dark_back;
+  padding: 25px 0 12px 0;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  font-size: 12px;
+}
+
+/*              */
+/*     Nuke     */
+/*              */
+.make-eris-green {
+  color: $eris;
+}
+
+.make-white {
+  color: $white;
+}
+
+/*              */
+/*   BreakPts   */
+/*              */
+
+/* Above mobile */
+@media (min-width: 781px) {
+
+}
+
+/* Above tablet   */
+@media (min-width: 921px) {
+
+}
+
+/* Tablet */
+@media (max-width: 920px) {
+
+}
+
+/* Mobile */
+@media (max-width: 780px) {
+  #main-content {
+    .video-wrap {
+      width: 100%;
+      padding-bottom: 3em;
+      padding-top: 3em;
+      margin: auto;
+      text-align: center;
+
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+

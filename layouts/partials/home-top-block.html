@@ -3,7 +3,7 @@
   <div class="vert-text">
     <a href="#intro"><img src="{{ .Site.BaseURL }}/images/{{ .Site.Params.mainIcon }}" class="logo"></a>
     <br />
-    {{ range .Site.Data.sites.social }}
+    {{ range .Site.Params.home_buttons }}
       <a href="{{ .url }}" class="btn btn-default btn-lg"><i class="fa fa-fw fa-{{ .icon }}" aria-hidden="true"></i> <span class="network-name">{{ .title }}</span></a>
     {{ end }}
     </div>

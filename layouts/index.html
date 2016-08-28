@@ -1,28 +1,30 @@
-<link href="/css/prism.css" rel="stylesheet" />
 {{ partial "header.html" . }}
 {{ partial "home-top-block.html" . }}
-  {{ range $index, $element := .Data.Pages.ByWeight }}{{ if eq .Section "home_overview" }}
-    <div id="main">
-        <!-- Intro -->
-        {{ if modBool $index 2 }}<div id="intro" class="counterpoint">{{ else }}<div id="intro" class="point">{{ end}}
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 col-md-offset-3 text-center">
-                {{ if (isset .Params "icon") }}
-                    <i class="lead-icon icon-{{ .Params.icon }}"></i>
-                {{ end }}
-                <h2>{{ .Title }}</h2>
-                <p class="lead">
-                    {{ .Content }}
-                </p>
-              </div>
+
+  <div id="main">
+  {{ range $index, $element := .Data.Pages.ByWeight }}
+    {{ if eq .Section "home_overview" }}
+      <!-- Intro -->
+      {{ if modBool $index 2 }}<div id="intro-{{ $index }}" class="counterpoint">{{ else }}<div id="intro-{{ $index }}" class="point">{{ end }}
+        <!-- {{ $index }} -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+              {{ if (isset .Params "icon") }}
+                  <i class="lead-icon icon-{{ .Params.icon }}"></i>
+              {{ end }}
+              <h2>{{ .Title }}</h2>
+              <p class="lead">
+                  {{ .Content }}
+              </p>
             </div>
           </div>
         </div>
-        <!-- /Intro -->
-      {{ end }}
+      </div>
+      <!-- /Intro -->
+    {{ end }}
 
-      {{ if eq .Section "home_uses" }}
+    {{ if eq .Section "home_uses" }}
       <!-- /Point -->
       <div class="callout">
         <div class="container">
@@ -30,7 +32,6 @@
             <div class="col-md-12 text-center">
                 {{ if (isset .Params "icon") }}
                   <i class="callout-icon icon-{{ .Params.icon }}"></i>
-                    <!-- <i class="fa fa-5x fa-{{ .Params.icon }}" aria-hidden="true"></i> -->
                 {{ end }}
                 <h2>{{ .Title }}</h2>
             </div>
@@ -40,35 +41,37 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner owl-carousel">
                     {{ range .Params.carousel }}
-                      <div class="item"> <blockquote><p>{{ .thing }}</p>{{ .explanation }}</blockquote></div>
+                      <div class="item"> <blockquote><p>{{ .thing }}</p>{{ .explanation | markdownify }}</blockquote></div>
                     {{ end }}
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       <!-- /Point -->
-      {{ end }}
     {{ end }}
-    </div>
+  {{ end }}
+  </div><!-- #main -->
 
     <!-- Call to Action -->
     <div id="action" class="call-to-action">
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-md-offset-1 text-center">
-            <h1 style="padding-bottom:.5em;">Getting Started</h1>
-            <a href="{{ .Site.Data.coding.cli.releases }}" class="btn btn-lg btn-primary">Download <i class="icon-arrow-down"></i></a>
-            <!-- <a href="/overview/quickstart" style="color:white;font-weight:300;">Quickstart Guide</a> -->
-            <a href="{{ with $obj := index .Site.Menus.main 0}}{{ $obj.URL }}{{end}}" class="btn btn-lg btn-primary">Learn More <i class="icon-arrow-up"></i></a>
-            <p>&nbsp;</p>
-            <h4>Using Homebrew?</h4>
-            <pre><code>brew install eris</code></pre>
+          <h1 style="padding-bottom:.5em;">Getting Started</h1>
+          <a href="{{ .Site.Data.coding.cli.releases }}" class="btn btn-lg btn-primary">Download <i class="icon-arrow-down"></i></a>
+          <a href="{{ with $obj := index .Site.Menus.main 0}}{{ $obj.URL }}{{end}}" class="btn btn-lg btn-primary">Learn More <i cclass="fa fa-leanpub" aria-hidden="true"></i></a>
+          {{ range .Site.Data.coding.cli.pms }}
+            <p>&nbsp</p>
+            <h4>Using {{ .name }}</h4>
+            <pre><code>{{ .cmd }}</code></pre>
+          {{ end }}
           </div>
         </div>
       </div>
     </div>
     <!-- /Call to Action -->
 
-{{ partial "footer.html" . }}
+{{ partial "footer_home.html" . }}
+{{ partial "scripts.html" . }}
+{{ partial "analytics.html" . }}

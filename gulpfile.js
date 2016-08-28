@@ -1,64 +1,151 @@
-var BatchStream = require('batch-stream2')
-var gulp = require('gulp')
-var mainBowerFiles = require('main-bower-files')
-var plugins = require('gulp-load-plugins')()
-var sourcemaps = require('gulp-sourcemaps')
-var browserify = require('browserify')
-var buffer = require('vinyl-buffer')
-var source = require('vinyl-source-stream')
-var gutil = require('gulp-util')
+"use strict";
 
-var sourcedir = 'source'
-var src = {
-  styles: [sourcedir + '/styles/**/*.+(css|scss)'],
-  scripts: [sourcedir + '/scripts/**/*.+(js|coffee)'],
-  // The entry point of a browserify bundle
-  // add as many bundles as you wish
-  main: sourcedir + '/scripts/app.coffee',
-}
-var dist = {
-  all: ['dist/**/*'],
-  assets: 'static/assets'
-}
-var debug = true
+var babelify      = require('babelify'),
+      BatchStream = require('batch-stream2'),
+      browserify  = require('browserify'),
+      buffer      = require('vinyl-buffer'),
+      gulp        = require('gulp'),
+      gutil       = require('gulp-util'),
+      livereload  = require('gulp-livereload'),
+      merge       = require('merge'),
+      plugins     = require('gulp-load-plugins')(),
+      rename      = require('gulp-rename'),
+      source      = require('vinyl-source-stream'),
+      sourceMaps  = require('gulp-sourcemaps'),
+      imagemin    = require('gulp-imagemin'),
+      flatten     = require('gulp-flatten'),
+      mainBowerFiles = require('main-bower-files'),
+      uglify      = require('gulp-uglify'),
+      filter      = require('gulp-filter'),
+      watchify    = require('watchify');
 
-function buildCSS() {
-  // all css goes to one file
-  return gulp.src(src.styles)
-    .pipe(plugins.plumber())
-    .pipe(plugins.sass({
-      sourceComments: debug ? 'map' : false
-    }))
-    .pipe(plugins.concat('eris.css'))
-    .pipe(gulp.dest(dist.assets + '/styles'))
-}
+const imgFilter  = filter('**/*.{png,jpg,gif,jpeg}'),
+      fontFilter = filter('**/*.{eot,svg,ttf,woff,woff2}'),
+      dataFilter = filter('**/*.{json,yml,yaml,csv,toml}'),
+      cssFilter  = filter('**/*.min.css'),
+      styleFilter = filter('**/*.{css,scss,sass}');
+
+var config = {
+    js: {
+        src: './js/eris.js',             // entry point to building the bundle
+        srcDir: './source/',             // the directory to search and use
+        vendorDirs: ['./node_modules'],  // where browserify stuff sits
+        mapDir: './maps/',               // Subdirectory to save maps to
+        outputDir: './static/js/',       // Directory to save bundle to
+        outputFile: './eris.js'          // Name to use for bundle
+    },
+    css: {
+        srcs: './source/css/**/*',
+        vendorDirs: [
+          './source/assets/css/*',
+          './source/assets/**/css/*',
+          './source/assets/**/build/*',
+          './node_modules/bootstrap/dist/css/*',
+          './node_modules/owl.carousel/dist/assets/owl.carousel*',
+        ],
+        mapDir: './maps/',
+        outputDir: './static/css/',
+        outputFile: './eris.css'
+    },
+    img: {
+        srcs: ['./source/images/**/*'],
+        outputDir: './static/images/'
+    },
+    data: {
+        srcs: ['./data/'],
+        outputDir: './static/'
+    },
+    fonts: {
+        srcs: ['./source/fonts/*','./source/assets/**/fonts/*','./source/assets/**/font/*'],
+        outputDir: './static/fonts'
+    }
+};
 
 function buildJS() {
   return browserify({
-      entries: [src.main],
-      extensions: ['.coffee', '.js'],
-      transform: ['coffeeify'],
-      debug: true
+      entries: [config.js.src],
+      basedir: config.js.srcDir,
+      debug: true,
+      paths: config.js.vendorDirs,
     })
-    .bundle()
-    .pipe(source('app.js'))
-    .pipe(buffer())
-    .pipe(sourcemaps.init({ loadMaps: true }))
-      .on('error', gutil.log)
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest(dist.assets + '/scripts'))
+    .transform(babelify, { presets : [ 'es2015' ] }) // use bable to properly compile
+    .bundle()                                        // Start bundle
+    .pipe(source(config.js.src))                     // Entry point
+    .pipe(buffer())                                  // Convert to gulp pipeline
+    .pipe(rename(config.js.outputFile))              // Rename output
+    .pipe(sourceMaps.init())                         // Strip inline source maps
+    .pipe(uglify())                                  // apply uglifier
+    .pipe(sourceMaps.write(config.js.mapDir))        // Save source maps to their own dir
+    .pipe(gulp.dest(config.js.outputDir))            // Save 'bundle' to build/
+    .pipe(livereload());                             // Reload browser if relevant
 }
 
-gulp.task('css', buildCSS)
-gulp.task('js', buildJS)
+function prepCSS() {
+  return gulp.src(config.css.vendorDirs)
+    .pipe(cssFilter)
+    .pipe(flatten())
+    .pipe(plugins.sass({
+      sourceComments: false,
+      errLogToConsole: true,
+      outputStyle: 'compressed',
+    }))
+    .pipe(gulp.dest(config.css.outputDir))
+}
 
-gulp.task('watch', ['css', 'js'], function() {
-  plugins.watch({ glob: src.styles, name: 'styles' }, delayed(buildCSS))
-  plugins.watch({ glob: src.scripts, name: 'scripts' }, delayed(buildJS))
-})
+function prepSyntax() {
+  return gulp.src('./node_modules/prismjs/themes/prism-okaidia.css')
+    .pipe(styleFilter)
+    .pipe(flatten())
+    .pipe(plugins.sass({
+      sourceComments: false,
+      errLogToConsole: true,
+      outputStyle: 'compressed',
+    }))
+    .pipe(gulp.dest(config.css.outputDir))
+}
+
+function buildCSS() {
+  return gulp.src(config.css.srcs)
+    .pipe(styleFilter)
+    .pipe(plugins.plumber())
+    .pipe(sourceMaps.init())  // Strip inline source maps
+    .pipe(plugins.sass({
+      sourceComments: false,
+      errLogToConsole: true,
+      outputStyle: 'compressed',
+    }))
+    .pipe(sourceMaps.write(config.css.mapDir))    // Save source maps to their own dir
+    .pipe(gulp.dest(config.css.outputDir))
+    .pipe(livereload());
+}
+
+function buildImgs(){
+  return gulp.src(config.img.srcs)
+    .pipe(imgFilter)
+    .pipe(imagemin({
+      optimizationLevel: 5,
+      progressive: true,
+      interlaced: true
+    }))
+    .pipe(gulp.dest(config.img.outputDir));
+}
+
+function buildData() {
+  return gulp.src(config.data.srcs)
+    .pipe(dataFilter)
+    .pipe(gulp.dest(config.data.outputDir))
+}
+
+function buildFonts() {
+  return gulp.src(config.fonts.srcs)
+    .pipe(fontFilter)
+    .pipe(flatten())
+    .pipe(gulp.dest(config.fonts.outputDir))
+};
+
 
 //
-// live reload can emit changes only when at lease one build is done
+// live reload can emit changes only when at least one build is done
 //
 gulp.task('live', ['watch'], function() {
   var server = plugins.livereload()
@@ -77,27 +164,22 @@ gulp.task('live', ['watch'], function() {
   })
 })
 
-gulp.task('compress-css', ['css'], function() {
-  return gulp.src(dist.assets + '/')
-    .pipe(plugins.minifyCss())
-    .pipe(gulp.dest(dist.assets))
+gulp.task('watch', ['build-css', 'build-js', 'build-imgs'], function() {
+  plugins.watch({ glob: config.css.srcDir, name: '*.css' }, delayed(buildCSS))
+  plugins.watch({ glob: config.js.srcDir, name: '*.js' }, delayed(buildJS))
+  plugins.watch({ glob: config.img.srcDir, name: '*' }, delayed(buildImgs))
 })
 
-gulp.task('compress-js', ['js'], function() {
-  return gulp.src(dist.assets)
-    .pipe(plugins.uglify())
-    .pipe(gulp.dest(dist.assets))
-})
-
-gulp.task('nodebug', function() {
-  // set debug to false,
-  // then browserify will not output sourcemap
-  debug = false
-})
+gulp.task('prep-syn', prepSyntax)
+gulp.task('prep-css', prepCSS)
+gulp.task('build-css', ['prep-syn', 'prep-css'], buildCSS)
+gulp.task('build-js', buildJS)
+gulp.task('build-imgs', buildImgs)
+gulp.task('build-data', buildData)
+gulp.task('build-fonts', buildFonts)
 
 // build for production
-gulp.task('compress', ['compress-css', 'compress-js'])
-gulp.task('build', ['nodebug', 'compress'])
+gulp.task('build', ['build-css', 'build-js', 'build-imgs', 'build-data', 'build-fonts'])
 
 // default task is build
 gulp.task('default', ['build'])

@@ -1,66 +1,49 @@
-{{ $author := index .Site.Data.team "default" }}
-{{ if .Params.author }}
-  {{ $author := index .Site.Data.team .Params.author }}
-{{ end }}
-
-<!-- Open Graph || Facebook Meta -->
-{{ if .Params.title  }}
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="{{ .Permalink }}" />
-  <meta property="og:title" content="{{ .Title }}" />
-  <meta property="og:site_name" content="{{ .Site.Title }}" />
-{{ else }}
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ .Site.BaseURL }}" />
-  <meta property="og:title" content="{{ .Site.Title }}" />
-{{ end }}
-{{ if .Params.excerpt  }}
-  <meta property="og:description" content="{{ .Params.excerpt }}" />
-{{ end }}
-{{ if .Params.thumbnail  }}
-  <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Date.Format "2006" | printf "/images/%s/%s" . $.Params.thumbnail }}" />
-  <meta property="og:image" content="/images/ei-logo-sharing-square.png" />
-{{ end }}
-
-<!-- Twitter Cards -->
-{{ if .Params.thumbnail  }}
+{{- $author := index .Site.Data.team "default" }}{{ if .Params.author }}{{ $author := index .Site.Data.team .Params.author }}{{ end -}}
+{{- if .Params.title -}}<!-- Open Graph || Facebook Meta -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+{{- else -}}
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ .Site.BaseURL }}" />
+    <meta property="og:title" content="{{ .Site.Title }}" />
+{{- end }}{{- if .Params.excerpt  }}
+    <meta property="og:description" content="{{ .Params.excerpt }}" />
+{{- end }}{{- if .Params.thumbnail  }}
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Date.Format "2006" | printf "/images/%s/%s" . $.Params.thumbnail }}" />
+    <meta property="og:image" content="/images/ei-logo-sharing-square.png" />
+{{- end }}{{- if .Params.thumbnail  }}<!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
-{{ else }}
+{{- else -}}
     <meta name="twitter:card" content="summary" />
-{{ end }}
-<meta name="twitter:site" content="@{{ .Site.Data.sites.twitter_user }}" />
-<meta name="twitter:title" content="{{ .Site.Title }}" />
-{{ if .Params.title  }}
-  <meta name="twitter:title" content="{{ .Title }}" />
-{{ else }}
-  <meta name="twitter:title" content="{{ .Site.Title }}" />
-{{ end }}
-{{ if .Params.excerpt  }}
-  <meta name="twitter:description" content="{{ .Params.excerpt }}" />
-{{ else }}
-  <meta name="twitter:description" content="{{ .Site.Params.description }}" />
-{{ end }}
-{{ if .Params.thumbnail  }}
-  <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Date.Format "2006" | printf "/images/%s/%s" . $.Params.thumbnail }}" />
-  <meta name="twitter:image" content="/images/ei-logo-sharing-square.png" />
-{{ end }}
-{{ if $author.twitter }}
-  <meta name="twitter:creator" content="@{{ $author.twitter }}">
-{{ end }}
-
-<!-- Google Meta -->
-<meta name="keywords" content="{{ .Site.Params.keywords }}" />
-{{ if .Params.title  }}
-  <meta itemprop="name" content="{{ .Title }}" />
-{{ else }}
-  <meta itemprop="name" content="{{ .Site.Title }}" />
-{{ end }}
-{{ if .Params.excerpt  }}
-  <meta name="description" content="{{ .Params.excerpt }}" />
-{{ else }}
-  <meta name="description" content="{{ .Site.Params.description }}" />
-{{ end }}
-{{ if .Params.thumbnail  }}
-  <meta itemprop="image" content="{{ .Site.BaseURL }}{{ .Date.Format "2006" | printf "/images/%s/%s" . $.Params.thumbnail }}" />
-  <meta itemprop="image" content="/images/ei-logo-sharing-square.png" />
-{{ end }}
+{{- end }}
+    <meta name="twitter:site" content="@{{ .Site.Data.sites.twitter_user }}" />
+    <meta name="twitter:title" content="{{ .Site.Title }}" />
+{{- if .Params.title  }}
+    <meta name="twitter:title" content="{{ .Title }}" />
+{{- else -}}
+    <meta name="twitter:title" content="{{ .Site.Title }}" />
+{{- end }}{{- if .Params.excerpt  }}
+    <meta name="twitter:description" content="{{ .Params.excerpt }}" />
+{{- else -}}
+    <meta name="twitter:description" content="{{ .Site.Params.description }}" />
+{{- end }}{{- if .Params.thumbnail  }}
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Date.Format "2006" | printf "/images/%s/%s" . $.Params.thumbnail }}" />
+    <meta name="twitter:image" content="/images/ei-logo-sharing-square.png" />
+{{- end }}{{- if $author.twitter }}
+    <meta name="twitter:creator" content="@{{ $author.twitter }}">
+{{- end }}
+    <meta name="keywords" content="{{ .Site.Params.keywords }}" /><!-- Google Meta -->
+{{- if .Params.title  }}
+    <meta itemprop="name" content="{{ .Title }}" />
+{{- else -}}
+    <meta itemprop="name" content="{{ .Site.Title }}" />
+{{- end }}{{- if .Params.excerpt  }}
+    <meta name="description" content="{{ .Params.excerpt }}" />
+{{- else -}}
+    <meta name="description" content="{{ .Site.Params.description }}" />
+{{- end }}{{- if .Params.thumbnail  }}
+    <meta itemprop="image" content="{{ .Site.BaseURL }}{{ .Date.Format "2006" | printf "/images/%s/%s" . $.Params.thumbnail }}" />
+    <meta itemprop="image" content="/images/ei-logo-sharing-square.png" />
+{{- end -}}

@@ -105,6 +105,23 @@ params:
   keywords: "blockchain,smart,contracts,data,driven,relationship,bft"
   clicky:    100753928
   mainIcon:  ei-logo-long-mobile.png
+  home_buttons:
+    -
+      title: docs
+      url: /documentation
+      icon: lightbulb-o
+    -
+      title: code
+      url: https://github.com/eris-ltd
+      icon: github
+    -
+      title: discuss
+      url: https://slack.eris.industries
+      icon: slack
+    -
+      title: contact
+      url: mailto:contact@erisindustries.com
+      icon: envelope
 
 # ----------------------- #
 #          Menu           #
