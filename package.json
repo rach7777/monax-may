@@ -44,6 +44,7 @@
     "gulp-load-plugins": "^0.4.0",
     "gulp-plumber": "^0.5.6",
     "gulp-rename": "^1.2.2",
+    "gulp-s3": "^0.3.0",
     "gulp-sass": "^2.0.1",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-stylus": "^2.0.2",

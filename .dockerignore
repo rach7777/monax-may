@@ -1,0 +1,7 @@
+.git
+static
+*.bak
+node_modules
+.htaccess
+.gitignore
+Dockerfile

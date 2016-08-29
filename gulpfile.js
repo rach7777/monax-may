@@ -17,6 +17,7 @@ var babelify      = require('babelify'),
       uglify      = require('gulp-uglify'),
       filter      = require('gulp-filter'),
       cleanCSS    = require('gulp-clean-css'),
+      s3          = require("gulp-s3"),
       debowerify  = require('debowerify');
 
 const imgFilter   = filter('**/*.{png,jpg,gif,jpeg}'),
@@ -50,7 +51,8 @@ var config = {
     },
     img: {
         srcs:      [
-                      './source/images/**/*'
+                      './source/images/**/*',
+                      './content/blog/images/**/*'
                    ],
         watchDir:  './source/images/**/*',
         outputDir: './static/images/'
@@ -68,6 +70,9 @@ var config = {
                       './source/assets/**/font/*'
                    ],
         outputDir: './static/fonts'
+    },
+    site: {
+        outputDir: './public/**'
     }
 };
 
@@ -161,6 +166,21 @@ function buildFonts() {
     .pipe(gulp.dest(config.fonts.outputDir))
 };
 
+function deploySite() {
+  var aws = {
+    "key":    process.env.AWS_ACCESS_KEY_ID,
+    "secret": process.env.AWS_SECRET_ACCESS_KEY,
+    "bucket": process.env.AWS_DEFAULT_REGION,
+    "region": process.env.AWS_BUCKET_NAME
+  }
+  console.log(aws)
+  // return gulp.src(config.site.outputDir, {read: false})
+  //   .pipe(s3(aws, {
+  //       headers: {'Cache-Control': 'max-age=315360000, no-transform, public'}
+  //   }));
+  return
+}
+
 //
 // live reload can emit changes only when at least one build is done
 //
@@ -180,6 +200,8 @@ gulp.task('live', ['watch'], function() {
     server.changed(files.join(','))
   })
 })
+
+gulp.task('deploy', deploySite)
 
 gulp.task('watch', ['build-css', 'build-js', 'build-imgs', 'build-data', 'build-fonts'], function() {
   gulp.watch(config.js.watchDir, delayed(buildJS));
