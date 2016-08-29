@@ -14,49 +14,59 @@ var babelify      = require('babelify'),
       sourceMaps  = require('gulp-sourcemaps'),
       imagemin    = require('gulp-imagemin'),
       flatten     = require('gulp-flatten'),
-      mainBowerFiles = require('main-bower-files'),
       uglify      = require('gulp-uglify'),
       filter      = require('gulp-filter'),
-      watchify    = require('watchify');
+      cleanCSS    = require('gulp-clean-css'),
+      debowerify  = require('debowerify');
 
-const imgFilter  = filter('**/*.{png,jpg,gif,jpeg}'),
-      fontFilter = filter('**/*.{eot,svg,ttf,woff,woff2}'),
-      dataFilter = filter('**/*.{json,yml,yaml,csv,toml}'),
-      cssFilter  = filter('**/*.min.css'),
-      styleFilter = filter('**/*.{css,scss,sass}');
+const imgFilter   = filter('**/*.{png,jpg,gif,jpeg}'),
+      fontFilter  = filter('**/*.{eot,svg,ttf,woff,woff2}'),
+      dataFilter  = filter('**/*.{json,yml,yaml,csv,toml}'),
+      cssFilter   = filter('**/*.min.css'),
+      styleFilter = filter('**/*.{css,scss}');
 
 var config = {
     js: {
-        src: './js/eris.js',             // entry point to building the bundle
-        srcDir: './source/',             // the directory to search and use
-        vendorDirs: ['./node_modules'],  // where browserify stuff sits
-        mapDir: './maps/',               // Subdirectory to save maps to
-        outputDir: './static/js/',       // Directory to save bundle to
-        outputFile: './eris.js'          // Name to use for bundle
+        src:        './eris.js',
+        srcDir:     './source/js/',
+        watchDir:   './source/js/**/*',
+        mapDir:     './maps/',
+        outputDir:  './static/js',
+        outputFile: './eris.js'
     },
     css: {
-        srcs: './source/css/**/*',
+        srcs:       './source/css/**/*',
+        watchDir:   './source/css/**/*',
         vendorDirs: [
-          './source/assets/css/*',
-          './source/assets/**/css/*',
-          './source/assets/**/build/*',
-          './node_modules/bootstrap/dist/css/*',
-          './node_modules/owl.carousel/dist/assets/owl.carousel*',
-        ],
-        mapDir: './maps/',
-        outputDir: './static/css/',
+                      './source/assets/css/*',
+                      './source/assets/**/css/*',
+                      './source/assets/**/build/*',
+                      './node_modules/bootstrap/dist/css/*',
+                      './node_modules/owl.carousel/dist/assets/owl.carousel*',
+                    ],
+        mapDir:     './maps/',
+        outputDir:  './static/css/',
         outputFile: './eris.css'
     },
     img: {
-        srcs: ['./source/images/**/*'],
+        srcs:      [
+                      './source/images/**/*'
+                   ],
+        watchDir:  './source/images/**/*',
         outputDir: './static/images/'
     },
     data: {
-        srcs: ['./data/'],
+        srcs:      [
+                      './data/'
+                   ],
         outputDir: './static/'
     },
     fonts: {
-        srcs: ['./source/fonts/*','./source/assets/**/fonts/*','./source/assets/**/font/*'],
+        srcs:      [
+                      './source/fonts/*',
+                      './source/assets/**/fonts/*',
+                      './source/assets/**/font/*'
+                   ],
         outputDir: './static/fonts'
     }
 };
@@ -66,9 +76,9 @@ function buildJS() {
       entries: [config.js.src],
       basedir: config.js.srcDir,
       debug: true,
-      paths: config.js.vendorDirs,
     })
-    .transform(babelify, { presets : [ 'es2015' ] }) // use bable to properly compile
+    .transform(babelify, { presets: [ 'es2015' ] })  // use bable to properly compile
+    .transform(debowerify, { preferNPM: true })      // find bower installed files
     .bundle()                                        // Start bundle
     .pipe(source(config.js.src))                     // Entry point
     .pipe(buffer())                                  // Convert to gulp pipeline
@@ -80,41 +90,49 @@ function buildJS() {
     .pipe(livereload());                             // Reload browser if relevant
 }
 
-function prepCSS() {
-  return gulp.src(config.css.vendorDirs)
-    .pipe(cssFilter)
-    .pipe(flatten())
-    .pipe(plugins.sass({
-      sourceComments: false,
-      errLogToConsole: true,
-      outputStyle: 'compressed',
-    }))
-    .pipe(gulp.dest(config.css.outputDir))
-}
-
 function prepSyntax() {
   return gulp.src('./node_modules/prismjs/themes/prism-okaidia.css')
     .pipe(styleFilter)
-    .pipe(flatten())
+    .pipe(plugins.plumber())
     .pipe(plugins.sass({
       sourceComments: false,
       errLogToConsole: true,
       outputStyle: 'compressed',
     }))
+    .pipe(cleanCSS({
+      compatibility: 'ie8'
+    }))
+    .pipe(flatten())
+    .pipe(gulp.dest(config.css.outputDir))
+}
+
+function prepCSS() {
+  return gulp.src(config.css.vendorDirs)
+    .pipe(cssFilter)
+    .pipe(plugins.plumber())
+    .pipe(plugins.sass({
+      sourceComments: false,
+      errLogToConsole: true,
+      outputStyle: 'compressed',
+    }))
+    .pipe(cleanCSS({
+      compatibility: 'ie8'
+    }))
+    .pipe(flatten())
     .pipe(gulp.dest(config.css.outputDir))
 }
 
 function buildCSS() {
   return gulp.src(config.css.srcs)
-    .pipe(styleFilter)
     .pipe(plugins.plumber())
-    .pipe(sourceMaps.init())  // Strip inline source maps
     .pipe(plugins.sass({
       sourceComments: false,
       errLogToConsole: true,
       outputStyle: 'compressed',
     }))
-    .pipe(sourceMaps.write(config.css.mapDir))    // Save source maps to their own dir
+    .pipe(cleanCSS({
+      compatibility: 'ie8'
+    }))
     .pipe(gulp.dest(config.css.outputDir))
     .pipe(livereload());
 }
@@ -143,7 +161,6 @@ function buildFonts() {
     .pipe(gulp.dest(config.fonts.outputDir))
 };
 
-
 //
 // live reload can emit changes only when at least one build is done
 //
@@ -164,10 +181,10 @@ gulp.task('live', ['watch'], function() {
   })
 })
 
-gulp.task('watch', ['build-css', 'build-js', 'build-imgs'], function() {
-  plugins.watch({ glob: config.css.srcDir, name: '*.css' }, delayed(buildCSS))
-  plugins.watch({ glob: config.js.srcDir, name: '*.js' }, delayed(buildJS))
-  plugins.watch({ glob: config.img.srcDir, name: '*' }, delayed(buildImgs))
+gulp.task('watch', ['build-css', 'build-js', 'build-imgs', 'build-data', 'build-fonts'], function() {
+  gulp.watch(config.js.watchDir, delayed(buildJS));
+  gulp.watch(config.css.watchDir, delayed(buildCSS));
+  gulp.watch(config.img.watchDir, delayed(buildImgs));
 })
 
 gulp.task('prep-syn', prepSyntax)

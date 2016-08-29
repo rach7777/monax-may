@@ -7,12 +7,12 @@
     <title>{{ if .Params.title }}{{ .Site.Title }} | {{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
     <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico" type="image/x-icon" />
     {{ partial "sharing_info.html" . }}
+    <link href='http://fonts.googleapis.com/css?family=Arbutus+Slab&family=Cabin:600&family=Source+Code+Pro' rel='stylesheet' type='text/css'>
     <link href="{{ .Site.BaseURL }}css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ .Site.BaseURL }}css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Arbutus+Slab&family=Cabin:600&family=Source+Code+Pro' rel='stylesheet' type='text/css'>
     <link href="{{ .Site.BaseURL }}css/font-awesome.min.css" rel="stylesheet">
-    <link href="{{ .Site.BaseURL }}css/hugofont.min.css" rel="stylesheet">
-    <link href="{{ .Site.BaseURL }}css/owl.carousel.min.css" rel="stylesheet">
+    <link href="{{ .Site.BaseURL }}css/hugofont.min.css" rel="stylesheet"><!-- only on home -->
+    <link href="{{ .Site.BaseURL }}css/owl.carousel.min.css" rel="stylesheet"><!-- only on home -->
     <link href="{{ .Site.BaseURL }}css/prism-okaidia.css" rel="stylesheet" />
     <link href="{{ .Site.BaseURL }}css/eris.css" rel="stylesheet" >
     {{ if .Params.css }}<link rel="stylesheet" type="text/css" href='/css/{{ .Params.css }}.css' />{{ end }}

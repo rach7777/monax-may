@@ -1,3 +1,6 @@
+'use strict';
+
+global.jQuery = global.$ = require('jquery');
 require('jquery.toc');
 
 // Add proper attributes to Body
