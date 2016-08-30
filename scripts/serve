@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+static_dir=`pwd`/static
+
 setup() {
   if [[ `docker images site_buildr -q` == "" ]]
   then
@@ -9,37 +11,66 @@ setup() {
     `pwd`/scripts/build
   fi
 
-  mkdir `pwd`/static &>/dev/null
+  if [ ! -d "$static_dir" ]; then
+    mkdir $static_dir &>/dev/null
+  fi
 
   echo -e "=====================\nserving & waiting\n====================="
 }
 
 cleanup() {
   echo "Cleaning"
-  rm -rf `pwd`/static &>/dev/null
+
   docker rm --force site_gulp_watch
   docker rm --force site_hugo_serve
+
+  echo
+cat << EOF
+  Imma gonna finish up now.
+
+  If you change any of the files outside of the directories:
+
+    * content (used by the hugo watching container)
+    * layouts (used by the hugo watching container)
+    * source/js (used by the gulp watching container)
+    * source/css (used by the gulp watching container)
+
+  then you will need to rebuild the docker image.
+  To do so please run [docker rmi site] and then rerun me.
+
+  If you changed anything on the gulp / npm / bower area then
+  you will need to rebuild the site_buildr docker image.
+  To do so please run [docker rmi site site_buildr] and then
+  rerun me. (Note, this takes forever.)
+
+  If you only change things within the above listed directories
+  then you can simply rerun me.
+
+  Good-bye!
+
+EOF
 }
 
 serve() {
-docker run --name site_gulp_watch \
-  --user eris \
-  --volume `pwd`/source:/site/source \
-  --volume `pwd`/static:/site/static \
-  site \
-  gulp watch &
+  docker run --name site_gulp_watch \
+    --user eris \
+    --volume `pwd`/source/js:/site/source/js \
+    --volume `pwd`/source/css:/site/source/css \
+    --volume $static_dir:/site/static \
+    site \
+    gulp watch &
 
-docker run --name site_hugo_serve \
-  --user eris \
-  --volume `pwd`/content:/site/content \
-  --volume `pwd`/layouts:/site/layouts \
-  --volume `pwd`/static:/site/static \
-  --publish 127.0.0.1:1313:1313 \
-  site \
-  hugo serve --appendPort --baseURL http://localhost --bind 0.0.0.0 &
+  docker run --name site_hugo_serve \
+    --user eris \
+    --volume `pwd`/content:/site/content \
+    --volume `pwd`/layouts:/site/layouts \
+    --volume $static_dir:/site/static \
+    --publish 127.0.0.1:1313:1313 \
+    site \
+    hugo serve --appendPort --baseURL http://localhost --bind 0.0.0.0 &
 }
 
 setup
 serve
-trap "trap - SIGTERM; cleanup && kill -- -$$" SIGINT SIGTERM EXIT
+trap "trap - SIGTERM; cleanup; kill -- -$$" SIGINT SIGTERM EXIT
 tail -f /dev/null & wait

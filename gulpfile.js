@@ -88,7 +88,7 @@ var config = {
     }
 };
 
-function cleanHTML() {
+function buildHTML() {
   return gulp.src(config.site.cleanDirs, {read: false})
     .pipe(clean());
 }
@@ -215,7 +215,6 @@ gulp.task('live', ['watch'], function() {
   })
 })
 
-gulp.task('clean-html', cleanHTML)
 gulp.task('test', testSite)
 gulp.task('deploy', deploySite)
 
@@ -226,15 +225,15 @@ gulp.task('build-js', buildJS)
 gulp.task('build-imgs', buildImgs)
 gulp.task('build-data', buildData)
 gulp.task('build-fonts', buildFonts)
+gulp.task('build-html', buildHTML)
 
-gulp.task('watch', ['build-css', 'build-js', 'build-imgs', 'build-data', 'build-fonts'], function() {
+gulp.task('watch', ['build-css', 'build-js'], function() {
   gulp.watch(config.js.watchDir, delayed(buildJS));
   gulp.watch(config.css.watchDir, delayed(buildCSS));
-  gulp.watch(config.img.watchDir, delayed(buildImgs));
 })
 
 // build for production
-gulp.task('build', ['build-css', 'build-js', 'build-imgs', 'build-data', 'build-fonts'])
+gulp.task('build', ['build-css', 'build-js', 'build-imgs', 'build-data', 'build-fonts', 'build-html'])
 
 // default task is build
 gulp.task('default', ['build'])
