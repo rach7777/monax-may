@@ -19,9 +19,8 @@ themesdir: "themes"
 ignoreFiles:
   - "\\.foo$"
   - "\\.boo$"
-  - "README.md"
-  - "drafts"
-  - "vendor"
+  - "content/blog/images/*"
+  - "content/blog/drafts/*"
 
 theme: ""
 metadataformat: "yaml"

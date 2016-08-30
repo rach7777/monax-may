@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+if [ "$1" == "buildr" ]
+then
+  docker rmi site_buildr &>/dev/null
+  docker build -t site_buildr .
+fi
+
+docker rmi site &>/dev/null
+docker build -t site -f Dockerfile.this .

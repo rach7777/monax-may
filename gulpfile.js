@@ -1,5 +1,11 @@
 "use strict";
 
+var s3config = {
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+    bucket: 'demand-deploy-oursitestating'
+}
+
 var babelify      = require('babelify'),
       BatchStream = require('batch-stream2'),
       browserify  = require('browserify'),
@@ -17,7 +23,9 @@ var babelify      = require('babelify'),
       uglify      = require('gulp-uglify'),
       filter      = require('gulp-filter'),
       cleanCSS    = require('gulp-clean-css'),
-      s3          = require("gulp-s3"),
+      s3          = require('gulp-s3-upload')(s3config),
+      debug       = require('gulp-debug'),
+      clean       = require('gulp-clean'),
       debowerify  = require('debowerify');
 
 const imgFilter   = filter('**/*.{png,jpg,gif,jpeg}'),
@@ -72,9 +80,18 @@ var config = {
         outputDir: './static/fonts'
     },
     site: {
-        outputDir: './public/**'
+        cleanDirs: [
+                      './public/home_overview',
+                      './public/home_uses'
+                   ],
+        outputDir: './public/**/*'
     }
 };
+
+function cleanHTML() {
+  return gulp.src(config.site.cleanDirs, {read: false})
+    .pipe(clean());
+}
 
 function buildJS() {
   return browserify({
@@ -166,19 +183,16 @@ function buildFonts() {
     .pipe(gulp.dest(config.fonts.outputDir))
 };
 
-function deploySite() {
-  var aws = {
-    "key":    process.env.AWS_ACCESS_KEY_ID,
-    "secret": process.env.AWS_SECRET_ACCESS_KEY,
-    "bucket": process.env.AWS_DEFAULT_REGION,
-    "region": process.env.AWS_BUCKET_NAME
-  }
-  console.log(aws)
-  // return gulp.src(config.site.outputDir, {read: false})
-  //   .pipe(s3(aws, {
-  //       headers: {'Cache-Control': 'max-age=315360000, no-transform, public'}
-  //   }));
+function testSite() {
+  console.log('tested')
   return
+}
+
+function deploySite() {
+  return gulp.src(config.site.outputDir, {buffer:false})
+    .pipe(s3({
+      Bucket: s3config.bucket,
+    }))
 }
 
 //
@@ -201,13 +215,9 @@ gulp.task('live', ['watch'], function() {
   })
 })
 
+gulp.task('clean-html', cleanHTML)
+gulp.task('test', testSite)
 gulp.task('deploy', deploySite)
-
-gulp.task('watch', ['build-css', 'build-js', 'build-imgs', 'build-data', 'build-fonts'], function() {
-  gulp.watch(config.js.watchDir, delayed(buildJS));
-  gulp.watch(config.css.watchDir, delayed(buildCSS));
-  gulp.watch(config.img.watchDir, delayed(buildImgs));
-})
 
 gulp.task('prep-syn', prepSyntax)
 gulp.task('prep-css', prepCSS)
@@ -216,6 +226,12 @@ gulp.task('build-js', buildJS)
 gulp.task('build-imgs', buildImgs)
 gulp.task('build-data', buildData)
 gulp.task('build-fonts', buildFonts)
+
+gulp.task('watch', ['build-css', 'build-js', 'build-imgs', 'build-data', 'build-fonts'], function() {
+  gulp.watch(config.js.watchDir, delayed(buildJS));
+  gulp.watch(config.css.watchDir, delayed(buildCSS));
+  gulp.watch(config.img.watchDir, delayed(buildImgs));
+})
 
 // build for production
 gulp.task('build', ['build-css', 'build-js', 'build-imgs', 'build-data', 'build-fonts'])
@@ -235,4 +251,9 @@ function delayed(fn, time) {
       fn.apply(_this, args)
     }, time || 50)
   }
+}
+
+function handleError(err) {
+  console.log(err.toString());
+  this.emit('end');
 }

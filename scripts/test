@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+docker run --name site_test \
+  site \
+  gulp test
+test_exit=$?
+docker rm site_test
+exit $test_exit

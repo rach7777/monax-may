@@ -15,19 +15,15 @@ RUN apk add --no-cache automake autoconf nasm zlib-dev g++ make python nodejs=$N
   rm -rf $GOPATH && \
   npm install -g gulp bower
 
-COPY ./package.json /site/package.json
-COPY ./.bowerrc /site/.bowerrc
-COPY ./bower.json /site/bower.json
+RUN mkdir /site
+
 WORKDIR /site
+ADD ./package.json /site/package.json
+ADD ./.bowerrc /site/.bowerrc
+ADD ./bower.json /site/bower.json
 RUN npm install && \
   bower install --allow-root
 
-ARG AWS_ACCESS_KEY_ID
-ARG AWS_SECRET_ACCESS_KEY
-ARG AWS_DEFAULT_REGION
-ARG AWS_BUCKET_NAME
-
-COPY . /site
-RUN gulp build && \
-  hugo && \
-  gulp deploy
+ONBUILD ADD . /site
+ONBUILD RUN gulp build && \
+  hugo
