@@ -12,6 +12,7 @@ var argv            = require('yargs').argv,
         browserify  = require('browserify'),
         clean       = require('gulp-clean'),
         cleanCSS    = require('gulp-clean-css'),
+        config      = require('./data/site_builder.json'),
         debowerify  = require('debowerify'),
         exec        = require('child_process').exec,
         flatten     = require('gulp-flatten'),
@@ -24,74 +25,6 @@ var argv            = require('yargs').argv,
         sourceMaps  = require('gulp-sourcemaps'),
         s3          = require('gulp-s3-upload')(s3config),
         uglify      = require('gulp-uglify');
-
-const imgFilter   = filter('**/*.{png,jpg,gif,jpeg}'),
-      fontFilter  = filter('**/*.{eot,svg,ttf,woff,woff2}'),
-      dataFilter  = filter('**/*.{json,yml,yaml,csv,toml}'),
-      cssFilter   = filter('**/*.min.css'),
-      styleFilter = filter('**/*.{css,scss}');
-
-var config = {
-    js: {
-        src:        './eris.js',
-        srcDir:     './source/js/',
-        watchDir:   './source/js/**/*',
-        mapDir:     './maps/',
-        outputDir:  './static/js',
-        outputFile: './eris.js'
-    },
-    css: {
-        srcs:       './source/css/**/*',
-        watchDir:   './source/css/**/*',
-        vendorDirs: [
-                      './source/assets/css/*',
-                      './source/assets/**/css/*',
-                      './source/assets/**/build/*',
-                      './node_modules/bootstrap/dist/css/*',
-                    ],
-        mapDir:     './maps/',
-        outputDir:  './static/css/',
-        outputFile: './eris.css'
-    },
-    img: {
-        srcs:      [
-                      './source/images/**/*',
-                      './content/blog/images/**/*'
-                   ],
-        watchDir:  './source/images/**/*',
-        outputDir: './static/images/'
-    },
-    data: {
-        srcs:      [
-                      './data/'
-                   ],
-        outputDir: './static/'
-    },
-    fonts: {
-        srcs:      [
-                      './source/fonts/*',
-                      './source/assets/**/fonts/*',
-                      './source/assets/**/font/*'
-                   ],
-        outputDir: './static/fonts'
-    },
-    site: {
-        cleanDirs: [
-                      './public/home_overview',
-                      './public/home_uses'
-                   ],
-        outputDir: './public/**/*',
-        outputDirRaw: './public',
-        devURL:   'localhost',
-        stagURL:  'staging.monax.io',
-        prodURL:  'monax.io'
-    }
-};
-
-function buildHTML() {
-  return gulp.src(config.site.cleanDirs, {read: false})
-    .pipe(clean());
-}
 
 function buildJS() {
   return browserify({
@@ -112,7 +45,7 @@ function buildJS() {
 
 function prepSyntax() {
   return gulp.src('./node_modules/prismjs/themes/prism-okaidia.css')
-    .pipe(styleFilter)
+    .pipe(filter(config.styleFilter))
     .pipe(sass().on('error', sass.logError))
     .pipe(cleanCSS({
       compatibility: 'ie8'
@@ -123,7 +56,7 @@ function prepSyntax() {
 
 function prepCSS() {
   return gulp.src(config.css.vendorDirs)
-    .pipe(cssFilter)
+    .pipe(filter(config.cssFilter))
     .pipe(sass().on('error', sass.logError))
     .pipe(cleanCSS({
       compatibility: 'ie8'
@@ -143,7 +76,7 @@ function buildCSS() {
 
 function buildImgs(){
   return gulp.src(config.img.srcs)
-    .pipe(imgFilter)
+    .pipe(filter(config.imgFilter))
     // .pipe(imagemin({
     //   optimizationLevel: 5,
     //   progressive: true,
@@ -154,13 +87,14 @@ function buildImgs(){
 
 function buildData() {
   return gulp.src(config.data.srcs)
-    .pipe(dataFilter)
+    .pipe(filter(config.dataFilter))
+    .pipe(flatten())
     .pipe(gulp.dest(config.data.outputDir))
 }
 
 function buildFonts() {
   return gulp.src(config.fonts.srcs)
-    .pipe(fontFilter)
+    .pipe(filter(config.fontFilter))
     .pipe(flatten())
     .pipe(gulp.dest(config.fonts.outputDir))
 };
@@ -174,11 +108,15 @@ function buildSite() {
   } else {
     cmd = cmd + " --buildDrafts --buildFuture --baseURL " + config.site.devURL
   }
-  console.log("Calling command: " + cmd)
   exec(cmd, function (err, stdout, stderr) {
-    console.log(stdout);
-    console.log(stderr);
+    console.log("Called command: " + cmd)
+    console.log(stdout.trim());
+    if (stderr != "") {
+      console.log(stderr);
+    }
   })
+  return gulp.src(config.site.cleanDirs, {read: false})
+    .pipe(clean());
 }
 
 function testSite() {
@@ -200,8 +138,7 @@ gulp.task('build-js', buildJS)
 gulp.task('build-imgs', buildImgs)
 gulp.task('build-data', buildData)
 gulp.task('build-fonts', buildFonts)
-gulp.task('build-html', buildHTML)
-gulp.task('build-site', ['build-css', 'build-js', 'build-imgs', 'build-data', 'build-fonts', 'build-html'], buildSite())
+gulp.task('build-site', ['build-css', 'build-js', 'build-imgs', 'build-data', 'build-fonts'], buildSite)
 
 gulp.task('watch', ['build-css', 'build-js'], function() {
   gulp.watch(config.js.watchDir, delayed(buildJS));

@@ -59,7 +59,7 @@ serve() {
     site \
     gulp watch &
 
-  sleep 3
+  sleep 5
 
   docker run --name site_hugo_serve \
     --volume `pwd`/content:/site/content \

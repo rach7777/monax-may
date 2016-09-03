@@ -1,0 +1,61 @@
+{
+    "js": {
+        "src":        "./eris.js",
+        "srcDir":     "./source/js/",
+        "watchDir":   "./source/js/**/*",
+        "mapDir":     "./maps/",
+        "outputDir":  "./static/js",
+        "outputFile": "./eris.js"
+    },
+    "css": {
+        "srcs":       "./source/css/**/*",
+        "watchDir":   "./source/css/**/*",
+        "vendorDirs": [
+                        "./source/assets/css/*",
+                        "./source/assets/**/css/*",
+                        "./source/assets/**/build/*",
+                        "./node_modules/bootstrap/dist/css/*"
+                      ],
+        "mapDir":     "./maps/",
+        "outputDir":  "./static/css/",
+        "outputFile": "./eris.css"
+    },
+    "img": {
+        "srcs":       [
+                        "./source/images/**/*",
+                        "./content/blog/images/**/*"
+                      ],
+        "watchDir":  "./source/images/**/*",
+        "outputDir": "./static/images/"
+    },
+    "data": {
+        "srcs":       [
+                        "./data/"
+                      ],
+        "outputDir": "./static/"
+    },
+    "fonts": {
+        "srcs":       [
+                        "./source/fonts/*",
+                        "./source/assets/**/fonts/*",
+                        "./source/assets/**/font/*"
+                      ],
+        "outputDir": "./static/fonts"
+    },
+    "site": {
+        "cleanDirs":  [
+                        "./public/home_overview",
+                        "./public/home_uses"
+                      ],
+        "outputDir": "./public/**/*",
+        "outputDirRaw": "./public",
+        "devURL":   "http://localhost",
+        "stagURL":  "http://staging.monax.io",
+        "prodURL":  "https://monax.io"
+    },
+    "imgFilter": "**/*.{png,jpg,gif,jpeg}",
+    "fontFilter": "**/*.{eot,svg,ttf,woff,woff2}",
+    "dataFilter": "**/*.{json,yml,yaml,csv,toml}",
+    "cssFilter": "**/*.min.css",
+    "styleFilter": "**/*.{css,scss}"
+}
