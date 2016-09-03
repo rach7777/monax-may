@@ -23,8 +23,10 @@ WORKDIR /site
 ADD ./package.json /site/package.json
 ADD ./.bowerrc /site/.bowerrc
 ADD ./bower.json /site/bower.json
+
 # [csk] some weird bug in node 6.5.0 and npm 3.10.3 that I don't have time to fix
-RUN npm install vinyl-source-stream vinyl-buffer prismjs gulp-uglify gulp-shell gulp-sass babelify && \
+RUN npm install vinyl-source-stream vinyl-buffer prismjs gulp-uglify gulp-shell gulp-sass && \
+  npm install babelify babel-preset-es2015 && \
   npm install && \
   bower install
 
