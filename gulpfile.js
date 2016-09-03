@@ -12,7 +12,7 @@ var argv            = require('yargs').argv,
         browserify  = require('browserify'),
         clean       = require('gulp-clean'),
         cleanCSS    = require('gulp-clean-css'),
-        config      = require('./data/site_builder.json'),
+        config      = require('./source/data/site_builder.json'),
         debowerify  = require('debowerify'),
         exec        = require('child_process').exec,
         flatten     = require('gulp-flatten'),
@@ -77,11 +77,11 @@ function buildCSS() {
 function buildImgs(){
   return gulp.src(config.img.srcs)
     .pipe(filter(config.imgFilter))
-    // .pipe(imagemin({
-    //   optimizationLevel: 5,
-    //   progressive: true,
-    //   interlaced: true
-    // }))
+    .pipe(imagemin({
+      optimizationLevel: 5,
+      progressive: true,
+      interlaced: true
+    }))
     .pipe(gulp.dest(config.img.outputDir));
 }
 
@@ -107,16 +107,17 @@ function buildSite() {
     cmd = cmd + " --baseURL " + config.site.stagURL
   } else {
     cmd = cmd + " --buildDrafts --buildFuture --baseURL " + config.site.devURL
-  }
+  };
   exec(cmd, function (err, stdout, stderr) {
     console.log("Called command: " + cmd)
-    console.log(stdout.trim());
     if (stderr != "") {
-      console.log(stderr);
+      console.log(stderr.trim());
+    } else {
+      console.log(stdout.trim());
     }
-  })
-  return gulp.src(config.site.cleanDirs, {read: false})
-    .pipe(clean());
+    return gulp.src(config.site.cleanDirs, {read: false})
+      .pipe(clean())
+  });
 }
 
 function testSite() {
@@ -131,6 +132,7 @@ function deploySite() {
     }))
 }
 
+// helper tasks
 gulp.task('prep-syn', prepSyntax)
 gulp.task('prep-css', prepCSS)
 gulp.task('build-css', ['prep-syn', 'prep-css'], buildCSS)
@@ -140,6 +142,7 @@ gulp.task('build-data', buildData)
 gulp.task('build-fonts', buildFonts)
 gulp.task('build-site', ['build-css', 'build-js', 'build-imgs', 'build-data', 'build-fonts'], buildSite)
 
+// watchers -- for deving
 gulp.task('watch', ['build-css', 'build-js'], function() {
   gulp.watch(config.js.watchDir, delayed(buildJS));
   gulp.watch(config.css.watchDir, delayed(buildCSS));
@@ -149,9 +152,6 @@ gulp.task('watch', ['build-css', 'build-js'], function() {
 gulp.task('build', ['build-site'])
 gulp.task('test', testSite)
 gulp.task('deploy', deploySite)
-
-// default task is build
-gulp.task('default', ['build'])
 
 function delayed(fn, time) {
   var t
@@ -165,9 +165,4 @@ function delayed(fn, time) {
       fn.apply(_this, args)
     }, time || 50)
   }
-}
-
-function handleError(err) {
-  console.log(err.toString());
-  this.emit('end');
 }

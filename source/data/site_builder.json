@@ -30,9 +30,11 @@
     },
     "data": {
         "srcs":       [
-                        "./data/"
+                        "./source/data/**/*",
+                        "./content/blog/data/**/*",
+                        "./content/docs/data/**/*"
                       ],
-        "outputDir": "./static/"
+        "outputDir": "./data"
     },
     "fonts": {
         "srcs":       [
@@ -45,7 +47,9 @@
     "site": {
         "cleanDirs":  [
                         "./public/home_overview",
-                        "./public/home_uses"
+                        "./public/home_uses",
+                        "./data",
+                        "./static"
                       ],
         "outputDir": "./public/**/*",
         "outputDirRaw": "./public",
