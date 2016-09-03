@@ -27,9 +27,25 @@ You can make changes to the files in the following directories and the site will
 
 Any changes outside of those will require you to CTRL+c out of the script. Instructions will be displayed for what to do now.
 
+**N.B.** -- the first time you run the `serve` script it will take a wee while. After that it will be much faster.
+
 ## Changes you can make
 
 Any changes outside of the (content) directory require @compleatang's approval. Otherwise have at it.
+
+## Clean up locally
+
+.gitignore should handle most everything.
+
+However, if you want to remove everything then do all of the following:
+
+```
+docker rmi site_buildr
+docker rmi site
+rm -rf ./public
+```
+
+Then you can start again with a fresh deck.
 
 ## Structure
 
