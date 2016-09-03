@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# this is to be used for local development
 static_dir=`pwd`/static
 
 setup() {
@@ -53,18 +53,18 @@ EOF
 
 serve() {
   docker run --name site_gulp_watch \
-    --user eris \
     --volume `pwd`/source/js:/site/source/js \
     --volume `pwd`/source/css:/site/source/css \
-    --volume $static_dir:/site/static \
+    --volume /site/static \
     site \
     gulp watch &
 
+  sleep 3
+
   docker run --name site_hugo_serve \
-    --user eris \
     --volume `pwd`/content:/site/content \
     --volume `pwd`/layouts:/site/layouts \
-    --volume $static_dir:/site/static \
+    --volumes-from site_gulp_watch \
     --publish 127.0.0.1:1313:1313 \
     site \
     hugo serve --appendPort --baseURL http://localhost --bind 0.0.0.0 &

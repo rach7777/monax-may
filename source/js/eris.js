@@ -2,7 +2,6 @@
 
 global.jQuery = global.$ = require('jquery');
 require('bootstrap');
-require('owl.carousel');
 require('prismjs');
 
 //jQuery to collapse the navbar on scroll

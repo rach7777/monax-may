@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# this is to be used by jenkins
 docker run --name site_test \
   site \
   gulp test

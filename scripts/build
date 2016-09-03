@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# note this file is to be used for local development
+# and on jenkins
+
 if [ "$1" == "buildr" ]
 then
   docker rmi site_buildr &>/dev/null

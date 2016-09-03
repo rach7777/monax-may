@@ -6,27 +6,24 @@ var s3config = {
     bucket: 'demand-deploy-oursitestating'
 }
 
-var babelify      = require('babelify'),
-      BatchStream = require('batch-stream2'),
-      browserify  = require('browserify'),
-      buffer      = require('vinyl-buffer'),
-      gulp        = require('gulp'),
-      gutil       = require('gulp-util'),
-      livereload  = require('gulp-livereload'),
-      merge       = require('merge'),
-      plugins     = require('gulp-load-plugins')(),
-      rename      = require('gulp-rename'),
-      source      = require('vinyl-source-stream'),
-      sourceMaps  = require('gulp-sourcemaps'),
-      imagemin    = require('gulp-imagemin'),
-      flatten     = require('gulp-flatten'),
-      uglify      = require('gulp-uglify'),
-      filter      = require('gulp-filter'),
-      cleanCSS    = require('gulp-clean-css'),
-      s3          = require('gulp-s3-upload')(s3config),
-      debug       = require('gulp-debug'),
-      clean       = require('gulp-clean'),
-      debowerify  = require('debowerify');
+var argv            = require('yargs').argv,
+        babelify    = require('babelify'),
+        buffer      = require('vinyl-buffer'),
+        browserify  = require('browserify'),
+        clean       = require('gulp-clean'),
+        cleanCSS    = require('gulp-clean-css'),
+        debowerify  = require('debowerify'),
+        exec        = require('child_process').exec,
+        flatten     = require('gulp-flatten'),
+        filter      = require('gulp-filter'),
+        gulp        = require('gulp'),
+        imagemin    = require('gulp-imagemin'),
+        rename      = require('gulp-rename'),
+        sass        = require('gulp-sass'),
+        source      = require('vinyl-source-stream'),
+        sourceMaps  = require('gulp-sourcemaps'),
+        s3          = require('gulp-s3-upload')(s3config),
+        uglify      = require('gulp-uglify');
 
 const imgFilter   = filter('**/*.{png,jpg,gif,jpeg}'),
       fontFilter  = filter('**/*.{eot,svg,ttf,woff,woff2}'),
@@ -51,7 +48,6 @@ var config = {
                       './source/assets/**/css/*',
                       './source/assets/**/build/*',
                       './node_modules/bootstrap/dist/css/*',
-                      './node_modules/owl.carousel/dist/assets/owl.carousel*',
                     ],
         mapDir:     './maps/',
         outputDir:  './static/css/',
@@ -84,7 +80,11 @@ var config = {
                       './public/home_overview',
                       './public/home_uses'
                    ],
-        outputDir: './public/**/*'
+        outputDir: './public/**/*',
+        outputDirRaw: './public',
+        devURL:   'localhost',
+        stagURL:  'staging.monax.io',
+        prodURL:  'monax.io'
     }
 };
 
@@ -104,23 +104,16 @@ function buildJS() {
     .bundle()                                        // Start bundle
     .pipe(source(config.js.src))                     // Entry point
     .pipe(buffer())                                  // Convert to gulp pipeline
-    .pipe(rename(config.js.outputFile))              // Rename output
     .pipe(sourceMaps.init())                         // Strip inline source maps
     .pipe(uglify())                                  // apply uglifier
     .pipe(sourceMaps.write(config.js.mapDir))        // Save source maps to their own dir
     .pipe(gulp.dest(config.js.outputDir))            // Save 'bundle' to build/
-    .pipe(livereload());                             // Reload browser if relevant
 }
 
 function prepSyntax() {
   return gulp.src('./node_modules/prismjs/themes/prism-okaidia.css')
     .pipe(styleFilter)
-    .pipe(plugins.plumber())
-    .pipe(plugins.sass({
-      sourceComments: false,
-      errLogToConsole: true,
-      outputStyle: 'compressed',
-    }))
+    .pipe(sass().on('error', sass.logError))
     .pipe(cleanCSS({
       compatibility: 'ie8'
     }))
@@ -131,12 +124,7 @@ function prepSyntax() {
 function prepCSS() {
   return gulp.src(config.css.vendorDirs)
     .pipe(cssFilter)
-    .pipe(plugins.plumber())
-    .pipe(plugins.sass({
-      sourceComments: false,
-      errLogToConsole: true,
-      outputStyle: 'compressed',
-    }))
+    .pipe(sass().on('error', sass.logError))
     .pipe(cleanCSS({
       compatibility: 'ie8'
     }))
@@ -146,27 +134,21 @@ function prepCSS() {
 
 function buildCSS() {
   return gulp.src(config.css.srcs)
-    .pipe(plugins.plumber())
-    .pipe(plugins.sass({
-      sourceComments: false,
-      errLogToConsole: true,
-      outputStyle: 'compressed',
-    }))
+    .pipe(sass().on('error', sass.logError))
     .pipe(cleanCSS({
       compatibility: 'ie8'
     }))
     .pipe(gulp.dest(config.css.outputDir))
-    .pipe(livereload());
 }
 
 function buildImgs(){
   return gulp.src(config.img.srcs)
     .pipe(imgFilter)
-    .pipe(imagemin({
-      optimizationLevel: 5,
-      progressive: true,
-      interlaced: true
-    }))
+    // .pipe(imagemin({
+    //   optimizationLevel: 5,
+    //   progressive: true,
+    //   interlaced: true
+    // }))
     .pipe(gulp.dest(config.img.outputDir));
 }
 
@@ -183,6 +165,22 @@ function buildFonts() {
     .pipe(gulp.dest(config.fonts.outputDir))
 };
 
+function buildSite() {
+  var cmd = "hugo --destination " + config.site.outputDirRaw
+  if (argv.production) {
+    cmd = cmd + " --baseURL " + config.site.prodURL
+  } else if (argv.staging) {
+    cmd = cmd + " --baseURL " + config.site.stagURL
+  } else {
+    cmd = cmd + " --buildDrafts --buildFuture --baseURL " + config.site.devURL
+  }
+  console.log("Calling command: " + cmd)
+  exec(cmd, function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+  })
+}
+
 function testSite() {
   console.log('tested')
   return
@@ -195,29 +193,6 @@ function deploySite() {
     }))
 }
 
-//
-// live reload can emit changes only when at least one build is done
-//
-gulp.task('live', ['watch'], function() {
-  var server = plugins.livereload()
-  // in case a lot of files changed during a short time
-  var batch = new BatchStream({ timeout: 50 })
-  gulp.watch(dist.all).on('change', function change(file) {
-    // clear directories
-    var urlpath = file.path.replace(__dirname + '/static', '')
-    // also clear the tailing index.html
-    // so we can notify livereload.js the right path of files changed
-    urlpath = urlpath.replace('/index.html', '/')
-    batch.write(urlpath)
-  })
-  batch.on('data', function(files) {
-    server.changed(files.join(','))
-  })
-})
-
-gulp.task('test', testSite)
-gulp.task('deploy', deploySite)
-
 gulp.task('prep-syn', prepSyntax)
 gulp.task('prep-css', prepCSS)
 gulp.task('build-css', ['prep-syn', 'prep-css'], buildCSS)
@@ -226,6 +201,7 @@ gulp.task('build-imgs', buildImgs)
 gulp.task('build-data', buildData)
 gulp.task('build-fonts', buildFonts)
 gulp.task('build-html', buildHTML)
+gulp.task('build-site', ['build-css', 'build-js', 'build-imgs', 'build-data', 'build-fonts', 'build-html'], buildSite())
 
 gulp.task('watch', ['build-css', 'build-js'], function() {
   gulp.watch(config.js.watchDir, delayed(buildJS));
@@ -233,7 +209,9 @@ gulp.task('watch', ['build-css', 'build-js'], function() {
 })
 
 // build for production
-gulp.task('build', ['build-css', 'build-js', 'build-imgs', 'build-data', 'build-fonts', 'build-html'])
+gulp.task('build', ['build-site'])
+gulp.task('test', testSite)
+gulp.task('deploy', deploySite)
 
 // default task is build
 gulp.task('default', ['build'])
