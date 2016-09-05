@@ -21,7 +21,10 @@ setup() {
 cleanup() {
   echo "Cleaning"
 
-  docker rm --force site_gulp_watch
+  if [ "$1" == "dev" ]
+  then
+    docker rm --force site_gulp_watch
+  fi
   docker rm --force site_hugo_serve
 
   echo
@@ -51,16 +54,18 @@ cat << EOF
 EOF
 }
 
-serve() {
+serve_gulp() {
   docker run --name site_gulp_watch \
     --volume `pwd`/source/js:/site/source/js \
     --volume `pwd`/source/css:/site/source/css \
+    --volume `pwd`/source/images:/site/source/images \
+    --volume `pwd`/source/data:/site/source/data
     --volume /site/static \
     site \
-    gulp watch &
+    gulp watch-no-build &
+}
 
-  sleep 5
-
+serve_hugo() {
   docker run --name site_hugo_serve \
     --volume `pwd`/content:/site/content \
     --volume `pwd`/layouts:/site/layouts \
@@ -70,7 +75,17 @@ serve() {
     hugo serve --appendPort --baseURL http://localhost --bind 0.0.0.0 &
 }
 
-setup
-serve
-trap "trap - SIGTERM; cleanup; kill -- -$$" SIGINT SIGTERM EXIT
-tail -f /dev/null & wait
+main() {
+  if [ "$1" == "dev" ]
+  then
+    # note, we may need to do a dump from the docker build here
+    serve_gulp
+    sleep 5
+  fi
+  setup
+  serve_hugo
+  trap "trap - SIGTERM; cleanup $@; kill -- -$$" SIGINT SIGTERM EXIT
+  tail -f /dev/null & wait
+}
+
+main $@

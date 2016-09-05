@@ -130,10 +130,16 @@ gulp.task('build-icons', buildIcons)
 gulp.task('build-data', buildData)
 gulp.task('build-fonts', buildFonts)
 gulp.task('build-arts', ['build-css', 'build-js', 'build-imgs', 'build-icons', 'build-data', 'build-fonts'])
-gulp.task('build-site', ['build-css', 'build-js', 'build-imgs', 'build-icons', 'build-data', 'build-fonts'], buildSite)
+gulp.task('build-site', ['build-arts'], buildSite)
 
 // watchers -- for deving
 gulp.task('watch', ['build-arts'], function() {
+  gulp.watch(config.js.watchDir, delayed(buildJS));
+  gulp.watch(config.css.watchDir, delayed(buildCSS));
+  gulp.watch(config.img.watchDir, delayed(buildImgs));
+  gulp.watch(config.data.watchDir, delayed(buildData));
+})
+gulp.task('watch-no-build', function() {
   gulp.watch(config.js.watchDir, delayed(buildJS));
   gulp.watch(config.css.watchDir, delayed(buildCSS));
   gulp.watch(config.img.watchDir, delayed(buildImgs));
