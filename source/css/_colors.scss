@@ -1,0 +1,38 @@
+// base palette - provided by branding designers
+$monax: #96B85D;
+$white: #FFFFFF;
+$grey_light: #8E8E8E;
+$grey_dark: #484748;
+$black: #000000;
+
+// color palette - greens (use sparingly)
+$green_darkest: #517318;
+$green_dark: #739637;
+$green: $monax;
+$green_light: #C1DD92;
+$green_lightest: #E0F1C2;
+
+// color palette - purples (use for emphasis)
+$purple_darkest: #401453;
+$purple_dark: #582B6C;
+$purple: #714684;
+$purple_light: #8F6B9F;
+$purple_lightest: #B69DC1;
+
+// color palette - reds (use for contrast)
+$red_darkest: #7C211A;
+$red_dark: #A2433C;
+$red: #C76C64;
+$red_light: #EFA39D;
+$red_lightest: #FFD0CD;
+
+// color palette - blues (use on HOME only)
+$blue_lightest: #D1DCE6;
+$blue_darkest: #294F6E;
+$blue: #6E8CA4;
+$blue_dark: #294F6E;
+$blue_light: #A0B6C8;
+
+// for specific "things"
+$links: $green;
+$links_hover: $green_dark;

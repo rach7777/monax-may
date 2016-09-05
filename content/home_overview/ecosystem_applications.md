@@ -1,15 +1,9 @@
 ---
 
-title: "What are Ecosystem Applications?"
+title: "Big Problems Are Hard To Solve"
 icon: "rocket"
-weight: -999
+weight: -1000
 
 ---
 
-When using default platform architecture, whether marketplaces, exchanges, government services, or on-demand commercial services, we wholly rely on a service provider to manage the relationships required by the participants within the system.
-
-### **BUT**
-
-With ecosystem applications, communities, businesses, governments, and anybody else can automate their data driven relationships with other organizations. All on their own.
-
-### From anywhere. With anyone. For any purpose.
+Ecosystem applications enable groups of communities, businesses, governments and anybody else to automate their data driven relationships across actors without relying on a service provider to ensure the relationships required by the participants in the application.

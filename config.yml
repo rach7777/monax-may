@@ -103,7 +103,6 @@ params:
   description: "We empower developers to automate their data driven relationships."
   keywords: "blockchain,smart,contracts,data,driven,relationship,bft"
   clicky:    100753928
-  mainIcon:  ei-logo-long-mobile.png
   home_buttons:
     -
       title: docs

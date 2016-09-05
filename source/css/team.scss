@@ -1,4 +1,4 @@
-@import 'eris';
+@import "monax";
 
 .team {
   padding-bottom: 5em;
@@ -18,7 +18,7 @@
   .team-title {
     font-size: 1.0em;
     line-height: 1.2em;
-    color: $grey;
+    color: $grey_dark;
     padding-bottom: 1.6em;
   }
 
@@ -42,7 +42,7 @@
     left: -25%;
     top: -1.6em;
     border-radius: 5px;
-    border: 1px dotted $khacki_dark;
+    border: 1px dotted $green_darkest;
     background: $white;
   }
 }

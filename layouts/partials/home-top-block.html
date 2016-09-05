@@ -1,12 +1,14 @@
-<!-- Full Page Image Header Area -->
-<div id="top" class="header">
-  <div class="vert-text">
-    <a href="#intro"><img src="{{ .Site.BaseURL }}/images/{{ .Site.Params.mainIcon }}" class="logo"></a>
-    <br />
-    {{ range .Site.Params.home_buttons }}
-      <a href="{{ .url }}" class="btn btn-default btn-lg"><i class="fa fa-fw fa-{{ .icon }}" aria-hidden="true"></i> <span class="network-name">{{ .title }}</span></a>
-    {{ end }}
+  <link href="/css/home.css" rel="stylesheet" >
+</head>
+<body id="home-page">
+  <!-- Full Page Image Header Area -->
+  <div id="top" class="header">
+    <div class="vert-text">
+      <img src="/images/logos/monax_rect.svg" class="logo">
+      <br />
+      {{ range .Site.Params.home_buttons }}
+        <a href="{{ .url }}" class="btn btn-default btn-lg"><i class="fa fa-fw fa-{{ .icon }}" aria-hidden="true"></i> <span class="network-name">{{ .title }}</span></a>
+      {{ end }}
+      </div>
     </div>
-  </div>
-</div>
-<!-- /Full Page Image Header Area -->
+  <!-- /Full Page Image Header Area -->

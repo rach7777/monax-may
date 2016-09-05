@@ -1,24 +1,22 @@
 <!-- Footer -->
-<footer id="footer">
+<footer id="footer-home">
   <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3 text-center">
-        <img src="/images/ei-logo-long-mobile.png" class="erislogo" />
+    <div class="row" id="home-footer-container">
+      <div class="col-md-5 col-md-offset-2 text-center item item0" id="home-footer-linklist">
         <ul class="linklist">
-          <li><a href="https://docs.erisindustries.com/" class="act-on-this">Get Started Now!</a></li>
-          <li><a href="{{ .Site.Data.sites.main.url }}/components/eriscli">Learn more about eris:cli</a></li>
-          <li><a href="{{ .Site.Data.sites.main.url }}/components/erisdb">Learn more about eris:db</a></li>
-          <li><a href="{{ .Site.Data.sites.main.url }}/components/epm">Learn more about eris:pm</a></li>
-          <li><a href="{{ .Site.Data.sites.main.url }}/components/erislegal">Learn more about eris:legal</a></li>
-          <li><a href="http://marmots.org/" target="_blank">Learn more about Cuddly Marmots</a></li>
-          <li>Copyright &copy; 2014-{{ .Date.Format "2006" }} Eris Industries</li>
+          <li class="expander"><a href="/docs">Learn more about Ecosystem Applications</a></li>
+          <li class="expander"><a href="/platform">Learn more about Our Platform</a></li>
+          <li class="expander"><a href="/products">Learn more about Our Products</a></li>
+          <li class="expander"><a href="http://marmots.org/" target="_blank">Learn more about Cuddly Marmots</a></li>
         </ul>
-        <img src="/images/erismascot.png" class="erismascot" alt="eris industries - Solve big problems" />
+      </div>
+      <div class="col-md-3 text-center item item1" id="home-footer-doug">
+        <img src="/images/logos/doug_square.svg" class="doug-home" alt="Monax - Solve *Big* Problems" />
       </div>
     </div>
+    <div class="row text-center copywrite">
+      <p>Copyright &copy; 2014-{{ .Date.Format "2006" }} Monax Industries</p>
+    </div>
   </div>
-</footer>
-<!-- /Footer -->
-
-<!-- Placed at the end of the document so the pages load faster -->
-</body>
+</footer><!-- /Footer -->
+</body><!-- Placed at the end of the document so the pages load faster -->

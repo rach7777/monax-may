@@ -11,7 +11,6 @@ var argv            = require('yargs').argv,
         buffer      = require('vinyl-buffer'),
         browserify  = require('browserify'),
         clean       = require('gulp-clean'),
-        cleanCSS    = require('gulp-clean-css'),
         config      = require('./source/data/site_builder.json'),
         debowerify  = require('debowerify'),
         exec        = require('child_process').exec,
@@ -28,8 +27,8 @@ var argv            = require('yargs').argv,
 
 function buildJS() {
   return browserify({
-      entries: [config.js.src],
       basedir: config.js.srcDir,
+      entries: [config.js.src],
       debug: true,
     })
     .transform(babelify, { presets: [ 'es2015' ] })  // use bable to properly compile
@@ -43,34 +42,14 @@ function buildJS() {
     .pipe(gulp.dest(config.js.outputDir))            // Save 'bundle' to build/
 }
 
-function prepSyntax() {
-  return gulp.src('./node_modules/prismjs/themes/prism-okaidia.css')
-    .pipe(filter(config.styleFilter))
-    .pipe(sass().on('error', sass.logError))
-    .pipe(cleanCSS({
-      compatibility: 'ie8'
-    }))
-    .pipe(flatten())
-    .pipe(gulp.dest(config.css.outputDir))
-}
-
-function prepCSS() {
-  return gulp.src(config.css.vendorDirs)
-    .pipe(filter(config.cssFilter))
-    .pipe(sass().on('error', sass.logError))
-    .pipe(cleanCSS({
-      compatibility: 'ie8'
-    }))
-    .pipe(flatten())
-    .pipe(gulp.dest(config.css.outputDir))
-}
-
 function buildCSS() {
   return gulp.src(config.css.srcs)
-    .pipe(sass().on('error', sass.logError))
-    .pipe(cleanCSS({
-      compatibility: 'ie8'
-    }))
+    .pipe(sourceMaps.init())
+    .pipe(sass({
+      includePaths: config.css.includePaths,
+      outputStyle: "compressed"
+    }).on('error', sass.logError))
+    .pipe(sourceMaps.write(config.css.mapDir))
     .pipe(gulp.dest(config.css.outputDir))
 }
 
@@ -83,6 +62,12 @@ function buildImgs(){
       interlaced: true
     }))
     .pipe(gulp.dest(config.img.outputDir));
+}
+
+function buildIcons() {
+  return gulp.src(config.icons.srcs)
+    .pipe(flatten())
+    .pipe(gulp.dest(config.icons.outputDir))
 }
 
 function buildData() {
@@ -115,9 +100,9 @@ function buildSite() {
     } else {
       console.log(stdout.trim());
     }
-    return gulp.src(config.site.cleanDirs, {read: false})
-      .pipe(clean())
   });
+  return gulp.src(config.site.slightCleanDirs, {read: false})
+    .pipe(clean())
 }
 
 function testSite() {
@@ -132,26 +117,35 @@ function deploySite() {
     }))
 }
 
+function cleanSite() {
+  return gulp.src(config.site.cleanDirs, {read: false})
+    .pipe(clean())
+}
+
 // helper tasks
-gulp.task('prep-syn', prepSyntax)
-gulp.task('prep-css', prepCSS)
-gulp.task('build-css', ['prep-syn', 'prep-css'], buildCSS)
+gulp.task('build-css', buildCSS)
 gulp.task('build-js', buildJS)
 gulp.task('build-imgs', buildImgs)
+gulp.task('build-icons', buildIcons)
 gulp.task('build-data', buildData)
 gulp.task('build-fonts', buildFonts)
-gulp.task('build-site', ['build-css', 'build-js', 'build-imgs', 'build-data', 'build-fonts'], buildSite)
+gulp.task('build-arts', ['build-css', 'build-js', 'build-imgs', 'build-icons', 'build-data', 'build-fonts'])
+gulp.task('build-site', ['build-css', 'build-js', 'build-imgs', 'build-icons', 'build-data', 'build-fonts'], buildSite)
 
 // watchers -- for deving
-gulp.task('watch', ['build-css', 'build-js'], function() {
+gulp.task('watch', ['build-arts'], function() {
   gulp.watch(config.js.watchDir, delayed(buildJS));
   gulp.watch(config.css.watchDir, delayed(buildCSS));
+  gulp.watch(config.img.watchDir, delayed(buildImgs));
 })
 
 // build for production
 gulp.task('build', ['build-site'])
 gulp.task('test', testSite)
 gulp.task('deploy', deploySite)
+
+// cleanup
+gulp.task('clean', cleanSite)
 
 function delayed(fn, time) {
   var t
