@@ -18,16 +18,16 @@ The first point may seem obvious but it usually requires a lot of work, because 
 
 ## Dependencies
 
-This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/tutorials/getting-started/).
+This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/docs/tutorials/getting-started/).
 
 This tutorial assumes you have worked through the following Solidity tutorials:
 
-* [The Five Types Model (Solidity 1)](/tutorials/solidity/solidity-1/)
-* [Action-Driven Architecture (Solidity 2)](/tutorials/solidity/solidity-2/)
-* [Solidity Language Features (Solidity 3)](/tutorials/solidity/solidity-3/)
-* [Testing Solidity (Solidity 4)](/tutorials/solidity/solidity-4/)
-* [Modular Solidity (Solidity 5)](/tutorials/solidity/solidity-5)
-* [Advanced Solidity Features (Solidity 6)](/tutorials/solidity/solidity-6)
+* [The Five Types Model (Solidity 1)](/docs/tutorials/solidity/solidity-1/)
+* [Action-Driven Architecture (Solidity 2)](/docs/tutorials/solidity/solidity-2/)
+* [Solidity Language Features (Solidity 3)](/docs/tutorials/solidity/solidity-3/)
+* [Testing Solidity (Solidity 4)](/docs/tutorials/solidity/solidity-4/)
+* [Modular Solidity (Solidity 5)](/docs/tutorials/solidity/solidity-5)
+* [Advanced Solidity Features (Solidity 6)](/docs/tutorials/solidity/solidity-6)
 
 # Accounts, Code and Storage
 
@@ -190,4 +190,4 @@ In our opinion, it is very important to at least acknowledge that the code is go
 
 # Where to next?
 
-**Now that you're a solidity expert, look over [our advanced tutorials series](/tutorials/advanced)**
+**Now that you're a solidity expert, look over [our advanced tutorials series](/docs/tutorials/advanced)**

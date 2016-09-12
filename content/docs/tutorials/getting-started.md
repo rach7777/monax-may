@@ -56,7 +56,7 @@ By default the Docker Toolbox will use VirtualBox to create a very minimal Linux
 
 `eris` has been built to be able to connect into the Docker daemon running within a VirtualBox minimal Linux virtual machine by default and without any effort on your part (other than installing the Docker Toolbox).
 
-If VirtualBox gives you trouble, then use [docker machine's plugins](https://github.com/docker/machine/blob/master/docs/AVAILABLE_DRIVER_PLUGINS.md) and create your `eris` machine [in the cloud](/tutorials/advanced/chain-deploying/).
+If VirtualBox gives you trouble, then use [docker machine's plugins](https://github.com/docker/machine/blob/master/docs/AVAILABLE_DRIVER_PLUGINS.md) and create your `eris` machine [in the cloud](/docs/tutorials/advanced/chain-deploying/).
 
 ### OSX Only
 
@@ -136,11 +136,11 @@ yum install eris-cli
 RPM support is still quite experimental, so please do let us know of any issues you have with this installation and we will make sure to address those as quickly as we can.
 
 ### ARM Installation (IoT devices)
-[See this tutorial](/tutorials/install-eris-arm/) for more info on getting setup on IoT devices.
+[See this tutorial](/docs/tutorials/install-eris-arm/) for more info on getting setup on IoT devices.
 
 ### Building From Source
 
-If you would like to build from source [see our documentation](/tutorials/install-source/).
+If you would like to build from source [see our documentation](/docs/tutorials/install-source/).
 
 ### All Platforms
 
@@ -154,7 +154,7 @@ The command will begin setting you up.
 
 ## Troubleshooting Your Install
 
-If you have any errors which arise during the installation process, please see our [trouble shooting page](/tutorials/install-troubleshooting/) or visit our [support forums](https://support.erisindustries.com)
+If you have any errors which arise during the installation process, please see our [trouble shooting page](/docs/tutorials/install-troubleshooting/) or visit our [support forums](https://support.erisindustries.com)
 
 # Step 2: Roll Your Own Blockchain in Seconds
 
@@ -216,8 +216,8 @@ Now you're ready to build and run your distributed application!
 
 There are a lot of ways you can go from here!
 
-**To continue this getting started tour please see our next tutorial in this series on [Making Your Own Permissioned Chain](/tutorials/chain-making).**
+**To continue this getting started tour please see our next tutorial in this series on [Making Your Own Permissioned Chain](/docs/tutorials/chain-making).**
 
-Please go here if you are interested in [learning about smart contracts](/explainers/smart_contracts/).
+Please go here if you are interested in [learning about smart contracts](/docs/explainers/smart_contracts/).
 
-Please go here if you are interested in [learning more about blockchains](/explainers/blockchains/).
+Please go here if you are interested in [learning more about blockchains](/docs/explainers/blockchains/).

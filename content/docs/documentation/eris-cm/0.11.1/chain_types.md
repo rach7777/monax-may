@@ -9,7 +9,7 @@ title:      "Documentation | eris:chain_manager | Chain Types"
 
 In order to reduce the complexity of dealing with permissioning
 of chains, eris chains uses the concept of chain_types. Chain Types are
-bundles of [account_types](../account_types). They define the number of
+bundles of [account_types](account_types). They define the number of
 each account type which is required to make the given chain_type.
 
 In the future as we continue to add more optionality to eris chains at

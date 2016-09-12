@@ -12,7 +12,7 @@ Blockchains have their origins in cryptocurrency platforms, in particular bitcoi
 
 Blockchains are authenticated records of the history of a network's activity distributed among the users of the blockchain all around the globe. A blockchain enables secure storage of arbitrary information -- in some cases, a token balance; in other systems more complex information -- within the network simply by securing a set of private keys.
 
-Modern blockchain designs are capable of storing arbitrary data and establishing permissions to modify that data through self-administering and self-executing scripts which are performed by a distributed virtual machine.These scripts are known as [smart contracts](../smart_contracts/), and they allow platform operators to define complex and fully customisable rules which govern the blockchain’s interaction with its users.
+Modern blockchain designs are capable of storing arbitrary data and establishing permissions to modify that data through self-administering and self-executing scripts which are performed by a distributed virtual machine.These scripts are known as [smart contracts](/docs/explainers/smart_contracts), and they allow platform operators to define complex and fully customisable rules which govern the blockchain’s interaction with its users.
 
 > Blockchains are neat because they take the old concept of commits, tx logs, and replication in database architecture and replace it with an integrated system of authenticated state transitions.
 
@@ -149,4 +149,4 @@ Permissionable blockchain networks are not susceptible to external attack by unk
 
 These networks also have performance advantages over public blockchain networks because they are only dealing with the functionality required for that network rather than all the functionality for a larger, unpermissioned network load.
 
-For more information, please see our [explainer on permissionable blockchains](../permissioned_blockchains).
+For more information, please see our [explainer on permissionable blockchains](/docs/explainers/permissioned_blockchains).

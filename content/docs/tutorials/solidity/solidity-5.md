@@ -11,14 +11,14 @@ This post is about how we can divide contracts up into components. By creating s
 
 ## Dependencies
 
-This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/tutorials/getting-started/).
+This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/docs/tutorials/getting-started/).
 
 This tutorial assumes you have worked through the following Solidity tutorials:
 
-* [The Five Types Model (Solidity 1)](/tutorials/solidity/solidity-1/)
-* [Action-Driven Architecture (Solidity 2)](/tutorials/solidity/solidity-2/)
-* [Solidity Language Features (Solidity 3)](/tutorials/solidity/solidity-3/)
-* [Testing Solidity (Solidity 4)](/tutorials/solidity/solidity-4/)
+* [The Five Types Model (Solidity 1)](/docs/tutorials/solidity/solidity-1/)
+* [Action-Driven Architecture (Solidity 2)](/docs/tutorials/solidity/solidity-2/)
+* [Solidity Language Features (Solidity 3)](/docs/tutorials/solidity/solidity-3/)
+* [Testing Solidity (Solidity 4)](/docs/tutorials/solidity/solidity-4/)
 
 ## owned and mortal
 
@@ -60,7 +60,7 @@ contract mortal is owned {
 
 Through the rules of inheritance (which is very similar to how it works in C++), `mortal` now has all the fields and function of `owned`, and when it is instantiated it will automatically call the constructor of `owned` which will set the `owner` field. It can also call `isOwner` to do the owner check. Also, if `mortal` is extended by another contract, that contract will have a `kill()` function that selfdestructs the contract and can only be called by the contract creator (which is what the `mortal` contract is for).
 
-Finally, a very simple [unit-testing contract](/tutorials/solidity/solidity-4/) could be written for `owned` to ensure that it does indeed work:
+Finally, a very simple [unit-testing contract](/docs/tutorials/solidity/solidity-4/) could be written for `owned` to ensure that it does indeed work:
 
 ```javascript
 contract failer {
@@ -221,4 +221,4 @@ Finally, some general advice for beginners - A lot of this is harder then it may
 
 # Where to next?
 
-**Next, you'll want to [look at some advanced solidity features](/tutorials/solidity/solidity-6)!**
+**Next, you'll want to [look at some advanced solidity features](/docs/tutorials/solidity/solidity-6)!**

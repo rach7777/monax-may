@@ -45,9 +45,9 @@ See it with:
 eris keys ls --host
 ```
 
-**Protip:** You can also `eris keys import ADDR` to go from host to container. Similiarly to `eris data import/export` these commands are thought of from the point of view of the container. See [this tutorial](/tutorials/tool-specific/keyexporting/) for more information on the `eris keys` command.
+**Protip:** You can also `eris keys import ADDR` to go from host to container. Similiarly to `eris data import/export` these commands are thought of from the point of view of the container. See [this tutorial](/docs/tutorials/tool-specific/keyexporting/) for more information on the `eris keys` command.
 
-Second, within the container, the key was both: 1) converted to the tendermint format: `priv_validator.json` and 2) used to create the `genesis.json` file. Both these files were then exported from the container to the host into `~/.eris/chains/bob`, where `bob` is the name of the chain created with `chains make` above. 
+Second, within the container, the key was both: 1) converted to the tendermint format: `priv_validator.json` and 2) used to create the `genesis.json` file. Both these files were then exported from the container to the host into `~/.eris/chains/bob`, where `bob` is the name of the chain created with `chains make` above.
 
 ## Get the pub key
 
@@ -152,7 +152,7 @@ If your toadserver service flames out for whatever reason, you can `eris service
 That's it. A simple app with two endpoints for adding and retrieving files that uses a chain to retrieve the file by name via IPFS hash. Next, I'll describe what is needed to actually build the service we've just started.
 
 # Building a Service
-There are four steps to making a service: 1) write app, 2) write Dockerfile, 3) build docker image (from Dockerfile), and 4) make a new service (write service definition file). The toadserver code is [here](https://github.com/eris-ltd/toadserver) and as you can see it's only a few hundred lines of code. Its Dockerfile is below, as is its service definition file. The image is hosted on [quay.io](https://quay.io/repository/eris/toadserver). You can also use [DockerHub](https://hub.docker.com/) for your images.
+There are four steps to making a service: 1) write app, 2) write Dockerfile, 3) build docker image (from Dockerfile), and 4) make a new service (write service definition file). The toadserver code is [here](https://github.com/eris-ltd/toadserver) and as you can see it's only a few hundred lines of code. Its Dockerfile is below, as is its service definition file. The image is hosted on [quay](https://quay.io/repository/eris/toadserver). You can also use [DockerHub](https://hub.docker.com/) for your images.
 
 ## Dockerfile & Build Image
 

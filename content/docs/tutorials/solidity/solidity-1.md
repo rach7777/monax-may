@@ -15,7 +15,7 @@ About trust: The systems we study here are designed to be modular, i.e. parts of
 
 ## Dependencies
 
-This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/tutorials/getting-started/).
+This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/docs/tutorials/getting-started/).
 
 # Smart contracts as services
 
@@ -1060,4 +1060,4 @@ There is also the matter of trust, but I treat that in the beginning of the docu
 
 # Coming next
 
-**Next, let us look at [what we call action-driven architecture](/tutorials/solidity/solidity-2/).**
+**Next, let us look at [what we call action-driven architecture](/docs/tutorials/solidity/solidity-2/).**

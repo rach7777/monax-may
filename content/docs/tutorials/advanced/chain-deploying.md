@@ -5,7 +5,7 @@ title: "Tutorials | Deploying your Permissioned Chain"
 
 ---
 
-Deploying and connecting your permissioned chains is not as difficult as [making a permissioned chain](/tutorials/advanced/chain-making), but it does require some careful work. This tutorial will cover the basics of deploying and connecting your blockchain nodes.
+Deploying and connecting your permissioned chains is not as difficult as [making a permissioned chain](/docs/tutorials/advanced/chain-making), but it does require some careful work. This tutorial will cover the basics of deploying and connecting your blockchain nodes.
 
 This tutorial is a continuation of the previous tutorial on making a permissed chain, so if you have not gone through that tutorial, then please do so before working through this tutorial.
 
@@ -23,16 +23,16 @@ For this tutorial, we have kept the bash scripting to a bare minimum, but should
 
 ## Dependencies
 
-This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/tutorials/getting-started/).
+This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/docs/tutorials/getting-started/).
 
 This sequence of tutorials also assumes that you have worked through a few of the eris tool-specific tutorials. Namely:
 
-* [Docker Machine](/tutorials/tool-specific/docker_machine/)
+* [Docker Machine](/docs/tutorials/tool-specific/docker_machine/)
 
 This tutorial assumes you have worked through the following advanced tutorials:
 
-* [Get Started in the Cloud](/tutorials/advanced/cloud-getting-started/)
-* [Advanced Chain Making](/tutorials/advanced/chain-making)
+* [Get Started in the Cloud](/docs/tutorials/advanced/cloud-getting-started/)
+* [Advanced Chain Making](/docs/tutorials/advanced/chain-making)
 
 ## Overview of Tutorial
 
@@ -188,4 +188,4 @@ done
 
 # Where to next?
 
-**Let us [learn how to do some maintenance on these chains](/tutorials/advanced/chain-maintaining) or [learn how to bond & unbond validators on your chain](/tutorials/advanced/bond-unbond).**
+**Let us [learn how to do some maintenance on these chains](/docs/tutorials/advanced/chain-maintaining) or [learn how to bond & unbond validators on your chain](/docs/tutorials/advanced/bond-unbond).**

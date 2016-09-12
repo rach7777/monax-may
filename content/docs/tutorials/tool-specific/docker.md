@@ -1,26 +1,11 @@
 ---
-author: casey
-categories:
-- tutorials
-comments: true
-date: 2015-09-05T00:00:00Z
-excerpt: The new Eris 0.10 stack is build on a Docker backbone; this post is for those
-  new to Docker and explains a bit more about how execution works in Dockerland.
-meta: true
-published: true
-series: getstarted
-tags:
-- cli
-- command-line
-- docker
-- blockchaini
-- eris
-thumbnail: docker.png
-title: 'Eris CLI Walkabout: Docker & Execution'
-url: /2015/09/05/docker-and-eris/
----
 
-{% include series.html %}
+layout: docs
+title: "Tutorials | Working with docker and eris"
+aliases:
+    - /tutorials/2015/09/05/docker-and-eris/
+
+---
 
 Docker is a bit of a strange cat for folks who are just getting up to speed. Many people when they're getting started with Docker think of it in terms of a "Virtual Machine" as many are used to this idea of execution being constrained into a "virtualized" environment. The problem is that Docker is not a virtual machine. Indeed, it is a very different animal entirely than virtual machines.
 

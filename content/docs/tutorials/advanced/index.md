@@ -39,12 +39,12 @@ The tutorial follow the same sequence as the beginner tutorials only with more d
 
 ## Solidity Tutorials
 
-[See our solidity smart contract language tutorials](/tutorials/solidity/)
+[See our solidity smart contract language tutorials](/docs/tutorials/solidity/)
 
 ## Beginner Tutorials
 
-[See our beginner tutorials](/tutorials/)
+[See our beginner tutorials](/docs/tutorials/)
 
 ## Tool Specific Tutorials
 
-[See our tool specific tutorials](/tutorials/tool-specific/)
+[See our tool specific tutorials](/docs/tutorials/tool-specific/)

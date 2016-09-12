@@ -18,9 +18,9 @@ On all cloud providers a Ubuntu base will be assumed. While eris does run fine o
 
 # Dependencies
 
-At Eris we use a lot of docker machine to do our work. We find it is a fast and convenient way to get started with various cloud providers folks end up needing to work with. If you are running eris from OSX or Windows machine then docker machine is required and you will certainly have it installed on your machine. Which we cover in our [docker machine tutorial](/tutorials/tool-specific/docker_machine/).
+At Eris we use a lot of docker machine to do our work. We find it is a fast and convenient way to get started with various cloud providers folks end up needing to work with. If you are running eris from OSX or Windows machine then docker machine is required and you will certainly have it installed on your machine. Which we cover in our [docker machine tutorial](/docs/tutorials/tool-specific/docker_machine/).
 
-This tutorial assumes that you have docker-machine installed and that you have worked through our [docker machine tutorial](/tutorials/tool-specific/docker_machine/).
+This tutorial assumes that you have docker-machine installed and that you have worked through our [docker machine tutorial](/docs/tutorials/tool-specific/docker_machine/).
 
 This tutorial also assumes that you have keys for Digital Ocean and AWS accounts. If you only have access to an account with one of these cloud providers the modifications you'd need to make to this tutorial should be self explanatory. Should you want to use other could providers which are not covered in this tutorial, but which do have [docker-machine drivers](https://docs.docker.com/machine/drivers/) then please do utilize that driver (if you're on premise, this is how we recommend you work with `eris`).
 
@@ -153,7 +153,7 @@ done
 
 That's it! Eris is now installed on all the machines we just made!
 
-**N.B.** -- The script is only meant to work against Ubuntu. It is not tested against other operating systems. Should you be using RHEL, Fedora, CentOS or another Linux distribution you should follow our normal [getting started](/tutorials/getting-started) sequence.
+**N.B.** -- The script is only meant to work against Ubuntu. It is not tested against other operating systems. Should you be using RHEL, Fedora, CentOS or another Linux distribution you should follow our normal [getting started](/docs/tutorials/getting-started) sequence.
 
 **Troubleshooting**
 
@@ -177,4 +177,4 @@ All the files you need to share for another colleague to have access to the box 
 
 # Where to next?
 
-**Next you'll want to make a [more complex chain](/tutorials/advanced/chain-making/).**
+**Next you'll want to make a [more complex chain](/docs/tutorials/advanced/chain-making/).**

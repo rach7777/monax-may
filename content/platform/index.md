@@ -2,14 +2,11 @@
 
 date: 2014-10-06
 title:      "platform"
-excerpt:    "The Distributed Application Platform"
+excerpt:    "The Distributed Application Platform | overview"
 menu:
   main:
     parent: platform
 weight:  10
-aliases:
-- /components/eriscli/
-- /components/epm/
 
 ---
 

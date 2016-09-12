@@ -16,6 +16,7 @@ html, body {
 body {
     font-family: $font_body, sans-serif;
     line-height: 1.6;
+    position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: 500;
 }
 
@@ -39,7 +40,7 @@ a:hover {
 /*              */
 /*     Nav      */
 /*              */
-nav {
+nav.navbar {
     padding: 0 !important;
     margin: 0 !important;
     background: transparent;
@@ -83,31 +84,126 @@ nav {
     }
 }
 
+/*              */
+/*TableofContent*/
+/*              */
+#TableOfContents {
+    position: fixed;
+    top: 215px;
+    overflow: hidden;
 
+    ul {
+        list-style: none;
+
+        a{
+            color: $links !important;
+            display: block;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        li.active > a {
+            border-left: $links solid 2px;
+            background-color: transparent;
+        }
+
+        li ul {
+            padding-left: 5%;
+            margin-left: 0;
+        }
+    }
+}
+
+/*              */
+/*   Content    */
+/*              */
+#monax-page h1.title {
+    text-align: center;
+    font-size: 42px;
+}
+
+#monax-page #main-content {
+    .video-wrap {
+        width: 100%;
+        padding-bottom: 3em;
+        padding-top: 3em;
+        margin: auto;
+        text-align: center;
+
+        iframe {
+            width: 685px;
+            height: 385px;
+        }
+    }
+
+    img {
+        max-width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    pre {
+        background-color: $grey_dark;
+
+        code {
+            color: $white;
+        }
+    }
+
+    p {
+        a.action-big {
+            width: 75%;
+            margin: 1.5em auto 0 auto;
+            text-align: center;
+            background: $purple_light;
+            color: $white;
+            padding: 1.5em;
+            display: block;
+        }
+    }
+
+    .edit-me {
+        width: 100%;
+        display: block;
+        padding: 1.6em 0 1.6em 0;
+        text-align: center;
+    }
+}
+
+/*              */
+/*    Footer    */
+/*              */
+footer {
+    width: 100%;
+
+    p {
+        text-align: center;
+    }
+}
 
 
 
 
 // -----------------------------
+// /* Bootstrap Addons */
+// .btn-dark {
+//     color:white;
+//     background-color: rgba(30,30,30, 0.8);
+//     border-color: black;
+// }
 
-/* Bootstrap Addons */
-.btn-dark {
-    color:white;
-    background-color: rgba(30,30,30, 0.8);
-    border-color: black;
-}
+// .btn-dark:hover,
+// .btn-dark:focus,
+// .btn-dark:active {
+//     color: black;
+//     background-color: aliceblue;
+//     border-color: black;
+// }
 
-.btn-dark:hover,
-.btn-dark:focus,
-.btn-dark:active {
-    color: black;
-    background-color: aliceblue;
-    border-color: black;
-}
-
-.btn-info:hover, .btn-primary:hover, .btn-success:hover {
-    background: aliceblue;
-}
+// .btn-info:hover, .btn-primary:hover, .btn-success:hover {
+//     background: aliceblue;
+// }
 
 // /*              */
 // /*   General    */
@@ -201,23 +297,6 @@ nav {
 //   color: $article_color;
 // }
 
-// #toc-container {
-//   position: fixed;
-//   top: 215px;
-// }
-
-// #toc-container a{
-//   color: $khacki !important;
-// }
-
-// #toc-container .active {
-//   border-left: $khacki solid 2px;
-// }
-
-// .sub-menus {
-//   padding-left: 5%;
-// }
-
 // #content-block {
 //   padding-bottom: 400px;
 // }
@@ -231,45 +310,7 @@ nav {
 //   margin: auto;
 // }
 
-// #main-content {
-//   .video-wrap {
-//     width: 100%;
-//     padding-bottom: 3em;
-//     padding-top: 3em;
-//     margin: auto;
-//     text-align: center;
 
-//     iframe {
-//       width: 685px;
-//       height: 385px;
-//     }
-//   }
-
-//   img {
-//     max-width: 80%;
-//     display: block;
-//     margin-left: auto;
-//     margin-right: auto;
-//   }
-
-//   pre {
-//     code {
-//       color: $white;
-//     }
-//   }
-
-//   p {
-//     a.action-big {
-//       width: 75%;
-//       margin: 1.5em auto 0 auto;
-//       text-align: center;
-//       background: $khacki;
-//       color: $white;
-//       padding: 1.5em;
-//       display: block;
-//     }
-//   }
-// }
 
 // .pagination-meta {
 //   margin-bottom: 100px;

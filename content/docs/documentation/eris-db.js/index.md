@@ -1,12 +1,6 @@
 ---
 
 layout: wide
-title: "eris:db.js Version Documentation"
+title: "eris:db.js Documentation"
 
 ---
-
-[latest](0.15.0/)
-
-[0.15.0](0.15.0/)
-
-[0.14.2](0.14.2/)

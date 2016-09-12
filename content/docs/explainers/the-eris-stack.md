@@ -7,7 +7,7 @@ title: "Tutorials | The Eris Stack Explained"
 
 This page provides a high level overview and a detailed explanation of how the eris stack is, well, stacked.
 
-[Modularity is a strong focus](https://eng.erisindustries.com/tutorials/2015/09/05/docker-and-eris/), greatly facilitated by [docker](https://docker.com). This page explains how the tooling fits together while painting a path through our tutorial series. The complicated task of orchestrating all the various requirements for a smart-contract-focused blockchain is exactly why we went all-in on docker despite various ongoing pain points. We like to think of [eris:cli](/documentation/eris-cli/latest/eris/) as "docker for blockchains".
+[Modularity is a strong focus](https://eng.erisindustries.com/tutorials/2015/09/05/docker-and-eris/), greatly facilitated by [docker](https://docker.com). This page explains how the tooling fits together while painting a path through our tutorial series. The complicated task of orchestrating all the various requirements for a smart-contract-focused blockchain is exactly why we went all-in on docker despite various ongoing pain points. We like to think of [eris:cli](/docs/documentation/eris-cli/latest/eris/) as "docker for blockchains".
 
 {% image eris-stack-v2.png %}
 
@@ -25,7 +25,7 @@ First, of course, it all starts with your keys. This is crypto, remember?
 
 Key management is an inherently complex process and is something that should be given serious thought. It's getting easier overall (*see, e.g.,* [ledger](https://www.ledger.co/) and [keybase](https://keybase.io/)), but at the moment there remain caveats.
 
-A key needs to be generated and secured for each participant in your blockchain. Can't do much on a blockchain with a validator or participant who can't sign transactions. This is a fundamentally different approach for web services compared to login/password. If you're gonna be blockchaining, do try to really understand how keys work and are used. Our key signing daemon [eris:keys](/documentation/eris-keys/latest/eris-keys/), usually run in a docker container, provides the basic functionality for getting started with development.
+A key needs to be generated and secured for each participant in your blockchain. Can't do much on a blockchain with a validator or participant who can't sign transactions. This is a fundamentally different approach for web services compared to login/password. If you're gonna be blockchaining, do try to really understand how keys work and are used. Our key signing daemon [eris:keys](/docs/documentation/eris-keys/latest/eris-keys/), usually run in a docker container, provides the basic functionality for getting started with development.
 
 As with all the tools in our stack, it can easily be swapped out for other compatible key signing daemons. In fact, it **must be swapped out** for production use cases. It is for **development only** and we do not yet offer an enterprise key management solution. However the common keys API can either be satisfied by your audited security system of choice or we will be looking to provide proxy based access to various security and key management systems over time.
 
@@ -33,19 +33,19 @@ As with all the tools in our stack, it can easily be swapped out for other compa
 
 Chains have a few key properties: validators (specified in the all important genesis file or updated on the fly with bond transactions), a consensus engine (the mechanism for updating state), and a virtual machine (for executing smart contracts).
 
-Our [current design](https://erisindustries/components/erisdb/) is opinated and uses the [Tendermint](https://github.com/tendermint/tendermint/wiki) consensus engine and the [Ethereum Virtual Machine](https://github.com/ethereum/wiki/wiki/White-Paper). Sandwiched between these components is our [permission layer](/documentation/eris-db-permissions/).
+Our [current design](https://erisindustries/components/erisdb/) is opinated and uses the [Tendermint](https://github.com/tendermint/tendermint/wiki) consensus engine and the [Ethereum Virtual Machine](https://github.com/ethereum/wiki/wiki/White-Paper). Sandwiched between these components is our [permission layer](/docs/documentation/eris-db-permissions/).
 
-Both the consensus engine and virtual machine are, again, modules that can be swapped in and out as need by. Currently, they are packaged together as [eris:db](/documentation/edb/). The docker image used to run eris:db also contains [mint-client](https://github.com/eris-ltd/mint-client), a low-level tool for talking to the Tendermint consensus engine. A low-level [eth-client](https://github.com/eris-ltd/eth-client) is also available if you'd rather be rolling an ethereum chain.
+Both the consensus engine and virtual machine are, again, modules that can be swapped in and out as need by. Currently, they are packaged together as [eris:db](/docs/documentation/edb/). The docker image used to run eris:db also contains [mint-client](https://github.com/eris-ltd/mint-client), a low-level tool for talking to the Tendermint consensus engine. A low-level [eth-client](https://github.com/eris-ltd/eth-client) is also available if you'd rather be rolling an ethereum chain.
 
-To create genesis files and keys for development, we have the [eris:chain_manager](/documentation/eris-cm/latest/eris-cm/). The chain maker portion of the `eris:chain_manager` supports a wide variety of chain types, permissioning schemes, and participant kinds.
+To create genesis files and keys for development, we have the [eris:chain_manager](/docs/documentation/eris-cm/latest/eris-cm/). The chain maker portion of the `eris:chain_manager` supports a wide variety of chain types, permissioning schemes, and participant kinds.
 
 ## Deploy Your Contracts
 
 Deploy contracts: write solidity, compile, send to the chain.
 
-We provide hosted compilers which uses the [eris:compilers](/documentation/eris-compilers/), and as you would expect, swapping in your own compiler is as easy as flag with [eris:package_manager](/documentation/eris-pm/latest/epm). `eris:package_manager` is our contract deployment and system establishment tooling which simplifies many of the steps for compiling, deploying and working with chain based systems. The [eris:abi](https://github.com/eris-ltd/eris-abi) tooling is used for formatting compiled solidity code.
+We provide hosted compilers which uses the [eris:compilers](/docs/documentation/eris-compilers/), and as you would expect, swapping in your own compiler is as easy as flag with [eris:package_manager](/docs/documentation/eris-pm/latest/epm). `eris:package_manager` is our contract deployment and system establishment tooling which simplifies many of the steps for compiling, deploying and working with chain based systems. The [eris:abi](https://github.com/eris-ltd/eris-abi) tooling is used for formatting compiled solidity code.
 
-All of this functionality is abstracted away with the `eris pkgs do` command. See the [contracts deploying tutorial](/tutorials/contracts-deploying/) for more information.
+All of this functionality is abstracted away with the `eris pkgs do` command. See the [contracts deploying tutorial](/docs/tutorials/contracts-deploying/) for more information.
 
 ## Build Your Application
 
@@ -59,9 +59,9 @@ We recently built the [marmot checker](https://github.com/eris-ltd/marmot) which
 
 ## Deploy To the Cloud
 
-Deploy to the cloud. This process uses [docker-machine](/tutorials//tool-specific/docker_machine/) and will soon be bundled up in the `eris remotes` command to simplify the process even further. See the [advanced cloud tutorial](/tutorials/advanced/chaindeploying/) for more information on deploying your chain to the cloud.
+Deploy to the cloud. This process uses [docker-machine](/docs/tutorials//tool-specific/docker_machine/) and will soon be bundled up in the `eris remotes` command to simplify the process even further. See the [advanced cloud tutorial](/docs/tutorials/advanced/chain-deploying/) for more information on deploying your chain to the cloud.
 
-Voila! Your app is ready for users. Of course, you'll want to build a user interface, likely at the javascript layer. To simplify that process, we have three javasript libraries: [eris:db.js](/documentation/eris-db.js/latest/),  [eris:contracts.js](/documentation/eris-contracts.js/latest/), and [eris:keys.js](/documentation/eris-keys.js/latest/)
+Voila! Your app is ready for users. Of course, you'll want to build a user interface, likely at the javascript layer. To simplify that process, we have three javasript libraries: [eris:db.js](/docs/documentation/eris-db.js/),  [eris:contracts.js](/docs/documentation/eris-contracts.js/), and [eris:keys.js](/docs/documentation/eris-keys.js/)
 
 That is a lot of components. So where should you even start?
 
@@ -71,7 +71,7 @@ Next, we'll walk through one approach -- the one we consider most intuitive for 
 
 ## Set Up Your Chain
 
-We start with the genesis file. The sets up your chain and contains approved validators, their initial coin distribution, any permissions, roles, or names can be assigned to them. Maybe you want 5, maybe you want 100. See [the advanced chain making tutorial](/tutorials/advanced/chain-making/) for more info on creating chains. Since you'll need the public keys of everyone you'd like included, a key pair will need to be generated for each participant/validator.
+We start with the genesis file. The sets up your chain and contains approved validators, their initial coin distribution, any permissions, roles, or names can be assigned to them. Maybe you want 5, maybe you want 100. See [the advanced chain making tutorial](/docs/tutorials/advanced/chain-making/) for more info on creating chains. Since you'll need the public keys of everyone you'd like included, a key pair will need to be generated for each participant/validator.
 
 Either you do this all yourself and distribute the keys or ask each user to generate a pair themselves and provide the pubkey. For the latter, you'd pass in a `.csv` file on the `eris chains make --known` command.
 
@@ -86,19 +86,19 @@ Once >2/3 of validator pool joins, the chain will begin validating transactions 
 
 At the tool level, these would primarily be used by chain admins whereas developers for a user-facing application would likely be working at the javascript layer for sending transactions and deploying contracts.
 
-More info: [chain deploying](/tutorials/advanced/chain-deploying/); [contracts interacting](/tutorials/contracts-interacting/); and [collaborating on your application](/tutorials/services-making/).
+More info: [chain deploying](/docs/tutorials/advanced/chain-deploying/); [contracts interacting](/docs/tutorials/contracts-interacting/); and [collaborating on your application](/docs/tutorials/services-making/).
 
 ## Set Up Your Application
 
 Now you need an application. Before we get into some design considerations for an application, let's dissect the process of sending transactions and deploying contracts. At the end of the day, the latter is the former but includes compiled byte code as part of the transaction (see eris-abi in the diagram).
 
-The specific requirements for sending a transaction are documented [here](/documentation/eris-pm/latest/jobs_specification/#txJobs). Provided these are met, eris:package_manager will first craft a transaction and, if specified, sign and broadcast it to the designated chain. Again, since the key signing that transaction must be available to the daemon, docker simplifies this logitics challenge. So that's pretty easy but it's no bitcoin wallet in terms of simplicity.
+The specific requirements for sending a transaction are documented [here](/docs/documentation/eris-pm/latest/jobs_specification/#txJobs). Provided these are met, eris:package_manager will first craft a transaction and, if specified, sign and broadcast it to the designated chain. Again, since the key signing that transaction must be available to the daemon, docker simplifies this logitics challenge. So that's pretty easy but it's no bitcoin wallet in terms of simplicity.
 
-Now let's deploy a contract. For writing smart contracts, see [our Solidity writing tutorial series](/tutorials/solidity/). Once you've got a simple contract and would like to deploy it. The first step takes the solidity code and compiles it into bytecode. This bytecode will be used as the raw input for [eris:package_manager to deploy your contract](/documentation/eris-pm/latest/jobs_specification/#contractsJobs) to the chain.
+Now let's deploy a contract. For writing smart contracts, see [our Solidity writing tutorial series](/docs/tutorials/solidity/). Once you've got a simple contract and would like to deploy it. The first step takes the solidity code and compiles it into bytecode. This bytecode will be used as the raw input for [eris:package_manager to deploy your contract](/docs/documentation/eris-pm/latest/jobs_specification/#contractsJobs) to the chain.
 
-After the transaction is crafted, the abi formats this bytecode into something that the EVM can read/interpret. Now your contract is on the chain and can be called with [a call job via eris:package_manager](/documentation/eris-pm/latest/jobs_specification/#contractsJobs) or via the [javascript library](/documentation/eris-contracts.js/latest).
+After the transaction is crafted, the abi formats this bytecode into something that the EVM can read/interpret. Now your contract is on the chain and can be called with [a call job via eris:package_manager](/docs/documentation/eris-pm/latest/jobs_specification/#contractsJobs) or via the [javascript library](/docs/documentation/eris-contracts.js/).
 
-This process of: solidity -> eris:compilers (contract compile) -> eris:abi (transaction formulation) -> eris:keys (sign) -> deploy is wholly abstracted away by the `eris:package_manager`; see the [contract deploying tutorial](/tutorials/contracts-interacting/) for more info. In essence, you write a contract, specify a few parameters in a `.yaml` file then vrooom `eris pkgs do`.
+This process of: solidity -> eris:compilers (contract compile) -> eris:abi (transaction formulation) -> eris:keys (sign) -> deploy is wholly abstracted away by the `eris:package_manager`; see the [contract deploying tutorial](/docs/tutorials/contracts-interacting/) for more info. In essence, you write a contract, specify a few parameters in a `.yaml` file then vrooom `eris pkgs do`.
 
 So a transaction hits the chain, then what? Roughly, the transaction will be proposed and the validators will vote on whether or not to accept it in the next block. Voting happens in a round robin manner. In the aforementioned refactor, the tendermint consensus engine will be its own module which talks to the eris:db application layer over the  [tendermint socket protocol (tmsp)](http://tendermint.com/posts/tendermint-socket-protocol/), This will make experimentation with other consensus engines much simpler (Casper anyone?). Indeed, it is already possible to roll an eth chain and talk to it with the [eth-client](https://github.com/eris-ltd/eth-client).
 
@@ -110,18 +110,18 @@ Time to build your service (application). But wait.
 
 What is eris:cli anyways, and why would you want to use it? How will help it operate your blockchain application?
 
-As previously mentioned, it's an orchestration tool. Everything we've discussed so far can be done natively (i.e., without docker); this requires stitching together the various tools (see, for example, [eris by curl](/tutorials/tool-specific/eris_by_curl/). **eris:cli makes it easier to co-ordinate all the things you need to roll a smart-contract ready chain with an application**.
+As previously mentioned, it's an orchestration tool. Everything we've discussed so far can be done natively (i.e., without docker); this requires stitching together the various tools (see, for example, [eris by curl](/docs/tutorials/tool-specific/eris_by_curl/). **eris:cli makes it easier to co-ordinate all the things you need to roll a smart-contract ready chain with an application**.
 
-With that in mind, our goal now is to build and define a service that, when started, links up to the existing chain and any other services that are required for the application to run smoothly. Once your service is built (write a bunch of code, basically), all it needs is a service definition file (`eris services new`; see the specification [here](/documentation/eris-cli/latest/services_specification/) which simplifies the `docker run` process. This of course assumes you've written a [Dockerfile](https://docs.docker.com/engine/reference/builder/) and made a [docker image](https://docs.docker.com/engine/userguide/containers/dockerimages/).
+With that in mind, our goal now is to build and define a service that, when started, links up to the existing chain and any other services that are required for the application to run smoothly. Once your service is built (write a bunch of code, basically), all it needs is a service definition file (`eris services new`; see the specification [here](/docs/documentation/eris-cli/latest/services_specification/) which simplifies the `docker run` process. This of course assumes you've written a [Dockerfile](https://docs.docker.com/engine/reference/builder/) and made a [docker image](https://docs.docker.com/engine/userguide/containers/dockerimages/).
 
-See the [toadserver service making tutorial](/tutorials/advanced/services-making/) for more information on this process.
+See the [toadserver service making tutorial](/docs/tutorials/advanced/services-making/) for more information on this process.
 
 The last tricky part, now that we have a defined service, is to deploy it to the cloud with >1 node/validator. Here again, docker shines, this time as a machine.
 
-The `eris` tool has a global flag `--machine` which can be used to specify another docker daemon (on any number of other hosts) upon which to execute a command. Note: these docker machines will have been pre-created using your choice of cloud provider. See our [docker-machine tutorial](/tutorials/tool-specific/docker_machine/) and our [getting started with cloud machines](/tutorials/advanced/cloud-getting-started) for more information.
+The `eris` tool has a global flag `--machine` which can be used to specify another docker daemon (on any number of other hosts) upon which to execute a command. Note: these docker machines will have been pre-created using your choice of cloud provider. See our [docker-machine tutorial](/docs/tutorials/tool-specific/docker_machine/) and our [getting started with cloud machines](/docs/tutorials/advanced/cloud-getting-started) for more information.
 
 The beauty of this feature is that the files needed for these deployments need only be on the host, and, of course, you only need install eris once.
 
 # Get Started!
 
-There you have it. From A to Blockchains, this is how you get rolling with the marmots. **[Get Started Now](/tutorials/getting-started)**.
+There you have it. From A to Blockchains, this is how you get rolling with the marmots. **[Get Started Now](/docs/tutorials/getting-started)**.

@@ -2,11 +2,11 @@
 
 date: 2014-10-06
 title:      "platform:db"
-excerpt:    "The Blockchain Client for Information Age Organizations"
+excerpt:    "The Distributed Application Platform | db"
 menu:
   main:
     parent: platform
-weight:  20
+weight:  30
 aliases:
 - /components/erisdb/
 

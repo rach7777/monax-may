@@ -1,17 +1,13 @@
 ---
 
 layout: docs
-title: "Tutorials | Making a Permissioned Chain (Simple) - Eris v0.11"
+title: "Tutorials | Making a Permissioned Chain (Simple) - Eris v0.12"
 
 ---
 
 It is not necessarily a simple matter to "make" a permissioned chain. With the `eris` tooling, we make it as simple as possible, but it does take a bit of crafting to get everything correctly sorted.
 
 This tutorial is structured to walk individuals through parts of the eris developer tool kit while also showing readers how to make a simple permissioned blockchain.
-
-**Note** -- This tutorial is built for Eris versions `>= 0.11.4`. For other versions of this tutorial please see below:
-
-* [v0.11.0](/tutorials/deprecated/chainmaking-v0.11.0/)
 
 # Introduction
 
@@ -29,9 +25,9 @@ To do this we need to, first, consider, *who* will get *what* permissions and *w
 
 * 3 Administrators (these would be developers who have **full** control over the chain) (one of which will be "running" the chain performing validation)
 
-If you would like to understand all of the permissions which an eris chains smart contract network is capable of providing, [please see our documentation on the subject](/documentation/eris-db-permissions/).
+If you would like to understand all of the permissions which an eris chains smart contract network is capable of providing, [please see our documentation on the subject](/docs/documentation/eris-db-permissions/).
 
-We use an abstraction to simplify the chain making process called [Account Types](/documentation/eris-cm/latest/account_types/). This abstraction is just that, an abstraction to help users quickly get up to speed. In order to reduce the complexity of dealing with different types of accounts typically built on a chain, we use the idea of "account types". Account types are not restrictive in the sense that they are not the "only" types of accounts you can make with eris chains.
+We use an abstraction to simplify the chain making process called [Account Types](/docs/documentation/eris-cm/latest/account_types/). This abstraction is just that, an abstraction to help users quickly get up to speed. In order to reduce the complexity of dealing with different types of accounts typically built on a chain, we use the idea of "account types". Account types are not restrictive in the sense that they are not the "only" types of accounts you can make with eris chains.
 
 Account types are simply bundles of permissions no more no less. Using the eris tooling you can also create your own account types with your own bundles of permissions which will be helpful.
 
@@ -112,13 +108,13 @@ To see the keys which eris-keys generated both *inside* the container type and a
 eris keys ls
 ```
 
-Before we move on to actual chainmaking, if you would like to explore more of the eris keys functionality please see our [keys tutorial](/tutorials/tool-specific/keyexporting/).
+Before we move on to actual chainmaking, if you would like to explore more of the eris keys functionality please see our [keys tutorial](/docs/tutorials/tool-specific/keyexporting/).
 
 Now, we're all ready to make a chain.
 
 # Step 2. Make the genesis.json
 
-Before we begin, we should quickly talk through the various files which are needed to run an eris chain. When you ran `eris init` during the [getting started](/tutorials/getting-started/) step, eris created a folder called `~/.eris/chains/default` on your host's hard drive. This is to hold the default files for using eris chains. There are a few primary files used by eris chains:
+Before we begin, we should quickly talk through the various files which are needed to run an eris chain. When you ran `eris init` during the [getting started](/docs/tutorials/getting-started/) step, eris created a folder called `~/.eris/chains/default` on your host's hard drive. This is to hold the default files for using eris chains. There are a few primary files used by eris chains:
 
 1. the config file for the tendermint consensus engine called `config.toml`
 2. the chain definition file for eris chains called `chainName.toml` (where `chainName` is the name of your chain) (these are located in your ~/.eris/chains directory)
@@ -130,7 +126,7 @@ In general you do not really need to mess with `server_conf.toml` unless you kno
 
 The three files you *may* need to edit are the `genesis.json` and `priv_validator.json` (both of which we're about to get "made" for us) and the `config.toml`.
 
-In any chain with more than one validator the `config.toml` file will be edited to fill in the `seeds` and `moniker` fields. The `seeds` field is used to point your consensus engine to the peers it should connect into. For more information on how to deal with this please see our [advanced chain deploying tutorial](/tutorials/advanced/chain-deploying/). The `moniker` field is "your node's name on the network". It should be unique on the given network.
+In any chain with more than one validator the `config.toml` file will be edited to fill in the `seeds` and `moniker` fields. The `seeds` field is used to point your consensus engine to the peers it should connect into. For more information on how to deal with this please see our [advanced chain deploying tutorial](/docs/tutorials/advanced/chain-deploying/). The `moniker` field is "your node's name on the network". It should be unique on the given network.
 
 The `genesis.json` is the primary file which tells eris chains how to instantiate a particular blockchain. It provides the "genesis" state of the blockchain including the accounts, permissions, and validators which will be used at the beginning of the chain. These can always be updated over the life of the chain of course, but the genesis.json provides the starting point. Luckily `eris` takes care of making this for you and there is very little which should be required for you in way of editing (unless you know what you're doing of course, in which case why are you reading this ;-) ).
 
@@ -172,7 +168,7 @@ cat ~/.eris/chains/toRemoveLater/addresses.csv
 
 The first two files can be used later to create a new genesis.json if the actual json gets lost. One of the things about this tooling is that it **creates** the keys for you. That is helpful in some circumstances. In other circumstances this is not helpful.
 
-In general, we recommend that if you are making a chain for a consortium that you have your consortium members **make their own keys** and then send the public key to you. Once you've assembled the keys then you will create an accounts.csv and validators.csv files in this format and then run `eris chains make` with the `--known` flag. More information on complex chain making is included in our [advanced chain making tutorial](/tutorials/advanced/chain-making/).
+In general, we recommend that if you are making a chain for a consortium that you have your consortium members **make their own keys** and then send the public key to you. Once you've assembled the keys then you will create an accounts.csv and validators.csv files in this format and then run `eris chains make` with the `--known` flag. More information on complex chain making is included in our [advanced chain making tutorial](/docs/tutorials/advanced/chain-making/).
 
 The last file is the `addresses.csv` file which is another artifact of the chain making process. It simply has the addresses and the "names" of the nodes. We find it useful when scripting out complex interactions and it is simply a reference file along the lines of `addr=$(cat $chain_dir/addresses.csv | grep $name | cut -d ',' -f 1)`.
 
@@ -256,6 +252,6 @@ eris clean
 
 # Where to next?
 
-**Next, you'll want to [deploy some contracts](/tutorials/contracts-deploying/)!**
+**Next, you'll want to [deploy some contracts](/docs/tutorials/contracts-deploying/)!**
 
 

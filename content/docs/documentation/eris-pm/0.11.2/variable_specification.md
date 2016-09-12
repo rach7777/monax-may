@@ -7,7 +7,7 @@ title:      "Documentation | eris:pm | Variable Specification"
 
 # Variables Specification
 
-Variables can be used for nearly every epm [jobs](../jobs_specification) field (largely with the exception of nonce and wait).
+Variables can be used for nearly every epm [jobs](jobs_specification) field (largely with the exception of nonce and wait).
 
 eris:pm variables will always begin with a dollar sign `$`. This is what will trigger the variable expansion.
 

@@ -31,11 +31,11 @@ Action driven architecture:
 
 ## Dependencies
 
-This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/tutorials/getting-started/).
+This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/docs/tutorials/getting-started/).
 
 This tutorial assumes you have worked through the following Solidity tutorials:
 
-* [The Five Types Model (Solidity 1)](/tutorials/solidity/solidity-1/)
+* [The Five Types Model (Solidity 1)](/docs/tutorials/solidity/solidity-1/)
 
 # Actions
 
@@ -1548,4 +1548,4 @@ contract Doug is DougDb {
 
 In the next part we will learn how to integrate smart contract systems into applications by RPCing them through a javascript API. This involves an in-depth look at a number of important solidity features, mainly `events`. Events are essential in finding out the result of transactions, as they can be used to print messages into the client log which can be captured and read using a combination of `filters` and `watches` (there are a few events in the linked list Doug contract btw.). It is a lot less complicated then it sounds.
 
-**Next, we'll go deeper into [Solidity's language features](/tutorials/solidity/solidity-3/)!**
+**Next, we'll go deeper into [Solidity's language features](/docs/tutorials/solidity/solidity-3/)!**

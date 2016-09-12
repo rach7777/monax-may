@@ -1,7 +1,8 @@
 {{ partial "header.html" . }}
+</head>
+<body class="wide">
 {{ partial "navigation.html" . }}
-
-<div class="container-fluid" id="eris-page">
+<div class="container-fluid" id="monax-page">
   {{ if not .Params.no_header }}
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 page-header">
@@ -12,16 +13,12 @@
 
   <div class="row">
     <article id="main-content">
-      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2" id="content-block">
         {{ .Content }}
-
-        <h4><a class="edit-me" href="https://github.com/{{ index .Site.Data.sites "github-user" }}/{{ index .Site.Data.sites "url-raw" }}/blob/master/{{ .File.Path }}">Edit this page</a></h4>
       </div><!-- .cols -->
     </article><!-- #main-content -->
   </div><!-- .row -->
 </div><!-- .container-fluid -->
-
 {{ partial "footer.html" . }}
 {{ partial "scripts.html" . }}
-{{ partial "tableOfContents.html" . }}
 {{ partial "analytics.html" . }}

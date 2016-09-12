@@ -7,12 +7,12 @@ title: "Tutorials | Bonding & Unbonding Validators on your Chain"
 
 The concept of bonding/unbonding validators here refers to validators which are voluntarily adding (bonding) or removing (unbonding) themselves. New validators (not included in the genesis file) first require tokens on the chain to post a bond with. Future tutorials will cover slashing/removing unwelcome/byzantine validators.
 
-For this example, we'll be using a [simplechain](/tutorials/chain-making), which has a single Full Account (see: `cat ~/.eris/chains/account-types/full.toml` for more information). One another host, a new account will be created and connect to the running chain. Once our Full Account sends this new account some tokens, the new account will be in a position to post a bond and begin validating. Eventually, this validator can unbond if they so choose. 
+For this example, we'll be using a [simplechain](/docs/tutorials/chain-making), which has a single Full Account (see: `cat ~/.eris/chains/account-types/full.toml` for more information). One another host, a new account will be created and connect to the running chain. Once our Full Account sends this new account some tokens, the new account will be in a position to post a bond and begin validating. Eventually, this validator can unbond if they so choose.
 
 Let's get started!
 
 # Get the chain sorted
-We'll do this part [using docker-machine](/tutorials/tool-specific/docker_machine) to simulate another host that starts the chain as a single validator.
+We'll do this part [using docker-machine](/docs/tutorials/tool-specific/docker_machine) to simulate another host that starts the chain as a single validator.
 
 ### Create a docker machine and initialize eris
 ```bash
@@ -36,13 +36,13 @@ rm ~/.eris/chains/bonding/priv_validator.json
 eris keys convert $addr > ~/.eris/chains/bonding/priv_validator.json
 cp ~/.eris/chains/default/config.toml ~/.eris/chains/bonding
 ```
-First we updated the `priv_validator.json` with the new address then we dropped in the `config.toml`. Open the latter and edit the line `seeds = ip:46656` where `ip` is the output of `docker-machine ip bonding`. Your local node needs to know this for the peers to connect. 
+First we updated the `priv_validator.json` with the new address then we dropped in the `config.toml`. Open the latter and edit the line `seeds = ip:46656` where `ip` is the output of `docker-machine ip bonding`. Your local node needs to know this for the peers to connect.
 
 ### Connect the new peer node
 ```bash
 eris chains new bonding --dir ~/.eris/chains/bonding
 ```
-The new peer will dial the seed and connect to it. Go back to the browser and see the `/net_info` endpoint; the new peer should be there. Note: it will take this peer some time to catchup on blocks. There should still only be one account at `/list_accounts` currently. 
+The new peer will dial the seed and connect to it. Go back to the browser and see the `/net_info` endpoint; the new peer should be there. Note: it will take this peer some time to catchup on blocks. There should still only be one account at `/list_accounts` currently.
 
 With the chain setup, you have two options: 'exec' and 'mintx' or 'epm'
 
@@ -63,11 +63,11 @@ We'll need the pubkey: `pub_new=$(eris keys pub $addr_new)`
 ```bash
 eris chains exec bonding "mintx bond --amt 150000 --pubkey $pub_new --to $addr_new --chainID bonding --node-addr=ip:46657 --sign-addr=keys:4767 --sign --broadcast"
 ```
-The `Transaction Hash` should again output. Note a few things here: the `--machine bonding` flag has been omitted since we are now on a "new" host and would like to bond this new account. With `mintx unbond` the `--to` flag specifies the address to unbond to (see unbonding, below). As well, the `ip` in `--node-addr=ip:46657` could be different so make sure to first run `eris chains inspect bonding NetworkSettings.IPAddress` as above (but without the `--machine` flag. 
+The `Transaction Hash` should again output. Note a few things here: the `--machine bonding` flag has been omitted since we are now on a "new" host and would like to bond this new account. With `mintx unbond` the `--to` flag specifies the address to unbond to (see unbonding, below). As well, the `ip` in `--node-addr=ip:46657` could be different so make sure to first run `eris chains inspect bonding NetworkSettings.IPAddress` as above (but without the `--machine` flag.
 
-If the command was successfull, in the browser at: `ip:46657/list_validators` you'll see that `$addr_new` has been added. 
+If the command was successfull, in the browser at: `ip:46657/list_validators` you'll see that `$addr_new` has been added.
 
-That's it! Create a new account, join the chain, send some tokens, post a bond. Marmots like bonds. 
+That's it! Create a new account, join the chain, send some tokens, post a bond. Marmots like bonds.
 
 To use with epm, clean up your old chain:
 ```bash
@@ -172,7 +172,7 @@ jobs:
       val: $queryBonded
 ```
 
-using the same hardcoded `$addr_new` and `$pub_new` as in the previous sections. 
+using the same hardcoded `$addr_new` and `$pub_new` as in the previous sections.
 
 # Unbonding
 
@@ -183,4 +183,4 @@ The concept is no different than bonding, simply `eris chains exec bonding "mint
 See [this test in eris-pm](https://github.com/eris-ltd/eris-pm/tree/3a9023c8868a03a1b13d2122a6f5340b52c14b4b/tests/fixtures/app04-bonding_unbonding_rebonding_tx_and_validation_status) for more information on the bond/unbond/rebond pipeline. Note that the `epm.yaml`'s in this tutorial are modified from that test.
 
 # Where to next?
-- for more info on the `epm.yaml` specification, see 1) [the documentation on epm](/documentation/eris-pm) and follow the links for jobs/query/assert specs and 2) [the tests fixtures for epm](https://github.com/eris-ltd/eris-pm/tree/master/tests/fixtures) which describe many common actions.
+- for more info on the `epm.yaml` specification, see 1) [the documentation on epm](/docs/documentation/eris-pm) and follow the links for jobs/query/assert specs and 2) [the tests fixtures for epm](https://github.com/eris-ltd/eris-pm/tree/master/tests/fixtures) which describe many common actions.

@@ -1,4 +1,5 @@
 ---
+
 author: brian
 categories:
 - distributed business
@@ -15,6 +16,7 @@ tags:
 thumbnail: null
 title: Eris + IPFS
 url: /2015/11/01/eris-and-ipfs/
+
 ---
 
 By changing the way different parties cooperate, smart contracts radically improve how complex processes are run. This new paradigm will have wide-reaching effects in many areas.

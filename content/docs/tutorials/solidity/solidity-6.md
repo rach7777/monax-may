@@ -11,15 +11,15 @@ In this post we're going to look at some Solidity-features that are fairly new, 
 
 ## Dependencies
 
-This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/tutorials/getting-started/).
+This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/docs/tutorials/getting-started/).
 
 This tutorial assumes you have worked through the following Solidity tutorials:
 
-* [The Five Types Model (Solidity 1)](/tutorials/solidity/solidity-1/)
-* [Action-Driven Architecture (Solidity 2)](/tutorials/solidity/solidity-2/)
-* [Solidity Language Features (Solidity 3)](/tutorials/solidity/solidity-3/)
-* [Testing Solidity (Solidity 4)](/tutorials/solidity/solidity-4/)
-* [Modular Solidity (Solidity 5)](/tutorials/solidity/solidity-5)
+* [The Five Types Model (Solidity 1)](/docs/tutorials/solidity/solidity-1/)
+* [Action-Driven Architecture (Solidity 2)](/docs/tutorials/solidity/solidity-2/)
+* [Solidity Language Features (Solidity 3)](/docs/tutorials/solidity/solidity-3/)
+* [Testing Solidity (Solidity 4)](/docs/tutorials/solidity/solidity-4/)
+* [Modular Solidity (Solidity 5)](/docs/tutorials/solidity/solidity-5)
 
 # Tuples
 
@@ -205,5 +205,5 @@ Remapping is marginally useful in a case like this, but when you start getting m
 
 # Where to next?
 
-**Next, you'll want to [update your solidity contracts](/tutorials/solidity/solidity-7/)!**
+**Next, you'll want to [update your solidity contracts](/docs/tutorials/solidity/solidity-7/)!**
 

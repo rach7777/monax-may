@@ -5,7 +5,7 @@ title: "Tutorials | Maintaining your Permissioned Chain"
 
 ---
 
-Deploying and connecting your permissioned chains is not as difficult as [making a permissioned chain](/tutorials/advanced/chain-making), but it does require some careful work. This tutorial will cover the basics of deploying and connecting your blockchain nodes.
+Deploying and connecting your permissioned chains is not as difficult as [making a permissioned chain](/docs/tutorials/advanced/chain-making), but it does require some careful work. This tutorial will cover the basics of deploying and connecting your blockchain nodes.
 
 This tutorial is a continuation of the previous tutorial on making a permissed chain, so if you have not gone through that tutorial, then please do so before working through this tutorial.
 
@@ -23,13 +23,13 @@ For this tutorial, we have kept the bash scripting to a bare minimum, but should
 
 ## Dependencies
 
-This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/tutorials/getting-started/).
+This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/docs/tutorials/getting-started/).
 
 This tutorial assumes you have worked through the following advanced tutorials:
 
-* [Get Started in the Cloud](/tutorials/advanced/cloud-getting-started/)
-* [Advanced Chain Making](/tutorials/advanced/chain-making)
-* [Deploying Chains in the Cloud](/tutorials/advanced/chain-deploying)
+* [Get Started in the Cloud](/docs/tutorials/advanced/cloud-getting-started/)
+* [Advanced Chain Making](/docs/tutorials/advanced/chain-making)
+* [Deploying Chains in the Cloud](/docs/tutorials/advanced/chain-deploying)
 
 This tutorial assumes you have the very nice [jq tool available on your machine](https://stedolan.github.io/jq/manual/). `jq` is like `sed` but for json. We use it a lot.
 
@@ -242,4 +242,4 @@ done
 
 # Where to next?
 
-**Let us [do some more advanced contracts work](/tutorials/advanced/contracts-deploying).**
+**Let us [do some more advanced contracts work](/docs/tutorials/advanced/contracts-deploying).**

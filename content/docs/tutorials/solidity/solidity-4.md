@@ -11,13 +11,13 @@ This post and the following ones will be about validating smart contracts; makin
 
 ## Dependencies
 
-This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/tutorials/getting-started/).
+This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/docs/tutorials/getting-started/).
 
 This tutorial assumes you have worked through the following Solidity tutorials:
 
-* [The Five Types Model (Solidity 1)](/tutorials/solidity/solidity-1/)
-* [Action-Driven Architecture (Solidity 2)](/tutorials/solidity/solidity-2/)
-* [Solidity Language Features (Solidity 3)](/tutorials/solidity/solidity-3/)
+* [The Five Types Model (Solidity 1)](/docs/tutorials/solidity/solidity-1/)
+* [Action-Driven Architecture (Solidity 2)](/docs/tutorials/solidity/solidity-2/)
+* [Solidity Language Features (Solidity 3)](/docs/tutorials/solidity/solidity-3/)
 
 # Testing smart-contracts
 
@@ -398,4 +398,4 @@ In the next post I will be making a simple multi-agent test in Javascript. The w
 
 # Where to next?
 
-**Next, you'll want to [learn to make solidity modular](/tutorials/solidity/solidity-5).**
+**Next, you'll want to [learn to make solidity modular](/docs/tutorials/solidity/solidity-5).**

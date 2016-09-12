@@ -7,7 +7,7 @@ title: "Tutorials | Making and Using eris-services"
 
 # Dependencies
 
-This tutorial is a continuation of our [contracts interacting tutorial](/tutorials/contracts-interacting). If you have not completed that tutorial, please do so before working with this tutorial. Once we have a chain made, some contracts deployed to our chain, and a script to interact with them, we may want to be able to share that script with our colleagues *or* we may want to turn that script into a longer running microservice which is necessary for the applications we're building.
+This tutorial is a continuation of our [contracts interacting tutorial](/docs/tutorials/contracts-interacting). If you have not completed that tutorial, please do so before working with this tutorial. Once we have a chain made, some contracts deployed to our chain, and a script to interact with them, we may want to be able to share that script with our colleagues *or* we may want to turn that script into a longer running microservice which is necessary for the applications we're building.
 
 To do this we will need to do two things: (1) docker-ize our scripts or daemons; and (2) marmot-ize our docker image.
 
@@ -314,7 +314,7 @@ If we had really wanted to, we could have performed the previous tutorial withou
 
 # Build Idi's Service
 
-Great. Now we are ready to build the [service definition file](/documentation/eris-cli/latest/services_specification/). A service definition file is the thing that tells `eris` how to "turn it on or off" where "it" is a docker image.
+Great. Now we are ready to build the [service definition file](/docs/documentation/eris-cli/latest/services_specification/). A service definition file is the thing that tells `eris` how to "turn it on or off" where "it" is a docker image.
 
 So let's start by adding a service!
 
@@ -508,7 +508,7 @@ That's it! You've made a service! Now let's share it with our colleagues.
 
 # Share your Service
 
-First things first, you'll need a Docker Hub to push to. So make sure you have a [Docker Hub](https://hub.docker.com/) account, [quay.io](quay.io) (which we use at eris and have been very satisfied with), or an account with a corporate Docker Registry. Then make sure you are logged in:
+First things first, you'll need a Docker Hub to push to. So make sure you have a [Docker Hub](https://hub.docker.com/) account, [quay.io](https://quay.io) (which we use at eris and have been very satisfied with), or an account with a corporate Docker Registry. Then make sure you are logged in:
 
 ```bash
 docker login
@@ -569,4 +569,4 @@ Congratulations, you've just made your very own smart contract backed service ru
 
 # Where to next?
 
-You may want to next [go deeper with some of our more advanced tutorials](/tutorials/advanced/)
+You may want to next [go deeper with some of our more advanced tutorials](/docs/tutorials/advanced/)

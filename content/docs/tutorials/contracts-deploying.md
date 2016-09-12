@@ -1,7 +1,7 @@
 ---
 
 layout: docs
-title: "Tutorials | Deploying your Smart Contracts to a Chain - Eris v0.11"
+title: "Tutorials | Deploying your Smart Contracts to a Chain - Eris v0.12"
 
 ---
 
@@ -9,13 +9,9 @@ title: "Tutorials | Deploying your Smart Contracts to a Chain - Eris v0.11"
 
 For this tutorial, we are going to use a very simple `get` and `set` contract. All this contract does is get and sets a value.
 
-**Note** -- This tutorial is built for Eris versions `>= 0.11.1`. For other versions of this tutorial please see below:
-
-* [v0.11.0](/tutorials/deprecated/contractsdeploying-v0.11.0/)
-
 ## Dependencies
 
-Welcome! This tutorial assumes that you have a chain ready to deploy smart contracts to. Should you not have any idea what smart contracts are, please see our [explainer here](/explainers/smart_contracts). If you do not have a chain ready to work on, please see our [chain making tutorial](/tutorials/chain-making).
+Welcome! This tutorial assumes that you have a chain ready to deploy smart contracts to. Should you not have any idea what smart contracts are, please see our [explainer here](/docs/explainers/smart_contracts). If you do not have a chain ready to work on, please see our [chain making tutorial](/docs/tutorials/chain-making).
 
 ## Contracts Strategy
 
@@ -97,7 +93,7 @@ jobs:
 
 **Protip:** Get the file with `curl -X GET https://raw.githubusercontent.com/eris-ltd/coding/master/contracts/idi/epm.yaml -o epm.yaml`
 
-Now, what does this file mean? Well, this file is the manager file for how to deploy and test your smart contracts. `eris:package_manager` will read this file and perform a sequence of `jobs` with the various parameters supplied for the job type. It will perform these in the order they are built into the yaml file. So let's go through them one by one and explain what each of these jobs are doing. For more on using various jobs [please see the jobs specification](/documentation/eris-pm/latest/jobs_specification/).
+Now, what does this file mean? Well, this file is the manager file for how to deploy and test your smart contracts. `eris:package_manager` will read this file and perform a sequence of `jobs` with the various parameters supplied for the job type. It will perform these in the order they are built into the yaml file. So let's go through them one by one and explain what each of these jobs are doing. For more on using various jobs [please see the jobs specification](/docs/documentation/eris-pm/latest/jobs_specification/).
 
 ### Job 1: Set Job
 
@@ -111,7 +107,7 @@ This job will compile and deploy the `idi.sol` contract using Eris' compiler ser
 
 This job will send a call to the contract. `eris:package_manager` will automagically utilize the abi's produced during the compilation process and allow users to formulate contract calls using the very simple notation of `functionName` `params`. `eris:package_manager` also allows for variable expansion.
 
-So what this job is doing is this. The job is pulling the value of the `$setStorageBase` job (`eris:package_manager` knows this because it resolved `$` + `jobName` to the result of the `setStorageBase` job) and replacing that with the value, which is `5`. Then it will send that `5` value to the `set` function of the contract which is at the `destination` that is the result of the `deployStorageK` job; in other words the result of Job 3. For more on variables in `eris:package_manager`, please see the [variables specification](/documentation/eris-pm/latest/variable_specification/).
+So what this job is doing is this. The job is pulling the value of the `$setStorageBase` job (`eris:package_manager` knows this because it resolved `$` + `jobName` to the result of the `setStorageBase` job) and replacing that with the value, which is `5`. Then it will send that `5` value to the `set` function of the contract which is at the `destination` that is the result of the `deployStorageK` job; in other words the result of Job 3. For more on variables in `eris:package_manager`, please see the [variables specification](/docs/documentation/eris-pm/latest/variable_specification/).
 
 Finally, it is waiting on the call to be sunk into a block before it will proceed.
 
@@ -138,7 +134,7 @@ Both the `key` and the `val` (which in other testing frameworks are the `given` 
 
 # Deploy (and Test) The Contract
 
-See the [chain making tutorial](/tutorials/chain-making) if you need to review the chain making process. This series of commands assumed you followed that tutorial and continued here after `eris chains stop simplechain`.
+See the [chain making tutorial](/docs/tutorials/chain-making) if you need to review the chain making process. This series of commands assumed you followed that tutorial and continued here after `eris chains stop simplechain`.
 
 First, let's get our chain turned back on.
 
@@ -180,7 +176,7 @@ You *should* be able to use any of the addresses you generated during the chainm
 
 (For those that do not know what is happening in that bash line: `cat` is used to "print the file" and "pipe" it into the second command; `grep` is a finder tool which will find the line which has the right name we want to use; the `cut` says split the line at the `,` and give me the first field).
 
-Note that `eris:package_manager` can override the account which is used in any single job and/or, `eris:package_manager` can set a default `account` job which will establish a default account within the yaml. We find setting the default account within the yaml to usually be counter-productive because others will not be able to easily use your yaml unless they have the same keys in their `eris-keys` (which we **never** recommend). For more on using accounts [please see the jobs specification](/documentation/eris-pm/latest/jobs_specification/).
+Note that `eris:package_manager` can override the account which is used in any single job and/or, `eris:package_manager` can set a default `account` job which will establish a default account within the yaml. We find setting the default account within the yaml to usually be counter-productive because others will not be able to easily use your yaml unless they have the same keys in their `eris-keys` (which we **never** recommend). For more on using accounts [please see the jobs specification](/docs/documentation/eris-pm/latest/jobs_specification/).
 
 That's it! Your contract is all ready to go. You should see the output in `epm.json` which will have the transaction hash of the transactions as well as the address of the deployed `idi.sol` contract.
 
@@ -213,7 +209,7 @@ To see what keys are currently on your key signing daemon do this:
 eris keys ls
 ```
 
-If you do not have any keys then please take the time to [make some keys](/tutorials/tool-specific/keyexporting). After you find a key which you currently have, then add that as the `address` flag to the `eris pkgs do` command.
+If you do not have any keys then please take the time to [make some keys](/docs/tutorials/tool-specific/keyexporting). After you find a key which you currently have, then add that as the `address` flag to the `eris pkgs do` command.
 
 <hr />
 
@@ -232,11 +228,11 @@ To "see" your `genesis.json` then do this:
 eris chains cat simplechain genesis
 ```
 
-You can also see your `genesis.json` at `http://localhost:46657/genesis`. Note: replace `localhost` with the output of `docker-machine ip eris` if on OSX or Windows. See our [docker-machine tutorial](/tutorials/tool-specific/docker_machine/) for more information.
+You can also see your `genesis.json` at `http://localhost:46657/genesis`. Note: replace `localhost` with the output of `docker-machine ip eris` if on OSX or Windows. See our [docker-machine tutorial](/docs/tutorials/tool-specific/docker_machine/) for more information.
 
 <hr />
 
-If the account you are trying to use has not been registered in the `genesis.json` (or, latterly, has not been given the appropriate [permissions](/documentation/eris-db-permissions/) via permission transactions) and been given the appropriate permissions, then it will not be able to perform the actions it needs to in order to deploy and test the contract. The easiest thing to do at this point is to [update your genesis.json](/tutorials/tool-specific/genesisupdating/).
+If the account you are trying to use has not been registered in the `genesis.json` (or, latterly, has not been given the appropriate [permissions](/docs/documentation/eris-db-permissions/) via permission transactions) and been given the appropriate permissions, then it will not be able to perform the actions it needs to in order to deploy and test the contract. The easiest thing to do at this point is to [update your genesis.json](/docs/tutorials/tool-specific/genesisupdating/).
 
 Once you have the following sorted:
 
@@ -311,6 +307,6 @@ That's it! :-)
 
 # Where to next?
 
-**Next you'll want to interact with your contracts, so please see our [contract interaction tutorial](/tutorials/contracts-interacting/).**
+**Next you'll want to interact with your contracts, so please see our [contract interaction tutorial](/docs/tutorials/contracts-interacting/).**
 
-If you would like to learn more about how to program smart contracts, please see [our smart contract tutorial series](/tutorials/solidity/).
+If you would like to learn more about how to program smart contracts, please see [our smart contract tutorial series](/docs/tutorials/solidity/).

@@ -19,23 +19,9 @@ title: "Documentation"
 
 [eris:db permissions system](eris-db-permissions/)
 
-[eris:chain_manager overview](eris-chain-manager/)
-
 [eris:chain_manager command reference and specifications](eris-cm/)
 
-# Eris Chains Client Libraries
-
-[eris:db.js library overview](eris-db.js/README/)
-
-[eris:db.js library reference and specifications](eris-db.js/)
-
-[eris:contracts.js overview](eris-contracts-js/)
-
-[eris:contracts.js library reference and specifications](eris-contracts.js/)
-
 # Eris Packages and Tooling
-
-[eris:package_manager overview](eris-package-manager/)
 
 [eris:package_manager command reference and specifications](eris-pm/)
 
@@ -43,14 +29,12 @@ title: "Documentation"
 
 [eris:keys command reference and specifications](eris-keys/)
 
-[eris:keys.js library reference and specifications](eris-keys.js/)
-
 [eris:compilers overview](eris-compilers/)
 
-# Eris Legal
+# Eris Client Libraries
 
-[eris:legal overview]({{ site.data.sites["main"].url }}/components/erislegal/)
+[eris:db.js library reference and specifications](eris-db.js/)
 
-[eris:legal command reference and specifications](erislegal/)
+[eris:contracts.js library reference and specifications](eris-contracts.js/)
 
-[eris:legal tutorial](/tutorials/tool-specific/erislegal/)
+[eris:keys.js library reference and specifications](eris-keys.js/)

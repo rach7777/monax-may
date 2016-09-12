@@ -59,7 +59,7 @@ serve_gulp() {
     --volume `pwd`/source/js:/site/source/js \
     --volume `pwd`/source/css:/site/source/css \
     --volume `pwd`/source/images:/site/source/images \
-    --volume `pwd`/source/data:/site/source/data
+    --volume `pwd`/source/data:/site/source/data \
     --volume /site/static \
     site \
     gulp watch-no-build &

@@ -11,7 +11,7 @@ excerpt:    "What are Smart Contracts and why are these distributed logic gatewa
 
 To begin with, smart contracts are neither particularly smart nor are they, strictly speaking, contracts.
 
-That aside, they do provide a fairly well placed metaphor for what they really are: [blockchain](../blockchains/) housed scripts which represent unilateral promises to provide a determinate computation based on transactions which are sent to the script.
+That aside, they do provide a fairly well placed metaphor for what they really are: [blockchain](/docs/explainers/blockchains) housed scripts which represent unilateral promises to provide a determinate computation based on transactions which are sent to the script.
 
 These scripts are compiled into low level operation codes and stored in the blockchain's data store at a particular address -- which is determined when the contracts are deployed to the blockchain. When a transaction is sent to that address the distributed virtual machine on every full node of the blockchain network executes the script's operation codes using the data which is sent with the transaction.
 
@@ -101,10 +101,10 @@ Great strides have been made in industry around automation of a broad range of b
 
 In other words, if you're the big player and you can run the computation sequence on your metal then great, but everybody else either has to duplicate the work of formulating the automation and process management components on *their side* of the data driven relationship -- or they have to just trust you.
 
-Smart contracts offer a third way, a new paradigm, wherein legally binding agreements ([backed up by real world agreements]({{ site.data.sites["main"].url }}/components/erislegal/)) can be built to run within a network of computers which no single party can pull the plug on and in which all parties to the agreement **participate** in the management and supervision of the computers which have automated the agreement.
+Smart contracts offer a third way, a new paradigm, wherein legally binding agreements backed up by real world agreements can be built to run within a network of computers which no single party can pull the plug on and in which all parties to the agreement **participate** in the management and supervision of the computers which have automated the agreement.
 
 In other words, the sweet spot for smart contracts is data driven *relationships* -- or business processes across stakeholders.
 
-To get started programming Smart Contracts, please see our [Solidity Series on Smart Systems of Smart Contracts](/tutorials/solidity/).
+To get started programming Smart Contracts, please see our [Solidity Series on Smart Systems of Smart Contracts](/docs/tutorials/solidity/).
 
-To learn more about the differences in approach of a [tokenized blockchain approach *vis a vis* a smart contract approach](../contracts_v_tokens/) please see our explainer on the subject.
+To learn more about the differences in approach of a [tokenized blockchain approach *vis a vis* a smart contract approach](/docs/explainers/contracts_v_tokens/) please see our explainer on the subject.
