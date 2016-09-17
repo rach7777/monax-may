@@ -22,8 +22,6 @@ title: 'Eris CLI Services Walkabout: IPFS'
 url: /2015/08/05/ipfs-as-a-service/
 ---
 
-{% include series.html %}
-
 Part 1 explains `eris files`; the command for working with IPFS.
 
 Part 2 highlights additional IPFS integrations in the Eris stack.

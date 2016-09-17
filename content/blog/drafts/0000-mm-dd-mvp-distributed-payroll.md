@@ -19,8 +19,6 @@ series:    smart_contract_mvps
 
 [{{ page.date | date: "%Y" | append:'/payroll.jpg' | img }}](https://www.flickr.com/photos/londonmatt/16016747503/)
 
-{% include series.html %}
-
 Getting your employees paid. Should be the primary job for any startup executive suite. Of course everyone wants to get their folks paid.
 
 Work remote. Work from where you wanna work. It's the dream of the distributed working camps. The hope of the [DAO-ists]().

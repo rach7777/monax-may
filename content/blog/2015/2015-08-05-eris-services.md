@@ -22,8 +22,6 @@ title: 'Eris CLI Tool Walkabout: Services'
 url: /2015/08/05/eris-services/
 ---
 
-{% include series.html %}
-
 ##Services as a Service
 
 Services are what you, as a developer, stitch together to build an application. They are the glue that holds everything together, run in docker containers, and can be built on top of other services.

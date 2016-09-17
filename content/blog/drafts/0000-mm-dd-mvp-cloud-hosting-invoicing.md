@@ -19,8 +19,6 @@ series:    smart_contract_mvps
 
 [{{ page.date | date: "%Y" | append:'/cloud_hosting.jpg' | img }}](https://www.flickr.com/photos/dvanzuijlekom/8523201244/)
 
-{% include series.html %}
-
 
 
 

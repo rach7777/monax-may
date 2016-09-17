@@ -113,7 +113,7 @@ Blockchain clients generally fall into one of four quadrants. These quadrants va
 1. Is the blockchain network permissionable?
 2. Is the blockchain client optimized to do X?
 
-{% image blockchain-quadrant.png %}
+{{< image src="/images/docs/blockchain-quadrant.png" >}}
 
 ## The Optimization Spectrum
 

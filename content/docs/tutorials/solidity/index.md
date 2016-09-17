@@ -9,11 +9,11 @@ This is a series of Tutorials on Smart Contract Writing. These tutorials are mea
 
 If you feel a bit like this marmot:
 
-{% image CEu7odJWMAA3VSa.jpg %}
+{{< image src="/images/docs/CEu7odJWMAA3VSa.jpg" >}}
 
 Then see our [quick start guide](../getting-started/) to get you more like this marmot:
 
-{% image triumphant_marmot.jpg %}
+{{< image src="/images/docs/triumphant_marmot.jpg" >}}
 
 [Part I: The Five Types Model](solidity-1)
 

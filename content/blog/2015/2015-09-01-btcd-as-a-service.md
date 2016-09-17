@@ -18,8 +18,6 @@ title: 'Eris CLI Services Walkabout: BTCD'
 url: /2015/09/01/btcd-as-a-service/
 ---
 
-{% include series.html %}
-
 We got a question recently on the [forum](https://support.erisindustries.com/support/discussions/topics/6000011734):
 
 ```

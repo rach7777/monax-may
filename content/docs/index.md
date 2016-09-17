@@ -73,6 +73,6 @@ and simple to wrangle the dragons of smart contract blockchains.
 
 Click on the `connect` menu above to discover the Eris community and get support.
 
-{% image 'CEu7odJWMAA3VSa.jpg' %}
+{{< image src="/images/docs/CEu7odJWMAA3VSa.jpg" >}}
 
 _Marmots of the world, unite!_

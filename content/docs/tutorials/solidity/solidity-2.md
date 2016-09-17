@@ -9,11 +9,11 @@ title: "Tutorials | Solidity 2: An Action-Driven Architecture"
 
 The system proposed in part 1 is a good system in theory. It has good separation of concerns, is very modular, and is set up to handle permissions. This is how a typical system would look:
 
-{% image SSoSC2-1.png %}
+{{< image src="/images/docs/SSoSC2-1.png" >}}
 
 The way contracts interact with each other is through the Doug contract. This is an illustration of a normal sequence of calls:
 
-{% image SSoSC2-2.png %}
+{{< image src="/images/docs/SSoSC2-2.png" >}}
 
 There is a big problem with these type of systems however. Let's say we have a system with 10 controllers and 10 databases. Each controller has 4 functions in their public API on average. What would this mean? It means we need to add 40 (!) functions to the ALC (Application logic contract) in order to access them all. And that's not enough. Every time we update the system and add new controllers, or modify the exiting ones, we'll have to swap out the entire ALC!
 
@@ -96,7 +96,7 @@ If you have read part 1, you'll notice notice that we're cheating here by adding
 
 This is a diagram over how the calls would look in a simple fund manager where you can add and remove users, and make deposits and withdrawals with the bank.
 
-{% image SSoSC2-3.png %}
+{{< image src="/images/docs/SSoSC2-3.png" >}}
 
 There is of course no real security yet. At this point we just have a simple action system. People can add actions to it, remove them, and execute them. Before we can add any actions to it we have to add another component - the Doug. Even though the action manager is technically part CMC (contract managing contract), we need a Doug as well. It will link the actions and action manager with the other contracts in the system, such as databases. We'll start with a namereg type Doug similar to the one in part 1.
 
@@ -547,7 +547,7 @@ Before moving on to assembling the final contracts, we need to address something
 
 The doubly linked list over a `mapping` provides many benefits. We can add and remove elements dynamically. We can get elements by key. All of these operations are O(1) so it is cheap with regards to computation. The drawback is that it adds extra data to storage, which is not insignificant.
 
-{% image LinkedList.png %}
+{{< image src="/images/docs/LinkedList.png" >}}
 
 So, what do we need to add?
 

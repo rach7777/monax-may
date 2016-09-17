@@ -9,11 +9,11 @@ This is a series of Tutorials aimed at Advanced-Beginners.
 
 These tutorials are meant to be used **only** after the [introductory level](../) tutorial sequence has completed and your inner marmot feels like this guy:
 
-{% image triumphant_marmot.jpg %}
+{{< image src="/images/docs/triumphant_marmot.jpg" >}}
 
 Over this series of tutorials we will make you more like this gal:
 
-{% image ready_marmot.jpg %}
+{{< image src="/images/docs/ready_marmot.jpg" >}}
 
 The tutorial follow the same sequence as the beginner tutorials only with more depth and assumptions of reader's knowledge
 

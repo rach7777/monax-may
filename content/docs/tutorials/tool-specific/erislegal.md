@@ -15,31 +15,31 @@ Install the executable from [github's releases](https://github.com/eris-ltd/lega
 
 Build from source. You must have go installed. Legalmarkdown has been tested against go 1.2 and go 1.3:
 
-{% highlight sh %}
+```sh
 go get -u github.com/eris-ltd/legalmarkdown
 cd $GOPATH/src/github.com/eris-ltd/legalmarkdown
 go install
-{% endhighlight %}
+```
 
 # General Usage
 
 After the library has finished its installation on your system then you can go to your command line and type
 
-{% highlight sh %}
+```sh
 legalmarkdown parse --template [template_filename] --output [output_filename]
-{% endhighlight %}
+```
 
 Legal Markdown will parse the file and write to the stated output. If you need to pipe from another command or into another command both of the `--template` (or `-t`) and `--output` (or `-o`) flags can be set to `-` which will read from stdin and write to stdout respectively. This is the command you will use if you want to output any text based document rather than a structured document. Again, even though it says markdown it should work for most text based systems.
 
 If you have been working on a template or document and would like the library to build the YAML Front-Matter (see below) automatically for you, then simply type
 
-{% highlight sh %}
+```sh
 legalmarkdown assemble --template [template_filename] --output [output_filename]
-{% endhighlight %}
+```
 
 All these commands are available from within Go as well if you would prefer to call them programmatically.
 
-{% highlight go %}
+```go
 import (
   "github.com/eris-ltd/legalmarkdown/lmd"
 )
@@ -49,13 +49,13 @@ lmd.LegalToMarkdown(contents_file, parameters_file, output_file)
 // OR
 
 lmd.RawMarkdownToPDF(full_contents_as_string, full_params_as_string)
-{% endhighlight %}
+```
 
 # YAML Front-Matter
 
 [YAML](http://www.yaml.org/spec/1.2/spec.html) is easy thing to create. At the top of your file (it **MUST** be at the top of the file) you simply put in three hyphens like so: `---` on a single line. Then on the next line you simply put in the `field` followed by a `:` (colon) followed by the `value`. For each line you put the `[field]: [value]` until you have filled everything in that you need. After you have put in all your YAML front-matter then you simply put in a single line with three more hyphens `---` to signal to the library that it is the end of the fields. So YAML would typically look like this:
 
-{% highlight yaml %}
+```yaml
 ---
 party1_address:    "Muj Axmed Jimcaale Road, Hargeisa, Republic of Somaliland"
 party1_full:       "Watershed Legal Services, Ltd."
@@ -64,7 +64,7 @@ party1_rep:        "Mohomoud Abdirahman Nuur"
 party1_short:      "(\"Watershed\")"
 party1_type:       "private company limited by shares"
 ---
-{% endhighlight %}
+```
 
 ## Be Careful with YAML
 
@@ -74,11 +74,11 @@ YAML can be quite testy, so if you use any symbols or parentheses or square brac
 
 Mixins are simple markers that can be used throughout the text to identify certain things (Court) or (Company) or (Client) to identify a few. The example above is the YAML Front Matter for mixins. This allows for the creation and utilization of templates that can be reused by simply updating the YAML front-matter and leaving the main text of the template largely untouched.
 
-Mixins are structured in the form of **double curly** brackets. So, for a {% raw %}`{{court}}`{% endraw %} mixin within the body of your document, the YAML front-matter would look like this:
+Mixins are structured in the form of **double curly** brackets. So, for a `{{court}}` mixin within the body of your document, the YAML front-matter would look like this:
 
-{% highlight yaml %}
+```yaml
 court: "Regional Court of Hargeisa"
-{% endhighlight %}
+```
 
 If you do not want a mixin turned on for a particular document just add the mixin in the YAML Frontmatter and then leave it blank, the library will take it out of the text along with any extraneous spaces. If you have a mixin within the body of your document, but not within the YAML front matter, then the library will leave the mixin as is -- which is unlikely the result you want to achieve.
 
@@ -96,23 +96,21 @@ Another thing to note, if you include nested provisions, you can turn off an ins
 
 So, this is how the body of the text would look.
 
-{% highlight handlebars %}
-{% raw %}
+```handlebars
 [{{my_optional_clause}} Both parties agree that upon material breach of this agreement by either party they will both commit suicide in homage to Kurt Cobain.]
-{% endraw %}
-{% endhighlight %}
+```
 
 Not sure why you would ever write such a clause, but that is why the functionality exists! Then the YAML Front Matter would look like this:
 
-{% highlight yaml %}
+```yaml
 my_optional_clause: true
-{% endhighlight %}
+```
 
 or
 
-{% highlight yaml %}
+```yaml
 my_optional_clause: false
-{% endhighlight %}
+```
 
 ## Structured Headers Function
 
@@ -141,13 +139,13 @@ Obviously you will replace `level-1` with `level-2`, for each relevant level of 
 
 In addition to the reference portion of the structured header, you can add in whatever text you wish. For example, if you want the top level to be articles with a number and then a period, the next level down to be sections with a number in parentheses, and the next level down to be a letter in parentheses then this is what the YAML front matter would look like.
 
-{% highlight yaml %}
+```yaml
 ---
 level-1: Article 1.
 level-2: Section (1)
 level-3: (a)
 ---
-{% endhighlight %}
+```
 
 You can start on any number or letter you wish. So if you want the first article to be `Article 100.` instead of `Article 1.` there is no problem with that.
 
@@ -159,9 +157,9 @@ Sometimes in legal documents (particularly in laws) you want to build multiple s
 
 This functionality is built in with a `no-reset` function. You simply add a `no-reset` field to your YAML header and note the headers that you do not want to reset by their l., ll. notation. Separate those levels you do not want reset with commas. Example YAML line:
 
-{% highlight yaml %}
+```yaml
 no-reset: l., ll., lll.
-{% endhighlight %}
+```
 
 This will not reset level-1, level-2, or level-3 when it is parsing the document and those levels will be numbered sequentially through the entire document rather than reseting when going up the tree, levels not in this reset list, (e.g., llll. and lllll.) will be reset when going up a level in the tree. Obviously the level 1 headers will never reset because levels only reset when going a level higher and there is no level 0.
 
@@ -185,34 +183,34 @@ Then other provisions within the structured headers block can refer to it (eithe
 
 For example, if the YAML front matter looked like this:
 
-{% highlight yaml %}
+```yaml
 ---
 level-1: "# Article 1."
 level-2: "Section 1."
 level-3: (a)
 no-indent: l., ll.
 ---
-{% endhighlight %}
+```
 
 and the body of the text looked like this:
 
-{% highlight handlebars %}
+```handlebars
 ...
 ll. |123| This provision will need to be referenced later.
 ll. Provision
 lll. As stated in |123|, whatever you need to say.
 ...
-{% endhighlight %}
+```
 
 the output would look like this:
 
-{% highlight irc %}
+```irc
 Section 7. This provision will need to be referenced later.
 
 Section 8. Provision
 
     (a) As stated in Section 7, whatever you need to say.
-{% endhighlight %}
+```
 
 ## Working with Partials
 
@@ -248,7 +246,7 @@ The syntax should be straight-forward. If you learn by seeing rather than by rea
 
 Let us say you wanted to output a document that looks like this:
 
-{% highlight irc %}
+```irc
 Article 1. Provision for Article 1.
 
   Section 1. Provision for Section 1.1.
@@ -262,13 +260,13 @@ Article 1. Provision for Article 1.
       1. Provision for 1.2.1.
 
       2. Provision for 1.2.2.
-{% endhighlight %}
+```
 
 You can easily do that by doing the following steps.
 
 ## Step 1: Type the body
 
-{% highlight handlebars %}
+```handlebars
 l. Provision for Article 1.
 ll. Provision for Section 1.1.
 lll. Provision for 1.1.1.
@@ -276,17 +274,17 @@ lll. Provision for 1.1.2.
 ll. Provision for Section 1.2.
 lll. Provision for 1.2.1.
 lll. Provision for 1.2.2.
-{% endhighlight %}
+```
 
 ## Step 2(a): Fill out the YAML Front-Matter with the Base References you want
 
-{% highlight yaml %}
+```yaml
 ---
 level-1: 1.
 level-2: 1.
 level-3: 1.
 ---
-{% endhighlight %}
+```
 
 ## Step 2(b): (Optional) Add any additional text before the Base Reference
 
@@ -296,19 +294,19 @@ To output the document above, we need to be able to add the words Article and Se
 
 To achieve the above output, we should update our YAML front matter to look like this:
 
-{% highlight yaml %}
+```yaml
 ---
 level-1: Article 1.
 level-2: Section 1.
 level-3: 1.
 ---
-{% endhighlight %}
+```
 
 ## Step 2(c): (Optional) Add Precursors to Headers
 
 Sometimes you want a document which looks like this:
 
-{% highlight irc %}
+```irc
 Article 1. Provision for Article 1.
 
   Section 1.1. Provision for Section 1.1.
@@ -322,7 +320,7 @@ Article 1. Provision for Article 1.
       1.2.1. Provision for 1.2.1.
 
       1.2.2. Provision for 1.2.2.
-{% endhighlight %}
+```
 
 To output the document above, we need to be able to call the reference of the level above (also the level above that in the case of the above example). Legal Markdown allows for this with the precursor function.
 
@@ -330,29 +328,29 @@ To reference the level above in your reference, you will modify the YAML front m
 
 To achieve the above output, we should update our YAML front matter to look like this:
 
-{% highlight yaml %}
+```yaml
 ---
 level-1: "Article 1."
 level-2: "Section pre 1."
 level-3: "pre 1."
 ---
-{% endhighlight %}
+```
 
 ## Step 2(d): (Optional) A Different Type of Precursor to Headers
 
 Sometimes, particularly in laws, the structure is something akin to Chapter 1 and then Section 101, Section 102, ... Chapter 9, Section 901, Section 902, etc. You can easily adopt this structure to your document by using the `preval` feature within the YAML front matter. If you combined this structure by also using markdown headers, the YAML front matter would look something like this:
 
-{% highlight yaml %}
+```yaml
 ---
 level-1: "# Chapter 1."
 level-2: "## Section preval 1."
 level-3: "pre (a)"
 ---
-{% endhighlight %}
+```
 
 This would output (using the same text from the body of the document typed in step 1) as:
 
-{% highlight irc %}
+```irc
 # Chapter 1. Provision for Article 1.
 
   ## Section 101. Provision for Section 1.1.
@@ -372,7 +370,7 @@ This would output (using the same text from the body of the document typed in st
     110(a) Provision for 1.10.1.
 
     110(b) Provision for 1.10.2.
-{% endhighlight %}
+```
 
 ## Step 3: Run Legal-Markdown and Primary Processor
 

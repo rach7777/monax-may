@@ -9,7 +9,7 @@ This page provides a high level overview and a detailed explanation of how the e
 
 [Modularity is a strong focus](https://eng.erisindustries.com/tutorials/2015/09/05/docker-and-eris/), greatly facilitated by [docker](https://docker.com). This page explains how the tooling fits together while painting a path through our tutorial series. The complicated task of orchestrating all the various requirements for a smart-contract-focused blockchain is exactly why we went all-in on docker despite various ongoing pain points. We like to think of [eris:cli](/docs/documentation/eris-cli/latest/eris/) as "docker for blockchains".
 
-{% image eris-stack-v2.png %}
+{{< image src="/images/docs/eris-stack-v2.png" >}}
 
 Let's get started! The above diagram shows the relationship between most of the tools in the eris stack.
 

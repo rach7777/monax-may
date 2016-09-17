@@ -204,7 +204,7 @@ That's it! Your chain is rolled!
 
 # Step 3: Build (and run) your Distributed Application
 
-{% image 'CEu7odJWMAA3VSa.jpg' %}
+{{< image src="/images/docs/'CEu7odJWMAA3VSa.jpg'" >}}
 
 Let's remove all of the eris "stuff" before we move on to the next portion of the tutorials:
 

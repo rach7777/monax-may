@@ -9,11 +9,11 @@ This is a series of Tutorials. These tutorials are meant to be a natural follow-
 
 If you feel a bit like this marmot:
 
-{% image CEu7odJWMAA3VSa.jpg %}
+{{< image src="/images/docs/CEu7odJWMAA3VSa.jpg" >}}
 
 Then see our [quick start guide](getting-started/) to get you more like this marmot:
 
-{% image triumphant_marmot.jpg %}
+{{< image src="/images/docs/triumphant_marmot.jpg" >}}
 
 ## Step 1 -- Install the Eris Platform
 

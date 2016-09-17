@@ -137,13 +137,13 @@ When it comes to the relations between different parts of the system, there are 
 
 If we look at `HelloFactory` we can see that `HelloSystem` is a dependency because `HelloFactory` is calling functions on that contract. `HelloSystem`, on the other hand, does not need to call any functions on `HelloFactory`. When it comes to permissions it is the other way around; `HelloFactory` will allow calls from any account whereas `HelloSystem` only accept calls that are made from one single account, namely that of its owner (which in this case is a `HelloFactory` contract account).
 
-{% image SSoSC1-1.png %}
+{{< image src="/images/docs/SSoSC1-1.png" >}}
 
-{% image Legend.png %}
+{{< image src="/images/docs/Legend.png" >}}
 
 We need to use permissions like this because each contract is a separate account that can be called by any account in the system. Even when we include a contract in the source file of another contract as with `HelloFactory`, each new contract will still be created as a separate, new contract account that is unrelated to its factory except for any references we might add ourselves.
 
-{% image ContractsOnChain.png %}
+{{< image src="/images/docs/ContractsOnChain.png" >}}
 
 ## A simple banking system
 
@@ -533,7 +533,7 @@ contract FundManager {
 
 We now have a system that’s similar to `HelloFactory` and `HelloSystem`. We can even make a basic dependency chart.
 
-{% image SSoSC1-2.png %}
+{{< image src="/images/docs/SSoSC1-2.png" >}}
 
 There is more work to do, however. We have not enabled the system for handling multiple different bank types, which was the whole point to begin with. Also, we have not considered the implications of switching the bank account out. What of all the data that's still in there? We can't just cut it off and start a new bank, we would have to merge the old balances into the new contract somehow. Also, we would have to make sure we move the actual Ether stored in the old contract. Either that or make sure that the new bank gets permissions to operate on the old one, and does that as part of its functionality.
 
@@ -573,7 +573,7 @@ The rationale for this division will be laid out after we've tried to apply it t
 
 We will now analyze the fund management system using the five types model. It is a very small system so analyzing it will be simple. What we have is the bank component and the fund manager component. The functionality of the bank component is exposed only to the fund manager. The first thing we should be doing is to break the permissions part out of the fund manager, then we should divide the bank and permissions components up into controller and database contracts. This is what we'd get.
 
-{% image SSoSC1-3.png %}
+{{< image src="/images/docs/SSoSC1-3.png" >}}
 
 Note how the permissions work. The bank does not use the permissions contract; it can still only be used by the `FundManager` contract. Permission checks will be done like before, except the code will be kept in a separate contract (or two, to be more exact). The two databases can only be accessed by their controllers, and the controllers only by the fund manager. The fund manager in turn does whatever the users tells it to do, ie it is not autonomous in any way. Same thing for the controllers.
 

@@ -19,7 +19,6 @@ series:    smart_contract_mvps
 
 [{{ page.date | date: "%Y" | append:'/water_coupons.jpg' | img }}](https://www.flickr.com/photos/waxesstatic/2247718134/)
 
-{% include series.html %}
 
 
 
