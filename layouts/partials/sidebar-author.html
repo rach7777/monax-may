@@ -1,0 +1,38 @@
+{{- $author := index .Site.Data.team .Params.author -}}
+<aside class="sidebar col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-2 hidden-xs hidden-sm">
+  <h4>Post by: {{ $author.name }}</h4>
+  <img src="/images/team/{{ $author.gravatar }}" class="sidebar-gravatar pull-left">
+  <p>{{ $author.bio }}</p>
+  <hr />
+  <div class="follow">
+    <a title="RSS Feed for {{ .Site.Title }}" href="{{ .RSSlink }}" />
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square fa-stack-2x"></i>
+        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+    {{- if $author.site }}
+      <a href="{{ $author.site }}" target="_blank">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square fa-stack-2x"></i>
+          <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+    {{- end }}{{ if $author.twitter -}}
+      <a href="https://twitter.com/{{ $author.twitter }}" target="_blank">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square fa-stack-2x"></i>
+          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+    {{- end }}{{ if $author.github -}}
+      <a href="https://github.com/{{ $author.github }}" target="_blank">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square fa-stack-2x"></i>
+          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+    {{- end -}}
+  </div>
+  <hr />
+</aside>

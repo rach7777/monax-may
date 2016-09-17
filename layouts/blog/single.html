@@ -1,0 +1,36 @@
+{{- partial "header.html" . -}}
+</head>
+<body class="blog-single">
+{{- partial "navigation.html" . -}}
+<div class="container-fluid" id="monax-page">
+  {{- if not .Params.no_header -}}
+    <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 page-header">
+      <header><h1 class="title" role="title">{{ .Title }}</h1></header>
+    </div>
+  {{- end -}}
+  <div class="row">
+    {{- if ne .Params.author nil }}{{ partial "sidebar-author.html" . }}{{ else }}{{ partial "sidebar-default.html" . }}{{ end -}}
+      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
+      <article class="content" id="main-content">
+        {{- if .Params.deprecated -}}
+          <div class="deprecation-warning">
+            <h3>Deprecation Warning</h3>
+            <p>Please note this post refers to a deprecated version of the Eris stack. It is retained for historical purposes.</p>
+            <br />
+            <br />
+          </div>
+        {{- end -}}
+        {{ .Content }}
+        {{- if ne .Params.author nil }}{{ partial "post_meta-author.html" . }}{{ else }}{{ partial "post_meta-default.html" . }}{{ end -}}
+      </article>
+      {{- if .Params.comments -}}
+        <div class="comments">
+          {{- partial "comments.html" . -}}
+        </div><!-- .comments -->
+      {{- end -}}
+    </div>
+  </div>
+</div>
+{{- partial "footer.html" . -}}
+{{- partial "scripts.html" . -}}
+{{- partial "analytics.html" . -}}

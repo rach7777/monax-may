@@ -1,16 +1,15 @@
-{{ partial "header.html" . }}
+{{- partial "header.html" . -}}
 </head>
 <body class="wide">
-{{ partial "navigation.html" . }}
+{{- partial "navigation.html" . -}}
 <div class="container-fluid" id="monax-page">
-  {{ if not .Params.no_header }}
+  {{- if not .Params.no_header -}}
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 page-header">
         <header><h1 class="title" role="title">{{ .Title }}</h1></header>
       </div><!-- .cols -->
     </div><!-- .row -->
-  {{ end }}
-
+  {{- end -}}
   <div class="row">
     <article id="main-content">
       <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2" id="content-block">
@@ -19,6 +18,6 @@
     </article><!-- #main-content -->
   </div><!-- .row -->
 </div><!-- .container-fluid -->
-{{ partial "footer.html" . }}
-{{ partial "scripts.html" . }}
-{{ partial "analytics.html" . }}
+{{- partial "footer.html" . -}}
+{{- partial "scripts.html" . -}}
+{{- partial "analytics.html" . -}}

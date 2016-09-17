@@ -10,8 +10,8 @@
       </div><!-- .cols -->
     </div><!-- .row -->
   {{ end }}
-  {{ partial "tableOfContents.html" . }}
   <div class="row">
+    {{ partial "tableOfContents.html" . }}
     <article id="main-content">
       <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
         {{ .Content }}

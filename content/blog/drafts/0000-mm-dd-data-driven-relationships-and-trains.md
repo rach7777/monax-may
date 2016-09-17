@@ -10,7 +10,7 @@ tags:      [TAG1, TAG2]
 
 # use if needed
 layout:    post
-published: true
+published: false
 comments:  true
 meta:      true
 #thumbnail_raw:

@@ -1,6 +1,6 @@
 ---
 
-layout: wide
+type:   wide
 title: "eris:chain_manager Version Documentation"
 
 ---

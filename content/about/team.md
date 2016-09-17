@@ -1,6 +1,6 @@
 ---
 
-layout:     wide
+type: wide
 title:      "Team"
 css:        team
 javascript: team

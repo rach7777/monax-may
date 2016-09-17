@@ -1,6 +1,6 @@
 ---
 
-layout: wide
+type:   wide
 title: "Eris Documentation Home"
 
 ---
@@ -21,7 +21,7 @@ and simple to wrangle the dragons of smart contract blockchains.
 # What is Eris?
 
 - [Introduction to the Eris Stack](/docs/explainers/the-eris-stack/)
-- [The Eris platform and its components](/platform/overview)
+- [The Eris platform and its components](/platform)
 - [eris:cli Access to the Eris Platform](/platform/cli/)
 - [eris:db Permissionable, Logic Optimized Blockchain Client](/platform/db/)
 - [eris:pm The Smart Contract Package Manager](/platform/pm/)

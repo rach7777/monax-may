@@ -1,0 +1,27 @@
+{{- $author := index .Site.Data.team "default" -}}
+<aside class="sidebar col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-2 hidden-xs hidden-sm">
+  <h4>{{ .Site.Title }}</h4>
+  <p>{{ $author.bio }}</p>
+  <hr />
+  <div class="follow">
+    <a title="RSS Feed for {{ .Site.Title }}" href="{{ .RSSlink }}" />
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square fa-stack-2x"></i>
+        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+    <a href="https://twitter.com/{{ $author.twitter }}" target="_blank">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square fa-stack-2x"></i>
+        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+    <a href="https://github.com/{{ $author.github }}" target="_blank">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square fa-stack-2x"></i>
+        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </div>
+  <hr />
+</aside>

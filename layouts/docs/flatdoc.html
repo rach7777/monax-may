@@ -1,7 +1,8 @@
 {{ partial "header.html" . }}
+</head>
+<body class="docs">
 {{ partial "navigation.html" . }}
-
-<div class="container-fluid" id="eris-page">
+<div class="container-fluid" id="monax-page">
   {{ if not .Params.no_header }}
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 page-header">
@@ -9,27 +10,17 @@
       </div><!-- .cols -->
     </div><!-- .row -->
   {{ end }}
-
   <div class="row">
+    {{ partial "tableOfContents.html" . }}
     <article id="main-content">
       <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
-        <aside>
-          <div role='flatdoc-menu' id="toc-container"></div>
-        </aside>
-
-        <div class="content-root" role="flatdoc">
-          <div class="content" id="content-block" role="flatdoc-content">
-          </div><!-- #content-block -->
-        </div><!-- .content-root -->
-
+        {{ .Content }}
+        <h4><a class="edit-me" href="https://github.com/{{ index .Site.Data.sites "github-user" }}/monax.io/tree/master/content/{{ .File.Path }}">Edit this page</a></h4>
       </div><!-- .cols -->
+        <div class="retard"></div>
     </article><!-- #main-content -->
   </div><!-- .row -->
 </div><!-- .container-fluid -->
-</div><!-- /.container-fluid -->
-</div><!-- #container -->
-</body>
-
 {{ partial "scripts.html" . }}
 {{ partial "flatdocs.html" . }}
 {{ partial "analytics.html" . }}

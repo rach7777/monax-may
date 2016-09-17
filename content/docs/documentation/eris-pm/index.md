@@ -1,6 +1,6 @@
 ---
 
-layout: wide
+type:   wide
 title: "eris:package_manager Version Documentation"
 
 ---

@@ -11,7 +11,7 @@ aliases:
 
 ---
 
-At Eris, our main "product" is our Free and Open Source toolkit, creatively named: [Eris](/platform/overview).
+At Eris, our main "product" is our Free and Open Source toolkit, creatively named: [Eris](/platform).
 
 That said, we are a for profit company and below are the value-add products we offer on top of our FOSS tooling. Our value add products greatly simplify the use of smart contract technology in an enterprise context.
 

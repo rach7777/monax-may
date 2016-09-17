@@ -70,9 +70,9 @@ serve_hugo() {
     --volume `pwd`/content:/site/content \
     --volume `pwd`/layouts:/site/layouts \
     --volumes-from site_gulp_watch \
-    --publish 127.0.0.1:1313:1313 \
+    --publish 0.0.0.0:1313:1313 \
     site \
-    hugo serve --appendPort --baseURL http://localhost --bind 0.0.0.0 &
+    hugo serve --appendPort --baseURL http://192.168.99.100 --bind 0.0.0.0 &
 }
 
 main() {

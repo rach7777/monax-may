@@ -2,8 +2,8 @@
 #      Main Configs       #
 # ----------------------- #
 baseurl: "http://localhost"
-# baseurl: "https://monax.industries"
-title: "Monax Industries"
+# baseurl: "https://monax.io"
+title: "Monax"
 languageCode: "en-us"
 
 # ----------------------- #
@@ -97,6 +97,7 @@ permalinks:
 taxonomies:
   category: categories
   tag: tags
+  author: authors
   topic: topics
 
 params:

@@ -1,6 +1,6 @@
 ---
 
-layout: wide
+type:   wide
 title: "Getting Started With Eris"
 
 ---

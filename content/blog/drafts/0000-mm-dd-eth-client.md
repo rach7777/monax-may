@@ -10,7 +10,7 @@ tags:      [TAG1, TAG2]
 
 # use if needed
 layout:    post
-published: true
+published: false
 comments:  true
 meta:      true
 #thumbnail_raw:
@@ -19,9 +19,9 @@ meta:      true
 
 # Introduction
 
-The [live ethereum network] is up and running, and so far things have gone quite smoothly. 
+The [live ethereum network] is up and running, and so far things have gone quite smoothly.
 If you are using `geth`, you have probably discovered that the main/only interface to your chain is through a javascript console.
-I'm not the biggest fan of javascript, and so in an effort to avoid it I have build some command line tools in golang for talking to and working with ethereum chain(s). 
+I'm not the biggest fan of javascript, and so in an effort to avoid it I have build some command line tools in golang for talking to and working with ethereum chain(s).
 
 Note these tools are still in an early stage of development, so please do not use them with large sums of value on the live ethereum network (yet).
 
@@ -30,7 +30,7 @@ In an effort to separate out this functionality, we have built `eris-keys`, a st
 
 # Grab the tools
 
-Let's grab the tools. I will presume you have [go installed], and that you have set your `$GOPATH` and put `$GOPATH/bin` on your `$PATH`. 
+Let's grab the tools. I will presume you have [go installed], and that you have set your `$GOPATH` and put `$GOPATH/bin` on your `$PATH`.
 
 ```bash
 go get github.com/eris-ltd/eris-keys
@@ -43,7 +43,7 @@ Start the eris-keys server:
 eris-keys server &
 ```
 
-In current form, the `eth-client` has three tools: 
+In current form, the `eth-client` has three tools:
 
 ```bash
 ethgen - for creating genesis.json files
@@ -59,7 +59,7 @@ Let's boot up a test chain and send some transactions to it. First we need to ge
 ADDR=`eris-keys gen --type=eth`
 ```
 
-This will create a new ethereum key for you and return the address (`echo $ADDR`). 
+This will create a new ethereum key for you and return the address (`echo $ADDR`).
 
 Now let's create a directory for our new chain and make a genesis.json file in it using our address:
 
@@ -103,7 +103,7 @@ mintinfo account $ADDR2
 
 The balance should be `10`!
 
-Ok, let's break down the `ethtx` command a little bit. Ethereum only has one official transaction type, but it serves three distinct purposes. 
+Ok, let's break down the `ethtx` command a little bit. Ethereum only has one official transaction type, but it serves three distinct purposes.
 You can simply send funds from one account to another, you can create a contract, and you can call a contract.
 So `ethtx` has three main commands: `send`, `call`, and `create`.
 Over time, `ethtx` will incorporate commands for talking to the major dapps, to facilitate interactions with them. The first such dapp will be the name reg, and you'll be able to use `ethtx name` to register a new name there.

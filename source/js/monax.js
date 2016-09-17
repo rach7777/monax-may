@@ -57,7 +57,7 @@ $(function() {
   // table of contents modifications; add proper classes for
   // scroll spy and formally constrain width
   $('#TableOfContents ul').addClass('nav nav-pills nav-stacked');
-  $('#TableOfContents').children().css( "width", $('#TableOfContents').parent('div').width() );
+  $('#TableOfContents').children().css( "width", $('#TableOfContents').parent('.sidebar').width() );
 
   // table of contents
   if ($('#TableOfContents').length !== 0) {
@@ -76,7 +76,7 @@ $(function() {
     $('#TableOfContents ul a').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 65)
+            scrollTop: ($($anchor.attr('href')).offset().top)
         }, 750 );
         event.preventDefault();
     });
