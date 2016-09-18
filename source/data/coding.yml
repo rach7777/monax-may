@@ -36,7 +36,7 @@ yum: |-
 apt: |-
   DIST=$(lsb_release -sc)
   sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net \
-    --recv-keys DDA1D0AB
+    --recv-keys 7D1F8F5A
   sudo su -c "echo deb https://apt.eris.industries $DIST main > \
     /etc/apt/sources.list.d/eris.list"
   sudo apt-get update && sudo apt-get install eris
