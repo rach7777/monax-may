@@ -5,12 +5,6 @@ title: "Eris Documentation Home"
 
 ---
 
-```
-Eris is a platform for building, testing, maintaining, and operating
-distributed applications with a blockchain backend. Eris makes it easy
-and simple to wrangle the dragons of smart contract blockchains.
-```
-
 # The Eris Philosophy
 
 - [What are blockchains?](/docs/explainers/blockchains/)

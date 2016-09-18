@@ -61,7 +61,7 @@
           <h1 style="padding-bottom:.5em;">Ready to Solve Big Problems?</h1>
           {{- range .Site.Data.coding.cli.pms -}}
             <h4>Using {{ .name }}</h4>
-            <pre><code>{{ .cmd }}</code></pre>
+            <pre><code>{{ index $.Site.Data.coding .cmd }}</code></pre>
             <p>&nbsp</p>
           {{- end -}}
           <h4>Using Another Platform</h4>

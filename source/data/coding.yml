@@ -1,19 +1,42 @@
-os:
-  authoritative: "UBUNTU:14.04"
+authoritative_os: "UBUNTU:16.04"
 
-golang:
-  minimum: 1.6
-  authoritative: 1.6
+golang_min: 1.6
+golang_auth: 1.6
 
-docker:
-  minimum: 1.9.1
-  authoritative: 1.11.2
+docker_min: 1.9.1
+docker_auth: 1.11.2
 
 cli:
   repository: "https://github.com/eris-ltd/eris-cli.git"
   releases: "https://github.com/eris-ltd/eris-cli/releases/latest"
   pms:
     - name: Homebrew
-      cmd: "brew install eris"
-    - name: apt-get
-      cmd: "(sudo) apt-get install eris"
+      cmd: brew
+    - name: Chocolatey
+      cmd: choco
+    - name: Fedora or RHEL
+      cmd: yum
+    - name: Ubuntu
+      cmd: apt
+
+brew: |-
+  brew install eris
+
+brew_dev: |-
+  brew install --devel eris
+
+choco: |-
+  choco install eris
+
+yum: |-
+  sudo su -c "curl -sSL https://yum.eris.industries/eris.repo > \
+    /etc/yum.repos.d/eris.repo"
+  yum install eris-cli
+
+apt: |-
+  DIST=$(lsb_release -sc)
+  sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net \
+    --recv-keys DDA1D0AB
+  sudo su -c "echo deb https://apt.eris.industries $DIST main > \
+    /etc/apt/sources.list.d/eris.list"
+  sudo apt-get update && sudo apt-get install eris

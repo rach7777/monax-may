@@ -10,6 +10,7 @@ published: true
 tags:
 - blockchains
 thumbnail: screenshot-ethanslecture.png
+deprecated: true
 title: 'Ethan Lectures At Blockchain U: Eris, Ethereum, and Tendermint'
 url: /2015/05/12/ethan-at-blockchain-u/
 ---

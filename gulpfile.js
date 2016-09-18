@@ -18,6 +18,7 @@ var argv            = require('yargs').argv,
         filter      = require('gulp-filter'),
         gulp        = require('gulp'),
         imagemin    = require('gulp-imagemin'),
+        lunr        = require('./source/js/lunr-maker.js'),
         rename      = require('gulp-rename'),
         sass        = require('gulp-sass'),
         source      = require('vinyl-source-stream'),
@@ -59,7 +60,7 @@ function buildImgs(){
     .pipe(imagemin({
       optimizationLevel: 5,
       progressive: true,
-      interlaced: true
+      interlaced: true,
     }))
     .pipe(gulp.dest(config.img.outputDir));
 }
@@ -83,6 +84,16 @@ function buildFonts() {
     .pipe(flatten())
     .pipe(gulp.dest(config.fonts.outputDir))
 };
+
+function buildIndex() {
+  return gulp.src(config.site.indexDirs)
+    .pipe(filter(config.contentFilter))
+    .pipe(lunr({
+      baseDir: config.site.contentDir,
+      output: config.site.indexDir,
+      team: config.site.teamFile,
+    }))
+}
 
 function buildSite() {
   var cmd = "hugo --destination " + config.site.outputDirRaw
@@ -129,7 +140,8 @@ gulp.task('build-imgs', buildImgs)
 gulp.task('build-icons', buildIcons)
 gulp.task('build-data', buildData)
 gulp.task('build-fonts', buildFonts)
-gulp.task('build-arts', ['build-css', 'build-js', 'build-imgs', 'build-icons', 'build-data', 'build-fonts'])
+gulp.task('build-index', buildIndex)
+gulp.task('build-arts', ['build-css', 'build-js', 'build-imgs', 'build-icons', 'build-data', 'build-fonts', 'build-index'])
 gulp.task('build-site', ['build-arts'], buildSite)
 
 // watchers -- for deving
@@ -139,6 +151,7 @@ gulp.task('watch', ['build-arts'], function() {
   gulp.watch(config.img.watchDir, delayed(buildImgs));
   gulp.watch(config.data.watchDir, delayed(buildData));
 })
+
 gulp.task('watch-no-build', function() {
   gulp.watch(config.js.watchDir, delayed(buildJS));
   gulp.watch(config.css.watchDir, delayed(buildCSS));

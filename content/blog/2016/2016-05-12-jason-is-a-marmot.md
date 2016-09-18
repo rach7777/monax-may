@@ -26,7 +26,7 @@ These smart contracts are bundles of business logic which sit on top of various 
 
 That is all well and good in the abstract one may say, but how does one *actually* do that? **Very carefully** is my usual answer.
 
-I often say that despite getting lumped into finTech as a "blockchain" company, we are really a [legal tech company](2015-09-15-smart-contracts-intro.md). Functionally, smart contracts populate the business logic layer for "ecosystem applications." In other words, they're about providing a system wherein the relationships amongst the actors involved in the ecosystem's application are regulated.
+I often say that despite getting lumped into finTech as a "blockchain" company, we are really a [legal tech company](/blog/2015/2015-09-15-smart-contracts-intro.md). Functionally, smart contracts populate the business logic layer for "ecosystem applications." In other words, they're about providing a system wherein the relationships amongst the actors involved in the ecosystem's application are regulated.
 
 And this, whether we like them or not, is what lawyers do IRL. Lawyering is often a matter of "engineering" the fundamentals of a given relationship. Whether that relationship is a deal between two companies as evidenced by their contract, or the relationship is between an individual and a goverment as evidenced by legislation, lawyers are the professional group most involved in building the "terms and conditions" of relationships.
 

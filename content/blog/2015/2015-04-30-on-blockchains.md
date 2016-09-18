@@ -11,11 +11,12 @@ meta: true
 published: true
 tags:
 - blockchains
+deprecated: true
 title: On Blockchains
 url: /2015/04/30/on-blockchains/
 ---
 
-Much digital ink has been spilled over the past couple weeks concerning the relevance, necessity, use cases, and definition of that most remarkable piece of technology: the blockchain. Much of it was perhaps provoked by the [cuddly marmoteering of our very own Marmot Byrne](https://twitter.com/prestonjbyrne/). 
+Much digital ink has been spilled over the past couple weeks concerning the relevance, necessity, use cases, and definition of that most remarkable piece of technology: the blockchain. Much of it was perhaps provoked by the [cuddly marmoteering of our very own Marmot Byrne](https://twitter.com/prestonjbyrne/).
 
 To be honest, I think we could all benefit from a little more cuddly marmoteering in our professional and working lives, but I'll be the first to admit that a cuddly marmot may not quite know exactly what he is talking about all the time ;)
 
@@ -53,7 +54,7 @@ Now, to the credit of IPFS, it's actually remarkable how much you can do without
 
 Hence it's become something of a black art to go from single bit to transaction log, and the ecosystem of consensus software tends to be *ad hoc*, overly complex, and under specified.
 
-A couple years back, Paxos was revisited and reformalized from scratch with an explicit goal of understandability, leading to a simpler and more understandable consensus algorithm called [Raft](https://raftconsensus.github.io/), of which there are by now dozens of implementations. The key is this: "If a series of decisions must be made, it is simpler and faster to first elect a leader, then have the leader coordinate the decisions." In typical Raft, if the leader never goes down, then he can persist potentially indefinetly, making it vulnerable to Byzantine behaviour. 
+A couple years back, Paxos was revisited and reformalized from scratch with an explicit goal of understandability, leading to a simpler and more understandable consensus algorithm called [Raft](https://raftconsensus.github.io/), of which there are by now dozens of implementations. The key is this: "If a series of decisions must be made, it is simpler and faster to first elect a leader, then have the leader coordinate the decisions." In typical Raft, if the leader never goes down, then he can persist potentially indefinetly, making it vulnerable to Byzantine behaviour.
 
 So a blockchain takes the added step of having non-deterministic quasi-leaders that propose a "block" of decisions at once, and fuzzes the certainty of their election by a fork choice rule, allowing their decisions to potentially be reverted or ignored. So the whole matter then becomes a question of fork choice rule.
 
@@ -72,11 +73,11 @@ Consider the boost to fair legal process: on a blockchain, no evidence is inadmi
 
 I don't think it's difficult to imagine how multiple businesses might spring up to cater entirely to those last two sentences.
 
-At the end of the day, some still feel like this is all nonsense, and blockchains will have limited applicability outside of politically decentralized currencies, mostly because of their overhead, and the drain in efficiency. Perhaps. But consider this: democracy can be orders of magnitude less efficient at governing large bodies of humans than hierarchical dictatorships, but for one reason or another countries continue to turn to democracy (granted, weak forms of it) rather than dictatorship because of the kind of culture it produces. Blockchain technology may have a very similar impact on humans: even though they are less efficient than their counterparts at the typical things their counterparts were optimized for, they impose new structural paradigms on human interactions that may be valuable in and of themselves, regardless of the performance of the database, and especially if they result in human behavioural patterns that make culture as a whole more efficient.  
+At the end of the day, some still feel like this is all nonsense, and blockchains will have limited applicability outside of politically decentralized currencies, mostly because of their overhead, and the drain in efficiency. Perhaps. But consider this: democracy can be orders of magnitude less efficient at governing large bodies of humans than hierarchical dictatorships, but for one reason or another countries continue to turn to democracy (granted, weak forms of it) rather than dictatorship because of the kind of culture it produces. Blockchain technology may have a very similar impact on humans: even though they are less efficient than their counterparts at the typical things their counterparts were optimized for, they impose new structural paradigms on human interactions that may be valuable in and of themselves, regardless of the performance of the database, and especially if they result in human behavioural patterns that make culture as a whole more efficient.
 
 That's really what we're in it for.
 
-So instead of saying "do this and we'll pay you with a new construction that exists so we can pay you", we could say "do this because doing it contributes to a shared good", like bittorrent seeding or running Folding@Home or SETI@Home. Apparently, for a bitcoin maximalist, that's blasphemy. 
+So instead of saying "do this and we'll pay you with a new construction that exists so we can pay you", we could say "do this because doing it contributes to a shared good", like bittorrent seeding or running Folding@Home or SETI@Home. Apparently, for a bitcoin maximalist, that's blasphemy.
 
 Meh. I prefer to think of blockchains as platforms for experimenting in shared goods. Shared-Goods-Infrastructure-as-a-Service, if you will.
 
