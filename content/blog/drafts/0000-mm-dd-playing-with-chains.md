@@ -21,8 +21,8 @@ meta:      true
 
 Over the last few months we've been working on a number of tools for setting up and playing with blockchains.
 
-Our namesake tool, located at `github.com/eris-ltd/eris-cli`, is woven tightly around [docker](), 
-and provides a simple framework for working with distributed applications.
+Our namesake tool, located at `github.com/eris-ltd/eris-cli`, is woven tightly around [docker](),
+and provides a simple framework for working with ecosystem applications.
 All of its functionality, however, is available without docker,if you're willing to do some additional work.
 
 In this tutorial then, I will show you how to use these tools natively, and then how to use them within the `eris-cli` framework.
@@ -40,7 +40,7 @@ go get github.com/eris-ltd/mint-client/...
 go get github.com/eris-ltd/eris-db/cmd/eris-db
 ```
 
-If you already have some repositories present, `cd` to them and run 
+If you already have some repositories present, `cd` to them and run
 
 ```bash
 git pull origin master
@@ -52,11 +52,11 @@ All the tools should now be installed.
 
 # Overview
 
-`github.com/eris-ltd/erisdb` contains a RESTful HTTP server wrapping an in-process [tendermint blockchain node](https://github.com/tendermint/tendermint). 
+`github.com/eris-ltd/erisdb` contains a RESTful HTTP server wrapping an in-process [tendermint blockchain node](https://github.com/tendermint/tendermint).
 It also exposes tendermint's built in rpc server.
 It is updated every couple weeks (or when necessary) to reflect changes in the tendermint codebase.
 
-`erisdb` is complemented by the javascript libraries at `github.com/eris-ltd/eris-db.js` and `github.com/eris-ltd/eris-contracts.js`, the former being a client library for the RESTful API, and the later an implementation of ethereum's web3 javascript framework for erisdb. 
+`erisdb` is complemented by the javascript libraries at `github.com/eris-ltd/eris-db.js` and `github.com/eris-ltd/eris-contracts.js`, the former being a client library for the RESTful API, and the later an implementation of ethereum's web3 javascript framework for erisdb.
 
 `github.com/eris-ltd/mint-client` contains a set of tools for working with tendermint chains, including
 
@@ -71,7 +71,7 @@ among others.
 
 Steps: `start the key server, create a key, save the details`
 
-The `mintx` program depends on the `eris-keys` server. You can (should) start the keys server by running 
+The `mintx` program depends on the `eris-keys` server. You can (should) start the keys server by running
 
 ```bash
 eris-keys server &
@@ -119,12 +119,12 @@ mintconfig --skip-upnp > $TMROOT/config.toml
 
 `--skip-upnp` just makes start-up faster. See `mintconfig --help` or the config file itself for more options.
 
-The last thing we need before running the chain is a `priv_validator.json` file. 
+The last thing we need before running the chain is a `priv_validator.json` file.
 Tendermint uses this file for signing blocks and votes in its proof of stake consensus algorithm.
-It is mostly just a duplicate of the key we already generated in a form that the tendermint code understands, 
+It is mostly just a duplicate of the key we already generated in a form that the tendermint code understands,
 but will soon be phased out in favour of direct use of eris-keys.
 
-To generate the `priv_validator.json` for the key we generated, run 
+To generate the `priv_validator.json` for the key we generated, run
 
 ```bash
 mintkey mint $ADDR > $TMROOT/priv_validator.json
@@ -145,7 +145,7 @@ You should now see blocks streaming by.
 
 :)
 
-NOTE: Here we used `erisdb`, but we could equally well use `tendermint` itself. The only difference is that `erisdb` exposes some additional rpc endpoints that have tight integration with the `eris-db.js` and `eris-contracts.js` javascript libraries. If you want to run tendermint instead, at this point you can just 
+NOTE: Here we used `erisdb`, but we could equally well use `tendermint` itself. The only difference is that `erisdb` exposes some additional rpc endpoints that have tight integration with the `eris-db.js` and `eris-contracts.js` javascript libraries. If you want to run tendermint instead, at this point you can just
 
 ```bash
 go get github.com/tendermint/tendermint/cmd/tendermint
@@ -197,7 +197,7 @@ mintinfo accounts 00112233445566778899aabbccddeeff00112233
 
 The balance should be `5` !
 
-We could get just the balance by doing 
+We could get just the balance by doing
 
 ```bash
 mintinfo accounts 00112233445566778899aabbccddeeff00112233 balance
@@ -210,7 +210,7 @@ Wherever possible, `mintinfo` allows you to specify sub-fields of the returned o
 `mintx` has lots more transaction types:
 
 ```
-Available Commands: 
+Available Commands:
   version     print the mintx version
   send        mintx send --amt <amt> --to <addr>
   call        mintx call --amt <amt> --fee <fee> --gas <gas> --to <contract addr> --data <data>
@@ -221,9 +221,9 @@ Available Commands:
   permission  mintx perm <function name> <args ...>
 ```
 
-Each takes a multitide of flags. 
+Each takes a multitide of flags.
 We've seen the `--sign --broadcast` flags, which send the transaction to eris-keys for signing and to a known tendermint node for broadcasting to the rest of the network.
-We can also pass the `--wait` flag to wait for the transaction to be committed in a block, and to find out which block. 
+We can also pass the `--wait` flag to wait for the transaction to be committed in a block, and to find out which block.
 If the transaction is a call to a contract, using the `--wait` flag allows us to get the return value of the call.
 
 `mintx` can also be used for creating transactions to be signed offline. Normally, the transaction nonce (which tracks the number of transactions sent by the account) is fetched from the blockchain and filled in automatically. But if you know it ahead of time (`mintinfo accounts <addr> sequence`), then on an offline computer you can use the `--nonce` flag to specify and the `--sign --binary` flags to sign the transaction and return the binary encoding as a hex string. Then take that hex string and run
@@ -254,7 +254,7 @@ To deploy the contract, we use a create transaction:
 mintx create --code $CODE --amt 1 --fee 0 --gas 1000 --sign --broadcast --wait
 ```
 
-The command should hang for a few seconds before dumping the block and the new contract's address. 
+The command should hang for a few seconds before dumping the block and the new contract's address.
 Now we know the contract has been created on the chain.
 
 Let's check the storage to ensure the `5` was stored:
@@ -297,14 +297,14 @@ An identical version of the `mintgen`, `mintx`, and `mintinfo` tools were built 
 
 # Getting Started - Docker
 
-Now that you've had some experience with setting up a chain and using the mint-client tools, let's see how to do it using `eris-cli`. 
+Now that you've had some experience with setting up a chain and using the mint-client tools, let's see how to do it using `eris-cli`.
 
-`eris-cli` does much more than setup blockchains, but we maintain a specific docker image, `eris/erisdb`, 
-that works tightly with the `eris-cli` tool and which simplifies chain setup. 
-The `mint-client` tools are available in that image and work the same way, but with everything isolated in a container, 
+`eris-cli` does much more than setup blockchains, but we maintain a specific docker image, `eris/erisdb`,
+that works tightly with the `eris-cli` tool and which simplifies chain setup.
+The `mint-client` tools are available in that image and work the same way, but with everything isolated in a container,
 the environment is "cleaner", easier to replicate, and more manageable.
 
-Indeed, the whole point of docker is to eliminate the headache of installing and configuring programs on your machine. 
+Indeed, the whole point of docker is to eliminate the headache of installing and configuring programs on your machine.
 
 But of course docker can't quite eliminate the need to install docker.
 
@@ -330,9 +330,9 @@ Run `eris init` to initialize things.
 
 Now type `eris` to see the list of commands.
 
-# eris 
+# eris
 
-The `eris` tool was designed around the notion of `service definition` files. `eris init` should have created a `.eris` folder for you, with some default service definition files in `~/.eris/services`. 
+The `eris` tool was designed around the notion of `service definition` files. `eris init` should have created a `.eris` folder for you, with some default service definition files in `~/.eris/services`.
 A service definition file simply tells `eris` how to start some service. That includes a docker image for the service, what ports to expose, any relevant environment variables, and what services it might depend on. If you are familiar with `docker-compose`, its quite similar, but with more opinions.
 
 What are those opinions?
@@ -347,7 +347,7 @@ To see the known services, run `eris services known`, and to see those that are 
 
 While the `eris` tool is used for managing services, it gives special status to a certain kind of service, namely, blockchains.
 
-The `eris chains` command is tightly integrated with our `erisdb` docker image, which wraps tendermint and the `mint-client` to give a more seemless user experience. Aside from a few opinionated design decisions, chains work just like services, and you can see the default chain definition file in `~/.eris/blockchains/default.toml`. 
+The `eris chains` command is tightly integrated with our `erisdb` docker image, which wraps tendermint and the `mint-client` to give a more seemless user experience. Aside from a few opinionated design decisions, chains work just like services, and you can see the default chain definition file in `~/.eris/blockchains/default.toml`.
 
 # New Chain
 
@@ -387,7 +387,7 @@ Now, the mindy service definition file has the following line:
 chains = $chain:mint:l
 ```
 
-Ignore the `:mint:l` part for now. `chains = $chain` means that when we start a mindy service, we have to specify a blockchain to use. 
+Ignore the `:mint:l` part for now. `chains = $chain` means that when we start a mindy service, we have to specify a blockchain to use.
 
 Since we already started a blockchain above (`eris chains new <chain_id>`), let's use that one:
 

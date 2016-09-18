@@ -13,7 +13,7 @@ module.exports = function(opts) {
 
   return through2.obj(
     function(file, encoding, next) { // transform function
-      if (!file.isDirectory()) {
+      if (!file.isDirectory()) { // skip processing directories (which gulp stream gives us)
         index.push(lunrize(file, opts, team));
       }
       next();
@@ -25,12 +25,17 @@ module.exports = function(opts) {
 };
 
 function lunrize(file, opts, team) {
+  // these regex's are *not* sent to the processor for indexing
   var homeRegexp = /\/home_.*\//g;
   var draftsRegexp = /\/blog\/drafts/g;
   var docsRegexp = /\/docs\/documentation\/.*?\/\d+\.\d+\.\d+/g;
+
+  // skip these
   if (homeRegexp.test(file.path) || (draftsRegexp.test(file.path)) || (docsRegexp.test(file.path))) {
     return;
   }
+
+  // process these
   return processMDFile(file, opts, team);
 }
 

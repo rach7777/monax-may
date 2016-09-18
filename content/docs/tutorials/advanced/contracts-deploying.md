@@ -78,7 +78,7 @@ contract GSFactory {
 }
 ```
 
-This is a slightly more advanced set of contracts than that we used in the [101 tutorial sequence](/docs/tutorials/contracts-deploying/). Also, now we have multiple contracts we are going to handle.
+This is a slightly more advanced set of contracts than that we used in the [101 tutorial sequence](/docs/tutorials/getting-started/#step-3-deploy-your-ecosystem-application-using-smart-contract-templates). Also, now we have multiple contracts we are going to handle.
 
 What do these contracts do? Well, they aren't terribly interesting we know. The first contract, the `GSContract`, merely `gets` and `sets` a value which is an unsigned integer type. The second contract, the `GSFactory`, merely makes a new `GSContract` when `create` is called or it returns the address of the most recent contract created when `getLast` is called.
 
@@ -143,7 +143,7 @@ jobs:
 
 Now. What does this file mean? Well, this file is the manager file for how to deploy and test your smart contracts. eris:package_manager will read this file and perform a sequence of `jobs` with the various parameters supplied for the job type. It will perform these in the order they are built into the yaml file.
 
-So let's go through them one by one and explain what each of these jobs are doing. For more on using various jobs [please see the jobs specification](/docs/documentation/eris-pm/latest/jobs_specification/).
+So let's go through them one by one and explain what each of these jobs are doing. For more on using various jobs [please see the jobs specification](/docs/documentation/pm/latest/jobs_specification/).
 
 ### Job 1: Deploy Job
 

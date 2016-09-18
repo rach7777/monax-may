@@ -7,7 +7,7 @@ title: "Tutorials | Bonding & Unbonding Validators on your Chain"
 
 The concept of bonding/unbonding validators here refers to validators which are voluntarily adding (bonding) or removing (unbonding) themselves. New validators (not included in the genesis file) first require tokens on the chain to post a bond with. Future tutorials will cover slashing/removing unwelcome/byzantine validators.
 
-For this example, we'll be using a [simplechain](/docs/tutorials/chain-making), which has a single Full Account (see: `cat ~/.eris/chains/account-types/full.toml` for more information). One another host, a new account will be created and connect to the running chain. Once our Full Account sends this new account some tokens, the new account will be in a position to post a bond and begin validating. Eventually, this validator can unbond if they so choose.
+For this example, we'll be using a [simplechain](/docs/tutorials/getting-started/#step-2-roll-your-own-blockchain-in-seconds), which has a single Full Account (see: `cat ~/.eris/chains/account-types/full.toml` for more information). One another host, a new account will be created and connect to the running chain. Once our Full Account sends this new account some tokens, the new account will be in a position to post a bond and begin validating. Eventually, this validator can unbond if they so choose.
 
 Let's get started!
 
@@ -183,4 +183,4 @@ The concept is no different than bonding, simply `eris chains exec bonding "mint
 See [this test in eris-pm](https://github.com/eris-ltd/eris-pm/tree/3a9023c8868a03a1b13d2122a6f5340b52c14b4b/tests/fixtures/app04-bonding_unbonding_rebonding_tx_and_validation_status) for more information on the bond/unbond/rebond pipeline. Note that the `epm.yaml`'s in this tutorial are modified from that test.
 
 # Where to next?
-- for more info on the `epm.yaml` specification, see 1) [the documentation on epm](/docs/documentation/eris-pm) and follow the links for jobs/query/assert specs and 2) [the tests fixtures for epm](https://github.com/eris-ltd/eris-pm/tree/master/tests/fixtures) which describe many common actions.
+- for more info on the `epm.yaml` specification, see 1) [the documentation on epm](/docs/documentation/pm) and follow the links for jobs/query/assert specs and 2) [the tests fixtures for epm](https://github.com/eris-ltd/eris-pm/tree/master/tests/fixtures) which describe many common actions.

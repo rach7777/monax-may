@@ -86,7 +86,7 @@ With Eris, you can start developing bespoke blockchain-based solutions to those 
 
 ###4. Code away all manner of infrastructure with the blockchain.
 
-Our product is a platform - you know your needs better than we do. All we know is that you need a secure way to automate your business processes. So we designed a system for you to build blockchain-backed distributed applications for enterprise with ease. Call up your best devs and see what you can define:
+Our product is a platform - you know your needs better than we do. All we know is that you need a secure way to automate your business processes. So we designed a system for you to build blockchain-backed ecosystem applications for enterprise with ease. Call up your best devs and see what you can define:
 
 * FX confirmation, clearing, and settlement. Literally everyone is complaining about this. Why doesn't everyone get together and solve it - before a challenger does?
 

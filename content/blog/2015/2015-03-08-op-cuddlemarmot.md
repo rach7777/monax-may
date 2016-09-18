@@ -71,7 +71,7 @@ We very much think that blockchains are "**just a friggin' database technology.*
 <blockquote class="twitter-tweet" lang="en"><p>In 24 months:&#10;&#10;Bitcoin blockchains = 1&#10;Ethereum blockchains = 1&#10;Thelonious blockchains = Anywhere between 1,000 and 2^256 <a href="https://twitter.com/eris_ltd">@eris_ltd</a></p>&mdash; Preston J. Byrne (@prestonjbyrne) <a href="https://twitter.com/prestonjbyrne/status/574717453428781056">March 8, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-* a decentralised application server, which is basically a client/local oracle machine combined with a Javascript interpreter which allows distributed applications to display in Javascript in an ordinary web browser, such as Chrome. We call this the [**Decerver**](https://erisindustries.com/components/erisdb).
+* a decentralised application server, which is basically a client/local oracle machine combined with a Javascript interpreter which allows ecosystem applications to display in Javascript in an ordinary web browser, such as Chrome. We call this the [**Decerver**](https://erisindustries.com/components/erisdb).
 
 * The Decerver has modules which allow your DApp to talk to the big decentralised chain designs like Ethereum or Bitcoin for mission-critical stuff like checkpointing, without needing to run your logic on, or otherwise unnecessarily burden, these big chains.
 

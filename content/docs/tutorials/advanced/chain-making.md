@@ -9,7 +9,7 @@ It is not necessarily a simple matter to "make" a permissioned chain. With the `
 
 This tutorial is structured to walk individuals through parts of the eris developer tool kit while also showing readers how to make an advanced permissioned blockchain. Note, during the course of this tutorial, the chain we will create is suitable for pilots iterating toward production, it is a bit more complicated than a simple local chain one only needs for testing simple contracts out in a solo environment.
 
-To create a very simple permissioned chain suitable for quick prototyping, please see our [simple chain making tutorial](/docs/tutorials/chain-making/). This tutorial, on the other hand is made to walk through a (slightly) more complex permissioned chain.
+To create a very simple permissioned chain suitable for quick prototyping, please see our [simple chain making tutorial](/docs/tutorials/getting-started/#step-2-roll-your-own-blockchain-in-seconds). This tutorial, on the other hand is made to walk through a (slightly) more complex permissioned chain.
 
 # Dependencies
 
@@ -34,7 +34,7 @@ We shall go through these in their logical order.
 
 ## Chain Design
 
-To design our chain we need to, first, consider, *who* will get *what* permissions and *why*. It is outside the scope of this tutorial to outline all of the considerations which would come into play when thinking about creating a [permissioning system](/docs/documentation/eris-db-permissions/), but for the purposes of this tutorial, we will craft the genesis block to use the following paradigm:
+To design our chain we need to, first, consider, *who* will get *what* permissions and *why*. It is outside the scope of this tutorial to outline all of the considerations which would come into play when thinking about creating a [permissioning system](/docs/documentation/db/), but for the purposes of this tutorial, we will craft the genesis block to use the following paradigm:
 
 * Administrators (these would be developers who had **full** control over the chain, but will **not** be validators on the chain);
 * Validators (these will be set up as cloud instances and they will **only** be given validation permissions);
@@ -43,7 +43,7 @@ To design our chain we need to, first, consider, *who* will get *what* permissio
 
 For the purposes of this tutorial, we will have (1) administrator, (7) validators, (3) developers, and (20) participants. This will require a total of 31 keys, and all of their specifics to be generated and added to the genesis block.
 
-If you would like to understand all of the permissions which an eris:db smart contract network is capable of providing, [please see our documentation on the subject](/docs/documentation/eris-db-permissions/).
+If you would like to understand all of the permissions which an eris:db smart contract network is capable of providing, [please see our documentation on the subject](/docs/documentation/db/).
 
 ## A Note Regarding This Tutorial
 

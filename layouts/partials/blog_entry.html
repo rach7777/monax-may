@@ -1,0 +1,5 @@
+<div class="row">
+  <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+  <div class="excerpt">{{ .Params.excerpt }}</div>
+  <div class="meta">Published on: <span class="meta-date">{{ .Date.Format "2 Jan, 2006" }}</span> by {{ with .Params.author }}<span class="meta-author">{{ $author := index $.Site.Data.team . }}{{ $author.name }}</span>{{ end }}</div>
+</div>

@@ -53,7 +53,7 @@ Given all the above we have three focusing streams for designing what we build a
 
 > **Belief 3**: The value that our tech can provide is in automating business processes at a network level.
 
-All of the design and architecture and most of the reason that eris is built the way that it is, is a reflection of the above vision; which has been developed and refined during two years of building some of the most advanced cross-system distributed applications around.
+All of the design and architecture and most of the reason that eris is built the way that it is, is a reflection of the above vision; which has been developed and refined during two years of building some of the most advanced cross-system ecosystem applications around.
 
 # Eris: Architecture That Embraces Plurality
 

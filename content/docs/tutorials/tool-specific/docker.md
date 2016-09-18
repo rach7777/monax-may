@@ -19,7 +19,7 @@ To summarize the links above, the major difference(s) between containers and vir
 
 So what does this mean? At eris we build almost all of our core images as addendums to the `eris/base` image. The `eris/base` image is a jessie based image. It does no more than make sure that go is installed and have an eris user built. At the time of this writing, the `eris/base` image weighs in at 519.1MB.
 
-To build data containers we have an `eris/data` image. This image is `FROM eris/base` and then it establishes a volume which will be used to store data from an operational container. The `eris/data` container is also 519.1MB. But when one downloads from Docker the `eris/base` image AND the `eris/data` image, one will not have to download 519.1MB X2 but rather 519.1MB X1. While it is not ideal that one would have to download 519.1MB at all, it is necessary to get going providing users with a harmonized, isolated environment for running distributed applications.
+To build data containers we have an `eris/data` image. This image is `FROM eris/base` and then it establishes a volume which will be used to store data from an operational container. The `eris/data` container is also 519.1MB. But when one downloads from Docker the `eris/base` image AND the `eris/data` image, one will not have to download 519.1MB X2 but rather 519.1MB X1. While it is not ideal that one would have to download 519.1MB at all, it is necessary to get going providing users with a harmonized, isolated environment for running ecosystem applications.
 
 Compare this to the `eris/ipfs` image which is 572.7MB big. It is also built `FROM eris/base` so when a user downloads the `eris/ipfs` container, but already had downloaded the `eris/base` container, one will only have to download the extra layers which comprise only the ipfs executable and a small start script, or 52.6MB. Go binaries tend to be a bit bigger than other compiled languages because Go compiles the runtime into the binary. That said, 52.6MB is not that large for all the functionality one gets from the IPFS container.
 
@@ -29,7 +29,7 @@ Right. So with that background in mind. How does Eris interact with Docker and h
 
 {{ page.date | date: "%Y" | append:'/eris-docker-overview.png' | img }}
 
-Eris connects to both a Host's harddrive (usually in the `~/.eris` directory is where we keep all of our files needed to run and interact with various distributed applications) as well as a Docker daemon. That Docker daemon then interacts with the (Linux only) operating system. To be a bit more precise what is happening looks like this:
+Eris connects to both a Host's harddrive (usually in the `~/.eris` directory is where we keep all of our files needed to run and interact with various ecosystem applications) as well as a Docker daemon. That Docker daemon then interacts with the (Linux only) operating system. To be a bit more precise what is happening looks like this:
 
 {{ page.date | date: "%Y" | append:'/eris-docker-kernel.png' | img }}
 

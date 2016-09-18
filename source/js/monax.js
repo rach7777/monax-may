@@ -70,10 +70,13 @@ $(function() {
     // Add proper attributes to Body
     $('body').scrollspy({ target: '#TableOfContents' });
 
+    // hide anything > Level 2
+    $('#TableOfContents ul li ul li').children('ul').empty();
+
     // sidebar collapse
     $('#TableOfContents ul li').not('.active').children('ul').slideUp(50);
     $('#TableOfContents').on('activate.bs.scrollspy', function() {
-      $('#TableOfContents ul li').not('.active').children('ul').slideUp();
+      $('#TableOfContents ul li').not('.active').children('ul').slideUp(50);
       $('#TableOfContents ul li.active ul').slideDown();
     });
 

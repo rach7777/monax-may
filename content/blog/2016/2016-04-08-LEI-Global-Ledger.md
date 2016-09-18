@@ -176,7 +176,7 @@ This last one is admittedly a bit far-fetched and has legal implications that ca
 
 Let's be realistic ... the existing LEI system works sufficiently well, so why would you even want to attempt to replace it? "Because we can" is not an answer that will convince any of the stakeholders!
 
-My main motivation for writing this post was to get people that are interested in blockchains, smart contracts, and distributed applications thinking. To show what's possible and that we don't have to wait years to build something meaningful, something that provides value to a large audience.
+My main motivation for writing this post was to get people that are interested in blockchains, smart contracts, and ecosystem applications thinking. To show what's possible and that we don't have to wait years to build something meaningful, something that provides value to a large audience.
 
 I hope I was able to demonstrate the viability of transforming an existing system like the LEI from a number of loosely joined, centralized data islands to a shared distributed ledger / smart contract application. All with very minimal investment and low to no risk in the early stages. A chance for people to experience a real blockchain application first-hand.
 

@@ -30,7 +30,7 @@ The Library Team is currently accepting applications for the following positions
 
 Eris Industries is looking for a Full Stack JS Developer in our smart contracts library team.
 
-The library team is developing enterprise smart contracts that drive distributed applications and deliver business process automation in low-trust networks. This position provides the opportunity to apply your knowledge of the JavaScript stack to contribute to architecting and building applications on top of a smart contract backend. Be part of a cutting edge software development team and learn how to build solutions on what is probably the most disruptive technology in decades.
+The library team is developing enterprise smart contracts that drive ecosystem applications and deliver business process automation in low-trust networks. This position provides the opportunity to apply your knowledge of the JavaScript stack to contribute to architecting and building applications on top of a smart contract backend. Be part of a cutting edge software development team and learn how to build solutions on what is probably the most disruptive technology in decades.
 
 If you want to join a new generation of distributed application specialists this is an excellent opportunity to become a marmot. Interest in smart contracts, e.g. Ethereum/Solidity, and blockchain technology is considered advantageous and this position will offer the chance to work in this area as well, if desired.
 

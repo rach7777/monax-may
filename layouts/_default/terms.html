@@ -11,9 +11,13 @@
   <div class="row">
     {{- partial "sidebar-default.html" . -}}
     <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
-      {{- range first 10 (where .Site.Pages "Section" "blog") -}}
-        {{- partial "blog_entry.html" . -}}
-      {{- end -}}
+      {{ $data := .Data }}
+      {{ range $key,$value := .Data.Terms.ByCount }}
+        <h2><a href="{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name }}</a> {{ $value.Count }}</h2>
+        {{ range $value.Pages.ByDate }}
+          {{- partial "blog_entry.html" . -}}
+        {{ end }}
+      {{ end }}
     </div>
   </div>
 </div>

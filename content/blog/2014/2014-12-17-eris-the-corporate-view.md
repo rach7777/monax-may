@@ -106,9 +106,9 @@ An introduction to the open alpha release of Eris in ten points:
 
 * Eris' web browser core is the **Decentralised Server** or [**Decerver.**](https://erisindustries.com/components/erisdb) It can plug into any API or other blockchain you want - just write a module wrapper and you're off to the races.
 
-* The Decerver helps you, developers, build applications which leverage opt-in data ownership and significantly increased data utility for both customers and businesses -- a software design paradigm we call **Participatory Architecture**. Using peer-to-peer and distributed systems, the Decerver allows the creation of web style, data-driven, interactive distributed applications that can be safely, securely, and reliably deployed and managed.
+* The Decerver helps you, developers, build applications which leverage opt-in data ownership and significantly increased data utility for both customers and businesses -- a software design paradigm we call **Participatory Architecture**. Using peer-to-peer and distributed systems, the Decerver allows the creation of web style, data-driven, interactive ecosystem applications that can be safely, securely, and reliably deployed and managed.
 
-* The Decerver significantly lowers the barrier to entry for the production, distribution and maintenance of distributed applications, all while allowing users to participate in the scaling and data security of these applications. Think Spotify way back in the day. Except more so.
+* The Decerver significantly lowers the barrier to entry for the production, distribution and maintenance of ecosystem applications, all while allowing users to participate in the scaling and data security of these applications. Think Spotify way back in the day. Except more so.
 
 * Some DApps will only require distributed transaction execution that a blockchain provides; some DApps will only require a distributed file system such as BitTorrent. Some DApps will require both. No matter the modular requirements for the DApp, the DApp will be able to rely on distributed computing as the basis for providing a harmonized set of data or files upon which the DApp's users rely when interacting with it.
 

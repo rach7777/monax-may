@@ -67,7 +67,7 @@ We don't really "boot" smart contracts themselves and so they do not really need
 
 ## The Pipes Matter
 
-For distributed applications to operate correctly, all the things have to know how to talk to the things they're supposed to talk to. This is a non-trivial challenge when you are trying to build applications which will run the same on laptops, cloud instances, and corporate environments.
+For ecosystem applications to operate correctly, all the things have to know how to talk to the things they're supposed to talk to. This is a non-trivial challenge when you are trying to build applications which will run the same on laptops, cloud instances, and corporate environments.
 
 Luckily using modern cloud computing techniques provided by Docker, piping things together with Eris is ultra simple. When you build a service definition file, simply add:
 
