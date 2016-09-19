@@ -1,5 +1,21 @@
+{{- $year := .Now.Year -}}
+<h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+<hr />
 <div class="row">
-  <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-  <div class="excerpt">{{ .Params.excerpt }}</div>
-  <div class="meta">Published on: <span class="meta-date">{{ .Date.Format "2 Jan, 2006" }}</span> by {{ with .Params.author }}<span class="meta-author">{{ $author := index $.Site.Data.team . }}{{ $author.name }}</span>{{ end }}</div>
+  <div class="thumbnail-wrapper hidden-xs hidden-sm col-md-4 col-lg-4">
+    {{- with .Params.thumbnail -}}
+      <img src="/images/{{ $year }}/{{ . }}" class="thumbnail" />
+    {{- else -}}
+      <img src="/images/logos/doug_square.svg" class="thumbnail" />
+    {{- end -}}
+  </div>
+  <div class="col-md-8 col-lg-8">
+    <div class="excerpt">{{ .Params.excerpt }}</div>
+    <br />
+    <div class="read-more-link">
+      <a href="{{ .RelPermalink }}">Read More &rarr;</a>
+    </div>
+    <br />
+    <div class="meta">Published on: <span class="meta-date">{{ .Date.Format "2 Jan, 2006" }}</span> by {{ with .Params.author }}<span class="meta-author">{{ $author := index $.Site.Data.team . }}{{ $author.name }}</span>{{ end }}</div>
+  </div>
 </div>

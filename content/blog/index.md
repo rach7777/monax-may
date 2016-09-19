@@ -1,6 +1,7 @@
 ---
 
 title: "Monax Blog"
-layout: li
+layout: list
+url: "/blog/"
 
 ---

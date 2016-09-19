@@ -12,12 +12,9 @@
     {{- partial "sidebar-default.html" . -}}
     <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
       <article class="content" id="main-content">
-        <ul class="nav nav-pills nav-stacked">
-        {{ $data := .Data }}
-        {{ range $key, $value := .Data.Terms.ByCount }}
-          <li><a href="{{ $value.Name | urlize }}">{{ $value.Name | title }}: {{ $value.Count }} posts</a></li>
-        {{ end }}
-        </ul>
+        {{- range first 10 (where .Site.Pages "Section" "blog") -}}
+          {{- partial "blog_entry.html" . -}}
+        {{- end -}}
       </article>
     </div>
   </div>

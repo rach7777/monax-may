@@ -1,6 +1,5 @@
 ---
 
-type: wide
 title: "Company | Current Team"
 css:  team
 aliases:

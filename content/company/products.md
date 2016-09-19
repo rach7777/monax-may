@@ -1,6 +1,5 @@
 ---
 
-type: wide
 title: "Company | Products"
 aliases:
   - /products/

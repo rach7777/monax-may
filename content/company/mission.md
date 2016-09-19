@@ -1,9 +1,8 @@
 ---
 
-type: wide
 title: "Company | Vision & Mission"
 aliases:
 
 ---
 
-{{ .Site.Data.sites.tagline }}
+{{ .Site.Data.sites.what_is_eris }}

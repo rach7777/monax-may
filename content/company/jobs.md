@@ -1,6 +1,5 @@
 ---
 
-type: wide
 title: "Company | Positions Available"
 aliases:
   - "/about/jobs/"

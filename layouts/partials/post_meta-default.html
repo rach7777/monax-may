@@ -1,5 +1,5 @@
 {{- if .Params.meta -}}
 <div class="post-meta">
-  <p>This post was written on {{ .Params.date }}.</p>
+  <p>This post was written on {{ .Params.date }}. It is classified in {{ with .Params.categories }}{{ with (index . 0) }}<a href="{{ "/categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}{{ end }}{{ with .Params.tags }} and has been tagged as {{ delimit (apply (apply (sort .) "partial" "tag_link" ".") "chomp" ".") ", " }}{{ end }}.</p>
 </div>
 {{- end -}}
