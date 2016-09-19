@@ -45,24 +45,24 @@ eris actions
 
 ## Subcommands
 
-* [eris actions do](/docs/documentation/cli/0.11.0/eris_actions_do/)	 - Perform an action.
-* [eris actions edit](/docs/documentation/cli/0.11.0/eris_actions_edit/)	 - Edit an action definition file.
-* [eris actions export](/docs/documentation/cli/0.11.0/eris_actions_export/)	 - Export an action definition file to IPFS.
-* [eris actions import](/docs/documentation/cli/0.11.0/eris_actions_import/)	 - Import an action definition file from Github or IPFS.
-* [eris actions ls](/docs/documentation/cli/0.11.0/eris_actions_ls/)	 - List all registered action definition files.
-* [eris actions new](/docs/documentation/cli/0.11.0/eris_actions_new/)	 - Create a new action definition file.
-* [eris actions remove](/docs/documentation/cli/0.11.0/eris_actions_remove/)	 - Remove an action definition file.
-* [eris actions rename](/docs/documentation/cli/0.11.0/eris_actions_rename/)	 - Rename an action.
+* [eris actions do](/docs/documentation/cli/latest/eris_actions_do/)	 - Perform an action.
+* [eris actions edit](/docs/documentation/cli/latest/eris_actions_edit/)	 - Edit an action definition file.
+* [eris actions export](/docs/documentation/cli/latest/eris_actions_export/)	 - Export an action definition file to IPFS.
+* [eris actions import](/docs/documentation/cli/latest/eris_actions_import/)	 - Import an action definition file from Github or IPFS.
+* [eris actions ls](/docs/documentation/cli/latest/eris_actions_ls/)	 - List all registered action definition files.
+* [eris actions new](/docs/documentation/cli/latest/eris_actions_new/)	 - Create a new action definition file.
+* [eris actions remove](/docs/documentation/cli/latest/eris_actions_remove/)	 - Remove an action definition file.
+* [eris actions rename](/docs/documentation/cli/latest/eris_actions_rename/)	 - Rename an action.
 
 ## See Also
 
-* [eris](/docs/documentation/cli/0.11.0/eris/)	 - The Blockchain Application Platform
+* [eris](/docs/documentation/cli/latest/eris/)	 - The Blockchain Application Platform
 
 ## Specifications
 
-* [Actions Specification](/docs/documentation/cli/0.11.0/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/0.11.0/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/0.11.0/contracts_specification/)
-* [Motivation](/docs/documentation/cli/0.11.0/motivation/)
-* [Services Specification](/docs/documentation/cli/0.11.0/services_specification/)
+* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
+* [Motivation](/docs/documentation/cli/latest/motivation/)
+* [Services Specification](/docs/documentation/cli/latest/services_specification/)
 

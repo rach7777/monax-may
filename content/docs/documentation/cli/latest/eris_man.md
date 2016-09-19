@@ -34,13 +34,13 @@ eris man
 
 ## See Also
 
-* [eris](/docs/documentation/cli/0.11.0/eris/)	 - The Blockchain Application Platform
+* [eris](/docs/documentation/cli/latest/eris/)	 - The Blockchain Application Platform
 
 ## Specifications
 
-* [Actions Specification](/docs/documentation/cli/0.11.0/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/0.11.0/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/0.11.0/contracts_specification/)
-* [Motivation](/docs/documentation/cli/0.11.0/motivation/)
-* [Services Specification](/docs/documentation/cli/0.11.0/services_specification/)
+* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
+* [Motivation](/docs/documentation/cli/latest/motivation/)
+* [Services Specification](/docs/documentation/cli/latest/services_specification/)
 

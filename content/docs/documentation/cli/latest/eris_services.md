@@ -31,31 +31,31 @@ eris services
 
 ## Subcommands
 
-* [eris services cat](/docs/documentation/cli/0.11.0/eris_services_cat/)	 - Display the service definition file.
-* [eris services edit](/docs/documentation/cli/0.11.0/eris_services_edit/)	 - Edit a service.
-* [eris services exec](/docs/documentation/cli/0.11.0/eris_services_exec/)	 - Run a command or interactive shell
-* [eris services export](/docs/documentation/cli/0.11.0/eris_services_export/)	 - Export a service definition file to IPFS.
-* [eris services import](/docs/documentation/cli/0.11.0/eris_services_import/)	 - Import a service definition file from IPFS.
-* [eris services inspect](/docs/documentation/cli/0.11.0/eris_services_inspect/)	 - Machine readable service operation details.
-* [eris services logs](/docs/documentation/cli/0.11.0/eris_services_logs/)	 - Display the logs of a running service.
-* [eris services ls](/docs/documentation/cli/0.11.0/eris_services_ls/)	 - Lists everything service related.
-* [eris services new](/docs/documentation/cli/0.11.0/eris_services_new/)	 - Create a new service.
-* [eris services ports](/docs/documentation/cli/0.11.0/eris_services_ports/)	 - Print port mappings
-* [eris services rename](/docs/documentation/cli/0.11.0/eris_services_rename/)	 - Rename an installed service.
-* [eris services rm](/docs/documentation/cli/0.11.0/eris_services_rm/)	 - Remove an installed service.
-* [eris services start](/docs/documentation/cli/0.11.0/eris_services_start/)	 - Start a service.
-* [eris services stop](/docs/documentation/cli/0.11.0/eris_services_stop/)	 - Stop a running service.
-* [eris services update](/docs/documentation/cli/0.11.0/eris_services_update/)	 - Update an installed service.
+* [eris services cat](/docs/documentation/cli/latest/eris_services_cat/)	 - Display the service definition file.
+* [eris services edit](/docs/documentation/cli/latest/eris_services_edit/)	 - Edit a service.
+* [eris services exec](/docs/documentation/cli/latest/eris_services_exec/)	 - Run a command or interactive shell
+* [eris services export](/docs/documentation/cli/latest/eris_services_export/)	 - Export a service definition file to IPFS.
+* [eris services import](/docs/documentation/cli/latest/eris_services_import/)	 - Import a service definition file from IPFS.
+* [eris services inspect](/docs/documentation/cli/latest/eris_services_inspect/)	 - Machine readable service operation details.
+* [eris services logs](/docs/documentation/cli/latest/eris_services_logs/)	 - Display the logs of a running service.
+* [eris services ls](/docs/documentation/cli/latest/eris_services_ls/)	 - Lists everything service related.
+* [eris services new](/docs/documentation/cli/latest/eris_services_new/)	 - Create a new service.
+* [eris services ports](/docs/documentation/cli/latest/eris_services_ports/)	 - Print port mappings
+* [eris services rename](/docs/documentation/cli/latest/eris_services_rename/)	 - Rename an installed service.
+* [eris services rm](/docs/documentation/cli/latest/eris_services_rm/)	 - Remove an installed service.
+* [eris services start](/docs/documentation/cli/latest/eris_services_start/)	 - Start a service.
+* [eris services stop](/docs/documentation/cli/latest/eris_services_stop/)	 - Stop a running service.
+* [eris services update](/docs/documentation/cli/latest/eris_services_update/)	 - Update an installed service.
 
 ## See Also
 
-* [eris](/docs/documentation/cli/0.11.0/eris/)	 - The Blockchain Application Platform
+* [eris](/docs/documentation/cli/latest/eris/)	 - The Blockchain Application Platform
 
 ## Specifications
 
-* [Actions Specification](/docs/documentation/cli/0.11.0/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/0.11.0/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/0.11.0/contracts_specification/)
-* [Motivation](/docs/documentation/cli/0.11.0/motivation/)
-* [Services Specification](/docs/documentation/cli/0.11.0/services_specification/)
+* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
+* [Motivation](/docs/documentation/cli/latest/motivation/)
+* [Services Specification](/docs/documentation/cli/latest/services_specification/)
 

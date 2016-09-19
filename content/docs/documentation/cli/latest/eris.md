@@ -33,27 +33,27 @@ Version:
 
 ## Subcommands
 
-* [eris actions](/docs/documentation/cli/0.11.0/eris_actions/)	 - Manage and perform structured actions.
-* [eris chains](/docs/documentation/cli/0.11.0/eris_chains/)	 - Start, stop, and manage blockchains.
-* [eris clean](/docs/documentation/cli/0.11.0/eris_clean/)	 - Cleans up your eris working environment
-* [eris config](/docs/documentation/cli/0.11.0/eris_config/)	 - Manage configuration settings.
-* [eris contracts](/docs/documentation/cli/0.11.0/eris_contracts/)	 - Deploy, Test, and Manage Your Smart Contracts.
-* [eris data](/docs/documentation/cli/0.11.0/eris_data/)	 - Manage data containers for your application.
-* [eris files](/docs/documentation/cli/0.11.0/eris_files/)	 - Manage files needed for your application using IPFS.
-* [eris init](/docs/documentation/cli/0.11.0/eris_init/)	 - Initialize the ~/.eris directory with default files or update to latest version
-* [eris keys](/docs/documentation/cli/0.11.0/eris_keys/)	 - Do specific tasks with keys *for dev only*.
-* [eris ls](/docs/documentation/cli/0.11.0/eris_ls/)	 - List all the things eris knows about.
-* [eris man](/docs/documentation/cli/0.11.0/eris_man/)	 - Display a man page.
-* [eris services](/docs/documentation/cli/0.11.0/eris_services/)	 - Start, stop, and manage services required for your application.
-* [eris update](/docs/documentation/cli/0.11.0/eris_update/)	 - Update the eris tool
-* [eris version](/docs/documentation/cli/0.11.0/eris_version/)	 - Display Eris's Platform Version.
-* [eris version](/docs/documentation/cli/0.11.0/eris_version/)	 - Display Eris's Platform Version.
+* [eris actions](/docs/documentation/cli/latest/eris_actions/)	 - Manage and perform structured actions.
+* [eris chains](/docs/documentation/cli/latest/eris_chains/)	 - Start, stop, and manage blockchains.
+* [eris clean](/docs/documentation/cli/latest/eris_clean/)	 - Cleans up your eris working environment
+* [eris config](/docs/documentation/cli/latest/eris_config/)	 - Manage configuration settings.
+* [eris contracts](/docs/documentation/cli/latest/eris_contracts/)	 - Deploy, Test, and Manage Your Smart Contracts.
+* [eris data](/docs/documentation/cli/latest/eris_data/)	 - Manage data containers for your application.
+* [eris files](/docs/documentation/cli/latest/eris_files/)	 - Manage files needed for your application using IPFS.
+* [eris init](/docs/documentation/cli/latest/eris_init/)	 - Initialize the ~/.eris directory with default files or update to latest version
+* [eris keys](/docs/documentation/cli/latest/eris_keys/)	 - Do specific tasks with keys *for dev only*.
+* [eris ls](/docs/documentation/cli/latest/eris_ls/)	 - List all the things eris knows about.
+* [eris man](/docs/documentation/cli/latest/eris_man/)	 - Display a man page.
+* [eris services](/docs/documentation/cli/latest/eris_services/)	 - Start, stop, and manage services required for your application.
+* [eris update](/docs/documentation/cli/latest/eris_update/)	 - Update the eris tool
+* [eris version](/docs/documentation/cli/latest/eris_version/)	 - Display Eris's Platform Version.
+* [eris version](/docs/documentation/cli/latest/eris_version/)	 - Display Eris's Platform Version.
 
 ## Specifications
 
-* [Actions Specification](/docs/documentation/cli/0.11.0/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/0.11.0/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/0.11.0/contracts_specification/)
-* [Motivation](/docs/documentation/cli/0.11.0/motivation/)
-* [Services Specification](/docs/documentation/cli/0.11.0/services_specification/)
+* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
+* [Motivation](/docs/documentation/cli/latest/motivation/)
+* [Services Specification](/docs/documentation/cli/latest/services_specification/)
 

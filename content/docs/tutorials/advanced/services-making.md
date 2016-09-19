@@ -275,7 +275,7 @@ include = [ "docker" ]
 requires = [ "" ]
 ```
 
-This has all the runtime requirements for the toadserver. Under the hood, `eris services start toadserver` will marshal these fields then, using [go-dockerclient](https://godoc.org/github.com/fsouza/go-dockerclient), execute the `docker run` sequence. See [here](/docs/documentation/cli/0.11.0/services_specification/) for the services specification. From the command line, this service definition file looks like:
+This has all the runtime requirements for the toadserver. Under the hood, `eris services start toadserver` will marshal these fields then, using [go-dockerclient](https://godoc.org/github.com/fsouza/go-dockerclient), execute the `docker run` sequence. See [here](/docs/documentation/cli/latest/services_specification/) for the services specification. From the command line, this service definition file looks like:
 
 ```bash
 docker run --name toadserver \

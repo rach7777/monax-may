@@ -44,23 +44,23 @@ eris data
 
 ## Subcommands
 
-* [eris data exec](/docs/documentation/cli/0.11.0/eris_data_exec/)	 - Run a command or interactive shell in a data container
-* [eris data export](/docs/documentation/cli/0.11.0/eris_data_export/)	 - Export a named data container's volumes to ~/.eris/data/name
-* [eris data import](/docs/documentation/cli/0.11.0/eris_data_import/)	 - Import ~/.eris/data/name folder to a named data container
-* [eris data inspect](/docs/documentation/cli/0.11.0/eris_data_inspect/)	 - Show machine readable details.
-* [eris data ls](/docs/documentation/cli/0.11.0/eris_data_ls/)	 - List the data containers eris manages for you
-* [eris data rename](/docs/documentation/cli/0.11.0/eris_data_rename/)	 - Rename a data container
-* [eris data rm](/docs/documentation/cli/0.11.0/eris_data_rm/)	 - Remove a data container
+* [eris data exec](/docs/documentation/cli/latest/eris_data_exec/)	 - Run a command or interactive shell in a data container
+* [eris data export](/docs/documentation/cli/latest/eris_data_export/)	 - Export a named data container's volumes to ~/.eris/data/name
+* [eris data import](/docs/documentation/cli/latest/eris_data_import/)	 - Import ~/.eris/data/name folder to a named data container
+* [eris data inspect](/docs/documentation/cli/latest/eris_data_inspect/)	 - Show machine readable details.
+* [eris data ls](/docs/documentation/cli/latest/eris_data_ls/)	 - List the data containers eris manages for you
+* [eris data rename](/docs/documentation/cli/latest/eris_data_rename/)	 - Rename a data container
+* [eris data rm](/docs/documentation/cli/latest/eris_data_rm/)	 - Remove a data container
 
 ## See Also
 
-* [eris](/docs/documentation/cli/0.11.0/eris/)	 - The Blockchain Application Platform
+* [eris](/docs/documentation/cli/latest/eris/)	 - The Blockchain Application Platform
 
 ## Specifications
 
-* [Actions Specification](/docs/documentation/cli/0.11.0/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/0.11.0/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/0.11.0/contracts_specification/)
-* [Motivation](/docs/documentation/cli/0.11.0/motivation/)
-* [Services Specification](/docs/documentation/cli/0.11.0/services_specification/)
+* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
+* [Motivation](/docs/documentation/cli/latest/motivation/)
+* [Services Specification](/docs/documentation/cli/latest/services_specification/)
 

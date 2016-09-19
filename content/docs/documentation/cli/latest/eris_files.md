@@ -40,22 +40,22 @@ eris files
 
 ## Subcommands
 
-* [eris files cache](/docs/documentation/cli/0.11.0/eris_files_cache/)	 - Cache files to IPFS.
-* [eris files cached](/docs/documentation/cli/0.11.0/eris_files_cached/)	 - List files cached locally.
-* [eris files cat](/docs/documentation/cli/0.11.0/eris_files_cat/)	 - Cat the contents of a file from IPFS.
-* [eris files get](/docs/documentation/cli/0.11.0/eris_files_get/)	 - Pull files from IPFS via a hash and save them locally.
-* [eris files ls](/docs/documentation/cli/0.11.0/eris_files_ls/)	 - List links from an IPFS object.
-* [eris files put](/docs/documentation/cli/0.11.0/eris_files_put/)	 - Post files to IPFS.
+* [eris files cache](/docs/documentation/cli/latest/eris_files_cache/)	 - Cache files to IPFS.
+* [eris files cached](/docs/documentation/cli/latest/eris_files_cached/)	 - List files cached locally.
+* [eris files cat](/docs/documentation/cli/latest/eris_files_cat/)	 - Cat the contents of a file from IPFS.
+* [eris files get](/docs/documentation/cli/latest/eris_files_get/)	 - Pull files from IPFS via a hash and save them locally.
+* [eris files ls](/docs/documentation/cli/latest/eris_files_ls/)	 - List links from an IPFS object.
+* [eris files put](/docs/documentation/cli/latest/eris_files_put/)	 - Post files to IPFS.
 
 ## See Also
 
-* [eris](/docs/documentation/cli/0.11.0/eris/)	 - The Blockchain Application Platform
+* [eris](/docs/documentation/cli/latest/eris/)	 - The Blockchain Application Platform
 
 ## Specifications
 
-* [Actions Specification](/docs/documentation/cli/0.11.0/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/0.11.0/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/0.11.0/contracts_specification/)
-* [Motivation](/docs/documentation/cli/0.11.0/motivation/)
-* [Services Specification](/docs/documentation/cli/0.11.0/services_specification/)
+* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
+* [Motivation](/docs/documentation/cli/latest/motivation/)
+* [Services Specification](/docs/documentation/cli/latest/services_specification/)
 

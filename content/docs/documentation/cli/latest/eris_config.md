@@ -35,19 +35,19 @@ eris config
 
 ## Subcommands
 
-* [eris config edit](/docs/documentation/cli/0.11.0/eris_config_edit/)	 - Edit a config for in an editor.
-* [eris config set](/docs/documentation/cli/0.11.0/eris_config_set/)	 - Set a config value.
-* [eris config show](/docs/documentation/cli/0.11.0/eris_config_show/)	 - Display the config.
+* [eris config edit](/docs/documentation/cli/latest/eris_config_edit/)	 - Edit a config for in an editor.
+* [eris config set](/docs/documentation/cli/latest/eris_config_set/)	 - Set a config value.
+* [eris config show](/docs/documentation/cli/latest/eris_config_show/)	 - Display the config.
 
 ## See Also
 
-* [eris](/docs/documentation/cli/0.11.0/eris/)	 - The Blockchain Application Platform
+* [eris](/docs/documentation/cli/latest/eris/)	 - The Blockchain Application Platform
 
 ## Specifications
 
-* [Actions Specification](/docs/documentation/cli/0.11.0/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/0.11.0/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/0.11.0/contracts_specification/)
-* [Motivation](/docs/documentation/cli/0.11.0/motivation/)
-* [Services Specification](/docs/documentation/cli/0.11.0/services_specification/)
+* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
+* [Motivation](/docs/documentation/cli/latest/motivation/)
+* [Services Specification](/docs/documentation/cli/latest/services_specification/)
 

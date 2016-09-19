@@ -60,13 +60,13 @@ eris contracts test
 
 ## See Also
 
-* [eris contracts](/docs/documentation/cli/0.11.0/eris_contracts/)	 - Deploy, Test, and Manage Your Smart Contracts.
+* [eris contracts](/docs/documentation/cli/latest/eris_contracts/)	 - Deploy, Test, and Manage Your Smart Contracts.
 
 ## Specifications
 
-* [Actions Specification](/docs/documentation/cli/0.11.0/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/0.11.0/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/0.11.0/contracts_specification/)
-* [Motivation](/docs/documentation/cli/0.11.0/motivation/)
-* [Services Specification](/docs/documentation/cli/0.11.0/services_specification/)
+* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
+* [Motivation](/docs/documentation/cli/latest/motivation/)
+* [Services Specification](/docs/documentation/cli/latest/services_specification/)
 

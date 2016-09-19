@@ -57,11 +57,11 @@ nav.navbar {
     }
 
     #nav-logo {
-        position: absolute;
-        top: 5px;
+        position: relative;
         display: box;
         overflow: hidden;
-        max-height: 80%;
+        top: -2px;
+        max-height: 120%;
         vertical-align: middle;
     }
 
