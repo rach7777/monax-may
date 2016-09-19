@@ -6,9 +6,7 @@
     <div class="vert-text">
       <img src="/images/logos/monax_rect.svg" class="logo">
       <br />
-      {{ range .Site.Params.home_buttons }}
-        <a href="{{ .url }}" class="btn btn-default btn-lg"><i class="fa fa-fw fa-{{ .icon }}" aria-hidden="true"></i> <span class="network-name">{{ .title }}</span></a>
-      {{ end }}
-      </div>
+      <h3 class="tagline">{{ .Site.Data.sites.tagline | markdownify }}</h3>
     </div>
+  </div>
   <!-- /Full Page Image Header Area -->
