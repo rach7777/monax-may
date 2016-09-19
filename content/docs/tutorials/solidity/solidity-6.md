@@ -1,6 +1,6 @@
 ---
 
-layout: docs
+layout: single
 title: "Tutorials | Solidity 6: Advanced Solidity Features"
 
 ---

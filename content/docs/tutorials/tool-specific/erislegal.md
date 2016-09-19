@@ -1,6 +1,6 @@
 ---
 
-layout: docs
+layout: single
 title: "Tutorials | eris:legal_markdown"
 
 ---

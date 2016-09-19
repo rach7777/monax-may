@@ -1,7 +1,12 @@
 ---
 
-type:   docs
-title: "Getting Started With Eris"
+layout: single
+title: "Tutorials | Getting Started"
+aliases:
+  - /docs
+menu:
+  tutorial:
+    weight: 5
 
 ---
 

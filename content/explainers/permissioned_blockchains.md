@@ -1,10 +1,15 @@
 ---
 
-type: docs
+type:   docs
+layout: single
 title:      "Explainer | Permissioned Blockchains"
 excerpt:    "What is a Permissioned Blockchain and why are these automated data management systems so cool?"
 aliases:
     - /docs/explainers/permissioned_blockchains/
+index_file: ""
+menu:
+  explainer:
+    weight: 5
 
 ---
 

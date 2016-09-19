@@ -1,6 +1,6 @@
 ---
 
-layout: docs
+layout: single
 title: "Tutorials | Bonding & Unbonding Validators on your Chain"
 
 ---

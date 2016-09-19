@@ -1,6 +1,6 @@
 ---
 
-layout:     documentation
+layout: single
 title:      "Documentation | eris:keys | eris-keys gen"
 
 ---
@@ -38,7 +38,7 @@ eris-keys gen
 
 ## See Also
 
-* [eris-keys](https://docs.erisindustries.com/documentation/eris-keys/latest/eris-keys/)	 - Generate and manage keys for producing signatures
+* [eris-keys](/docs/documentation/keys/latest/eris-keys/)	 - Generate and manage keys for producing signatures
 
 ## Specifications
 

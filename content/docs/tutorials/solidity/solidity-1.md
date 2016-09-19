@@ -1,6 +1,6 @@
 ---
 
-layout: docs
+layout: single
 title: "Tutorials | Solidity 1: The Five Types Model"
 
 ---

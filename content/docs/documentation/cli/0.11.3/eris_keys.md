@@ -1,6 +1,6 @@
 ---
 
-layout:     documentation
+layout: single
 title:      "Documentation | eris:cli | eris keys"
 
 ---
@@ -33,22 +33,22 @@ eris keys
 
 ## Subcommands
 
-* [eris keys convert](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/eris_keys_convert/)	 - Convert and eris-keys key to tendermint key
-* [eris keys export](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/eris_keys_export/)	 - Export a key from container to host.
-* [eris keys gen](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/eris_keys_gen/)	 - Generates an unsafe key using the keys container.
-* [eris keys import](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/eris_keys_import/)	 - Import a key to container from host.
-* [eris keys ls](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/eris_keys_ls/)	 - List keys on host and in running keys container
-* [eris keys pub](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/eris_keys_pub/)	 - Returns a machine readable pubkey given an address.
+* [eris keys convert](/docs/documentation/cli/0.11.3/eris_keys_convert/)	 - Convert and eris-keys key to tendermint key
+* [eris keys export](/docs/documentation/cli/0.11.3/eris_keys_export/)	 - Export a key from container to host.
+* [eris keys gen](/docs/documentation/cli/0.11.3/eris_keys_gen/)	 - Generates an unsafe key using the keys container.
+* [eris keys import](/docs/documentation/cli/0.11.3/eris_keys_import/)	 - Import a key to container from host.
+* [eris keys ls](/docs/documentation/cli/0.11.3/eris_keys_ls/)	 - List keys on host and in running keys container
+* [eris keys pub](/docs/documentation/cli/0.11.3/eris_keys_pub/)	 - Returns a machine readable pubkey given an address.
 
 ## See Also
 
-* [eris](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/eris/)	 - The Blockchain Application Platform
+* [eris](/docs/documentation/cli/0.11.3/eris/)	 - The Blockchain Application Platform
 
 ## Specifications
 
-* [Actions Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/actions_specification/)
-* [Chains Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/chains_specification/)
-* [Contracts Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/contracts_specification/)
-* [Motivation](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/motivation/)
-* [Services Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/services_specification/)
+* [Actions Specification](/docs/documentation/cli/0.11.3/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/0.11.3/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/0.11.3/contracts_specification/)
+* [Motivation](/docs/documentation/cli/0.11.3/motivation/)
+* [Services Specification](/docs/documentation/cli/0.11.3/services_specification/)
 

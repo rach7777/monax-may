@@ -1,14 +1,15 @@
 ---
 
-date: 2014-10-06
-title:      "Legal Engineering | Dual Integration"
+type:   docs
+layout: single
+title:      "Explainer | Dual Integration"
 excerpt:    "Putting the Contracts in Smart Contracts"
-menu:
-  main:
-    parent: legal_engineering
-weight:  50
 aliases:
-- /components/erislegal/
+    - /components/erislegal/
+index_file: ""
+menu:
+  explainer:
+    weight: 13
 
 ---
 

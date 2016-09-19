@@ -1,14 +1,14 @@
 ---
 
-type:   wide
-title: "eris:cli Version Documentation"
+type:   docs
+layout: li
+title: "Documentation | Command Line Interface"
+path: "./content/docs/documentation/cli"
+index_file: "eris"
+menu:
+  documentation:
+    weight: 20
 
 ---
 
-[Latest](0.11.3/eris)
-
-[0.11.4](0.11.4/eris)
-
-[0.11.3](0.11.3/eris)
-
-[0.11.0](0.11.0/eris)
+{{< github_readme "eris-cli" >}}

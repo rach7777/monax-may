@@ -1,6 +1,6 @@
 ---
 
-layout: docs
+layout: single
 title: "Tutorials | Getting Started With Eris in the Cloud"
 
 ---

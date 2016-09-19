@@ -1,6 +1,6 @@
 ---
 
-layout:     documentation
+layout: single
 title:      "Documentation | eris:keys | eris-keys server"
 
 ---
@@ -36,7 +36,7 @@ eris-keys server
 
 ## See Also
 
-* [eris-keys](https://docs.erisindustries.com/documentation/eris-keys/0.11.4/eris-keys/)	 - Generate and manage keys for producing signatures
+* [eris-keys](/docs/documentation/keys/0.11.4/eris-keys/)	 - Generate and manage keys for producing signatures
 
 ## Specifications
 

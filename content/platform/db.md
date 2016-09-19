@@ -32,7 +32,7 @@ eris:db uses the Tendermint Consensus engine, a deposit based proof of stake pro
 
 ## Interface
 
-eris:db comes with a range of interfaces from CLI tooling to RPCs. See our [comprehensive documentation](https://docs.erisindustries.com/documentation) for more.
+eris:db comes with a range of interfaces from CLI tooling to RPCs. See our [comprehensive documentation](/docs/documentation/) for more.
 
 ## Virtual Machine
 
@@ -42,7 +42,7 @@ eris:db comes with a built-to-specification Ethereum Virtual Machine. It runs an
 
 Permissioning your blockchains is more than simply running them behind a gated VPN if one is running eris:db.
 
-eris:db comes with a [capabilities-based, evolvable permissioning layer](https://docs.erisindustries.com/documentation/eris-db-permissions/) - the first of its kind on the market, and by far, still the most sophisticated.
+eris:db comes with a [capabilities-based, evolvable permissioning layer](/docs/documentation/db/) - the first of its kind on the market, and by far, still the most sophisticated.
 
 ## Best of All
 
@@ -93,7 +93,7 @@ eris:db comes with a [capabilities-based, evolvable permissioning layer](https:/
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="https://docs.erisindustries.com/documentation/eris-db-permissions/">Yes</a></td>
+            <td><a href="/docs/documentation/db/">Yes</a></td>
             <td>n/a</td>
           </tr>
           <tr>
@@ -140,7 +140,7 @@ eris:db comes with a [capabilities-based, evolvable permissioning layer](https:/
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="https://docs.erisindustries.com/documentation/eris-db-permissions/">Yes</a></td>
+            <td><a href="/docs/documentation/db/">Yes</a></td>
             <td>unclear</td>
           </tr>
           <tr>
@@ -187,7 +187,7 @@ eris:db comes with a [capabilities-based, evolvable permissioning layer](https:/
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="https://docs.erisindustries.com/documentation/eris-db-permissions/">Yes</a></td>
+            <td><a href="/docs/documentation/db/">Yes</a></td>
             <td>n/a</td>
           </tr>
           <tr>
@@ -234,7 +234,7 @@ eris:db comes with a [capabilities-based, evolvable permissioning layer](https:/
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="https://docs.erisindustries.com/documentation/eris-db-permissions/">Yes</a></td>
+            <td><a href="/docs/documentation/db/">Yes</a></td>
             <td>Ripple Gateway Permissioning</td>
           </tr>
           <tr>
@@ -281,7 +281,7 @@ eris:db comes with a [capabilities-based, evolvable permissioning layer](https:/
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="https://docs.erisindustries.com/documentation/eris-db-permissions/">Yes</a></td>
+            <td><a href="/docs/documentation/db/">Yes</a></td>
             <td>unclear</td>
           </tr>
           <tr>
@@ -328,7 +328,7 @@ eris:db comes with a [capabilities-based, evolvable permissioning layer](https:/
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="https://docs.erisindustries.com/documentation/eris-db-permissions/">Yes</a></td>
+            <td><a href="/docs/documentation/db/">Yes</a></td>
             <td>unclear</td>
           </tr>
           <tr>

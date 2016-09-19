@@ -1,6 +1,6 @@
 ---
 
-layout:     documentation
+layout: single
 title:      "Documentation | eris:cli | eris contracts test"
 
 ---
@@ -60,13 +60,13 @@ eris contracts test
 
 ## See Also
 
-* [eris contracts](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_contracts/)	 - Deploy, Test, and Manage Your Smart Contracts.
+* [eris contracts](/docs/documentation/cli/0.11.0/eris_contracts/)	 - Deploy, Test, and Manage Your Smart Contracts.
 
 ## Specifications
 
-* [Actions Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/actions_specification/)
-* [Chains Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/chains_specification/)
-* [Contracts Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/contracts_specification/)
-* [Motivation](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/motivation/)
-* [Services Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/services_specification/)
+* [Actions Specification](/docs/documentation/cli/0.11.0/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/0.11.0/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/0.11.0/contracts_specification/)
+* [Motivation](/docs/documentation/cli/0.11.0/motivation/)
+* [Services Specification](/docs/documentation/cli/0.11.0/services_specification/)
 

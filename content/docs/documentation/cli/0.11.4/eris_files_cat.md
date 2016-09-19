@@ -1,6 +1,6 @@
 ---
 
-layout:     documentation
+layout: single
 title:      "Documentation | eris:cli | eris files cat"
 
 ---
@@ -27,13 +27,13 @@ eris files cat HASH
 
 ## See Also
 
-* [eris files](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_files/)	 - Manage files needed for your application using IPFS.
+* [eris files](/docs/documentation/cli/0.11.4/eris_files/)	 - Manage files needed for your application using IPFS.
 
 ## Specifications
 
-* [Actions Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/actions_specification/)
-* [Chains Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/chains_specification/)
-* [Contracts Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/contracts_specification/)
-* [Motivation](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/motivation/)
-* [Services Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/services_specification/)
+* [Actions Specification](/docs/documentation/cli/0.11.4/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/0.11.4/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/0.11.4/contracts_specification/)
+* [Motivation](/docs/documentation/cli/0.11.4/motivation/)
+* [Services Specification](/docs/documentation/cli/0.11.4/services_specification/)
 

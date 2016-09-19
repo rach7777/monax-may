@@ -1,6 +1,6 @@
 ---
 
-layout: docs
+layout: single
 title: "Tutorials | Solidity 2: An Action-Driven Architecture"
 
 ---

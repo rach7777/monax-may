@@ -1,6 +1,6 @@
 ---
 
-layout:     documentation
+layout: single
 title:      "Documentation | eris:cli | eris ls"
 
 ---
@@ -21,7 +21,7 @@ The -r flag limits the output to running services or chains only.
 The --json flag dumps the container information in the JSON format.
 
 The -f flag specifies an alternative format for the list, using the syntax
-of Go text templates. If the fields to be displayed are separated by the 
+of Go text templates. If the fields to be displayed are separated by the
 '\t' tab character, the output will be columnized.
 
 The struct being passed to the template is:
@@ -32,7 +32,7 @@ The struct being passed to the template is:
     FullName  string          // container name
 
     Labels map[string]string  // container labels
-    Info   *docker.Container  // Docker client library Container info 
+    Info   *docker.Container  // Docker client library Container info
   }
 
 The full list of available fields can be observed by issuing
@@ -84,13 +84,13 @@ $ eris ls  -f '{{.ShortName}}\t{{.Info.Config.Env}}'
 
 ## See Also
 
-* [eris](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris/)	 - The Blockchain Application Platform
+* [eris](/docs/documentation/cli/0.11.4/eris/)	 - The Blockchain Application Platform
 
 ## Specifications
 
-* [Actions Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/actions_specification/)
-* [Chains Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/chains_specification/)
-* [Contracts Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/contracts_specification/)
-* [Motivation](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/motivation/)
-* [Services Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/services_specification/)
+* [Actions Specification](/docs/documentation/cli/0.11.4/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/0.11.4/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/0.11.4/contracts_specification/)
+* [Motivation](/docs/documentation/cli/0.11.4/motivation/)
+* [Services Specification](/docs/documentation/cli/0.11.4/services_specification/)
 

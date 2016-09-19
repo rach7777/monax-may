@@ -11,13 +11,14 @@
     </div><!-- .row -->
   {{ end }}
   <div class="row">
-    {{ partial "tableOfContents.html" . }}
+    {{- if in .File.Path "documentation" }}{{ partial "sidebar-docs.html" . }}{{ end -}}
+    {{- if in .File.Path "tutorials" }}{{ partial "sidebar-tuts.html" . }}{{ end -}}
+    {{- if in .File.Path "explainers" }}{{ partial "sidebar-exp.html" . }}{{ end -}}
     <article id="main-content">
       <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
         {{ .Content }}
-        <h4><a class="edit-me" href="https://github.com/{{ index .Site.Data.sites "github-user" }}/monax.io/tree/master/content/{{ .File.Path }}">Edit this page</a></h4>
+        <!-- <h4><a class="edit-me" href="https://github.com/{{ .Site.Data.sites.github_user }}/monax.io/tree/master/content/{{ .File.Path }}">Edit this page</a></h4> -->
       </div><!-- .cols -->
-        <div class="retard"></div>
     </article><!-- #main-content -->
   </div><!-- .row -->
 </div><!-- .container-fluid -->

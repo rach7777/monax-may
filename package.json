@@ -1,8 +1,8 @@
 {
-  "name": "monax_industries",
+  "name": "monax_site",
   "version": "0.0.1",
-  "description": "monax industries",
-  "author": "Monax Industries <support@monax.industries>",
+  "description": "monax io",
+  "author": "Monax Industries <support@monax.io>",
   "license": "n/a",
   "browserify-shim": {
     "jquery": {

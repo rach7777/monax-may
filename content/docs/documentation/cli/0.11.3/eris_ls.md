@@ -1,6 +1,6 @@
 ---
 
-layout:     documentation
+layout: single
 title:      "Documentation | eris:cli | eris ls"
 
 ---
@@ -15,8 +15,8 @@ List all known definition files for services
 and chains. Also lists all existing and running services and
 chains and, data containers.
 
-For more detailed output, use [eris services ls], [eris chains ls], 
-and [eris data ls] commands with respective flags (--known, --existing, 
+For more detailed output, use [eris services ls], [eris chains ls],
+and [eris data ls] commands with respective flags (--known, --existing,
 --running).
 
 ```bash
@@ -33,13 +33,13 @@ eris ls
 
 ## See Also
 
-* [eris](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/eris/)	 - The Blockchain Application Platform
+* [eris](/docs/documentation/cli/0.11.3/eris/)	 - The Blockchain Application Platform
 
 ## Specifications
 
-* [Actions Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/actions_specification/)
-* [Chains Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/chains_specification/)
-* [Contracts Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/contracts_specification/)
-* [Motivation](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/motivation/)
-* [Services Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/services_specification/)
+* [Actions Specification](/docs/documentation/cli/0.11.3/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/0.11.3/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/0.11.3/contracts_specification/)
+* [Motivation](/docs/documentation/cli/0.11.3/motivation/)
+* [Services Specification](/docs/documentation/cli/0.11.3/services_specification/)
 

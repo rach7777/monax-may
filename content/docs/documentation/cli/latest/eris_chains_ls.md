@@ -1,6 +1,6 @@
 ---
 
-layout:     documentation
+layout: single
 title:      "Documentation | eris:cli | eris chains ls"
 
 ---
@@ -18,7 +18,7 @@ chain (--running).
 If no known chains exist yet, create a new blockchain with: [eris chains new NAME]
 command.
 
-To install and fetch a blockchain from a chain definition file, 
+To install and fetch a blockchain from a chain definition file,
 use [eris chains install NAME] command.
 
 Services are handled using the [eris services] command.
@@ -47,13 +47,13 @@ eris chains ls
 
 ## See Also
 
-* [eris chains](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_chains/)	 - Start, stop, and manage blockchains.
+* [eris chains](/docs/documentation/cli/0.11.0/eris_chains/)	 - Start, stop, and manage blockchains.
 
 ## Specifications
 
-* [Actions Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/actions_specification/)
-* [Chains Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/chains_specification/)
-* [Contracts Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/contracts_specification/)
-* [Motivation](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/motivation/)
-* [Services Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/services_specification/)
+* [Actions Specification](/docs/documentation/cli/0.11.0/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/0.11.0/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/0.11.0/contracts_specification/)
+* [Motivation](/docs/documentation/cli/0.11.0/motivation/)
+* [Services Specification](/docs/documentation/cli/0.11.0/services_specification/)
 

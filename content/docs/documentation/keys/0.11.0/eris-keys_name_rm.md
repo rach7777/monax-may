@@ -1,6 +1,6 @@
 ---
 
-layout:     documentation
+layout: single
 title:      "Documentation | eris:keys | eris-keys name rm"
 
 ---
@@ -36,7 +36,7 @@ eris-keys name rm
 
 ## See Also
 
-* [eris-keys name](https://docs.erisindustries.com/documentation/eris-keys/0.11.0/eris-keys_name/)	 - Manage key names. `eris-keys name <name> <address>`
+* [eris-keys name](/docs/documentation/keys/0.11.0/eris-keys_name/)	 - Manage key names. `eris-keys name <name> <address>`
 
 ## Specifications
 

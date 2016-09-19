@@ -1,6 +1,6 @@
 ---
 
-layout:     documentation
+layout: single
 title:      "Documentation | eris:pm | epm"
 
 ---
@@ -47,6 +47,6 @@ epm
 
 ## Specifications
 
-* [Jobs Specification](https://docs.erisindustries.com/documentation/eris-pm/0.11.1/jobs_specification/)
-* [Variable Specification](https://docs.erisindustries.com/documentation/eris-pm/0.11.1/variable_specification/)
+* [Jobs Specification](/docs/documentation/pm/0.11.1/jobs_specification/)
+* [Variable Specification](/docs/documentation/pm/0.11.1/variable_specification/)
 

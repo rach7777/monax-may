@@ -1,0 +1,28 @@
+<ul class="sidebar-menu nav nav-pills nav-stacked">
+  {{ $currentNode := . }}
+  {{ range .Site.Menus.tutorial }}
+    {{ if .HasChildren }}
+      <li class="sub-menu{{if $currentNode.HasMenuCurrent "tutorial" . }} active{{end}}">
+      <a href="javascript:;" class="">
+        {{ .Pre }}
+        <span>{{ .Name }}</span>
+        <span class="menu-arrow arrow_carrot-right"></span>
+      </a>
+      <ul class="sub">
+        {{ range .Children }}
+        <li{{if $currentNode.IsMenuCurrent "tutorial" . }} class="active"{{end}}><a href="{{.URL}}"> {{ .Name }} </a> </li>
+        {{ end }}
+      </ul>
+      {{else}}
+      <li>
+        <a class="" href="{{.URL}}">
+          {{ .Pre }}
+          <span>{{ .Name }}</span>
+        </a>
+      </li>
+    {{end}}
+    {{end}}
+    <li><a href="/explainers/" target="blank">Explainers</a></li>
+    <li><a href="/docs/documentation/" target="blank">Documentation</a></li>
+    <li><a href="{{ .Site.Data.sites.support }}" target="blank">Questions and Issues</a></li>
+</ul>

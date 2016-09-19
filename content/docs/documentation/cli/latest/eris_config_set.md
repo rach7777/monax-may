@@ -1,6 +1,6 @@
 ---
 
-layout:     documentation
+layout: single
 title:      "Documentation | eris:cli | eris config set"
 
 ---
@@ -12,9 +12,9 @@ Set a config value.
 ## Synopsis
 
 Set a config value.
-NOTE: the [eris config set] command only operates on the settings 
+NOTE: the [eris config set] command only operates on the settings
 for the eris CLI. To set the config for a blockchain use [eris chains config]
-command, and to set the config for a service use [eris services config] 
+command, and to set the config for a service use [eris services config]
 command.
 
 ```bash
@@ -32,13 +32,13 @@ eris config set KEY:VALUE
 
 ## See Also
 
-* [eris config](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_config/)	 - Manage configuration settings.
+* [eris config](/docs/documentation/cli/0.11.0/eris_config/)	 - Manage configuration settings.
 
 ## Specifications
 
-* [Actions Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/actions_specification/)
-* [Chains Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/chains_specification/)
-* [Contracts Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/contracts_specification/)
-* [Motivation](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/motivation/)
-* [Services Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/services_specification/)
+* [Actions Specification](/docs/documentation/cli/0.11.0/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/0.11.0/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/0.11.0/contracts_specification/)
+* [Motivation](/docs/documentation/cli/0.11.0/motivation/)
+* [Services Specification](/docs/documentation/cli/0.11.0/services_specification/)
 

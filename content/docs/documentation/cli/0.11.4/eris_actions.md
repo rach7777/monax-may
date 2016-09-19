@@ -1,6 +1,6 @@
 ---
 
-layout:     documentation
+layout: single
 title:      "Documentation | eris:cli | eris actions"
 
 ---
@@ -44,24 +44,24 @@ eris actions
 
 ## Subcommands
 
-* [eris actions do](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_actions_do/)	 - Perform an action.
-* [eris actions edit](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_actions_edit/)	 - Edit an action definition file.
-* [eris actions export](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_actions_export/)	 - Export an action definition file to IPFS.
-* [eris actions import](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_actions_import/)	 - Import an action definition file from Github or IPFS.
-* [eris actions ls](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_actions_ls/)	 - List known action definition files.
-* [eris actions new](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_actions_new/)	 - Create a new action definition file.
-* [eris actions remove](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_actions_remove/)	 - Remove an action definition file.
-* [eris actions rename](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_actions_rename/)	 - Rename an action.
+* [eris actions do](/docs/documentation/cli/0.11.4/eris_actions_do/)	 - Perform an action.
+* [eris actions edit](/docs/documentation/cli/0.11.4/eris_actions_edit/)	 - Edit an action definition file.
+* [eris actions export](/docs/documentation/cli/0.11.4/eris_actions_export/)	 - Export an action definition file to IPFS.
+* [eris actions import](/docs/documentation/cli/0.11.4/eris_actions_import/)	 - Import an action definition file from Github or IPFS.
+* [eris actions ls](/docs/documentation/cli/0.11.4/eris_actions_ls/)	 - List known action definition files.
+* [eris actions new](/docs/documentation/cli/0.11.4/eris_actions_new/)	 - Create a new action definition file.
+* [eris actions remove](/docs/documentation/cli/0.11.4/eris_actions_remove/)	 - Remove an action definition file.
+* [eris actions rename](/docs/documentation/cli/0.11.4/eris_actions_rename/)	 - Rename an action.
 
 ## See Also
 
-* [eris](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris/)	 - The Blockchain Application Platform
+* [eris](/docs/documentation/cli/0.11.4/eris/)	 - The Blockchain Application Platform
 
 ## Specifications
 
-* [Actions Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/actions_specification/)
-* [Chains Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/chains_specification/)
-* [Contracts Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/contracts_specification/)
-* [Motivation](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/motivation/)
-* [Services Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/services_specification/)
+* [Actions Specification](/docs/documentation/cli/0.11.4/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/0.11.4/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/0.11.4/contracts_specification/)
+* [Motivation](/docs/documentation/cli/0.11.4/motivation/)
+* [Services Specification](/docs/documentation/cli/0.11.4/services_specification/)
 

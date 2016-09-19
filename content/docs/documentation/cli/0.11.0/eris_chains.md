@@ -1,6 +1,6 @@
 ---
 
-layout:     documentation
+layout: single
 title:      "Documentation | eris:cli | eris chains"
 
 ---
@@ -42,35 +42,35 @@ eris chains
 
 ## Subcommands
 
-* [eris chains cat](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_chains_cat/)	 - Display chain information.
-* [eris chains checkout](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_chains_checkout/)	 - Check out a chain.
-* [eris chains current](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_chains_current/)	 - The currently checked out chain.
-* [eris chains edit](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_chains_edit/)	 - Edit a blockchain.
-* [eris chains exec](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_chains_exec/)	 - Run a command or interactive shell
-* [eris chains export](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_chains_export/)	 - Export a chain definition file to IPFS.
-* [eris chains graduate](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_chains_graduate/)	 - Graduate a chain to a service.
-* [eris chains import](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_chains_import/)	 - Import a chain definition file from Github or IPFS.
-* [eris chains inspect](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_chains_inspect/)	 - Machine readable chain operation details.
-* [eris chains logs](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_chains_logs/)	 - Display the logs of a blockchain.
-* [eris chains ls](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_chains_ls/)	 - Lists everything chain related.
-* [eris chains make](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_chains_make/)	 - Create keys and a genesis block for your chain.
-* [eris chains new](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_chains_new/)	 - Create and start a new blockhain.
-* [eris chains ports](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_chains_ports/)	 - Print port mappings.
-* [eris chains rename](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_chains_rename/)	 - Rename a blockchain.
-* [eris chains rm](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_chains_rm/)	 - Remove an installed chain.
-* [eris chains start](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_chains_start/)	 - Start a blockchain.
-* [eris chains stop](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_chains_stop/)	 - Stop a running blockchain.
-* [eris chains update](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris_chains_update/)	 - Update an installed chain.
+* [eris chains cat](/docs/documentation/cli/0.11.0/eris_chains_cat/)	 - Display chain information.
+* [eris chains checkout](/docs/documentation/cli/0.11.0/eris_chains_checkout/)	 - Check out a chain.
+* [eris chains current](/docs/documentation/cli/0.11.0/eris_chains_current/)	 - The currently checked out chain.
+* [eris chains edit](/docs/documentation/cli/0.11.0/eris_chains_edit/)	 - Edit a blockchain.
+* [eris chains exec](/docs/documentation/cli/0.11.0/eris_chains_exec/)	 - Run a command or interactive shell
+* [eris chains export](/docs/documentation/cli/0.11.0/eris_chains_export/)	 - Export a chain definition file to IPFS.
+* [eris chains graduate](/docs/documentation/cli/0.11.0/eris_chains_graduate/)	 - Graduate a chain to a service.
+* [eris chains import](/docs/documentation/cli/0.11.0/eris_chains_import/)	 - Import a chain definition file from Github or IPFS.
+* [eris chains inspect](/docs/documentation/cli/0.11.0/eris_chains_inspect/)	 - Machine readable chain operation details.
+* [eris chains logs](/docs/documentation/cli/0.11.0/eris_chains_logs/)	 - Display the logs of a blockchain.
+* [eris chains ls](/docs/documentation/cli/0.11.0/eris_chains_ls/)	 - Lists everything chain related.
+* [eris chains make](/docs/documentation/cli/0.11.0/eris_chains_make/)	 - Create keys and a genesis block for your chain.
+* [eris chains new](/docs/documentation/cli/0.11.0/eris_chains_new/)	 - Create and start a new blockhain.
+* [eris chains ports](/docs/documentation/cli/0.11.0/eris_chains_ports/)	 - Print port mappings.
+* [eris chains rename](/docs/documentation/cli/0.11.0/eris_chains_rename/)	 - Rename a blockchain.
+* [eris chains rm](/docs/documentation/cli/0.11.0/eris_chains_rm/)	 - Remove an installed chain.
+* [eris chains start](/docs/documentation/cli/0.11.0/eris_chains_start/)	 - Start a blockchain.
+* [eris chains stop](/docs/documentation/cli/0.11.0/eris_chains_stop/)	 - Stop a running blockchain.
+* [eris chains update](/docs/documentation/cli/0.11.0/eris_chains_update/)	 - Update an installed chain.
 
 ## See Also
 
-* [eris](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/eris/)	 - The Blockchain Application Platform
+* [eris](/docs/documentation/cli/0.11.0/eris/)	 - The Blockchain Application Platform
 
 ## Specifications
 
-* [Actions Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/actions_specification/)
-* [Chains Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/chains_specification/)
-* [Contracts Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/contracts_specification/)
-* [Motivation](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/motivation/)
-* [Services Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/services_specification/)
+* [Actions Specification](/docs/documentation/cli/0.11.0/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/0.11.0/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/0.11.0/contracts_specification/)
+* [Motivation](/docs/documentation/cli/0.11.0/motivation/)
+* [Services Specification](/docs/documentation/cli/0.11.0/services_specification/)
 

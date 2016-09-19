@@ -1,6 +1,6 @@
 ---
 
-layout:     documentation
+layout: single
 title:      "Documentation | eris:cli | eris pkgs do"
 
 ---
@@ -51,13 +51,13 @@ eris pkgs do
 
 ## See Also
 
-* [eris pkgs](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/eris_pkgs/)	 - Deploy, Test, and Manage Your Smart Contract Packages.
+* [eris pkgs](/docs/documentation/cli/0.11.3/eris_pkgs/)	 - Deploy, Test, and Manage Your Smart Contract Packages.
 
 ## Specifications
 
-* [Actions Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/actions_specification/)
-* [Chains Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/chains_specification/)
-* [Contracts Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/contracts_specification/)
-* [Motivation](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/motivation/)
-* [Services Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/services_specification/)
+* [Actions Specification](/docs/documentation/cli/0.11.3/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/0.11.3/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/0.11.3/contracts_specification/)
+* [Motivation](/docs/documentation/cli/0.11.3/motivation/)
+* [Services Specification](/docs/documentation/cli/0.11.3/services_specification/)
 

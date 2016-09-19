@@ -1,6 +1,6 @@
 ---
 
-layout:     documentation
+layout: single
 title:      "Documentation | eris:cli | eris data"
 
 ---
@@ -46,23 +46,23 @@ eris data
 
 ## Subcommands
 
-* [eris data exec](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_data_exec/)	 - Run a command or interactive shell in a data container
-* [eris data export](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_data_export/)	 - Export a named data container's directory to a host directory
-* [eris data import](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_data_import/)	 - Import from a host folder to a named data container's directory
-* [eris data inspect](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_data_inspect/)	 - Show machine readable details.
-* [eris data ls](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_data_ls/)	 - List the data containers eris manages for you
-* [eris data rename](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_data_rename/)	 - Rename a data container
-* [eris data rm](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_data_rm/)	 - Remove a data container
+* [eris data exec](/docs/documentation/cli/0.11.4/eris_data_exec/)	 - Run a command or interactive shell in a data container
+* [eris data export](/docs/documentation/cli/0.11.4/eris_data_export/)	 - Export a named data container's directory to a host directory
+* [eris data import](/docs/documentation/cli/0.11.4/eris_data_import/)	 - Import from a host folder to a named data container's directory
+* [eris data inspect](/docs/documentation/cli/0.11.4/eris_data_inspect/)	 - Show machine readable details.
+* [eris data ls](/docs/documentation/cli/0.11.4/eris_data_ls/)	 - List the data containers eris manages for you
+* [eris data rename](/docs/documentation/cli/0.11.4/eris_data_rename/)	 - Rename a data container
+* [eris data rm](/docs/documentation/cli/0.11.4/eris_data_rm/)	 - Remove a data container
 
 ## See Also
 
-* [eris](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris/)	 - The Blockchain Application Platform
+* [eris](/docs/documentation/cli/0.11.4/eris/)	 - The Blockchain Application Platform
 
 ## Specifications
 
-* [Actions Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/actions_specification/)
-* [Chains Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/chains_specification/)
-* [Contracts Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/contracts_specification/)
-* [Motivation](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/motivation/)
-* [Services Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/services_specification/)
+* [Actions Specification](/docs/documentation/cli/0.11.4/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/0.11.4/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/0.11.4/contracts_specification/)
+* [Motivation](/docs/documentation/cli/0.11.4/motivation/)
+* [Services Specification](/docs/documentation/cli/0.11.4/services_specification/)
 

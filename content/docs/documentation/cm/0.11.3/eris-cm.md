@@ -1,6 +1,6 @@
 ---
 
-layout:     documentation
+layout: single
 title:      "Documentation | eris:chain_manager | eris-cm"
 
 ---
@@ -34,10 +34,10 @@ eris-cm
 
 ## Subcommands
 
-* [eris-cm make](https://docs.erisindustries.com/documentation/eris-cm/0.11.3/eris-cm_make/)	 - The Eris Chain Maker is a utility for easily creating the files necessary to build eris chains
+* [eris-cm make](/docs/documentation/cm/0.11.3/eris-cm_make/)	 - The Eris Chain Maker is a utility for easily creating the files necessary to build eris chains
 
 ## Specifications
 
-* [Account Types](https://docs.erisindustries.com/documentation/eris-cm/0.11.3/account_types/)
-* [Chain Types](https://docs.erisindustries.com/documentation/eris-cm/0.11.3/chain_types/)
+* [Account Types](/docs/documentation/cm/0.11.3/account_types/)
+* [Chain Types](/docs/documentation/cm/0.11.3/chain_types/)
 

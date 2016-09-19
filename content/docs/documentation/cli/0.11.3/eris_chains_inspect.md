@@ -1,6 +1,6 @@
 ---
 
-layout:     documentation
+layout: single
 title:      "Documentation | eris:cli | eris chains inspect"
 
 ---
@@ -39,13 +39,13 @@ $ eris chains inspect 2gather host_config.binds -- will display only that value
 
 ## See Also
 
-* [eris chains](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/eris_chains/)	 - Start, stop, and manage blockchains.
+* [eris chains](/docs/documentation/cli/0.11.3/eris_chains/)	 - Start, stop, and manage blockchains.
 
 ## Specifications
 
-* [Actions Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/actions_specification/)
-* [Chains Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/chains_specification/)
-* [Contracts Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/contracts_specification/)
-* [Motivation](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/motivation/)
-* [Services Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/services_specification/)
+* [Actions Specification](/docs/documentation/cli/0.11.3/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/0.11.3/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/0.11.3/contracts_specification/)
+* [Motivation](/docs/documentation/cli/0.11.3/motivation/)
+* [Services Specification](/docs/documentation/cli/0.11.3/services_specification/)
 

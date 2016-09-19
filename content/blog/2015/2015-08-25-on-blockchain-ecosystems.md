@@ -61,7 +61,7 @@ eris services import thing_to_boot HASH
 
 We are also working on a solution we call `etcb` (like CoreOS's `etcd` but `b` ... because its on a blockchain) which will enable better group sharing of configuration files.
 
-We don't really "boot" smart contracts themselves and so they do not really need a configuration so to say. But we have built [`eris actions`](https://docs.erisindustries.com/documentation/eris-cli/latest/eris_actions/) which allows for a prebuilding of complex transaction sequences which would be needed to interact with and test various smart contract suites.
+We don't really "boot" smart contracts themselves and so they do not really need a configuration so to say. But we have built [`eris actions`](/docs/documentation/cli/latest/eris_actions/) which allows for a prebuilding of complex transaction sequences which would be needed to interact with and test various smart contract suites.
 
 # Tenet 3 of an Ecosystems Approach to Blockchaining
 

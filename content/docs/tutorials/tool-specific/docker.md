@@ -1,6 +1,6 @@
 ---
 
-layout: docs
+layout: single
 title: "Tutorials | Working with docker and eris"
 aliases:
     - /tutorials/2015/09/05/docker-and-eris/

@@ -1,14 +1,14 @@
 ---
 
-type:   wide
-title: "eris:keys Version Documentation"
+type:   docs
+layout: li
+title: "Documentation | Development Signing Daemon Tooling"
+path: "./content/docs/documentation/keys"
+index_file: "eris-keys"
+menu:
+  documentation:
+    weight: 40
 
 ---
 
-[0.12.0](0.12.0/eris-keys/) (current master branch)
-
-[0.11.3](0.11.3/eris-keys/)
-
-[0.11.1](0.11.1/eris-keys/)
-
-[0.11.0](0.11.0/eris-keys/)
+{{< github_readme "eris-keys" >}}

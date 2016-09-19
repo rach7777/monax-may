@@ -1,6 +1,6 @@
 ---
 
-layout:     documentation
+layout: single
 title:      "Documentation | eris:cli | eris actions do"
 
 ---
@@ -63,13 +63,13 @@ $ eris actions do dns register cutemarm 111.111.111.111 -- will populate $1 and 
 
 ## See Also
 
-* [eris actions](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/eris_actions/)	 - Manage and perform structured actions.
+* [eris actions](/docs/documentation/cli/0.11.3/eris_actions/)	 - Manage and perform structured actions.
 
 ## Specifications
 
-* [Actions Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/actions_specification/)
-* [Chains Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/chains_specification/)
-* [Contracts Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/contracts_specification/)
-* [Motivation](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/motivation/)
-* [Services Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/services_specification/)
+* [Actions Specification](/docs/documentation/cli/0.11.3/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/0.11.3/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/0.11.3/contracts_specification/)
+* [Motivation](/docs/documentation/cli/0.11.3/motivation/)
+* [Services Specification](/docs/documentation/cli/0.11.3/services_specification/)
 

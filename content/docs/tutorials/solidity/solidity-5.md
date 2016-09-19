@@ -1,6 +1,6 @@
 ---
 
-layout: docs
+layout: single
 title: "Tutorials | Solidity 5: Modular design and strategies"
 
 ---

@@ -1,6 +1,6 @@
 ---
 
-layout:     documentation
+layout: single
 title:      "Documentation | eris:cli | eris data import"
 
 ---
@@ -33,13 +33,13 @@ eris data import NAME SRC DEST
 
 ## See Also
 
-* [eris data](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_data/)	 - Manage data containers for your application.
+* [eris data](/docs/documentation/cli/0.11.4/eris_data/)	 - Manage data containers for your application.
 
 ## Specifications
 
-* [Actions Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/actions_specification/)
-* [Chains Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/chains_specification/)
-* [Contracts Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/contracts_specification/)
-* [Motivation](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/motivation/)
-* [Services Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/services_specification/)
+* [Actions Specification](/docs/documentation/cli/0.11.4/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/0.11.4/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/0.11.4/contracts_specification/)
+* [Motivation](/docs/documentation/cli/0.11.4/motivation/)
+* [Services Specification](/docs/documentation/cli/0.11.4/services_specification/)
 

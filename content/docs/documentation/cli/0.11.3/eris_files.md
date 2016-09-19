@@ -1,6 +1,6 @@
 ---
 
-layout:     documentation
+layout: single
 title:      "Documentation | eris:cli | eris files"
 
 ---
@@ -39,22 +39,22 @@ eris files
 
 ## Subcommands
 
-* [eris files cache](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/eris_files_cache/)	 - Cache files to IPFS.
-* [eris files cached](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/eris_files_cached/)	 - List files cached locally.
-* [eris files cat](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/eris_files_cat/)	 - Cat the contents of a file from IPFS.
-* [eris files get](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/eris_files_get/)	 - Pull files from IPFS via a hash and save them locally.
-* [eris files ls](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/eris_files_ls/)	 - List links from an IPFS object.
-* [eris files put](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/eris_files_put/)	 - Post files to IPFS.
+* [eris files cache](/docs/documentation/cli/0.11.3/eris_files_cache/)	 - Cache files to IPFS.
+* [eris files cached](/docs/documentation/cli/0.11.3/eris_files_cached/)	 - List files cached locally.
+* [eris files cat](/docs/documentation/cli/0.11.3/eris_files_cat/)	 - Cat the contents of a file from IPFS.
+* [eris files get](/docs/documentation/cli/0.11.3/eris_files_get/)	 - Pull files from IPFS via a hash and save them locally.
+* [eris files ls](/docs/documentation/cli/0.11.3/eris_files_ls/)	 - List links from an IPFS object.
+* [eris files put](/docs/documentation/cli/0.11.3/eris_files_put/)	 - Post files to IPFS.
 
 ## See Also
 
-* [eris](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/eris/)	 - The Blockchain Application Platform
+* [eris](/docs/documentation/cli/0.11.3/eris/)	 - The Blockchain Application Platform
 
 ## Specifications
 
-* [Actions Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/actions_specification/)
-* [Chains Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/chains_specification/)
-* [Contracts Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/contracts_specification/)
-* [Motivation](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/motivation/)
-* [Services Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.3/services_specification/)
+* [Actions Specification](/docs/documentation/cli/0.11.3/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/0.11.3/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/0.11.3/contracts_specification/)
+* [Motivation](/docs/documentation/cli/0.11.3/motivation/)
+* [Services Specification](/docs/documentation/cli/0.11.3/services_specification/)
 

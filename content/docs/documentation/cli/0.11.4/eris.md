@@ -1,6 +1,6 @@
 ---
 
-layout:     documentation
+layout: single
 title:      "Documentation | eris:cli | eris"
 
 ---
@@ -32,25 +32,25 @@ Version:
 
 ## Subcommands
 
-* [eris actions](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_actions/)	 - Manage and perform structured actions.
-* [eris chains](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_chains/)	 - Start, stop, and manage blockchains.
-* [eris clean](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_clean/)	 - Clean up your eris working environment.
-* [eris data](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_data/)	 - Manage data containers for your application.
-* [eris files](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_files/)	 - Manage files needed for your application using IPFS.
-* [eris init](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_init/)	 - Initialize your work space for smart contract glory.
-* [eris keys](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_keys/)	 - Do specific tasks with keys *for dev only*.
-* [eris ls](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_ls/)	 - List all the things eris knows about.
-* [eris man](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_man/)	 - Display a man page.
-* [eris pkgs](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_pkgs/)	 - Deploy, Test, and Manage Your Smart Contract Packages.
-* [eris services](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_services/)	 - Start, stop, and manage services required for your application
-* [eris update](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_update/)	 - Update the eris tool.
-* [eris version](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/eris_version/)	 - Display Eris's Platform Version.
+* [eris actions](/docs/documentation/cli/0.11.4/eris_actions/)	 - Manage and perform structured actions.
+* [eris chains](/docs/documentation/cli/0.11.4/eris_chains/)	 - Start, stop, and manage blockchains.
+* [eris clean](/docs/documentation/cli/0.11.4/eris_clean/)	 - Clean up your eris working environment.
+* [eris data](/docs/documentation/cli/0.11.4/eris_data/)	 - Manage data containers for your application.
+* [eris files](/docs/documentation/cli/0.11.4/eris_files/)	 - Manage files needed for your application using IPFS.
+* [eris init](/docs/documentation/cli/0.11.4/eris_init/)	 - Initialize your work space for smart contract glory.
+* [eris keys](/docs/documentation/cli/0.11.4/eris_keys/)	 - Do specific tasks with keys *for dev only*.
+* [eris ls](/docs/documentation/cli/0.11.4/eris_ls/)	 - List all the things eris knows about.
+* [eris man](/docs/documentation/cli/0.11.4/eris_man/)	 - Display a man page.
+* [eris pkgs](/docs/documentation/cli/0.11.4/eris_pkgs/)	 - Deploy, Test, and Manage Your Smart Contract Packages.
+* [eris services](/docs/documentation/cli/0.11.4/eris_services/)	 - Start, stop, and manage services required for your application
+* [eris update](/docs/documentation/cli/0.11.4/eris_update/)	 - Update the eris tool.
+* [eris version](/docs/documentation/cli/0.11.4/eris_version/)	 - Display Eris's Platform Version.
 
 ## Specifications
 
-* [Actions Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/actions_specification/)
-* [Chains Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/chains_specification/)
-* [Contracts Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/contracts_specification/)
-* [Motivation](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/motivation/)
-* [Services Specification](https://docs.erisindustries.com/documentation/eris-cli/0.11.4/services_specification/)
+* [Actions Specification](/docs/documentation/cli/0.11.4/actions_specification/)
+* [Chains Specification](/docs/documentation/cli/0.11.4/chains_specification/)
+* [Contracts Specification](/docs/documentation/cli/0.11.4/contracts_specification/)
+* [Motivation](/docs/documentation/cli/0.11.4/motivation/)
+* [Services Specification](/docs/documentation/cli/0.11.4/services_specification/)
 

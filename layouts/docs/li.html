@@ -1,0 +1,36 @@
+{{- $rootPage := in .File.Path "documentation/index.md" | or (in .File.Path "tutorials/index.md") | or (in .File.Path "explainers/index.md") -}}
+{{- $docsPage := in .File.Path "documentation" -}}
+{{- $tutsPage := in .File.Path "tutorials" -}}
+{{- $explPage := in .File.Path "explainers" -}}
+{{- partial "header.html" . -}}
+</head>
+<body class="docs-list">
+{{- partial "navigation.html" . -}}
+<div class="container-fluid" id="monax-page">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 page-header">
+        <header><h1 class="title" role="title">{{ .Title }}</h1></header>
+    </div>
+  </div>
+  <div class="row">
+    {{- if $rootPage -}}
+      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2" id="content-block">
+        {{- if $docsPage }}{{ partial "menu-docs.html" . }}{{- else if $tutsPage }}{{ partial "menu-tuts.html" . }}{{- else if $explPage }}{{ partial "menu-exp.html" . }}{{ end -}}
+      </div><!-- .cols -->
+    {{- else -}}
+      {{- if $docsPage }}{{ partial "sidebar-docs.html" . }}{{- else if $tutsPage }}{{ partial "sidebar-tuts.html" . }}{{- else if $explPage }}{{ partial "sidebar-exp.html" . }}{{ end -}}
+      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
+        <h2>{{- if $docsPage }}Versions{{- else if $tutsPage }}Tutorials{{- else if $explPage }}Explainers{{ end -}}</h2>
+        {{- partial "directory-index.html" . -}}
+        {{- if $docsPage -}}
+          <hr />
+          <h2>Introduction</h2>
+          {{ .Content }}
+        {{- end -}}
+      </div>
+    {{- end -}}
+  </div>
+</div>
+{{- partial "footer.html" . -}}
+{{- partial "scripts.html" . -}}
+{{- partial "analytics.html" . -}}

@@ -1,6 +1,6 @@
 ---
 
-layout: docs
+layout: single
 title: "Tutorials | Making a Permissioned Chain (Advanced)"
 
 ---

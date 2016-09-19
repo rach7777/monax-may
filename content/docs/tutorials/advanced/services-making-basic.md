@@ -1,6 +1,6 @@
 ---
 
-layout: docs
+layout: single
 title: "Tutorials | Making and Using eris-services"
 aliases:
   - /docs/documentation/services-making/

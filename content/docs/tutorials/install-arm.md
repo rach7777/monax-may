@@ -1,6 +1,6 @@
 ---
 
-layout: docs
+layout: single
 title: Tutorial | Install Eris blockchain tools on IoT (ARM) devices
 aliases:
    - /docs/documentation/install-eris-arm/
