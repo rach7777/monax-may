@@ -1,9 +1,10 @@
 ---
 
 type: wide
-title:      "Team"
-css:        team
-javascript: team
+title: "Company | Current Team"
+css:  team
+aliases:
+  - "/about/team"
 
 ---
 

@@ -1,19 +1,19 @@
 ---
 
-date: 2014-10-06
-title:      "platform"
-excerpt:    "The Distributed Application Platform | overview"
-menu:
-  main:
-    parent: platform
-weight:  10
+type:   docs
+layout: li
+title: "Platform"
+index_file: ""
+excerpt:    "The Ecosystem Application Platform"
+menu: "platform"
+path: "content/platform"
 aliases:
     - /docs/explainers/the-eris-stack/
 
 ---
 
 ```
-Eris is a platform for building, testing, maintaining, and operating ecosystem applications with a blockchain backend. Eris makes it easy and simple to wrangle the dragons of smart contract blockchains.
+{{ .Site.Data.sites.what_is_eris }}
 ```
 
 

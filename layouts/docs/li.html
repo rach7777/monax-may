@@ -2,6 +2,7 @@
 {{- $docsPage := in .File.Path "documentation" -}}
 {{- $tutsPage := in .File.Path "tutorials" -}}
 {{- $explPage := in .File.Path "explainers" -}}
+{{- $platPage := in .File.Path "platform" -}}
 {{- partial "header.html" . -}}
 </head>
 <body class="docs-list">
@@ -15,16 +16,21 @@
   <div class="row">
     {{- if $rootPage -}}
       <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2" id="content-block">
-        {{- if $docsPage }}{{ partial "menu-docs.html" . }}{{- else if $tutsPage }}{{ partial "menu-tuts.html" . }}{{- else if $explPage }}{{ partial "menu-exp.html" . }}{{ end -}}
+        {{- if $docsPage }}{{ partial "menu-docs.html" . }}{{- else if $tutsPage }}{{ partial "menu-tuts.html" . }}{{- else if $explPage }}{{ partial "menu-exp.html" . }}{{- else if $platPage }}{{ partial "menu-plat.html" . }}{{ end -}}
       </div><!-- .cols -->
     {{- else -}}
-      {{- if $docsPage }}{{ partial "sidebar-docs.html" . }}{{- else if $tutsPage }}{{ partial "sidebar-tuts.html" . }}{{- else if $explPage }}{{ partial "sidebar-exp.html" . }}{{ end -}}
+      {{- if $docsPage }}{{ partial "sidebar-docs.html" . }}{{- else if $tutsPage }}{{ partial "sidebar-tuts.html" . }}{{- else if $explPage }}{{ partial "sidebar-exp.html" . }}{{- else if $platPage }}{{ partial "sidebar-plat.html" . }}{{ end -}}
       <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
         <h2>{{- if $docsPage }}Versions{{- else if $tutsPage }}Tutorials{{- else if $explPage }}Explainers{{ end -}}</h2>
-        {{- partial "directory-index.html" . -}}
-        {{- if $docsPage -}}
-          <hr />
-          {{ .Content }}
+        {{- if $platPage -}}
+        {{- else -}}
+          {{- partial "directory-index.html" . -}}
+        {{- end -}}
+        {{- if $docsPage | or $platPage -}}
+          {{- if $docsPage }}<hr />{{ end -}}
+          <article id="main-content">
+            {{ .Content }}
+          </article>
         {{- end -}}
       </div>
     {{- end -}}

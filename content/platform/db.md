@@ -1,14 +1,15 @@
 ---
 
-date: 2014-10-06
-title:      "platform:db"
-excerpt:    "The Distributed Application Platform | db"
-menu:
-  main:
-    parent: platform
-weight:  30
+type:   docs
+layout: single
+index_file: ""
+title:      "Platform | Blockchain Client"
+excerpt:    "The Ecosystem Application Platform | db"
 aliases:
-- /components/erisdb/
+    - /components/erisdb/
+menu:
+  platform:
+    weight: 3
 
 ---
 

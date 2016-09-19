@@ -1,13 +1,9 @@
 ---
 
-date: 2014-10-06
-title:      "Products"
-menu:
-  main:
-    parent: products
-weight:  10
+type: wide
+title: "Company | Products"
 aliases:
-- /products/
+  - /products/
 
 ---
 

@@ -1,8 +1,8 @@
 <ul class="sidebar-menu nav nav-pills nav-stacked">
   {{ $currentNode := . }}
-  {{ range .Site.Menus.explainer }}
+  {{ range .Site.Menus.platform }}
     {{ if .HasChildren }}
-      <li class="sub-menu{{if $currentNode.HasMenuCurrent "explainer" . }} active{{end}}">
+      <li class="sub-menu{{if $currentNode.HasMenuCurrent "platform" . }} active{{end}}">
       <a href="javascript:;" class="">
         {{ .Pre }}
         <span>{{ .Name }}</span>
@@ -10,7 +10,7 @@
       </a>
       <ul class="sub">
         {{ range .Children }}
-        <li{{if $currentNode.IsMenuCurrent "explainer" . }} class="active"{{end}}><a href="{{.URL}}"> {{ .Name }} </a> </li>
+        <li{{if $currentNode.IsMenuCurrent "platform" . }} class="active"{{end}}><a href="{{.URL}}"> {{ .Name }} </a> </li>
         {{ end }}
       </ul>
       {{else}}
@@ -22,7 +22,7 @@
       </li>
     {{end}}
     {{end}}
-    <li><a href="/platform/" target="blank">Platform Overview</a></li>
+    <li><a href="/explainers/" target="blank">Explainers</a></li>
     <li><a href="/docs/documentation/" target="blank">Documentation</a></li>
     <li><a href="/docs/tutorials/" target="blank">Tutorials & Examples</a></li>
     <li><a href="{{ .Site.Data.sites.support }}" target="blank">Questions and Issues</a></li>

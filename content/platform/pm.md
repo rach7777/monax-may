@@ -1,13 +1,14 @@
 ---
 
-date: 2014-10-06
-title:      "platform:cm"
-excerpt:    "The Distributed Application Platform | cm"
-menu:
-  main:
-    parent: platform
-weight:  40
+type:   docs
+layout: single
+index_file: ""
+title:      "Platform | Package Management Tooling"
+excerpt:    "The Ecosystem Application Platform | pm"
 aliases:
-- /components/epm/
+    - /components/epm/
+menu:
+  platform:
+    weight: 5
 
 ---
