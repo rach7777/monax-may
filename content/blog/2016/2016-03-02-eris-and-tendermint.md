@@ -18,7 +18,7 @@ title: 'On Eris and Tendermint: Application and Consensus'
 url: /2016/03/02/eris-and-tendermint/
 ---
 
-At Eris and Tendermint, we're often asked: "what is the difference between Eris and Tendermint?"
+At Monax Industries and Tendermint, we're often asked: "what is the difference between Eris (Monax Industries' software) and Tendermint?"
 
 Apart from being two different companies and two different products, the simple answer boils down to application and consensus.
 
@@ -50,13 +50,13 @@ We made these design decisions because [proof-of-work consensus makes zero sense
 
 {{ page.date | date: "%Y" | append:'/marmots-and-mint.jpg' | img }}
 
-Eris Industries' relationship with Tendermint started shortly after we released our Alpha product in December of 2014 (thelonious/decerver), where we'd forked Ethereum, ripped the guts out of its consensus and replaced it with a bunch of smart contracts in order to create Eris:DB's predecessor - a design that was, the first (and for about six months, the only) permissioned blockchain in existence. Those of you who have been following the company for some time will remember we initially called it "Thelonious."
+Monax Industries' relationship with Tendermint started shortly after we released our Alpha product in December of 2014 (thelonious/decerver), where we'd forked Ethereum, ripped the guts out of its consensus and replaced it with a bunch of smart contracts in order to create Eris:DB's predecessor - a design that was, the first (and for about six months, the only) permissioned blockchain in existence. Those of you who have been following the company for some time will remember we initially called it "Thelonious."
 
 But a fork of an existing proof-of-work design was not going to cut it for us. So Ethan went searching for an alternative and about two months later, he stumbled on Tendermint.
 
 *"Byzantine Fault Tolerant consensus. With Proof-of-Stake."*
 
-"Awesome," thought Ethan. Shortly thereafter Eris Industries and Tendermint began collaborating on the Tendermint codebase and, over the next few months, [eris:db](https://erisindustries.com/components/erisdb/) was born.
+"Awesome," thought Ethan. Shortly thereafter Monax Industries and Tendermint began collaborating on the Tendermint codebase and, over the next few months, [eris:db](https://erisindustries.com/components/erisdb/) was born.
 
 ### Towards modularity
 
@@ -70,9 +70,9 @@ From the tips of his fingers the very next day:
 
 The tl;dr (though you should definitely read it!) for the above is: Two separate processes. Two separate states. Choose your application. Choose your consensus. And because consensus is at a lower level, it is perhaps (in some cases - not others) more important to get right.
 
-It's through that lens that we announce today, with mixed emotion, that Ethan will be leaving Eris to co-found Tendermint as CTO. Much like the codebase is being refactored, so are the companies. And we'll certainly be crossing paths again. Indeed, we've known each other for 5 years, lived together for 3, worked in the same research lab, and have pretty much been shooting the intellectual shit since we first met. And after I dropped out of grad school (because, you know, [Bitcoin](https://www.youtube.com/watch?v=ru-Z5kvd9js) ), he taught me how to code. Bitcoin is cool, no doubt (decentralized money and all), but when it comes down to it, the most exciting aspect of this technology is a plurality of chains with a plurality of consensus'. And the ongoing refactor (see again [On Applications and Consensus](https://eng.erisindustries.com/explainers/2016/02/22/apps-and-consensus/)) will help achieve this goal.
+It's through that lens that we announce today, with mixed emotion, that Ethan will be leaving Monax to co-found Tendermint as CTO. Much like the codebase is being refactored, so are the companies. And we'll certainly be crossing paths again. Indeed, we've known each other for 5 years, lived together for 3, worked in the same research lab, and have pretty much been shooting the intellectual shit since we first met. And after I dropped out of grad school (because, you know, [Bitcoin](https://www.youtube.com/watch?v=ru-Z5kvd9js) ), he taught me how to code. Bitcoin is cool, no doubt (decentralized money and all), but when it comes down to it, the most exciting aspect of this technology is a plurality of chains with a plurality of consensus'. And the ongoing refactor (see again [On Applications and Consensus](https://eng.erisindustries.com/explainers/2016/02/22/apps-and-consensus/)) will help achieve this goal.
 
-Although this ongoing transition has been a looming burden on several of us, I'm actually quite excited for what the future will bring. Even more so following the week Ethan and I spent in San Francisco with Jae and Dustin prior to [The Block Chain Conference](http://www.theblockchainconference.com/). We discussed at length the distinctions described in this post which should, moving forward, clarify the entrypoint for both developers and business folk looking to build out blockchain applications. I'll offer another analogy: Eris is a mechanic shop (read: Formula 1 pitstop) with most parts of the car built for you and Tendermint is the manufacturer of Ferrari engines. There you have it: application and consensus.
+Although this ongoing transition has been a looming burden on several of us, I'm actually quite excited for what the future will bring. Even more so following the week Ethan and I spent in San Francisco with Jae and Dustin prior to [The Block Chain Conference](http://www.theblockchainconference.com/). We discussed at length the distinctions described in this post which should, moving forward, clarify the entrypoint for both developers and business folk looking to build out blockchain applications. I'll offer another analogy: Monax is a mechanic shop (read: Formula 1 pitstop) with most parts of the car built for you and Tendermint is the manufacturer of Ferrari engines. There you have it: application and consensus.
 
 This shift towards seperation of the application and consensus will likely reap many benefits for the crypto ecosystem as a whole. The Bitcoin community is starting to realize this. In the words of [Muneeb Ali](https://medium.com/@muneeb/forking-a-network-86d1b766d38d#.a5k2kajx3):
 

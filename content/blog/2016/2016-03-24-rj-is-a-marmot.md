@@ -4,7 +4,7 @@ categories:
 - hiring
 comments: true
 date: 2016-03-24T00:00:00Z
-excerpt: We are immensely excited to announce that RJ Catalano has joined Eris as
+excerpt: We are immensely excited to announce that RJ Catalano has joined Monax as
   a developer on our Platform Team.
 meta: true
 published: true
@@ -16,9 +16,9 @@ title: RJ is a Marmot
 url: /2016/03/24/rj-is-a-marmot/
 ---
 
-I'm very pleased to announce that RJ Catalano has joined Eris as a developer on our platform team. He started last week and will be notionally working out of our New York office, but remote from Chicago.
+I'm very pleased to announce that RJ Catalano has joined Monax as a developer on our platform team. He started last week and will be notionally working out of our New York office, but remote from Chicago.
 
-At Eris, we have long been users of the Solidity programming language, however we have not been contributors to the language itself. This has always vexed us because we wanted to play a positive role in helping the language mature, where we were able.
+At Monax Industries, we have long been users of the Solidity programming language, however we have not been contributors to the language itself. This has always vexed us because we wanted to play a positive role in helping the language mature, where we were able.
 
 Recently, Brian had a conversation with Christian, the maintainer of Solidity, about how we could contribute. Christian recommended that we get in touch with RJ. And so I did. Luckily for us, RJ was interested in chatting. After he successfully finished our not entirely fast hiring process and finished up his commitments to his previous employer he started this week!
 
@@ -30,7 +30,7 @@ Over time I will be transfering maintainership of `eris:package_manager` and `er
 
 As we move into exploring more deeply smart contract machines which are not Ethereum Virtual Machine based (which is on our workplan), he will be deeply involved in how the tooling operates in that new and largely undefined space.
 
-The last major area that RJ will be assisting with is addressing needs which eris users have with respect to the Solidity language itself. RJ has already made significant contributions to the Solidity language, and we have long wanted to be "productive" users of that language by contributing where we can. We now have a marmot with the skills and ability to positively contribute rather than simply be ["only users"](https://db.erisindustries.com/distributed%20systems%20for%20business/2016/02/03/on-open-source-banks/).
+The last major area that RJ will be assisting with is addressing needs which our users have with respect to the Solidity language itself. RJ has already made significant contributions to the Solidity language, and we have long wanted to be "productive" users of that language by contributing where we can. We now have a marmot with the skills and ability to positively contribute rather than simply be ["only users"](https://db.erisindustries.com/distributed%20systems%20for%20business/2016/02/03/on-open-source-banks/).
 
 In addition, RJ is our most cryptocurrency friendly marmot, so he will likely be working on marmot-y outreach into that community where we feel we can add value to existing tooling and products in that space.
 

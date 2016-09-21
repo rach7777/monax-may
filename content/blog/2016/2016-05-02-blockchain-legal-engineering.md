@@ -33,9 +33,9 @@ Legal engineering ensures that information gets to the right place at the right 
 
 There’s no resting on one’s laurels in legal engineering. Successful legal tech  needs a team with energy, drive, vision, creativity and smarts to keep ahead of imitators who will inevitably create a commodity out of one’s innovative product.
 
-  *Enter the Eris marmots.*
+  *Enter the Monax marmots.*
 
-At Eris, we believe that the mechanism to allow smart contract technology to blossom into a thriving multichain environment is legal engineering, providing a system for distribution of verifiable knowledge when and where it is needed. Legal engineers use knowledge of human systems to build new models for people and their relationships with the world.
+At Monax, we believe that the mechanism to allow smart contract technology to blossom into a thriving multichain environment is legal engineering, providing a system for distribution of verifiable knowledge when and where it is needed. Legal engineers use knowledge of human systems to build new models for people and their relationships with the world.
 
 * Tools: Data Certainty and Legal Models
 
@@ -43,8 +43,8 @@ Smart contracts add to the legal engineer’s toolbox the novel element of *data
 
 To perfect the blockchain data certainty model, it is critical to start with the simplest legally effective documents: commercial paper. Commercial paper is a complex system based on promises and documentary conditions. Commercial paper law provides the elements of settlement finality, fungibility and protection against adverse claims, all of which blockchain engineers work hard to achieve. Settlement finality means that once a financial transaction occurs, it cannot be undone because of problems with the underlying transaction. Fungibility means one unit of value is the same as another and can be traded, apples-to-apples, like money. Adverse claims protection means that abiding by commercial paper best practices protects against multiple promises to pay secured by the same collateral, analogous to the bitcoin double-spend.
 
-These pre-baked commercial paper elements are the rails that will allow chains to interact and are the the focus of Eris’s early endeavors. To build a new ecosystem, we have to get the “paper” right, empowering synergistic growth on top of a stable foundation. With reliable financial models in place, participants will be free to begin building new relationships based on shared participation in blockchain commerce, creating a proliferation of chains and business models.
+These pre-baked commercial paper elements are the rails that will allow chains to interact and are the the focus of our early endeavors. To build a new ecosystem, we have to get the “paper” right, empowering synergistic growth on top of a stable foundation. With reliable financial models in place, participants will be free to begin building new relationships based on shared participation in blockchain commerce, creating a proliferation of chains and business models.
 
-Eris’s legal engineers will be right there, leading the way.
+Monax’s legal engineers will be right there, leading the way.
 
-*For information on putting Eris smart contracts libraries to work for you, please contact us at* [contact@erisindustries.com](mailto:contact@erisindustries.com).
+*For information on putting Monax Industries' smart contracts libraries to work for you, please contact us at* [contact@emonax.io](mailto:contact@monax.io).

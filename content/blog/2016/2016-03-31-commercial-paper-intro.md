@@ -10,11 +10,11 @@ published: true
 tags:
 - eris
 - commercial paper
-title: 'Eris Commercial Paper Bundles: Toolkit for Financial Engineering'
+title: 'Monax Commercial Paper Bundles: Toolkit for Financial Engineering'
 url: /2016/03/31/commercial-paper-intro/
 ---
 
-### Eris Commercial Paper Bundles: Toolkit for Financial Engineering
+### Monax Commercial Paper Bundles: Toolkit for Financial Engineering
 
 *An introduction to smart contracts for the digital non-native.*
 
@@ -43,11 +43,11 @@ For those whose job is to increase the amount of money in the financial system b
 
 In order for commerce to flow, fungibility of value items is critical, as is careful typing and classifying of rights, obligations and objects. For a value object to function as currency, it must flow through commerce with as few strings attached as possible. Lawyers, businesspeople and governments have grappled with this issue for centuries - and one such set of tools that has evolved is *commercial paper,* a type of debt obligation that specifically mimics the fungibility of fiat money while giving protection against adverse property claims (analogous to a cryptocurrency double-spend).
 
-Commercial paper value is based on a promise and obligation to pay money in the future. The basic unit of commercial paper, the promissory note, may be recombined in infinite ways. The flexibility and reliability of commercial paper systems allows businesses to use these tools for growth. [Eris debuted commercial paper prototypes with over 40 of the world's largest banks last month.](https://blog.erisindustries.com/announcements/2016/03/03/r3/)
+Commercial paper value is based on a promise and obligation to pay money in the future. The basic unit of commercial paper, the promissory note, may be recombined in infinite ways. The flexibility and reliability of commercial paper systems allows businesses to use these tools for growth. [Monax Industries debuted commercial paper prototypes with over 40 of the world's largest banks last month.](https://blog.erisindustries.com/announcements/2016/03/03/r3/)
 
-Eris's inaugural smart contract product, **Eris Industries’ Commercial Paper Software Bundles,** combines the obligation-based building blocks of commerce with smart contract potential. The ability to create promissory notes, issue shares and keep track of assets creates the toolkit for financial engineering: out of these simple structures flow complex uses like time notes, demand notes, order paper, bearer paper, corporate bonds, securities, stocks, dividends, debentures, certificates of deposit, drafts, loan originations, repurchase agreements, mutual funds, reinsurance and equity options, to name a few. 
+Monax's inaugural smart contract product, **Monax Industries’ Commercial Paper Software Bundles,** combines the obligation-based building blocks of commerce with smart contract potential. The ability to create promissory notes, issue shares and keep track of assets creates the toolkit for financial engineering: out of these simple structures flow complex uses like time notes, demand notes, order paper, bearer paper, corporate bonds, securities, stocks, dividends, debentures, certificates of deposit, drafts, loan originations, repurchase agreements, mutual funds, reinsurance and equity options, to name a few. 
 
-Crafted to work in multiple blockchain environments, Eris Commercial Paper Bundles deliver tools to build a strong smart contract use case system. Eris’s Commercial Paper is engineered for multidimensional applications, incorporating the lessons of history and precedent as well as the promise of the future.
+Crafted to work in multiple blockchain environments, Monax Commercial Paper Bundles deliver tools to build a strong smart contract use case system. Monax's Commercial Paper is engineered for multidimensional applications, incorporating the lessons of history and precedent as well as the promise of the future.
 
-To learn more about Eris Industries' Smart Contract Libraries subscriptions, please write us at <contact@erisindustries.com>.
+To learn more about Monax Industries' Smart Contract Libraries subscriptions, please write us at <contact@emonax.io>.
 
