@@ -17,6 +17,8 @@ title: 'From Blockchains to Eris: a step-by-step guide'
 url: /2014/12/27/step-by-step-eris/
 ---
 
+**Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
+
 ## 1) What is the problem we are trying to solve?
 
 Users of the modern internet have an immediate need for increased security, increased privacy, and increased efficiency of data management.

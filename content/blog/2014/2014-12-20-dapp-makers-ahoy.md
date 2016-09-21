@@ -16,6 +16,8 @@ title: Decerver and Thelonious from a DApp-maker Perspective
 url: /2014/12/20/dapp-makers-ahoy/
 ---
 
+**Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
+
 If someone is asking them self this question -- "I want to make distributed apps, why should I choose Eris' tools?", I will give a good answer.
 
 The way most of us got started was by making smart contracts and systems of smart contracts on Ethereum. Before Eris or Project Douglas, during the early PoC releases, Dennis was making dapps, and a little later (under his tutelage) so was I. At this point contract writing was very primitive, and the only way to write useful code was with LLL. This is still pretty much the case, although we have high hopes for Solidity and the new Serpent 2.0 -- the latter of which has been working well for us in our early testing. In those early days, you had to basically manage each byte yourself, where to put it in memory, etc. It was a lot of work for; even the smallest things.
