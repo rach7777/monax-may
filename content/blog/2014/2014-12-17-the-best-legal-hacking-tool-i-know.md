@@ -19,6 +19,8 @@ title: 'Why We Built the Best #Legalhack ing Tool I Know Of'
 url: /2014/12/17/the-best-legal-hacking-tool-i-know/
 ---
 
+**Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
+
 Over a year ago, I was working on sketches and outlines for a product I was very interested in working on called RMOC (short for Research-Read-Map-Outline-Compose-Consider) which was meant to be an integrated document environment (IDE) for people who work on developing documents, but mostly for lawyers. The sketches of why I thought this was an important project are available on [RMOC's Github](https://github.com/rmoc).
 
 ## Background

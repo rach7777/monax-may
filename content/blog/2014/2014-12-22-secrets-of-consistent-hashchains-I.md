@@ -15,6 +15,8 @@ title: 'Secrets of Consistent Hashchains I: Eventual Consistency'
 url: /2014/12/22/secrets-of-consistent-hashchains-I/
 ---
 
+**Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
+
 ## Blockchains
 
 A blockchain is a silly sort of a datastructure designed to keep thousands of computers in sync while providing a useful service that is not controlled or owned by anyone in particular. It employs the finite state machine approach, where the state of the system is updated sequentially, via atomic transitions (transactions) that are replicated across every machine, in order. In classic academic work on the subject, with a fixed set of trusted machines, a leader/master is selected from the set and put in charge of committing updates; in the event the leader fails, an election protocol is engaged to choose a new leader. This is useful, for example, for companies that need to maintain a synchronized database across multiple data centers around the world.
