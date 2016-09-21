@@ -4,7 +4,7 @@ categories:
 - hiring
 comments: true
 date: 2016-02-03T00:00:00Z
-excerpt: We are immensely excited to announce that Ben Bollen has joined Eris as a
+excerpt: We are immensely excited to announce that Ben Bollen has joined Monax as a
   Developer on our Platform Team.
 meta: true
 published: true
@@ -16,7 +16,7 @@ title: Ben is a Marmot
 url: /2016/02/03/ben-is-a-marmot/
 ---
 
-It is my great pleasure to announce that Ben Bollen has joined Eris as a developer on our platform team. Originally from Belguim, Ben will be working from our soon-to-be-opened office in Berlin.
+It is my great pleasure to announce that Ben Bollen has joined Monax Industries as a developer on our platform team. Originally from Belguim, Ben will be working from our soon-to-be-opened office in Berlin.
 
 Ben is a physicist and developer by training with extensive experience working on distributed computing. Ben is coming to us most recently from Maidsafe where he helped to refactor the code base into its release-able RUST base code base. In his capacity as Developer for the platform team, Ben will be deeply involved in the building of a scalable, language agnostic, `eris chains` smart contracts machine.
 

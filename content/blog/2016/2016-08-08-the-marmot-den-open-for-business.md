@@ -4,7 +4,7 @@ categories:
 - announcements
 comments: false
 date: 2016-08-08T00:00:00Z
-excerpt: Eris opens a community Slack - The Marmot Den
+excerpt: Monax opens a community Slack - The Marmot Den
 meta: true
 published: true
 tags:

@@ -4,7 +4,7 @@ categories:
 - hiring
 comments: true
 date: 2016-05-25T00:00:00Z
-excerpt: Two summer interns with awesome skills join Eris
+excerpt: Two summer interns with awesome skills join Monax
 meta: true
 published: true
 tags:
@@ -20,7 +20,7 @@ url: /2016/05/25/summer-marmots/
 
 Today, we're excited to announce two summer interns. 
 
-[Samir Patel](https://twitter.com/samirpatellaw) joins us as a law student from MSU Law and will be helping out the libraries team with, among other things, the legal accuracy of our smart contracts bundles. My first introduction to Samir was a DM on Slack a few months back, asking for help setting up eris on his computer. After a little hand holding, Samir got things going and was (mostly) off to the races. #lawyerswhocode-eventually. 
+[Samir Patel](https://twitter.com/samirpatellaw) joins us as a law student from MSU Law and will be helping out the libraries team with, among other things, the legal accuracy of our smart contracts bundles. My first introduction to Samir was a DM on Slack a few months back, asking for help setting up Eris on his computer. After a little hand holding, Samir got things going and was (mostly) off to the races. #lawyerswhocode-eventually. 
 
 Among other things, learning to program has this quirk of requiring one to learn a plethora of tools. One such tool, git, for version control, is essential and really ought to be a required class in high school (but I digress). So while passing through the region, I met up with Samir last month for a weekend of coding and [Moving the (Football) Chains to the Blockchain](https://db.erisindustries.com/distributed%20business/2016/04/02/moving-the-chains/). Yet another use case, though this one is particularly intriguing given the involvement of public funds in sport (stadiums). Hopefully he still remembers all those git commands. 
 

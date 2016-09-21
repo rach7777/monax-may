@@ -4,7 +4,7 @@ categories:
 - hiring
 comments: true
 date: 2016-05-12T00:00:00Z
-excerpt: We are immensely excited to announce that Jason Banks has joined Eris as
+excerpt: We are immensely excited to announce that Jason Banks has joined Monax as
   a legal engineer on our Library Team.
 meta: true
 published: true
@@ -16,13 +16,13 @@ title: Jason is a Marmot
 url: /2016/05/12/jason-is-a-marmot/
 ---
 
-I'm very pleased to announce that Jason Banks has joined Eris as a legal engineer on our library team. He started on Monday and will be working out of our Berlin office.
+I'm very pleased to announce that Jason Banks has joined Monax as a legal engineer on our library team. He started on Monday and will be working out of our Berlin office.
 
-When we first started Eris, I had a long conversation with our seed stage funders about who our target employees would be in the first few stages of our growth. One of the profiles we needed, which seemed insane in late 2014, was lawyer-coders. Those who sit at the intersection of law and code were rare in late 2014, and the market is not exactly saturated with these folks now. However, the market is also not absent such folks.
+When we first started Monax Industries (then called Eris Industries), I had a long conversation with our seed stage funders about who our target employees would be in the first few stages of our growth. One of the profiles we needed, which seemed insane in late 2014, was lawyer-coders. Those who sit at the intersection of law and code were rare in late 2014, and the market is not exactly saturated with these folks now. However, the market is also not absent such folks.
 
 This human capital need was based upon our revenue model, which even at that time was the same as it is now: selling bundles of enterprise grade smart contracts to large enterprises (and, soon, startups as well).
 
-These smart contracts are bundles of business logic which sit on top of various blockchain clients operating various blockchain networks (thus, why Eris is [blockchain agnostic](2016-04-03-wtf-is-eris.md)).
+These smart contracts are bundles of business logic which sit on top of various blockchain clients operating various blockchain networks (thus, why , our software, is [blockchain agnostic](2016-04-03-wtf-is-eris.md)).
 
 That is all well and good in the abstract one may say, but how does one *actually* do that? **Very carefully** is my usual answer.
 
@@ -36,7 +36,7 @@ Jason has one of the most marmot-y profiles one could imagine. He started his pr
 
 When we hired Ben he said he would be willing to move to Berlin where we are focusing most of our engineering side hires in Europe. That was great for us as we had been planning to build out our team in Berlin anyway. So Ben moved to Berlin, and lucky for us got an apartment across the street from Jason. As one does with new neighbors they ended up chatting. Ben found out that Jason was a coder who used to be a lawyer and so began the recruitment insurgency campaign.
 
-As Ben told Jason more about what we do at Eris, how we approach the technology, and where we are going, Jason (luckily for us) saw the harmony between the two professional tracks he'd been on. Being able to build legally compliant systems not in word documents, but in a text editor using code is something that many, many lawyers have dreamnt about. Some consider such dreams nightmares, others consider them pleasant. But pretty much everyone that has done document assembly for numerous deals, particularly in finance, has seen how methodical it can be and has wished there were machines around to take out the drudgery of it all.
+As Ben told Jason more about what we do at Monax, how we approach the technology, and where we are going, Jason (luckily for us) saw the harmony between the two professional tracks he'd been on. Being able to build legally compliant systems not in word documents, but in a text editor using code is something that many, many lawyers have dreamnt about. Some consider such dreams nightmares, others consider them pleasant. But pretty much everyone that has done document assembly for numerous deals, particularly in finance, has seen how methodical it can be and has wished there were machines around to take out the drudgery of it all.
 
 Jason has been hired as our second legal engineer. He will be pulling from both streams of his background to help us build compliant, scalable, modular, extensible frameworks for complex financial instruments, workflows, and decision mechanics. All using smart contract technology.
 

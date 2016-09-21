@@ -77,7 +77,7 @@ Drafted properly, fully-integrated contracts may be proved solely by documentary
 
 To ensure enforceability of legal relationships made in in blockchain data relationships, the simplest first step is to combine an integrated, enforceable contract with smart contract functions via dual integration. Dual integration links smart contracts and full legal contracts by reference to the contract’s storage address on the blockchain. Incorporating documents and objects by reference in legal documents is a familiar process to lawyers and delivers baseline enforceability industrial applications will demand.
 
-Smart contracts can deliver today the reliability of existing e-contract procedures. Meeting existing standards enables us to iterate more complex smart contracts over time, creating safer, transparent assets, creating efficiency and liberating dark data. While Eris Industries is building increasingly automated legal contracts, since the company’s inception we have recommended dual integration as a reliable, scalable way to build enforceable smart contracts.[16]
+Smart contracts can deliver today the reliability of existing e-contract procedures. Meeting existing standards enables us to iterate more complex smart contracts over time, creating safer, transparent assets, creating efficiency and liberating dark data. While Monax Industries is building increasingly automated legal contracts, since the company’s inception we have recommended dual integration as a reliable, scalable way to build enforceable smart contracts.[16]
 
 ### Self-enforcing smart contracts: the future of legal engineering
 
@@ -106,7 +106,7 @@ The size of the legal engineer’s undertaking is tremendous, but it is proporti
 13. *See generally* Lorna E. Gillies, Electronic Commerce and International Private Law: A Study of Electronic Consumer Contracts, Ch.2, Ashgate Publishing, Ltd (2013, 2016).
 14. *See, e.g.*, [UCC] 2-202](https://www.law.cornell.edu/ucc/2/2-202).
 15. *Id*; [F.R.E. 803](https://www.law.cornell.edu/rules/fre/rule_803).
-16. [Eris Industries' Dual Integration](https://erisindustries.com/components/erislegal/).
+16. [Monax Industries' Dual Integration](https://erisindustries.com/components/erislegal/).
 17. [Cross-Collateralization](https://en.wikipedia.org/wiki/Cross-collateralization).
 
 
