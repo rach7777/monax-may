@@ -21,10 +21,7 @@ setup() {
 cleanup() {
   echo "Cleaning"
 
-  if [ "$1" == "dev" ]
-  then
-    docker rm --force site_gulp_watch
-  fi
+  docker rm --force site_gulp_watch
   docker rm --force site_hugo_serve
 
   echo
@@ -76,13 +73,9 @@ serve_hugo() {
 }
 
 main() {
-  if [ "$1" == "dev" ]
-  then
-    # note, we may need to do a dump from the docker build here
-    serve_gulp
-    sleep 5
-  fi
   setup
+  serve_gulp
+  sleep 5
   serve_hugo
   trap "trap - SIGTERM; cleanup $@; kill -- -$$" SIGINT SIGTERM EXIT
   tail -f /dev/null & wait
