@@ -2,11 +2,11 @@
 
 type:   docs
 layout: li
-title: "Tutorials | Advanced"
+title: "Tutorials | Tool-Specific"
 index_file: ""
-path: "content/docs/tutorials/advanced"
+path: "content/docs/tutorials/tool-specific"
 menu:
   tutorial:
-    weight: 30
+    weight: 20
 
 ---
