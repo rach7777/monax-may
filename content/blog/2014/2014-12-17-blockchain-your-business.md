@@ -17,6 +17,8 @@ title: Blockchain your business in just 7 steps
 url: /2014/12/17/blockchain-your-business/
 ---
 
+**Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
+
 Can your business "go blockchain"? You bet it can. Just follow these seven easy steps, distilled from the Eris Industries  distributed systems cookbook, and you're rolling:
 
 1. (Re)Assess the landscape.

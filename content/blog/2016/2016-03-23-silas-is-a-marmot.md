@@ -4,7 +4,7 @@ categories:
 - hiring
 comments: true
 date: 2016-03-23T00:00:00Z
-excerpt: We are immensely excited to announce that Silas Davis has joined Eris as
+excerpt: We are immensely excited to announce that Silas Davis has joined Monax as
   a developer on our Platform Team.
 meta: true
 published: true
@@ -16,7 +16,7 @@ title: Silas is a Marmot
 url: /2016/03/23/silas-is-a-marmot/
 ---
 
-I'm very pleased to announce that Silas Davis has joined Eris as a developer on our platform team. He started this week and will be working out of our London office.
+I'm very pleased to announce that Silas Davis has joined Monax as a developer on our platform team. He started this week and will be working out of our London office.
 
 Silas got in touch with us after Preston first started the Company's public advocacy campaign against the #IPBill [in the middle of 2015](https://blog.erisindustries.com/2015/05/29/ei-comms-data-bill/). As a privacy advocate he was impressed that a little start up out of nowhere was going on national radio (which, oddly, is still a thing) and strongly advocating against what the government said it was planning to do.
 

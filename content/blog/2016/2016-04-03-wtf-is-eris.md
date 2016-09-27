@@ -41,11 +41,11 @@ If you're a developer in a blockchain startup who sees a gap in which you can pr
 
 If you're a developer within a financial services company tasked with a now massive influx of high level interest. You know, folks came back from the conferences all "blockchain-ed". If you're in that human's shoes how are you supposed to choose on what to build? There's smart contract chains and tokenized chains? There's hosted chains with APIs, and there's managed chains, and there's build my own chains? Reading blogs and whitepapers may be part of your job, but if you don't just get to building the PoC you'll spend your whole contract just evaluating options.
 
-This complexity and competition leads directly to what eris **actually is**, which in many cases is different than what folks **think it is**.
+This complexity and competition leads directly to what Eris, Monax Industries' software, **actually is**, which in many cases is different than what folks **think it is**.
 
 # Eris: The Vision
 
-Given all the above we have three focusing streams for designing what we build at eris.
+Given all the above we have three focusing streams for designing what we build at Monax Industries.
 
 > **Belief 1**: We are entering a world of a plurality of chains, a plurality of smart contract networks, and a plurality of applications which leverage that ecosystem.
 
@@ -53,7 +53,7 @@ Given all the above we have three focusing streams for designing what we build a
 
 > **Belief 3**: The value that our tech can provide is in automating business processes at a network level.
 
-All of the design and architecture and most of the reason that eris is built the way that it is, is a reflection of the above vision; which has been developed and refined during two years of building some of the most advanced cross-system ecosystem applications around.
+All of the design and architecture and most of the reason that Eris is built the way that it is, is a reflection of the above vision; which has been developed and refined during two years of building some of the most advanced cross-system ecosystem applications around.
 
 # Eris: Architecture That Embraces Plurality
 
@@ -155,7 +155,7 @@ The runtime won't, obviously, be for every blockchain and smart contract backed 
 
 ## eris:runtime:contracts
 
-Let's start at the top of the diagram. With the smart contracts "layer". What does that mean? Well, to us at Eris it means:
+Let's start at the top of the diagram. With the smart contracts "layer". What does that mean? Well, to us at Monax Industries it means:
 
 ```irc
 cryptographically verifiable computation over cryptographically verifiable data
@@ -163,7 +163,7 @@ cryptographically verifiable computation over cryptographically verifiable data
 
 While the term folks use is "smart contracts", what we are really talking about is "deterministic computation" (or "verifiable computation"). No matter what it is called, it is what is necessary to highly automate business processes **at the network level** (meaning the entire network performs the computation). The computation must be verified by many actors on the network who come to consensus as to the "correct" answer should there be any disagreement (or acts of god, or random errors, or malicious actors). In addition, nodes who join a network after its inception will be required to perform an audit function on the system as they "catch up" with the rest of the network; this means they have to fully verify the computation even much later in time. Which means the computation needs to be highly deterministic.
 
-This component will (very soon) begin its life as Ethereum's VM and the applications-relevant permissions of eris:db's current permission layer. (It's more or less equivalent in functionality to the "top half" of the current Tendermint chain client we use, only heavily updated) `eris:db` for the record will slowly be phased out as a term we use at eris. But the ideas of `eris:db`, like the ideas of `thelonious` before it, will be carried forward, extended and improved.
+This component will (very soon) begin its life as Ethereum's VM and the applications-relevant permissions of eris:db's current permission layer. (It's more or less equivalent in functionality to the "top half" of the current Tendermint chain client we use, only heavily updated) `eris:db` for the record will slowly be phased out as a term we use at Monax Industries. But the ideas of `eris:db`, like the ideas of `thelonious` before it, will be carried forward, extended and improved.
 
 By default `eris:runtime:contracts` will talk TMSP to a Tendermint Engine, which is in the midst of its own refactor to become a more "pure" consensus engine (It's more or less equivalent in functionality to the "bottom half" of the current Tendermint chain client we use, only heavily updated). `eris:runtime:contracts` is scheduled to be released in our 0.12.0 release.
 

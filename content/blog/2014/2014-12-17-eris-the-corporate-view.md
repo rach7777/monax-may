@@ -16,6 +16,8 @@ title: Meet Eris. The distributed computing solution for industry.
 url: /2014/12/17/eris-the-corporate-view/
 ---
 
+**Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
+
 <h1>Meet Eris.</h1>
 
 An introduction to the open alpha release of Eris in ten points:

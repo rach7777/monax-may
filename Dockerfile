@@ -1,7 +1,7 @@
 FROM quay.io/eris/build
 MAINTAINER Eris Industries <support@erisindustries.com>
 
-ENV NODE_VERSION=6.5.0-r0 HUGO_VERSION=0.16
+ENV NODE_VERSION=6.6.0-r0 HUGO_VERSION=0.16
 
 RUN apk add --no-cache automake autoconf nasm zlib-dev g++ make python nodejs=$NODE_VERSION && \
   go get github.com/spf13/hugo && \

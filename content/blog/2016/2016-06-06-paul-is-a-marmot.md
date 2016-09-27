@@ -4,7 +4,7 @@ categories:
 - hiring
 comments: true
 date: 2016-06-06T00:00:00Z
-excerpt: We are immensely excited to announce that Paul du Plessis has joined Eris
+excerpt: We are immensely excited to announce that Paul du Plessis has joined Monax
   as a senior product manager on our Success Team.
 meta: true
 published: true
@@ -16,7 +16,7 @@ title: Paul is a Marmot
 url: /2016/06/06/paul-is-a-marmot/
 ---
 
-I'm very pleased to announce that Paul du Plessis has joined Eris as a senior product manager on our success team. He started two weeks ago and will be working out of our Berlin office.
+I'm very pleased to announce that Paul du Plessis has joined Monax as a senior product manager on our success team. He started two weeks ago and will be working out of our Berlin office.
 
 Paul will be helping us in two primary, and very related areas. His primary duty will be as senior product manager. In this capacity he will provide the interface between our Library team who is responsible for building the smart contract bundles which provides the basis of our revenue side on the one hand and the sales team who is responsible for selling these bundles into the market.
 

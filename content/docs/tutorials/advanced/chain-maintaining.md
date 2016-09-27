@@ -240,6 +240,3 @@ do
 done
 ```
 
-# Where to next?
-
-**Let us [do some more advanced contracts work](/docs/tutorials/advanced/contracts-deploying).**

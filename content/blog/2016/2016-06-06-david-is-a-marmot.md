@@ -4,7 +4,7 @@ categories:
 - hiring
 comments: true
 date: 2016-06-06T00:00:00Z
-excerpt: We are immensely excited to announce that David Braun has joined Eris as
+excerpt: We are immensely excited to announce that David Braun has joined Monax as
   a software engineer on our Applications Team.
 meta: true
 published: true
@@ -16,7 +16,7 @@ title: David is (Officially) a Marmot
 url: /2016/06/06/david-is-a-marmot/
 ---
 
-I'm very pleased to announce that David Braun has joined Eris as a software engineer on our applications team. He will be working out of our New York office.
+I'm very pleased to announce that David Braun has joined Monax as a software engineer on our applications team. 
 
 Dave has actually been a marmot for quite a long little while now. Although only recently did he move into being a full-time employed marmot.
 

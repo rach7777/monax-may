@@ -96,7 +96,7 @@ Before I detail what these do, I think it would be helpful if I explain a bit ab
 
 The general way in which I explain smart contract systems to developers coming from a web application background is to start with a typical database-model-controller-view web app stack and to say that, essentially, what happens in smart contract backed applications is that we collapse the database and model layers into the smart contract layer, build a middleware (controller layer) and then a frontend (view layer). This helps communicate how we think of smart contract backed applications. It isn't a perfect analogy as indeed there are differences, but it gets us within the range of proper thought models.
 
-If we adopt an object-oriented paradigm for smart contract backed applications then we need a way to instantiate and track objects. In the Eris paradigm, which we've been working on for something like 18 months now, how we track objects is to use **smart contract factories**. Factories, in how we build smart contracts, perform two functions.
+If we adopt an object-oriented paradigm for smart contract backed applications then we need a way to instantiate and track objects. In the Monax paradigm, which we've been working on for something like 18 months now, how we track objects is to use **smart contract factories**. Factories, in how we build smart contracts, perform two functions.
 
 First they act in a similar way to how Class Definitions work in object oriented programming languages. In other words we use them to instantiate objects. Generally we instantiate single object contracts by using factories to create a unique contract which has the parameters that were included when the instantiation transaction arrived at the factory. To break this down a little bit, a general "new" function is built into a factory contract which has required parameters that must be sent along with the function call. What the "new" function generally does is to wrangle those parameters and to create a new, individual object contract, which has all of the required parameters.
 
@@ -162,6 +162,6 @@ Decentralized purists will get their hackles raised by this post because it is n
 
 The other thing which will raise the hackles of decentralized purists is that this application as currently overviewed does not get at a number of other problems streaming services must face, such as music discovery, gaurantees of play counts, decentralized content distribution, and other things. Those are all interesting problems, and indeed a music streaming service built by decentralized purists could get at some of those challenges, but likely not all of them. In any event, those problems were not among the problem set I was trying to overview within this post.
 
-This post was more about giving folks a bit of a feel for what types of systems Eris will be working towards over the course of 2016. An exiciting year, it will be!
+This post was more about giving folks a bit of a feel for what types of systems Monax Industries will be working towards over the course of 2016. An exiciting year, it will be!
 
 [(Photo credit: CC-BY-SA: bangdoll @ Flickr )](https://www.flickr.com/photos/bangdoll/)

@@ -3,6 +3,7 @@
 title: "Company | Products"
 aliases:
   - /products/
+type: company
 
 ---
 

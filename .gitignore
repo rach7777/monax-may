@@ -5,3 +5,4 @@ node_modules
 /public
 /static
 /data
+.DS_Store
