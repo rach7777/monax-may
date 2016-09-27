@@ -1,49 +1,64 @@
 ---
 
 layout: single
-title:      "Documentation | eris:cli | eris chains exec"
+type: docs
+title: "Documentation | Command Line Interface | eris chains exec"
 
 ---
 
 # eris chains exec
 
-Run a command or interactive shell
+Run A Command Or Interactive Shell
 
-## Synopsis
-
-Run a command or interactive shell in a container
-with volumes-from the data container
+## Usage
 
 ```bash
 eris chains exec NAME
 ```
 
+## Synopsis
+
+run a command or interactive shell in a container
+with volumes-from the data container
+
+
 ## Options
 
-```
-      --image="": Docker image
-  -i, --interactive[=false]: interactive shell
-  -p, --publish[=false]: publish random ports
+```bash
+  --image string   docker image
+  -i, --interactive    interactive shell
+  -l, --links value    multiple containers can be linked can be passed using the KEY1:val1,KEY2:val2 syntax (default [])
+      --ports string   reassign ports
+  -p, --publish        publish random ports
 ```
 
 ## Options inherited from parent commands
 
+```bash
+  -d, --debug            debug level output
+  -m, --machine string   machine name for docker-machine that is running VM (default "eris")
+  -v, --verbose          verbose output
 ```
-  -d, --debug[=false]: debug level output
-  -m, --machine="eris": machine name for docker-machine that is running VM
-  -n, --num=1: container number
-  -v, --verbose[=false]: verbose output
-```
+
+
 
 ## See Also
 
-* [eris chains](/docs/documentation/cli/latest/eris_chains/)	 - Start, stop, and manage blockchains.
+* [eris chains](/docs/documentation/cli/0.12.0-rc3/eris_chains/) - start, stop, and manage blockchains
 
-## Specifications
 
-* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
-* [Motivation](/docs/documentation/cli/latest/motivation/)
-* [Services Specification](/docs/documentation/cli/latest/services_specification/)
+
+
+# Examples
+
+* [Getting Started With Cloud Instances](/docs/documentation/cli/0.12.0-rc3/examples/getting_started_with_cloud_instances/)
+* [How To Make A Service](/docs/documentation/cli/0.12.0-rc3/examples/how_to_make_a_service/)
+* [Using Docker Machine With Eris](/docs/documentation/cli/0.12.0-rc3/examples/using_docker_machine_with_eris/)
+
+
+# Specifications
+
+* [Chains Specification](/docs/documentation/cli/0.12.0-rc3/specifications/chains_specification/)
+* [Motivation](/docs/documentation/cli/0.12.0-rc3/specifications/motivation/)
+* [Services Specification](/docs/documentation/cli/0.12.0-rc3/specifications/services_specification/)
 

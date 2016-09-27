@@ -1,61 +1,77 @@
 ---
 
 layout: single
-title:      "Documentation | eris:cli | eris services"
+type: docs
+title: "Documentation | Command Line Interface | eris services"
 
 ---
 
 # eris services
 
-Start, stop, and manage services required for your application.
+Start, Stop, And Manage Services Required For Your Application
 
-## Synopsis
-
-Start, stop, and manage services required for your application.
-
-Services are all services known and used by the Eris platform with the
-exception of blockchain services.
+## Usage
 
 ```bash
 eris services
 ```
 
+## Synopsis
+
+start, stop, and manage services required for your application
+
+Eris services are "things that you turn on or off". They are meant to be long
+running microservices on which your application relies. They can be public
+blockchains, services your application needs, workers, bridges to other data
+or process management systems, or pretty much any process that has a docker
+image.
+
+
+
+
 ## Options inherited from parent commands
 
-```
-  -d, --debug[=false]: debug level output
-  -m, --machine="eris": machine name for docker-machine that is running VM
-  -n, --num=1: container number
-  -v, --verbose[=false]: verbose output
+```bash
+  -d, --debug            debug level output
+  -m, --machine string   machine name for docker-machine that is running VM (default "eris")
+  -v, --verbose          verbose output
 ```
 
-## Subcommands
+# Subcommands
 
-* [eris services cat](/docs/documentation/cli/latest/eris_services_cat/)	 - Display the service definition file.
-* [eris services edit](/docs/documentation/cli/latest/eris_services_edit/)	 - Edit a service.
-* [eris services exec](/docs/documentation/cli/latest/eris_services_exec/)	 - Run a command or interactive shell
-* [eris services export](/docs/documentation/cli/latest/eris_services_export/)	 - Export a service definition file to IPFS.
-* [eris services import](/docs/documentation/cli/latest/eris_services_import/)	 - Import a service definition file from IPFS.
-* [eris services inspect](/docs/documentation/cli/latest/eris_services_inspect/)	 - Machine readable service operation details.
-* [eris services logs](/docs/documentation/cli/latest/eris_services_logs/)	 - Display the logs of a running service.
-* [eris services ls](/docs/documentation/cli/latest/eris_services_ls/)	 - Lists everything service related.
-* [eris services new](/docs/documentation/cli/latest/eris_services_new/)	 - Create a new service.
-* [eris services ports](/docs/documentation/cli/latest/eris_services_ports/)	 - Print port mappings
-* [eris services rename](/docs/documentation/cli/latest/eris_services_rename/)	 - Rename an installed service.
-* [eris services rm](/docs/documentation/cli/latest/eris_services_rm/)	 - Remove an installed service.
-* [eris services start](/docs/documentation/cli/latest/eris_services_start/)	 - Start a service.
-* [eris services stop](/docs/documentation/cli/latest/eris_services_stop/)	 - Stop a running service.
-* [eris services update](/docs/documentation/cli/latest/eris_services_update/)	 - Update an installed service.
+* [eris services make](/docs/documentation/cli/0.12.0-rc3/eris_services_make/) - create a new service
+* [eris services ls](/docs/documentation/cli/0.12.0-rc3/eris_services_ls/) - lists everything service related
+* [eris services edit](/docs/documentation/cli/0.12.0-rc3/eris_services_edit/) - edit a service
+* [eris services start](/docs/documentation/cli/0.12.0-rc3/eris_services_start/) - start a service
+* [eris services logs](/docs/documentation/cli/0.12.0-rc3/eris_services_logs/) - display the logs of a running service
+* [eris services inspect](/docs/documentation/cli/0.12.0-rc3/eris_services_inspect/) - machine readable service operation details
+* [eris services ip](/docs/documentation/cli/0.12.0-rc3/eris_services_ip/) - display service IP
+* [eris services ports](/docs/documentation/cli/0.12.0-rc3/eris_services_ports/) - print port mappings
+* [eris services exec](/docs/documentation/cli/0.12.0-rc3/eris_services_exec/) - run a command or interactive shell
+* [eris services stop](/docs/documentation/cli/0.12.0-rc3/eris_services_stop/) - stop a running service
+* [eris services rename](/docs/documentation/cli/0.12.0-rc3/eris_services_rename/) - rename an installed service
+* [eris services update](/docs/documentation/cli/0.12.0-rc3/eris_services_update/) - update an installed service
+* [eris services rm](/docs/documentation/cli/0.12.0-rc3/eris_services_rm/) - remove an installed service
+* [eris services cat](/docs/documentation/cli/0.12.0-rc3/eris_services_cat/) - display the service definition file
+
 
 ## See Also
 
-* [eris](/docs/documentation/cli/latest/eris/)	 - The Blockchain Application Platform
+* [eris](/docs/documentation/cli/0.12.0-rc3/eris/) - The Ecosystem Application Platform
 
-## Specifications
 
-* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
-* [Motivation](/docs/documentation/cli/latest/motivation/)
-* [Services Specification](/docs/documentation/cli/latest/services_specification/)
+
+
+# Examples
+
+* [Getting Started With Cloud Instances](/docs/documentation/cli/0.12.0-rc3/examples/getting_started_with_cloud_instances/)
+* [How To Make A Service](/docs/documentation/cli/0.12.0-rc3/examples/how_to_make_a_service/)
+* [Using Docker Machine With Eris](/docs/documentation/cli/0.12.0-rc3/examples/using_docker_machine_with_eris/)
+
+
+# Specifications
+
+* [Chains Specification](/docs/documentation/cli/0.12.0-rc3/specifications/chains_specification/)
+* [Motivation](/docs/documentation/cli/0.12.0-rc3/specifications/motivation/)
+* [Services Specification](/docs/documentation/cli/0.12.0-rc3/specifications/services_specification/)
 

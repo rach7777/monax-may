@@ -1,46 +1,59 @@
 ---
 
 layout: single
-title:      "Documentation | eris:cli | eris version"
+type: docs
+title: "Documentation | Command Line Interface | eris version"
 
 ---
 
 # eris version
 
-Display Eris's Platform Version.
+Display Eris'S Platform Version
 
-## Synopsis
-
-Display the current installed version of Eris.
+## Usage
 
 ```bash
 eris version
 ```
 
+## Synopsis
+
+display the current installed version of Eris
+
+
 ## Options
 
-```
-  -q, --quiet[=false]: machine readable output
+```bash
+  -q, --quiet   machine readable output
 ```
 
 ## Options inherited from parent commands
 
+```bash
+  -d, --debug            debug level output
+  -m, --machine string   machine name for docker-machine that is running VM (default "eris")
+  -v, --verbose          verbose output
 ```
-  -d, --debug[=false]: debug level output
-  -m, --machine="eris": machine name for docker-machine that is running VM
-  -n, --num=1: container number
-  -v, --verbose[=false]: verbose output
-```
+
+
 
 ## See Also
 
-* [eris](/docs/documentation/cli/latest/eris/)	 - The Blockchain Application Platform
+* [eris](/docs/documentation/cli/0.12.0-rc3/eris/) - The Ecosystem Application Platform
 
-## Specifications
 
-* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
-* [Motivation](/docs/documentation/cli/latest/motivation/)
-* [Services Specification](/docs/documentation/cli/latest/services_specification/)
+
+
+# Examples
+
+* [Getting Started With Cloud Instances](/docs/documentation/cli/0.12.0-rc3/examples/getting_started_with_cloud_instances/)
+* [How To Make A Service](/docs/documentation/cli/0.12.0-rc3/examples/how_to_make_a_service/)
+* [Using Docker Machine With Eris](/docs/documentation/cli/0.12.0-rc3/examples/using_docker_machine_with_eris/)
+
+
+# Specifications
+
+* [Chains Specification](/docs/documentation/cli/0.12.0-rc3/specifications/chains_specification/)
+* [Motivation](/docs/documentation/cli/0.12.0-rc3/specifications/motivation/)
+* [Services Specification](/docs/documentation/cli/0.12.0-rc3/specifications/services_specification/)
 

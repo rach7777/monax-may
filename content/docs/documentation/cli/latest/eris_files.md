@@ -1,18 +1,25 @@
 ---
 
 layout: single
-title:      "Documentation | eris:cli | eris files"
+type: docs
+title: "Documentation | Command Line Interface | eris files"
 
 ---
 
 # eris files
 
-Manage files needed for your application using IPFS.
+Manage Files Needed For Your Application Using IPFS
+
+## Usage
+
+```bash
+eris files
+```
 
 ## Synopsis
 
-The files subcommand is used to import, and export
-files to and from IPFS for use on the host machine.
+the files subcommand is used to import, and export
+files to and from IPFS for use on the host machine
 
 These commands are provided in addition to the various
 functionality which is included throughout the tool, such as
@@ -25,37 +32,44 @@ will fail. If you get errors when running eris files commands
 then please run [eris services start ipfs] give that a second
 or two to boot and then retry the eris files command which failed.
 
-```bash
-eris files
-```
+
+
 
 ## Options inherited from parent commands
 
-```
-  -d, --debug[=false]: debug level output
-  -m, --machine="eris": machine name for docker-machine that is running VM
-  -n, --num=1: container number
-  -v, --verbose[=false]: verbose output
+```bash
+  -d, --debug            debug level output
+  -m, --machine string   machine name for docker-machine that is running VM (default "eris")
+  -v, --verbose          verbose output
 ```
 
-## Subcommands
+# Subcommands
 
-* [eris files cache](/docs/documentation/cli/latest/eris_files_cache/)	 - Cache files to IPFS.
-* [eris files cached](/docs/documentation/cli/latest/eris_files_cached/)	 - List files cached locally.
-* [eris files cat](/docs/documentation/cli/latest/eris_files_cat/)	 - Cat the contents of a file from IPFS.
-* [eris files get](/docs/documentation/cli/latest/eris_files_get/)	 - Pull files from IPFS via a hash and save them locally.
-* [eris files ls](/docs/documentation/cli/latest/eris_files_ls/)	 - List links from an IPFS object.
-* [eris files put](/docs/documentation/cli/latest/eris_files_put/)	 - Post files to IPFS.
+* [eris files get](/docs/documentation/cli/0.12.0-rc3/eris_files_get/) - pull files/objects from IPFS via a hash and save them locally, requires the [--output] flag
+* [eris files put](/docs/documentation/cli/0.12.0-rc3/eris_files_put/) - post files or whole directories to IPFS
+* [eris files cache](/docs/documentation/cli/0.12.0-rc3/eris_files_cache/) - cache files to IPFS
+* [eris files cat](/docs/documentation/cli/0.12.0-rc3/eris_files_cat/) - cat the contents of a file from IPFS
+* [eris files ls](/docs/documentation/cli/0.12.0-rc3/eris_files_ls/) - list links from an IPFS object
+* [eris files cached](/docs/documentation/cli/0.12.0-rc3/eris_files_cached/) - list files cached locally
+
 
 ## See Also
 
-* [eris](/docs/documentation/cli/latest/eris/)	 - The Blockchain Application Platform
+* [eris](/docs/documentation/cli/0.12.0-rc3/eris/) - The Ecosystem Application Platform
 
-## Specifications
 
-* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
-* [Motivation](/docs/documentation/cli/latest/motivation/)
-* [Services Specification](/docs/documentation/cli/latest/services_specification/)
+
+
+# Examples
+
+* [Getting Started With Cloud Instances](/docs/documentation/cli/0.12.0-rc3/examples/getting_started_with_cloud_instances/)
+* [How To Make A Service](/docs/documentation/cli/0.12.0-rc3/examples/how_to_make_a_service/)
+* [Using Docker Machine With Eris](/docs/documentation/cli/0.12.0-rc3/examples/using_docker_machine_with_eris/)
+
+
+# Specifications
+
+* [Chains Specification](/docs/documentation/cli/0.12.0-rc3/specifications/chains_specification/)
+* [Motivation](/docs/documentation/cli/0.12.0-rc3/specifications/motivation/)
+* [Services Specification](/docs/documentation/cli/0.12.0-rc3/specifications/services_specification/)
 

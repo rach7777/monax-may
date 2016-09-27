@@ -1,46 +1,61 @@
 ---
 
 layout: single
-title:      "Documentation | eris:cli | eris data import"
+type: docs
+title: "Documentation | Command Line Interface | eris data import"
 
 ---
 
 # eris data import
 
-Import ~/.eris/data/name folder to a named data container
+Import From A Host Folder To A Named Data Container'S Directory
+
+## Usage
+
+```bash
+eris data import NAME SRC DEST
+```
 
 ## Synopsis
 
-Import ~/.eris/data/name folder to a named data container
+import from a host folder to a named data container's directory
+Requires src and dest for each host and container, respectively.
+Container path enters at /home/eris/.eris and destination directory
+will be created in container if it does not exist.
 
-```bash
-eris data import NAME
-```
+Command will also create a new data container if data container
+NAME does not exist
 
-## Options
 
-```
-      --dest="": destination for import into data container
-```
+
 
 ## Options inherited from parent commands
 
+```bash
+  -d, --debug            debug level output
+  -m, --machine string   machine name for docker-machine that is running VM (default "eris")
+  -v, --verbose          verbose output
 ```
-  -d, --debug[=false]: debug level output
-  -m, --machine="eris": machine name for docker-machine that is running VM
-  -n, --num=1: container number
-  -v, --verbose[=false]: verbose output
-```
+
+
 
 ## See Also
 
-* [eris data](/docs/documentation/cli/latest/eris_data/)	 - Manage data containers for your application.
+* [eris data](/docs/documentation/cli/0.12.0-rc3/eris_data/) - manage data containers for your application
 
-## Specifications
 
-* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
-* [Motivation](/docs/documentation/cli/latest/motivation/)
-* [Services Specification](/docs/documentation/cli/latest/services_specification/)
+
+
+# Examples
+
+* [Getting Started With Cloud Instances](/docs/documentation/cli/0.12.0-rc3/examples/getting_started_with_cloud_instances/)
+* [How To Make A Service](/docs/documentation/cli/0.12.0-rc3/examples/how_to_make_a_service/)
+* [Using Docker Machine With Eris](/docs/documentation/cli/0.12.0-rc3/examples/using_docker_machine_with_eris/)
+
+
+# Specifications
+
+* [Chains Specification](/docs/documentation/cli/0.12.0-rc3/specifications/chains_specification/)
+* [Motivation](/docs/documentation/cli/0.12.0-rc3/specifications/motivation/)
+* [Services Specification](/docs/documentation/cli/0.12.0-rc3/specifications/services_specification/)
 

@@ -1,40 +1,62 @@
 ---
 
 layout: single
-title:      "Documentation | eris:cli | eris services ports"
+type: docs
+title: "Documentation | Command Line Interface | eris services ports"
 
 ---
 
 # eris services ports
 
-Print port mappings
+Print Port Mappings
+
+## Usage
+
+```bash
+eris services ports NAME [PORT]...
+```
 
 ## Synopsis
 
-Print port mappings
+print port mappings
 
-```bash
-eris services ports PORT
-```
+The [eris services ports] command displays published service ports.
+
+
+
 
 ## Options inherited from parent commands
 
+```bash
+  -d, --debug            debug level output
+  -m, --machine string   machine name for docker-machine that is running VM (default "eris")
+  -v, --verbose          verbose output
 ```
-  -d, --debug[=false]: debug level output
-  -m, --machine="eris": machine name for docker-machine that is running VM
-  -n, --num=1: container number
-  -v, --verbose[=false]: verbose output
-```
+
+
 
 ## See Also
 
-* [eris services](/docs/documentation/cli/latest/eris_services/)	 - Start, stop, and manage services required for your application.
+* [eris services](/docs/documentation/cli/0.12.0-rc3/eris_services/) - start, stop, and manage services required for your application
 
-## Specifications
 
-* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
-* [Motivation](/docs/documentation/cli/latest/motivation/)
-* [Services Specification](/docs/documentation/cli/latest/services_specification/)
+# Quick Tips
+
+```bash
+$ eris services ports ipfs -- will display all IPFS ports
+$ eris services ports ipfs 4001 5001 -- will display specific IPFS ports
+```
+
+# Examples
+
+* [Getting Started With Cloud Instances](/docs/documentation/cli/0.12.0-rc3/examples/getting_started_with_cloud_instances/)
+* [How To Make A Service](/docs/documentation/cli/0.12.0-rc3/examples/how_to_make_a_service/)
+* [Using Docker Machine With Eris](/docs/documentation/cli/0.12.0-rc3/examples/using_docker_machine_with_eris/)
+
+
+# Specifications
+
+* [Chains Specification](/docs/documentation/cli/0.12.0-rc3/specifications/chains_specification/)
+* [Motivation](/docs/documentation/cli/0.12.0-rc3/specifications/motivation/)
+* [Services Specification](/docs/documentation/cli/0.12.0-rc3/specifications/services_specification/)
 

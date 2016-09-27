@@ -1,40 +1,55 @@
 ---
 
 layout: single
-title:      "Documentation | eris:cli | eris files cat"
+type: docs
+title: "Documentation | Command Line Interface | eris files cat"
 
 ---
 
 # eris files cat
 
-Cat the contents of a file from IPFS.
+Cat The Contents Of A File From IPFS
 
-## Synopsis
-
-Cat the contents of a file from IPFS.
+## Usage
 
 ```bash
 eris files cat HASH
 ```
 
+## Synopsis
+
+cat the contents of a file from IPFS
+
+
+
+
 ## Options inherited from parent commands
 
+```bash
+  -d, --debug            debug level output
+  -m, --machine string   machine name for docker-machine that is running VM (default "eris")
+  -v, --verbose          verbose output
 ```
-  -d, --debug[=false]: debug level output
-  -m, --machine="eris": machine name for docker-machine that is running VM
-  -n, --num=1: container number
-  -v, --verbose[=false]: verbose output
-```
+
+
 
 ## See Also
 
-* [eris files](/docs/documentation/cli/latest/eris_files/)	 - Manage files needed for your application using IPFS.
+* [eris files](/docs/documentation/cli/0.12.0-rc3/eris_files/) - manage files needed for your application using IPFS
 
-## Specifications
 
-* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
-* [Motivation](/docs/documentation/cli/latest/motivation/)
-* [Services Specification](/docs/documentation/cli/latest/services_specification/)
+
+
+# Examples
+
+* [Getting Started With Cloud Instances](/docs/documentation/cli/0.12.0-rc3/examples/getting_started_with_cloud_instances/)
+* [How To Make A Service](/docs/documentation/cli/0.12.0-rc3/examples/how_to_make_a_service/)
+* [Using Docker Machine With Eris](/docs/documentation/cli/0.12.0-rc3/examples/using_docker_machine_with_eris/)
+
+
+# Specifications
+
+* [Chains Specification](/docs/documentation/cli/0.12.0-rc3/specifications/chains_specification/)
+* [Motivation](/docs/documentation/cli/0.12.0-rc3/specifications/motivation/)
+* [Services Specification](/docs/documentation/cli/0.12.0-rc3/specifications/services_specification/)
 

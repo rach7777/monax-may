@@ -1,66 +1,83 @@
 ---
 
 layout: single
-title:      "Documentation | eris:cli | eris data"
+type: docs
+title: "Documentation | Command Line Interface | eris data"
 
 ---
 
 # eris data
 
-Manage data containers for your application.
+Manage Data Containers For Your Application
 
-## Synopsis
-
-The data subcommand is used to import, and export
-data into containers for use by your application.
-
-The [eris data import] and [eris data export] commands should be
-thought of from the point of view of the container.
-
-The [eris data import] command sends files *as is* from
-~/.eris/data/NAME on the host to ~/.eris/ inside
-of the data container.
-
-The [eris data export] command performs this process in the reverse.
-It sucks out whatever is in the volumes of the data container
-and sticks it back into ~/.eris/data/NAME on the host.
-
-At Eris, we use this functionality to formulate little JSONs
-and configs on the host and then "stick them back into the
-containers"
+## Usage
 
 ```bash
 eris data
 ```
 
+## Synopsis
+
+the data subcommand is used to import, and export
+data into containers for use by your application
+
+The [eris data import] and [eris data export] commands should be
+thought of from the point of view of the container.
+
+The [eris data import] command sends a directory *as is* from
+SRC on the host to an existing DEST inside of the data container.
+
+The [eris data export] command performs this process in the reverse.
+It sucks out whatever is in the SRC directory in the data container
+and sticks it back into a DEST directory on the host.
+
+Notes:
+- container paths enter at /home/eris/.eris
+- import host path must be absolute, export host path is indifferent
+
+At Eris, we use this functionality to formulate little JSONs
+and configs on the host and then "stick them back into the
+containers"
+
+
+
+
 ## Options inherited from parent commands
 
-```
-  -d, --debug[=false]: debug level output
-  -m, --machine="eris": machine name for docker-machine that is running VM
-  -n, --num=1: container number
-  -v, --verbose[=false]: verbose output
+```bash
+  -d, --debug            debug level output
+  -m, --machine string   machine name for docker-machine that is running VM (default "eris")
+  -v, --verbose          verbose output
 ```
 
-## Subcommands
+# Subcommands
 
-* [eris data exec](/docs/documentation/cli/latest/eris_data_exec/)	 - Run a command or interactive shell in a data container
-* [eris data export](/docs/documentation/cli/latest/eris_data_export/)	 - Export a named data container's volumes to ~/.eris/data/name
-* [eris data import](/docs/documentation/cli/latest/eris_data_import/)	 - Import ~/.eris/data/name folder to a named data container
-* [eris data inspect](/docs/documentation/cli/latest/eris_data_inspect/)	 - Show machine readable details.
-* [eris data ls](/docs/documentation/cli/latest/eris_data_ls/)	 - List the data containers eris manages for you
-* [eris data rename](/docs/documentation/cli/latest/eris_data_rename/)	 - Rename a data container
-* [eris data rm](/docs/documentation/cli/latest/eris_data_rm/)	 - Remove a data container
+* [eris data import](/docs/documentation/cli/0.12.0-rc3/eris_data_import/) - import from a host folder to a named data container's directory
+* [eris data ls](/docs/documentation/cli/0.12.0-rc3/eris_data_ls/) - list the data containers eris manages for you
+* [eris data rename](/docs/documentation/cli/0.12.0-rc3/eris_data_rename/) - rename a data container
+* [eris data inspect](/docs/documentation/cli/0.12.0-rc3/eris_data_inspect/) - show machine readable details
+* [eris data export](/docs/documentation/cli/0.12.0-rc3/eris_data_export/) - export a named data container's directory to a host directory
+* [eris data exec](/docs/documentation/cli/0.12.0-rc3/eris_data_exec/) - run a command or interactive shell in a data container
+* [eris data rm](/docs/documentation/cli/0.12.0-rc3/eris_data_rm/) - remove a data container
+
 
 ## See Also
 
-* [eris](/docs/documentation/cli/latest/eris/)	 - The Blockchain Application Platform
+* [eris](/docs/documentation/cli/0.12.0-rc3/eris/) - The Ecosystem Application Platform
 
-## Specifications
 
-* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
-* [Motivation](/docs/documentation/cli/latest/motivation/)
-* [Services Specification](/docs/documentation/cli/latest/services_specification/)
+
+
+# Examples
+
+* [Getting Started With Cloud Instances](/docs/documentation/cli/0.12.0-rc3/examples/getting_started_with_cloud_instances/)
+* [How To Make A Service](/docs/documentation/cli/0.12.0-rc3/examples/how_to_make_a_service/)
+* [Using Docker Machine With Eris](/docs/documentation/cli/0.12.0-rc3/examples/using_docker_machine_with_eris/)
+
+
+# Specifications
+
+* [Chains Specification](/docs/documentation/cli/0.12.0-rc3/specifications/chains_specification/)
+* [Motivation](/docs/documentation/cli/0.12.0-rc3/specifications/motivation/)
+* [Services Specification](/docs/documentation/cli/0.12.0-rc3/specifications/services_specification/)
 

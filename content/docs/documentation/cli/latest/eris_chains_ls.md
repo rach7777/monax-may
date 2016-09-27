@@ -1,59 +1,79 @@
 ---
 
 layout: single
-title:      "Documentation | eris:cli | eris chains ls"
+type: docs
+title: "Documentation | Command Line Interface | eris chains ls"
 
 ---
 
 # eris chains ls
 
-Lists everything chain related.
+Lists Everything Chain Related
 
-## Synopsis
-
-Lists all: chain definition files (--known), current existing
-containers for each chain (--existing), current running containers for each
-chain (--running).
-
-If no known chains exist yet, create a new blockchain with: [eris chains new NAME]
-command.
-
-To install and fetch a blockchain from a chain definition file,
-use [eris chains install NAME] command.
-
-Services are handled using the [eris services] command.
+## Usage
 
 ```bash
 eris chains ls
 ```
 
+## Synopsis
+
+list chains or known chain definition files
+
+The -r flag limits the output to running chains only.
+
+The --json flag dumps the container or known files information
+in the JSON format.
+
+The -q flag is equivalent to the '{{.ShortName}}' format.
+
+The -f flag specifies an alternate format for the list, using the syntax
+of Go text templates. See the more detailed description in the help
+output for the [eris ls] command.
+
+
 ## Options
 
-```
-  -e, --existing[=false]: list all the all current containers which exist for a chain
-  -k, --known[=false]: list all the chain definition files that exist
-  -q, --quiet[=false]: machine parsable output
-  -r, --running[=false]: list all the current containers which are running for a chain
+```bash
+  -a, --all             show extended output
+  -f, --format string   alternate format for columnized output
+      --json            machine readable output
+  -q, --quiet           show a list of chain names
+  -r, --running         show running containers
 ```
 
 ## Options inherited from parent commands
 
+```bash
+  -d, --debug            debug level output
+  -m, --machine string   machine name for docker-machine that is running VM (default "eris")
+  -v, --verbose          verbose output
 ```
-  -d, --debug[=false]: debug level output
-  -m, --machine="eris": machine name for docker-machine that is running VM
-  -n, --num=1: container number
-  -v, --verbose[=false]: verbose output
-```
+
+
 
 ## See Also
 
-* [eris chains](/docs/documentation/cli/latest/eris_chains/)	 - Start, stop, and manage blockchains.
+* [eris chains](/docs/documentation/cli/0.12.0-rc3/eris_chains/) - start, stop, and manage blockchains
 
-## Specifications
 
-* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
-* [Motivation](/docs/documentation/cli/latest/motivation/)
-* [Services Specification](/docs/documentation/cli/latest/services_specification/)
+# Quick Tips
+
+```bash
+$ eris chains ls -f '{{.ShortName}} {{.Info.Config.Image}} {{ports .Info}}'
+$ eris chains ls -f '{{.ShortName}}\t{{.Info.State}}'
+```
+
+# Examples
+
+* [Getting Started With Cloud Instances](/docs/documentation/cli/0.12.0-rc3/examples/getting_started_with_cloud_instances/)
+* [How To Make A Service](/docs/documentation/cli/0.12.0-rc3/examples/how_to_make_a_service/)
+* [Using Docker Machine With Eris](/docs/documentation/cli/0.12.0-rc3/examples/using_docker_machine_with_eris/)
+
+
+# Specifications
+
+* [Chains Specification](/docs/documentation/cli/0.12.0-rc3/specifications/chains_specification/)
+* [Motivation](/docs/documentation/cli/0.12.0-rc3/specifications/motivation/)
+* [Services Specification](/docs/documentation/cli/0.12.0-rc3/specifications/services_specification/)
 

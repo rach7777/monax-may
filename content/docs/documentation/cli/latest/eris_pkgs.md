@@ -2,23 +2,24 @@
 
 layout: single
 type: docs
-title: "Documentation | Command Line Interface | eris services rename"
+title: "Documentation | Command Line Interface | eris pkgs"
 
 ---
 
-# eris services rename
+# eris pkgs
 
-Rename An Installed Service
+Deploy, Test, And Manage Your Smart Contract Packages
 
 ## Usage
 
 ```bash
-eris services rename OLD_NAME NEW_NAME
+eris pkgs
 ```
 
 ## Synopsis
 
-rename an installed service
+the pkgs subcommand is used to test and deploy
+smart contract packages for use by your application
 
 
 
@@ -31,11 +32,14 @@ rename an installed service
   -v, --verbose          verbose output
 ```
 
+# Subcommands
+
+* [eris pkgs do](/docs/documentation/cli/0.12.0-rc3/eris_pkgs_do/) - deploy or test a package of smart contracts to a chain
 
 
 ## See Also
 
-* [eris services](/docs/documentation/cli/0.12.0-rc3/eris_services/) - start, stop, and manage services required for your application
+* [eris](/docs/documentation/cli/0.12.0-rc3/eris/) - The Ecosystem Application Platform
 
 
 

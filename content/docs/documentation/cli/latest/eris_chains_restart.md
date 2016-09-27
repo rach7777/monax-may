@@ -2,23 +2,23 @@
 
 layout: single
 type: docs
-title: "Documentation | Command Line Interface | eris services rename"
+title: "Documentation | Command Line Interface | eris chains restart"
 
 ---
 
-# eris services rename
+# eris chains restart
 
-Rename An Installed Service
+Restart Chain
 
 ## Usage
 
 ```bash
-eris services rename OLD_NAME NEW_NAME
+eris chains restart NAME
 ```
 
 ## Synopsis
 
-rename an installed service
+restart chain
 
 
 
@@ -35,7 +35,7 @@ rename an installed service
 
 ## See Also
 
-* [eris services](/docs/documentation/cli/0.12.0-rc3/eris_services/) - start, stop, and manage services required for your application
+* [eris chains](/docs/documentation/cli/0.12.0-rc3/eris_chains/) - start, stop, and manage blockchains
 
 
 

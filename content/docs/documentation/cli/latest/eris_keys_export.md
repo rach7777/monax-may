@@ -1,56 +1,63 @@
 ---
 
 layout: single
-title:      "Documentation | eris:cli | eris keys export"
+type: docs
+title: "Documentation | Command Line Interface | eris keys export"
 
 ---
 
 # eris keys export
 
-Export a key from container to host.
+Export A Key From Container To Host
 
-## Synopsis
-
-Export a key from container to host.
-
-
-Takes a key from:
-/home/eris/.eris/keys/data/ADDR/ADDR
-
-in the keys container and copies it to
-$HOME/user/.eris/keys/data/ADDR/ADDR
-
-on the host. Optionally specify host destination with --dest.
+## Usage
 
 ```bash
 eris keys export ADDR
 ```
 
+## Synopsis
+
+export a key from container to host
+
+Takes a key from /home/eris/.eris/keys/data/ADDR/ADDR in the keys container
+and copies it to ~/.eris/keys/data/ADDR/ADDR on the host.
+
+
 ## Options
 
-```
-      --addr="": address of key to export
-      --dest="": destination for export on host
+```bash
+  --addr string   address of key to export
+      --all           export all keys. do not provide any arguments
 ```
 
 ## Options inherited from parent commands
 
+```bash
+  -d, --debug            debug level output
+  -m, --machine string   machine name for docker-machine that is running VM (default "eris")
+  -v, --verbose          verbose output
 ```
-  -d, --debug[=false]: debug level output
-  -m, --machine="eris": machine name for docker-machine that is running VM
-  -n, --num=1: container number
-  -v, --verbose[=false]: verbose output
-```
+
+
 
 ## See Also
 
-* [eris keys](/docs/documentation/cli/latest/eris_keys/)	 - Do specific tasks with keys *for dev only*.
+* [eris keys](/docs/documentation/cli/0.12.0-rc3/eris_keys/) - do specific tasks with keys
 
-## Specifications
 
-* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
-* [Motivation](/docs/documentation/cli/latest/motivation/)
-* [Services Specification](/docs/documentation/cli/latest/services_specification/)
+
+
+# Examples
+
+* [Getting Started With Cloud Instances](/docs/documentation/cli/0.12.0-rc3/examples/getting_started_with_cloud_instances/)
+* [How To Make A Service](/docs/documentation/cli/0.12.0-rc3/examples/how_to_make_a_service/)
+* [Using Docker Machine With Eris](/docs/documentation/cli/0.12.0-rc3/examples/using_docker_machine_with_eris/)
+
+
+# Specifications
+
+* [Chains Specification](/docs/documentation/cli/0.12.0-rc3/specifications/chains_specification/)
+* [Motivation](/docs/documentation/cli/0.12.0-rc3/specifications/motivation/)
+* [Services Specification](/docs/documentation/cli/0.12.0-rc3/specifications/services_specification/)
 

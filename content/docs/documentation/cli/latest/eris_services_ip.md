@@ -2,23 +2,23 @@
 
 layout: single
 type: docs
-title: "Documentation | Command Line Interface | eris services rename"
+title: "Documentation | Command Line Interface | eris services ip"
 
 ---
 
-# eris services rename
+# eris services ip
 
-Rename An Installed Service
+Display Service IP
 
 ## Usage
 
 ```bash
-eris services rename OLD_NAME NEW_NAME
+eris services ip NAME
 ```
 
 ## Synopsis
 
-rename an installed service
+display service IP
 
 
 

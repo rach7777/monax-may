@@ -1,50 +1,63 @@
 ---
 
 layout: single
-title:      "Documentation | eris:cli | eris chains stop"
+type: docs
+title: "Documentation | Command Line Interface | eris chains stop"
 
 ---
 
 # eris chains stop
 
-Stop a running blockchain.
+Stop A Running Blockchain
 
-## Synopsis
-
-Stop a running blockchain.
+## Usage
 
 ```bash
 eris chains stop NAME
 ```
 
+## Synopsis
+
+stop a running blockchain
+
+
 ## Options
 
-```
-  -x, --data[=false]: remove data containers after stopping
-  -f, --force[=false]: kill the container instantly without waiting to exit
-  -r, --rm[=false]: remove containers after stopping
-  -t, --timeout=10: manually set the timeout; can be overridden by --force
-  -o, --vol[=false]: remove volumes
+```bash
+  -x, --data           remove data containers after stopping
+  -f, --force          kill the container instantly without waiting to exit
+  -r, --rm             remove containers after stopping
+  -t, --timeout uint   manually set the timeout; overridden by --force (default 10)
+  -o, --vol            remove volumes
 ```
 
 ## Options inherited from parent commands
 
+```bash
+  -d, --debug            debug level output
+  -m, --machine string   machine name for docker-machine that is running VM (default "eris")
+  -v, --verbose          verbose output
 ```
-  -d, --debug[=false]: debug level output
-  -m, --machine="eris": machine name for docker-machine that is running VM
-  -n, --num=1: container number
-  -v, --verbose[=false]: verbose output
-```
+
+
 
 ## See Also
 
-* [eris chains](/docs/documentation/cli/latest/eris_chains/)	 - Start, stop, and manage blockchains.
+* [eris chains](/docs/documentation/cli/0.12.0-rc3/eris_chains/) - start, stop, and manage blockchains
 
-## Specifications
 
-* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
-* [Motivation](/docs/documentation/cli/latest/motivation/)
-* [Services Specification](/docs/documentation/cli/latest/services_specification/)
+
+
+# Examples
+
+* [Getting Started With Cloud Instances](/docs/documentation/cli/0.12.0-rc3/examples/getting_started_with_cloud_instances/)
+* [How To Make A Service](/docs/documentation/cli/0.12.0-rc3/examples/how_to_make_a_service/)
+* [Using Docker Machine With Eris](/docs/documentation/cli/0.12.0-rc3/examples/using_docker_machine_with_eris/)
+
+
+# Specifications
+
+* [Chains Specification](/docs/documentation/cli/0.12.0-rc3/specifications/chains_specification/)
+* [Motivation](/docs/documentation/cli/0.12.0-rc3/specifications/motivation/)
+* [Services Specification](/docs/documentation/cli/0.12.0-rc3/specifications/services_specification/)
 
