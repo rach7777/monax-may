@@ -14,7 +14,7 @@ This tutorial will provide an overview of working with [docker-machine](https://
 
 Eris uses a handful of docker-machine features, both as an integral part of the tool and for continous integration/testing.
 
-Many features of the `eris` platform are available without `docker-machine` (even on linux which does not require it as part of the docker installation process). However, your blockchain superpowers are greatly limited without it. See linux install guidelines [here](https://docs.docker.com/machine/install-machine/). Windows and OSX users are highly recommended to install the [Docker Toolbox](https://www.docker.com/docker-toolbox) as a means of [installing eris](../getting-started/); and as part of that docker-machine will be installed.
+Many features of the `eris` platform are available without `docker-machine` (even on linux which does not require it as part of the docker installation process). However, your blockchain superpowers are greatly limited without it. See linux install guidelines [here](https://docs.docker.com/machine/install-machine/). Windows and OSX users are highly recommended to install the [Docker Toolbox](https://www.docker.com/docker-toolbox) as a means of installing eris; and as part of that docker-machine will be installed.
 
 This tutorial requires `eris` be installed (see links above) for all Sections except for the first.
 
