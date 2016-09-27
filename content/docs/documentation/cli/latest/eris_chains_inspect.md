@@ -1,52 +1,65 @@
 ---
 
 layout: single
-title:      "Documentation | eris:cli | eris chains inspect"
+type: docs
+title: "Documentation | Command Line Interface | eris chains inspect"
 
 ---
 
 # eris chains inspect
 
-Machine readable chain operation details.
+Machine Readable Chain Operation Details
 
-## Synopsis
-
-Display machine readable details about running containers.
-
-Information available to the inspect command is provided by the
-Docker API. For more information about return values,
-see: https://github.com/fsouza/go-dockerclient/blob/master/container.go#L235
+## Usage
 
 ```bash
 eris chains inspect NAME [KEY]
 ```
 
-## Examples
+## Synopsis
 
-```bash
-$ eris chains inspect 2gather -- will display the entire information about 2gather containers
-$ eris chains inspect 2gather name -- will display the name in machine readable format
-$ eris chains inspect 2gather host_config.binds -- will display only that value
-```
+display machine readable details about running containers
+
+Information available to the inspect command is provided by the
+Docker API. For more information about return values,
+see: https://github.com/fsouza/go-dockerclient/blob/master/container.go#L235
+
+
+
 
 ## Options inherited from parent commands
 
+```bash
+  -d, --debug            debug level output
+  -m, --machine string   machine name for docker-machine that is running VM (default "eris")
+  -v, --verbose          verbose output
 ```
-  -d, --debug[=false]: debug level output
-  -m, --machine="eris": machine name for docker-machine that is running VM
-  -n, --num=1: container number
-  -v, --verbose[=false]: verbose output
-```
+
+
 
 ## See Also
 
-* [eris chains](/docs/documentation/cli/latest/eris_chains/)	 - Start, stop, and manage blockchains.
+* [eris chains](/docs/documentation/cli/0.12.0-rc3/eris_chains/) - start, stop, and manage blockchains
 
-## Specifications
 
-* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
-* [Motivation](/docs/documentation/cli/latest/motivation/)
-* [Services Specification](/docs/documentation/cli/latest/services_specification/)
+# Quick Tips
+
+```bash
+$ eris chains inspect simplechain -- will display the entire information about simplechain containers
+$ eris chains inspect 2gather Name -- will display the name in machine readable format
+$ eris chains inspect 2gather HostConfig.Binds -- will display only that value
+```
+
+# Examples
+
+* [Getting Started With Cloud Instances](/docs/documentation/cli/0.12.0-rc3/examples/getting_started_with_cloud_instances/)
+* [How To Make A Service](/docs/documentation/cli/0.12.0-rc3/examples/how_to_make_a_service/)
+* [Using Docker Machine With Eris](/docs/documentation/cli/0.12.0-rc3/examples/using_docker_machine_with_eris/)
+
+
+# Specifications
+
+* [Chains Specification](/docs/documentation/cli/0.12.0-rc3/specifications/chains_specification/)
+* [Motivation](/docs/documentation/cli/0.12.0-rc3/specifications/motivation/)
+* [Services Specification](/docs/documentation/cli/0.12.0-rc3/specifications/services_specification/)
 

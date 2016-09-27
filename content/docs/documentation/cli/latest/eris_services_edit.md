@@ -1,17 +1,24 @@
 ---
 
 layout: single
-title:      "Documentation | eris:cli | eris services edit"
+type: docs
+title: "Documentation | Command Line Interface | eris services edit"
 
 ---
 
 # eris services edit
 
-Edit a service.
+Edit A Service
+
+## Usage
+
+```bash
+eris services edit NAME
+```
 
 ## Synopsis
 
-Edit a service definition file which is kept in ~/.eris/services.
+edit a service definition file which is kept in ~/.eris/services.
 Edit will utilize your default editor. (See also the ERIS environment variable.)
 
 NOTE: Do not use this command for configuring a *specific* service. This
@@ -21,28 +28,36 @@ how to start and stop a specific service.
 How that service is used for a specific project is handled from project
 definition files.
 
-```bash
-eris services edit NAME
-```
+
+
 
 ## Options inherited from parent commands
 
+```bash
+  -d, --debug            debug level output
+  -m, --machine string   machine name for docker-machine that is running VM (default "eris")
+  -v, --verbose          verbose output
 ```
-  -d, --debug[=false]: debug level output
-  -m, --machine="eris": machine name for docker-machine that is running VM
-  -n, --num=1: container number
-  -v, --verbose[=false]: verbose output
-```
+
+
 
 ## See Also
 
-* [eris services](/docs/documentation/cli/latest/eris_services/)	 - Start, stop, and manage services required for your application.
+* [eris services](/docs/documentation/cli/0.12.0-rc3/eris_services/) - start, stop, and manage services required for your application
 
-## Specifications
 
-* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
-* [Motivation](/docs/documentation/cli/latest/motivation/)
-* [Services Specification](/docs/documentation/cli/latest/services_specification/)
+
+
+# Examples
+
+* [Getting Started With Cloud Instances](/docs/documentation/cli/0.12.0-rc3/examples/getting_started_with_cloud_instances/)
+* [How To Make A Service](/docs/documentation/cli/0.12.0-rc3/examples/how_to_make_a_service/)
+* [Using Docker Machine With Eris](/docs/documentation/cli/0.12.0-rc3/examples/using_docker_machine_with_eris/)
+
+
+# Specifications
+
+* [Chains Specification](/docs/documentation/cli/0.12.0-rc3/specifications/chains_specification/)
+* [Motivation](/docs/documentation/cli/0.12.0-rc3/specifications/motivation/)
+* [Services Specification](/docs/documentation/cli/0.12.0-rc3/specifications/services_specification/)
 

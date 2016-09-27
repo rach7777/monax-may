@@ -2,23 +2,26 @@
 
 layout: single
 type: docs
-title: "Documentation | Command Line Interface | eris services rename"
+title: "Documentation | Command Line Interface | eris services make"
 
 ---
 
-# eris services rename
+# eris services make
 
-Rename An Installed Service
+Create A New Service
 
 ## Usage
 
 ```bash
-eris services rename OLD_NAME NEW_NAME
+eris services make NAME IMAGE
 ```
 
 ## Synopsis
 
-rename an installed service
+create a new service
+
+Command must be given a NAME and a container IMAGE using the standard
+docker format of [repository/organization/image].
 
 
 
@@ -38,7 +41,12 @@ rename an installed service
 * [eris services](/docs/documentation/cli/0.12.0-rc3/eris_services/) - start, stop, and manage services required for your application
 
 
+# Quick Tips
 
+```bash
+$ eris services make eth eris/eth
+$ eris services make mint tutum.co/tendermint/tendermint
+```
 
 # Examples
 

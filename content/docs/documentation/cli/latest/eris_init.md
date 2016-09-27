@@ -1,50 +1,62 @@
 ---
 
 layout: single
-title:      "Documentation | eris:cli | eris init"
+type: docs
+title: "Documentation | Command Line Interface | eris init"
 
 ---
 
 # eris init
 
-Initialize the ~/.eris directory with default files or update to latest version
+Initialize Your Work Space For Smart Contract Glory
 
-## Synopsis
-
-Create the ~/.eris directory with actions and services subfolders
-and clone eris-ltd/eris-actions eris-ltd/eris-services into them, respectively.
+## Usage
 
 ```bash
 eris init
 ```
 
+## Synopsis
+
+create the Eris root ~/.eris directory with services subdirectories
+and clone github.com/eris-ltd/eris-services into them.
+
+
 ## Options
 
-```
-      --actions[=false]: only update the default actions (requires git to be installed)
-      --services[=false]: only update the default services (requires git to be installed)
-  -p, --skip-pull[=false]: do not clone the default services and actions; use the flag when git is not installed
-      --yes[=false]: over-ride command-line prompts (requires git to be installed)
+```bash
+  --pull-images   by default, pulls and/or update latest primary images. use flag to skip pulling/updating of images. (default true)
+      --testing       DO NOT USE (for testing only)
+  -y, --yes           over-ride command-line prompts
 ```
 
 ## Options inherited from parent commands
 
+```bash
+  -d, --debug            debug level output
+  -m, --machine string   machine name for docker-machine that is running VM (default "eris")
+  -v, --verbose          verbose output
 ```
-  -d, --debug[=false]: debug level output
-  -m, --machine="eris": machine name for docker-machine that is running VM
-  -n, --num=1: container number
-  -v, --verbose[=false]: verbose output
-```
+
+
 
 ## See Also
 
-* [eris](/docs/documentation/cli/latest/eris/)	 - The Blockchain Application Platform
+* [eris](/docs/documentation/cli/0.12.0-rc3/eris/) - The Ecosystem Application Platform
 
-## Specifications
 
-* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
-* [Motivation](/docs/documentation/cli/latest/motivation/)
-* [Services Specification](/docs/documentation/cli/latest/services_specification/)
+
+
+# Examples
+
+* [Getting Started With Cloud Instances](/docs/documentation/cli/0.12.0-rc3/examples/getting_started_with_cloud_instances/)
+* [How To Make A Service](/docs/documentation/cli/0.12.0-rc3/examples/how_to_make_a_service/)
+* [Using Docker Machine With Eris](/docs/documentation/cli/0.12.0-rc3/examples/using_docker_machine_with_eris/)
+
+
+# Specifications
+
+* [Chains Specification](/docs/documentation/cli/0.12.0-rc3/specifications/chains_specification/)
+* [Motivation](/docs/documentation/cli/0.12.0-rc3/specifications/motivation/)
+* [Services Specification](/docs/documentation/cli/0.12.0-rc3/specifications/services_specification/)
 

@@ -2,26 +2,35 @@
 
 layout: single
 type: docs
-title: "Documentation | Command Line Interface | eris services rename"
+title: "Documentation | Command Line Interface | eris keys ls"
 
 ---
 
-# eris services rename
+# eris keys ls
 
-Rename An Installed Service
+List Keys On Host And In Running Keys Container
 
 ## Usage
 
 ```bash
-eris services rename OLD_NAME NEW_NAME
+eris keys ls
 ```
 
 ## Synopsis
 
-rename an installed service
+list keys on host and in running keys container
+
+Specify location with flags --host or ---container.
+
+Latter flag is equivalent to: [eris services exec keys "ls /home/eris/.eris/keys/data"]
 
 
+## Options
 
+```bash
+  --container   list keys in container in /home/eris/.eris/keys/data
+      --host        list keys on host in ~/.eris/keys/data
+```
 
 ## Options inherited from parent commands
 
@@ -35,7 +44,7 @@ rename an installed service
 
 ## See Also
 
-* [eris services](/docs/documentation/cli/0.12.0-rc3/eris_services/) - start, stop, and manage services required for your application
+* [eris keys](/docs/documentation/cli/0.12.0-rc3/eris_keys/) - do specific tasks with keys
 
 
 

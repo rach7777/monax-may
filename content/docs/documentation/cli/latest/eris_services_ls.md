@@ -1,58 +1,90 @@
 ---
 
 layout: single
-title:      "Documentation | eris:cli | eris services ls"
+type: docs
+title: "Documentation | Command Line Interface | eris services ls"
 
 ---
 
 # eris services ls
 
-Lists everything service related.
+Lists Everything Service Related
 
-## Synopsis
-
-Lists all: service definition files (--known), current existing containers
-for each service (--existing), and current running containers
-for each service (--running).
-
-Known services can be started with the [eris services start NAME] command.
-To install a new service, use [eris services import]. Services include
-all executable services supported by the Eris platform which are
-NOT blockchains or key managers.
-
-Blockchains are handled using the [eris chains] command.
+## Usage
 
 ```bash
 eris services ls
 ```
 
+## Synopsis
+
+list services or known service definition files
+
+The -r flag limits the output to running services only.
+
+The --json flag dumps the container or known files information
+in the JSON format.
+
+The -q flag is equivalent to the '{{.ShortName}}' format.
+
+The -f flag specifies an alternate format for the list, using the syntax
+of Go text templates. See the more detailed description in the help
+output for the [eris ls] command. The struct passed to the Go template
+for the -k flag is this
+
+  type Definition struct {
+    Name       string       // service name
+    Definition string       // definition file name
+  }
+
+The -k flag displays the known definition files.
+
+
 ## Options
 
-```
-  -e, --existing[=false]: list all the all current containers which exist for a service
-  -k, --known[=false]: list all the service definition files that exist
-  -q, --quiet[=false]: machine parsable output
-  -r, --running[=false]: list all the current containers which are running for a service
+```bash
+  -a, --all             show extended output
+  -f, --format string   alternate format for columnized output
+      --json            machine readable output
+  -k, --known           list all the service definition files that exist
+  -q, --quiet           show a list of service names
+  -r, --running         show running containers only
 ```
 
 ## Options inherited from parent commands
 
+```bash
+  -d, --debug            debug level output
+  -m, --machine string   machine name for docker-machine that is running VM (default "eris")
+  -v, --verbose          verbose output
 ```
-  -d, --debug[=false]: debug level output
-  -m, --machine="eris": machine name for docker-machine that is running VM
-  -n, --num=1: container number
-  -v, --verbose[=false]: verbose output
-```
+
+
 
 ## See Also
 
-* [eris services](/docs/documentation/cli/latest/eris_services/)	 - Start, stop, and manage services required for your application.
+* [eris services](/docs/documentation/cli/0.12.0-rc3/eris_services/) - start, stop, and manage services required for your application
 
-## Specifications
 
-* [Actions Specification](/docs/documentation/cli/latest/actions_specification/)
-* [Chains Specification](/docs/documentation/cli/latest/chains_specification/)
-* [Contracts Specification](/docs/documentation/cli/latest/contracts_specification/)
-* [Motivation](/docs/documentation/cli/latest/motivation/)
-* [Services Specification](/docs/documentation/cli/latest/services_specification/)
+# Quick Tips
+
+```bash
+$ eris services ls -f '{{.ShortName}}\t{{.Info.Config.Cmd}}\t{{.Info.Config.Entrypoint}}'
+$ eris services ls -f '{{.ShortName}}\t{{.Info.Config.Image}}\t{{ports .Info}}'
+$ eris services ls -f '{{.ShortName}}\t{{.Info.Config.Volumes}}\t{{.Info.Config.Mounts}}'
+$ eris services ls -f '{{.Info.ID}}\t{{.Info.HostConfig.VolumesFrom}}'
+```
+
+# Examples
+
+* [Getting Started With Cloud Instances](/docs/documentation/cli/0.12.0-rc3/examples/getting_started_with_cloud_instances/)
+* [How To Make A Service](/docs/documentation/cli/0.12.0-rc3/examples/how_to_make_a_service/)
+* [Using Docker Machine With Eris](/docs/documentation/cli/0.12.0-rc3/examples/using_docker_machine_with_eris/)
+
+
+# Specifications
+
+* [Chains Specification](/docs/documentation/cli/0.12.0-rc3/specifications/chains_specification/)
+* [Motivation](/docs/documentation/cli/0.12.0-rc3/specifications/motivation/)
+* [Services Specification](/docs/documentation/cli/0.12.0-rc3/specifications/services_specification/)
 
