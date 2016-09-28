@@ -1,44 +1,57 @@
 ---
 
 layout: single
-title:      "Documentation | eris:keys | eris-keys unlock"
+type: docs
+title: "Documentation | Development Signing Daemon Tooling | eris-keys unlock"
 
 ---
 
 # eris-keys unlock
 
-unlock a key
+Unlock A Key
 
-## Synopsis
-
-unlock an unlocked key by supplying the password
+## Usage
 
 ```bash
 eris-keys unlock
 ```
 
+## Synopsis
+
+unlock an unlocked key by supplying the password
+
+
 ## Options
 
-```
-  -h, --help[=false]: help for unlock
-  -t, --time=10: number of minutes to unlock key for. defaults to 10, 0 for forever
+```bash
+  -t, --time int   number of minutes to unlock key for. defaults to 10, 0 for forever (default 10)
 ```
 
 ## Options inherited from parent commands
 
+```bash
+  --addr string   address of key to use
+  -d, --debug         debug mode
+      --dir string    specify the location of the directory containing key files (default "/home/coda/.eris/keys")
+      --host string   set the host for talking to the key daemon (default "localhost")
+  -l, --log int       specify the location of the directory containing key files
+      --name string   name of key to use
+      --port string   set the port for key daemon to listen on (default "4767")
+  -v, --verbose       verbose mode
 ```
-      --addr="": address of key to use
-      --dir="/home/ubuntu/.eris/keys": specify the location of the directory containing key files
-      --host="localhost": set the host for talking to the key daemon
-  -l, --log=0: specify the location of the directory containing key files
-      --name="": name of key to use
-      --port="4767": set the port for key daemon to listen on
-```
+
+
 
 ## See Also
 
-* [eris-keys](/docs/documentation/keys/0.12.0-rc3/eris-keys/)	 - Generate and manage keys for producing signatures
+* [eris-keys](/docs/documentation/keys/0.12.0-rc3/eris-keys/) - Generate and manage keys for producing signatures
 
-## Specifications
+
+
+
+# Examples
+
+* [Keyexporting](/docs/documentation/keys/0.12.0-rc3/examples/keyexporting/)
+
 
 

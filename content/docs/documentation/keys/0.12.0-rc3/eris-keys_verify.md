@@ -1,44 +1,57 @@
 ---
 
 layout: single
-title:      "Documentation | eris:keys | eris-keys verify"
+type: docs
+title: "Documentation | Development Signing Daemon Tooling | eris-keys verify"
 
 ---
 
 # eris-keys verify
 
-eris-keys verify --addr <addr> <hash> <sig>
+Eris-Keys Verify --Addr <Addr> <Hash> <Sig>
 
-## Synopsis
-
-eris-keys verify --addr <addr> <hash> <sig>
+## Usage
 
 ```bash
 eris-keys verify
 ```
 
+## Synopsis
+
+eris-keys verify --addr <addr> <hash> <sig>
+
+
 ## Options
 
-```
-  -h, --help[=false]: help for verify
-  -t, --type="ed25519,ripemd160": key type
+```bash
+  -t, --type string   key type (default "ed25519,ripemd160")
 ```
 
 ## Options inherited from parent commands
 
+```bash
+  --addr string   address of key to use
+  -d, --debug         debug mode
+      --dir string    specify the location of the directory containing key files (default "/home/coda/.eris/keys")
+      --host string   set the host for talking to the key daemon (default "localhost")
+  -l, --log int       specify the location of the directory containing key files
+      --name string   name of key to use
+      --port string   set the port for key daemon to listen on (default "4767")
+  -v, --verbose       verbose mode
 ```
-      --addr="": address of key to use
-      --dir="/home/ubuntu/.eris/keys": specify the location of the directory containing key files
-      --host="localhost": set the host for talking to the key daemon
-  -l, --log=0: specify the location of the directory containing key files
-      --name="": name of key to use
-      --port="4767": set the port for key daemon to listen on
-```
+
+
 
 ## See Also
 
-* [eris-keys](/docs/documentation/keys/0.12.0-rc3/eris-keys/)	 - Generate and manage keys for producing signatures
+* [eris-keys](/docs/documentation/keys/0.12.0-rc3/eris-keys/) - Generate and manage keys for producing signatures
 
-## Specifications
+
+
+
+# Examples
+
+* [Keyexporting](/docs/documentation/keys/0.12.0-rc3/examples/keyexporting/)
+
 
 
