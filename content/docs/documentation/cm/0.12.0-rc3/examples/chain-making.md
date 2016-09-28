@@ -6,10 +6,6 @@ title: "Documentation | Chain Manager Tooling | Chain Making"
 
 ---
 
-It is not necessarily a simple matter to "make" a permissioned chain. With the `eris` tooling, we make it as simple as possible, but it does take a bit of crafting to get everything correctly sorted.
-
-This tutorial is structured to walk individuals through parts of the eris developer tool kit while also showing readers how to make an advanced permissioned blockchain. Note, during the course of this tutorial, the chain we will create is suitable for pilots iterating toward production, it is a bit more complicated than a simple local chain one only needs for testing simple contracts out in a solo environment.
-
 # Introduction
 
 There are typically two steps to making a permissioned blockchain (for less advanced users we say there are three but really there are two):
@@ -31,12 +27,6 @@ To design our chain we need to, first, consider, *who* will get *what* permissio
 For the purposes of this tutorial, we will have (1) administrator, (7) validators, (3) developers, and (20) participants. This will require a total of 31 keys, and all of their specifics to be generated and added to the genesis block.
 
 If you would like to understand all of the permissions which an eris:db smart contract network is capable of providing, [please see our documentation on the subject](/docs/documentation/db/).
-
-## A Note Regarding This Tutorial
-
-The `eris` toolchain is designed to be very unix like, and as such we are able to craft most of what is needed in simple bash scripts which any competant developer should be able to understand. Bash really, truly, is the common demoninator as it does not require any specialized language specific knowledge beyond a bare minimum to understand what is happening.
-
-For this tutorial, we have kept the bash scripting to a bare minimum, but should you have any questions regarding any of the bash scripting, please let us know [here](https://github.com/eris-ltd/docs.erisindustries.com/issues) and we will endeavor to make more clear what any commands that are unclear are actually doing.
 
 # Step 1. Make the Necessary Files
 
@@ -316,7 +306,7 @@ There is also a genesis.json file that is within the directory.
 
 This directory contains the **minimum** necessary files to start a chain. As we will see soon, there is one file which is lacking to fully run *this* chain.
 
-**N.B.** You will want to export your keys onto the host at this point so that you have them backed up. Please see [this tutorial](/docs/tutorials/advanced/keyexporting) on how to do that.
+**N.B.** You will want to export your keys onto the host at this point so that you have them backed up. Please see [this tutorial](/docs/documentation/keys/latest/examples/exporting_your_keys/) on how to do that.
 
 # Step 2. Instantiate the Blockchain
 
@@ -340,7 +330,7 @@ That command will `follow` the logs. To stop following the logs use `ctrl+c`. As
 
 ## A Bit About Validators
 
-eris:db utilizes the tendermint consensus engine under the hood (on our roadmap is to be able to provide eris:db's [comprehensive RPC and application manager portion over various consensus engines](https://eng.erisindustries.com/blockchains/2015/12/31/on-blockchain-clients-in-2016/)).
+eris:db utilizes the tendermint consensus engine under the hood (on our roadmap is to be able to provide eris:db's comprehensive RPC and application manager portion over various consensus engines.
 
 The tendermint consensus engine requires that > 66.666666666666666% of the bonded stake is present in a round of voting in order to add a block to the chain. When we only started one node on this chain, and very much unlike proof of work consensus engines, the chain will not progress by itself. This is because there was only one node on the network and it doesn't actually have any bonded stake. Remember we started the `advchain_root_000` node, which according to the genesis.json and validators.csv file has bonded no stake.
 
@@ -357,10 +347,6 @@ But before we do that, let's actually remove the chain for now so it doesn't get
 ```bash
 eris chains stop -rxf advchain
 ```
-
-# Where to next?
-
-**Let us [deploy our chain to the cloud](/docs/tutorials/advanced/chain-deploying).**
 
 
 ## Commands
