@@ -51,7 +51,7 @@ eris-keys verify --addr <addr> <hash> <sig>
 
 # Examples
 
-* [Keyexporting](/docs/documentation/keys/0.12.0-rc3/examples/keyexporting/)
+* [Exporting Your Keys](/docs/documentation/keys/0.12.0-rc3/examples/exporting_your_keys/)
 
 
 
