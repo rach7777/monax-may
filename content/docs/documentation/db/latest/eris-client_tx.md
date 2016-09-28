@@ -35,30 +35,29 @@ eris-client tx formulates and signs a transaction to a chain.
   -w, --wait               wait for the transaction to be committed in a block
 ```
 
-## Options inherited from parent commands
 
-```bash
-  -d, --debug     debug level output; the most output available for eris-client; if it is too chatty use verbose flag; default respects $ERIS_CLIENT_DEBUG
-  -v, --verbose   verbose output; more output than no output flags; less output than debug level; default respects $ERIS_CLIENT_VERBOSE
-```
 
 # Subcommands
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* [eris-client tx bond](/docs/documentation/db/0.12.0-rc3/eris-client_tx_bond/) - eris-client tx bond --pubkey <pubkey> --amt <amt> --unbond-to <address>
+* [eris-client tx call](/docs/documentation/db/0.12.0-rc3/eris-client_tx_call/) - eris-client tx call --amt <amt> --fee <fee> --gas <gas> --to <contract addr> --data <data>
+* [eris-client tx name](/docs/documentation/db/0.12.0-rc3/eris-client_tx_name/) - eris-client tx name --amt <amt> --name <name> --data <data>
+* [eris-client tx permission](/docs/documentation/db/0.12.0-rc3/eris-client_tx_permission/) - eris-client tx perm <function name> <args ...>
+* [eris-client tx rebond](/docs/documentation/db/0.12.0-rc3/eris-client_tx_rebond/) - eris-client tx rebond --addr <address> --height <block_height>
+* [eris-client tx send](/docs/documentation/db/0.12.0-rc3/eris-client_tx_send/) - eris-client tx send --amt <amt> --to <addr>
+* [eris-client tx unbond](/docs/documentation/db/0.12.0-rc3/eris-client_tx_unbond/) - eris-client tx unbond --addr <address> --height <block_height>
 
 
 ## See Also
-* [eris-client](
+
+* [eris-client](/docs/documentation/db/0.12.0-rc3/eris-client/) - Eris-client interacts with a running Eris chain.
+
+
+
+
+
+
+# Specifications
+
+* [Api](/docs/documentation/db/0.12.0-rc3/specifications/api/)
+
