@@ -42,4 +42,21 @@ manager.  The client API can be disabled.
 
 
 ## See Also
-* [eris-db](
+
+* [eris-db](/docs/documentation/db/0.12.0-rc3/eris-db/) - Eris-DB is the server side of the eris chain.
+
+
+# Quick Tips
+
+```bash
+$ eris-db serve -- will start the Eris-DB node based on the configuration file "config.toml" in the current working directory
+$ eris-db serve --work-dir <path-to-working-directory> -- will start the Eris-DB node based on the configuration file "config.toml" in the provided working directory
+$ eris-db serve --chain-id <CHAIN_ID> -- will overrule the configuration entry assert_chain_id
+```
+
+
+
+# Specifications
+
+* [Api](/docs/documentation/db/0.12.0-rc3/specifications/api/)
+

@@ -24,7 +24,7 @@ your needs.
 
 Made with <3 by Eris Industries.
 
-Complete documentation is available at https://docs.erisindustries.com
+Complete documentation is available at https://monax.io/docs/documentation
 
 VERSION:
  0.12.0-rc3
@@ -41,8 +41,7 @@ VERSION:
 
 # Subcommands
 
-
-
+* [eris-db serve](/docs/documentation/db/0.12.0-rc3/eris-db_serve/) - Eris-DB serve starts an eris-db node with client API enabled by default.
 
 
 
@@ -55,3 +54,7 @@ VERSION:
 
 * [Api](/docs/documentation/db/0.12.0-rc3/specifications/api/)
 
+
+# Related Commands
+
+* [Eris Client](/docs/documentation/db/0.12.0-rc3/eris-client/)
