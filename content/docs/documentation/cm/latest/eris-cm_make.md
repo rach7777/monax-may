@@ -1,23 +1,57 @@
 ---
 
 layout: single
-title:      "Documentation | eris:chain_manager | eris-cm make"
+type: docs
+title: "Documentation | Chain Manager Tooling | eris-cm make"
 
 ---
 
 # eris-cm make
 
-The Eris Chain Maker is a utility for easily creating the files necessary to build eris chains
+The Eris Chain Maker Is A Utility For Easily Creating The Files Necessary To Build Eris Chains
 
-## Synopsis
-
-The Eris Chain Maker is a utility for easily creating the files necessary to build eris chains.
+## Usage
 
 ```bash
 eris-cm make
 ```
 
-## Examples
+## Synopsis
+
+The Eris Chain Maker is a utility for easily creating the files necessary to build eris chains.
+
+
+## Options
+
+```bash
+  -t, --account-types=[]: what number of account types should we use? find these in ~/.eris/chains/account_types; incompatible with and overrides chain-type; default respects $ERIS_CHAINMANAGER_ACCOUNTTYPES
+  -c, --chain-type="": which chain type definition should we use? find these in ~/.eris/chains/chain_types; default respects $ERIS_CHAINMANAGER_CHAINTYPE
+  -s, --csv-file="": csv file in the form `account-type,number,tokens,toBond,perms; default respects $ERIS_CHAINMANAGER_CSVFILE
+      --entrypoint="erisdb-wrapper": specifiy the entrypoint for the chain service; default respects $ERIS_CHAINMANAGER_CONTAINER_ENTRYPOINT
+      --image-name="quay.io/eris/erisdb:0.12.0-rc3": specify the chain image name; default respects $ERIS_CHAINMANAGER_CHAIN_IMAGE_NAME
+  -k, --keys-server="http://localhost:4767": keys server which should be used to generate keys; default respects $ERIS_KEYS_PATH
+      --ports=[1337,46656,46657]: list the ports that need to be exported on the container; default respects $ERIS_CHAINMANAGER_EXPORTED_PORTS
+  -r, --tar[=false]: instead of making directories in ~/.chains, make tarballs; incompatible with and overrides zip; default respects $ERIS_CHAINMANAGER_TARBALLS
+      --use-data-container[=true]: set whether to attach the data container to the chain; default respects $ERIS_CHAINMANAGER_USE_DATA_CONTAINER
+  -z, --zip[=false]: instead of making directories in ~/.chains, make zip files; default respects $ERIS_CHAINMANAGER_ZIPFILES
+```
+
+## Options inherited from parent commands
+
+```bash
+  -d, --debug[=false]: debug level output; the most output available for eris-cm; if it is too chatty use verbose flag; default respects $ERIS_CHAINMANAGER_DEBUG
+  -o, --output[=true]: should eris-cm provide an output of its job; default respects $ERIS_CHAINMANAGER_OUTPUT
+  -v, --verbose[=false]: verbose output; more output than no output flags; less output than debug level; default respects $ERIS_CHAINMANAGER_VERBOSE
+```
+
+
+
+## See Also
+
+* [eris-cm](/docs/documentation/cm/0.12.0-rc3/eris-cm/) - The Eris Chain Manager is a utility for performing complex operations on eris chains
+
+
+# Quick Tips
 
 ```bash
 $ eris-cm make myChain -- will use the chain-making wizard and make your chain named myChain using eris-keys defaults (available via localhost) (interactive)
@@ -27,31 +61,17 @@ $ eris-cm make myChain --account-types=Root:1,Developer:0,Validator:0,Participan
 $ eris-cm make myChain --csv /path/to/csv -- will use the csv file to make your chain named myChain using eris-keys defaults (non-interactive)
 ```
 
-## Options
+# Examples
 
-```
-  -t, --account-types=[]: what number of account types should we use? find these in ~/.eris/chains/account_types; incompatible with and overrides chain-type; default respects $ERIS_CHAINMANAGER_ACCOUNTTYPES
-  -c, --chain-type="": which chain type definition should we use? find these in ~/.eris/chains/chain_types; default respects $ERIS_CHAINMANAGER_CHAINTYPE
-  -s, --csv-file="": csv file in the form `account-type,number,tokens,toBond,perms; default respects $ERIS_CHAINMANAGER_CSVFILE
-  -k, --keys-server="http://localhost:4767": keys server which should be used to generate keys; default respects $ERIS_KEYS_PATH
-  -r, --tar[=false]: instead of making directories in ~/.chains, make tarballs; incompatible with and overrides zip; default respects $ERIS_CHAINMANAGER_TARBALLS
-  -z, --zip[=false]: instead of making directories in ~/.chains, make zip files; default respects $ERIS_CHAINMANAGER_ZIPFILES
-```
+* [Bond Unbond](/docs/documentation/cm/0.12.0-rc3/examples/bond-unbond/)
+* [Chain Deploying](/docs/documentation/cm/0.12.0-rc3/examples/chain-deploying/)
+* [Chain Maintaining](/docs/documentation/cm/0.12.0-rc3/examples/chain-maintaining/)
+* [Chain Making](/docs/documentation/cm/0.12.0-rc3/examples/chain-making/)
+* [Genesis Updating](/docs/documentation/cm/0.12.0-rc3/examples/genesis_updating/)
 
-## Options inherited from parent commands
 
-```
-  -d, --debug[=false]: debug level output; the most output available for eris-cm; if it is too chatty use verbose flag; default respects $ERIS_CHAINMANAGER_DEBUG
-  -o, --output[=true]: should eris-cm provide an output of its job; default respects $ERIS_CHAINMANAGER_OUTPUT
-  -v, --verbose[=false]: verbose output; more output than no output flags; less output than debug level; default respects $ERIS_CHAINMANAGER_VERBOSE
-```
+# Specifications
 
-## See Also
-
-* [eris-cm](/docs/documentation/cm/latest/eris-cm/)	 - The Eris Chain Manager is a utility for performing complex operations on eris chains
-
-## Specifications
-
-* [Account Types](/docs/documentation/cm/latest/account_types/)
-* [Chain Types](/docs/documentation/cm/latest/chain_types/)
+* [Account Types](/docs/documentation/cm/0.12.0-rc3/specifications/account_types/)
+* [Chain Types](/docs/documentation/cm/0.12.0-rc3/specifications/chain_types/)
 
