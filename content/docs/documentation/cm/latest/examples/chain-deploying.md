@@ -6,34 +6,11 @@ title: "Documentation | Chain Manager Tooling | Chain Deploying"
 
 ---
 
-Deploying and connecting your permissioned chains is not as difficult as [making a permissioned chain](/docs/tutorials/advanced/chain-making), but it does require some careful work. This tutorial will cover the basics of deploying and connecting your blockchain nodes.
-
-This tutorial is a continuation of the previous tutorial on making a permissed chain, so if you have not gone through that tutorial, then please do so before working through this tutorial.
-
 # Introduction
 
 In general what is going to happen here is that we are going to establish what we at Eris call a "peer sergeant major" node who is responsible for being the easy connection point for any nodes which need to connect into the system.
 
 In addition to the one "peer sergeant major" we will also deploy six "peer sergeants" who will be cloud based validator nodes.
-
-## A Note Regarding This Tutorial
-
-The `eris` toolchain is designed to be very unix like, and as such we are able to craft most of what is needed in simple bash scripts which any competant developer should be able to understand. Bash really, truly, is the common demoninator as it does not require any specialized language specific knowledge beyond a bare minimum to understand what is happening.
-
-For this tutorial, we have kept the bash scripting to a bare minimum, but should you have any questions regarding any of the bash scripting, please let us know [here](https://github.com/eris-ltd/docs.erisindustries.com/issues) and we will endeavor to make more clear what any commands that are unclear are actually doing.
-
-## Dependencies
-
-This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/docs/tutorials/getting-started/).
-
-This sequence of tutorials also assumes that you have worked through a few of the eris tool-specific tutorials. Namely:
-
-* [Docker Machine](/docs/documentation/cli/latest/examples/using_docker_machine_with_eris/)
-
-This tutorial assumes you have worked through the following advanced tutorials:
-
-* [Get Started in the Cloud](/docs/documentation/cli/latest/examples/getting_started_with_cloud_instances.md)
-* [Advanced Chain Making](/docs/tutorials/advanced/chain-making)
 
 ## Overview of Tutorial
 
@@ -184,10 +161,6 @@ do
   docker-machine rm -y "my-advchain-val-00$i"
 done
 ```
-
-# Where to next?
-
-**Let us [learn how to do some maintenance on these chains](/docs/tutorials/advanced/chain-maintaining) or [learn how to bond & unbond validators on your chain](/docs/tutorials/advanced/bond-unbond).**
 
 
 ## Commands

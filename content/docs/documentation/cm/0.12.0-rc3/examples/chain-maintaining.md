@@ -6,33 +6,11 @@ title: "Documentation | Chain Manager Tooling | Chain Maintaining"
 
 ---
 
-Deploying and connecting your permissioned chains is not as difficult as [making a permissioned chain](/docs/tutorials/advanced/chain-making), but it does require some careful work. This tutorial will cover the basics of deploying and connecting your blockchain nodes.
-
-This tutorial is a continuation of the previous tutorial on making a permissed chain, so if you have not gone through that tutorial, then please do so before working through this tutorial.
-
 # Introduction
 
 In general what is going to happen here is that we are going to establish what we at Eris call a "peer sergeant major" node who is responsible for being the easy connection point for any nodes which need to connect into the system. While we understand that decentralized purists will not like the single point of failure, at this point it is the most viable way to orchestrate a blockchain network.
 
 In addition to the one "peer sergeant major" we will also deploy six "peer sergeants" who will be cloud based validator nodes.
-
-## A Note Regarding This Tutorial
-
-The `eris` toolchain is designed to be very unix like, and as such we are able to craft most of what is needed in simple bash scripts which any competant developer should be able to understand. Bash really, truly, is the common demoninator as it does not require any specialized language specific knowledge beyond a bare minimum to understand what is happening.
-
-For this tutorial, we have kept the bash scripting to a bare minimum, but should you have any questions regarding any of the bash scripting, please let us know [here](https://github.com/eris-ltd/docs.erisindustries.com/issues) and we will endeavor to make more clear what any commands that are unclear are actually doing.
-
-## Dependencies
-
-This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/docs/tutorials/getting-started/).
-
-This tutorial assumes you have worked through the following advanced tutorials:
-
-* [Get Started in the Cloud](/docs/documentation/cli/latest/examples/getting_started_with_cloud_instances.md)
-* [Advanced Chain Making](/docs/tutorials/advanced/chain-making)
-* [Deploying Chains in the Cloud](/docs/tutorials/advanced/chain-deploying)
-
-This tutorial assumes you have the very nice [jq tool available on your machine](https://stedolan.github.io/jq/manual/). `jq` is like `sed` but for json. We use it a lot.
 
 # Overview
 
