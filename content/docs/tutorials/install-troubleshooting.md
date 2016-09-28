@@ -7,7 +7,7 @@ title: "Tutorials | Trouble Shooting Your Installation"
 
 # I'm On OSX or Windows and It's All Wonky!
 
-Never fear, the marmots are here. See [Section 1 of our docker-machine tutorial](/docs/tutorials/tool-specific/docker_machine/) and come back to your installation. All will be well.
+Never fear, the marmots are here. See [Section 1 of our docker-machine tutorial](/docs/documentation/cli/latest/examples/using_docker_machine_with_eris/) and come back to your installation. All will be well.
 
 # No `eris` Command Found
 

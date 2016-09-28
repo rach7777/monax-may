@@ -271,7 +271,7 @@ To see the keys which eris-keys generated both *inside* the container type and a
 eris keys ls
 ```
 
-Before we move on to actual chainmaking, if you would like to explore more of the eris keys functionality please see our [keys tutorial](/docs/tutorials/tool-specific/keyexporting/).
+Before we move on to actual chainmaking, if you would like to explore more of the eris keys functionality please see our [keys tutorial](/docs/documentation/keys/latest/examples/exporting_your_keys/).
 
 Now, we're all ready to make a chain.
 
@@ -289,7 +289,7 @@ In general you do not really need to mess with `server_conf.toml` unless you kno
 
 The three files you *may* need to edit are the `genesis.json` and `priv_validator.json` (both of which we're about to get "made" for us) and the `config.toml`.
 
-In any chain with more than one validator the `config.toml` file will be edited to fill in the `seeds` and `moniker` fields. The `seeds` field is used to point your consensus engine to the peers it should connect into. For more information on how to deal with this please see our [advanced chain deploying tutorial](/docs/tutorials/advanced/chain-deploying/). The `moniker` field is "your node's name on the network". It should be unique on the given network.
+In any chain with more than one validator the `config.toml` file will be edited to fill in the `seeds` and `moniker` fields. The `seeds` field is used to point your consensus engine to the peers it should connect into. For more information on how to deal with this please see our [advanced chain deploying tutorial](/docs/documentation/cm/latest/examples/chain-deploying/). The `moniker` field is "your node's name on the network". It should be unique on the given network.
 
 The `genesis.json` is the primary file which tells eris chains how to instantiate a particular chain. It provides the "genesis" state of the chain including the accounts, permissions, and validators which will be used at the beginning of the chain. These can always be updated over the life of the chain of course, but the genesis.json provides the starting point. Luckily `eris` takes care of making this for you and there is very little which should be required for you in way of editing (unless you know what you're doing of course, in which case why are you reading this ;-) ).
 
@@ -331,7 +331,7 @@ cat ~/.eris/chains/toRemoveLater/addresses.csv
 
 The first two files can be used later to create a new genesis.json if the actual json gets lost. One of the things about this tooling is that it **creates** the keys for you. That is helpful in some circumstances. In other circumstances this is not helpful.
 
-In general, we recommend that if you are making a chain for a consortium that you have your consortium members **make their own keys** and then send the public key to you. Once you've assembled the keys then you will create an accounts.csv and validators.csv files in this format and then run `eris chains make` with the `--known` flag. More information on complex chain making is included in our [advanced chain making tutorial](/docs/tutorials/advanced/chain-making/).
+In general, we recommend that if you are making a chain for a consortium that you have your consortium members **make their own keys** and then send the public key to you. Once you've assembled the keys then you will create an accounts.csv and validators.csv files in this format and then run `eris chains make` with the `--known` flag. More information on complex chain making is included in our [advanced chain making tutorial](/docs/documentation/cm/latest/examples/chain-making/).
 
 The last file is the `addresses.csv` file which is another artifact of the chain making process. It simply has the addresses and the "names" of the nodes. We find it useful when scripting out complex interactions and it is simply a reference file along the lines of `addr=$(cat $chain_dir/addresses.csv | grep $name | cut -d ',' -f 1)`.
 
@@ -692,7 +692,7 @@ getValue(changeValue);
 ```
 **Protip:** Get the file with `curl -X GET https://raw.githubusercontent.com/eris-ltd/coding/master/contracts/idi/app.js -o app.js` while in the same directory as the `epm.yaml`.
 
-**N.B.** -- for *not Linux users*, please see the comments on lines 6-9 about the `var erisdbURL = "http://localhost:1337/rpc";` line of the script (spoiler alert, only do that on Linux). See our [docker-machine tutorial](/docs/tutorials/tool-specific/docker_machine/) for more information.
+**N.B.** -- for *not Linux users*, please see the comments on lines 6-9 about the `var erisdbURL = "http://localhost:1337/rpc";` line of the script (spoiler alert, only do that on Linux). See our [docker-machine tutorial](/docs/documentation/cli/latest/examples/using_docker_machine_with_eris/) for more information.
 
 **N.B. 2** -- be sure to edit this line: `var contractsManager = erisC.newContractManagerDev(erisdbURL, accountData.simplechain_full_000);` in the `app.js` to reflect the chain name (in lowercase) and account if you did not make a chain with the name `simplechain` or a chain with >1 account. See `$chain_dir/accounts.json` for more info (see below for the step to retrieve this file.)
 
@@ -770,7 +770,7 @@ Congratulations, you've just made your very own smart contract backed applicatio
     eris keys ls
     ```
 
-    If you do not have any keys then please take the time to [make some keys](/docs/tutorials/tool-specific/keyexporting). After you find a key which you currently have, then add that as the `address` flag to the `eris pkgs do` command.
+    If you do not have any keys then please take the time to [make some keys](/docs/documentation/keys/latest/examples/exporting_your_keys/). After you find a key which you currently have, then add that as the `address` flag to the `eris pkgs do` command.
 
 [^3]: If you choose the wrong key then you'll get an error which will probably look something like this:
 
@@ -787,9 +787,9 @@ Congratulations, you've just made your very own smart contract backed applicatio
     eris chains cat simplechain genesis
     ```
 
-    You can also see your `genesis.json` at `http://localhost:46657/genesis`. Note: replace `localhost` with the output of `docker-machine ip eris` if on OSX or Windows. See our [docker-machine tutorial](/docs/tutorials/tool-specific/docker_machine/) for more information.
+    You can also see your `genesis.json` at `http://localhost:46657/genesis`. Note: replace `localhost` with the output of `docker-machine ip eris` if on OSX or Windows. See our [docker-machine tutorial](/docs/documentation/cli/latest/examples/using_docker_machine_with_eris/) for more information.
 
-[^4]: If the account you are trying to use has not been registered in the `genesis.json` (or, latterly, has not been given the appropriate [permissions](/docs/documentation/db/) via permission transactions) and been given the appropriate permissions, then it will not be able to perform the actions it needs to in order to deploy and test the contract. The easiest thing to do at this point is to [update your genesis.json](/docs/tutorials/tool-specific/genesisupdating/).
+[^4]: If the account you are trying to use has not been registered in the `genesis.json` (or, latterly, has not been given the appropriate [permissions](/docs/documentation/db/) via permission transactions) and been given the appropriate permissions, then it will not be able to perform the actions it needs to in order to deploy and test the contract. The easiest thing to do at this point is to [update your genesis.json](/docs/documentation/cm/latest/examples/genesis_updating/).
 
     Once you have the following sorted:
 

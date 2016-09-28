@@ -5,20 +5,23 @@ title: "Tutorials | Solidity 5: Modular design and strategies"
 
 ---
 
-# Introduction
-
-This post is about how we can divide contracts up into components. By creating smart contracts from a set of specialized super-contracts, it becomes easier to manage them, test them, and to build on previously written code. The focus here will be on something I refer to as "strategy contracts". It is a more or less direct application of the strategy pattern, and while it doesn't really introduce anything new it is in my opinion a good way to think about the components that makes up a (non-trivial) contract.
-
-## Dependencies
+# Solidity Series
 
 This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/docs/tutorials/getting-started/).
 
-This tutorial assumes you have worked through the following Solidity tutorials:
+This tutorial is part of our Solidity tutorial series:
 
-* [The Five Types Model (Solidity 1)](/docs/tutorials/solidity/solidity-1/)
-* [Action-Driven Architecture (Solidity 2)](/docs/tutorials/solidity/solidity-2/)
-* [Solidity Language Features (Solidity 3)](/docs/tutorials/solidity/solidity-3/)
-* [Testing Solidity (Solidity 4)](/docs/tutorials/solidity/solidity-4/)
+* [The Five Types Model (Solidity 1)](solidity_1_the_five_types_model)
+* [Action-Driven Architecture (Solidity 2)](solidity_2_action_driven_architecture)
+* [Solidity Language Features (Solidity 3)](solidity_3_solidity_language_features)
+* [Testing Solidity (Solidity 4)](solidity_4_testing_solidity)
+* [Modular Solidity (Solidity 5)](solidity_5_modular_solidity)
+* [Advanced Solidity Features (Solidity 6)](solidity_6_advanced_solidity_features)
+* [Updating Solidity Contracts (Solidity 7)](solidity_7_updating_solidity_contracts)
+
+# Introduction
+
+This post is about how we can divide contracts up into components. By creating smart contracts from a set of specialized super-contracts, it becomes easier to manage them, test them, and to build on previously written code. The focus here will be on something I refer to as "strategy contracts". It is a more or less direct application of the strategy pattern, and while it doesn't really introduce anything new it is in my opinion a good way to think about the components that makes up a (non-trivial) contract.
 
 ## owned and mortal
 
@@ -60,7 +63,7 @@ contract mortal is owned {
 
 Through the rules of inheritance (which is very similar to how it works in C++), `mortal` now has all the fields and function of `owned`, and when it is instantiated it will automatically call the constructor of `owned` which will set the `owner` field. It can also call `isOwner` to do the owner check. Also, if `mortal` is extended by another contract, that contract will have a `kill()` function that selfdestructs the contract and can only be called by the contract creator (which is what the `mortal` contract is for).
 
-Finally, a very simple [unit-testing contract](/docs/tutorials/solidity/solidity-4/) could be written for `owned` to ensure that it does indeed work:
+Finally, a very simple [unit-testing contract](solidity_4_testing_solidity) could be written for `owned` to ensure that it does indeed work:
 
 ```javascript
 contract failer {
@@ -218,7 +221,3 @@ In most systems you'd want more sophisticated access control; for example, you m
 The combination of abstract (interface) contracts with inheritance makes it possible to encode different strategies/solutions to the same problem into separate contracts that all use a common interface. Doing so makes the code re-usable, clean, and easy to test. This applies to the strategy contracts themselves but also to the contracts that uses them.
 
 Finally, some general advice for beginners - A lot of this is harder then it may sound because of how young Solidity still is, but planned features such as shared contracts and templated structs will gradually make it easier. Also, Solidity will still go through many changes (some of them breaking), so whatever code is written today will probably not compile in a few months or so (or will at least have to be refactored). It will likely continue like this for some time. At this point it is best to start simple, and to continue to keep it simple.
-
-# Where to next?
-
-**Next, you'll want to [look at some advanced solidity features](/docs/tutorials/solidity/solidity-6)!**

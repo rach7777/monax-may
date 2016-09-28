@@ -7,7 +7,7 @@ path: "./content/docs/documentation/db"
 index_file: "eris-db"
 menu:
   documentation:
-    weight: 40
+    weight: 25
 
 ---
 

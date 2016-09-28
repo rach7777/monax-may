@@ -5,6 +5,20 @@ title: "Tutorials | Solidity 2: An Action-Driven Architecture"
 
 ---
 
+# Solidity Series
+
+This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/docs/tutorials/getting-started/).
+
+This tutorial is part of our Solidity tutorial series:
+
+* [The Five Types Model (Solidity 1)](solidity_1_the_five_types_model)
+* [Action-Driven Architecture (Solidity 2)](solidity_2_action_driven_architecture)
+* [Solidity Language Features (Solidity 3)](solidity_3_solidity_language_features)
+* [Testing Solidity (Solidity 4)](solidity_4_testing_solidity)
+* [Modular Solidity (Solidity 5)](solidity_5_modular_solidity)
+* [Advanced Solidity Features (Solidity 6)](solidity_6_advanced_solidity_features)
+* [Updating Solidity Contracts (Solidity 7)](solidity_7_updating_solidity_contracts)
+
 # Introduction
 
 The system proposed in part 1 is a good system in theory. It has good separation of concerns, is very modular, and is set up to handle permissions. This is how a typical system would look:
@@ -28,14 +42,6 @@ Action driven architecture:
 - Fully extendable. Individual actions can be added and removed without affecting the rest of the system.
 
 - Expensive, as there is lot of code and contracts, so usually not good in production environments.
-
-## Dependencies
-
-This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/docs/tutorials/getting-started/).
-
-This tutorial assumes you have worked through the following Solidity tutorials:
-
-* [The Five Types Model (Solidity 1)](/docs/tutorials/solidity/solidity-1/)
 
 # Actions
 
@@ -1543,9 +1549,3 @@ contract Doug is DougDb {
 
 }
 ```
-
-# Where to next?
-
-In the next part we will learn how to integrate smart contract systems into applications by RPCing them through a javascript API. This involves an in-depth look at a number of important solidity features, mainly `events`. Events are essential in finding out the result of transactions, as they can be used to print messages into the client log which can be captured and read using a combination of `filters` and `watches` (there are a few events in the linked list Doug contract btw.). It is a lot less complicated then it sounds.
-
-**Next, we'll go deeper into [Solidity's language features](/docs/tutorials/solidity/solidity-3/)!**

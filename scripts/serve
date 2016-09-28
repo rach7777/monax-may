@@ -1,8 +1,19 @@
 #!/usr/bin/env bash
 # this is to be used for local development
 static_dir=`pwd`/static
+ip="http://localhost"
 
 setup() {
+  # note forcibly assumes the `site` machine on OSX
+  if [ "$(uname)" == "Darwin" ]; then
+    ip=$(docker-machine ip site)
+    if [[ "$ip" == "" ]]; then
+      echo "Please make sure you are using your site docker-machine"
+      exit 1
+    fi
+    ip="http://$ip"
+  fi
+
   if [[ `docker images site_buildr -q` == "" ]]
   then
     `pwd`/scripts/build buildr
@@ -69,7 +80,7 @@ serve_hugo() {
     --volumes-from site_gulp_watch \
     --publish 0.0.0.0:1313:1313 \
     site \
-    hugo serve --appendPort --baseURL http://192.168.99.100 --bind 0.0.0.0 &
+    hugo serve --appendPort --baseURL "$ip" --bind 0.0.0.0 &
 }
 
 main() {

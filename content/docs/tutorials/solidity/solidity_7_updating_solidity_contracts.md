@@ -5,6 +5,20 @@ title: "Tutorials | Solidity 7: Updating Solidity Contracts"
 
 ---
 
+# Solidity Series
+
+This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/docs/tutorials/getting-started/).
+
+This tutorial is part of our Solidity tutorial series:
+
+* [The Five Types Model (Solidity 1)](solidity_1_the_five_types_model)
+* [Action-Driven Architecture (Solidity 2)](solidity_2_action_driven_architecture)
+* [Solidity Language Features (Solidity 3)](solidity_3_solidity_language_features)
+* [Testing Solidity (Solidity 4)](solidity_4_testing_solidity)
+* [Modular Solidity (Solidity 5)](solidity_5_modular_solidity)
+* [Advanced Solidity Features (Solidity 6)](solidity_6_advanced_solidity_features)
+* [Updating Solidity Contracts (Solidity 7)](solidity_7_updating_solidity_contracts)
+
 # Introduction
 
 This tutorial series looks at modular systems of smart-contracts, and how to continuously update the code in a reliable way. Most contracts in your application will become obsolete at some point, and will require an update. Same as in other applications. It could be because new features must be added, a bug is found, or because a better, more optimized version has been made. Updating could of course cause problems so it must be done with care. Some of the things one must ensure is that:
@@ -15,19 +29,6 @@ This tutorial series looks at modular systems of smart-contracts, and how to con
 - replacing the contract has no side-effects in other parts of the system.
 
 The first point may seem obvious but it usually requires a lot of work, because updating is not possible by default; the reason is because of how accounts, code and storage works.
-
-## Dependencies
-
-This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/docs/tutorials/getting-started/).
-
-This tutorial assumes you have worked through the following Solidity tutorials:
-
-* [The Five Types Model (Solidity 1)](/docs/tutorials/solidity/solidity-1/)
-* [Action-Driven Architecture (Solidity 2)](/docs/tutorials/solidity/solidity-2/)
-* [Solidity Language Features (Solidity 3)](/docs/tutorials/solidity/solidity-3/)
-* [Testing Solidity (Solidity 4)](/docs/tutorials/solidity/solidity-4/)
-* [Modular Solidity (Solidity 5)](/docs/tutorials/solidity/solidity-5)
-* [Advanced Solidity Features (Solidity 6)](/docs/tutorials/solidity/solidity-6)
 
 # Accounts, Code and Storage
 
@@ -187,7 +188,3 @@ Proper delegation is an important part of smart-contract systems. It is also som
 Another thing to keep in mind is that modularity comes with a cost, because it requires more code, storage variables and calls. On the public chain, where the gas limitations are quite severe (for obvious reasons), even a small modular system could be hard to deploy and run. Generally, when it comes to scalability vs. efficiency I tend to go with scalability. The large, expensive contracts in an excessively modular system can after all be improved and replaced, but if the contracts are locked down that may not be an option.
 
 In our opinion, it is very important to at least acknowledge that the code is going to need updates, and at some point there must be a good policy for how it can be done. The alternative is to not have a plan and fail. And then maybe fail again, and again, until eventually it becomes clear.
-
-# Where to next?
-
-**Now that you're a solidity expert, look over [our advanced tutorials series](/docs/tutorials/advanced)**

@@ -5,19 +5,23 @@ title: "Tutorials | Solidity 4: Testing Solidity"
 
 ---
 
-# Introduction
-
-This post and the following ones will be about validating smart contracts; making sure that they do what they are designed to do, and that they continue to do so.
-
-## Dependencies
+# Solidity Series
 
 This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/docs/tutorials/getting-started/).
 
-This tutorial assumes you have worked through the following Solidity tutorials:
+This tutorial is part of our Solidity tutorial series:
 
-* [The Five Types Model (Solidity 1)](/docs/tutorials/solidity/solidity-1/)
-* [Action-Driven Architecture (Solidity 2)](/docs/tutorials/solidity/solidity-2/)
-* [Solidity Language Features (Solidity 3)](/docs/tutorials/solidity/solidity-3/)
+* [The Five Types Model (Solidity 1)](solidity_1_the_five_types_model)
+* [Action-Driven Architecture (Solidity 2)](solidity_2_action_driven_architecture)
+* [Solidity Language Features (Solidity 3)](solidity_3_solidity_language_features)
+* [Testing Solidity (Solidity 4)](solidity_4_testing_solidity)
+* [Modular Solidity (Solidity 5)](solidity_5_modular_solidity)
+* [Advanced Solidity Features (Solidity 6)](solidity_6_advanced_solidity_features)
+* [Updating Solidity Contracts (Solidity 7)](solidity_7_updating_solidity_contracts)
+
+# Introduction
+
+This post and the following ones will be about validating smart contracts; making sure that they do what they are designed to do, and that they continue to do so.
 
 # Testing smart-contracts
 
@@ -395,7 +399,3 @@ Javascript is good. It has become the de facto language not just for the web, bu
 One of the best things with `Node.js` integration is that we get full access to its tools. [gulp](https://github.com/gulpjs/gulp) is particularly useful. It's a very popular build-automation tool that lets you create different tasks, chain them, and many other things. There's also a unit-testing framework called [mocha](https://github.com/mochajs/mocha), and a bunch of different assertion libraries. Since `solUnit` is a node.js library, it is possible to run the tests from mocha, and thereby integrating the Solidity tests with the tests of other DApp code (at least if it is `node.js` javascript).
 
 In the next post I will be making a simple multi-agent test in Javascript. The way it'll work is I will make a simple `CoinAgent` class in javascript, which holds a reference to the javascript version of the`Coin` contract (created through `eris-contracts.js`). Each of these agents would have functions to `mint` and `send`, but they would all transact to it using their own key. There will be a script which deploys a `Coin` contract, then creates a number of agents and have them run a series of transactions to make sure that it all works.
-
-# Where to next?
-
-**Next, you'll want to [learn to make solidity modular](/docs/tutorials/solidity/solidity-5).**

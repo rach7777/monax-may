@@ -71,7 +71,7 @@ We recently built the [marmot checker](https://github.com/eris-ltd/marmot) which
 
 ## Deploy To the Cloud
 
-Deploy to the cloud. This process uses [docker-machine](/docs/tutorials//tool-specific/docker_machine/) and will soon be bundled up in the `eris remotes` command to simplify the process even further. See the [advanced cloud tutorial](/docs/tutorials/advanced/chain-deploying/) for more information on deploying your chain to the cloud.
+Deploy to the cloud. This process uses [docker-machine](/docs/documentation/cli/latest/examples/using_docker_machine_with_eris/) and will soon be bundled up in the `eris remotes` command to simplify the process even further. See the [advanced cloud tutorial](/docs/documentation/cm/latest/examples/chain-deploying/) for more information on deploying your chain to the cloud.
 
 Voila! Your app is ready for users. Of course, you'll want to build a user interface, likely at the javascript layer. To simplify that process, we have three javasript libraries: [eris:db.js](/docs/documentation/db.js/),  [eris:contracts.js](/docs/documentation/contracts.js/), and [eris:keys.js](/docs/documentation/keys.js/)
 
@@ -83,7 +83,7 @@ Next, we'll walk through one approach -- the one we consider most intuitive for 
 
 ## Set Up Your Chain
 
-We start with the genesis file. The sets up your chain and contains approved validators, their initial coin distribution, any permissions, roles, or names can be assigned to them. Maybe you want 5, maybe you want 100. See [the advanced chain making tutorial](/docs/tutorials/advanced/chain-making/) for more info on creating chains. Since you'll need the public keys of everyone you'd like included, a key pair will need to be generated for each participant/validator.
+We start with the genesis file. The sets up your chain and contains approved validators, their initial coin distribution, any permissions, roles, or names can be assigned to them. Maybe you want 5, maybe you want 100. See [the advanced chain making tutorial](/docs/documentation/cm/latest/examples/chain-making//) for more info on creating chains. Since you'll need the public keys of everyone you'd like included, a key pair will need to be generated for each participant/validator.
 
 Either you do this all yourself and distribute the keys or ask each user to generate a pair themselves and provide the pubkey. For the latter, you'd pass in a `.csv` file on the `eris chains make --known` command.
 
@@ -98,7 +98,7 @@ Once >2/3 of validator pool joins, the chain will begin validating transactions 
 
 At the tool level, these would primarily be used by chain admins whereas developers for a user-facing application would likely be working at the javascript layer for sending transactions and deploying contracts.
 
-More info: [chain deploying](/docs/tutorials/advanced/chain-deploying/); [contracts interacting](/docs/tutorials/getting-started/#step-4-integrate-your-ecosystem-application).
+More info: [chain deploying](/docs/documentation/cm/latest/examples/chain-deploying/); [contracts interacting](/docs/tutorials/getting-started/#step-4-integrate-your-ecosystem-application).
 
 ## Set Up Your Application
 
@@ -122,15 +122,13 @@ Time to build your service (application). But wait.
 
 What is eris:cli anyways, and why would you want to use it? How will help it operate your blockchain application?
 
-As previously mentioned, it's an orchestration tool. Everything we've discussed so far can be done natively (i.e., without docker); this requires stitching together the various tools (see, for example, [eris by curl](/docs/tutorials/tool-specific/eris_by_curl/). **eris:cli makes it easier to co-ordinate all the things you need to roll a smart-contract ready chain with an application**.
-
 With that in mind, our goal now is to build and define a service that, when started, links up to the existing chain and any other services that are required for the application to run smoothly. Once your service is built (write a bunch of code, basically), all it needs is a service definition file (`eris services new`; see the specification [here](/docs/documentation/cli/latest/services_specification/) which simplifies the `docker run` process. This of course assumes you've written a [Dockerfile](https://docs.docker.com/engine/reference/builder/) and made a [docker image](https://docs.docker.com/engine/userguide/containers/dockerimages/).
 
-See the [toadserver service making tutorial](/docs/tutorials/advanced/services-making/) for more information on this process.
+See the [toadserver service making tutorial](/docs/documentation/cli/latest/examples/how_to_make_a_service/) for more information on this process.
 
 The last tricky part, now that we have a defined service, is to deploy it to the cloud with >1 node/validator. Here again, docker shines, this time as a machine.
 
-The `eris` tool has a global flag `--machine` which can be used to specify another docker daemon (on any number of other hosts) upon which to execute a command. Note: these docker machines will have been pre-created using your choice of cloud provider. See our [docker-machine tutorial](/docs/tutorials/tool-specific/docker_machine/) and our [getting started with cloud machines](/docs/tutorials/advanced/cloud-getting-started) for more information.
+The `eris` tool has a global flag `--machine` which can be used to specify another docker daemon (on any number of other hosts) upon which to execute a command. Note: these docker machines will have been pre-created using your choice of cloud provider. See our [docker-machine tutorial](/docs/documentation/cli/latest/examples/using_docker_machine_with_eris/) and our [getting started with cloud machines](/docs/documentation/cli/latest/examples/getting_started_with_cloud_instances/) for more information.
 
 The beauty of this feature is that the files needed for these deployments need only be on the host, and, of course, you only need install eris once.
 

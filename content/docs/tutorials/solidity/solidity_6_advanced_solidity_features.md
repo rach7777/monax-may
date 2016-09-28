@@ -5,21 +5,23 @@ title: "Tutorials | Solidity 6: Advanced Solidity Features"
 
 ---
 
-# Introduction
-
-In this post we're going to look at some Solidity-features that are fairly new, tuples, memory arrays, libraries, index access/conversion between all types, and the new imports. We're also going to look at some fun weird things.
-
-## Dependencies
+# Solidity Series
 
 This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/docs/tutorials/getting-started/).
 
-This tutorial assumes you have worked through the following Solidity tutorials:
+This tutorial is part of our Solidity tutorial series:
 
-* [The Five Types Model (Solidity 1)](/docs/tutorials/solidity/solidity-1/)
-* [Action-Driven Architecture (Solidity 2)](/docs/tutorials/solidity/solidity-2/)
-* [Solidity Language Features (Solidity 3)](/docs/tutorials/solidity/solidity-3/)
-* [Testing Solidity (Solidity 4)](/docs/tutorials/solidity/solidity-4/)
-* [Modular Solidity (Solidity 5)](/docs/tutorials/solidity/solidity-5)
+* [The Five Types Model (Solidity 1)](solidity_1_the_five_types_model)
+* [Action-Driven Architecture (Solidity 2)](solidity_2_action_driven_architecture)
+* [Solidity Language Features (Solidity 3)](solidity_3_solidity_language_features)
+* [Testing Solidity (Solidity 4)](solidity_4_testing_solidity)
+* [Modular Solidity (Solidity 5)](solidity_5_modular_solidity)
+* [Advanced Solidity Features (Solidity 6)](solidity_6_advanced_solidity_features)
+* [Updating Solidity Contracts (Solidity 7)](solidity_7_updating_solidity_contracts)
+
+# Introduction
+
+In this post we're going to look at some Solidity-features that are fairly new, tuples, memory arrays, libraries, index access/conversion between all types, and the new imports. We're also going to look at some fun weird things.
 
 # Tuples
 
@@ -202,8 +204,4 @@ import "lib2/Lib2Contract.sol";
 ```
 
 Remapping is marginally useful in a case like this, but when you start getting many folders that are spread out it will make things a lot easier.
-
-# Where to next?
-
-**Next, you'll want to [update your solidity contracts](/docs/tutorials/solidity/solidity-7/)!**
 

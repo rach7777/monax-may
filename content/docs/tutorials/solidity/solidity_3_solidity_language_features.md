@@ -5,18 +5,23 @@ title: "Tutorials | Solidity 3: Solidity Language Features"
 
 ---
 
-# Introduction
-
-In this tutorial we will cover some of the basic ones, types, interfaces, events, errors, and give a few examples of how these work in practice.
-
-## Dependencies
+# Solidity Series
 
 This sequence of tutorials assumes that you have an understanding of the `eris` tooling to the point we ended in our [101 tutorial sequence](/docs/tutorials/getting-started/).
 
-This tutorial assumes you have worked through the following Solidity tutorials:
+This tutorial is part of our Solidity tutorial series:
 
-* [The Five Types Model (Solidity 1)](/docs/tutorials/solidity/solidity-1/)
-* [Action-Driven Architecture (Solidity 2)](/docs/tutorials/solidity/solidity-2/)
+* [The Five Types Model (Solidity 1)](solidity_1_the_five_types_model)
+* [Action-Driven Architecture (Solidity 2)](solidity_2_action_driven_architecture)
+* [Solidity Language Features (Solidity 3)](solidity_3_solidity_language_features)
+* [Testing Solidity (Solidity 4)](solidity_4_testing_solidity)
+* [Modular Solidity (Solidity 5)](solidity_5_modular_solidity)
+* [Advanced Solidity Features (Solidity 6)](solidity_6_advanced_solidity_features)
+* [Updating Solidity Contracts (Solidity 7)](solidity_7_updating_solidity_contracts)
+
+# Introduction
+
+In this tutorial we will cover some of the basic ones, types, interfaces, events, errors, and give a few examples of how these work in practice.
 
 # Types - the basics
 
@@ -315,8 +320,3 @@ One way of circumventing this is to only allow contracts to be added in very con
 # Errors
 
 There is no real error handling system in Solidity (yet). There are no `try - catch` or `throw` statements, or something to that effect. Contract designers need to deal with errors themselves. Solidity does some sanity checks on arrays and such, but will often respond simply by executing the `(STOP)` instruction. According to the developers, this is just put in as a placeholder until a more sophisticated error handling and recovery system is put in place.
-
-
-# Where to next?
-
-**Next, you'll want to [test your Solidity contracts](/docs/tutorials/solidity/solidity-4)!**
