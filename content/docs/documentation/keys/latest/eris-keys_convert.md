@@ -1,43 +1,53 @@
 ---
 
 layout: single
-title:      "Documentation | eris:keys | eris-keys convert"
+type: docs
+title: "Documentation | Development Signing Daemon Tooling | eris-keys convert"
 
 ---
 
 # eris-keys convert
 
-eris-keys convert --addr <address>
+Eris-Keys Convert --Addr <Address>
 
-## Synopsis
-
-eris-keys convert --addr <address>
+## Usage
 
 ```bash
 eris-keys convert
 ```
 
-## Options
+## Synopsis
 
-```
-  -h, --help[=false]: help for convert
-```
+eris-keys convert --addr <address>
+
+
+
 
 ## Options inherited from parent commands
 
+```bash
+  --addr string   address of key to use
+  -d, --debug         debug mode
+      --dir string    specify the location of the directory containing key files (default "/home/coda/.eris/keys")
+      --host string   set the host for talking to the key daemon (default "localhost")
+  -l, --log int       specify the location of the directory containing key files
+      --name string   name of key to use
+      --port string   set the port for key daemon to listen on (default "4767")
+  -v, --verbose       verbose mode
 ```
-      --addr="": address of key to use
-      --dir="/home/ubuntu/.eris/keys": specify the location of the directory containing key files
-      --host="localhost": set the host for talking to the key daemon
-  -l, --log=0: specify the location of the directory containing key files
-      --name="": name of key to use
-      --port="4767": set the port for key daemon to listen on
-```
+
+
 
 ## See Also
 
-* [eris-keys](/docs/documentation/keys/latest/eris-keys/)	 - Generate and manage keys for producing signatures
+* [eris-keys](/docs/documentation/keys/0.12.0-rc3/eris-keys/) - Generate and manage keys for producing signatures
 
-## Specifications
+
+
+
+# Examples
+
+* [Keyexporting](/docs/documentation/keys/0.12.0-rc3/examples/keyexporting/)
+
 
 
