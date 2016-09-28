@@ -22,7 +22,7 @@ The Eris Chain Manager is a utility for performing complex operations on eris ch
 
 Made with <3 by Eris Industries.
 
-Complete documentation is available at https://docs.erisindustries.com
+Complete documentation is available at https://monax.io/docs/documentation
 
 Version:
   0.12.0-rc3
