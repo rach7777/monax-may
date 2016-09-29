@@ -11,13 +11,26 @@ At Monax, our main "product" is our Free and Open Source toolkit called: [Eris](
 
 That said, we are a for-profit company and below are the value-add products we offer on top of our FOSS tooling. They greatly simplify the use of smart contract technology in an enterprise context.
 
-# Smart Contract Library Modules
+# Smart Contract Modules
 
-Description of modules.
+The core of our offering are the *Monax Smart Contract Modules*. These are modular, interoperable components that can be used to assemble enterprise-grade smart contract applications. 
 
-# Application Showcase
+Building Smart Contract applications using the *Monax Smart Contract Modules* offers a variety of advantages:
+* Speed: Faster time-to-market as only last-mile configuration is required
+* Upgrades: Updated versions of modules can quickly add features and fix bugs
+* Quality: Highly tested contracts written according to best practices in smart contract development
+* Compliance: Vetted by Eris legal engineers
 
-Description of applications.
+Our smart contract modules are written in a modular fashion, which allows combining them to create complex smart contract applications. As modules get updated, a rapidly increasing range of applications and use cases become available.
+
+
+|Functionality    |Use Cases        |Availability     |Description      |Required Product Releases  |
+|---------------  |---------------  |---------------  |---------------  |---------------            |
+|Debt             |Loans, Bonds     |Aug '16        | <ul><li>Extend and service credit/money in exchange for future cash flows</li></ul> |<ul><li>Commons 0.1x</li><li>Financial 0.1x</li></ul>|
+|Task Management  |Vendor Management  |Sep '16    |<ul><li>Assign tasks to pool of authorized workers/vendors</li><li>Tasks status tracking</li></ul>|<ul><li>Commons 0.2x</li><li>BPM 0.1x</li></ul>|
+|Logistics        |Supply Chain, Provenance |Sep '16  |<ul><li>Track assets as they move from point of origination through distribution point to end destination</li></ul>|<ul><li>Commons 0.2x</li><li>BPM 0.1x</li><li>Logistics 0.1x</li></ul>|
+|Securitization   |Trade Receivables, ABS |Oct '16  |<ul><li>Consolidate, pool and syndicate assets (e.g. receivables) to sell as securities</li><li>Allocate collateral to assets</li></ul>|<ul><li>Commons 0.3x</li><li>BPM 0.1x</li><li>Financial 0.2x</li></ul>|
+|Insurance        |New Business, Claims |Oct '16  |<ul><li>Automatically extend insurance for assets tracked on chain (e.g. goods in transit)</li><li>Automatically process claims</li></ul>|<ul><li>Commons 0.3x</li><li>BPM 0.2x</li><li>Financial 0.2x</li></ul>|
 
 # Monax Value-Add Services
 ## Developer Training
