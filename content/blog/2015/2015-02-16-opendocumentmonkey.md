@@ -9,9 +9,7 @@ excerpt: Legal process and document management is expensive, time-consuming, and
 meta: true
 published: true
 tags:
-- eris
-- thelonious
-- decerver
+- monax
 thumbnail: doug.png
 title: 'Open Document Monkey: A sketch and proposal'
 url: /2015/02/16/opendocumentmonkey/
@@ -23,9 +21,9 @@ ___
 
 #1. Lawyers. Lawyers everywhere.
 
-##A. Eris Industries' legal bones.
+##A. Monax Industries' legal bones.
 
-Two of Eris Industries' three founders - Casey and myself - are lawyers. But as far as lawyers go, we could hardly be less alike, which - way back in May of last year - presented some pretty unique challenges in the context of the (notoriously hazardous) exercise of building a startup. As of the day we incorporated, Casey and I had met in person only *twice*, and there was rather a lot on which we disagreed. We had to arrive at a commercial consensus - and fast - if the company were to succeed.
+Two of Monax Industries' three founders - Casey and myself - are lawyers. But as far as lawyers go, we could hardly be less alike, which - way back in May of last year - presented some pretty unique challenges in the context of the (notoriously hazardous) exercise of building a startup. As of the day we incorporated, Casey and I had met in person only *twice*, and there was rather a lot on which we disagreed. We had to arrive at a commercial consensus - and fast - if the company were to succeed.
 
 To address this divergence, we started a practice we jokingly referred to as "fighting in front of the kids". Every week or so, Casey would fly to London, we'd go out to the same Bangladeshi restaurant for dinner, and we'd argue - entirely deliberately, no-holds-barred.
 
@@ -35,7 +33,7 @@ Usually, about 24 hours of grumping would follow before one of us or the other w
 
 Nine months in, and it's abundantly clear that deliberate argumentation was a great idea. Apart from getting us comfortable with communicating openly and directly, this process has fostered a company culture which - as put by Jeffrey Friedman - emphasises "the importance of subverting one’s own natural intellectual complacency with the constant reminder that one might be wrong."
 
-One of our discussions last summer hinged on whether we should use [Legal Markdown](https://erisindustries.com/components/erislegal/) to negotiate the transaction documents with our [Seed Stage investor](http://anthemis.com) as well as our first possible clients. Casey argued that we should, in order to demonstrate the utility of the technology; I pointed out that this approach probably wouldn't go down particularly well, seeing as both our lawyers, the other side's lawyers, and the other side themselves would all use MS Word. Thus, so should we. Casey relented; Word was used.
+One of our discussions last summer hinged on whether we should use [Legal Markdown](https://monax.io/platform) to negotiate the transaction documents with our [Seed Stage investor](http://anthemis.com) as well as our first possible clients. Casey argued that we should, in order to demonstrate the utility of the technology; I pointed out that this approach probably wouldn't go down particularly well, seeing as both our lawyers, the other side's lawyers, and the other side themselves would all use MS Word. Thus, so should we. Casey relented; Word was used.
 
 Since then, we've been using GitHub for most of our internal documents - legal or otherwise - and I have arrived at the point Casey was at several years ago: namely, I don't like using Word any more. It's an inefficient, bulky, and overly prescriptive piece of software; every bank and law firm using it has a different set of custom templates, none of which are compatible with each other. I now even find myself using SublimeText to draft medium-size e-mails - and even this blog post - just because it's easier to work with.
 
@@ -43,7 +41,7 @@ With the above in mind, I think the time is right for me to concede that - altho
 
 ##C. Text documents are data, just like anything else.
 
-**Here at Eris Industries we're all about structuring data in useful ways to save costs, time, and effort.** Combined with a self-managing blockchain, text documents can - and should - be structured to streamline legal process and reduce oversight costs. It's thus my pleasure to introduce the first sketch of an application that is designed to do that - an open-source standard for document management that makes the more miserable aspects of transaction management a little less miserable.
+**Here at Monax Industries we're all about structuring data in useful ways to save costs, time, and effort.** Combined with a self-managing blockchain, text documents can - and should - be structured to streamline legal process and reduce oversight costs. It's thus my pleasure to introduce the first sketch of an application that is designed to do that - an open-source standard for document management that makes the more miserable aspects of transaction management a little less miserable.
 
 I call this proposed open standard/blockchain application **Open Document Monkey.**
 
@@ -175,7 +173,7 @@ and
 
 This will take a lot of work up-front. Once done, however, it could save everyone rather a lot of time. The key is to set up a programmatic architecture in advance which (a) displays in JavaScript (so people can understand it and amend it through a text editor) but (b) also employs scripting architecture which flags inconsistencies automatically when they arise.
 
-Eris' Legal Markdown could do this pretty well. You'd need to define a couple of things in advance:
+Monax's Legal Markdown could do this pretty well. You'd need to define a couple of things in advance:
 
 i) Party names and details:
 
@@ -302,4 +300,4 @@ Once all of the changes to the document are agreed/final, both sides click a but
 
 Just script the functionality that a trainee currently carries out, and you've spared a junior lawyer's Friday night.
 
-A system such as this, I think, could be very useful indeed. And with the Eris Industries stack, it can be built.
+A system such as this, I think, could be very useful indeed. And with the Monax Industries stack, it can be built.

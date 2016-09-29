@@ -94,7 +94,7 @@ That said, it is semi necessary to consider permissionless blockchains in the co
 
 As I have argued elsewhere, the "DNA" of a permissioned blockchain is no different than the "DNA" of a permissionless blockchain if we avoid the discussion of the presence of an access control layer. This is why the section above was formulated to speak about blockchains generally vis a vis hub and spoke blockchain architecture.
 
-So, as Eris has formulated them, permissioned blockchains differ from permissionless blockchains based on the presence or absence of an access control layer built into the blockchain clients. What are the fundamental implications of having an access control layer?
+So, as Monax Industries sees them, permissioned blockchains differ from permissionless blockchains based on the presence or absence of an access control layer built into the blockchain clients. What are the fundamental implications of having an access control layer?
 
 ### 1. Consensus Participant Restrictions
 
@@ -180,7 +180,7 @@ To begin with, let me quote Ethan (again):
 
 [Reference](https://www.reddit.com/r/erisindustries/comments/2pt3ag/decentralisation_for_its_own_sake_good_for_some/cmzthwe)
 
-When we get to the land of smart contracts instead of simply blockchains and tokens, the focus of effort for Eris since the days when Andreas was working on PRO-Doug and Tyler, Preston and I were prototyping a foundation in smart contracts and Ethan was working on Cryptoswartz (or, proof of custody), what we're essentially talking about (as I've argued [elsewhere](2015-09-15-smart-contracts-intro.md)) is "business process automation which reaches outside of the glass doors". In other words, across organizations.
+When we get to the land of smart contracts instead of simply blockchains and tokens, the focus of effort for Monax since the days when Andreas was working on PRO-Doug and Tyler, Preston and I were prototyping a foundation in smart contracts and Ethan was working on Cryptoswartz (or, proof of custody), what we're essentially talking about (as I've argued [elsewhere](2015-09-15-smart-contracts-intro.md)) is "business process automation which reaches outside of the glass doors". In other words, across organizations.
 
 And let's get real for a second. Business process automation is not something which needs to be ran on the Worlds Computer in order to be useful. To be clear, I'm not trying to denigrate Eth's messaging, I indeed like that positioning. That said, there is tons of utility in a smart contract network which is completely independent of having a globally decentralized, globally available, permissionless ledger.
 

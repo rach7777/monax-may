@@ -4,8 +4,7 @@ categories:
 - blockchain
 comments: true
 date: 2015-04-30T00:00:00Z
-excerpt: 'In this post Ethan explores Eris'' definition, as well as the greater relevance,
-  necessity, some of the use cases of that most remarkable piece of technology: the
+excerpt: 'In this post Ethan explores Monax's definition, as well as the greater relevance, of some of the use cases of that most remarkable piece of technology: the
   blockchain.'
 meta: true
 published: true
@@ -42,9 +41,9 @@ If blockchains do anything, they introduce a re-tooling of the basic crypto prim
 
 Onto `(3)`. Work on this goal has been underway for much shorter time than `(2)`, though it has seen particularly explosive interest in the last few years, with a flurry of new protocols and tools for distributed computing. While `(3)` has traditionally enabled decentralized storage and retrieval, most protocols built to address this goal have been unable to maintain a decentralized index of the data it makes available -- hence the trouble with the Pirate Bay. The problem is solved almost trivially by `(1)`, and becomes enormously more mature with the further addition of `(2)`.
 
-If you don't know what I mean, you should **consider the way Eris built [2gather](https://github.com/eris-ltd/2gather), a distributed video sharing application we're not allowed to call YouTube.**
+If you don't know what I mean, you should **consider the way Monax built [2gather](https://github.com/eris-ltd/2gather), a distributed video sharing application we're not allowed to call YouTube.**
 
-Content is hosted on [IPFS](http://ipfs.io/) (a *much* better bittorrent) and references to the content (hashes) are stored in and managed by contracts on a [eris:db blockchain](https://erisindustries.com/components/erisdb), with user accounts secured by their private key. Since the blockchain is shared state, anyone can see those references, and with the right tooling and design, can understand that they refer to such-and-such a video. A similar application would give you a decentralized Pirate Bay.
+Content is hosted on [IPFS](http://ipfs.io/) (a *much* better bittorrent) and references to the content (hashes) are stored in and managed by contracts on a [eris:db blockchain](https://monax.io/platform/db), with user accounts secured by their private key. Since the blockchain is shared state, anyone can see those references, and with the right tooling and design, can understand that they refer to such-and-such a video. A similar application would give you a decentralized Pirate Bay.
 
 Now, to the credit of IPFS, it's actually remarkable how much you can do without even using a blockchain, if you beef up on `(2)` a bit. In other words, you use public keys as indices to the data published by the owners of the keys (they call it IPNS). So you can do decentralized blogging and content curation sites, and even host a personal Pirate Bay. But while the network co-operates for storage and retrieval according to a file blob's checksum hash and/or the uploader's public key, it does not co-operate to process a sequence of transactions, and has no conception of a shared state machine. This is of course the meat and potatoes of `(1)`.
 

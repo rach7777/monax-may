@@ -20,4 +20,4 @@ title: 'Permissions Part I: Oh no he didn''t!'
 url: /2015/03/15/permissions-1/
 ---
 
-This tutorial has been deprecated. Please see our [current tutorials](https://docs.erisindustries.com/tutorials/).
+This tutorial has been deprecated. Please see our [current tutorials](https://monax.io/docs/tutorials/).

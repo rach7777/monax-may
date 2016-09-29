@@ -4,7 +4,7 @@ categories:
 - tutorials
 comments: true
 date: 2015-09-01T00:00:00Z
-excerpt: BTCD as a (Eris) Service
+excerpt: BTCD as a (Monax) Service
 meta: true
 published: true
 series: getstarted
@@ -33,7 +33,7 @@ Hope the asker doesn't mind that I answer here as answering these questions coul
 
 Generally Docker images come in two flavours. They have a start script which manages their start sequence. **Or**. They get started using a config pulled from config files (which means we have to get the config files "into" the containers). Taking a look at the `CMD` or `ENTRYPOINT` in the Dockerfile is usually a dead giveaway, if not sometimes more investigation is necessary.
 
-To investigate farther with `eris` built Docker images for services we aren't building, we keep all of these in our [Eris commons](https://github.com/eris-ltd/common/) in the `docker` folder. Compare the `btcd` folder to the `eth` folder if you would like to see a typical start script.
+To investigate farther with `eris` built Docker images for services we aren't building, we keep all of these in our [Monax commons](https://github.com/eris-ltd/common/) in the `docker` folder. Compare the `btcd` folder to the `eth` folder if you would like to see a typical start script.
 
 Since btcd doesn't use a start script we'll save that for another day (Ethan and I now both love shell scripting, well at least I certainly do).
 

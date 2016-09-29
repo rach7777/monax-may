@@ -4,15 +4,14 @@ categories:
 - products
 comments: true
 date: 2015-08-30T00:00:00Z
-excerpt: We have been thinking (and discussing) licensing of blockchain tech and tooling
-  a lot internally recently. Here's what we think.
+excerpt: We have been thinking (and discussing) licensing of blockchain tech and tooling a lot internally recently. Here's what we think.
 meta: true
 published: true
 tags:
 - licensing
 - blockchains
 thumbnail: licensing.jpg
-title: 'On Licensing: Why Eris is GPLv3'
+title: 'On Licensing: Why Monax is GPLv3'
 url: /2015/08/30/on-licensing/
 ---
 
@@ -26,7 +25,7 @@ Getting licensing right, for an open source company, is a necessary (if wholly i
 
 ## Step 1: Set The Goals
 
-And `goals` we think are the right place to start when thinking through licensing of open source software. At Eris our goals are as follows:
+And `goals` we think are the right place to start when thinking through licensing of open source software. At Monax Industries our goals are as follows:
 
 * make smart contract technology usable for a broad range of developers;
 * work within an ecosystem that makes this technology usable for larger, regulated enterprises;
@@ -101,17 +100,17 @@ MongoDB's licensing (which, personally, I think is quite elegant) makes the expl
 
 Given our approach to blockchaining is not very different that MongoDB's we have taken a similar approach to licensing. For example our eris:db product (a robust server around a permissioned smart contract machine) is licensed GPL3 (more on this in a minute) while our client libraries (which are made to be importable by middleware and browser level javascript suites) are (currently) licenced LGPL. The client libraries *may* move to Apache in order to enable non-disclosure of changes to the client libraries.
 
-The question in all software that the licensor must ask themselves is fundamentally, what needs to be changed in this cohesive software project? From our perspective, we hope very little. Our whole goal with the eris stack is to make these systems work in a variety of contexts with very little modification. We, mostly, take a `configuration over modification` approach to our blockchain and tooling work.
+The question in all software that the licensor must ask themselves is fundamentally, what needs to be changed in this cohesive software project? From our perspective, we hope very little. Our whole goal with Monax Industries' eris stack is to make these systems work in a variety of contexts with very little modification. We, mostly, take a `configuration over modification` approach to our blockchain and tooling work.
 
 Those coming from a world where forking BTC is the start of any blockchain client may not understand this, but for us we have moved so much of the functionality of "what you want to do with the blockchain client" **out of the client itself** and into different layers, for example the EVM smart contract interpreter, or the genesis permissions options available on the Tendermint blockchain via `snatives` contracts.
 
 Given that very little functionality need to be changed to the eris:db itself, and if those changes were made, the community should be able to take the benefit from it; given that the eris:db binary imports a variety of base libraries with varied licensing; given that we want to make this server be changeable and used for web services without triggering the distribution requirement (it is, fundamentally, a server afterall); given that we default to as open as possible, we have settled on GPLv3 for the eris:db container.
 
-For `eris` itself we have arrived at the same conclusion albeit with different considerations. Eris is, fundamentally, a convenience wrapper around Docker ([as of this writing, licenced Apache](https://github.com/docker/docker/blob/master/LICENSE)) optimized for blockchain and smart contract applications, we view it as "infrastructure tooling". Or, the confluence of two lines of software development we feel should be licenced as openly as possible. Tooling is a bit of a challenge with trying to keep your software open because of the infection principles of GPL.
+For `eris` itself we have arrived at the same conclusion albeit with different considerations. Monax is, fundamentally, a convenience wrapper around Docker ([as of this writing, licenced Apache](https://github.com/docker/docker/blob/master/LICENSE)) optimized for blockchain and smart contract applications, we view it as "infrastructure tooling". Or, the confluence of two lines of software development we feel should be licenced as openly as possible. Tooling is a bit of a challenge with trying to keep your software open because of the infection principles of GPL.
 
 Before proceeding one must consider some of the history of free software thinking; which means we have to start with someone like [Stallman](https://en.wikipedia.org/wiki/Richard_Stallman). For someone who thinks like Stallman licensing would probably break down like this: `MIT < Apache < LGPL < GPL < AGPL`. However, many modern open source proponents would reverse those arrows to make the sequencing look like this: `MIT > Apache > LGPL > GPL > AGPL`. The difference really boils down to whether you want to **retain the right to enforce that changes to your software be disclosed**. As explained in the p2p blog post linked to above, for many developers, the second interpretation is better (admittedly, MIT is sometimes left out of that array because of its lack of patent protections) because there is less of a consideration as to the infection and embedding questions. As I said before some of the consideration is technical and, modern, microservice architecture hedges some of the embedding concerns which would be raised by the above as it has generally been settled that talking to a program over an API is **not** embedding.
 
-For these reasons, at Eris we would lean toward the Stallman approach with the carve out that we think, for the purposes of Eris' products, AGPL goes too far.
+For these reasons, at Monax we would lean toward the Stallman approach with the carve out that we think, for the purposes of Monax's products, AGPL goes too far.
 
 ## Conclusion
 

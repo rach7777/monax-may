@@ -15,11 +15,11 @@ menu:
 
 # The Blockchain Client for Information Age Organizations
 
-eris:db is Eris Industries' blockchain client.
+eris:db is Monax Industries' blockchain client.
 
 It is a controllable (permissionable), smart contract-enabled, proof-of-stake based blockchain design. eris:db can be configured to work with a wide variety of individual blockchain networks. As such, it was, and continues to be, the first blockchain client designed from the ground up to be a multi-network blockchain client.
 
-Developers who use a eris:db blockchain client along with the eris platform to manage their blockchains are able to benefit from having an access control layer through the use of smart contracts.
+Developers who use a eris:db blockchain client along with Monax Industries' Eris Platform to manage their blockchains are able to benefit from having an access control layer through the use of smart contracts.
 
 eris:db was designed for deployment in a variety of contexts, from locked-down internal corporate deployments to deployments of a consortium of enterprises, to more decentralized and public deployments, to deployments which require the use of tokens of value, to those that only require the utility of a blockchain but not monetized tokenization. A single eris:db client is all that is required in order to participate in all of these blockchains.
 
@@ -29,7 +29,7 @@ With one eris:db client, commercial entities will be able to control an innumera
 
 ## Consensus
 
-eris:db uses the Tendermint Consensus engine, a deposit based proof of stake protocol which is much more environmentally friendly, decentralisable, speedy, and certain than proof of work.
+eris:db uses the Tendermint consensus engine, a deposit based proof of stake protocol which is much more environmentally friendly, decentralisable, speedy, and certain than proof of work.
 
 ## Interface
 

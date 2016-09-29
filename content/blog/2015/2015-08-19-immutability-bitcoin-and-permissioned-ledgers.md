@@ -18,7 +18,7 @@ title: Immutability for Bitcoin and Permissioned Ledgers
 url: /2015/08/19/immutability-bitcoin-and-permissioned-ledgers/
 ---
 
-Last week, I gave my first talk about Eris at the [Bitcoin Startups Berlin](http://www.meetup.com/Bitcoin-Startups-Berlin/) meetup. I know most people there so I knew this would be a friendly audience. At the same time, what we do at Eris doesn’t square with the ideologies of some in the Bitcoin space, so I did anticipate some pushback.
+Last week, I gave my first talk about Monax (then called Eris) at the [Bitcoin Startups Berlin](http://www.meetup.com/Bitcoin-Startups-Berlin/) meetup. I know most people there so I knew this would be a friendly audience. At the same time, what we do at Monax doesn’t square with the ideologies of some in the Bitcoin space, so I did anticipate some pushback.
  
 In the end, it was Jörg Platzer, owner of the world’s oldest Bitcoin-accepting establishment, Room 77, who took the most offense. He was obviously displeased at the notion of permissioned ledgers in general, but the one aspect where he debated me the most was the issue of immutability.
  
@@ -31,7 +31,7 @@ Immutability is an essential trait for Bitcoin. Satoshi described Bitcoin in his
  
 <h1>What about permissioned chains?</h1>
 
-Does immutability have similar importance in the case of permissioned chains? Our thesis at Eris is that blockchains and smart contracts will have wide-reaching implications. [Use cases and application contexts will vary widely](https://db.erisindustries.com/distributed%20business/2014/12/17/blockchain-your-business/) as will the designs and capabilities of chains. Presumably, some of these could include assets that are cash-like, where one would want a similar degree of immutability as in Bitcoin. But what about the rest?
+Does immutability have similar importance in the case of permissioned chains? Our thesis at Monax is that blockchains and smart contracts will have wide-reaching implications. [Use cases and application contexts will vary widely](https://monax.io/blog/2014/12/17/blockchain-your-business/) as will the designs and capabilities of chains. Presumably, some of these could include assets that are cash-like, where one would want a similar degree of immutability as in Bitcoin. But what about the rest?
  
 One way we think about the utility of blockchains, particularly smart contract-enabled ones, is that they provide process assurance. They allow different parties to run a process in a predictable and auditable way with permissions and capabilities being assigned upfront in a transparent way. The benefits of that could include making existing processes more efficient, allowing business relationships to extend to lower trust contexts and enabling completely new applications. Does immutability make sense in that context? Depending on the specific business case, it will be necessary to allow transactions to be reversed on the chain. One can imagine a blockchain tracking real-world ownership. Then it would be essential that some (perhaps the courts of law) have the ability to change ownership on-chain. Otherwise a thief could steal someone’s house by hacking into their computer. Obviously that would have to be prevented.
 

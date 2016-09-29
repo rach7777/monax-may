@@ -16,7 +16,7 @@ url: /2015/05/27/casey-in-switzerland/
 
 Casey was recently in Switzerland to give two talks. The production quality of these videos is not great (and I'm to blame). My phone recorder needed a paid upgrade to save more than three minutes of an .ogg file -- which I only realized after the first talk. We will be working on adding in some additional content to help understand what was happening on the slides and whiteboard.
 
-While both videos are posted here, most said that the second (the technical side) was much more helpful than the first (the political and social side which underpins the Eris development and design philosophy).
+While both videos are posted here, most said that the second (the technical side) was much more helpful than the first (the political and social side which underpins the Monax development and design philosophy).
 
 Enjoy!
 
