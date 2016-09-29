@@ -17,7 +17,7 @@ title: 'Public Science: A Slightly More Practical Guide'
 url: /2016/03/15/chains-and-science-how-to/
 ---
 
-This is Part 2 in a probably several part series. [Here's Part 1](https://db.erisindustries.com/science/2016/03/14/blockchains-and-science/)
+This is Part 2 in a probably several part series. [Here's Part 1](https://monax.io/blog/2016/03/14/blockchains-and-science/)
 
 The previous post was stricly a think-piece. Here, I outline some practical steps that a consortium of institutions could take to provide the basic building blocks needed to acheive a worldwide ledger of knowledge. The problem is this: how do we maximize the quantity of data (that has sufficient quality) in order to acheive scientific consensus on some topic of study? Most of what is proposed here is realistic today although several ideas will need significant refining before any practical implementation succeeds. A summary at the end distinguishes the possible from the now.
 
@@ -38,7 +38,7 @@ For b) we need specific standards for validating data from external sources (oth
 
 Note: because there is a specific framework in place for accepting valid data for some pre-registered experiment, new data can be added to the set in perpetuity. Consequently, the conclusion derived from what is essentially a single experiment can evolve.
 
-What does this look like in practice? Well, in [my previous post](https://db.erisindustries.com/science/2016/03/14/blockchains-and-science/) we have Alice and Bob. If Alice had announced, *ahead of time* her intentions to attempt the groundbreaking experiment, then perhaps Bob could have contributed both: a) improvements to the methodology and, b) valid data by running the experiment himself. Both Alice and Bob would now each have a shared data set, thus increasing statistical power. In the previous post, neither Alice or Bob concluded anything groundbreak from their data. Perhaps the data set simply wasn't large enough. 
+What does this look like in practice? Well, in [my previous post](https://monax.io/blog/2016/03/14/blockchains-and-science/) we have Alice and Bob. If Alice had announced, *ahead of time* her intentions to attempt the groundbreaking experiment, then perhaps Bob could have contributed both: a) improvements to the methodology and, b) valid data by running the experiment himself. Both Alice and Bob would now each have a shared data set, thus increasing statistical power. In the previous post, neither Alice or Bob concluded anything groundbreak from their data. Perhaps the data set simply wasn't large enough. 
 
 This helps tackle the [increasingly problematic lack of reproducibility in psychological science](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4550299/) and maybe, just maybe, the conclusion that [most research findings are false](http://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124) can be un-concluded.
 
