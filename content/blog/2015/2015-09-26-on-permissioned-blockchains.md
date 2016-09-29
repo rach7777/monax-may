@@ -104,11 +104,11 @@ Permissioned blockchain designs (at least as we've conceived them) allow the net
 
 ### 2. Capabilities Restrictions
 
-The second primary difference between a properly conceived permissioned blockchain and a permissionless blockchain is whether the participants in the blockchain have an ability to restrict who can create smart contracts (if the blockchain is [logic optimized](2015-08-10-how-i-current-explain-blockchains.md)) and/or transact on the blockchain.
+The second primary difference between a properly conceived permissioned blockchain and a permissionless blockchain is whether the participants in the blockchain have an ability to restrict who can create smart contracts (if the blockchain is [logic optimized](2015-08-10-how-i-current-explain-blockchains)) and/or transact on the blockchain.
 
 ### Analogizing These Fundamental Differences
 
-The easiest way to explain the differences between permissioned and permissionless blockchains is to analogize. Ethan has [compared](2015-04-30-on-blockchains.md) a blockchain architecture to a hub and spoke architecture via comparing democracy to dictatorship:
+The easiest way to explain the differences between permissioned and permissionless blockchains is to analogize. Ethan has [compared](2015-04-30-on-blockchains) a blockchain architecture to a hub and spoke architecture via comparing democracy to dictatorship:
 
 > [C]onsider this: democracy can be orders of magnitude less efficient at governing large bodies of humans than hierarchical dictatorships, but for one reason or another countries continue to turn to democracy (granted, weak forms of it) rather than dictatorship because of the kind of culture it produces. Blockchain technology may have a very similar impact on humans: even though they are less efficient than their counterparts at the typical things their counterparts were optimized for, they impose new structural paradigms on human interactions that may be valuable in and of themselves, regardless of the performance of the database, and especially if they result in human behavioural patterns that make culture as a whole more efficient.
 
