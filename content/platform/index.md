@@ -17,9 +17,9 @@ aliases:
 ```
 
 
-This page provides a high level overview and a detailed explanation of how the eris stack is, well, stacked.
+This page provides a high level overview and a detailed explanation of how Monax Industries' software stack, known to the market as Eris, is, well, stacked.
 
-[Modularity is a strong focus](https://eng.erisindustries.com/tutorials/2015/09/05/docker-and-eris/), greatly facilitated by [docker](https://docker.com). This page explains how the tooling fits together while painting a path through our tutorial series. The complicated task of orchestrating all the various requirements for a smart-contract-focused blockchain is exactly why we went all-in on docker despite various ongoing pain points. We like to think of [eris:cli](/docs/documentation/cli/latest/eris/) as "docker for blockchains".
+[Modularity is a strong focus](https://monax.io/blog/2015/09/05/docker-and-eris/), greatly facilitated by [docker](https://docker.com). This page explains how the tooling fits together while painting a path through our tutorial series. The complicated task of orchestrating all the various requirements for a smart-contract-focused blockchain is exactly why we went all-in on docker despite various ongoing pain points. We like to think of [eris:cli](/docs/documentation/cli/latest/eris/) as "docker for blockchains".
 
 {{< image src="/images/docs/eris-stack-v2.png" >}}
 
@@ -45,7 +45,7 @@ As with all the tools in our stack, it can easily be swapped out for other compa
 
 Chains have a few key properties: validators (specified in the all important genesis file or updated on the fly with bond transactions), a consensus engine (the mechanism for updating state), and a virtual machine (for executing smart contracts).
 
-Our [current design](https://erisindustries/components/erisdb/) is opinated and uses the [Tendermint](https://github.com/tendermint/tendermint/wiki) consensus engine and the [Ethereum Virtual Machine](https://github.com/ethereum/wiki/wiki/White-Paper). Sandwiched between these components is our [permission layer](/docs/documentation/db/).
+Our [current design](https://monax.io/platform/db/) is opinionated and uses the [Tendermint](https://github.com/tendermint/tendermint/wiki) consensus engine and the [Ethereum Virtual Machine](https://github.com/ethereum/wiki/wiki/White-Paper). Sandwiched between these components is our [permission layer](/docs/documentation/db/).
 
 Both the consensus engine and virtual machine are, again, modules that can be swapped in and out as need by. Currently, they are packaged together as [eris:db](/docs/documentation/db/). The docker image used to run eris:db also contains [mint-client](https://github.com/eris-ltd/mint-client), a low-level tool for talking to the Tendermint consensus engine. A low-level [eth-client](https://github.com/eris-ltd/eth-client) is also available if you'd rather be rolling an ethereum chain.
 

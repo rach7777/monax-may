@@ -5,7 +5,7 @@ categories:
 comments: true
 date: 2015-05-01T00:00:00Z
 excerpt: Blockchain and smart contract tracking of digital goods and raw information
-  could not be easier when using Eris' Distributed Application Platform. Here's how
+  could not be easier when using Monax Industries' Distributed Application Platform. Here's how
   to do it.
 meta: true
 published: true
@@ -41,17 +41,17 @@ In a very simple system like this, we need to really track two things: `authenti
 
 Specifically we would form two `maps` (which are key:value storage systems). One data mapping would track `authenticator` to `contentBlob` mappings and be available based on the `authenticator`'s public key address via a simple `get_blob_by_authenticator` function (or a `get_decision_by_court` function in this context). The other data mapping would do the reverse and be available via a simple `get_blob_autenticator` (or `get_decision_author`) function.
 
-This is a simple minimum viable data schema. Indeed whatever additional information one wanted to add into the data schema would be possible with Eris, because our turing complete smart contract machine housed in `eris:db` can do basically any thing programmers tell it to do.
+This is a simple minimum viable data schema. Indeed whatever additional information one wanted to add into the data schema would be possible with Monax, because our turing complete smart contract machine housed in `eris:db` can do basically any thing programmers tell it to do.
 
 ## The Blockchain
 
-The blockchain you would design here would be a very simple blockchain. The court itself could make a single node blockchain which only it could amend or write to (for more about blockchain design [see this here](https://docs.erisindustries.com/explainers/blockchains/)). Alternatively, a library or consortium of courts could pool their resources together to run a collective blockchain which was amended or written to by any of the known and registered members.
+The blockchain you would design here would be a very simple blockchain. The court itself could make a single node blockchain which only it could amend or write to (for more about blockchain design [see this here](https://monax.io/explainers/blockchains/)). Alternatively, a library or consortium of courts could pool their resources together to run a collective blockchain which was amended or written to by any of the known and registered members.
 
-`eris:db` makes all that [super simple](https://eng.erisindustries.com/tutorials/2015/04/25/make-thelonious-chain/). And, by the way, our solution will run on nearly [anything](https://eng.erisindustries.com/blockchains/2015/04/01/peer-server-networks-current-paradigm/) (except Windows outside of Docker).
+`eris:db` makes all that [super simple](https://monax.io/docs/tutorials). And, by the way, our solution will run on nearly [anything](https://monax.io/blog/2015/04/01/peer-server-networks-current-paradigm/) (except Windows outside of Docker).
 
 ## The Application Layer
 
-Functionally the application will work nearly the same as our [2gather](https://eng.erisindustries.com/tutorials/2015/04/07/2gather/) video sharing application works. The basic workflow would look something like this:
+Functionally the application will work nearly the same as our [2gather](https://monax.io/blog/2015/04/07/2gather/) video sharing application works. The basic workflow would look something like this:
 
 1. Judge finalizes opinion
 2. Judge gives finalized opinion to clerk
@@ -65,12 +65,12 @@ That's it. Now anyone who has access to the blockchain and distributed file stor
 
 ## Conclusion
 
-At Eris we make it super simple to start building these systems. Today. In three (easy) steps:
+At Monax Industries we make it super simple to start building these systems. Today. In three (easy) steps:
 
 1. Install (the tools)
 2. Roll (your blockchain)
 3. Build (your application)
 
-For more information as to how to get started [see here](https://erisserver.erisindustries.com/tutorials/).
+For more information as to how to get started [see here](https://monax.io/docs/tutorials/).
 
 (Photo credit to: [Board Track Racer by Insomnia Cured Here @ flickr](https://www.flickr.com/photos/tom-margie/1299414993/) -- CC-BY-SA to the author.)

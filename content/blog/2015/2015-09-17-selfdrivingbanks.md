@@ -5,7 +5,7 @@ categories:
 comments: true
 date: 2015-09-17T00:00:00Z
 excerpt: Self-driving business process automation is not just coming - it's here,
-  now, today. In shipped code. Eris' COO and head of legal engineering, Preston, explains
+  now, today. In shipped code. Monax's COO and head of legal engineering, Preston, explains
   why this is both an enormous opportunity and an existential threat to current business
   models.
 meta: true
@@ -29,7 +29,7 @@ url: /2015/09/17/selfdrivingbanks/
 
 Because Bitcoin does not require a central server whirring away, or direct human oversight, to run, its earliest adopters have long referred to it in quasi-religious, almost magical terms. Immutable. Indestructible. "The" blockchain.
 
-Of course, I co-founded a business that, at least to my knowledge, was [the first in the world](https://blog.erisindustries.com/products/2014/12/17/eris-what-are-we-building/) to take the "bitcoin"/cryptocurrency piece out of the equation - resulting in the datastructure now referred to as "a" blockchain.
+Of course, I co-founded a business that, at least to my knowledge, was [the first in the world](https://monax.io/blog/2014/12/17/eris-what-are-we-building/) to take the "bitcoin"/cryptocurrency piece out of the equation - resulting in the datastructure now referred to as "a" blockchain.
 
 This was not a political decision, but a practical one. Make no mistake, I started - as we all did - as a Bitcoin guy before I became a smart contract guy. However, it bears mentioning that back in the day Bitcoin was the only game in town. Thanks to permissioning (which allows us to control our blockchains), we now have options.
 
@@ -98,7 +98,7 @@ It's like being able to download a server instead of having to get a data centre
 
 ### Self-driving banks
 
-Should we use such an infrastructure to clear industrial volumes of interbank transactions, such as international payments? I’m not so sure (this would not be the first time Eris Industries has [gone against the grain of conventional wisdom](http://blogs.wsj.com/moneybeat/2015/04/14/bitbeat-blockchains-without-coins-stir-tensions-in-bitcoin-community/) in the blockchain space). Why do we need replication - or even PKI - to get us where we need to go in such circumstances? Would adopting that infrastructure for these applications only slow the banks down?
+Should we use such an infrastructure to clear industrial volumes of interbank transactions, such as international payments? I’m not so sure (this would not be the first time Monax Industries has [gone against the grain of conventional wisdom](http://blogs.wsj.com/moneybeat/2015/04/14/bitbeat-blockchains-without-coins-stir-tensions-in-bitcoin-community/) in the blockchain space). Why do we need replication - or even PKI - to get us where we need to go in such circumstances? Would adopting that infrastructure for these applications only slow the banks down?
 
 By contrast, how many times can someone get KYC'd in a day? How many marmots, or syndicated loan participations, can someone move in a day? The answer (I know as I have cornered the marmot market) is rather fewer. This is a strong hint that these kinds of use-cases are a good place to start.
 

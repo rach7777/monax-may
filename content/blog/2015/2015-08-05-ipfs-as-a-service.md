@@ -4,7 +4,7 @@ categories:
 - tutorials
 comments: true
 date: 2015-08-05T00:00:00Z
-excerpt: IPFS as a (Eris) Service
+excerpt: IPFS as a (Monax) Service
 meta: true
 published: true
 series: getstarted
@@ -15,7 +15,7 @@ tags:
 - bit torrent
 - DHT
 - file sharing
-- blockchaini
+- blockchain
 - eris
 thumbnail: ipfs-logo-black.png
 title: 'Eris CLI Services Walkabout: IPFS'
@@ -24,13 +24,13 @@ url: /2015/08/05/ipfs-as-a-service/
 
 Part 1 explains `eris files`; the command for working with IPFS.
 
-Part 2 highlights additional IPFS integrations in the Eris stack.
+Part 2 highlights additional IPFS integrations in Monax Industries' Eris stack.
 
 ##Part 1: eris files
 
 Hello [IPFS](https://ipfs.io/)
 
-With IPFS [running as a service](https://eng.erisindustries.com/tutorials/2015/08/05/eris-services/), access IPFS
+With IPFS [running as a service](https://monax.io/blog/2015/08/05/eris-services/), access IPFS
 
 ```bash
 eris files
@@ -74,7 +74,7 @@ eris files ls [objectHash]
 
 There you have it; `eris files` in five commands.
 
-##Other IPFS integrations in the Eris stack
+##Other IPFS integrations in the Monax stack
 
 ###import/export service definition files from/to IPFS
 

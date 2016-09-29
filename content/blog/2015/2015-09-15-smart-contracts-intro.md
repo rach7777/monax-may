@@ -43,7 +43,7 @@ My own issues with pedanticism aside, `smart contracts` is the term which the co
 
 ## `smart v. dumb` *or* are they better than just a python script?
 
-This is a question which in the early days of Eris we fielded often. This is a debatable subject. And I think it turns on two axes.
+This is a question which in the early days of Monax we fielded often. This is a debatable subject. And I think it turns on two axes.
 
 ### Axis 1 => spectrum of verifiability
 
@@ -95,19 +95,19 @@ Great strides have been made in industry around automation of a broad range of b
 
 In other words, if you're the big player and you can run the computation sequence on your metal then great, but everybody else either has to duplicate the work of formulating the automation and process management components on *their side* of the data driven relationship -- or they have to just trust you.
 
-And, to be clear, both are viable choices for a business depending on its circumstances. I am not really gonna bug Amazon to let me come verify physically all of the AWS resources Eris consumed last month because it is a ridiculous request and it is not important enough to our business. We're happy to trust AWS to report correctly our resource usage, calculate what we owe them, and to pull that amount from the credit card they keep on file.
+And, to be clear, both are viable choices for a business depending on its circumstances. I am not really gonna bug Amazon to let me come verify physically all of the AWS resources Monax consumed last month because it is a ridiculous request and it is not important enough to our business. We're happy to trust AWS to report correctly our resource usage, calculate what we owe them, and to pull that amount from the credit card they keep on file.
 
-But, smart contracts offer a third way, a semi-new paradigm, wherein legally binding agreements ([backed up by real world agreements](https://erisindustries.com/components/erislegal/)) can be built to run within a network of computers which no single party can pull the plug on and in which all parties to the agreement **participate** in the management and supervision of the computers which have automated the agreement. Smart contractifying the data driven relationship which Eris and AWS maintain wouldn't mean that I could *necessarily* verify the resources we used (physically), but it would certainly get us much closer than the current state of affairs.
+But, smart contracts offer a third way, a semi-new paradigm, wherein legally binding agreements, backed up by contractually binding real world agreements, can be built to run within a network of computers which no single party can pull the plug on and in which all parties to the agreement **participate** in the management and supervision of the computers which have automated the agreement. Smart contractifying the data driven relationship which Monax and AWS maintain wouldn't mean that I could *necessarily* verify the resources we used (physically), but it would certainly get us much closer than the current state of affairs.
 
 > Simply put, smart contracts provide the backbone for automating business processes which reach *outside* of the rotating glass doors.
 
 In other words, the sweet spot for smart contracts is data driven *relationships* -- or business processes across organizations.
 
-Despite being uneasy with the `contracts` part of `smart contracts` I still do tell people quite regularly that Eris is a legal tech company. And I've believed that all along. Even before this company existed, this technology has always "been" legal tech to me.
+Despite being uneasy with the `contracts` part of `smart contracts` I still do tell people quite regularly that Monax is a legal tech company. And I've believed that all along. Even before this company existed, this technology has always "been" legal tech to me.
 
 The reason this tech has "been" legalTech to me is because I firmly believe smart contracts will be at least one enabler of a movement which was already formulating and bubbling up. A movement of legally capable technologists and technically capable lawyers bringing their skills and talents to a new generation of business process automation tools which focus not on automating intra-enterprise data driven *processes* but rather on inter-enterprise data driven *relationships*.
 
-At Eris we definitely are not the only group at the intersection of law and technology who sees this power. I have noticed, and welcome, a distinct increase in understanding from various law professors I know, have talked to, or follow on twitter which mirror what our friend Houman said:
+At Monax we definitely are not the only group at the intersection of law and technology who sees this power. I have noticed, and welcome, a distinct increase in understanding from various law professors I know, have talked to, or follow on twitter which mirror what our friend Houman said:
 
 <center><blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">Why I&#39;m now teaching basics of <a href="https://twitter.com/hashtag/coding?src=hash">#coding</a> and CS concepts in my introductory Contracts course. <a href="http://t.co/6addHYNyAi">http://t.co/6addHYNyAi</a> <a href="http://t.co/a6w47psJ3M">pic.twitter.com/a6w47psJ3M</a></p>&mdash; Houman Shadab (@HoumanShadab) <a href="https://twitter.com/HoumanShadab/status/643541718734868480">September 14, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></center>

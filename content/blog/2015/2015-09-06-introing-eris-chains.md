@@ -4,7 +4,7 @@ categories:
 - tutorials
 comments: true
 date: 2015-09-06T00:00:00Z
-excerpt: Getting a fresh and shiny new blockchain, eris style.
+excerpt: Getting a fresh and shiny new blockchain, Monax style.
 meta: true
 published: true
 series: getstarted
@@ -20,13 +20,13 @@ title: 'Eris CLI Chains Walkabout: New'
 url: /2015/09/06/introing-eris-chains/
 ---
 
-We, surprisingly, keep getting inbound communcation which queries why we are not "making" permissioned blockchains "any more". This is surprising to me for two reasons, the first is because many folks seemed to utterly detest the *idea* of permissioned blockchains at all. Full Stop. We called this, in the spring, (internally) the great blockchains war. It wasn't really a war to us at all. We do not view permissioned or unpermissioned chains as competitors of one another any more than we view Cassandra and Mongo as competitors of one another. While both exist in the generalized database space, they are very different tools for very different things. Yet, despite the perspective that these are different tools to accomplish different purposes, folks seemed to get very religious about their blockchain designs and feel very passionate about one chain design vis a vis another. At Eris we are not religious about our blockchain designs.
+We, surprisingly, keep getting inbound communcation which queries why we are not "making" permissioned blockchains "any more". This is surprising to me for two reasons, the first is because many folks seemed to utterly detest the *idea* of permissioned blockchains at all. Full Stop. We called this, in the spring, (internally) the great blockchains war. It wasn't really a war to us at all. We do not view permissioned or unpermissioned chains as competitors of one another any more than we view Cassandra and Mongo as competitors of one another. While both exist in the generalized database space, they are very different tools for very different things. Yet, despite the perspective that these are different tools to accomplish different purposes, folks seemed to get very religious about their blockchain designs and feel very passionate about one chain design vis a vis another. At Monax we are not religious about our blockchain designs.
 
-The second reason that this inbound is surprising to me, is that we haven't actually stopped making permissioned blockchains. We have **continued our work** in the permissioned blockchain (really, permissioned smart contract network) space only we are doing so in collaboration with the Tendermint open source project rather than under the Eris namespace. Almost all of the learning and effort which we put into crafting thelonious has been captured, improved, and reworked into the Tendermint project's blockchain design. Indeed, that blockchain is fully permissionable out of the box due to our efforts and what we learned while building thelonious.
+The second reason that this inbound is surprising to me, is that we haven't actually stopped making permissioned blockchains. We have **continued our work** in the permissioned blockchain (really, permissioned smart contract network) space only we are doing so in collaboration with the Tendermint open source project rather than under the Eris namespace (which will become the Monax namespace in early 2017). Almost all of the learning and effort which we put into crafting Thelonious has been captured, improved, and reworked into the Tendermint project's blockchain design. Indeed, that blockchain is fully permissionable out of the box due to our efforts and what we learned while building Thelonious.
 
 Lastly, I'd like to remind folks that the `eris` tool is **optimized for working with permissioned smart contract networks**. It does run public blockchains out of the box, and for those that want to run public blockchains which we do not have a service definition file built for, it is as easy as making sure that the blockchain in question has a Docker image and making a service definition file for it (which is usually only a few lines).
 
-So, how does `eris` work with permissioned smart contract networks? In general it provides some very convenient wrapping around the `eris chain manager` scripts which we make sure to compile into the the `eris/erisdb` Docker image (for more on Docker see the [Eris CLI Walkabout post on Docker](https://eng.erisindustries.com/tutorials/2015/09/05/docker-and-eris/)).
+So, how does `eris` work with permissioned smart contract networks? In general it provides some very convenient wrapping around the `eris chain manager` scripts which we make sure to compile into the the `eris/erisdb` Docker image (for more on Docker see the [Eris CLI Walkabout post on Docker](https://monax.io/blog/2015/09/05/docker-and-eris/)).
 
 This post will speak to `eris chains new` which is how `eris` supports hashing a new permissioned smart contract network.
 

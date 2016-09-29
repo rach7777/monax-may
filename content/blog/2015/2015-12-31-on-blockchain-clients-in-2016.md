@@ -4,9 +4,7 @@ categories:
 - blockchains
 comments: true
 date: 2015-12-31T00:00:00Z
-excerpt: Blockchain clients evolved significantly in 2015 and we at Eris fully expect
-  they will continue evolving during 2016. Although we expect they will evolve more
-  slowly and in particular ways.
+excerpt: Blockchain clients evolved significantly in 2015 and we at Monax fully expect they will continue evolving during 2016. Although we expect they will evolve more slowly and in particular ways.
 meta: true
 published: true
 tags:
@@ -21,11 +19,11 @@ url: /2015/12/31/on-blockchain-clients-in-2016/
 
 As we reflect on what has been accomplished by the blockchain community in 2015 and look forward to 2016 I'm forced to reflect on where we are in blockchain-land.
 
-This post is a fairly technical post which will look at two critical aspects of blockchain client design moving forward. We will cover how Eris will be approaching an increase to the modularity of our blockchain client: eris:db, as well as how we approach permissioning which is essential for properly running anything but a public blockchain.
+This post is a fairly technical post which will look at two critical aspects of blockchain client design moving forward. We will cover how Monax will be approaching an increase to the modularity of our blockchain client: eris:db, as well as how we approach permissioning which is essential for properly running anything but a public blockchain.
 
 ## Increasing Modularity
 
-One of the most important aspects of blockchain-ing which we have been pursuing for a long time at Eris is the idea of breaking down the monolithic tendencies of blockchains into a more modular format.
+One of the most important aspects of blockchain-ing which we have been pursuing for a long time at Monax is the idea of breaking down the monolithic tendencies of blockchains into a more modular format.
 
 In the Fall of 2014 Ethan and I were already telling Zach how we wanted to take a ninja sword to all of the pieces of the blockchain client.
 
@@ -51,7 +49,7 @@ Blockchain clients are also responsible for maintaining the history of blocks lo
 
 ### Where We See Blockchain Clients Going
 
-I referenced above the "big three" because these are the three portions of a blockchain client which I think are candidates to move away from a core blockchain client platform. In other words, in 2016, what we at Eris are hoping to achieve is a blockchain client which looks more like this:
+I referenced above the "big three" because these are the three portions of a blockchain client which I think are candidates to move away from a core blockchain client platform. In other words, in 2016, what we at Monax are hoping to achieve is a blockchain client which looks more like this:
 
 {{ page.date | date: "%Y" | append:'/blockchain_clients_2016_new_style.png' | img }}
 
@@ -63,7 +61,7 @@ Work has already been well underway to move signing into a standalone signer. Th
 
 This opens up a great amount of flexibility because, for example, users can move their signers into HSM modules or in other highly secure zones of their data centers whereas the rest of the blockchain client need not operate in such a location.
 
-Moving signing out of process also opens up the playing field as we move into a stage of worrying about hardening cryptographic protocols against quantum computing. It means that blockchain designers such as eris, or the bitcoin core developers, or the ethereum core team (such that it currently is) can move away from having to reinvent cryptographic protocols (which is never a good idea, and to be clear very few currently do this) as well as necessarily determining which cryptographic protocols are used by the signing (as long as the VM container, dealt with below, knows how to verify signatures; and the consensus container, also dealt with below, knows as well).
+Moving signing out of process also opens up the playing field as we move into a stage of worrying about hardening cryptographic protocols against quantum computing. It means that blockchain designers such as our team at Monax, or the bitcoin core developers, or the ethereum core team (such that it currently is) can move away from having to reinvent cryptographic protocols (which is never a good idea, and to be clear very few currently do this) as well as necessarily determining which cryptographic protocols are used by the signing (as long as the VM container, dealt with below, knows how to verify signatures; and the consensus container, also dealt with below, knows as well).
 
 The added modularity here means that specialization in cryptographic protocols can be isolated and managed by those who understand the intricacies of such matters without having to impact those who are interested in understanding how application states work, or how consensus operates.
 
@@ -89,7 +87,7 @@ This modularity, taken together, will dramatically open up the space for special
 
 What is the best metaphor for what we see blockchain clients becoming? We see blockchain clients themselves being akin to what in the linux world are called "distros", or distributions. Distros are opinionated, but flexible, packaged mechanisms which allow users to leverage the linux kernel, along with a range of very low level primitives that are added together to formulate a cohesive operating system.
 
-Distribution owners work to ensure that all of the isolated packages work flawlessly as a collective. This is where we, as Eris, will be putting our efforts as we work to refactor eris:db over the coming months and thereafter.
+Distribution owners work to ensure that all of the isolated packages work flawlessly as a collective. This is where we, as Monax, will be putting our efforts as we work to refactor eris:db over the coming months and thereafter.
 
 Who, then, will build the "kernel"? We hope, [these folks](http://www.linuxfoundation.org/news-media/announcements/2015/12/linux-foundation-unites-industry-leaders-advance-blockchain).
 
@@ -129,9 +127,9 @@ What the hell does this have to do with blockchains? I'm getting to that just no
 
 When we put an unpermissionable blockchain client behind a VPN we *can* achieve *some* level of permissionability. The problem is that when we run blockchains in this manner, we're really forced to "find the base". This is because when you take a blockchain client which does not have a permission module built into the client and you try to make a permissioned blockchain network with it then you are forced to rely upon the "base" of the VPN. The "safe zone" if you will.
 
-There is an oft cited critique of permissioned blockchain networks that they are less secure that public blockchains due to [their lower hashing power](https://db.erisindustries.com/blockchain%20design/2015/09/26/on-permissioned-blockchains/index.html#securing-permissioned-blockchains). This critique holds **only** under the following scenario: where you have a blockchain client that does not have a permission module, is POW, and a significant amount of hashing power is able to get behind the VPN. Outside of that scenario, the critique as an attack says more about the knowledge level of the attacker than actually communicates something important. If an enterprise has taken a POW based blockchain without a permission module and properly runs it behind a rock solid VPN then the critique is misplaced.
+There is an oft cited critique of permissioned blockchain networks that they are less secure that public blockchains due to [their lower hashing power](https://monax.io/blog/2015/09/26/on-permissioned-blockchains/index.html#securing-permissioned-blockchains). This critique holds **only** under the following scenario: where you have a blockchain client that does not have a permission module, is POW, and a significant amount of hashing power is able to get behind the VPN. Outside of that scenario, the critique as an attack says more about the knowledge level of the attacker than actually communicates something important. If an enterprise has taken a POW based blockchain without a permission module and properly runs it behind a rock solid VPN then the critique is misplaced.
 
-Yet, and here is the critical point from our point of view at Eris, that enterprise who had taken a POW based blockchain client without a permission module and ran it behind a VPN, is making its blockchain clients operate like the Army officers in the above story. These blockchain clients are susceptible to attack if they are not "inside their base". As such, they lose a good amount of their utility.
+Yet, and here is the critical point from our point of view at Monax, that enterprise who had taken a POW based blockchain client without a permission module and ran it behind a VPN, is making its blockchain clients operate like the Army officers in the above story. These blockchain clients are susceptible to attack if they are not "inside their base". As such, they lose a good amount of their utility.
 
 ### A VPN v. A Permission Module
 

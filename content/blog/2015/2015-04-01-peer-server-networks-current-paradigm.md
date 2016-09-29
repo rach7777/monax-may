@@ -40,7 +40,7 @@ Using these three tools we set up three different *types* of nodes; these differ
 
 ## Node Type 1: The Genesis Server Node
 
-The first type of node we use is what I call the `genesis_server` node. It has one, and only one, purpose -- to serve the genesis block to the other nodes. Because of how [eris:db](https://erisindustries.com/components/erisdb) has been designed to sink different contracts into a genesis block; and because of entropy which we add to the genesis block hashing process; each time a new chain is hashed which has contracts in the genesis block (namely, when it is not a simple ethereum clone) the identifier of the chain will be unique.
+The first type of node we use is what I call the `genesis_server` node. It has one, and only one, purpose -- to serve the genesis block to the other nodes. Because of how [eris:db](https://monax.io/platform/db) has been designed to sink different contracts into a genesis block; and because of entropy which we add to the genesis block hashing process; each time a new chain is hashed which has contracts in the genesis block (namely, when it is not a simple ethereum clone) the identifier of the chain will be unique.
 
 All eris:db nodes work off of the concept of a chainID which is simply the genesis block hash. The first thing a eris:db client will do upon connecting to a peer is to ask the peer what chainID that eris:db client is running. If there is a mismatch of chainIDs then the peers will not connect.
 

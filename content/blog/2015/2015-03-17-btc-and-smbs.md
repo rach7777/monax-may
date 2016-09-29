@@ -94,7 +94,7 @@ On the other hand, many business problems are simply business problems. Practici
 
 Depending on the problem one was trying to solve, there is a strong potential that one would use some sort of a token which represents an asset that was callable against a particular bank and/or the world along with some escrow and/or letter of credit function (if one was, say, trying to ease intra-african trade restrictions between consenting corporations). If the deal value of what you were trying to make easier was below a certain threshold, you could probably use some of the functionality of a fully open, heavy, big bad public blockchain; yet on the other side of such a threshold it would be foolhardy to rely upon a BBPB.
 
-That's why we believe in helping DApp makers be able to embrace some level of blockchain agnosticism behind the scenes -- the entire reason we've built eris.
+That's why we believe in helping DApp makers be able to embrace some level of blockchain agnosticism behind the scenes -- the entire reason we've built the Eris platform.
 
 So please do, go find some problems, sit with folks and craft some solutions, and feel free to build it on the stack that was made for the problem solvers. The doers.
 

@@ -21,7 +21,7 @@ url: /2015/08/25/on-blockchain-ecosystems/
 
 ## Preface
 
-One of the reasons I knew that Anthemis would be a good institutional partner for building Eris is they believe deeply in the idea that business is best when it is conducted using an ecosystems approach. After many, many years working with small businesses, diaspora groups, small business investors, and regulators in Somaliland, I had come to appreciate what this means, because this is how business in Africa works. And indeed, it is how business just *should* work in my opinion.
+One of the reasons I knew that Anthemis would be a good institutional partner for building Monax (formerly called Eris) is they believe deeply in the idea that business is best when it is conducted using an ecosystems approach. After many, many years working with small businesses, diaspora groups, small business investors, and regulators in Somaliland, I had come to appreciate what this means, because this is how business in Africa works. And indeed, it is how business just *should* work in my opinion.
 
 Relatedly, the other day, I was talking to an acquaintance about something and I said that I don't like the tendency I see within the blockchain community to have labels as reductive as "competitor" v. "collaborator". I get of course that the verbs are applicable to any one interaction amongst folks within the ecosystem, but to reduce the complex relationships necessary to be developed if this technology is going to become more widely accepted ([a goal we've always been explicitly trying to achieve](https://twitter.com/compleatang/status/635568543501840384)) into this binary question is unhelpful in the opinion of this correspondent. The reality is that talent is too slim, the technology is too new, and a few other relavant reasons for any single actor in the blockchain community to fracture relationships between potential allies without a cost both to the single actor as well as the ecosystem.
 
@@ -37,7 +37,7 @@ The promise that docker backed systems have is they have deterministic runtimes.
 
 The reason we have built `eris` the way that we have is to support organizations who are interested in a variety of distributed technology tools. Not only those of the blockchains world, but also those from the "cloudy" world. Because these two groups have a lot to learn from each other.
 
-No matter whether your application needs smart contracts or just docker based services, it needs modular, reliable runtimes. To see more about what I mean see our [getting started documentation](https://docs.erisindustries.com).
+No matter whether your application needs smart contracts or just docker based services, it needs modular, reliable runtimes. To see more about what I mean see our [getting started documentation](https://monax.io/docs/).
 
 # Tenet 2 of an Ecosystems Approach to Blockchaining
 
