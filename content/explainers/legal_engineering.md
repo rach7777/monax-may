@@ -20,7 +20,7 @@ Usually, legal rights and obligations are set out in "dumb" paper documents whic
 
 The increasing need for automated data-driven solutions across multiple business verticals means an opportunity to create ecosystem applications: programs, platforms and solutions that enable businesses, governments, organizations and individuals to automate their network interactions via smart contract rules. Drafting the rules of commercial interactions is traditionally the job of a lawyer. In a data-driven ecosystem, it's the job of legal engineers.
 
-## Blockchains are legaltech
+## Blockchains are legal tech
 
 The advent of distributed ledger technology and blockchains has enabled writing smart contracts that can execute the terms of a contract, make decisions, store information, and interact with other smart contracts. For a more in-depth explanation of blockchains and smart contracts, please see our [blockchains](/explainers/blockchains/) and [smart contract](/explainers/smart_contracts/) explainers.
 
