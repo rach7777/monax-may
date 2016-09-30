@@ -17,17 +17,24 @@
             {{ else }}
               <div class="col-md-6 col-md-offset-3 text-center">
             {{ end }}
-              {{- if (isset .Params "icon") }}
-                  <i class="lead-icon icon-{{ .Params.icon }}"></i>
+              {{- if (isset .Params "carousel" ) }}
+                <div class="col-md-6 col-md-offset-3 text-center">
               {{ end -}}
-              <h2>{{ .Title }}</h2>
-              <p class="lead">
-                  {{- .Content -}}
-              </p>
+                {{- if (isset .Params "icon") }}
+                    <i class="lead-icon icon-{{ .Params.icon }}"></i>
+                {{ end -}}
+                <h2>{{ .Title }}</h2>
+                <p class="lead">
+                    {{- .Content -}}
+                </p>
+              {{- if (isset .Params "carousel" ) }}
+                </div>
+              {{ end -}}
+              <br /><br />
               {{- if (isset .Params "carousel" ) }}
                 <div class="carousel-inner owl-carousel"><!-- Wrapper for slides -->
                     {{- range .Params.carousel }}
-                      <div class="item"><img src="/images/logos/{{ .logo }}" class="carousel-logo" /><br /><blockquote><p class="item-header"><a href="{{ .link }}" target="_blank" >{{ .name }}</a></p></blockquote></div>
+                      <div class="item"><a href="{{ .link }}" target="_blank" ><img src="/images/logos/{{ .logo }}" class="carousel-logo" /></a></div>
                     {{ end -}}
                 </div>
               {{ end -}}
