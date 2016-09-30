@@ -21,7 +21,7 @@ menu:
 
 This page provides an overview of how Monax Industries' software stack - known to the market as Eris - is, well, stacked.
 
-[Modularity is a strong focus](/blog/2015/09/05/docker-and-eris/), greatly facilitated by [docker](https://docker.com). This page explains how the tooling fits together while painting a path through our tutorial series. The complicated task of orchestrating all the various requirements for a smart-contract-focused blockchain is exactly why we went all-in on docker despite various ongoing pain points. We like to think of [eris:cli](/docs/documentation/cli/latest/eris/) as "docker for blockchains".
+Modularity is a strong focus, greatly facilitated by [docker](https://docker.com). This page explains how the tooling fits together while painting a path through our tutorial series. The complicated task of orchestrating all the various requirements for a smart-contract-focused blockchain is exactly why we went all-in on docker despite various ongoing pain points. We like to think of [eris:cli](/docs/documentation/cli/latest/eris/) as "docker for blockchains".
 
 {{< image src="/images/docs/eris-stack-v3.png" >}}
 
