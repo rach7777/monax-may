@@ -6,4 +6,6 @@ weight: -995
 
 ---
 
-Our software has been proudly open sourced since December, 2014. There is no need to ask us for a "sandbox" on our platform, as you can easily install our platform anywhere. Our open-source first methodology means that vendor lockin is reduced to `nil`.
+There is no need to ask us for a "sandbox" for our software, as you can easily install our core platform anywhere.
+
+Our software has been proudly open-sourced and free to use since December, 2014. Our open-source first methodology means that vendor lockin is reduced to `nil`.
