@@ -32,7 +32,7 @@
               {{ end -}}
               <br /><br />
               {{- if (isset .Params "carousel" ) }}
-                <div class="carousel-inner owl-carousel"><!-- Wrapper for slides -->
+                <div class="carousel-inner  owl-carousel logos-carousel"><!-- Wrapper for slides -->
                     {{- range .Params.carousel }}
                       <div class="item"><a href="{{ .link }}" target="_blank" ><img src="/images/logos/{{ .logo }}" class="carousel-logo" /></a></div>
                     {{ end -}}
@@ -58,7 +58,7 @@
           </div>
           <div class="row">
             <div class="col-md-12 text-center">
-                <div class="carousel-inner owl-carousel"><!-- Wrapper for slides -->
+                <div class="carousel-inner owl-carousel use-cases-carousel"><!-- Wrapper for slides -->
                     {{- range .Params.carousel }}
                       <div class="item"><blockquote><p class="item-header">{{ .thing }}</p>{{ .explanation | markdownify }}</blockquote></div>
                     {{ end -}}

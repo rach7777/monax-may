@@ -46,9 +46,29 @@ $(function() {
   });
 
   // home page only. run owl carousel
-  $('.owl-carousel').owlCarousel({
-    loop:true,
+  // logos carousels
+  $('.logos-carousel').owlCarousel({
+    // loop:true,
     autoplay:true,
+    autoplayHoverPause:true,
+    autoplayTimeout:5000,
+    responsive:{
+        0:{
+            items:1
+        },
+        1000:{
+            items:4
+        },
+    }
+  });
+
+  // home page only. run owl carousel
+  // use cases carousels
+  $('.use-cases-carousel').owlCarousel({
+    loop:true,
+    navigation: true,
+    // TODO add navigation
+    // autoplay:true,
     autoplayHoverPause:true,
     autoplayTimeout:3000,
     responsive:{
