@@ -3,7 +3,6 @@
 </head>
 <body class="home">
 {{ partial "navigation.html" . -}}
-<div class="container-fluid" id="monax-page">
 {{- partial "home-top-block.html" . -}}
   <div id="main">
   {{- range $index, $element := .Data.Pages.ByWeight -}}
@@ -28,7 +27,7 @@
               {{- if (isset .Params "carousel" ) }}
                 <div class="carousel-inner owl-carousel"><!-- Wrapper for slides -->
                     {{- range .Params.carousel }}
-                      <div class="item"><img src="/images/logos/{{ .logo }}" class="carousel-logo" /><br /><blockquote><p class="item-header">{{ .name }}</p></blockquote></div>
+                      <div class="item"><img src="/images/logos/{{ .logo }}" class="carousel-logo" /><br /><blockquote><p class="item-header"><a href="{{ .link }}" target="_blank" >{{ .name }}</a></p></blockquote></div>
                     {{ end -}}
                 </div>
               {{ end -}}

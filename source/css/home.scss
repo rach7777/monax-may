@@ -84,18 +84,23 @@
     }
 
     .point {
-        background: $blue;
+        background: $white;
         padding: 50px 0;
-        color: $white;
+        // color: $white;
 
         blockquote {
             border-left: none !important;
+
+            a {
+                color: $black;
+            }
         }
     }
 
     .counterpoint {
         padding: 50px 0;
-        background-color: $white;
+        background-color: $blue;
+        color: $white;
     }
 
     .carousel-logo {
