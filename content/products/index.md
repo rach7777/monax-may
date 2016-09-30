@@ -19,8 +19,8 @@ Building Smart Contract applications using the *Monax Smart Contract Modules* of
 Our smart contract modules are written in a modular fashion, which allows combining them to create complex smart contract applications. As modules get updated, a rapidly increasing range of applications and use cases become available.
 
 
-|Functionality    |Use Cases        |Availability     |Description      |Required Product Releases  |
-|---------------  |---------------  |---------------  |---------------  |---------------            |
+|Functionality    |Use Cases        |Availability     |Description      |
+|---------------  |---------------  |---------------  |---------------  |
 |Debt             |Loans, Bonds     |Aug '16        | <ul><li>Extend and service credit/money in exchange for future cash flows</li></ul> |
 |Task Management  |Vendor Management  |Sep '16    |<ul><li>Assign tasks to pool of authorized workers/vendors</li><li>Tasks status tracking</li></ul>|
 |Logistics        |Supply Chain, Provenance |Sep '16  |<ul><li>Track assets as they move from point of origination through distribution point to end destination</li></ul>|
