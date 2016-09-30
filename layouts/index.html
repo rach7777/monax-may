@@ -34,7 +34,7 @@
               {{- if (isset .Params "carousel" ) }}
                 <div class="carousel-inner  owl-carousel logos-carousel"><!-- Wrapper for slides -->
                     {{- range .Params.carousel }}
-                      <div class="item"><a href="{{ .link }}" target="_blank" ><img src="/images/logos/{{ .logo }}" class="carousel-logo" /></a></div>
+                      <div class="item"><a href="{{ .link }}" target="_blank" ><img src="/images/logos/external/{{ .logo }}" class="carousel-logo" /></a></div>
                     {{ end -}}
                 </div>
               {{ end -}}
