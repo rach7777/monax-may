@@ -51,8 +51,10 @@ nav.navbar {
     z-index: 999999;
     font-size: 1.3em;
 
-    ul.nav li.dropdown:hover > ul.dropdown-menu {
-        display: block;
+    @media (min-width: 979px) {
+        ul.nav li.dropdown:hover > ul.dropdown-menu {
+            display: block;
+        }
     }
 
     a {
