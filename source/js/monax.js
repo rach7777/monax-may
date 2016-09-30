@@ -13,6 +13,8 @@ var lunrIndex,
 
 // on document load
 $(function() {
+  $(".dropdown-toggle").dropdown();
+
   // expand viewport so footer goes down to bottom on low content pages...
   if ( $( "#monax-page" ).height() < $( window ).height() ) {
     var offset = $( window ).height();

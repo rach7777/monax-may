@@ -37,6 +37,10 @@ a:hover {
     color: $links_hover;
 }
 
+#myModal {
+    z-index: 9999999;
+}
+
 /*              */
 /*     Nav      */
 /*              */
@@ -44,7 +48,7 @@ nav.navbar {
     padding: 0 !important;
     margin: 0 !important;
     background: transparent;
-    // z-index: 99999999;
+    z-index: 999999;
     font-size: 1.3em;
 
     a {
