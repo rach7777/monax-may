@@ -5,4 +5,3 @@ aliases:
 
 ---
 
-{{< data_sites what_is_eris >}}
