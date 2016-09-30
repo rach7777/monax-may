@@ -1,6 +1,6 @@
 ---
 
-title: "Company | Current Team"
+title: "Company | Team"
 css:  team
 aliases:
   - "/about/team"
