@@ -29,7 +29,7 @@ The rationale behind dual integration is that for the forseeable future, legal s
 
 2. Reference the chainId and contractAddress of the deployed smart contract in the final draft of the real world contract.
 
-3. Execute the rpose contract and produce its checksum (AKA "hash" or "digital fingerprint")
+3. Execute the prose contract and produce its checksum (AKA "hash" or "digital fingerprint")
 
 4. Send a transaction storing the checksum of the prose contract into the smart contract.
 
