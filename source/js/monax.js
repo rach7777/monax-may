@@ -48,7 +48,7 @@ $(function() {
   // home page only. run owl carousel
   // logos carousels
   $('.logos-carousel').owlCarousel({
-    // loop:true,
+    loop:true,
     autoplay:true,
     autoplayHoverPause:true,
     autoplayTimeout:5000,
@@ -66,11 +66,9 @@ $(function() {
   // use cases carousels
   $('.use-cases-carousel').owlCarousel({
     loop:true,
-    navigation: true,
-    // TODO add navigation
-    // autoplay:true,
+    autoplay:true,
     autoplayHoverPause:true,
-    autoplayTimeout:3000,
+    autoplayTimeout:9000,
     responsive:{
         0:{
             items:1
