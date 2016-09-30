@@ -34,7 +34,7 @@ Smart contract solutions with pre-existing legal contexts, like financial, insur
 
 Legal systems provide many tools for achieving people's commercial intention with certainty, for example, contract law. 
 
-Today the law is evolving at global scale, in code. Interoperable systems, rather than dark data pools, are the commercial information models of the future. Legal systems do not evolve at the same pace as technology; to ensure that your encoded agreements will be recognized by courts today, we recommend Dual Integration. For more on Dual Integration, see our brief explainer.	
+Today the law is evolving at global scale, in code. Interoperable systems, rather than dark data pools, are the commercial information models of the future. Legal systems do not evolve at the same pace as technology; to ensure that your encoded agreements will be recognized by courts today, we recommend Dual Integration. For more on Dual Integration, see our brief [explainer](/explainers/dual_integration/).	
 
 ## Enabling humans to make decisions and commitments today
 
