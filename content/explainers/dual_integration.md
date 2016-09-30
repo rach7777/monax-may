@@ -15,7 +15,7 @@ menu:
 
 # Putting The Contracts in Smart Contracts
 
-Smart contracts are useful for automating many data-driven relationships. However, to be enforceable, smart contracts must work in existing legal frameworks where those frameworks already exist, removing a degree of uncertainty in enforcement. In order to bridge the gap between existing electronic contracts law and blockchain smart contracts, Monax offers *dual integration*.
+Smart contracts are useful for automating many data-driven relationships. However, to be enforceable, smart contracts must work in existing legal frameworks where those frameworks already exist, removing a degree of uncertainty in enforcement. In order to bridge the gap between existing electronic contracts law and blockchain smart contracts, Monax offers *dual integration*. For more on smart contract [explainer](/explainers/smart_contracts/).
 
 Dual integration is the process of integrating a specific legal contract into a specific smart contract running on a distributed data store, such as Monax. This allows parties to use established dispute resolution processes in the jurisdiction(s) of choice while also using a smart contract as the primary mechanism for administering the data-driven interaction that attends to the agreement between the parties.
 
@@ -39,4 +39,4 @@ That's it. If those steps are followed then there will be a cryptographically-ce
 
 Once the dual integration process is finished the result will be a smart contract which references a specific fingerprint of a real world contract (this is called the hash of a file, or sometimes it is called the checksum of a file) and a real world contract which integrates the specific fingerprint of a smart contract (this utilizes the chainID of the distributed data store which the smart contract runs on as well as the contractAddress of the specific smart contract). This circular reference ensures -- to a cryptographic certainty -- that the specific file which contains the real world contract and the specific smart contract both properly reference one another.
 
-Monax has created a FOSS dual integration tool to get smart contract writers going. 
+Monax has created a [dual integration tool](https://github.com/eris-ltd/common/tree/apps/apps/dual_integration) to get smart contract writers going. 
