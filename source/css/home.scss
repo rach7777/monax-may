@@ -87,11 +87,22 @@
         background: $blue;
         padding: 50px 0;
         color: $white;
+
+        blockquote {
+            border-left: none !important;
+        }
     }
 
     .counterpoint {
         padding: 50px 0;
         background-color: $white;
+    }
+
+    .carousel-logo {
+        display: block;
+        position: relative;
+        left: 30%;
+        width: 40% !important;
     }
 
     .point h2, .counterpoint h2 {
