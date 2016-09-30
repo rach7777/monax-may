@@ -19,7 +19,7 @@ Building Smart Contract applications using the *Monax Smart Contract Modules* of
 * Speed: Faster time-to-market as only last-mile configuration is required
 * Upgrades: Updated versions of modules can quickly add features and fix bugs
 * Quality: Highly tested contracts written according to best practices in smart contract development
-* Compliance: Vetted by Eris legal engineers
+* Compliance: Vetted by Monax legal engineers
 
 Our smart contract modules are written in a modular fashion, which allows combining them to create complex smart contract applications. As modules get updated, a rapidly increasing range of applications and use cases become available.
 
@@ -34,7 +34,7 @@ Our smart contract modules are written in a modular fashion, which allows combin
 
 # Monax Value-Add Services
 ## Developer Training
-The hardest part is always getting started. That’s why we have been working closely with Validity Labs to develop an in-person, immersive workshop focused on getting developers up-to-speed with understanding how to build smart contract applications using the Eris platform. The content of the 2-day training covers:
+The hardest part is always getting started. That’s why we have been working closely with [Validity Labs](https://validitylabs.org/) to develop an in-person, immersive workshop focused on getting developers up-to-speed with understanding how to build smart contract applications using the Eris platform. The content of the 2-day training covers:
 
 * Introduction to blockchain and smart contracts
 * Ecosystem applications
