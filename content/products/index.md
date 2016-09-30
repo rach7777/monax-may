@@ -1,6 +1,6 @@
 ---
 
-title: "Company | Products"
+title: "Products"
 aliases:
   - /products/
 type: company
@@ -8,7 +8,7 @@ type: company
 ---
 # Smart Contract Modules
 
-The core of our offering are the *Monax Smart Contract Modules*. These are modular, interoperable components that can be used to assemble enterprise-grade smart contract applications. 
+The core of our offering are the *Monax Smart Contract Modules*. These are modular, interoperable components that can be used to assemble enterprise-grade smart contract applications.
 
 Building Smart Contract applications using the *Monax Smart Contract Modules* offers a variety of advantages:
 * __Speed__: Faster time-to-market as only last-mile configuration is required

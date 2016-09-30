@@ -38,7 +38,7 @@ But how would these come to be? How would this sector develop? What lay before u
 
 During these first few months I oscillated between excitement about the possibilities such a technical base opened and apprehension about the sheer amount of work that would be required to get there. Needless to say, for a while we at Eris Industries fully lived up to our chaotic namesake.
 
-But then things began to change. Slowly, but change they did. The industry developed and matured. The use cases clarified. The momentum built. Business strategies were refined; products and sales pipeliness were developed. Out of chaos came the beginnings of order. Also, there were marmots. Lots and lots of marmots.
+But then things began to change. Slowly, but surely change they did. The industry developed and matured. The use cases clarified. The momentum built. Business strategies were refined; products and sales pipeliness were developed. Out of chaos came the beginnings of order. Also, there were marmots. Lots and lots of marmots.
 
 Marmots are creatures that, despite living in the mountains, relish order and tidiness. Apart from the brand identity we have built around these fuzzy creatures, it made sense when it came time to move away from our chaotic beginnings - into a burrow that would be longer lasting - that we should embrace the tao of the marmot.
 
