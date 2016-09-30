@@ -11,14 +11,19 @@
     </div><!-- .navbar-header -->
     <div class="collapse navbar-collapse" id="monax-main">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/products/">Products</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Products <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/platform/">Eris: The Ecosystem Application Platform</a></li>
+            <li><a href="/products/">Smart Contract Solutions</a></li>
+          </ul>
+        </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Learn <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="/platform/">About the Platform</a></li>
             <li><a href="/explainers/">Explainers</a></li>
-            <li><a href="/docs/tutorials/">Tutorials & Examples</a></li>
-            <li><a href="/docs/documentation/">Technical Documentation</a></li>
+            <li><a href="/docs/documentation/">Documentation</a></li>
+            <li><a href="/docs/tutorials/">Examples</a></li>
           </ul>
         </li>
         <li class="dropdown">

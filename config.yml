@@ -103,7 +103,7 @@ taxonomies:
 params:
   description: "We empower developers to automate their data driven relationships."
   keywords: "blockchain,smart,contracts,data,driven,relationship,bft"
-  clicky:    100753928
+  clicky:    100993241
   home_buttons:
     -
       title: docs
@@ -125,40 +125,40 @@ params:
 # ----------------------- #
 #          Menu           #
 # ----------------------- #
-menu:
-  main:
-    # -
-    #   name: "platform"
-    #   pre: "<i class='fa fa-download'></i>"
-    #   url: "/platform/overview/"
-    #   weight: -200
-    -
-      name: "products"
-      pre: "<i class='fa fa-cubes'></i>"
-      url: "/products/overview/"
-      weight: -180
-    -
-      name: "legal engineering"
-      pre: "<i class='fa fa-cubes'></i>"
-      url: "/legal_engineering/dual_integration/"
-      weight: -160
-    -
-      name: "team"
-      pre: "<i class='fa fa-cubes'></i>"
-      url: "/about/team"
-      weight: -120
-    -
-      name: "positions"
-      pre: "<i class='fa fa-cubes'></i>"
-      url: "/about/positions"
-      weight: -100
-    -
-      name: "documentation"
-      pre: "<i class='fa fa-cubes'></i>"
-      url: "/documentation"
-      weight: -80
-    -
-      name: "blog"
-      pre: "<i class='fa fa-cubes'></i>"
-      url: "/blog/"
-      weight: -60
+# menu:
+#   main:
+#     # -
+#     #   name: "platform"
+#     #   pre: "<i class='fa fa-download'></i>"
+#     #   url: "/platform/overview/"
+#     #   weight: -200
+#     -
+#       name: "products"
+#       pre: "<i class='fa fa-cubes'></i>"
+#       url: "/products/overview/"
+#       weight: -180
+#     -
+#       name: "legal engineering"
+#       pre: "<i class='fa fa-cubes'></i>"
+#       url: "/legal_engineering/dual_integration/"
+#       weight: -160
+#     -
+#       name: "team"
+#       pre: "<i class='fa fa-cubes'></i>"
+#       url: "/about/team"
+#       weight: -120
+#     -
+#       name: "positions"
+#       pre: "<i class='fa fa-cubes'></i>"
+#       url: "/about/positions"
+#       weight: -100
+#     -
+#       name: "documentation"
+#       pre: "<i class='fa fa-cubes'></i>"
+#       url: "/documentation"
+#       weight: -80
+#     -
+#       name: "blog"
+#       pre: "<i class='fa fa-cubes'></i>"
+#       url: "/blog/"
+#       weight: -60

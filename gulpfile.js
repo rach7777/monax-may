@@ -7,6 +7,7 @@ var s3config = {
 }
 
 var argv            = require('yargs').argv,
+        async       = require('async'),
         babelify    = require('babelify'),
         buffer      = require('vinyl-buffer'),
         browserify  = require('browserify'),
@@ -16,9 +17,13 @@ var argv            = require('yargs').argv,
         exec        = require('child_process').exec,
         flatten     = require('gulp-flatten'),
         filter      = require('gulp-filter'),
+        fs          = require('fs'),
+        git         = require('gulp-git'),
         gulp        = require('gulp'),
+        gutil       = require('gulp-util'),
         imagemin    = require('gulp-imagemin'),
         lunr        = require('./source/js/lunr-maker.js'),
+        path        = require('path'),
         rename      = require('gulp-rename'),
         sass        = require('gulp-sass'),
         source      = require('vinyl-source-stream'),
@@ -26,6 +31,13 @@ var argv            = require('yargs').argv,
         s3          = require('gulp-s3-upload')(s3config),
         uglify      = require('gulp-uglify');
 
+/*
+  ------------------------------------------------------------------------------
+
+  Build Jobs & Helpers
+
+  ------------------------------------------------------------------------------
+*/
 function buildJS() {
   return browserify({
       basedir: config.js.srcDir,
@@ -96,7 +108,7 @@ function buildIndex() {
 }
 
 function buildSite() {
-  var cmd = "hugo --destination " + config.site.outputDirRaw
+  var cmd = "hugo --destination " + config.site.buildDirRaw
   if (argv.production) {
     cmd = cmd + " --baseURL " + config.site.prodURL
   } else if (argv.staging) {
@@ -105,6 +117,7 @@ function buildSite() {
     cmd = cmd + " --buildDrafts --buildFuture --baseURL " + config.site.devURL
   };
   exec(cmd, function (err, stdout, stderr) {
+    if (err) throw err;
     console.log("Called command: " + cmd)
     if (stderr != "") {
       console.log(stderr.trim());
@@ -116,16 +129,160 @@ function buildSite() {
     .pipe(clean())
 }
 
+/*
+  ------------------------------------------------------------------------------
+
+  Test Jobs & Helpers
+
+  ------------------------------------------------------------------------------
+*/
 function testSite() {
   console.log('tested')
   return
 }
 
+/*
+  ------------------------------------------------------------------------------
+
+  Deploy Jobs & Helpers
+
+  ------------------------------------------------------------------------------
+*/
+function initLocalRepository(next) {
+  gutil.log("Initializing local repository.")
+  git.init(function (err) {
+    if (err) throw err;
+    next();
+  })
+}
+
+function setupProductionRemote(next) {
+  var vhost=config.site.stagURLRaw;
+  if (argv.production) {
+    vhost=config.site.prodURLRaw;
+  }
+  gutil.log("Adding production remote for site: " + vhost)
+  git.addRemote('origin', 'git+ssh://' + config.site.prodMachUser + '@' + config.site.prodMachHost + '/' + vhost + '.git', function (err) {
+    // if (err) throw err; // no reason to reap this error
+    next();
+  })
+}
+
+function pullPrevVersionFromProduction(next) {
+  gutil.log("Pulling from production.")
+  git.pull('origin', 'master', function (err) {
+    if (err) throw err;
+    next();
+  })
+}
+
+function moveBuildToDeply(next) {
+  gutil.log("Moving in the built site.")
+  var stream = gulp.src(path.join('..', config.site.buildDir))
+    .pipe(gulp.dest('htdocs/'));
+  stream.on('end', function() {
+    next();
+  });
+  stream.on('error', function(err) {
+    throw err;
+  });
+}
+
+function moveHtAccess(next) {
+  gutil.log("Moving in .htaccess file.")
+  var stream = gulp.src('../.htaccess')
+    .pipe(gulp.dest('htdocs/'));
+  stream.on('end', function() {
+    next();
+  });
+  stream.on('error', function(err) {
+    throw err;
+  });
+}
+
+function addChanges(next) {
+  gutil.log("Adding all files to git.")
+  var stream = gulp.src('./*')
+    .pipe(git.add({args: '-A'}));
+  stream.on('end', function() {
+    next();
+  });
+  stream.on('error', function(err) {
+    throw err;
+  });
+}
+
+function commitChanges(next) {
+  gutil.log("Committing changes.")
+  var cmd="git status --porcelain"
+  exec(cmd, function (err, stdout, stderr) {
+    if (err) throw err;
+    gutil.log("Called command: " + cmd)
+    if (stdout == "") {
+      next();
+    } else {
+      var message='Site updated at ' + Date.now()
+      var stream = gulp.src('./*')
+        .pipe(git.commit(message));
+      stream.on('end', function() {
+        next();
+      });
+      stream.on('error', function(err) {
+        throw err;
+      });
+    }
+  })
+}
+
+function pushToProduction(next) {
+  gutil.log("Pushing to production.")
+  git.push('origin', 'master', function (err) {
+    if (err) throw err;
+    next();
+  })
+}
+
+function deployProduction(next) {
+  gutil.log("Deploying on production server.")
+  var vhost=config.site.stagURLRaw;
+  if (argv.production) {
+    vhost=config.site.prodURLRaw;
+  }
+  var cmd="ssh " + config.site.prodMachUser + "@" + config.site.prodMachHost + " 'deploy " + vhost + ".git master'"
+  exec(cmd, function (err, stdout, stderr) {
+    if (err) throw err;
+    gutil.log("Called command: " + cmd)
+    if (stderr != "") {
+      gutil.log(stderr.trim());
+    } else {
+      gutil.log(stdout.trim());
+    }
+  })
+}
+
 function deploySite() {
-  return gulp.src(config.site.outputDir, {buffer:false})
-    .pipe(s3({
-      Bucket: s3config.bucket,
-    }))
+  try {
+    process.chdir(config.site.deployDir);
+  }
+  catch (err) {
+    fs.mkdir(config.site.deployDir, function (err) {
+      if (err) throw err;
+      process.chdir(config.site.deployDir);
+    });
+  }
+  return async.waterfall([
+      initLocalRepository,
+      setupProductionRemote,
+      pullPrevVersionFromProduction,
+      moveBuildToDeply,
+      moveHtAccess,
+      addChanges,
+      commitChanges,
+      pushToProduction,
+      deployProduction
+  ], function (err) {
+      if (err) throw err;
+  })
 }
 
 function cleanSite() {

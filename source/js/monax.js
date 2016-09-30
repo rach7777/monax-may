@@ -112,6 +112,12 @@ $(function() {
       $( this ).children( ".team-details").first().addClass( "hidden" );
     }
   );
+
+  // we're not eris modal
+  var url = window.location.href;
+  if(url.indexOf('?redirect_from_eris=true') != -1) {
+      $('#myModal').modal('show');
+  }
 });
 
 

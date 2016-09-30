@@ -57,5 +57,3 @@ Some may argue that lawyers are incapable of learning *any system* which is not 
 Text editors, on the other hand, are more simple and purposefully built to be extendable and configurable, and are a joy to work with for text-based documents. Text editors can also be much more easily integrated with process and workflow tools than a closed-source word processor that only has a limited API. While working from a text editor does require a cognitive load to learn, for lawyers who do make the plunge the payoff is a drastically improved working experience.
 
 ELM, Eris Industries' implementation of Legal Markdown, not only assists with dual integration of smart contracts and real world contracts, but at its core it was built to simplify the workflow for any transactional documents. It has a range of features which are not only simple to use from a text editor but also will make transactional document creation and maintenance simple and fun.
-
-<a class="action-big" href="https://docs.erisindustries.com/tutorials/erislegal/">Get Started Using eris:legal</a>

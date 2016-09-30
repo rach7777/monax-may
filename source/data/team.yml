@@ -68,7 +68,7 @@ jan :
 
 zach :
     name: Zach Ramsay
-    title: "Software Engineer"
+    title: "Developer"
     gravatar: team-zr.jpeg
     twitter: cerebralbosons
     github: zramsay
@@ -78,7 +78,7 @@ zach :
 
 ben :
     name: Ben Bollen
-    title: "Software Engineer"
+    title: "Developer"
     gravatar: team-bb.jpeg
     twitter: benjaminbollen
     github: benjaminbollen
@@ -88,7 +88,7 @@ ben :
 
 nina :
     name: Nina Kilbride
-    title: "Legal Engineer"
+    title: "Head of Legal Engineering"
     site: http://cryptolawyer.net
     gravatar: team-nk.jpeg
     twitter: NinaKilbride
@@ -99,7 +99,7 @@ nina :
 
 rick :
     name: Rick Dudley
-    title: "Software Engineer"
+    title: "Developer Operations"
     gravatar: team-afd.jpeg
     twitter: AFDudley0
     github: AFDudley
@@ -119,7 +119,7 @@ dj :
 
 silas :
     name: "Silas Davis"
-    title: "Software Engineer"
+    title: "Developer"
     gravatar: team-sd.jpeg
     twitter: silas_davis
     github: silasdavis
@@ -129,7 +129,7 @@ silas :
 
 rj :
     name: "RJ Catalano"
-    title: "Software Engineer"
+    title: "Developer"
     gravatar: team-rc.jpeg
     twitter: rj_catalano
     github: vor0220

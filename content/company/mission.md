@@ -5,4 +5,4 @@ aliases:
 
 ---
 
-{{ .Site.Data.sites.what_is_eris }}
+{{< data_sites what_is_eris >}}

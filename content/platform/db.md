@@ -9,7 +9,7 @@ aliases:
     - /components/erisdb/
 menu:
   platform:
-    weight: 3
+    weight: 10
 
 ---
 
@@ -52,8 +52,7 @@ eris:db comes with a [capabilities-based, evolvable permissioning layer](/docs/d
 # eris:db versus ...
 
 <div>
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist" id="competitionTabs">
+  <ul class="nav nav-tabs nav-justified" role="tablist" id="competitionTabs">
     <li role="presentation" class="active"><a href="#geth" aria-controls="geth" role="tab" data-toggle="tab">eris:db v. geth</a></li>
     <li role="presentation"><a href="#strato" aria-controls="strato" role="tab" data-toggle="tab">eris:db v. strato</a></li>
     <li role="presentation"><a href="#btcd" aria-controls="btcd" role="tab" data-toggle="tab">eris:db v. btcd</a></li>
@@ -61,8 +60,6 @@ eris:db comes with a [capabilities-based, evolvable permissioning layer](/docs/d
     <li role="presentation"><a href="#dah" aria-controls="dah" role="tab" data-toggle="tab">eris:db v. hyperledger</a></li>
     <li role="presentation"><a href="#chain" aria-controls="chain" role="tab" data-toggle="tab">eris:db v. chain.com</a></li>
   </ul>
-
-  <!-- Tab panes -->
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane fade in active" id="geth">
       <div class="table-responsive">
@@ -110,7 +107,6 @@ eris:db comes with a [capabilities-based, evolvable permissioning layer](/docs/d
         </table>
       </div>
     </div>
-
     <div role="tabpanel" class="tab-pane fade" id="strato">
       <div class="table-responsive">
         <table class="table table-hover">
@@ -157,7 +153,6 @@ eris:db comes with a [capabilities-based, evolvable permissioning layer](/docs/d
         </table>
       </div>
     </div>
-
     <div role="tabpanel" class="tab-pane fade" id="btcd">
       <div class="table-responsive">
         <table class="table table-hover">
@@ -204,7 +199,6 @@ eris:db comes with a [capabilities-based, evolvable permissioning layer](/docs/d
         </table>
       </div>
     </div>
-
     <div role="tabpanel" class="tab-pane fade" id="ripple">
       <div class="table-responsive">
         <table class="table table-hover">
@@ -251,7 +245,6 @@ eris:db comes with a [capabilities-based, evolvable permissioning layer](/docs/d
         </table>
       </div>
     </div>
-
     <div role="tabpanel" class="tab-pane fade" id="dah">
       <div class="table-responsive">
         <table class="table table-hover">
@@ -298,7 +291,6 @@ eris:db comes with a [capabilities-based, evolvable permissioning layer](/docs/d
         </table>
       </div>
     </div>
-
     <div role="tabpanel" class="tab-pane fade" id="chain">
       <div class="table-responsive">
         <table class="table table-hover">
@@ -345,8 +337,6 @@ eris:db comes with a [capabilities-based, evolvable permissioning layer](/docs/d
         </table>
       </div>
     </div>
-
   </div>
 </div>
 
-<a class="action-big" href="https://docs.erisindustries.com/tutorials/getting-started/">Get Started Using eris:db</a>
