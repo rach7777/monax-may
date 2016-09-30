@@ -1,14 +1,16 @@
 ---
 
 type:   docs
-layout: li
+layout: single
 title: "Platform"
 index_file: ""
 excerpt:    "The Ecosystem Application Platform"
-menu: "platform"
 path: "content/platform"
 aliases:
     - /docs/explainers/the-eris-stack/
+menu:
+  platform:
+    weight: 5
 
 ---
 
@@ -86,7 +88,7 @@ Either you do this all yourself and distribute the keys or ask each user to gene
 It's time to start bringing nodes online. The first node starts up and peers can join like so: a seed of the master node's IP:port is added to their configuration file (`config.toml`) used in the `eris chains new | start` sequence. So long as the peer coming online has a key that:
 
 1. can sign (via a keys service); and
-2. is included in the genesis file; 
+2. is included in the genesis file;
 
 then it'll join the network.
 
@@ -108,7 +110,7 @@ After the transaction is crafted, the abi formats this bytecode into something t
 
 This process of: solidity -> eris:compilers (contract compile) -> eris:abi (transaction formulation) -> eris:keys (sign) -> deploy is wholly abstracted away by the `eris:package_manager`; see the [contract deploying tutorial](/docs/tutorials/getting-started/#step-4-integrate-your-ecosystem-application) for more info. In essence, you write a contract, specify a few parameters in a `.yaml` file then vrooom `eris pkgs do`.
 
-So a transaction hits the chain, then what? Roughly, the transaction will be proposed and the validators will vote on whether or not to accept it in the next block. Voting happens in a round robin manner. The tendermint consensus engine is its own module which talks to the eris:db application layer over the  [tendermint socket protocol (tmsp)](http://tendermint.com/posts/tendermint-socket-protocol/). 
+So a transaction hits the chain, then what? Roughly, the transaction will be proposed and the validators will vote on whether or not to accept it in the next block. Voting happens in a round robin manner. The tendermint consensus engine is its own module which talks to the eris:db application layer over the  [tendermint socket protocol (tmsp)](http://tendermint.com/posts/tendermint-socket-protocol/).
 
 We are working on making experimentation with other consensus engines simpler - a sort of plug-and-play with different EVM clients and consensus engines packaged neatly.
 
