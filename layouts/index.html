@@ -3,6 +3,7 @@
 </head>
 <body class="home">
 {{ partial "navigation.html" . -}}
+<div class="container-fluid" id="monax-page">
 {{- partial "home-top-block.html" . -}}
   <div id="main">
   {{- range $index, $element := .Data.Pages.ByWeight -}}

@@ -1,11 +1,14 @@
 ---
 
 # fill in
+date: 2016-09-30T00:00:00Z
 title:     "From Chaos to Order -- Rebranding Eris to Monax"
 author:    casey
 excerpt:   "We are excited to turn the marmot factor up to 11."
 thumbnail:
-category:  company
+categories:
+  - company
+url: /2016/09/30/from-chaos-to-order/
 tags:
   - monax
   - eris
@@ -13,7 +16,6 @@ tags:
   - company
 
 # use if needed
-layout:    post
 published: true
 comments:  true
 meta:      true

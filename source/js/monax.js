@@ -120,6 +120,9 @@ $(function() {
   if(url.indexOf('?redirect_from_eris=true') != -1) {
       $('#myModal').modal('show');
   }
+
+  // add bootstrap tables to gfm rendered tables
+  $('#main-content table').addClass('table table-bordered table-hover');
 });
 
 
