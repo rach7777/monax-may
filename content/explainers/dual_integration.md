@@ -21,7 +21,7 @@ Dual integration is the process of integrating a specific legal contract into a 
 
 # Dual integration enables legal enforceability of smart contracts
 
-The rationale behind dual integration is that for the forseeable future, legal systems are unlikely to resolve disputes stemming from smart contracts solely on the basis of their code without simply applying the defaults for similar prose agreements, an end that may not reflect the intention of the smart contracting parties. Because of the risks involved in enforcing smart contracts by code alone, we highly encourage all smart contract systems developers to utilize dual integration of some kind. Dual integration means that a smart contract will be linked to a document that can be enforced by a court.
+The rationale behind dual integration is that for the forseeable future, legal systems are unlikely to resolve disputes stemming from smart contracts solely on the basis of their code. Courts will simply apply the defaults for similar prose agreements, an end that may not reflect the intention of the smart contracting parties. Because of the risks involved in enforcing smart contracts by code alone, we highly encourage all smart contract systems developers to utilize dual integration of some kind. Dual integration means that a smart contract will be linked to a document that can be enforced by a court.
 
 # Basic dual integration:
 
