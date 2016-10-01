@@ -177,6 +177,16 @@
         background: $white;
     }
 
+    .learn-more {
+        h1 {
+            color: $white;
+        }
+
+        h4 a {
+            color: $white;
+        }
+    }
+
     #action {
         background-color: rgba(255, 255, 255, 0.19);
         // background: url(../images/home/gray.png);
@@ -202,54 +212,6 @@
             &:hover {
                 background-color: $blue_dark !important;
             }
-        }
-    }
-
-    #footer-home {
-        padding-bottom: 2em;
-        padding-top: 2em;
-        background-color: $grey_dark;
-
-        ul.linklist {
-            list-style-type: none;
-            margin-bottom: 0 !important;
-
-            a {
-                color: $blue_lightest;
-            }
-
-            a:hover {
-                color: $blue_light;
-            }
-
-            li.expander {
-                padding-top: 1em;
-                padding-bottom: 1em;
-
-                a {
-                    font-size: 1.2em;
-                }
-
-                &:last-child {
-                    padding-bottom: 0;
-                }
-            }
-        }
-
-        .doug-home {
-            text-align: center;
-            left: auto;
-            right: auto;
-            display: box;
-            overflow: hidden;
-            max-width: 100%;
-            max-height: 100%;
-        }
-
-        .copywrite {
-            padding-top: 2em;
-            padding-bottom: 0;
-            color: $blue_light;
         }
     }
 }

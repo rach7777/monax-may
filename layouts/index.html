@@ -69,26 +69,42 @@
         </div>
       <!-- /Point -->
     {{ end -}}
-  {{ end -}}
-  </div><!-- #main -->
+    {{ end -}}
     <!-- Call to Action -->
     <div id="action" class="call-to-action">
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-md-offset-1 text-center">
-          <h1 style="padding-bottom:.5em;">Ready to Solve Big Problems?</h1>
+          <h1 style="padding-bottom:.5em;">Ready to Build?</h1>
           {{- range .Site.Data.coding.cli.pms -}}
             <h4>Using {{ .name }}</h4>
             <pre><code>{{ index $.Site.Data.coding .cmd }}</code></pre>
             <p>&nbsp</p>
           {{- end -}}
-          <h4>Using Another Platform</h4>
+          <h4>Using Another Operating System</h4>
           <a href="{{ .Site.Data.coding.cli.releases }}" class="btn btn-lg btn-primary">Download <i class="icon-arrow-down"></i></a>
           </div>
         </div>
       </div>
     </div>
+    <div class="row counterpoint learn-more">
+      <div class="col-md-12 text-center">
+      <h1 style="padding-bottom:.5em;">Want To Learn More?</h1>
+      <h4><a href="/explainers">Learn more about Ecosystem Applications</a></h4>
+      <p>&nbsp</p>
+      <h4><a href="/platform">Learn more about Our Platform</a></h4>
+      <p>&nbsp</p>
+      <h4><a href="/products">Learn more about Our Library</h4>
+      <p>&nbsp</p>
+      <h4><a href="/products">Learn more about Our Packages</h4>
+      <p>&nbsp</p>
+      <h4><a href="http://marmots.org/" target="_blank">Learn more about Cuddly Marmots</a></h4>
+      <p>&nbsp</p>
+      <a href="mailto:contact@monax.io" class="btn btn-lg btn-primary">Get In Touch <i class="fa fa-envelope" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div><!-- #main -->
     <!-- /Call to Action -->
-{{- partial "footer_home.html" . -}}
+{{- partial "footer.html" . -}}
 {{- partial "scripts.html" . -}}
 {{- partial "analytics.html" . -}}
