@@ -10,7 +10,7 @@ aliases:
     - /docs/explainers/the-eris-stack/
 menu:
   platform:
-    weight: 5
+    weight: 1
 
 ---
 

@@ -1,16 +1,16 @@
 ---
 
-date: 2014-10-06
-title:      "cli"
-excerpt:    "The Distributed Application Platform | cli"
+type:   docs
+layout: single
+index_file: ""
+title:      "Platform | Command Line Interface"
+excerpt:    "The Ecosystem Application Platform | cli"
 # menu:
 #   platform:
 #     weight: 5
-weight:  20
 aliases:
-- /components/eriscli/
+  - /components/eriscli/
 
 ---
 
-
-Insert description here
+The `eris:cli` is your gate
