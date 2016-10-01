@@ -26,12 +26,12 @@ $(function() {
   };
 
   // open links in main content in a new tab, unless monax links
-  $('#main-content a').not('a[href*=monax]').attr('target', '_blank');
-  $("#main-content a").each(function () {
-    if (!/^http:\/\//.test(this.href)) {
-      this.setAttribute('target', '_self');
-    }
-  });
+  // $('#main-content a').not('a[href*=monax]').attr('target', '_blank');
+  // $("#main-content a").each(function () {
+  //   if (!/^http:\/\//.test(this.href)) {
+  //     this.setAttribute('target', '_self');
+  //   }
+  // });
 
   // match the height of two columns -- generic
   $('.items-container').each(function() {
@@ -141,6 +141,12 @@ $(function() {
 
   // add bootstrap tables to gfm rendered tables
   $('#main-content table').addClass('table table-bordered table-hover');
+
+  // signup modal pop up on click
+  // $('.newsletter-signup').click(function(event) {
+  //   require(["mojo/signup-forms/Loader"],
+  //   function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"5b6bb0eef367da61ed27cf5c3","lid":"2a8fcf49c5"}) });
+  // });
 });
 
 
