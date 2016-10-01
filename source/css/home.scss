@@ -177,16 +177,6 @@
         background: $white;
     }
 
-    .learn-more {
-        h1 {
-            color: $white;
-        }
-
-        h4 a {
-            color: $white;
-        }
-    }
-
     #action {
         background-color: rgba(255, 255, 255, 0.19);
         // background: url(../images/home/gray.png);
@@ -202,6 +192,29 @@
         code {
             font-family: $font_code, monospace;
             font-size: 14pt;
+        }
+
+        .btn {
+            margin: 10px;
+            background-color: $blue_dark !important;
+            border-color:  $blue_darkest !important;
+
+            &:hover {
+                background-color: $blue_dark !important;
+            }
+        }
+    }
+
+    .learn-more {
+        h1 {
+            color: $white;
+        }
+
+        h4 a {
+            color: $blue_lightest;
+            // color: $white;
+            font-family: $font_code, monospace;
+            font-size: 16pt;
         }
 
         .btn {
