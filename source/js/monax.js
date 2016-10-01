@@ -3,7 +3,6 @@
 global.jQuery = global.$ = require('jquery');
 require('bootstrap');
 require('prismjs');
-require('matchHeight');
 require('owl.carousel');
 var lunr = require('lunr');
 
@@ -13,40 +12,63 @@ var lunrIndex,
 
 // on document load
 $(function() {
-  $(".dropdown-toggle").dropdown();
-
+  /*
+    ------------------------------------------------------------------------
+      Site Wide Style // Layout
+    ------------------------------------------------------------------------
+  */
   // expand viewport so footer goes down to bottom on low content pages...
   if ( $( "#monax-page" ).height() < $( window ).height() ) {
     var offset = $( window ).height();
     offset = offset - $('nav').height();
     offset = offset - $('footer').height();
-    // padding/margins/something...
+
+    // padding/margins/
     offset = offset - 47;
     $( '#monax-page' ).height(offset);
   };
 
-  // open links in main content in a new tab, unless monax links
-  // $('#main-content a').not('a[href*=monax]').attr('target', '_blank');
-  // $("#main-content a").each(function () {
-  //   if (!/^http:\/\//.test(this.href)) {
-  //     this.setAttribute('target', '_self');
-  //   }
-  // });
+  // add site wide tables classes to gfm rendered tables
+  $('#main-content table').addClass('table table-bordered table-hover');
 
-  // match the height of two columns -- generic
-  $('.items-container').each(function() {
-      $(this).children('.item').matchHeight();
-  });
+  // table of contents modifications; add proper classes for
+  // scroll spy and formally constrain width of tables
+  // this is necessary because its css positioning is fixed.
+  $('#TableOfContents ul').addClass('nav nav-pills nav-stacked');
+  $('#TableOfContents').children().css( "width", $('#TableOfContents').parent('.sidebar').width() );
 
-  // match the height of two columns -- homefooter
-  $('#home-footer-container').each(function() {
-      $(this).children('.item').matchHeight({
-          target: $('#home-footer-linklist'),
-      });
-  });
+  // initiate table of contents with scrollSpy
+  if ($('#TableOfContents').length !== 0) {
 
-  // home page only. run owl carousel
-  // logos carousels
+    // Add scroll spy to watch Body
+    $('body').scrollspy({ target: '#TableOfContents' });
+
+    // hide anything > Level 2
+    $('#TableOfContents ul li ul li').children('ul').empty();
+
+    // sidebar vertical accordian with default collapse
+    $('#TableOfContents ul li').not('.active').children('ul').slideUp(50);
+    $('#TableOfContents').on('activate.bs.scrollspy', function() {
+      $('#TableOfContents ul li').not('.active').children('ul').slideUp(50);
+      $('#TableOfContents ul li.active ul').slideDown();
+    });
+
+    // smooth scrolling by scroll spy
+    $('#TableOfContents ul a').bind('click', function(event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({
+        scrollTop: ($($anchor.attr('href')).offset().top)
+      }, 750 );
+      event.preventDefault();
+    });
+  }
+
+  /*
+    ------------------------------------------------------------------------
+      Page Specific Style // Layout
+    ------------------------------------------------------------------------
+  */
+  // home page only. logos carousels
   $('.logos-carousel').owlCarousel({
     loop:true,
     autoplay:true,
@@ -62,8 +84,7 @@ $(function() {
     }
   });
 
-  // home page only. run owl carousel
-  // use cases carousels
+  // home page only. use cases carousels
   $('.use-cases-carousel').owlCarousel({
     loop:true,
     autoplay:true,
@@ -79,37 +100,20 @@ $(function() {
     }
   });
 
-  // table of contents modifications; add proper classes for
-  // scroll spy and formally constrain width
-  $('#TableOfContents ul').addClass('nav nav-pills nav-stacked');
-  $('#TableOfContents').children().css( "width", $('#TableOfContents').parent('.sidebar').width() );
+  // team page
+  $( ".team-member" ).hover(
+    function() {
+      $( this ).children( ".team-details").first().removeClass( "hidden" );
+    }, function() {
+      $( this ).children( ".team-details").first().addClass( "hidden" );
+    }
+  );
 
-  // table of contents
-  if ($('#TableOfContents').length !== 0) {
-
-    // Add proper attributes to Body
-    $('body').scrollspy({ target: '#TableOfContents' });
-
-    // hide anything > Level 2
-    $('#TableOfContents ul li ul li').children('ul').empty();
-
-    // sidebar collapse
-    $('#TableOfContents ul li').not('.active').children('ul').slideUp(50);
-    $('#TableOfContents').on('activate.bs.scrollspy', function() {
-      $('#TableOfContents ul li').not('.active').children('ul').slideUp(50);
-      $('#TableOfContents ul li.active ul').slideDown();
-    });
-
-    // smooth scrolling
-    $('#TableOfContents ul a').bind('click', function(event) {
-      var $anchor = $(this);
-      $('html, body').stop().animate({
-        scrollTop: ($($anchor.attr('href')).offset().top)
-      }, 750 );
-      event.preventDefault();
-    });
-  }
-
+  /*
+    ------------------------------------------------------------------------
+      Search
+    ------------------------------------------------------------------------
+  */
   // search mechanism
   initLunr();
 
@@ -120,40 +124,33 @@ $(function() {
     });
   });
 
+  // search hide
   $('#search').blur(function(event) {
     $('#search').toggle(400);
   })
 
-  // team page
-  $( ".team-member" ).hover(
-    function() {
-      $( this ).children( ".team-details").first().removeClass( "hidden" );
-    }, function() {
-      $( this ).children( ".team-details").first().addClass( "hidden" );
-    }
-  );
-
+  /*
+    ------------------------------------------------------------------------
+      Modals
+    ------------------------------------------------------------------------
+  */
   // we're not eris modal
   var url = window.location.href;
   if(url.indexOf('?redirect_from_eris=true') != -1) {
-      $('#myModal').modal('show');
+    $('#rebrandModal').modal('show');
   }
 
-  // add bootstrap tables to gfm rendered tables
-  $('#main-content table').addClass('table table-bordered table-hover');
-
   // signup modal pop up on click
-  // $('.newsletter-signup').click(function(event) {
-  //   require(["mojo/signup-forms/Loader"],
-  //   function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"5b6bb0eef367da61ed27cf5c3","lid":"2a8fcf49c5"}) });
-  // });
+  $('.newsletter-signup').click(function(event) {
+    $('#newsletterModal').modal('show');
+  });
 });
 
 
 /*
-----------------------------------------------------------------------------------------------
-Helpers -- Search functionality
-----------------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------
+    Helpers -- Search functionality
+  ------------------------------------------------------------------------
 */
 function initLunr() {
   $.getJSON("/js/index.json")
