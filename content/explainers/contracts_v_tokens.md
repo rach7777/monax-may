@@ -8,7 +8,7 @@ aliases:
     - /docs/explainers/contracts_v_tokens/
 index_file: ""
 menu:
-  explainer:
+  explainers:
     weight: 9
 
 ---

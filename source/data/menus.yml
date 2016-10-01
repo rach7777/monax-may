@@ -1,0 +1,45 @@
+learn:
+  title: "Learn"
+  parent: "main"
+  children:
+    - documentation
+    - explainers
+    - tutorials
+
+products:
+  title: "Products"
+  parent: "main"
+  children:
+    - platform
+    - library
+    - packages
+
+documentation:
+  title: "Documentation"
+  url: "/docs/documentation"
+  parent: "learn"
+
+explainers:
+  title: "Explainers"
+  url: "/explainers"
+  parent: "learn"
+
+tutorials:
+  title: "Tutorials & Examples"
+  url: "/docs/tutorials"
+  parent: "learn"
+
+platform:
+  title: "Platform"
+  url: "/platform"
+  parent: "products"
+
+library:
+  title: "Library"
+  url: "/library"
+  parent: "products"
+
+packages:
+  title: "Packages"
+  url: "/packages"
+  parent: "products"

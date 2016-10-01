@@ -8,7 +8,7 @@ excerpt:    "What are Smart Contracts and why are these distributed logic gatewa
 aliases:
     - /docs/explainers/smart_contracts/
 menu:
-  explainer:
+  explainers:
     weight: 7
 
 ---

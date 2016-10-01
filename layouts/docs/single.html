@@ -1,4 +1,20 @@
-{{ partial "header.html" . }}
+{{- $listOnlyNoContentPage := in .File.Path "documentation/index.md" | or (in .File.Path "tutorials/index.md") | or (in .File.Path "explainers/index.md") -}}
+{{- $documentationPage := in .File.Path "documentation" -}}
+{{- $tutorialsPage := in .File.Path "tutorials" -}}
+{{- $explainersPage := in .File.Path "explainers" -}}
+{{- $platformPage := in .File.Path "platform" -}}
+{{- $libraryPage := in .File.Path "library" -}}
+{{- $packagesPage := in .File.Path "packages" -}}
+{{- if $documentationPage -}}{{- $.Scratch.Set "area" "documentation" -}}
+{{- else if $tutorialsPage -}}{{- $.Scratch.Set "area" "tutorials" -}}
+{{- else if $explainersPage -}}{{- $.Scratch.Set "area" "explainers" -}}
+{{- else if $platformPage -}}{{- $.Scratch.Set "area" "platform" -}}
+{{- else if $libraryPage -}}{{- $.Scratch.Set "area" "library" -}}
+{{- else if $packagesPage -}}{{- $.Scratch.Set "area" "packages" -}}{{- end -}}
+{{- $learnPage := $documentationPage | or $tutorialsPage | or $explainersPage -}}
+{{- $productsPage := $platformPage | or $libraryPage | or $packagesPage -}}
+{{- if not $documentationPage -}}{{- $.Scratch.Set "toc" true -}}{{- end -}}
+{{- partial "header.html" . -}}
 </head>
 <body class="docs">
 {{ partial "navigation.html" . }}
@@ -11,10 +27,11 @@
     </div><!-- .row -->
   {{ end }}
   <div class="row">
-    {{- if in .File.Path "documentation" }}{{ partial "sidebar-docs.html" . }}{{ end -}}
-    {{- if in .File.Path "tutorials" }}{{ partial "sidebar-tuts.html" . }}{{ end -}}
-    {{- if in .File.Path "explainers" }}{{ partial "sidebar-exp.html" . }}{{ end -}}
-    {{- if in .File.Path "platform" }}{{ partial "sidebar-plat.html" . }}{{ end -}}
+    <aside class="sidebar col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-2 hidden-xs hidden-sm">
+      <div id="sidebar" class="nav-collapse">
+        {{ partial "menu-docs.html" . }}
+      </div>
+    </aside>
     <article id="main-content">
       <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
         {{ .Content }}
