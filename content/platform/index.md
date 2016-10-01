@@ -1,7 +1,7 @@
 ---
 
 type:   docs
-layout: single
+layout: li
 title: "Platform"
 index_file: ""
 excerpt:    "The Ecosystem Application Platform"

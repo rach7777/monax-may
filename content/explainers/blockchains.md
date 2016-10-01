@@ -8,7 +8,7 @@ index_file: ""
 aliases:
     - /docs/explainers/blockchains/
 menu:
-  explainer:
+  explainers:
     weight: 3
 
 ---

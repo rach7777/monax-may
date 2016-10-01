@@ -8,7 +8,7 @@ aliases:
     - /docs/explainers/permissioned_blockchains/
 index_file: ""
 menu:
-  explainer:
+  explainers:
     weight: 5
 
 ---

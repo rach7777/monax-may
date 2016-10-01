@@ -1,8 +1,21 @@
-{{- $rootPage := in .File.Path "documentation/index.md" | or (in .File.Path "tutorials/index.md") | or (in .File.Path "explainers/index.md") -}}
-{{- $docsPage := in .File.Path "documentation" -}}
-{{- $tutsPage := in .File.Path "tutorials" -}}
-{{- $explPage := in .File.Path "explainers" -}}
-{{- $platPage := in .File.Path "platform" -}}
+{{- $listOnlyNoContentPage := in .File.Path "documentation/index.md" | or (in .File.Path "tutorials/index.md") | or (in .File.Path "explainers/index.md") -}}
+{{- $documentationPage := in .File.Path "documentation" -}}
+{{- $tutorialsPage := in .File.Path "tutorials" -}}
+{{- $explainersPage := in .File.Path "explainers" -}}
+{{- $platformPage := in .File.Path "platform" -}}
+{{- $libraryPage := in .File.Path "library" -}}
+{{- $packagesPage := in .File.Path "packages" -}}
+{{- if $documentationPage -}}{{- $.Scratch.Set "area" "documentation" -}}
+{{- else if $tutorialsPage -}}{{- $.Scratch.Set "area" "tutorials" -}}
+{{- else if $explainersPage -}}{{- $.Scratch.Set "area" "explainers" -}}
+{{- else if $platformPage -}}{{- $.Scratch.Set "area" "platform" -}}
+{{- else if $libraryPage -}}{{- $.Scratch.Set "area" "library" -}}
+{{- else if $packagesPage -}}{{- $.Scratch.Set "area" "packages" -}}{{- end -}}
+{{- $learnPage := $documentationPage | or $tutorialsPage | or $explainersPage -}}
+{{- $productsPage := $platformPage | or $libraryPage | or $packagesPage -}}
+{{- if $learnPage -}}{{- $.Scratch.Set "toc" true -}}{{- end -}}
+{{- if $productsPage -}}{{- $.Scratch.Set "toc" true -}}{{- end -}}
+{{- if not $listOnlyNoContentPage -}}{{- if $learnPage -}}{{- if in .File.Path "index.md" -}}{{- $.Scratch.Set "toc" false -}}{{- end -}}{{- end -}}{{- end -}}
 {{- partial "header.html" . -}}
 </head>
 <body class="docs-list">
@@ -14,20 +27,27 @@
     </div>
   </div>
   <div class="row">
-    {{- if $rootPage -}}
+    {{- if $listOnlyNoContentPage -}}
       <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2" id="content-block">
-        {{- if $docsPage }}{{ partial "menu-docs.html" . }}{{- else if $tutsPage }}{{ partial "menu-tuts.html" . }}{{- else if $explPage }}{{ partial "menu-exp.html" . }}{{- else if $platPage }}{{ partial "menu-plat.html" . }}{{ end -}}
+        {{- $.Scratch.Set "toc" false -}}
+        {{ partial "menu-docs.html" . }}
       </div><!-- .cols -->
     {{- else -}}
-      {{- if $docsPage }}{{ partial "sidebar-docs.html" . }}{{- else if $tutsPage }}{{ partial "sidebar-tuts.html" . }}{{- else if $explPage }}{{ partial "sidebar-exp.html" . }}{{- else if $platPage }}{{ partial "sidebar-plat.html" . }}{{ end -}}
+      <aside class="sidebar col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-2 hidden-xs hidden-sm">
+        <div id="sidebar" class="nav-collapse">
+          {{ partial "menu-docs.html" . }}
+        </div>
+      </aside>
       <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
-        <h2>{{- if $docsPage }}Versions{{- else if $tutsPage }}Tutorials{{- else if $explPage }}Explainers{{ end -}}</h2>
-        {{- if $platPage -}}
-        {{- else -}}
-          {{- partial "directory-index.html" . -}}
-        {{- end -}}
-        {{- if $docsPage | or $platPage -}}
-          {{- if $docsPage }}<hr />{{ end -}}
+        <h2>
+          {{- if $documentationPage -}}Versions
+          {{- else if $tutorialsPage -}}Tutorials
+          {{- else if $explainersPage -}}Explainers
+          {{- end -}}
+        </h2>
+        {{- if $learnPage -}}{{- partial "directory-index.html" . -}}{{- end -}}
+        {{- if $documentationPage | or $productsPage -}}
+          {{- if $documentationPage }}<hr />{{ end -}}
           <article id="main-content">
             {{ .Content }}
           </article>

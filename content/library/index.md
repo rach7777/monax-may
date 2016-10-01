@@ -1,7 +1,7 @@
 ---
 
 type:   docs
-layout: single
+layout: li
 title: "Library"
 index_file: ""
 path: "content/library"

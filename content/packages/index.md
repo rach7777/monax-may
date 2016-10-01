@@ -1,13 +1,13 @@
 ---
 
 type:   docs
-layout: single
+layout: li
 title: "Packages"
 index_file: ""
 path: "content/packages"
 excerpt:    "Monax Value-Add Services"
 menu:
-  success:
+  packages:
     weight: 1
 aliases:
   - /products/

@@ -1,8 +1,14 @@
+{{- $area := $.Scratch.Get "area" -}}
+{{- $toc := $.Scratch.Get "toc" -}}
+{{- $currentConfig := index .Site.Data.menus $area -}}
+{{- $currentNode := . -}}
+{{- if $toc -}}
+  {{ .TableOfContents }}<hr />
+{{- end -}}
 <ul class="nav nav-pills nav-stacked">
-  {{ $currentNode := . }}
-  {{ range .Site.Menus.documentation }}
-    {{ if .HasChildren }}
-      <li class="sub-menu{{if $currentNode.HasMenuCurrent "documentation" . }} active{{end}}">
+  {{- range  (index .Site.Menus $area) -}}
+    {{- if .HasChildren -}}
+      <li class="sub-menu{{if $currentNode.HasMenuCurrent $area . }} active{{end}}">
       <a href="javascript:;" class="">
         {{ .Pre }}
         <span>{{ .Name }}</span>
@@ -10,7 +16,7 @@
       </a>
       <ul class="sub">
         {{ range .Children }}
-        <li{{if $currentNode.IsMenuCurrent "documentation" . }} class="active"{{end}}><a href="{{.URL}}"> {{ .Name }} </a> </li>
+          <li{{if $currentNode.IsMenuCurrent $area . }} class="active"{{end}}><a href="{{ .URL }}"> {{ .Name }} </a></li>
         {{ end }}
       </ul>
       {{else}}
@@ -20,8 +26,16 @@
           <span>{{ .Name }}</span>
         </a>
       </li>
-    {{end}}
-    {{end}}
-    <li><a href="/explainers/" target="blank">Explainers</a></li>
-    <li><a href="/docs/tutorials/" target="blank">Tutorials & Examples</a></li>
+    {{- end -}}
+  {{- end -}}
+</ul>
+<hr />
+<ul class="nav nav-pills nav-stacked">
+  {{- $parentConfig := index .Site.Data.menus $currentConfig.parent -}}
+  {{- range $parentConfig.children -}}
+    {{- if ne $area . -}}
+      {{- $thisLink := index $.Site.Data.menus . -}}
+      <li><a href="{{ $thisLink.url }}">{{ $thisLink.title }}</a></li>
+    {{- end -}}
+  {{- end -}}
 </ul>

@@ -5,7 +5,7 @@ title: "Tutorials | Getting Started"
 aliases:
   - /docs
 menu:
-  tutorial:
+  tutorials:
     weight: 5
 
 ---

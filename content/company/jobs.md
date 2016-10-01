@@ -3,6 +3,7 @@
 title: "Company | Positions Available"
 aliases:
   - "/about/jobs/"
+type: company
 
 ---
 
