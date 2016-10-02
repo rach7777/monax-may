@@ -1,0 +1,6 @@
+FROM site_buildr
+ADD . /site
+USER root
+RUN chown --recursive $USER:$USER /site
+USER $USER
+RUN gulp build --production

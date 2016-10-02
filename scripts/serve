@@ -1,5 +1,25 @@
 #!/usr/bin/env bash
-# this is to be used for local development
+#
+# -------------------------------------------------------------
+# Usage
+# -------------------------------------------------------------
+#
+# (repo_root)> scripts/serve
+#
+# -------------------------------------------------------------
+# What It Does
+# -------------------------------------------------------------
+#
+# Builds and serves the monax site for local development. Utilizes
+# both gulp watch and hugo serve under the hood in tandem (they)
+# operate on separate and isolated directory structures on the
+# file system. The mounts the appropriate directories for the
+# appropriate binary to watch.
+#
+# Note this file is to be used for local development.
+#
+# See gulpfile.js and hugo serve for specifics.
+
 static_dir=`pwd`/static
 ip="http://localhost"
 

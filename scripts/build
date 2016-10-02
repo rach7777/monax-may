@@ -1,13 +1,48 @@
 #!/usr/bin/env bash
+#
+# -------------------------------------------------------------
+# Usage
+# -------------------------------------------------------------
+#
+# (repo_root)> scripts/build [production|buildr] [buildr]
+#
+# -------------------------------------------------------------
+# What It Does
+# -------------------------------------------------------------
+#
+# Builds the monax site into two separate images. The first image
+# is the site_buildr image which is the template for the site
+# building. The site_buildr image locks down npm dependencies
+# and installs the appropriate software via apk onto the
+# primary build image used by the platform team. The second image
+# is the site image which runs gulp build with either a
+# --staging flag or a --production flag.
+#
+# Note this file is to be used for local development and on
+# jenkins.
+#
+# See dockerfiles and gulpfile.js for specifics.
 
-# note this file is to be used for local development
-# and on jenkins
+if [ "$1" == "production" ]
+then
+  site=production
+else
+  site=staging
+fi
 
-if [ "$1" == "buildr" ]
+buildr=false
+if [[ "$1" == "buildr" || "$2" == "buildr" || `docker images site_buildr -q` == "" ]]
+then
+  buildr=true
+fi
+
+if $buildr
 then
   docker rmi site_buildr &>/dev/null
+  set -e
   docker build -t site_buildr .
+  set +e
 fi
 
 docker rmi site &>/dev/null
-docker build -t site -f Dockerfile.this .
+docker build -t site -f "Dockerfile.$site" .
