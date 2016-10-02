@@ -3,7 +3,7 @@
 </head>
 <body class="home">
 {{ partial "navigation.html" . -}}
-{{- partial "home-top-block.html" . -}}
+{{- partial "home/top-block.html" . -}}
   <div id="main">
   {{- range $index, $element := .Data.Pages.ByWeight -}}
     {{- if in .File.Path "home/overview" }}

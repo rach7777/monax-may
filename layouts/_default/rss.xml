@@ -1,24 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}</title>
-    <link>{{ .Permalink }}</link>
+    <title>{{ .Site.Title | markdownify }} Blog</title>
+    <link>{{ .Site.BaseURL }}blog/</link>
     <generator>Hugo -- gohugo.io</generator>{{ with .Site.LanguageCode }}
-    <language>{{.}}</language>{{end}}{{ with .Site.Author.email }}
-    <managingEditor>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</managingEditor>{{end}}{{ with .Site.Author.email }}
-    <webMaster>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</webMaster>{{end}}{{ with .Site.Copyright }}
-    <copyright>{{.}}</copyright>{{end}}{{ if not .Date.IsZero }}
+    <language>{{.}}</language>{{end}}
+    <managingEditor>{{ .Site.Title | markdownify }} ({{ .Site.Data.sites.email | safeHTML }})</managingEditor>{{ with .Site.Author.email }}
+    <webMaster>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</webMaster>{{end}}
+    <copyright>Copyright &copy; 2014-{{ .Now.Year }} Monax</copyright>{{ if not .Date.IsZero }}
     <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
     <atom:link href="{{.URL}}" rel="self" type="application/rss+xml" />
-    {{ range first 10 .Data.Pages }}
-    <item>
-      <title>{{ .Title }}</title>
-      <link>{{ .Permalink }}</link>
-      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-      <!-- {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}} -->
-      <guid isPermaLink="true">{{ .Permalink }}</guid>
-      <description>{{ .Content | html }}</description>
-    </item>
-    {{ end }}
+    {{- range first 15 .Data.Pages -}}
+    {{- if .IsPage }}{{ if or (eq .Section "blog") (eq .Type "blog") -}}
+      <item>
+        <title>{{ .Title | markdownify }}</title>
+        <link>{{ .Permalink }}</link>
+        <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+        <guid isPermaLink="true">{{ .Permalink }}</guid>
+        <description>{{ .Content | html }}</description>
+      </item>
+    {{- end }}{{ end }}{{ end -}}
   </channel>
 </rss>

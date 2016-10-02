@@ -9,11 +9,11 @@
     </div>
   </div>
   <div class="row">
-    {{- partial "sidebar-default.html" . -}}
+    {{- partial "blog/sidebar-default.html" . -}}
     <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
       <article class="content" id="main-content">
         {{ range .Data.Pages }}
-          {{- partial "blog_entry.html" . -}}
+          {{- partial "blog/li-entry_listing.html" . -}}
         {{- end -}}
       </article>
     </div>

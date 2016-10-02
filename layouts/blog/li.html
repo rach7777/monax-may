@@ -5,15 +5,15 @@
 <div class="container-fluid" id="monax-page">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 page-header">
-        <header><h1 class="title" role="title">{{ .Title }}</h1></header>
+        <header><h1 class="title" role="title">{{ with .Title }}{{ . }}{{ else }}Monax Blog{{ end }}</h1></header>
     </div>
   </div>
   <div class="row">
-    {{- partial "sidebar-default.html" . -}}
+    {{- partial "blog/sidebar-default.html" . -}}
     <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
       <article class="content" id="main-content">
         {{- range first 10 (where .Site.Pages "Section" "blog") -}}
-          {{- partial "blog_entry.html" . -}}
+          {{- partial "blog/li-entry_listing.html" . -}}
         {{- end -}}
       </article>
     </div>
