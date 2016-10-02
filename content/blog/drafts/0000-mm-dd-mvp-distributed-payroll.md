@@ -1,19 +1,25 @@
 ---
 
 # fill in
+date:      YEAR-MONTH-DAYT00:00:00Z
 title:     "The Smart Contract System MVP Series: Small Business Operating System for the Information Age"
 author:    casey
 excerpt:   "Casey explains how he would set up the MVP for a payroll system for distributed startups who may not all be located in the same country (e.g., Eris :-) ) to increase the automation of the stakeholders involved in the process."
 thumbnail: payroll.jpg
-category:  strategy
-tags:      [strategy, smart contracts mvp, payroll]
+url:       /YEAR/MONTH/DAY/URL/
+categories:
+  - ecosystem applications
+tags:
+  - ecosystem applications
+  - strategy
+  - smart contracts mvp
+  - payroll
 
 # use if needed
 layout:    post
 published: true
 comments:  true
 meta:      true
-series:    smart_contract_mvps
 
 ---
 

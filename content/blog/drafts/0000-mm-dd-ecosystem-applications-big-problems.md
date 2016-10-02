@@ -1,22 +1,26 @@
 ---
 
 # fill in
+date:      YEAR-MONTH-DAYT00:00:00Z
 title:     "Ecosystem Applications and Big Ideas"
 author:    casey
-excerpt:   "EXC."
+excerpt:   "EXCERPT - FOR SHARING."
 thumbnail: ecos_big_problems.jpg
-category:  "ecosystem applications"
-tags:      [social science, policy, ecosystem applications]
+url:       /YEAR/MONTH/DAY/URL/
+categories:
+  - ecosystem applications
+tags:
+  - social science
+  - policy
+  - ecosystem applications
 
 # use if needed
 layout:    post
-published: false
+published: true
 comments:  true
 meta:      true
-#thumbnail_raw:
 
 ---
-
 
 [{{ page.date | date: "%Y" | append:'/ecos_big_problems.jpg' | img }}](https://www.flickr.com/photos/andybadger/8393597176/)
 
