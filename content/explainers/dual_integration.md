@@ -9,7 +9,7 @@ aliases:
 index_file: ""
 menu:
   explainers:
-    weight: 13
+    weight: 35
 
 ---
 

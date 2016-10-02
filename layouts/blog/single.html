@@ -9,7 +9,7 @@
     </div>
   {{- end -}}
   <div class="row">
-    {{- if ne .Params.author nil }}{{ partial "sidebar-author.html" . }}{{ else }}{{ partial "sidebar-default.html" . }}{{ end -}}
+    {{- if ne .Params.author nil }}{{ partial "blog/sidebar-author.html" . }}{{ else }}{{ partial "blog/sidebar-default.html" . }}{{ end -}}
       <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
       <article class="content" id="main-content">
         {{- if .Params.deprecated -}}
@@ -21,11 +21,11 @@
           </div>
         {{- end -}}
         {{ .Content }}
-        {{- if ne .Params.author nil }}{{ partial "post_meta-author.html" . }}{{ else }}{{ partial "post_meta-default.html" . }}{{ end -}}
+        {{- if ne .Params.author nil }}{{ partial "blog/post_meta-author.html" . }}{{ else }}{{ partial "blog/post_meta-default.html" . }}{{ end -}}
       </article>
       {{- if .Params.comments -}}
         <div class="comments">
-          {{- partial "comments.html" . -}}
+          {{- partial "blog/comments.html" . -}}
         </div><!-- .comments -->
       {{- end -}}
     </div>

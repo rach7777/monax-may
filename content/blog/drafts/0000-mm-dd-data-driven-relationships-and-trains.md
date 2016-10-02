@@ -1,19 +1,23 @@
 ---
 
 # fill in
-title:     TIT
-author:
-excerpt:   "EXC."
-thumbnail:
-category:  CAT
-tags:      [TAG1, TAG2]
+date:      YEAR-MONTH-DAYT00:00:00Z
+title:     TITLE
+author:    YOUR_FIRST_NAME_ALL_LOWERCASE
+excerpt:   "EXCERPT - FOR SHARING."
+thumbnail: YOUR_THUMBNAIL_FOR_SHARING
+url:       /YEAR/MONTH/DAY/URL/
+categories:
+  - CATEGORY1
+tags:
+  - TAG1
+  - TAG2
 
 # use if needed
 layout:    post
-published: false
+published: true
 comments:  true
 meta:      true
-#thumbnail_raw:
 
 ---
 

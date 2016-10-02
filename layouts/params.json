@@ -1,1 +1,1 @@
-{"google":"","tagline":"We empower developers to automate their data driven relationships.","name":"Monax Industries"}
+{"google":"","tagline":"{{ .Site.Data.sites.tagline }}","name":"{{ .Site.Title }}"}

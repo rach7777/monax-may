@@ -1,12 +1,12 @@
-# Monax Industries'
-
-This is the new site. If you would like to participate, then great!
-
-## Install
+# Install
 
 Clone this repository to your computer.
 
 Make sure Docker is installed (ask a marmot to help you if you need it).
+
+# Usage
+
+It should be fairly simple to use the site.
 
 ## I want to see the site locally
 
@@ -18,6 +18,18 @@ scripts/serve
 
 Then go to http://localhost:1313 in your browser.
 
+**On OSX / Windows** -- you will need to ensure that a `site` docker-machine is available. If you do not have one available then run:
+
+```
+docker-machine create --driver virtualbox site
+```
+
+Note that on OSX/Windows the mounting of the volumes doesn't fully work so there is no live reloading.
+
+**N.B.** -- the first time you run the `serve` script it will take a wee while. After that it will be much faster.
+
+## Changes you can make
+
 You can make changes to the files in the following directories and the site will be rebuilt and reloaded for you:
 
 * content
@@ -26,10 +38,6 @@ You can make changes to the files in the following directories and the site will
 * source/css
 
 Any changes outside of those will require you to CTRL+c out of the script. Instructions will be displayed for what to do now.
-
-**N.B.** -- the first time you run the `serve` script it will take a wee while. After that it will be much faster.
-
-## Changes you can make
 
 Any changes outside of the (content) directory require @compleatang's approval. Otherwise have at it.
 
@@ -47,17 +55,11 @@ rm -rf ./public
 
 Then you can start again with a fresh deck.
 
-## Structure
+# Structure
 
 * archetypes -- templates for content
 * content -- where our content goes
-* data -- where data goes
 * layouts -- templates for each display page
 * scripts -- things you can run
-* source -- where css, js, fonts, etc. go
+* source -- where data files, css, js, fonts, etc. go
 
-**Ignore the below**
-
-```
-{{ .Date.Format "2006" | printf "/images/%s/%s" . $.Params.thumbnail }}
-```

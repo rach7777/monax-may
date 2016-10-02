@@ -22,9 +22,9 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Learn</a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="/explainers/">Explainers</a></li>
             <li><a href="/docs/documentation/">Documentation</a></li>
-            <li><a href="/docs/tutorials/">Examples</a></li>
+            <li><a href="/explainers/">Explainers</a></li>
+            <li><a href="/docs/tutorials/">Tutorials</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -39,9 +39,11 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="fa fa-plug"></span></a>
           <ul class="dropdown-menu" role="menu">
+            <li><a href="{{ .Site.Data.sites.contact_email }}" target="_blank"><i class="fa fa-envelope"></i> Contact Us</a></li>
+            <li><a href="#" class="newsletter-signup"><i class="fa fa-newspaper-o"></i> Newsletter Signup</a></li>
+            <li class="divider"></li>
+            <li><a href="{{ .Site.Data.sites.slack }}" target="_blank"><i class="fa fa-weixin"></i> Support Chatrooms</a></li>
             <li><a href="{{ .Site.Data.sites.support }}" target="_blank"><i class="fa fa-ambulance"></i> Support Forums</a></li>
-            <li><a href="{{ .Site.Data.sites.slack }}"><i class="fa fa-weixin"></i> Support Chatrooms</a></li>
-            <li><a href="{{ .Site.Data.sites.contact_email }}"><i class="fa fa-envelope"></i> Business Contact Email</a></li>
             <li class="divider"></li>
             <li><a href="{{ .Site.Data.sites.github }}" target="_blank"><i class="fa fa-github-square"></i> Github</a></li>
             <li class="divider"></li>
@@ -50,10 +52,9 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" id="search-reveal" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="fa fa-search"></span></a>
-          <input id="search" type="text" class="form-control" placeholder="Search"  style="display: none;" />
-          <ul class="dropdown-menu" role="menu" id="results">
-          </ul>
+          <a href="#" id="search-reveal" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="fa fa-search pull-right"></span></a>
+          <input id="search" type="text" class="form-control" placeholder="Search" style="display:none;" />
+          <ul class="dropdown-menu" id="results" style="display:none;" ></ul>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->

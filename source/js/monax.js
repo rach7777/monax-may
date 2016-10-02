@@ -119,15 +119,19 @@ $(function() {
 
   // search display
   $('#search-reveal').click(function(event) {
-    $('#search').slideToggle(400, function() {
-      $('#search').focus();
+    $('#search').toggle(50, function() {
+      $('#results').toggle(50, function() {
+        // $('#search').focus();
+      });
     });
   });
 
   // search hide
   $('#search').blur(function(event) {
-    $('#search').toggle(400);
-  })
+    $('#search').hide(function() {
+      $('#results').hide();
+    });
+  });
 
   /*
     ------------------------------------------------------------------------

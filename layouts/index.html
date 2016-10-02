@@ -3,7 +3,7 @@
 </head>
 <body class="home">
 {{ partial "navigation.html" . -}}
-{{- partial "home-top-block.html" . -}}
+{{- partial "home/top-block.html" . -}}
   <div id="main">
   {{- range $index, $element := .Data.Pages.ByWeight -}}
     {{- if in .File.Path "home/overview" }}
@@ -30,7 +30,6 @@
               {{- if (isset .Params "carousel" ) }}
                 </div>
               {{ end -}}
-              <br /><br />
               {{- if (isset .Params "carousel" ) }}
                 <div class="carousel-inner  owl-carousel logos-carousel"><!-- Wrapper for slides -->
                     {{- range .Params.carousel }}

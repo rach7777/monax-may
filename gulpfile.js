@@ -243,10 +243,12 @@ function pushToProduction(next) {
 }
 
 function deployProduction(next) {
-  gutil.log("Deploying on production server.")
   var vhost=config.site.stagURLRaw;
   if (argv.production) {
+    gutil.log("Deploying on production server.")
     vhost=config.site.prodURLRaw;
+  } else {
+    gutil.log("Deploying on staging server.")
   }
   var cmd="ssh " + config.site.prodMachUser + "@" + config.site.prodMachHost + " 'deploy " + vhost + ".git master'"
   exec(cmd, function (err, stdout, stderr) {

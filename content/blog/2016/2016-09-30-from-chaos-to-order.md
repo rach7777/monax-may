@@ -5,7 +5,7 @@ date: 2016-09-30T00:00:00Z
 title:     "From Chaos to Order -- Rebranding Eris to Monax"
 author:    casey
 excerpt:   "We are excited to turn the company's marmot factor up to 11."
-thumbnail:
+thumbnail: rebrand.jpg
 categories:
   - company
 url: /2016/09/30/from-chaos-to-order/
