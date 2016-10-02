@@ -13,6 +13,8 @@ menu:
 
 ---
 
+# Introduction
+
 `eris:db` is Monax's blockchain client.
 
 It is a controllable (permissionable), smart contract-enabled, proof-of-stake based blockchain design. `eris:db` can be configured to work with a wide variety of individual blockchain networks. As such, it was, and continues to be, the first blockchain client designed from the ground up to be a multi-network blockchain client.
