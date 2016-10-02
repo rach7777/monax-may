@@ -1,18 +1,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ .Site.Title | markdownify }} Blog</title>
+    <title>{{ .Site.Title | safeHTML }} Blog</title>
     <link>{{ .Site.BaseURL }}blog/</link>
+    <description>{{ .Site.Data.sites.tagline }}</description>
     <generator>Hugo -- gohugo.io</generator>{{ with .Site.LanguageCode }}
     <language>{{.}}</language>{{end}}
-    <managingEditor>{{ .Site.Title | markdownify }} ({{ .Site.Data.sites.email | safeHTML }})</managingEditor>{{ with .Site.Author.email }}
-    <webMaster>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</webMaster>{{end}}
-    <copyright>Copyright &copy; 2014-{{ .Now.Year }} Monax</copyright>{{ if not .Date.IsZero }}
+    <managingEditor>{{ .Site.Data.sites.email | safeHTML }} ({{ .Site.Title | safeHTML }})</managingEditor>{{ with .Site.Author.email }}
+    <webMaster>{{.}} ({{ with $.Site.Author.name }}){{end}}</webMaster>{{end}}
+    <copyright>Copyright {{ .Now.Year }}, Monax</copyright>{{ if not .Date.IsZero }}
     <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
     <atom:link href="{{.URL}}" rel="self" type="application/rss+xml" />
-    {{- range first 15 .Data.Pages -}}
+    {{ range first 15 .Data.Pages -}}
     {{- if .IsPage }}{{ if or (eq .Section "blog") (eq .Type "blog") -}}
       <item>
-        <title>{{ .Title | markdownify }}</title>
+        <title>{{ .Title | safeHTML }}</title>
         <link>{{ .Permalink }}</link>
         <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
         <guid isPermaLink="true">{{ .Permalink }}</guid>
