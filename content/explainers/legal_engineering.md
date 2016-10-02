@@ -8,7 +8,7 @@ aliases:
 index_file: ""
 menu:
   explainers:
-    weight: 11
+    weight: 30
 
 ---
 

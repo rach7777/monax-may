@@ -9,7 +9,7 @@ aliases:
     - /docs/explainers/smart_contracts/
 menu:
   explainers:
-    weight: 7
+    weight: 20
 
 ---
 

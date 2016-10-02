@@ -9,7 +9,7 @@ aliases:
     - /docs/explainers/blockchains/
 menu:
   explainers:
-    weight: 3
+    weight: 10
 
 ---
 
