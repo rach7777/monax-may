@@ -74,6 +74,11 @@ nav.navbar {
         vertical-align: middle;
     }
 
+    #search-reveal {
+        display: box;
+        width: 100%;
+    }
+
     ul.dropdown-menu {
         background: $white;
 
