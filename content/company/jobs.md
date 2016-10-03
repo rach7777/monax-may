@@ -16,7 +16,7 @@ If you feel you have an ability to perform any job title posted below and the wi
 
 If any specific questions or requirements are listed in the position, please satisfy those requirements or answer those questions (preferably in a markdown-formatted file).
 
-Please email these requirements to [jobs@erisindustries.com](mailto:jobs@erisindustries.com).
+Please email these requirements to [jobs@monax.io](mailto:jobs@monax.io).
 
 # Positions on the Platform Team
 
