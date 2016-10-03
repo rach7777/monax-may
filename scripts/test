@@ -4,7 +4,7 @@
 # Usage
 # -------------------------------------------------------------
 #
-# (repo_root)> scripts/test
+# (repo_root)> scripts/test [production]
 #
 # -------------------------------------------------------------
 # What It Does
@@ -17,6 +17,13 @@
 #
 # See gulpfile.js for specifics.
 
-docker run --rm --name site_test \
+if [ "$1" == "production" ]
+then
+  site=site_test_production
+else
+  site=site_test_staging
+fi
+
+docker run --rm --name $site \
   site \
   gulp test
