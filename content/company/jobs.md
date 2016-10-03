@@ -7,9 +7,9 @@ type: company
 
 ---
 
-Eris is not currently among the Top 100 Places to Work; but we aim to be.
+Monax is not currently among the Top 100 Places to Work; but we aim to be.
 
-If you feel you have an ability to perform any job title posted below and the willingness to join [Team Eris](https://erisindustries.com/about/team) then please send a maximum of 800 words (preferably in markdown formatting) telling us why you are a good fit for Eris generally and the position specifically along with a record of your past duties and performance (CV or resume) (preferably in markdown formating).
+If you feel you have an ability to perform any job title posted below and the willingness to join [Team Monax](https://monax.io/company/team/) then please send a maximum of 800 words (preferably in markdown formatting) telling us why you are a good fit for Monax generally and the position specifically along with a record of your past duties and performance (CV or resume) (preferably in markdown formatting).
 
 ## Currently Open Positions
 - [Full Stack Developer](#fullStackDeveloper)
@@ -30,7 +30,7 @@ The Library Team is currently accepting applications for the following positions
 
 ## <a name="fullStackDeveloper"></a>JavaScript Developer - Full Stack
 
-Eris Industries is looking for a Full Stack JS Developer in our smart contracts library team.
+Monax Industries is looking for a Full Stack JS Developer in our smart contracts library team.
 
 The library team is developing enterprise smart contracts that drive ecosystem applications and deliver business process automation in low-trust networks. This position provides the opportunity to apply your knowledge of the JavaScript stack to contribute to architecting and building applications on top of a smart contract backend. Be part of a cutting edge software development team and learn how to build solutions on what is probably the most disruptive technology in decades.
 
