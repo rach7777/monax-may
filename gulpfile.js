@@ -120,6 +120,7 @@ function buildSite() {
     if (err) throw err;
     console.log("Called command: " + cmd)
     if (stderr != "") {
+      console.log(stdout.trim());
       console.log(stderr.trim());
     } else {
       console.log(stdout.trim());
@@ -148,6 +149,25 @@ function testSite() {
 
   ------------------------------------------------------------------------------
 */
+function addHostToKeyRing(next) {
+  gutil.log("Getting Host Information.")
+  var cmd="ssh-keyscan -H " + config.site.prodMachHost
+  exec(cmd, function (err, stdout, stderr) {
+    if (err) throw err;
+    gutil.log("Called command: " + cmd)
+    if (stdout == "") {
+      gutil.log("No output. There has been an error. Exiting")
+      process.exit(1)
+    } else {
+      fs.appendFile((process.env['HOME'] + '/.ssh/known_hosts'), stdout, function (err) {
+        if (err) throw err;
+        gutil.log("Host File Appended");
+        next();
+      });
+    }
+  })
+}
+
 function initLocalRepository(next) {
   gutil.log("Initializing local repository.")
   git.init(function (err) {
@@ -161,7 +181,7 @@ function setupProductionRemote(next) {
   if (argv.production) {
     vhost=config.site.prodURLRaw;
   }
-  gutil.log("Adding production remote for site: " + vhost)
+  gutil.log("Adding server remote for site: " + vhost)
   git.addRemote('origin', 'git+ssh://' + config.site.prodMachUser + '@' + config.site.prodMachHost + '/' + vhost + '.git', function (err) {
     // if (err) throw err; // no reason to reap this error
     next();
@@ -169,7 +189,7 @@ function setupProductionRemote(next) {
 }
 
 function pullPrevVersionFromProduction(next) {
-  gutil.log("Pulling from production.")
+  gutil.log("Pulling from server.")
   git.pull('origin', 'master', function (err) {
     if (err) throw err;
     next();
@@ -235,7 +255,7 @@ function commitChanges(next) {
 }
 
 function pushToProduction(next) {
-  gutil.log("Pushing to production.")
+  gutil.log("Pushing to server.")
   git.push('origin', 'master', function (err) {
     if (err) throw err;
     next();
@@ -272,18 +292,20 @@ function deploySite() {
       process.chdir(config.site.deployDir);
     });
   }
+
   return async.waterfall([
-      initLocalRepository,
-      setupProductionRemote,
-      pullPrevVersionFromProduction,
-      moveBuildToDeply,
-      moveHtAccess,
-      addChanges,
-      commitChanges,
-      pushToProduction,
-      deployProduction
+    addHostToKeyRing,
+    initLocalRepository,
+    setupProductionRemote,
+    pullPrevVersionFromProduction,
+    moveBuildToDeply,
+    moveHtAccess,
+    addChanges,
+    commitChanges,
+    pushToProduction,
+    deployProduction
   ], function (err) {
-      if (err) throw err;
+    if (err) throw err;
   })
 }
 

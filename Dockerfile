@@ -1,9 +1,9 @@
 FROM quay.io/eris/build
 MAINTAINER Eris Industries <support@erisindustries.com>
 
-ENV NODE_VERSION=6.6.0-r0 HUGO_VERSION=0.16
+ENV HUGO_VERSION=0.16
 
-RUN apk add --no-cache automake autoconf nasm zlib-dev g++ make python nodejs=$NODE_VERSION && \
+RUN apk add --no-cache openssh automake autoconf nasm zlib-dev g++ make python nodejs && \
   go get github.com/spf13/hugo && \
   cd $GOPATH/src/github.com/spf13/hugo && \
   git checkout v$HUGO_VERSION && \
@@ -27,5 +27,6 @@ RUN npm install vinyl-source-stream vinyl-buffer prismjs && \
   npm install && \
   bower install --allow-root
 
-ONBUILD ADD . /site
-ONBUILD RUN gulp build --staging
+USER $USER
+RUN git config --global user.email "billings@monax.io"
+RUN git config --global user.name "Billings, the Bot"

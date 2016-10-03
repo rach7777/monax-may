@@ -4,9 +4,10 @@ static
 node_modules
 .htaccess
 .gitignore
-Dockerfile
+Dockerfile*
 themes
 public
 data
 source/assets
+README.md
 !source/assets/hugoFonts
