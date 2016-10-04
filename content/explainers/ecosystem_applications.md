@@ -59,7 +59,7 @@ The toolkit for ecosystem application builders includes many of the peer-to-peer
 | blockchains | `who did what when` | attributable data |
 | smart contracts | `computation that happens in an agreed manner` | deterministic computation |
 | data lakes | `what content are we talking about` | content addressable storage |
-| message queues & PKIs | `come over here I want to tell you a secret` | shared secrets |
+| point-to-point messaging | `come over here I want to tell you a secret` | shared secrets |
 
 ## Blockchains
 
@@ -115,7 +115,7 @@ Content addressable storage gives us, in general, assurances that "this is 'it'"
 
 Although SSL is a well worn system, if we want to be very careful that "this is 'it'" what we do is after we download a file from the internet we take its hash (which can be thought of as the "fingerprint" of a file) and compare that hash to one that has been provided by the publisher. This allows us to (if we trust the publisher) ensure that what we downloaded is what the publisher produced. When dealing with content addressable storage, which is local to your device, you can have assurances that the file was not "swapped" and that the file is pointing at what the network would like one to point at, because in most content addressable systems we reference data by its hash.
 
-## Message Queues and PKIs
+## Point-to-Point Messaging
 
 The final, major, challenge is around privacy. There are two types of privacy which are necessary to examine. The first one is a `me only` type of privacy. This means that there need to be things which are known only to me. We typically define these as secrets. Secrets are things like one's private keys, or logins, or other information which should be available only to you. Those things are necessary for ecosystem applications. Within the Bitcoin world, wallet software provides a very valid `me only privacy` function. There are a range of possible options for how to build generic ecosystem applications while also enabling `me only privacy`. However, mostly ecosystem applications only need to "interface" with the generics so these will not be covered in great detail here.
 
