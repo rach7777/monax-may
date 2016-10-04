@@ -12,9 +12,13 @@ menu:
 
 ---
 
+```
+Applications that run on an ecosystem (or, network) level
+```
+
 # Introduction
 
-As our organizations move into the information age the low hanging fruit for process automation is to move the applications providing that automation away from being single participant operated and toward being operated by a network, or ecosystem of participants.
+As our organizations move into the information age the low hanging fruit for process automation is to move the applications providing that automation away from being single participant operated and toward being operated by a network, or ecosystem of participants. Ecosystem applications seek to automate processes at the value chain level thereby providing a framework on which to build complicated and connected networks that seek to reduce costs and open new opportunities for value creation.
 
 # The Information Age Transformation
 
@@ -32,19 +36,19 @@ In our view we are entering into the third generation of collective process mana
 | 2nd Generation | SME Focus              | Leverage economies of scale of cloud providers to synchronize paper-based internal processes for smaller companies | SalesForce, Xero, Github, etc. |
 | 3rd Generation | B2B Relationships      | Leverage blockchains and smart contracts to build harmonized applications that operate on an ecosystem level | Winners being made now |
 
-In order to move forward with the next generation of collective process management tooling, we need to understand what are the big challenges which businesses face.
+## The Big Problems Previous Technologies Haven't Effectively Solved
 
-One of the biggest changes which has only just begun, is in the likely reduction in competitive economies of scale for isolated producers of goods. Increasing equalization of labor and resources costs in a truly globalized economy are very likely to create a context where one of the great cost differentiators for the production and distribution of physical products is transportation. This is, in turn, likely to require many supply chains to move toward more connected producers hooked into a range of distribution networks from local to global in scope.
+In order to move forward with the next generation of collective process management tooling, we need to understand `what are the big challenges` which businesses face.
 
-As 3D printing, makers shops, and [manufacturing automation](http://continuations.com/post/145503327830/the-coming-paradigm-shift-in-manufacturing) continues to equalize the ability of more connected producers to competitively build physical products and as technology such as automated air and ground transportation along with increased shipping efficiency continues to equalize the ability of more connected producers to competitively distribute physical products, it is highly likely that more connected producers will gain in relative power to larger producers for many types of goods in the future.
+One of the biggest changes is in the likely reduction in competitive economies of scale for producers of goods. Increasing equalization of labor and resources costs in a truly globalized economy are very likely to create a context where one of the great cost differentiators for the production and distribution of physical products is transportation. This is, in turn, likely to require many supply chains to move toward more connected producers hooked into a range of distribution networks from local to global in scope.
 
-Changing tastes also play a role. It is becoming increasingly clear that [brand authenticity](http://www.authenticbrandindex.com/) is one of the major differentiating factors when consumers are faced with a paradox of choice. In other words, a **connection** to a given producer's brand is increasingly important to consumers.
+As 3D printing, makers shops, and manufacturing automation continues to equalize the ability of more connected producers to competitively build physical products and as technology such as automated air and ground transportation along with increased shipping efficiency continues to equalize the ability of more connected producers to competitively distribute physical products, it is highly likely that more connected producers will gain in relative power to larger producers for many types of goods in the future.
 
-These vectors align in the direction that connected is *hot* and isolated is *not*. The problem is that connected, small, local, and genuine, that simply doesn't scale. By way of a simple example, a small business in some portion of the world can always list their products on the internet. By doing so they have an ability to find customers, prepare shippings, and deliver to a global customer base. This is elegant. Yet it is not totally realistic for the vast majority of small businesses.
+These vectors align in the direction that connected is *hot* and isolated is *not*. The problem is that connected has been hard to scale. By way of a simple example, a small business in some portion of the world can always list their products on the internet. By doing so they have an ability to find customers, prepare shippings, and deliver to a global customer base. This is elegant. Yet it is not totally realistic for the vast majority of small businesses.
 
 Thus the theory behind EBay, Amazon, and Etsy's successes -- they act as the front office of a global customer base and the small business just needs to act as the back office (and also make good products). But Amazon, et al., do more than act as the front office. They also run "the platform" on which these small businesses can sell their goods. These "platforms" will list products, process transactions, provide customer servicing add-ons, or whatever suits the business of *the platform*.
 
-So if we are truly in a globalized world where small and connected matters more than big and isolated, how do the small and authentic work together instead of *having* to rely on "the platform"? What if they want to run "the platform" themselves by banding together? As an ecosystem. How can they build applications that run on an ecosystem level, or, as we call them `ecosystem applications`?
+So if we are truly in a globalized world where connected matters more than isolated, how do the connected effectively scale without *having* to rely on "the platform"? What if they want to run "the platform" themselves by banding together? As an ecosystem. How can they build applications that run on an ecosystem level, or, as we call them `ecosystem applications`?
 
 # Ecosystem Application Toolkit
 
