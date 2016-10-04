@@ -35,7 +35,7 @@ The first individual or group to submit a fully functional XCP module via pull r
 
 So we can't just go telling everyone where it is.
 
-{{ page.date | date: "%Y" | append:'/doug.png' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "doug.png" }}
 
 Just to be clear, we're not proposing something like the Ethereum/Counterparty [**reverse implementation fiesta**](http://prestonbyrne.com/2014/11/14/eris-industries-leaks-week-3/) that took place in November.
 

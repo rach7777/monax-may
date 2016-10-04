@@ -19,7 +19,7 @@ title: 'The Smart Contract System MVP Series: Streaming Music'
 url: /2016/01/01/mvp-streaming-music/
 ---
 
-[{{ page.date | date: "%Y" | append:'/streaming_music.jpg' | img }}](https://www.flickr.com/photos/bangdoll/6475249341/)
+[{{ printf "/images/blog/%s/%s" .Page.Now.Year "streaming_music.jpg" }}](https://www.flickr.com/photos/bangdoll/6475249341/)
 
 Smart contracts give us **increased veribiability over business processes that cut across stakeholders**. But that is, admittedly, an abstract concept. Over this series of posts I will be working to elucidate what such systems look like from our perspective.
 
@@ -112,7 +112,7 @@ We generally build engines to satisfy an interface and register them with an ove
 
 The engines, in this example, would be likely to perform the functionality of calculating the payout. By way of a simple example, Spotify has a fairly transparent formula for how it calculates payouts to artists; which at the time of this blog post looks like this:
 
-[{{ page.date | date: "%Y" | append:'/streaming_music_spotify_formula.png' | img }}](http://www.spotifyartists.com/spotify-explained/#royalties-in-detail)
+[{{ printf "/images/blog/%s/%s" .Page.Now.Year "streaming_music_spotify_formula.png" }}](http://www.spotifyartists.com/spotify-explained/#royalties-in-detail)
 
 [(Photo credit: Spotify)](http://www.spotifyartists.com/spotify-explained/#royalties-in-detail)
 
@@ -122,7 +122,7 @@ The payouts engine could in this example, be a transparent calculation agent of 
 
 So here is how it *could* look.
 
-{{ page.date | date: "%Y" | append:'/streaming_music_overview.png' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "streaming_music_overview.png" }}
 
 First, one would utilize the factory contract paradigm to establish mappings of Artists, Albums, and Songs. These mappings would be likely to include the various payouts and "points" (or percentage payouts) which would go to the various stakeholders involved in the process. Of course, there would need to be some mapping somewhere of the individual entity or individual's payment details so that the bank could eventually send them the money. This would not be wise to be kept within the smart contract system itself but rather within the bank's systems (why and how that would happen I will save for another day).
 

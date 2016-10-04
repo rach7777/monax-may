@@ -15,7 +15,7 @@ title: On 2016 Blockchain Clients
 url: /2015/12/31/on-blockchain-clients-in-2016/
 ---
 
-[{{ page.date | date: "%Y" | append:'/blockchain_clients_2016.jpg' | img }}](https://www.flickr.com/photos/42988571@N08/8545407174/)
+[{{ printf "/images/blog/%s/%s" .Page.Now.Year "blockchain_clients_2016.jpg" }}](https://www.flickr.com/photos/42988571@N08/8545407174/)
 
 As we reflect on what has been accomplished by the blockchain community in 2015 and look forward to 2016 I'm forced to reflect on where we are in blockchain-land.
 
@@ -37,7 +37,7 @@ Despite the differences in philosophies between the unichain folks and the plura
 
 Let's look at a typical blockchain client as currently conceived from a functional point of view.
 
-{{ page.date | date: "%Y" | append:'/blockchain_clients_2016_old_style.png' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "blockchain_clients_2016_old_style.png" }}
 
 Almost every single blockchain client runs as a singular process which is usually RPC-ed into by its "clients" (meaning middleware or frontends which need to connect into the blockchain client itself). The single process typically will be responsible for managing a whole range of activities including what I call the **big three**, namely:
 
@@ -51,7 +51,7 @@ Blockchain clients are also responsible for maintaining the history of blocks lo
 
 I referenced above the "big three" because these are the three portions of a blockchain client which I think are candidates to move away from a core blockchain client platform. In other words, in 2016, what we at Monax are hoping to achieve is a blockchain client which looks more like this:
 
-{{ page.date | date: "%Y" | append:'/blockchain_clients_2016_new_style.png' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "blockchain_clients_2016_new_style.png" }}
 
 What we will be doing in 2016 is working to move the "big three" into their own container instances.
 
@@ -101,7 +101,7 @@ But where does one's permission module reside (in a VPN? using some middleware? 
 
 Folks that know me, know that I used to be an infantry officer in the United States Marine Corps. During that time, I had the interesting "pleasure" of being present in the square in 2003 when this happened:
 
-{{ page.date | date: "%Y" | append:'/firdos.jpg' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "firdos.jpg" }}
 
 It was a very interesting time. An incredibly difficult time actually. While the few hours in the square when the statute was getting pulled down was a moment of communal celebration (at least for those in the square), the rest of Baghdad was an utter clusterf*ck. Prisoners had been released, old scores were being settled, banks were getting robbed, an absolute mess.
 

@@ -16,7 +16,7 @@ title: So Here's the Problem(s) With Keys
 url: /2016/03/19/keys-keys-keys/
 ---
 
-[{{ page.date | date: "%Y" | append:'/keys.keys.keys.jpg' | img }}](https://www.flickr.com/photos/curioussiow/182224885/)
+[{{ printf "/images/blog/%s/%s" .Page.Now.Year "keys.keys.keys.jpg" }}](https://www.flickr.com/photos/curioussiow/182224885/)
 
 The clarity for Monax as to what to do about the ever present elephant in the room came from [the Viking](https://twitter.com/androlo1980).
 
@@ -28,7 +28,7 @@ Let's get real for a second. All this chains and contracts and encryption and ve
 
 The most important assumption being that "the thing that has the keys can do the thing". Whatever that "thing" is, whether it is encrypting a message with keybase and pasting it in direct message on slack to protect something sensitive, or its signing a transaction [to purchase some shoes on Open Bazaar](https://twitter.com/aliahmadisb/status/711206241402544128) (which looks terrific, BTW!). No matter, it needs a cryptographic public-private key pair.
 
-{{ page.date | date: "%Y" | append:'/keybase_encrypt.png' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "keybase_encrypt.png" }}
 
 I am able to perform the encryption function pictured above because I have access to keys available to me on the machine which I'm working from. The same thing applies if one is signing the byte code of a solidity contract and deploying it to an eris:db (or geth) chain or even working with IPFS. It all depends on keys.
 

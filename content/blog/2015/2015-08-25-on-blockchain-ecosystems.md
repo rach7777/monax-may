@@ -17,7 +17,7 @@ title: An Ecosystems Approach to Blockchaining
 url: /2015/08/25/on-blockchain-ecosystems/
 ---
 
-[{{ page.date | date: "%Y" | append:'/ecosystems.jpg' | img }}](https://www.flickr.com/photos/pierrepocs/5480153734/)
+[{{ printf "/images/blog/%s/%s" .Page.Now.Year "ecosystems.jpg" }}](https://www.flickr.com/photos/pierrepocs/5480153734/)
 
 ## Preface
 

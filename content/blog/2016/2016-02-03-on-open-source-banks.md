@@ -16,7 +16,7 @@ title: What Bankers Could Learn From the Open Source Community
 url: /2016/02/03/on-open-source-banks/
 ---
 
-[{{ page.date | date: "%Y" | append:'/open_source.jpg' | img }}](https://www.flickr.com/photos/opensourceway/8297629214/)
+[{{ printf "/images/blog/%s/%s" .Page.Now.Year "open_source.jpg" }}](https://www.flickr.com/photos/opensourceway/8297629214/)
 
 I learned a lot over the course of 2015. One of the things which has been interesting is my own move from working with nearly **only** free and open source folks to working with many incumbent firms.
 
