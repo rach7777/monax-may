@@ -362,7 +362,7 @@ ls $chain_dir
 ls $chain_dir_this
 ```
 
-You'll a `genesis.json` and `priv_validator.json` in `$chain_dir_this`.
+You'll see a `genesis.json` and `priv_validator.json` in `$chain_dir_this`.
 
 ## Step 2.a.3. Instantiate the Blockchain
 
