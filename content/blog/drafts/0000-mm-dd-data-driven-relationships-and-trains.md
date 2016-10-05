@@ -58,7 +58,7 @@ Trains are interesting cause they are basically semi public companies. This give
 
 I'm here.
 
-[{{ page.date | date: "%Y" | append:'/licensing.jpg' | img }}](https://flic.kr/p/5A9EER)
+[{{ printf "/images/blog/%s/%s" .Page.Now.Year "licensing.jpg" }}](https://flic.kr/p/5A9EER)
 
 
 ```javascript

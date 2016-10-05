@@ -23,7 +23,7 @@ meta:      true
 
 ---
 
-[{{ page.date | date: "%Y" | append:'/payroll.jpg' | img }}](https://www.flickr.com/photos/londonmatt/16016747503/)
+[{{ printf "/images/blog/%s/%s" .Page.Now.Year "payroll.jpg" }}](https://www.flickr.com/photos/londonmatt/16016747503/)
 
 Getting your employees paid. Should be the primary job for any startup executive suite. Of course everyone wants to get their folks paid.
 

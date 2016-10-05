@@ -15,7 +15,7 @@ title: 'On Licensing: Why Monax is GPLv3'
 url: /2015/08/30/on-licensing/
 ---
 
-[{{ page.date | date: "%Y" | append:'/licensing.jpg' | img }}](https://www.flickr.com/photos/adulau/3011878917/)
+[{{ printf "/images/blog/%s/%s" .Page.Now.Year "licensing.jpg" }}](https://www.flickr.com/photos/adulau/3011878917/)
 
 [(Photo credit: CC-BY-SA: Alexandre Dulaunoy @ Flickr )](https://www.flickr.com/photos/adulau/)
 

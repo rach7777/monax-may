@@ -18,7 +18,7 @@ title: 'Tracking Digits: How to Design Your Smart Contract Tracking System'
 url: /2015/05/01/tracking-digits/
 ---
 
-[{{ page.date | date: "%Y" | append:'/racer.jpg' | img }}](https://www.flickr.com/photos/tom-margie/1299414993/)
+[{{ printf "/images/blog/%s/%s" .Page.Now.Year "racer.jpg" }}](https://www.flickr.com/photos/tom-margie/1299414993/)
 
 Lots of folks are thinking about interesting ways to track digital goods and information back to some vendor of authenticity using blockchains and distributed file storage systems. A number of folks have been working in this area around the idea of physical goods and information as well.
 
