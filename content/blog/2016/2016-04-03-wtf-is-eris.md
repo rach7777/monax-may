@@ -59,7 +59,7 @@ All of the design and architecture and most of the reason that Eris is built the
 
 Before we talk about `eris` let's look at what a blockchain application "actually" is:
 
-{{ page.date | date: "%Y" | append:'/wtf-eris-services.png' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "wtf-eris-services.png" }}
 
 It should be noted that for any single application some of the pieces may be "n/a" and the arrows connecting components may work drastically different than in the diagram. The diagram isn't meant to cover the entire field of options, nor any one specific application. But for most of the applications, most of the time it will suffice.
 
@@ -75,7 +75,7 @@ Within the community there have been basically three answers to this:
 
 To be clear, our marmot-y answer is clearly in the camp of Number 3. Why? Because when application builders build using a paradigm such as ours, they get to build their applications on a rich fabric of modules which work together to varying degrees based on a variety of factors.
 
-{{ page.date | date: "%Y" | append:'/wtf-eris-options.png' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "wtf-eris-options.png" }}
 
 This architecture allows eris to embrace a wide variety of developer needs. But it really begins to shine when more `super users` are given access to help validate and operate smart contract and blockchain backed applications. Thanks to innovative leaders like many of the "Ðapps" crowd, as well as others, such as OpenBazaar building on bitcoin's backbone, more and more users will have access to run their blockchain applications wherever they want. This is exciting!
 
@@ -91,11 +91,11 @@ At the time of writing, their installation instructions are pretty clean! (Well 
 
 Client:
 
-{{ page.date | date: "%Y" | append:'/wtf-openbazaar1.png' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "wtf-openbazaar1.png" }}
 
 Server:
 
-{{ page.date | date: "%Y" | append:'/wtf-openbazaar2.png' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "wtf-openbazaar2.png" }}
 
 Not bad. Wanna get started with openbazaar on eris?
 
@@ -109,11 +109,11 @@ At the time of writing, both of these are easily installed via binaries! (Well d
 
 IPFS:
 
-{{ page.date | date: "%Y" | append:'/wtf-ipfs.png' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "wtf-ipfs.png" }}
 
 Geth:
 
-{{ page.date | date: "%Y" | append:'/wtf-geth.png' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "wtf-geth.png" }}
 
 Super clean install paths for both. Obviously, both being go based components, users can be easily build them from scratch.
 
@@ -127,13 +127,13 @@ Multiply that effort across the range of possible components which the emerging 
 
 When we say that `eris` is a blockchain application platform, this is what we mean. We're making the thing that you can use to make it easy to build, test, and run your blockchain things. No matter the blockchain.
 
-{{ page.date | date: "%Y" | append:'/wtf-eris-apps.png' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "wtf-eris-apps.png" }}
 
 To see a full list of the services eris is capable of running out of the box [please see our repository](https://github.com/eris-ltd/eris-services).
 
 Because `eris` leverages docker under the hood, `eris` can run (nearly) anywhere via direct install, or even just speaking to a remote docker engine!
 
-{{ page.date | date: "%Y" | append:'/wtf-eris-remotes.png' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "wtf-eris-remotes.png" }}
 
 # eris:runtime
 
@@ -141,13 +141,13 @@ We have long been leaders in the permissioned smart contract network space. From
 
 In the above framework pictures, in particular this one:
 
-{{ page.date | date: "%Y" | append:'/wtf-eris-options.png' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "wtf-eris-options.png" }}
 
 We reference a component of eris which is currently not in our repositories (`eris-rt-XXX` in the above). The components in the above image that are colored green are areas where eris is intending to keep building. This is not a [big departure](https://monax.io/blog/2015/12/31/on-blockchain-clients-in-2016/) for us. Indeed, it is the [continuation of a path](https://monax.io/blog/2016/03/02/eris-and-tendermint/) we've been heading for a while.
 
 So, what exactly, is `eris:runtime`? Over the next few release cycles (leading up to our 1.0 release) we will be refactoring our current efforts to fit more cleanly into the modular components outlined here:
 
-{{ page.date | date: "%Y" | append:'/wtf-eris-rt.png' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "wtf-eris-rt.png" }}
 
 `eris:runtime` will ensure access for blockchain application builders to the best permissionable smart contract network environment in a more modular and extensible framework. `eris:runtime` will include all of the relevant default components, wisely connected with sane defaults, besides keys and files, necessary to build a wide variety of blockchain and smart contract backed applications.
 
@@ -207,11 +207,11 @@ In a world of a plurality of chains and smart contract networks and applications
 
 You still need tooling capable of handling smart contract bundles if you're going to be working with smart contract systems. Since we started this journey, [now more than two years ago](http://coda.caseykuhlman.com/entries/2014/introducing-ethereum-package-manager.html), our interest in legal engineering has forced us to build tooling to handle large systems of smart contracts, or **Verifiable Computation Tooling**.
 
-{{ page.date | date: "%Y" | append:'/wtf-eris-pkgs.png' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "wtf-eris-pkgs.png" }}
 
 You also need tooling which has been built from the ground up to provide your developers and users with chain lifecycle management tooling.
 
-{{ page.date | date: "%Y" | append:'/wtf-eris-chains.png' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "wtf-eris-chains.png" }}
 
 We have a range of tooling that still needs to be built, but in combination with other ecosystems, the range of tools available to application makers is increasing by the day. Which, to be clear, is a wonderful thing. If you are a tool builder looking to interface with the growing eris ecosystem give us a shout on Twitter!
 

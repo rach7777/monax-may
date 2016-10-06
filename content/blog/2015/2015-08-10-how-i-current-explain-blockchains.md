@@ -30,7 +30,7 @@ On the Y axis of the diagram we can formulate a spectrum of optimizations. These
 
 In total, my mental diagram looks like this:
 
-{{ page.date | date: "%Y" | append:'/blockchain-quadrant.png' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "blockchain-quadrant.png" }}
 
 While the above may not perfectly capture all of the blockchains in existence, I think it does a fairly good job of providing a framework for placing most of the space into some easier to consume boxes.
 

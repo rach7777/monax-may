@@ -32,7 +32,7 @@ It is much like the difference between Wordpress (a content management platform)
 
 Some developers build custom applications with Wordpress. Indeed, Wordpress makes it easy *by making assumptions for you*. Others might not like these assumptions and thus build applications from scratch that talk directly to Apache. Don't like Apache? Use Nginx with Wordpress instead. Don't like Wordpress? Go and use Liferay or Zotonic. As separate modules, the developer has choice and flexibility.
 
-{{ page.date | date: "%Y" | append:'/eris-tendermint.png' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "eris-tendermint.png" }}
 
 Admittedly, the analogy's not a perfect one - in our view, a content management system such as Wordpress is really more like [eris:db](https://monax.io/components/erisdb/), whereas [eris:cli](https://monax.io/components/eriscli/) is a more comprehensive blockchain application and database management system.
 
@@ -48,7 +48,7 @@ We made these design decisions because [proof-of-work consensus makes zero sense
 
 ### Marmots and mint
 
-{{ page.date | date: "%Y" | append:'/marmots-and-mint.jpg' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "marmots-and-mint.jpg" }}
 
 Monax Industries' relationship with Tendermint started shortly after we released our Alpha product in December of 2014 (thelonious/decerver), where we'd forked Ethereum, ripped the guts out of its consensus and replaced it with a bunch of smart contracts in order to create Eris:DB's predecessor - a design that was, the first (and for about six months, the only) permissioned blockchain in existence. Those of you who have been following the company for some time will remember we initially called it "Thelonious."
 
@@ -82,7 +82,7 @@ We’ll need to cleanly separate consensus-breaking code from non-consensus brea
 
 So what does this look like from a technical perspective? Bear with us as the design considerations are being fleshed out. Pictured below is an early conceptual overview of how we view the interaction between the various components. We'll have more to say about this in the coming months. Stay tuned!
 
-{{ page.date | date: "%Y" | append:'/eris-chains-overview.png' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "eris-chains-overview.png" }}
 
 How does this fit in with the various components of the stack you already know and love? Awhile back I [tweeted](https://twitter.com/cerebralbosons/status/682691657473503233) a first pass on visualizing the stack as a whole. Here's v2 with a few little additions. With all the moving pieces involved, it ought to be clear why docker is the right choice, despite the pain points.
 
@@ -90,4 +90,4 @@ Not much will change on the UX of eris:cli, other than additional modularity whe
 
 The marmots are excited. Are you?
 
-{{ page.date | date: "%Y" | append:'/eris-stack-v2.png' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "eris-stack-v2.png" }}

@@ -17,7 +17,7 @@ title: Blockchains and Banks, or Why Hearn's Post Isn't a PR Stunt
 url: /2016/01/17/blockchains-and-banks/
 ---
 
-[{{ page.date | date: "%Y" | append:'/banks-blockchains.jpg' | img }}](https://www.flickr.com/photos/jakerust/16826216252/)
+[{{ printf "/images/blog/%s/%s" .Page.Now.Year "banks-blockchains.jpg" }}](https://www.flickr.com/photos/jakerust/16826216252/)
 
 **This is a subjective piece full of selection bias and my own experiences. Take it for what it is worth: one human's experiences and opinions. It is no more, nor less, than that.** It's also quite inside baseball for many who are not entrenched in the blockchains space. If you find yourself reading this and do not know what I'm talking about, then this post probably wasn't written with you in mind.
 

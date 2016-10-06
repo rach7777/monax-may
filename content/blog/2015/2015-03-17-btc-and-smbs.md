@@ -72,11 +72,11 @@ Personally, and this is only one human's idea, I would recommend folks within th
 
 To be clear, I don't mean micro businesses.
 
-{{ page.date | date: "%Y" | append:'/hargeisa-1.jpg' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "hargeisa-1.jpg" }}
 
 I mean small businesses.
 
-{{ page.date | date: "%Y" | append:'/hargeisa-2.jpg' | img }}
+{{ printf "/images/blog/%s/%s" .Page.Now.Year "hargeisa-2.jpg" }}
 
 These are an often overlooked, but vital, piece of the economy. Small businesses are also, I think, where blockchain technology really finds a good cost-benefit balance against real, current problems these potential users of a solution face.
 
