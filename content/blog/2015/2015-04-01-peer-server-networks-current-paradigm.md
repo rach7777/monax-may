@@ -58,9 +58,9 @@ This means, though, that the peer servers sometimes need to be restarted. **But*
 
 Here is how we configure the node:
 
-{{ page.date | date: "%Y" | append:'/ps-genesis-config-1.png' | img }}
+{{< image_blog "ps-genesis-config-1.png" >}}
 
-{{ page.date | date: "%Y" | append:'/ps-genesis-config-2.png' | img }}
+{{< image_blog "ps-genesis-config-2.png" >}}
 
 As you can see most of the configuration happens using environment variables. These environment variables are used mostly by the start script to configure the node when it boots.
 
@@ -72,9 +72,9 @@ When this node boots, it first uses `epm fetch` to fetch the genesis block from 
 
 Here is how we configure the node:
 
-{{ page.date | date: "%Y" | append:'/ps-master-config-1.png' | img }}
+{{< image_blog "ps-master-config-1.png" >}}
 
-{{ page.date | date: "%Y" | append:'/ps-master-config-2.png' | img }}
+{{< image_blog "ps-master-config-2.png" >}}
 
 As with the genesis node, these environment variables should make sense when one compares what is passed to the container to the start script linked to above.
 
@@ -90,9 +90,9 @@ Once the service boots up we can scale it from 0 to 9 relay nodes by simply drag
 
 Here is how we configure the relay nodes:
 
-{{ page.date | date: "%Y" | append:'/ps-relay-config-1.png' | img }}
+{{< image_blog "ps-relay-config-1.png" >}}
 
-{{ page.date | date: "%Y" | append:'/ps-relay-config-2.png' | img }}
+{{< image_blog "ps-relay-config-2.png" >}}
 
 One other feature of Tutum we use to establish this network which keen observers will see is that Tutum gives each service its own DNS entry which we can use within the network. This means that if we have to drop a machine from a specific cluster or change a machine within a specific cluster (which will change the IP of the containers running on the machine) that we will not have any problems with the peer network. This is not actually the optimal way to do this. Ideally, we would configure these as linked containers using [Tutum's stacks feature](https://tutum.freshdesk.com/support/solutions/articles/5000569899-stacks) which operates very similarly for cloud deployments to how [Docker-Compose](https://docs.docker.com/compose/) (formerly `fig`) works for local development and operation of sets of containers.
 

@@ -22,7 +22,7 @@ meta:      true
 
 ---
 
-[{{ printf "/images/blog/%s/%s" .Page.Now.Year "ecos_big_problems.jpg" }}](https://www.flickr.com/photos/andybadger/8393597176/)
+[{{< image_blog "ecos_big_problems.jpg" >}}](https://www.flickr.com/photos/andybadger/8393597176/)
 
 A tweet I read recently started me down a rabbit hole of thought. It is a vein in which I have contemplated deeply but have yet to write about directly. Namely, how can [ecosystem application technology](https://db.erisindustries.com/eris/2016/06/05/ecosystem-applications/) help policy makers?
 

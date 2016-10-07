@@ -18,7 +18,7 @@ url: /2014/12/27/on-dapp-security-introduction/
 
 **Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
 
-[{{ printf "/images/blog/%s/%s" .Page.Now.Year "23390123_b6caaefc16_z.jpg" }}](https://www.flickr.com/photos/kk/23390123/in/photolist-4uJ6aT-ag4zkN-asBLGG-d848qw-6JDfD8-34T4Z-eCaWn2-98sYER-7Hx7ig-ejcw3L-dYj3cw-8vR8W5-ehPXNM-29GeC-7oEdaD-dAFKPa-2vj3k2-dCz8na-6UKyJq-hjsKL-cJLzGh-drbr3g-5ru4oK-dU3PK3-8qi3MQ-bikriH-edjQhq-d7exeW-62J5N-brKi7f-4uwyQL-ccX3-imHm5z-92Cgam-dA29Tj-87az7W-98P4W5-n7qDvJ-evqszn-ayZi8V-73xSvY-cdBJCm-9XE9R5-cXXqXy-cv6bco-buwS46-9nKh7L-gtAxPC-9gGswk-6u3Npt)
+[{{< image_blog "23390123_b6caaefc16_z.jpg" >}}](https://www.flickr.com/photos/kk/23390123/in/photolist-4uJ6aT-ag4zkN-asBLGG-d848qw-6JDfD8-34T4Z-eCaWn2-98sYER-7Hx7ig-ejcw3L-dYj3cw-8vR8W5-ehPXNM-29GeC-7oEdaD-dAFKPa-2vj3k2-dCz8na-6UKyJq-hjsKL-cJLzGh-drbr3g-5ru4oK-dU3PK3-8qi3MQ-bikriH-edjQhq-d7exeW-62J5N-brKi7f-4uwyQL-ccX3-imHm5z-92Cgam-dA29Tj-87az7W-98P4W5-n7qDvJ-evqszn-ayZi8V-73xSvY-cdBJCm-9XE9R5-cXXqXy-cv6bco-buwS46-9nKh7L-gtAxPC-9gGswk-6u3Npt)
 
 If anyone is curious about how DApps are made secure, and what the dangers of them not being secure are, here is the big issue:
 

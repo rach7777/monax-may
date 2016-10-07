@@ -16,7 +16,7 @@ title: Blockchain, Timestamps and the Art of Legal Engineering
 url: /2016/06/15/blockchain-timestamp-engineering/
 ---
 
-{{ page.date | date: "%Y" | append:'/Louisville_Kentucky_1861_cover+3c.jpg' | img }}
+{{< image_blog "Louisville_Kentucky_1861_cover+3c.jpg" >}}
 
 # Blockchain, Timestamps and the Art of Legal Engineering
 

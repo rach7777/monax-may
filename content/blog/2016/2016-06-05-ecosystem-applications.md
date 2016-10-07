@@ -17,7 +17,7 @@ title: What are ecosystem applications?
 url: /2016/06/05/ecosystem-applications/
 ---
 
-[{{ printf "/images/blog/%s/%s" .Page.Now.Year "ecosystem_applications.jpg" }}](https://www.flickr.com/photos/frenchy/4469177031/)
+[{{< image_blog "ecosystem_applications.jpg" >}}](https://www.flickr.com/photos/frenchy/4469177031/)
 
 **You've been warned.** This is a long piece. Come back to it when you have some time.
 
@@ -35,15 +35,15 @@ As we continue the march from the industrial age to the information age a number
 
 These changes, which will take a generation or two to fully play out (much less to fully understand), originally powered the first generation of collective process management tooling which was focused on providing the base business process automation for a given **enterprise**. This generation of tooling, led by companies like SAP, Oracle, and others, effectively leveraged economies of scale over data and data processing power which on-premise data centers could provide. This generation of software emphasized the enterprise as the center of the universe. Or, something like this:
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "Bartolomeu_Velho_1568.jpg" }}
+{{< image_blog "Bartolomeu_Velho_1568.jpg" >}}
 
 These same changes later powered the second generation of collective process management tooling which is focused on extending the benefits of software defined process automation into **smaller businesses**. This generation of tooling, led by companies like SalesForce, Xero, Github, and others, effectively leveraged economies of scale over data and data processing power which IaaS systems could provide (until they eventually needed their own data center). This generation of software emphasized the "App" (or, latterly, the "Platform") as the center of part of the universe. Or, something like this:
 
-[{{ printf "/images/blog/%s/%s" .Page.Now.Year "banksy_rat.jpg" }}](https://www.flickr.com/photos/dandeluca/2908872934/)
+[{{< image_blog "banksy_rat.jpg" >}}](https://www.flickr.com/photos/dandeluca/2908872934/)
 
 In our view we are entering into the third generation of collective process management tooling which will focus on extending the benefits of software defined **relationships** for businesses of many different sizes. This generation of tooling, which will be led by the companies we currently label "blockchain" and "smart contract" companies, will leverage the economies of redundancy over data and data processing power which networks of peers can provide. This generation of software will emphasize the "Ecosystem" as the center of part of the universe. Or, something like this:
 
-[{{ printf "/images/blog/%s/%s" .Page.Now.Year "walking_on_trains.jpg" }}](https://www.flickr.com/photos/16210667@N02/11665732305/)
+[{{< image_blog "walking_on_trains.jpg" >}}](https://www.flickr.com/photos/16210667@N02/11665732305/)
 
 ## Small is Hot; Big is Not
 
@@ -144,7 +144,7 @@ For those of us who fall squarely in camp two, we feel that ecosystem applicatio
 
 In our view focusing standardization efforts not at the point of what a single binary built to operate a single network can do, but rather on standardizing the way in which various, flexible components can talk to one another, is what will really empower progress.
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "ecosystems_2.png" }}
+{{< image_blog "ecosystems_2.png" >}}
 
 And yet, progress toward what? What do these things actually look like?
 
@@ -158,7 +158,7 @@ If we are going to bring machines properly into being first class participants i
 
 Thus, why `eris` leverages docker under the hood to make the application user's perspective as seamless as possible and to take out many of the edge cases when building for a wide range of OS and hardware combinations.
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "ecosystems_1.png" }}
+{{< image_blog "ecosystems_1.png" >}}
 
 ## How Do We Go About Building Ecosystem Applications?
 

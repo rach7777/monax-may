@@ -16,7 +16,7 @@ title: 'Operation: Cuddly Critter, Part 1'
 url: /2015/06/15/opcuddlecritter/
 ---
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "totallyadorable.jpg" }}
+{{< image_blog "totallyadorable.jpg" >}}
 
 **TL;DR**: Preston is going to be nice to Bitcoin for an entire month. To start off the [lovefest](https://twitter.com/polemitis/status/610552511779446784), please enjoy this picture of an adorable tiny puppy.
 

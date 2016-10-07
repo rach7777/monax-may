@@ -18,7 +18,7 @@ title: 'Smart securitisation, or: why it''s time to stop talking tokens and star
 url: /2015/04/28/smart-securitisation/
 ---
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "scallthethings.jpg" }}
+{{< image_blog "scallthethings.jpg" >}}
 
 # We need to have a chat about cryptocurrency tokens.
 

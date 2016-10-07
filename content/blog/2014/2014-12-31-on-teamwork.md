@@ -22,7 +22,7 @@ url: /2014/12/31/on-teamwork/
 
 **Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
 
-[{{ printf "/images/blog/%s/%s" .Page.Now.Year "7866197978_faa9ac1ee0_z.jpg" }}](https://www.flickr.com/photos/luigimengato/7866197978/in/photolist-cZ7jB5-7rQsQr-6iY2vH-fL7Urw-ioMnEm-n3Eq1J-fJrqWX-SiTb-p7gQau-fKQiKD-fKQiPx-djYeu9-fJHY4s-fJrrjz-fJrrjB-6DooxG-fJHYco-fL7U7s-2J9J8G-fPMrk5-fPMr9W-bsiJnY-8PaNHU-7A1y5v-4BQ4RJ-fJrr4V-jeJE8T-pRanR8-4mnXV9-pSNcb6-9zrqcj-fCYUvZ-fJHXxQ-fKQjfR-fKQiSp-fL7UwU-fJHXX5-fJrr7M-fJrqoZ-fJrqQx-fJHXC5-fJLCuQ-fJHXyU-fJHXJq-fJrqdg-fJrrgH-fJHXeY-fJrqHz-fJHYf9-fJHXrJ)
+[{{< image_blog "7866197978_faa9ac1ee0_z.jpg" >}}](https://www.flickr.com/photos/luigimengato/7866197978/in/photolist-cZ7jB5-7rQsQr-6iY2vH-fL7Urw-ioMnEm-n3Eq1J-fJrqWX-SiTb-p7gQau-fKQiKD-fKQiPx-djYeu9-fJHY4s-fJrrjz-fJrrjB-6DooxG-fJHYco-fL7U7s-2J9J8G-fPMrk5-fPMr9W-bsiJnY-8PaNHU-7A1y5v-4BQ4RJ-fJrr4V-jeJE8T-pRanR8-4mnXV9-pSNcb6-9zrqcj-fCYUvZ-fJHXxQ-fKQjfR-fKQiSp-fL7UwU-fJHXX5-fJrr7M-fJrqoZ-fJrqQx-fJHXC5-fJLCuQ-fJHXyU-fJHXJq-fJrqdg-fJrrgH-fJHXeY-fJrqHz-fJHYf9-fJHXrJ)
 
 Today Vitalik Buterin published a fantastic post on his organization's blog titled [On Silos](https://blog.ethereum.org/2014/12/31/silos/). In his piece, Vitalik argues that despite its disagreements on various implementation details, that the cyrptoeconomic community has much in common. The points of commonality, Vitalik argues, pave the way for points of collaboration within the community and that should be the focus of progress rather than points of disagreement.
 

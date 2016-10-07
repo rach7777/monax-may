@@ -17,7 +17,7 @@ title: On Permissioning Your Blockchains
 url: /2015/09/26/on-permissioned-blockchains/
 ---
 
-[{{ printf "/images/blog/%s/%s" .Page.Now.Year "mostpit.jpg" }}](https://www.flickr.com/photos/kevincortopassi/3108413681/)
+[{{< image_blog "mostpit.jpg" >}}](https://www.flickr.com/photos/kevincortopassi/3108413681/)
 
 ## Preface
 

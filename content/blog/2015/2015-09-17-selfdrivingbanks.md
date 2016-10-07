@@ -19,7 +19,7 @@ title: 'Self-driving banks: industrial verification without industrial capex'
 url: /2015/09/17/selfdrivingbanks/
 ---
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "marmot.jpg" }}
+{{< image_blog "marmot.jpg" >}}
 
 **tl;dr**:
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I&#39;m pro-robot.&#10;I think they should just destroy us all at this point.</p>&mdash; SecuriTay (@SwiftOnSecurity) <a href="https://twitter.com/SwiftOnSecurity/status/644338254096039936">September 17, 2015</a></blockquote>
@@ -114,4 +114,4 @@ Just as P2P lending allows ordinary people to stand toe-to-toe with the banks in
 
 Which begs the question: what will it mean to be a bank, which presently has 150,000 employees, if open-source tech can do the same job for free? I have some ideas - but I'll save that for another day.
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "marmot2.jpg" }}
+{{< image_blog "marmot2.jpg" >}}

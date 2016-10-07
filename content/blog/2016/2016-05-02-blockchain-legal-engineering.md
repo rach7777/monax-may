@@ -17,7 +17,7 @@ title: Blockchain Legal Engineering
 url: /2016/05/02/blockchain-legal-engineering/
 ---
 
-{{ page.date | date: "%Y" | append:'/legal-engineering.jpg' | img }}
+{{< image_blog "legal-engineering.jpg" >}}
 
 # Blockchain Legal Engineering
 
