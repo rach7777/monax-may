@@ -210,8 +210,13 @@ function moveBuildToDeply(next) {
 
 function moveHtAccess(next) {
   gutil.log("Moving in .htaccess file.")
-  var stream = gulp.src('../.htaccess')
-    .pipe(gulp.dest('htdocs/'));
+  if (argv.production) {
+    var stream = gulp.src('../.htaccess.production')
+      .pipe(gulp.dest('htdocs/'));
+  } else if (argv.staging) {
+    var stream = gulp.src('../.htaccess.staging')
+      .pipe(gulp.dest('htdocs/'));
+  }
   stream.on('end', function() {
     next();
   });
