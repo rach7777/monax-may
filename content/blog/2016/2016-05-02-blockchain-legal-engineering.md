@@ -17,7 +17,7 @@ title: Blockchain Legal Engineering
 url: /2016/05/02/blockchain-legal-engineering/
 ---
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "legal-engineering.jpg" }}
+{{< image_blog "legal-engineering.jpg" >}}
 
 # Blockchain Legal Engineering
 

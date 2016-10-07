@@ -75,13 +75,13 @@ Briefly a few facts about the LEI system:
 - LOUs, third-party verifiers, and legal entities themselves participate in this workflow. For example, a company can register, update, or dispute their own data (which still requires verification or approval by the LOU) or request the LOU to do so on their behalf.
 - The LEI format is based on ISO Standard 17442 and follows Financial Stability Board ([FSB](http://www.fsb.org/)) specifications. The LEI consists of a 20-digit alphanumeric code.
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "LEI-Issuer-Statistics-GLEIF.png" }}
+{{< image_blog "LEI-Issuer-Statistics-GLEIF.png" >}}
 <div style="font-size: smaller; text-align: center">Source: https://www.gleif.org/en/lei-data/global-lei-index/lei-statistics, 28-Mar-2016</div>
 <br/>
 
 Each of the certified issuance agencies (LOUs) in the above list owns, runs, and maintains its own infrastructure (servers, web application, and centralized database) to offer LEI issuance and search capabilities. The delta of changes at an individual local agency is uploaded and consolidated into the global "golden copy" that is managed by the GLEIF as depicted in the following diagram.
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "LEI-current.png" }}
+{{< image_blog "LEI-current.png" >}}
 
 The cost of running and maintaining the LEI infrastructure is probably not very high compared to solutions with higher transactional volume. The individual LOUs cover parts of their costs by charging fees for registration and other maintenance transactions. As of this writing the combined fees for registering a new LEI are approximately $220 dollars.
 
@@ -126,7 +126,7 @@ Now, let's get back to the LEI ledger implementation ...
 
 The diagram below outlines the components of a single peer node of such a network built using Monax Industries' Eris Platform.
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "LEI-Node-Architecture.png" }}
+{{< image_blog "LEI-Node-Architecture.png" >}}
 
 The [Eris Platform](https://monax.io/blog/2016/04/03/wtf-is-eris/) is a free and open source (FOSS) platform that facilitates building, testing, and running smart contract applications. It supports the notion of a [service](https://monax.io/tutorials/advanced/services-making/) as a single module that can be started, stopped, and monitored easily. The LEI application and the parts comprising a peer node participating in the LEI Global Ledger network are wrapped inside such a service.
 [Eris:DB](https://monax.io/components/erisdb/) is the permissioned blockchain implementation (see [Permissioned Blockchains](#permissioned) above) based on the [Ethereum](https://www.ethereum.org/) Virtual Machine for smart contract execution and [Tendermint](http://tendermint.com/) for efficient, non-forking [PBFT](http://tendermint.com/posts/tendermint-vs-pbft/) consensus. The application consists of a number of service modules facilitating the interaction with the LEI blockchain, i.e. providing access to data on the chain as well as allowing the application to react to events in the network. Furthermore, a distributed data store is used to redundantly store the entire legal entity record. Note that the smart contract only contains the LEI itself, the data fields used in the smart contract logic, as well as the reference hash to the stored record. All legal entity data is also kept in a traditional database that functions as a cache and is kept in sync with the state registered in the blockchain. This supports the ability to index and search the content.
@@ -139,7 +139,7 @@ The following sections outline the stages that can enhance and eventually transf
 
 The global LEI data is freely available for download and an update is published daily. In this first stage there is no buy-in or support from any participant in the existing system. Eris Industries is responsible for downloading the daily updates and cryptographically signing the transactions that push these updates into the LEI ledger.
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "LEI-Net-Phase-1.png" }}
+{{< image_blog "LEI-Net-Phase-1.png" >}}
 
 The immediate effect for any consumer operating a 'read-only' peer is that access to LEI data is changed from a *pull* to a *push* mechanism.
 
@@ -149,20 +149,20 @@ This stage has been implemented by Eris Industries! Please see the [end of the a
 
 In stage 2 an entity with authorized access to the global LEI database would assume responsibility for vouching for the data veracity by signing transactions to commit updates to the ledger. The GLEIF seems to be in a perfect position to do so. The transition to this stage is as easy as hooking up a few database triggers to capture update/insert events and forward these to the blockchain.
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "LEI-Net-Phase-2.png" }}
+{{< image_blog "LEI-Net-Phase-2.png" >}}
 
 ### Stage 3
 
 The same mechanism of hooking into a database as described in stage 2 is leveraged here, but it would be the LOUs themselves that propagate data into the blockchain and the central synchronization point at the global GLEIF database can be removed. With this stage we're closing in on the LEI ledger allowing a near real time view of the LEI records as events get reported to the ledger much closer to their points of origin. At any time the LEI ledger would provide a more accurate view of the entire system than the daily consolidated file download can provide. A beneficial side effect of the LOUs cryptographically signing their own data commits is that they become identifiable via their signatures in the ledger's audit trail.
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "LEI-Net-Phase-3.png" }}
+{{< image_blog "LEI-Net-Phase-3.png" >}}
 
 ### Stage 4
 Assuming a successful exploration and validation of the LEI ledger in stages 1-3, a blockchain-based LEI system might be deemed feasible and worthwhile considering as a full replacement of the centralized infrastructure.
 However, before the latter can simply be switched off, there is some effort involved to implement and test the integration points to any centralized systems that would remain in place and now need to interact with the ledger's API.
 At the end of stage 4, all core participants of the LEI lifecycle would be fully onboarded to participate in the smart-contract-backed workflow purely through signed transactions. Known participants include all LOUs and, if applicable, third-party data verification services.
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "LEI-Net-Phase-4.png" }}
+{{< image_blog "LEI-Net-Phase-4.png" >}}
 
 ## Beyond Stage 4
 Potential future enhancements to the system beyond stage 4 include:

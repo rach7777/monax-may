@@ -64,7 +64,7 @@ But what about security faults we don't know about yet? What do we do about thos
 
 The Ethereum community has recently been evoking a trusted hero of my time when it comes to this tragedy: Captain Hindsight.
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "2016-06-18-captainHindSight.jpg" }}
+{{< image_blog "2016-06-18-captainHindSight.jpg" >}}
 
 With his trusty companions Shoulda, Coulda and Woulda, he swiftly points out that the DAO is far too complex and should have been made with easier and simpler code as well as in a more modular fashion. This would have made the code easier to update as well as audit. Drawing from lessons in the Five Types Model, let's explore the usage of a DOUG or a Decentralized Organization Upgrade Guy.
 

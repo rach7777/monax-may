@@ -17,7 +17,7 @@ title: Fact Patterns, Predictions and Building Decentralized Organizations
 url: /2016/06/18/fact-patterns-DAO-legal-engineering/
 ---
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "crystal-ball.jpg" }}
+{{< image_blog "crystal-ball.jpg" >}}
 
 
 # Fact Patterns, Predictions and Building Decentralized Organizations

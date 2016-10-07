@@ -90,13 +90,13 @@ because each of these are distinct challenges.
 
 With a SaaS based solution, what happens is that the entire data set of an organization is parsed vertically (as in, sectioned into accounting data, expense data, sales data, continuing with our fictional business described above) and then service providers who the organization elects for any given vertical column then become responsible for providing the full vertical stacking of the data-driven interaction for that section of the entire data set of the company. This becomes their zone of responsibility for the fictional business's data. The architecture roughly looks like this:
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "saas-structure.png" }}
+{{< image_blog "saas-structure.png" >}}
 
 There are two things which I am struck by when thinking about this system from an organization's perspective (which, as a consumer of SaaS services for a long time I have done lots of). The first thing is the amount of redundancy in this system. Each of those service providers syncs its data with another service via the data transmission. This creates numerous redundant data sets. This may be a good thing; but it may not be. Secondly, there is a challenge of dealing with bad data points which get into the system and how the various syncing services handle changes to the data set and propagation of those changes across the whole of the data set. This second problem is likely a minor nuisance, but I have experienced it multiple times when dealing with such API driven systems.
 
 Now, let's look at **one way of many** ways in which a participatory architecture system could be used to redesign the above paradigm. In participatory architecture the emphasis is more on mastering the horizontal partitions of a data-driven interaction -- the rows in the diagram above. Service providers then are able to specialize in providing, say, transmission from sensor systems back to a [Decerver](https://monax.io/platform/db) -- or any receiver of data built on participatory architecture design principles. Specialists in structuring data storage are empowered to work on the best way to store data and the more arbitrary the better. Obviously, the same would apply through the other parts of the stack. The arrangement could look something like this:
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "pa-structure.png" }}
+{{< image_blog "pa-structure.png" >}}
 
 In the above diagram, each of the color overlays is a service provider. They have been arranged just to show that different approaches are possible to deal with the overall dataset, and it does not require that, for example, two and only two consensus mechanisms are used.
 

@@ -35,7 +35,7 @@ In Santa Clara, the city broke ground on a [$1.3 billion stadium for the San Fra
 
 The use of creative accounting practices by teams, take advantage of players and taxpayers. Hidden revenues and expenses paint a picture of poor financial health for the team. This is done to maximize salary efficiency and public subsidization. The following diagram elaborates:
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "sports-accounting-no-chain.png" }}
+{{< image_blog "sports-accounting-no-chain.png" >}}
 
 ## Uncreative accounting
 
@@ -51,7 +51,7 @@ A blockchain is a distributed ledger where transactions are validated and update
 
 All stakeholders of the revenue streams in the NFL could serve as a validator on the blockchain. Each team would input their revenues on the blockchain. Total team revenues can be updated after each game or immediately as revenue is brought in. Internal auditors for the NFL teams can add an additional layer of validation over the dataset. This allows for teams to project the amount they would need to contribute to revenue sharing quickly and more accurately. Additionally, accurate projections for a team salary cap the following year will be available.
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "sports-accounting-with-chain.png" }}
+{{< image_blog "sports-accounting-with-chain.png" >}}
 
 Players will benefit from the implementation of a blockchain because they can be assured that they are not victim to creative accounting; resulting in the accurate share of the revenue pie. Player unions can have peace of mind knowing that the financial documents outlining the total league revenues are accurate. This data allows the player unions to better negotiate player compensation during collective bargaining negotiations.
 

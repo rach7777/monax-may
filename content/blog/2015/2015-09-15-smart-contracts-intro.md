@@ -17,13 +17,13 @@ title: WTF Are Smart Contracts Anyway?
 url: /2015/09/15/smart-contracts-intro/
 ---
 
-[{{ printf "/images/blog/%s/%s" .Page.Now.Year "contract.jpg" }}](https://www.flickr.com/photos/stevensnodgrass/5480863464/)
+[{{< image_blog "contract.jpg" >}}](https://www.flickr.com/photos/stevensnodgrass/5480863464/)
 
 Folks are both fascinated and confused by the term "smart contracts". Many across the general peer-to-peer tech space have had their imaginations captured by what is, fundamentally, a super fascinating idea. The idea that we can have processes and procedures, with rules we agree to, running, automatically, on our behalf. This is a powerful idea.
 
 For many the power of the `idea` leads them ...
 
-[{{ printf "/images/blog/%s/%s" .Page.Now.Year "neverland.gif" }}](https://33.media.tumblr.com/6c6d7a976bfe30324d656f0465cd7add/tumblr_nk1e8rM4ie1u17yx1o1_500.gif)
+[{{< image_blog "neverland.gif" >}}](https://33.media.tumblr.com/6c6d7a976bfe30324d656f0465cd7add/tumblr_nk1e8rM4ie1u17yx1o1_500.gif)
 
 As inspiring a fantasy as Peter Pan is, it is still a fantasy. With all deference to the dreamers amongst us, there is enough that is intriguing about this technology for us all to explore it together; the difference being that the doers may focus more on the near term stuff.
 

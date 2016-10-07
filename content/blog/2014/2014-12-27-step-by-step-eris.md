@@ -38,7 +38,7 @@ Users of interactive applications -- financial, social networking, communication
 
 Structurally, this kind of application architecture might be represented like this:
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "Traditional-Architecture.png" }}
+{{< image_blog "Traditional-Architecture.png" >}}
 
 As we can see, the sole responsibility for delivering applications structured in this way is on the application developer. This is expensive, and leaves application developers with the challenge of managing distribution and operational costs (predominantly in the form of servers) for an application which is free to its users.
 
@@ -49,7 +49,7 @@ Distributed computing technology, including blockchain technology, enables devel
 
 Structurally, this kind of application architecture might be represented like this:
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "DApp-Architecture.png" }}
+{{< image_blog "DApp-Architecture.png" >}}
 
 ## 3) We want to use blockchains as part of a new peer-to-peer design paradigm for interactive applications
 
@@ -82,7 +82,7 @@ d) **a user interface** through which the user and the database interact (the wa
 
 We would diagramatically represent the relationship between these components as follows:
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "Standard-bc-visual.png" }}
+{{< image_blog "Standard-bc-visual.png" >}}
 
 ## 5) Enter Ethereum.
 
@@ -95,7 +95,7 @@ These scripts are, for lack of a better term, known as "smart contracts." As Cas
 
 A visual summary of how this differs, following previous examples, is as follows:
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "Ethereum-logic-visual.png" }}
+{{< image_blog "Ethereum-logic-visual.png" >}}
 
 One example of a "smart contract" that one might run in Ethereum is a ledger for a sports betting pool between a small number of friends in disparate locations. If, say, five people want to keep track of their wagers in a trustless fashion, they could write a script which is designed to do so on Ethereum and amend the smart contract to reflect and/or record the respective balances.
 
@@ -131,7 +131,7 @@ At Eris Industries we see blockchains as tools, not investment products. Think M
 
 So the structure of our application changes again:
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "Eris-structural-visual.png" }}
+{{< image_blog "Eris-structural-visual.png" >}}
 
 The end result is that you get something that **looks and feels a lot like a regular web application.** Except, from the application developer/administrator's perspective, it's a lot cheaper, because your users provide the hard drive space and processing power to run these applications - not a server mainframe.
 

@@ -26,7 +26,7 @@ But it also works the other way. Pulling what the technical folks build and pack
 
 In other words, product managers are the key to the "Conjoined Triangles of Success" (a concept which will be familiar to those that watch [Silicon Valley](http://www.hbo.com/silicon-valley)):
 
-{{ printf "/images/blog/%s/%s" .Page.Now.Year "triangles_of_success.jpg" }}
+{{< image_blog "triangles_of_success.jpg" >}}
 
 Jokes about satire TV shows aside, Paul is uniquely suited to help us here.
 
