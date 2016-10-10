@@ -24,7 +24,7 @@ meta:      true
 
 [{{< image_blog "ecos_big_problems.jpg" >}}](https://www.flickr.com/photos/andybadger/8393597176/)
 
-A tweet I read recently started me down a rabbit hole of thought. It is a vein in which I have contemplated deeply but have yet to write about directly. Namely, how can [ecosystem application technology](https://db.erisindustries.com/eris/2016/06/05/ecosystem-applications/) help policy makers?
+A tweet I read recently started me down a rabbit hole of thought. It is a vein in which I have contemplated deeply but have yet to write about directly. Namely, how can [ecosystem application technology](/2016/06/05/ecosystem-applications/) help policy makers?
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The US needs a universal basic income for kids <a href="https://t.co/TgPx25THJl">https://t.co/TgPx25THJl</a></p>&mdash; Quartz (@qz) <a href="https://twitter.com/qz/status/766665861688090624">August 19, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

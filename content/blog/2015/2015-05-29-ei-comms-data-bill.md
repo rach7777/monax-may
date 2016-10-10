@@ -20,16 +20,16 @@ url: /2015/05/29/ei-comms-data-bill/
 
 *Summary: Eris Industries' position is that this proposed bill would impinge vital and legitimate business interests of our company. As such we will be relocating staff out of the United Kingdom until further clarity on the provisions of the bill is achieved.*
 
-*We would encourage anyone else who opposes this bill to join* 
+*We would encourage anyone else who opposes this bill to join*
 
-* us; and 
-* another UK startup, [ind.ie](https://grahamcluley.com/2015/05/technology-firm-surveillance/), 
+* us; and
+* another UK startup, [ind.ie](https://grahamcluley.com/2015/05/technology-firm-surveillance/),
 
 *in committing to leave the UK if it is passed into law or, at the very least, to sign [this petition](https://www.openrightsgroup.org/campaigns/dont-let-the-snoopers-charter-bounce-back) being organised by the [Open Rights Group](https://openrightsgroup.org).*
 
 The Government's proposed re-introduction of the [Communications Data Bill, or "Snooper's Charter,"](http://www.telegraph.co.uk/news/politics/queens-speech/11634567/Google-and-Whatsapp-will-be-forced-to-hand-messages-to-MI5.html) this week will include, according to reporting in the Telegraph and elsewhere, a mandatory requirement to include cryptographic back-doors which can be accessed by MI5 and other government agencies.
 
-Eris Industries' business is [industrial cryptography](https://eng.erisindustries.com/blockchain/2015/04/30/on-blockchains/). This legislation, if passed, is likely to prevent our technology's use in myriad industrial applications, including financial services, which need reliable, open-source cryptography desperately if they are to stay competitive in a digital age.
+Eris Industries' business is industrial cryptography. This legislation, if passed, is likely to prevent our technology's use in myriad industrial applications, including financial services, which need reliable, open-source cryptography desperately if they are to stay competitive in a digital age.
 
 The proposals contained in the Queen's Speech were first introduced by the Conservative component of the Coalition government in January of this year. In response to these proposals, at the time Eris Industries promised we would leave the country if the proposals were introduced as legislation, as reported in both the [Guardian](http://www.theguardian.com/technology/2015/jan/13/david-cameron-encrypted-messaging-apps-ban) and [City AM](http://www.cityam.com/207279/politics-fear-risky-game-editor-s-letter). We have also publicly opposed the proposals on both [Radio 5](https://grahamcluley.com/2015/01/listen-bbc-radio-punch-david-camerons-surveillance-backdoor/) and [Euronews](https://www.youtube.com/watch?v=4J-2aK6eViM).
 

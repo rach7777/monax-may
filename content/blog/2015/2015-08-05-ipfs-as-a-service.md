@@ -30,7 +30,7 @@ Part 2 highlights additional IPFS integrations in Monax Industries' Eris stack.
 
 Hello [IPFS](https://ipfs.io/)
 
-With IPFS [running as a service](https://monax.io/blog/2015/08/05/eris-services/), access IPFS
+With IPFS running as a service, access IPFS
 
 ```bash
 eris files
@@ -86,7 +86,7 @@ This is useful for sharing custom service definition files.
 
 ###mintdump
 
-The [mint client](https://github.com/eris-ltd/mint-client) is used for managing [eris:db](https://erisindustries.com/components/erisdb) chains.
+The [mint client](https://github.com/eris-ltd/mint-client) is used for managing eris:db chains.
 Dump the chain state to IPFS
 
 ```bash

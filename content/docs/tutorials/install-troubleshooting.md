@@ -48,7 +48,7 @@ Confirm that the line output includes `docker` and you will be good to go!
 
 By default, `eris` is a fairly quiet tool. If you would like to have more output you can add `-v` (for verbose) **or** `-d` (for debug) to any command in order to see more output. In general, there is no need to use *both* of these flags. The `--verbose` flag will give a bit more output than the command will by default and the `--debug` flag will give *much* more output than the either the `--verbose` flag or the command by default, but will be directed primarily at Eris developers.
 
-If you are reporting a bug, please rerun the command which caused the issue with the debug flag (`-d` or `--debug`) and send us the output to a [Github Issue](https://github.com/eris-ltd/eris-cli/issues/new) or via Community Driven [Support Forums](https://support.erisindustries.com).
+If you are reporting a bug, please rerun the command which caused the issue with the debug flag (`-d` or `--debug`) and send us the output to a [Github Issue](https://github.com/eris-ltd/eris-cli/issues/new) or via Community Driven [Support Forums](https://support.monax.io).
 
 # I'm Behind a Firewall
 

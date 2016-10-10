@@ -29,8 +29,8 @@ Peer-to-peer technology should enable application developers to **enlist their u
 
 At Eris Industries, we build tools to utilise and leverage this technology. We have built:
 
-* a decentralised application server, called the [**Decerver**](https://erisindustries.com/components/erisdb), which allows blockchain databases to refer to and interact with other distributed protocols; and
-* a blockchain design called [**Thelonious**](https://erisindustries.com/components/erisdb) which can be used to hold, secure, and distribute the logic of such applications.
+* a decentralised application server, called the **Decerver**, which allows blockchain databases to refer to and interact with other distributed protocols; and
+* a blockchain design called **Thelonious** which can be used to hold, secure, and distribute the logic of such applications.
 
 ## 2) Why is this a problem?
 

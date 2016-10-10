@@ -9,9 +9,9 @@ You will need `go` and `git` installed to do this.
 
 ## Install Go
 
-At the current time, `eris` requires `go` version >= {{ site.data.coding["golang"].minimum }}. Go is not needed if you install `eris` as a binary.
+At the current time, `eris` requires `go` version >= {{< data_coding golang_min >}}. Go is not needed if you install `eris` as a binary.
 
-An easy way to install Go (for OSX and Linux) is via the Travis-CI's [Gimme](https://github.com/travis-ci/gimme) tool. First you install Gimme; then running the `eval $(gimme {{ site.data.coding["golang"].authoritative }})` command and you'll be all set up.
+An easy way to install Go (for OSX and Linux) is via the Travis-CI's [Gimme](https://github.com/travis-ci/gimme) tool. First you install Gimme; then running the `eval $(gimme {{< data_coding golang_auth >}})` command and you'll be all set up.
 
 Otherwise, please see the documentation in [this link](https://golang.org/doc/install) on how to install it.
 

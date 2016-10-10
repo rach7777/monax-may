@@ -47,7 +47,7 @@ This was not a crowd-pleaser. As one commenter put it:
 
 >[Preston] knows full well that the legal and political systems have been captured and corrupted by the fascist central banking cartel. We don’t need their help, we don’t need their permission, we never did.
 
-Regulation has been fact of life since human beings first settled in towns and cities. It's not going anywhere anytime soon, whether we like it or not - and Eris Industries' [**Distributed Application Software Stack**](https://erisindustries.com) has been designed with this in mind.
+Regulation has been fact of life since human beings first settled in towns and cities. It's not going anywhere anytime soon, whether we like it or not - and Eris Industries' **Distributed Application Software Stack** has been designed with this in mind.
 
 <h1>Step 2: (Re)Define the problem.</h1>
 
@@ -81,7 +81,7 @@ We concluded:
 
 3. We like Bitcoin and the others, and hope they succeed, but we recognise that their use currently involves high levels of uncertainty and risk - legal/regulatory, reputational, and operational. So we recognise that no corporate, charitable foundation, or public sector body of consequence is going to engage with this technology as more than a curiosity until they can do so while containing their risk within acceptable thresholds.
 
-4. In most cases, risk control means **control of the application,** because what cannot be broken - as with Bitcoin - cannot be fixed. An application-specific chain such as Eris Industries' [**Thelonious blockchain design**](https://erisindustries.com/components/erisdb) can be parameterised to provide most of this utility while removing much of this risk.
+4. In most cases, risk control means **control of the application,** because what cannot be broken - as with Bitcoin - cannot be fixed. An application-specific chain such as Eris Industries' **Thelonious blockchain design** can be parameterised to provide most of this utility while removing much of this risk.
 
 5. We know that as complexity in a software stack rises, costs rise even faster. Blockchains have already demonstrated powerfully that they can reduce reliance on physical infrastructure to simplify organisational complexity to scale. Businesses, public sector bodies, and charities do not want to wait for regulatory change to accommodate "Blockchain 1.0" protocols in order to benefit from their usefulness. With Eris, **they don't have to**.
 

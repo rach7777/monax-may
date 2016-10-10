@@ -124,7 +124,7 @@ The command will begin setting you up.
 
 ### Troubleshooting Your Install
 
-If you have any errors which arise during the installation process, please see our [trouble shooting page](/docs/tutorials/install-troubleshooting/) or visit our [support forums](https://support.erisindustries.com)
+If you have any errors which arise during the installation process, please see our [trouble shooting page](/docs/tutorials/install-troubleshooting/) or visit our [support forums](https://support.monax.io)
 
 # Step 2: Roll Your Own Blockchain in Seconds
 

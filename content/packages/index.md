@@ -62,4 +62,4 @@ Monax has deep relationships and partnership agreements with a variety of leadin
 
 If you are a technology provider and are interested in joining the Monax Partnership Program, please get in touch.
 
-<a class="action-big" href="mailto:contact@erisindustries.com">Contact With Us Today To Learn More</a>
+<a class="action-big" href="mailto:contact@monax.io">Contact With Us Today To Learn More</a>

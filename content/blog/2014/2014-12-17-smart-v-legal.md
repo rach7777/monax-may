@@ -48,9 +48,9 @@ Could such a thing even be done?
 
 So we cracked smart contracts on a blockchain. Without creating a cryptocurrency. We also figured out that once a blockchain database has an administrator, they become far more useful. So designed them so you can administer them, too.
 
-Through an ordinary web browser. Thanks to our [Decerver](https://erisindustries.com/components/erisdb) web browser core.
+Through an ordinary web browser. Thanks to our Decerver web browser core.
 
-With our open-source DOUG and Eris Standard Library smart contract templates, and our [Thelonious](https://erisindustries.com/components/erisdb) blockchain design, you can now obtain the efficiency and security of the blockchain right inside the core of your business, efficiently tracking real assets and obligations without needing to go fully-decentralized or creating a cryptocurrency.
+With our open-source DOUG and Eris Standard Library smart contract templates, and our Thelonious blockchain design, you can now obtain the efficiency and security of the blockchain right inside the core of your business, efficiently tracking real assets and obligations without needing to go fully-decentralized or creating a cryptocurrency.
 
 Because you control the system, you can comply with any and all legal or regulatory obligations.
 
@@ -60,7 +60,7 @@ All you need to do is give your best developers and data scientists the resource
 
 **Smart contracts** are scripts on a blockchain database which automatically manage data-driven relationships on distributed networks on a peer-to-peer basis, without servers. They can change their parameters and meaning over time, meaning a system upgrade is as simple as broadcasting a signal to the network - instead of purchasing additional hardware.
 
-Smart contract-enabled blockchain systems are a form of distributed computing architecture which is capable of operating over the public internet which employ public-key cryptography to render the possibility of a successful malicious attack exceedingly low. They can carry out and manage any data-driven interaction a developer can define, and if widely enough distributed, are nearly indestructible. With Eris Industries' [Thelonious](https://erisindustries.com/components/erisdb) design, administrators of these databases - unlike existing blockchain databases - can quickly update their consensus and security parameters at will through the broadcast of the relevant private key.
+Smart contract-enabled blockchain systems are a form of distributed computing architecture which is capable of operating over the public internet which employ public-key cryptography to render the possibility of a successful malicious attack exceedingly low. They can carry out and manage any data-driven interaction a developer can define, and if widely enough distributed, are nearly indestructible. With Eris Industries' Thelonious design, administrators of these databases - unlike existing blockchain databases - can quickly update their consensus and security parameters at will through the broadcast of the relevant private key.
 
 **Legal contracts**, on the other hand, are legal fictions which, if breached, give rise to further imaginary critters known as choses (things) in action. They are customarily evidenced in writing. The threat of enforcement compels their performance. The rights and obligations they create become real when a court orders their enforcement.
 
