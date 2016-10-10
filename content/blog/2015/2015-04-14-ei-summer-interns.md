@@ -34,8 +34,6 @@ I'll get straight to the point:
 
 * Read this carefully.
 
-* Send a short CV or precis of your previous work/study experience in .PDF format to preston@erisindustries.com .
-
 * Write a 250 word project proposal for an open-source, smart contract-driven distributed application and submit it in markdown by pull request to our [Internship Applications repo](https://github.com/eris-ltd/internships). **Do not do this if you do not want your proposal to become public and open-source** (Creative Commons licence).
 
 * We'll contact you within two weeks if we'd like to take the application further.

@@ -18,7 +18,7 @@ title: 'Eris CLI Services Walkabout: BTCD'
 url: /2015/09/01/btcd-as-a-service/
 ---
 
-We got a question recently on the [forum](https://support.erisindustries.com/support/discussions/topics/6000011734):
+We got a question recently on the [forum](https://support.monax.io/support/discussions/topics/6000011734):
 
 ```
 So just to be clear if I wanted to mine with that [btcd] node (and I don't) what would I configure? Not the service definition file right? Bitcoind has the .conf file and it has commands. When I want to mine using btcd (or mine my test chain) where is this determined?

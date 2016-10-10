@@ -52,6 +52,6 @@ eris chains new mychain14 --dir ~/.eris/chains/config/mychain14
 
 When the `--dir` flag is given to chains new, it will read the configuration files from that directory rather than the `~/.eris/chains/config/default` and use those instead of the default configuration files when hashing the new chain. For an even more lightweight solution you can give it a genesis.json and or a set of validator.csv and accounts.csv files to use via different flags. There will be another onboarding post about these files coming soon.
 
-If you have any questions about the chains hashing process please do not hestitate to visit our [forums](https://support.erisindustries.com) or leave a comment below and we will try to answer as quickly as we can.
+If you have any questions about the chains hashing process please do not hestitate to visit our [forums](https://support.monax.io) or leave a comment below and we will try to answer as quickly as we can.
 
 Happy (permissioned) blockchaining!

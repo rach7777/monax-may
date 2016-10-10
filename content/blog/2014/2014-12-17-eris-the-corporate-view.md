@@ -35,7 +35,7 @@ An introduction to the open alpha release of Eris in ten points:
 
 <h2>1. Take me to your repo.</h2>
 
-* [**Here is our GitHub Repo**](https://github.com/eris-ltd). Here is [**our website**](https://erisindustries.com). We are easily reachable on [**Reddit**](http://reddit.com/r/erisindustries). Forums to follow shortly.
+* [**Here is our GitHub Repo**](https://github.com/eris-ltd).
 
 <h2>2. What is Eris?</h2>
 
@@ -43,7 +43,7 @@ An introduction to the open alpha release of Eris in ten points:
 
 * Eris is the **Distributed Application Software Stack**, a platform designed to empower developers to build web-style interactive applications that utilise the power of the distributed internet, including blockchain databases, to run themselves securely and autonomously - **without servers.**
 
-* The Eris Stack includes an open-source blockchain design called [**Thelonious**](https://erisindustries.com/components/erisdb) and a decentralised application server called the [**Decerver.**](https://erisindustries.com/components/erisdb)
+* The Eris Stack includes an open-source blockchain design called **Thelonious** and a decentralised application server called the **Decerver.**
 
 * Thelonious is not a single blockchain: it is a **blockchain design.** We intend for developers to create their own blockchains based on the Thelonious design to administer their DApps. The Thelonious design itself is a heavily-modified derivative of Jeffrey Wilcke's Go client for the [Ethereum](https://ethereum.org) protocol.
 
@@ -96,9 +96,9 @@ An introduction to the open alpha release of Eris in ten points:
 
 <h2>5. Ok. That's awesome. So, how do I get started with smart contracts?</h2>
 
-* If you're planning on deploying smart contracts you'll want to check out the [Eris Package Manager](https://erisindustries.com/components/epm) at some point. EPM allows you to easily and simply compile, deploy, and test suites of smart contracts in a cohesive manner. In addition, EPM allows developers to work with chains rather how Git works with files, by allowing developers to keep track of many chains, adding contracts or transactions to them, and committing blocks.
+* If you're planning on deploying smart contracts you'll want to check out the Eris Package Manager at some point. EPM allows you to easily and simply compile, deploy, and test suites of smart contracts in a cohesive manner. In addition, EPM allows developers to work with chains rather how Git works with files, by allowing developers to keep track of many chains, adding contracts or transactions to them, and committing blocks.
 
-* You might also want to check the tutorials pages on our sites for the [Decerver](https://erisindustries.com/components/erisdb) and [Thelonious](https://erisindustries.com/components/erisdb), which will be of considerable assistance to you.
+* You might also want to check the tutorials pages on our sites for the Decerver and Thelonious, which will be of considerable assistance to you.
 
 * We have a smart contract library - the **Eris Standard Library** - which we will refine and add to as time goes by. We hope you will too (open-source ftw).
 
@@ -106,7 +106,7 @@ An introduction to the open alpha release of Eris in ten points:
 
 * *Everything.*
 
-* Eris' web browser core is the **Decentralised Server** or [**Decerver.**](https://erisindustries.com/components/erisdb) It can plug into any API or other blockchain you want - just write a module wrapper and you're off to the races.
+* Eris' web browser core is the **Decentralised Server** or **Decerver.** It can plug into any API or other blockchain you want - just write a module wrapper and you're off to the races.
 
 * The Decerver helps you, developers, build applications which leverage opt-in data ownership and significantly increased data utility for both customers and businesses -- a software design paradigm we call **Participatory Architecture**. Using peer-to-peer and distributed systems, the Decerver allows the creation of web style, data-driven, interactive ecosystem applications that can be safely, securely, and reliably deployed and managed.
 
@@ -154,7 +154,7 @@ An introduction to the open alpha release of Eris in ten points:
 
 * But if you really want to do a deep dive into smart contracts-as-legal contracts, we thought of that too (Eris Industries' CEO and COO are also qualified lawyers in the U.S. and England, respectively). They're doable but would need a lot of context provided by a DApp - and some things (like a will or a deed) that can't get electronically signed are obvious no-gos. (Though on that last point, you could always hash a PDF into whatever distributed file storage system your DApp uses.)
 
-* We suggest you check out [Eris Legal Markdown](https://erisindustries.com/components/erislegal) to get started.
+* We suggest you check out Eris Legal Markdown to get started.
 
 <h2>10. So. Does this "smart contract" thing change the crypto game?</h2>
 
@@ -162,7 +162,7 @@ An introduction to the open alpha release of Eris in ten points:
 
 * Yes. Rather a lot.
 
-* A blockchain controlled by a cryptographically-secure smart contract like [Thelonious](https://erisindustries.com/components/erisdb) which is able to change the entire system's parameters, *on command* and without a fork, has never been built before. Same with the [Decerver](https://erisindustries.com/components/erisdb) which allows a blockchain to talk to less-trusted APIs - or other blockchains. [EPM](https://erisindustries.com/components/epm) and the dual-integration mechanism for [ELM](https://erisindustries.com/components/erislegal) also represent new technologies.
+* A blockchain controlled by a cryptographically-secure smart contract like Thelonious which is able to change the entire system's parameters, *on command* and without a fork, has never been built before. Same with the Decerver which allows a blockchain to talk to less-trusted APIs - or other blockchains. EPM and the dual-integration mechanism for ELM also represent new technologies.
 
 * We didn't stop there. In many applications, especially industrial ones, **the token/mining reward model isn't a great fit for the data- or cost savings-driven motivations that prospective blockchain users and operators have expressed as their primary motivation for adoption.**
 
@@ -196,6 +196,5 @@ An introduction to the open alpha release of Eris in ten points:
 
 * We don't have a uniform corporate view on what to call this approach. I call it "thinking commercially about how to build useful enterprise tools with blockchain databases." The rest of the team calls it "**crypto-utilitarianism**." *Vive la différence.*
 
-And that's a very brief overview of Eris. Feel free to head on over to our [**website**](https://erisindustries.com) to find out more and start building!
 
 
