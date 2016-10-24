@@ -18,7 +18,7 @@ url: /2016/03/31/commercial-paper-intro/
 
 *An introduction to smart contracts for the digital non-native.*
 
-**The Hash**. Computers work because almost any kind of information can be transformed into a string of zeroes and ones called binary code. Once data has been reduced to binary code, computers can apply mathematical operations to it to produce reliable results. Cryptography involves passing the binary code of a piece of data through a series of arithmetic operations to produce a hash, an encoded string of letters and numbers that represents the data.  
+**The Hash**. Computers work because almost any kind of information can be transformed into a string of zeroes and ones called binary code. Once data has been reduced to binary code, computers can apply mathematical operations to it to produce reliable results. Cryptography involves passing the binary code of a piece of data through a series of arithmetic operations to produce a hash, an encoded string of letters and numbers that represents the data.
 
 Hashing is a one-way operation: while a certain data set will always produce the same unique identifier (the *hash*), it is effectively impossible to do the math in reverse to decode the data from just the hash. One must have a key to access cryptographically stored information. Hashing and decentralized distributed data structures can be combined with business logic to make many kinds of applications, for example, value tokens. Value tokens, however, are just one way of using blockchain technology.
 
@@ -45,9 +45,9 @@ In order for commerce to flow, fungibility of value items is critical, as is car
 
 Commercial paper value is based on a promise and obligation to pay money in the future. The basic unit of commercial paper, the promissory note, may be recombined in infinite ways. The flexibility and reliability of commercial paper systems allows businesses to use these tools for growth. [Monax Industries debuted commercial paper prototypes with over 40 of the world's largest banks last month.](https://monax.io/blog/2016/03/03/r3/)
 
-Monax's inaugural smart contract product, **Monax Industries’ Commercial Paper Software Bundles,** combines the obligation-based building blocks of commerce with smart contract potential. The ability to create promissory notes, issue shares and keep track of assets creates the toolkit for financial engineering: out of these simple structures flow complex uses like time notes, demand notes, order paper, bearer paper, corporate bonds, securities, stocks, dividends, debentures, certificates of deposit, drafts, loan originations, repurchase agreements, mutual funds, reinsurance and equity options, to name a few. 
+Monax's inaugural smart contract product, **Monax Industries’ Commercial Paper Software Bundles,** combines the obligation-based building blocks of commerce with smart contract potential. The ability to create promissory notes, issue shares and keep track of assets creates the toolkit for financial engineering: out of these simple structures flow complex uses like time notes, demand notes, order paper, bearer paper, corporate bonds, securities, stocks, dividends, debentures, certificates of deposit, drafts, loan originations, repurchase agreements, mutual funds, reinsurance and equity options, to name a few.
 
 Crafted to work in multiple blockchain environments, Monax Commercial Paper Bundles deliver tools to build a strong smart contract use case system. Monax's Commercial Paper is engineered for multidimensional applications, incorporating the lessons of history and precedent as well as the promise of the future.
 
-To learn more about Monax Industries' Smart Contract Libraries subscriptions, please write us at <contact@emonax.io>.
+To learn more about Monax Industries' Smart Contract Libraries subscriptions, please write us at [contact@monax.io](mailto:contact@monax.io).
 
