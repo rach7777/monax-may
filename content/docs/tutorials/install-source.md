@@ -11,7 +11,7 @@ You will need `go` and `git` installed to do this.
 
 At the current time, `eris` requires `go` version >= {{< data_coding golang_min >}}. Go is not needed if you install `eris` as a binary.
 
-An easy way to install Go (for OSX and Linux) is via the Travis-CI's [Gimme](https://github.com/travis-ci/gimme) tool. First you install Gimme; then running the `eval $(gimme {{< data_coding golang_auth >}})` command and you'll be all set up.
+An easy way to install Go (for macOS and Linux) is via the Travis-CI's [Gimme](https://github.com/travis-ci/gimme) tool. First you install Gimme; then running the `eval $(gimme {{< data_coding golang_auth >}})` command and you'll be all set up.
 
 Otherwise, please see the documentation in [this link](https://golang.org/doc/install) on how to install it.
 
@@ -27,12 +27,6 @@ Once you have Go installed, you will then want to check if you also have your `$
 export GOPATH=$HOME
 export GOBIN=$GOPATH/bin
 export PATH="$GOBIN:$PATH"
-```
-
-For Go version 1.5 you'd need an additional `export` command (for version 1.6 and above this is no longer needed):
-
-```
-export GO15VENDOREXPERIMENT=1
 ```
 
 **Note** you will need to double check that you perform the above commands for the *user* which will be running `eris`.
@@ -51,9 +45,3 @@ eris init
 ```
 
 Now you're ready to go (if you pardon the pun)!
-
-#### **Tip**: To see all the new stuff happening:
-
-```
-eris update --branch develop
-```
