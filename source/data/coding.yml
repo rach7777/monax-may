@@ -6,6 +6,9 @@ golang_auth: 1.6
 docker_min: 1.9.1
 docker_auth: 1.11.2
 
+docker_machine_min: 0.4.1
+docker_machine_auth: 0.8.1
+
 cli:
   repository: "https://github.com/eris-ltd/eris-cli.git"
   releases: "https://github.com/eris-ltd/eris-cli/releases/latest"
@@ -20,21 +23,20 @@ cli:
       cmd: apt
 
 brew: |-
-  brew install eris
+  brew install eris docker-machine virtualbox
 
 brew_dev: |-
-  brew install --devel eris
+  brew install --devel eris docker-machine virtualbox
 
 choco: |-
-  choco install eris
+  choco install eris docker-machine virtualbox
 
 yum: |-
-  sudo su -c "curl -sSL https://yum.eris.industries/eris.repo > \
+  sudo su -c "curl -L https://yum.monax.io/yum/eris.repo > \
     /etc/yum.repos.d/eris.repo"
-  yum install eris-cli
+  yum install -y eris-cli
 
 apt: |-
-  sudo add-apt-repository https://apt.eris.industries
-  sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net \
-    --recv-keys 7D1F8F5A
-  sudo apt-get update && sudo apt-get install eris
+  sudo add-apt-repository https://apt.monax.io
+  curl -L https://apt.monax.io/APT-GPG-KEY | sudo apt-key add -
+  sudo apt-get update && sudo apt-get install -y eris

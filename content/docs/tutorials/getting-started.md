@@ -21,20 +21,23 @@ There are four steps need to get moving with Eris:
 
 # Step 1. Install the Eris Platform
 
-**Dependencies**: `eris` has 1 dependency: [Docker](https://www.docker.com/). Docker is a run anywhere container solution which makes development, deployment, testing, and running of ecosystem applications a breeze.
+**Dependencies**: `eris` has 2 dependencies: [Docker](https://www.docker.com/) and [Docker Machine](https://https://docs.docker.com/machine/). Docker is a run anywhere container solution which makes development, deployment, testing, and running of ecosystem applications a breeze and Docker Machine 
+allows you to run Docker on remote machines. For Linux, Docker Machine dependency is optional but recommended.
 
-Currently we consider the most workable setup to be (what our tests consider authoritative). We are working steadily toward making eris available for a wide variety of host environments.
+Currently we consider the most workable setup to be (what our tests consider authoritative) with these operating system and dependencies' versions: 
 
-* HOST_OS = {{< data_coding authoritative_os >}}
-* DOCKER = {{< data_coding docker_auth >}}
+* Host OS = {{< data_coding authoritative_os >}}
+* Docker = {{< data_coding docker_auth >}}
+* Docker Machine = {{< data_coding docker_machine_auth >}}
 
-## Step 1.1. Install Docker
+We are working steadily toward making `eris` available for a wide variety of host environments.
 
-At the current time, `eris` requires `docker` >= {{< data_coding docker_min >}}. You can check your Docker version with `docker version`. We do not test against older versions of Docker: `eris` may or may not work against earlier versions and we can make no guarantees of usability there.
+At the current time, `eris` requires `docker version` >= {{< data_coding docker_min >}} and `docker-machine version` >= {{< data_coding docker_machine_min >}}.
+We do not test against older versions of Docker and Docker Machine: `eris` may still work against earlier versions and we can make no guarantees of usability there.
 
 ### Linux
 
-Please see the [Docker](https://docs.docker.com/installation/) documentation for how to install for your distribution.
+Please see the [Docker](https://docs.docker.com/installation/) documentation for how to install it for your Linux distribution.
 
 **Essential**! After you install Docker, you must make sure that the user you are using to develop with `eris` has access to the Docker socket (which is accessible via the `docker` Linux usergroup). When you are logged in as the user you can do this:
 
@@ -44,7 +47,7 @@ sudo usermod -a -G docker $USER
 
 That command will add the current user to the `docker` group which will mean that Docker will not need to be called from `sudo`. After you run that command, then please log out of the current shell and open a new shell. After that `eris` will then be able to connect to Docker.
 
-Make sure that everything is set up with Docker by running:
+Make sure that everything is set up with Docker by running (you shouldn't see any errors in the command's output):
 
 ```bash
 docker version
@@ -52,57 +55,121 @@ docker version
 
 **Note** you will need to make sure that you perform the above command for the *user* which will be running Eris.
 
-### OSX
-
-We **highly recommend** that you utilize `brew` to install `eris`. As part of the installation of `eris`, Docker will be properly installed. If you are not a `brew` user then please install Docker via the [Docker Toolbox](https://www.docker.com/products/docker-toolbox).
-
-**N.B.** -- At this time Docker for Mac (DFM), which is still in beta, is not currently supported.
-
-### Windows
-
-We **highly recommend** that you utilize `choco` to install `eris`. As part of the installation of `eris`, Docker will be properly installed. If you are not a `choco` user then please install Docker via the [Docker Toolbox](https://www.docker.com/products/docker-toolbox).
-
-**N.B.** -- At this time Docker for Windows (DFW), which is still in beta, is not currently supported.
-
-## Step 1.2. Install Eris
-
-`eris` can be easily installed using our convenient binary releases.
-
-We distribute binaries via our [Github Releases Page](https://github.com/eris-ltd/eris-cli/releases). You will simply need to download the proper zip or tarball for your architecture and then extract that into a place in your `PATH`.
-
-### OSX Only
-
-If you're a [Homebrew](https://brew.sh) user then:
+If you've also chosen to install Docker Machine, please follow [these](https://docs.docker.com/machine/install-machine/#installing-machine-directly) instructions to install Docker Machine and [these](https://www.virtualbox.org/wiki/Linux_Downloads) to install VirtualBox; then create an Eris virtual machine and put the latter (`eval`) command into your `~/.bashrc` file:
 
 ```bash
-{{< data_coding brew >}}
+docker-machine create -d virtualbox eris
+eval $(docker-machine env eris)
 ```
 
-### Windows Only
+**Note** Installation of VirtualBox is not a prerequisite, because you may choose to create your virtual machine on Amazon AWS cloud or DigitalOcean, but VirtualBox is what most people use alongside Docker Machine and what we recommend for the Docker Machine setup.
 
-If you're a [Chocolatey](https://chocolatey.org) user then:
+Proceed to a one of the package or a binary installation below to install the `eris` binary then finalize your setup by running.
 
 ```bash
-{{< data_coding choco >}}
+eris init
 ```
 
-**N.B.** You'll want to run `eris` commands either from `git bash` or from the `Docker Quickstart Terminal` (which is really just `git bash`) window. If you prefer to use the `cmd` as a terminal, you still can: every command should work as expected, though all the tutorials will assume that you are using the `Docker Quickstart Terminal` and are structured to support **only** that environment.
+`eris init` will be downloading a few Docker images which may take a few minutes.
 
-### APT Package Installation
+#### Debian Package Installation
 
-We have `apt-get` support for most current versions of Ubuntu. If you wish to use apt-get to install `eris` then you will simply perform the following:
+We have `apt-get` support for most current versions of Ubuntu and Debian Linux:
 
 ```bash
 {{< data_coding apt >}}
 ```
 
-### RPM Package Installation
+#### RPM Package Installation
 
-We have RPM support for most current versions of Fedora, CentOS, RHEL, etc. If you wish to use `yum` to install `eris` then you will perform the following:
+We have RPM support for most current versions of Fedora, CentOS, and RHEL:
 
 ```bash
 {{< data_coding yum >}}
 ```
+
+#### Binary Installation
+
+Alternatively, you can download a release binary for the latest [Release](https://github.com/eris-ltd/eris-cli/releases). Make sure you put the binary under one of the paths in the `$PATH` variable and that it has executable permissions:
+
+```bash
+$ curl https://github.com/eris-ltd/eris-cli/releases/download/v0.12.0/eris_0.12.0_linux_amd64
+$ chmod +x eris_0.12.0_linux_amd64
+$ mv eris_0.12.0_linux_amd64 eris
+```
+
+### macOS
+
+We **highly recommend** that you utilize [Homebrew](https://brew.sh) to install `eris`. Docker, Docker Machine, VirtualBox, and `eris` binary will be properly installed with:
+
+```bash
+{{< data_coding brew >}}
+```
+
+If you are not a `brew` user then please install Docker, Docker machine, and VirtualBox by installing [Docker Toolbox](https://www.docker.com/products/docker-toolbox) and Eris binary from the [Release](https://github.com/eris-ltd/eris-cli/releases) page. Make sure you put the binary under one of the paths in your `$PATH` variable and it has executable permissions:
+
+```bash
+$ curl https://github.com/eris-ltd/eris-cli/releases/download/v0.12.0/eris_0.12.0_darwin_amd64
+$ chmod +x eris_0.12.0_darwin_amd64
+$ mv eris_0.12.0_darwin_amd64 eris
+```
+
+If you don't want to utilize Docker Toolbox, you can install those manually: follow [these](https://docs.docker.com/installation/) instructions to install Docker, [these](https://docs.docker.com/machine/install-machine/#installing-machine-directly) to install Docker Machine, and [these](https://www.virtualbox.org/wiki/Downloads) to install VirtualBox. 
+
+If you have chosen not to use Docker Toolbox at all, you need to create an Eris virtual machine and put the latter (`eval`) command into your `~/.bashrc` file:
+
+```bash
+docker-machine create -d virtualbox eris
+eval $(docker-machine env eris)
+```
+
+**N.B.** At this time Docker for Mac (DFM), which is still in beta, is not currently supported.
+
+Finalize your setup by running:
+
+```bash
+eris init
+```
+
+`eris init` will be downloading a few Docker images which may take a few minutes.
+
+### Windows
+
+We **highly recommend** that you utilize [Chocolatey](https://chocolatey.org) to install `eris`. Docker,  Docker Machine, VirtualBox, and `eris` binary will be properly installed with: 
+
+```bash
+{{< data_coding choco >}}
+```
+
+If you are not a `choco` user then please install Docker, Docker Machine, and VirtualBox by downloading the [Docker Toolbox](https://www.docker.com/products/docker-toolbox) and Eris binary from the [Release](https://github.com/eris-ltd/eris-cli/releases) page. 
+Make sure you put the binary under one of the paths in your `%PATH%` variable.
+
+If you don't want to utilize Docker Toolbox, you can install those manually: follow [these](https://docs.docker.com/installation/) instructions to install Docker, [these](https://docs.docker.com/machine/install-machine/#installing-machine-directly) to install Docker Machine, and [these](https://www.virtualbox.org/wiki/Downloads) to install VirtualBox. 
+
+(You'll want to run `eris` commands either from `git bash` or from the `Docker Quickstart Terminal`, a part of Docker Toolbox. If you prefer to use the `cmd` as your shell, you still can: every command should work as expected, though all the tutorials will assume that you are using the `Docker Quickstart Terminal` and are structured to support **only** that environment.)
+
+If you have chosen not to use Docker Toolbox at all and use `cmd` as your shell, you need to create an Eris virtual machine:
+
+```bash
+docker-machine create -d virtualbox eris
+```
+
+and create a script `setenv.bat` with these contents to be run before your every session with Eris:
+```cmd
+@echo off
+
+FOR /f "tokens=*" %%i IN ('"docker-machine.exe" env eris') DO %%i
+```
+
+**N.B.** -- At this time Docker for Windows (DFW), which is still in beta, is not currently supported.
+
+Finalize your setup by running:
+
+```bash
+eris init
+```
+
+`eris init` will be downloading a few Docker images which may take a few minutes.
 
 ### ARM Installation (IoT devices)
 
@@ -111,16 +178,6 @@ We have RPM support for most current versions of Fedora, CentOS, RHEL, etc. If y
 ### Building From Source
 
 If you would like to build from source [see our documentation](/docs/tutorials/install-source/).
-
-### All Platforms
-
-Check that everything installed correctly with:
-
-```bash
-eris init
-```
-
-The command will begin setting you up.
 
 ### Troubleshooting Your Install
 
@@ -131,20 +188,32 @@ If you have any errors which arise during the installation process, please see o
 If you want to create your blockchain it is very easy.
 
 ```bash
-eris services start keys
-eris chains make test_chain --chain-type simplechain
-eris chains new test_chain --dir test_chain
+eris chains make test_chain 
+eris chains start test_chain
 ```
 
-That `test_chain` can be whatever name you would like it to be. This simple command will create a permissioned, smart contract enabled blockchain suitable for testing.
+That `test_chain` can be whatever name you would like it to be. These two simple commands will create a permissioned, smart contract enabled blockchain suitable for testing.
 
-To check that your chain is running type:
+To check that your chain is running type (running chains have a `*` symbol next to them):
 
 ```bash
 eris chains ls
 ```
 
-Stop and remove your chain:
+You can peek at chain's logs with these commands (`-f` for "follow"):
+
+```bash
+eris chains logs test_chain
+eris chains logs -f test_chain
+```
+
+Stop your chain:
+
+```bash
+eris chains stop test_chain
+```
+
+Remove your chain (`-f` to force remove a running chain, `-x` to remove the chain's separate data container which it writes to):
 
 ```bash
 eris chains rm -xf test_chain
@@ -153,37 +222,25 @@ eris chains rm -xf test_chain
 Obviously, you will want an ability to make chains which you properly parameterize. As such you can always type:
 
 ```bash
-eris chains new --help
+eris chains make --help
 ```
 
-To see the various ways which you can give to chains new for it to be instantiated properly.
-
-Eris does not only work with permissioned smart contract networks. It works just as well with existing blockchains. Want to run bitcoin?
-
-```bash
-eris services start btcd
-```
-
-Want to run Ethereum?
-
-```bash
-eris services start eth
-```
+To see the various ways which you instantiate a chain, you should check the `chains start --help` command.
 
 That's it! Your chain is rolled!
 
 Let's remove all of the eris "stuff" before we move on to the next portion of the tutorials:
 
 ```bash
-eris clean
+eris clean -y
 ```
 
 # Step 2.a: Making a "real" permissioned chain.
 
 There are three steps to making a permissioned chain:
 
-1. Make (or Get) the public keys for the individuals
-2. Make the genesis.json file
+1. Make (or get) the public keys for the individuals
+2. Make the `genesis.json` file
 3. Instantiate the chain
 
 We shall go through these in their logical order.
@@ -208,7 +265,7 @@ Everyone who interacts with an eris chains chain will need to have a properly fo
 
 Because we use Docker to take out most of the edge cases with various operating systems and simplify the development environment for our users, these files will be written to a file system located inside the eris keys container. As we go through this tutorial we will explain a bit about what that means. When we are using containers, these containers are not built to *hold* data, but rather are built to hold what is needed to run processes. But, if we're making keypairs, then we definitely want to *keep* these.
 
-To accomplish this, we will use the `eris` tooling only. First we need to start the eris-keys daemon:
+To accomplish this, we will use the `eris` tooling only. First we need to start the `eris-keys` daemon:
 
 ```bash
 eris services start keys
@@ -279,19 +336,15 @@ Now, we're all ready to make a chain.
 
 Before we begin, we should quickly talk through the various files which are needed to run an eris chain. When you ran `eris init` during the [getting started](/docs/tutorials/getting-started/) step, eris created a folder called `~/.eris/chains/default` on your host's hard drive. This is to hold the default files for using eris chains. There are a few primary files used by eris chains:
 
-1. the config file for the tendermint consensus engine called `config.toml`
-2. the chain definition file for eris chains called `chainName.toml` (where `chainName` is the name of your chain) (these are located in your ~/.eris/chains directory)
-3. the `genesis.json` which tells eris chains how it should configure itself at the beginning of the chain (or, its genesis state)
-4. the config file for the eris:db application engine called `server_conf.toml`
-5. the keypair which the tendermit consensus engine will use to sign blocks, etc. called the `priv_validator.json`
-
-In general you do not really need to mess with `server_conf.toml` unless you know what you're doing and need to move away from the default settings. Similarly, you should not need to edit `chainName.toml` unless you have a deeper understanding of docker or specific needs around how your chain will run.
+1. the chain definition file for Eris chains is called `config.toml` and is located in your `~/.eris/chains/<your_chain>` directory.
+2. the `genesis.json` which tells Eris chains how it should configure itself at the beginning of the chain (or, its genesis state)
+3. the keypair which the tendermit consensus engine will use to sign blocks, etc. called the `priv_validator.json`
 
 The three files you *may* need to edit are the `genesis.json` and `priv_validator.json` (both of which we're about to get "made" for us) and the `config.toml`.
 
 In any chain with more than one validator the `config.toml` file will be edited to fill in the `seeds` and `moniker` fields. The `seeds` field is used to point your consensus engine to the peers it should connect into. For more information on how to deal with this please see our [advanced chain deploying tutorial](/docs/documentation/cm/latest/examples/chain-deploying/). The `moniker` field is "your node's name on the network". It should be unique on the given network.
 
-The `genesis.json` is the primary file which tells eris chains how to instantiate a particular chain. It provides the "genesis" state of the chain including the accounts, permissions, and validators which will be used at the beginning of the chain. These can always be updated over the life of the chain of course, but the genesis.json provides the starting point. Luckily `eris` takes care of making this for you and there is very little which should be required for you in way of editing (unless you know what you're doing of course, in which case why are you reading this ;-) ).
+The `genesis.json` is the primary file which tells eris chains how to instantiate a particular chain. It provides the "genesis" state of the chain including the accounts, permissions, and validators which will be used at the beginning of the chain. These can always be updated over the life of the chain of course, but the genesis.json provides the starting point. Luckily `eris` takes care of making this for you and there is very little which should be required for you in way of editing.
 
 With all that said, we're ready to make a chain. First let us make a "fake" chain just to get a tour of the chain maker tool. Once we go through that process then we will make our "real" chain which we will use for the rest of this tutorial series. Let's see what eris chains make can do for us.
 
@@ -335,14 +388,13 @@ In general, we recommend that if you are making a chain for a consortium that yo
 
 The last file is the `addresses.csv` file which is another artifact of the chain making process. It simply has the addresses and the "names" of the nodes. We find it useful when scripting out complex interactions and it is simply a reference file along the lines of `addr=$(cat $chain_dir/addresses.csv | grep $name | cut -d ',' -f 1)`.
 
-OK, enough playing around let's get serious!
+OK, enough playing around let's get serious! Cleaning after our previous experiment:
 
 ```bash
-cd ~/.eris/chains
-rm -rf ~/.eris/chains/toRemoveLater
+eris clean -y --chains
 ```
 
-That command will remove all of the stuff we've been working on. Per the above and after our review of the account types, we know we want to have two Root account types and one Full account type for our new chain. So let's get to business.
+Per the above and after our review of the account types, we know we want to have two Root account types and one Full account type for our new chain. So let's get to business.
 
 ```bash
 chain_dir=$HOME/.eris/chains/simplechain
@@ -407,10 +459,10 @@ You can remove all trace of the chain with:
 eris chains rm simplechain --data --dir --file --force
 ```
 
-and clean up your eris environment with:
+and clean up your Eris environment with:
 
 ```
-eris clean
+eris clean -y
 ```
 
 If anything went wrong with Step 2 please see our trouble shooting guide -> [^1], [^2], [^3], [^4], [^5], [^6].
@@ -583,7 +635,7 @@ Note that `eris:package_manager` can override the account which is used in any s
 Since we have a deployed contract on a running chain, please do take a look at the available options for eris contracts with:
 
 ```bash
-eris pkgs do -h
+eris pkgs do --help
 ```
 
 That's it! Your contract is all ready to go. You should see the output in `epm.json` which will have the transaction hash of the transactions as well as the address of the deployed `idi.sol` contract.
