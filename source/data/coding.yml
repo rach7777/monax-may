@@ -23,13 +23,15 @@ cli:
       cmd: apt
 
 brew: |-
-  brew install eris docker-machine virtualbox
+  brew cask install virtualbox
+  brew install eris docker docker-machine
 
 brew_dev: |-
-  brew install --devel eris docker-machine virtualbox
+  brew cask install virtualbox
+  brew install --devel eris docker docker-machine virtualbox
 
 choco: |-
-  choco install eris docker-machine virtualbox
+  choco install eris docker docker-machine virtualbox
 
 yum: |-
   sudo su -c "curl -L https://yum.monax.io/yum/eris.repo > \
