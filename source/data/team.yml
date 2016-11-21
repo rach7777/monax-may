@@ -107,16 +107,6 @@ rick :
     display: true
     bio: "Rick started writing code using BASIC and Logo on the Apple ][ since then he has been granted a patent related to provably fair gaming and worked as a Systems Administrator."
 
-dj :
-    name: "David Gardner"
-    title: "Head of Partnerships"
-    gravatar: team-djg.jpeg
-    twitter: Philanosa
-    github: Philanosa
-    # keybase: Philanosa
-    display: true
-    bio: "Originally from South Africa, David has lived and worked on four continents.  He spent 15 years at Microsoft including global strategic marketing roles out of the US HQ and head of channel for Asia. He has a passion for music and spends his spare time in his studio, and is an expert on the pie plate and paint brush. He has never written a line of code but is looking forward to be convinced to do so."
-
 silas :
     name: "Silas Davis"
     title: "Developer"
@@ -210,3 +200,13 @@ ethan :
     keybase: ebuchman
     display: false
     bio: "Ethan mostly considered himself a biophysicist, seeking to unveil the secrets of living systems and their decentralized, autonomous, coherence. Then he discovered bitcoin - so now he considers himself an Internet Biophysicist. His (current) bird's name is Diffie, but also goes by Chirpy-chirpy-dumb-dumb. Ethan was a developer on Monax's Platform team."
+
+dj :
+    name: "David Gardner"
+    title: "Head of Partnerships"
+    gravatar: team-djg.jpeg
+    twitter: Philanosa
+    github: Philanosa
+    # keybase: Philanosa
+    display: false
+    bio: "Originally from South Africa, David has lived and worked on four continents.  He spent 15 years at Microsoft including global strategic marketing roles out of the US HQ and head of channel for Asia. He has a passion for music and spends his spare time in his studio, and is an expert on the pie plate and paint brush. He has never written a line of code but is looking forward to be convinced to do so."
