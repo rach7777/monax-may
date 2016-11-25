@@ -2,64 +2,76 @@
 
 type:   docs
 layout: li
-title: "Packages"
+title: "Premium Support & Education"
 index_file: ""
 path: "content/packages"
-excerpt:    "Monax Value-Add Services"
+excerpt:    "Monax Premium Support Packages"
 menu:
   packages:
     weight: 1
-aliases:
-  - /products/
 
 ---
 
-# Co-Development Package
+```
+With Monax's Premium Support & Education Packages your ecosystem application building experience will speed up dramatically.
+```
 
-Monax's Co-Development Package is our premier package. This package includes an all-access pass to the entirety of our [smart contracts library](/library) along with a full selection of value-add services detailed below. Monax's legal engineers and blockchain experts can fast track your blockchain strategy with our experience and diverse team.
+# Introduction
 
-Capacity for this package is limited and only available for pre-selected clients.
+At Monax, we strive to document our platform in the best manner we can and also to provide self-help tutorials which aid companies getting started with this technology.
 
-# Individual Topics Packages
+However, building applications that properly leverage ecosystem application technology is a non-trivial matter. There is a great amount of complexity in being able to build such applications correctly.
 
-Monax's [smart contracts library](/library) is also licensed on a use-case by use-case basis. Our modular, upgradeable, high-quality Library contains vital components which reduce development time for many use cases our customers are building.
+Monax's premium support and education packages provide both fora to answer questions, as well as experiential learning sessions for your developers to be able to more quickly build your ecosystem applications.
 
-Ask your technology provider today if they can assist getting Monax's smart contract templates built into your application to reduce your time to market and decrease your legal uncertainty. Or we can connect you with one of our Monax Partners.
+# Benefits
 
-# Value-Add Services
+By building with Monax's engineers, your devleopment time will be significantly reduced. We have build our premium support & education packages to meet three demands within the market.
 
-## Developer Training
+First, because there is an increased amount of complexity in building ecosystem applications vis a vis more established application paradigms, many experienced developers have many questions which they need to have answered so that they have a full enough understanding of the technological base to build the applications effectively. The premium support component of our packages provides a vehicle for your developers to ask our engineers whatever questions they want with a guaranteed response time of 2 business days.
 
-The hardest part is always getting started. That’s why we have been working closely with [Validity Labs](https://validitylabs.org/) to develop an in-person, immersive workshop focused on getting developers up-to-speed with building smart contract applications using the `eris` platform. The content of the 2-day training covers:
+Second, with ecosystem applications there are emergent design patterns and architectural considerations that differ significantly from how experienced developers are used to building applications. The education component of our packages provides a vehicle for your devleopers to learn from other subscribers as well as our engineers how to think about designing and building ecosystem applications. Each subscriber recieves a seat or seats to monthly interactive learning sessions with Monax's core team.
 
-* Introduction to blockchain and smart contracts
-* Ecosystem applications
-* Setting up and navigating the `eris` platform
-* Introduction to smart contract writing with Solidity
-* Best practices of smart contract programming
+Third, there are a range of operational considerations which come into play when building an ecosystem application on a permissioned blockchain base. Our team of engineers and operations specialists can help ensure that your base blockchain is deployed correctly and running smoothly, so that your development team can drive business value rather than worrying about the minutae of setting up a complex network.
 
-Participants will gain hands-on experience through developing an MVP for a mortgage backed security (MBS) application. The first training is scheduled to take place in November. <a href="#" class="newsletter-signup">Sign up for the Monax email list</a> to get notified when registration opens. On-premise enterprise versions of the training are available.
+# What Premium Support & Education Packages are Available?
 
-## Smart Contract Specification & Drafting
+| Packages | Discovery Package | Professional Package | Enterprise Package |
+|---|-------------------|----------------------|--------------------|
+| Subscription Length | Monthly | Monthly | Monthly |
+| Premium Support | Premium e-mail Support | Premium e-mail Support | Premium e-mail Support<br />Private Chat Support |
+| Learning Sessions | 1 seat per smart contract session<br />1 seat per platform session | 2 seats per smart contract session<br />2 seats per platform session | 1 bespoke smart contract session<br />1 bespoke platform session |
+| eris:db Permissioned Blockchain | FOSS only | 1x 4-node blockchain deployed to<br />Customer’s Azure or AWS Environment | 1x 7-node blockchain deployed to<br />Customer’s Azure or AWS Environment |
+| Qualified Customers | Businesses with less than 100 employees only | No restrictions | No restrictions |
+| Monthly Price | $2000 | [Contact Us](mailto:contact@monax.io?subject=My%20Company%20Would%20Like%20to%20Subscribe%20to%20Monax%20Premium%20Support) | [Contact Us](mailto:contact@monax.io?subject=My%20Company%20Would%20Like%20to%20Subscribe%20to%20Monax%20Premium%20Support) |
+| Early Subscriber Discount | 50% | [Contact Us](mailto:contact@monax.io?subject=My%20Company%20Would%20Like%20to%20Subscribe%20to%20Monax%20Premium%20Support) | [Contact Us](mailto:contact@monax.io?subject=My%20Company%20Would%20Like%20to%20Subscribe%20to%20Monax%20Premium%20Support) |
+| Buy Now! | <center><a href="#" class="buy-button premium-support premium-support-discovery btn btn-med btn-primary">BUY</a></center> | [Contact Us](mailto:contact@monax.io?subject=My%20Company%20Would%20Like%20to%20Subscribe%20to%20Monax%20Premium%20Support) | [Contact Us](mailto:contact@monax.io?subject=My%20Company%20Would%20Like%20to%20Subscribe%20to%20Monax%20Premium%20Support) |
 
-The Monax team has deep expertise in developing compliant smart contract applications for the world’s best companies, from bulge bracket banks to insurance conglomerates. The unique combination of technology expertise with understanding of legal processes at Monax is unparalleled in the industry and invaluable for companies with significant compliance requirements.
+# Product Specifics & FAQs
 
-We do full smart contract specification and drafting work, either in combination with your existing systems integration partner or one of Monax’ existing partner relationships. These services can range from assessing the use case and the business requirements, to designing the application architecture, to writing smart contract code.
+Monthly subscriptions can be used at any time during the period but don't roll over.
 
-Capacity for this service is limited and only available for pre-selected clients with highly interesting use cases.
+Learning sessions are a one hour online video conference where Monax’s developers will share techniques for simplifying your development time and your developers can ask the “bigger” questions which are not able to be handled in a support request.
 
-## Technical Support
+Learning sessions are conducted for many buying organizations at the same time with a maximum capacity of 15 developer seats per session. Learning sessions for POC Enterprise packages are conducted only with the buying organization’s developers and have a maximum capacity of 10 developer seats per session.
 
-Monax offers Tier-2 operational and development support to accompany the build-out process and support production-level applications. Support can range from troubleshooting solidity contracts during development, to solving network or consensus issues with PoCs or production-level applications.
+The eris:db permissioned blockchain included in POC Professional and POC Enterprise Packages is a multinode deployment of the FOSS eris:db that can be deployed into customer’s Azure or AWS environments. This can be accomplished in a variety of ways depending on your workflow and requirements. Once a POC Package is purchased, your account manager will be in touch with the options for deploying your eris:db permissioned blockchain to your development environment.
 
-Ask your technology provider today if they have a capability to provide front-line support as you iterate your applications towards production or approach us and we can connect you with one of our Monax Partners.
+Monax does not provide an SLA on the eris:db permissioned blockchain being operational, however customers may utilize their support time for Monax’s developers to help them fix problems with their blockchain.
 
-# Monax Partners Program
+Monax cannot provide legal advice.
 
-For companies to leverage the opportunities offered by blockchain, an enterprise-grade technology platform like `eris` is only part of the solution. Identifying the perfect industry use case, defining the correct requirements, building user interface and system integrations or analyzing the bottom-line benefits of your ecosystem applications is where our partners come in.
+# How to Purchase
 
-Monax has deep relationships and partnership agreements with a variety of leading technology and change management providers including PwC, EY and Deloitte as well as some of the biggest technology integrators. We also have deep relationships with a variety of public and private cloud providers. Ask your technology provider if they already have `eris` capabilities or approach us and we can connect you with one of our Monax Partners.
+If you are a startup, you can simply click the Buy button above to purchase premium support. Our account managers will ask a few questions so that we can verify that your company meets the qualification criteria for the package and then we will set up your premium support channel and register your developers for our learning sessions.
 
-If you are a technology provider and are interested in joining the Monax Partnership Program, please get in touch.
+Our packages are also fully available via the Monax partnership network. If you would like to leverage Monax's premium support & education packages to empower your ecosystem application developers please let your technology provider know, or get in touch with us directly.
 
-<a class="action-big" href="mailto:contact@monax.io">Contact With Us Today To Learn More</a>
+<center>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<a href="mailto:contact@monax.io?subject=My%20Company%20Would%20Like%20to%20Subscribe%20to%20Monax%20Premium%20Support" class="btn btn-lg btn-primary">My Company is Interested in Premium Support <i class="fa fa-check-square"></i></a>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<a href="mailto:contact@monax.io?subject=My%20Company%20Would%20Like%20to%20Resell%20Monax%20Premium%20Support" class="btn btn-lg btn-primary">My Company's Clients are Interested in Premium Support <i class="fa fa-cubes"></i></a>
+</center>

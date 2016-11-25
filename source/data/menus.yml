@@ -5,6 +5,7 @@ learn:
     - documentation
     - explainers
     - tutorials
+    - use_cases
 
 products:
   title: "Products"
@@ -29,17 +30,22 @@ tutorials:
   url: "/docs/tutorials"
   parent: "learn"
 
+use_cases:
+  title: "Use Cases"
+  url: "/use_cases"
+  parent: "learn"
+
 platform:
   title: "Platform"
   url: "/platform"
   parent: "products"
 
 library:
-  title: "Library"
+  title: "Software Development Kits"
   url: "/library"
   parent: "products"
 
 packages:
-  title: "Packages"
+  title: "Premium Support & Education"
   url: "/packages"
   parent: "products"
