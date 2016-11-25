@@ -55,3 +55,15 @@ The above diagram provides a high level overview of the different pieces of an e
 ## Services
 
 `eris services` is the gateway to unlocking services which your application needs to rely upon. `eris services` exposes a range of base operational functionality for integrating microservices into your ecosystem application.
+
+# Software Development Kits
+
+We build smart contract based SDKs that accelerate your time to market with complex ecosystem applications.
+
+<a href="/library" class="btn btn-lg btn-primary">Learn More about Monax's SDKs</a>
+
+# Premium Support & Education
+
+At Monax, we provide premium support and education packages that empower your developers to build faster.
+
+<a href="/packages" class="btn btn-lg btn-primary">Learn More about Premium Support</a>

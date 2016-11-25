@@ -69,19 +69,29 @@ $(function() {
     ------------------------------------------------------------------------
   */
   // home page only. logos carousels
-  $('.logos-carousel').owlCarousel({
-    loop:true,
-    autoplay:true,
-    autoplayHoverPause:true,
-    autoplayTimeout:5000,
-    responsive:{
-        0:{
-            items:1
-        },
-        1000:{
-            items:4
-        },
-    }
+  function random(owlSelector){
+    owlSelector.children().sort(function(){
+        return Math.round(Math.random()) - 0.5;
+    }).each(function(){
+      $(this).appendTo(owlSelector);
+    });
+  }
+
+  $('.logos-carousel').each(function() {
+    $( this ).owlCarousel({
+      loop:true,
+      autoplay:true,
+      autoplayHoverPause:true,
+      autoplayTimeout: (Math.floor(Math.random() * (8000 - 4000 + 1)) + 4000),
+      responsive:{
+          0:{
+              items:1
+          },
+          1000:{
+              items:4
+          },
+      }
+    })
   });
 
   // home page only. use cases carousels
@@ -89,7 +99,7 @@ $(function() {
     loop:true,
     autoplay:true,
     autoplayHoverPause:true,
-    autoplayTimeout:9000,
+    autoplayTimeout: (Math.floor(Math.random() * (8000 - 4000 + 1)) + 4000),
     responsive:{
         0:{
             items:1

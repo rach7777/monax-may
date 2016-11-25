@@ -5,13 +5,15 @@
 {{- $platformPage := in .File.Path "platform" -}}
 {{- $libraryPage := in .File.Path "library" -}}
 {{- $packagesPage := in .File.Path "packages" -}}
+{{- $usesPage := in .File.Path "use_cases" -}}
 {{- if $documentationPage -}}{{- $.Scratch.Set "area" "documentation" -}}
 {{- else if $tutorialsPage -}}{{- $.Scratch.Set "area" "tutorials" -}}
 {{- else if $explainersPage -}}{{- $.Scratch.Set "area" "explainers" -}}
 {{- else if $platformPage -}}{{- $.Scratch.Set "area" "platform" -}}
 {{- else if $libraryPage -}}{{- $.Scratch.Set "area" "library" -}}
+{{- else if $usesPage -}}{{- $.Scratch.Set "area" "use_cases" -}}
 {{- else if $packagesPage -}}{{- $.Scratch.Set "area" "packages" -}}{{- end -}}
-{{- $learnPage := $documentationPage | or $tutorialsPage | or $explainersPage -}}
+{{- $learnPage := $documentationPage | or $tutorialsPage | or $explainersPage | or $usesPage -}}
 {{- $productsPage := $platformPage | or $libraryPage | or $packagesPage -}}
 {{- if not $documentationPage -}}{{- $.Scratch.Set "toc" true -}}{{- end -}}
 {{- partial "header.html" . -}}

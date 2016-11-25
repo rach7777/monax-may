@@ -46,16 +46,6 @@ tyler :
     display: true
     bio: "Tyler is Monax Industries' Team Leader for Applications Team. Tyler (who also goes by Dennis Mckinnon on the internet) was a quantum information academic before co-founding Monax. He was one of the first smart contract writers to begin working on smart contract suites and contributed to early theoretical work on smart contract structure. He really exists (We think)."
 
-brian :
-    name: Brian Fabian Crain
-    title: "Head of BizDev"
-    gravatar: team-bfc.jpeg
-    twitter: crainbf
-    github: crainbf
-    keybase: crainbf
-    display: true
-    bio: "Brian is Monax Industries’ Head of Business Development and Team Leader for the Success Team. Originally from Switzerland, he studied economics, philosophy and game theory at the University of Chicago, the London School of Economics and UCL. Besides Monax, he is also co-host of the Epicenter Bitcoin podcast and runs the Bitcoin Startups Berlin meetup. According to German media, he has managed to increase the speed of sleep."
-
 jan :
     name: Jan Hendrik Scheufen
     title: "Head of Product"
@@ -210,3 +200,13 @@ dj :
     # keybase: Philanosa
     display: false
     bio: "Originally from South Africa, David has lived and worked on four continents.  He spent 15 years at Microsoft including global strategic marketing roles out of the US HQ and head of channel for Asia. He has a passion for music and spends his spare time in his studio, and is an expert on the pie plate and paint brush. He has never written a line of code but is looking forward to be convinced to do so."
+
+brian :
+    name: Brian Fabian Crain
+    title: "Head of BizDev"
+    gravatar: team-bfc.jpeg
+    twitter: crainbf
+    github: crainbf
+    keybase: crainbf
+    display: false
+    bio: "Brian is Monax Industries’ Head of Business Development and Team Leader for the Success Team. Originally from Switzerland, he studied economics, philosophy and game theory at the University of Chicago, the London School of Economics and UCL. Besides Monax, he is also co-host of the Epicenter Bitcoin podcast and runs the Bitcoin Startups Berlin meetup. According to German media, he has managed to increase the speed of sleep."
