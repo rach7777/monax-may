@@ -503,7 +503,7 @@ contract IdisContractsFTW {
 }
 ```
 
-What does this contract do? Well, it isn't very interesting, we know. It merely `gets` and `sets` a value which is an unsigned integer type. **Protip:** Get the file with `curl -X GET https://raw.githubusercontent.com/eris-ltd/coding/master/contracts/idi/idi.sol -o idi.sol` rather than copy pasting.
+What does this contract do? Well, it isn't very interesting, we know. It merely `gets` and `sets` a value which is an unsigned integer type.
 
 ## Step 3.2. Fixup your epm.yaml
 
@@ -662,8 +662,6 @@ As with all node.js applications, we will start by making a package.json. This s
   }
 }
 ```
-
-**Protip:** Get the file with `curl -X GET https://raw.githubusercontent.com/eris-ltd/coding/master/contracts/idi/package.json -o package.json` while in the same directory as the `epm.yaml`.
 
 Once you have saved your package.json then you will run (from the same directory) this command:
 
