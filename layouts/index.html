@@ -8,12 +8,7 @@
   {{- range $index, $element := .Data.Pages.ByWeight -}}
     {{- if in .File.Path "home" }}
       <!-- Intro -->
-      {{- if eq $index 4 }}<!-- hack -->
-        <div id="intro-{{ $index }}" class="callout">
-      {{- else }}
-        {{- if modBool $index 2 }}<div id="intro-{{ $index }}" class="point">{{ else }}<div id="intro-{{ $index }}" class="counterpoint">{{ end }}
-      {{- end }}
-
+      {{- if modBool $index 2 }}<div id="intro-{{ $index }}" class="point">{{ else }}<div id="intro-{{ $index }}" class="counterpoint">{{ end }}
         <!-- {{ $index }} -->
         <div class="container">
           <div class="row">
@@ -26,7 +21,7 @@
                 <div class="col-md-8 col-md-offset-2 text-center">
               {{ end -}}
                 {{- if (isset .Params "icon") }}
-                    <i class="lead-icon icon-{{ .Params.icon }}"></i>
+                  <i class="lead-icon icon-{{ .Params.icon }}"></i>
                 {{ end -}}
                 <h2>{{ .Title }}</h2>
                 <p class="lead">
@@ -58,6 +53,15 @@
       <!-- /Intro -->
     {{ end -}}
     {{ end -}}
+    <div id="contact-us" class="callout">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1 text-center">
+            {{- partial "home/contact-form.html" . -}}
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Call to Action -->
     <div id="action" class="call-to-action">
       <div class="container">
@@ -67,7 +71,7 @@
           {{- range .Site.Data.coding.cli.pms -}}
             <h4>Using {{ .name }}</h4>
             <pre><code>{{ index $.Site.Data.coding .cmd }}</code></pre>
-            <p>&nbsp</p>
+            <p>&nbsp;</p>
           {{- end -}}
           <h4>Using Another Operating System</h4>
           <a href="{{ .Site.Data.coding.cli.releases }}" class="btn btn-lg btn-primary">Download for Any System <i class="icon-arrow-down"></i></a>

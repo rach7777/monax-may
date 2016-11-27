@@ -69,14 +69,6 @@ $(function() {
     ------------------------------------------------------------------------
   */
   // home page only. logos carousels
-  function random(owlSelector){
-    owlSelector.children().sort(function(){
-        return Math.round(Math.random()) - 0.5;
-    }).each(function(){
-      $(this).appendTo(owlSelector);
-    });
-  }
-
   $('.logos-carousel').each(function() {
     $( this ).owlCarousel({
       loop:true,
@@ -108,6 +100,53 @@ $(function() {
             items:3
         },
     }
+  });
+
+  // home page only. contact us form.
+  $("#send-button").attr("disabled", false);
+  $('#error_message').hide();
+  $('#success_message').hide();
+  $("#error_message").click(function() {
+      $("#error_message").slideUp(400);
+  });
+
+  var contactUsErrorCallback = function(xhr, status, error) {
+    $("#send-button").attr("disabled", false);
+    var response = $.parseJSON(xhr.responseText);
+    var html = [];
+    $.each(response.errors.lead, function(index, error) {
+      if (/name/i.test(error.toString())) {
+        $("#name-group").addClass("has-error");
+      } else if (/email/i.test(error.toString())) {
+        $("#email-group").addClass("has-error");
+      } else {
+        html.push(error);
+      }
+    });
+    $("#error_message p").html("An error occurred. Please try again.");
+    $("#error_message").slideDown(400, function() {
+      $("#error_message input").focus();
+    });
+  };
+
+  var contactUseSuccessCallback = function(data, status, xhr) {
+    $("#contact-us form").slideUp(400, function() {
+      $("#success_message").slideDown(400);
+    });
+  };
+
+  $("#contact-us form").submit(function() {
+    $("#send-button").attr("disabled", true);
+    var data = $(this).serialize();
+    $.ajax({
+      url: this.action,
+      data: data,
+      dataType: "json",
+      type: "post",
+      error: contactUsErrorCallback,
+      success: contactUseSuccessCallback
+    });
+    return false
   });
 
   // team page

@@ -70,8 +70,8 @@ Our packages are also fully available via the Monax partnership network. If you 
 <center>
 <div>&nbsp;</div>
 <div>&nbsp;</div>
-<a href="mailto:contact@monax.io?subject=My%20Company%20Would%20Like%20to%20Subscribe%20to%20Monax%20Premium%20Support" class="btn btn-lg btn-primary">My Company is Interested in Premium Support <i class="fa fa-check-square"></i></a>
+<a href="/#contact-monax" class="btn btn-lg btn-primary">My Company is Interested in Premium Support <i class="fa fa-check-square"></i></a>
 <div>&nbsp;</div>
 <div>&nbsp;</div>
-<a href="mailto:contact@monax.io?subject=My%20Company%20Would%20Like%20to%20Resell%20Monax%20Premium%20Support" class="btn btn-lg btn-primary">My Company's Clients are Interested in Premium Support <i class="fa fa-cubes"></i></a>
+<a href="/#contact-monax" class="btn btn-lg btn-primary">My Company's Clients are Interested in Premium Support <i class="fa fa-cubes"></i></a>
 </center>
