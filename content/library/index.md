@@ -95,8 +95,8 @@ We will offer our SDKs to the general developer community in *Q2, 2017* but at t
 <center>
 <div>&nbsp;</div>
 <div>&nbsp;</div>
-<a href="mailto:contact@monax.io?subject=My%20Company%20Would%20Like%20to%20Resell%20the%20Monax%20SDKs" class="btn btn-lg btn-primary">My Company's Clients are Interested in the SDKs <i class="fa fa-cubes"></i></a>
+<a href="/#contact-monax" class="btn btn-lg btn-primary">My Company's Clients are Interested in the SDKs <i class="fa fa-cubes"></i></a>
 <div>&nbsp;</div>
 <div>&nbsp;</div>
-<a href="mailto:contact@monax.io?subject=My%20Company%20Would%20Like%20to%20Subscribe%20to%20the%20Monax%20SDKs" class="btn btn-lg btn-primary">My Company is Interested in the SDKs <i class="fa fa-check-square"></i></a>
+<a href="/#contact-monax" class="btn btn-lg btn-primary">My Company is Interested in the SDKs <i class="fa fa-check-square"></i></a>
 </center>
