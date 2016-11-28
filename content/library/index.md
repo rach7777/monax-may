@@ -18,9 +18,9 @@ Monax's Software Development Kits enable the assembly and configuration of ecosy
 
 At Monax, our Software Development Kits are our core product offering.
 
-You can always develop your application from scratch by designing and coding [smart contracts](/explainers/smart_contracts) using Solidity and the emergent industry standard Ethereum Virtual Machine (EVM) smart contract interpreter on our [permissioned blockchain](/explainers/permissioned_blockchains).
+*Monax Smart Contract SDKs* are designed and built by our cutting edge [legal engineers](/explainers/legal_engineering) and allow our customers to turn their ideas into reality much faster by shortening the learning curve, leveraging and building on top of battle-tested components, and concentrating on valuable business logic instead of application plumbing. The result is a reduced time-to-market or simply less overhead conducting POCs and other experiments.
 
-Or you can leverage Monax’s SDKs designed and built by our cutting edge [legal engineers](/explainers/legal_engineering) to reduce your time to market or experiment overhead.
+Of course, with the Eris platform you always have the choice to develop your application from scratch by designing and coding [smart contracts](/explainers/smart_contracts) using Solidity and using the emergent industry standard Ethereum Virtual Machine (EVM) smart contract interpreter on our [permissioned blockchain](/explainers/permissioned_blockchains).
 
 # Introduction
 
@@ -61,10 +61,10 @@ Monax's Logistics Software Development Kit accelerates your supply chain applica
 
 ## Add-Ons
 
-| SDK Add-Ons | Base SDK | Finance SDK | Insurance SDK | Logistics SDK |
+| | Base SDK | Finance SDK | Insurance SDK | Logistics SDK |
 |---|---|---|---|---|
 | Developer License Subscription | Monthly | Monthly | Monthly | Monthly |
-| Available Teir 1 Add-Ons | Dual Integration<br />Document Management<br />Business Process Management<br /> | Dual Integration<br />Document Management<br />Business Process Management<br /> | Dual Integration<br />Document Management<br />Business Process Management<br /> | Dual Integration<br />Document Management<br />Business Process Management<br /> |
+| Available Tier 1 Add-Ons | Dual Integration<br />Document Management<br />Business Process Management<br /> | Dual Integration<br />Document Management<br />Business Process Management<br /> | Dual Integration<br />Document Management<br />Business Process Management<br /> | Dual Integration<br />Document Management<br />Business Process Management<br /> |
 | Available Tier 2 Add-Ons | | Negotiable Instruments<br />Money Markets | Claims Management<br />Reinsurance | Asset Tracking |
 | Upcoming Add-Ons | | Asset Syndication (Q1, 17)<br />Trade Receivables (Q1, 17)<br />Asset Backed Securities(Q1, 17) | Catastrophic Bonds (Q1, 17) | Asset Syndication (Q1, 17) |
 
