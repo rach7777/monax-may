@@ -52,30 +52,8 @@ Typically premium support and education packages along with our SDKs would go to
 
 ## How to Purchase
 
-We will offer our SDKs to the general developer community in 2017 but at this time they are fully available via the Monax partnership network. If you would like to leverage Monax's cutting edge, legally compliant, software development kits to empower your ecosystem application please let your technology provider know, or get in touch with us via our contact form and our account managers will be in touch regarding pricing details.
+We will offer our SDKs to the general developer community in 2017 but at this time they are fully available via the Monax partnership network. If you would like to leverage Monax's cutting edge, legally compliant, software development kits to empower your ecosystem application please let your technology provider know, or get in touch with us via our <a href="/#contact-monax">contact form</a> and our account managers will be in touch regarding pricing details.
 
-<center>
-<div>&nbsp;</div>
-<div>&nbsp;</div>
-<a href="/?monax_viewer_type=partner&product_interest=sdk#contact-monax" class="btn btn-lg btn-primary">My Company's Clients are Interested in the SDKs <i class="fa fa-cubes"></i></a>
-<div>&nbsp;</div>
-<div>&nbsp;</div>
-<a href="/?monax_viewer_type=end_user&product_interest=sdk#contact-monax" class="btn btn-lg btn-primary">My Company is Interested in the SDKs <i class="fa fa-check-square"></i></a>
-</center>
-<div>&nbsp;</div>
-<div>&nbsp;</div>
-We will offer our premium support and education packages to the general developer community in 2017 but at this time they are available via the Monax partnership network. If you would like to leverage Monax's premium support and education packages to empower your ecosystem application developers please let your technology provider know, or get in touch via our contact form and our account managers will be in touch regarding pricing details.
-
-<center>
-<div>&nbsp;</div>
-<div>&nbsp;</div>
-<a href="/?monax_viewer_type=end_user&product_interest=premium_support#contact-monax" class="btn btn-lg btn-primary">My Company is Interested in Premium Support <i class="fa fa-check-square"></i></a>
-<div>&nbsp;</div>
-<div>&nbsp;</div>
-<a href="/?monax_viewer_type=partner&product_interest=premium_support#contact-monax" class="btn btn-lg btn-primary">My Company's Clients are Interested in Premium Support <i class="fa fa-cubes"></i></a>
-</center>
-<div>&nbsp;</div>
-<div>&nbsp;</div>
-After your order is processed, we will ask a few questions to verify that your company meets the qualification criteria (if necessary) for the package and then we will set up your premium support channel, register your developers for our learning sessions, and understand how you would like your eris:db Permissioned Blockchain Network provisioned.
+We will offer our premium support and education packages to the general developer community in 2017 but at this time they are available via the Monax partnership network. If you would like to leverage Monax's premium support and education packages to empower your ecosystem application developers please let your technology provider know, or get in touch via our <a href="/#contact-monax">contact form</a> and our account managers will be in touch regarding pricing details.
 
 [(Photo credit: CC-BY: Pedro Ribeiro Simões @ Flickr )](https://www.flickr.com/photos/pedrosimoes7/)
