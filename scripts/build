@@ -36,7 +36,6 @@ then
   buildr=true
 fi
 
-
 if $buildr
 then
   docker rmi site_buildr &>/dev/null
