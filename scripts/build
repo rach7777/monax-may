@@ -40,9 +40,9 @@ if $buildr
 then
   docker rmi site_buildr &>/dev/null
   set -e
-  docker build -t site_buildr . --no-cache
+  docker build --no-cache -t site_buildr .
   set +e
 fi
 
 docker rmi site &>/dev/null
-docker build -t site -f "Dockerfile.$site" . --no-cache
+docker build --no-cache -t site -f "Dockerfile.$site" .
