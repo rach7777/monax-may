@@ -46,3 +46,4 @@ fi
 
 docker rmi site &>/dev/null
 docker build --no-cache -t site -f "Dockerfile.$site" .
+
