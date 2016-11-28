@@ -12,9 +12,9 @@ menu:
 
 ---
 
-<p style="background:black; color:white; font-family:'Courier New', Courier, monospace; padding: 0.5em; border-radius: 5px;">
+```
 Monax's Software Development Kits enable the assembly and configuration of ecosystem application infrastructure and business processes.
-</p>
+```
 
 At Monax, our Software Development Kits are our core product offering.
 
