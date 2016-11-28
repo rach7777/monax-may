@@ -41,11 +41,8 @@ Third, there are a range of operational considerations which come into play when
 | Subscription Length | Monthly | Monthly | Monthly |
 | Premium Support | Premium e-mail Support | Premium e-mail Support | Premium e-mail Support<br />Private Chat Support |
 | Learning Sessions | 1 seat per smart contract session<br />1 seat per platform session | 2 seats per smart contract session<br />2 seats per platform session | 1 bespoke smart contract session<br />1 bespoke platform session |
-| eris:db Permissioned Blockchain | FOSS only | 1x 4-node blockchain deployed to<br />Customer’s Azure or AWS Environment | 1x 7-node blockchain deployed to<br />Customer’s Azure or AWS Environment |
+| eris:db Permissioned Blockchain Network | FOSS only | 1x 4-node blockchain deployed to<br />Customer’s Azure or AWS Environment | 1x 7-node blockchain deployed to<br />Customer’s Azure or AWS Environment |
 | Qualified Customers | Businesses with less than 100 employees only | No restrictions | No restrictions |
-| Monthly Price | $2000 | [Contact Us](mailto:contact@monax.io?subject=My%20Company%20Would%20Like%20to%20Subscribe%20to%20Monax%20Premium%20Support) | [Contact Us](mailto:contact@monax.io?subject=My%20Company%20Would%20Like%20to%20Subscribe%20to%20Monax%20Premium%20Support) |
-| Early Subscriber Discount | 50% | [Contact Us](mailto:contact@monax.io?subject=My%20Company%20Would%20Like%20to%20Subscribe%20to%20Monax%20Premium%20Support) | [Contact Us](mailto:contact@monax.io?subject=My%20Company%20Would%20Like%20to%20Subscribe%20to%20Monax%20Premium%20Support) |
-| Buy Now! | <center><a href="#" class="buy-button premium-support premium-support-discovery btn btn-med btn-primary">BUY</a></center> | [Contact Us](mailto:contact@monax.io?subject=My%20Company%20Would%20Like%20to%20Subscribe%20to%20Monax%20Premium%20Support) | [Contact Us](mailto:contact@monax.io?subject=My%20Company%20Would%20Like%20to%20Subscribe%20to%20Monax%20Premium%20Support) |
 
 # Product Specifics & FAQs
 
@@ -63,15 +60,19 @@ Monax cannot provide legal advice.
 
 # How to Purchase
 
-If you are a startup, you can simply click the Buy button above to purchase premium support. Our account managers will ask a few questions so that we can verify that your company meets the qualification criteria for the package and then we will set up your premium support channel and register your developers for our learning sessions.
-
-Our packages are also fully available via the Monax partnership network. If you would like to leverage Monax's premium support & education packages to empower your ecosystem application developers please let your technology provider know, or get in touch with us directly.
+We will offer our premium support and education packages to the general developer community in 2017 but at this time they are available via the Monax partnership network. If you would like to leverage Monax's premium support and education packages to empower your ecosystem application developers please let your technology provider know, or get in touch via our contact form and our account managers will be in touch regarding pricing details.
 
 <center>
 <div>&nbsp;</div>
 <div>&nbsp;</div>
-<a href="/#contact-monax" class="btn btn-lg btn-primary">My Company is Interested in Premium Support <i class="fa fa-check-square"></i></a>
+<a href="/?monax_viewer_type=end_user&product_interest=premium_support#contact-monax" class="btn btn-lg btn-primary">My Company is Interested in Premium Support <i class="fa fa-check-square"></i></a>
 <div>&nbsp;</div>
 <div>&nbsp;</div>
-<a href="/#contact-monax" class="btn btn-lg btn-primary">My Company's Clients are Interested in Premium Support <i class="fa fa-cubes"></i></a>
+<a href="/?monax_viewer_type=partner&product_interest=premium_support#contact-monax" class="btn btn-lg btn-primary">My Company's Clients are Interested in Premium Support <i class="fa fa-cubes"></i></a>
 </center>
+
+After your order is processed, we will ask a few questions to verify that your company meets the qualification criteria (if necessary) for the package and then we will set up your premium support channel, register your developers for our learning sessions, and understand how you would like your eris:db Permissioned Blockchain Network provisioned.
+
+# What are the Use Cases for Ecosystem Applications?
+
+{{% use_case_selector %}}
