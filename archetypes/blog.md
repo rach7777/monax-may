@@ -14,7 +14,6 @@ tags:
   - TAG2
 
 # use if needed
-layout:    post
 published: true
 comments:  true
 meta:      true
