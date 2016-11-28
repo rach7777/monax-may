@@ -39,5 +39,5 @@ Risk assets are becoming increasingly securitized and sold off into private mark
 
 As with assets from the finance world, servicing of these assets throughout their lifecycle can be more effectively and efficiently managed via an ecosystem application than via a single company's silo. This is because there are numerous entities that are typically involved in servicing of such assets and the information about any one asset is complex and often requires a huge reconciliation cost. These are some of the key foundational elements for a good ecosystem application.
 
-If you are in the risk asset management space and are interested in providing ecosystem application based, automated asset servicing for the complex assets your firm deals in, please get in touch as we would love to discuss how Monax's [platform](/products), [products](/library), and [services](/packages) can be brought bear in the building of next generation risk asset management products.
+If you are in the risk asset management space and are interested in providing ecosystem application based, automated asset servicing for the complex assets your firm deals in, please get in touch as we would love to discuss how Monax's [platform](/platform), [products](/library), and [services](/packages) can be brought bear in the building of next generation risk asset management products.
 
