@@ -22,7 +22,7 @@ meta:      true
 
 My post starts here.
 
-[{{< image_blog asdf.png >}}](https://www.flickr.com/photos/adulau/5A9EER)
+[{{< image_blog "asdf.png" >}}](https://www.flickr.com/photos/adulau/5A9EER)
 
 ```js
 my_code_goes_here

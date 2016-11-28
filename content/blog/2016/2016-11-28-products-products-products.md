@@ -20,7 +20,7 @@ meta:      true
 
 ---
 
-[{{< image_blog new_products.jpg >}}](https://www.flickr.com/photos/pedrosimoes7/22907730574/)
+[{{< image_blog "new_products.jpg" >}}](https://www.flickr.com/photos/pedrosimoes7/22907730574/)
 
 Monax was the first company to market with a permissionable blockchain in December, 2014, and since that time we have been industry leaders in the [industrial applications of ecosystem application](/use_cases) technology. Since that time we have focused on improving the design and implementation of our ecosystem application [platform](/platform) as well as building sustainable product suite that would be capable of growing over time and also meeting the demands of a complex, fast-moving market.
 
