@@ -110,6 +110,62 @@ $(function() {
       $("#error_message").slideUp(400);
   });
 
+  function getParameterByName(name) {
+      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+      return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+  }
+
+  function matchClicked(ele_parent, ele_id) {
+    if ($(`#${ele_parent}`).is(':not(:checked)')) {
+      $(`#${ele_id}`).prop('checked', false);
+    } else {
+      $(`#${ele_id}`).prop('checked', true);
+    }
+  }
+
+  if (getParameterByName("product_interest") == "premium_support") {
+    $(`#user`).prop('checked', true);
+    if (getParameterByName("monax_viewer_type") == "end_user") {
+      $(`#end_user`).prop('checked', true);
+      $(`#end_user_premium_support`).prop('checked', true);
+    } else if (getParameterByName("monax_viewer_type") == "partner") {
+      $(`#partner`).prop('checked', true);
+      $("#partner_premium_support").prop('checked', true);
+    }
+    $('#full_name').focus();
+  }
+
+  if (getParameterByName("product_interest") == "sdk") {
+    if (getParameterByName("monax_viewer_type") == "end_user") {
+      $(`#end_user`).prop('checked', true);
+      $(`#end_user_sdk`).prop('checked', true);
+    } else if (getParameterByName("monax_viewer_type") == "partner") {
+      $(`#partner`).prop('checked', true);
+      $("#partner_sdk").prop('checked', true);
+    }
+    $('#full_name').focus();
+  }
+
+  $("#partner_premium_support").click(function() {
+    matchClicked("partner_premium_support", "partner");
+    matchClicked("partner_premium_support", "user");
+  });
+
+  $("#end_user_premium_support").click(function() {
+    matchClicked("end_user_premium_support", "user");
+    matchClicked("end_user_premium_support", "end_user");
+  });
+
+  $("#end_user_sdk").click(function() {
+    matchClicked("end_user_sdk", "end_user");
+  });
+
+  $("#partner_sdk").click(function() {
+    matchClicked("partner_sdk", "partner");
+  })
+
   var contactUsErrorCallback = function(xhr, status, error) {
     $("#send-button").attr("disabled", false);
     var response = $.parseJSON(xhr.responseText);

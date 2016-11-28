@@ -28,7 +28,7 @@ Developers and devOps who use [blockchains](/explainers/blockchains), [smart con
 
 # Overview of an Ecosystem Application
 
-{{< lucidchart "c9c45723-6780-475b-8b20-fff15edc6b29" >}}
+{{< lucidchart "0d616eb8-72ae-4216-b901-6915c3ff33b8" >}}
 
 The above diagram provides a high level overview of the different pieces of an ecosystem application. The green boxes are part of the `eris` technology stack while purple represents external services managed by `eris`.
 
@@ -67,3 +67,7 @@ We build smart contract based SDKs that accelerate your time to market with comp
 At Monax, we provide premium support and education packages that empower your developers to build faster.
 
 <a href="/packages" class="btn btn-lg btn-primary">Learn More about Premium Support</a>
+
+# What is the Platform Used For?
+
+{{% use_case_selector %}}
