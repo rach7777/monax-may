@@ -69,6 +69,8 @@ We will offer our premium support and education packages to the general develope
 <div>&nbsp;</div>
 <div>&nbsp;</div>
 <a href="/?monax_viewer_type=partner&product_interest=premium_support#contact-monax" class="btn btn-lg btn-primary">My Company's Clients are Interested in Premium Support <i class="fa fa-cubes"></i></a>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
 </center>
 
 After your order is processed, we will ask a few questions to verify that your company meets the qualification criteria (if necessary) for the package and then we will set up your premium support channel, register your developers for our learning sessions, and understand how you would like your eris:db Permissioned Blockchain Network provisioned.

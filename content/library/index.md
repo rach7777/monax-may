@@ -99,6 +99,8 @@ We will offer our SDKs to the general developer community in 2017 but at this ti
 <div>&nbsp;</div>
 <div>&nbsp;</div>
 <a href="/?monax_viewer_type=end_user&product_interest=sdk#contact-monax" class="btn btn-lg btn-primary">My Company is Interested in the SDKs <i class="fa fa-check-square"></i></a>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
 </center>
 
 # What are the Use Cases for Ecosystem Applications?

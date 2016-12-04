@@ -21,10 +21,10 @@ There are four steps need to get moving with Eris:
 
 # Step 1. Install the Eris Platform
 
-**Dependencies**: `eris` has 2 dependencies: [Docker](https://www.docker.com/) and [Docker Machine](https://https://docs.docker.com/machine/). Docker is a run anywhere container solution which makes development, deployment, testing, and running of ecosystem applications a breeze and Docker Machine 
+**Dependencies**: `eris` has 2 dependencies: [Docker](https://www.docker.com/) and [Docker Machine](https://https://docs.docker.com/machine/). Docker is a run anywhere container solution which makes development, deployment, testing, and running of ecosystem applications a breeze and Docker Machine
 allows you to run Docker on remote machines. For Linux, Docker Machine dependency is optional but recommended.
 
-Currently we consider the most workable setup to be (what our tests consider authoritative) with these operating system and dependencies' versions: 
+Currently we consider the most workable setup to be (what our tests consider authoritative) with these operating system and dependencies' versions:
 
 * Host OS = {{< data_coding authoritative_os >}}
 * Docker = {{< data_coding docker_auth >}}
@@ -112,7 +112,7 @@ curl -L https://github.com/eris-ltd/eris-cli/releases/download/v0.12.0/eris_0.12
 chmod +x eris
 ```
 
-If you don't want to utilize Docker Toolbox, you can install those manually: follow [these](https://docs.docker.com/installation/) instructions to install Docker, [these](https://docs.docker.com/machine/install-machine/#installing-machine-directly) to install Docker Machine, and [these](https://www.virtualbox.org/wiki/Downloads) to install VirtualBox. 
+If you don't want to utilize Docker Toolbox, you can install those manually: follow [these](https://docs.docker.com/installation/) instructions to install Docker, [these](https://docs.docker.com/machine/install-machine/#installing-machine-directly) to install Docker Machine, and [these](https://www.virtualbox.org/wiki/Downloads) to install VirtualBox.
 
 If you have chosen not to use Docker Toolbox at all, you need to create an Eris virtual machine and put the latter (`eval`) command into your `~/.bashrc` file:
 
@@ -133,16 +133,16 @@ eris init
 
 ### Windows
 
-We **highly recommend** that you utilize [Chocolatey](https://chocolatey.org) to install `eris`. Docker,  Docker Machine, VirtualBox, and `eris` binary will be properly installed with: 
+We **highly recommend** that you utilize [Chocolatey](https://chocolatey.org) to install `eris`. Docker,  Docker Machine, VirtualBox, and `eris` binary will be properly installed with:
 
 ```bash
 {{< data_coding choco >}}
 ```
 
-If you are not a `choco` user then please install Docker, Docker Machine, and VirtualBox by downloading the [Docker Toolbox](https://www.docker.com/products/docker-toolbox) and Eris binary from the [Release](https://github.com/eris-ltd/eris-cli/releases) page. 
+If you are not a `choco` user then please install Docker, Docker Machine, and VirtualBox by downloading the [Docker Toolbox](https://www.docker.com/products/docker-toolbox) and Eris binary from the [Release](https://github.com/eris-ltd/eris-cli/releases) page.
 Make sure you put the binary under one of the paths in your `%PATH%` variable.
 
-If you don't want to utilize Docker Toolbox, you can install those manually: follow [these](https://docs.docker.com/installation/) instructions to install Docker, [these](https://docs.docker.com/machine/install-machine/#installing-machine-directly) to install Docker Machine, and [these](https://www.virtualbox.org/wiki/Downloads) to install VirtualBox. 
+If you don't want to utilize Docker Toolbox, you can install those manually: follow [these](https://docs.docker.com/installation/) instructions to install Docker, [these](https://docs.docker.com/machine/install-machine/#installing-machine-directly) to install Docker Machine, and [these](https://www.virtualbox.org/wiki/Downloads) to install VirtualBox.
 
 (You'll want to run `eris` commands either from `git bash` or from the `Docker Quickstart Terminal`, a part of Docker Toolbox. If you prefer to use the `cmd` as your shell, you still can: every command should work as expected, though all the tutorials will assume that you are using the `Docker Quickstart Terminal` and are structured to support **only** that environment.)
 
@@ -186,7 +186,7 @@ If you have any errors which arise during the installation process, please see o
 If you want to create your blockchain it is very easy.
 
 ```bash
-eris chains make test_chain 
+eris chains make test_chain
 eris chains start test_chain
 ```
 
@@ -624,6 +624,12 @@ That will make sure we have available the address we would like to use to deploy
 eris pkgs do --chain simplechain --address $addr
 ```
 
+**N.B.**: For users still on eris version 0.11.X series please add the following:
+
+```bash
+eris pkgs do --chain simplechain --address $addr --compiler https://compilers.monax.io:10114
+```
+
 You *should* be able to use any of the addresses you generated during the chainmaking tutorial since they all have the same permission levels on the chain (which, if you followed the simple tutorial are basically all public). If you are using this tutorial outside of the tutorial sequence then you can just give it the address that you'd like to use to sign transactions instead of the `grep simplechain_full_000` bash expansion.
 
 (For those that do not know what is happening in that bash line: `cat` is used to "print the file" and "pipe" it into the second command; `grep` is a finder tool which will find the line which has the right name we want to use; the `cut` says split the line at the `,` and give me the first field).
@@ -866,9 +872,9 @@ Congratulations, you've just made your very own smart contract backed applicatio
 [^6]: If you have an error complaining about not being able to reach the compiler service, like this:
 
     ```irc
-    failed to send HTTP request Post https://compilers.eris.industries:10114/compile: dial tcp: i/o timeout
+    failed to send HTTP request Post https://compilers.monax.io:10114/compile: dial tcp: i/o timeout
     Error compiling contracts
-    Post https://compilers.eris.industries:10114/compile: dial tcp: i/o timeout
+    Post https://compilers.monax.io:10114/compile: dial tcp: i/o timeout
     ```
 
     Then that means one of the following:
