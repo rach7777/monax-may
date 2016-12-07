@@ -132,18 +132,18 @@ The [Eris Platform](https://monax.io/blog/2016/04/03/wtf-is-eris/) is a free and
 [Eris:DB](https://monax.io/components/erisdb/) is the permissioned blockchain implementation (see [Permissioned Blockchains](#permissioned) above) based on the [Ethereum](https://www.ethereum.org/) Virtual Machine for smart contract execution and [Tendermint](http://tendermint.com/) for efficient, non-forking [PBFT](http://tendermint.com/posts/tendermint-vs-pbft/) consensus. The application consists of a number of service modules facilitating the interaction with the LEI blockchain, i.e. providing access to data on the chain as well as allowing the application to react to events in the network. Furthermore, a distributed data store is used to redundantly store the entire legal entity record. Note that the smart contract only contains the LEI itself, the data fields used in the smart contract logic, as well as the reference hash to the stored record. All legal entity data is also kept in a traditional database that functions as a cache and is kept in sync with the state registered in the blockchain. This supports the ability to index and search the content.
 Essentially, this application (in its intended final state) would behave the same way and provide the same services as the GLEIF's global search capacity combined with an LOU's registration and maintenance capability (if the peer owner has been permissioned with a write access role!), but running distributed on all nodes of the network instead of a centralized server. ... Good bye backups, fail-over, and disaster recovery! You're welcome DevOps!
 
-The following sections outline the stages that can enhance and eventually transform the existing LEI system to a distributed ledger. Stages 1-3 are designed to be completely non-disruptive to the current LEI system. During these stages the LEI Global Ledger is operated in parallel to the existing infrastructure with increasing effort and inclusion of participants. This allows interested parties to share in the experience of a live blockchain application with real data; all with a minimal investment and no risk. Stage 4 (and beyond) requires definite buy-in and sponsorship by the stakeholders of the LEI eco-system due to the declared intention to eventually replace the current centralized infrastructure with a distributed, blockchain-based one.
+The following sections outline the stages that can enhance and eventually transform the existing LEI system to a distributed ledger. Stages 1-3 are designed to be completely non-disruptive to the current LEI system. During these stages the LEI Global Ledger is operated in parallel to the existing LEI infrastructure (sometimes referred to as a _shadow chain_) with each stage increasing the effort and inclusion of participants. This allows interested parties to share in the experience of a live blockchain application with real data; all with a minimal investment and no risk. Stage 4 (and beyond) requires definite buy-in and sponsorship by the stakeholders of the LEI eco-system due to the declared intention to eventually replace the current centralized infrastructure with a distributed, blockchain-based one.
 <a name="stage1"></a>
 
 ### Stage 1
 
-The global LEI data is freely available for download and an update is published daily. In this first stage there is no buy-in or support from any participant in the existing system. Eris Industries is responsible for downloading the daily updates and cryptographically signing the transactions that push these updates into the LEI ledger.
+The global LEI data is freely available for download and an update is published daily. In this first stage there is no buy-in or support from any participant in the existing system. Monax Industries is responsible for downloading the daily updates and cryptographically signing the transactions that push these updates into the LEI ledger.
 
 {{< image_blog "LEI-Net-Phase-1.png" >}}
 
 The immediate effect for any consumer operating a 'read-only' peer is that access to LEI data is changed from a *pull* to a *push* mechanism.
 
-This stage has been implemented by Eris Industries! Please see the [end of the article](#getinvolved) for instructions how to participate.
+This stage has been implemented by Monax Industries! Please see the [end of the article](#getinvolved) for instructions how to participate.
 
 ### Stage 2
 
@@ -194,7 +194,7 @@ Verifiable public data in a trusted, distributed, participatory infrastructure c
 If you're interested in this use case and its implementation, e.g. if you'd like to experiment with a read-only peer node or want to develop a business case out of this solution, please don't hesitate to contact Monax Industries via [email](mailto:contact@monax.io) or Twitter handle [@eris_ltd](https://twitter.com/eris_ltd). Please voice your opinion (good or bad) and feedback on this article by tweeting it with the hashtag `#leiledger`.
 
 We are going to collect requests by interested parties and intend to make the `LEI Net Service` available as part of one of the next Eris Platform releases.
-The smart contracts controlling the LEI lifecycle and workflow can be used as the basis to implement similar data repositories. They are being made available to subscribers of the [*Eris Contracts Library*](https://monax.io/products/).
+The smart contracts controlling the LEI lifecycle and workflow can be used as the basis to implement similar data repositories. They are being made available to subscribers of the [*Monax Smart Contracts SDKs*](https://monax.io/library/).
 
 <span style="font-size: smaller;">Disclaimer: Diagram graphics by [Timothy Morgan](https://www.flickr.com/photos/timothymorgan/sets/1615269) redistributed under [CC License](https://creativecommons.org/licenses/by/2.0/)</span>
 
