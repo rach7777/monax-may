@@ -134,7 +134,7 @@ $(function() {
       $(`#partner`).prop('checked', true);
       $("#partner_premium_support").prop('checked', true);
     }
-    $('#full_name').focus();
+    $('#first_name').focus();
   }
 
   if (getParameterByName("product_interest") == "sdk") {
@@ -145,7 +145,7 @@ $(function() {
       $(`#partner`).prop('checked', true);
       $("#partner_sdk").prop('checked', true);
     }
-    $('#full_name').focus();
+    $('#first_name').focus();
   }
 
   $("#partner_premium_support").click(function() {
