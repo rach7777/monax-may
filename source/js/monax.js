@@ -134,7 +134,7 @@ $(function() {
       $(`#partner`).prop('checked', true);
       $("#partner_premium_support").prop('checked', true);
     }
-    $('#full_name').focus();
+    $('#first_name').focus();
   }
 
   if (getParameterByName("product_interest") == "sdk") {
@@ -145,7 +145,7 @@ $(function() {
       $(`#partner`).prop('checked', true);
       $("#partner_sdk").prop('checked', true);
     }
-    $('#full_name').focus();
+    $('#first_name').focus();
   }
 
   $("#partner_premium_support").click(function() {
@@ -171,8 +171,10 @@ $(function() {
     var response = $.parseJSON(xhr.responseText);
     var html = [];
     $.each(response.errors.lead, function(index, error) {
-      if (/name/i.test(error.toString())) {
-        $("#name-group").addClass("has-error");
+      if (/first/i.test(error.toString())) {
+        $("#first-name-group").addClass("has-error");
+      } else if (/last/i.test(error.toString())) {
+        $("#last-name-group").addClass("has-error");
       } else if (/email/i.test(error.toString())) {
         $("#email-group").addClass("has-error");
       } else {
@@ -186,12 +188,12 @@ $(function() {
   };
 
   var contactUseSuccessCallback = function(data, status, xhr) {
-    $("#contact-us form").slideUp(400, function() {
+    $("#contact-monax form").slideUp(400, function() {
       $("#success_message").slideDown(400);
     });
   };
 
-  $("#contact-us form").submit(function() {
+  $("#contact-monax form").submit(function() {
     $("#send-button").attr("disabled", true);
     var data = $(this).serialize();
     $.ajax({
