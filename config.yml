@@ -1,7 +1,7 @@
 # ----------------------- #
 #      Main Configs       #
 # ----------------------- #
-baseurl: "https://localhost:1313"
+baseurl: "http://localhost"
 # baseurl: "https://monax.io"
 title: "Monax"
 languageCode: "en-us"
