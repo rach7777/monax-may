@@ -125,6 +125,21 @@ $(function() {
     }
   }
 
+  function getCookie(cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for(var i = 0; i <ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+              c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+          }
+      }
+      return "";
+  }
+
   if (getParameterByName("product_interest") == "premium_support") {
     $(`#user`).prop('checked', true);
     if (getParameterByName("monax_viewer_type") == "end_user") {
@@ -168,22 +183,25 @@ $(function() {
 
   var contactUsErrorCallback = function(xhr, status, error) {
     $("#send-button").attr("disabled", false);
-    var response = $.parseJSON(xhr.responseText);
-    var html = [];
-    $.each(response.errors.lead, function(index, error) {
-      if (/first/i.test(error.toString())) {
-        $("#first-name-group").addClass("has-error");
-      } else if (/last/i.test(error.toString())) {
-        $("#last-name-group").addClass("has-error");
-      } else if (/email/i.test(error.toString())) {
-        $("#email-group").addClass("has-error");
-      } else {
-        html.push(error);
-      }
-    });
-    $("#error_message p").html("An error occurred. Please try again.");
-    $("#error_message").slideDown(400, function() {
-      $("#error_message input").focus();
+    // var response = $.parseJSON(xhr.responseText);
+    // var html = [];
+    // $.each(response.errors.lead, function(index, error) {
+    //   if (/first/i.test(error.toString())) {
+    //     $("#first-name-group").addClass("has-error");
+    //   } else if (/last/i.test(error.toString())) {
+    //     $("#last-name-group").addClass("has-error");
+    //   } else if (/email/i.test(error.toString())) {
+    //     $("#email-group").addClass("has-error");
+    //   } else {
+    //     html.push(error);
+    //   }
+    // });
+    // $("#error_message p").html("An error occurred. Please try again.");
+    // $("#error_message").slideDown(400, function() {
+    //   $("#error_message input").focus();
+    // });
+    $("#contact-monax form").slideUp(400, function() {
+      $("#success_message").slideDown(400);
     });
   };
 
@@ -195,7 +213,8 @@ $(function() {
 
   $("#contact-monax form").submit(function() {
     $("#send-button").attr("disabled", true);
-    var data = $(this).serialize();
+    $("#00N4100000KxGSr").val(getCookie("_jsuid"));
+    console.log(data)
     $.ajax({
       url: this.action,
       data: data,
