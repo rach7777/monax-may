@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: lib/network.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: lib/network.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @file network.js
+ * @fileOverview Factory module for the Network class.
+ * @author Andreas Olofsson (andreas@erisindustries.com)
+ * @module network
+ */
+'use strict';
+
+var util = require('./util');
+var nUtil = require('util');
+
+/**
+ * Create a new instance of the Network class.
+ *
+ * @param {module:rpc/client~Client} client - The client object.
+ * @returns {Network} - A new instance of the Network class.
+ */
+exports.createInstance = function(server){
+    return new Network(server);
+};
+
+/**
+ * Network has methods that deals with the peer-to-peer network.
+ *
+ * @param {module:rpc/client~Client} client - The client object.
+ * @augments module:util~ComponentBase
+ * @constructor
+ */
+function Network(server){
+    util.ComponentBase.call(this, server);
+}
+
+nUtil.inherits(Network, util.ComponentBase);
+
+/**
+ * Get the network info.
+ *
+ * @param {module:rpc/rpc~methodCallback} callback - The callback function.
+ */
+Network.prototype.getInfo = function(callback){
+    this.server.getNetworkInfo(callback)
+};
+
+/**
+ * Get the client version
+ *
+ * @param {module:rpc/rpc~methodCallback} callback - The callback function.
+ */
+Network.prototype.getClientVersion = function(callback){
+    this.server.getClientVersion(callback)
+};
+
+/**
+ * Get the moniker
+ *
+ * @param {module:rpc/rpc~methodCallback} callback - The callback function.
+ */
+Network.prototype.getMoniker = function(callback){
+    this.server.getMoniker(callback)
+};
+
+/**
+ * Check if the node is listening for new peers.
+ *
+ * @param {module:rpc/rpc~methodCallback} callback - The callback function.
+ */
+Network.prototype.isListening = function(callback){
+    this.server.isListening(callback)
+};
+
+/**
+ * Get the list of network listeners.
+ *
+ * @param {module:rpc/rpc~methodCallback} callback - The callback function.
+ */
+Network.prototype.getListeners = function(callback){
+    this.server.getListeners(callback)
+};
+
+/**
+ * Get a list of all connected peers.
+ *
+ * @param {module:rpc/rpc~methodCallback} callback - The callback function.
+ */
+Network.prototype.getPeers = function(callback){
+    this.server.getPeers(callback)
+};
+
+/**
+ * Get a single peer based on their address.
+ * @param {string} address - The IP address of the peer. // TODO
+ * @param {module:rpc/rpc~methodCallback} callback - The callback function.
+ */
+Network.prototype.getPeer = function(address, callback){
+    this.server.getPeer({address}, callback)
+};
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-accounts.html">accounts</a></li><li><a href="module-blockchain.html">blockchain</a></li><li><a href="module-consensus.html">consensus</a></li><li><a href="module-erisdb.html">erisdb</a></li><li><a href="module-index.html">index</a></li><li><a href="module-namereg.html">namereg</a></li><li><a href="module-network.html">network</a></li><li><a href="module-transactions.html">transactions</a></li><li><a href="module-unsafe.html">unsafe</a></li><li><a href="module-util.html">util</a></li><li><a href="module-validation.html">validation</a></li></ul><h3>Classes</h3><ul><li><a href="module-accounts-Accounts.html">Accounts</a></li><li><a href="module-blockchain-BlockChain.html">BlockChain</a></li><li><a href="module-consensus-Consensus.html">Consensus</a></li><li><a href="module-consensus-Events.html">Events</a></li><li><a href="module-consensus-EventSub.html">EventSub</a></li><li><a href="module-consensus-HttpEventSub.html">HttpEventSub</a></li><li><a href="module-consensus-WsEventSub.html">WsEventSub</a></li><li><a href="module-erisdb-ErisDB.html">ErisDB</a></li><li><a href="module-namereg-NameReg.html">NameReg</a></li><li><a href="module-network-Network.html">Network</a></li><li><a href="module-transactions-Transactions.html">Transactions</a></li><li><a href="module-unsafe-Unsafe.html">Unsafe</a></li><li><a href="module-util-ComponentBase.html">ComponentBase</a></li><li><a href="module-util-UnsafeComponentBase.html">UnsafeComponentBase</a></li><li><a href="module-validation-CallValidator.html">CallValidator</a></li><li><a href="module-validation-SinglePolicyValidator.html">SinglePolicyValidator</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Sat Dec 24 2016 00:37:02 GMT+0000 (UTC)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
