@@ -64,7 +64,7 @@ blackfriday:
   # html stuff
   hrefTargetBlank: true
   plainIDAnchors: true
-  sourceRelativeLinksEval: true
+  sourceRelativeLinksEval: false
 
   # extensions to use -> https://github.com/russross/blackfriday/blob/master/markdown.go
   extensions:
