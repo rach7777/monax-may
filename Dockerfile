@@ -1,12 +1,14 @@
 FROM quay.io/eris/build
 MAINTAINER Eris Industries <support@erisindustries.com>
 
-ENV HUGO_VERSION=0.16
+# ENV HUGO_VERSION=v0.19.0
+# note 0.18.1 has a build error and 0.19.0 where that will be fixed isn't released yet
+ENV HUGO_VERSION=master
 
 RUN apk add --no-cache openssh automake autoconf nasm zlib-dev g++ make python nodejs && \
   go get github.com/spf13/hugo && \
   cd $GOPATH/src/github.com/spf13/hugo && \
-  git checkout v$HUGO_VERSION && \
+  git checkout $HUGO_VERSION && \
   go build -o $INSTALL_BASE/hugo . && \
   go get github.com/campoy/embedmd && \
   cd $GOPATH/src/github.com/campoy/embedmd && \
