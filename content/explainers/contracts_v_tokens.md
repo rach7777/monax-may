@@ -39,9 +39,9 @@ For these reasons, at Eris we feel that smart contracts represent a massive leap
 
 # The Flexibility of Smart Contracts
 
-When one deals with a tokenized approach generally one is taking business logic and putting into a set of blockchain clients all connected to the same blockchain network. Distributing changes to the business logic required that the entire network accept those changes and update their blockchain clients.
+When one deals with a tokenized approach generally one is taking business logic and putting into a set of blockchain nodes all connected to the same blockchain network. Distributing changes to the business logic required that the entire network accept those changes and update their blockchain nodes.
 
-In a logic optimized blockchain client and its relevant network one simply needs to deploy smart contracts via one connected blockchain client to update the business logic of the application.
+In a logic optimized blockchain node and its relevant network one simply needs to deploy smart contracts via one connected blockchain node to update the business logic of the application.
 
 This is a massive boon for flexibility; particularly while prototyping quick solutions.
 

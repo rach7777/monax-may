@@ -15,11 +15,11 @@ menu:
 
 # Introduction
 
-`eris:db` is Monax's blockchain client.
+`eris:db` is Monax's blockchain node.
 
-It is a controllable (permissionable), smart contract-enabled, proof-of-stake based blockchain design. `eris:db` can be configured to work with a wide variety of individual blockchain networks. As such, it was, and continues to be, the first blockchain client designed from the ground up to be a multi-network blockchain client.
+It is a controllable (permissionable), smart contract-enabled, proof-of-stake based blockchain design. `eris:db` can be configured to work with a wide variety of individual blockchain networks. As such, it was, and continues to be, the first blockchain node designed from the ground up to be a multi-network blockchain node.
 
-Developers who use an `eris:db` blockchain client along with the `eris` platform to manage their blockchains are able to benefit from having an access control layer through the use of smart contracts and our permission layer.
+Developers who use an `eris:db` blockchain node along with the `eris` platform to manage their blockchains are able to benefit from having an access control layer through the use of smart contracts and our permission layer.
 
 `eris:db` was designed for deployment in a variety of contexts, from internal enterprise deployments, to federated enterprise deployments, to more decentralized and public deployments. From deployments which require the use of tokens of value, to those that only require the utility of a blockchain but not monetized tokenization. A single `eris:db` client is all that is required in order to participate in all of these blockchains.
 

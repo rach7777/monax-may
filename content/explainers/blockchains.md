@@ -29,9 +29,9 @@ Modern blockchain designs are capable of storing arbitrary data and establishing
 
 # Characteristics of Blockchains
 
-A _blockchain network_ is a software network comprised of a set of users running a _blockchain client_.
+A _blockchain network_ is a software network comprised of a set of users running a _blockchain node_.
 
-All of the blockchain clients in a given blockchain network are connected together so that they are collectively building and also interacting with a single authoritative ledger.
+All of the blockchain nodes in a given blockchain network are connected together so that they are collectively building and also interacting with a single authoritative ledger.
 
 As such when we discuss the characteristics of a "blockchain" we are really discussing three different things:
 
@@ -41,9 +41,9 @@ As such when we discuss the characteristics of a "blockchain" we are really disc
 
 Throughout this explainer, we will attempt to be precise as to which of these we are speaking to.
 
-Area (3) is not very interesting frankly. Blockchain ledgers are simply a record of transactions which have been broken into blocks and linked together using cryptographic digital signatures. It is the blockchain network and blockchain clients which are much more interesting.
+Area (3) is not very interesting frankly. Blockchain ledgers are simply a record of transactions which have been broken into blocks and linked together using cryptographic digital signatures. It is the blockchain network and blockchain nodes which are much more interesting.
 
-There are three areas where both blockchain networks and blockchain clients stand out from their brethern data and process management solutions available to organizations:
+There are three areas where both blockchain networks and blockchain nodes stand out from their brethern data and process management solutions available to organizations:
 
 * Blockchain clients and networks validate everything (great for compliance and auditors; not so great for fraudsters)
 * Blockchain clients are highly independent (and thereby fault tolerant)
@@ -75,7 +75,7 @@ Every node in a blockchain network "assembles" its view of **what the data is** 
 
 This is roughly analogous to the difference between being told a fact in a class and performing a mathematical proof in class based on assumptions provided by a teacher. One only requires acceptance by the "receiver" while the other requires effort by the "assembler".
 
-The fundamental difference architecturally is, essentially, the "freedom" which the various nodes on the network have to tell clients which are hooked into them **what the data is**. This "freedom" is what blockchain-ers are (sometimes) referring to when they speak about the "decentralization" benefits of the blockchain client in question.
+The fundamental difference architecturally is, essentially, the "freedom" which the various nodes on the network have to tell clients which are hooked into them **what the data is**. This "freedom" is what blockchain-ers are (sometimes) referring to when they speak about the "decentralization" benefits of the blockchain node in question.
 
 ## Automation Within a Blockchain Network and Blockchain Clients
 
@@ -85,15 +85,15 @@ Blockchains are (currently) non-shardable. This is a very important difference b
 
 The practical effect of this non-shardability is that every full node on the network must individually perform the entirety of the computing effort required for the entire of the network. Redundantly, in order to check each other's work.
 
-While this may seem like overkill, it should be noted that it is *significantly* easier to run blockchain clients in a "cloud-y" manner than it is hub and spoke databases. Hub and spoke databases scale vertically due to their design; on the other hand blockchain networks scale horizontally due to their design -- which exactly how "cloud-y" applications are meant to scale.
+While this may seem like overkill, it should be noted that it is *significantly* easier to run blockchain nodes in a "cloud-y" manner than it is hub and spoke databases. Hub and spoke databases scale vertically due to their design; on the other hand blockchain networks scale horizontally due to their design -- which exactly how "cloud-y" applications are meant to scale.
 
 If you need the data management solution to be easily spun up and distributed amongst nodes which are not fully integrated into infrastructure of the data management solution then a blockchain architecture is likely an appealing data management solution.
 
-The fundamental difference architecturally is, essentially, that blockchain networks are going to be significantly more constrained in the amount of transaction processing they are able to perform because blockchain clients are built to be independently redundant with respect to the data management functions; whereas hub and spoke databases can be built to operate using truly parallel computation.
+The fundamental difference architecturally is, essentially, that blockchain networks are going to be significantly more constrained in the amount of transaction processing they are able to perform because blockchain nodes are built to be independently redundant with respect to the data management functions; whereas hub and spoke databases can be built to operate using truly parallel computation.
 
 # Benefits of Blockchain Technology
 
-What we have when abstracting a blockchain network to a certain level is a distributed, self-authenticating, time-stamped store of data. Indeed, the core design of a blockchain client is an elegant way in which to overcome many challenges in distributed systems.
+What we have when abstracting a blockchain network to a certain level is a distributed, self-authenticating, time-stamped store of data. Indeed, the core design of a blockchain node is an elegant way in which to overcome many challenges in distributed systems.
 
 ## Resilient Data Management System
 
@@ -118,27 +118,27 @@ In other words, in a blockchain network if we know the state of the data at the 
 Blockchain clients generally fall into one of four quadrants. These quadrants vary based on two axes:
 
 1. Is the blockchain network permissionable?
-2. Is the blockchain client optimized to do X?
+2. Is the blockchain node optimized to do X?
 
 {{< image src="/images/docs/blockchain-quadrant.png" >}}
 
 ## The Optimization Spectrum
 
-On the lower half of the quadrant are blockchain clients which give application developers a clear and efficient way to verifiably track title transfers in a distributed environment.
+On the lower half of the quadrant are blockchain nodes which give application developers a clear and efficient way to verifiably track title transfers in a distributed environment.
 
-Whether these blockchain clients are permissioned or unpermissioned, they are a good fit for application developers seeking to build transfer mechanisms, clearing and settlement, and provenance applications.
+Whether these blockchain nodes are permissioned or unpermissioned, they are a good fit for application developers seeking to build transfer mechanisms, clearing and settlement, and provenance applications.
 
-In other words, they're really interesting property auditors. These blockchain clients -- to some extent or another depending on the client in question -- do provide some limited logic capabilities (bitcoin's reference client, famously, has its multi-signature capacity which operates in a similar area to logic). However, they have been optimized to track movement of title over "property" from one node on the network to another.
+In other words, they're really interesting property auditors. These blockchain nodes -- to some extent or another depending on the client in question -- do provide some limited logic capabilities (bitcoin's reference client, famously, has its multi-signature capacity which operates in a similar area to logic). However, they have been optimized to track movement of title over "property" from one node on the network to another.
 
-On the upper half of the quadrant are blockchain clients which give application developers a clear and efficient way to verifiably track business and governance process logic in a distributed environment.
+On the upper half of the quadrant are blockchain nodes which give application developers a clear and efficient way to verifiably track business and governance process logic in a distributed environment.
 
-Whether these blockchain clients are permissioned or unpermissioned, they are a good fit for application developers seeking to build complicated business process automation applications.
+Whether these blockchain nodes are permissioned or unpermissioned, they are a good fit for application developers seeking to build complicated business process automation applications.
 
-In other words, they're really interesting process auditors. Similarly to transaction optimized blockchain clients, they have capabilities of supporting verifiable title transfers, but they have really been optimized to run arbitrary business logic.
+In other words, they're really interesting process auditors. Similarly to transaction optimized blockchain nodes, they have capabilities of supporting verifiable title transfers, but they have really been optimized to run arbitrary business logic.
 
 ## The Permissioned Spectrum
 
-On the left half of the quandrant are unpermissioned blockchain networks. These networks are formulated by a set of blockchain clients which have been programmed with the unpermissioned blockchain network's rule book.
+On the left half of the quandrant are unpermissioned blockchain networks. These networks are formulated by a set of blockchain nodes which have been programmed with the unpermissioned blockchain network's rule book.
 
 These blockchain networks lack an access control layer and as such handle anti-spam and consensus via purely economic mechanisms.
 
@@ -148,11 +148,11 @@ These blockchain networks are the best solution for censorship resistance. If so
 
 Unpermissioned blockchain networks also have public governance mechanisms, and have been designed to provide the data management backbone for a variety of applications. That means that they were probably not well suited for any one type of application. Depending on what application one is seeking to build this may be a benefit or a detriment.
 
-On the right half of the quandrant are permissioned blockchain networks. These networks are formulated by a set of blockchain clients which have been programmed with the permissioned blockchain network's rule book.
+On the right half of the quandrant are permissioned blockchain networks. These networks are formulated by a set of blockchain nodes which have been programmed with the permissioned blockchain network's rule book.
 
 Properly permissionable blockchain networks are usually based on the capabilities of nodes on the network which can be made fully public, or use whitelisting to control.
 
-Permissionable blockchain networks are not susceptible to external attack by unknown actors because the blockchain clients participating in the network will reject blocks from not-whitelisted nodes (if the blockchain client is running in "permissioned" mode for a particular blockchain network in question).
+Permissionable blockchain networks are not susceptible to external attack by unknown actors because the blockchain nodes participating in the network will reject blocks from not-whitelisted nodes (if the blockchain node is running in "permissioned" mode for a particular blockchain network in question).
 
 These networks also have performance advantages over public blockchain networks because they are only dealing with the functionality required for that network rather than all the functionality for a larger, unpermissioned network load.
 
