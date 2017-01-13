@@ -31,4 +31,4 @@ In the coming year, a lot of people will find themselves tasked with “getting 
  **Organization.** Permissioned blockchains deliver information to those with standing to view it. Public, open blockchains serve a purpose, but for the most transformative ecosystem applications, permissioned chains are the way to go. 
  
  
- If your organization is ready to explore what blockchain solutions can do for you, please [contact us](info@monax.io).
+ If your organization is ready to explore what blockchain solutions can do for you, please [contact us]</#contact-monax|contact us>.
