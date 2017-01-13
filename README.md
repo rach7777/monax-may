@@ -47,6 +47,7 @@ Any changes outside of the (content) directory require @compleatang's approval. 
 
 However, if you want to remove everything then do all of the following:
 
+
 ```
 docker rmi site_buildr
 docker rmi site
