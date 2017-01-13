@@ -21,12 +21,6 @@ Blockchains are authenticated records of the history of a network's activity dis
 
 Modern blockchain designs are capable of storing arbitrary data and establishing permissions to modify that data through self-administering and self-executing scripts which are performed by a distributed virtual machine.These scripts are known as [smart contracts](/explainers/smart_contracts), and they allow platform operators to define complex and fully customisable rules which govern the blockchain’s interaction with its users.
 
-> Blockchains are neat because they take the old concept of commits, tx logs, and replication in database architecture and replace it with an integrated system of authenticated state transitions.
-
-> That's valuable ... for all kinds of things, like transparency and auditing and accountability and so on. Blockchains make auditing and verification easy.... [F]or a next generation smart government and auditable economy, that's going to matter.
-
-[Reference](https://www.reddit.com/r/erisindustries/comments/2pt3ag/decentralisation_for_its_own_sake_good_for_some/cmzthwe)
-
 # Characteristics of Blockchains
 
 A _blockchain network_ is a software network comprised of a set of users running a _blockchain node_.
@@ -53,7 +47,7 @@ Lets look at some of these characteristics.
 
 ## Validation Within a Blockchain Network and Blockchain Clients
 
-*A blockchain network carries out its functions automatically, through a process which is historically called "mining” or "forging," but which we at Eris Industries simply call **validating**.*
+*A blockchain network carries out its functions automatically, through a process which is historically called "mining” or "forging," but which we at Monax simply call **validating**.*
 
 This process generally involves bundling the transactions which have come into the system during an established time, along with other parameters into a **block** of transactions and other data which is then placed into the **chain** of blocks.
 

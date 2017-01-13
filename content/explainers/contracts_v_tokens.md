@@ -35,7 +35,7 @@ There are a few challenges to crafting blockchain backed systems which overly re
 
 While these checks and balances may be able to be automated (or at least tracked) in a smart contract based network, there is no general mechanism for handling these checks and balances in many blockchain designs (permissioned or public) which generally fall under the "transaction optimized" category.
 
-For these reasons, at Eris we feel that smart contracts represent a massive leap forward while tokenized blockchain systems alone are moderately interesting.
+For these reasons, at Monax we feel that smart contracts represent a massive leap forward while tokenized blockchain systems alone are moderately interesting.
 
 # The Flexibility of Smart Contracts
 
