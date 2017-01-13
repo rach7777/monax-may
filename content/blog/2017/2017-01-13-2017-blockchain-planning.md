@@ -10,7 +10,7 @@ published: true
 tags:
 - blockchain
 - smart contracts
-thumbnail: 
+thumbnail: arrows-1577983_1920.png
 title: 2017 Blockchain Planning 
 url: /2017/01/13/2017-Blockchain-Planning/
 ---
