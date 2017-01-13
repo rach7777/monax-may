@@ -17,13 +17,13 @@ menu:
 
 The "DNA" of a permissioned blockchain network is no different than the "DNA" of an unpermissioned blockchain network. With the exception of one gene that has been mutated.
 
-Properly permissioned blockchain networks differ from unpermissioned blockchain networks solely based on the presence (or absence) of an access control layer built into the blockchain clients.
+Properly permissioned blockchain networks differ from unpermissioned blockchain networks solely based on the presence (or absence) of an access control layer built into the blockchain nodes.
 
 The first primary difference between a properly conceived permissioned blockchain network and an unpermissioned blockchain network is whether the participants in the network have an ability to restrict who can participate in the consensus mechanism of the blockchain's network.
 
 Permissioned blockchain networks allow the network to appoint a group of participants in the network who are given the express authority to provide the validation of blocks of transactions. Or, to participate in the consensus mechanism.
 
-The second primary difference between a properly conceived permissioned blockchain network and an unpermissioned blockchain network is whether the participants in the network have an ability to restrict who can create [smart contracts](/explainers/smart_contracts) (if the blockchain client is [logic optimized](/explainers/blockchains)) and/or transact on the blockchain network.
+The second primary difference between a properly conceived permissioned blockchain network and an unpermissioned blockchain network is whether the participants in the network have an ability to restrict who can create [smart contracts](/explainers/smart_contracts) (if the blockchain node is [logic optimized](/explainers/blockchains)) and/or transact on the blockchain network.
 
 Together, at Eris Industries, we call these **capabilities based permissions**.
 
@@ -59,7 +59,7 @@ The end result is that it is easier to marry the specific business challenges an
 
 ## Permissioned Blockchains' Are More Cost Effective
 
-Public blockchain networks are costly to deal with for a simple reason: spam control. Public blockchain networks of logic optimized blockchain clients (e.g., the Ethereum network) has a pricing structure which is linked to computation operations.
+Public blockchain networks are costly to deal with for a simple reason: spam control. Public blockchain networks of logic optimized blockchain nodes (e.g., the Ethereum network) has a pricing structure which is linked to computation operations.
 
 So every time a contract needs to go into a loop, users of that contract must pay to run that loop. How much users are required to pay will be determined by how many times the contract must iterate through the loop. The more times through the loop, the more computational operations will be required, and the more money must be spent.
 
@@ -73,7 +73,7 @@ There is a fallacy heard now and again that permissioned blockchain networks are
 
 These are very different things indeed. A blockchain network which does not have an access control layer baked in as a first class citizen of its clients is a very different animal than a blockchain network which is able to expressly whitelists those that are able to participate in various network tasks such as validation, contract creation, and the like. An adversary which is able to get into the VPN (assuming this was the architecture for claiming the network was "permissioned") and connect into the blockchain network could potentially attack the network using increased mining capacity.
 
-For the rest of this explainer we'll be talking about blockchain networks made up of blockchain client's who have an access control layer baked in as a first class citizen.
+For the rest of this explainer we'll be talking about blockchain networks made up of blockchain node's who have an access control layer baked in as a first class citizen.
 
 ## Securing Unpermissioned Blockchain Networks
 
