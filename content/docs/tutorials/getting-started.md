@@ -642,7 +642,7 @@ Since we have a deployed contract on a running chain, please do take a look at t
 eris pkgs do --help
 ```
 
-That's it! Your contract is all ready to go. You should see the output in `epm.json` which will have the transaction hash of the transactions as well as the address of the deployed `idi.sol` contract.
+That's it! Your contract is all ready to go. You should see the output in `jobs_output.json` which will have the transaction hash of the transactions as well as the address of the deployed `idi.sol` contract.
 
 # Step 4. Integrate your ecosystem application
 
@@ -698,7 +698,7 @@ var erisC = require('eris-contracts');
 var erisdbURL = "http://localhost:1337/rpc";
 
 // get the abi and deployed data squared away
-var contractData = require('./epm.json');
+var contractData = require('./jobs_output.json');
 var idisContractAddress = contractData["deployStorageK"];
 var idisAbi = JSON.parse(fs.readFileSync("./abi/" + idisContractAddress));
 
@@ -761,10 +761,10 @@ The final function, the `setValue` function will call the `set` function of `idi
 The beginning of the script, which gets everything sets up includes this line:
 
 ```javascript
-var contractData = require('./epm.json');
+var contractData = require('./jobs_output.json');
 ```
 
-But in the [previous tutorial](/docs/tutorials/getting-started/#step-3-deploy-your-ecosystem-application-using-smart-contract-templates) we only worked with an `epm.yaml`, not an `epm.json`. So what is the `epm.json`? That file is an artifact of the `eris pkgs do` process. If you look at the `epm.json` file it should look something like this:
+But in the [previous tutorial](/docs/tutorials/getting-started/#step-3-deploy-your-ecosystem-application-using-smart-contract-templates) we only worked with an `epm.yaml`, not an `jobs_output.json`. So what is the `jobs_output.json`? That file is an artifact of the `eris pkgs do` process. If you look at the `jobs_output.json` file it should look something like this:
 
 ```javascript
 {
@@ -923,7 +923,7 @@ Congratulations, you've just made your very own smart contract backed applicatio
 
     Then you will need to install `make` on your platform with `apt-get install make` (or the equivalent package manager for your operating system).
 
-[^10]: If you do not have an `epm.json` file that means there was a problem with the contracts deploy. Please resolve that problem by carefully following the [previous tutorial](/docs/tutorials/getting-started/#step-3-deploy-your-ecosystem-application-using-smart-contract-templates) before continuing with this tutorial.
+[^10]: If you do not have an `jobs_output.json` file that means there was a problem with the contracts deploy unless you are working with 0.11.4 in which case look for `epm.json` and use as you would `jobs_output.json`. Otherwise, please resolve that problem by carefully following the [previous tutorial](/docs/tutorials/getting-started/#step-3-deploy-your-ecosystem-application-using-smart-contract-templates) before continuing with this tutorial.
 
 [^11]: If you just started your chain you may not have any contracts on it. To solve this, run:
 

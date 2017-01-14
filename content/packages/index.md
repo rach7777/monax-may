@@ -26,11 +26,11 @@ Monax's premium support and education packages provide both fora to answer quest
 
 # Benefits
 
-By building with Monax's engineers, your devleopment time will be significantly reduced. We have build our premium support & education packages to meet three demands within the market.
+By building with Monax's engineers, your development time will be significantly reduced. We have build our premium support & education packages to meet three demands within the market.
 
 First, because there is an increased amount of complexity in building ecosystem applications vis a vis more established application paradigms, many experienced developers have many questions which they need to have answered so that they have a full enough understanding of the technological base to build the applications effectively. The premium support component of our packages provides a vehicle for your developers to ask our engineers whatever questions they want with a guaranteed response time of 2 business days.
 
-Second, with ecosystem applications there are emergent design patterns and architectural considerations that differ significantly from how experienced developers are used to building applications. The education component of our packages provides a vehicle for your devleopers to learn from other subscribers as well as our engineers how to think about designing and building ecosystem applications. Each subscriber recieves a seat or seats to monthly interactive learning sessions with Monax's core team.
+Second, with ecosystem applications there are emergent design patterns and architectural considerations that differ significantly from how experienced developers are used to building applications. The education component of our packages provides a vehicle for your developers to learn from other subscribers as well as our engineers how to think about designing and building ecosystem applications. Each subscriber receives a seat or seats to monthly interactive learning sessions with Monax's core team.
 
 Third, there are a range of operational considerations which come into play when building an ecosystem application on a permissioned blockchain base. Our team of engineers and operations specialists can help ensure that your base blockchain is deployed correctly and running smoothly, so that your development team can drive business value rather than worrying about the minutae of setting up a complex network.
 

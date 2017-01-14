@@ -1,18 +1,17 @@
 FROM quay.io/eris/build
-MAINTAINER Eris Industries <support@erisindustries.com>
+MAINTAINER Monax <support@monax.io>
 
-# ENV HUGO_VERSION=v0.19.0
-# note 0.18.1 has a build error and 0.19.0 where that will be fixed isn't released yet
-ENV HUGO_VERSION=master
+ENV HUGO_VERSION=v0.18.1
 
 RUN apk add --no-cache openssh automake autoconf nasm zlib-dev g++ make python nodejs && \
+  go get github.com/kardianos/govendor && \
+  cd $GOPATH/src/github.com/kardianos/govendor && \
+  go build -o $INSTALL_BASE/govendor . && \
   go get github.com/spf13/hugo && \
   cd $GOPATH/src/github.com/spf13/hugo && \
   git checkout $HUGO_VERSION && \
+  govendor sync && \
   go build -o $INSTALL_BASE/hugo . && \
-  go get github.com/campoy/embedmd && \
-  cd $GOPATH/src/github.com/campoy/embedmd && \
-  go build -o $INSTALL_BASE/embedmd . && \
   cd / && \
   rm -rf $GOPATH && \
   npm install -g gulp bower
