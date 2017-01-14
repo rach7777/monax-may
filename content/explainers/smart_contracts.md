@@ -63,7 +63,7 @@ Indeed, they can "enforce" or, better, administer some of the state of the data 
 
 *Are smart contracts better than a simple python script?*
 
-This is a question which in the early days of Eris we fielded often. This is a debatable subject. And answering it turns on two axes.
+This is a question which in the early days of Monax we fielded often. This is a debatable subject. And answering it turns on two axes.
 
 ## Axis 1 => spectrum of verifiability
 

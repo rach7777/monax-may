@@ -25,7 +25,7 @@ Permissioned blockchain networks allow the network to appoint a group of partici
 
 The second primary difference between a properly conceived permissioned blockchain network and an unpermissioned blockchain network is whether the participants in the network have an ability to restrict who can create [smart contracts](/explainers/smart_contracts) (if the blockchain node is [logic optimized](/explainers/blockchains)) and/or transact on the blockchain network.
 
-Together, at Eris Industries, we call these **capabilities based permissions**.
+Together, at Monax, we call these **capabilities based permissions**.
 
 # The Benefits of Permissioned Blockchain Networks
 
