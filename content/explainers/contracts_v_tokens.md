@@ -35,13 +35,13 @@ There are a few challenges to crafting blockchain backed systems which overly re
 
 While these checks and balances may be able to be automated (or at least tracked) in a smart contract based network, there is no general mechanism for handling these checks and balances in many blockchain designs (permissioned or public) which generally fall under the "transaction optimized" category.
 
-For these reasons, at Eris we feel that smart contracts represent a massive leap forward while tokenized blockchain systems alone are moderately interesting.
+For these reasons, at Monax we feel that smart contracts represent a massive leap forward while tokenized blockchain systems alone are moderately interesting.
 
 # The Flexibility of Smart Contracts
 
-When one deals with a tokenized approach generally one is taking business logic and putting into a set of blockchain clients all connected to the same blockchain network. Distributing changes to the business logic required that the entire network accept those changes and update their blockchain clients.
+When one deals with a tokenized approach generally one is taking business logic and putting into a set of blockchain nodes all connected to the same blockchain network. Distributing changes to the business logic required that the entire network accept those changes and update their blockchain nodes.
 
-In a logic optimized blockchain client and its relevant network one simply needs to deploy smart contracts via one connected blockchain client to update the business logic of the application.
+In a logic optimized blockchain node and its relevant network one simply needs to deploy smart contracts via one connected blockchain node to update the business logic of the application.
 
 This is a massive boon for flexibility; particularly while prototyping quick solutions.
 

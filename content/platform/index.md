@@ -20,7 +20,7 @@ menu:
 
 # Introduction
 
-`eris` is the first Application Platform built from the ground up to provide a logical base for developers and devOps to build, test, and run ecosystem applications. It is designed to support multiple blockchain clients connected to multiple blockchain networks with different smart contract interpreters all seamlessly connected to other microservices necessary to build, test, and run the ecosystem application such as key management systems and distributed data lakes.
+`eris` is the first Application Platform built from the ground up to provide a logical base for developers and devOps to build, test, and run ecosystem applications. It is designed to support multiple blockchain nodes connected to multiple blockchain networks with different smart contract interpreters all seamlessly connected to other microservices necessary to build, test, and run the ecosystem application such as key management systems and distributed data lakes.
 
 Developers and devOps who use [blockchains](/explainers/blockchains), [smart contracts](/explainers/smart_contracts), key management systems, and distributed data lakes have access to a core set of tools tackling big problems. Tackling big problems of coordination and reconciliation across our increasingly interconnected organizations requires building applications that are meant to run on an ecosystem level. These are what we call [ecosystem applications](/explainers/ecosystem_applications). Ecosystem applications are the next generation of process management tools and `eris` is the gateway to building sophisticated enterprise-grade ecosystm applications.
 
