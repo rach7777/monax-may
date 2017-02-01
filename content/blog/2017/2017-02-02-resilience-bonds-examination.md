@@ -25,17 +25,19 @@ Recently, I had the distinct pleasure to be able to speak at the [Swiss Re block
 
 ## Introduction to Insurance Linked Securities
 
-[Insurance linked securities](https://www.irmi.com/online/insurance-glossary/terms/r/risk-securitization.aspx) allow us to leverage markets to insure big, complex events. [These instruments](https://www.irmi.com/online/insurance-glossary/terms/s/securitization-of-risk.aspx) seek to encapsulate risk into securitized instruments that can be bought and sold on markets. Insurance linked securities use a risk index to value the security or a specified loss event and explicitly factor risk factors into pricing of the instrument.
+[Insurance linked securities](https://www.irmi.com/online/insurance-glossary/terms/r/risk-securitization.aspx) allow us to leverage markets to insure big, complex events. [These instruments](https://www.irmi.com/online/insurance-glossary/terms/s/securitization-of-risk.aspx) seek to encapsulate risk into securitized instruments that can be bought and sold on markets. Insurance linked securities use a risk index to value the security or a specified loss event and explicitly build risk factors into pricing of the instrument.
 
 Risk securities (as I'll call them in this post) are an absolutely vital component of the insurance domain because, as Pascal Bouvier [recently wrote](https://www.linkedin.com/pulse/my-current-fintech-wishlist-pascal-bouvier-cfa):
 
 > [T]he potential for pooling risk, segmenting risk, providing liquidity to certain asset classes seems rather interesting. Big problem to solve, bigger opportunity.
 
+But it's more than a "big opportunity". Risk securities are also a way in which markets can be brought to bear to insure against very complex risks which are typically linked to weather and climate change. The risks which stem from such events, for example hurricanes, earthquakes, or volcanoes, bring losses which are massive and need to be covered very quickly. They also affect insured customers in very large numbers. As climate change accelerates the number and significance of catastrophic events, risk securities are increasingly being leveraged by the insurance community to ensure that customers will have their losses fully covered.
+
 Currently there is really only one instrument which is commonly used within the market. `Catastrophe Bonds` [are debt instruments](http://www.investopedia.com/terms/c/catastrophebond.asp) meant to raise money in case of a catastrophe such as a hurricane or earthquake. For a brief history and overview of these increasingly important instruments [see here](http://en.entropics.se/cat-bonds/the-history-of-cat-bonds/).
 
 But the use case I was *really* examining was `Resilience Bonds`.
 
-## Introduction to Resilience Bonds
+## Introduction to resilience bonds
 
 [Resilience bonds](http://www.swissre.com/global_partnerships/Swiss_Re_and_partners_to_develop_resilience_bonds.html) link catastrophe bonds with capital investments in resilient infrastructure to reduce losses. For a brief history and overview of these instruments [see here](https://www.brookings.edu/blog/the-avenue/2015/12/16/financing-infrastructure-through-resilience-bonds/).
 
@@ -47,45 +49,51 @@ In the chart below I roughly sketch out the flow of how resilience bonds are str
 
 {{< lucidchart "d7a846ba-7326-413a-9e5d-d0c72085af65" >}}
 
-On the left hand side are the three major categories of actors involved in the ecosystem. They are sponsors (usually a special purpose vehicle managed by a large reinsurance company), issuers (cities and other organizations responsible for building infrastructure), and investors. These three groups of actors get together to originate a resilience bond. The resilience bond is effectively three different systems bundled together. These systems are in the middle of the diagram.
+On the left hand side are the three major categories of actors involved in the ecosystem. They are sponsors (usually a special purpose vehicle managed by a large reinsurance company), issuers (cities and other organizations responsible for building infrastructure), and investors. These three groups of actors get together to originate a resilience bond.
 
-### Project Management Component
+The resilience bond is effectively three different systems bundled together. These systems are in the middle of the diagram.
+
+### Project management component
 
 In the resilience bond is a project management component that tracks the building of resilient infrastructure (nicely described in [this UK Government report from 2011](https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/69269/climate-resilient-infrastructure-full.pdf)). This could be a flooding control system, or a new sea wall; this could be deployment of wide-field sensor arrays, or stronger bridges.
 
-The effect of the project management component is that as resilient infrastructure is built two things occur: first, the impact that a risk event will have upon a wide geographical region is reduced. Next, this leads to a reduction in the premium cost on the insurance component (covered below). It will also lower the premium risk on the catastrophe bond component (also covered below). As an example, if an issuer greatly increases the resilience of an elevated highway and an earthquake occurs which **does not** collapse the elevated highway, then the amount which insurance companies need to pay out will be greatly reduced.
+The effect of the project management component is that as resilient infrastructure is built two things occur: first, the impact that a risk event will have upon a wide geographical region is reduced. Next, this leads to a reduction in the premium cost on the insurance component (covered below). It will also lower the principal risk on the catastrophe bond component (also covered below).
 
-### Parametric Insurance Component
+As an example, if an issuer greatly increases the resilience of an elevated highway and an earthquake occurs which **does not** collapse the elevated highway, then the amount which insurance companies need to pay out will be greatly reduced.
+
+### Parametric insurance component
 
 Within the "bundle" of risks, rights, and obligations that is a resilience bond is a component that includes a parametric insurance policy. Parametric insurance, for those that are not familiar, is an insurance policy which pays out on the occurrence of a well-defined, pre-agreed trigger.
 
-Such a trigger could be that it was below freezing for more than 8 hours in a particular area. The "area" may, for example, be a vineyard and the freezing temperatures may present a risk to vines in the vineyard. The data which supports the parametric trigger is likely to have been transmitted via IoT sensor arrays deployed in the vineyard to the insurance company by way of (an) IoT platform(s). Another example would be parametric insurance in the flight domain where the trigger would be that [my plane has arrived late](http://etherisc.com/). In the latter incident the trigger would happen based upon flight information from a pre-agreed, third-party data provider.
+Such a trigger could be that it was below freezing for more than 8 hours in a particular area. The "area" may, for example, be a vineyard and the freezing temperatures may present a risk to vines in the vineyard. The data which supports the parametric trigger is likely to have been transmitted via IoT sensor arrays deployed in the vineyard to the insurance company by way of (an) IoT platform(s).
 
-In the case of the risks which resilience bonds would typically cover, the triggers would be likely to come from governmental or international organization data providers (such as, in the United States, USGS or NOAA). The parametric insurance component of the resilience bond is a relatively simple trigger. Parametric insurance is very attractive to many insurance companies because there is significantly lowered claims management costs (which are basically reduced to `nil`).
+Traditional crop insurance would require a vineyard owner to prove actual damage to their crops, require an adjuster to come inspect that the damage did in fact occur, and require the insurance company to conduct a full claims process on the loss. Parametric insurance avoids the hassles that the customer has with submitting their claim, being there to talk to the adjuster, and then waiting for the claim to be processed. Instead, when the agreed trigger occurs, they get a check in the mail or money in their bank account. Parametric insurance also is cost effective for the primary insurer who need only know that the agreed trigger was "fired" and then they send the money. This avoids the major hassles that traditional claims management has for insurance companies. Of course it is true that parametric insurance is likely not possible to cover many types of risks (such as, e.g., a car accident); but for many types of risk events parametric insurance is very attractive to both customers and insurance companies.
 
-### Catastrophe Bond Component
+In the case of the risks which resilience bonds would typically cover, the triggers would be likely to come from governmental or international organization data providers (such as, in the United States, USGS or NOAA). The parametric insurance component of the resilience bond is a relatively simple trigger linked to the defined catastrophic event (such as an earthquake, a flood, a hurricane, or a volcano).
+
+### Catastrophe bond component
 
 The final component of the resilience bond instrument is the catastrophe bond. Catastrophe bonds were largely covered above in the introduction section.
 
-## How Can We Systematize Resilience Bonds
+## How can we systematize resilience bonds
 
 As readers can see, resilience bonds are incredibly complex instruments. Their origination and servicing costs are extremely high.
 
 Why? There are three predominant reasons:
 
-### Attribution & Authenticity Costs
+### Attribution & authenticity costs
 
-These costs are due to the challenge around understanding data fidelity and data reliability across an ecosystem of actors. Investors need to understand what the state of the infrastructure bill is in order to be able to properly price their catastrophe bonds. Sponsors need to be able to rely on the data that provides the parametric trigger. Issuers need to be able to verify what data is being fed into the parametric insurance's pricing engine. Currently the costs in being able to systematically share authenticated, ordered data are prohibitive. However, this is what [blockchains in industry](/explainers/permissioned_blockchains?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog) were born to do.
+These costs are due to the challenge around understanding data fidelity and data reliability across an ecosystem of actors. Investors need to understand what the state of the infrastructure built is in order to be able to properly price their catastrophe bonds. Sponsors need to be able to rely on the data that provides the parametric trigger. Issuers need to be able to verify what data is being fed into the parametric insurance's pricing engine. Currently the costs in being able to systematically share authenticated, ordered data are prohibitive. However, this is what [blockchains in industry](/explainers/permissioned_blockchains?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog) were born to do.
 
-### Reconciliation Costs
+### Reconciliation costs
 
-The servicing of resilience bonds presents enormous reconciliation costs due to the number of actors and complexity of the information which needs to be shared across the ecosystem of actors. The manner in which the lowered premiums and lowered principal risk are handled is often via a rebate schemes. Calculating these rebates presents a significant multi-lateral reconciliation challenge to the participants in the resilience bond ecosystem. Currently the costs in being able to provide assurances as to business processes across a range of companies are prohibitive. Again, what blockchains in industry were born to do.
+The servicing of resilience bonds presents enormous reconciliation costs due to the number of actors and complexity of the information which needs to be reconciled across the ecosystem of actors. The manner in which the lowered premiums and lowered principal risk are handled is often via a rebate schemes. Calculating these rebates presents a significant multi-lateral reconciliation challenge to the participants in the resilience bond ecosystem. Currently the costs in being able to provide assurances as to business processes across a range of companies are prohibitive. Again, what blockchains in industry were born to do.
 
-### Coordination Costs
+### Coordination costs
 
 Finally, we have a range of coordination costs that apply to the components of the resilience bond. How, for example, will infrastructure projects be approved to qualify for the rebating scheme? How will the progress on infrastructure projects be measured? These questions, and a very long list of other coordination requirements, mean that resilience bonds are very unlikely to take off if we continue to build applications and platforms as single-company endeavors. However, when we begin to leverage what [ecosystem applications](/explainers/ecosystem_applications?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog) can provide, we can begin to see how these systems can be systematized which would mean that the giant opportunity that Pascal Bouvier identified above moves into the realm of the possible.
 
-## Benefits of Building Resilience Bond Ecosystems
+## Benefits of building resilience bond ecosystems
 
 By leveraging ecosystem application technology, resilience bond management systems gain three primary benefits.
 
@@ -103,7 +111,7 @@ Another of the challenging aspects of participating in resilience bonds is that 
 
 ### Optimize instrument's objectives across stakeholders
 
-One of the trends we, as a platform provider, observe by the many application builders who leverage our [industry leading platform](/platform?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog) is that over time ecosystem applications are allowing companies to not only reduce costs of business processes by moving some of the management of collective business processes to a collaborative space (namely, the ecosystem application) but also it allows participants to optimize objectives by a more deterministic understanding of data and processes.
+One of the trends we, as a platform provider, have observed from watching the many application builders who leverage our [industry leading platform](/platform?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog) is that over time ecosystem applications are allowing companies to not only reduce costs of business processes by moving some of the management of collective business processes to a collaborative space (namely, the ecosystem application) but also it allows participants to optimize objectives by a more deterministic understanding of data and processes.
 
 Just as a parametric insurance policy not only reduces costs for insurers by reducing ambiguity in the claims management process, but also increases customer satisfaction (given the challenges to customers inherent in claims management), similar effects across the participating entities in a resilience bond system are very much possible.
 
@@ -119,7 +127,7 @@ First, let us talk through some of the factors that come into play when thinking
 
 This diagram is purposefully very high level. On the left hand side of the diagram one can observe the ecosystem application's validator pool which "runs" the application. Probably such an application would utilize a pool of validators that was somewhat equally controlled by a group of sponsor(s) of the instrument, a group of issuer(s) of the instrument, and a group of the investors on the instrument.
 
-On the top half of the remainder of the diagram we have the interfaces. Typically these will be web- or mobile-based interfaces used by the business users of the system. They would likely be different and run on different application servers depending on who the participant was. The point here is that even though the raw, "base" data everyone is looking at is different, that data can populate applications that have been built by entirely different companies and include interfaces optimized for their various business users' needs.
+On the top half of the remainder of the diagram we have the interfaces. Typically these will be web- or mobile-based interfaces used by the business users of the system. They would likely run on different application servers depending on who the participant was. The point here is that even though the raw, "base" data everyone is looking at is different, that data can populate user interfaces that have been built and optimized by entirely different companies for their various business users' needs.
 
 On the bottom half of the diagram are data platforms that are populated very likely by IoT sensor arrays. Sensors can easily populate blockchains and be used to provide deterministic outcomes of particular processes at an ecosystem level using smart contract technologies. Ideally such IoT sensors would include cryptographic and networking primitives in their software such that they can directly sign data and send that to the ecosystem application via one of the validators. Different architectures could require aggregation of data at an IoT data platform level and then sending of the data to the ecosystem application. It would depend on a variety of factors such as what data was needed, how certain that data needs to be coming from the sensor, and how much data flow was required. For the purposes of this design we have modeled that IoT sensors would be used to detect whether the catastrophic event had occurred which would likely mean that one would be considering very low data volumes and the sensors could be hooked into the blockchain directly.
 
@@ -172,7 +180,7 @@ In each of these phases we typically try to help our users address what we are s
 
 There are two big boxes to check if you are seeking to move to production. The first box to check is whether the value proposition of the technology generally is clearly understood within your organization. At this point in time there are a range of competing core value propositions about what ecosystem application technology can do for your organization. We see it at conferences all the time. Various companies tell almost completely incompatible stories from one another which leads to confusion within organizations as to "what we think this tech could do for us".
 
-The second box to check is whether your organization has fully understood the big shift in mindset that is required to fully leverage ecosystem application technology. This technology is fundamentally about coordinating across companies, meaning it requires that we take a collaborative approach to building software and to "participate" in an application rather than "owning" an application. This is not a small mindset shift for large, conservative organizations to make. However, if your organization does not understand the mindset shift, and at a sponsor level embraced it, then your blockchains experimentation are very unlikely to succeed. If your organization does understand the shift, you'll be well positioned to leverage ecosystem applications to their fullest.
+The second box to check is whether your organization understands the big shift in mindset that is required to fully leverage ecosystem application technology. This technology is fundamentally about coordinating across companies, meaning it requires that we take a collaborative approach to building software and to "participate" in an application rather than "owning" an application. This is not a small mindset shift for large, conservative organizations to make. However, if your organization does not understand the mindset shift, and at a sponsor level embraced it, then your blockchains experimentation are very unlikely to succeed. If your organization does understand the shift, you'll be well positioned to leverage ecosystem applications to their fullest.
 
 ### Experimentation phase
 
