@@ -87,16 +87,6 @@ nina :
     display: true
     bio: "Nina is an experienced U.S. commercial lawyer who has long imagined combining logical, automated processes with the seamless web of law. Her mission is to help translate the functional tools of law into smart contract code. She's inspired by calculus, machine learning and her personal menagerie including humans, dogs, cats, chickens and of course, marmots. Her party trick is finding four-leaf clovers."
 
-rick :
-    name: Rick Dudley
-    title: "Developer Operations"
-    gravatar: team-afd.jpeg
-    twitter: AFDudley0
-    github: AFDudley
-    keybase: afdudley
-    display: true
-    bio: "Rick started writing code using BASIC and Logo on the Apple ][ since then he has been granted a patent related to provably fair gaming and worked as a Systems Administrator."
-
 silas :
     name: "Silas Davis"
     title: "Developer"
@@ -210,3 +200,13 @@ brian :
     keybase: crainbf
     display: false
     bio: "Brian is Monax Industries’ Head of Business Development and Team Leader for the Success Team. Originally from Switzerland, he studied economics, philosophy and game theory at the University of Chicago, the London School of Economics and UCL. Besides Monax, he is also co-host of the Epicenter Bitcoin podcast and runs the Bitcoin Startups Berlin meetup. According to German media, he has managed to increase the speed of sleep."
+
+rick :
+    name: Rick Dudley
+    title: "Developer Operations"
+    gravatar: team-afd.jpeg
+    twitter: AFDudley0
+    github: AFDudley
+    keybase: afdudley
+    display: false
+    bio: "Rick started writing code using BASIC and Logo on the Apple ][ since then he has been granted a patent related to provably fair gaming and worked as a Systems Administrator."
