@@ -23,15 +23,22 @@ Recently, I had the distinct pleasure to be able to speak at the [Swiss Re block
 
 **N.B. 2** -- The deck I used for the talk is embedded at the bottom of the post if you would like to see or share it.
 
+**N.B. 3** -- If you are unfamiliar with blockchains, smart contracts, or ecosystem applications, or if you find yourself a bit confused about the terminology used in this post, feel free to read our explainer series which tackles:
+
+* [blockchains](/explainers/blockchains?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog)
+* [permissioned blockchains](/explainers/perissioned_blockchains?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog)
+* [smart contracts](/explainers/smart_contracts?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog)
+* [ecosystem applications](/explainers/ecosystem_applications?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog)
+
 ## Introduction to Insurance Linked Securities
 
-[Insurance linked securities](https://www.irmi.com/online/insurance-glossary/terms/r/risk-securitization.aspx) allow us to leverage markets to insure big, complex events. [These instruments](https://www.irmi.com/online/insurance-glossary/terms/s/securitization-of-risk.aspx) seek to encapsulate risk into securitized instruments that can be bought and sold on markets. Insurance linked securities use a risk index to value the security or a specified loss event and explicitly build risk factors into pricing of the instrument.
+[Insurance linked securities](https://www.irmi.com/online/insurance-glossary/terms/r/risk-securitization.aspx) allow us to leverage markets to insure big, complex events. [These instruments](https://www.irmi.com/online/insurance-glossary/terms/s/securitization-of-risk.aspx) seek to encapsulate risk into securitized instruments that can be bought and sold on markets. Insurance linked securities (or, `ILS` for short) use a risk index to value the security (or a specified loss event) and explicitly build risk factors into pricing of the instrument.
 
-Risk securities (as I'll call them in this post) are an absolutely vital component of the insurance domain because, as Pascal Bouvier [recently wrote](https://www.linkedin.com/pulse/my-current-fintech-wishlist-pascal-bouvier-cfa):
+ILS instruments are an absolutely vital component of the insurance domain because, as Pascal Bouvier [recently wrote](https://www.linkedin.com/pulse/my-current-fintech-wishlist-pascal-bouvier-cfa):
 
 > [T]he potential for pooling risk, segmenting risk, providing liquidity to certain asset classes seems rather interesting. Big problem to solve, bigger opportunity.
 
-But it's more than a "big opportunity". Risk securities are also a way in which markets can be brought to bear to insure against very complex risks which are typically linked to weather and climate change. The risks which stem from such events, for example hurricanes, earthquakes, or volcanoes, bring losses which are massive and need to be covered very quickly. They also affect insured customers in very large numbers. As climate change accelerates the number and significance of catastrophic events, risk securities are increasingly being leveraged by the insurance community to ensure that customers will have their losses fully covered.
+But it's more than a "big opportunity". ILS instruments are also a way in which markets can be brought to bear to insure against very complex risks. The risks which stem from events such as hurricanes, earthquakes, or volcanoes, bring losses which are massive and need to be covered very quickly. Such loss events affect insured customers in very large numbers; are relatively random in when and how they occur; and present a massive bottleneck to traditional claims management processes for primary insurers. As climate change accelerates the number and significance of catastrophic events, ILS instruments are increasingly being leveraged by the insurance community to ensure that customers will have their losses fully covered.
 
 Currently there is really only one instrument which is commonly used within the market. `Catastrophe Bonds` [are debt instruments](http://www.investopedia.com/terms/c/catastrophebond.asp) meant to raise money in case of a catastrophe such as a hurricane or earthquake. For a brief history and overview of these increasingly important instruments [see here](http://en.entropics.se/cat-bonds/the-history-of-cat-bonds/).
 
@@ -59,7 +66,7 @@ In the resilience bond is a project management component that tracks the buildin
 
 The effect of the project management component is that as resilient infrastructure is built two things occur: first, the impact that a risk event will have upon a wide geographical region is reduced. Next, this leads to a reduction in the premium cost on the insurance component (covered below). It will also lower the principal risk on the catastrophe bond component (also covered below).
 
-As an example, if an issuer greatly increases the resilience of an elevated highway and an earthquake occurs which **does not** collapse the elevated highway, then the amount which insurance companies need to pay out will be greatly reduced.
+As an example, if an issuer greatly increases the resilience of an elevated highway and an earthquake occurs which **does not** collapse the elevated highway, then the amount which primary insurance companies need to pay out will be greatly reduced. In addition, the reinsurance actors will have fewer primary insurance claims submitted to them.
 
 ### Parametric insurance component
 
@@ -67,23 +74,25 @@ Within the "bundle" of risks, rights, and obligations that is a resilience bond 
 
 Such a trigger could be that it was below freezing for more than 8 hours in a particular area. The "area" may, for example, be a vineyard and the freezing temperatures may present a risk to vines in the vineyard. The data which supports the parametric trigger is likely to have been transmitted via IoT sensor arrays deployed in the vineyard to the insurance company by way of (an) IoT platform(s).
 
-Traditional crop insurance would require a vineyard owner to prove actual damage to their crops, require an adjuster to come inspect that the damage did in fact occur, and require the insurance company to conduct a full claims process on the loss. Parametric insurance avoids the hassles that the customer has with submitting their claim, being there to talk to the adjuster, and then waiting for the claim to be processed. Instead, when the agreed trigger occurs, they get a check in the mail or money in their bank account. Parametric insurance also is cost effective for the primary insurer who need only know that the agreed trigger was "fired" and then they send the money. This avoids the major hassles that traditional claims management has for insurance companies. Of course it is true that parametric insurance is likely not possible to cover many types of risks (such as, e.g., a car accident); but for many types of risk events parametric insurance is very attractive to both customers and insurance companies.
+Traditional crop insurance would require a vineyard owner to prove actual damage to their crops, require an adjuster to come inspect that the damage did in fact occur, and require the insurance company to conduct a full claims process on the loss. Parametric insurance avoids the hassles that the customer has with submitting their claim, being available at the appointed time of the adjuster's visit, and then waiting for the claim to be processed. Parametric insurance, on the other hand is particularly clean in the context of crop insurance. Namely, when the agreed trigger occurs, they get a check in the mail or money in their bank account.
+
+Parametric insurance also is cost effective for the primary insurer who need only know that the agreed trigger was "fired" and then they send the money. This avoids the major hassles that traditional claims management has for insurance companies. Of course it is true that parametric insurance is likely not possible to cover many types of risks (such as, e.g., a car accident); but for some risk events, parametric insurance is very attractive to both customers and insurance companies.
 
 In the case of the risks which resilience bonds would typically cover, the triggers would be likely to come from governmental or international organization data providers (such as, in the United States, USGS or NOAA). The parametric insurance component of the resilience bond is a relatively simple trigger linked to the defined catastrophic event (such as an earthquake, a flood, a hurricane, or a volcano).
 
 ### Catastrophe bond component
 
-The final component of the resilience bond instrument is the catastrophe bond. Catastrophe bonds were largely covered above in the introduction section.
+The final component of the resilience bond instrument is the catastrophe bond; these were covered above in the introduction section.
 
 ## How can we systematize resilience bonds
 
-As readers can see, resilience bonds are incredibly complex instruments. Their origination and servicing costs are extremely high.
-
-Why? There are three predominant reasons:
+As readers can see, resilience bonds are incredibly complex instruments. Their origination and servicing costs are extremely high; and they have numerous and varied participants. For these reasons, as well as others, they are extremely hard to productize. Why? There are three predominant reasons:
 
 ### Attribution & authenticity costs
 
-These costs are due to the challenge around understanding data fidelity and data reliability across an ecosystem of actors. Investors need to understand what the state of the infrastructure built is in order to be able to properly price their catastrophe bonds. Sponsors need to be able to rely on the data that provides the parametric trigger. Issuers need to be able to verify what data is being fed into the parametric insurance's pricing engine. Currently the costs in being able to systematically share authenticated, ordered data are prohibitive. However, this is what [blockchains in industry](/explainers/permissioned_blockchains?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog) were born to do.
+Attribution and authenticity costs stem from the challenge that business ecosystems have around data fidelity and data reliability across the participants. Business ecosystems such as those contemplated by this use case need to be able to manage large sets of important data while also enabling multiple divergent participants to be able to rely on data being accurate, precise, and attributable to a given actor within the ecosystem.
+
+For example, investors need to understand what the state of the infrastructure built is in order to be able to properly price their catastrophe bonds. Sponsors need to be able to rely on the data that provides the parametric trigger. Issuers need to be able to verify what data is being fed into the parametric insurance's pricing engine. Currently the costs in being able to systematically share authenticated, ordered data are prohibitive. However, this is what [blockchains in industry](/explainers/permissioned_blockchains?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog) were born to do.
 
 ### Reconciliation costs
 
@@ -99,9 +108,9 @@ By leveraging ecosystem application technology, resilience bond management syste
 
 ### Fidelity over pricing model data
 
-One of the most challenging aspects of participating in ILS instruments across the board is the extreme amount of complexity that needs to be integrated into how these instruments are priced within the market. This observation has led to systems like [OASIS](http://www.oasislmf.org/), which seek to systematize climate change data into models that can be used within ILS markets for determination of when and how extreme weather events will be over time. In addition, there is a plurality of data which ILS market participants utilize to determine of their modeling is correct.
+One of the most challenging aspects of participating in ILS instruments across the board is the extreme amount of complexity that needs to be integrated into how these instruments are priced within the market. This observation has led to systems like [OASIS](http://www.oasislmf.org/), which seek to systematize climate change data into models that can be used within ILS markets for determination of when and how extreme weather events will be over time. In addition, there is a plurality of data which ILS market participants utilize to determine if their modeling is correct.
 
-In such systems there are two major aspects. The first aspect is the raw data which is fed into the pricing model. This data is currently paid for at high cost from established data feed providers. The market participants relying on this costly data could both reduce their costs and increase their certainty regarding the sourcing and fidelity of the data which is inputted into their (usually proprietary) pricing models.
+In such systems there are two major aspects. The first aspect is the raw data which is fed into the pricing model. This data is often paid for at high cost from established data feed providers. The market participants relying on this costly data could both reduce their costs and increase their certainty regarding the sourcing and fidelity of the data which is inputted into their (usually proprietary) pricing models. Other time the data is provided by a national government, or an international organization. In these instances, the data provider may decide that publishing the data is [no longer in their interests](http://www.nature.com/news/us-government-takes-animal-welfare-data-offline-1.21428), or worse, may decide that skewing the data *is* in their interests. Having fidelity over the raw data which feeds into the pricing models is increasingly important as providers of trusted data are reduced in numbers.
 
 The second aspect is the pricing models themselves. These are a competitive differentiator and are very likely to remain proprietary, closed, and isolated within the data centers or cloud machines of a given market participant. A well designed ecosystem application *can* and *should* be able to incorporate many components and systems which are proprietary to **single participants** in the overall ecosystem.
 
@@ -117,7 +126,13 @@ Just as a parametric insurance policy not only reduces costs for insurers by red
 
 ## What would a resilience bond ecosystem application look like
 
-After all that prose, now we get to the systems diagrams portion of this post. When we talk about building ecosystem applications, typically we look at the application from three different points of view. First is a systems point of view, second is a functional point of view, and third is a network point of view. The diagrams below are provided to touch on these three points. These diagrams are not meant to be canonical documents. It is entirely possible that different architectures can and would be developed. It is also true that the documents do not fully capture the complexities involved in what a resilience bond management ecosystem application would look like. They are not provided as blueprints, but rather as points of discussion.
+After all that prose, now we get to the systems diagrams portion of this post. When we talk about building ecosystem applications, typically we look at the application from three different points of view:
+
+* first is a systems point of view,
+* second is a functional point of view, and
+* third is a network point of view.
+
+The diagrams below to touch on these three points. These diagrams are not meant to be blueprints, but rather as points of discussion. It is entirely likely that different architectures can and would be developed. It is also true that the documents do not fully capture the complexities involved in what a resilience bond management ecosystem application would look like.
 
 ### Systems view of the application
 
