@@ -6,7 +6,27 @@ Make sure Docker is installed (ask a marmot to help you if you need it).
 
 # Usage
 
-It should be fairly simple to use the site.
+It should be fairly simple to use the site. It can be built and served either using docker or npm, bower, gulp, and hugo locally.
+
+## Non-docker development usage
+
+You will need to install npm, bower, gulp, and hugo locally, then from the project root:
+
+```bash
+# Install npm dependencies (from the package.json)
+npm install
+
+# Install bower dependencies
+bower install
+
+# Build the gulp pipeline (and wait around to watch for changes)
+gulp watch
+
+# In another terminal
+hugo serve
+```
+
+This should dynamically regenerate the pipeline assets and reload the site as needed while you develop.
 
 ## I want to see the site locally
 
