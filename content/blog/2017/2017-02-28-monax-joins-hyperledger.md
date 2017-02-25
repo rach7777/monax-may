@@ -2,8 +2,8 @@
 author: casey
 categories:
 - announcements
-comments: true
-date: 2017-02-02T00:00:00Z
+comments: false
+date: 2017-02-28T00:00:00Z
 meta: true
 published: true
 tags:
@@ -17,11 +17,11 @@ title: "Why we're joining Hyperledger"
 
 [{{< image_blog "hyperledger.jpg" >}}](https://www.flickr.com/photos/50576141@N03/15805560016/)
 
-Earlier today we formally announced that we will be joining the Hyperledger project and that we will be submitting our eris:db blockchain client to it for incubation. In this post I would like to add a bit more color as to our reasons for such a move and explain what this means for current `eris:db` users.
+Earlier today we formally announced that we will be joining the Hyperledger project and that we will be submitting our `eris:db` [blockchain](/explainers/blockchains/) client to it for incubation. In this post I would like to add a bit more color as to our reasons for such a move and explain what this means for current `eris:db` users.
 
 # Introduction
 
-When we started our company in 2014 we never really had the intention of being solely responsible for building an enterprise grade, general purpose smart contract machine. Indeed, our intention was always to participate in the furtherance of the technology at that level of the technology stack. This strategic choice, made early on, and continually reviewed at our Board and senior management team levels, has informed a plurality of tactical and operational decisions that we have made. And it is also behind our joining of Hyperledger.
+When we started our company in 2014 we never really had the intention of being solely responsible for building an enterprise grade, general purpose [smart contract machine](/explainers/smart_contracts/). Indeed, our intention was always to participate in the furtherance of the technology at that level of the technology stack. This strategic choice, made early on, and continually reviewed at our board and senior management team levels, has informed a plurality of tactical and operational decisions that we have made. And it is also behind our joining of Hyperledger.
 
 # Why
 
@@ -35,7 +35,7 @@ This doesn't always work as intended, though. Our `eris:db` codebase has been op
 
 And the results of that effort have been amazing. Over the course of 2015 we saw about a 50X increase in downloads of `eris:db` and in 2016 we saw a further 20X increase in downloads. The `eris:db` codebase has now reached a point of interest where our company can no longer respond to the entirety of the demand alone.
 
-I'm very proud of the efforts our team has expended building eris:db into a widely used codebase. However, what we have done an inadequate job of is building community around our codebase. The number of outside contributors to our codebase is miniscule in comparison to the open source ideals.
+I'm very proud of the efforts our team has expended building eris:db into a widely used codebase. However, what we have done an inadequate job of is building community around our codebase. The number of outside contributors to our codebase is miniscule in comparison to our open source ideals.
 
 I could point out a variety of reasons why we have not put the effort behind building a community that it deserved -- the new-ness and complexity of the software we build limits the range of possible contributors, the administrative challenge of gaining enterprise contributors -- are two primary reasons why the costs and benefits did not weigh in favor of resourcing and expending efforts to build a community around the code base. But the bottom line is that we haven't given community building the care and effort it deserves.
 
@@ -47,9 +47,9 @@ We have said it before, and we'll say it again, but 2017 in the enterprise block
 
 In order to support production grade applications, we (the "enterprise blockchain" industry) first need to have platforms that can readily support production grade applications for enterprise. And this requires a **lot** of expertise. Expertise which very few companies on earth wholly have in-house.
 
-Platforms need to have security vetting, fault tolerance vetting, QA | penetration testing, entrprise grade RPCs need to be built along with client libraries in a range of languages, platforms need long term network testing of a variety of scenarios covering normal fault tolerance as well as byzantine fault tolerance, they need to be extremely well documented, they need a variety of example applications in the open as paradigms that developers can follow. And to put it bluntly, `eris:db` would fall very much behind other codebases if we tried to build all of this expertise alone.
+Platforms need to have security vetting, fault tolerance vetting, QA on a variety of platforms, penetration testing, entrprise grade RPCs need to be built along with client libraries in a range of languages, platforms need long-term network testing of a variety of scenarios covering normal fault tolerance as well as byzantine fault tolerance, they need to be extremely well documented, they need a variety of example applications in the open as paradigms that developers can follow. And to put it bluntly, `eris:db` would fall very much behind other codebases if we tried to build all of this expertise alone.
 
-Joining the Hyperledger project gives our team access to an unmatched range of enterprise building expertise via the extensive current members. This expertise will be essential to the continued maturation of `eris:db` into a smart contract network that is capable of easily, safely, and reliably supporting enterprise grade ecosystem applications.
+Joining the Hyperledger project gives our team access to an unmatched range of enterprise building expertise via the current and future members. This expertise will be essential to the continued maturation of `eris:db` into a smart contract network that is capable of easily, safely, and reliably supporting enterprise grade [ecosystem applications](/explainers/ecosystem_applications/).
 
 ## Reason Number 3: Collaborating is in our DNA
 
@@ -57,9 +57,7 @@ Blockchains, smart contracts, and ecosystem applications are, fundamentally, fra
 
 In the past twelve months we have taken a hard line stance on this with respect to our commercial engagements and we have not been directly involved in the building of a pilot or POC **unless it has been a collaborative delivery**. In other words, we have consistently partnered to deliver ecosystem application POCs and pilots, even when the end using customers have balked at our collaborative approach.
 
-This decision was strategic rather than tactical. Namely, if we as Monax are going to get our software into production in enterprises then we need to prove not only the technology itself, but also develop the mechanisms **to build and deliver that software collaboratively**.
-
-The old one-to-one approach dominated by account managers walking the halls of incumbent enterprises pitching the IT company's "new" thing, may still work for a lot of technology; but it isn't likely to work for blockchains and smart contracts.
+This decision was strategic rather than tactical. Namely, if we as Monax are going to get our software into production in enterprises then we need to prove not only the technology itself, but also develop the mechanisms **to build and deliver that software collaboratively**. The old one-to-one approach dominated by account managers walking the halls of incumbent enterprises pitching the IT company's "new" thing, may still work for a lot of technology; but it isn't likely to work for blockchains and smart contracts.
 
 For this tech, we need a new approach to delivery. And that requires collaboration. This is why we've been building a collaborative approach to software delivery into our very DNA as a company. Joining Hyperledger reinforces this at a very fundamental level.
 
@@ -69,11 +67,11 @@ All the above may be of interest, or it may not, but it doesn't really tell deve
 
 ## Monax is joining Hyperledger; eris:db is being submitted for incubation
 
-There are two related things happening here. First, at a corporate level, our company will be joining Hyperledger as a general member of the consortium. This affords us certain opportunities to collaborate with the other codebases administered by the consortium; to attend consortium meetings; participate in the consortium's governance structure; etc. This action has nothing to do with code.
+There are two related things happening. First, at a corporate level, our company will be joining Hyperledger as a general member of the consortium. This affords us certain opportunities to collaborate with the other codebases administered by the consortium; to attend consortium meetings; participate in the consortium's governance structure; etc. This action has nothing to do with code.
 
 Second, `eris:db` will be submitted for incubation. The way that Hyperledger's code governance systems operate is as such. Any codebase which is seeking to be incubated by the Hyperledger project, and to, more or less become, "Hyperledger code" must first be Apache licensed (more on this in a minute); then a proposal must be submitted to the Hyperledger Technical Steering Committee outlining the reasons why the code base should be incubated by the project.
 
-If the Committee approves the proposal then the proposal moves to the governing board of Hyperledger (which is mostly comprised of the premium members with two board members being elected via the general members). Once the governing board approves, then the codebase is formally transitioned into the Hyperledger umbrella and begins to use that code governance framework and administration.
+If the committee approves the proposal then the proposal moves to the governing board of Hyperledger (which is mostly comprised of the premium members with two board members being elected via the general members). Once the governing board approves, then the codebase is formally transitioned into the Hyperledger umbrella and begins to use that code governance framework and administration.
 
 ## `eris:db` will be relicensed Apache 2
 
@@ -89,7 +87,7 @@ Users of `eris` need not worry. For v0.17.0 we will ensure a smooth transition t
 
 ## RIP `eris:db`; Long Live `?????`
 
-To reduce the association with `eris`, a holistic ecosystem application platform, we will be proposing to the TSC that `eris:db` should be renamed when it was brought into the Hyperledger project. We have *some* ideas as to what we could name it. But instead, we will be proposing that the renaming of the codebase could actually make for a nice backdrop to build community around the idea. So, if you have any ideas let us know on [twitter](https://twitter.com/monaxHQ)!
+To reduce the association with `eris`, a holistic ecosystem application platform, we will be proposing to the TSC that `eris:db` should be renamed when it was brought into the Hyperledger project. We have *some* ideas as to what we could name it. But instead of monopolizing this decision, we will be proposing that the renaming of the codebase could actually make for a nice backdrop to build community around the idea. So, if you have any ideas let us know on [twitter](https://twitter.com/monaxHQ)!
 
 ## We're looking for contributors
 
