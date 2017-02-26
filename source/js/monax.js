@@ -245,11 +245,30 @@ $(function() {
 
   // search display
   $('#search-reveal').click(function(event) {
-    $('#search').toggle(50, function() {
-      $('#results').toggle(50, function() {
-        // $('#search').focus();
+    var $search = $('#search');
+    if ( $search.is(":hidden") ) {
+      $search.show(300, function(){
+        $search.focus();
       });
-    });
+    } else {
+      $search.hide(300);
+    }
+  });
+
+  // Only open search dropdown on search input (3+ chars)
+  $('#search').keyup( function(){
+    var $results = $('#results');
+    var s = $('#search').val();
+    if(s.length <= 2) {
+      $results.hide(300).find('.dropdown-menu').hide(300); // not needed
+    } else {
+      $results.show(300).find('.dropdown-menu').show(300);
+
+      // if no results, display 'no results found'
+      if( $results.is(":empty") && $results.find(".no-results").length == 0) {
+        $results.append("<li class='no-results'>No results found...</li>");
+      }
+    }
   });
 
   // search hide
@@ -258,6 +277,7 @@ $(function() {
       $('#results').hide();
     });
   });
+  
 
   /*
     ------------------------------------------------------------------------
