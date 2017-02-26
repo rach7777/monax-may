@@ -277,59 +277,7 @@ $(function() {
       $('#results').hide();
     });
   });
-
-
-  /*
-    ------------------------------------------------------------------------
-      Menu Dropdown Fixes
-    ------------------------------------------------------------------------
-  */
-
-
-
-/*
-*****
-
-  var linkClicked;
   
-  // Detect if a megamenu link has clicked
-  $("li.menu-item.menu-item-has-children.mega-menu").click(function(event){
-    
-    // Keep track of what was clicked
-    linkClicked = $(this);
-
-    // Detect if we've clicked on the main menu
-    if (!$(event.target).parents('ul.sub-menu').length == 1) {
-
-      // If a sub menu isn't already open, open it and turn on dim
-      if (!$("li.menu-item.menu-item-has-children.mega-menu").hasClass("sub-menu-open")) {
-        $(linkClicked).toggleClass("sub-menu-open");
-        $("body").toggleClass("dim-overlay");
-        return false;
-      }
-
-      // Detect if another sub menu is open
-      if ($("li.menu-item.menu-item-has-children.mega-menu").hasClass("sub-menu-open")) {
-      
-        // If it was a different menu item that was clicked, open the new sub menu. 
-        if (!$(linkClicked).hasClass("sub-menu-open")) {
-          $("li.menu-item.menu-item-has-children.mega-menu").removeClass("sub-menu-open");
-          $(linkClicked).toggleClass("sub-menu-open");
-          return false;
-        }
-
-        // Otherwise close the menu.
-        if ($(linkClicked).hasClass("sub-menu-open")) {
-          $(linkClicked).removeClass("sub-menu-open");
-          $("body").removeClass("dim-overlay");
-          return false;
-        }
-      }
-    }
-  });
-
-******/
-
 
   /*
     ------------------------------------------------------------------------
