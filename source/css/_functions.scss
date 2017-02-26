@@ -1,0 +1,138 @@
+/* ========================= 
+   SCSS Helper Functions
+========================= */
+
+
+/* Responsive Container Sizes
+================================ */
+
+// Default Device Sizes
+
+$xlarge-only:           2000px;
+$large-desktop:         1600px;
+$desktop:               1200px;
+$laptop:                992px;
+$tablet-landscape:      768px; // Breakpoint 1
+$tablet-portrait:       600px;
+$phone-landscape:       480px;
+$phone-portrait:        320px;
+
+
+// Default Container Sizes
+
+$bp1-container-size: $tablet-landscape;
+// $bp2-container-size: $phone-landscape;
+// $bp3-container-size: $phone-portrait;
+
+// Function: Media query responsiveness
+// Useage: @include responsive(desktops) { width: 100%;}
+@mixin responsive($media) {
+    @if $media == 'xlarge-only' {
+        @media only screen and (min-width : $desktop) { @content; }
+    }
+    @else if $media == 'desktop' {
+        @media only screen and (max-width : $desktop) { @content; }
+    }
+    @else if $media == 'laptop' {
+        @media only screen and (max-width : $laptop) { @content; }
+    }
+    @else if $media == 'tablet-landscape' {
+        @media only screen and (max-width : $tablet-landscape) { @content; }
+    }
+    @else if $media == 'tablet-portrait' {
+        @media only screen and (max-width : $tablet-portrait) { @content; }
+    }
+    @else if $media == 'phone-landscape' {
+        @media only screen and (max-width : $phone-landscape) { @content; }
+    }
+    @else if $media == 'phone-portrait' {
+        @media only screen and (max-width : $phone-portrait) { @content; }
+    }
+
+    @else if $media == 'breakpoint' {
+        @media only screen and (max-width : $bp1-container-size) { @content; }
+    }
+    @else if $media == 'breakpoint-plus' {
+        @media only screen and (min-width : $bp1-container-size) { @content; }
+    }
+}
+
+/* 
+E.G.
+
+@include responsive(xlarge-only) {  }
+@include responsive(desktop) {  } 
+@include responsive(laptop) {  }
+@include responsive(tablet-landscape) {  } // Breakpoint 1
+@include responsive(tablet-portrait) {  }
+@include responsive(phone-landscape) {  }
+@include responsive(phone-portrait) {  }
+
+ */
+
+
+
+/* :after and :before defaults
+================================ */
+
+// Function: default properities for pseudo elements :before and :after
+// Usage: div::after { @include pseudo; }
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+
+
+/* Placeholders
+================================ */
+
+// Function: Edit the placeholder style of an element
+// Usage: @include input-placeholder{ color: red; };
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+
+
+/* Transitions
+================================ */
+
+// Function: Transitions
+// Usage: @include transition(color 0.3s);
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+@mixin transition-property($property...) {
+    -moz-transition-property:    $property;
+    -o-transition-property:      $property;
+    -webkit-transition-property: $property;
+    transition-property:         $property;
+}
+@mixin transition-duration($duration...) {
+    -moz-transition-property:    $duration;
+    -o-transition-property:      $duration;
+    -webkit-transition-property: $duration;
+    transition-property:         $duration;
+}
+@mixin transition-timing-function($timing...) {
+    -moz-transition-timing-function:    $timing;
+    -o-transition-timing-function:      $timing;
+    -webkit-transition-timing-function: $timing;
+    transition-timing-function:         $timing;
+}
+@mixin transition-delay($delay...) {
+    -moz-transition-delay:    $delay;
+    -o-transition-delay:      $delay;
+    -webkit-transition-delay: $delay;
+    transition-delay:         $delay;
+}
+

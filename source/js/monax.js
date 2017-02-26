@@ -245,11 +245,30 @@ $(function() {
 
   // search display
   $('#search-reveal').click(function(event) {
-    $('#search').toggle(50, function() {
-      $('#results').toggle(50, function() {
-        // $('#search').focus();
+    var $search = $('#search');
+    if ( $search.is(":hidden") ) {
+      $search.show(300, function(){
+        $search.focus();
       });
-    });
+    } else {
+      $search.hide(300);
+    }
+  });
+
+  // Only open search dropdown on search input (3+ chars)
+  $('#search').keyup( function(){
+    var $results = $('#results');
+    var s = $('#search').val();
+    if(s.length <= 2) {
+      $results.hide(300).find('.dropdown-menu').hide(300); // not needed
+    } else {
+      $results.show(300).find('.dropdown-menu').show(300);
+
+      // if no results, display 'no results found'
+      if( $results.is(":empty") && $results.find(".no-results").length == 0) {
+        $results.append("<li class='no-results'>No results found...</li>");
+      }
+    }
   });
 
   // search hide
@@ -258,6 +277,59 @@ $(function() {
       $('#results').hide();
     });
   });
+
+
+  /*
+    ------------------------------------------------------------------------
+      Menu Dropdown Fixes
+    ------------------------------------------------------------------------
+  */
+
+
+
+/*
+*****
+
+  var linkClicked;
+  
+  // Detect if a megamenu link has clicked
+  $("li.menu-item.menu-item-has-children.mega-menu").click(function(event){
+    
+    // Keep track of what was clicked
+    linkClicked = $(this);
+
+    // Detect if we've clicked on the main menu
+    if (!$(event.target).parents('ul.sub-menu').length == 1) {
+
+      // If a sub menu isn't already open, open it and turn on dim
+      if (!$("li.menu-item.menu-item-has-children.mega-menu").hasClass("sub-menu-open")) {
+        $(linkClicked).toggleClass("sub-menu-open");
+        $("body").toggleClass("dim-overlay");
+        return false;
+      }
+
+      // Detect if another sub menu is open
+      if ($("li.menu-item.menu-item-has-children.mega-menu").hasClass("sub-menu-open")) {
+      
+        // If it was a different menu item that was clicked, open the new sub menu. 
+        if (!$(linkClicked).hasClass("sub-menu-open")) {
+          $("li.menu-item.menu-item-has-children.mega-menu").removeClass("sub-menu-open");
+          $(linkClicked).toggleClass("sub-menu-open");
+          return false;
+        }
+
+        // Otherwise close the menu.
+        if ($(linkClicked).hasClass("sub-menu-open")) {
+          $(linkClicked).removeClass("sub-menu-open");
+          $("body").removeClass("dim-overlay");
+          return false;
+        }
+      }
+    }
+  });
+
+******/
+
 
   /*
     ------------------------------------------------------------------------

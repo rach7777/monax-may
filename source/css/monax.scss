@@ -6,6 +6,9 @@
 @import "prism-okaidia";
 @import "fonts";
 @import "colors";
+@import "functions"; // Add helper functions
+@import "functions-flexboxes"; // Add flexbox helper functions
+
 
 html, body {
     height: 100%;
@@ -57,14 +60,6 @@ nav.navbar {
         }
     }
 
-    a {
-        color: $grey_dark !important;
-
-        &:hover {
-            color: $grey_dark !important;
-        }
-    }
-
     #nav-logo {
         position: relative;
         display: box;
@@ -75,24 +70,124 @@ nav.navbar {
     }
 
     #search-reveal {
-        display: box;
-        width: 100%;
+        display: inline-block;
+        width: auto;
+        float: right;
+        padding-bottom: 17px;
+        position: relative;
+        top: 2px;
+        @include transition(padding 0.3s);
+        
+        // flex on mobile
+        @include responsive (breakpoint) {
+            span,
+            & {
+                float: none !important;
+                @include flex(0, 1, auto);
+                position: static;
+            }
+        }
+        
+        &[aria-expanded="true"] {
+            padding-left: 0;
+            // preserve padding on mobile
+            @include responsive (breakpoint) { padding-left: 15px; padding-right: 2px; }
+        }
+
+        span.pull-right {
+            margin-left: 0;
+        }
+    }
+
+    #search {
+        float: left;
+        width: auto;
+        margin: 8px;
+        // flex width on mobile
+        @include responsive (breakpoint) { 
+            @include flex(1, 1, auto);
+            margin-right: 15px;
+            margin-top: 4px;
+        }
+
+        &:focus {
+            box-shadow: 0 0 5px $monax;
+            border: 1px solid $monax;
+        }  
+    }
+    
+    li.dropdown {
+        // Animate height on mobile
+        @include responsive (breakpoint) {
+            max-height: 40px;
+            overflow: hidden;
+            @include transition(max-height 1s);
+            @include transition-timing-function(easeInCubic);
+            @include flexbox;
+            @include align-items; // stretch
+            @include flex-wrap(wrap);
+        }
+        
+        // L1 links
+        > a {
+            color: $grey_dark !important;
+            background-color: transparent !important;
+            @include transition(color 0.3s);
+            // force wrap on mobile
+            @include responsive (breakpoint) { width: 100%; }
+
+            &:hover {
+                color: $monax !important;
+            }
+        }
+        
+
+        &.open {
+            // Animate height on mobile
+            @include responsive (breakpoint) { max-height: 500px; }
+
+            > a {
+                color: $monax !important;
+            }
+        }
+
+        &.open,
+        &:hover {
+            color: $monax;
+        }
     }
 
     ul.dropdown-menu {
         background: $white;
+        // Force flex columns on mobile
+        @include responsive (breakpoint) {
+            width: 100% !important;
+
+            &:before {
+                @include pseudo;
+            }
+        }
 
         li {
+            // L2 links
             a {
                 color: $grey_dark;
 
                 &:hover {
-                  background-color: $grey_light;
+                  color: $grey_dark;
                 }
 
                 .divider {
                     background-color: $grey_dark;
                 }
+            }
+            
+            // No results
+            &.no-results {
+                display: block;
+                padding: 3px 20px;
+                color: $grey_light;
+                white-space: nowrap;
             }
         }
     }
@@ -244,6 +339,20 @@ footer {
     }
 }
 
+
+/*                    */
+/*   Mobile Classes   */
+/*                    */
+
+.hide-desktop {
+    @include responsive (breakpoint-plus) { display: none; }
+}
+.hide-mobile {
+    @include responsive (breakpoint) { display: none; }
+}
+
+
+
 /*              */
 /*   BreakPts   */
 /*              */
@@ -280,3 +389,9 @@ footer {
     }
   }
 }
+
+
+
+
+
+
