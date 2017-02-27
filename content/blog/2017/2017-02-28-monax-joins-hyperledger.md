@@ -31,7 +31,7 @@ There are three major reasons for submitting our market leading smart contract m
 
 Effectively, what well-built open source projects do is to reduce the operational load which any one company needs to sustain in order to develop a given piece of software. This is what allows open source software to exponentially grow and harden.
 
-This doesn't always work as intended, though. Our `eris:db` codebase has been open sourced since 2014, but we have (for all intents and purposes) carried almost the entire load ourselves. We have designed and built the code, it's documentation, built example applications, answered questions on various developer fora, along with implementing and manning our own support systems.
+This doesn't always work as intended, though. Our `eris:db` codebase has been open sourced since 2014, but we have (for all intents and purposes) carried almost the entire load ourselves. We have designed and built the code, its documentation, built example applications, answered questions on various developer fora, along with implementing and manning our own support systems.
 
 And the results of that effort have been amazing. Over the course of 2015 we saw about a 50X increase in downloads of `eris:db` and in 2016 we saw a further 20X increase in downloads. I'm very proud of the efforts our team has expended building eris:db into a widely used codebase. However, interest in ethereum style smart contract interpreters within enterprise (long, our bread and butter) has reached a tipping point. Currently, our `eris:db` codebase has reached a point of interest where our company can no longer respond to the entirety of the demand alone. We now need the community of enterprise smart contract users to assist us in moving this codebase forward.
 
