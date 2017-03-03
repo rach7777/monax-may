@@ -1,6 +1,8 @@
 /* Home Page */
 @import "fonts";
 @import "colors";
+@import "functions"; // Add helper functions
+@import "functions-flexboxes"; // Add flexbox helper functions
 @import "hugofont.min";
 @import "owl.carousel";
 @import "owl.theme.default";
@@ -68,7 +70,7 @@
     .logo {
         max-width: 55em;
         width: 100%;
-        padding: 2em 2em 0 2em;
+        padding: 6em 2em 0 2em;
     }
 
     .tagline {
@@ -76,7 +78,7 @@
         color: $black;
         max-width: 32em;
         width: 100%;
-        padding: 0 2em 2em 2em;
+        padding: 0 2em 3em 2em;
     }
 
     .buttonbox {
@@ -85,7 +87,8 @@
 
     .point {
         background: $white;
-        padding: 50px 0;
+        // padding: 50px 0;
+        padding: 60px 0 80px;
         // color: $white;
 
         blockquote {
@@ -95,16 +98,25 @@
                 color: $black;
             }
         }
+
+        .carousel-logo {
+            color: rgba(0, 0, 0, 0.2);
+        }
     }
 
     .counterpoint {
-        padding: 50px 0;
+        // padding: 50px 0;
+        padding: 60px 0 80px;
         background-color: $blue;
         color: $white;
+
+        .carousel-logo {
+            color: rgba(255, 255, 255, 0.4);
+        }
     }
 
     .carousel-inner {
-        padding: 40px 0 32px 0;
+        padding: 10px 0 2px 0;
     }
 
     .carousel-logo {
@@ -115,8 +127,12 @@
     }
 
     .point h2, .counterpoint h2, #contact-monax h2 {
-        font-size: 32pt;
-        line-height: 1.7;
+        // font-size: 32pt;
+        // line-height: 1.7;
+        font-size: 40pt;
+        line-height: 1.2;
+        font-weight: 200;
+        letter-spacing: -2px;
     }
 
     i.callout-icon, i.point-icon, i.lead-icon {
@@ -131,15 +147,25 @@
         -webkit-transition: box-shadow 0.2s;
         -moz-transition: box-shadow 0.2s;
         transition: box-shadow 0.2s;
+
+        border: none;
+        background-color: $green;
+        color: $white;
+        font-size: 40px;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        @include transition(background 0.3s);
     }
 
     i.lead-icon {
-        border: 3px solid #222;
+        // border: 3px solid #222;
+
 
         &:hover {
-            color: $white;
-            border: 3px solid black;
-            background: black;
+            // color: $white;
+            // border: 3px solid black;
+            background: darken($green, 10%);
         }
     }
 
@@ -161,8 +187,9 @@
         border: none;
 
         p.item-header {
-            font-size: 140%;
-            font-weight: 900;
+            font-size: 200%;
+            font-weight: 300;
+            letter-spacing: -0.2px;
         }
     }
 
@@ -170,9 +197,18 @@
         margin: 10px;
         background-color: $blue_dark !important;
         border-color:  $blue_darkest !important;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.8px;
+        @include transition(background 0.3s);
 
         &:hover {
-            background-color: $blue_dark !important;
+            background-color: darken($blue_dark,10%) !important;
+        }
+
+        .fa {
+            margin-left: 5px;
         }
     }
 
@@ -185,10 +221,11 @@
         padding: 50px 0;
 
         .btn {
-            color: $black;
+            color: $white;
             margin: 10px;
-            background-color: $blue_light !important;
-            border-color:  $blue !important;
+            background-color: $green !important;
+            border: none !important;
+            margin: 0 !important;
 
             &:hover {
                 background-color: $blue_lightest !important;

@@ -10,27 +10,62 @@
 @import "functions-flexboxes"; // Add flexbox helper functions
 
 
+// Global typography
 html, body {
     height: 100%;
     width: 100%;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
 }
 
 body {
     font-family: $font_body, sans-serif;
     line-height: 1.6;
     position: relative;
+    font-weight: 300;
+    font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font_header, sans-serif;
 }
 
-p {
-    font-size: 1.2em;
-    font-weight: 500;
+.h1, .h2, .h3, h1, h2, h3 {
+    font-weight: 200;
 }
 
+.h4, .h5, .h6, h4, h5, h6 {
+    font-weight: 300;
+}
+
+.h3, h3 {
+    font-size: 28px;
+}
+
+p, blockquote {
+    // font-size: 1.2em;
+    // font-weight: 500;
+    font-size: inherit;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+}
+
+pre {
+    border-radius: 5px;
+    border: none;
+    border-left: 6px solid #96b85d;
+
+    code {
+        color: #fff;
+    }
+}
+
+// Typography within articles
+p + h2 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+// Links
 a {
     color: $links;
     font-weight: 900;
@@ -132,6 +167,9 @@ nav.navbar {
         > a {
             color: $grey_dark !important;
             background-color: transparent !important;
+            font-weight: 300;
+            font-size: 18px;
+            letter-spacing: 0px;
             @include transition(color 0.3s);
             // force wrap on mobile
             @include responsive (breakpoint) { width: 100%; }
@@ -172,6 +210,9 @@ nav.navbar {
             // L2 links
             a {
                 color: $grey_dark;
+                font-weight: 300;
+                font-size: 16px;
+                letter-spacing: 0px;
 
                 &:hover {
                   color: $grey_dark;
@@ -179,6 +220,10 @@ nav.navbar {
 
                 .divider {
                     background-color: $grey_dark;
+                }
+
+                .fa {
+                    margin-right: 5px;
                 }
             }
             
@@ -223,7 +268,7 @@ nav.navbar {
         ul {
             list-style: none;
 
-            a{
+            a {
                 color: $links !important;
                 display: block;
                 overflow: hidden;
@@ -323,6 +368,65 @@ nav.navbar {
 
     .post-meta p {
         font-size: 14px;
+    }
+}
+
+/*                     */
+/*   Icon overrides    */
+/*                     */
+
+.icon-power-cord:before {
+    content: "\f1e6" !important;
+    font-family: "FontAwesome";
+    font-size: 35px;
+    position: relative;
+    top: -4px;
+}
+
+
+/*                          */
+/*   Bootstrap overrides    */
+/*                          */
+
+.btn-group-lg > .btn,
+.btn-lg {
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.form-horizontal {
+
+    label.control-label,
+    label.checkbox-inline {
+        text-align: left;
+        padding: 0px 15px 4px;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 0px;
+    }
+
+    .form-control {
+        height: 44px;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    textarea.form-control {
+        height: 100px;
+        padding: 12px;
+        @include transition(height 0.3s);
+
+        &:focus,
+        &:active {
+            height: 150px;
+        }
+    }
+
+    input[type*=checkbox] {
+        left: 8px;
+        top: 2px;
     }
 }
 
