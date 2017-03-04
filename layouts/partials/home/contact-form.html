@@ -1,8 +1,9 @@
 <div class="row"><a name="contact-monax"></a>
   <h2>Get in touch!</h2>
+  <p></p>
 </div>
 <div class="row">
-  <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="post" class="col-sm-8 col-sm-offset-2 form-horizontal">
+  <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="post" class="col-sm-8 col-sm-offset-2 form-horizontal" id="contact-monax-form">
 
     <input type=hidden name="oid" value="00D41000000eJYk">
     <input type=hidden name="lead_source" value="Website">
@@ -12,16 +13,23 @@
 
     <fieldset>
       <div id="first-name-group" class="form-group">
-        <label for="first_name" class="col-sm-12 control-label">Your first name (required)</label>
-        <div class="col-sm-12">
-          <input class="form-control required" id="first_name" name="first_name" placeholder="Primary Name" type="text" />
+        <label for="first_name" class="col-sm-12 control-label">Your first name</label>
+        <div class="col-sm-12 required-wrap">
+          <input class="form-control required" id="first_name" name="first_name" placeholder="First Name" type="text" />
         </div>
       </div>
 
       <div id="last-name-group" class="form-group">
-        <label for="last_name" class="col-sm-12 control-label">Your last name (required)</label>
-        <div class="col-sm-12">
-          <input class="form-control required" id="last_name" name="last_name" placeholder="Family Name" type="text" />
+        <label for="last_name" class="col-sm-12 control-label">Your last name</label>
+        <div class="col-sm-12 required-wrap">
+          <input class="form-control required" id="last_name" name="last_name" placeholder="Last Name" type="text" />
+        </div>
+      </div>
+
+      <div id="email-group" class="form-group">
+        <label for="email" class="col-sm-12 control-label">Your email address</label>
+        <div class="col-sm-12 required-wrap">
+          <input class="form-control required" id="email" name="email" placeholder="Email Address" type="text" />
         </div>
       </div>
 
@@ -32,18 +40,11 @@
         </div>
       </div>
 
-      <div id="email-group" class="form-group">
-        <label for="email" class="col-sm-12 control-label">Your email address (required)</label>
-        <div class="col-sm-12">
-          <input class="form-control required" id="email" name="email" placeholder="Email" type="text" />
-        </div>
-      </div>
-
-      <div class="form-group">
+      <div class="form-group start-hidden">
         <label for="industry" class="col-sm-12 control-label">Your company's sector</label>
         <div class="col-sm-12">
           <select class="form-control" data-width="100%" data-placeholder="Your company&#39;s sector" id="industry" name="industry" >
-            <option value="" selected="selected"></option>
+            <option value="" selected="selected">Select</option>
             <option value="Reinsurance">Reinsurance</option>
             <option value="Primary insurance">Primary insurance</option>
             <option value="Risk asset management">Risk asset management</option>
@@ -81,7 +82,7 @@
         </div>
       </div>
 
-      <div class="form-group row text-left">
+      <div class="form-group row text-left start-hidden">
         <div class="col-xs-offset-1 col-sm-11">
           <label for="user" class="checkbox-inline">
             <input id="user" name="00N4100000ILmTG" type="checkbox" value="1" /> My company uses your platform.
@@ -132,11 +133,11 @@
         </div>
       </div>
 
-      <div class="col-sm-4 col-sm-offset-4">
-        <input class="btn btn-lg btn-primary btn-block" type="submit" value="Submit" id="send-button">
+      <div class="col-sm-6 col-sm-offset-3">
+        <input class="btn btn-lg btn-primary btn-block" type="submit" value="Get in touch" id="send-button">
       </div>
     </fieldset>
   </form>
   <div id="success_message">Thanks for your inquiry.<br>We will contact you as soon as possible.</div>
-  <div id="error_message" class="has-error"><p class="has-error col-xs-offset-1 col-xs-4"></p><input type="submit" value="OK" class="col-xs-3 btn btn-danger"></div>
+  <div id="error_message" class="has-error"><p class="has-error col-sm-4 col-sm-offset-4"></p><input type="submit" value="OK" class="btn btn-danger"></div>
 </div>
