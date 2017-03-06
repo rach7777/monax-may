@@ -29,12 +29,13 @@ $red_lightest: #FFD0CD;
 // color palette - blues (use on HOME only)
 $blue_lightest: #D1DCE6;
 $blue_darkest: #294F6E;
-$blue: #6E8CA4;
-$blue_dark: #294F6E;
+$blue: #6e9fc7; // #6E8CA4
+$blue_dark: #255277; // #294F6E
 $blue_light: #A0B6C8;
 
 // hugo/theme defaults
 $menu_active: #E7E7E7;
+$code_bg: #EFF0F1;
 
 // for specific "things"
 $links: $green;
