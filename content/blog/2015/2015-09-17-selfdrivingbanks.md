@@ -29,7 +29,7 @@ url: /2015/09/17/selfdrivingbanks/
 
 Because Bitcoin does not require a central server whirring away, or direct human oversight, to run, its earliest adopters have long referred to it in quasi-religious, almost magical terms. Immutable. Indestructible. "The" blockchain.
 
-Of course, I co-founded a business that, at least to my knowledge, was [the first in the world](https://monax.io/blog/2014/12/17/eris-what-are-we-building/) to take the "bitcoin"/cryptocurrency piece out of the equation - resulting in the datastructure now referred to as "a" blockchain.
+Of course, I co-founded a business that, at least to my knowledge, was [the first in the world](/blog/2014/12/17/eris-what-are-we-building/) to take the "bitcoin"/cryptocurrency piece out of the equation - resulting in the datastructure now referred to as "a" blockchain.
 
 This was not a political decision, but a practical one. Make no mistake, I started - as we all did - as a Bitcoin guy before I became a smart contract guy. However, it bears mentioning that back in the day Bitcoin was the only game in town. Thanks to permissioning (which allows us to control our blockchains), we now have options.
 

@@ -37,7 +37,7 @@ The promise that docker backed systems have is they have deterministic runtimes.
 
 The reason we have built `eris` the way that we have is to support organizations who are interested in a variety of distributed technology tools. Not only those of the blockchains world, but also those from the "cloudy" world. Because these two groups have a lot to learn from each other.
 
-No matter whether your application needs smart contracts or just docker based services, it needs modular, reliable runtimes. To see more about what I mean see our [getting started documentation](https://monax.io/docs/).
+No matter whether your application needs smart contracts or just docker based services, it needs modular, reliable runtimes. To see more about what I mean see our [getting started documentation](/docs/).
 
 # Tenet 2 of an Ecosystems Approach to Blockchaining
 
@@ -61,7 +61,7 @@ eris services import thing_to_boot HASH
 
 We are also working on a solution we call `etcb` (like CoreOS's `etcd` but `b` ... because its on a blockchain) which will enable better group sharing of configuration files.
 
-We don't really "boot" smart contracts themselves and so they do not really need a configuration so to say. But we have built [`eris actions`](/docs/documentation/cli/latest/eris_actions/) which allows for a prebuilding of complex transaction sequences which would be needed to interact with and test various smart contract suites.
+We don't really "boot" smart contracts themselves and so they do not really need a configuration so to say. But we have built [`eris actions`](/docs/) which allows for a prebuilding of complex transaction sequences which would be needed to interact with and test various smart contract suites.
 
 # Tenet 3 of an Ecosystems Approach to Blockchaining
 

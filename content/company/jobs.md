@@ -9,7 +9,7 @@ type: company
 
 Monax is not currently among the Top 100 Places to Work; but we aim to be.
 
-If you feel you have an ability to perform any job title posted below and the willingness to join [Team Monax](https://monax.io/company/team/) then please send a maximum of 800 words (preferably in markdown formatting) telling us why you are a good fit for Monax generally and the position specifically along with a record of your past duties and performance (CV or resume) (preferably in markdown formatting).
+If you feel you have an ability to perform any job title posted below and the willingness to join [Team Monax](/company/team/) then please send a maximum of 800 words (preferably in markdown formatting) telling us why you are a good fit for Monax generally and the position specifically along with a record of your past duties and performance (CV or resume) (preferably in markdown formatting).
 
 ## Currently Open Positions
 - [Full Stack Developer](#fullStackDeveloper)

@@ -26,7 +26,7 @@ I'll get straight to the point:
 
 * We're thinking we'll probably get applications from current students/recent graduates from university or postgraduate courses, although this is not set in stone. Current or former students of any discipline are welcome to apply.
 
-* You'll be programming. So... yeah. You will need to know how to do that. Our stack is built on a backbone of javascript ([node.js](https://nodejs.org/)), [golang](http://golang.org/), [smart contracts](https://monax.io/docs/tutorials/solidity/) and container automation using [docker](https://www.docker.com/), [docker-compose](https://docs.docker.com/compose/) -- experience in at least two of these technologies not required but preferable.
+* You'll be programming. So... yeah. You will need to know how to do that. Our stack is built on a backbone of javascript ([node.js](https://nodejs.org/)), [golang](http://golang.org/), [smart contracts](/docs/solidity/) and container automation using [docker](https://www.docker.com/), [docker-compose](https://docs.docker.com/compose/) -- experience in at least two of these technologies not required but preferable.
 
 * Digging smart contracts and blockchains helps, but isn't necessary, as this is a pretty niche field (I think there are only two businesses in the world that do it at the moment, of which ours is one).
 

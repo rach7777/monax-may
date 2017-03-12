@@ -6,7 +6,7 @@ title: "Explainer | Blockchains"
 excerpt:    "What is a Blockchain and why are these automated data management systems so cool?"
 index_file: ""
 aliases:
-    - /docs/explainers/blockchains/
+    - /explainers/blockchains/
 menu:
   explainers:
     weight: 10

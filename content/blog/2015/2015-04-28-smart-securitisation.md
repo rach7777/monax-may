@@ -53,7 +53,7 @@ Which means maybe we should think about not using them!
 
 If we take the case of, e.g., a bond instrument, the token-driven model falls down immediately on practical points. This is because tokens don't solve a problem that anyone actually has.
 
-Tokens are just data. Ones and zeroes. However, things like financial instruments are actually pretty complex, event-driven bundles of rights and obligations. Our blockchain design, [ErisDB](https://monax.io/platform/db, is a cryptographically-secure event database designed to process these events. We're by no means limiting ourselves to finance but this is where we're starting, as that's where the clients are.
+Tokens are just data. Ones and zeroes. However, things like financial instruments are actually pretty complex, event-driven bundles of rights and obligations. Our blockchain design, [ErisDB](/platform/db, is a cryptographically-secure event database designed to process these events. We're by no means limiting ourselves to finance but this is where we're starting, as that's where the clients are.
 
 That's not to say you can't "hack" a decentralised network to get tokens performing more complex value functions - you can, and provided that you can get the legal nexus to ensure that these representations are, in fact, legally binding manifestations of an asset, tokenisation could work - see, e.g., Taariq Lewis' DigitalTangible or stuff like Ripple/Stellar gateways.
 
@@ -68,7 +68,7 @@ Even if we assume that the model works from a legal-technical perspective (which
 
 ## 3. Smart contractify the things, and actually solve a problem
 
-Am I going to outline a smart securitisation in this blogpost, end-to-end? No, because I have a couple of things I'd like to do other than write in the next two months (in case you're wondering though, we have thought through these matters and the smart contracts needed to implement them [in some detail](https://monax.io/docs/tutorials/solidity/) while we were in Stealth Mode in 2014).
+Am I going to outline a smart securitisation in this blogpost, end-to-end? No, because I have a couple of things I'd like to do other than write in the next two months (in case you're wondering though, we have thought through these matters and the smart contracts needed to implement them [in some detail](/docs/solidity/) while we were in Stealth Mode in 2014).
 
 What I will do, however, is provide a very high-level, 30,000 foot view of why this most fundamental mainstream financial transaction won't work on a token-driven blockchain - but will work on a purely smart contract-driven one such as ErisDB.
 
@@ -89,7 +89,7 @@ The custodian of the Notes (in this case a "Common Safekeeper") will have custod
 
 Using a SQL database with digital signatures for this purpose is probably easier/faster than using Bitcoin or a blockchain. You *could* use a blockchain if you wanted to, for instance, protect yourself against something like a [SQL injection attack](http://www.reddit.com/r/erisindustries/comments/31uuru/blockchain_usecase_1_user_1_instantiation/) and verify the contents of the database - in which case all the "blockchainy" things you need are merkleisation and the use of private key write permissions to control access.
 
-But even if you did that, you still wouldn't need value-tokens. The presence of [database operators/admins](https://monax.io/docs/tutorials) in a commercial blockchain deployment (as surely there will be) means that the only need tokens satisfy - automatic monetary rewards to incentivise security - no longer exists.
+But even if you did that, you still wouldn't need value-tokens. The presence of [database operators/admins](/docs) in a commercial blockchain deployment (as surely there will be) means that the only need tokens satisfy - automatic monetary rewards to incentivise security - no longer exists.
 
 So where we're left is that the "counterparty risk" problems Bitcoin and its ilk solve really aren't that big an issue with securities or other kinds of financial transactions. Even in a trading context (in which case you're looking at settlement risk), inert tokens are totally inferior to assets constituted as dynamic scripts (smart contracts).
 

@@ -5,7 +5,7 @@ layout: single
 title:      "Explainer | Smart Contracts v. Tokenized Approaches"
 excerpt:    "When are smart contracts better than tokenized approaches to blockchaining?"
 aliases:
-    - /docs/explainers/contracts_v_tokens/
+    - /explainers/contracts_v_tokens/
 index_file: ""
 menu:
   explainers:

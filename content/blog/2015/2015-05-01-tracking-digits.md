@@ -45,13 +45,13 @@ This is a simple minimum viable data schema. Indeed whatever additional informat
 
 ## The Blockchain
 
-The blockchain you would design here would be a very simple blockchain. The court itself could make a single node blockchain which only it could amend or write to (for more about blockchain design [see this here](https://monax.io/explainers/blockchains/)). Alternatively, a library or consortium of courts could pool their resources together to run a collective blockchain which was amended or written to by any of the known and registered members.
+The blockchain you would design here would be a very simple blockchain. The court itself could make a single node blockchain which only it could amend or write to (for more about blockchain design [see this here](/explainers/blockchains/)). Alternatively, a library or consortium of courts could pool their resources together to run a collective blockchain which was amended or written to by any of the known and registered members.
 
-`eris:db` makes all that [super simple](https://monax.io/docs/tutorials). And, by the way, our solution will run on nearly [anything](https://monax.io/blog/2015/04/01/peer-server-networks-current-paradigm/) (except Windows outside of Docker).
+`eris:db` makes all that [super simple](/docs). And, by the way, our solution will run on nearly [anything](/blog/2015/04/01/peer-server-networks-current-paradigm/) (except Windows outside of Docker).
 
 ## The Application Layer
 
-Functionally the application will work nearly the same as our [2gather](https://monax.io/blog/2015/04/07/2gather/) video sharing application works. The basic workflow would look something like this:
+Functionally the application will work nearly the same as our [2gather](/blog/2015/04/07/2gather/) video sharing application works. The basic workflow would look something like this:
 
 1. Judge finalizes opinion
 2. Judge gives finalized opinion to clerk
@@ -71,6 +71,6 @@ At Monax Industries we make it super simple to start building these systems. Tod
 2. Roll (your blockchain)
 3. Build (your application)
 
-For more information as to how to get started [see here](https://monax.io/docs/tutorials/).
+For more information as to how to get started [see here](/docs/).
 
 (Photo credit to: [Board Track Racer by Insomnia Cured Here @ flickr](https://www.flickr.com/photos/tom-margie/1299414993/) -- CC-BY-SA to the author.)

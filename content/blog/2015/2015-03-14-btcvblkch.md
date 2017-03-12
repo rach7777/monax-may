@@ -55,6 +55,6 @@ But equally, it’s also cool to be evangelistic about using blockchain data str
 
 People should be free to use this technology for **whatever they damn well please**.
 
-Hence why our platform exists, and is open-source. Blaze your own trail in crypto valley: [**roll your own personally-tailored blockchain today**](https://monax.io/docs/tutorials/).
+Hence why our platform exists, and is open-source. Blaze your own trail in crypto valley: [**roll your own personally-tailored blockchain today**](/docs/).
 
 

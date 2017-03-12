@@ -6,7 +6,7 @@ index_file: ""
 title:      "Explainer | Smart Contracts"
 excerpt:    "What are Smart Contracts and why are these distributed logic gateways so cool?"
 aliases:
-    - /docs/explainers/smart_contracts/
+    - /explainers/smart_contracts/
 menu:
   explainers:
     weight: 20
@@ -111,6 +111,6 @@ Smart contracts offer a third way, a new paradigm, wherein legally binding agree
 
 In other words, the sweet spot for smart contracts is data driven *relationships* -- or business processes across stakeholders.
 
-To get started programming Smart Contracts, please see our [Solidity Series on Smart Systems of Smart Contracts](/docs/tutorials/solidity/).
+To get started programming Smart Contracts, please see our [Solidity Series on Smart Systems of Smart Contracts](/docs/solidity/).
 
 To learn more about the differences in approach of a [tokenized blockchain approach *vis a vis* a smart contract approach](/explainers/contracts_v_tokens/) please see our explainer on the subject.

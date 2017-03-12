@@ -106,7 +106,7 @@ The size of the legal engineer’s undertaking is tremendous, but it is proporti
 13. *See generally* Lorna E. Gillies, Electronic Commerce and International Private Law: A Study of Electronic Consumer Contracts, Ch.2, Ashgate Publishing, Ltd (2013, 2016).
 14. *See, e.g.*, [UCC] 2-202](https://www.law.cornell.edu/ucc/2/2-202).
 15. *Id*; [F.R.E. 803](https://www.law.cornell.edu/rules/fre/rule_803).
-16. [Monax Industries' Dual Integration](https://monax.io/platform/).
+16. [Monax Industries' Dual Integration](/platform/).
 17. [Cross-Collateralization](https://en.wikipedia.org/wiki/Cross-collateralization).
 
 

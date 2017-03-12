@@ -193,7 +193,7 @@ Verifiable public data in a trusted, distributed, participatory infrastructure c
 
 **Remember**: Monax already built the LEI Global Ledger as depicted in the [Stage 1 diagram](#stage1) and we're intending to voluntarily run this network for the time being, so that others get a chance to experience what a distributed, smart-contract-enabled solution feels like.
 
-If you're interested in this use case and its implementation, e.g. if you'd like to experiment with a read-only peer node or want to develop a business case out of this solution, please don't hesitate to contact Monax [via our webform](https://monax.io/?monax_viewer_type=end_user&use_case_interest=data#contact-monax) or Twitter handle [@monaxHQ](https://twitter.com/monaxHQ). Please voice your opinion (good or bad) and feedback on this article by tweeting it with the hashtag `#leiledger`.
+If you're interested in this use case and its implementation, e.g. if you'd like to experiment with a read-only peer node or want to develop a business case out of this solution, please don't hesitate to contact Monax [via our webform](/?monax_viewer_type=end_user&use_case_interest=data#contact-monax) or Twitter handle [@monaxHQ](https://twitter.com/monaxHQ). Please voice your opinion (good or bad) and feedback on this article by tweeting it with the hashtag `#leiledger`.
 
 We are going to collect requests by interested parties and intend to make the `LEI Net Service` available as part of one of the next Eris Platform releases.
 The smart contracts controlling the LEI lifecycle and workflow can be used as the basis to implement similar data repositories. They are being made available to subscribers of the [*Monax Smart Contracts SDKs*](/library).

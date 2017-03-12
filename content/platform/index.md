@@ -7,7 +7,7 @@ index_file: ""
 excerpt:    "The Ecosystem Application Platform"
 path: "content/platform"
 aliases:
-    - /docs/explainers/the-eris-stack/
+    - /explainers/the-eris-stack/
 menu:
   platform:
     weight: 1

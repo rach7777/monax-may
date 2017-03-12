@@ -122,6 +122,10 @@ pre {
         color: $white;
     }
 }
+:not(pre)>code[class*="language-"], 
+pre[class*="language-"] {
+    background: $grey_dark;
+}
 
 code {
     font-family: $font_code, monospace;
@@ -318,6 +322,11 @@ nav.navbar {
             }
         }
     }
+}
+
+// Hide empty links on sidebars
+.nav.nav-pills.nav-stacked li a:empty {
+    display: none;
 }
 
 /*              */

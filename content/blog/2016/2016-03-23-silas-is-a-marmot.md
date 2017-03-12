@@ -18,7 +18,7 @@ url: /2016/03/23/silas-is-a-marmot/
 
 I'm very pleased to announce that Silas Davis has joined Monax as a developer on our platform team. He started this week and will be working out of our London office.
 
-Silas got in touch with us after Preston first started the Company's public advocacy campaign against the #IPBill [in the middle of 2015](https://monax.io/blog/2015/05/29/ei-comms-data-bill/). As a privacy advocate he was impressed that a little start up out of nowhere was going on national radio (which, oddly, is still a thing) and strongly advocating against what the government said it was planning to do.
+Silas got in touch with us after Preston first started the Company's public advocacy campaign against the #IPBill [in the middle of 2015](/blog/2015/05/29/ei-comms-data-bill/). As a privacy advocate he was impressed that a little start up out of nowhere was going on national radio (which, oddly, is still a thing) and strongly advocating against what the government said it was planning to do.
 
 In his first marmot-y move he sent me an email (at that time the contact@... still came to my inbox) and said he wanted to chat. So we went out for a beer and talked for a bit. Alas, he was gainfully employed at the time with a quite hot startup so we'd have to wait.
 
