@@ -435,7 +435,7 @@ which does exactly what we want it to (except maybe on windows :(). Awesome! But
 
 ### Docker-Machine Wizardy
 
-It's no secret; we love all things docker. Especially docker-machine though. Having only used it for a few things ([see our docker-machine tutorial](https://monax.io/docs/), I forgot about its handy `ssh/scp` commands. Testing that a binary installation could update itself while developing in go proved somewhat incovenient and I had a convoluted process that was wearing my patience thin (nor did I want to be moving things around in `/usr/bin` on my local machine). 
+It's no secret; we love all things docker. Especially docker-machine though. Having only used it for a few things ([see our docker-machine tutorial](/docs/deprecated), I forgot about its handy `ssh/scp` commands. Testing that a binary installation could update itself while developing in go proved somewhat incovenient and I had a convoluted process that was wearing my patience thin (nor did I want to be moving things around in `/usr/bin` on my local machine). 
 
 The solution: `scp` the binary from every `go install` into `/usr/bin` on a docker-machine. Assume the machine `dev-testing` has already been created.
 

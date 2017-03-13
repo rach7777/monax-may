@@ -34,7 +34,7 @@ Some developers build custom applications with Wordpress. Indeed, Wordpress make
 
 {{< image_blog "eris-tendermint.png" >}}
 
-Admittedly, the analogy's not a perfect one - in our view, a content management system such as Wordpress is really more like [eris:db](/components/erisdb/), whereas [eris:cli](/components/eriscli/) is a more comprehensive blockchain application and database management system.
+Admittedly, the analogy's not a perfect one - in our view, a content management system such as Wordpress is really more like `eris:db`, whereas `eris` the CLI is a more comprehensive blockchain application and database management system.
 
 This is where, in case you haven't already noticed, eris is all-in on [Docker](https://www.docker.com/). In the future, this will allow eris:db to plug into any type of consensus. Additionally, eris:cli should simplify the workflow of developing a Tendermint chain *sans* eris:db, over [tmsp](http://tendermint.com/posts/tendermint-socket-protocol/).
 
@@ -56,7 +56,7 @@ But a fork of an existing proof-of-work design was not going to cut it for us. S
 
 *"Byzantine Fault Tolerant consensus. With Proof-of-Stake."*
 
-"Awesome," thought Ethan. Shortly thereafter Monax Industries and Tendermint began collaborating on the Tendermint codebase and, over the next few months, [eris:db](/components/erisdb/) was born.
+"Awesome," thought Ethan. Shortly thereafter Monax Industries and Tendermint began collaborating on the Tendermint codebase and, over the next few months, [eris:db](/platform/db/) was born.
 
 ### Towards modularity
 
