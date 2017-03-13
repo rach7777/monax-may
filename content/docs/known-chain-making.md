@@ -1,7 +1,7 @@
 ---
 
 layout: single
-title: "Known Chain Making"
+title: "Tutorials | Known Chain Making"
 aliases:
   - /docs/known-chain-making
 menu:

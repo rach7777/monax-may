@@ -1,7 +1,7 @@
 ---
 
 layout: single
-title: "Getting Started"
+title: "Tutorials | Getting Started"
 aliases:
   - /docs/getting-started
 menu:
@@ -19,7 +19,7 @@ There are four steps need to get moving with Eris:
 3. **Deploy** your ecosystem application using smart contract templates and a simple, web-based user interface.
 4. **Integrate** your ecosystem application with a web server or other microservices.
 
-## Step 1. Install the Eris Platform
+# Step 1. Install the Eris Platform
 
 **Dependencies**: `eris` has 2 dependencies: [Docker](https://www.docker.com/) and for macOS and Windows *only* [Docker Machine](https://https://docs.docker.com/machine/). Docker is a run anywhere container solution which makes development, deployment, testing, and running of ecosystem applications a breeze and Docker Machine allows you to run Docker on remote machines. We do not currently support Docker for Mac/Windows as they are still in beta.
 
@@ -34,7 +34,7 @@ We are working steadily toward making `eris` available for a wide variety of hos
 At the current time, `eris` requires `docker version` >= {{< data_coding docker_min >}} and `docker-machine version` >= {{< data_coding docker_machine_min >}}.
 We do not test against older versions of Docker and Docker Machine: `eris` may still work against earlier versions and we can make no guarantees of usability there.
 
-### Linux
+## Linux
 
 Please see the [Docker](https://docs.docker.com/installation/) documentation for how to install it for your Linux distribution.
 
@@ -71,7 +71,7 @@ eris init
 
 `eris init` will be downloading a few Docker images which may take a few minutes.
 
-#### Debian Package Installation
+### Debian Package Installation
 
 We have `apt-get` support for most current versions of Ubuntu and Debian Linux:
 
@@ -79,7 +79,7 @@ We have `apt-get` support for most current versions of Ubuntu and Debian Linux:
 {{< data_coding apt >}}
 ```
 
-#### RPM Package Installation
+### RPM Package Installation
 
 We have RPM support for most current versions of Fedora, CentOS, and RHEL:
 
@@ -87,7 +87,7 @@ We have RPM support for most current versions of Fedora, CentOS, and RHEL:
 {{< data_coding yum >}}
 ```
 
-#### Binary Installation
+### Binary Installation
 
 Alternatively, you can download a release binary for the latest [Release](https://github.com/eris-ltd/eris/releases). Make sure you put the binary under one of the paths in the `$PATH` variable and that it has executable permissions:
 
@@ -96,7 +96,7 @@ curl -L https://github.com/eris-ltd/eris/releases/download/v0.16.0/eris_0.16.0_l
 chmod +x eris
 ```
 
-### macOS
+## macOS
 
 We **highly recommend** that you utilize [Homebrew](https://brew.sh) to install `eris`. Docker, Docker Machine, VirtualBox, and `eris` binary will be properly installed with:
 
@@ -130,7 +130,7 @@ eris init
 
 `eris init` will be downloading a few Docker images which may take a few minutes.
 
-### Windows
+## Windows
 
 We **highly recommend** that you utilize [Chocolatey](https://chocolatey.org) to install `eris`. Docker,  Docker Machine, VirtualBox, and `eris` binary will be properly installed with:
 
@@ -168,19 +168,19 @@ eris init
 
 `eris init` will be downloading a few Docker images which may take a few minutes.
 
-### ARM Installation (IoT devices)
+## ARM Installation (IoT devices)
 
 Although we once supported IoT installations, this has been temporarily disabled while the platform undergoes further consolidation. See [this issue](https://github.com/eris-ltd/eris/issues/1088) for more details on progress.
 
-### Building From Source
+## Building From Source
 
 If you would like to build from source [see our documentation](/docs/install-source/).
 
-### Troubleshooting Your Install
+## Troubleshooting Your Install
 
 If you have any errors which arise during the installation process, please see our [trouble shooting page](/docs/install-troubleshooting/) or join [The Marmot Den](https://slack.monax.io) to ask for help.
 
-## Step 2: Roll Your Own Blockchain in Seconds
+# Step 2: Roll Your Own Blockchain in Seconds
 
 If you want to create your blockchain it is two commands:
 
@@ -353,7 +353,7 @@ eris clean -y
 
 If anything went wrong with Step 2 please see our trouble shooting guide -> [^1], [^2], [^3], [^4], [^5], [^6].
 
-## Step 3: Deploy your ecosystem application using smart contract templates
+# Step 3: Deploy your ecosystem application using smart contract templates
 
 In general we are going to take three steps in order to get our contracts deployed to the blockchain:
 
@@ -361,11 +361,11 @@ In general we are going to take three steps in order to get our contracts deploy
 2. Make sure your application package has the proper information
 3. Deploy the contracts
 
-#### Contracts Strategy
+### Contracts Strategy
 
 We are going to use a very simple `get` / `set` contract which sets a variable and gets that same variable. It is about the easiest interactive contract one can imagine and as such we will use that for showing how to work with the eris platform.
 
-### Step 3.1: Make A Contract for Idi
+## Step 3.1: Make A Contract for Idi
 
 The first thing we're going to do is to add a very simple contract.
 
@@ -381,7 +381,7 @@ Now you'll make a file in this directory. Let's assume that is called `idi.sol` 
 
 What does this contract do? Well, it isn't very interesting, we know. It merely `gets` and `sets` a value which is an unsigned integer type.
 
-### Step 3.2: Fixup your epm.yaml
+## Step 3.2: Fixup your epm.yaml
 
 Next we need to make an `epm.yaml` and make it look something like this:
 
@@ -389,27 +389,27 @@ Next we need to make an `epm.yaml` and make it look something like this:
 
 Now, what does this file mean? Well, this file is the manager file for how to deploy and test your smart contracts. The package manager invoked by `eris pkgs do` will read this file and perform a sequence of `jobs` with the various parameters supplied for the job type. It will perform these in the order they are built into the yaml file. So let's go through them one by one and explain what each of these jobs are doing. For more on using various jobs [please see the jobs specification](/specs/jobs_specification/).
 
-#### Job 1: Set Job
+### Job 1: Set Job
 
 The `set` job simply sets a variable. The package manager includes a naive key value store which can be used for pretty much anything.
 
-#### Job 2: Deploy Job
+### Job 2: Deploy Job
 
 This job will compile and deploy the `idi.sol` contract using the local compiler service. 
 
-#### Job 3: Call Job
+### Job 3: Call Job
 
 This job will send a call to the contract. The package manager will automagically utilize the abi's produced during the compilation process and allow users to formulate contract calls using the very simple notation of `functionName` `params`. The package manager also allows for variable expansion.
 
 So what this job is doing is this. The job is pulling the value of the `$setStorageBase` job (the package manager knows this because it resolved `$` + `jobName` to the result of the `setStorageBase` job) and replacing that with the value, which is `5`. Then it will send that `5` value to the `set` function of the contract which is at the `destination` that is the result of the `deployStorageK` job; in other words the result of Job 3. For more on variables in the package manager, please see the [variables specification](https://github.com/eris-ltd/eris/blob/issue-1093-sort-documentation/docs/specs/variable_specification.md).
 
-#### Job 4: Query Contract Job
+### Job 4: Query Contract Job
 
 This job is going to send what are alternatively called `simulated calls` or just `queries` to an accessor function of a contract. In other words, these are `read` transactions. Generally the `query-contract` is married to an accessor function (such as `get` in the `idi.sol` contract). Usually accessor, or read only functions, in a solidity contracts are denoted as a `constant` function which means that any call sent to the contract will not update the state of the contract.
 
 The value returned from a `query-contract` job then is usually paired with an assert.
 
-#### Job 5: Assert Job
+### Job 5: Assert Job
 
 In order to know that things have deployed or gone through correctly, you need to be able to assert relations. The package manager provides you with:
 
@@ -424,7 +424,7 @@ Relations can use either `eq` `ne` `ge` `gt` `le` `lt` syntax, or, in the altern
 
 Both the `key` and the `val` (which in other testing frameworks are the `given` and `expect`ed in an assert function) use variable expansion to compare the result of what was supposed to be sent to the `setStorageBase` job (which should have been sent to and stored in the contracts' storage) with what was received from the `queryStorage` job (which in turn called the `get` function of the contract).
 
-### Step 3.3: Deploy (and Test) The Contract
+## Step 3.3: Deploy (and Test) The Contract
 
 See the Step 2 above if you need to review the chain making process. This series of commands assumed you followed that tutorial and continued here after `eris chains stop firstchain`.
 
@@ -477,7 +477,7 @@ eris pkgs do --help
 
 That's it! Your contract is all ready to go. You should see the output in `jobs_output.json` which will have the transaction hash of the transactions as well as the address of the deployed `idi.sol` contract.
 
-## Step 4: Integrate your ecosystem application
+# Step 4: Integrate your ecosystem application
 
 Let us expand the very simple idiscontract out into a very simple smart contract backed application. To do this, we will be using node.js. To use this tutorial you will need a relatively recent version of [node](https://nodejs.org/en/download/package-manager/) installed on your box.
 
@@ -487,7 +487,7 @@ What we are going to make is a very simple application which tells the user what
 2. Build our Integration Script/Server
 3. Run our Application
 
-### Step 4.1: Set up the Application
+## Step 4.1: Set up the Application
 
 As with all node.js applications, we will start by making a package.json. This should be made in the same folder as your `epm.yaml`. We will keep the `package.json` very simple.
 

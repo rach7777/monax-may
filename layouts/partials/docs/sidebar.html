@@ -1,17 +1,17 @@
+{{- $currUrl := .URL -}}
 {{- $area := $.Scratch.Get "area" -}}
 {{- $toc := $.Scratch.Get "toc" -}}
 {{- $currentNode := . -}}
 {{- if $toc -}}
-  {{ .TableOfContents }}<hr />
+  {{ .TableOfContents }}
 {{- end -}}
 {{- if not (eq $area nil) -}}
   {{- $currentConfig := index .Site.Data.menus $area -}}
+  <em>Section Links:</em>
   <ul class="nav nav-pills nav-stacked">
     {{- $parentConfig := index .Site.Data.menus $currentConfig.parent -}}
     {{- range $parentConfig.children -}}
       {{- if ne $area . -}}
-        {{- $thisLink := index $.Site.Data.menus . -}}
-        <li><a href="{{ $thisLink.url }}">{{ $thisLink.title }}</a></li>
       {{- else -}}
         {{- range  (index $.Site.Menus $area) -}}
           {{- if .HasChildren -}}
@@ -23,16 +23,18 @@
             </a>
             <ul class="sub">
               {{ range .Children }}
-                <li{{if $currentNode.IsMenuCurrent $area . }} class="active"{{end}}><a href="{{ .URL }}"> {{ .Name }} </a></li>
+                <li{{if $currentNode.IsMenuCurrent $area . }} class="active"{{end}}><a href="{{ .URL }}">{{ .Name }} </a></li>
               {{ end }}
             </ul>
             {{else}}
-            <li>
-              <a class="" href="{{.URL}}">
-                {{ .Pre }}
-                <span>{{ .Name }}</span>
-              </a>
-            </li>
+              {{- if not (eq .URL $currUrl) -}}
+              <li>
+                <a class="" href="{{.URL}}">
+                  {{ .Pre }}
+                  <span>{{ .Name }}</span>
+                </a>
+              </li>
+            {{- end -}}
           {{- end -}}
         {{- end -}}
       {{- end -}}

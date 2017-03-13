@@ -1,6 +1,6 @@
 {{- $listOnlyNoContentPage := in .File.Path "documentation/index.md" | or (in .File.Path "tutorials/index.md") | or (in .File.Path "explainers/index.md") -}}
 {{- $documentationPage := in .File.Path "documentation" -}}
-{{- $tutorialsPage := in .File.Path "tutorials" -}}
+{{- $tutorialsPage := in .File.Path "docs" -}}
 {{- $explainersPage := in .File.Path "explainers" -}}
 {{- $platformPage := in .File.Path "platform" -}}
 {{- $libraryPage := in .File.Path "library" -}}
@@ -39,7 +39,7 @@
           {{ partial "docs/sidebar.html" . }}
         </div>
       </aside>
-      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-lg-6" id="content-block">
         <h2>
           {{- if $documentationPage -}}Versions
           {{- else if $tutorialsPage -}}Tutorials

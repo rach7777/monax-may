@@ -1,7 +1,7 @@
 ---
 
 type:   docs
-layout: li
+layout: single
 title: "Use Cases"
 index_file: ""
 excerpt:    "The Ecosystem Application Uses"

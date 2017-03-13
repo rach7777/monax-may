@@ -2,16 +2,11 @@
 
 type:   docs
 layout: single
-title: "Documentation"
+title: "Tutorials & Examples"
 index_file: ""
-menu: "tutorial"
-path: "docs/"
+menu: "tutorials"
+path: "content/docs/"
 
 ---
 
-## Test
-
 Welcome to the Monax Documentation homepage...this file will link to everything in github.com/eris-ltd/eris/blob/master/docs and resolve at monax.io/docs
-
-
-## Test 2

@@ -10,7 +10,7 @@
   {{- end -}}
   <div class="row">
     {{- if ne .Params.author nil }}{{ partial "blog/sidebar-author.html" . }}{{ else }}{{ partial "blog/sidebar-default.html" . }}{{ end -}}
-      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-lg-6" id="content-block">
       <article class="content" id="main-content">
         {{- if .Params.deprecated -}}
           <div class="deprecation-warning">

@@ -35,23 +35,26 @@ $(function() {
   // scroll spy and formally constrain width of tables
   // this is necessary because its css positioning is fixed.
   $('#TableOfContents ul').addClass('nav nav-pills nav-stacked');
-  $('#TableOfContents').children().css( "width", $('#TableOfContents').parent('.sidebar').width() );
+  // $('#TableOfContents').children().css( "width", $('#TableOfContents').parent('.sidebar').width() );
 
   // initiate table of contents with scrollSpy
   if ($('#TableOfContents').length !== 0) {
 
-    // Add scroll spy to watch Body
-    $('body').scrollspy({ target: '#TableOfContents' });
+    $('.sidebar #TableOfContents').prepend("<em>Jump to:</em>").append("<hr />");
+    $('.topbar #TableOfContents').prepend("<em>Jump to:</em>").append("<hr />");
 
-    // hide anything > Level 2
-    $('#TableOfContents ul li ul li').children('ul').empty();
+    // // Add scroll spy to watch Body
+    // $('body').scrollspy({ target: '#TableOfContents' });
 
-    // sidebar vertical accordian with default collapse
-    $('#TableOfContents ul li').not('.active').children('ul').slideUp(50);
-    $('#TableOfContents').on('activate.bs.scrollspy', function() {
-      $('#TableOfContents ul li').not('.active').children('ul').slideUp(50);
-      $('#TableOfContents ul li.active ul').slideDown();
-    });
+    // // hide anything > Level 2
+    // $('#TableOfContents ul li ul li').children('ul').empty();
+
+    // // sidebar vertical accordian with default collapse
+    // $('#TableOfContents ul li').not('.active').children('ul').slideUp(50);
+    // $('#TableOfContents').on('activate.bs.scrollspy', function() {
+    //   $('#TableOfContents ul li').not('.active').children('ul').slideUp(50);
+    //   $('#TableOfContents ul li.active ul').slideDown();
+    // });
 
     // smooth scrolling by scroll spy
     $('#TableOfContents ul a').bind('click', function(event) {

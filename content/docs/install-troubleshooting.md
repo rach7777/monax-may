@@ -2,6 +2,11 @@
 
 layout: single
 title: "Tutorials | Trouble Shooting Your Installation"
+aliases:
+  - /docs/install-troubleshooting
+menu:
+  tutorials:
+    weight: 5
 
 ---
 

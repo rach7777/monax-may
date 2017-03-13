@@ -105,7 +105,8 @@ a {
 }
 
 // Code
-pre {
+pre,
+pre[class*="language-"] {
     background-color: $grey_dark;
     color: $blue_lightest;
     padding: 20px 12px 20px 20px;
@@ -114,7 +115,8 @@ pre {
     border: none;
     border-left: 6px solid $green;
 
-    code {
+    code,
+    code[class*="language-"] {
         font-family: $font_code, monospace;
         font-weight: 200;
         font-size: 16px;
@@ -301,7 +303,8 @@ nav.navbar {
                 letter-spacing: 0px;
 
                 &:hover {
-                  color: $grey_dark;
+                    color: $grey_dark;
+                    background-color: $menu_hover_bg;
                 }
 
                 .divider {
@@ -325,15 +328,13 @@ nav.navbar {
 }
 
 // Hide empty links on sidebars
-.nav.nav-pills.nav-stacked li a:empty {
-    display: none;
-}
 
 /*              */
 /*   Sidebar    */
 /*              */
-#monax-page aside.sidebar {
-    position: absolute !important;
+#monax-page aside.sidebar,
+#monax-page aside.topbar {
+    position: static !important;
     top: 205px;
     overflow: hidden;
 
@@ -355,15 +356,28 @@ nav.navbar {
         text-align: center;
     }
 
-    #TableOfContents {
-        ul {
-            list-style: none;
+    a {
+        border: none;
+    }
 
+    #TableOfContents {
+        > ul {
+            list-style: none;
+            
             a {
                 color: $links !important;
                 display: block;
                 overflow: hidden;
                 width: 100%;
+
+                &:focus, 
+                &:hover {
+                    background-color: $menu_hover_bg;
+                }
+
+                &:empty {
+                    display: none;
+                }
             }
 
             li.active > a {
@@ -371,13 +385,41 @@ nav.navbar {
                 background-color: transparent;
             }
 
-            li ul {
-                padding-left: 5%;
+            > li > ul {
+                padding-left: 0;
                 margin-left: 0;
+                
+                // Level 2 links only
+                a {
+                    font-style: italic;
+                    font-size: 85%;
+                    color: #9a9a9a !important;
+                    font-weight: 300;
+                    padding: 2px 8px 2px 30px;
+                }
             }
         }
     }
 }
+
+// Don't display sublinks on mobile
+#monax-page aside.topbar #TableOfContents ul ul a {
+    display: none;
+}
+#monax-page aside.topbar a {
+    font-size: 85%;
+    padding: 2px 4px;
+}
+#monax-page aside.topbar em {
+    margin-bottom: 5px;
+    display: block;
+}
+
+
+
+
+
+
 
 /*              */
 /*   Content    */
@@ -398,6 +440,10 @@ article a {
         text-decoration: none;
         border-bottom: 2px solid $links;
     }
+}
+
+.team-member a {
+    border: none !important;
 }
 
 #monax-page #main-content {
