@@ -16,11 +16,11 @@ In general what is going to happen here is that we are going to establish what w
 
 In addition to the one "peer sergeant major" we will also deploy 3 "peer sergeants", as cloud based validator nodes.
 
-Ideally, and as pre-requisite for a trustless consortium chain, we'd be using a [known chain](/known-chain-making), however, for the sake of simplicity, we'll be making our own keys in this tutorial.
+Ideally, and as pre-requisite for a trustless consortium chain, we'd be using a [known chain](/docs/known-chain-making), however, for the sake of simplicity, we'll be making our own keys in this tutorial.
 
 Note also that we are using four validators for this chain. This means it will tolerate one validator node being "down" because tendermint consensus requires >2/3 validators online to "move forward".
 
-Previously, the recommended way of creating a multi-node chain was with docker-machine, but we have [deprecated this tutorial](../deprecated/using-docker-machine-with-eris) and as of the 0.17.0 release, will be eliminating the global `--machine` flag.
+Previously, the recommended way of creating a multi-node chain was with docker-machine, but we have [deprecated this tutorial](/docs/deprecated/using-docker-machine-with-eris) and as of the 0.17.0 release, will be eliminating the global `--machine` flag.
 
 # Overview of Tutorial
 
@@ -44,7 +44,7 @@ CL2: 276.37.22.79
 CL3: 48.413.82.16
 ```
 
-In this case, the IP addresses are fake so take note your own. You'll need to [install eris](/getting-started) and run `eris init` on each machine. Ensure `ssh` is enable on all machines.
+In this case, the IP addresses are fake so take note your own. You'll need to [install eris](/docs/getting-started) and run `eris init` on each machine. Ensure `ssh` is enable on all machines.
 
 # Step 2: Make the chain
 
@@ -58,7 +58,7 @@ What's this 46656 port? That's tendermint's p2p port that allows the nodes to fi
 
 The `--seeds-ip` flag was introduced in version 0.16.0 and will fill the `seeds` field in **each** `config.toml`, rather than the previously required manual entry method. Another new feature is that the `moniker` field will now take on the account name such that each `config.toml` now has a unique moniker.
 
-We created a handful of directories within `~/.eris/chains/multichain`. Feel free to take a peek or head over to the [chain making tutorial](/chain-making) for a comprehensive explanation of these files.
+We created a handful of directories within `~/.eris/chains/multichain`. Feel free to take a peek or head over to the [chain making tutorial](/docs/chain-making) for a comprehensive explanation of these files.
 
 For this tutorial, we'll be copying the raw directories as-is, however, note that the `eris chains make` command can be run with either the `--tar` or `--zip` flag as required for your scripting purposes.
 
@@ -158,7 +158,7 @@ Now you're all set up. Connected up to custom built, permissioned smart contract
 
 Understanding the ports is important for distributed software. If the blockchains *think* they are running on port X, but that port is exposed to the internet as port Y when they are doing their advertising to their peers they will be saying, "Hey, I'm located on IP address Z on port X". But the problem is that from the internet's perspective they should really be saying "Hey, I'm located on IP address Z on port Y".
 
-So at Eris we routinely recommend that you simply "flow through" the ports rather than trying to do anything funky here; this means that whatever port you select in the `laddr` fields and in the chain definition file, that you publish the same port on the host (meaning don't have something like `11111:46656` in your chain definition file). It can be made to work, but it requires some doing to do that right. But for now we will only be running one chain on each of our cloud validators so there will not be any port conflicts to worry about.
+So at Monax we routinely recommend that you simply "flow through" the ports rather than trying to do anything funky here; this means that whatever port you select in the `laddr` fields and in the chain definition file, that you publish the same port on the host (meaning don't have something like `11111:46656` in your chain definition file). It can be made to work, but it requires some doing to do that right. But for now we will only be running one chain on each of our cloud validators so there will not be any port conflicts to worry about.
 
 One thing to watch if you hard code the ports which the host machine will expose is that you will need to have these be unique for each chain so you will either only be able to run one chain per node or you'll need to use different ports for the other chain.
 
