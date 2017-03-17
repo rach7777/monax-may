@@ -15,7 +15,7 @@ title: 'Open Document Monkey: A sketch and proposal'
 url: /2015/02/16/opendocumentmonkey/
 ---
 
-# Open Document Monkey: a proposal for a utility blockchain application.
+## Open Document Monkey: a proposal for a utility blockchain application.
 ___
 
 
@@ -29,7 +29,7 @@ To address this divergence, we started a practice we jokingly referred to as "fi
 
 Usually, about 24 hours of grumping would follow before one of us or the other would concede. The following week, we'd do it again, and did so week after week, again and again, for three months straight.
 
-## B. To Word, or not to Word. That is the question.
+### B. To Word, or not to Word. That is the question.
 
 Nine months in, and it's abundantly clear that deliberate argumentation was a great idea. Apart from getting us comfortable with communicating openly and directly, this process has fostered a company culture which - as put by Jeffrey Friedman - emphasises "the importance of subverting one’s own natural intellectual complacency with the constant reminder that one might be wrong."
 
@@ -45,7 +45,7 @@ With the above in mind, I think the time is right for me to concede that - altho
 
 I call this proposed open standard/blockchain application **Open Document Monkey.**
 
-# 2. What are you proposing?
+## 2. What are you proposing?
 
 I'm not talking about the [replacement of lawyers](http://prismlegal.com/meet-new-lawyer-ibm-watson/).
 
@@ -53,9 +53,9 @@ I am talking about identifying inefficient business processes that result from a
 
 I set out a conceptual framework for the transaction management process below.
 
-# 3. Introducing the problem set for Open Document Monkey
+## 3. Introducing the problem set for Open Document Monkey
 
-## A. Not your typical overcomplicated blockchain problem
+### A. Not your typical overcomplicated blockchain problem
 
 Let us take, by way of example, a typical structured finance transaction. Suppose that a small British commercial bank, FuzziBank, has a pool of loans it wants to move off its balance sheet - a series of SME loans secured by the receivables from [marmot farms](http://www.celotajs.lv/en/e/murksku_audzetava) in the south of England. It wants to do so by selling the loans into a SPV which will then issue variable funding notes (VFNs) to investors.
 
@@ -65,7 +65,7 @@ So I'm going to propose that we look at the transaction from the perspective of 
 
 This is something which could probably be built in the near-term future.
 
-## B. Dramatis Personae
+### B. Dramatis Personae
 
 What we're building, then, is a communications tool - a web application - rather than a financial instrument. Why a blockchain? Well, because with a blockchain database - even if its administration is centralised - we still benefit from:
 
@@ -115,7 +115,7 @@ As you can see, there are quite a few transaction parties involved (in this abbr
 
 Two law firms, a couple of really commercially astute clients. **Simple, right?**
 
-## C. No. This is actually an enormous pain in the ass
+### C. No. This is actually an enormous pain in the ass
 
 As anyone who has worked on one of these deals will know, negotiating one is a labour-intensive exercise - one which will cost hundreds of thousands of pounds in professional services fees.
 
@@ -137,7 +137,7 @@ This process (essentially human version control) is incredibly expensive; even j
 
 Costs can be saved, business won, and talented people retained by automating this particularly miserable aspect of professional practice.
 
-# 4. Document Tennis: understanding the process
+## 4. Document Tennis: understanding the process
 
 I refer to the negotiation process as "**document tennis**." Docs are written by one set of lawyers, sent to the other side, and then returned by the other side with comments. So the process goes, on and on, until eventually a commercial agreement is reached and the final documents are produced.
 
@@ -294,7 +294,7 @@ Speaking of Reviewing Counsel, here's all the cool stuff they can do:
 
 * As above etc. etc. save that instead of `Serve`, the command is named `Return`.
 
-# 5. Getting to agreed form - faster, and cheaper
+## 5. Getting to agreed form - faster, and cheaper
 
 Once all of the changes to the document are agreed/final, both sides click a button that says "agreed form" and - presto! The document (or indeed all of the documents) render in PDF, ready-to-print, and a blockchain data store holds not only the transaction bible but also precise details of every amendment that was made, who made it, and when.
 

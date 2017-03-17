@@ -46,7 +46,7 @@ Either way, eris:cli is intended to make running both eris:db and Tendermint sim
 
 We made these design decisions because [proof-of-work consensus makes zero sense](http://cointelegraph.com/news/proof-of-work-proof-of-stake-and-the-consensus-debate) for enterprise blockchain applications.
 
-### Marmots and mint
+#### Marmots and mint
 
 {{< image_blog "marmots-and-mint.jpg" >}}
 
@@ -58,7 +58,7 @@ But a fork of an existing proof-of-work design was not going to cut it for us. S
 
 "Awesome," thought Ethan. Shortly thereafter Monax Industries and Tendermint began collaborating on the Tendermint codebase and, over the next few months, [eris:db](/platform/db/) was born.
 
-### Towards modularity
+#### Towards modularity
 
 Intimately linked to [tendermint consensus](https://github.com/tendermint/tendermint/wiki), eris:db has a handful of application state features which reside over and above the consensus layer. This lack of modularity is certainly not ideal, as Casey elaborates [here](/blog/2015/12/31/on-blockchain-clients-in-2016/), so we began working to refactor Tendermint.
 

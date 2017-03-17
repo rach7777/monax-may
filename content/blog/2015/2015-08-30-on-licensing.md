@@ -23,7 +23,7 @@ Over the course of this weekend Preston and I have spent most of our time review
 
 Getting licensing right, for an open source company, is a necessary (if wholly insufficient) component to success of that company. There are a number of considerations to take into account when licensing open source software. Every project is unique, and you should not read this post as advocacy for any particular licensing framework (although we have a soft spot for the venerable GPL licence series), so every project should take into considerations all of its context, get a lawyer, and figure out what is sensible for that project. Basically, this is not legal advice and your mileage may vary depending on your project's goals.
 
-## Step 1: Set The Goals
+### Step 1: Set The Goals
 
 And `goals` we think are the right place to start when thinking through licensing of open source software. At Monax Industries our goals are as follows:
 
@@ -34,7 +34,7 @@ And `goals` we think are the right place to start when thinking through licensin
 
 With our goals clearly defined then we moved along to thinking through what we build and the various tensions which bely various open source licences.
 
-## Step 2: Understand The Licences
+### Step 2: Understand The Licences
 
 There are five "major" licences for open source software:
 
@@ -82,7 +82,7 @@ So to summarize, if your software "embeds" (also known as "imports" or "links" i
 
 Embedding used to be an extremely complicated concept with numerous challenges across programming languages. Modern microservices architecture simplifies this to a certain degree simply because there is less need to "embed" software within other software.
 
-## Step 3: Review What Other Similar Projects Have Done
+### Step 3: Review What Other Similar Projects Have Done
 
 We are in the smart contracts and blockchains business. In our view the closest analogies to the software we're building can be found in the area of databases. So let's look at the licensing structures for various databases:
 
@@ -96,7 +96,7 @@ But there are two major components to consider when thinking about a database ba
 
 MongoDB's licensing (which, personally, I think is quite elegant) makes the explicit assumption that its core database is AGPL while the drivers for that database are licensed Apache (presumably, to limit the infection of other, validly proprietary software, which needs to talk to the database). This strikes an elegant balance because rarely, if ever, should a company using MongoDB have to make changes to the MongoDB binary itself. Modern database software does not need as many changes at the core database level as older database technology does for most usage.
 
-## Step 4: Decide What Works For Your Project
+### Step 4: Decide What Works For Your Project
 
 Given our approach to blockchaining is not very different that MongoDB's we have taken a similar approach to licensing. For example our eris:db product (a robust server around a permissioned smart contract machine) is licensed GPL3 (more on this in a minute) while our client libraries (which are made to be importable by middleware and browser level javascript suites) are (currently) licenced LGPL. The client libraries *may* move to Apache in order to enable non-disclosure of changes to the client libraries.
 
@@ -112,6 +112,6 @@ Before proceeding one must consider some of the history of free software thinkin
 
 For these reasons, at Monax we would lean toward the Stallman approach with the carve out that we think, for the purposes of Monax's products, AGPL goes too far.
 
-## Conclusion
+### Conclusion
 
 We proudly default our products to GPL licences because, for us, it mostly strikes the correct balance of openness.

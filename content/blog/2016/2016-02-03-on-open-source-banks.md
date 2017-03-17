@@ -22,7 +22,7 @@ I learned a lot over the course of 2015. One of the things which has been intere
 
 In the openData and legalHacker lands in which I spent much of 2013-2014 things are very different than in a modern, multinational corporation. The approaches of these groups of humans to how they build and use software is markedly different. Of course there are many differences, yet in this think piece, I'd like to tease out one of those differences -- how they approach open source software -- that I've observed during my journey. Hopefully with a mind to communicating some of my own thoughts to the discussion.
 
-# But first, what's open source "about", at least in my opinion?
+## But first, what's open source "about", at least in my opinion?
 
 There are a range of arguments seeking to answer the question: *why do big tech firms participate in open source software*? The most obvious argument of course is that the folks who write software for a living would have an ability to share the costs of the development of some of that software with other firms where they did not have a differentiated problem set nor did they have differentiated corporate interests. There are other arguments of course.
 
@@ -44,11 +44,11 @@ Namely, to me open source is about:
 * participating in the community, dialogue, effort for the "things" on which one's own competitive advantage is built
 * greatly increased reach of thoughts, opinions, strategy, and... code.
 
-# How can this apply to bankers?
+## How can this apply to bankers?
 
 Personally, I'd say there are three big lessons which bankers can learn from the open source community. One last caveat is that in this post I'm not talking to bank IT-ers. They already use a ton of open source software (although maybe management could actually let them send pull requests a bit easier :-) ). This post was written with the folks on the business side in my mind.
 
-## Lesson 1: Think About Your Ecosystem Rather than Only On One Cell's Walls
+### Lesson 1: Think About Your Ecosystem Rather than Only On One Cell's Walls
 
 In the grand scheme of things a company's firewall is less like the great wall of china than it is like the outer walls of our cells. Meaning, they're semi-permeable and move around a lot.
 
@@ -71,7 +71,7 @@ I think the best strategies for corporates trying to engage more in open source 
 
 The above is purely subjective, by the way.
 
-## Lesson 2: Think Like a Participant, Not a Consumer
+### Lesson 2: Think Like a Participant, Not a Consumer
 
 This lesson is quite personal to me. And it has been a part of my own journey getting to know bankers and insurance folks and many others who were outside previous orbits I had spun.
 
@@ -91,7 +91,7 @@ Let's take two otherwise equal skill level developers. Let's say one works at a 
 
 Because, and this is a gross generalization, tech companies have adopted ecosystems thinking a bit faster than banks, tech companies have crafted their policies to include the idea that, yeah, developers may go to github and use their "personal" account, because they have seen and felt the value in thinking beyond only the cell walls of their individual company.
 
-## Lesson 3: The Bank as a Platform Idea is Happening, Get Global Scale
+### Lesson 3: The Bank as a Platform Idea is Happening, Get Global Scale
 
 I love watching our analytics. It is wonderful to see folks from all around the world, around the clock, understanding a bit more about the `way of the marmot`. If we "sold" Eris, rather than what we do do, which is selling components of applications that just so happen to run well on Eris, then we would have to build a much bigger sales force than we have. In other words, and blockchain startups I'm gonna let you in on a little secret here:
 
@@ -111,7 +111,7 @@ The point of the above is not the details, it was simply an example. That said, 
 
 > Participation in open source is the easiest way to rapidly achieve global scale in an information age economy.
 
-# Conclusion
+## Conclusion
 
 There are no easy answers here. But I do think that banks would be wise to at a minimum begin to address the fairly clear areas in Lesson 1. Banks are increasingly consumers of open source software and many developers within banks are excited by the idea of being able to work more collaboratively and participatorial-y.
 

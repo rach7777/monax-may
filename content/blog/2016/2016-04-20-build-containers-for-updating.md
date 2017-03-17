@@ -28,7 +28,7 @@ Eventually we got our binaries sorted out but the `eris update` command still on
 
 I went about [refactoring this code](https://github.com/eris-ltd/eris-cli/pull/617) all while pondering how to update eris to a specific branch from a binary installation (i.e., without requiring git or go installed). Eventually, all the pieces I needed fell together. Here's how it happened with docker build containers:
 
-### Building an Image
+#### Building an Image
 
 The [go-dockerclient](https://github.com/fsouza/go-dockerclient) shines here, as usual. All our docker wrappers are in `perform/perform.go`
 
@@ -318,7 +318,7 @@ Successfully built ecb3c836abe1
 
 which is the output one would expect from running `docker build -t imageName .` with that Dockerfile in `pwd`. Now if you stopped there and ran `docker images`, you'd see the new image: `eris-binary-update:temporary-image` listed. Next, we'll run this image with a data container and export the binary that is already in it.
 
-### Services & Data Containers
+#### Services & Data Containers
 
 The following part may seem unncessary complex to the seasoned docker user, however, I opted to use our existing plumbing for simplicity in our codebase.
 
@@ -433,7 +433,7 @@ ren ` + cpString + `
 
 which does exactly what we want it to (except maybe on windows :(). Awesome! But wait. How do you test that `eris update` works via a binary installation? After all we've been developing in go...
 
-### Docker-Machine Wizardy
+#### Docker-Machine Wizardy
 
 It's no secret; we love all things docker. Especially docker-machine though. Having only used it for a few things ([see our docker-machine tutorial](/docs/deprecated), I forgot about its handy `ssh/scp` commands. Testing that a binary installation could update itself while developing in go proved somewhat incovenient and I had a convoluted process that was wearing my patience thin (nor did I want to be moving things around in `/usr/bin` on my local machine). 
 

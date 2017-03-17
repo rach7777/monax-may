@@ -19,7 +19,7 @@ url: /2014/12/27/step-by-step-eris/
 
 **Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
 
-## 1) What is the problem we are trying to solve?
+### 1) What is the problem we are trying to solve?
 
 Users of the modern internet have an immediate need for increased security, increased privacy, and increased efficiency of data management.
 
@@ -32,7 +32,7 @@ At Eris Industries, we build tools to utilise and leverage this technology. We h
 * a decentralised application server, called the **Decerver**, which allows blockchain databases to refer to and interact with other distributed protocols; and
 * a blockchain design called **Thelonious** which can be used to hold, secure, and distribute the logic of such applications.
 
-## 2) Why is this a problem?
+### 2) Why is this a problem?
 
 Users of interactive applications -- financial, social networking, communications, or otherwise -- expect that interactive applications (which, today, are mostly web-based) are free. However, hosting providers who lend the infrastructure and servers for distributing and operating those same interactive applications do not share the users’ expectations.
 
@@ -51,7 +51,7 @@ Structurally, this kind of application architecture might be represented like th
 
 {{< image_blog "DApp-Architecture.png" >}}
 
-## 3) We want to use blockchains as part of a new peer-to-peer design paradigm for interactive applications
+### 3) We want to use blockchains as part of a new peer-to-peer design paradigm for interactive applications
 
 Is it realistic to expect that users would be allowed to participate in the distribution and operation of an application in this way? Sure thing. Spotify has found great success using this paradigm - a paradigm we call **participatory architecture**.
 
@@ -61,7 +61,7 @@ The core hypothesis of participatory architecture is that users will accept the 
 
 Desigining software using a participatory architecture paradigm, developers are able to focus on providing users with pure utility from the application and control over their data rather than attempting to leverage that data for the developers’ sole benefit. Blockchain architecture, such as that used by Bitcoin, presents an intriguing possibility for making this architecture accessible and customisable for a wide range of applications.
 
-## 4) Eris is the technology of Bitcoin -- only better, and built for any arbitrary data.
+### 4) Eris is the technology of Bitcoin -- only better, and built for any arbitrary data.
 
 Today, blockchain databases are most often seen in internet applications known as cryptocurrencies. Cryptocurrencies, the most famous of which is the well-known Bitcoin, are interactive software applications where the users, instead of a central authority, assume responsibility for the application's maintenance, security, and improvement.
 
@@ -84,7 +84,7 @@ We would diagramatically represent the relationship between these components as 
 
 {{< image_blog "Standard-bc-visual.png" >}}
 
-## 5) Enter Ethereum.
+### 5) Enter Ethereum.
 
 The Ethereum cryptocurrency project has a similar structure. However, it adds one function that most other cryptocurrencies do not: the write permission of any user is extended such that a user can, if they wish, upload a *script* onto the blockchain, which is utterly arbitrary data, that will do whatever they want it to do.
 
@@ -105,7 +105,7 @@ One point which must be noted is the salient (if detailed) difference in perform
 
 However, in Ethereum-derived blockchains data is stored using a much more efficient [patricia merkle tree](http://vitalik.ca/ethereum/patricia.html) and is referenced using the specific contract address and storage slot of a particular contract. This storage paradigm greatly improves performance for both storage and lookup of data values as compared to transactional blockchains. While still moderately slower than a traditional database when writing to the data store, data lookup can be crafted in a manner which rivals traditional databases. How these data lookups are structured will depend on how the contracts store data -- which we will be covering in a future post.
 
-## 6) Cryptocurrencies make blockchains useful for unregulated value transfer systems. Eris is designed to make blockchains useful for everything else.
+### 6) Cryptocurrencies make blockchains useful for unregulated value transfer systems. Eris is designed to make blockchains useful for everything else.
 
 Eris takes the Ethereum concept a few steps further.
 

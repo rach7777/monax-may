@@ -22,7 +22,7 @@ meta:      true
 
 ---
 
-# Prizes, Permissions and Ecosystem Applications
+## Prizes, Permissions and Ecosystem Applications
 
 This year's [Nobel prize for economics](https://www.nobelprize.org/nobel_prizes/economic-sciences/laureates/2016/) went to contract theorists Oliver Hart and Bengt Holmström for their examinations of elements and incentives in contractual relationships. 
 

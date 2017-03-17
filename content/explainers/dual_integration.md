@@ -13,17 +13,17 @@ menu:
 
 ---
 
-# Putting the Contracts in Smart Contracts
+## Putting the Contracts in Smart Contracts
 
 Smart contracts are useful for automating many data-driven relationships. However, to be enforceable, smart contracts must work in existing legal frameworks where those frameworks already exist, removing a degree of uncertainty in enforcement. In order to bridge the gap between existing electronic contracts law and blockchain smart contracts, Monax offers *dual integration*. For more on smart contracts, see our [explainer](/explainers/smart_contracts/).
 
 Dual integration is the process of integrating a specific legal contract into a specific smart contract running on a distributed data store, such as Monax. This allows parties to use established dispute resolution processes in the jurisdiction(s) of choice while also using a smart contract as the primary mechanism for administering the data-driven interaction that attends to the agreement between the parties.
 
-# Dual integration enables legal enforceability of smart contracts
+## Dual integration enables legal enforceability of smart contracts
 
 The rationale behind dual integration is that for the forseeable future, legal systems are unlikely to resolve disputes stemming from smart contracts solely on the basis of their code. Courts will apply the defaults for similar prose agreements, an end that may not reflect the intention of the smart contracting parties. Because of the risks involved in enforcing smart contracts by code alone, we highly encourage all smart contract systems developers to utilize dual integration of some kind. Dual integration means that a smart contract will be linked to a document that can be enforced by a court.
 
-# Basic dual integration:
+## Basic dual integration:
 
 1. Deploy a smart contract that is capable of storing a checksum
 

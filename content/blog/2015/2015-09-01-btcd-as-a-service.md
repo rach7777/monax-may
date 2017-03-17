@@ -26,7 +26,7 @@ So just to be clear if I wanted to mine with that [btcd] node (and I don't) what
 
 Hope the asker doesn't mind that I answer here as answering these questions could help a lot of people.
 
-## Where To Start When Investigating a Service
+### Where To Start When Investigating a Service
 
 1. Look at the [Dockerfile](https://github.com/eris-ltd/common/blob/master/docker/btcd/Dockerfile) (that link is to the dockerfile for eris/btcd).
 2. Look at the start script (if there is one).
@@ -37,7 +37,7 @@ To investigate farther with `eris` built Docker images for services we aren't bu
 
 Since btcd doesn't use a start script we'll save that for another day (Ethan and I now both love shell scripting, well at least I certainly do).
 
-## If a Service Starts With Config Files What Do I Do?
+### If a Service Starts With Config Files What Do I Do?
 
 The asker of the original question is right, the `btcd` container starts with a config file instead of via the other major "Docker way" which is a bunch of environment variables passed into a semi-intelligent start script which preconfigures and then runs a binary (for an example of this see Ethan's [eris chain manager scripts](https://github.com/eris-ltd/eris-db/tree/master/DOCKER) which we use for `eris chains`). `btcd` uses a config file.
 
@@ -49,13 +49,13 @@ Later, if you want to "get" files "out" of the container you will `eris data exp
 
 So let's put this together to talk through how to start `btcd` with a custom configuration.
 
-## Steps to Success
+### Steps to Success
 
-### Step (1): `eris services start btcd`
+#### Step (1): `eris services start btcd`
 
 First, start the node. This will make it drop its default configuration files in the right location. There is no output here if the command ran correctly.
 
-### Step (2): `eris services ls`
+#### Step (2): `eris services ls`
 
 Second, check that the node is running. I currently have ipfs running so my output looks like this:
 
@@ -72,21 +72,21 @@ A note about the listing commands. For services (and chains) there are three dif
 * `eris services ls` will simply tell you which containers *exist* (they may or may not be running).
 * `eris services ps` will simply tell you which containers *are running* (and exist of course).
 
-### Step (3): `eris services stop btcd`
+#### Step (3): `eris services stop btcd`
 
 Stop the node. There is no output here if the command was successful.
 
 Run `eris services ps` to confirm it stopped by comparing that output to `eris services ls`.
 
-### Step (4): `eris data ls`
+#### Step (4): `eris data ls`
 
 This will check that the data container was made.
 
-### Step (5): `eris data export btcd --src /home/eris/.btcd`
+#### Step (5): `eris data export btcd --src /home/eris/.btcd`
 
 This will perform the export of the volumes talked about above. How did I know what source directory? From the `VOLUMES` line in the dockerfile.
 
-### Step (6): `cd ~/.eris/data/btcd/ && ls -la`
+#### Step (6): `cd ~/.eris/data/btcd/ && ls -la`
 
 This will move into the data directory and show you what was exported. (Note you may have some permissions errors depending on your setup, but since its in the user's folder it should be overcomeable).
 
@@ -98,15 +98,15 @@ touch ~/.eris/data/btcd/.btcd/btcd.conf
 
 You can also edit it however you want in whatever text editor you prefer according to the specification which btcd uses for its config files.
 
-### Step (7): `eris data import btcd --dest /home/eris`
+#### Step (7): `eris data import btcd --dest /home/eris`
 
 One thing to note here is that the paths are (slightly) different on the import than they were on the export. The exported volume was the .btcd path "inside" the container. That gave us the `~/.eris/data/btcd/`**`.btcd`** on the host. But when we import from the host "into" the container we want to put the `.btcd` directory into the `~` directory so that the result inside the containers is `~/.btcd` using a different path for the `--src` and `--dest` will accomplish this and will properly "align" the files in the right place inside the conter.
 
-### Step (8): `eris services start btcd`
+#### Step (8): `eris services start btcd`
 
 Now your chain should boot with your custom config file.
 
-## Conclusions
+### Conclusions
 
 `eris` isn't optimized for btcd like containers. It fully runs them, but it does take a bit of work to get set up with containers that us a config file instead of being having a bootable config passed in as environment variables. In general we are of the opinion that start scripts and environment files go further than config files for configuring how things run in containers.
 

@@ -23,7 +23,7 @@ Peer server networks are one of the most important aspects of running any distri
 
 In preparation for our next round of beta testing on our video sharing distributed application [2gather](https://github.com/eris-ltd/2gather) we have been working to understand how to most easily deploy and maintain peer server networks. The rest of this is the current paradigm we are using to establish application specific peer server networks.
 
-## The Tools
+### The Tools
 
 We use four tools along this pipeline:
 
@@ -38,7 +38,7 @@ The erisDB container is built as part of our continuous integration and continuo
 
 Using these three tools we set up three different *types* of nodes; these different types of nodes all use the same base container but using the erisDB start script (deprecated) we are able to have very flexible deployment and configuration of the blockchain client. I'll work through these three node types.
 
-## Node Type 1: The Genesis Server Node
+### Node Type 1: The Genesis Server Node
 
 The first type of node we use is what I call the `genesis_server` node. It has one, and only one, purpose -- to serve the genesis block to the other nodes. Because of how [eris:db](/platform/db) has been designed to sink different contracts into a genesis block; and because of entropy which we add to the genesis block hashing process; each time a new chain is hashed which has contracts in the genesis block (namely, when it is not a simple ethereum clone) the identifier of the chain will be unique.
 
@@ -64,7 +64,7 @@ Here is how we configure the node:
 
 As you can see most of the configuration happens using environment variables. These environment variables are used mostly by the start script to configure the node when it boots.
 
-## Node Type 2: Peer Server Master
+### Node Type 2: Peer Server Master
 
 The second type of node we establish to use an application specific blockchain is a master peer server. This is the main access point for the nodes on the chain.
 
@@ -78,7 +78,7 @@ Here is how we configure the node:
 
 As with the genesis node, these environment variables should make sense when one compares what is passed to the container to the start script linked to above.
 
-## Node Type 3: Peer Server Relays
+### Node Type 3: Peer Server Relays
 
 The final type of node we use when working with application specific blockchains is peer relay nodes. We establish these on a distributed basis using Tutum's very clever deployment tags and deployment strategy features.
 
@@ -96,6 +96,6 @@ Here is how we configure the relay nodes:
 
 One other feature of Tutum we use to establish this network which keen observers will see is that Tutum gives each service its own DNS entry which we can use within the network. This means that if we have to drop a machine from a specific cluster or change a machine within a specific cluster (which will change the IP of the containers running on the machine) that we will not have any problems with the peer network. This is not actually the optimal way to do this. Ideally, we would configure these as linked containers using [Tutum's stacks feature](https://tutum.freshdesk.com/support/solutions/articles/5000569899-stacks) which operates very similarly for cloud deployments to how [Docker-Compose](https://docs.docker.com/compose/) (formerly `fig`) works for local development and operation of sets of containers.
 
-## Conclusion
+### Conclusion
 
 If you have any questions please drop them below, or, better, stop by [#erisindustries](irc://freenode.net/#erisindustries).

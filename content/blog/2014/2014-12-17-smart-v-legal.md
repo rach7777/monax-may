@@ -44,7 +44,7 @@ What would the world look like then?
 
 Could such a thing even be done?
 
-## You're damn right it can.
+### You're damn right it can.
 
 So we cracked smart contracts on a blockchain. Without creating a cryptocurrency. We also figured out that once a blockchain database has an administrator, they become far more useful. So designed them so you can administer them, too.
 

@@ -20,9 +20,9 @@ url: /2015/04/28/smart-securitisation/
 
 {{< image_blog "scallthethings.jpg" >}}
 
-# We need to have a chat about cryptocurrency tokens.
+## We need to have a chat about cryptocurrency tokens.
 
-## 1. You're doing it wrong (but don't worry - chalk it up as a learning experience)
+### 1. You're doing it wrong (but don't worry - chalk it up as a learning experience)
 
 To date, most of the folks in Bitcoin/Crypto have made the rather critical mistake of assuming that asset ownership and/or replacing a bank is as simple as
 
@@ -49,7 +49,7 @@ In decentralisation-land, this is not what you get. If the network fails from la
 
 Which means maybe we should think about not using them!
 
-## 2. The limited usefulness of the token
+### 2. The limited usefulness of the token
 
 If we take the case of, e.g., a bond instrument, the token-driven model falls down immediately on practical points. This is because tokens don't solve a problem that anyone actually has.
 
@@ -66,7 +66,7 @@ We're not too keen on that at the moment. For two main reasons:
 
 Even if we assume that the model works from a legal-technical perspective (which requires structuring around the gate-points which grant access to and from the chain), for the stuff we think blockchains are best at, tokenisation is not the name of the game.
 
-## 3. Smart contractify the things, and actually solve a problem
+### 3. Smart contractify the things, and actually solve a problem
 
 Am I going to outline a smart securitisation in this blogpost, end-to-end? No, because I have a couple of things I'd like to do other than write in the next two months (in case you're wondering though, we have thought through these matters and the smart contracts needed to implement them [in some detail](/docs/solidity/) while we were in Stealth Mode in 2014).
 
@@ -81,7 +81,7 @@ Assume
 
 Then ask yourself:
 
-### a) Does tokenisation solve a problem anyone has?
+#### a) Does tokenisation solve a problem anyone has?
 
 No.
 
@@ -95,7 +95,7 @@ So where we're left is that the "counterparty risk" problems Bitcoin and its ilk
 
 See ya later, tokens.
 
-### b) If there are no tokens, why are we here? Shouldn't we just pack up and go home?
+#### b) If there are no tokens, why are we here? Shouldn't we just pack up and go home?
 
 Nope, because these obligations are highly amenable to smart contractification.**
 
@@ -133,7 +133,7 @@ Three guesses as to what technology can do that really, really well while ensuri
 
 Blockchain! Correct. How did you guess?
 
-### c) Right, so you're automating payment triggers by creating a system that's maintained (and observed) by all participants. Why do you need that whole "you can modify the system on command" thing?
+#### c) Right, so you're automating payment triggers by creating a system that's maintained (and observed) by all participants. Why do you need that whole "you can modify the system on command" thing?
 
 Controllable blockchains aren't just a "nice-to-have" in applications such as high finance. They're an absolute necessity.
 
@@ -141,7 +141,7 @@ This is because terms of transactions change, often arbitrarily. See Condition 1
 
 Implementing these changes is a complete pain in the ass and involves a lot of wringing of hands, paperwork, phone calls and lawyers. I should know. I was there.
 
-## 4. So what you're saying is, it's totally inadequate to use a crypto-token to describe virtually any mainstream financial obligation. And everyone has called this one wrong.
+### 4. So what you're saying is, it's totally inadequate to use a crypto-token to describe virtually any mainstream financial obligation. And everyone has called this one wrong.
 
 Pretty much - at least if you want to build something that addresses a problem mainstream financial institutions actually have. Sorry, California.
 

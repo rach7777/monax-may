@@ -16,7 +16,7 @@ menu:
 With Monax's Premium Support & Education Packages your ecosystem application building experience will speed up dramatically.
 ```
 
-# Introduction
+## Introduction
 
 At Monax, we strive to document our platform in the best manner we can and also to provide self-help tutorials which aid companies getting started with this technology.
 
@@ -24,7 +24,7 @@ However, building applications that properly leverage ecosystem application tech
 
 Monax's premium support and education packages provide both fora to answer questions, as well as experiential learning sessions for your developers to be able to more quickly build your ecosystem applications.
 
-# Benefits
+## Benefits
 
 By building with Monax's engineers, your development time will be significantly reduced. We have build our premium support & education packages to meet three demands within the market.
 
@@ -34,7 +34,7 @@ Second, with ecosystem applications there are emergent design patterns and archi
 
 Third, there are a range of operational considerations which come into play when building an ecosystem application on a permissioned blockchain base. Our team of engineers and operations specialists can help ensure that your base blockchain is deployed correctly and running smoothly, so that your development team can drive business value rather than worrying about the minutae of setting up a complex network.
 
-# What Premium Support & Education Packages are Available?
+## What Premium Support & Education Packages are Available?
 
 | Packages | Discovery Package | Professional Package | Enterprise Package |
 |---|-------------------|----------------------|--------------------|
@@ -44,7 +44,7 @@ Third, there are a range of operational considerations which come into play when
 | eris:db Permissioned Blockchain Network | FOSS only | 1x 4-node blockchain deployed to<br />Customer’s Azure or AWS Environment | 1x 7-node blockchain deployed to<br />Customer’s Azure or AWS Environment |
 | Qualified Customers | Businesses with less than 100 employees only | No restrictions | No restrictions |
 
-# Product Specifics & FAQs
+## Product Specifics & FAQs
 
 Monthly subscriptions can be used at any time during the period but don't roll over.
 
@@ -58,7 +58,7 @@ Monax does not provide an SLA on the eris:db permissioned blockchain being opera
 
 Monax cannot provide legal advice.
 
-# How to Purchase
+## How to Purchase
 
 We will offer our premium support and education packages to the general developer community in 2017 but at this time they are available via the Monax partnership network. If you would like to leverage Monax's premium support and education packages to empower your ecosystem application developers please let your technology provider know, or get in touch via our contact form and our account managers will be in touch regarding pricing details.
 
@@ -75,6 +75,6 @@ We will offer our premium support and education packages to the general develope
 
 After your order is processed, we will ask a few questions to verify that your company meets the qualification criteria (if necessary) for the package and then we will set up your premium support channel, register your developers for our learning sessions, and understand how you would like your eris:db Permissioned Blockchain Network provisioned.
 
-# What are the Use Cases for Ecosystem Applications?
+## What are the Use Cases for Ecosystem Applications?
 
 {{% use_case_selector %}}

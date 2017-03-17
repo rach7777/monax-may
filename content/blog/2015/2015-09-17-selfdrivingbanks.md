@@ -25,7 +25,7 @@ url: /2015/09/17/selfdrivingbanks/
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I&#39;m pro-robot.&#10;I think they should just destroy us all at this point.</p>&mdash; SecuriTay (@SwiftOnSecurity) <a href="https://twitter.com/SwiftOnSecurity/status/644338254096039936">September 17, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-### "The"
+#### "The"
 
 Because Bitcoin does not require a central server whirring away, or direct human oversight, to run, its earliest adopters have long referred to it in quasi-religious, almost magical terms. Immutable. Indestructible. "The" blockchain.
 
@@ -46,7 +46,7 @@ It was at that moment that I realised maybe it wasn't Bitcoin itself I was in lo
 
 However, distributed databases have been around for a very long time – the first of which, SDD-1, was [invented in 1980]( http://www.eecs.berkeley.edu/~wong/wong_pubs/wong63.pdf). So what turns everyone on about [every little thing a "blockchain" does](https://www.youtube.com/watch?v=aENX1Sf3fgQ) as distinguished from every little thing a distributed database does?
 
-### Every little thing she does is magic
+#### Every little thing she does is magic
 
 Well, I think I've figured it out. It's the way in which these DBs:
 
@@ -76,7 +76,7 @@ The introduction of a blockchain into the settlement equation is not, on its own
 
 “Smart contracts,” on the other hand, allow us to do some different things with blockchains - most of which are distinctly not related to straight clearing.
 
-### Smart Contracts
+#### Smart Contracts
 
 As Casey puts it, **“smart contracts” are not smart and they are not contracts**. As Brian retorts,  [“they should really just be called dumb scripts.”](2015-09-15-smart-contracts-intro.md)
 
@@ -96,7 +96,7 @@ It's like being able to download a server instead of having to get a data centre
 
 **Whether we should** run one is quite another. I like to say that the only thing a blockchain can do that a server cannot is not need a server. For this reason, it strikes me that blockchains are destined to be fundamentally *micro* in nature: to address specific groups of users with specific applications when those users need to bootstrap a network, and need to obtain a high degree of data verification, without spending piles of cash on IT equipment.
 
-### Self-driving banks
+#### Self-driving banks
 
 Should we use such an infrastructure to clear industrial volumes of interbank transactions, such as international payments? I’m not so sure (this would not be the first time Monax Industries has [gone against the grain of conventional wisdom](http://blogs.wsj.com/moneybeat/2015/04/14/bitbeat-blockchains-without-coins-stir-tensions-in-bitcoin-community/) in the blockchain space). Why do we need replication - or even PKI - to get us where we need to go in such circumstances? Would adopting that infrastructure for these applications only slow the banks down?
 

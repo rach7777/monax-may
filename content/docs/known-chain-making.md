@@ -20,7 +20,7 @@ There are three steps to making a permissioned chain:
 
 We shall go through these in their logical order.
 
-#### Users Design
+## Users Design
 
 To do this we need to, first, consider, *who* will get *what* permissions and *why*. It is outside the scope of this tutorial to outline all of the considerations which would come into play when thinking about creating a permissioning system, but for the purposes of this tutorial, we will craft the genesis block to use the following paradigm:
 
@@ -32,7 +32,7 @@ We use an abstraction to simplify the chain making process called Account Types.
 
 Account types are simply bundles of permissions no more no less. Using the eris tooling you can also create your own account types with your own bundles of permissions which will be helpful.
 
-### Step 2.a.1. Make (or Get) the Public Keys
+## Step 2.a.1. Make (or Get) the Public Keys
 
 Everyone who interacts with an eris chain will need to have a properly formated keypair. To make a keypair we will use `eris keys`.
 
@@ -99,7 +99,7 @@ eris keys ls
 
 Now, we're all ready to make a chain.
 
-### Step 2.a.2. Make the genesis.json
+## Step 2.a.2. Make the genesis.json
 
 Before we begin, we should quickly talk through the various files which are needed to run an eris chain.  This is to hold the default files for using eris chains. There are a few primary files used by eris chains:
 
@@ -114,3 +114,6 @@ In any chain with more than one validator the `config.toml` file will be edited 
 The `genesis.json` is the primary file which tells eris chains how to instantiate a particular chain. It provides the "genesis" state of the chain including the accounts, permissions, and validators which will be used at the beginning of the chain. These can always be updated over the life of the chain of course, but the genesis.json provides the starting point. Luckily `eris` takes care of making this for you and there is very little which should be required for you in way of editing.
 
 With all that said, we're ready to make a chain. First let us make a "fake" chain just to get a tour of the chain maker tool. Once we go through that process then we will make our "real" chain which we will use for the rest of this tutorial series. Let's see what eris chains make can do for us.
+
+
+## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Tutorials](/docs/)

@@ -13,7 +13,7 @@ menu:
 
 ---
 
-# Introduction
+## Introduction
 
 `eris:db` is Monax's blockchain node.
 
@@ -25,25 +25,25 @@ Developers who use an `eris:db` blockchain node along with the `eris` platform t
 
 With one `eris:db` client, commercial entities will be able to control an innumerable amount of blockchains, each purpose built to solve a particular enterprise challenge.
 
-## Consensus
+### Consensus
 
 `eris:db` uses the Tendermint consensus engine, a deposit based proof of stake protocol which is much more environmentally friendly, decentralisable, speedy, and final than proof of work.
 
-## Interface
+### Interface
 
 `eris:db` comes with a range of interfaces from CLI tooling to RPCs. See our [comprehensive documentation](https://github.com/eris-ltd/eris-db/blob/master/README.md) for more.
 
-## Virtual Machine
+### Virtual Machine
 
 `eris:db` comes with a built-to-specification Ethereum Virtual Machine. It runs any contract which has been compiled with the `eris:compilers` or any of Ethereum's compilers.
 
-## Permission Layer
+### Permission Layer
 
 Permissioning your blockchains is more than simply running them behind a gated VPN if one is running `eris:db`.
 
 `eris:db` comes with a [capabilities-based, evolvable permissioning layer](https://github.com/eris-ltd/eris-db/blob/master/README.md) - the first of its kind on the market, and by far, still the most sophisticated.
 
-# Comparisons
+## Comparisons
 
 <div>
   <ul class="nav nav-tabs nav-justified" role="tablist" id="competitionTabs">

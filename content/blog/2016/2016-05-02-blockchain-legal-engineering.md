@@ -19,7 +19,7 @@ url: /2016/05/02/blockchain-legal-engineering/
 
 {{< image_blog "legal-engineering.jpg" >}}
 
-# Blockchain Legal Engineering
+## Blockchain Legal Engineering
 
 Legal engineering ensures that information gets to the right place at the right time. Technology accelerates the speed of legal engineering by providing ever more reliable and complex models for managing legally significant information and events. Legal technology puts pressure on lawyers to innovate. In *The End of Law*, Richard Susskind gives his formula for winning the legal technology contest:
 

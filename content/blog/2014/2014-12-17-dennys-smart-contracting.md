@@ -21,7 +21,7 @@ url: /2014/12/17/dennys-smart-contracting/
 
 **Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
 
-### DOUG, C3D, Eris - how it all began
+#### DOUG, C3D, Eris - how it all began
 
 As some of you know, I have been writing smart contracts for Ethereum and Ethereum-like smart contract systems such as our own Thelonious for some time.
 
@@ -52,7 +52,7 @@ Of course, someone human had to actually write the upgrades. It was not, as some
 
 Eris was a hulking mess. I was barely able to maintain it, let alone anyone who had not spent a month day and night programming the thing. This wasn't because it was poorly designed. At the time it was the best I could do. It was because...
 
-### LLL Sucks
+#### LLL Sucks
 
 I can admit it. I have gotten used to LLL and it comes naturally to me now. But that does not mean it's a good language. Many things are unintuitive about it and it can be down-right impossible to read if you haven't been writing in it for months. When I first started, I had to comment every single line of code just so I could remember what it did. I was also overly concerned about extreme optimization back then, which didn't help. I would even place the if statements in the order I thought would be accessed most frequently just to save a little extra gas. It was impractical to work at that highly of an optimized level.
 
@@ -74,7 +74,7 @@ These standards continued to grow in complexity such as the form of linked lists
 
 I was finding that explaining repeatedly to my co-workers how I chose to store information was increasingly difficult and a waste of time when I was using essentially the same code repeatedly.
 
-### Meet the Eris Standard Library and DTT
+#### Meet the Eris Standard Library and DTT
 
 This is where the **Eris Standard Library** (ESL) comes into play, in particular the subset of the ESL which has come to be known internally as "Denny's Type Templates" (DTT if you want to abbreiviate... this space loves its abreiviations!).
 
@@ -88,7 +88,7 @@ As mentioned, The majority of my code at this point was mostly identical impleme
 
 Denny's Types also helps with the readability of the smart contract code once you get familiar with them. While the syntax is still Lisp based and so a little awkward, since DTT encapsulates the variable data manipulation in one line "operations", **you can focus on the logic of your DApp and not the nitty gritty details of how to implement your data storage.** Its basically me in a bottle :)
 
-### The Downsides
+#### The Downsides
 
 Nothing is perfect and DTT is no exception.
 
@@ -102,7 +102,7 @@ And finally, it's a rather different framework then the rest of LLL. This is onl
 
 In short, before you can use a variable, you need to init it. this is no different from type declarations or anything else. It just sets aside space for a variable of that type. Every type has an init "function" which is called through (type"Init" "name" ...) for example (llInit "variablename1") would initialize a linked list (ll is short for linked list, kv is short for key value). After you initialize you have to use various "set" routines made available by the type definitions to set the variables and use "get" operations to retrieve the information. The necessity for these is due to the complexity of the encoding of the type into storage. These functions make it so you don't need to learn the details of Denny's Types in order to use them.
 
-### What about C3D?
+#### What about C3D?
 
 I hear you ask. C3D has been implemented as a Type. It is technically in a different "namespace" then the variables. This means you never have to worry about C3D and a variable colliding either. You are more then welcome to use C3D if you prefer the tree framework and indeed in many instances it can simplify multi-contract data structures. Do to the decerver and the wonderful work on ate by Andreas however, Dapps are scriptable allowing for access of smart contract storage in arbitrary manners. You don't have to stick to C3D if you don't want to. In Order to ease the process, Javascript based equivalents for accessing DTT has been written which allow for access of storagage in ate using Denny's Types without having to know how they work.
 

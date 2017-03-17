@@ -14,7 +14,7 @@ title: 'Monax Commercial Paper Bundles: Toolkit for Financial Engineering'
 url: /2016/03/31/commercial-paper-intro/
 ---
 
-### Monax Commercial Paper Bundles: Toolkit for Financial Engineering
+#### Monax Commercial Paper Bundles: Toolkit for Financial Engineering
 
 *An introduction to smart contracts for the digital non-native.*
 
@@ -24,7 +24,7 @@ Hashing is a one-way operation: while a certain data set will always produce the
 
 **Smart Contracts**. Smart contracts are cryptographically secure computational processes acting on cryptographically secure data in blockchain systems.
 
-### So what's the big deal?
+#### So what's the big deal?
 Smart contracts enable the technological evolution of existing legal concepts and solutions.
 
 **Precedent**. Humans have long understood that history is our best guide, even when blazing new territory. Common law legal systems like the UK and US base their law, especially contract law, on *precedent*, an earlier event that acts as a guide for subsequent similar circumstances. The collection, preservation and accessibility of legal precedent is a critical function of common law systems that will be enhanced by smart contracts that combine value creation, storage and transfer with logic and immutability of evidence.
@@ -39,7 +39,7 @@ For those whose job is to increase the amount of money in the financial system b
 
 **The big prize**. Smart contracts may not deliver the financial utopia many imagine, but they will deliver critical tools: increased data certainty and reliability of business processes. Data certainty means agreement as to the veracity and authenticity of evidence. It has the potential to eliminate the need to reconcile massive data systems and associated cost and delay. A cohesive approach to building such a mammoth blockchain system will require large-scale coordination across myriad sectors but is necessary to avoid a disjointed, siloed result that loses the benefits of smart contract technology.
 
-### Commercial Paper
+#### Commercial Paper
 
 In order for commerce to flow, fungibility of value items is critical, as is careful typing and classifying of rights, obligations and objects. For a value object to function as currency, it must flow through commerce with as few strings attached as possible. Lawyers, businesspeople and governments have grappled with this issue for centuries - and one such set of tools that has evolved is *commercial paper,* a type of debt obligation that specifically mimics the fungibility of fiat money while giving protection against adverse property claims (analogous to a cryptocurrency double-spend).
 

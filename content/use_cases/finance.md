@@ -15,7 +15,7 @@ Enterprise interest in [ecosystem application](/explainers/ecosystem_application
 
 Monax was the first to market with a [permissionable blockchain](/explainers/permissioned_blockchains) which kick started enterprise interest in *using* ecosystem application technology and has remained the market leading platform on which complex financial ecosystem applications are being built. In addition to the high use of our `eris` [ecosystem application platform](/platform), Monax also licenses our industry-specific [finance software development kit](/library/#finance-sdk) which greatly reduces time to market for finance specific ecosystem applications while also increasing compliance gains along the way.
 
-# Investment Banks
+## Investment Banks
 
 Many of the clearest use cases for leveraging ecosystem application technology in the finance vertical exist within investment banks. In our experience, commercial and investment banks are very likely to be the first vertical in production with complex ecosystem applications and will likely remain leaders in the use of the technology for quite a few years. Part of this is due to their head start in leading the adoption curve for the industrial use of this technology. Part of this is due to the business environment in which commercial and investment banks operate which is increasingly inter-connected and also more highly regulated than ever. The final part of this is that ecosystem application technology provides the base for commercial and investment banks to automate processes which they have been, to date, unable to automate for a variety of reasons.
 
@@ -35,7 +35,7 @@ Such an application, which is wholly possible to have prototyped for board buy-i
 
 Monax's finance SDK has been battle tested from lessons learned working with some of the best investment banks in the world to understand their needs and these use cases with precision. Our legal engineers have worked to build the SDK as a set of modular components which leverage how rights and responsibilities are "stacked" in the real world to meet the needs of a whole range of use cases. We'd love to work with your company to see how our smart contracts and platform can help you meet your business objectives. Just **<a href="/?monax_viewer_type=end_user&product_interest=sdk#contact-monax">get in touch!</a>**
 
-# Retail Banks
+## Retail Banks
 
 Retail banks have a lot of challenges. One of the biggest challenges many retail banks have is around records management for products which are typically dealt with using paper forms. The assets which these records relate to are often either moved off of the bank's balance sheet (say, for example, consumer credit card debt which is non-performing) or used within increasingly complex securitization schemes. Many times there are challenges in having a full and complete dossier of records for a given asset by all of the participants within the value chain that should rightfully have access to the records (such, as say, debt collection agencies, or holders of asset backed securities).
 
@@ -51,7 +51,7 @@ We'd love to work with your company to see how our smart contracts and platform 
 
 
 
-# Asset Management
+## Asset Management
 
 asdf -->
 

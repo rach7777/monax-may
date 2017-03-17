@@ -22,11 +22,11 @@ url: /2014/12/17/eris-what-are-we-building/
 
 I'm incredibly pleased to announce that Eris Industries will release its first products to the world. After months of challenging work, I am incredibly proud of what our team has accomplished. This post contains a brief overview of the two main products which we are releasing today. Also in this series of blog posts, please see Preston's overview of why this is interesting and important for larger organizations.
 
-## Introduction
+### Introduction
 
 Our goal at Eris Industries is to empower developers to embrace participatory software architecture via distributed computing and smart contract systems. Participatory architecture is a software design paradigm whereby the users of an application take part in some aspects of the data management and security of the platform and in return gain increased ownership and responsibility over their own data. Toward this end we have made a good start in our efforts to increase the range of the possible by releasing a range of products which we hope will be appealing to many developers.
 
-## The Decerver
+### The Decerver
 
 The Decerver is, to my understanding, the very first application server purpose built for ecosystem applications. Distributed Applications are applications which utilize a range of peer-to-peer technologies to provide a cohesive, interactive application to its users. In other words ecosystem applications probably are designed utilizing the participatory architecture paradigm. The Decerver (we pronounce it: dee-server) significantly simplifies a developer's ability to design, build, test, and deploy ecosystem applications.
 
@@ -36,7 +36,7 @@ Interaction with each of these modules happens in a layer of the Decerver which 
 
 The Decerver works best when ecosystem applications are designed around the idea of data-driven interactions. These interactions work best when they are scripted in javascript files that run in the Atë later and from there interact with all of the modules who expose established functions to the Atë layer via the decerver's interfaces. For more information about the Decerver please see the dedicated site or go directly to the code (deprectated)
 
-## Thelonious
+### Thelonious
 
 Thelonious is, to my understanding, the very first smart contract controlled, smart contract enabled blockchain design. The Thelonious client we have built is a heavily modified version of [Jeffrey Wilcke's](https://github.com/obscuren) [Go client](https://github.com/ethereum/go-ethereum) for the [Ethereum protocol](https://ethereum.org).
 
@@ -46,6 +46,6 @@ A Thelonious blockchain is a self-contained unit. What this means is that the ch
 
 Making the blockchain be controlled by smart contracts opens up some interesting possibilities for distributed application developers. For one, it harmonizes the development of the distributed application with deployment of any single blockchain while simultaneously greatly simplifying the entire distributed application development pipeline. For more information about Thelonious please see the dedicated site or go directly to the code (deprecated).
 
-## Conclusion
+### Conclusion
 
 Together these two products, along with the revamped Eris Package Manager and revamped Eris Legal Markdown, are the first in a series of development tools which Eris Industries is releasing. We welcome your feedback and hope that our efforts will help your team in some way.

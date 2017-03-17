@@ -17,7 +17,7 @@ url: /2016/04/02/moving-the-chains/
 
 What do blockchains and sports have in common? A lot more than one might expect. This post is a think-piece written collaboratively with [Samir Patel](https://twitter.com/samirpatellaw) while we were kicking it marmot style at Michigan State University this weekend. #lawyerswhocode
 
-## Sports business practices
+### Sports business practices
 
 Although professional sport leagues and their affiliated teams are considered businesses under the American laws that govern commerce, there have been particular laws and precedents putting professional sport in a different legal consideration than ordinary business. Investigating these precedents helps to understand how owners have recently strengthened their grip on the monetary flow of sport. Here, we examine how a blockchain may add a layer of accountability to the sports industry.
 
@@ -25,7 +25,7 @@ In today's sport industry there is a push by stakeholders to maintain an equitab
 
 Revenue sharing is when the league creates revenue streams and requires its teams to contribute to a pool based upon different standards established by each league. Traditionally, shared revenues primarily include local and national television rights. These shared revenues are intended to help lower income franchises and create competitive balance within the league. Recentlly, shared revenues have expand to include most revenue streams for a team.
 
-## Salary cap / player compensation
+### Salary cap / player compensation
 
 This would seem to be great for the Cleveland Browns fan who hopes to one day have a winning season, however, revenue sharing imposes a pressure point on the salary of players. In professional sports, a salary cap is a  rule that places a limit on the total amount of money that a team can spend on its roster of players. The higher the salary cap, the more players can be paid. Any withholding of revenue by the owners can diminish a player's salary, saving the owner money. In fact, in February 2016, an arbitrator ordered the NFL to [pay back $120 million to the NFLPA](http://fortune.com/2016/02/23/nfl-salary-cap/) for what the league called an "accounting error". These funds are to be distributed back to the players, at an average of $71000 per player. This is a significant amount to the undrafted rookie playing on a one year contract.
 
@@ -37,7 +37,7 @@ The use of creative accounting practices by teams, take advantage of players and
 
 {{< image_blog "sports-accounting-no-chain.png" >}}
 
-## Uncreative accounting
+### Uncreative accounting
 
 The problems identified above can be summarized as follows: mutliple parties - each with different interests and motivations - need to agree on a common truth to conduct business. Creative accounting practices and/or errors skew profits in favour of teams. In the case of revenue sharing there is lack of transparency with respect to total revenues, burdening smaller teams and players salaries. In the latter example, cities overpay in subsidies.
 
@@ -45,7 +45,7 @@ How does a blockchain add value here? When most (if not all) aspects of teams' p
 
 In football, "moving the chains" is synonymous with first downs and progress. Each time the team moves the chains, it gives itself a new suite of options, opportunities, and knowledge. The playbook opens up. Similarly, a blockchain opens up the playbook of sports business.
 
-## What is a blockchain?
+### What is a blockchain?
 
 A blockchain is a distributed ledger where transactions are validated and updated through consensus of the participants in that blockchain. For teams and players that are directly affected by the financial disclosings of other teams, blockchains offer a harmonized solution for ensuring transparency over data -- which makes accountability much easier.
 
@@ -61,7 +61,7 @@ Of course, this is all for nothing if teams don't have a stadium to play in. As 
 
 With the transparency offered by such a system deployed, cities could demand that any owner seeking funds for a new stadium participate in a blockchain that identifies audited revenue streams over several years' time, ensuring authenticity of need for funds.
 
-## What about the owners?
+### What about the owners?
 
 Professional sports teams - like any other large business - benefit from quality real-time data; data used to support their operational decisions. The ticket department can base ticket prices on data from previous games (and even of other teams!) more easily. In addition, a blockchain can decrease the operating costs in the teams front office.
 

@@ -13,7 +13,7 @@ menu:
 
 ---
 
-# What are Smart Contracts?
+## What are Smart Contracts?
 
 To begin with, smart contracts are neither particularly smart nor are they, strictly speaking, contracts.
 
@@ -29,7 +29,7 @@ Relationships and obligations which are 'smart contractified' benefit from block
 
 By building business logic in smart contracts, developers (and lawyers) can give their users and clients an increase in the verifiability and certainty which comes with distributed technology while simultaneously building a system of rules which will be structured so that it can keep up with increases in automation in the world around us.
 
-# Benefits of Using Smart Contracts
+## Benefits of Using Smart Contracts
 
 There are many benefits of using smart contracts; not the least of which is a large increase in verifiability of our data-driven relationships and their outcomes or knock-on effects.
 
@@ -45,7 +45,7 @@ Under the current software design paradigm which would likely be deployed for su
 
 While the different commercial entities may be legally incorporated and would not be required to move to a completely trustless system of the kind described above, they would all experience significant cost savings from the increased verifiability and automation a blockchain-based smart contract system would permit.
 
-# Challenges of Working With Smart Contracts
+## Challenges of Working With Smart Contracts
 
 At the moment, there are two primary limitations to working with smart contracts. The first challenge is temporary, the second challenge is fundamental.
 
@@ -59,13 +59,13 @@ The second challenge of working with smart contracts is that smart contracts are
 
 Indeed, they can "enforce" or, better, administer some of the state of the data which they have access to on the blockchain on which they reside. Yet, beyond that there is little reach that smart contracts have. For the foreseeable future they will not be enforceable in any court, and few parties will be able to rely on smart contract technology alone to structure all of the terms of a commercial transaction in code.
 
-# Comparing Smart Contracts to "Normal Scripts"
+## Comparing Smart Contracts to "Normal Scripts"
 
 *Are smart contracts better than a simple python script?*
 
 This is a question which in the early days of Monax we fielded often. This is a debatable subject. And answering it turns on two axes.
 
-## Axis 1 => spectrum of verifiability
+### Axis 1 => spectrum of verifiability
 
 A python script is *somewhat* verifiable. If a python script is running on somebody else's metal your ability to verify what its doing is usually limited to observing its results. You can always see what the script is doing if, for example it is managing an API. You know that you send that API a request and then you will get a response. But what is happening between the request and the response is very difficult to verify.
 
@@ -91,13 +91,13 @@ But for instances where one has a **data driven relationship** -- whether that i
 
 But. And this is the key. It is `certainly` very different than a simple python script running on someone else's metal.
 
-## Axis 2 => spectrum of privacy
+### Axis 2 => spectrum of privacy
 
 While a python script is not highly verifiable, it **is** easy to hide and to keep protected. It's been said over and over again, blockchains are transparency machines, they are not privacy machines. There currently is no blockchain backed smart contract mechanism which can provide the level of verifiability described above **and** that can also provide *any* level of privacy beyond simple obscuration of the data on the blockchain.
 
 If you need privacy use scripts. Not smart contracts.
 
-# Are Smart Contracts Legal Tech?
+## Are Smart Contracts Legal Tech?
 
 *Simply put, smart contracts provide the backbone for automating business processes which reach *outside* of the rotating glass doors.*
 

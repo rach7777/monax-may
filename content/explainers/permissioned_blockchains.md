@@ -13,7 +13,7 @@ menu:
 
 ---
 
-# What is a Permissioned Blockchain Network?
+## What is a Permissioned Blockchain Network?
 
 The "DNA" of a permissioned blockchain network is no different than the "DNA" of an unpermissioned blockchain network. With the exception of one gene that has been mutated.
 
@@ -27,13 +27,13 @@ The second primary difference between a properly conceived permissioned blockcha
 
 Together, at Monax, we call these **capabilities based permissions**.
 
-# The Benefits of Permissioned Blockchain Networks
+## The Benefits of Permissioned Blockchain Networks
 
 To understand the benefits of permissioned blockchain networks to their participants, we must consider the relative advantages which they have *vis a vis* their unpermissioned cousins.
 
 We must also consider the relative advantages which permissioned blockchain networks have *vis a vis* their cousins on the other side of the spectrum: hub and spoke distributed databases.
 
-## Permissioned Blockchain Networks are More Performant Than Unpermissioned Blockchain Networks
+### Permissioned Blockchain Networks are More Performant Than Unpermissioned Blockchain Networks
 
 Blockchain networks in general are not very performant. But one can get *better* performance from a single blockchain network by limiting what that network is actually trying to manage. In any blockchain network, all the full nodes on the network perform all of the computation redundantly rather than in a segregated (traditional parallel computing) fashion.
 
@@ -45,7 +45,7 @@ Permissioned blockchain networks do not abrogate the requirement that every full
 
 A permissioned blockchain network will be more performant than an unpermissioned blockchain network for a *given* application because each node will only need to perform the computation necessary to support that *given* application, but it will also be significantly slower than scripting languages and hub and spoke databases.
 
-## Governance Over A Permissioned Blockchain Network is Clearly Defined
+### Governance Over A Permissioned Blockchain Network is Clearly Defined
 
 Unpermissioned blockchain networks are public spaces and as such have all the challenges of public goods governance when it comes to ensuring the networks evolution via updates to its rulebook or mechanisms of interaction. As a consequence, innovation is slow to be adopted by these networks; and their security and consensus models have challenges evolving.
 
@@ -57,7 +57,7 @@ In this sense, permissioned blockchain networks can be used iteratively to accom
 
 The end result is that it is easier to marry the specific business challenges and governance over business processes to the data management solution used by the network.
 
-## Permissioned Blockchains' Are More Cost Effective
+### Permissioned Blockchains' Are More Cost Effective
 
 Public blockchain networks are costly to deal with for a simple reason: spam control. Public blockchain networks of logic optimized blockchain nodes (e.g., the Ethereum network) has a pricing structure which is linked to computation operations.
 
@@ -67,7 +67,7 @@ What happens on such a network if users do not send enough money to a contract w
 
 Controlling this attack vector on a permissioned blockchain network can happen in a very different manner than *having* to rely on market and pricing dynamics.
 
-# Security for Permissioned Blockchain Networks
+## Security for Permissioned Blockchain Networks
 
 There is a fallacy heard now and again that permissioned blockchain networks are significantly less secure than unpermissioned blockchain networks which have an economic incentive to "mine" and protect the integrity of data. When people say that permissioned blockchain networks don't have the same level of security as unpermissioned blockchain networks sometimes they are equating blockchain networks ​_without_​ permissioning systems to "permissioned" blockchain networks.
 
@@ -75,7 +75,7 @@ These are very different things indeed. A blockchain network which does not have
 
 For the rest of this explainer we'll be talking about blockchain networks made up of blockchain node's who have an access control layer baked in as a first class citizen.
 
-## Securing Unpermissioned Blockchain Networks
+### Securing Unpermissioned Blockchain Networks
 
 Unpermissioned blockchain networks such as bitcoin use distributed computing power to process and verify transactions broadcast upon them. The network, being aware of the history of all transactions, engages in a process of continual, automated database management and transaction verification through the voluntary provision of computing power, in a process which many blockchainers call “mining”, but we call "**validating**".
 
@@ -87,7 +87,7 @@ In other words the security model for unpermissioned blockchain networks ​is�
 
 The overall size of the pie *does* provide a barrier to entry and also a barrier to quickly acquiring a sufficiency of the non-predictive distribution of power over block creation.
 
-## Securing Permissioned Blockchain Networks
+### Securing Permissioned Blockchain Networks
 
 The security model for permissioned blockchain networks is very similar, namely it is the non-predictive distribution of power over block creation among nodes unlikely to collude.
 
@@ -95,13 +95,13 @@ Only, in a permissioned blockchain network the barrier to entry, and/or barrier 
 
 A possible attack vector at this point for overtaking a permissioned blockchain is thieving (or brute forcing) of 2/3rds of the private keys for the validator set. This attack vector is **extremely unlikely** it must be reinforced, however it is mathematically possible.
 
-# The Issue of Trust
+## The Issue of Trust
 
 Many of the advantages and disadvantages of blockchain architecture stem from the idea that nodes on the network are not necessarily trustworthy. Most blockchains are designed to withstand untrustworthy nodes within the network via their consensus mechanism. This design parameter, however, begets some limitations.
 
 The idea which many blockchain advocates take from the consensus protocol is the idea of extended trustlessness to an ever wider range of the overall application, of which the blockchain is providing one piece. While the idea of increased certainty and verifiability is, indeed, appealing, the idea of moving to a fully trustless environment presents many challenges.
 
-## Examining Trustlessness
+### Examining Trustlessness
 
 "Trustless" is largely a misnomer -- and too much of it is not necessarily a good thing. Even the most ardent advocate of Bitcoin, the most prominent "trustless" network, will extend trust regularly to a certain extent, whether to the banks and payment processors which process their fiat currency transactions when they purchase Bitcoin, to the manufacturers of their computers and operating systems on which they run the Bitcoin client, and to the Bitcoin Core developers themselves.
 
@@ -113,7 +113,7 @@ Finally, "trustlessness" ignores the fact that in commerce, mistakes are made an
 
 For the vast majority of commercial entities, legal norms provide a material constraining mechanism which bounds the actions which that entity can take. While there are indeed challenges which remain to broaden access to justice, and while we feel that things do need to improve, it does not follow that one should throw out hundreds of years of legal and commercial norms simply because we now have elliptic curve cryptography and cryptoeconomics.
 
-## From Trustless to Verifiable
+### From Trustless to Verifiable
 
 While trustlessness is a tricky subject commercially for all the reasons discussed above, increasing the verifiability of data-driven interactions is a goal which all entities and organizations -- whether commercial, corporate, not-for-profit, or individual -- can benefit from. This is why, at Eris, we prefer to focus on **increasing verifiability** within distributed systems rather than engaging in largely philosophical debates about the quantum of trust.
 

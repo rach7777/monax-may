@@ -16,7 +16,7 @@ The use cases that are relevant to you likely depend on who you are. The uses of
 
 {{% use_case_selector %}}
 
-# Monax's Use Cases Decision Framework
+## Monax's Use Cases Decision Framework
 
 The table below summarizes our internal decision framework for thinking about what systems make good candidates for leveraging ecosystem application technology instead of traditional single-company centry application. The more that one is able to answer **yes** to the questions, the better the use case.
 

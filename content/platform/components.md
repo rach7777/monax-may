@@ -19,9 +19,9 @@ Modularity is a strong focus of the `eris` platform, which is greatly facilitate
 
 There are five key considerations for thinking about the mechanics of your chain as one integral piece of your ecosystem application. The first three suffice if your goal is writing and testing smart contracts. The rest are for building a useable application at scale.
 
-# Ecosystem Application Checklist
+## Ecosystem Application Checklist
 
-## Manage Your Keys
+### Manage Your Keys
 
 First, of course, it all starts with your keys. This is crypto, remember?
 
@@ -31,7 +31,7 @@ A key needs to be generated and secured for each participant in your blockchain.
 
 With our modular stack, it can be swapped out for other compatible key signing daemons. In fact, it **must be swapped out** for production use cases. It is for **development only** and we do not offer an enterprise key management solution. However the common keys API can either be satisfied by your audited security system of choice or we will be looking to provide proxy based access to various security and key management systems over time.
 
-## Roll Your Chain
+### Roll Your Chain
 
 Chains have a few key properties: validators (specified in the all important genesis file or updated on the fly with bonding/unbonding), a consensus engine (the mechanism for updating state), and a virtual machine (for executing smart contracts).
 
@@ -39,7 +39,7 @@ Our [current design](/platform/db/) is opinionated and uses the [Tendermint](htt
 
 To create genesis files and keys for development, we have the [eris:chain_manager](/docs/). The chain maker portion of the `eris:chain_manager` supports a wide variety of chain types, permissioning schemes, and participant kinds. See the [chain making tutorial](/docs/getting-started/#step-2-a-making-a-real-permissioned-chain) for more information.
 
-## Deploy Your Contracts
+### Deploy Your Contracts
 
 Deploy contracts: write solidity, compile, send to the chain.
 
@@ -47,13 +47,13 @@ We provide hosted compilers which uses the [eris:compilers](https://github.com/e
 
 All of this functionality is abstracted away with the `eris pkgs do` command. See the [contracts deploying tutorial](/docs/getting-started/#step-3-deploy-your-ecosystem-application-using-smart-contract-templates) for more information.
 
-## Build Your Application
+### Build Your Application
 
 We call them services, but you can call them whatever you like.
 
 A handful of applications are already built for you. Some of these services are used internally, for example, [IPFS](http://ipfs.io/), to provide a data lake for applications (the `eris files` command). See our [hello-world](https://github.com/eris-ltd/hello-eris) examples to see how we build ecosystem applications.
 
-## Deploy To the Cloud
+### Deploy To the Cloud
 
 Deploy to the cloud. This process uses [docker-machine](/docs/) and will soon be bundled up in the `eris remotes` command to simplify the process even further. See the [advanced cloud tutorial](/docs/chain-deploying/) for more information on deploying your chain to the cloud.
 
@@ -63,9 +63,9 @@ That is a lot of components. So where should you even start?
 
 Next, we'll walk through one approach -- the one we consider most intuitive for thinking about the design of your ecosystem application -- though in practice you can probably start anywhere. This is how we do it when testing or implementing our applications.
 
-# The Development Lifecycle
+## The Development Lifecycle
 
-## Set Up Your Chain
+### Set Up Your Chain
 
 We start with the genesis file. The sets up your chain and contains approved validators, their token distribution, any permissions, roles, or names can be assigned to them. Maybe you want 5, maybe you want 100. See [the advanced chain making tutorial](/docs/chain-making/) for more info on creating chains. Since you'll need the public keys of everyone you'd like included, a key pair will need to be generated for each participant/validator.
 
@@ -86,7 +86,7 @@ The status and health of a chain can be monitored through either `eris:db`'s rpc
 
 More info: [chain deploying](/docs/chain-deploying/); [contracts interacting](/docs/getting-started/#step-4-integrate-your-ecosystem-application).
 
-## Set Up Your Application
+### Set Up Your Application
 
 Now you need an application. Before we get into some design considerations for an application, let's dissect the process of sending transactions and deploying contracts.
 
@@ -102,7 +102,7 @@ So a transaction hits the chain, then what? Roughly, the transaction will be pro
 
 We are working on making experimentation with other consensus engines simpler. Our roadmap is tending toward being able to offer a sort of plug-and-play system with different application runtimes and consensus engines packaged, configured, and connected in a user friendly manner.
 
-## Build Your Application
+### Build Your Application
 
 Time to build your service (application). But wait.
 
@@ -118,6 +118,6 @@ The `eris` tool has a global flag `--machine` which can be used to specify anoth
 
 The beauty of this feature is that the files needed for these deployments need only be on the the machines where your adminstrators and developers are working, and, of course, you only need to install `eris` once.
 
-# Get Started!
+## Get Started!
 
 There you have it. From A to Blockchains, this is how you get rolling with the marmots.

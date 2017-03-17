@@ -22,7 +22,7 @@ We at Eris Industries are, obviously, super keen on developers - it's why we bui
 
 This includes making sure that **all of your favourite protocols can talk to DApps you design.** We started this off by including Bitcoin, Ethereum, and IPFS out of the box (as well as Thelonious of course). But now it's time to let the community -- nascent though it is -- to take charge a bit and have some fun with the Decerver. Accordingly, it's BOUNTY TIME (the first of many).
 
-## The Bounty
+### The Bounty
 
 The first individual or group to submit a fully functional XCP module via pull request to our Decerver Interfaces GitHub repository (deprecated) will be awarded:
 
@@ -41,7 +41,7 @@ Just to be clear, we're not proposing something like the Ethereum/Counterparty [
 
 Eris isn't a cryptocurrency - it's a distributed application platform which allows developers to build DApps that use blockchain databases. What it does mean, however, is that once we've got a module, Eris DApps -- which, now that we've launched, we're working on in earnest (and we hope you are too!) -- should be able to talk to Counterparty assets through our Decerver web browser core in addition to BTC, ETH, THEL, and IPFS.
 
-## #2014MarmotAward Bonus Features
+### #2014MarmotAward Bonus Features
 
 Additionally, EI will award two Eris Stars to the developer who accomplishes **each** of the following achievements:
 

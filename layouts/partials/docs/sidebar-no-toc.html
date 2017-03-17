@@ -2,9 +2,6 @@
 {{- $area := $.Scratch.Get "area" -}}
 {{- $toc := $.Scratch.Get "toc" -}}
 {{- $currentNode := . -}}
-{{- if $toc -}}
-  {{ .TableOfContents }}
-{{- end -}}
 {{- if not (eq $area nil) -}}
   {{- $currentConfig := index .Site.Data.menus $area -}}
   <em>Quick Links:</em>

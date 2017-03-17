@@ -43,7 +43,7 @@ If you're a developer within a financial services company tasked with a now mass
 
 This complexity and competition leads directly to what Eris, Monax Industries' software, **actually is**, which in many cases is different than what folks **think it is**.
 
-# Eris: The Vision
+## Eris: The Vision
 
 Given all the above we have three focusing streams for designing what we build at Monax Industries.
 
@@ -55,7 +55,7 @@ Given all the above we have three focusing streams for designing what we build a
 
 All of the design and architecture and most of the reason that Eris is built the way that it is, is a reflection of the above vision; which has been developed and refined during two years of building some of the most advanced cross-system ecosystem applications around.
 
-# Eris: Architecture That Embraces Plurality
+## Eris: Architecture That Embraces Plurality
 
 Before we talk about `eris` let's look at what a blockchain application "actually" is:
 
@@ -81,11 +81,11 @@ This architecture allows eris to embrace a wide variety of developer needs. But 
 
 So, what is eris? It's a blockchain application platform that makes it easy to build, test, and use your blockchain applications.
 
-## Example
+### Example
 
 While exciting, it also places a fairly large load on a super user to compile, install, configure, etc. all the components and pieces that their applications use. Let's just assume a given `super user` wants to run OpenBazaar and a single Geth-IPFS Ðapp. What would be necessary to go from zero to "running".
 
-### OpenBazaar
+#### OpenBazaar
 
 At the time of writing, their installation instructions are pretty clean! (Well done!)
 
@@ -103,7 +103,7 @@ Not bad. Wanna get started with openbazaar on eris?
 eris services start openbazaar
 ```
 
-### Geth-IPFS Ðapp
+#### Geth-IPFS Ðapp
 
 At the time of writing, both of these are easily installed via binaries! (Well done!)
 
@@ -135,7 +135,7 @@ Because `eris` leverages docker under the hood, `eris` can run (nearly) anywhere
 
 {{< image_blog "wtf-eris-remotes.png" >}}
 
-# eris:runtime
+## eris:runtime
 
 We have long been leaders in the permissioned smart contract network space. From our early explorations with `thelonious` to our latter explorations which led to `eris:db` (as well as significant contributions to the previous major version of the tendermint code base), we have understood that automating data driven relationships on a "less than global" basis was going to be crucial for the success of this technology within industry. `eris:runtime` is the next evolution of our efforts.
 
@@ -153,7 +153,7 @@ So, what exactly, is `eris:runtime`? Over the next few release cycles (leading u
 
 The runtime won't, obviously, be for every blockchain and smart contract backed application, but after building industrial strength blockchain and smart contract backed applications for wee while now, it is what we need, the majority of the time, to continue pushing the envelope as to what this tech can do and can be used for.
 
-## eris:runtime:contracts
+### eris:runtime:contracts
 
 Let's start at the top of the diagram. With the smart contracts "layer". What does that mean? Well, to us at Monax Industries it means:
 
@@ -171,7 +171,7 @@ We will, over our 1.x release cycles, as more options to perform highly determin
 
 We will also, over our 1.x release cycles, as more options in the transactional and consensus engine compontent come on line, be seeking to integrate additional options as parameters for the runtime (of course they can always be ran as eris services :-) ). But for now Tendermint is, in our experience, still the most mature permissionable proof of stake consensus engine on the market.
 
-## eris:runtime:workers
+### eris:runtime:workers
 
 In addition to needing fully verifiable computation, many applications which are automating business processes at a network level need to perform what is, fundamentally:
 
@@ -187,7 +187,7 @@ The scripts ran in this portion of the runtime are unverifiable computation beca
 
 With the `eris:runtime:workers` node-based framework these computations will be quite easy. This component is scheduled to be released in our 1.0.0 release.
 
-## eris:runtime:gateway
+### eris:runtime:gateway
 
 `eris:db` currently has two RPC ports. One of which talks to our low level, go-based tooling, and the other talks to our javascript tooling. These two RPCs actually are built to operate differently, but there is some overlap. The current code which is most of `eris:db`'s repository will be reconciled into a component we call `eris:runtime:gateway`. It will provide coherent, managed routing of messages amongst the various other components of the runtime while also acting as a simple way to bring reliency and coherence to clients which need to interface with the application.
 
@@ -195,13 +195,13 @@ By maintaining a gateway which is gauranteed to interface cleanly with eris buil
 
 This component is scheduled to be released during our 0.12.x release series.
 
-## Upgrading to eris:runtime
+### Upgrading to eris:runtime
 
 The fundamental components of the `eris:runtime` already exist in `eris:db` in either the repo itself or in its vendored dependencies, so the upgrade path for current users of `eris chains` should be (mostly) seamless. Although, this is pre 1.0 software so we cannot promise that there will not be any breaking changes, we will have upgrade functionality for `eris chains` baked into `eris` in our 0.12.0 release when the most invasive change (breaking apart the "application" and "consensus" components and connecting them over the tendermint socket protocol: TMSP) happens. This upgrade functionality will provide capability to save and import your state as you upgrade a smart contract network.
 
 The remainder of the changes we will be making should be mostly transparent to users. As always, this is open source. Please feel free to pitch in!
 
-# Eris: Tooling That Matters
+## Eris: Tooling That Matters
 
 In a world of a plurality of chains and smart contract networks and applications, more tooling is required for builders than simply application management tooling.
 
@@ -215,11 +215,11 @@ You also need tooling which has been built from the ground up to provide your de
 
 We have a range of tooling that still needs to be built, but in combination with other ecosystems, the range of tools available to application makers is increasing by the day. Which, to be clear, is a wonderful thing. If you are a tool builder looking to interface with the growing eris ecosystem give us a shout on Twitter!
 
-# Eris: Build and Run Networked-Based Business Process Automation Applications
+## Eris: Build and Run Networked-Based Business Process Automation Applications
 
 The other side of `eris` is our legal engineering side. That bit [we don't give away](/products/). Oh, and to be clear, you don't have to use our legal engineering talent [to achieve your goals](/docs/solidity/).
 
-# Eris: The Bottom Line
+## Eris: The Bottom Line
 
 Move faster. Move *with* the flow of distributed computing. #profit
 
