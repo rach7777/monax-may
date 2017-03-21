@@ -98,6 +98,3 @@ We have learned that application superusers wanting to participate in the data s
 **No matter the blockchain**.
 
 These are the lessons which underpin the design of the `eris` tool.
-
-
-## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Deprecated](/docs/deprecated/)
