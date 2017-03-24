@@ -20,21 +20,21 @@ menu:
 
 ## Introduction
 
-`eris` is the first Application Platform built from the ground up to provide a logical base for developers and devOps to build, test, and run ecosystem applications. It is designed to support multiple blockchain nodes connected to multiple blockchain networks with different smart contract interpreters all seamlessly connected to other microservices necessary to build, test, and run the ecosystem application such as key management systems and distributed data lakes.
+The Monax Application Platform is built from the ground up to provide a logical base for developers and devOps to build, test, and operate ecosystem applications. It is designed to support multiple blockchain nodes connected to multiple blockchain networks with different smart contract interpreters all seamlessly connected to other microservices necessary to build, test, and run the ecosystem application such as key management systems and distributed data lakes.
 
-Developers and devOps who use [blockchains](/explainers/blockchains), [smart contracts](/explainers/smart_contracts), key management systems, and distributed data lakes have access to a core set of tools tackling big problems. Tackling big problems of coordination and reconciliation across our increasingly interconnected organizations requires building applications that are meant to run on an ecosystem level. These are what we call [ecosystem applications](/explainers/ecosystem_applications). Ecosystem applications are the next generation of process management tools and `eris` is the gateway to building sophisticated enterprise-grade ecosystm applications.
+Developers and devOps who use [blockchains](/explainers/blockchains), [smart contracts](/explainers/smart_contracts), key management systems, and distributed data lakes have access to a core set of tools tackling big problems. Tackling big problems of coordination and reconciliation across our increasingly interconnected organizations requires building applications that are meant to run on an ecosystem level. These are what we call [ecosystem applications](/explainers/ecosystem_applications). Ecosystem applications are the next generation of process management tools and the Monax platform is the gateway to building sophisticated enterprise-grade ecosystm applications.
 
-`eris` provides a logical and powerful toolkit for developers seeking a harmonized developer experience for connecting into multiple blockchains (whether for testing or due to client requirements).
+The CLI provides a logical and powerful toolkit for developers seeking a harmonized experience for connecting into multiple blockchains (whether for testing or due to client requirements).
 
 ## Overview of an Ecosystem Application
 
 {{< lucidchart "0d616eb8-72ae-4216-b901-6915c3ff33b8" >}}
 
-The above diagram provides a high level overview of the different pieces of an ecosystem application. The green boxes are part of the `eris` technology stack while purple represents external services managed by `eris`.
+The above diagram provides a high level overview of the different pieces of an ecosystem application. The green boxes are part of the Monax technology stack while purple represents external services managed by the CLI.
 
 ## Features
 
-`eris` is a modular platform of numerous connected services and tools that simplify building, testing, and running ecosystem applications.
+The CLI is a modular platform of numerous connected services and tools that simplify building, testing, and running ecosystem applications.
 
 ### Chains
 

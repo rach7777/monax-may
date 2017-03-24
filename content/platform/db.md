@@ -89,7 +89,7 @@ Permissioning your blockchains is more than simply running them behind a gated V
             <td>n/a</td>
           </tr>
           <tr>
-            <td>Works with eris:cli</td>
+            <td>Works with Monax</td>
             <td>Yes</td>
             <td>Yes</td>
           </tr>
@@ -135,7 +135,7 @@ Permissioning your blockchains is more than simply running them behind a gated V
             <td>unclear</td>
           </tr>
           <tr>
-            <td>Works with eris:cli</td>
+            <td>Works with Monax</td>
             <td>Yes</td>
             <td>not yet</td>
           </tr>
@@ -181,7 +181,7 @@ Permissioning your blockchains is more than simply running them behind a gated V
             <td>n/a</td>
           </tr>
           <tr>
-            <td>Works with eris:cli</td>
+            <td>Works with Monax</td>
             <td>Yes</td>
             <td>Yes</td>
           </tr>
@@ -227,7 +227,7 @@ Permissioning your blockchains is more than simply running them behind a gated V
             <td>Ripple Gateway Permissioning</td>
           </tr>
           <tr>
-            <td>Works with eris:cli</td>
+            <td>Works with Monax</td>
             <td>Yes</td>
             <td>not yet</td>
           </tr>
@@ -273,7 +273,7 @@ Permissioning your blockchains is more than simply running them behind a gated V
             <td>unclear</td>
           </tr>
           <tr>
-            <td>Works with eris:cli</td>
+            <td>Works with Monax</td>
             <td>Yes</td>
             <td>not yet</td>
           </tr>
@@ -319,7 +319,7 @@ Permissioning your blockchains is more than simply running them behind a gated V
             <td>unclear</td>
           </tr>
           <tr>
-            <td>Works with eris:cli</td>
+            <td>Works with Monax</td>
             <td>Yes</td>
             <td>not yet</td>
           </tr>
