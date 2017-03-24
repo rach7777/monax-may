@@ -31,7 +31,7 @@ With one `eris:db` client, commercial entities will be able to control an innume
 
 ### Interface
 
-`eris:db` comes with a range of interfaces from CLI tooling to RPCs. See our [comprehensive documentation](https://github.com/eris-ltd/eris-db/blob/master/README.md) for more.
+`eris:db` comes with a range of interfaces from CLI tooling to RPCs. See our [comprehensive documentation](https://github.com/monax/eris-db/blob/master/README.md) for more.
 
 ### Virtual Machine
 
@@ -41,7 +41,7 @@ With one `eris:db` client, commercial entities will be able to control an innume
 
 Permissioning your blockchains is more than simply running them behind a gated VPN if one is running `eris:db`.
 
-`eris:db` comes with a [capabilities-based, evolvable permissioning layer](https://github.com/eris-ltd/eris-db/blob/master/README.md) - the first of its kind on the market, and by far, still the most sophisticated.
+`eris:db` comes with a [capabilities-based, evolvable permissioning layer](https://github.com/monax/eris-db/blob/master/README.md) - the first of its kind on the market, and by far, still the most sophisticated.
 
 ## Comparisons
 
@@ -85,7 +85,7 @@ Permissioning your blockchains is more than simply running them behind a gated V
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="https://github.com/eris-ltd/eris-db/blob/master/README.md">Yes</a></td>
+            <td><a href="https://github.com/monax/eris-db/blob/master/README.md">Yes</a></td>
             <td>n/a</td>
           </tr>
           <tr>
@@ -131,7 +131,7 @@ Permissioning your blockchains is more than simply running them behind a gated V
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="https://github.com/eris-ltd/eris-db/blob/master/README.md">Yes</a></td>
+            <td><a href="https://github.com/monax/eris-db/blob/master/README.md">Yes</a></td>
             <td>unclear</td>
           </tr>
           <tr>
@@ -177,7 +177,7 @@ Permissioning your blockchains is more than simply running them behind a gated V
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="https://github.com/eris-ltd/eris-db/blob/master/README.md">Yes</a></td>
+            <td><a href="https://github.com/monax/eris-db/blob/master/README.md">Yes</a></td>
             <td>n/a</td>
           </tr>
           <tr>
@@ -223,7 +223,7 @@ Permissioning your blockchains is more than simply running them behind a gated V
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="https://github.com/eris-ltd/eris-db/blob/master/README.md">Yes</a></td>
+            <td><a href="https://github.com/monax/eris-db/blob/master/README.md">Yes</a></td>
             <td>Ripple Gateway Permissioning</td>
           </tr>
           <tr>
@@ -269,7 +269,7 @@ Permissioning your blockchains is more than simply running them behind a gated V
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="https://github.com/eris-ltd/eris-db/blob/master/README.md">Yes</a></td>
+            <td><a href="https://github.com/monax/eris-db/blob/master/README.md">Yes</a></td>
             <td>unclear</td>
           </tr>
           <tr>
@@ -315,7 +315,7 @@ Permissioning your blockchains is more than simply running them behind a gated V
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="https://github.com/eris-ltd/eris-db/blob/master/README.md">Yes</a></td>
+            <td><a href="https://github.com/monax/eris-db/blob/master/README.md">Yes</a></td>
             <td>unclear</td>
           </tr>
           <tr>

@@ -129,7 +129,7 @@ When we say that `eris` is a blockchain application platform, this is what we me
 
 {{< image_blog "wtf-eris-apps.png" >}}
 
-To see a full list of the services eris is capable of running out of the box [please see our repository](https://github.com/eris-ltd/eris-services).
+To see a full list of the services eris is capable of running out of the box [please see our repository](https://github.com/monax/hello-doug).
 
 Because `eris` leverages docker under the hood, `eris` can run (nearly) anywhere via direct install, or even just speaking to a remote docker engine!
 

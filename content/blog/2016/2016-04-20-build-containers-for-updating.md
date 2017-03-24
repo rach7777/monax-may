@@ -22,11 +22,11 @@ title: Updating Your Application Using Docker Build Containers
 url: /2016/04/20/build-containers-for-updating/
 ---
 
-In the early days of [eris-cli](https://github.com/eris-ltd/eris-cli/), before we distributed binaries and users had to build from source, I wanted a simple way to update the tool either to the latest version or a specific branch. The result was `eris update` which would update eris, by default, to master. A flag lets users pick a branch (provided it's on GitHub) and `eris update --branch=develop`, for example. Under-the-hood, it's a series of shelled out git commands plus `go install ./cmd/eris`. This feature is useful for quickly confirming bug fixes or having users test out a new feature, before merging to `develop`. It only works for source installations and require git and go locally. What about binary installations you ask?
+In the early days of [eris-cli](https://github.com/monax/cli/), before we distributed binaries and users had to build from source, I wanted a simple way to update the tool either to the latest version or a specific branch. The result was `eris update` which would update eris, by default, to master. A flag lets users pick a branch (provided it's on GitHub) and `eris update --branch=develop`, for example. Under-the-hood, it's a series of shelled out git commands plus `go install ./cmd/eris`. This feature is useful for quickly confirming bug fixes or having users test out a new feature, before merging to `develop`. It only works for source installations and require git and go locally. What about binary installations you ask?
 
 Eventually we got our binaries sorted out but the `eris update` command still only worked for installations from source. Updating from a binary installation was implemented but the feature hadn't received much love; the latest release was pulled in as a tarball and unpacked, its binary replacing the old one. It was buggy, didn't always work, and the code was messy. Finally, a user who had used the `--branch` feature with a source installation also wanted it for updating binary installations.
 
-I went about [refactoring this code](https://github.com/eris-ltd/eris-cli/pull/617) all while pondering how to update eris to a specific branch from a binary installation (i.e., without requiring git or go installed). Eventually, all the pieces I needed fell together. Here's how it happened with docker build containers:
+I went about [refactoring this code](https://github.com/monax/cli/pull/617) all while pondering how to update eris to a specific branch from a binary installation (i.e., without requiring git or go installed). Eventually, all the pieces I needed fell together. Here's how it happened with docker build containers:
 
 #### Building an Image
 
