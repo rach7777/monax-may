@@ -4,6 +4,7 @@ global.jQuery = global.$ = require('jquery');
 require('bootstrap');
 require('prismjs');
 require('owl.carousel');
+var validate = require('jquery-validation');
 var lunr = require('lunr');
 
 var lunrIndex,
@@ -31,30 +32,13 @@ $(function() {
   // add site wide tables classes to gfm rendered tables
   $('#main-content table').addClass('table table-bordered table-hover');
 
-  // table of contents modifications; add proper classes for
-  // scroll spy and formally constrain width of tables
-  // this is necessary because its css positioning is fixed.
   $('#TableOfContents ul').addClass('nav nav-pills nav-stacked');
-  // $('#TableOfContents').children().css( "width", $('#TableOfContents').parent('.sidebar').width() );
 
   // initiate table of contents with scrollSpy
   if ($('#TableOfContents').length !== 0) {
 
     $('.sidebar #TableOfContents').prepend("<em>Jump to:</em>").append("<hr />");
     $('.topbar #TableOfContents').prepend("<em>Jump to:</em>").append("<hr />");
-
-    // // Add scroll spy to watch Body
-    // $('body').scrollspy({ target: '#TableOfContents' });
-
-    // // hide anything > Level 2
-    // $('#TableOfContents ul li ul li').children('ul').empty();
-
-    // // sidebar vertical accordian with default collapse
-    // $('#TableOfContents ul li').not('.active').children('ul').slideUp(50);
-    // $('#TableOfContents').on('activate.bs.scrollspy', function() {
-    //   $('#TableOfContents ul li').not('.active').children('ul').slideUp(50);
-    //   $('#TableOfContents ul li.active ul').slideDown();
-    // });
 
     // smooth scrolling by scroll spy
     $('#TableOfContents ul a').bind('click', function(event) {
@@ -64,6 +48,45 @@ $(function() {
       }, 750 );
       event.preventDefault();
     });
+  }
+
+  // Hide Header on on scroll down
+  var didScroll;
+  var lastScrollTop = 0;
+  var delta = 5;
+  var navbarHeight = $('nav.navbar').outerHeight();
+  $('div.ghost-nav').css('height', navbarHeight);
+
+  $(window).scroll(function(event){
+      didScroll = true;
+  });
+
+  setInterval(function() {
+      if (didScroll) {
+          hasScrolled();
+          didScroll = false;
+      }
+  }, 250);
+
+  function hasScrolled() {
+    var st = $(window).scrollTop();
+    if(Math.abs(lastScrollTop - st) <= delta){
+      return;
+    }
+        
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('nav.navbar').removeClass('nav-down').addClass('nav-up');
+        if ( $('.navbar-collapse.collapse').hasClass('in') ) {
+          $('.navbar-toggle').trigger('click').blur();
+        }
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('nav.navbar').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    lastScrollTop = st;
   }
 
   /*
@@ -249,76 +272,61 @@ $(function() {
       }
   });
 
-  // // Validate form - ENABLE WHEN: jquery-validation.js is loading
-  // $("#contact-monax-form").validate({
-  //   rules: {
-  //     first_name: {
-  //       required: true,
-  //       minlength: 2
-  //     },
-  //     last_name: {
-  //       required: true,
-  //       minlength: 2
-  //     },
-  //     email: {
-  //       required: true,
-  //       email: true
-  //     }
-  //   },
-  //   messages: {
-  //     first_name: "Please specify your name",
-  //     last_name: "Please specify your name",
-  //     email: {
-  //       required: "Please specify your email address so that we can respond to your inquiry",
-  //       email: "Please enter a valid email address"
-  //     }
-  //   }
-  // });
-
 
   var contactUsErrorCallback = function(xhr, status, error) {
-    $("#send-button").attr("disabled", false);
-    // var response = $.parseJSON(xhr.responseText);
-    // var html = [];
-    // $.each(response.errors.lead, function(index, error) {
-    //   if (/first/i.test(error.toString())) {
-    //     $("#first-name-group").addClass("has-error");
-    //   } else if (/last/i.test(error.toString())) {
-    //     $("#last-name-group").addClass("has-error");
-    //   } else if (/email/i.test(error.toString())) {
-    //     $("#email-group").addClass("has-error");
-    //   } else {
-    //     html.push(error);
-    //   }
-    // });
-    // $("#error_message p").html("An error occurred. Please try again.");
-    // $("#error_message").slideDown(400, function() {
-    //   $("#error_message input").focus();
-    // });
-    $("#contact-monax form").slideUp(400, function() {
+    // alert("Error");
+  }
+
+  var contactUsSuccessCallback = function(data, status, xhr) {
+    $("#contact-monax-form").slideUp(400, function() {
       $("#success_message").slideDown(400);
     });
-  };
+  }
 
-  var contactUseSuccessCallback = function(data, status, xhr) {
-    $("#contact-monax form").slideUp(400, function() {
-      $("#success_message").slideDown(400);
-    });
-  };
-
-  $("#contact-monax form").submit(function() {
-    $("#send-button").attr("disabled", true); // false
-    $("#00N4100000KxGSr").val(getCookie("_jsuid"));
-    console.log(data)
-    $.ajax({
-      url: this.action,
-      data: data,
-      dataType: "json",
-      type: "post",
-      error: contactUsErrorCallback,
-      success: contactUseSuccessCallback
-    });
-    return false
+ $("#contact-monax-form").validate({
+    rules: {
+      first_name: {
+        required: true,
+        minlength: 2
+      },
+      last_name: {
+        required: true,
+        minlength: 2
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      company: {
+        required: true,
+        minlength: 2
+      },
+      industry: {
+        required: true
+      }
+    },
+    messages: {
+      first_name: "Please specify your name",
+      last_name: "Please specify your name",
+      email: {
+        required: "Please specify your email address",
+        email: "Please enter a valid email address"
+      },
+      company: "Please enter your company name",
+      industry: "Please enter your company's sector"
+    },
+    validClass: "pass-validation",
+    submitHandler: function(form) {
+      $("#00N4100000KxGSr").val(getCookie("_jsuid"));
+      $.ajax({
+        url: form.action,
+        data: $(form).serialize(),
+        dataType: "json",
+        type: "POST",
+        error: contactUsErrorCallback,
+        success: contactUsSuccessCallback
+      });
+    }
   });
 
   /*

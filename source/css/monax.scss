@@ -175,12 +175,33 @@ code {
 /*              */
 /*     Nav      */
 /*              */
+$navheight: 53px;
 nav.navbar {
     padding: 0 !important;
     margin: 0 !important;
-    background: transparent;
+    background: #ffffff;
     z-index: 999999;
     font-size: 1.3em;
+    height: $navheight;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    border-radius: 0 !important;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+
+    // Hide menu
+    &.nav-up {
+        top: $navheight * -1;
+    }
+
+    // Mobile menu
+    #monax-main {
+        background-color: #fff;
+        border-bottom: 1px solid #e7e7e7;
+    }
 
     @media (min-width: 979px) {
         ul.nav li.dropdown:hover > ul.dropdown-menu {
@@ -350,6 +371,11 @@ nav.navbar {
             }
         }
     }
+}
+// Add spacing under fixed header
+.ghost-nav {
+    display: block;
+    height: 0;
 }
 
 // Hide empty links on sidebars
@@ -619,6 +645,24 @@ article a {
 
     .start-hidden {
         display: none;
+    }
+
+    // Errors
+    label.error {
+        font-weight: 200;
+        display: block;
+        background-color: #333;
+        padding: 4px 10px;
+        font-size: 85%;
+        text-align: left;
+
+        &:before {
+            content: "\43";
+            font-family: hugo;
+            font-weight: 200;
+            font-size: 70%;
+            margin-right: 8px;
+        }
     }
 }
 
