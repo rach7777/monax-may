@@ -345,7 +345,7 @@ Boom. You're all set with your custom built, permissioned, smart contract-ified,
 
 You start your chain up again for the next step:
 
-```bash
+```
 eris chains start firstchain
 ```
 
