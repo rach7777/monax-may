@@ -15,10 +15,6 @@ title: On Blockchains
 url: /2015/04/30/on-blockchains/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
-
 Much digital ink has been spilled over the past couple weeks concerning the relevance, necessity, use cases, and definition of that most remarkable piece of technology: the blockchain. Much of it was perhaps provoked by the [cuddly marmoteering of our very own Marmot Byrne](https://twitter.com/prestonjbyrne/).
 
 To be honest, I think we could all benefit from a little more cuddly marmoteering in our professional and working lives, but I'll be the first to admit that a cuddly marmot may not quite know exactly what he is talking about all the time ;)
