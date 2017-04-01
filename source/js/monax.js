@@ -181,51 +181,6 @@ $(function() {
     matchClicked("partner_sdk", "partner");
   })
 
-  var contactUsErrorCallback = function(xhr, status, error) {
-    $("#send-button").attr("disabled", false);
-    // var response = $.parseJSON(xhr.responseText);
-    // var html = [];
-    // $.each(response.errors.lead, function(index, error) {
-    //   if (/first/i.test(error.toString())) {
-    //     $("#first-name-group").addClass("has-error");
-    //   } else if (/last/i.test(error.toString())) {
-    //     $("#last-name-group").addClass("has-error");
-    //   } else if (/email/i.test(error.toString())) {
-    //     $("#email-group").addClass("has-error");
-    //   } else {
-    //     html.push(error);
-    //   }
-    // });
-    // $("#error_message p").html("An error occurred. Please try again.");
-    // $("#error_message").slideDown(400, function() {
-    //   $("#error_message input").focus();
-    // });
-    $("#contact-monax form").slideUp(400, function() {
-      $("#success_message").slideDown(400);
-    });
-  };
-
-  var contactUseSuccessCallback = function(data, status, xhr) {
-    $("#contact-monax form").slideUp(400, function() {
-      $("#success_message").slideDown(400);
-    });
-  };
-
-  $("#contact-monax form").submit(function() {
-    $("#send-button").attr("disabled", true);
-    $("#00N4100000KxGSr").val(getCookie("_jsuid"));
-    console.log(data)
-    $.ajax({
-      url: this.action,
-      data: data,
-      dataType: "json",
-      type: "post",
-      error: contactUsErrorCallback,
-      success: contactUseSuccessCallback
-    });
-    return false
-  });
-
   // team page
   $( ".team-member" ).hover(
     function() {
@@ -277,7 +232,91 @@ $(function() {
       $('#results').hide();
     });
   });
-  
+
+  /*
+    ------------------------------------------------------------------------
+      Forms
+    ------------------------------------------------------------------------
+  */
+
+  // Reveal all fields when typing
+  $("#contact-monax-form #company").bind("keyup", function(e) {
+      if( $('#contact-monax-form .start-hidden:first').is(":hidden") ) {
+        $(".start-hidden").slideDown(300);
+      }
+  });
+
+  // // Validate form - ENABLE WHEN: jquery-validation.js is loading
+  // $("#contact-monax-form").validate({
+  //   rules: {
+  //     first_name: {
+  //       required: true,
+  //       minlength: 2
+  //     },
+  //     last_name: {
+  //       required: true,
+  //       minlength: 2
+  //     },
+  //     email: {
+  //       required: true,
+  //       email: true
+  //     }
+  //   },
+  //   messages: {
+  //     first_name: "Please specify your name",
+  //     last_name: "Please specify your name",
+  //     email: {
+  //       required: "Please specify your email address so that we can respond to your inquiry",
+  //       email: "Please enter a valid email address"
+  //     }
+  //   }
+  // });
+
+
+  var contactUsErrorCallback = function(xhr, status, error) {
+    $("#send-button").attr("disabled", false);
+    // var response = $.parseJSON(xhr.responseText);
+    // var html = [];
+    // $.each(response.errors.lead, function(index, error) {
+    //   if (/first/i.test(error.toString())) {
+    //     $("#first-name-group").addClass("has-error");
+    //   } else if (/last/i.test(error.toString())) {
+    //     $("#last-name-group").addClass("has-error");
+    //   } else if (/email/i.test(error.toString())) {
+    //     $("#email-group").addClass("has-error");
+    //   } else {
+    //     html.push(error);
+    //   }
+    // });
+    // $("#error_message p").html("An error occurred. Please try again.");
+    // $("#error_message").slideDown(400, function() {
+    //   $("#error_message input").focus();
+    // });
+    $("#contact-monax form").slideUp(400, function() {
+      $("#success_message").slideDown(400);
+    });
+  };
+
+  var contactUseSuccessCallback = function(data, status, xhr) {
+    $("#contact-monax form").slideUp(400, function() {
+      $("#success_message").slideDown(400);
+    });
+  };
+
+  $("#contact-monax form").submit(function() {
+    $("#send-button").attr("disabled", true); // false
+    $("#00N4100000KxGSr").val(getCookie("_jsuid"));
+    console.log(data)
+    $.ajax({
+      url: this.action,
+      data: data,
+      dataType: "json",
+      type: "post",
+      error: contactUsErrorCallback,
+      success: contactUseSuccessCallback
+    });
+    return false
+  });
 
   /*
     ------------------------------------------------------------------------
