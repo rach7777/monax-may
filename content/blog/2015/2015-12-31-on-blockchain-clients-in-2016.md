@@ -15,6 +15,10 @@ title: On 2016 Blockchain Clients
 url: /2015/12/31/on-blockchain-clients-in-2016/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 [{{< image_blog "blockchain_clients_2016.jpg" >}}](https://www.flickr.com/photos/42988571@N08/8545407174/)
 
 As we reflect on what has been accomplished by the blockchain community in 2015 and look forward to 2016 I'm forced to reflect on where we are in blockchain-land.

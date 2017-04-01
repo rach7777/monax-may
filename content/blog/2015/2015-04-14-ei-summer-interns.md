@@ -14,6 +14,10 @@ title: Eris Industries 2015 Summer Internships
 url: /2015/04/14/ei-summer-interns/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 ### 2015 Summer Internships with Eris Industries
 
 I'll get straight to the point:
@@ -34,7 +38,7 @@ I'll get straight to the point:
 
 * Read this carefully.
 
-* Write a 250 word project proposal for an open-source, smart contract-driven distributed application and submit it in markdown by pull request to our [Internship Applications repo](https://github.com/eris-ltd/internships). **Do not do this if you do not want your proposal to become public and open-source** (Creative Commons licence).
+* Write a 250 word project proposal for an open-source, smart contract-driven distributed application and submit it in markdown by pull request to our [Internship Applications repo](https://github.com/monax/internships). **Do not do this if you do not want your proposal to become public and open-source** (Creative Commons licence).
 
 * We'll contact you within two weeks if we'd like to take the application further.
 

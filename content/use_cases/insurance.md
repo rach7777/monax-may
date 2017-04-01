@@ -41,3 +41,5 @@ As with assets from the finance world, servicing of these assets throughout thei
 
 If you are in the risk asset management space and are interested in providing ecosystem application based, automated asset servicing for the complex assets your firm deals in, please get in touch as we would love to discuss how Monax's [platform](/platform), [products](/library), and [services](/packages) can be brought bear in the building of next generation risk asset management products.
 
+
+## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Use Cases](/use_cases/)

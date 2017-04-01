@@ -22,6 +22,10 @@ title: Updating Your Application Using Docker Build Containers
 url: /2016/04/20/build-containers-for-updating/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 In the early days of [eris-cli](https://github.com/monax/cli/), before we distributed binaries and users had to build from source, I wanted a simple way to update the tool either to the latest version or a specific branch. The result was `eris update` which would update eris, by default, to master. A flag lets users pick a branch (provided it's on GitHub) and `eris update --branch=develop`, for example. Under-the-hood, it's a series of shelled out git commands plus `go install ./cmd/eris`. This feature is useful for quickly confirming bug fixes or having users test out a new feature, before merging to `develop`. It only works for source installations and require git and go locally. What about binary installations you ask?
 
 Eventually we got our binaries sorted out but the `eris update` command still only worked for installations from source. Updating from a binary installation was implemented but the feature hadn't received much love; the latest release was pulled in as a tarball and unpacked, its binary replacing the old one. It was buggy, didn't always work, and the code was messy. Finally, a user who had used the `--branch` feature with a source installation also wanted it for updating binary installations.

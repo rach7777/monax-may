@@ -15,7 +15,9 @@ title: 'Secrets of Consistent Hashchains I: Eventual Consistency'
 url: /2014/12/22/secrets-of-consistent-hashchains-I/
 ---
 
-**Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
 
 ### Blockchains
 

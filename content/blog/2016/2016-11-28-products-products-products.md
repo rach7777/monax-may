@@ -20,6 +20,10 @@ meta:      true
 
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 [{{< image_blog "new_products.jpg" >}}](https://www.flickr.com/photos/pedrosimoes7/22907730574/)
 
 Monax was the first company to market with a permissionable blockchain in December, 2014, and since that time we have been industry leaders in the [industrial applications of ecosystem application](/use_cases) technology. Since that time we have focused on improving the design and implementation of our ecosystem application [platform](/platform) as well as building sustainable product suite that would be capable of growing over time and also meeting the demands of a complex, fast-moving market.

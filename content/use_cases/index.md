@@ -12,6 +12,8 @@ menu:
 
 ---
 
+## Ideal Use Cases
+
 The use cases that are relevant to you likely depend on who you are. The uses of [ecosystem applications](/explainers/ecosystem_applications) are broad and deep. Many of the most interesting applications are longer term and rely on more "foundational" use cases to be implemented by a range of ecosystem participants. Other use cases may **not** be good uses of ecosystem application technology and rather can be more effectively built using traditional application architecture.
 
 {{% use_case_selector %}}

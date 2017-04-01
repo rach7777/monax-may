@@ -1,7 +1,7 @@
 ---
 
 type:   docs
-layout: li
+layout: single
 title: "Software Development Kits"
 index_file: ""
 path: "content/library"
@@ -16,11 +16,15 @@ menu:
 Monax's Software Development Kits enable the assembly and configuration of ecosystem application infrastructure and business processes.
 ```
 
+<div class="note">
+	<em>Note: As of 2017, our product has been renamed from Eris to Monax. The <code>monax</code> platform was previously referred on this page as <code>eris</code>.</em>
+</div>
+
 At Monax, our Software Development Kits are our core product offering.
 
 *Monax Smart Contract SDKs* are designed and built by our cutting edge [legal engineers](/explainers/legal_engineering) and allow our customers to turn their ideas into reality much faster by shortening the learning curve, leveraging and building on top of battle-tested components, and concentrating on valuable business logic instead of application plumbing. The result is a reduced time-to-market or simply less overhead conducting POCs and other experiments.
 
-Of course, with the Eris platform you always have the choice to develop your application from scratch by designing and coding [smart contracts](/explainers/smart_contracts) using Solidity and using the emergent industry standard Ethereum Virtual Machine (EVM) smart contract interpreter on our [permissioned blockchain](/explainers/permissioned_blockchains).
+Of course, with the `monax` platform you always have the choice to develop your application from scratch by designing and coding [smart contracts](/explainers/smart_contracts) using Solidity and using the emergent industry standard Ethereum Virtual Machine (EVM) smart contract interpreter on our [permissioned blockchain](/explainers/permissioned_blockchains).
 
 ## Introduction
 
@@ -45,7 +49,7 @@ We offer an ever expanding range of both industry specific SDKs as well as add-o
 
 ### Base SDK
 
-Monax’s Base Software Development Kit gets you up and running faster than ever. The Base SDK contains all the smart contracts that help to set up permissions, authorizations, organization structure and manage the lifecycle of any ecosystem application developed on the Eris platform. We offer a number of add-on modules that are available for the Base SDK detailed below.
+Monax’s Base Software Development Kit gets you up and running faster than ever. The Base SDK contains all the smart contracts that help to set up permissions, authorizations, organization structure and manage the lifecycle of any ecosystem application developed on the `monax` platform. We offer a number of add-on modules that are available for the Base SDK detailed below.
 
 ### Finance SDK
 
@@ -92,16 +96,8 @@ The second licensing tier is a **Production License for our SDKs and Add-On Modu
 
 We will offer our SDKs to the general developer community in 2017 but at this time they are fully available via the Monax partnership network. If you would like to leverage Monax's cutting edge, legally compliant, software development kits to empower your ecosystem application please let your technology provider know, or get in touch with us via our contact form and our account managers will be in touch regarding pricing details.
 
-<center>
-<div>&nbsp;</div>
-<div>&nbsp;</div>
-<a href="/?monax_viewer_type=partner&product_interest=sdk#contact-monax" class="btn btn-lg btn-primary">My Company's Clients are Interested in the SDKs <i class="fa fa-cubes"></i></a>
-<div>&nbsp;</div>
-<div>&nbsp;</div>
 <a href="/?monax_viewer_type=end_user&product_interest=sdk#contact-monax" class="btn btn-lg btn-primary">My Company is Interested in the SDKs <i class="fa fa-check-square"></i></a>
-<div>&nbsp;</div>
-<div>&nbsp;</div>
-</center>
+<a href="/?monax_viewer_type=partner&product_interest=sdk#contact-monax" class="btn btn-lg btn-primary">My Company's Clients are Interested in the SDKs <i class="fa fa-cubes"></i></a>
 
 ## What are the Use Cases for Ecosystem Applications?
 

@@ -19,6 +19,10 @@ title: 'Deprecation Warnings: What Do They Mean'
 url: /2015/08/09/deprecation-warnings/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 We have received some incoming communication with respect to the deprecation notices we have placed onto the readme files of Thelonious and Decerver. This is the explanation of what is replacing those repositories.
 
 Our permissioned smart contract network (blockchain) design which was called Thelonious has been continued and integrated into the [Tendermint](https://github.com/tendermint/tendermint) project. We have been supporting the Tendermint project by paying one of our Core Developers to work on the Tendermint protocol and blockchain design. Tendermint is a permission-able, proof of stake based blockchain design. More about why we have switched from the old Thelonious design to the new Tendermint design will be forthcoming on our [Engineering Blog](/blog).

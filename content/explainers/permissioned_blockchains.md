@@ -115,8 +115,11 @@ For the vast majority of commercial entities, legal norms provide a material con
 
 ### From Trustless to Verifiable
 
-While trustlessness is a tricky subject commercially for all the reasons discussed above, increasing the verifiability of data-driven interactions is a goal which all entities and organizations -- whether commercial, corporate, not-for-profit, or individual -- can benefit from. This is why, at Eris, we prefer to focus on **increasing verifiability** within distributed systems rather than engaging in largely philosophical debates about the quantum of trust.
+While trustlessness is a tricky subject commercially for all the reasons discussed above, increasing the verifiability of data-driven interactions is a goal which all entities and organizations -- whether commercial, corporate, not-for-profit, or individual -- can benefit from. This is why, at Monax, we prefer to focus on **increasing verifiability** within distributed systems rather than engaging in largely philosophical debates about the quantum of trust.
 
 When it comes to increasing verifiability for all parties to a given data-driven interaction, there are few technologies currently invented which match blockchains.
 
 For more on verifiable [business process automation between stakeholders](/explainers/smart_contracts) please see our smart contracts explainer.
+
+
+## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Explainers](/explainers/)

@@ -17,7 +17,9 @@ title: 'From Blockchains to Eris: a step-by-step guide'
 url: /2014/12/27/step-by-step-eris/
 ---
 
-**Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
 
 ### 1) What is the problem we are trying to solve?
 

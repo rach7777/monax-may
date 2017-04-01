@@ -17,6 +17,10 @@ title: On Permissioning Your Blockchains
 url: /2015/09/26/on-permissioned-blockchains/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 [{{< image_blog "mostpit.jpg" >}}](https://www.flickr.com/photos/kevincortopassi/3108413681/)
 
 ### Preface
@@ -87,7 +91,7 @@ Difference (2) is, admittedly, mostly an operational convenience difference rath
 
 I get Meher's critique of the "trusted ledger space" (which he's using in place of my "permissioned blockchain" formulation) in this tweet:
 
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/bedehomender">@bedehomender</a> <a href="https://twitter.com/ethereumproject">@ethereumproject</a> <a href="https://twitter.com/eris_ltd">@eris_ltd</a> Trusted ledger space has mostly argued against Bitcoin and not for itself - it&#39;s a big gap.</p>&mdash; Meher Roy (@MeherRoy) <a href="https://twitter.com/MeherRoy/status/647495732237336576">September 25, 2015</a></blockquote>
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/bedehomender">@bedehomender</a> <a href="https://twitter.com/ethereumproject">@ethereumproject</a> <a href="https://twitter.com/monaxHQ">@monaxHQ</a> Trusted ledger space has mostly argued against Bitcoin and not for itself - it&#39;s a big gap.</p>&mdash; Meher Roy (@MeherRoy) <a href="https://twitter.com/MeherRoy/status/647495732237336576">September 25, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 That said, it is semi necessary to consider permissionless blockchains in the context of this piece, because understanding of blockchains is skewed toward their public implementation.

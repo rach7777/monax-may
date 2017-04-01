@@ -16,6 +16,10 @@ title: RJ is a Marmot
 url: /2016/03/24/rj-is-a-marmot/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 I'm very pleased to announce that RJ Catalano has joined Monax as a developer on our platform team. He started last week and will be notionally working out of our New York office, but remote from Chicago.
 
 At Monax Industries, we have long been users of the Solidity programming language, however we have not been contributors to the language itself. This has always vexed us because we wanted to play a positive role in helping the language mature, where we were able.

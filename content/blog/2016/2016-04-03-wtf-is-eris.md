@@ -14,6 +14,10 @@ title: What is Eris? 2016 Edition
 url: /2016/04/03/wtf-is-eris/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 Let's get real. The collective data and process management space (or, as some call it, the "blockchain" space) (or, as others may call it, the "smart contract" space), is an emerging market.
 
 This makes it an immense pleasure to be a part of. There is an undeniable groundswell of interest in this idea:

@@ -18,6 +18,10 @@ title: 'Smart securitisation, or: why it''s time to stop talking tokens and star
 url: /2015/04/28/smart-securitisation/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 {{< image_blog "scallthethings.jpg" >}}
 
 ## We need to have a chat about cryptocurrency tokens.

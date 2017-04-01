@@ -26,7 +26,7 @@ Recently, I had the distinct pleasure to be able to speak at the [Swiss Re block
 **N.B. 3** -- If you are unfamiliar with blockchains, smart contracts, or ecosystem applications, or if you find yourself a bit confused about the terminology used in this post, feel free to read our explainer series which tackles:
 
 * [blockchains](/explainers/blockchains?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog)
-* [permissioned blockchains](/explainers/perissioned_blockchains?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog)
+* [permissioned blockchains](/explainers/permissioned_blockchains?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog)
 * [smart contracts](/explainers/smart_contracts?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog)
 * [ecosystem applications](/explainers/ecosystem_applications?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog)
 

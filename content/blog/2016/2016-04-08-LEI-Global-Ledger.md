@@ -20,6 +20,10 @@ title: Legal Entity Global Ledger - How to liberate public data (with chains)
 url: /2016/04/08/LEI-Global-Ledger/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 One of the key aspects of Blockchain / Distributed Ledger (DL) Technology is the ability to merge public key authentication of information with a resilient, distributed database. In this piece, which outlines an application Monax is building, I talk about this idea in greater detail using publicly available data from the Legal Entity Identifier (LEI) initiative.
 
 There is no shortage of news, blog posts, and whitepapers foreshadowing the disruption of entire industries by *blockchains* and describing a myriad of potential use cases that will run more efficiently on a decentralized architecture. What is striking is that almost all prominently discussed topics focus on processes and scenarios with a fair amount of complexity and/or attempt to replace very established procedures. At first, this seems logical since the potential for efficiency gains usually increases with the complexity of the use case, but it seems we're rushing too far ahead and have forgotten about one fundamental formula that has always proven helpful when venturing into new territory:

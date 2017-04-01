@@ -70,7 +70,7 @@ While it is unclear what exactly the Enterprise Ethereum Alliance will "produce"
 
 ### The EEA v. Hyperledger?
 
-Yesterday we announced that we will be [joining Hyperledger and submitting our `eris:db` codebase for incubation](/blog/2017/02/28/why-were-joining-hyperledger/). Today we're announcing (formally) that we're joining this alliance. Are these competitive?
+Yesterday we announced that we will be [joining Hyperledger and submitting our `monax:db` codebase for incubation](/blog/2017/02/28/why-were-joining-hyperledger/). Today we're announcing (formally) that we're joining this alliance. Are these competitive?
 
 Not in our view. As discussed throughout this post, we view the Enterprise Ethereum Alliance as a standards body and we view Hyperledger as a natural home for housing the implementation of those standards. This not only allows for a plurality of views to be formulated according to the various governance rules set up by those consortia, but also it enables a resilient ability for enterprise users of smart contracting technology to participate in either the standards or (a single) implementation of those standards in a manner which is suitable for them. In other words, at this point in time more options is likely better.
 

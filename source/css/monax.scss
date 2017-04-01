@@ -129,6 +129,20 @@ a {
     @include responsive(breakpoint) { font-size: 14px; }
 }
 
+// Notes
+
+.note {
+    background-color: $note_bg;
+    display: block;
+    padding: 20px 10px;
+    margin: 20px 0;
+    font-style: italic;
+
+    code {
+        border: 1px solid $note_code_brd;
+    }
+}
+
 // Code
 pre,
 pre[class*="language-"] {
@@ -479,11 +493,6 @@ nav.navbar {
 }
 
 
-
-
-
-
-
 /*              */
 /*   Content    */
 /*              */
@@ -498,7 +507,8 @@ article a {
     border-bottom: 1px solid $links;
     text-decoration: none;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: $links;
         text-decoration: none;
         border-bottom: 2px solid $links;
@@ -664,6 +674,12 @@ article a {
             margin-right: 8px;
         }
     }
+}
+
+// Use Case Selector
+form[name=sector-select] {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /*              */

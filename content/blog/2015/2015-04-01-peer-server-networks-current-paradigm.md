@@ -21,7 +21,7 @@ url: /2015/04/01/peer-server-networks-current-paradigm/
 
 Peer server networks are one of the most important aspects of running any distributed system -- of which blockchains can easily be classified. For developers seeking to build application specific blockchains, they will obviously have the responsibility of establishing the peer server networks which their application specific blockchains hook into. Whether developers are also using other blockchains or not, alongside an application specific blockchain the same principles will apply.
 
-In preparation for our next round of beta testing on our video sharing distributed application [2gather](https://github.com/eris-ltd/2gather) we have been working to understand how to most easily deploy and maintain peer server networks. The rest of this is the current paradigm we are using to establish application specific peer server networks.
+In preparation for our next round of beta testing on our video sharing distributed application [2gather](https://github.com/monax/2gather) we have been working to understand how to most easily deploy and maintain peer server networks. The rest of this is the current paradigm we are using to establish application specific peer server networks.
 
 ### The Tools
 

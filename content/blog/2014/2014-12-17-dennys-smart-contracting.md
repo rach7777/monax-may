@@ -19,7 +19,9 @@ title: Smart Contract Writing, LLL and the creation of the Eris Standard Library
 url: /2014/12/17/dennys-smart-contracting/
 ---
 
-**Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
 
 #### DOUG, C3D, Eris - how it all began
 

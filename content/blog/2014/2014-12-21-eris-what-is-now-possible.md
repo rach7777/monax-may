@@ -18,7 +18,9 @@ title: Expanding the Range of the Possible for DApp Makers
 url: /2014/12/21/eris-what-is-now-possible/
 ---
 
-**Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
 
 One of the most exciting things about developing software is that one has the capacity to expand the range of what is possible in a real and tangible way. This excitement, I grant you, is not unique to software development as other industries and professions also have the possibility. Yet many others do not. With law, for example, there is often a long delay between when the professional begins work on a particular case and the tangible outcome. However, with software, the feedback loop is tighter.
 

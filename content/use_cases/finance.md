@@ -13,7 +13,7 @@ menu:
 
 Enterprise interest in [ecosystem application](/explainers/ecosystem_applications) technology started in finance where many banks had originally been "keeping an eye on bitcoin" but later realized that when effectively positioned and built, that ecosystem applications could solve many of the real world problems that their banks and companies were facing in terms of costs of data reconciliation.
 
-Monax was the first to market with a [permissionable blockchain](/explainers/permissioned_blockchains) which kick started enterprise interest in *using* ecosystem application technology and has remained the market leading platform on which complex financial ecosystem applications are being built. In addition to the high use of our `eris` [ecosystem application platform](/platform), Monax also licenses our industry-specific [finance software development kit](/library/#finance-sdk) which greatly reduces time to market for finance specific ecosystem applications while also increasing compliance gains along the way.
+Monax was the first to market with a [permissionable blockchain](/explainers/permissioned_blockchains) which kick started enterprise interest in *using* ecosystem application technology and has remained the market leading platform on which complex financial ecosystem applications are being built. In addition to the high use of our `monax` [ecosystem application platform](/platform), Monax also licenses our industry-specific [finance software development kit](/library/#finance-sdk) which greatly reduces time to market for finance specific ecosystem applications while also increasing compliance gains along the way.
 
 ## Investment Banks
 
@@ -39,7 +39,7 @@ Monax's finance SDK has been battle tested from lessons learned working with som
 
 Retail banks have a lot of challenges. One of the biggest challenges many retail banks have is around records management for products which are typically dealt with using paper forms. The assets which these records relate to are often either moved off of the bank's balance sheet (say, for example, consumer credit card debt which is non-performing) or used within increasingly complex securitization schemes. Many times there are challenges in having a full and complete dossier of records for a given asset by all of the participants within the value chain that should rightfully have access to the records (such, as say, debt collection agencies, or holders of asset backed securities).
 
-Moving such a use case from relying on traditional, siloed, architecture to utilizing ecosystem application technology is a relatively straight forward proposition. The requirements to manage this are fully available, today, by leveraging the `eris` [ecosystem application platform](/platform), along with Monax's Dual Integration add-on module (available for all of our SDKs). This add-on module tracks documents in a variety of content addressable storage mechanisms and also links those rights and responsibilities to other contract suites such as our contracts which handle asset management. By combining, our asset management contracts with our dual integration add-on module, retail banks can solve their record retention problem more simply than any other technology which is available on the market.
+Moving such a use case from relying on traditional, siloed, architecture to utilizing ecosystem application technology is a relatively straight forward proposition. The requirements to manage this are fully available, today, by leveraging the `monax` [ecosystem application platform](/platform), along with Monax's Dual Integration add-on module (available for all of our SDKs). This add-on module tracks documents in a variety of content addressable storage mechanisms and also links those rights and responsibilities to other contract suites such as our contracts which handle asset management. By combining, our asset management contracts with our dual integration add-on module, retail banks can solve their record retention problem more simply than any other technology which is available on the market.
 
 The advantages of utilizing ecosystem application technology for such record management instead of traditional application architecture are the certainty and auditability that utilizing ecosystem application technology. This use case in particular uses [smart contracts](/explainers/smart_contracts) to track a bundle of documents along with distributed data lake and encryption technology to distribute the records.
 
@@ -54,4 +54,7 @@ We'd love to work with your company to see how our smart contracts and platform 
 ## Asset Management
 
 asdf -->
+
+
+## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Use Cases](/use_cases/)
 

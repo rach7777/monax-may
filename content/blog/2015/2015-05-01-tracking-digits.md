@@ -18,6 +18,10 @@ title: 'Tracking Digits: How to Design Your Smart Contract Tracking System'
 url: /2015/05/01/tracking-digits/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 [{{< image_blog "racer.jpg" >}}](https://www.flickr.com/photos/tom-margie/1299414993/)
 
 Lots of folks are thinking about interesting ways to track digital goods and information back to some vendor of authenticity using blockchains and distributed file storage systems. A number of folks have been working in this area around the idea of physical goods and information as well.

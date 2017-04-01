@@ -15,6 +15,10 @@ title: On Blockchains
 url: /2015/04/30/on-blockchains/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 Much digital ink has been spilled over the past couple weeks concerning the relevance, necessity, use cases, and definition of that most remarkable piece of technology: the blockchain. Much of it was perhaps provoked by the [cuddly marmoteering of our very own Marmot Byrne](https://twitter.com/prestonjbyrne/).
 
 To be honest, I think we could all benefit from a little more cuddly marmoteering in our professional and working lives, but I'll be the first to admit that a cuddly marmot may not quite know exactly what he is talking about all the time ;)
@@ -41,7 +45,7 @@ If blockchains do anything, they introduce a re-tooling of the basic crypto prim
 
 Onto `(3)`. Work on this goal has been underway for much shorter time than `(2)`, though it has seen particularly explosive interest in the last few years, with a flurry of new protocols and tools for distributed computing. While `(3)` has traditionally enabled decentralized storage and retrieval, most protocols built to address this goal have been unable to maintain a decentralized index of the data it makes available -- hence the trouble with the Pirate Bay. The problem is solved almost trivially by `(1)`, and becomes enormously more mature with the further addition of `(2)`.
 
-If you don't know what I mean, you should **consider the way Monax built [2gather](https://github.com/eris-ltd/2gather), a distributed video sharing application we're not allowed to call YouTube.**
+If you don't know what I mean, you should **consider the way Monax built [2gather](https://github.com/monax/2gather), a distributed video sharing application we're not allowed to call YouTube.**
 
 Content is hosted on [IPFS](http://ipfs.io/) (a *much* better bittorrent) and references to the content (hashes) are stored in and managed by contracts on a [eris:db blockchain](/platform/db), with user accounts secured by their private key. Since the blockchain is shared state, anyone can see those references, and with the right tooling and design, can understand that they refer to such-and-such a video. A similar application would give you a decentralized Pirate Bay.
 

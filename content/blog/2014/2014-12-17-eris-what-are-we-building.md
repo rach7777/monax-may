@@ -18,7 +18,9 @@ title: Eris Industries -- What Are We Building?
 url: /2014/12/17/eris-what-are-we-building/
 ---
 
-**Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
 
 I'm incredibly pleased to announce that Eris Industries will release its first products to the world. After months of challenging work, I am incredibly proud of what our team has accomplished. This post contains a brief overview of the two main products which we are releasing today. Also in this series of blog posts, please see Preston's overview of why this is interesting and important for larger organizations.
 

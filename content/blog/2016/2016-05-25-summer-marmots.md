@@ -18,6 +18,10 @@ title: Summer Interns Grow the Burrow
 url: /2016/05/25/summer-marmots/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 Today, we're excited to announce two summer interns.
 
 [Samir Patel](https://twitter.com/samirpatellaw) joins us as a law student from MSU Law and will be helping out the libraries team with, among other things, the legal accuracy of our smart contracts bundles. My first introduction to Samir was a DM on Slack a few months back, asking for help setting up Eris on his computer. After a little hand holding, Samir got things going and was (mostly) off to the races. #lawyerswhocode-eventually.
@@ -30,7 +34,7 @@ We look forward to great things from Samir and if you're in East Lansing or Toro
 
 We are very excited to have Lexon on board and the timing couldn't be better as the supply-chain-on-a-blockchain (via IoT) space heats up. I was especially excited when we teamed up with EthEmbedded for day to get a feel for eris on the RaspberryPis first-hand. Save for a few to-be-expected work arounds, things when quite smoothly:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/marmot?src=hash">#marmot</a> hack day in <a href="https://twitter.com/hashtag/Guelph?src=hash">#Guelph</a> with <a href="https://twitter.com/EthEmbedded">@EthEmbedded</a>, <a href="https://twitter.com/phonikg">@phonikg</a> and <a href="https://twitter.com/eris_ltd">@eris_ltd</a><a href="https://twitter.com/hashtag/blockchain?src=hash">#blockchain</a> on <a href="https://twitter.com/ARMEmbedded">@ARMEmbedded</a> &amp; <a href="https://twitter.com/Raspberry_Pi">@Raspberry_Pi</a> <a href="https://t.co/j6d9LCs8cX">pic.twitter.com/j6d9LCs8cX</a></p>&mdash; Zach Ramsay (@cerebralbosons) <a href="https://twitter.com/cerebralbosons/status/731999423346003968">May 16, 2016</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/marmot?src=hash">#marmot</a> hack day in <a href="https://twitter.com/hashtag/Guelph?src=hash">#Guelph</a> with <a href="https://twitter.com/EthEmbedded">@EthEmbedded</a>, <a href="https://twitter.com/phonikg">@phonikg</a> and <a href="https://twitter.com/monaxHQ">@monaxHQ</a><a href="https://twitter.com/hashtag/blockchain?src=hash">#blockchain</a> on <a href="https://twitter.com/ARMEmbedded">@ARMEmbedded</a> &amp; <a href="https://twitter.com/Raspberry_Pi">@Raspberry_Pi</a> <a href="https://t.co/j6d9LCs8cX">pic.twitter.com/j6d9LCs8cX</a></p>&mdash; Zach Ramsay (@cerebralbosons) <a href="https://twitter.com/cerebralbosons/status/731999423346003968">May 16, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Since everybody loves demos and the IoT/blockchain space is hot right now, Lexon will be here in our Guelph satellite office next month to prototype an egg-delivery-by-drone blockchain application. The idea is simple: we have chickens and need to sell their eggs. Wouldn't it be fantastic if our customers could request delivery by sending a transaction to what we are affectionately calling: `eggChain`, thereby alerting us to load the drone with a dozen eggs (and off it goes!)? Payment received, eggs delivered.

@@ -13,13 +13,23 @@ aliases:
 
 ---
 
+## Introduction
+
+<div class="note">
+	<em>Note: As of 2017, our product has been renamed from Eris to Monax. The <code>monax</code> platform was previously referred on this page as <code>eris</code>.</em>
+</div>
+
 This page provides an overview of how Monax Industries' software is stacked
 
-Modularity is a strong focus of the `eris` platform, which is greatly facilitated by container technology. Before we adopted a containerized modality, each service had to be installed, configured, and connected individually - a labour intensive process. Docker provides `eris` with the ability to easily manage the various processes for your application. It also facilitates running your chain on a variety of hardware. The complicated task of orchestrating all the various requirements for a smart-contract-focused blockchain is exactly why we went all-in on containerizer technology despite various ongoing pain points. We like to think of [the Monax CLI](https://github.com/monax/cli/blob/master/README.md) as "docker for blockchains".
+Modularity is a strong focus of the `monax` platform, which is greatly facilitated by container technology. Before we adopted a containerized modality, each service had to be installed, configured, and connected individually - a labour intensive process. Docker provides `monax` with the ability to easily manage the various processes for your application. It also facilitates running your chain on a variety of hardware. The complicated task of orchestrating all the various requirements for a smart-contract-focused blockchain is exactly why we went all-in on containerizer technology despite various ongoing pain points. We like to think of [the Monax CLI](https://github.com/monax/cli/blob/master/README.md) as "docker for blockchains".
 
 There are five key considerations for thinking about the mechanics of your chain as one integral piece of your ecosystem application. The first three suffice if your goal is writing and testing smart contracts. The rest are for building a useable application at scale.
 
 ## Ecosystem Application Checklist
+
+<div class="note">
+	<em>Note: The commands in this chapter refer to an earlier version of the software prior to our name change from Eris to Monax (<= 0.16). Later versions of the software (=> 0.17) will replace the <code>eris</code> command with a <code>monax</code> command.</em>
+</div>
 
 ### Manage Your Keys
 
@@ -55,13 +65,17 @@ A handful of applications are already built for you. Some of these services are 
 
 Deploy to the cloud. Our [advanced cloud tutorial](/docs/chain-deploying) provides more information on this process. We'll be adding cloud service integrations in the coming months (e.g. k8s)
 
-Voila! Your app is ready for users. Of course, you'll want to build a user interface, likely at the javascript layer. To simplify that process, we have three javasript libraries: [eris:db.js](https://github.com/monax/eris-db.js/blob/master/README.md),  [eris:contracts.js](https://github.com/monax/eris-contracts.js/blob/master/README.md), and [eris:keys.js](https://github.com/monax/eris-keys.js/blob/master/README.md)
+Voila! Your app is ready for users. Of course, you'll want to build a user interface, likely at the javascript layer. To simplify that process, we have three javasript libraries: [monax:db.js](https://github.com/monax/eris-db.js/blob/master/README.md),  [monax:contracts.js](https://github.com/monax/eris-contracts.js/blob/master/README.md), and [monax:keys.js](https://github.com/monax/eris-keys.js/blob/master/README.md)
 
 That is a lot of components. So where should you even start?
 
 Next, we'll walk through one approach -- the one we consider most intuitive for thinking about the design of your ecosystem application -- though in practice you can probably start anywhere. This is how we do it when testing or implementing our applications.
 
 ## The Development Lifecycle
+
+<div class="note">
+	<em>Note: The commands in this chapter refer to an earlier version of the software prior to our name change from Eris to Monax (<= 0.16). Later versions of the software (=> 0.17) will replace the <code>eris</code> command with a <code>monax</code> command.</em>
+</div>
 
 ### Set Up Your Chain
 
@@ -80,7 +94,7 @@ Once >2/3 of the validator pool joins the network, the chain will begin validati
 
 If the chain drops below 2/3 the total "stake" that has been bonded, it will halt. If the more than 2/3 of the bonded stake cannot come to a consensus, it will halt.
 
-The status and health of a chain can be monitored through either `eris:db`'s rpc port. The chains command for `eris:cli` is designed to handle all operations for one or more chains. With your chain running, you can [send transactions](https://github.com/monax/cli/tree/master/tests/jobs_fixtures/app00-basic_functionality_jobs) and deploy contracts using `eris pkgs`, or our javascript libraries.
+The status and health of a chain can be monitored through either `monax:db`'s rpc port. The chains command for `monax:cli` is designed to handle all operations for one or more chains. With your chain running, you can [send transactions](https://github.com/monax/cli/tree/master/tests/jobs_fixtures/app00-basic_functionality_jobs) and deploy contracts using `eris pkgs`, or our javascript libraries.
 
 More info: [chain deploying](/docs/chain-deploying); [contracts interacting](/docs/getting-started/#step-4-integrate-your-ecosystem-application).
 
@@ -88,18 +102,21 @@ More info: [chain deploying](/docs/chain-deploying); [contracts interacting](/do
 
 Now you need an application. Before we get into some design considerations for an application, let's dissect the process of sending transactions and deploying contracts.
 
-The specific requirements for sending a transaction are documented [here](https://github.com/eris-ltd/eris/blob/issue-1093-sort-documentation/docs/specs/jobs_specification.md#txJobs). Provided these are met, `eris:package_manager` will first craft a transaction and, if specified, sign and broadcast it to the designated chain.
+The specific requirements for sending a transaction are documented [here](/docs/specs/jobs_specification/#txJobs). Provided these are met, `monax:package_manager` will first craft a transaction and, if specified, sign and broadcast it to the designated chain.
 
-Now let's deploy a contract. For writing smart contracts, see [our Solidity writing tutorial series](/docs/solidity/). Once you've got a simple contract and would like to deploy it. The first step takes the solidity code and compiles it into bytecode. This bytecode will be used as the raw input for `eris:package_manager` to [deploy your contract](https://github.com/eris-ltd/eris/blob/issue-1093-sort-documentation/docs/specs/jobs_specification.md#contractsJobs) to the chain.
+Now let's deploy a contract. For writing smart contracts, see [our Solidity writing tutorial series](/docs/solidity/). Once you've got a simple contract and would like to deploy it. The first step takes the solidity code and compiles it into bytecode. This bytecode will be used as the raw input for `monax:package_manager` to [deploy your contract](/docs/specs/jobs_specification/#contractsJobs) to the chain.
 
-After the transaction is crafted, the ABI provides the formating information necessary to interact with the contract. Now your contract is on the chain, it can be called with [a call job](https://github.com/eris-ltd/eris/blob/issue-1093-sort-documentation/docs/specs/jobs_specification.md#contractsJobs) via `eris:package_manager` or via the [javascript library](https://github.com/eris-ltd/eris-contracts.js/blob/master/README.md).
+After the transaction is crafted, the ABI provides the formating information necessary to interact with the contract. Now your contract is on the chain, it can be called with [a call job](/docs/specs/jobs_specification/#contractsJobs) via `monax:package_manager` or via the [javascript library](https://github.com/monax/eris-contracts.js/blob/master/README.md).
 
-This process of: solidity -> eris:compilers (contract compile) -> eris:abi (transaction formulation) -> eris:keys (sign) -> deploy is wholly abstracted away by the `eris:package_manager`; see the [contract deploying tutorial](/docs/getting-started/#step-4-integrate-your-ecosystem-application) for more info. In essence, you write a contract, specify a few parameters in a `.yaml` file then vrooom `eris pkgs do`.
+This process of: solidity -> monax:compilers (contract compile) -> monax:abi (transaction formulation) -> monax:keys (sign) -> deploy is wholly abstracted away by the `monax:package_manager`; see the [contract deploying tutorial](/docs/getting-started/#step-4-integrate-your-ecosystem-application) for more info. In essence, you write a contract, specify a few parameters in a `.yaml` file then vrooom `eris pkgs do`.
 
-So a transaction hits the chain, then what? Roughly, the transaction will be proposed and the validators will vote on whether or not to accept it in the next block. Voting happens in a round robin manner. The Tendermint consensus engine is its own module which talks to the `eris:db` application runtime over the  [tendermint socket protocol (tmsp)](http://tendermint.com/posts/tendermint-socket-protocol/).
+So a transaction hits the chain, then what? Roughly, the transaction will be proposed and the validators will vote on whether or not to accept it in the next block. Voting happens in a round robin manner. The Tendermint consensus engine is its own module which talks to the `monax:db` application runtime over the  [tendermint socket protocol (tmsp)](http://tendermint.com/posts/tendermint-socket-protocol/).
 
 We are working on making experimentation with other consensus engines simpler. Our roadmap is tending toward being able to offer a sort of plug-and-play system with different application runtimes and consensus engines packaged, configured, and connected in a user friendly manner.
 
 ## Get Started!
 
 There you have it. From A to Blockchains, this is how you get rolling with the marmots.
+
+
+## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Back To Platform](/platform/)

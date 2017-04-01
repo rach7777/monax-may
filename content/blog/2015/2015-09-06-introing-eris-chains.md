@@ -20,6 +20,10 @@ title: 'Eris CLI Chains Walkabout: New'
 url: /2015/09/06/introing-eris-chains/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 We, surprisingly, keep getting inbound communcation which queries why we are not "making" permissioned blockchains "any more". This is surprising to me for two reasons, the first is because many folks seemed to utterly detest the *idea* of permissioned blockchains at all. Full Stop. We called this, in the spring, (internally) the great blockchains war. It wasn't really a war to us at all. We do not view permissioned or unpermissioned chains as competitors of one another any more than we view Cassandra and Mongo as competitors of one another. While both exist in the generalized database space, they are very different tools for very different things. Yet, despite the perspective that these are different tools to accomplish different purposes, folks seemed to get very religious about their blockchain designs and feel very passionate about one chain design vis a vis another. At Monax we are not religious about our blockchain designs.
 
 The second reason that this inbound is surprising to me, is that we haven't actually stopped making permissioned blockchains. We have **continued our work** in the permissioned blockchain (really, permissioned smart contract network) space only we are doing so in collaboration with the Tendermint open source project rather than under the Eris namespace (which will become the Monax namespace in early 2017). Almost all of the learning and effort which we put into crafting Thelonious has been captured, improved, and reworked into the Tendermint project's blockchain design. Indeed, that blockchain is fully permissionable out of the box due to our efforts and what we learned while building Thelonious.

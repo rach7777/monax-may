@@ -16,7 +16,9 @@ title: 'Bounty: #2014MarmotAward for XCP Decerver Module'
 url: /2014/12/19/marmotprize/
 ---
 
-**Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
 
 We at Eris Industries are, obviously, super keen on developers - it's why we built Thelonious as a blockchain design, rather than a single blockchain, because we recognise that blockchain databases have a much wider range of uses than currencies alone. That's also why we built the Decerver as a modular Distributed Application server which embraces as much of the distributed tech space as we can.
 

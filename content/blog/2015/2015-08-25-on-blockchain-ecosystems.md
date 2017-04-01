@@ -17,6 +17,10 @@ title: An Ecosystems Approach to Blockchaining
 url: /2015/08/25/on-blockchain-ecosystems/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 [{{< image_blog "ecosystems.jpg" >}}](https://www.flickr.com/photos/pierrepocs/5480153734/)
 
 ### Preface
@@ -45,7 +49,7 @@ No matter whether your application needs smart contracts or just docker based se
 
 When running a distributed application, one needs an ability to give the runtimes a configuration when they "boot". This configuration includes things like, "who am i?", "where am i?", "who am i supposed to talk to?", "what private key am i supposed to sign these ssl requests with", etc.
 
-The way that docker images are generally created gives us an ability to boot up runtimes which answer all of those questions on behalf of users of the eris tooling. That could be an eth chain booting up to talk to the mainnet or to talk to a private net, that could be ipfs doing its thing, that could be a bitcoin node ([or a bitcoinXT if you prefer](https://twitter.com/eris_ltd/status/632853195673497600)), whatever you, your developers, and your users would need to "get the things turned on" you should be able to do with Eris (given the docker containers were built correctly).
+The way that docker images are generally created gives us an ability to boot up runtimes which answer all of those questions on behalf of users of the eris tooling. That could be an eth chain booting up to talk to the mainnet or to talk to a private net, that could be ipfs doing its thing, that could be a bitcoin node ([or a bitcoinXT if you prefer](https://twitter.com/monaxHQ/status/632853195673497600)), whatever you, your developers, and your users would need to "get the things turned on" you should be able to do with Eris (given the docker containers were built correctly).
 
 Wanna share your private config? Encrypt the file to a keybase contact's public key (or oneName, or however you share pgp keys) and:
 

@@ -60,3 +60,6 @@ Similar to airlines, shipping companies have a high need for authenticity as to 
 Shipping companies could improve in-port processes by working with their customers and customs agents in highly trafficked ports to streamline the provision of the necessary documents and information about containers being imported into a particular country. Many early explorations of ecosystem applications have focused on the very large and complex trade finance market. Should the use of ecosystem applications become the standard mechanism for dealing with trade finance issues, shipping companies will be an integral component to that value chain as they will be required to work with importing customs agents and numerous other actors within the value chain to ensure that goods are delivered and paid as noted by the terms of the finance deal which enables the import process.
 
 If your company is in the shipping industry and would like to understand how to more effectively leverage ecosystem application technology, we'd love to help. Simply <a href="/?monax_viewer_type=end_user&product_interest=premium_support#contact-monax">send us a note</a> and we'll be glad to help you get up to speed quickly.
+
+
+## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Use Cases](/use_cases/)

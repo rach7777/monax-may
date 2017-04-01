@@ -18,6 +18,10 @@ title: 'On Eris and Tendermint: Application and Consensus'
 url: /2016/03/02/eris-and-tendermint/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 At Monax Industries and Tendermint, we're often asked: "what is the difference between Eris (Monax Industries' software) and Tendermint?"
 
 Apart from being two different companies and two different products, the simple answer boils down to application and consensus.
@@ -42,7 +46,7 @@ Another way of looking at it might be the difference between an empty toolbox an
 
 Eris, by contrast, gives you a ready-to-go Swiss Army knife with plenty of useful tools and services (including BigChainDB, ZCash, Bitcoin, Ethereum, OpenBazaar, Tendermint, and ErisDB). Some you might not want, so don't use them. If you want new ones added, take off the baseplate and add the new tool. And since eris:db may not suit your purposes, building a chain that talks directly to Tendermint core over abci might be what you want.
 
-Either way, eris:cli is intended to make running both eris:db and Tendermint simple. If it isn't, please take to [twitter](https://twitter.com/eris_ltd) and tell us what you'd like to see.
+Either way, eris:cli is intended to make running both eris:db and Tendermint simple. If it isn't, please take to [twitter](https://twitter.com/monaxHQ) and tell us what you'd like to see.
 
 We made these design decisions because [proof-of-work consensus makes zero sense](http://cointelegraph.com/news/proof-of-work-proof-of-stake-and-the-consensus-debate) for enterprise blockchain applications.
 

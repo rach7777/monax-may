@@ -18,6 +18,10 @@ title: 'Eris CLI Services Walkabout: BTCD'
 url: /2015/09/01/btcd-as-a-service/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 We got a question recently on the [forum](https://support.monax.io/support/discussions/topics/6000011734):
 
 ```
@@ -28,18 +32,18 @@ Hope the asker doesn't mind that I answer here as answering these questions coul
 
 ### Where To Start When Investigating a Service
 
-1. Look at the [Dockerfile](https://github.com/eris-ltd/common/blob/master/docker/btcd/Dockerfile) (that link is to the dockerfile for eris/btcd).
+1. Look at the [Dockerfile](https://github.com/monax/common/blob/master/docker/btcd/Dockerfile) (that link is to the dockerfile for eris/btcd).
 2. Look at the start script (if there is one).
 
 Generally Docker images come in two flavours. They have a start script which manages their start sequence. **Or**. They get started using a config pulled from config files (which means we have to get the config files "into" the containers). Taking a look at the `CMD` or `ENTRYPOINT` in the Dockerfile is usually a dead giveaway, if not sometimes more investigation is necessary.
 
-To investigate farther with `eris` built Docker images for services we aren't building, we keep all of these in our [Monax commons](https://github.com/eris-ltd/common/) in the `docker` folder. Compare the `btcd` folder to the `eth` folder if you would like to see a typical start script.
+To investigate farther with `eris` built Docker images for services we aren't building, we keep all of these in our [Monax commons](https://github.com/monax/common/) in the `docker` folder. Compare the `btcd` folder to the `eth` folder if you would like to see a typical start script.
 
 Since btcd doesn't use a start script we'll save that for another day (Ethan and I now both love shell scripting, well at least I certainly do).
 
 ### If a Service Starts With Config Files What Do I Do?
 
-The asker of the original question is right, the `btcd` container starts with a config file instead of via the other major "Docker way" which is a bunch of environment variables passed into a semi-intelligent start script which preconfigures and then runs a binary (for an example of this see Ethan's [eris chain manager scripts](https://github.com/eris-ltd/eris-db/tree/master/DOCKER) which we use for `eris chains`). `btcd` uses a config file.
+The asker of the original question is right, the `btcd` container starts with a config file instead of via the other major "Docker way" which is a bunch of environment variables passed into a semi-intelligent start script which preconfigures and then runs a binary (for an example of this see Ethan's [eris chain manager scripts](https://github.com/monax/eris-db/tree/master/DOCKER) which we use for `eris chains`). `btcd` uses a config file.
 
 This is where having an understanding of how `eris` manages data containers becomes important.
 
