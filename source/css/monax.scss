@@ -38,14 +38,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .h2, h2 {
-    font-size: 30px;
+    font-size: 34px;
     line-height: 1.3;
-    @include responsive(breakpoint) { font-size: 24px; }
+    @include responsive(breakpoint) { font-size: 26px; }
 }
 
 .h3, h3 {
     font-size: 28px;
     @include responsive(breakpoint) { font-size: 22px; }
+}
+
+.h4, h4 {
+    font-size: 22px;
+    font-style: italic;
+    @include responsive(breakpoint) { font-size: 18px; }
 }
 
 p, blockquote {
@@ -56,13 +62,32 @@ p, blockquote {
     letter-spacing: 0.4px;
 }
 
-// Typography within articles
-p + h2,
-pre + h2,
-p + h1,
-pre + h1 {
-    margin-top: 40px;
-    margin-bottom: 15px;
+// Article specific typography
+#content-block {
+    padding: 0 40px 80px;
+    margin-top: 20px;
+    border-left: 1px solid #e4e4e4;
+
+    // No border on mobile
+    @include responsive(breakpoint) { border: none; }
+
+    // Equalise top space
+    > *:first-child {
+        margin-top: 0px !important;
+    }
+
+    // Space after titles
+    * + h2,
+    * + h3,
+    * + h4 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    // Space after code blocks
+    pre + p {
+        margin-top: 25px;
+    }
 }
 
 // Links
@@ -104,8 +129,23 @@ a {
     @include responsive(breakpoint) { font-size: 14px; }
 }
 
+// Notes
+
+.note {
+    background-color: $note_bg;
+    display: block;
+    padding: 20px 10px;
+    margin: 20px 0;
+    font-style: italic;
+
+    code {
+        border: 1px solid $note_code_brd;
+    }
+}
+
 // Code
-pre {
+pre,
+pre[class*="language-"] {
     background-color: $grey_dark;
     color: $blue_lightest;
     padding: 20px 12px 20px 20px;
@@ -114,13 +154,18 @@ pre {
     border: none;
     border-left: 6px solid $green;
 
-    code {
+    code,
+    code[class*="language-"] {
         font-family: $font_code, monospace;
         font-weight: 200;
         font-size: 16px;
         @include responsive(breakpoint) { font-size: 16px; }
         color: $white;
     }
+}
+:not(pre)>code[class*="language-"], 
+pre[class*="language-"] {
+    background: $grey_dark;
 }
 
 code {
@@ -144,12 +189,33 @@ code {
 /*              */
 /*     Nav      */
 /*              */
+$navheight: 53px;
 nav.navbar {
     padding: 0 !important;
     margin: 0 !important;
-    background: transparent;
+    background: #ffffff;
     z-index: 999999;
     font-size: 1.3em;
+    height: $navheight;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    border-radius: 0 !important;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+
+    // Hide menu
+    &.nav-up {
+        top: $navheight * -1;
+    }
+
+    // Mobile menu
+    #monax-main {
+        background-color: #fff;
+        border-bottom: 1px solid #e7e7e7;
+    }
 
     @media (min-width: 979px) {
         ul.nav li.dropdown:hover > ul.dropdown-menu {
@@ -297,7 +363,8 @@ nav.navbar {
                 letter-spacing: 0px;
 
                 &:hover {
-                  color: $grey_dark;
+                    color: $grey_dark;
+                    background-color: $menu_hover_bg;
                 }
 
                 .divider {
@@ -319,14 +386,19 @@ nav.navbar {
         }
     }
 }
+// Add spacing under fixed header
+.ghost-nav {
+    display: block;
+    height: 0;
+}
+
+// Hide empty links on sidebars
 
 /*              */
 /*   Sidebar    */
 /*              */
-#monax-page aside.sidebar {
-    position: absolute !important;
-    top: 205px;
-    overflow: hidden;
+#monax-page aside.sidebar,
+#monax-page aside.topbar {
 
     h4 {
         font-size: 1.5em;
@@ -346,29 +418,80 @@ nav.navbar {
         text-align: center;
     }
 
-    #TableOfContents {
-        ul {
-            list-style: none;
+    a {
+        border: none;
+    }
 
+    #TableOfContents {
+        ul ul {
+            list-style: none;
+            
             a {
                 color: $links !important;
                 display: block;
                 overflow: hidden;
                 width: 100%;
+                padding: 4px 15px;
+
+                &:focus, 
+                &:hover {
+                    background-color: $menu_hover_bg;
+                }
+
+                &:empty {
+                    display: none;
+                }
             }
 
             li.active > a {
                 border-left: $links solid 2px;
                 background-color: transparent;
             }
-
-            li ul {
-                padding-left: 5%;
+            
+            // Level 2 links only
+            ul {
+                padding-left: 0;
                 margin-left: 0;
+                
+                a {
+                    font-style: italic;
+                    font-size: 85%;
+                    color: #9a9a9a !important;
+                    font-weight: 300;
+                    padding: 2px 8px 2px 30px;
+                }
+                
+                // Hide level 3 links
+                ul a {
+                    display: none;
+                }
             }
         }
     }
 }
+// Sidebar only
+#monax-page aside.sidebar {
+    margin-top: 22px;
+}
+// Topbar only
+#monax-page aside.topbar {
+    padding: 10px 40px 0;
+
+    em {
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    a {
+        font-size: 85%;
+        padding: 2px 4px;
+    }
+    // Don't display sublinks on mobile
+    #TableOfContents ul ul ul a {
+        display: none;
+    }
+}
+
 
 /*              */
 /*   Content    */
@@ -384,11 +507,16 @@ article a {
     border-bottom: 1px solid $links;
     text-decoration: none;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: $links;
         text-decoration: none;
         border-bottom: 2px solid $links;
     }
+}
+
+.team-member a {
+    border: none !important;
 }
 
 #monax-page #main-content {
@@ -528,6 +656,30 @@ article a {
     .start-hidden {
         display: none;
     }
+
+    // Errors
+    label.error {
+        font-weight: 200;
+        display: block;
+        background-color: #333;
+        padding: 4px 10px;
+        font-size: 85%;
+        text-align: left;
+
+        &:before {
+            content: "\43";
+            font-family: hugo;
+            font-weight: 200;
+            font-size: 70%;
+            margin-right: 8px;
+        }
+    }
+}
+
+// Use Case Selector
+form[name=sector-select] {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /*              */

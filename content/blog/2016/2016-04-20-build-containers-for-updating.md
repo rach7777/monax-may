@@ -22,13 +22,17 @@ title: Updating Your Application Using Docker Build Containers
 url: /2016/04/20/build-containers-for-updating/
 ---
 
-In the early days of [eris-cli](https://github.com/eris-ltd/eris-cli/), before we distributed binaries and users had to build from source, I wanted a simple way to update the tool either to the latest version or a specific branch. The result was `eris update` which would update eris, by default, to master. A flag lets users pick a branch (provided it's on GitHub) and `eris update --branch=develop`, for example. Under-the-hood, it's a series of shelled out git commands plus `go install ./cmd/eris`. This feature is useful for quickly confirming bug fixes or having users test out a new feature, before merging to `develop`. It only works for source installations and require git and go locally. What about binary installations you ask?
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
+In the early days of [eris-cli](https://github.com/monax/cli/), before we distributed binaries and users had to build from source, I wanted a simple way to update the tool either to the latest version or a specific branch. The result was `eris update` which would update eris, by default, to master. A flag lets users pick a branch (provided it's on GitHub) and `eris update --branch=develop`, for example. Under-the-hood, it's a series of shelled out git commands plus `go install ./cmd/eris`. This feature is useful for quickly confirming bug fixes or having users test out a new feature, before merging to `develop`. It only works for source installations and require git and go locally. What about binary installations you ask?
 
 Eventually we got our binaries sorted out but the `eris update` command still only worked for installations from source. Updating from a binary installation was implemented but the feature hadn't received much love; the latest release was pulled in as a tarball and unpacked, its binary replacing the old one. It was buggy, didn't always work, and the code was messy. Finally, a user who had used the `--branch` feature with a source installation also wanted it for updating binary installations.
 
-I went about [refactoring this code](https://github.com/eris-ltd/eris-cli/pull/617) all while pondering how to update eris to a specific branch from a binary installation (i.e., without requiring git or go installed). Eventually, all the pieces I needed fell together. Here's how it happened with docker build containers:
+I went about [refactoring this code](https://github.com/monax/cli/pull/617) all while pondering how to update eris to a specific branch from a binary installation (i.e., without requiring git or go installed). Eventually, all the pieces I needed fell together. Here's how it happened with docker build containers:
 
-### Building an Image
+#### Building an Image
 
 The [go-dockerclient](https://github.com/fsouza/go-dockerclient) shines here, as usual. All our docker wrappers are in `perform/perform.go`
 
@@ -318,7 +322,7 @@ Successfully built ecb3c836abe1
 
 which is the output one would expect from running `docker build -t imageName .` with that Dockerfile in `pwd`. Now if you stopped there and ran `docker images`, you'd see the new image: `eris-binary-update:temporary-image` listed. Next, we'll run this image with a data container and export the binary that is already in it.
 
-### Services & Data Containers
+#### Services & Data Containers
 
 The following part may seem unncessary complex to the seasoned docker user, however, I opted to use our existing plumbing for simplicity in our codebase.
 
@@ -433,9 +437,9 @@ ren ` + cpString + `
 
 which does exactly what we want it to (except maybe on windows :(). Awesome! But wait. How do you test that `eris update` works via a binary installation? After all we've been developing in go...
 
-### Docker-Machine Wizardy
+#### Docker-Machine Wizardy
 
-It's no secret; we love all things docker. Especially docker-machine though. Having only used it for a few things ([see our docker-machine tutorial](https://monax.io/docs/documentation/cli/latest/examples/using_docker_machine_with_eris/), I forgot about its handy `ssh/scp` commands. Testing that a binary installation could update itself while developing in go proved somewhat incovenient and I had a convoluted process that was wearing my patience thin (nor did I want to be moving things around in `/usr/bin` on my local machine). 
+It's no secret; we love all things docker. Especially docker-machine though. Having only used it for a few things ([see our docker-machine tutorial](/docs/deprecated), I forgot about its handy `ssh/scp` commands. Testing that a binary installation could update itself while developing in go proved somewhat incovenient and I had a convoluted process that was wearing my patience thin (nor did I want to be moving things around in `/usr/bin` on my local machine). 
 
 The solution: `scp` the binary from every `go install` into `/usr/bin` on a docker-machine. Assume the machine `dev-testing` has already been created.
 

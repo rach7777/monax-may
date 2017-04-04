@@ -1,7 +1,7 @@
 ---
 
 type:   docs
-layout: li
+layout: single
 title: "Use Cases"
 index_file: ""
 excerpt:    "The Ecosystem Application Uses"
@@ -12,11 +12,13 @@ menu:
 
 ---
 
+## Ideal Use Cases
+
 The use cases that are relevant to you likely depend on who you are. The uses of [ecosystem applications](/explainers/ecosystem_applications) are broad and deep. Many of the most interesting applications are longer term and rely on more "foundational" use cases to be implemented by a range of ecosystem participants. Other use cases may **not** be good uses of ecosystem application technology and rather can be more effectively built using traditional application architecture.
 
 {{% use_case_selector %}}
 
-# Monax's Use Cases Decision Framework
+## Monax's Use Cases Decision Framework
 
 The table below summarizes our internal decision framework for thinking about what systems make good candidates for leveraging ecosystem application technology instead of traditional single-company centry application. The more that one is able to answer **yes** to the questions, the better the use case.
 

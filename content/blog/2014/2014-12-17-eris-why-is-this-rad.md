@@ -18,7 +18,9 @@ title: Eris Industries -- Why Do I Do What I Do?
 url: /2014/12/17/eris-why-is-this-rad/
 ---
 
-**Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
 
 It is cliche to say that we want to change the world. I have spent almost a decade studying, leading, and living societal change in one of the some dynamic environments on earth. One of the many things I have learned along that journey is this: saying one wants to change the world *is* cliche, and it is also passe.
 
@@ -32,13 +34,13 @@ For those of us who think that, to some extent, law as code will be a reality, s
 
 There are two reasons why I say this.
 
-## Smart Contracts Empower Social Science Research of Complex, Data-Driven Interactions
+### Smart Contracts Empower Social Science Research of Complex, Data-Driven Interactions
 
 Smart contracts within a smart contract systems act like cells within an organism and as such can be crafted such that they handle complexity extremely well. Individual smart contracts can be programmed to do one thing and respond to a single actor or can be programmed in more complex manner. As long as the software is correctly designed, smart contracts can handle a great amount of complexity quite well.
 
 This can be a boon for social science research, especially for collaborative social science research. Using smart contracts complex systems can collaboratively be developed over time which model different sets of interactions. These interactions can then be entered into by as many different actors as the social scientists feel are needed to better understand the interaction they are modelling. Using our Thelonious smart contract systems client, researchers can ensure that only researchers who are officially part of the project can add different actors to the research set -- all while allowing for a completely transparent and collaborative scientific process.
 
-## Smart Contracts Can Ease the Rule Ideation to Rule Implementation
+### Smart Contracts Can Ease the Rule Ideation to Rule Implementation
 
 Let us say, just for argument's sake, that we have reached a point where the Internet of Things and other forces have driven us as humans to collectively implement -- to a certain degree -- law as code. Let us assume, also, that social scientists are interested in studying a norm which has collectively been reduced to code. Those scientists can simply pull the smart contracts which represent that norm into their smart contract client and run simulations against different actor sets they establish, preferably using a scripting format like we have set up within the Decerver. Perhaps those scientists are able to vet a hypothesis about how the rule could be better derived which would be more responsive to certain criteria, or more reslient, or whatever the end goal was.
 
@@ -46,7 +48,7 @@ The new rule developed by the scientists could then be proposed to a rule formal
 
 The specifics of the above hypothetical are not important, but what is important, and is important now, is the ease of use and simplicity of using smart contracts to model and study complex interactions.
 
-## Beyond Social Science
+### Beyond Social Science
 
 While the above example may be a bit far off, we are only at the beginning of exploring what smart contracts can do. When we think beyond simple social science into improvement of societal processes, especially in the context of the delivery of public services, smart contracts look increasingly interesting.
 
@@ -56,7 +58,7 @@ Now what I am not saying is that smart contract systems can be responsible for d
 
 In this light smart contract systems can play a role in the management of many governmental functions. The transparency, flexibility, and distributed nature of how smart contract systems work makes them incredibly appealling -- at an intellectual level -- as the backbone of many public data-driven interactive systems.
 
-## Putting The Pieces Together
+### Putting The Pieces Together
 
 We have a lot of challenges as a human species. Not the least of which are how we interact with one another, especially in the context of negotiating rule frameworks which make sense and in the delivery and management of public services and public goods. What I love about my job at Eris Industries is that we get to make the tools which we hope will allow developers to begin addressing such challenges in a real and meaningful way.
 

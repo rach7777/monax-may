@@ -17,19 +17,23 @@ title: What are ecosystem applications?
 url: /2016/06/05/ecosystem-applications/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 [{{< image_blog "ecosystem_applications.jpg" >}}](https://www.flickr.com/photos/frenchy/4469177031/)
 
 **You've been warned.** This is a long piece. Come back to it when you have some time.
 
 A special thanks to all those who helped shape and mold my thinking in this area. You (mostly) know who you are.
 
-## Introduction
+### Introduction
 
 I knew Anthemis would be a wonderful fit for our company the moment that Sean Park, one of its Founders, started talking about ecosystems; which was, IIRC, the first day I met him. Sean is a believer in ecosystems and networks as a way to achieve scale in the information age where bigger `!=` better.
 
 For my part, I've also long been a believer that being able to understand how ecosystems operate, change, and evolve is the differentiating skillset necessary to achieve success within environments where levels of complexity are high. And information age economies have a `lot` of complexity.
 
-## Context: The Industrial Age => Information Age Transformation
+### Context: The Industrial Age => Information Age Transformation
 
 As we continue the march from the industrial age to the information age a number of things are starting to matter less than they once did and a number of other things are starting to matter more than they did before. The tectonic plates of globally-focused businesses, digital nomads, and information abundance have combined to massively transform a range of industries already and are hardly finished.
 
@@ -45,7 +49,7 @@ In our view we are entering into the third generation of collective process mana
 
 [{{< image_blog "walking_on_trains.jpg" >}}](https://www.flickr.com/photos/16210667@N02/11665732305/)
 
-## Small is Hot; Big is Not
+### Small is Hot; Big is Not
 
 In order to move forward with the next generation of collective process management tooling, we need to understand what are the big challenges which businesses face. This requires there to be a marmot-y hypothesis around where business is going. The remainder of this section is my own thesis.
 
@@ -71,7 +75,7 @@ So, and I finally have come full circle to software, if we are truly in a global
 
 The rest of this post will look at that question in more detail.
 
-## Blockchains and Smart Contracts: Two Toolkits for Building Ecosystem Applications
+### Blockchains and Smart Contracts: Two Toolkits for Building Ecosystem Applications
 
 The problem that blockchain technology solves is not electronic P2P cash, nor is it settlement latency, it is the problem of `attribution and ordering of inbound events; at an ecosystem level`.
 
@@ -107,7 +111,7 @@ The other problem that smart contract technology solves, is a distribution probl
 
 But with ecosystem applications, we typically solve this in a different way. We often, but not always, put the application's logic "on" the blockchain. We use the immutability characteristics of chain tech along with a smart contracts interpreter (often called, a VM (for virtual machine)) to not have to worry about downloading and installing these computational sequences. We simply connect in to the ecosystem's network and go vroom!
 
-## Data Lakes, Message Queues and PKIs: Three (more) Toolkits for Building Ecosystem Applications
+### Data Lakes, Message Queues and PKIs: Three (more) Toolkits for Building Ecosystem Applications
 
 While blockchains (providing us `who did what when`) and smart contracts (providing us `deterministic computation`) are two tools that give ecosystem application builders two main capabilities necessary for building ecosystem applications, we still have a few more base requirements to really enable this technology to flourish. Namely we need to solve `content` and `privacy`.
 
@@ -130,7 +134,7 @@ A summary table:
 | data lakes | `what content are we talking about` | content addressable storage |
 | message queues & PKIs | `come over here I want to tell you a secret` | shared secrets |
 
-## What Do Ecosystem Applications Run On?
+### What Do Ecosystem Applications Run On?
 
 The short answer is that nobody really knows. There are two competing ideas within the marketplace.
 
@@ -140,7 +144,7 @@ This is, for lack of a better metaphor, the OSX style of ecosystem applications.
 
 Idea two takes the opposite perspective. That there can be no binary which can, to a sufficient degree of both standardization as well as flexibility, truly meet the divergent needs that ecosystem application makers actually have. This is, again for lack of a better metaphor, the linux style of ecosystem applications.
 
-For those of us who fall squarely in camp two, we feel that ecosystem application makers can greatly benefit from increased modularity along with increased standardization around *how the modules fit together*. Something we've talked about at a more technical level [here](https://monax.io/blog/2015/12/31/on-blockchain-clients-in-2016/) and [here](https://monax.io/blog/2016/04/03/wtf-is-eris/).
+For those of us who fall squarely in camp two, we feel that ecosystem application makers can greatly benefit from increased modularity along with increased standardization around *how the modules fit together*. Something we've talked about at a more technical level [here](/blog/2015/12/31/on-blockchain-clients-in-2016/) and [here](/blog/2016/04/03/wtf-is-eris/).
 
 In our view focusing standardization efforts not at the point of what a single binary built to operate a single network can do, but rather on standardizing the way in which various, flexible components can talk to one another, is what will really empower progress.
 
@@ -148,7 +152,7 @@ In our view focusing standardization efforts not at the point of what a single b
 
 And yet, progress toward what? What do these things actually look like?
 
-## What Does an Ecosystem Application Look Like?
+### What Does an Ecosystem Application Look Like?
 
 It depends. But hopefully it looks and feels like a "normal" application, in whatever context the ecosystem application is being deployed. The advantage of leverging distributed systems technology to build ecosystem applications is that while the backends are very different than "normal" applications, we ideally want the front ends (what the users of the application, well, use) to feel no different.
 
@@ -160,13 +164,13 @@ Thus, why `eris` leverages docker under the hood to make the application user's 
 
 {{< image_blog "ecosystems_1.png" >}}
 
-## How Do We Go About Building Ecosystem Applications?
+### How Do We Go About Building Ecosystem Applications?
 
 Much of my thinking in this area was refined from observing ecosystems evolve during my time doing international development work, including tons of reading and thinking about how to change and evolve complex social systems within the context of fragile and/or failed states. Study of the human factors of combat and lots of insurgency theory didn't hurt. Studying the hippies and beatniks didn't hurt either.
 
 But the biggest step in my thinking here came from Kevin Kelly's Out of Control; a book sent to me by a friend a few months after we started our company.
 
-### Lesson 1: Ordering matters.
+#### Lesson 1: Ordering matters.
 
 When building ecosystem applications, it matters the order in which you go about formulating the ecosystem. Since we're building applications humans will, at some remove, interact with, then the ordering matters on both a technical level as well as on an interaction level.
 
@@ -190,7 +194,7 @@ Once those tracks finish their first major series of work and "go live" happens,
 
 What's the point here? The point is that building an ecosystem is a lot like building a business. But the target participants are often very different than those involved in building a traditional business.
 
-### Lesson 2: Destruction matters.
+#### Lesson 2: Destruction matters.
 
 In every large change which happens in business, society, politics, or, frankly, any complex system, there will need to be some destruction of the old in order to make room for the new. This is uncontroversial, and we generally call it `creative destruction`.
 
@@ -202,7 +206,7 @@ Ecosystem application makers would be wise to learn from this. That which will b
 
 Those involved in building ecosystem applications need to have a relatively sophisticated understanding of the timing around when would be appropriate within the adoption curve of our technology to start triggering the various fires which will be a necessary, if perhaps ugly, portion of the overall creative destruction process that is constantly happening.
 
-### Lesson 3: Governance matters. A Lot.
+#### Lesson 3: Governance matters. A Lot.
 
 My prior life involved doing governance reform work. As such, a lot of what I had to do to be successful, was to act as a convening body around various problems which needed to have some consensus as to what the response was going to be. But I had to do this with politicians which is always tricky because of the second and third level effects in which political systems operate.
 
@@ -216,7 +220,7 @@ After doing the research and facilitating our first few sessions with the caucus
 
 Why do I tell that story? Because it is a lesson which ecosystem builders should take to heart. That building governance mechanisms is complex, but it is doable if one understands the context well, learns from what came before, and sufficiently outlines a path to evolution.
 
-## What is Next for Ecosystem Application Builders and Users?
+### What is Next for Ecosystem Application Builders and Users?
 
 Everything.
 

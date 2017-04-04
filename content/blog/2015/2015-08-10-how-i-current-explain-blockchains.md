@@ -34,13 +34,13 @@ In total, my mental diagram looks like this:
 
 While the above may not perfectly capture all of the blockchains in existence, I think it does a fairly good job of providing a framework for placing most of the space into some easier to consume boxes.
 
-## The Optimization Spectrum
+### The Optimization Spectrum
 
 On the lower half of the quadrant we have blockchains which give application developers a clear and efficient way to verifiably track title transfers in a distributed environment. Whether these blockchains are permissioned or unpermissioned, they are a good fit for application developers seeking to build transfer mechanisms, clearing and settlement, and provenance applications. In other words, they're really interesting property registers. These blockchain designs -- to some extent or another depending on the blockchain in question -- do provide some limited logic capabilities (bitcoin, famously, has its multi-signature capacity which operates in a similar area to logic). However, they really have been optimized to track movement of title over "property" from one node on the network to another.
 
 On the upper half of the quadrant we have blockchains which give application developers a clear and efficient way to verifiably track business and governance process logic in a distributed environment. Whether these blockchains are permissioned or unpermissioned, they are a good fit for application developers seeking to build complicated business process mechanisms. In other words, they're really interesting process auditors. Similarly to transaction optimized blockchain designs, they have capabilities of supporting verifiable title transfers, but they have really been optimized to run arbitrary business logic.
 
-## The Permissioned Spectrum
+### The Permissioned Spectrum
 
 On the left half of the quandrant we have unpermissioned blockchains. These blockchains lack an access control layer and as such handle anti-spam and consensus via purely economic mechanisms. We may not like to have to pay a bank a fee to update our address in their database, but if our bank operates on a public blockchain that's basically what we'd have to do in order to overcome the necessary anti-spam protections (and other protections) which have been put in place to protect these unpermissioned blockchains. These blockchains are the best solution for censorship resistance. If someone needs data to exist forever in a rock solid vault of math and environmental degradation, then public blockchains are the place for that data. Public blockchains also have public governance mechanisms, as we are finding out with the blockchain debate. Whether the increased uncertainty which is the current state of the public blockchain governance oligarchy is a good or a bad thing remains to be seen. Lastly, public blockchains have been designed to provide the backbone for a variety of applications. That means that they were probably not well suited for any one type of application. Depending on what application one is seeking to build this may be a benefit or a detriment.
 

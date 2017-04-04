@@ -44,6 +44,7 @@
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^2.0.0",
+    "jquery-validation": "^1.16.0",
     "lunr": "^0.7.1",
     "prismjs": "^1.5.1",
     "remove-markdown": "^0.1.0",

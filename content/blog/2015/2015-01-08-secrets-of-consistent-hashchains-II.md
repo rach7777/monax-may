@@ -15,15 +15,15 @@ title: 'Secrets of Consistent Hashchains II: History on Deposit'
 url: /2015/01/08/secrets-of-consistent-hashchains-II/
 ---
 
-## Preface
+### Preface
 
 Some members of the community have (rightly) taken issue with my use of the term `eventual consistency`, as it has a well-defined formal meaning in computer science and I am abusing it here. However, as this is an informal expose and not a formal technical document, I will continue to abuse this term, since it has a semantic convenience that roughly expresses a proof-of-work blockchain's philosophy of history.
 
 I also find it rolls off my fingers more elegantly than `strong probabilistic guarantee`.
 
-## Agreed (Eventually)
+### Agreed (Eventually)
 
-In a [previous post](https://monax.io/blog/2014/12/22/secrets-of-consistent-hashchains-I/), we explored the first secret of distributed hash chains: a consensus that hinges on proof-of-work gives you an eventually consistent history. Notwithstanding the obvious inefficiency and tremendous expense incurred by a perennial drive to do a useless computation as absolutely fast as possible, proof-of-work based systems are utterly impervious to what any sensible individual might consider a reasonable definition of history. That's what we mean by eventual it's a history written (or re-written) by whatever ends up being the most work, regardless of what *actually* happened.
+In a [previous post](/blog/2014/12/22/secrets-of-consistent-hashchains-I/), we explored the first secret of distributed hash chains: a consensus that hinges on proof-of-work gives you an eventually consistent history. Notwithstanding the obvious inefficiency and tremendous expense incurred by a perennial drive to do a useless computation as absolutely fast as possible, proof-of-work based systems are utterly impervious to what any sensible individual might consider a reasonable definition of history. That's what we mean by eventual it's a history written (or re-written) by whatever ends up being the most work, regardless of what *actually* happened.
 
 In fact, what *actually* happened is exactly the matter at stake here. The whole point of a blockchain is to **establish agreement on a canonical ordering of a set of transactions**, on a timescale that is on the order of the expected network propagation delay, which as at least an order of magnitude or two greater than that of the transactions themselves.
 
@@ -33,9 +33,9 @@ The [Blockstream](http://www.blockstream.com/sidechains.pdf) team introduced the
 
 What this means is that a blockchain itself is really a kind of collective signature, whose membership (the signatory `in-group`) is sampled repeatedly from a fluctuating distribution of resources allocated in the network; or *a never ending computation in which a group of humans produces a cryptographically signed account of history*.
 
-## From Forks to Knives
+### From Forks to Knives
 
-### Why should our record of history, our collective signature, ever be re-written?
+#### Why should our record of history, our collective signature, ever be re-written?
 
 History changes all the time in the real world, whenever an accountant cooks the books, or $60 billion goes missing from a federal budget, or when a mistake is just simple human error. In a blockchain, history changes when a fork emerges and becomes longer than the original chain. So if we want to protect our collective history, we need to protect ourselves from forks.
 
@@ -43,7 +43,7 @@ In an ideal proof-of-work (PoW) system, embedded in an idealized socioeconomic c
 
 **In the meantime, cryptosystems are here now, complete trustlessness is a facade, and we're already dealing with an energy crisis we don't need digital money to create another one.**
 
-### What to do?
+#### What to do?
 
 A key part of the problem, if you'll recall, is the lack of a secure proof-of-past. But there *were* computers online who experienced the past, the real history. If only there were some way for those computers who *saw* the *real* history to punish those who try to create competing histories.
 
@@ -53,7 +53,7 @@ An essential principle in the design of successful cryptoeconomic protocols is t
 
 A PoW-based consensus system provides an [anonymous byzantine consensus with security derived from moderately hard puzzles](https://socrates1024.s3.amazonaws.com/consensus.pdf), as a function of its difficulty. If you can solve the puzzles faster, or can offer the computational power for solving the puzzles as a service that benefits from economies of scale, it's easy to see how the network's security can be compromised. On the other hand, a security-deposit-based consensus provides something more like semi-anonymous byzantine consensus with security derived from moderate wealth at stake, where an attack costs at least half as much as the total capital on deposit, since as soon as we detect a fork, we slash deposits of everyone who double signed. Half the capital on deposit can be much greater than the cost of controlling half the network's hashing power, provided the market cap of the chain is sufficiently high. As of writing, the [cost of attacking bitcoin](http://www.coinometrics.com/bitcoin/brix) is around $500 million while its [market cap](http://coinmarketcap.com/) is nearly 10 times higher.
 
-## Staking out History
+### Staking out History
 
 Consensus based on security deposits draws on an even earlier proposal known as proof-of-stake (PoS). In PoS, the number of times you get to participate in signing a block is proportional to the amount of coins (tokens, stamps, whatever the stake metric is) you have within the network. The problem with such a proof-of-stake system, however, is that it does not even offer eventual consistency in the event of a fork; everyone can still commit blocks on both chains, so there's no reason for one chain to win out over the other. Slasher solves this by punishing those who fork.
 
@@ -77,7 +77,7 @@ In the meantime, this is fun, so lets continue with Slasher and Proof-of-stake :
 
 Even while the network is up, but new machines are joining it for the first time, or the first time in a very long time, it is a struggle to bring them up to date securely and trustlessly. If you've been online sometime within the last deposit period, you find some peers and ask them for the current state, *and trust them because there is real money at stake* (this is what we mean by secure -- you can calculate how much it would cost you to lie and to be lied to). This scenario works. *But*, if you have never been online (e.g., you have had no history of or reason to care about the history of this particular dataset), or you have not been online for multiple deposit periods, you have no such security.
 
-## Digital History of an Analog System
+### Digital History of an Analog System
 
 So this is where things get interesting, and where subjectivity, trusted third parties, *on boarding*, and out-of-band communication come to the forefront.
 

@@ -15,19 +15,23 @@ excerpt: "Monax announces it has joined Hyperledger and will be submitting its m
 title: "Why we're joining Hyperledger"
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 [{{< image_blog "hyperledger.jpg" >}}](https://www.flickr.com/photos/50576141@N03/15805560016/)
 
 Earlier today we formally announced that we will be joining the Hyperledger project and that we will be submitting our `eris:db` [blockchain](/explainers/blockchains/) client to it for incubation. In this post I would like to add a bit more color as to our reasons for such a move and explain what this means for current `eris:db` users.
 
-# Introduction
+## Introduction
 
 When we started our company in 2014 we never really had the intention of being solely responsible for building an enterprise grade, general purpose [smart contract machine](/platform/db/). Indeed, our intention was always to participate in the furtherance of the technology at that level of the technology stack. This strategic choice, made early on, and continually reviewed at our board and senior management team levels, has informed a plurality of tactical and operational decisions that we have made. And it is also behind our joining of Hyperledger.
 
-# Why
+## Why
 
 There are three major reasons for submitting our market leading smart contract machine to the Hyperledger project for incubation.
 
-## Reason Number 1: Open Source without Participation is Just Showing Off
+### Reason Number 1: Open Source without Participation is Just Showing Off
 
 Effectively, what well-built open source projects do is to reduce the operational load which any one company needs to sustain in order to develop a given piece of software. This is what allows open source software to exponentially grow and harden.
 
@@ -37,7 +41,7 @@ And the results of that effort have been amazing. Over the course of 2015 we saw
 
 Joining Hyperledger is a key ingredient from our perspective to work on gaining enterprise contributors because of the strong codebase governance frameworks emplaced alongside the Linux Foundation's long history of understanding how to administer enterprise grade open source projects. We are hopeful that with a clear governance structure that our current users will be able to contribute in a more fundamental way to the development and maturation of the codebase.
 
-## Reason Number 2: Collaborating is in our DNA
+### Reason Number 2: Collaborating is in our DNA
 
 [Blockchains](/explainers/permissioned_blockchains/), [smart contracts](/explainers/smart_contracts), and [ecosystem applications](/explainers/ecosystem_applications) are, fundamentally, frameworks to build collaborative applications which are operated by multiple parties. We have long taken the position that we should practice what we preach so to say, in that the software we produce should be built -- to the greatest extent possible -- collaboratively.
 
@@ -47,7 +51,7 @@ This decision was strategic rather than tactical. Namely, if we as Monax are goi
 
 For this tech, we need a new approach to delivery. And that requires collaboration. This is why we've been building a collaborative approach to software delivery into our very DNA as a company. Joining Hyperledger reinforces this at a very fundamental level.
 
-## Reason Number 3: Our Users Need More Expertise Than We Can Solely Provide
+### Reason Number 3: Our Users Need More Expertise Than We Can Solely Provide
 
 We have said it before, and we'll say it again, but 2017 in the enterprise blockchain applications is about the race to production. And production readiness requires expertise. In order to support production grade applications, we (the "enterprise blockchain" industry) first need to have platforms that can readily support production grade applications for enterprise. And this requires a **lot** of expertise. Expertise which very few companies on earth wholly have in-house.
 
@@ -55,11 +59,11 @@ Platforms need to have security vetting, fault tolerance vetting, quality assura
 
 Joining the Hyperledger project gives our team access to an unmatched range of enterprise building expertise via the current and future members. This expertise will be essential to the continued maturation of `eris:db` into a smart contract network that is capable of easily, safely, and reliably supporting [enterprise grade ecosystem applications](/use_cases).
 
-# How
+## How
 
 All the above may be of interest, or it may not, but it doesn't really tell developers **how** this will all work. So I'd like to now speak to our current users.
 
-## Monax is joining Hyperledger; eris:db is being submitted for incubation
+### Monax is joining Hyperledger; eris:db is being submitted for incubation
 
 There are two related things happening. First, at a corporate level, our company will be joining Hyperledger as a general member of the consortium. This affords us certain opportunities to collaborate with the other codebases administered by the consortium; to attend consortium meetings; participate in the consortium's governance structure; etc. This action has nothing to do with code.
 
@@ -67,7 +71,7 @@ Second, `eris:db` will be submitted for incubation. The way that Hyperledger's c
 
 If the committee approves the proposal then the proposal moves to the governing board of Hyperledger (which is mostly comprised of the premium members with two board members being elected via the general members). Once the governing board approves, then the codebase is formally transitioned into the Hyperledger umbrella and begins to use that code governance framework and administration.
 
-## `eris:db` will be relicensed Apache 2
+### `eris:db` will be relicensed Apache 2
 
 To date all versions of `eris:db` have been [released as GPL 3](/2015/08/30/on-licensing/). The 0.16.0 release of `eris:db` will be released Apache 2. While GPL 3 and Apache 2 are incompatible licenses for a single release, given proper legal niceties (which we have done), code bases for different releases can have different licenses.
 
@@ -75,11 +79,11 @@ Given that we hope our submission to the TSC to be successful and that our codeb
 
 Users of `eris` need not worry. For v0.17.0 we will ensure a smooth transition to the new codebase; thanks to our modular design it's really only the change of a few fields.
 
-## RIP `eris:db`; Long Live `?????`
+### RIP `eris:db`; Long Live `?????`
 
 To reduce the association with `eris`, a holistic ecosystem application platform, we will be proposing to the TSC that `eris:db` should be renamed when it was brought into the Hyperledger project. We have *some* ideas as to what we could name it. But instead of monopolizing this decision, we will be proposing that the renaming of the codebase could actually make for a nice backdrop to build community around the idea. So, if you have any ideas let us know on [twitter](https://twitter.com/monaxHQ)!
 
-## We're looking for contributors
+### We're looking for contributors
 
 If you would like to join the effort to bring enterprise grade smart contract platforms to production, we are looking for active collaborators at both the `co-maintainer` and `contributor` levels in the following areas (primarily):
 
@@ -90,7 +94,7 @@ If you would like to join the effort to bring enterprise grade smart contract pl
 
 That said, we'd love all the help we can get. If you or your company are willing and interested in participating, [send us an email](mailto:contact@monax.io?subject=Hyperledger%20project%20and%20Monax).
 
-# Conclusions
+## Conclusions
 
 Are you a company that is interested in moving forward and maturing the enterprise smart contracts space? We'd love you to join our application to the Hyperledger TSC. Let us know!
 

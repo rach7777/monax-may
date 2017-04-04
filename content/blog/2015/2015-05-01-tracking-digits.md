@@ -18,6 +18,10 @@ title: 'Tracking Digits: How to Design Your Smart Contract Tracking System'
 url: /2015/05/01/tracking-digits/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 [{{< image_blog "racer.jpg" >}}](https://www.flickr.com/photos/tom-margie/1299414993/)
 
 Lots of folks are thinking about interesting ways to track digital goods and information back to some vendor of authenticity using blockchains and distributed file storage systems. A number of folks have been working in this area around the idea of physical goods and information as well.
@@ -29,13 +33,13 @@ My background as a lawyer makes me think instantly of a problem legal informatio
 
 The rest of this post will speak to a subset of that paradigm (a court decision publishing system) but with minor modifications could be adapted for other types of digital files which are by default public (there's no encryption here, this is built for **public** data) and require some fount of authenticity.
 
-## File Sharing
+### File Sharing
 
 We use a system called [IPFS](http://ipfs.io) which is a significantly improved `git` + `bit torrent` to share the raw content blobs between nodes on a network using a peer-to-peer paradigm rather than a costly server-client paradigm. In other words, a globally unified, content addressable storage system. Behind the scenes, IPFS understands who has what files and how to get files you need to your computer as fast as possible. Files within IPFS are retrievable from the distributed peer network via their hash, which means when getting files from the distributed peer network via the IPFS protocol, any recipient of the file will have assurances of bit for bit consistency of the file itself because the file hash is a cryptographic fingerprint unique to each file.
 
 IPFS can be run nearly everywhere and it makes it super simple to "hook" into a globally distributed file sharing solution. However because it is simply a bunch of hashes (what's called a `data lake`), it needs structure. That's where the data schema shared on a blockchain (to utilize its public key architecture and other verifiability characteristics) comes into play.
 
-## The Data Schema
+### The Data Schema
 
 In a very simple system like this, we need to really track two things: `authenticator` and `contentBlob`. That is really all we need to track for this. In the context of a court reporting mechanism `authenticator` would be the **court** (who would have a given public-private keypair of which the public key was known). Similarly, in the same context the `contentBlob` would be the [checksum hash](http://en.wikipedia.org/wiki/Checksum) of the file containing the **decision**. The file could be available in *any* format. Plain text, markdown, the dreaded word, the feared pdf. It matters not what the file is, because from the blockchain's perspective its all just hashes.
 
@@ -43,15 +47,15 @@ Specifically we would form two `maps` (which are key:value storage systems). One
 
 This is a simple minimum viable data schema. Indeed whatever additional information one wanted to add into the data schema would be possible with Monax, because our turing complete smart contract machine housed in `eris:db` can do basically any thing programmers tell it to do.
 
-## The Blockchain
+### The Blockchain
 
-The blockchain you would design here would be a very simple blockchain. The court itself could make a single node blockchain which only it could amend or write to (for more about blockchain design [see this here](https://monax.io/explainers/blockchains/)). Alternatively, a library or consortium of courts could pool their resources together to run a collective blockchain which was amended or written to by any of the known and registered members.
+The blockchain you would design here would be a very simple blockchain. The court itself could make a single node blockchain which only it could amend or write to (for more about blockchain design [see this here](/explainers/blockchains/)). Alternatively, a library or consortium of courts could pool their resources together to run a collective blockchain which was amended or written to by any of the known and registered members.
 
-`eris:db` makes all that [super simple](https://monax.io/docs/tutorials). And, by the way, our solution will run on nearly [anything](https://monax.io/blog/2015/04/01/peer-server-networks-current-paradigm/) (except Windows outside of Docker).
+`eris:db` makes all that [super simple](/docs). And, by the way, our solution will run on nearly [anything](/blog/2015/04/01/peer-server-networks-current-paradigm/) (except Windows outside of Docker).
 
-## The Application Layer
+### The Application Layer
 
-Functionally the application will work nearly the same as our [2gather](https://monax.io/blog/2015/04/07/2gather/) video sharing application works. The basic workflow would look something like this:
+Functionally the application will work nearly the same as our [2gather](/blog/2015/04/07/2gather/) video sharing application works. The basic workflow would look something like this:
 
 1. Judge finalizes opinion
 2. Judge gives finalized opinion to clerk
@@ -63,7 +67,7 @@ That's it. Now anyone who has access to the blockchain and distributed file stor
 
 `eris:server` makes it ultra simple to make this application layer and have it usable for non-technical team members from a web browser (with whatever web based interface is needed for the application). Using `eris:server` developers are able to build the backend of the application that would perform all of that functionality in about five lines of javascript.
 
-## Conclusion
+### Conclusion
 
 At Monax Industries we make it super simple to start building these systems. Today. In three (easy) steps:
 
@@ -71,6 +75,6 @@ At Monax Industries we make it super simple to start building these systems. Tod
 2. Roll (your blockchain)
 3. Build (your application)
 
-For more information as to how to get started [see here](https://monax.io/docs/tutorials/).
+For more information as to how to get started [see here](/docs/).
 
 (Photo credit to: [Board Track Racer by Insomnia Cured Here @ flickr](https://www.flickr.com/photos/tom-margie/1299414993/) -- CC-BY-SA to the author.)

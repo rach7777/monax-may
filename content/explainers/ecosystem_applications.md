@@ -16,11 +16,11 @@ menu:
 Applications that run on an ecosystem (or, network) level
 ```
 
-# Introduction
+## Introduction
 
 As our organizations move into the information age the low hanging fruit for process automation is to move the applications providing that automation away from being single participant operated and toward being operated by a network, or ecosystem of participants. Ecosystem applications seek to automate processes at the value chain level thereby providing a framework on which to build complicated and connected networks that seek to reduce costs and open new opportunities for value creation.
 
-# The Information Age Transformation
+## The Information Age Transformation
 
 As we continue the march from the industrial age to the information age the tectonic plates of globally-focused businesses, digital nomads, and information abundance have combined to massively transform a range of industries already and are hardly finished. One of the most important changes is in **how organizations manage data and processes**.
 
@@ -36,7 +36,7 @@ In our view we are entering into the third generation of collective process mana
 | 2nd Generation | SME Focus              | Leverage economies of scale of cloud providers to synchronize paper-based internal processes for smaller companies | SalesForce, Xero, Github, etc. |
 | 3rd Generation | B2B Relationships      | Leverage blockchains and smart contracts to build harmonized applications that operate on an ecosystem level | Winners being made now |
 
-## The Big Problems Previous Technologies Haven't Effectively Solved
+### The Big Problems Previous Technologies Haven't Effectively Solved
 
 In order to move forward with the next generation of collective process management tooling, we need to understand `what are the big challenges` which businesses face.
 
@@ -50,7 +50,7 @@ Thus the theory behind EBay, Amazon, and Etsy's successes -- they act as the fro
 
 So if we are truly in a globalized world where connected matters more than isolated, how do the connected effectively scale without *having* to rely on "the platform"? What if they want to run "the platform" themselves by banding together? As an ecosystem. How can they build applications that run on an ecosystem level, or, as we call them `ecosystem applications`?
 
-# Ecosystem Application Toolkit
+## Ecosystem Application Toolkit
 
 The toolkit for ecosystem application builders includes many of the peer-to-peer technologies developed since the 1990's and some that have been more recently developed.
 
@@ -61,7 +61,7 @@ The toolkit for ecosystem application builders includes many of the peer-to-peer
 | data lakes | `what content are we talking about` | content addressable storage |
 | point-to-point messaging | `come over here I want to tell you a secret` | shared secrets |
 
-## Blockchains
+### Blockchains
 
 The problem that [blockchain technology](/explainers/blockchains) solves is not electronic P2P cash, nor is it settlement latency, it is the problem of `attribution and ordering of inbound events; at an ecosystem level`.
 
@@ -83,7 +83,7 @@ Learn more about [blockchain technology](/explainers/blockchains).
 
 The *attribution* problem that blockchains solve is insufficient, alone, to actually be able to build coherent applications that run on an ecosystem level beyond very simple applications; such as moving electronic cash from one person to another.
 
-## Smart Contracts
+### Smart Contracts
 
 The next problem that needs to be solved is **deterministic computation**. This is the problem that the "thing" the community currently calls [smart contracts](/explainers/smart_contracts) solves. The problem that smart contract technology solves is not escrowing funds, it is the problem of `is computation happening in an agreed manner`.
 
@@ -105,7 +105,7 @@ Learn more about [smart contract technology](/explainers/smart_contracts).
 
 While blockchains (providing us `who did what when`) and smart contracts (providing us `deterministic computation`) are two tools that give ecosystem application builders two main capabilities necessary for building ecosystem applications, we still have a few more base requirements to really enable this technology to flourish. Namely we need to solve `content` and `privacy`.
 
-## Data Lakes
+### Data Lakes
 
 In applications that are built on traditional architecture we can have content which resides on a single device or a cluster of devices that is under the control of a single entity. If that entity decides, for whatever reason, to stop servicing an application or stop serving particular content, it can so decide unilaterally. However, when we are building applications meant to exist outside the control of a single participant within the ecosystem, we cannot make such an assumption. This is where the IPFS project's thoughts about the [permanent web](https://ipfs.io/) are so crucial.
 
@@ -115,8 +115,11 @@ Content addressable storage gives us, in general, assurances that "this is 'it'"
 
 Although SSL is a well worn system, if we want to be very careful that "this is 'it'" what we do is after we download a file from the internet we take its hash (which can be thought of as the "fingerprint" of a file) and compare that hash to one that has been provided by the publisher. This allows us to (if we trust the publisher) ensure that what we downloaded is what the publisher produced. When dealing with content addressable storage, which is local to your device, you can have assurances that the file was not "swapped" and that the file is pointing at what the network would like one to point at, because in most content addressable systems we reference data by its hash.
 
-## Point-to-Point Messaging
+### Point-to-Point Messaging
 
 The final, major, challenge is around privacy. There are two types of privacy which are necessary to examine. The first one is a `me only` type of privacy. This means that there need to be things which are known only to me. We typically define these as secrets. Secrets are things like one's private keys, or logins, or other information which should be available only to you. Those things are necessary for ecosystem applications. Within the Bitcoin world, wallet software provides a very valid `me only privacy` function. There are a range of possible options for how to build generic ecosystem applications while also enabling `me only privacy`. However, mostly ecosystem applications only need to "interface" with the generics so these will not be covered in great detail here.
 
 The second type of privacy is a `come over here I want to tell you a secret` type of privacy. Because within ecosystems, we don't necessarily assume that all participants `need/want/have_a_right` to have all the information about all the things. This is where point-to-point messaging systems and an authenticated public key infrastructure (a PKI) with a given identity mechanism comes into play. Private message queues give us the `come over here ... a secret` part of the whole problem. An authenticated PKI solves the `**I** want to tell **you**` part of the whole problem. Point-to-point messaging gives us the final piece of what, at least theoretically, is a complete look at the major components necessary to build most ecosystem applications.
+
+
+## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Explainers](/explainers/)

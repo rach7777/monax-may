@@ -1,7 +1,7 @@
 ---
 
 type:   docs
-layout: li
+layout: single
 title: "Premium Support & Education"
 index_file: ""
 path: "content/packages"
@@ -16,7 +16,11 @@ menu:
 With Monax's Premium Support & Education Packages your ecosystem application building experience will speed up dramatically.
 ```
 
-# Introduction
+## Introduction
+
+<div class="note">
+	<em>Note: As of 2017, our product has been renamed from Eris to Monax. <code>monax:db</code> was previously referred on this page as <code>eris:db</code>.</em>
+</div>
 
 At Monax, we strive to document our platform in the best manner we can and also to provide self-help tutorials which aid companies getting started with this technology.
 
@@ -24,7 +28,7 @@ However, building applications that properly leverage ecosystem application tech
 
 Monax's premium support and education packages provide both fora to answer questions, as well as experiential learning sessions for your developers to be able to more quickly build your ecosystem applications.
 
-# Benefits
+## Benefits
 
 By building with Monax's engineers, your development time will be significantly reduced. We have build our premium support & education packages to meet three demands within the market.
 
@@ -34,17 +38,17 @@ Second, with ecosystem applications there are emergent design patterns and archi
 
 Third, there are a range of operational considerations which come into play when building an ecosystem application on a permissioned blockchain base. Our team of engineers and operations specialists can help ensure that your base blockchain is deployed correctly and running smoothly, so that your development team can drive business value rather than worrying about the minutae of setting up a complex network.
 
-# What Premium Support & Education Packages are Available?
+## What Premium Support & Education Packages are Available?
 
 | Packages | Discovery Package | Professional Package | Enterprise Package |
 |---|-------------------|----------------------|--------------------|
 | Subscription Length | Monthly | Monthly | Monthly |
 | Premium Support | Premium e-mail Support | Premium e-mail Support | Premium e-mail Support<br />Private Chat Support |
 | Learning Sessions | 1 seat per smart contract session<br />1 seat per platform session | 2 seats per smart contract session<br />2 seats per platform session | 1 bespoke smart contract session<br />1 bespoke platform session |
-| eris:db Permissioned Blockchain Network | FOSS only | 1x 4-node blockchain deployed to<br />Customer’s Azure or AWS Environment | 1x 7-node blockchain deployed to<br />Customer’s Azure or AWS Environment |
+| monax:db Permissioned Blockchain Network | FOSS only | 1x 4-node blockchain deployed to<br />Customer’s Azure or AWS Environment | 1x 7-node blockchain deployed to<br />Customer’s Azure or AWS Environment |
 | Qualified Customers | Businesses with less than 100 employees only | No restrictions | No restrictions |
 
-# Product Specifics & FAQs
+## Product Specifics & FAQs
 
 Monthly subscriptions can be used at any time during the period but don't roll over.
 
@@ -52,29 +56,22 @@ Learning sessions are a one hour online video conference where Monax’s develop
 
 Learning sessions are conducted for many buying organizations at the same time with a maximum capacity of 15 developer seats per session. Learning sessions for POC Enterprise packages are conducted only with the buying organization’s developers and have a maximum capacity of 10 developer seats per session.
 
-The eris:db permissioned blockchain included in POC Professional and POC Enterprise Packages is a multinode deployment of the FOSS eris:db that can be deployed into customer’s Azure or AWS environments. This can be accomplished in a variety of ways depending on your workflow and requirements. Once a POC Package is purchased, your account manager will be in touch with the options for deploying your eris:db permissioned blockchain to your development environment.
+The monax:db permissioned blockchain included in POC Professional and POC Enterprise Packages is a multinode deployment of the FOSS monax:db that can be deployed into customer’s Azure or AWS environments. This can be accomplished in a variety of ways depending on your workflow and requirements. Once a POC Package is purchased, your account manager will be in touch with the options for deploying your monax:db permissioned blockchain to your development environment.
 
-Monax does not provide an SLA on the eris:db permissioned blockchain being operational, however customers may utilize their support time for Monax’s developers to help them fix problems with their blockchain.
+Monax does not provide an SLA on the monax:db permissioned blockchain being operational, however customers may utilize their support time for Monax’s developers to help them fix problems with their blockchain.
 
 Monax cannot provide legal advice.
 
-# How to Purchase
+## How to Purchase
 
 We will offer our premium support and education packages to the general developer community in 2017 but at this time they are available via the Monax partnership network. If you would like to leverage Monax's premium support and education packages to empower your ecosystem application developers please let your technology provider know, or get in touch via our contact form and our account managers will be in touch regarding pricing details.
 
-<center>
-<div>&nbsp;</div>
-<div>&nbsp;</div>
 <a href="/?monax_viewer_type=end_user&product_interest=premium_support#contact-monax" class="btn btn-lg btn-primary">My Company is Interested in Premium Support <i class="fa fa-check-square"></i></a>
-<div>&nbsp;</div>
-<div>&nbsp;</div>
 <a href="/?monax_viewer_type=partner&product_interest=premium_support#contact-monax" class="btn btn-lg btn-primary">My Company's Clients are Interested in Premium Support <i class="fa fa-cubes"></i></a>
 <div>&nbsp;</div>
-<div>&nbsp;</div>
-</center>
 
-After your order is processed, we will ask a few questions to verify that your company meets the qualification criteria (if necessary) for the package and then we will set up your premium support channel, register your developers for our learning sessions, and understand how you would like your eris:db Permissioned Blockchain Network provisioned.
+After your order is processed, we will ask a few questions to verify that your company meets the qualification criteria (if necessary) for the package and then we will set up your premium support channel, register your developers for our learning sessions, and understand how you would like your monax:db Permissioned Blockchain Network provisioned.
 
-# What are the Use Cases for Ecosystem Applications?
+## What are the Use Cases for Ecosystem Applications?
 
 {{% use_case_selector %}}

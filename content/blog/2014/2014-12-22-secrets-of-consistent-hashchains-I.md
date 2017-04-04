@@ -15,9 +15,11 @@ title: 'Secrets of Consistent Hashchains I: Eventual Consistency'
 url: /2014/12/22/secrets-of-consistent-hashchains-I/
 ---
 
-**Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
 
-## Blockchains
+### Blockchains
 
 A blockchain is a silly sort of a datastructure designed to keep thousands of computers in sync while providing a useful service that is not controlled or owned by anyone in particular. It employs the finite state machine approach, where the state of the system is updated sequentially, via atomic transitions (transactions) that are replicated across every machine, in order. In classic academic work on the subject, with a fixed set of trusted machines, a leader/master is selected from the set and put in charge of committing updates; in the event the leader fails, an election protocol is engaged to choose a new leader. This is useful, for example, for companies that need to maintain a synchronized database across multiple data centers around the world.
 
@@ -25,7 +27,7 @@ In a decentralized system, where there is no implicit trust across machines, and
 
 The original solution is to pick a new leader every roughly 10 minutes based on a random lottery, the winner of which is determined by their capacity to find partial hash collisions in the SHA256 algorithm. Partial hash collisions were originally conceived as an approach to spam prevention, since they allow one to prove that a certain amount of computation was performed to find the collision, hence the colloquialism proof-of-work (PoW). It was adopted by bitcoin as the lottery mechanism, allowing anyone to participate, such that the system's security derives from the cost and distribution of the computational power itself.
 
-## Ain't No Proof-of-Past
+### Ain't No Proof-of-Past
 
 A key property of blockchains is that the present state can be computed by anyone using the protocol, the genesis block, and a particular history. Simply apply each transaction in the history to the genesis block, and the final result should be the current state. So the problem becomes, how do we know what is the right history?
 
@@ -37,7 +39,7 @@ Bitcoin doesn't deal with now. Its philosophy might be summarized: "look, everyt
 
 Suppose you're on a blockchain network, and a malicious fork emerges, starting 10 blocks back and gaining steam. Now it's raced ahead of you, so as far as the bitcoin protocol is concerned, it marks the correct history. But clearly its not the correct history. You were there, 10 blocks back, when the real history happened. And now bitcoin is lying to you; naughty, naughty Bitcoin.
 
-## When Bitcoin Forks
+### When Bitcoin Forks
 
 [Bitcoin forked by mistake in March 2013](https://github.com/bitcoin/bips/blob/master/bip-0050.mediawiki). A block was produced by a new version of the client that triggered a bug on an implementation specific detail of the embedded database library used by older versions of the client. The new version of the client had no problem with the block, and actually exhibited the correct behaviour. So half the network went one way and the other half went the other. And as far as they were concerned, they were both following the rules, quickly becoming oblivious to each other's chains.
 
@@ -51,7 +53,7 @@ So here's where bitcoin might be lying to itself. Bitcoin is not just a protocol
 
 So at the end of the day, while bitcoin might masquerade to be as secure as its hashing power, its security is actually also a function of the activity of a small number of developers and, in some sense, the security of Github's TLS implementation. I might add that just this week, a major security vulnerability yesterday to [git was announced](http://thehackernews.com/2014/12/critical-git-client-vulnerability-allow_19.html), and that TLS implementations are not particularly lauded for their correctness.
 
-## Bugs vs. Attacks
+### Bugs vs. Attacks
 
 Software bugs are a perennial enemy of the human endeavour, and are impossible to mitigate. The proper approach is diversity, to have many different implementations of the protocol, such that a bug in one does not take down the entire network. This is the reasoning behind [ethereum's](https://github.com/ethereum) drive to produce clients in 4 different programming languages. Of course they are all hosted on one website (for now, but stay tuned for github-like smart contracts storing code in [ipfs](http://ipfs.io)).
 
@@ -61,7 +63,7 @@ Now, while Bitcoin will use all sorts of information to remedy a large scale hon
 
 Our blockchain's deserve better than that.
 
-## A Rigid Race to the Bottom
+### A Rigid Race to the Bottom
 
 Bitcoin mining is an obscene way to consume electricity. A fascinating trick, perhaps, but surely not a means upon which to base the future of human socioeconomic organization. At the end of the day, ASIC-wars ignite the same sort of careless race to the bottom engaged in by the likes of subsidy driven mono-cropping in food production, or oil drilling. Unprofitable behaviour subsidized by an inflationary currency creating weird economic incentives and distracting us from what's at hand.
 

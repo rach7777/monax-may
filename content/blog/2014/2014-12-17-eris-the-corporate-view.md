@@ -16,9 +16,11 @@ title: Meet Eris. The distributed computing solution for industry.
 url: /2014/12/17/eris-the-corporate-view/
 ---
 
-**Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
 
-<h1>Meet Eris.</h1>
+<h2>Meet Eris.</h2>
 
 An introduction to the open alpha release of Eris in ten points:
 
@@ -35,7 +37,7 @@ An introduction to the open alpha release of Eris in ten points:
 
 <h2>1. Take me to your repo.</h2>
 
-* [**Here is our GitHub Repo**](https://github.com/eris-ltd).
+* [**Here is our GitHub Repo**](https://github.com/monax).
 
 <h2>2. What is Eris?</h2>
 
@@ -53,7 +55,7 @@ An introduction to the open alpha release of Eris in ten points:
 
 * We call these serverless applications **Distributed Applications** or **DApps.**
 
-* Apologies that we don't have any demonstrator applications just now apart from our ["Hello World" DApp](https://github.com/eris-ltd/hello-world-dapp) (we've been pretty busy this week, as you might imagine). However, note we're aiming to release two technology demonstrators in early January - one, a streaming-video application with an in-built Bitcoin payment mechanism designed to showcase Eris' potential in DRM applications, and another, a marketplace application designed to bring together software developers building on Eris and potential customers who want blockchain tech, and help them to reach agreement on heads of terms (and create a cryptographically-secure transaction record of the same).
+* Apologies that we don't have any demonstrator applications just now apart from our ["Hello World" DApp](https://github.com/monax/hello-world-dapp) (we've been pretty busy this week, as you might imagine). However, note we're aiming to release two technology demonstrators in early January - one, a streaming-video application with an in-built Bitcoin payment mechanism designed to showcase Eris' potential in DRM applications, and another, a marketplace application designed to bring together software developers building on Eris and potential customers who want blockchain tech, and help them to reach agreement on heads of terms (and create a cryptographically-secure transaction record of the same).
 
 <h2>3. Ok, you said "blockchain," which sets off my bullshit alarm. You have precisely five seconds to convince me you know what you're talking about. </h2>
 

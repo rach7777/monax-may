@@ -29,7 +29,7 @@ A tweet I read recently started me down a rabbit hole of thought. It is a vein i
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The US needs a universal basic income for kids <a href="https://t.co/TgPx25THJl">https://t.co/TgPx25THJl</a></p>&mdash; Quartz (@qz) <a href="https://twitter.com/qz/status/766665861688090624">August 19, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-# Introduction
+## Introduction
 
 I used to do policy reform for a living, so this is a subject which has been near to my heart for a long time. When policy reform professionals think about changing a policy each policy reform project will typically (and I'm summarizing here) be broken down into the following phases:
 
@@ -43,7 +43,7 @@ I used to do policy reform for a living, so this is a subject which has been nea
 
 Throughout many of these phases, ecosystem application technology can be extraordinarily helpful to policy makers, advocates, and many other stakeholders within distinct systems. Indeed, in this post I'll outline how the tech we help build can be helpful to stakeholders in all of the phases of such a project with the exceptions of the "consensus building" stage which is fundamentally a social concern that humans will be required to do and in the "legislative / regulatory process" which is also a fundamentally human activity.
 
-# Basis of Examples
+## Basis of Examples
 
 UBI is an interesting idea. I'm not sure if I'm for or I'm against it, but I think it is one possible solution to a very hard problem. Namely, what are we going to do when systemic unemployment of humans is routinely 30% or more (which, given the pace of automation for low skill labor, seems increasingly likely to me). No matter my own views, the articles title got me thinking about a range of policy options which are seeking to address big, overarching, systemic challenges we will face in the coming decades.
 
@@ -58,17 +58,17 @@ All of these are part of a larger theory that we can systematize our relationshi
 
 There is a certain amount of gravitational pull in my mind that these schemes, while early, will provide a rich and productive vein where we can start to think about solving some of the big, hard, systemic issues which our societies face.
 
-# Problem Identification Stage
+## Problem Identification Stage
 
 
 
-# Solution Crafting Stage
+## Solution Crafting Stage
 
-# Solution Refinement Stage
+## Solution Refinement Stage
 
-# Drafting Stage
+## Drafting Stage
 
-# Monitoring Stage
+## Monitoring Stage
 
 I used to give a talk called Smart Contracts for Social Scientists. In this talk I discussed the benefits of using this tech to study things. Zach has also written extensively about using the tech we build, and use, to assist science in its pursuit of solving some very hard problems. Both of these lines of thinking are
 

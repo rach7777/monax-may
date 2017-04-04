@@ -31,7 +31,7 @@ On behalf of the doers, here is how I explain smart contract technology to execu
 
 This post is a [semi-follow on to my WTF is going on with blockchains post](2015-08-10-how-i-current-explain-blockchains.md).
 
-## Preface
+### Preface
 
 Smart contracts is a loaded term of which I've been a reluctant user.
 
@@ -41,11 +41,11 @@ As Brian, our Head of BizDev says, they should really just be called `dumb scrip
 
 My own issues with pedanticism aside, `smart contracts` is the term which the community has adopted and it is more important to communicate using the same language than it is to be fascist about such matters.
 
-## `smart v. dumb` *or* are they better than just a python script?
+### `smart v. dumb` *or* are they better than just a python script?
 
 This is a question which in the early days of Monax we fielded often. This is a debatable subject. And I think it turns on two axes.
 
-### Axis 1 => spectrum of verifiability
+#### Axis 1 => spectrum of verifiability
 
 A python script is *somewhat* verifiable I would say. If a python script is running on somebody else's metal your ability to verify what its doing is usually limited to observing its results. You can always see what the script is doing if, for example it is managing an API. You know that you send that API a request and then you will get a response. But what is happening between the request and the response is very difficult to verify.
 
@@ -77,7 +77,7 @@ But for instances where one has a **data driven relationship** -- whether that i
 
 But. And this is the key. It is `certainly` very different that a simple python script running on someone else's metal.
 
-### Axis 2 => spectrum of privacy
+#### Axis 2 => spectrum of privacy
 
 While a python script is not highly verifiable, it **is** easy to hide and to keep protected. I've said it over and over again, blockchains are transparency machines, they are not privacy machines. There currently is no blockchain backed smart contract mechanism which can provide the level of verifiability described above **and** that can also provide *any* level of privacy beyond simple obscuration of the data on the blockchain.
 
@@ -87,7 +87,7 @@ It may also be possible in the medium term to separate the verifiability spectru
 
 Alas, we have not had time to pursue this idea. Yet! :-)
 
-## `contracts v. scripts` *or* why do I keep telling folks this is legal tech?
+### `contracts v. scripts` *or* why do I keep telling folks this is legal tech?
 
 One of the ways in which these `scripts` are, kind of, sort of, `contracts` (at least they can be programmed to fulfill many of the legal requirements of real world commercial contracts) is that counter-parties to an agreement have never had an ability to regulate their data driven *relationships* via a mechanism which they did not wholly control.
 
@@ -114,7 +114,7 @@ At Monax we definitely are not the only group at the intersection of law and tec
 
 I'm a bit skeptical as to whether `dumb scripts` will ever replace human lawyers, but they may very well change how lawyers operate when advising information age enterprises as to how to regulate their data driven relationships with their peers and customers. So the future is definitely bright for the intersection of law (the regulation of our relationships) with technology!
 
-## Postface
+### Postface
 
 The bottom line is that these "things" (no matter what we call them) can be made to regulate agreements just as easily as they can be made to regulate governance just as easily as they can be made to regulate professional relationships. And therein lies their power and their USP.
 

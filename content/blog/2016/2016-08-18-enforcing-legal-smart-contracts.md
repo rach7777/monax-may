@@ -17,11 +17,11 @@ title: Enforcing Legal Smart Contracts
 url: /2016/08/18/enforcing-legal-smart-contracts/
 ---
 
-# Enforcing Legal Smart Contracts
+## Enforcing Legal Smart Contracts
 
 Blockchain smart contracts are a breakthrough development in the quest for a secure, interoperable technology to create data-driven solutions and conduct global commerce. This article outlines a beginning, multi-step framework for smart contract enforceability.
 
-### Blockchains for legally significant relationships.
+#### Blockchains for legally significant relationships.
 
 Blockchain software architecture combines the security of cryptography with the resilience of distributed networks to create chain of authentic, reliable information about data-driven relationships. This process creates a permanent ledger of transactions that may be viewed by all participants in that particular blockchain system. Blockchains may be configured to suit multiple purposes across multiple verticals, enabling collaborative data solutions. The digital future includes a multitude of blockchain solutions with interoperable smart contracts providing the rules by which data-driven relationships operate.
 
@@ -31,7 +31,7 @@ Smart contracts are automated, logical, cryptographically secure processes actin
 
 Despite enormous potential benefits, stakeholders are unlikely to transfer their valuable business from legacy infrastructure to blockchain systems without firm assurance they are not sacrificing any hard-won existing legal rights in exchange for smart contract efficiency. Legal engineers building blockchain systems must carefully consider the pre-existing judicial precedent and regulatory structures that govern potential use cases. 
 
-### Judicial enforcement of electronic contracts
+#### Judicial enforcement of electronic contracts
 
 A common refrain in blockchain industry reporting is a lack of legal standards providing guidance for those who want to deploy a smart contract-based system. From a former law practitioner’s perspective, this perception is generally incorrect. For many use cases, ample authority exists to conceive and build smart contracts within existing legal principles.
 
@@ -49,7 +49,7 @@ While e-signature law is largely uniform,there remains a significant degree of v
 
 Electronic contracts are increasingly important elements in commerce today. Courts regularly enforce electronic agreements. Dematerialization and interoperability of contracts and instruments is encouraged and mandated by regulatory authorities. The e-signature laws of the turn of the century are updating with more sophisticated tools. The foundation for enforceable blockchain smart contracts is strong and well-placed, ready to support innovative legal models. 
 
-### Blockchain smart contracts are fit for purpose as transferable records
+#### Blockchain smart contracts are fit for purpose as transferable records
 
 The legal engineering inquiry into smart contracts systems does not end at judicial enforceability. Smart contract applications must comply with existing requirements for analogous electronic documents. Specifications and standards for systems that maintain data-driven relationships are produced by multiple actors like governments, regulators and ratings agencies. Read together, they are the framework that allow the transformation of e-contractual obligations into electronic securities and derivatives.  Blockchain smart contract systems can be configured to meet and exceed existing requirements for encryption, data integrity, audit trail and security, trimming operational costs while enabling new revenue models. 
 
@@ -65,7 +65,7 @@ Blockchain technology fills the express needs for better electronic contract sol
 
 Jurisdictions are encouraging the use of blockchain technology to meet commercial data needs. As of this writing, the Vermont house is considering a bill that, among other things, treats blockchain documents as self-authenticating.[10] Delaware has launched an initiative to use blockchains in many registry functions.[11] U.S. federal authorities are considering explicit enabling of blockchain through legislation.[12] Globally, this phenomenon is reflected in the many nations exploring blockchain solutions for government and commercial purpose. Blockchain smart contracts are are well-suited to bridge the gaps in worldwide data driven relationships.
 
-### Integrating blockchains and legal smart contracts -- old questions, new tools  
+#### Integrating blockchains and legal smart contracts -- old questions, new tools  
 
 The existing body of electronic contracts law gives a firm foundation to the first step in creating automated legal contracts: dual integration.
 
@@ -79,7 +79,7 @@ To ensure enforceability of legal relationships made in in blockchain data relat
 
 Smart contracts can deliver today the reliability of existing e-contract procedures. Meeting existing standards enables us to iterate more complex smart contracts over time, creating safer, transparent assets, creating efficiency and liberating dark data. While Monax Industries is building increasingly automated legal contracts, since the company’s inception we have recommended dual integration as a reliable, scalable way to build enforceable smart contracts.[16]
 
-### Self-enforcing smart contracts: the future of legal engineering
+#### Self-enforcing smart contracts: the future of legal engineering
 
 Due diligence of dual integration accomplished, legal engineers are free to explore the next frontier of smart contracts: self-enforcing contracts. Enforceability means the right to apply to an actor with authority over the contracting parties to force the breaching party to pay or act. One limitation of self-enforcing smart contracts is scope: smart contracts can only enforce agreements to the extent that assets are known and held within the blockchain system itself. Currently, a legal smart contract must be coupled with judicial legal enforceability in order to be useful. Absent legal enforceability, if a contracting party breaches an agreement, she may simply avoid liability by not placing value into the system against which a promise may be enforced. 
 
@@ -89,7 +89,7 @@ Self-enforcing smart contracts, because of the variability in contracting proced
 
 The size of the legal engineer’s undertaking is tremendous, but it is proportional to the commercial value of automated contract provisions, decisions, and actions. The ability to apply logical legal processes to evidence using smart contracts opens the door to more complex legal agreements limited only by ability to define fact patterns and affect assets.  
 
-### Notes
+#### Notes
 
 1. *See, e.g.* [Fed. R. Civ. Proc. 52.](https://www.law.cornell.edu/rules/frcp/rule_52).
 2. 4 Corbin on Contracts Sec. 23A1.
@@ -106,7 +106,7 @@ The size of the legal engineer’s undertaking is tremendous, but it is proporti
 13. *See generally* Lorna E. Gillies, Electronic Commerce and International Private Law: A Study of Electronic Consumer Contracts, Ch.2, Ashgate Publishing, Ltd (2013, 2016).
 14. *See, e.g.*, [UCC] 2-202](https://www.law.cornell.edu/ucc/2/2-202).
 15. *Id*; [F.R.E. 803](https://www.law.cornell.edu/rules/fre/rule_803).
-16. [Monax Industries' Dual Integration](https://monax.io/platform/).
+16. [Monax Industries' Dual Integration](/platform/).
 17. [Cross-Collateralization](https://en.wikipedia.org/wiki/Cross-collateralization).
 
 

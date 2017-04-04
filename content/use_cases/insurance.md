@@ -15,7 +15,7 @@ Risk services providers are one of the most integral and interesting sectors in 
 
 We have included in this section an overview of some of the foundational use cases alone. The longer term use cases we'll save for later versions of these pages. Each of the foundational use cases described herein are well covered by our [insurance software development kit](/library/#insurance-sdk). By leveraging our insurance SDK along with Monax's [premium support](/packages), as well as of course, our industry leading [ecosystem application platform](/platform), all of the sophisticated ecosystem applications noted in this page are buildable **today** without much effort. Indeed, our team has done most of the difficult work for the use cases outlined below so that your company does not have to.
 
-# Primary Insurance
+## Primary Insurance
 
 There are numerous ways in which primary insurers can leverage ecosystem application technology. One of the foundational use cases in our view is to provide real-time adjusting policies that provide full coverage for stock which is currently held by an insured company. How would the insurance company know, in real-time, what the insured company had in stock if the insured was in a fast moving value chain? If the primary insurer was providing risk services in the context of a [tag and track ecosystem application](/use_cases/logistics/#supply-chain) then it would be a simple matter for the insurance company to know with precision how much the insured company had in stock at any moment in time. Both the insured company and the insurance company having equal access to this information in real-time dramatically reduces both claims fraud opportunities as well as processing time for legitimate claims while also decreasing the cost to provide real-time adjusting policies.
 
@@ -25,7 +25,7 @@ Reducing fraud in this context is a significant need for many insurance companie
 
 Ecosystem applications can be easily built to track claims servicing vendors in a set of vendor management contracts as well as tracking claims submitted with reference to the underlying insured asset that would be tracked within a set of asset tracking contracts. Finally claims which are working their way through an established and agreed claims process can be tracked using a business process modeling set of smart contracts. All of these components are included or available as add-on modules for the Monax [insurance software development kit](/library/#insurance-sdk).
 
-# Reinsurance
+## Reinsurance
 
 Reinsurance and retrocession providers operate in a complex, interconnected environment with complex information requirements. In order for reinsurance companies to properly provide their products and services to primary insurance companies they need to have a range of information available to them. From public data feeds about weather to more particular information as to specific losses that are claimed, reinsurance companies need to gain assurances about what data is.
 
@@ -33,7 +33,7 @@ Reinsurance contracts also have high needs for process assurances at a network l
 
 In combination with one of our partners, Monax has an existing ecosystem application which leverages our [insurance software development kit and add-on modules](/library/#insurance-sdk). If you would like to see this application in action please <a href="/?monax_viewer_type=end_user&product_interest=sdk#contact-monax">get in touch and note that you would be interested in seeing our demonstration application.</a>
 
-# Risk Asset Management
+## Risk Asset Management
 
 Risk assets are becoming increasingly securitized and sold off into private markets. This means there are now a range of companies who act as risk asset managers similar to how finance asset managers operate, only with a specialization in complex risk assets. These assets, such as catastrophic bonds, resiliency bonds, and a range of other assets, are operated in very similar ways to how their cousins from the finance world operate.
 
@@ -41,3 +41,5 @@ As with assets from the finance world, servicing of these assets throughout thei
 
 If you are in the risk asset management space and are interested in providing ecosystem application based, automated asset servicing for the complex assets your firm deals in, please get in touch as we would love to discuss how Monax's [platform](/platform), [products](/library), and [services](/packages) can be brought bear in the building of next generation risk asset management products.
 
+
+## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Use Cases](/use_cases/)

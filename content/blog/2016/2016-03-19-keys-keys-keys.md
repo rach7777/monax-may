@@ -16,13 +16,17 @@ title: So Here's the Problem(s) With Keys
 url: /2016/03/19/keys-keys-keys/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 [{{< image_blog "keys.keys.keys.jpg" >}}](https://www.flickr.com/photos/curioussiow/182224885/)
 
 The clarity for Monax as to what to do about the ever present elephant in the room came from [the Viking](https://twitter.com/androlo1980).
 
 > If we touch the keys we're a security company. Full stop.
 
-# Keys. It's Complicated
+## Keys. It's Complicated
 
 Let's get real for a second. All this chains and contracts and encryption and verification and all the good stuff that excites us so; it's all predicated on a set of assumptions about keys.
 
@@ -40,7 +44,7 @@ That's all well and good. *But* it's also incomplete. There are three big(ger) p
 
 The rest of this post will explore these three problems in some more detail. And along the way will touch on many aspects of the Monax approach as well as how we envision working with partners in this area (of which we view our upcoming work with Ledger to be foundational).
 
-# Big Problem 1. Device Independence
+## Big Problem 1. Device Independence
 
 The problem is not really that complicated to understand. Modern users of computing expect to move easily between devices. Keys are files, which we generally do not want to be actively syncing between a lot of devices. Mostly because it is impossible to ensure that while it is going over the wire it is safe. If you have access to `scp` into the device or something then you are pretty secure, but it is not necessarily a safe assumption that we have an ability to `scp` into all of our devices (phones, tablets, internet connected devices, come to mind). That's a big challenge to the chains and contracts communities, particularly when it comes to consumers, luckily there are many folks working on these issues from the cryptocurrency community; others are also working on similar challenges for different types of keys.
 
@@ -56,7 +60,7 @@ So what does this mean technically? Technically what will happen is that we will
 
 In our view the combination of Monax's "common signing pipe" architecture with hardened solutions will allow a variety of industrial solutions to be built and managed. Overall, this will significantly harden applications that have been built on our platform.
 
-# Big Problem 2. Stuff Breaks and/or Gets Lost
+## Big Problem 2. Stuff Breaks and/or Gets Lost
 
 I have a [fairly elaborate system](http://coda.caseykuhlman.com//entries/2014/dropbox-as-a-settings-repository.html) for being able to both do a full system upgrade on my daily driver, but also to recover from a hardware failure. But that system does not cover my keys; and I have more than 0 keys to manage: ssl certificates and keys, ssh keys, eris keys, pgp keys, aws keys, etc. For that I have a different system which I use that I'm comfortable with the security of. However, I have not automated backing up the keys I need on my daily driver (mostly because I don't want my keys backup plugged into my laptop unless absolutely necessary). I recently had a hardware failure at a most inopportune moment and did not have a bunch of current keys backed up properly. This included a set of personal pgp keys which for some reason were not backed up.
 
@@ -68,13 +72,13 @@ To be clear, this is not an expose on `identity`. I will leave that to others. W
 
 When you need to change a mapping of `key`:`identity` it is generally good practice to move that to a different communication band and or security posture. To change my keybase key I need to login from their quite nice cli and then go through their key replacement process. In an industrial setting it is not necessarily a safe assumption that "resorting to the interwebs and social media" is a valid `key`:`identity` management solution. This is where, in our view, vaults on HSMs is likely the base layer of a usable enterprise grade solution. Whatever the "out of band" solution will be it will likely need to be combined with adminsitrator key management tooling which will need to be [both utterly safe and extensible with respect to the interface](https://www.ledgerwallet.com/products/9-ledger-blue).
 
-# Big Problem 3. The Poor IT Person
+## Big Problem 3. The Poor IT Person
 
 Me managing my own keys and making sure those key pairs are available on the proper machines and also properly mapped to my various online identities is one thing. But what about the human who has to manage departments of dozens, hundreds of folks, constantly coming and going, keys getting lost, etc.? What's that human going to do?
 
 If I'm honest, we don't have an answer for how we can support solutions to this Problem yet, but it may [look something like this](http://serverfault.com/questions/304286/centralized-management-system-for-ssh-keys/304322#304322).
 
-# Conclusion
+## Conclusion
 
 There are lots of problems to solve. Lots of space for many companies with many solutions to succeed within the emerging smart contractified enterprise! Stay tuned for more; if you're building something that fills one of these identified gaps let us know [on Twitter](https://twitter.com/monaxio)!
 

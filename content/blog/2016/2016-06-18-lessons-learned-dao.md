@@ -23,7 +23,7 @@ Much has been written about the fall of the DAO in the past 24 hours and there h
 
 I am instead writing today to talk about how the DAO should have been written instead to prevent not only this security flaw, but any other security flaws inherent in it. As one of the core developers of the Solidity programming language itself, I also will be discussing some ideas from the team and the Ethereum community to prevent problems like the Reentry attack from occurring on a scale like this again.
 
-## Back to Basics
+### Back to Basics
 Be very careful with how you write your code, and always test it first, and thoroughly. Unlike normal code, once this bugs up, it's there permanently, unless you put in the ability to destroy the contract. The problem that caused this whole spat was one line of code. That's right. ONE. LINE. OF. CODE.
 
 Here is the code that destroyed the DAO.
@@ -60,7 +60,7 @@ is simply moved above the payOut function. Crazy I know. Key takeaways from this
 
 But what about security faults we don't know about yet? What do we do about those. The answer to this question is two fold. It revolves around modular design and smart decentralized decision making.
 
-## Modular Contract Development
+### Modular Contract Development
 
 The Ethereum community has recently been evoking a trusted hero of my time when it comes to this tragedy: Captain Hindsight.
 
@@ -92,7 +92,7 @@ contract DOUG_Of_Da_DAO {
 
 You may be asking "What's to stop someone from maliciously updating the DAO then to whatever they want it to be". I have purposely left that out of here so that I can tie this into my next bit...starting now.
 
-## Executive Action
+### Executive Action
 
 One of the reasons why the United States and many other democratic institutions have an executive branch is for the reason that democracy overall moves far too slowly to respond in moments of crisis.
 Seeing this is also why it becomes so tragic for the DAO, because the DAO team had been made aware of the bug and had actually gone in and FIXED their code.
@@ -210,7 +210,7 @@ contract DOUG_Of_Da_DAO {
 }
 ```
 
-## What Solidity Is Doing About This
+### What Solidity Is Doing About This
 
 Currently we are talking about ways to minimize reentrancy attack. There is an issue up in the Solidity github that discusses a suggestion from [Micah Zoltu](https://github.com/ethereum/solidity/issues/662) to add a default boolean in all external calls that prevents recursive calls. For people who know what they're doing and want recursive calls, the default mechanism could be overridden by people who know what they are doing with a universal modifier named "reentrant".
 
