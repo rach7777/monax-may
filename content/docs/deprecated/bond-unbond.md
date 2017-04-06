@@ -88,7 +88,7 @@ and start it up again (# Get the chain sorted, above).
 #### Send tokens
 ```bash
 cd ~/.eris/apps
-mkdir send bond
+mkdir send
 cd send
 ```
 Now, create an `epm.yaml` that looks like:
@@ -136,6 +136,7 @@ If everything went well, you'll see `Assertion Succeeded` and there will be an `
 #### Send bond tx
 
 ```bash
+mkdir ../send
 cd ../send
 ```
 Create another `epm.yaml` that looks like:
