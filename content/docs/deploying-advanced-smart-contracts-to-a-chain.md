@@ -20,7 +20,7 @@ For this tutorial, we are going to work with multiple contracts. All the base co
 
 ### Contracts Strategy
 
-We are going to use a very simple `get` / `set` contract which sets a variable and gets that same variable. It is about the easiest interactive contract one can imagine and as such we will use that for showing how to work with the eris platform.
+We are going to use a very simple `get` / `set` contract which sets a variable and gets that same variable. It is about the easiest interactive contract one can imagine and as such we will use that for showing how to work with the Monax platform.
 
 ### Make a Chain
 
@@ -28,7 +28,7 @@ Let's make a chain with a few keys on it.
 
 {{ insert_bash_lines "contracts_deploying_adv/test.sh" "3-10" }}
 
-Check that it is running of course with `eris chains ls`.
+Check that it is running of course with `monax chains ls`.
 
 ## Let's make a more advanced get-set contract sequence.
 
@@ -48,7 +48,7 @@ Next we need to make an epm.yaml. It should look like this:
 
 {{ insert_file "contracts_deploying_adv/epm.yaml" }}
 
-Now. What does this file mean? Well, this file is the manager file for how to deploy and test your smart contracts. The package manager invoked by `eris pkgs do` will read this file and perform a sequence of `jobs` with the various parameters supplied for the job type. It will perform these in the order they are built into the yaml file.
+Now. What does this file mean? Well, this file is the manager file for how to deploy and test your smart contracts. The package manager invoked by `monax pkgs do` will read this file and perform a sequence of `jobs` with the various parameters supplied for the job type. It will perform these in the order they are built into the yaml file.
 
 So let's go through them one by one and explain what each of these jobs are doing. For more on using various jobs [please see the jobs specification](/docs/specs/jobs_specification).
 
@@ -102,7 +102,7 @@ That's it! Your contract is all ready to go. You should see the output in `jobs_
 
 ## The compiler?
 
-Where are the contracts compiling? By default they are compiled using a microservice which is automagically turned on when running `eris pkgs do` and subsequently removed. If you'd like to use the remote compiler, specify its URL with the `--remote-compiler` flag.
+Where are the contracts compiling? By default they are compiled using a microservice which is automagically turned on when running `monax pkgs do` and subsequently removed. If you'd like to use the remote compiler, specify its URL with the `--remote-compiler` flag.
 
 ## Clean Up
 

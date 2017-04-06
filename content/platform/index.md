@@ -47,23 +47,23 @@ The CLI is a modular platform of numerous connected services and tools that simp
 
 ### Chains
 
-`eris chains` is the gateway to unlocking the power of permissionable, smart contract optimized blockchains -- of which our [monax:db](/platform/db) client is the industry leader. It exposes a range of options for developers to create, administer, and operate blockchains of various varieties.
+`monax chains` is the gateway to unlocking the power of permissionable, smart contract optimized blockchains -- of which our [monax:db](/platform/db) client is the industry leader. It exposes a range of options for developers to create, administer, and operate blockchains of various varieties.
 
 ### Packages
 
-`eris pkgs` is the gateway to unlocking the power of smart contract systems. It exposes a range of options for developers to create, build, test, and deploy complex systems of smart contracts to their `eris chains`.
+`monax pkgs` is the gateway to unlocking the power of smart contract systems. It exposes a range of options for developers to create, build, test, and deploy complex systems of smart contracts to their `monax chains`.
 
 ### Keys
 
-`eris keys` is the gateway to the common signing pipe that `monax` exposes. It exposes a range of developers to quickly get up to speed with prototyping their ecosystem applications. It also provides the reference API implementation for wallet-makers, and other, more advanced, signing solutions to satisfy in order to work seemlessly with the `monax` platform.
+`monax keys` is the gateway to the common signing pipe that `monax` exposes. It exposes a range of developers to quickly get up to speed with prototyping their ecosystem applications. It also provides the reference API implementation for wallet-makers, and other, more advanced, signing solutions to satisfy in order to work seemlessly with the `monax` platform.
 
 ### Files
 
-`eris files` is the gateway to unlocking the power of distributed data lakes. It exposes a range of functionality for working with content-addressable and distributed data management systems.
+`monax files` is the gateway to unlocking the power of distributed data lakes. It exposes a range of functionality for working with content-addressable and distributed data management systems.
 
 ### Services
 
-`eris services` is the gateway to unlocking services which your application needs to rely upon. It exposes a range of base operational functionality for integrating microservices into your ecosystem application.
+`monax services` is the gateway to unlocking services which your application needs to rely upon. It exposes a range of base operational functionality for integrating microservices into your ecosystem application.
 
 ## Software Development Kits
 
