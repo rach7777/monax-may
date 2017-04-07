@@ -36,17 +36,17 @@ With one `burrow` client, commercial entities will be able to control an innumer
 
 ### Interface
 
-`burrow` comes with a range of interfaces from CLI tooling to RPCs. See our [comprehensive documentation](https://github.com/monax/eris-db/blob/master/README.md) for more.
+`burrow` comes with a range of interfaces from CLI tooling to RPCs. See our [comprehensive documentation](https://github.com/monax/burrow/blob/master/README.md) for more.
 
 ### Virtual Machine
 
-`burrow` comes with a built-to-specification Ethereum Virtual Machine. It runs any contract which has been compiled with the `monax:compilers` or any of Ethereum's compilers.
+`burrow` comes with a built-to-specification Ethereum Virtual Machine. It runs any contract which has been compiled with the `compilers` or any of Ethereum's compilers.
 
 ### Permission Layer
 
 Permissioning your blockchains is more than simply running them behind a gated VPN if one is running `burrow`.
 
-`burrow` comes with a [capabilities-based, evolvable permissioning layer](https://github.com/monax/eris-db/blob/master/README.md) - the first of its kind on the market, and by far, still the most sophisticated.
+`burrow` comes with a [capabilities-based, evolvable permissioning layer](https://github.com/monax/burrow/blob/master/README.md) - the first of its kind on the market, and by far, still the most sophisticated.
 
 ## Comparisons
 
@@ -90,7 +90,7 @@ Permissioning your blockchains is more than simply running them behind a gated V
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="https://github.com/monax/eris-db/blob/master/README.md">Yes</a></td>
+            <td><a href="https://github.com/monax/burrow/blob/master/README.md">Yes</a></td>
             <td>n/a</td>
           </tr>
           <tr>
@@ -136,7 +136,7 @@ Permissioning your blockchains is more than simply running them behind a gated V
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="https://github.com/monax/eris-db/blob/master/README.md">Yes</a></td>
+            <td><a href="https://github.com/monax/burrow/blob/master/README.md">Yes</a></td>
             <td>unclear</td>
           </tr>
           <tr>
@@ -182,7 +182,7 @@ Permissioning your blockchains is more than simply running them behind a gated V
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="https://github.com/monax/eris-db/blob/master/README.md">Yes</a></td>
+            <td><a href="https://github.com/monax/burrow/blob/master/README.md">Yes</a></td>
             <td>n/a</td>
           </tr>
           <tr>
@@ -228,7 +228,7 @@ Permissioning your blockchains is more than simply running them behind a gated V
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="https://github.com/monax/eris-db/blob/master/README.md">Yes</a></td>
+            <td><a href="https://github.com/monax/burrow/blob/master/README.md">Yes</a></td>
             <td>Ripple Gateway Permissioning</td>
           </tr>
           <tr>
@@ -274,7 +274,7 @@ Permissioning your blockchains is more than simply running them behind a gated V
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="https://github.com/monax/eris-db/blob/master/README.md">Yes</a></td>
+            <td><a href="https://github.com/monax/burrow/blob/master/README.md">Yes</a></td>
             <td>unclear</td>
           </tr>
           <tr>
@@ -320,7 +320,7 @@ Permissioning your blockchains is more than simply running them behind a gated V
           </tr>
           <tr>
             <td>Permission Layer</td>
-            <td><a href="https://github.com/monax/eris-db/blob/master/README.md">Yes</a></td>
+            <td><a href="https://github.com/monax/burrow/blob/master/README.md">Yes</a></td>
             <td>unclear</td>
           </tr>
           <tr>
