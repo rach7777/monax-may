@@ -7,7 +7,6 @@ index_file: ""
 excerpt:    "The Ecosystem Application Platform"
 path: "content/platform"
 aliases:
-    - /explainers/the-eris-stack/
     - /explainers/the-monax-stack/
 menu:
   platform:
@@ -22,7 +21,7 @@ menu:
 ## Introduction
 
 <div class="note">
-	<em>Note: As of 2017, our product has been renamed from Eris to Monax. The <code>monax</code> platform was previously referred on this page as <code>eris</code>.</em>
+    <em>Note: As of 2017, our product has been renamed to Monax. The references on this page have been recently changed.</em>
 </div>
 
 The Monax Application Platform is built from the ground up to provide a logical base for developers and devOps to build, test, and operate ecosystem applications. It is designed to support multiple blockchain nodes connected to multiple blockchain networks with different smart contract interpreters all seamlessly connected to other microservices necessary to build, test, and run the ecosystem application such as key management systems and distributed data lakes.
@@ -40,7 +39,7 @@ The above diagram provides a high level overview of the different pieces of an e
 ## Features
 
 <div class="note">
-	<em>Note: The commands in this chapter refer to an earlier version of the software prior to our name change from Eris to Monax (< 0.16). Later versions of the software (0.16 and onward) will replace the <code>eris</code> command with a <code>monax</code> command.</em>
+    <em>Note: Current and future versions of the software (0.16 and forward) have replaced the <code>eris</code> command with the <code>monax</code> command as shown below.</em>
 </div>
 
 The CLI is a modular platform of numerous connected services and tools that simplify building, testing, and running ecosystem applications.

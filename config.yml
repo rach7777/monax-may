@@ -43,7 +43,7 @@ uglyURLs: false
 paginate: 10
 paginatePath: "page"
 footnotereturnlinkcontents: "↩"
-disqusShortname: erisindustriesblog
+# disqusShortname: erisindustriesblog
 
 sitemap:
   changefreq: monthly
@@ -119,7 +119,7 @@ params:
       icon: slack
     -
       title: contact
-      url: mailto:contact@erisindustries.com
+      url: mailto:contact@monax.io
       icon: envelope
 
 # ----------------------- #

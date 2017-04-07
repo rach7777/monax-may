@@ -19,7 +19,7 @@ With Monax's Premium Support & Education Packages your ecosystem application bui
 ## Introduction
 
 <div class="note">
-	<em>Note: As of 2017, our product has been renamed from Eris to Monax. <code>monax:db</code> was previously referred on this page as <code>eris:db</code>.</em>
+    <em>Note: As of 2017, our product has been renamed to Monax. The references on this page have been recently changed.</em>
 </div>
 
 At Monax, we strive to document our platform in the best manner we can and also to provide self-help tutorials which aid companies getting started with this technology.

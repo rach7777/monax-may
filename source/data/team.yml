@@ -6,8 +6,8 @@ default:
     site: https://monax.io
     email: contact@monax.io
     gravatar: monax_square_400.png
-    twitter: eris_ltd
-    github: eris-ltd
+    twitter: monaxHQ
+    github: monax
     display: false
     bio: "We empower developers to automate their data driven relationships."
 
@@ -167,9 +167,9 @@ andreas :
     gravatar: team-ao.jpeg
     twitter: androlo1980
     github: androlo
-    keybase: andreas_eris
+    keybase: androlo
     display: false
-    bio: "Andreas was a Developer on Monax's Libraries team. Andreas is a software engineer with experience in open source development and building applications for decentralized systems, mainly Ethereum and Eris based applications."
+    bio: "Andreas was a Developer on Monax's Libraries team. Andreas is a software engineer with experience in open source development and building applications for decentralized systems, mainly Ethereum and Monax based applications."
 
 ethan :
     name: Ethan Buchman

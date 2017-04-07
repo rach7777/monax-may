@@ -35,7 +35,7 @@ Areas which can greatly benefit from **tag and track** use cases:
 
 Any company which participates in a value chain that contains sufficiently complex goods which need to be tracked to an item across a range of intermediaries within the value chain can opt to build its own ecosystem application using Monax's products.
 
-To build your supply chain **tag and track** system you can always leverage `eris`, the free and open source [ecosystem application platform](/platform) built by Monax, and build your application from scratch. If you are new to building ecosystem applications, our [premium support and education packages](/packages) will help you get started quicker and provide a vital forum for your engineering team to get assistance from our experts. Finally, we offer a [logistics software development kit and add-on modules](/library/#logistics-sdk) which will provide the base smart contracts for your team to quickly and simply build your application.
+To build your supply chain **tag and track** system you can always leverage `monax`, the free and open source [ecosystem application platform](/platform) built by Monax, and build your application from scratch. If you are new to building ecosystem applications, our [premium support and education packages](/packages) will help you get started quicker and provide a vital forum for your engineering team to get assistance from our experts. Finally, we offer a [logistics software development kit and add-on modules](/library/#logistics-sdk) which will provide the base smart contracts for your team to quickly and simply build your application.
 
 ## Airlines
 
