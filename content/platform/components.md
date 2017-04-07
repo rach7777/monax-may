@@ -16,7 +16,7 @@ aliases:
 ## Introduction
 
 <div class="note">
-	<em>Note: As of 2017, our product has been renamed from Eris to Monax. The <code>monax</code> platform was previously referred on this page as <code>eris</code>.</em>
+    <em>Note: As of 2017, our product has been renamed to Monax. The references on this page have been recently changed.</em>
 </div>
 
 This page provides an overview of how Monax Industries' software is stacked
@@ -28,7 +28,7 @@ There are five key considerations for thinking about the mechanics of your chain
 ## Ecosystem Application Checklist
 
 <div class="note">
-	<em>Note: The commands in this chapter refer to an earlier version of the software prior to our name change from Eris to Monax (< 0.16). Later versions of the software (0.16 and onward) will replace the <code>eris</code> command with a <code>monax</code> command.</em>
+	<em>Note: Current and future versions of the software (0.16 and forward) have replaced the <code>eris</code> command with the <code>monax</code> command as shown below.</em>
 </div>
 
 ### Manage Your Keys
@@ -74,7 +74,7 @@ Next, we'll walk through one approach -- the one we consider most intuitive for 
 ## The Development Lifecycle
 
 <div class="note">
-	<em>Note: The commands in this chapter refer to an earlier version of the software prior to our name change from Eris to Monax (< 0.16). Later versions of the software (0.16 and onward) will replace the <code>eris</code> command with a <code>monax</code> command.</em>
+    <em>Note: Current and future versions of the software (0.16 and forward) have replaced the <code>eris</code> command with the <code>monax</code> command as shown below.</em>
 </div>
 
 ### Set Up Your Chain
