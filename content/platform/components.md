@@ -28,7 +28,7 @@ There are five key considerations for thinking about the mechanics of your chain
 ## Ecosystem Application Checklist
 
 <div class="note">
-	<em>Note: The commands in this chapter refer to an earlier version of the software prior to our name change from Eris to Monax (<= 0.16). Later versions of the software (=> 0.17) will replace the <code>eris</code> command with a <code>monax</code> command.</em>
+	<em>Note: The commands in this chapter refer to an earlier version of the software prior to our name change from Eris to Monax (< 0.16). Later versions of the software (0.16 and onward) will replace the <code>eris</code> command with a <code>monax</code> command.</em>
 </div>
 
 ### Manage Your Keys
@@ -74,7 +74,7 @@ Next, we'll walk through one approach -- the one we consider most intuitive for 
 ## The Development Lifecycle
 
 <div class="note">
-	<em>Note: The commands in this chapter refer to an earlier version of the software prior to our name change from Eris to Monax (<= 0.16). Later versions of the software (=> 0.17) will replace the <code>eris</code> command with a <code>monax</code> command.</em>
+	<em>Note: The commands in this chapter refer to an earlier version of the software prior to our name change from Eris to Monax (< 0.16). Later versions of the software (0.16 and onward) will replace the <code>eris</code> command with a <code>monax</code> command.</em>
 </div>
 
 ### Set Up Your Chain
