@@ -54,7 +54,7 @@ The CLI is a modular platform of numerous connected services and tools that simp
 
 ### Keys
 
-`monax keys` is the gateway to the common signing pipe that `monax` exposes. It exposes a range of developers to quickly get up to speed with prototyping their ecosystem applications. It also provides the reference API implementation for wallet-makers, and other, more advanced, signing solutions to satisfy in order to work seemlessly with the `monax` platform.
+`monax keys` is the gateway to the common signing pipe that `monax` exposes. It exposes a range of developers to quickly get up to speed with prototyping their ecosystem applications. It also provides the reference API implementation for wallet-makers, and other, more advanced, signing solutions to satisfy in order to work seamlessly with the `monax` platform.
 
 ### Files
 
