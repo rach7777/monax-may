@@ -21,14 +21,14 @@ menu:
 ## Introduction
 
 <div class="note">
-    <em>Note: As of 2017, our product has been renamed to Monax. The references on this page have been recently changed.</em>
+    <em>Note: As of 2017, our platform has been renamed to Monax. The references on this page have been recently changed.</em>
 </div>
 
-The Monax Application Platform is built from the ground up to provide a logical base for developers and devOps to build, test, and operate ecosystem applications. It is designed to support multiple blockchain nodes connected to multiple blockchain networks with different smart contract interpreters all seamlessly connected to other microservices necessary to build, test, and run the ecosystem application such as key management systems and distributed data lakes.
+Monax gives access to developers and DevOps who use [blockchains](/explainers/blockchains), [smart contracts](/explainers/smart_contracts), key management systems, and distributed data lakes to a core set of tools tackling big problems. Addressing issues of coordination and reconciliation across our increasingly interconnected organizations requires building applications that are meant to run on a the level of a business ecosystem rather than in any individual business alone These are what we call [ecosystem applications](/explainers/ecosystem_applications). Ecosystem applications are the next generation of process management tools and the Monax platform is the gateway to building sophisticated enterprise-grade ecosystem applications.
 
-Developers and devOps who use [blockchains](/explainers/blockchains), [smart contracts](/explainers/smart_contracts), key management systems, and distributed data lakes have access to a core set of tools tackling big problems. Tackling big problems of coordination and reconciliation across our increasingly interconnected organizations requires building applications that are meant to run on an ecosystem level. These are what we call [ecosystem applications](/explainers/ecosystem_applications). Ecosystem applications are the next generation of process management tools and the Monax platform is the gateway to building sophisticated enterprise-grade ecosystm applications.
+The Monax Application Platform is built from the ground up to provide a logical base for developers and DevOps to build, test, and operate ecosystem applications. It is designed to support multiple blockchain nodes connected to multiple blockchain networks with different smart contract interpreters, all seamlessly connected to other microservices necessary to build, test, and run the ecosystem application, such as key management systems and distributed data lakes.
 
-The CLI provides a logical and powerful toolkit for developers seeking a harmonized experience for connecting into multiple blockchains (whether for testing or due to client requirements).
+The Monax command-line interface, or Monax-CLI, is the primary tool we make for developers seeking a harmonized experience when seeking to deploy blockchains in their organisations.
 
 ## Overview of an Ecosystem Application
 
@@ -46,7 +46,7 @@ The CLI is a modular platform of numerous connected services and tools that simp
 
 ### Chains
 
-`monax chains` is the gateway to unlocking the power of permissionable, smart contract optimized blockchains -- of which our [monax:db](/platform/db) client is the industry leader. It exposes a range of options for developers to create, administer, and operate blockchains of various varieties.
+`monax chains` is the gateway to unlocking the power of permissionable, smart contract optimized blockchains -- of which our [Burrow](/platform/db) client is the industry leader. It exposes a range of options for developers to create, administer, and operate blockchains of various varieties.
 
 ### Packages
 

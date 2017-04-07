@@ -19,7 +19,7 @@ With Monax's Premium Support & Education Packages your ecosystem application bui
 ## Introduction
 
 <div class="note">
-    <em>Note: As of 2017, our product has been renamed to Monax. The references on this page have been recently changed.</em>
+    <em>Note: As of 2017, our platform has been renamed to Monax. The references on this page have been recently changed.</em>
 </div>
 
 At Monax, we strive to document our platform in the best manner we can and also to provide self-help tutorials which aid companies getting started with this technology.
@@ -45,7 +45,7 @@ Third, there are a range of operational considerations which come into play when
 | Subscription Length | Monthly | Monthly | Monthly |
 | Premium Support | Premium e-mail Support | Premium e-mail Support | Premium e-mail Support<br />Private Chat Support |
 | Learning Sessions | 1 seat per smart contract session<br />1 seat per platform session | 2 seats per smart contract session<br />2 seats per platform session | 1 bespoke smart contract session<br />1 bespoke platform session |
-| monax:db Permissioned Blockchain Network | FOSS only | 1x 4-node blockchain deployed to<br />Customer’s Azure or AWS Environment | 1x 7-node blockchain deployed to<br />Customer’s Azure or AWS Environment |
+| Burrow Permissioned Blockchain Network | FOSS only | 1x 4-node blockchain deployed to<br />Customer’s Azure or AWS Environment | 1x 7-node blockchain deployed to<br />Customer’s Azure or AWS Environment |
 | Qualified Customers | Businesses with less than 100 employees only | No restrictions | No restrictions |
 
 ## Product Specifics & FAQs
@@ -56,9 +56,9 @@ Learning sessions are a one hour online video conference where Monax’s develop
 
 Learning sessions are conducted for many buying organizations at the same time with a maximum capacity of 15 developer seats per session. Learning sessions for POC Enterprise packages are conducted only with the buying organization’s developers and have a maximum capacity of 10 developer seats per session.
 
-The monax:db permissioned blockchain included in POC Professional and POC Enterprise Packages is a multinode deployment of the FOSS monax:db that can be deployed into customer’s Azure or AWS environments. This can be accomplished in a variety of ways depending on your workflow and requirements. Once a POC Package is purchased, your account manager will be in touch with the options for deploying your monax:db permissioned blockchain to your development environment.
+The Burrow permissioned blockchain included in POC Professional and POC Enterprise Packages is a multinode deployment of the FOSS Burrow that can be deployed into customer’s Azure or AWS environments. This can be accomplished in a variety of ways depending on your workflow and requirements. Once a POC Package is purchased, your account manager will be in touch with the options for deploying your Burrow permissioned blockchain to your development environment.
 
-Monax does not provide an SLA on the monax:db permissioned blockchain being operational, however customers may utilize their support time for Monax’s developers to help them fix problems with their blockchain.
+Monax does not provide an SLA on the Burrow permissioned blockchain being operational, however customers may utilize their support time for Monax’s developers to help them fix problems with their blockchain.
 
 Monax cannot provide legal advice.
 
@@ -70,7 +70,7 @@ We will offer our premium support and education packages to the general develope
 <a href="/?monax_viewer_type=partner&product_interest=premium_support#contact-monax" class="btn btn-lg btn-primary">My Company's Clients are Interested in Premium Support <i class="fa fa-cubes"></i></a>
 <div>&nbsp;</div>
 
-After your order is processed, we will ask a few questions to verify that your company meets the qualification criteria (if necessary) for the package and then we will set up your premium support channel, register your developers for our learning sessions, and understand how you would like your monax:db Permissioned Blockchain Network provisioned.
+After your order is processed, we will ask a few questions to verify that your company meets the qualification criteria (if necessary) for the package and then we will set up your premium support channel, register your developers for our learning sessions, and understand how you would like your Burrow Permissioned Blockchain Network provisioned.
 
 ## What are the Use Cases for Ecosystem Applications?
 

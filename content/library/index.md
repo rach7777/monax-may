@@ -17,7 +17,7 @@ Monax's Software Development Kits enable the assembly and configuration of ecosy
 ```
 
 <div class="note">
-    <em>Note: As of 2017, our product has been renamed to Monax. The references on this page have been recently changed.</em>
+    <em>Note: As of 2017, our platform has been renamed to Monax. The references on this page have been recently changed.</em>
 </div>
 
 At Monax, our Software Development Kits are our core product offering.

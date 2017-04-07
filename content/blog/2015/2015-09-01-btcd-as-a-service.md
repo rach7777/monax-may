@@ -43,7 +43,7 @@ Since btcd doesn't use a start script we'll save that for another day (Ethan and
 
 ### If a Service Starts With Config Files What Do I Do?
 
-The asker of the original question is right, the `btcd` container starts with a config file instead of via the other major "Docker way" which is a bunch of environment variables passed into a semi-intelligent start script which preconfigures and then runs a binary (for an example of this see Ethan's [eris chain manager scripts](https://github.com/monax/eris-db/tree/master/DOCKER) which we use for `eris chains`). `btcd` uses a config file.
+The asker of the original question is right, the `btcd` container starts with a config file instead of via the other major "Docker way" which is a bunch of environment variables passed into a semi-intelligent start script which preconfigures and then runs a binary (for an example of this see Ethan's [eris chain manager scripts](https://github.com/monax/burrow/tree/master/DOCKER) which we use for `eris chains`). `btcd` uses a config file.
 
 This is where having an understanding of how `eris` manages data containers becomes important.
 
