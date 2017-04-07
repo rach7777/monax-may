@@ -33,7 +33,7 @@ The CLI provides a logical and powerful toolkit for developers seeking a harmoni
 
 ## Overview of an Ecosystem Application
 
-{{< lucidchart "0d616eb8-72ae-4216-b901-6915c3ff33b8" >}}
+{{< image src="/images/docs/overview-of-an-ecosystem-application.jpg" >}}
 
 The above diagram provides a high level overview of the different pieces of an ecosystem application. The green boxes are part of the Monax technology stack while purple represents external services managed by the CLI.
 
