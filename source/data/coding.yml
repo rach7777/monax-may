@@ -24,21 +24,21 @@ cli:
 
 brew: |-
   brew cask install virtualbox
-  brew install eris docker docker-machine
+  brew install monax docker docker-machine
 
 brew_dev: |-
   brew cask install virtualbox
-  brew install --devel eris docker docker-machine virtualbox
+  brew install --devel monax docker docker-machine virtualbox
 
 choco: |-
-  choco install eris docker docker-machine virtualbox
+  choco install monax docker docker-machine virtualbox
 
 yum: |-
-  sudo su -c "curl -L https://yum.monax.io/yum/eris.repo > \
-    /etc/yum.repos.d/eris.repo"
-  yum install -y eris-cli
+  sudo su -c "curl -L https://yum.monax.io/yum/monax.repo > \
+    /etc/yum.repos.d/monax.repo"
+  yum install -y monax
 
 apt: |-
   sudo add-apt-repository https://apt.monax.io
   curl -L https://apt.monax.io/APT-GPG-KEY | sudo apt-key add -
-  sudo apt-get update && sudo apt-get install -y eris
+  sudo apt-get update && sudo apt-get install -y monax
