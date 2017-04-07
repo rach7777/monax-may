@@ -16,7 +16,7 @@ aliases:
 ## Introduction
 
 <div class="note">
-    <em>Note: As of 2017, our product has been renamed to Monax. The references on this page have been recently changed.</em>
+    <em>Note: As of 2017, our platform has been renamed to Monax. The references on this page have been recently changed.</em>
 </div>
 
 This page provides an overview of how Monax Industries' software is stacked
@@ -65,7 +65,7 @@ A handful of applications are already built for you. Some of these services are 
 
 Deploy to the cloud. Our [advanced cloud tutorial](/docs/chain-deploying) provides more information on this process. We'll be adding cloud service integrations in the coming months (e.g. k8s)
 
-Voila! Your app is ready for users. Of course, you'll want to build a user interface, likely at the javascript layer. To simplify that process, we have three javasript libraries: [monax:db.js](https://github.com/monax/legacy-db.js/blob/master/README.md),  [monax:contracts.js](https://github.com/monax/legacy-contracts.js/blob/master/README.md), and [monax:keys.js](https://github.com/monax/legacy-keys.js/blob/master/README.md)
+Voila! Your app is ready for users. Of course, you'll want to build a user interface, likely at the javascript layer. To simplify that process, we have three javasript libraries: [legacy-db.js](https://github.com/monax/legacy-db.js/blob/master/README.md),  [monax:contracts.js](https://github.com/monax/legacy-contracts.js/blob/master/README.md), and [monax:keys.js](https://github.com/monax/legacy-keys.js/blob/master/README.md)
 
 That is a lot of components. So where should you even start?
 
@@ -94,7 +94,7 @@ Once >2/3 of the validator pool joins the network, the chain will begin validati
 
 If the chain drops below 2/3 the total "stake" that has been bonded, it will halt. If the more than 2/3 of the bonded stake cannot come to a consensus, it will halt.
 
-The status and health of a chain can be monitored through either `monax:db`'s rpc port. The chains command for `monax:cli` is designed to handle all operations for one or more chains. With your chain running, you can [send transactions](https://github.com/monax/cli/tree/master/tests/jobs_fixtures/app00-basic_functionality_jobs) and deploy contracts using `monax pkgs`, or our javascript libraries.
+The status and health of a chain can be monitored through either `burrow`'s rpc port. The chains command for `monax:cli` is designed to handle all operations for one or more chains. With your chain running, you can [send transactions](https://github.com/monax/cli/tree/master/tests/jobs_fixtures/app00-basic_functionality_jobs) and deploy contracts using `monax pkgs`, or our javascript libraries.
 
 More info: [chain deploying](/docs/chain-deploying); [contracts interacting](/docs/getting-started/#step-4-integrate-your-ecosystem-application).
 
@@ -110,7 +110,7 @@ After the transaction is crafted, the ABI provides the formating information nec
 
 This process of: solidity -> monax:compilers (contract compile) -> monax:abi (transaction formulation) -> monax:keys (sign) -> deploy is wholly abstracted away by the `monax:package_manager`; see the [contract deploying tutorial](/docs/getting-started/#step-4-integrate-your-ecosystem-application) for more info. In essence, you write a contract, specify a few parameters in a `.yaml` file then vrooom `monax pkgs do`.
 
-So a transaction hits the chain, then what? Roughly, the transaction will be proposed and the validators will vote on whether or not to accept it in the next block. Voting happens in a round robin manner. The Tendermint consensus engine is its own module which talks to the `monax:db` application runtime over the  [tendermint socket protocol (tmsp)](http://tendermint.com/posts/tendermint-socket-protocol/).
+So a transaction hits the chain, then what? Roughly, the transaction will be proposed and the validators will vote on whether or not to accept it in the next block. Voting happens in a round robin manner. The Tendermint consensus engine is its own module which talks to the `burrow` application runtime over the  [tendermint socket protocol (tmsp)](http://tendermint.com/posts/tendermint-socket-protocol/).
 
 We are working on making experimentation with other consensus engines simpler. Our roadmap is tending toward being able to offer a sort of plug-and-play system with different application runtimes and consensus engines packaged, configured, and connected in a user friendly manner.
 
