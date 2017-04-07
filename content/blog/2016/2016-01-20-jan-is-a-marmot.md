@@ -32,6 +32,6 @@ The final wrinkle here is that in the Spring of 2015 we were pretty much the onl
 
 This is why, in context, what Jan said to me over a few whiskeys that night has stuck with me. Jan has made a career out of developing solutions for financial services companies. He is coming to Monax with almost two decades of experience developing reusable, modular business process automation solutions for enterprises. Which makes him, well, a perfect fit for his new role as Monax Industries' Head of Product, given how we view smart contract technology as business process improvement software which cuts across stakeholders.
 
-In his capacity as Head of Product Jan will be leading our [growing](https://monax.io/about/jobs/) Libraries Team which is responsible for building our libraries of business logic which are linked to various blockchain backends.
+In his capacity as Head of Product Jan will be leading our [growing](/about/jobs/) Libraries Team which is responsible for building our libraries of business logic which are linked to various blockchain backends.
 
 We look forward to great things from Jan and you should too! Give him a shout [on Twitter](https://twitter.com/jhscheufen), and if you're in New York feel free to buy him a coffee and let us know how we can best help your organization get up to speed with the next generation of data and process management infrastructure.

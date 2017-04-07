@@ -31,7 +31,7 @@ Work remote. Work from where you wanna work. It's the dream of the distributed w
 
 But how to reconcile these strands? How to make the work from where you wanna work... well. work.
 
-# The Problem
+## The Problem
 
 At eris we run a distributed company. When we were at five FTE we were situated in the following countries: the Netherlands, Sweden, United Kingdom (our HQ), and Canada (during this time we also had contractors in South Africa and the US/Argentina -- depending on the week). We are now at nine FTE and we are currently situated in the following countries: the Netherlands, the United Kingdom (our HQ), Germany, Canada, the United States (we also have contractors in the US and Russia). For various reasons, this posture and positioning, geographically makes sense for our business.
 
@@ -39,7 +39,7 @@ What doesn't make sense, though, is the amount of work that this puts on us. In 
 
 Essentially, the problem I'm using as the base for the remainder of this think piece is: `how can "we" reduce costs of payroll and payroll compliance using smart contract and blockchain technology?`
 
-# The Base Theory
+## The Base Theory
 
 The first step in leveraging this tech towards a a better way of managing a small business's data driven relationships is to [identify the UI of Income Tax](https://medium.com/design-matters-4/the-ui-of-income-tax-e4a28691451#.85296q7b3) (by Eris advisor Dave Galbraith). What Dave did in that article is he mapped out what the major cost buckets for deductions were in any country. This would be fantastic information which would be easily consumable in cryptographical signatures+ledgers lands and would be one necessary element to build a true ecosystem.
 
@@ -53,7 +53,7 @@ And let's be honest. If it's tax there are gonna be edge cases.
 
 And let's be honest. If my "bank" was an actual platform for my financial services needs which I could plug into with verifiable data and be able to let my data managing robots send payment instructions on my behalf, that might actually make for an interesting world.
 
-# Diving Deeper
+## Diving Deeper
 
 
 

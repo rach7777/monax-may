@@ -17,7 +17,7 @@ One of the key aspects of blockchains (one of the corner stone tools for buildin
 
 These **tag and track** use cases are a primary foundational use case for building ecosystem applications, and it is why we have built our [logistics software development kit](/library/#logistics-sdk) to assist application builders.
 
-# Supply Chain
+## Supply Chain
 
 From corporate social responsibility to high value goods to critical manufacturing components, a number of areas can successfully leverage **tag and track** use cases to ensure the authenticity of physical goods across a range of value chain participants. Supply chain ecosystem smart contracts give a previously unattainable window on on the integrated physical, financial and regulatory supply chain, enabling simplification and efficiency in global trade processes that were historically complex and opaque. 
 
@@ -37,7 +37,7 @@ Any company which participates in a value chain that contains sufficiently compl
 
 To build your supply chain **tag and track** system you can always leverage `eris`, the free and open source [ecosystem application platform](/platform) built by Monax, and build your application from scratch. If you are new to building ecosystem applications, our [premium support and education packages](/packages) will help you get started quicker and provide a vital forum for your engineering team to get assistance from our experts. Finally, we offer a [logistics software development kit and add-on modules](/library/#logistics-sdk) which will provide the base smart contracts for your team to quickly and simply build your application.
 
-# Airlines
+## Airlines
 
 Airlines are a fascinating vertical with many, many moving pieces (sorry for the pun). Airline companies exist within a range of value chains which require high levels (and costs) of coordination with many other entities from regulatory agencies across every jurisdiction in which the company operates (typically hundreds) to airports and baggage handling companies to ticketing companies and a range of other value chains, airlines may be some of the most connected companies in the globalized information age economy. One glitch in the supply chain cause a "daisy chain" effect of delays. As such, it seems evident that airlines can gain significantly from participating in ecosystem applications.
 
@@ -51,7 +51,7 @@ Yet another interesting use case for leveraging ecosystem application technology
 
 If you are an airline or airport seeking to extend your knowledge of and use of ecosystem application technology, do <a href="/?monax_viewer_type=end_user&product_interest=premium_support#contact-monax"> get in touch</a> as we would love to work with your company to become one of the knowledge leaders within your industry about this transformative technology.
 
-# Shipping
+## Shipping
 
 Shipping companies, like airlines, operate in an environment rife with coordination costs. Shipping companies have a large range of value chains in which they participate. Often they are a vital conduit for an overall value chain in that they are the common transportation link between a producer and a wholesaler/importer/retailer. Not only do shipping companies provide a vital link in many value chains, but the companies themselves also have a number of value chains in which they participate in more directly.
 
@@ -60,3 +60,6 @@ Similar to airlines, shipping companies have a high need for authenticity as to 
 Shipping companies could improve in-port processes by working with their customers and customs agents in highly trafficked ports to streamline the provision of the necessary documents and information about containers being imported into a particular country. Many early explorations of ecosystem applications have focused on the very large and complex trade finance market. Should the use of ecosystem applications become the standard mechanism for dealing with trade finance issues, shipping companies will be an integral component to that value chain as they will be required to work with importing customs agents and numerous other actors within the value chain to ensure that goods are delivered and paid as noted by the terms of the finance deal which enables the import process.
 
 If your company is in the shipping industry and would like to understand how to more effectively leverage ecosystem application technology, we'd love to help. Simply <a href="/?monax_viewer_type=end_user&product_interest=premium_support#contact-monax">send us a note</a> and we'll be glad to help you get up to speed quickly.
+
+
+## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Use Cases](/use_cases/)

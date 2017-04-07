@@ -20,8 +20,6 @@ title: Why We Built Thelonious
 url: /2014/12/17/why-thelonious/
 ---
 
-**Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
-
 Thelonious began as a fork of the [go-ethereum](hittps://github.com/ethereum/go-ethereum) client that seeks to be the dragon eating its own tail. That is, the intention of Thelonious is to move the protocol level logic of a blockchain into the blockchain's virtual machine itself. In all modern blockchains, the rules of the protocol are defined in the client source code, which is then used to manipulate a database. But in Thelonious, the rules of the protocol are defined in the genesis block, in a special contract called GenDoug, which is, if you will, the kernel of our distributed operating system. The end goal of our Thelonious project is a blockchain client which is **purely a p2p network library and a virtual machine**.
 
 There are a number of reasons we might want to do this.

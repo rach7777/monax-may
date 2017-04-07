@@ -111,11 +111,11 @@ params:
       icon: lightbulb-o
     -
       title: code
-      url: https://github.com/eris-ltd
+      url: https://github.com/monax
       icon: github
     -
       title: discuss
-      url: https://slack.eris.industries
+      url: https://slack.monax.io
       icon: slack
     -
       title: contact

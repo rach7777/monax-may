@@ -20,6 +20,10 @@ meta:      true
 
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 [{{< image_blog "new_products.jpg" >}}](https://www.flickr.com/photos/pedrosimoes7/22907730574/)
 
 Monax was the first company to market with a permissionable blockchain in December, 2014, and since that time we have been industry leaders in the [industrial applications of ecosystem application](/use_cases) technology. Since that time we have focused on improving the design and implementation of our ecosystem application [platform](/platform) as well as building sustainable product suite that would be capable of growing over time and also meeting the demands of a complex, fast-moving market.
@@ -28,7 +32,7 @@ It is with great pleasure that today we are able to announce our first two produ
 
 Both of these product offerings are built with the same set of needs in mind. Primarily, that while interest in leveraging ecosystem application technology is extremely high, the skills to actually build ecosystem applications are rare.
 
-## Premium Support and Education Packages
+### Premium Support and Education Packages
 
 In our extensive conversations with hundreds of market participants, developers, and implementors of [ecosystem applications](/explainers/ecosystem_applications) it has become clear that what is currently lacking in the market is the understanding of how to build these applications. While we have worked very hard to reduce the cognitive load for building ecosystem applications on our `eris` ecosystem application platform, it is inevitable that even experienced developers will be forced to wrestle the dragons of building ecosystem applications. These applications are newer technology than existing application paradigms and as such there is an increased complexity around how to build.
 
@@ -36,7 +40,7 @@ It is with this in mind that we have built our [premium support and education pa
 
 Also included in two of the three tiers of the packages are the ability for our operations team to deploy a blockchain into your cloud environment so that you do not have to worry about the complexity of deploying a [permissioned blockchain](/explainers/permissioned_blockchains). Instead of hassling with the edge cases of deploying a blockchain, let our experts help you deploy and maintain the chain and let your development team focus on driving business value.
 
-## Industry-Specific Software Development Kits
+### Industry-Specific Software Development Kits
 
 The other big need within the market that we have found is the requirements to be able to build **legally compliant** smart contract applications. When one is talking about incumbent use of ecosystem application technology there is no room to be in non-compliance. While it is all well and good for many other companies to not worry about the legal implications of blockchain and smart contract technology, at Monax, we put legal compliance at the forefront of our thinking, our design, and our implementation.
 
@@ -46,11 +50,11 @@ At this time our SDKs are pure smart contract systems. In the future we will als
 
 In addition, with respect to many high-value [use cases](/use_cases) that require Monax's legal engineering talent to design systems which can lower compliance costs rather than having to worry about being in compliance at all, we offer modules that can provide almost an entire application (depending on your use case).
 
-## How to Use
+### How to Use
 
 Typically premium support and education packages along with our SDKs would go together like peanut butter & jelly. We encourage our customers to look at subscribing to a combination of both product lines gives them maximum leverage to build their ecosystem application with the industry leading company in the enterprise uses of ecosystem application technology.
 
-## How to Purchase
+### How to Purchase
 
 We will offer our SDKs to the general developer community in 2017 but at this time they are fully available via the Monax partnership network. If you would like to leverage Monax's cutting edge, legally compliant, software development kits to empower your ecosystem application please let your technology provider know, or get in touch with us via our <a href="/#contact-monax">contact form</a> and our account managers will be in touch regarding pricing details.
 

@@ -19,6 +19,10 @@ url: /2015/11/01/eris-and-ipfs/
 
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 By changing the way different parties cooperate, smart contracts radically improve how complex processes are run. This new paradigm will have wide-reaching effects in many areas.
 
 When we envision the smart contract stack of the future, some of the components involve radically new paradigms in their own right. The best example of this is the peer-to-peer distributed InterPlanetary File System (IPFS). At once a simple protocol for how to name, host and transfer files in a distributed manner, it also offers an audacious vision of what the fabric of the internet should look like in the future.

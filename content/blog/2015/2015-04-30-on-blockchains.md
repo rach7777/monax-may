@@ -29,7 +29,7 @@ So let's cut to the chase. Blockchain-like datastructures innovate in at least t
 
 The introduction of these three emphases simultaneously in a single package in early 2009 in the form of Bitcoin was undoubtedly a historic event. Most discussions tend to revolve almost entirely around `(1)`. But there's more happening here. Let's unravel them a bit, beginning with `(2)`.
 
-## Emphasizing Distinct, Public Administrative Domains Within a Single Database
+### Emphasizing Distinct, Public Administrative Domains Within a Single Database
 
 On the surface, `(2)` is nothing special. Pieces of the idea have been around for decades in the form of PGP and software checksums. But the tooling is notoriously difficult to use and there is little motivating the uptake and development of the tools other than the committment of the [cypher punks](https://en.wikipedia.org/wiki/Cypherpunk) on the one hand, and the [spooks](https://www.nsa.gov/) on the other.
 
@@ -37,17 +37,17 @@ The way a blockchain uses these primitives to divide the state into explicit adm
 
 If blockchains do anything, they introduce a re-tooling of the basic crypto primitives and motivate a whole new flurry of research into their analyses, implementations, and further application. This is a welcome breath of fresh air. If we end up dropping `(1)` and `(3)` but manage to make the global professional culture more cryptographically competent then the human species has gained tremendously; hallelujah.
 
-## Emphasizing Formalized Protocols Built on TCP/IP for Enhanced `p2p` Support
+### Emphasizing Formalized Protocols Built on TCP/IP for Enhanced `p2p` Support
 
 Onto `(3)`. Work on this goal has been underway for much shorter time than `(2)`, though it has seen particularly explosive interest in the last few years, with a flurry of new protocols and tools for distributed computing. While `(3)` has traditionally enabled decentralized storage and retrieval, most protocols built to address this goal have been unable to maintain a decentralized index of the data it makes available -- hence the trouble with the Pirate Bay. The problem is solved almost trivially by `(1)`, and becomes enormously more mature with the further addition of `(2)`.
 
-If you don't know what I mean, you should **consider the way Monax built [2gather](https://github.com/eris-ltd/2gather), a distributed video sharing application we're not allowed to call YouTube.**
+If you don't know what I mean, you should **consider the way Monax built [2gather](https://github.com/monax/2gather), a distributed video sharing application we're not allowed to call YouTube.**
 
-Content is hosted on [IPFS](http://ipfs.io/) (a *much* better bittorrent) and references to the content (hashes) are stored in and managed by contracts on a [eris:db blockchain](https://monax.io/platform/db), with user accounts secured by their private key. Since the blockchain is shared state, anyone can see those references, and with the right tooling and design, can understand that they refer to such-and-such a video. A similar application would give you a decentralized Pirate Bay.
+Content is hosted on [IPFS](http://ipfs.io/) (a *much* better bittorrent) and references to the content (hashes) are stored in and managed by contracts on a [eris:db blockchain](/platform/db), with user accounts secured by their private key. Since the blockchain is shared state, anyone can see those references, and with the right tooling and design, can understand that they refer to such-and-such a video. A similar application would give you a decentralized Pirate Bay.
 
 Now, to the credit of IPFS, it's actually remarkable how much you can do without even using a blockchain, if you beef up on `(2)` a bit. In other words, you use public keys as indices to the data published by the owners of the keys (they call it IPNS). So you can do decentralized blogging and content curation sites, and even host a personal Pirate Bay. But while the network co-operates for storage and retrieval according to a file blob's checksum hash and/or the uploader's public key, it does not co-operate to process a sequence of transactions, and has no conception of a shared state machine. This is of course the meat and potatoes of `(1)`.
 
-## Emphasizing a Fork Choice Rule
+### Emphasizing a Fork Choice Rule
 
 `(1)` has a long and troubled history that dates back to an obscure form of [ancient Greek parliamentary decisionmaking](http://research.microsoft.com/en-us/um/people/lamport/pubs/lamport-paxos.pdf) that, after being reconceputialized in the late eighties by [Leslie Lamport](http://research.microsoft.com/en-us/um/people/lamport/pubs/pubs.html), would go on to become the foundational consensus algorithm for distributed databases in industry - namely, [Paxos](https://en.wikipedia.org/wiki/Paxos_%28computer_science%29). The problem with Paxos is it grew out of a tradition that built algorithms for consensus that begin by trying to get consensus on a single bit.
 
@@ -61,7 +61,7 @@ Satoshi's brilliant insight was that he could turn the fork choice rule into a s
 
 Furthermore, the expenditure is motivated by a reward, in the form of both inflation and transaction fees. Presumably, if it wasn't, it wouldn't be done. Or perhaps it would be, but not nearly at the scale at which mining occurs today.
 
-## Blockchains Without Valuable Tokens
+### Blockchains Without Valuable Tokens
 
 So the point is really this: Satoshi introduced two distinct innovations to consensus science in 2009 (the two halves of `(1)`)): a leaderless election via blocks and fork choice rules on the one hand (ie. a blockchain), and an economic solution to the consensus problem on the other.
 

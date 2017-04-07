@@ -18,7 +18,7 @@ title: Why The 'Crypto Will Save Africa' Line Irks Me
 url: /2015/03/17/btc-and-smbs/
 ---
 
-### Bitcoin and Emerging Markets
+#### Bitcoin and Emerging Markets
 
 If you've been around the cryptocurrency space for a hot minute, you'll have heard it. Bitcoin is the solution to the problem of the unbanked.
 
@@ -28,7 +28,7 @@ I was speaking with someone the other day and I let slip my skepticism about thi
 
 *Do I think that Bitcoin can assist with the unbanked problem?* I see potential here. But also remain skeptical, a skepticism borne of my own experiences and my own perception of the world.
 
-### Hawala Networks: Some Background
+#### Hawala Networks: Some Background
 
 Hawala networks have been established over years and (sometimes) decades by leveraging established, and often complex, filial, tribal, class, and other identity mechanisms. These mechanisms were what allowed the early Hawala operators to gain sufficient trust of a sufficient constituency of displaced folks to make it worth their while to take the risk of flying bundles of cash between places (often where security was not a foregone conclusion). As the market for Hawala services has consolidated, these old ties, forged over years of movement and friendships and kinships still exist; and in many places they thrive. Hawala agents in locations where diaspora live are often quasi-community centers which assist in maintaining the vibrancy of many of these relationships. These ties provide a value add to the overall service which the Hawala network provides to its users.
 
@@ -44,7 +44,7 @@ Again, bitcoin and cryptocurrency may have a positive role to play within this s
 2. why would mass adoption of bitcoin in the developing world be a good thing (for users; for bitcoin); and
 3. what can be done **now** to positively contribute toward laying the foundations that iterate toward that tipping point.
 
-### The Unbanked Problem: Look Closer
+#### The Unbanked Problem: Look Closer
 
 The unbanked problem? It's a problem indeed. But it is a big, complex problem which will only find a solution via a [harmonized effort](http://oxfamblogs.org/fp2p/what-questions-help-us-understand-how-change-happens/) across numerous verticals and horizontals -- of which technology (meaning, in this context, fintech generally, and bitcoin more specifically) are only one piece. Holistic societal change happens, but most often requires significant coordination and synergy across numerous sectors of society, business, and government.
 
@@ -56,7 +56,7 @@ As a community, I would posit that the blockchain and smart contract technology 
 
 Again, while I do believe there is some potential here, I have seen many technologies come and go which were theoretically better and theoretically solved problems (sometimes in quite elegant ways) and were never adopted by even geeky development workers, much less not technically savvy beneficiaries.
 
-### So Should We Not Bother?
+#### So Should We Not Bother?
 
 Hell no. I bothered. I still bother. You should too. But **only** if you're genuinely interested in putting in the work necessary to help folks find solutions to problems they actually have. If that's you, here's what I would highly recommend.
 
@@ -66,7 +66,7 @@ Step 2. Talk to Folks; Learn Their Problems; Understand Their Constraints.
 
 Step 3. Talk About Solutions.
 
-### What's One Problem You've Seen?
+#### What's One Problem You've Seen?
 
 Personally, and this is only one human's idea, I would recommend folks within the blockchain technology space take a serious look at how they can assist crafting solutions which small businesses in developing countries face. And there are many.
 
@@ -90,7 +90,7 @@ On the other hand, many business problems are simply business problems. Practici
 
 `Bottom line`: for those with the blockchain technology sector who are looking to "help" but who are not professionals, I would encourage them to look at this sector first. Perhaps smart contract and/or blockchain technology could assist.
 
-### This is Exactly What We're Trying To Assist Folks to Build
+#### This is Exactly What We're Trying To Assist Folks to Build
 
 Depending on the problem one was trying to solve, there is a strong potential that one would use some sort of a token which represents an asset that was callable against a particular bank and/or the world along with some escrow and/or letter of credit function (if one was, say, trying to ease intra-african trade restrictions between consenting corporations). If the deal value of what you were trying to make easier was below a certain threshold, you could probably use some of the functionality of a fully open, heavy, big bad public blockchain; yet on the other side of such a threshold it would be foolhardy to rely upon a BBPB.
 

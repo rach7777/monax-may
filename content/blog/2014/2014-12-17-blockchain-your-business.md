@@ -17,7 +17,9 @@ title: Blockchain your business in just 7 steps
 url: /2014/12/17/blockchain-your-business/
 ---
 
-**Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
 
 Can your business "go blockchain"? You bet it can. Just follow these seven easy steps, distilled from the Eris Industries  distributed systems cookbook, and you're rolling:
 
@@ -29,7 +31,7 @@ Can your business "go blockchain"? You bet it can. Just follow these seven easy 
 6. Join the open-source movement and save the world (and your business).
 7. Dive on in. The water's great!
 
-<h1>Step 1: (Re)Assess the landscape.</h1>
+<h2>Step 1: (Re)Assess the landscape.</h2>
 
 Let's speak frankly. I can see why the cryptocurrency/blockchain space can be hard for enterprise, the public sector and the non-profit sector to come to grips with.
 
@@ -161,7 +163,7 @@ And from our side of things, we promise that we'll keep working to make Eris bet
 
 <h1>Step 7: Dive on in. The water's great!</h1>
 
-The good news is, the Eris Industries platform is open-source, so your people can hop into our [GitHub Repo](https://github.com/eris-ltd), fork, commit, and contribute with others to their heart's content.
+The good news is, the Eris Industries platform is open-source, so your people can hop into our [GitHub Repo](https://github.com/monax), fork, commit, and contribute with others to their heart's content.
 
 Eris Industries isn't a dev shop. We can, however, can make ourselves available to get you started and to offer our support.
 

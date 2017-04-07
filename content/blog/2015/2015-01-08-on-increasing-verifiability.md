@@ -31,7 +31,7 @@ This is crucially important for many businesses in emerging economies as well as
 
 While many businesses may not have an interest in increasing the verifiability of many aspects of their businesses, many others do. And investors in those businesses built in emerging economies, which are often (but not exclusively) diaspora or groups of diaspora *need* to have increased verifiability as to what is happening with their investments.
 
-### Increasing Verifiability with SaaS Based Solutions
+#### Increasing Verifiability with SaaS Based Solutions
 
 The current answer for how to increase verifiability of business information for many small business in many economies is to use a software as a service (SaaS) solution. This is usually a webapp built by a company which is providing services to another company; this is *part* of what people mean when they say "the cloud". This makes sense for many business, and for investors, and is certainly a [positive and important step](http://tekfin.com/2012/05/24/equity-pressure-and-alternative-funding-solutions/) toward increasing verifiability of the business.
 
@@ -54,7 +54,7 @@ Each of the companies providing this SaaS solution system is responsible for the
 
 The result here is a drastic increase in verifiability over a paper based system for the business owners (who no longer need to be in the office at the same time as the bookkeepers to verify all the things) as well as for the funders. The funders are able to verify that receipts from both the accounts receivable (Vend based SaaS system) and accounts payable (Xpenditure based SaaS system) sections result in the profit loss which is calculated by the accounting system (Xero based SaaS system) and then they can see that their repayments are definitely on point by comparing the amount they were transmitted against the sales figures (since that was the agreement that was posited in the hypothetical). This is, undoubtedly, a better solution than currently exists in vast numbers of small businesses all around the world.
 
-### Taking Stock
+#### Taking Stock
 
 Let's take a look at what we have so far.
 
@@ -66,7 +66,7 @@ We have an increase in **verifiability** for the data-driven (financial) interac
 
 Not quite. It benefits from this SaaS based system for sure. But is this structure resilient? Is it flexible? Is it self managing? Can it adapt?
 
-### The Challenges of the SaaS Approach
+#### The Challenges of the SaaS Approach
 
 So we have briefly covered the structure and benefits of using a SaaS solution of a fictional business which has distributed funders. Let's look at some of the challenges that system presents.
 
@@ -76,7 +76,7 @@ So we have briefly covered the structure and benefits of using a SaaS solution o
 
 This is a challenge for businesses, especially small businesses, and I think it is unnecessary. If a software company wants to provide *data utility* services to its customers (which, really, is what most SaaS is about), that is great, but I query whether SaaS providers need to *hold* the data.
 
-### Is There Alternative Architecture?
+#### Is There Alternative Architecture?
 
 One possible alternative to the SaaS + API system described above which is slowly developing, is **participatory architecture** (disclosure, I made this term up out of thin air, mostly because it makes sense to me). One of the tenets of participatory architecture is to try to separate out the layers of data-driven interactions namely:
 
@@ -94,7 +94,7 @@ With a SaaS based solution, what happens is that the entire data set of an organ
 
 There are two things which I am struck by when thinking about this system from an organization's perspective (which, as a consumer of SaaS services for a long time I have done lots of). The first thing is the amount of redundancy in this system. Each of those service providers syncs its data with another service via the data transmission. This creates numerous redundant data sets. This may be a good thing; but it may not be. Secondly, there is a challenge of dealing with bad data points which get into the system and how the various syncing services handle changes to the data set and propagation of those changes across the whole of the data set. This second problem is likely a minor nuisance, but I have experienced it multiple times when dealing with such API driven systems.
 
-Now, let's look at **one way of many** ways in which a participatory architecture system could be used to redesign the above paradigm. In participatory architecture the emphasis is more on mastering the horizontal partitions of a data-driven interaction -- the rows in the diagram above. Service providers then are able to specialize in providing, say, transmission from sensor systems back to a [Decerver](https://monax.io/platform/db) -- or any receiver of data built on participatory architecture design principles. Specialists in structuring data storage are empowered to work on the best way to store data and the more arbitrary the better. Obviously, the same would apply through the other parts of the stack. The arrangement could look something like this:
+Now, let's look at **one way of many** ways in which a participatory architecture system could be used to redesign the above paradigm. In participatory architecture the emphasis is more on mastering the horizontal partitions of a data-driven interaction -- the rows in the diagram above. Service providers then are able to specialize in providing, say, transmission from sensor systems back to a [Decerver](/platform/db) -- or any receiver of data built on participatory architecture design principles. Specialists in structuring data storage are empowered to work on the best way to store data and the more arbitrary the better. Obviously, the same would apply through the other parts of the stack. The arrangement could look something like this:
 
 {{< image_blog "pa-structure.png" >}}
 
@@ -114,7 +114,7 @@ And the privacy issue is a norm that, while I only briefly discussed before, is 
 
 There may be more (or some of these may not apply -- this is, afterall, a think piece).
 
-### What Role Smart Contracts Can Play in Increasing Verifiability
+#### What Role Smart Contracts Can Play in Increasing Verifiability
 
 There are two roles which smart contracts can play here.
 
@@ -136,6 +136,6 @@ Together, this dynamic nature (and its resultant adaptability) along with the ab
 
 How, exactly, to get to a point where we can move beyond such theories as these, is still a work in progress.
 
-### Concluding Thoughts
+#### Concluding Thoughts
 
 This is mostly a think piece, I do not mean to imply that this is the only way to get from A to Z, but I wanted to explain a bit more about how smart contract based systems could assist in further increasing verifiability for small business. I'd welcome your input as to where you see increases in verifiability for small business which I may not have included in this narrative. What did I miss? What did I get wrong? Please do let me know.

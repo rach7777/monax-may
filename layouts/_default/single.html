@@ -1,6 +1,6 @@
 {{- $listOnlyNoContentPage := in .File.Path "documentation/index.md" | or (in .File.Path "tutorials/index.md") | or (in .File.Path "explainers/index.md") -}}
 {{- $documentationPage := in .File.Path "documentation" -}}
-{{- $tutorialsPage := in .File.Path "tutorials" -}}
+{{- $tutorialsPage := in .File.Path "docs" -}}
 {{- $explainersPage := in .File.Path "explainers" -}}
 {{- $platformPage := in .File.Path "platform" -}}
 {{- $libraryPage := in .File.Path "library" -}}
@@ -35,7 +35,13 @@
       </div>
     </aside>
     <article id="main-content">
-      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-4" id="content-block">
+      <aside class="topbar col-xs-12 col-sm-12 hidden-md hidden-lg">
+        <div id="topbar" class="nav-collapse">
+          {{ partial "docs/sidebar.html" . }}
+          <hr />
+        </div>
+      </aside>
+      <div class="col-xs-12 col-sm-12 col-md-10 col-lg-6" id="content-block">
         {{ .Content }}
         <!-- <h4><a class="edit-me" href="https://github.com/{{ .Site.Data.sites.github_user }}/monax.io/tree/master/content/{{ .File.Path }}">Edit this page</a></h4> -->
       </div><!-- .cols -->

@@ -20,7 +20,7 @@ url: /2016/06/18/fact-patterns-DAO-legal-engineering/
 {{< image_blog "crystal-ball.jpg" >}}
 
 
-# Fact Patterns, Predictions and Building Decentralized Organizations
+## Fact Patterns, Predictions and Building Decentralized Organizations
 
 Yesterday was a noisy one in the smart contracts world. The ambitious early Ethereum project, The DAO, blew up overnight as token holders found their accounts drained by a hacker. The DAO was the first large, for profit, decentralized autonomous organization deployed on Ethereum’s public blockchain, attracting more than $150 million worth of ether investment in its crowdsale.
 

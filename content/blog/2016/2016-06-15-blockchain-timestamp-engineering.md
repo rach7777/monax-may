@@ -18,7 +18,7 @@ url: /2016/06/15/blockchain-timestamp-engineering/
 
 {{< image_blog "Louisville_Kentucky_1861_cover+3c.jpg" >}}
 
-# Blockchain, Timestamps and the Art of Legal Engineering
+## Blockchain, Timestamps and the Art of Legal Engineering
 
 One of the core functions of blockchain technology is the ability to timestamp every transaction, that is, to determine “*who did what when?*” The importance of this underlying proposition for legal applications is fundamental. One of the jobs of a dispute resolution system is to determine who performed what act at what time when relationships break down. The outcome of a legal dispute often turns on such a determination. In the olden days, contracts were made in person and an offer became a contract when the acceptance was received by the offeror. This meant that in a dispute the effective timing of contract was a question of fact for a judge or jury.
 

@@ -16,7 +16,9 @@ title: 'Smart contracts: a brief introduction for the financial services industr
 url: /2014/12/17/smart-v-legal/
 ---
 
-**Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.**
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
 
 ##Before we begin: a recap of the last 12 months of Bitcoinmania in the blockchain space.
 
@@ -44,7 +46,7 @@ What would the world look like then?
 
 Could such a thing even be done?
 
-## You're damn right it can.
+### You're damn right it can.
 
 So we cracked smart contracts on a blockchain. Without creating a cryptocurrency. We also figured out that once a blockchain database has an administrator, they become far more useful. So designed them so you can administer them, too.
 

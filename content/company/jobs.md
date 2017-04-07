@@ -9,26 +9,26 @@ type: company
 
 Monax is not currently among the Top 100 Places to Work; but we aim to be.
 
-If you feel you have an ability to perform any job title posted below and the willingness to join [Team Monax](https://monax.io/company/team/) then please send a maximum of 800 words (preferably in markdown formatting) telling us why you are a good fit for Monax generally and the position specifically along with a record of your past duties and performance (CV or resume) (preferably in markdown formatting).
+If you feel you have an ability to perform any job title posted below and the willingness to join [Team Monax](/company/team/) then please send a maximum of 800 words (preferably in markdown formatting) telling us why you are a good fit for Monax generally and the position specifically along with a record of your past duties and performance (CV or resume) (preferably in markdown formatting).
 
-## Currently Open Positions
+### Currently Open Positions
 - [Full Stack Developer](#fullStackDeveloper)
 
 If any specific questions or requirements are listed in the position, please satisfy those requirements or answer those questions (preferably in a markdown-formatted file).
 
 Please email these requirements to [jobs@monax.io](mailto:jobs@monax.io).
 
-# Positions on the Platform Team
+## Positions on the Platform Team
 
 All positions on the Platform Team have been filled and there are currently no vacancies. Please check back regularly as new opportunities will come up and are published here.
 
 <hr />
 
-# Positions on the Library Team
+## Positions on the Library Team
 
 The Library Team is currently accepting applications for the following positions.
 
-## <a name="fullStackDeveloper"></a>JavaScript Developer - Full Stack
+### <a name="fullStackDeveloper"></a>JavaScript Developer - Full Stack
 
 Monax Industries is looking for a Full Stack JS Developer in our smart contracts library team.
 
@@ -40,14 +40,14 @@ This is a full time salaried position, salary, equity, and benefits in connectio
 
 * New York
 
-### Applicant Requirements:
+#### Applicant Requirements:
 
 * Applicants must demonstrate thorough knowledge of JS frontend development (any of Angular, React, Meteor).
 * Applicants must demonstrate thorough knowledge of JS server-side developement (Node.js)
 * Applicants must demonstrate a capacity to build modular, fully tested applications.
 * Applicants must have a willingness to learn about the applications of smart contract technology.
 
-### Applicant Background:
+#### Applicant Background:
 
 * Applicants must demonstrate a track record of open source contributions.
 * Applicants must demonstrate a track record of UX design.
@@ -55,19 +55,19 @@ This is a full time salaried position, salary, equity, and benefits in connectio
 
 <hr />
 
-# Positions on the Applications Team
+## Positions on the Applications Team
 
 All positions on the Applications Team have been filled and there are currently no vacancies. Please check back regularly as new opportunities will come up and are published here.
 
 <hr />
 
-# Positions on the Success Team
+## Positions on the Success Team
 
 All positions on the Platform Team have been filled and there are currently no vacancies. Please check back regularly as new opportunities will come up and are published here.
 
 <hr />
 
-# Positions on the Support Team
+## Positions on the Support Team
 
 All positions on the Support Team have been filled and there are currently no vacancies. Please check back regularly as new opportunities will come up and are published here.
 

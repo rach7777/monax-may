@@ -19,7 +19,7 @@ title: "Why we're joining the Enterprise Ethereum Alliance"
 
 Earlier this week we formally announced that we will be joining the [Enterprise Ethereum Alliance](http://entethalliance.org/).
 
-# Introduction
+## Introduction
 
 The Enterprise Ethereum Alliance is an industry group formulated around the idea of being the "common knowledge pipe" between the [ethereum virtual machine](/explainers/smart_contracts) using [community and large companies](/explainers/permissioned_blockchains). In the words of the alliance's initial marketing push:
 
@@ -27,7 +27,7 @@ The Enterprise Ethereum Alliance is an industry group formulated around the idea
 
 The key word in this short description, which matches what we understand to be the purposes of the consortium, is `define`. While it is very early days for this new consortium we are very happy to participate in standards bodies -- especially those which are so closely aligned with our strategic goals of increasing production use of [ecosystem applications](/explainers/ecosystem_applications) in enterprises.
 
-# Why
+## Why
 
 In any technology standards and specifications are extremely important. Previous generations of software have clearly demonstrated the costs of not establishing standards and specification driven platforms and infrastructure. Vendors need to understand what their customers are looking for, competing vendors often need to work together to lower switching costs for customers. Or, as I've said elsewhere...
 
@@ -36,7 +36,7 @@ In any technology standards and specifications are extremely important. Previous
 
 This observation leads directly to the desire for us as a company to build collaboration into the DNA of our culture. Joining and actively participating in standards setting organizations is a huge part of that for us.
 
-## Reason Number 1: Defining "Ethereum" Needs to Happen
+### Reason Number 1: Defining "Ethereum" Needs to Happen
 
 Ask ten different blockchainers what "ethereum" is and you're guaranteed to get ten different answers. Ask ten different enterprise blockchainers what "ethereum" is and you'll likely get a `¯\_(ツ)_/¯`. Part of the confusion is that the way that ethereum markets its public chain may be wonderfully resonant to the public chain community, but is frankly completely confusing to (at least our) enterprise users.
 
@@ -44,7 +44,7 @@ Is "ethereum" a singular public blockchain network? Is it an implementation spec
 
 In our view, guiding a more cohesive messaging strategy for "ethereum" as it is referred to by the dozens (hundreds?) of companies large and small which are using the EVM in a permissioned chain network setting is massively important. One of the biggest attractions for us in joining the Enterprise Ethereum Alliance is to bring our over two years of experience in explaining what ethereum in permissioned chains means to this collective.
 
-## Reason Number 2: Let's Get Real; the EVM Needs to Improve
+### Reason Number 2: Let's Get Real; the EVM Needs to Improve
 
 We have been long users of the ethereum virtual machine. The founders of Monax (previously Eris) were building on the EVM since early 2014. And the EVM is a barely adequate piece of kit. While the EVM may be sufficient for the ethereum public chain, it is insufficient for currently enterprise uses (much less for future contemplated uses). The EVM is starting to be strained. Performance needs to improve. Coherence needs to improve. And frankly, there needs to be a long discussion whether the EVM needs to continue being a "thing".
 
@@ -54,7 +54,7 @@ It is our firm view that the venue for having these discussions should be formal
 
 We hope to actively participate and bring our plurality of lessons learned in building enterprise grade smart contract systems to the Enterprise Ethereum Alliance as it embarks upon this journey.
 
-## Reason Number 3: Explicit Adoption of Component Driven Standards Helps Modularity
+### Reason Number 3: Explicit Adoption of Component Driven Standards Helps Modularity
 
 One of the key aspects to participating in the "ethereum community" up to now is that there was no explicit way to have a voice in the development effort which did not involve working for the ethereum foundation. Sure Monax could take to twitter or reddit; sure we could develop and submit code. But that is not participating. That's throwing code over the fence or talking into the abyss.
 
@@ -64,17 +64,17 @@ For Ethereum's technology to gain the mainstream adoption in the enterprise spac
 
 Based upon our history of working on enterprise grade smart contract systems we will be actively advocating for a component-driven approach to the standards development effort. This will help the various companies seeking to bring modularity to previously monolithic blockchain stacks and will also increase the precision in which the community seeks to build standards.
 
-# How
+## How
 
 While it is unclear what exactly the Enterprise Ethereum Alliance will "produce" at this point, we are of the opinion that a standards body for use of advanced smart contract systems in enterprise is a great idea to participate in. Such a body should, in our view, seek to set standards and let implementers build to those standards. As such Monax joining the Enterprise Ethereum Alliance means little in the short run for our users.
 
-## The EEA v. Hyperledger?
+### The EEA v. Hyperledger?
 
-Yesterday we announced that we will be [joining Hyperledger and submitting our `eris:db` codebase for incubation](https://monax.io/blog/2017/02/28/why-were-joining-hyperledger/). Today we're announcing (formally) that we're joining this alliance. Are these competitive?
+Yesterday we announced that we will be [joining Hyperledger and submitting our `monax:db` codebase for incubation](/blog/2017/02/28/why-were-joining-hyperledger/). Today we're announcing (formally) that we're joining this alliance. Are these competitive?
 
 Not in our view. As discussed throughout this post, we view the Enterprise Ethereum Alliance as a standards body and we view Hyperledger as a natural home for housing the implementation of those standards. This not only allows for a plurality of views to be formulated according to the various governance rules set up by those consortia, but also it enables a resilient ability for enterprise users of smart contracting technology to participate in either the standards or (a single) implementation of those standards in a manner which is suitable for them. In other words, at this point in time more options is likely better.
 
-# Conclusions
+## Conclusions
 
 Are you a company that is interested in moving forward and maturing the enterprise smart contracts space? We'd welcome you to join the Enterprise Ethereum Alliance and help us build the standards for excellence that this new and interesting technology enables!
 

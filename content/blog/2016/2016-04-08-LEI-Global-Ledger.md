@@ -20,6 +20,10 @@ title: Legal Entity Global Ledger - How to liberate public data (with chains)
 url: /2016/04/08/LEI-Global-Ledger/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 One of the key aspects of Blockchain / Distributed Ledger (DL) Technology is the ability to merge public key authentication of information with a resilient, distributed database. In this piece, which outlines an application Monax is building, I talk about this idea in greater detail using publicly available data from the Legal Entity Identifier (LEI) initiative.
 
 There is no shortage of news, blog posts, and whitepapers foreshadowing the disruption of entire industries by *blockchains* and describing a myriad of potential use cases that will run more efficiently on a decentralized architecture. What is striking is that almost all prominently discussed topics focus on processes and scenarios with a fair amount of complexity and/or attempt to replace very established procedures. At first, this seems logical since the potential for efficiency gains usually increases with the complexity of the use case, but it seems we're rushing too far ahead and have forgotten about one fundamental formula that has always proven helpful when venturing into new territory:
@@ -55,7 +59,7 @@ Third, to be mindful of the *start small, build up* mantra it should be our goal
 
 Without further ado ... meet the candidate to be '*ledgerized*'.
 
-## The Legal Entity Identifier (LEI)
+### The Legal Entity Identifier (LEI)
 
 >"LEI data is freely available, easy to access, without restrictions on redistribution or licensing. \[...\] Future phases will require a new 'utility strength' global infrastructure, which will have similar robustness, reliability, and business continuity capabilities as other financial market infrastructures, such as securities settlement systems and trade repositories."
 From the original [2012 scope plan](http://www.sifma.org/uploadedfiles/issues/technology_and_operations/legal_entity_identifier/lei-preliminary-scope-plan.pdf)
@@ -89,14 +93,14 @@ The LEI system went live in 2014, the same year `blockchain` as a general concep
 
 So, let's look at this scenario in more detail and examine the stages of implementing the LEI system as a global shared ledger.
 
-## The LEI Global Ledger
+### The LEI Global Ledger
 
 Since its early days, Monax has been advocating the utility of a blockchain as a **data management tool** with unique properties: It stores both its `state & transition logic` (simply put, it houses the data records including the rules that govern them, i.e. authority to access and change as well as the legality of changes). Furthermore, a blockchain distinguishes itself from previously known distributed database approaches by not having a central owner or administrator.
 
 A blockchain therefore allows us to store and share a single version of the '*truth*' about the state of all LEI data as well as encode and enforce the validity of changes to this data via smart contract logic. All while the infrastructure is jointly operated by its network participants.
 <a name="permissioned">&nbsp;</a>
 
-### Permissioned blockchains and ownership
+#### Permissioned blockchains and ownership
 
 At this point it is important to take a detour and explain why this particular use case requires what is known as a *permissioned* blockchain which necessarily introduces a level of control and ownership.
 
@@ -122,7 +126,7 @@ With reference to the points made above, I respectfully beg to differ and recent
 
 Now, let's get back to the LEI ledger implementation ...
 
-### Architecture Overview
+#### Architecture Overview
 
 The diagram below outlines the components of a single peer node of such a network built using Monax's Eris Platform.
 
@@ -136,7 +140,7 @@ Essentially, this application (in its intended final state) would behave the sam
 The following sections outline the stages that can enhance and eventually transform the existing LEI system to a distributed ledger. Stages 1-3 are designed to be completely non-disruptive to the current LEI system. During these stages the LEI Global Ledger is operated in parallel to the existing LEI infrastructure (sometimes referred to as a _shadow chain_) with each stage increasing the effort and inclusion of participants. This allows interested parties to share in the experience of a live blockchain application with real data; all with a minimal investment and no risk. Stage 4 (and beyond) requires definite buy-in and sponsorship by the stakeholders of the LEI eco-system due to the declared intention to eventually replace the current centralized infrastructure with a distributed, blockchain-based one.
 <a name="stage1"></a>
 
-### Stage 1
+#### Stage 1
 
 The global LEI data is freely available for download and an update is published daily. In this first stage there is no buy-in or support from any participant in the existing system. Monax is responsible for downloading the daily updates and cryptographically signing the transactions that push these updates into the LEI ledger.
 
@@ -146,26 +150,26 @@ The immediate effect for any consumer operating a 'read-only' peer is that acces
 
 This stage has been implemented by Monax! Please see the [end of the article](#getinvolved) for instructions how to participate.
 
-### Stage 2
+#### Stage 2
 
 In stage 2 an entity with authorized access to the global LEI database would assume responsibility for vouching for the data veracity by signing transactions to commit updates to the ledger. The GLEIF seems to be in a perfect position to do so. The transition to this stage is as easy as hooking up a few database triggers to capture update/insert events and forward these to the blockchain.
 
 {{< image_blog "LEI-Net-Phase-2.png" >}}
 
-### Stage 3
+#### Stage 3
 
 The same mechanism of hooking into a database as described in stage 2 is leveraged here, but it would be the LOUs themselves that propagate data into the blockchain and the central synchronization point at the global GLEIF database can be removed. With this stage we're closing in on the LEI ledger allowing a near real time view of the LEI records as events get reported to the ledger much closer to their points of origin. At any time the LEI ledger would provide a more accurate view of the entire system than the daily consolidated file download can provide. A beneficial side effect of the LOUs cryptographically signing their own data commits is that they become identifiable via their signatures in the ledger's audit trail.
 
 {{< image_blog "LEI-Net-Phase-3.png" >}}
 
-### Stage 4
+#### Stage 4
 Assuming a successful exploration and validation of the LEI ledger in stages 1-3, a blockchain-based LEI system might be deemed feasible and worthwhile considering as a full replacement of the centralized infrastructure.
 However, before the latter can simply be switched off, there is some effort involved to implement and test the integration points to any centralized systems that would remain in place and now need to interact with the ledger's API.
 At the end of stage 4, all core participants of the LEI lifecycle would be fully onboarded to participate in the smart-contract-backed workflow purely through signed transactions. Known participants include all LOUs and, if applicable, third-party data verification services.
 
 {{< image_blog "LEI-Net-Phase-4.png" >}}
 
-## Beyond Stage 4
+### Beyond Stage 4
 Potential future enhancements to the system beyond stage 4 include:
 
 - Legal entities participating directly in the workflow, verifying the correctness and signing off on their own data for renewal. This would require a more common and pervasive use of Public Key Infrastructure (PKI). It is not very difficult to foresee that a company having gone through a verification process to prove its identity might want to register more than the legal address in the LEI ledger, e.g. their public keys. Quite sophisticated B2B processes can be built from there!
@@ -173,7 +177,7 @@ Potential future enhancements to the system beyond stage 4 include:
 
 This last one is admittedly a bit far-fetched and has legal implications that cannot easily be solved with a smart contract alone (yet), so let's leave it at this.
 
-## Conclusion
+### Conclusion
 
 Let's be realistic ... the existing LEI system works sufficiently well, so why would you even want to attempt to replace it? "Because we can" is not an answer that will convince any of the stakeholders!
 
@@ -193,7 +197,7 @@ Verifiable public data in a trusted, distributed, participatory infrastructure c
 
 **Remember**: Monax already built the LEI Global Ledger as depicted in the [Stage 1 diagram](#stage1) and we're intending to voluntarily run this network for the time being, so that others get a chance to experience what a distributed, smart-contract-enabled solution feels like.
 
-If you're interested in this use case and its implementation, e.g. if you'd like to experiment with a read-only peer node or want to develop a business case out of this solution, please don't hesitate to contact Monax [via our webform](https://monax.io/?monax_viewer_type=end_user&use_case_interest=data#contact-monax) or Twitter handle [@monaxHQ](https://twitter.com/monaxHQ). Please voice your opinion (good or bad) and feedback on this article by tweeting it with the hashtag `#leiledger`.
+If you're interested in this use case and its implementation, e.g. if you'd like to experiment with a read-only peer node or want to develop a business case out of this solution, please don't hesitate to contact Monax [via our webform](/?monax_viewer_type=end_user&use_case_interest=data#contact-monax) or Twitter handle [@monaxHQ](https://twitter.com/monaxHQ). Please voice your opinion (good or bad) and feedback on this article by tweeting it with the hashtag `#leiledger`.
 
 We are going to collect requests by interested parties and intend to make the `LEI Net Service` available as part of one of the next Eris Platform releases.
 The smart contracts controlling the LEI lifecycle and workflow can be used as the basis to implement similar data repositories. They are being made available to subscribers of the [*Monax Smart Contracts SDKs*](/library).

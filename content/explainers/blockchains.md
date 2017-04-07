@@ -6,14 +6,14 @@ title: "Explainer | Blockchains"
 excerpt:    "What is a Blockchain and why are these automated data management systems so cool?"
 index_file: ""
 aliases:
-    - /docs/explainers/blockchains/
+    - /explainers/blockchains/
 menu:
   explainers:
     weight: 10
 
 ---
 
-# What is a Blockchain?
+## What is a Blockchain?
 
 Blockchains have their origins in cryptocurrency platforms, in particular bitcoin, where they represent historical records of verifiable monetary stake. They were designed in the first place to solve the double spending problem, that is, to establish consensus in a decentralized network over who owns what and what has already been spent.
 
@@ -21,7 +21,7 @@ Blockchains are authenticated records of the history of a network's activity dis
 
 Modern blockchain designs are capable of storing arbitrary data and establishing permissions to modify that data through self-administering and self-executing scripts which are performed by a distributed virtual machine.These scripts are known as [smart contracts](/explainers/smart_contracts), and they allow platform operators to define complex and fully customisable rules which govern the blockchain’s interaction with its users.
 
-# Characteristics of Blockchains
+## Characteristics of Blockchains
 
 A _blockchain network_ is a software network comprised of a set of users running a _blockchain node_.
 
@@ -45,7 +45,7 @@ There are three areas where both blockchain networks and blockchain nodes stand 
 
 Lets look at some of these characteristics.
 
-## Validation Within a Blockchain Network and Blockchain Clients
+### Validation Within a Blockchain Network and Blockchain Clients
 
 *A blockchain network carries out its functions automatically, through a process which is historically called "mining” or "forging," but which we at Monax simply call **validating**.*
 
@@ -61,7 +61,7 @@ Most modern databases store the world state of the data and keep the logs of tra
 
 Thus it is always immediately possible to tell if something is valid, as it must have come from a valid history, and everyone agrees completely on the sequence of valid history.
 
-## Independence of Nodes Within a Blockchain Network
+### Independence of Nodes Within a Blockchain Network
 
 *A blockchain network operates as a distributed data store, meaning there is no single master node within the network; rather, every node is an equal peer.*
 
@@ -71,7 +71,7 @@ This is roughly analogous to the difference between being told a fact in a class
 
 The fundamental difference architecturally is, essentially, the "freedom" which the various nodes on the network have to tell clients which are hooked into them **what the data is**. This "freedom" is what blockchain-ers are (sometimes) referring to when they speak about the "decentralization" benefits of the blockchain node in question.
 
-## Automation Within a Blockchain Network and Blockchain Clients
+### Automation Within a Blockchain Network and Blockchain Clients
 
 *A blockchain network validates data-driven transactions while also preventing the incorporation of unauthorised transactions.*
 
@@ -85,11 +85,11 @@ If you need the data management solution to be easily spun up and distributed am
 
 The fundamental difference architecturally is, essentially, that blockchain networks are going to be significantly more constrained in the amount of transaction processing they are able to perform because blockchain nodes are built to be independently redundant with respect to the data management functions; whereas hub and spoke databases can be built to operate using truly parallel computation.
 
-# Benefits of Blockchain Technology
+## Benefits of Blockchain Technology
 
 What we have when abstracting a blockchain network to a certain level is a distributed, self-authenticating, time-stamped store of data. Indeed, the core design of a blockchain node is an elegant way in which to overcome many challenges in distributed systems.
 
-## Resilient Data Management System
+### Resilient Data Management System
 
 Blockchain clients allow for the development of distributed systems which do not rely on what traditional databases call 'master-slave' clusters. This drastically increases the resiliency of blockchain networks as a data management solution.
 
@@ -97,7 +97,7 @@ In a blockchain network, there is not even a notion of master-slave relationship
 
 This allows for a fluid membership to the "truth creating" consortium of computers which in turn increases fault tolerance and resiliency. Breaking the data-driven transactions into blocks allows the consensus of the database to be negotiated in a reasonable manner rather than on a per-transaction basis.
 
-## Increased Verifiability
+### Increased Verifiability
 
 In addition, blockchain networks allow for transactional certainty. Traditional databases store the current world state of the data, and if they are programmed to do so, have additional entries covering previous transactions within the data store. In addition, traditional databases are also able to maintain logs of the history of the interactions.
 
@@ -107,7 +107,7 @@ The general blockchain design not only requires that the transactional history o
 
 In other words, in a blockchain network if we know the state of the data at the genesis of the blockchain and we accept the state of the date at `time.Now()` we can be assured that there is one and only one way in which to get from the original state to the current state.
 
-# Types of Blockchain Clients
+## Types of Blockchain Clients
 
 Blockchain clients generally fall into one of four quadrants. These quadrants vary based on two axes:
 
@@ -116,7 +116,7 @@ Blockchain clients generally fall into one of four quadrants. These quadrants va
 
 {{< image src="/images/docs/blockchain-quadrant.png" >}}
 
-## The Optimization Spectrum
+### The Optimization Spectrum
 
 On the lower half of the quadrant are blockchain nodes which give application developers a clear and efficient way to verifiably track title transfers in a distributed environment.
 
@@ -130,7 +130,7 @@ Whether these blockchain nodes are permissioned or unpermissioned, they are a go
 
 In other words, they're really interesting process auditors. Similarly to transaction optimized blockchain nodes, they have capabilities of supporting verifiable title transfers, but they have really been optimized to run arbitrary business logic.
 
-## The Permissioned Spectrum
+### The Permissioned Spectrum
 
 On the left half of the quandrant are unpermissioned blockchain networks. These networks are formulated by a set of blockchain nodes which have been programmed with the unpermissioned blockchain network's rule book.
 
@@ -151,3 +151,6 @@ Permissionable blockchain networks are not susceptible to external attack by unk
 These networks also have performance advantages over public blockchain networks because they are only dealing with the functionality required for that network rather than all the functionality for a larger, unpermissioned network load.
 
 For more information, please see our [explainer on permissionable blockchains](/explainers/permissioned_blockchains).
+
+
+## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Explainers](/explainers/)

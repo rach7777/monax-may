@@ -22,7 +22,7 @@ meta:      true
 
 ---
 
-# Prizes, Permissions and Ecosystem Applications
+## Prizes, Permissions and Ecosystem Applications
 
 This year's [Nobel prize for economics](https://www.nobelprize.org/nobel_prizes/economic-sciences/laureates/2016/) went to contract theorists Oliver Hart and Bengt Holmström for their examinations of elements and incentives in contractual relationships. 
 
@@ -36,6 +36,6 @@ As legal engineers on a mission to build interoperable, ecosystem software, Mona
 
 Consistent with Hart and Holmström's theories, permissioned blockchains create a fundamental element of contract value, independent of currency or stock-like tokens. Monax's legal engineers saw this early and began iterating a platform that would support any user configuring a permissioned blockchain and creating legally significant relationships with it. Monax's libraries further articulate the merged dependencies of law and code to create the building blocks of data-driven commercial ecosystems.
 
-Learn about blockchains, smart contracts, legal engineering and more with Monax's [explainers](https://monax.io/explainers/) and [tutorials](https://monax.io/docs/tutorials/). 
+Learn about blockchains, smart contracts, legal engineering and more with Monax's [explainers](/explainers/) and [tutorials](/docs/). 
 
 

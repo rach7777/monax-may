@@ -18,11 +18,15 @@ title: 'Smart securitisation, or: why it''s time to stop talking tokens and star
 url: /2015/04/28/smart-securitisation/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 {{< image_blog "scallthethings.jpg" >}}
 
-# We need to have a chat about cryptocurrency tokens.
+## We need to have a chat about cryptocurrency tokens.
 
-## 1. You're doing it wrong (but don't worry - chalk it up as a learning experience)
+### 1. You're doing it wrong (but don't worry - chalk it up as a learning experience)
 
 To date, most of the folks in Bitcoin/Crypto have made the rather critical mistake of assuming that asset ownership and/or replacing a bank is as simple as
 
@@ -49,11 +53,11 @@ In decentralisation-land, this is not what you get. If the network fails from la
 
 Which means maybe we should think about not using them!
 
-## 2. The limited usefulness of the token
+### 2. The limited usefulness of the token
 
 If we take the case of, e.g., a bond instrument, the token-driven model falls down immediately on practical points. This is because tokens don't solve a problem that anyone actually has.
 
-Tokens are just data. Ones and zeroes. However, things like financial instruments are actually pretty complex, event-driven bundles of rights and obligations. Our blockchain design, [ErisDB](https://monax.io/platform/db, is a cryptographically-secure event database designed to process these events. We're by no means limiting ourselves to finance but this is where we're starting, as that's where the clients are.
+Tokens are just data. Ones and zeroes. However, things like financial instruments are actually pretty complex, event-driven bundles of rights and obligations. Our blockchain design, [ErisDB](/platform/db, is a cryptographically-secure event database designed to process these events. We're by no means limiting ourselves to finance but this is where we're starting, as that's where the clients are.
 
 That's not to say you can't "hack" a decentralised network to get tokens performing more complex value functions - you can, and provided that you can get the legal nexus to ensure that these representations are, in fact, legally binding manifestations of an asset, tokenisation could work - see, e.g., Taariq Lewis' DigitalTangible or stuff like Ripple/Stellar gateways.
 
@@ -66,9 +70,9 @@ We're not too keen on that at the moment. For two main reasons:
 
 Even if we assume that the model works from a legal-technical perspective (which requires structuring around the gate-points which grant access to and from the chain), for the stuff we think blockchains are best at, tokenisation is not the name of the game.
 
-## 3. Smart contractify the things, and actually solve a problem
+### 3. Smart contractify the things, and actually solve a problem
 
-Am I going to outline a smart securitisation in this blogpost, end-to-end? No, because I have a couple of things I'd like to do other than write in the next two months (in case you're wondering though, we have thought through these matters and the smart contracts needed to implement them [in some detail](https://monax.io/docs/tutorials/solidity/) while we were in Stealth Mode in 2014).
+Am I going to outline a smart securitisation in this blogpost, end-to-end? No, because I have a couple of things I'd like to do other than write in the next two months (in case you're wondering though, we have thought through these matters and the smart contracts needed to implement them [in some detail](/docs/solidity/) while we were in Stealth Mode in 2014).
 
 What I will do, however, is provide a very high-level, 30,000 foot view of why this most fundamental mainstream financial transaction won't work on a token-driven blockchain - but will work on a purely smart contract-driven one such as ErisDB.
 
@@ -81,7 +85,7 @@ Assume
 
 Then ask yourself:
 
-### a) Does tokenisation solve a problem anyone has?
+#### a) Does tokenisation solve a problem anyone has?
 
 No.
 
@@ -89,13 +93,13 @@ The custodian of the Notes (in this case a "Common Safekeeper") will have custod
 
 Using a SQL database with digital signatures for this purpose is probably easier/faster than using Bitcoin or a blockchain. You *could* use a blockchain if you wanted to, for instance, protect yourself against something like a [SQL injection attack](http://www.reddit.com/r/erisindustries/comments/31uuru/blockchain_usecase_1_user_1_instantiation/) and verify the contents of the database - in which case all the "blockchainy" things you need are merkleisation and the use of private key write permissions to control access.
 
-But even if you did that, you still wouldn't need value-tokens. The presence of [database operators/admins](https://monax.io/docs/tutorials) in a commercial blockchain deployment (as surely there will be) means that the only need tokens satisfy - automatic monetary rewards to incentivise security - no longer exists.
+But even if you did that, you still wouldn't need value-tokens. The presence of [database operators/admins](/docs) in a commercial blockchain deployment (as surely there will be) means that the only need tokens satisfy - automatic monetary rewards to incentivise security - no longer exists.
 
 So where we're left is that the "counterparty risk" problems Bitcoin and its ilk solve really aren't that big an issue with securities or other kinds of financial transactions. Even in a trading context (in which case you're looking at settlement risk), inert tokens are totally inferior to assets constituted as dynamic scripts (smart contracts).
 
 See ya later, tokens.
 
-### b) If there are no tokens, why are we here? Shouldn't we just pack up and go home?
+#### b) If there are no tokens, why are we here? Shouldn't we just pack up and go home?
 
 Nope, because these obligations are highly amenable to smart contractification.**
 
@@ -133,7 +137,7 @@ Three guesses as to what technology can do that really, really well while ensuri
 
 Blockchain! Correct. How did you guess?
 
-### c) Right, so you're automating payment triggers by creating a system that's maintained (and observed) by all participants. Why do you need that whole "you can modify the system on command" thing?
+#### c) Right, so you're automating payment triggers by creating a system that's maintained (and observed) by all participants. Why do you need that whole "you can modify the system on command" thing?
 
 Controllable blockchains aren't just a "nice-to-have" in applications such as high finance. They're an absolute necessity.
 
@@ -141,7 +145,7 @@ This is because terms of transactions change, often arbitrarily. See Condition 1
 
 Implementing these changes is a complete pain in the ass and involves a lot of wringing of hands, paperwork, phone calls and lawyers. I should know. I was there.
 
-## 4. So what you're saying is, it's totally inadequate to use a crypto-token to describe virtually any mainstream financial obligation. And everyone has called this one wrong.
+### 4. So what you're saying is, it's totally inadequate to use a crypto-token to describe virtually any mainstream financial obligation. And everyone has called this one wrong.
 
 Pretty much - at least if you want to build something that addresses a problem mainstream financial institutions actually have. Sorry, California.
 

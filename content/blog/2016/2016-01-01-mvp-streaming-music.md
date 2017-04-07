@@ -29,7 +29,7 @@ But reducing opex is only one way to satisfy corporate duties to maximize shareh
 
 While it is interesting and important that various verticals (finance being the most vocal at the moment) are looking at how they can leverage smart contracts to reduce middle management and back office costs which are indicative of their individual *vertical*, smart contracts are actually much more interesting when looked at from a slightly different lens. Namely, how can individual *firms* band together to open up new potential profit centers using smart contract technology.
 
-## One Problem With Streaming Services
+### One Problem With Streaming Services
 
 There is an indelible tension within the commercialization of art between an artist usually having comparative disadvantages as to how to commercialize their art and the artist not wanting to lose control of how that commercialization happens. This tension has played out over history and is not particularly new. The rift between global artists such as [Taylor Swift](https://twitter.com/SwiftOnSecurity), or [Adele](https://twitter.com/adele), and streaming services (Spotify being the most prominent) is only the latest incidents in a long history which this tension evokes. Before that we had label wars, ticketmaster wars, agent wars, and on and on.
 
@@ -70,7 +70,7 @@ The amounts and types of payouts will vary greatly based on a complex matrix of 
 
 So, from our point of view, there is a real challenge here, which essentially collapses into an accounting challenge. And its a challenge which we think that smart contracts can help to overcome.
 
-## The Smart Contract Backed MVP: Stakeholders
+### The Smart Contract Backed MVP: Stakeholders
 
 Just because a smart contract backed system *could* help here, does not mean that it *will*. Actually building this will require much more than a simple idea. For the purposes of this post, let's set aside some of the political resistance within large industrial actors and assume that we've successfully engaged with them as to the benefits of a smart contract based approach to solving this problem and then lets see how we would actually build it (which is really what this particular post is supposed to be about).
 
@@ -86,13 +86,13 @@ Getting the streaming service is obvious. We'd think you would want some labels 
 
 Finally, and perhaps most controversial, we'd think you'd want to get the streaming service's bank involved. Why? Isn't blockchains all about replacing the banks? Not to us. To us, blockchains are about increasing the verifiability of business process which cut across stakeholders. If, for example, the bank used by the streaming service was one of the dozens of global banks who was experimenting with and using smart contract technology then the bank may benefit from such an experiment just as much as any other stakeholder involved in the system. This is especially true if the bank also was one of the growing number of banks who had identified that banking of the future involves the "[Bank as a Platform](https://petervan.wordpress.com/2012/09/09/banks-as-a-platform/)" *[see also](http://www.parkparadigm.com/2009/10/29/platforms-markets-and-bytes/)*. As we will see shortly, the bank as a platform is very relevant to making this system operate in the current regulatory schema with the least possible disruption or opportunities for political challenges to growing the MVP into production.
 
-## The Smart Contract Backed MVP: Smart Contract Overview
+### The Smart Contract Backed MVP: Smart Contract Overview
 
 The most simple way in which to build the smart contract system, and the way we would recommend as a point of departure for the effort would involve two engines and three factories.
 
 Before I detail what these do, I think it would be helpful if I explain a bit about how we think of smart contracts from a design and high level overview.
 
-### Understanding Smart Contract Factories
+#### Understanding Smart Contract Factories
 
 The general way in which I explain smart contract systems to developers coming from a web application background is to start with a typical database-model-controller-view web app stack and to say that, essentially, what happens in smart contract backed applications is that we collapse the database and model layers into the smart contract layer, build a middleware (controller layer) and then a frontend (view layer). This helps communicate how we think of smart contract backed applications. It isn't a perfect analogy as indeed there are differences, but it gets us within the range of proper thought models.
 
@@ -104,7 +104,7 @@ Second, we use factories to map "where" the contract is to a unique identifier o
 
 This allows us to "get at" any individual object contract by sending a query call to the factory (which is in a more stable and well known address within a smart contract network) with a particular unique identifier (say, the UUID of a song from the streaming service's "normal" database) and get back the address of the individual object contract.
 
-### Understanding Smart Contract Engines
+#### Understanding Smart Contract Engines
 
 On top of needing to track objects, we generally need to build system level functionality which will be guaranteed to (1) satisfy a particular interface and (2) allow us to plug this functionality into what objects "do". To build this functionality into smart contract applications we use the idea of **smart contract engines**. These engines are generally, but not always, stateless contracts which are built to do one thing and do it well.
 
@@ -118,7 +118,7 @@ The engines, in this example, would be likely to perform the functionality of ca
 
 The payouts engine could in this example, be a transparent calculation agent of the set formula for the streaming service.
 
-### Bringing It All Together
+#### Bringing It All Together
 
 So here is how it *could* look.
 
@@ -134,7 +134,7 @@ Third is the payments engine. This engine would generally receive a unique addre
 
 Perhaps to close the loop then this would all be registered back into the object contracts.
 
-## The Smart Contract Backed MVP: Building the Chain
+### The Smart Contract Backed MVP: Building the Chain
 
 In addition to the smart contracts, one also needs to build a blockchain which will work behind the scenes to keep this whole system cryptographically verifiable. For this system we would build a permissioned blockchain design (there is no real need to run this on a public blockchain unless one wants to run the payment rails via the token of endogenous value within that blockchain; however, should one do so, one would be severly limited due to liquidity and capitalization limits which even the largest blockchains when matched against the scope of real world commerce). We would build a network of validators which could be run by, for example:
 
@@ -146,7 +146,7 @@ In addition to the smart contracts, one also needs to build a blockchain which w
 
 These validator nodes would work to keep the system in sync. There would also be other accounts, probably for the developers of the streaming service, and the rest of the system would be kept not behind a VPN but in the public sphere so that it would be transparent for all involved in the system. On a daily basis, the only nodes which would really need to "interact" with the system would be the streaming service (which would need to sign and verify play counts and send those to the payments calculation engine) and the streaming service's bank (which would need to sign and verify when payments had taken place). The rest of the nodes could be given permissions to "see" the system but not to actually interact with it, thereby ensuring the authenticity of the system. Over time, of course that could be relaxed based on the various permissioning capabilities of the blockchain base that had been used.
 
-## The Smart Contract Backed MVP: The Benefits
+### The Smart Contract Backed MVP: The Benefits
 
 The benefits of this system are a few:
 
@@ -156,7 +156,7 @@ The benefits of this system are a few:
 
 Over time, more complex additions to the very simple MVP could be added.
 
-## Conclusion
+### Conclusion
 
 Decentralized purists will get their hackles raised by this post because it is no where near a "pure" decentralized application. We "used" established bank payment rails rather than a decentralized cryptocurrency to facilitate the value transfer within the system for one thing. In our view this would be an easier system to sell to a major streaming service than one that included a "purely decentralized" payment rail such as bitcoin. Yes, we are still using banks, but we are also leveraging banks while also helping banks to understand what their role could look like in a future where smart contract backed systems are part of their "bank as a platform" play.
 

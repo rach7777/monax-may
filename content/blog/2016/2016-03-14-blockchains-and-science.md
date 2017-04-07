@@ -16,7 +16,11 @@ title: 'Blockchains For Science: Aligning Research Incentives'
 url: /2016/03/14/blockchains-and-science/
 ---
 
-Author's Note: This post originally appeared as [How Blockchains Can Further Public Science](https://bitcoinmagazine.com/articles/how-blockchains-can-further-public-science-1457972964) in Bitcoin Magazine. It is maintained here for archival purposes. Eventually, it'll all be on IPFS. [Part 2 is now available](https://monax.io/blog/science/2016/03/15/chains-and-science-how-to/)
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
+Author's Note: This post originally appeared as [How Blockchains Can Further Public Science](https://bitcoinmagazine.com/articles/how-blockchains-can-further-public-science-1457972964) in Bitcoin Magazine. It is maintained here for archival purposes. Eventually, it'll all be on IPFS. [Part 2 is now available](/blog/science/2016/03/15/chains-and-science-how-to/)
 
 
 The thing that had me most excited about Bitcoin back in 2013 was its potential to re-align the incentives in academia and re-define how science and research is conducted. 
@@ -49,7 +53,7 @@ Enter the InterPlanetary File System: [IPFS](https://ipfs.io) has emerged as the
 
 And IPFS definitely plays nice with blockchains. Enter indexing. We need a registry to both track the hashes of all relevant content and update them. Ideally, such a registry would be shared across many educational institutions, which would be validators on a permissioned consortium blockchain. This strikes me as a likely direction for such institutions that are having to re-invent themselves in the digital age. Indeed, they should be the ones retaining the intellectual property of the researcher, not for-profit journals!
 
-This was the underlying motivation behind the [toadserver](https://github.com/eris-ltd/toadserver)). It takes an uploaded file, gets its IPFS hash, registers the file name and hash in the [eris:db](https://github.com/eris-ltd/eris-db) name registry and finally, adds the file to n IPFS nodes. It's really just a glorified database, but with write permissions across stakeholders who might not fully trust each other. This is all well and good, though it's not going to revolutionize science overnight.
+This was the underlying motivation behind the [now deprecate toadserver](https://github.com/zramsay/toadserver)). It takes an uploaded file, gets its IPFS hash, registers the file name and hash in the [eris:db](https://github.com/monax/eris-db) name registry and finally, adds the file to n IPFS nodes. It's really just a glorified database, but with write permissions across stakeholders who might not fully trust each other. This is all well and good, though it's not going to revolutionize science overnight.
 
 Another failing of academic research is its inability to effectively incorporate user-generated content. As a student of animal behavior, I watch in awe at the scientifically interesting (and relevant) discussion about [tricking your cat into a circle](https://www.reddit.com/r/aww/comments/2jpal5/trick_your_cat_with_a_circle/) and wonder how to parse this content into useful data that might lead to a scientifically sound conclusion.
 
@@ -65,7 +69,7 @@ All of a sudden, the submission of content (well, images) that meet specific par
 
 Perhaps the budding school-aged scientist of the future will spend his days traipsing through the woods, taking pictures of ants, classifying them and adding everything to a chain run by a consortium of colleges and universities. The better the classifications he submits, the more tokens he earns – tokens redeemable at any of the participating institutions as tuition, for example. Applications like the [LifeScanner app](http://lifescanner.net/) and [PlantNet](http://m.plantnet-project.org/) get us closer to such a goal.
 
-Enough talk. About a week ago, I put together the [Marmot Checker](https://github.com/eris-ltd/marmot), which is another piece of the puzzle in terms of automating knowledge generation throughput. Briefly, an image is uploaded, processed, and sent to the Google Cloud Vision API to get descriptions of the image; these descriptions are checked against a user-defined list of words, and if there is a match, the image is added to the toadserver. Although the implementation is quite is simple, a few hundred lines more of code and you'd have, say, a smart contract that sends the submitter of matched content some amount of tokens as a function of the match score and/or the users' reputation.
+Enough talk. About a week ago, I put together the [now deprecated Marmot Checker](https://github.com/zramsay/marmot), which is another piece of the puzzle in terms of automating knowledge generation throughput. Briefly, an image is uploaded, processed, and sent to the Google Cloud Vision API to get descriptions of the image; these descriptions are checked against a user-defined list of words, and if there is a match, the image is added to the toadserver. Although the implementation is quite is simple, a few hundred lines more of code and you'd have, say, a smart contract that sends the submitter of matched content some amount of tokens as a function of the match score and/or the users' reputation.
 
 On the whole, this is part a growing set of tools for the scientific community. Already we're seeing more and more startups building tools to streamline the collaboration workflow process between research laboratories.   That won't cut it so long as the data is siloed within research labs/groups, journals are pay-per-view for the public and the average citizen hasn't the means or method to contribute meaningfully to global shared knowledge. After all, shouldn't [citizen science](https://en.wikipedia.org/wiki/Citizen_science) really be called science proper? With blockchains I think it can be.
 
@@ -73,4 +77,4 @@ The fight for open access to knowledge has been an ongoing battle – a battle t
 
 Science is ultimately a public endeavor, and making that dream a reality now appears possible with blockchains.
 
-See [Part 2](https://monax.io/blog/2016/03/15/chains-and-science-how-to/) for slightly more practical solutions.
+See [Part 2](/blog/2016/03/15/chains-and-science-how-to/) for slightly more practical solutions.

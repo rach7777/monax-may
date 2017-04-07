@@ -22,6 +22,10 @@ title: 'Monax CLI Tool Walkabout: Services'
 url: /2015/08/05/eris-services/
 ---
 
+<div class="note">
+	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
+</div>
+
 ##Services as a Service
 
 Services are what you, as a developer, stitch together to build an application. They are the glue that holds everything together, run in docker containers, and can be built on top of other services.
@@ -42,9 +46,9 @@ Perhaps Alice operates an army of delivery drones in the warehouse next door. Sh
 That's a neat example. What's your service?
 
 ##Getting Started
-[Install Eris CLI](https://github.com/eris-ltd/eris-cli/tree/develop#install-eris)
+[Install Eris CLI](https://github.com/monax/cli/tree/develop#install-eris)
 
-Read the [README](https://github.com/eris-ltd/eris-cli/tree/develop#services)
+Read the [README](https://github.com/monax/cli/tree/develop#services)
 
 Run
 
@@ -76,11 +80,11 @@ eris services ls
 
 Run a Bitcoin node: `btcd`, or an ethereum node `eth`
 
-**Learn more about IPFS as a service [here](https://monax.io/blog/2015/08/05/ipfs-as-a-service/)**
+**Learn more about IPFS as a service [here](/blog/2015/08/05/ipfs-as-a-service/)**
 
 Starting a service can also spawn a data container if `data_container = true`
 
-See [here](https://github.com/eris-ltd/eris-cli/tree/develop#data) for more information about `eris data`.
+See [here](https://github.com/monax/cli/tree/develop#data) for more information about `eris data`.
 
 Protip: Running too many services at once might crash you operating system: kill a service
 
