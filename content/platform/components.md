@@ -65,7 +65,7 @@ A handful of applications are already built for you. Some of these services are 
 
 Deploy to the cloud. Our [advanced cloud tutorial](/docs/chain-deploying) provides more information on this process. We'll be adding cloud service integrations in the coming months (e.g. k8s)
 
-Voila! Your app is ready for users. Of course, you'll want to build a user interface, likely at the javascript layer. To simplify that process, we have three javasript libraries: [legacy-db.js](https://github.com/monax/legacy-db.js/blob/master/README.md),  [legacy-contracts.js](https://github.com/monax/legacy-contracts.js/blob/master/README.md), and [legacy-keys.js](https://github.com/monax/legacy-keys.js/blob/master/README.md)
+Voila! Your app is ready for users. Of course, you'll want to build a user interface, likely at the javascript layer. To simplify that process, we have three javasript libraries: [legacy-db.js](https://github.com/monax/legacy-db.js/blob/master/README.md),  [legacy-contracts.js](https://github.com/monax/legacy-contracts.js/blob/master/README.md), and [keys.js](https://github.com/monax/keys.js/blob/master/README.md)
 
 That is a lot of components. So where should you even start?
 
