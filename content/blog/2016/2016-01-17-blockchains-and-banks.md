@@ -17,8 +17,6 @@ title: Blockchains and Banks, or Why Hearn's Post Isn't a PR Stunt
 url: /2016/01/17/blockchains-and-banks/
 ---
 
-[{{< image_blog "banks-blockchains.jpg" >}}](https://www.flickr.com/photos/jakerust/16826216252/)
-
 **This is a subjective piece full of selection bias and my own experiences. Take it for what it is worth: one human's experiences and opinions. It is no more, nor less, than that.** It's also quite inside baseball for many who are not entrenched in the blockchains space. If you find yourself reading this and do not know what I'm talking about, then this post probably wasn't written with you in mind.
 
 Mike Hearn recently wrote a piece which has the bitcoin and blockchain communities all aflutter. For different reasons. If you don't know what I'm talking about then please see above (tl;dr, this post probably wasn't written with you in mind).
@@ -64,7 +62,7 @@ Banks are large, complex organizations. As I have argued in the past, a modern b
 
 But all that aside, let's look at what banks are *actually* doing with this technology rather than what we *think* they're doing with it.
 
-What banks are doing, today, with blockchain technology is [orthogonal](https://twitter.com/gendal/status/688434789855145985) (at best), [completely different](/use_cases/bankers/) (at worst) to what decentralized cryptocurrencies are trying to achieve. Banks do not necessarily view the technology as a technical backbone for a new monetary ecosystem. Some do. At least until their risk and compliance departments get involved. But this technology, when viewed as [business process improvement software which cuts across stakeholders](/explainers/smart_contracts/), has little to nothing to do with money on the internet. Why? Three big reasons:
+What banks are doing, today, with blockchain technology is [orthogonal](https://twitter.com/gendal/status/688434789855145985) (at best), [completely different](/use_cases/finance//) (at worst) to what decentralized cryptocurrencies are trying to achieve. Banks do not necessarily view the technology as a technical backbone for a new monetary ecosystem. Some do. At least until their risk and compliance departments get involved. But this technology, when viewed as [business process improvement software which cuts across stakeholders](/explainers/smart_contracts/), has little to nothing to do with money on the internet. Why? Three big reasons:
 
 * cryptocurrencies solve a problem that some users some of the time have, but banks themselves don't have a payments problem and the user base of all of crytocurrency is a drop in the ocean for a large, traditional bank
 * compliance with regulation is a challenge for bitcoin companies, who have a political belief in the technology. Without that religio-political bias and without a sufficient user base, it likely isn't worth a bank's time
@@ -107,5 +105,3 @@ They have much bigger, more immediate problems to solve. Problems which the raw 
 And. Now. For some be happy music.
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/UQ48Oj4ZNvA" frameborder="0" allowfullscreen></iframe></center>
-
-[(Photo credit: CC-BY: www.gotcredit.com )](https://www.flickr.com/photos/jakerust/)

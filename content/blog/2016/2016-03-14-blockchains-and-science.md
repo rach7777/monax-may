@@ -20,7 +20,7 @@ url: /2016/03/14/blockchains-and-science/
 	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
 </div>
 
-Author's Note: This post originally appeared as [How Blockchains Can Further Public Science](https://bitcoinmagazine.com/articles/how-blockchains-can-further-public-science-1457972964) in Bitcoin Magazine. It is maintained here for archival purposes. Eventually, it'll all be on IPFS. [Part 2 is now available](/blog/science/2016/03/15/chains-and-science-how-to/)
+Author's Note: This post originally appeared as [How Blockchains Can Further Public Science](https://bitcoinmagazine.com/articles/how-blockchains-can-further-public-science-1457972964) in Bitcoin Magazine. It is maintained here for archival purposes. Eventually, it'll all be on IPFS. [Part 2 is now available](/2016/03/15/chains-and-science-how-to/)
 
 
 The thing that had me most excited about Bitcoin back in 2013 was its potential to re-align the incentives in academia and re-define how science and research is conducted. 
@@ -77,4 +77,4 @@ The fight for open access to knowledge has been an ongoing battle – a battle t
 
 Science is ultimately a public endeavor, and making that dream a reality now appears possible with blockchains.
 
-See [Part 2](/blog/2016/03/15/chains-and-science-how-to/) for slightly more practical solutions.
+See [Part 2](/2016/03/15/chains-and-science-how-to/) for slightly more practical solutions.

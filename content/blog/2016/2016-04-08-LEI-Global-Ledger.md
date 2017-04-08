@@ -17,7 +17,7 @@ tags:
 - RDM
 - MDM
 title: Legal Entity Global Ledger - How to liberate public data (with chains)
-url: /2016/04/08/LEI-Global-Ledger/
+url: /2016/04/08/lei-global-ledger/
 ---
 
 <div class="note">

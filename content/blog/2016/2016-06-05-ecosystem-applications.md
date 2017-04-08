@@ -144,7 +144,7 @@ This is, for lack of a better metaphor, the OSX style of ecosystem applications.
 
 Idea two takes the opposite perspective. That there can be no binary which can, to a sufficient degree of both standardization as well as flexibility, truly meet the divergent needs that ecosystem application makers actually have. This is, again for lack of a better metaphor, the linux style of ecosystem applications.
 
-For those of us who fall squarely in camp two, we feel that ecosystem application makers can greatly benefit from increased modularity along with increased standardization around *how the modules fit together*. Something we've talked about at a more technical level [here](/blog/2015/12/31/on-blockchain-clients-in-2016/) and [here](/blog/2016/04/03/wtf-is-eris/).
+For those of us who fall squarely in camp two, we feel that ecosystem application makers can greatly benefit from increased modularity along with increased standardization around *how the modules fit together*. Something we've talked about at a more technical level [here](/2015/12/31/on-blockchain-clients-in-2016/) and [here](/2016/04/03/wtf-is-eris/).
 
 In our view focusing standardization efforts not at the point of what a single binary built to operate a single network can do, but rather on standardizing the way in which various, flexible components can talk to one another, is what will really empower progress.
 

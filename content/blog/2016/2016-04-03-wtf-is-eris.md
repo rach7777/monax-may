@@ -147,7 +147,7 @@ In the above framework pictures, in particular this one:
 
 {{< image_blog "wtf-eris-options.png" >}}
 
-We reference a component of eris which is currently not in our repositories (`eris-rt-XXX` in the above). The components in the above image that are colored green are areas where eris is intending to keep building. This is not a [big departure](/blog/2015/12/31/on-blockchain-clients-in-2016/) for us. Indeed, it is the [continuation of a path](/blog/2016/03/02/eris-and-tendermint/) we've been heading for a while.
+We reference a component of eris which is currently not in our repositories (`eris-rt-XXX` in the above). The components in the above image that are colored green are areas where eris is intending to keep building. This is not a [big departure](/2015/12/31/on-blockchain-clients-in-2016/) for us. Indeed, it is the [continuation of a path](/2016/03/02/eris-and-tendermint/) we've been heading for a while.
 
 So, what exactly, is `eris:runtime`? Over the next few release cycles (leading up to our 1.0 release) we will be refactoring our current efforts to fit more cleanly into the modular components outlined here:
 

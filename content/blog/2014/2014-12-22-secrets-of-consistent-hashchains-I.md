@@ -12,7 +12,7 @@ published: true
 tags:
 - blockchains
 title: 'Secrets of Consistent Hashchains I: Eventual Consistency'
-url: /2014/12/22/secrets-of-consistent-hashchains-I/
+url: /2014/12/22/secrets-of-consistent-hashchains-i/
 ---
 
 <div class="note">

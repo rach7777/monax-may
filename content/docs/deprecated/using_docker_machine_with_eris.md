@@ -3,6 +3,8 @@
 type:   docs
 layout: single
 title: "Deprecated | Using Docker Machine With Eris"
+aliases:
+   - /docs/deprecated/using-docker-machine-with-eris
 
 ---
 

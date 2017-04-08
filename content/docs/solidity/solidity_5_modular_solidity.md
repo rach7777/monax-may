@@ -67,7 +67,7 @@ contract mortal is owned {
 
 Through the rules of inheritance (which is very similar to how it works in C++), `mortal` now has all the fields and function of `owned`, and when it is instantiated it will automatically call the constructor of `owned` which will set the `owner` field. It can also call `isOwner` to do the owner check. Also, if `mortal` is extended by another contract, that contract will have a `kill()` function that selfdestructs the contract and can only be called by the contract creator (which is what the `mortal` contract is for).
 
-Finally, a very simple [unit-testing contract](solidity_4_testing_solidity) could be written for `owned` to ensure that it does indeed work:
+Finally, a very simple [unit-testing contract](/docs/solidity/solidity_4_testing_solidity) could be written for `owned` to ensure that it does indeed work:
 
 ```javascript
 contract failer {

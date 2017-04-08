@@ -34,7 +34,7 @@ Over time I will be transfering maintainership of `eris:package_manager` and `er
 
 As we move into exploring more deeply smart contract machines which are not Ethereum Virtual Machine based (which is on our workplan), he will be deeply involved in how the tooling operates in that new and largely undefined space.
 
-The last major area that RJ will be assisting with is addressing needs which our users have with respect to the Solidity language itself. RJ has already made significant contributions to the Solidity language, and we have long wanted to be "productive" users of that language by contributing where we can. We now have a marmot with the skills and ability to positively contribute rather than simply be ["only users"](/blog/2016/02/03/on-open-source-banks/).
+The last major area that RJ will be assisting with is addressing needs which our users have with respect to the Solidity language itself. RJ has already made significant contributions to the Solidity language, and we have long wanted to be "productive" users of that language by contributing where we can. We now have a marmot with the skills and ability to positively contribute rather than simply be ["only users"](/2016/02/03/on-open-source-banks/).
 
 In addition, RJ is our most cryptocurrency friendly marmot, so he will likely be working on marmot-y outreach into that community where we feel we can add value to existing tooling and products in that space.
 

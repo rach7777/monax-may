@@ -91,7 +91,7 @@ No.
 
 The custodian of the Notes (in this case a "Common Safekeeper") will have custody of the notes and will deposit them with Clearstream, who will have a ledger which records that the Common Safekeeper owns the entirety of the issuance. Securities deposited with ICSDs are customarily insolvency-remote vis a vis the ICSD so there's no counterparty risk at this level of the transaction.
 
-Using a SQL database with digital signatures for this purpose is probably easier/faster than using Bitcoin or a blockchain. You *could* use a blockchain if you wanted to, for instance, protect yourself against something like a [SQL injection attack](http://www.reddit.com/r/erisindustries/comments/31uuru/blockchain_usecase_1_user_1_instantiation/) and verify the contents of the database - in which case all the "blockchainy" things you need are merkleisation and the use of private key write permissions to control access.
+Using a SQL database with digital signatures for this purpose is probably easier/faster than using Bitcoin or a blockchain. You *could* use a blockchain if you wanted to, for instance, protect yourself against something like a SQL injection attack and verify the contents of the database - in which case all the "blockchainy" things you need are merkleisation and the use of private key write permissions to control access.
 
 But even if you did that, you still wouldn't need value-tokens. The presence of [database operators/admins](/docs) in a commercial blockchain deployment (as surely there will be) means that the only need tokens satisfy - automatic monetary rewards to incentivise security - no longer exists.
 
@@ -155,7 +155,7 @@ Hence: we at Monax Industries see a world with millions of blockchains, each des
 
 Guess which company in the world is the only one that makes free, open-source tools that you can use - today - to solve problems just like this one.
 
-And no, it isn't [Marmot Corp](http://www.marmcorp.com).
+And no, it isn't Marmot Corp.
 
 
 

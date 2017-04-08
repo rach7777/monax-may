@@ -55,7 +55,7 @@ An introduction to the open alpha release of Eris in ten points:
 
 * We call these serverless applications **Distributed Applications** or **DApps.**
 
-* Apologies that we don't have any demonstrator applications just now apart from our ["Hello World" DApp](https://github.com/monax/hello-world-dapp) (we've been pretty busy this week, as you might imagine). However, note we're aiming to release two technology demonstrators in early January - one, a streaming-video application with an in-built Bitcoin payment mechanism designed to showcase Eris' potential in DRM applications, and another, a marketplace application designed to bring together software developers building on Eris and potential customers who want blockchain tech, and help them to reach agreement on heads of terms (and create a cryptographically-secure transaction record of the same).
+* Apologies that we don't have any demonstrator applications just now apart from our ["Hello Doug" App](https://github.com/monax/hello-doug) (we've been pretty busy this week, as you might imagine). However, note we're aiming to release two technology demonstrators in early January - one, a streaming-video application with an in-built Bitcoin payment mechanism designed to showcase Eris' potential in DRM applications, and another, a marketplace application designed to bring together software developers building on Eris and potential customers who want blockchain tech, and help them to reach agreement on heads of terms (and create a cryptographically-secure transaction record of the same).
 
 <h2>3. Ok, you said "blockchain," which sets off my bullshit alarm. You have precisely five seconds to convince me you know what you're talking about. </h2>
 

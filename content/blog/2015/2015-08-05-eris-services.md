@@ -80,7 +80,7 @@ eris services ls
 
 Run a Bitcoin node: `btcd`, or an ethereum node `eth`
 
-**Learn more about IPFS as a service [here](/blog/2015/08/05/ipfs-as-a-service/)**
+**Learn more about IPFS as a service [here](/2015/08/05/ipfs-as-a-service/)**
 
 Starting a service can also spawn a data container if `data_container = true`
 

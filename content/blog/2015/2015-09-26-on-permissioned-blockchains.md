@@ -108,11 +108,11 @@ Permissioned blockchain designs (at least as we've conceived them) allow the net
 
 #### 2. Capabilities Restrictions
 
-The second primary difference between a properly conceived permissioned blockchain and a permissionless blockchain is whether the participants in the blockchain have an ability to restrict who can create smart contracts (if the blockchain is [logic optimized](2015-08-10-how-i-current-explain-blockchains)) and/or transact on the blockchain.
+The second primary difference between a properly conceived permissioned blockchain and a permissionless blockchain is whether the participants in the blockchain have an ability to restrict who can create smart contracts (if the blockchain is [logic optimized](/2015/08/10/how-i-current-explain-blockchains/)) and/or transact on the blockchain.
 
 #### Analogizing These Fundamental Differences
 
-The easiest way to explain the differences between permissioned and permissionless blockchains is to analogize. Ethan has [compared](2015-04-30-on-blockchains) a blockchain architecture to a hub and spoke architecture via comparing democracy to dictatorship:
+The easiest way to explain the differences between permissioned and permissionless blockchains is to analogize. Ethan has [compared](/2015/04/30/on-blockchains/) a blockchain architecture to a hub and spoke architecture via comparing democracy to dictatorship:
 
 > [C]onsider this: democracy can be orders of magnitude less efficient at governing large bodies of humans than hierarchical dictatorships, but for one reason or another countries continue to turn to democracy (granted, weak forms of it) rather than dictatorship because of the kind of culture it produces. Blockchain technology may have a very similar impact on humans: even though they are less efficient than their counterparts at the typical things their counterparts were optimized for, they impose new structural paradigms on human interactions that may be valuable in and of themselves, regardless of the performance of the database, and especially if they result in human behavioural patterns that make culture as a whole more efficient.
 
@@ -182,9 +182,9 @@ To begin with, let me quote Ethan (again):
 
 > Blockchains are neat because they take the old concept of commits, tx logs, and replication in database architecture and replace it with an integrated system of authenticated state transitions. That's valuable, potentially very valuable for core infrastructure and services in our economy, for all kinds of things, like transparency and auditing and accountability and so on. Blockchains make auditing and verification easy. You should be able to use that for more than just currencies. Maybe not for some silly "Yo" app, but for next generation smart government and auditable economy, that's going to matter.
 
-[Reference](https://www.reddit.com/r/erisindustries/comments/2pt3ag/decentralisation_for_its_own_sake_good_for_some/cmzthwe)
+Reference
 
-When we get to the land of smart contracts instead of simply blockchains and tokens, the focus of effort for Monax since the days when Andreas was working on PRO-Doug and Tyler, Preston and I were prototyping a foundation in smart contracts and Ethan was working on Cryptoswartz (or, proof of custody), what we're essentially talking about (as I've argued [elsewhere](2015-09-15-smart-contracts-intro.md)) is "business process automation which reaches outside of the glass doors". In other words, across organizations.
+When we get to the land of smart contracts instead of simply blockchains and tokens, the focus of effort for Monax since the days when Andreas was working on PRO-Doug and Tyler, Preston and I were prototyping a foundation in smart contracts and Ethan was working on Cryptoswartz (or, proof of custody), what we're essentially talking about (as I've argued [elsewhere](/2015/09/15/smart-contracts-intro/)) is "business process automation which reaches outside of the glass doors". In other words, across organizations.
 
 And let's get real for a second. Business process automation is not something which needs to be ran on the Worlds Computer in order to be useful. To be clear, I'm not trying to denigrate Eth's messaging, I indeed like that positioning. That said, there is tons of utility in a smart contract network which is completely independent of having a globally decentralized, globally available, permissionless ledger.
 

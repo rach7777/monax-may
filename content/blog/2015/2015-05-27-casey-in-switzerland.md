@@ -28,12 +28,8 @@ Enjoy!
     <iframe src="//www.youtube.com/embed/z5iTNP3W9Kg?rel=0;modestbranding=1;autohide=1;showinfo=0;controls=1;color=white;theme=dark;" allowfullscreen></iframe>
 </div>
 
-[The slides for this video are available here](https://whatis.eris.industries).
 
 <div class="video-wrap">
     <iframe src="//www.youtube.com/embed/XB0pHaghPIg?rel=0;modestbranding=1;autohide=1;showinfo=0;controls=1;color=white;theme=dark;" allowfullscreen></iframe>
 </div>
 
-[The slides for this video are available here](https://socscience.eris.industries).
-
-[The 2gather video sharing DApp used in the demo is available here](https://github.com/monax/2gather).
