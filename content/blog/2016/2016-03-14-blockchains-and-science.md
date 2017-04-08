@@ -4,6 +4,7 @@ categories:
 - science
 comments: true
 date: 2016-03-14T00:00:00Z
+deprecated: true
 excerpt: Participatory Research. Citizen Science
 meta: true
 published: true
@@ -16,9 +17,7 @@ title: 'Blockchains For Science: Aligning Research Incentives'
 url: /2016/03/14/blockchains-and-science/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 Author's Note: This post originally appeared as [How Blockchains Can Further Public Science](https://bitcoinmagazine.com/articles/how-blockchains-can-further-public-science-1457972964) in Bitcoin Magazine. It is maintained here for archival purposes. Eventually, it'll all be on IPFS. [Part 2 is now available](/2016/03/15/chains-and-science-how-to/)
 

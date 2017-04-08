@@ -4,6 +4,7 @@ categories:
 - eris
 comments: true
 date: 2016-06-05T00:00:00Z
+deprecated: true
 excerpt: Why they're applications which run on an ecosystem level, aka, the entire
   point of the exercise.
 meta: true
@@ -17,9 +18,7 @@ title: What are ecosystem applications?
 url: /2016/06/05/ecosystem-applications/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 [{{< image_blog "ecosystem_applications.jpg" >}}](https://www.flickr.com/photos/frenchy/4469177031/)
 

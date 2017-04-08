@@ -4,6 +4,7 @@ categories:
 - blockchains
 comments: true
 date: 2015-12-31T00:00:00Z
+deprecated: true
 excerpt: Blockchain clients evolved significantly in 2015 and we at Monax fully expect they will continue evolving during 2016. Although we expect they will evolve more slowly and in particular ways.
 meta: true
 published: true
@@ -15,9 +16,7 @@ title: On 2016 Blockchain Clients
 url: /2015/12/31/on-blockchain-clients-in-2016/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 [{{< image_blog "blockchain_clients_2016.jpg" >}}](https://www.flickr.com/photos/42988571@N08/8545407174/)
 

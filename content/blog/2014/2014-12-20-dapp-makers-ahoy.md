@@ -4,6 +4,7 @@ categories:
 - products
 comments: true
 date: 2014-12-20T00:00:00Z
+deprecated: true
 excerpt: 'If someone is asking themself this question: I want to make distributed
   apps, why should I choose Eris'' tools?, I will give my answer.'
 meta: true
@@ -16,9 +17,7 @@ title: Decerver and Thelonious from a DApp-maker Perspective
 url: /2014/12/20/dapp-makers-ahoy/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 If someone is asking them self this question -- "I want to make distributed apps, why should I choose Eris' tools?", I will give a good answer.
 

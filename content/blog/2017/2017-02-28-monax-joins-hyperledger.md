@@ -4,6 +4,7 @@ categories:
 - announcements
 comments: false
 date: 2017-02-28T00:00:00Z
+deprecated: true
 meta: true
 published: true
 tags:
@@ -15,9 +16,7 @@ excerpt: "Monax announces it has joined Hyperledger and will be submitting its m
 title: "Why we're joining Hyperledger"
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 [{{< image_blog "hyperledger.jpg" >}}](https://www.flickr.com/photos/50576141@N03/15805560016/)
 

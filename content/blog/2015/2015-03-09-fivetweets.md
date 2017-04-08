@@ -4,6 +4,7 @@ categories:
 - products
 comments: true
 date: 2015-03-09T00:00:00Z
+deprecated: true
 excerpt: Casey sums it up nicely.
 meta: true
 published: true
@@ -16,9 +17,7 @@ title: Blockchains (& smart contracts) without cryptocurrency, in five tweets.
 url: /2015/03/09/fivetweets/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 <blockquote class="twitter-tweet" lang="en"><p>1/ Modern cross-border commercial deals require certainty as to project status and verifiability for stakeholders.</p>&mdash; Eris Industries (@monaxHQ) <a href="https://twitter.com/monaxHQ/status/574924575710035970">March 9, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

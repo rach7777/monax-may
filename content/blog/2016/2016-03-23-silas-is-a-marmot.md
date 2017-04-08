@@ -4,6 +4,7 @@ categories:
 - hiring
 comments: true
 date: 2016-03-23T00:00:00Z
+deprecated: true
 excerpt: We are immensely excited to announce that Silas Davis has joined Monax as
   a developer on our Platform Team.
 meta: true
@@ -16,9 +17,7 @@ title: Silas is a Marmot
 url: /2016/03/23/silas-is-a-marmot/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 I'm very pleased to announce that Silas Davis has joined Monax as a developer on our platform team. He started this week and will be working out of our London office.
 

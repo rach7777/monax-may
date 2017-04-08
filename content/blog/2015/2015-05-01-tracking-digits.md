@@ -4,6 +4,7 @@ categories:
 - legal tech
 comments: true
 date: 2015-05-01T00:00:00Z
+deprecated: true
 excerpt: Blockchain and smart contract tracking of digital goods and raw information
   could not be easier when using Monax Industries' Distributed Application Platform. Here's how
   to do it.
@@ -18,9 +19,7 @@ title: 'Tracking Digits: How to Design Your Smart Contract Tracking System'
 url: /2015/05/01/tracking-digits/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 [{{< image_blog "racer.jpg" >}}](https://www.flickr.com/photos/tom-margie/1299414993/)
 

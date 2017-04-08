@@ -4,6 +4,7 @@ categories:
 - tutorials
 comments: true
 date: 2015-09-01T00:00:00Z
+deprecated: true
 excerpt: BTCD as a (Monax) Service
 meta: true
 published: true
@@ -18,9 +19,7 @@ title: 'Eris CLI Services Walkabout: BTCD'
 url: /2015/09/01/btcd-as-a-service/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 We got a question recently on the forum:
 

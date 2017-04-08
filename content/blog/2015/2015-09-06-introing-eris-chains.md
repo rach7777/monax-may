@@ -4,6 +4,7 @@ categories:
 - tutorials
 comments: true
 date: 2015-09-06T00:00:00Z
+deprecated: true
 excerpt: Getting a fresh and shiny new blockchain, Monax style.
 meta: true
 published: true
@@ -22,9 +23,7 @@ aliases:
 - /2015/09/05/docker-and-eris/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 We, surprisingly, keep getting inbound communcation which queries why we are not "making" permissioned blockchains "any more". This is surprising to me for two reasons, the first is because many folks seemed to utterly detest the *idea* of permissioned blockchains at all. Full Stop. We called this, in the spring, (internally) the great blockchains war. It wasn't really a war to us at all. We do not view permissioned or unpermissioned chains as competitors of one another any more than we view Cassandra and Mongo as competitors of one another. While both exist in the generalized database space, they are very different tools for very different things. Yet, despite the perspective that these are different tools to accomplish different purposes, folks seemed to get very religious about their blockchain designs and feel very passionate about one chain design vis a vis another. At Monax we are not religious about our blockchain designs.
 

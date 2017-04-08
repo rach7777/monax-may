@@ -4,6 +4,7 @@ categories:
 - legal tech
 comments: true
 date: 2014-12-17T00:00:00Z
+deprecated: true
 excerpt: The Legal Hacker movement has been interested in applying the process and
   tools which hackers use to make law more efficient, accessible, and precise. The
   set of tools we just released, we hope will be an incredibly interesting tool for
@@ -19,9 +20,7 @@ title: 'Why We Built the Best #Legalhack ing Tool I Know Of'
 url: /2014/12/17/the-best-legal-hacking-tool-i-know/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 Over a year ago, I was working on sketches and outlines for a product I was very interested in working on called RMOC (short for Research-Read-Map-Outline-Compose-Consider) which was meant to be an integrated document environment (IDE) for people who work on developing documents, but mostly for lawyers. The sketches of why I thought this was an important project are available on RMOC's Github.
 

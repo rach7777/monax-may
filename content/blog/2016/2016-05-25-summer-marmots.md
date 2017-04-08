@@ -4,6 +4,7 @@ categories:
 - hiring
 comments: true
 date: 2016-05-25T00:00:00Z
+deprecated: true
 excerpt: Two summer interns with awesome skills join Monax
 meta: true
 published: true
@@ -18,9 +19,7 @@ title: Summer Interns Grow the Burrow
 url: /2016/05/25/summer-marmots/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 Today, we're excited to announce two summer interns.
 

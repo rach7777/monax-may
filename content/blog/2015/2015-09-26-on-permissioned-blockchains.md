@@ -4,6 +4,7 @@ categories:
 - blockchain design
 comments: true
 date: 2015-09-26T00:00:00Z
+deprecated: true
 excerpt: This is a think piece examining the idea of application-specific blockchains.
   Where are they useful? Where are they not useful?
 meta: true
@@ -17,9 +18,7 @@ title: On Permissioning Your Blockchains
 url: /2015/09/26/on-permissioned-blockchains/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 [{{< image_blog "mostpit.jpg" >}}](https://www.flickr.com/photos/kevincortopassi/3108413681/)
 

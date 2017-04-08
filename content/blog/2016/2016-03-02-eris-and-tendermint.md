@@ -4,6 +4,7 @@ categories:
 - philosophy
 comments: true
 date: 2016-03-02T00:00:00Z
+deprecated: true
 excerpt: Sensible Blockchain Stacks
 meta: true
 published: true
@@ -18,9 +19,7 @@ title: 'On Eris and Tendermint: Application and Consensus'
 url: /2016/03/02/eris-and-tendermint/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 At Monax Industries and Tendermint, we're often asked: "what is the difference between Eris (Monax Industries' software) and Tendermint?"
 

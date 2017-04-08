@@ -5,6 +5,7 @@ date: 2015-04-14T00:00:00Z
 excerpt: Why go to the beach? Let's build distributed systems instead!
 meta: true
 published: true
+deprecated: true
 tags:
 - eris
 - thelonious
@@ -14,9 +15,7 @@ title: Eris Industries 2015 Summer Internships
 url: /2015/04/14/ei-summer-interns/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 ### 2015 Summer Internships with Eris Industries
 

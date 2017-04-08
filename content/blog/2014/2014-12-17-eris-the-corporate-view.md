@@ -4,6 +4,7 @@ categories:
 - products
 comments: false
 date: 2014-12-17T00:00:00Z
+deprecated: true
 excerpt: Smart Contracts have arrived. Here's how Eris v 0.9 works, and how the rules
   of the blockchain game have changed.
 meta: true
@@ -16,9 +17,7 @@ title: Meet Eris. The distributed computing solution for industry.
 url: /2014/12/17/eris-the-corporate-view/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 <h2>Meet Eris.</h2>
 

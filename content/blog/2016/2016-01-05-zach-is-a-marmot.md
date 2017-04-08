@@ -4,6 +4,7 @@ categories:
 - hiring
 comments: true
 date: 2016-01-05T00:00:00Z
+deprecated: true
 excerpt: We are immensely excited to announce that Zach Ramsay has joined Monax Industries as
   a Developer on our Platform Team.
 meta: true
@@ -16,9 +17,7 @@ title: Zach is a Marmot
 url: /2016/01/05/zach-is-a-marmot/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 It is my great pleasure to announce that Zach Ramsay has joined Monax Industries full time as a Developer for our platform team. Zach has been working with our platform team since September as an intern. Upon the successful completion of his internship we have asked Zach to come on board full time. Although Zach is today, officially a full time, employed marmot, he's been a honorary marmot since before anyone knew what we had going on.
 
