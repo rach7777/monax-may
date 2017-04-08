@@ -16,3 +16,4 @@ facebook:      https://www.facebook.com/monaxHQ
 slack:         https://slack.monax.io
 contact_email: mailto:contact@monax.io
 what_is_monax:  The Monax platform is for building, testing, maintaining, and operating ecosystem applications with a blockchain backend. Wrangling the dragons of smart contract blockchains has never been easier.
+rename_docs: "Note: As of 2017, our platform has been renamed to Monax. Previous documentation refering to an earlier version of the software prior to 0.16.0 can be found in the deprecated directory. Current documentation (=> 0.16.0) changes the <code>eris</code> command and <code>~/.eris</code> directory to <code>monax</code> and <code>~/.monax</code> respectively."
