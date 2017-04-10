@@ -23,7 +23,7 @@ url: /2016/01/01/mvp-streaming-music/
 
 Smart contracts give us **increased verifiability over business processes that cut across stakeholders**. But that is, admittedly, an abstract concept. Over this series of posts I will be working to elucidate what such systems look like from our perspective.
 
-When I speak with clients I am constantly noting that there are roughly two ways to leverage smart contract technology. On the one hand you can identify business processes which you would like to automate but have been unable to with current technology (because, as we know, [traditional business process automation stops at your organization's glass doors](/blog/2015/2015-09-15-smart-contracts-intro.md)) and automate those processes in a cost reduction effort using smart contract technology.
+When I speak with clients I am constantly noting that there are roughly two ways to leverage smart contract technology. On the one hand you can identify business processes which you would like to automate but have been unable to with current technology (because, as we know, [traditional business process automation stops at your organization's glass doors](/2015/09/15/smart-contracts-intro/)) and automate those processes in a cost reduction effort using smart contract technology.
 
 But reducing opex is only one way to satisfy corporate duties to maximize shareholder value. The other hand, to me, is equally important. Namely, what new profit centers can open up for service providers if others adopt smart contract technology?
 

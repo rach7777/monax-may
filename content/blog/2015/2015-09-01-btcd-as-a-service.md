@@ -4,6 +4,7 @@ categories:
 - tutorials
 comments: true
 date: 2015-09-01T00:00:00Z
+deprecated: true
 excerpt: BTCD as a (Monax) Service
 meta: true
 published: true
@@ -18,11 +19,9 @@ title: 'Eris CLI Services Walkabout: BTCD'
 url: /2015/09/01/btcd-as-a-service/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
 
-We got a question recently on the [forum](https://support.monax.io/support/discussions/topics/6000011734):
+
+We got a question recently on the forum:
 
 ```
 So just to be clear if I wanted to mine with that [btcd] node (and I don't) what would I configure? Not the service definition file right? Bitcoind has the .conf file and it has commands. When I want to mine using btcd (or mine my test chain) where is this determined?
@@ -43,7 +42,7 @@ Since btcd doesn't use a start script we'll save that for another day (Ethan and
 
 ### If a Service Starts With Config Files What Do I Do?
 
-The asker of the original question is right, the `btcd` container starts with a config file instead of via the other major "Docker way" which is a bunch of environment variables passed into a semi-intelligent start script which preconfigures and then runs a binary (for an example of this see Ethan's [eris chain manager scripts](https://github.com/monax/eris-db/tree/master/DOCKER) which we use for `eris chains`). `btcd` uses a config file.
+The asker of the original question is right, the `btcd` container starts with a config file instead of via the other major "Docker way" which is a bunch of environment variables passed into a semi-intelligent start script which preconfigures and then runs a binary (for an example of this see Ethan's [eris chain manager scripts](https://github.com/monax/common/blob/master/docker/btcd/Dockerfile) which we use for `eris chains`). `btcd` uses a config file.
 
 This is where having an understanding of how `eris` manages data containers becomes important.
 

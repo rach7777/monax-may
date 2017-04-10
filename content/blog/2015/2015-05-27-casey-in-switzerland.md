@@ -4,6 +4,7 @@ categories:
 - videos
 comments: true
 date: 2015-05-27T00:00:00Z
+deprecated: true
 excerpt: The videos from Casey's Switzerland Talks have been Published.
 meta: true
 published: true
@@ -14,9 +15,7 @@ title: Casey Goes to Switzerland to Talk Eris
 url: /2015/05/27/casey-in-switzerland/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 Casey was recently in Switzerland to give two talks. The production quality of these videos is not great (and I'm to blame). My phone recorder needed a paid upgrade to save more than three minutes of an .ogg file -- which I only realized after the first talk. We will be working on adding in some additional content to help understand what was happening on the slides and whiteboard.
 
@@ -28,12 +27,8 @@ Enjoy!
     <iframe src="//www.youtube.com/embed/z5iTNP3W9Kg?rel=0;modestbranding=1;autohide=1;showinfo=0;controls=1;color=white;theme=dark;" allowfullscreen></iframe>
 </div>
 
-[The slides for this video are available here](https://whatis.eris.industries).
 
 <div class="video-wrap">
     <iframe src="//www.youtube.com/embed/XB0pHaghPIg?rel=0;modestbranding=1;autohide=1;showinfo=0;controls=1;color=white;theme=dark;" allowfullscreen></iframe>
 </div>
 
-[The slides for this video are available here](https://socscience.eris.industries).
-
-[The 2gather video sharing DApp used in the demo is available here](https://github.com/monax/2gather).

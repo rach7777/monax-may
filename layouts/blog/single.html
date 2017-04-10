@@ -14,10 +14,10 @@
       <article class="content" id="main-content">
         {{- if .Params.deprecated -}}
           <div class="deprecation-warning">
-            <h3>Deprecation Warning</h3>
-            <p>Please note this post refers to a deprecated version of the <code>eris</code> platform, which is now known as <code>monax</code>. It is retained for historical purposes.</p>
-            <br />
-            <br />
+            <div class="note">
+              <h4 style="font-style: normal;">Deprecation Warning</h4>
+              <p>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</p>
+            </div>
           </div>
         {{- end -}}
         {{ .Content }}

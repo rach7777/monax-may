@@ -5,6 +5,7 @@ categories:
 - distributed business
 comments: true
 date: 2015-11-01T00:00:00Z
+deprecated: true
 excerpt: IPFS is a revolutionary new file system that aims to decentralize the web.
   It also has characteristics that make it a great fit with smart contracts, which
   is why we have integrated it into Monax.
@@ -19,9 +20,7 @@ url: /2015/11/01/eris-and-ipfs/
 
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 By changing the way different parties cooperate, smart contracts radically improve how complex processes are run. This new paradigm will have wide-reaching effects in many areas.
 

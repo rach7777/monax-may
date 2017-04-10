@@ -4,6 +4,7 @@ categories:
 - blockchains
 comments: true
 date: 2014-12-22T00:00:00Z
+deprecated: true
 excerpt: A blockchain is a silly sort of a datastructure designed to keep thousands
   of computers in sync while providing a useful service that is not controlled or
   owned by anyone in particular. Read more of Part 1 of Ethan's blockchain tome here.
@@ -12,12 +13,10 @@ published: true
 tags:
 - blockchains
 title: 'Secrets of Consistent Hashchains I: Eventual Consistency'
-url: /2014/12/22/secrets-of-consistent-hashchains-I/
+url: /2014/12/22/secrets-of-consistent-hashchains-i/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 ### Blockchains
 

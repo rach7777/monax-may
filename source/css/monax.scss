@@ -392,7 +392,111 @@ nav.navbar {
     height: 0;
 }
 
-// Hide empty links on sidebars
+
+/*                */
+/*   Newsletter   */
+/*                */
+.modal {
+    background-color: rgba(0,0,0,0.3);
+    cursor: no-drop;
+
+    .modal-dialog {
+        cursor: auto;
+    }
+}
+
+.modal-content {
+
+    .modal-header {
+        padding: 20px 30px;
+
+        .modal-title {
+            font-style: normal;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            height: 35px;
+            width: 35px;
+            background-color: $modal_close;
+            border: none;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 20px;
+            line-height: 20px;
+            @include transition(background 0.3s);
+
+            &:hover {
+                background-color: darken($modal_close, 10%);
+            }
+        }
+    }
+
+    .modal-body {
+        position: relative;
+        padding: 20px 30px 40px;
+
+        #mc_embed_signup {
+            background-color: transparent;
+
+            form {
+                padding: 0;
+
+                .mc-field-group {
+                    width: 100%;
+
+                    label {
+                        text-align: left;
+                        padding: 2px 0px;
+                        font-size: 18px;
+                        font-weight: 300;
+                        letter-spacing: 0px;
+                    }
+
+                    input {
+                        height: 44px;
+                        font-size: 16px;
+                        font-weight: 300;
+                        color: #555;
+                    }
+
+                    &.required-wrap:after {
+                        content: "*";
+                        position: absolute;
+                        top: 20px;
+                        right: -14px;
+                        color: #ffffff;
+                        font-size: 50px;
+                        line-height: 53px;
+                        width: 30px;
+                        height: 30px;
+                        background-color: $monax;
+                        border-radius: 50%;
+                        text-align: center;
+                    }
+                }
+                
+                .button {
+                    padding: 14px 28px;
+                    height: auto;
+                    margin: 0 auto;
+                    display: block;
+                    background-color: $monax !important;
+                    font-size: 18px;
+                    @include transition(background-color 0.3s);
+
+                    &:hover {
+                        background-color: darken($monax, 10%) !important;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+
 
 /*              */
 /*   Sidebar    */
@@ -651,6 +755,7 @@ article a {
         height: 30px;
         background-color: #96b85d;
         border-radius: 50%;
+        text-align: center;
     }
 
     .start-hidden {

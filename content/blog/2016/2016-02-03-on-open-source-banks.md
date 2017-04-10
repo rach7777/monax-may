@@ -4,6 +4,7 @@ categories:
 - distributed systems for business
 comments: true
 date: 2016-02-03T00:00:00Z
+deprecated: true
 excerpt: 'Hint: think about your ecosystem, think like a participant, think like a
   platform.'
 meta: true
@@ -16,9 +17,7 @@ title: What Bankers Could Learn From the Open Source Community
 url: /2016/02/03/on-open-source-banks/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 [{{< image_blog "open_source.jpg" >}}](https://www.flickr.com/photos/opensourceway/8297629214/)
 

@@ -2,6 +2,7 @@
 author: preston
 comments: false
 date: 2015-05-29T00:00:00Z
+deprecated: true
 excerpt: Eris Industries' Position is that this proposed bill would impinge vital,
   and legitimate business interests of our company. As such we will be relocating
   staff out of the United Kingdom until further clarity is achieved.
@@ -16,9 +17,7 @@ title: Eris Industries Statement on the Reintroduction of the UK Investigatory P
 url: /2015/05/29/ei-comms-data-bill/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 **Note: Although Eris Industries has changed its name to Monax Industries since this blog post was written, our company's opposition to the Communications Data Bill (and later the Investigatory Powers Bill was well-covered in national and international press. We therefore leave this post unaltered for the benefit of the record.)**
 

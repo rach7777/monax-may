@@ -4,6 +4,7 @@ categories:
 - hiring
 comments: true
 date: 2016-03-23T00:00:00Z
+deprecated: true
 excerpt: We are immensely excited to announce that Silas Davis has joined Monax as
   a developer on our Platform Team.
 meta: true
@@ -16,13 +17,11 @@ title: Silas is a Marmot
 url: /2016/03/23/silas-is-a-marmot/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 I'm very pleased to announce that Silas Davis has joined Monax as a developer on our platform team. He started this week and will be working out of our London office.
 
-Silas got in touch with us after Preston first started the Company's public advocacy campaign against the #IPBill [in the middle of 2015](/blog/2015/05/29/ei-comms-data-bill/). As a privacy advocate he was impressed that a little start up out of nowhere was going on national radio (which, oddly, is still a thing) and strongly advocating against what the government said it was planning to do.
+Silas got in touch with us after Preston first started the Company's public advocacy campaign against the #IPBill [in the middle of 2015](/2015/05/29/ei-comms-data-bill/). As a privacy advocate he was impressed that a little start up out of nowhere was going on national radio (which, oddly, is still a thing) and strongly advocating against what the government said it was planning to do.
 
 In his first marmot-y move he sent me an email (at that time the contact@... still came to my inbox) and said he wanted to chat. So we went out for a beer and talked for a bit. Alas, he was gainfully employed at the time with a quite hot startup so we'd have to wait.
 

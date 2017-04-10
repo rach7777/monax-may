@@ -17,7 +17,7 @@ Monax's Software Development Kits enable the assembly and configuration of ecosy
 ```
 
 <div class="note">
-	<em>Note: As of 2017, our product has been renamed from Eris to Monax. The <code>monax</code> platform was previously referred on this page as <code>eris</code>.</em>
+    <em>Note: As of 2017, our platform has been renamed to Monax. The references on this page have been recently changed.</em>
 </div>
 
 At Monax, our Software Development Kits are our core product offering.
@@ -72,7 +72,7 @@ Monax's Logistics Software Development Kit accelerates your supply chain applica
 | Available Tier 2 Add-Ons | | Negotiable Instruments<br />Money Markets | Claims Management<br />Reinsurance | Asset Tracking |
 | Upcoming Add-Ons | | Asset Syndication (Q1, 17)<br />Trade Receivables (Q1, 17)<br />Asset Backed Securities(Q1, 17) | Catastrophic Bonds (Q1, 17) | Asset Syndication (Q1, 17) |
 
-## Extensability
+## Extensibility
 
 Our SDKs can be extended in a variety of manners to fit your specific use case. Many of our customers have successfully taken our SDKs as the base of a range of use cases which we never would have contemplated. The SDKs can be extended either by adding additional Ethereum Virtual Machine contracts which interface with the SDKs or add-on modules your company has subscribed to, or they could be extended using native contracts.
 

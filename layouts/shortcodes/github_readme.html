@@ -1,4 +1,4 @@
-{{- $user := replace "$user/$repo" "$user" "eris-ltd" -}}
+{{- $user := replace "$user/$repo" "$user" "monax" -}}
 {{- $repo := replace $user "$repo" (.Get 0) -}}
 {{- $url :=  replace "https://api.github.com/repos/$repo/readme" "$repo" $repo -}}
 {{- $resp := getJSON $url -}}

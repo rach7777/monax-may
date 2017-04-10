@@ -4,6 +4,7 @@ categories:
 - hiring
 comments: true
 date: 2016-05-25T00:00:00Z
+deprecated: true
 excerpt: Two summer interns with awesome skills join Monax
 meta: true
 published: true
@@ -18,15 +19,13 @@ title: Summer Interns Grow the Burrow
 url: /2016/05/25/summer-marmots/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 Today, we're excited to announce two summer interns.
 
 [Samir Patel](https://twitter.com/samirpatellaw) joins us as a law student from MSU Law and will be helping out the libraries team with, among other things, the legal accuracy of our smart contracts bundles. My first introduction to Samir was a DM on Slack a few months back, asking for help setting up Eris on his computer. After a little hand holding, Samir got things going and was (mostly) off to the races. #lawyerswhocode-eventually.
 
-Among other things, learning to program has this quirk of requiring one to learn a plethora of tools. One such tool, git, for version control, is essential and really ought to be a required class in high school (but I digress). So while passing through the region, I met up with Samir last month for a weekend of coding and [Moving the (Football) Chains to the Blockchain](/blog/2016/04/02/moving-the-chains/). Yet another use case, though this one is particularly intriguing given the involvement of public funds in sport (stadiums). Hopefully he still remembers all those git commands.
+Among other things, learning to program has this quirk of requiring one to learn a plethora of tools. One such tool, git, for version control, is essential and really ought to be a required class in high school (but I digress). So while passing through the region, I met up with Samir last month for a weekend of coding and [Moving the (Football) Chains to the Blockchain](/2016/04/02/moving-the-chains/). Yet another use case, though this one is particularly intriguing given the involvement of public funds in sport (stadiums). Hopefully he still remembers all those git commands.
 
 We look forward to great things from Samir and if you're in East Lansing or Toronto (yay, another Canadian eh), don't hesitate to buy him a beer and find out how to bring blockchains to sport.
 

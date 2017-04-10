@@ -8,7 +8,7 @@ title: "Tutorials | Solidity 4: Testing Solidity"
 ## Solidity Series
 
 <div class="note">
-  <em>Note: As of 2017, our product has been renamed from Eris to Monax. This documentation refers to an earlier version of the software prior to this name change (<= 0.16). Later versions of this documentation (=> 0.17) will change the <code>eris</code> command and <code>~/.eris</code> directory to <code>monax</code> and <code>~/.monax</code> respectively.</em>
+{{% data_sites rename_docs %}}
 </div>
 
 This sequence of tutorials assumes that you have an understanding of the `monax` tooling to the point we ended in our [101 tutorial sequence](/docs/getting-started/).
@@ -392,13 +392,13 @@ Coverage is a way of checking which of the methods in the "testee" contract are 
 
 I should add that solUnits coverage report is not 100% definite proof. The way it works is basically that the code (AST) is analyzed, and for each invocation of a target method it back-tracks to see if the call-chain originates from a test-function, but in combination with the actual tests it is extremely strong evidence that the function is indeed being called (provided there are no bugs in the library code...). This as opposed to using a VM hook to determine that function X in contract Y is indeed being executed, which will be added in later.
 
-The full, working version of this contract (including Asserter.sol and other things) can be found [here](https://github.com/androlo/sol-unit/blob/master/contracts/src/CoinTest.sol).
+The full, working version of this contract (including Asserter.sol and other things) can be found [here](https://github.com/smartcontractproduction/sol-unit/tree/master/contracts/src).
 
 ## Conclusion
 
 Proper tests for smart-contracts will soon become the standard. This means real, well-designed, multi-level tests and not just some crappy javascript calling some function then checking the return value; however, unit testing is not all. Another thing I believe that a serious Solidity project should have is a proper workspace, with the files laid out as they would in any other code project, and a clear system for building and deploying.
 
-Javascript is good. It has become the de facto language not just for the web, but DApps as well. The Eris stack supports javascript (`Node.js` in particular). This support includes an API for the blockchain client, and our `legacy-contracts` library for talking to solidity contracts.
+Javascript is good. It has become the de facto language not just for the web, but DApps as well. The Monax stack supports javascript (`Node.js` in particular). This support includes an API for the blockchain client, and our `legacy-contracts` library for talking to solidity contracts.
 
 One of the best things with `Node.js` integration is that we get full access to its tools. [gulp](https://github.com/gulpjs/gulp) is particularly useful. It's a very popular build-automation tool that lets you create different tasks, chain them, and many other things. There's also a unit-testing framework called [mocha](https://github.com/mochajs/mocha), and a bunch of different assertion libraries. Since `solUnit` is a node.js library, it is possible to run the tests from mocha, and thereby integrating the Solidity tests with the tests of other DApp code (at least if it is `node.js` javascript).
 

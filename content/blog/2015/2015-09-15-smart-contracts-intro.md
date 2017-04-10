@@ -29,7 +29,7 @@ As inspiring a fantasy as Peter Pan is, it is still a fantasy. With all deferenc
 
 On behalf of the doers, here is how I explain smart contract technology to executives and researchers.
 
-This post is a [semi-follow on to my WTF is going on with blockchains post](2015-08-10-how-i-current-explain-blockchains.md).
+This post is a [semi-follow on to my WTF is going on with blockchains post](/2015/08/10/how-i-current-explain-blockchains/).
 
 ### Preface
 

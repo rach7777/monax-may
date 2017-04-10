@@ -4,6 +4,7 @@ categories:
 - products
 comments: false
 date: 2014-12-17T00:00:00Z
+deprecated: true
 excerpt: Saying one wants to change the world *is* cliche, and it is also passe. Real
   change doesn't happen by talking. It happens by planning and by doing. And yet,
   with planning, doing, and luck, it is possible to improve the existence of those
@@ -18,9 +19,7 @@ title: Eris Industries -- Why Do I Do What I Do?
 url: /2014/12/17/eris-why-is-this-rad/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 It is cliche to say that we want to change the world. I have spent almost a decade studying, leading, and living societal change in one of the some dynamic environments on earth. One of the many things I have learned along that journey is this: saying one wants to change the world *is* cliche, and it is also passe.
 

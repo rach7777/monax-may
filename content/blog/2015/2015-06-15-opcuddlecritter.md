@@ -4,6 +4,7 @@ categories:
 - products
 comments: true
 date: 2015-06-15T00:00:00Z
+deprecated: true
 excerpt: Preston is going to be nice to Bitcoin for an entire month.
 meta: true
 published: true
@@ -16,9 +17,7 @@ title: 'Operation: Cuddly Critter, Part 1'
 url: /2015/06/15/opcuddlecritter/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 {{< image_blog "totallyadorable.jpg" >}}
 

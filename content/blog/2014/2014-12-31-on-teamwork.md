@@ -4,6 +4,7 @@ categories:
 - products
 comments: true
 date: 2014-12-31T00:00:00Z
+deprecated: true
 excerpt: As 2014 becomes 2015, Eris Industries remains committed to working with many
   actors within cryptoeconomic community and within the broader community for change.
   We want to be a positive member of many different communities which means listening,
@@ -20,9 +21,7 @@ title: On Teamwork
 url: /2014/12/31/on-teamwork/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 [{{< image_blog "7866197978_faa9ac1ee0_z.jpg" >}}](https://www.flickr.com/photos/luigimengato/7866197978/in/photolist-cZ7jB5-7rQsQr-6iY2vH-fL7Urw-ioMnEm-n3Eq1J-fJrqWX-SiTb-p7gQau-fKQiKD-fKQiPx-djYeu9-fJHY4s-fJrrjz-fJrrjB-6DooxG-fJHYco-fL7U7s-2J9J8G-fPMrk5-fPMr9W-bsiJnY-8PaNHU-7A1y5v-4BQ4RJ-fJrr4V-jeJE8T-pRanR8-4mnXV9-pSNcb6-9zrqcj-fCYUvZ-fJHXxQ-fKQjfR-fKQiSp-fL7UwU-fJHXX5-fJrr7M-fJrqoZ-fJrqQx-fJHXC5-fJLCuQ-fJHXyU-fJHXJq-fJrqdg-fJrrgH-fJHXeY-fJrqHz-fJHYf9-fJHXrJ)
 
@@ -34,7 +33,7 @@ This space of distributed systems and smart contracts, being (relatively) *new b
 
 Meanwhile, significant, indeed gigantic, problems which humanity faces remain unaddressed. How to corral increases to automation of physical items -- the internet of things -- so that those "things" remain within rule frameworks determined by humans within defined jurisdictions (whether that is global, local, or somewhere in between). [Robot Law Courses](http://courses.georgetown.edu/?courseID=CCTP-799) at elite law schools are a good start, but there are few projects which I know of which are actually seeking to address these governance challenges. How to deal with continuing challenges -- which are near and dear to my own heart after recently leaving my a decade as an international development practitioner for work in the smart contracts space -- of income inequality. This challenge is particularly acute in the face of rising automation and its attendant reduction in labor requirements to meet the needs of corporations. The list of big problems is much longer than the list of possible ways to address those big problems and both of these lists are significantly longer than the groups who are **actually** working to address these problems in an actionable and realistic manner. Marc Andreessen puts it:
 
-<center><blockquote class="twitter-tweet" lang="en"><p>There is so, so, so much yet to build.</p>&mdash; Marc Andreessen (@pmarca) <a href="https://twitter.com/pmarca/status/493646414090489859">July 28, 2014</a></blockquote>
+<center><blockquote class="twitter-tweet" lang="en"><p>There is so, so, so much yet to build.</p>&mdash; Marc Andreessen (@pmarca) <a href="https://twitter.com/pmarca">July 28, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></center>
 
 No single entity, no single project, no single line of thinking can build what there is to build. This will require a collective effort in order to address these massive challenges. Challenges, which I, as the CEO of Eris Industries am dedicated to working on (at the pleasure of the Eris board of course). Challenges, which Eris Industries, no matter how small nor large we are or become, will ever be more than a drop in the bucket as to addressing. Challenges, though, which we do want to participate -- in some small way -- in finding possible solutions to.

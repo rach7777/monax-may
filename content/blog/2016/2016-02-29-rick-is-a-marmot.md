@@ -17,7 +17,7 @@ url: /2016/02/29/rick-is-a-marmot/
 
 It is my great pleasure to announce that Rick Dudley has joined Monax as a developer on our platform team. He started on Thursday last week (and he came not a moment too soon) and will be working out of our New York office.
 
-I met Rick during a (now) humorous turn of events. I cannot remember exactly if it was the first or the second time we were on /r/bitcoin. But I do know it was [a "bloody" time](https://www.reddit.com/r/erisindustries/comments/304j9t/dear_rbitcoin/) in the history of the fuzzy little ground squirrels. Either way, at some point I saw `afdudley` saying sane things about us. He didn't totally get what the marmots were up to at that time but at least our vision was somewhat comprehensible to him. He also didn't mind sparring a little bit, which made me smile. After that we chatted for a bit on IRC and generally saw each other around.
+I met Rick during a (now) humorous turn of events. I cannot remember exactly if it was the first or the second time we were on /r/bitcoin. But I do know it was a "bloody" time in the history of the fuzzy little ground squirrels. Either way, at some point I saw `afdudley` saying sane things about us. He didn't totally get what the marmots were up to at that time but at least our vision was somewhat comprehensible to him. He also didn't mind sparring a little bit, which made me smile. After that we chatted for a bit on IRC and generally saw each other around.
 
 The night I met Jan actually was also the first night I met Rick in person. Over the months we've had a decent amount of chat and during the course of those interactions I have grown to respect Rick's opinions on a good many things.
 
