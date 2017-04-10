@@ -190,7 +190,7 @@ If you want to create your blockchain it is two commands:
 
 ```bash
 monax chains make test_chain
-monax chains start test_chain --init-dir ~/.monax/chain/test_chain/test_chain_full_000
+monax chains start test_chain --init-dir ~/.monax/chains/test_chain/test_chain_full_000
 ```
 
 That `test_chain` can be whatever name you would like it to be. These two commands will create a permissioned, smart contract enabled blockchain suitable for testing.
@@ -323,7 +323,7 @@ monax chains ls
 You'll see something like:
 
 ```bash
-CHAIN        ON     VERSION 
+CHAIN        ON     VERSION
 firstchain   *      0.16.0
 ```
 
@@ -399,7 +399,7 @@ The `set` job simply sets a variable. The package manager includes a naive key v
 
 #### Job 2: Deploy Job
 
-This job will compile and deploy the `idi.sol` contract using the local compiler service. 
+This job will compile and deploy the `idi.sol` contract using the local compiler service.
 
 #### Job 3: Call Job
 
@@ -442,7 +442,7 @@ If it's on, you'll see:
 
 ```
 CHAIN        ON    VERSION
-firstchain  *      0.16.0 
+firstchain  *      0.16.0
 ```
 
 Whereas if it has been stopped, the `ON` field will have `-` rather than `*`. The same logic applies to services.
