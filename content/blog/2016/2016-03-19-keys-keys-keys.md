@@ -4,6 +4,7 @@ categories:
 - platform
 comments: true
 date: 2016-03-19T00:00:00Z
+deprecated: true
 excerpt: As part of our recently announced partnership with Ledger.co we've got some
   work to do. Here's what we think that means for eris users.
 meta: true
@@ -16,9 +17,7 @@ title: So Here's the Problem(s) With Keys
 url: /2016/03/19/keys-keys-keys/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 [{{< image_blog "keys.keys.keys.jpg" >}}](https://www.flickr.com/photos/curioussiow/182224885/)
 
@@ -30,7 +29,7 @@ The clarity for Monax as to what to do about the ever present elephant in the ro
 
 Let's get real for a second. All this chains and contracts and encryption and verification and all the good stuff that excites us so; it's all predicated on a set of assumptions about keys.
 
-The most important assumption being that "the thing that has the keys can do the thing". Whatever that "thing" is, whether it is encrypting a message with keybase and pasting it in direct message on slack to protect something sensitive, or its signing a transaction [to purchase some shoes on Open Bazaar](https://twitter.com/aliahmadisb/status/711206241402544128) (which looks terrific, BTW!). No matter, it needs a cryptographic public-private key pair.
+The most important assumption being that "the thing that has the keys can do the thing". Whatever that "thing" is, whether it is encrypting a message with keybase and pasting it in direct message on slack to protect something sensitive, or its signing a transaction to purchase some shoes on Open Bazaar (which looks terrific, BTW!). No matter, it needs a cryptographic public-private key pair.
 
 {{< image_blog "keybase_encrypt.png" >}}
 

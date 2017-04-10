@@ -4,6 +4,7 @@ categories:
 - business, finance, regulation
 comments: true
 date: 2016-04-08T00:00:00Z
+deprecated: true
 excerpt: A call to free public data like the Legal Entity Identifier (LEI)
 meta: true
 published: true
@@ -17,12 +18,10 @@ tags:
 - RDM
 - MDM
 title: Legal Entity Global Ledger - How to liberate public data (with chains)
-url: /2016/04/08/LEI-Global-Ledger/
+url: /2016/04/08/lei-global-ledger/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 One of the key aspects of Blockchain / Distributed Ledger (DL) Technology is the ability to merge public key authentication of information with a resilient, distributed database. In this piece, which outlines an application Monax is building, I talk about this idea in greater detail using publicly available data from the Legal Entity Identifier (LEI) initiative.
 

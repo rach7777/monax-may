@@ -4,6 +4,7 @@ categories:
 - distributed business
 comments: false
 date: 2014-12-17T00:00:00Z
+deprecated: true
 excerpt: Businesses want to benefit from blockchain technology now, not wait for regulatory
   change to legalize existing 'Blockchain 1.0' networks. Thanks to Eris, the wait
   is over.
@@ -17,9 +18,7 @@ title: Blockchain your business in just 7 steps
 url: /2014/12/17/blockchain-your-business/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 Can your business "go blockchain"? You bet it can. Just follow these seven easy steps, distilled from the Eris Industries  distributed systems cookbook, and you're rolling:
 

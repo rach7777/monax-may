@@ -4,6 +4,7 @@ categories:
 - tutorials
 comments: true
 date: 2015-08-05T00:00:00Z
+deprecated: true
 excerpt: IPFS as a (Monax) Service
 meta: true
 published: true
@@ -22,9 +23,7 @@ title: 'Eris CLI Services Walkabout: IPFS'
 url: /2015/08/05/ipfs-as-a-service/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 Part 1 explains `eris files`; the command for working with IPFS.
 

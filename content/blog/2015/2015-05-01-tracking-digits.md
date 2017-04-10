@@ -4,6 +4,7 @@ categories:
 - legal tech
 comments: true
 date: 2015-05-01T00:00:00Z
+deprecated: true
 excerpt: Blockchain and smart contract tracking of digital goods and raw information
   could not be easier when using Monax Industries' Distributed Application Platform. Here's how
   to do it.
@@ -18,9 +19,7 @@ title: 'Tracking Digits: How to Design Your Smart Contract Tracking System'
 url: /2015/05/01/tracking-digits/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 [{{< image_blog "racer.jpg" >}}](https://www.flickr.com/photos/tom-margie/1299414993/)
 
@@ -51,11 +50,11 @@ This is a simple minimum viable data schema. Indeed whatever additional informat
 
 The blockchain you would design here would be a very simple blockchain. The court itself could make a single node blockchain which only it could amend or write to (for more about blockchain design [see this here](/explainers/blockchains/)). Alternatively, a library or consortium of courts could pool their resources together to run a collective blockchain which was amended or written to by any of the known and registered members.
 
-`eris:db` makes all that [super simple](/docs). And, by the way, our solution will run on nearly [anything](/blog/2015/04/01/peer-server-networks-current-paradigm/) (except Windows outside of Docker).
+`eris:db` makes all that [super simple](/docs). And, by the way, our solution will run on nearly [anything](/2015/04/01/peer-server-networks-current-paradigm/) (except Windows outside of Docker).
 
 ### The Application Layer
 
-Functionally the application will work nearly the same as our [2gather](/blog/2015/04/07/2gather/) video sharing application works. The basic workflow would look something like this:
+Functionally the application will work nearly the same as our [2gather](/2015/04/07/2gather/) video sharing application works. The basic workflow would look something like this:
 
 1. Judge finalizes opinion
 2. Judge gives finalized opinion to clerk

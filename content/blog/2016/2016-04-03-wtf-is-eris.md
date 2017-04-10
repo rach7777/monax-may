@@ -4,6 +4,7 @@ categories:
 - business
 comments: true
 date: 2016-04-03T00:00:00Z
+deprecated: true
 excerpt: This one goes out to all the believers.
 meta: true
 published: true
@@ -14,9 +15,7 @@ title: What is Eris? 2016 Edition
 url: /2016/04/03/wtf-is-eris/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 Let's get real. The collective data and process management space (or, as some call it, the "blockchain" space) (or, as others may call it, the "smart contract" space), is an emerging market.
 
@@ -147,7 +146,7 @@ In the above framework pictures, in particular this one:
 
 {{< image_blog "wtf-eris-options.png" >}}
 
-We reference a component of eris which is currently not in our repositories (`eris-rt-XXX` in the above). The components in the above image that are colored green are areas where eris is intending to keep building. This is not a [big departure](/blog/2015/12/31/on-blockchain-clients-in-2016/) for us. Indeed, it is the [continuation of a path](/blog/2016/03/02/eris-and-tendermint/) we've been heading for a while.
+We reference a component of eris which is currently not in our repositories (`eris-rt-XXX` in the above). The components in the above image that are colored green are areas where eris is intending to keep building. This is not a [big departure](/2015/12/31/on-blockchain-clients-in-2016/) for us. Indeed, it is the [continuation of a path](/2016/03/02/eris-and-tendermint/) we've been heading for a while.
 
 So, what exactly, is `eris:runtime`? Over the next few release cycles (leading up to our 1.0 release) we will be refactoring our current efforts to fit more cleanly into the modular components outlined here:
 

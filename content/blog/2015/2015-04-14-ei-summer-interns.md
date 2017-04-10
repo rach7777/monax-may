@@ -5,6 +5,7 @@ date: 2015-04-14T00:00:00Z
 excerpt: Why go to the beach? Let's build distributed systems instead!
 meta: true
 published: true
+deprecated: true
 tags:
 - eris
 - thelonious
@@ -14,9 +15,7 @@ title: Eris Industries 2015 Summer Internships
 url: /2015/04/14/ei-summer-interns/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 ### 2015 Summer Internships with Eris Industries
 
@@ -38,11 +37,11 @@ I'll get straight to the point:
 
 * Read this carefully.
 
-* Write a 250 word project proposal for an open-source, smart contract-driven distributed application and submit it in markdown by pull request to our [Internship Applications repo](https://github.com/monax/internships). **Do not do this if you do not want your proposal to become public and open-source** (Creative Commons licence).
+* Write a 250 word project proposal for an open-source, smart contract-driven distributed application and submit it in markdown by pull request to our [Internship Applications repo](https://github.com/monax). **Do not do this if you do not want your proposal to become public and open-source** (Creative Commons licence).
 
 * We'll contact you within two weeks if we'd like to take the application further.
 
-* Regrettably, as we're a small team we will only be able to take on one or two interns this summer. The stack, however, is open-source - so please feel free to play around with it, and to join [our friendly community](http://reddit.com/r/erisindustries). We'd love to hang out!
+* Regrettably, as we're a small team we will only be able to take on one or two interns this summer. The stack, however, is open-source - so please feel free to play around with it, and to join [our friendly community](https://www.reddit.com/r/Monax). We'd love to hang out!
 
 #### 4. What will happen
 

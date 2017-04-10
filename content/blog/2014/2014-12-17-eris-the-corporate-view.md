@@ -4,6 +4,7 @@ categories:
 - products
 comments: false
 date: 2014-12-17T00:00:00Z
+deprecated: true
 excerpt: Smart Contracts have arrived. Here's how Eris v 0.9 works, and how the rules
   of the blockchain game have changed.
 meta: true
@@ -16,9 +17,7 @@ title: Meet Eris. The distributed computing solution for industry.
 url: /2014/12/17/eris-the-corporate-view/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 <h2>Meet Eris.</h2>
 
@@ -55,7 +54,7 @@ An introduction to the open alpha release of Eris in ten points:
 
 * We call these serverless applications **Distributed Applications** or **DApps.**
 
-* Apologies that we don't have any demonstrator applications just now apart from our ["Hello World" DApp](https://github.com/monax/hello-world-dapp) (we've been pretty busy this week, as you might imagine). However, note we're aiming to release two technology demonstrators in early January - one, a streaming-video application with an in-built Bitcoin payment mechanism designed to showcase Eris' potential in DRM applications, and another, a marketplace application designed to bring together software developers building on Eris and potential customers who want blockchain tech, and help them to reach agreement on heads of terms (and create a cryptographically-secure transaction record of the same).
+* Apologies that we don't have any demonstrator applications just now apart from our ["Hello Doug" App](https://github.com/monax/hello-doug) (we've been pretty busy this week, as you might imagine). However, note we're aiming to release two technology demonstrators in early January - one, a streaming-video application with an in-built Bitcoin payment mechanism designed to showcase Eris' potential in DRM applications, and another, a marketplace application designed to bring together software developers building on Eris and potential customers who want blockchain tech, and help them to reach agreement on heads of terms (and create a cryptographically-secure transaction record of the same).
 
 <h2>3. Ok, you said "blockchain," which sets off my bullshit alarm. You have precisely five seconds to convince me you know what you're talking about. </h2>
 

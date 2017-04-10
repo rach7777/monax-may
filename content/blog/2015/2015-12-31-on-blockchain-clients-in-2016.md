@@ -4,6 +4,7 @@ categories:
 - blockchains
 comments: true
 date: 2015-12-31T00:00:00Z
+deprecated: true
 excerpt: Blockchain clients evolved significantly in 2015 and we at Monax fully expect they will continue evolving during 2016. Although we expect they will evolve more slowly and in particular ways.
 meta: true
 published: true
@@ -15,9 +16,7 @@ title: On 2016 Blockchain Clients
 url: /2015/12/31/on-blockchain-clients-in-2016/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 [{{< image_blog "blockchain_clients_2016.jpg" >}}](https://www.flickr.com/photos/42988571@N08/8545407174/)
 
@@ -131,7 +130,7 @@ What the hell does this have to do with blockchains? I'm getting to that just no
 
 When we put an unpermissionable blockchain client behind a VPN we *can* achieve *some* level of permissionability. The problem is that when we run blockchains in this manner, we're really forced to "find the base". This is because when you take a blockchain client which does not have a permission module built into the client and you try to make a permissioned blockchain network with it then you are forced to rely upon the "base" of the VPN. The "safe zone" if you will.
 
-There is an oft cited critique of permissioned blockchain networks that they are less secure that public blockchains due to [their lower hashing power](/blog/2015/09/26/on-permissioned-blockchains/index.html#securing-permissioned-blockchains). This critique holds **only** under the following scenario: where you have a blockchain client that does not have a permission module, is POW, and a significant amount of hashing power is able to get behind the VPN. Outside of that scenario, the critique as an attack says more about the knowledge level of the attacker than actually communicates something important. If an enterprise has taken a POW based blockchain without a permission module and properly runs it behind a rock solid VPN then the critique is misplaced.
+There is an oft cited critique of permissioned blockchain networks that they are less secure that public blockchains due to [their lower hashing power](/2015/09/26/on-permissioned-blockchains/). This critique holds **only** under the following scenario: where you have a blockchain client that does not have a permission module, is POW, and a significant amount of hashing power is able to get behind the VPN. Outside of that scenario, the critique as an attack says more about the knowledge level of the attacker than actually communicates something important. If an enterprise has taken a POW based blockchain without a permission module and properly runs it behind a rock solid VPN then the critique is misplaced.
 
 Yet, and here is the critical point from our point of view at Monax, that enterprise who had taken a POW based blockchain client without a permission module and ran it behind a VPN, is making its blockchain clients operate like the Army officers in the above story. These blockchain clients are susceptible to attack if they are not "inside their base". As such, they lose a good amount of their utility.
 

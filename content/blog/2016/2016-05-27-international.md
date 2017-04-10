@@ -4,6 +4,7 @@ categories:
 - tutorials
 comments: true
 date: 2016-05-27T00:00:00Z
+deprecated: true
 excerpt: Eris-cli walkthrough.
 meta: true
 published: true
@@ -14,9 +15,7 @@ title: International Marmot Video Party
 url: /2016/05/27/international/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 See, if we said "Zach does a walkthrough of Eris-cli on YouTube" you might not have clicked. 
 

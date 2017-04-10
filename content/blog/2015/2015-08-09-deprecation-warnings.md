@@ -4,6 +4,7 @@ categories:
 - products
 comments: true
 date: 2015-08-09T00:00:00Z
+deprecated: true
 excerpt: In preparation for the upcoming release of our 0.10 stack, we have deprecated
   some of the old tool chain. This post describes what's happening.
 meta: true
@@ -19,9 +20,7 @@ title: 'Deprecation Warnings: What Do They Mean'
 url: /2015/08/09/deprecation-warnings/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 We have received some incoming communication with respect to the deprecation notices we have placed onto the readme files of Thelonious and Decerver. This is the explanation of what is replacing those repositories.
 

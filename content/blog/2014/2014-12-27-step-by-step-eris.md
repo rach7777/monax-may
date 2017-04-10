@@ -4,6 +4,7 @@ categories:
 - products
 comments: true
 date: 2014-12-27T00:00:00Z
+deprecated: true
 excerpt: You said you wanted us to shoot a little straighter to help everyone grok
   Eris. We listened. Now with visuals!
 meta: true
@@ -17,9 +18,7 @@ title: 'From Blockchains to Eris: a step-by-step guide'
 url: /2014/12/27/step-by-step-eris/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 ### 1) What is the problem we are trying to solve?
 
@@ -105,7 +104,7 @@ This script is not accessible through tokens, but is accessible through **write 
 
 One point which must be noted is the salient (if detailed) difference in performance which comes from the way in which Ethereum-derived blockchains differ from Bitcoin-derived (transactional) blockchains. In transactional blockchains, with bitcoin as the obvious example, the current world state of the entire data is calculated from the original time (genesis block) to the current time using the differences which are certified in each block. This slows performance greatly and is part of why some argue that blockchains make awful databases.
 
-However, in Ethereum-derived blockchains data is stored using a much more efficient [patricia merkle tree](http://vitalik.ca/ethereum/patricia.html) and is referenced using the specific contract address and storage slot of a particular contract. This storage paradigm greatly improves performance for both storage and lookup of data values as compared to transactional blockchains. While still moderately slower than a traditional database when writing to the data store, data lookup can be crafted in a manner which rivals traditional databases. How these data lookups are structured will depend on how the contracts store data -- which we will be covering in a future post.
+However, in Ethereum-derived blockchains data is stored using a much more efficient patricia merkle tree and is referenced using the specific contract address and storage slot of a particular contract. This storage paradigm greatly improves performance for both storage and lookup of data values as compared to transactional blockchains. While still moderately slower than a traditional database when writing to the data store, data lookup can be crafted in a manner which rivals traditional databases. How these data lookups are structured will depend on how the contracts store data -- which we will be covering in a future post.
 
 ### 6) Cryptocurrencies make blockchains useful for unregulated value transfer systems. Eris is designed to make blockchains useful for everything else.
 

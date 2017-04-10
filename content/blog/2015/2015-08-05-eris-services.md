@@ -4,6 +4,7 @@ categories:
 - tutorials
 comments: true
 date: 2015-08-05T00:00:00Z
+deprecated: true
 excerpt: Walkabout for Monax Services
 meta: true
 published: true
@@ -22,9 +23,7 @@ title: 'Monax CLI Tool Walkabout: Services'
 url: /2015/08/05/eris-services/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 ##Services as a Service
 
@@ -80,7 +79,7 @@ eris services ls
 
 Run a Bitcoin node: `btcd`, or an ethereum node `eth`
 
-**Learn more about IPFS as a service [here](/blog/2015/08/05/ipfs-as-a-service/)**
+**Learn more about IPFS as a service [here](/2015/08/05/ipfs-as-a-service/)**
 
 Starting a service can also spawn a data container if `data_container = true`
 

@@ -29,7 +29,7 @@ url: /2015/09/17/selfdrivingbanks/
 
 Because Bitcoin does not require a central server whirring away, or direct human oversight, to run, its earliest adopters have long referred to it in quasi-religious, almost magical terms. Immutable. Indestructible. "The" blockchain.
 
-Of course, I co-founded a business that, at least to my knowledge, was [the first in the world](/blog/2014/12/17/eris-what-are-we-building/) to take the "bitcoin"/cryptocurrency piece out of the equation - resulting in the datastructure now referred to as "a" blockchain.
+Of course, I co-founded a business that, at least to my knowledge, was [the first in the world](/2014/12/17/eris-what-are-we-building/) to take the "bitcoin"/cryptocurrency piece out of the equation - resulting in the datastructure now referred to as "a" blockchain.
 
 This was not a political decision, but a practical one. Make no mistake, I started - as we all did - as a Bitcoin guy before I became a smart contract guy. However, it bears mentioning that back in the day Bitcoin was the only game in town. Thanks to permissioning (which allows us to control our blockchains), we now have options.
 
@@ -60,7 +60,7 @@ means, if we're looking at Bitcoin *qua* proof-of-concept, that a blockchain dat
 
 This is the big deal.
 
-Thanks to blockchains, a laptop or a mobile phone is, today, as effective at running a globally-accessible application as a datacentre or a mainframe. Furthermore, [with the permissioned chains, the "mining" process can be dispensed with entirely](2015-06-16-tbtm.md), allowing a user to run such a network with only the latent capacity of hardware you already have (in relation to which, 99% of the time it is not being used anywhere near full capacity.
+Thanks to blockchains, a laptop or a mobile phone is, today, as effective at running a globally-accessible application as a datacentre or a mainframe. Furthermore, [with the permissioned chains, the "mining" process can be dispensed with entirely](/2015/06/16/tbtm/), allowing a user to run such a network with only the latent capacity of hardware you already have (in relation to which, 99% of the time it is not being used anywhere near full capacity.
 
 In the future, we will leverage this excess capacity to both increase the reliability and uptime of our systems, and bring the [marginal costs](https://www.youtube.com/watch?v=KOrXep9f3Z8) of computing to nearly zero. This will be a world in which data infrastructure runs itself without physical infrastructure.
 
@@ -78,7 +78,7 @@ The introduction of a blockchain into the settlement equation is not, on its own
 
 #### Smart Contracts
 
-As Casey puts it, **“smart contracts” are not smart and they are not contracts**. As Brian retorts,  [“they should really just be called dumb scripts.”](2015-09-15-smart-contracts-intro.md)
+As Casey puts it, **“smart contracts” are not smart and they are not contracts**. As Brian retorts,  [“they should really just be called dumb scripts.”](/2015/09/15/smart-contracts-intro/)
 
 Dumb or not, being computer code, you can write these scripts to do more or less whatever the hell you want. As a result, smart contracts can run virtually anything in the same way that Bitcoin automates payments. On smart contract chains this sort of stuff is trivial (Tyler and I did our first smart asset-backed loan back in April of 2014.)
 

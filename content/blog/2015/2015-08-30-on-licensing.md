@@ -4,6 +4,7 @@ categories:
 - products
 comments: true
 date: 2015-08-30T00:00:00Z
+deprecated: true
 excerpt: We have been thinking (and discussing) licensing of blockchain tech and tooling a lot internally recently. Here's what we think.
 meta: true
 published: true
@@ -15,9 +16,7 @@ title: 'On Licensing: Why Monax is GPLv3'
 url: /2015/08/30/on-licensing/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 [{{< image_blog "licensing.jpg" >}}](https://www.flickr.com/photos/adulau/3011878917/)
 

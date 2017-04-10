@@ -4,6 +4,7 @@ categories:
 - distributed business
 comments: false
 date: 2014-12-17T00:00:00Z
+deprecated: true
 excerpt: Business thinking, FinTech, legal tech, blockchain tech - let's see what
   happens when we mix it all up.
 meta: true
@@ -16,9 +17,7 @@ title: 'Smart contracts: a brief introduction for the financial services industr
 url: /2014/12/17/smart-v-legal/
 ---
 
-<div class="note">
-	<em>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</em>
-</div>
+
 
 ##Before we begin: a recap of the last 12 months of Bitcoinmania in the blockchain space.
 
