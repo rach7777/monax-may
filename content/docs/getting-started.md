@@ -381,7 +381,7 @@ cd idi
 
 Now you'll make a file in this directory. Let's assume that is called `idi.sol` and has the following contents
 
-{{ insert_file "/docs/contracts_simple_idi/idi.sol" }}
+{{< insert_contents 1 "/docs/contracts_simple_idi/idi.sol" >}}
 
 What does this contract do? Well, it isn't very interesting, we know. It merely `gets` and `sets` a value which is an unsigned integer type.
 
@@ -389,7 +389,7 @@ What does this contract do? Well, it isn't very interesting, we know. It merely 
 
 Next we need to make an `epm.yaml` and make it look something like this:
 
-{{ insert_file "/docs/contracts_simple_idi/epm.yaml" }}
+{{< insert_contents 2 "/docs/contracts_simple_idi/epm.yaml" >}}
 
 Now, what does this file mean? Well, this file is the manager file for how to deploy and test your smart contracts. The package manager invoked by `monax pkgs do` will read this file and perform a sequence of `jobs` with the various parameters supplied for the job type. It will perform these in the order they are built into the yaml file. So let's go through them one by one and explain what each of these jobs are doing. For more on using various jobs [please see the jobs specification](/docs/specs/jobs_specification).
 
@@ -495,7 +495,7 @@ What we are going to make is a very simple application which tells the user what
 
 As with all node.js applications, we will start by making a package.json. This should be made in the same folder as your `epm.yaml`. We will keep the `package.json` very simple.
 
-{{ insert_file "/docs/contracts_simple_idi/package.json" }}
+{{< insert_contents 3 "/docs/contracts_simple_idi/package.json" >}}
 
 Once you have saved your `package.json` then you will run (from the same directory) this command:
 
@@ -511,7 +511,7 @@ For trouble shooting information regarding Step 4.1 please see our guide -> [^7]
 
 Once we have that set up, then we'll make an `app.js` file and we'll add the following contents into it:
 
-{{ insert_file "/docs/contracts_simple_idi/app.js" }}
+{{< insert_contents 4 "/docs/contracts_simple_idi/app.js" >}}
 
 **N.B.** -- for *not Linux users*, please see the comments on lines 6-9 about the `var erisdbURL = "http://localhost:1337/rpc";` line of the script. See our [docker-machine tutorial](../deprecated/using_docker_machine_with_eris/) for more information.
 
@@ -533,7 +533,7 @@ var contractData = require('./jobs_output.json');
 
 But we've only worked with an `epm.yaml`, not an `jobs_output.json`. So what is the `jobs_output.json`? That file is an artifact of the `monax pkgs do` process. If you look at the `jobs_output.json` file it should look something like this:
 
-{{ insert_file "/docs/contracts_simple_idi/sample_jobs_output.json" }}
+{{< insert_contents 5 "/docs/contracts_simple_idi/sample_jobs_output.json" >}}
 
 The json file is the result of each of the jobs. What we really need from this file is the contracts address that was deployed (the key to the `deployStorageK` field) so that the app.js script knows what contract on the chain it should be "talking" to.
 
