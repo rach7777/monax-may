@@ -96,7 +96,7 @@ We have RPM support for most current versions of Fedora, CentOS, and RHEL:
 Alternatively, you can download a release binary for the latest [Release](https://github.com/monax/cli/releases). Make sure you put the binary under one of the paths in the `$PATH` variable and that it has executable permissions:
 
 ```bash
-curl -L https://github.com/monax/cli/releases/download/v0.16.0/monax_0.16.0_linux_amd64 > monax
+curl -L https://github.com/monax/cli/releases/download/v0.16.0/monax_0.16.0-linux-amd64 > monax
 chmod +x monax
 ```
 
