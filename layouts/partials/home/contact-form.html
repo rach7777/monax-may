@@ -2,6 +2,11 @@
   <h2>Get in touch!</h2>
   <p></p>
 </div>
+<div id="success_message" style="display: none;">Thanks for your inquiry.<br>We will contact you as soon as possible.</div>
+<div id="error_message" class="col-md-10 col-md-offset-1 text-center" style="display: none;">
+  <p class="has-error">Sorry, something strange happened. Try again in a moment.</p>
+  <input type="submit" value="OK" class="btn btn-danger">
+</div>
 <div class="row">
   <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="post" class="col-sm-8 col-sm-offset-2 form-horizontal" id="contact-monax-form">
 
@@ -138,9 +143,20 @@
       </div>
     </fieldset>
   </form>
-  <div id="success_message">Thanks for your inquiry.<br>We will contact you as soon as possible.</div>
-  <div id="error_message" class="has-error">
-    <p class="has-error col-sm-4 col-sm-offset-4"></p>
-    <input type="submit" value="OK" class="btn btn-danger">
+  <div id="form_loader" style="display:none;">
+    <div class="sk-circle">
+      <div class="sk-circle1 sk-child"></div>
+      <div class="sk-circle2 sk-child"></div>
+      <div class="sk-circle3 sk-child"></div>
+      <div class="sk-circle4 sk-child"></div>
+      <div class="sk-circle5 sk-child"></div>
+      <div class="sk-circle6 sk-child"></div>
+      <div class="sk-circle7 sk-child"></div>
+      <div class="sk-circle8 sk-child"></div>
+      <div class="sk-circle9 sk-child"></div>
+      <div class="sk-circle10 sk-child"></div>
+      <div class="sk-circle11 sk-child"></div>
+      <div class="sk-circle12 sk-child"></div>
+    </div>
   </div>
 </div>

@@ -128,14 +128,6 @@ $(function() {
     }
   });
 
-  // home page only. contact us form.
-  $("#send-button").attr("disabled", false);
-  $('#error_message').hide();
-  $('#success_message').hide();
-  $("#error_message").click(function() {
-      $("#error_message").slideUp(400);
-  });
-
   function getParameterByName(name) {
       name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
       var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
@@ -272,18 +264,8 @@ $(function() {
       }
   });
 
-
-  var contactUsErrorCallback = function(xhr, status, error) {
-    // alert("Error");
-  }
-
-  var contactUsSuccessCallback = function(data, status, xhr) {
-    $("#contact-monax-form").slideUp(400, function() {
-      $("#success_message").slideDown(400);
-    });
-  }
-
- $("#contact-monax-form").validate({
+  // Validate contact form
+  $("#contact-monax-form").validate({
     rules: {
       first_name: {
         required: true,
@@ -323,10 +305,34 @@ $(function() {
         data: $(form).serialize(),
         dataType: "json",
         type: "POST",
-        error: contactUsErrorCallback,
-        success: contactUsSuccessCallback
+        beforeSend: function(){
+          $("#contact-monax-form").slideUp(400);
+          $("#form_loader").fadeIn(400);
+        },
+        error: function(xhr, status, error) {
+          console.log("Server response: " + status);
+          setTimeout(function(){
+            $("#form_loader").fadeOut(400);
+            $("#error_message").slideDown(400);
+          }, 600);
+        },
+        success: function(data, status, xhr) {
+          console.log("Server response: " + status);
+          setTimeout(function(){
+            $("#form_loader").fadeOut(400);
+            $("#success_message").slideDown(400);
+          }, 300);
+        }
       });
     }
+  });
+
+  // Dismiss error message
+  $("#error_message").click(function() {
+    setTimeout(function(){
+      $("#contact-monax-form").slideDown(400);
+      $("#error_message").slideUp(400);
+    }, 300);
   });
 
   /*
