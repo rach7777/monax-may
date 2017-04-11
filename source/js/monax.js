@@ -310,18 +310,35 @@ $(function() {
           $("#form_loader").fadeIn(400);
         },
         error: function(xhr, status, error) {
-          console.log("Server response: " + status);
+          // Temp debug
+          console.log("Error data:");
+          console.log(xhr);
+          console.log(status);
+          console.log(error);
+
           setTimeout(function(){
             $("#form_loader").fadeOut(400);
             $("#error_message").slideDown(400);
           }, 600);
         },
         success: function(data, status, xhr) {
-          console.log("Server response: " + status);
+          // Temp debug
+          console.log("Success data:");
+          console.log(data);
+          console.log(status);
+          console.log(xhr);
+
           setTimeout(function(){
             $("#form_loader").fadeOut(400);
             $("#success_message").slideDown(400);
           }, 300);
+        },
+        complete: function( event, xhr, settings ) {
+          // Temp debug
+          console.log("Completed data:");
+          console.log(event);
+          console.log(xhr);
+          console.log(settings);
         }
       });
     }
