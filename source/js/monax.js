@@ -303,42 +303,44 @@ $(function() {
       $.ajax({
         url: form.action,
         data: $(form).serialize(),
-        dataType: "json",
+        dataType: "html",
         type: "POST",
         beforeSend: function(){
           $("#contact-monax-form").slideUp(400);
           $("#form_loader").fadeIn(400);
         },
         error: function(xhr, status, error) {
-          // Temp debug
-          console.log("Error data:");
-          console.log(xhr);
-          console.log(status);
-          console.log(error);
+          // console.log("Error data:");
+          console.log(JSON.stringify(xhr));
+          // console.log(status);
+          // console.log(error);
 
-          setTimeout(function(){
-            $("#form_loader").fadeOut(400);
-            $("#error_message").slideDown(400);
-          }, 600);
+          // setTimeout(function(){
+          //   $("#form_loader").fadeOut(400);
+          //   $("#error_message").slideDown(400);
+          // }, 600);
         },
         success: function(data, status, xhr) {
-          // Temp debug
-          console.log("Success data:");
-          console.log(data);
-          console.log(status);
-          console.log(xhr);
+          // console.log("Success data:");
+          // console.log(data);
+          // console.log(status);
+          // console.log(JSON.stringify(xhr));
+
+          // setTimeout(function(){
+          //   $("#form_loader").fadeOut(400);
+          //   $("#success_message").slideDown(400);
+          // }, 300);
+        },
+        complete: function( event, xhr, settings ) {
+          // console.log("Completed data:");
+          // console.log(event);
+          // console.log(JSON.stringify(xhr));
+          // console.log(settings);
 
           setTimeout(function(){
             $("#form_loader").fadeOut(400);
             $("#success_message").slideDown(400);
           }, 300);
-        },
-        complete: function( event, xhr, settings ) {
-          // Temp debug
-          console.log("Completed data:");
-          console.log(event);
-          console.log(xhr);
-          console.log(settings);
         }
       });
     }
