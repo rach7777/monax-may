@@ -181,6 +181,41 @@ code {
     white-space: nowrap;
 }
 
+// Custom code blocks
+.insert-contents-block {
+    position: relative;
+    padding-bottom: 40px !important;
+    tab-size: 0 !important;
+
+    .source-info {
+        position: absolute;
+        bottom: 5px;
+        right: 9px;
+        text-transform: uppercase;
+        color: #999;
+        font-size: 75%;
+        display: block;
+        // Align left on mobile
+        @include responsive(breakpoint) { left:9px; }
+
+        a {
+            color: #a7a7a7;
+            border: none;
+            @include transition(color 0.3s);
+
+            &:hover,
+            &:focus {
+                color: inherit;
+                border: none;
+            }
+        }
+    }
+
+    code {
+        tab-size: 0;
+    }
+}
+
 
 .modal {
     z-index: 9999999;

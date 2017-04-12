@@ -1,0 +1,105 @@
+<script type="application/javascript">
+
+// HANDLE PARAMS
+{{ $numOfParams := len .Params }}
+{{ if and (ge $numOfParams 2) (le $numOfParams 4) }}
+
+    {{ $.Scratch.Set "num" (.Get 0) }}
+
+    {{ $.Scratch.Set "fileURL" (.Get 1) }}
+
+    {{ if ge $numOfParams 3 }}
+    	{{ $.Scratch.Set "start" (.Get 2) }}
+    {{ else }}
+        {{ $.Scratch.Set "start" "0" }}
+    {{ end }}
+
+    {{ if ge $numOfParams 4 }}
+        {{ $.Scratch.Set "end" (.Get 3) }}
+    {{ else }}
+        {{ $.Scratch.Set "end" "" }}
+    {{ end }}
+
+{{ end }}
+
+{{ $num := $.Scratch.Get "num" }}
+{{ $fileURL := $.Scratch.Get "fileURL" }}
+{{ $start := $.Scratch.Get "start" }}
+{{ $end  := $.Scratch.Get "end" }}
+
+</script>
+
+<pre id="insert_contents_{{ $num }}" class="insert-contents-block language-bash" data-source="{{ $fileURL }}" data-start="{{ $start }}" data-end="{{ $end }}">
+	<div class="source-info"><a href="{{ $fileURL }}" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Source: {{ $fileURL }} <span class="hide-mobile">From lines {{ $start }} to {{ $end }}</span></a></div>
+	<code class="language-bash">
+	</code>
+</pre>
+
+
+<script type="application/javascript">
+
+// Onload handler
+window.onload = function() {
+
+	// If jQuery is loaded...
+	if (window.jQuery) {
+
+		// For each code block, get it's data and process it
+		$(".insert-contents-block").each(function() {
+
+			// Get vars
+			var fileURL = $(this).data( "source" );
+			var start = $(this).data("start");
+			var end = $(this).data("end");
+			var outputTarget = $(this).attr("id");
+
+		    // Fetch contents based on params
+			fetchContents( outputTarget, fileURL, start, end);
+
+			var finContent;
+
+			// Create a fetchContents helper
+			function fetchContents ( outputTarget, fileURL, start, end ) {
+
+			    // Check values are set
+			    if (fileURL === "undefined") return false;
+			    
+			    // console.log("Trying to insert: " + fileURL);
+			    // console.log("Start line: " + start);
+			    // console.log("End line: " + end);
+
+			    // Fetch file contents
+			    $.get( fileURL, function( data, status, xhr ) {
+
+				    // If success...
+				    if ( status !== "error" ) {
+
+				        // Split contents by line breaks
+				        var arrSplitContents = data.split("\n");
+
+				        // And return selected lines from the array
+				        if (end == "") {
+				        	finContent = arrSplitContents.slice( start ).join("\n");
+
+				        } else {
+				        	finContent = arrSplitContents.slice( start, end ).join("\n");
+				        }
+
+				    // Catch errors
+				    } else {
+				    	console.log("Couldn't find file for insert_contents block (" + fileURL + ")");
+				    }
+
+			    }, "text" ).then( function() {
+
+			    	// And finally insert the code into the right code block
+			    	$("#"+outputTarget+" code").html( finContent ); 
+			    });
+			}
+		});
+    }
+}
+
+</script>
+
+

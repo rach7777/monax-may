@@ -128,14 +128,6 @@ $(function() {
     }
   });
 
-  // home page only. contact us form.
-  $("#send-button").attr("disabled", false);
-  $('#error_message').hide();
-  $('#success_message').hide();
-  $("#error_message").click(function() {
-      $("#error_message").slideUp(400);
-  });
-
   function getParameterByName(name) {
       name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
       var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
@@ -272,18 +264,8 @@ $(function() {
       }
   });
 
-
-  var contactUsErrorCallback = function(xhr, status, error) {
-    // alert("Error");
-  }
-
-  var contactUsSuccessCallback = function(data, status, xhr) {
-    $("#contact-monax-form").slideUp(400, function() {
-      $("#success_message").slideDown(400);
-    });
-  }
-
- $("#contact-monax-form").validate({
+  // Validate contact form
+  $("#contact-monax-form").validate({
     rules: {
       first_name: {
         required: true,
@@ -323,10 +305,51 @@ $(function() {
         data: $(form).serialize(),
         dataType: "json",
         type: "POST",
-        error: contactUsErrorCallback,
-        success: contactUsSuccessCallback
+        beforeSend: function(){
+          $("#contact-monax-form").slideUp(400);
+          $("#form_loader").fadeIn(400);
+        },
+        error: function(xhr, status, error) {
+          // Temp debug
+          console.log("Error data:");
+          console.log(xhr);
+          console.log(status);
+          console.log(error);
+
+          setTimeout(function(){
+            $("#form_loader").fadeOut(400);
+            $("#error_message").slideDown(400);
+          }, 600);
+        },
+        success: function(data, status, xhr) {
+          // Temp debug
+          console.log("Success data:");
+          console.log(data);
+          console.log(status);
+          console.log(xhr);
+
+          setTimeout(function(){
+            $("#form_loader").fadeOut(400);
+            $("#success_message").slideDown(400);
+          }, 300);
+        },
+        complete: function( event, xhr, settings ) {
+          // Temp debug
+          console.log("Completed data:");
+          console.log(event);
+          console.log(xhr);
+          console.log(settings);
+        }
       });
     }
+  });
+
+  // Dismiss error message
+  $("#error_message").click(function() {
+    setTimeout(function(){
+      $("#contact-monax-form").slideDown(400);
+      $("#error_message").slideUp(400);
+    }, 300);
   });
 
   /*
