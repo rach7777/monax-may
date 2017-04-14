@@ -15,8 +15,8 @@ cli:
   pms:
     - name: Homebrew
       cmd: brew
-    - name: Chocolatey
-      cmd: choco
+#    - name: Chocolatey
+#      cmd: choco
     - name: Fedora or RHEL
       cmd: yum
     - name: Ubuntu
@@ -30,8 +30,8 @@ brew_dev: |-
   brew cask install virtualbox
   brew install --devel monax docker docker-machine virtualbox
 
-choco: |-
-  choco install monax docker docker-machine virtualbox
+#choco: |-
+#  choco install monax docker docker-machine virtualbox
 
 yum: |-
   sudo su -c "curl -L https://yum.monax.io/yum/monax.repo > \
