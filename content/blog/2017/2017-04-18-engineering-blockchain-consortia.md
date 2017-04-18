@@ -1,3 +1,21 @@
+
+---
+author: nina
+categories:
+-
+comments: true
+date: 2017-04-18T00:00:00Z
+excerpt: Engineering blockchain consortia
+meta: true
+published: true
+tags:
+- blockchain
+- smart contracts
+- consortia
+thumbnail: 
+title: Engineering Blockchain Consortia
+url: /2017/04/18/engineering-blockchain-consortia/
+---
 # Engineering Blockchain Consortia
 
 
