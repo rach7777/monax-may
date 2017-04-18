@@ -28,7 +28,7 @@ One way that private industry has sought to bring blockchain technology into use
 
 
 **Ecosystem approach - shared problem-solving.** 
-A proven way to build a consortium is to solve an ecosystem level problem. After identifying a problem that affects keystone players across an ecosystem, the consortium develops around the necessary stakeholders and actors for a solution. In such a system, the “transparency” of blockchain technology is focused on the consortium project and solution rather than stakeholders’’ internal business processes. Solving ecosystem-sized problems greats exponential growth and incentives for all stakeholders.
+A proven way to build a consortium is to solve an ecosystem level problem. After identifying a problem that affects keystone players across an ecosystem, the consortium develops around the necessary stakeholders and actors for a solution. In such a system, the “transparency” of blockchain technology is focused on the consortium project and solution rather than stakeholders’ internal business processes. Solving ecosystem-sized problems greats exponential growth and incentives for all stakeholders.
 
 
 **Smart contract "trust" nexus.** 
