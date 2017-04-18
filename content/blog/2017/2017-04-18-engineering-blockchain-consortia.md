@@ -10,7 +10,7 @@ published: true
 tags:
 - blockchain
 - smart contracts
-- consortia
+- ecosystem
 thumbnail: 
 title: Engineering Blockchain Consortia
 url: /2017/04/18/engineering-blockchain-consortia/
