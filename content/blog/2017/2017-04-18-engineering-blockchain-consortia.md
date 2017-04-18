@@ -1,4 +1,3 @@
-
 ---
 author: nina
 categories:
@@ -16,6 +15,7 @@ thumbnail:
 title: Engineering Blockchain Consortia
 url: /2017/04/18/engineering-blockchain-consortia/
 ---
+
 # Engineering Blockchain Consortia
 
 
