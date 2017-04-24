@@ -153,6 +153,8 @@ pre[class*="language-"] {
     border-radius: 5px;
     border: none;
     border-left: 6px solid $green;
+    border-right: 1px solid $grey_dark;
+    border-bottom: 1px solid $grey_dark;
 
     code,
     code[class*="language-"] {
@@ -179,6 +181,8 @@ code {
     position: relative;
     bottom: 1px;
     white-space: nowrap;
+    // wrap on mobiles
+    @include responsive(breakpoint) { white-space: pre-wrap; }
 }
 
 // Custom code blocks
@@ -186,27 +190,60 @@ code {
     position: relative;
     padding-bottom: 40px !important;
     tab-size: 0 !important;
+}
+.code-wrapper {
+    position: relative;
+    padding-bottom: 40px !important;
+    margin-bottom: 20px;
+    tab-size: 0 !important;
+    background-color: #484748;
+    color: #D1DCE6;
+    padding: 20px 2px 20px 20px;
+    word-break: break-word;
+    border-radius: 5px;
+    border: none;
+    border-left: 6px solid #96B85D;
+    border-right: 1px solid #484748;
+    border-bottom: 1px solid #484748;
+    overflow: hidden;
+
+    $source-font-color: #bbb;
+    $source-bg-color: #333;
+
+    pre {
+        border: none;
+        padding: 0 !important;
+        margin: 0 !important;
+        tab-size: 0 !important;
+    }
 
     .source-info {
         position: absolute;
-        bottom: 5px;
-        right: 9px;
         text-transform: uppercase;
-        color: #999;
-        font-size: 75%;
         display: block;
-        // Align left on mobile
-        @include responsive(breakpoint) { left:9px; }
+        width: 100%; // catch overflow
+        background-color: $source-bg-color;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        padding: 6px 12px;
+        font-family: $font_body, sans-serif;
+        font-size: 12px;
 
         a {
-            color: #a7a7a7;
+            color: $source-font-color;
             border: none;
+            margin-right: 10px;
             @include transition(color 0.3s);
 
             &:hover,
             &:focus {
-                color: inherit;
+                color: lighten($source-font-color, 25%);
                 border: none;
+            }
+
+            i {
+                margin-right: 5px;
             }
         }
     }
@@ -214,6 +251,11 @@ code {
     code {
         tab-size: 0;
     }
+}
+
+// Lucid Charts
+.lg-outer .lg-img-wrap {
+    padding: 3% !important;
 }
 
 
@@ -229,7 +271,7 @@ nav.navbar {
     padding: 0 !important;
     margin: 0 !important;
     background: #ffffff;
-    z-index: 999999;
+    z-index: 999;
     font-size: 1.3em;
     height: $navheight;
     position: fixed;
