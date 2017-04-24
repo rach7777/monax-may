@@ -29,12 +29,16 @@
 
 </script>
 
-<pre id="insert_contents_{{ $num }}" class="insert-contents-block language-bash" data-source="{{ $fileURL }}" data-start="{{ $start }}" data-end="{{ $end }}">
-	<div class="source-info"><a href="{{ $fileURL }}" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Source: {{ $fileURL }} <span class="hide-mobile">From lines {{ $start }} to {{ $end }}</span></a></div>
-	<code class="language-bash">
-	</code>
-</pre>
+<div class="code-wrapper">
+	<pre id="insert_contents_{{ $num }}" class="insert-contents-block language-bash" data-source="{{ $fileURL }}" data-start="{{ $start }}" data-end="{{ $end }}">
+		<code id="clipboard-source_{{ $num }}" class="language-bash">
+		</code>
+	</pre>
+	<div class="source-info"><a href="#copy" class="copy-to-clipboard hide-mobile" data-clipboard-target="#clipboard-source_{{ $num }}" onclick="event.preventDefault()"><i class="fa fa-clipboard" aria-hidden="true"></i>Copy Source</a><a href="{{ $fileURL }}" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i>{{ $fileURL }} {{ if or (ne $start "0") (ne $end "") }}<span class="hide-mobile">[From lines {{ $start }} to {{ if eq $end "" }}End{{ else }}{{ $end }}{{ end }}]</span>{{ end }}</a></div>
+</div>
 
+	
+<script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script>
 
 <script type="application/javascript">
 
@@ -97,6 +101,25 @@ window.onload = function() {
 			    });
 			}
 		});
+
+		// Start clipboard handler
+		var copyEvent = new Clipboard('.copy-to-clipboard');
+
+		copyEvent.on('success', function(e) {
+
+			$('.copy-to-clipboard').html('<i class="fa fa-clipboard" aria-hidden="true"></i>Copy Source');
+			$(e.trigger).html('<i class="fa fa-clipboard" aria-hidden="true"></i>Copied!');
+			e.clearSelection();
+		});
+
+		copyEvent.on('error', function(e) {
+			$('.copy-to-clipboard').html('<i class="fa fa-clipboard" aria-hidden="true"></i>Copy Source');
+			$(e.trigger).html('Error copying - sorry!');
+			e.clearSelection();
+		});
+
+
+
     }
 }
 
