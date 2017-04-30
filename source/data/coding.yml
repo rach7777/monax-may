@@ -13,8 +13,8 @@ cli:
   repository: "https://github.com/monax/cli.git"
   releases: "https://github.com/monax/cli/releases/latest"
   pms:
-    - name: Homebrew
-      cmd: brew
+    # - name: Homebrew
+    #   cmd: brew
 #    - name: Chocolatey
 #      cmd: choco
     - name: Fedora or RHEL

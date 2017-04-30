@@ -37,15 +37,14 @@ preston :
     bio: "Preston is Monax Industries' COO and General Counsel. A structured finance and derivatives lawyer by training, he is also a fellow of the Adam Smith Institute, a libertarian think tank, in London. In his free time, he advocates in favour of marmot habitat conservation."
 
 tyler :
-    name: Tyler Jackson
-    title: "Head of Innovation"
+    name: Dr. Tyler Jackson
+    title: "Chief Scientist"
     gravatar: team-tj.jpeg
     twitter: dennismckinnon
     github: dennismckinnon
     keybase: tylerjackson
     display: true
-    bio: "Tyler is Monax Industries' Team Leader for Applications Team. Tyler (who also goes by Dennis Mckinnon on the internet) was a quantum information academic before co-founding Monax. He was one of the first smart contract writers to begin working on smart contract suites and contributed to early theoretical work on smart contract structure. He really exists (We think)."
-
+    bio: "Dr. Tyler Jackson is Monax Industries' Chief Scientist. Dr. Jackson (who also goes by Dennis McKinnon on the internet) was a quantum information academic before co-founding Monax and continues his work in this field. He was one of the first smart contract writers to begin working on smart contract suites and made meaningful contributions to early theoretical work on smart contract structures. He really exists (we think)."
 jan :
     name: Jan Hendrik Scheufen
     title: "Head of Product"
