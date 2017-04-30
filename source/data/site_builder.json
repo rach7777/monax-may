@@ -38,12 +38,12 @@
         "watchDir":  "./source/images/**/*",
         "outputDir": "./static/images/"
     },
-    "icons": {
-        "srcs":       [
-                        "./source/icons/**/*"
-                      ],
-        "outputDir": "./static/icons/"
-    },
+    // "icons": {
+    //     "srcs":       [
+    //                     "./source/icons/**/*"
+    //                   ],
+    //     "outputDir": "./static/icons/"
+    // },
     "data": {
         "srcs":       [
                         "./source/data/**/*",
