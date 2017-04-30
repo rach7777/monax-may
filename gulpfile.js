@@ -77,11 +77,11 @@ function buildImgs(){
     .pipe(gulp.dest(config.img.outputDir));
 }
 
-function buildIcons() {
-  return gulp.src(config.icons.srcs)
-    .pipe(flatten())
-    .pipe(gulp.dest(config.icons.outputDir))
-}
+// function buildIcons() {
+//   return gulp.src(config.icons.srcs)
+//     .pipe(flatten())
+//     .pipe(gulp.dest(config.icons.outputDir))
+// }
 
 function buildData() {
   return gulp.src(config.data.srcs)
@@ -323,11 +323,11 @@ function cleanSite() {
 gulp.task('build-css', buildCSS)
 gulp.task('build-js', buildJS)
 gulp.task('build-imgs', buildImgs)
-gulp.task('build-icons', buildIcons)
+// gulp.task('build-icons', buildIcons)
 gulp.task('build-fonts', buildFonts)
 gulp.task('build-data', buildData)
 gulp.task('build-index', ['build-data'], buildIndex)
-gulp.task('build-arts', ['build-css', 'build-js', 'build-imgs', 'build-icons', 'build-fonts', 'build-index'])
+gulp.task('build-arts', ['build-css', 'build-js', 'build-imgs', 'build-fonts', 'build-index'])
 gulp.task('build-site', ['build-arts'], buildSite)
 
 // watchers -- for deving
