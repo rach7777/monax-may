@@ -1,4 +1,4 @@
-FROM quay.io/eris/build
+FROM quay.io/monax/build:0.17
 MAINTAINER Monax <support@monax.io>
 
 ENV HUGO_VERSION=v0.18.1
