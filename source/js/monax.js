@@ -13,6 +13,22 @@ var lunrIndex,
 
 // on document load
 $(function() {
+
+
+  /*
+    ------------------------------------------------------------------------
+      Device Usability
+    ------------------------------------------------------------------------
+  */
+
+  // Keeping for future use - detect if browser supports touch
+  if ( ('ontouchstart' in window || ( window.DocumentTouch && document instanceof DocumentTouch ) ) ) {
+    // console.log('touch detected');
+  } else {
+    // console.log('no touch detected');
+  }
+
+
   /*
     ------------------------------------------------------------------------
       Site Wide Style // Layout

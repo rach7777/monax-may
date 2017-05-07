@@ -9,18 +9,17 @@
 // Default Device Sizes
 
 $xlarge-only:           2000px;
-$large-desktop:         1600px;
-$desktop:               1200px;
-$laptop:                992px;
-$tablet-landscape:      768px; // Breakpoint 1
-$tablet-portrait:       600px;
+$desktop:               1824px;
+$laptop:                1224px;
+$tablet-landscape:      1024px;
+$tablet-portrait:       768px; // Breakpoint 1
 $phone-landscape:       480px;
 $phone-portrait:        320px;
 
 
 // Default Container Sizes
 
-$bp1-container-size: $tablet-landscape;
+$bp1-container-size: $tablet-portrait;
 // $bp2-container-size: $phone-landscape;
 // $bp3-container-size: $phone-portrait;
 
@@ -67,6 +66,8 @@ E.G.
 @include responsive(tablet-portrait) {  }
 @include responsive(phone-landscape) {  }
 @include responsive(phone-portrait) {  }
+@include responsive(breakpoint) {  }
+@include responsive(breakpoint-plus) {  }
 
  */
 
