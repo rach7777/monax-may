@@ -25,7 +25,7 @@ url: /2015/06/15/opcuddlecritter/
 
 **Long version**: For anyone who has followed the company's musings over the past six months, you may have noticed that I haven't been entirely kind to Bitcoin. This has been, of course, entirely deliberate in order to differentiate between our marmoty, repeatable database offering and Bitcoin's more traditional approach to blockchain technology, although it has caused my colleagues - who refer to this _weltanschauung_ as "cuddly marmoteering" - some dismay.
 
-Having been successful in differentiating our offering, if at the risk of appearing slightly [abrasive](http://prestonbyrne.com/2015/04/08/blockchain-without-bitcoin-is-now-a-thing/), peer pressure from my company and a dare from a prospective client has resulted in my undertaking the following challenge:
+Having been successful in differentiating our offering, if at the risk of appearing slightly [abrasive](https://prestonbyrne.com/2015/04/08/blockchain-without-bitcoin-is-now-a-thing/), peer pressure from my company and a dare from a prospective client has resulted in my undertaking the following challenge:
 
 * play nice with Bitcoin for 30 days and offer only constructive commentary, both in a series of posts on this blog and elsewhere.
 
