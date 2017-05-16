@@ -16,9 +16,6 @@ title: Engineering Blockchain Consortia
 url: /2017/04/18/engineering-blockchain-consortia/
 ---
 
-# Engineering Blockchain Consortia
-
-
 **Collaborative solutions.**
 One of the most exciting promises of blockchain technology is enabling better collaboration in order to solve problems via consortia. However, in order to ensure good results, consortium-building in itself needs a coherent, transparent goal with a clear benefit for all participants.
 
@@ -40,4 +37,4 @@ Commercial ecosystems involve risk and loss as well as growth, so insurance is a
 
 
 **Ecosystem software in action: Monax Insurance Linked Securities.** 
-This year, Monax debuted its Insurance Linked Securities (ILS) ecosystem, which enables sponsors to incentivize resilient infrastructure through smart contract catastrophe bonds linked to a smart contract capital project management project. The project is calculated to reduce risk of loss in the subject area, and smart contracts provide constant data on project status. This end-to-end software ecosystem creates reliable processes, profitable investment, better risk pricing and overall reduced risk of loss. For more detail on how the Monax ILS solution works, read our CEO Casey Kuhlman’s [Use Case Deep Dive: Insurance Linked Securities.](https://monax.io/blog/2017/02/02/use-case-deep-dive-insurance-linked-securities/) 
+This year, Monax debuted its Insurance Linked Securities (ILS) ecosystem, which enables sponsors to incentivize resilient infrastructure through smart contract catastrophe bonds linked to a smart contract capital project management project. The project is calculated to reduce risk of loss in the subject area, and smart contracts provide constant data on project status. This end-to-end software ecosystem creates reliable processes, profitable investment, better risk pricing and overall reduced risk of loss. For more detail on how the Monax ILS solution works, read our CEO Casey Kuhlman’s [Use Case Deep Dive: Insurance Linked Securities.](/2017/02/02/use-case-deep-dive-insurance-linked-securities/) 
