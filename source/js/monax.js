@@ -117,9 +117,16 @@ $(function() {
       autoplay:true,
       autoplayHoverPause:true,
       autoplayTimeout: (Math.floor(Math.random() * (8000 - 4000 + 1)) + 4000),
+      dots: true,
       responsive:{
           0:{
               items:1
+          },
+          500:{
+              items:2
+          },
+          750:{
+              items:3
           },
           1000:{
               items:4
