@@ -38,7 +38,7 @@ So we can't just go telling everyone where it is.
 
 {{< image_blog "doug.png" >}}
 
-Just to be clear, we're not proposing something like the Ethereum/Counterparty [**reverse implementation fiesta**](http://prestonbyrne.com/2014/11/14/eris-industries-leaks-week-3/) that took place in November.
+Just to be clear, we're not proposing something like the Ethereum/Counterparty [**reverse implementation fiesta**](https://prestonbyrne.com/2014/11/14/eris-industries-leaks-week-3/) that took place in November.
 
 Eris isn't a cryptocurrency - it's a distributed application platform which allows developers to build DApps that use blockchain databases. What it does mean, however, is that once we've got a module, Eris DApps -- which, now that we've launched, we're working on in earnest (and we hope you are too!) -- should be able to talk to Counterparty assets through our Decerver web browser core in addition to BTC, ETH, THEL, and IPFS.
 

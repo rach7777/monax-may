@@ -13,6 +13,7 @@ tags:
 thumbnail: eea.jpg
 excerpt: "Monax announces it has joined the new standards formation body known as the Enterprise Ethereum Alliance to help move smart contract machines forward."
 title: "Why we're joining the Enterprise Ethereum Alliance"
+url: /2017/03/01/why-were-joining-the-enterprise-ethereum-alliance/
 ---
 
 [{{< image_blog "eea.jpg" >}}](https://www.flickr.com/photos/aid_precious_ones/269003324/)
