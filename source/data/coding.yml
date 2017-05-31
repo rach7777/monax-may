@@ -10,8 +10,8 @@ docker_machine_min: 0.4.1
 docker_machine_auth: 0.8.1
 
 cli:
-  repository: "https://github.com/monax/cli.git"
-  releases: "https://github.com/monax/cli/releases/latest"
+  repository: "https://github.com/monax/monax.git"
+  releases: "https://github.com/monax/monax/releases/latest"
   pms:
     # - name: Homebrew
     #   cmd: brew
