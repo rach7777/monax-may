@@ -311,22 +311,45 @@
         font-size: 200%;
     }
 
-    .owl-carousel blockquote {
-        border: none;
 
-        p.item-header {
-            font-size: 160%;
-            font-weight: 200;
-            letter-spacing: -0.5px;
-            line-height: 1.3;
-            margin-bottom: 10px;
+    // Owl carousels
+    
+    .owl-carousel {
 
-            @include responsive(breakpoint) {
-                font-size: 140%;
+        blockquote {
+            border: none;
+
+            p.item-header {
+                font-size: 160%;
                 font-weight: 200;
+                letter-spacing: -0.5px;
+                line-height: 1.3;
+                margin-bottom: 10px;
+
+                @include responsive(breakpoint) {
+                    font-size: 140%;
+                    font-weight: 200;
+                }
+            }
+        }
+        .owl-dot {
+            display: inline-block;
+
+            span {
+                background: none repeat scroll 0 0 rgba(0,0,0,0.3);
+                border-radius: 20px;
+                display: block;
+                height: 12px;
+                margin: 5px 7px;
+                width: 12px;
+            }
+
+            &.active span {
+              background-color: $monax;
             }
         }
     }
+
 
     .callout {
         color: $white;

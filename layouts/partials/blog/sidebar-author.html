@@ -1,9 +1,16 @@
 {{- $author := index .Site.Data.team .Params.author -}}
-<aside class="sidebar col-md-2 col-lg-2 col-lg-offset-2 hidden-xs hidden-sm">
-  <h4>Post by: {{ $author.name }}</h4>
-  <img src="/images/team/{{ $author.gravatar }}" class="sidebar-gravatar pull-left">
-  <p>{{ $author.bio }}</p>
-  <hr />
+<aside class="sidebar sidebar-blog col-md-2 col-lg-2 col-lg-offset-2 hidden-xs hidden-sm">
+  <div class="author-info">
+    <div class="author-info-left">
+      <img src="/images/team/{{ $author.gravatar }}" class="sidebar-gravatar">
+    </div>
+    <div class="author-info-right">
+      <h4 class="author-name">{{ $author.name }}</h4>
+      <h6 class="author-title">{{ $author.title }}</h6>
+    </div>
+  </div>
+  <p class="author-bio">{{ $author.bio }}</p>
+
   <div class="follow">
     <a title="RSS Feed for {{ .Site.Title }}" href="{{ .Site.RSSLink }}" />
       <span class="fa-stack fa-lg">
@@ -34,5 +41,4 @@
       </a>
     {{- end -}}
   </div>
-  <hr />
 </aside>

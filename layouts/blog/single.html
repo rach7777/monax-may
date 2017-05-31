@@ -4,8 +4,35 @@
 {{- partial "navigation.html" . -}}
 <div class="container-fluid" id="monax-page">
   {{- if not .Params.no_header -}}
-    <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 page-header">
-      <header><h1 class="title" role="title">{{ .Title }}</h1></header>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2 page-header">
+
+  {{ if or ( .NextInSection ) ( .PrevInSection ) }}
+    <ul class="pager" style="float: left;margin: 28px 0 10px;">
+    {{ if .PrevInSection }}
+        <li class="previous">
+          <a href="{{ .PrevInSection.Permalink }}" title="{{ .PrevInSection.Title }}">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          </a>
+        </li>
+    {{end}}
+    </ul>
+  {{ end }}
+
+
+{{ if or ( .NextInSection ) ( .PrevInSection ) }}
+    <ul class="pager" style="float: right;margin: 28px 0 10px;">
+    {{ if .NextInSection }}
+      <li class="next">
+        <a href="{{ .NextInSection.Permalink }}" title="{{ .NextInSection.Title }}">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </li>
+    {{end}}
+    </ul>
+  {{ end }}
+
+    <header><h1 class="title" role="title">{{ .Title }}</h1></header>
+  
     </div>
   {{- end -}}
   <div class="row">
@@ -21,7 +48,24 @@
           </div>
         {{- end -}}
         {{ .Content }}
+  
+        <hr style="margin-top:40px;">
+
         {{- if ne .Params.author nil }}{{ partial "blog/post_meta-author.html" . }}{{ else }}{{ partial "blog/post_meta-default.html" . }}{{ end -}}
+
+        {{ partial "pagination" . }}
+
+        <h4>Related Articles</h4>
+        {{ $page_link := .Permalink }}
+        {{ $categories := .Params.categories }}
+        {{ range $page := .Site.Pages }}
+          {{ $has_common_categories := intersect $categories .Params.categories | len | lt 0 }}
+          {{ if and $has_common_categories (ne $page_link $page.Permalink) (lt ($.Scratch.Get "$c") 5)}}
+            {{ $.Scratch.Add "$c" 1 }}
+            <li><a href="{{ $page.Permalink }}">{{ $page.Title }} ({{ $page.Date.Format "Jan, 2006" }}) </a></li>
+          {{ end }}
+        {{ end }}
+
       </article>
       {{- if .Params.comments -}}
         <div class="comments">

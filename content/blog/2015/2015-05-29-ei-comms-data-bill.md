@@ -42,7 +42,7 @@ If there were any indication that the terrorists in the Charlie Hebdo attacks in
 
 If this Bill is passed into law, we are likely to see a mass exodus of tech companies and financial services firms alike from the United Kingdom. We are happy to lead by example.
 
-In keeping with our promise in January to [leave the country](http://prestonbyrne.com/2015/01/13/you-cant-stop-crypto-mr-cameron/) if the Conservatives were returned to power with this policy on their legislative agenda, we have promptly ordered all of our staff to depart from the United Kingdom until such time as further clarity with respect to this bill has been achieved.
+In keeping with our promise in January to [leave the country](https://prestonbyrne.com/2015/01/13/you-cant-stop-crypto-mr-cameron/) if the Conservatives were returned to power with this policy on their legislative agenda, we have promptly ordered all of our staff to depart from the United Kingdom until such time as further clarity with respect to this bill has been achieved.
 
 Additionally, with immediate effect, we have temporarily moved our corporate headquarters to New York City, where [open-source cryptography is firmly established as protected speech](https://www.eff.org/cases/bernstein-v-us-dept-justice) pursuant to the First Amendment to the Constitution of the United States, until such time as we can be certain that the relevant provisions of the Communications Data Bill will be stricken from it (otherwise, we will reincorporate in America and continue our business here).
 

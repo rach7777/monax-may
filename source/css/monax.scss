@@ -66,7 +66,7 @@ p, blockquote {
 #content-block {
     padding: 0 40px 80px;
     margin-top: 20px;
-    border-left: 1px solid #e4e4e4;
+    
 
     // No border on mobile
     @include responsive(breakpoint) { border: none; }
@@ -89,6 +89,11 @@ p, blockquote {
         margin-top: 25px;
     }
 }
+// Override for one col layout
+aside + #content-block {
+    border-left: 1px solid #e4e4e4;
+}
+
 
 // Links
 a {
@@ -590,14 +595,55 @@ nav.navbar {
         font-size: 14px;
     }
 
-    img.sidebar-gravatar {
-        max-width: 40%;
-        padding-right: 10px;
-    }
+    &.sidebar-blog {
 
-    .follow {
-        text-align: center;
-    }
+        .author-info {
+            padding-right: 10px;
+            padding-bottom: 20px;
+            display: block;
+            @include flexbox;
+            @include align-items(center);
+
+            .author-info-left {
+                display: inline-block;
+                vertical-align: middle;
+                width: 40%;
+                @include flex(0 0 auto);
+
+                .sidebar-gravatar {
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+
+            .author-info-right {
+                display: inline-block;
+                vertical-align: middle;
+                padding-left: 8px;
+                @include flex(1 1 auto);
+
+                .author-title {
+                    margin: 4px 0 0 0;
+                    font-size: 75%;
+                }
+
+                .author-name {
+                    margin: 0 0 2px;
+                    font-size: 18px;
+                    padding: 0;
+                }
+            }    
+        }
+        
+        .author-bio {
+            clear: both;
+            margin-bottom: 20px;
+        }
+        .follow {
+            text-align: left;
+            margin-left: -4px;
+        }
+    }    
 
     a {
         border: none;
@@ -700,6 +746,7 @@ article a {
     border: none !important;
 }
 
+
 #monax-page #main-content {
     padding-bottom: 160px;
 
@@ -717,7 +764,7 @@ article a {
     }
 
     img {
-        max-width: 80%;
+        max-width: 100%;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -744,11 +791,6 @@ article a {
         text-align: center;
     }
 
-    .excerpt {
-        font-size: 1.4em;
-        @include responsive(breakpoint) { font-size: 1.1em; }
-    }
-
     .pagination-meta {
         margin-bottom: 100px;
     }
@@ -766,6 +808,25 @@ article a {
     .post-meta p {
         font-size: 14px;
     }
+
+    .meta {
+        font-size: 75%;
+        color: #aaa;
+        margin-bottom: 6px;
+
+        i {
+            margin-left: 10px;
+            margin-right: 3px;
+
+            &:first-of-type {
+                margin-left: 0px;
+            }
+        }
+    }
+}
+// Override for articles
+.blog-single #monax-page #main-content {
+    padding-bottom: 0;
 }
 
 /*                     */
@@ -876,6 +937,143 @@ footer {
         text-align: center;
     }
 }
+
+
+/*              */
+/*    Blogs     */
+/*              */
+
+
+.blog-li-entry {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    @include flexbox;
+}
+
+.blog-li-left {
+    @include flex(0 0 auto);
+}
+
+
+.blog-li-img {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    min-width: 180px;
+
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 !important;
+        min-width: 100%;
+        min-height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.blog-li-text {
+    @include flex(1 1 auto);
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+
+    h3 {
+        font-size: 28px;
+        margin-top: 0;
+
+        a {
+            border: none;
+            color: #333;
+            font-weight: 200;
+        }
+    }
+
+    .read-more-link a {
+        background: $monax !important;
+        font-size: 80%;
+        border-radius: 0px;
+        color: #fff !important;
+
+        &:hover {
+            background: darken($monax, 10%) !important;
+        }
+    }
+
+    .excerpt {
+        font-size: 100%;
+        @include responsive(breakpoint) { font-size: 80%; }
+    }
+}
+
+#monax-page .pager {
+    a {
+        background-color: #efefef;
+        color: #fff;
+        border: none;
+        border-radius: 0;
+        @include transition(background 0.3s);
+
+        &:hover {
+            background-color: darken(#efefef, 10%);
+        }
+    }
+}
+
+// Blog
+.sidebar-related {
+    font-size: 16px;
+    margin-top: 20px;
+}
+.tags-list,
+.cats-list {
+    list-style: none;
+    padding: 0;
+
+    li {
+        display: inline-block;
+        background-color: #f4f4f4;
+        padding: 2px 8px;
+        border-radius: 5px;
+        margin-right: 2px;
+        margin-bottom: 2px;
+        font-size: 12px;
+        line-height: 1.4;
+        @include transition(background 0.3s);
+
+        &:hover {
+            background-color: darken(#f4f4f4, 5%);
+        }
+
+        a {
+            color: #aaa;
+            font-weight: 200;
+
+            &:hover {
+                color: #333;
+                border: none;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+
 
 
 /*                    */

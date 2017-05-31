@@ -18,7 +18,6 @@ casey :
     name: Casey Kuhlman
     title: CEO
     gravatar: team-csk.jpeg
-    site: https://caseykuhlman.com
     twitter: compleatang
     github: compleatang
     keybase: compleatang
@@ -29,7 +28,7 @@ preston :
     name: Preston Byrne
     title: COO
     gravatar: team-pjb.jpeg
-    site: http://prestonbyrne.com
+    site: https://prestonbyrne.com
     twitter: prestonjbyrne
     github: prestonjbyrne
     keybase: prestonjbyrne

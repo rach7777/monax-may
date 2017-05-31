@@ -1,8 +1,7 @@
 {{- $author := index .Site.Data.team "default" -}}
 <aside class="sidebar col-md-2 col-lg-2 col-lg-offset-2 hidden-xs hidden-sm">
-  <h4>{{ .Site.Title }}</h4>
-  <p>{{ $author.bio }}</p>
-  <hr />
+  <img src="/images/logos/monax_rect_200.png" alt="Monax Industries" style="max-width: 100%; margin-bottom: 10px;"/>
+  <p class="author-bio">{{ $author.bio }}</p>
   <div class="follow">
     <a title="RSS Feed for {{ .Site.Title }}" href="{{ .Site.RSSLink }}" />
       <span class="fa-stack fa-lg">
@@ -23,5 +22,18 @@
       </span>
     </a>
   </div>
-  <hr />
+
+  <h5 class="sidebar-related">Search By Category</h5>
+  <ul class="cats-list">
+    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+      {{ if ge (len $name) 1 }}
+        <li><a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a></li>
+      {{ end }}
+    {{ end }}
+  </ul>
+
+
+
+
+
 </aside>
