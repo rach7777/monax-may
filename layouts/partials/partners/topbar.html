@@ -1,0 +1,50 @@
+<div class="partners-top" style="max-width:420px; margin: 0 auto;">
+
+	{{- with .Params.logo -}}
+		<img src="/images/partners/{{ . }}" style="max-width: 200px; margin: 0 auto 10px;"/>
+	{{- else -}}
+		<img src="/images/logos/doug_square.svg"  style="max-width: 200px; margin: 0 auto 10px;"/>
+	{{- end -}}
+	{{- with .Params.logo2 -}}
+		<img src="/images/partners/{{ . }}"  style="max-width: 200px; margin: 0 auto 10px;"/>
+	{{- end -}}
+
+	{{- with .Params.partner_description -}}
+		<p class="author-bio" style="text-align:center;">{{ . }}</p>
+	{{- end -}}
+
+	<div class="center-icons" style="display: block;text-align:center;">
+		<div class="follow" style="display:inline-block;">
+			{{- with .Params.press_release_url -}}
+			<a title="Read The Press Release" href="{{ . }}" target="_blank" />
+			  <span class="fa-stack fa-lg">
+			    <i class="fa fa-square fa-stack-2x"></i>
+			    <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
+			  </span>
+			</a>
+			{{- end -}}
+			{{- with .Params.partner_website -}}
+			<a title="Website Link" href="{{ . }}" target="_blank" />
+			  <span class="fa-stack fa-lg">
+			    <i class="fa fa-square fa-stack-2x"></i>
+			    <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+			  </span>
+			</a>
+			{{- end -}}
+			{{- with .Params.partner_twitter_acc -}}
+			<a title="Twitter Profile" href="https://twitter.com/{{ . }}" target="_blank">
+			  <span class="fa-stack fa-lg">
+			    <i class="fa fa-square fa-stack-2x"></i>
+			    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+			  </span>
+			</a>
+			{{- end -}}
+		</div>
+	</div>
+
+</div>
+
+
+
+
+
