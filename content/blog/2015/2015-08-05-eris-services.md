@@ -45,9 +45,9 @@ Perhaps Alice operates an army of delivery drones in the warehouse next door. Sh
 That's a neat example. What's your service?
 
 ##Getting Started
-[Install Eris CLI](https://github.com/monax/cli/tree/develop#install-eris)
+[Install Eris CLI](https://github.com/monax/monax/tree/develop#install-eris)
 
-Read the [README](https://github.com/monax/cli/tree/develop#services)
+Read the [README](https://github.com/monax/monax/tree/develop#services)
 
 Run
 
@@ -83,7 +83,7 @@ Run a Bitcoin node: `btcd`, or an ethereum node `eth`
 
 Starting a service can also spawn a data container if `data_container = true`
 
-See [here](https://github.com/monax/cli/tree/develop#data) for more information about `eris data`.
+See [here](https://github.com/monax/monax/tree/develop#data) for more information about `eris data`.
 
 Protip: Running too many services at once might crash you operating system: kill a service
 

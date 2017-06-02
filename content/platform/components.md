@@ -21,7 +21,7 @@ aliases:
 
 This page provides an overview of how Monax Industries' software is stacked
 
-Modularity is a strong focus of the `monax` platform, which is greatly facilitated by container technology. Before we adopted a containerized modality, each service had to be installed, configured, and connected individually - a labour intensive process. Docker provides `monax` with the ability to easily manage the various processes for your application. It also facilitates running your chain on a variety of hardware. The complicated task of orchestrating all the various requirements for a smart-contract-focused blockchain is exactly why we went all-in on containerizer technology despite various ongoing pain points. We like to think of [the Monax CLI](https://github.com/monax/cli/blob/master/README.md) as "docker for blockchains".
+Modularity is a strong focus of the `monax` platform, which is greatly facilitated by container technology. Before we adopted a containerized modality, each service had to be installed, configured, and connected individually - a labour intensive process. Docker provides `monax` with the ability to easily manage the various processes for your application. It also facilitates running your chain on a variety of hardware. The complicated task of orchestrating all the various requirements for a smart-contract-focused blockchain is exactly why we went all-in on containerizer technology despite various ongoing pain points. We like to think of [the Monax CLI](https://github.com/monax/monax/blob/master/README.md) as "docker for blockchains".
 
 There are five key considerations for thinking about the mechanics of your chain as one integral piece of your ecosystem application. The first three suffice if your goal is writing and testing smart contracts. The rest are for building a useable application at scale.
 
@@ -81,7 +81,7 @@ Next, we'll walk through one approach -- the one we consider most intuitive for 
 
 We start with the genesis file. The sets up your chain and contains approved validators, their token distribution, any permissions, roles, or names can be assigned to them. Maybe you want 5, maybe you want 100. See [the advanced chain making tutorial](/docs/chain-making) for more info on creating chains. Since you'll need the public keys of everyone you'd like included, a key pair will need to be generated for each participant/validator.
 
-Either you do this all yourself and distribute the keys or ask each user to generate a pair themselves and provide the pubkey. For the latter, you'd pass in a `.csv` file on the `monax chains make --known` command. It is always possible to update the validator set with a [bond/unbond transaction](https://github.com/monax/cli/tree/master/tests/jobs_fixtures/app04-bonding_unbonding_rebonding_tx_and_validation_status). Of course, you can easily add accounts to the chain by sending them a token or with a [permissions transaction](https://github.com/monax/cli/tree/master/tests/jobs_fixtures/app03-basic_and_advanced_permission_txs_and_queries).
+Either you do this all yourself and distribute the keys or ask each user to generate a pair themselves and provide the pubkey. For the latter, you'd pass in a `.csv` file on the `monax chains make --known` command. It is always possible to update the validator set with a [bond/unbond transaction](https://github.com/monax/monax/tree/master/tests/jobs_fixtures/app04-bonding_unbonding_rebonding_tx_and_validation_status). Of course, you can easily add accounts to the chain by sending them a token or with a [permissions transaction](https://github.com/monax/monax/tree/master/tests/jobs_fixtures/app03-basic_and_advanced_permission_txs_and_queries).
 
 It's time to start bringing nodes online. The first node starts up and peers can join like so: a seed of the master node's IP:port is added to their configuration file (`config.toml`) used in the `monax chains start` sequence. So long as the peer coming online has a key that:
 
@@ -94,7 +94,7 @@ Once >2/3 of the validator pool joins the network, the chain will begin validati
 
 If the chain drops below 2/3 the total "stake" that has been bonded, it will halt. If the more than 2/3 of the bonded stake cannot come to a consensus, it will halt.
 
-The status and health of a chain can be monitored through either `burrow`'s rpc port. The chains command for `monax` is designed to handle all operations for one or more chains. With your chain running, you can [send transactions](https://github.com/monax/cli/tree/master/tests/jobs_fixtures/app00-basic_functionality_jobs) and deploy contracts using `monax pkgs`, or our javascript libraries.
+The status and health of a chain can be monitored through either `burrow`'s rpc port. The chains command for `monax` is designed to handle all operations for one or more chains. With your chain running, you can [send transactions](https://github.com/monax/monax/tree/master/tests/jobs_fixtures/app00-basic_functionality_jobs) and deploy contracts using `monax pkgs`, or our javascript libraries.
 
 More info: [chain deploying](/docs/chain-deploying); [contracts interacting](/docs/getting-started/#step-4-integrate-your-ecosystem-application).
 

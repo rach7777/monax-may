@@ -1,0 +1,34 @@
+{{- partial "header.html" . -}}
+</head>
+<body class="docs">
+{{ partial "navigation.html" . }}
+<div class="container-fluid" id="monax-page">
+  {{ if not .Params.no_header }}
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2 page-header">
+        <header><h1 class="title" role="title">{{ .Title }}</h1></header>
+      </div><!-- .cols -->
+    </div><!-- .row -->
+  {{ end }}
+  <div class="row">
+    <aside class="sidebar partners-sidebar col-md-2 col-lg-2 col-lg-offset-2 hidden-xs hidden-sm">
+      <div id="sidebar" class="nav-collapse">
+        {{ partial "partners/sidebar.html" . }}
+      </div>
+    </aside>
+    <article id="main-content">
+      <aside class="topbar partners-sidebar col-xs-12 col-sm-12 hidden-md hidden-lg">
+        <div id="topbar" class="nav-collapse">
+          {{ partial "partners/topbar.html" . }}
+          <hr />
+        </div>
+      </aside>
+      <div class="col-xs-12 col-sm-12 col-md-10 col-lg-6" id="content-block">
+        {{ .Content }}
+      </div><!-- .cols -->
+    </article><!-- #main-content -->
+  </div><!-- .row -->
+</div><!-- .container-fluid -->
+{{ partial "footer.html" . }}
+{{ partial "scripts.html" . }}
+{{ partial "analytics.html" . }}
