@@ -1087,6 +1087,11 @@ footer {
 /*              */
 /*   Partners   */
 /*              */
+
+.partner-li-entry {
+    @include clearfix;
+}
+
 .partner-li-img {
     position: relative;
     overflow: hidden;
