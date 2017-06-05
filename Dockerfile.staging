@@ -2,5 +2,6 @@ FROM site_buildr
 ADD . /site
 USER root
 RUN chown --recursive $USER:$USER /site
+RUN chown -R $USER /usr/lib
 USER $USER
 RUN gulp build --staging
