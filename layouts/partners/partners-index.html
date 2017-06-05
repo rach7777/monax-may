@@ -12,7 +12,7 @@
     <div id="main-content">
 
       {{- range first 5 (where .Site.Pages "Section" "partners") -}}
-        {{ if ne .Params.hidden true }} -->
+        {{ if ne .Params.hidden true }}
         {{- partial "partners/partners-entry.html" . -}}
         {{ end }}
         
