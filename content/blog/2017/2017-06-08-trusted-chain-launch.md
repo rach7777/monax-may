@@ -25,7 +25,7 @@ utm:
 
 [{{< image_blog "trustedchain.jpg" >}}](https://trustedchain.it/en/)
 
-Monax is pleased to announce a very significant step in the development of permissioned blockchain technology with the launch of the [TrustedChain® network](https://trustedchain.it/en/). The network is being founded by [Ifin Sistemi](https://ifin.it) a leader in the provision of trusted services for public administration and banking in Italy; Monax is providing technical expertise to the network during its foundational stage.
+Monax is pleased to announce a very significant step in the development of permissioned blockchain technology with the launch of the [TrustedChain® network](https://trustedchain.it/en/). The network is being founded by [Ifin Sistemi](/partners/ifin-sistemi/) a leader in the provision of trusted services for public administration and banking in Italy; Monax is providing technical expertise to the network during its foundational stage.
 
 ## About TrustedChain
 
