@@ -6,7 +6,6 @@ title:     TITLE
 author:    YOUR_FIRST_NAME_ALL_LOWERCASE
 excerpt:   "EXCERPT - FOR SHARING."
 thumbnail: YOUR_THUMBNAIL_FOR_SHARING
-url:       /YEAR/MONTH/DAY/URL/
 categories:
   - CATEGORY1
 tags:
@@ -17,6 +16,10 @@ tags:
 published: true
 comments:  true
 meta:      true
+utm:
+  source: "website"
+  medium: "blog"
+  campaign: "v0.17 release"
 
 ---
 
