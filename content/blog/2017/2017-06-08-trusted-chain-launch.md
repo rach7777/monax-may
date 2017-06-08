@@ -45,7 +45,7 @@ Users of the network gain an ability to join a group of like-minded companies wh
 
 ## The Bigger Picture
 
-At Monax, what we especially like about the TrustedChain® network is that it cleverly gets around the typical enterprise chicken-and-egg problem. Participants who join the network have an ability to persue specific use case experimentation or application building without having to handle the expensive and time consuming process of network establishing. It does this by leveraging the trusted service providers already servicing extensive accounts across Italy to operate the validator pool -- giving the network a significant collaborative boost vis a vis single company experimentation.
+At Monax, what we especially like about the TrustedChain® network is that it cleverly gets around the typical enterprise chicken-and-egg problem. Participants who join the network have an ability to pursue specific use case experimentation or application building without having to handle the expensive and time consuming process of network establishing. It does this by leveraging the trusted service providers already servicing extensive accounts across Italy to operate the validator pool -- giving the network a significant collaborative boost vis a vis single company experimentation.
 
 ## Get Involved!
 
