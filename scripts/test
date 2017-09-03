@@ -24,6 +24,12 @@ else
   site=site_test_staging
 fi
 
+if $CI; then
+  echo
+  echo "### Pulling image from repository"
+  docker pull "$DOCKER_BUILD_IMAGE-$CI_BUILD_REF_NAME" #1>/dev/null
+fi
+
 docker run --rm --name $site \
-  site \
+  "$DOCKER_BUILD_IMAGE-$CI_BUILD_REF_NAME" \
   gulp test
