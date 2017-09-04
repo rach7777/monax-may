@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+
+if $CI; then
+  echo
+  echo "### Pulling image from repository"
+  docker pull "$DOCKER_BUILD_IMAGE-$CI_BUILD_REF_NAME" #1>/dev/null
+fi
+
+# get artifacts
+docker run --name artifacts "$DOCKER_BUILD_IMAGE-$CI_BUILD_REF_NAME" true
+docker cp artifacts:/site/public ./public
+docker rm --force artifacts
+
+if [[ "$1" == "production" ]]; then
+  GIT_REPO="monax.io.git"
+  HTACCESS="../.htaccess.production"
+else
+  GIT_REPO="staging.monax.io.git"
+  HTACCESS="../.htaccess.staging"
+fi
+
+eval $(ssh-agent -s)
+ssh-add <(echo "$SSH_PRIVATE_KEY")
+mkdir -p $HOME/.ssh
+[[ -f /.dockerenv ]] && echo "$SSH_SERVER_HOSTKEYS" > $HOME/.ssh/known_hosts
+
+set -e
+git config --global user.email "billings@monax.io"
+git config --global user.name "Billings"
+
+mkdir -p ./deploy/htdocs
+cd deploy/
+git init .
+git remote add origin git+ssh://83505@git.dc2.gpaas.net/$GIT_REPO
+git pull origin master
+cp -r ../public/* ./htdocs/.
+cp $HTACCESS ./htdocs/.htaccess
+git add -A *
+set +e
+git commit -m "Site updated at $(date -u)"
+set -e
+git push origin master
+ssh 83505@git.dc2.gpaas.net 'deploy '"$GIT_REPO"' master'
+exit $?

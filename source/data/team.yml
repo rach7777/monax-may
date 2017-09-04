@@ -24,17 +24,6 @@ casey :
     display: true
     bio: "Casey is Monax Industries' CEO. Casey has been a lot of things: open data evangelist, international development practitioner, lawyer, hippy, and Marine. But he has rarely had more fun than when he's playing tambourine for the Monax band."
 
-preston :
-    name: Preston Byrne
-    title: COO
-    gravatar: team-pjb.jpeg
-    site: https://prestonbyrne.com
-    twitter: prestonjbyrne
-    github: prestonjbyrne
-    keybase: prestonjbyrne
-    display: true
-    bio: "Preston is Monax Industries' COO and General Counsel. A structured finance and derivatives lawyer by training, he is also a fellow of the Adam Smith Institute, a libertarian think tank, in London. In his free time, he advocates in favour of marmot habitat conservation."
-
 tyler :
     name: Dr. Tyler Jackson
     title: "Chief Scientist"
@@ -53,26 +42,6 @@ jan :
     keybase: jhscheufen
     display: true
     bio: "Jan is Monax Industries' Head of Product and Team Leader for the Libraries Team. Originally from Germany, where he studied Information Retrieval he's been living in New York City since 2009 architecting solutions in the finance industry before joining Monax Industries. In a former life he claims to have been the mayor of Ulan Bator and recommends August for vacationing."
-
-zach :
-    name: Zach Ramsay
-    title: "Developer"
-    gravatar: team-zr.jpeg
-    twitter: cerebralbosons
-    github: zramsay
-    keybase: zramsay
-    display: true
-    bio: "Zach is a prior academic and was successful at teaching toads, then rats to play video games. Making science better with blockchains (and IPFS!) is what keeps him up at night. Zach focuses on back-end UX and blockchain integrations."
-
-ben :
-    name: Ben Bollen
-    title: "Developer"
-    gravatar: team-bb.jpeg
-    twitter: benjaminbollen
-    github: benjaminbollen
-    keybase: benjaminbollen
-    display: true
-    bio: "After researching quantum information in Belgium, Ben started on a quest to distribute computation, privacy on the internet, and Belgian chocolate. He moved to Berlin to join Monax Industries as a developer on the platform team. In his pastime he is working on a mathematical proof that Belgian beer is the best."
 
 nina :
     name: Nina Kilbride
@@ -95,16 +64,6 @@ silas :
     display: true
     bio: "Silas has a masters in Mathematical Physics from the University of Edinburgh. A failed wrestler (BJJ) and an early adopter of socks, Silas has an interest in digital liberties and the decentralisation of things. His software background includes aspects of machine learning, medium-to-large data, and some work on binary file formats. He likes to run and he can walk on his hands."
 
-rj :
-    name: "RJ Catalano"
-    title: "Developer"
-    gravatar: team-rc.jpeg
-    twitter: rj_catalano
-    github: vor0220
-    keybase: vor0220
-    display: true
-    bio: "RJ is a developer on Monax's platform team. On his first date with his now wife she suggested that he check out this thing called Bitcoin. RJ laughed and said “That will never work!” ... oh how wrong he was! RJ has made numerous contributions to the Embark Framework and the Solidity Programming language. His dream is to see a world without a need for intellectual property."
-
 jason :
     name: "Jason Banks"
     title: "Legal Engineer"
@@ -124,16 +83,6 @@ paul :
     # keybase: pauldups
     display: true
     bio: "Paul was raised with the wild African marmots and honed a keen sense for disruption studying mathematical statistics before it was called machine learning and monetary economics before the first pizza was bought for 10’000 BTC. He can be found staring into the distance, likely watching ships rise on the tide and imagining how humans can be served by DAO + AI. "
-
-davidb :
-    name: "David Braun"
-    title: "Software Engineer"
-    gravatar: team-db.jpeg
-    twitter: Nodejsguy
-    github: nodeguy
-    keybase: nodeguy
-    display: true
-    bio: "David grew up in Silicon Valley where all the kids wear blockchains around their necks.  With a degree in Electrical Engineering and Computer Science from U. C. Berkeley he’s been a software engineer for 25 years, started a personal productivity company, and loves to travel.  He’s passionate about promoting technology that empowers people."
 
 yann :
     name: Yann Ranchere
@@ -208,3 +157,54 @@ rick :
     keybase: afdudley
     display: false
     bio: "Rick started writing code using BASIC and Logo on the Apple ][ since then he has been granted a patent related to provably fair gaming and worked as a Systems Administrator."
+
+davidb :
+    name: "David Braun"
+    title: "Software Engineer"
+    gravatar: team-db.jpeg
+    twitter: Nodejsguy
+    github: nodeguy
+    keybase: nodeguy
+    display: false
+    bio: "David grew up in Silicon Valley where all the kids wear blockchains around their necks.  With a degree in Electrical Engineering and Computer Science from U. C. Berkeley he’s been a software engineer for 25 years, started a personal productivity company, and loves to travel.  He’s passionate about promoting technology that empowers people."
+
+rj :
+    name: "RJ Catalano"
+    title: "Developer"
+    gravatar: team-rc.jpeg
+    twitter: rj_catalano
+    github: vor0220
+    keybase: vor0220
+    display: false
+    bio: "RJ is a developer on Monax's platform team. On his first date with his now wife she suggested that he check out this thing called Bitcoin. RJ laughed and said “That will never work!” ... oh how wrong he was! RJ has made numerous contributions to the Embark Framework and the Solidity Programming language. His dream is to see a world without a need for intellectual property."
+
+zach :
+    name: Zach Ramsay
+    title: "Developer"
+    gravatar: team-zr.jpeg
+    twitter: cerebralbosons
+    github: zramsay
+    keybase: zramsay
+    display: false
+    bio: "Zach is a prior academic and was successful at teaching toads, then rats to play video games. Making science better with blockchains (and IPFS!) is what keeps him up at night. Zach focuses on back-end UX and blockchain integrations."
+
+preston :
+    name: Preston Byrne
+    title: COO
+    gravatar: team-pjb.jpeg
+    site: https://prestonbyrne.com
+    twitter: prestonjbyrne
+    github: prestonjbyrne
+    keybase: prestonjbyrne
+    display: false
+    bio: "Preston is Monax Industries' COO and General Counsel. A structured finance and derivatives lawyer by training, he is also a fellow of the Adam Smith Institute, a libertarian think tank, in London. In his free time, he advocates in favour of marmot habitat conservation."
+
+ben :
+    name: Ben Bollen
+    title: "Developer"
+    gravatar: team-bb.jpeg
+    twitter: benjaminbollen
+    github: benjaminbollen
+    keybase: benjaminbollen
+    display: false
+    bio: "After researching quantum information in Belgium, Ben started on a quest to distribute computation, privacy on the internet, and Belgian chocolate. He moved to Berlin to join Monax Industries as a developer on the platform team. In his pastime he is working on a mathematical proof that Belgian beer is the best."
