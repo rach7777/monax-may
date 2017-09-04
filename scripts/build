@@ -32,9 +32,9 @@ fi
 
 if $CI; then
   echo
-  echo "### Pulling image from repository"
-  docker pull $DOCKER_BUILDER_IMAGE #1>/dev/null
-  docker tag $DOCKER_BUILDER_IMAGE site_buildr #1>/dev/null
+  echo "### Pulling site_buildr image from repository"
+  docker pull $DOCKER_BUILDER_IMAGE 1>/dev/null
+  docker tag $DOCKER_BUILDER_IMAGE site_buildr 1>/dev/null
 fi
 
 if [[ "$1" == "buildr" || "$2" == "buildr" || `docker images site_buildr -q` == "" ]]; then
@@ -46,7 +46,7 @@ if [[ "$1" == "buildr" || "$2" == "buildr" || `docker images site_buildr -q` == 
   echo
   echo "### Pushing images to registry.code.monax.io"
   docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.code.monax.io
-  docker push $DOCKER_BUILDER_IMAGE
+  docker push $DOCKER_BUILDER_IMAGE 1>/dev/null
   echo
   echo "### Not building the site image"
 else

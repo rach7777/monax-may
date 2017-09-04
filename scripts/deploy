@@ -3,13 +3,13 @@
 if $CI; then
   echo
   echo "### Pulling image from repository"
-  docker pull "$DOCKER_BUILD_IMAGE-$CI_BUILD_REF_NAME" #1>/dev/null
+  docker pull "$DOCKER_BUILD_IMAGE-$CI_BUILD_REF_NAME" 1>/dev/null
 fi
 
 # get artifacts
-docker run --name artifacts "$DOCKER_BUILD_IMAGE-$CI_BUILD_REF_NAME" true
+docker run --name artifacts "$DOCKER_BUILD_IMAGE-$CI_BUILD_REF_NAME" true &>/dev/null
 docker cp artifacts:/site/public ./public
-docker rm --force artifacts
+docker rm --force artifacts &>/dev/null
 
 if [[ "$1" == "production" ]]; then
   GIT_REPO="monax.io.git"
@@ -19,15 +19,17 @@ else
   HTACCESS="../.htaccess.staging"
 fi
 
-eval $(ssh-agent -s)
-ssh-add <(echo "$SSH_PRIVATE_KEY")
+echo
+echo "### Setting up ssh agent"
+eval $(ssh-agent -s) &>/dev/null
+ssh-add <(echo "$SSH_PRIVATE_KEY") &>/dev/null
 mkdir -p $HOME/.ssh
 [[ -f /.dockerenv ]] && echo "$SSH_SERVER_HOSTKEYS" > $HOME/.ssh/known_hosts
-
-set -e
 git config --global user.email "billings@monax.io"
 git config --global user.name "Billings"
 
+echo
+echo "### Pushing to servers"
 mkdir -p ./deploy/htdocs
 cd deploy/
 git init .
@@ -36,9 +38,7 @@ git pull origin master
 cp -r ../public/* ./htdocs/.
 cp $HTACCESS ./htdocs/.htaccess
 git add -A *
-set +e
 git commit -m "Site updated at $(date -u)"
 set -e
 git push origin master
 ssh 83505@git.dc2.gpaas.net 'deploy '"$GIT_REPO"' master'
-exit $?
