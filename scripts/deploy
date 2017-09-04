@@ -24,7 +24,7 @@ ssh-add <(echo "$SSH_PRIVATE_KEY")
 mkdir -p $HOME/.ssh
 [[ -f /.dockerenv ]] && echo "$SSH_SERVER_HOSTKEYS" > $HOME/.ssh/known_hosts
 
-# fixup
+set -e
 git config --global user.email "billings@monax.io"
 git config --global user.name "Billings"
 
@@ -39,3 +39,4 @@ git add -A *
 git commit -m "Site updated at $(date -u)"
 git push origin master
 ssh 83505@git.dc2.gpaas.net 'deploy $GIT_REPO master'
+exit $?
