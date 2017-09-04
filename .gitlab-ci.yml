@@ -1,0 +1,69 @@
+image: docker:17.06-git
+services:
+- docker:17.06-dind
+
+stages:
+- build
+- test
+- deploy
+
+before_script:
+- apk add --no-cache --update bash
+- docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.code.monax.io
+
+variables:
+  DOCKER_DRIVER: "overlay2"
+  DOCKER_BUILDER_IMAGE: "registry.code.monax.io/monax/monax.io:builder"
+  DOCKER_BUILD_IMAGE: "registry.code.monax.io/monax/monax.io:site"
+
+build_site_buildr:
+  stage: build
+  only:
+  - schedules
+  script:
+  - scripts/build buildr
+
+build_site:
+  stage: build
+  except:
+  - schedules
+  script:
+  - scripts/build $(git rev-parse --abbrev-ref HEAD)
+
+test_site:
+  stage: test
+  except:
+  - schedules
+  script:
+  - docker images
+  - docker ps -a
+  - scripts/test $(git rev-parse --abbrev-ref HEAD)
+
+.deploy_template:  &deploy_template
+  stage: deploy
+  except:
+  - schedules
+  before_script:
+  - apk add --no-cache --update openssh-client bash
+  - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.code.monax.io
+  variables:
+    # ssh-keyscan git.dc2.gpaas.net
+    SSH_SERVER_HOSTKEYS: "git.dc2.gpaas.net ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0f0qisqqCXevi5bKrhbkjwdQfjtRV9+RkftAh1kGyNOIU8vsKaU64/wtj6v1fV1DT4gsuuQ6gtR/dh7D40clGOatlWSah3AE+HCaG0sQpQr81K1Ro4MxdzmPKdDmNk3WBQkCN8JuiA4p8/TxD+uwqgsuVeYKf5DEuBFn9NTo5kYmwSYX8nMV6Dm3r3idjH6dCBew24gPvGtwoo/Eekt8w9YWmN+G7EKtaRAF2oAa2S8I5c6qMYFtdd9X07oI7JqZaJpFObmEoQEIS8jz25Fltbl5V6g5tsl/ZgPxJrofr95mWRUCAp3Aq35FOegDDg23fRx9yg1u+nw9/+KR14xW5"
+  script:
+  - scripts/deploy $(git rev-parse --abbrev-ref HEAD)
+
+deploy_site_production:
+  environment:
+    name: production
+    url: https://monax.io
+  only:
+  - production@monax/monax.io
+  <<: *deploy_template
+
+deploy_site_staging:
+  environment:
+    name: staging
+    url: https://staging.monax.io
+  only:
+  - staging@monax/monax.io
+  <<: *deploy_template
