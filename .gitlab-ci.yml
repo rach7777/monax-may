@@ -4,7 +4,7 @@ services:
 
 stages:
 - build
-- test
+# - test
 - deploy
 
 before_script:
@@ -30,16 +30,14 @@ build_site:
   script:
   - scripts/build $(git rev-parse --abbrev-ref HEAD)
 
-test_site:
-  stage: test
-  only:
-  - "*@monax/monax.io"
-  except:
-  - schedules
-  script:
-  - docker images
-  - docker ps -a
-  - scripts/test $(git rev-parse --abbrev-ref HEAD)
+# test_site:
+#   stage: test
+#   except:
+#   - schedules
+#   script:
+#   - docker images
+#   - docker ps -a
+#   - scripts/test $(git rev-parse --abbrev-ref HEAD)
 
 .deploy_template:  &deploy_template
   stage: deploy
