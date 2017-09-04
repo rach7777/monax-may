@@ -33,7 +33,7 @@ build_site:
 test_site:
   stage: test
   only:
-  - monax/monax.io
+  - "*@monax/monax.io"
   except:
   - schedules
   script:
