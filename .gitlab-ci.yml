@@ -23,7 +23,7 @@ build_site_buildr:
   script:
   - scripts/build buildr
 
-.build_site:
+build_site:
   stage: build
   except:
   - schedules
