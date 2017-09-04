@@ -27,7 +27,7 @@ build_site:
   except:
   - schedules
   script:
-  - scripts/build $(git rev-parse --abbrev-ref HEAD)
+  - scripts/build $CI_BUILD_REF_NAME
 
 .deploy_template:  &deploy_template
   stage: deploy
@@ -40,6 +40,8 @@ build_site:
     # ssh-keyscan git.dc2.gpaas.net
     SSH_SERVER_HOSTKEYS: "git.dc2.gpaas.net ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0f0qisqqCXevi5bKrhbkjwdQfjtRV9+RkftAh1kGyNOIU8vsKaU64/wtj6v1fV1DT4gsuuQ6gtR/dh7D40clGOatlWSah3AE+HCaG0sQpQr81K1Ro4MxdzmPKdDmNk3WBQkCN8JuiA4p8/TxD+uwqgsuVeYKf5DEuBFn9NTo5kYmwSYX8nMV6Dm3r3idjH6dCBew24gPvGtwoo/Eekt8w9YWmN+G7EKtaRAF2oAa2S8I5c6qMYFtdd9X07oI7JqZaJpFObmEoQEIS8jz25Fltbl5V6g5tsl/ZgPxJrofr95mWRUCAp3Aq35FOegDDg23fRx9yg1u+nw9/+KR14xW5"
   retry: 2
+  script:
+  - scripts/deploy $CI_BUILD_REF_NAME
 
 deploy_site_production:
   environment:
@@ -47,8 +49,6 @@ deploy_site_production:
     url: https://monax.io
   only:
   - production@monax/monax.io
-  script:
-  - scripts/deploy production
   <<: *deploy_template
 
 deploy_site_staging:
@@ -57,6 +57,4 @@ deploy_site_staging:
     url: https://staging.monax.io
   only:
   - staging@monax/monax.io
-  script:
-  - scripts/deploy staging
   <<: *deploy_template
