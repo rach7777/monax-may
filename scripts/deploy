@@ -36,7 +36,9 @@ git pull origin master
 cp -r ../public/* ./htdocs/.
 cp $HTACCESS ./htdocs/.htaccess
 git add -A *
+set +e
 git commit -m "Site updated at $(date -u)"
+set -e
 git push origin master
 ssh 83505@git.dc2.gpaas.net 'deploy '"$GIT_REPO"' master'
 exit $?
