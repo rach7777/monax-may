@@ -64,26 +64,6 @@ silas :
     display: true
     bio: "Silas has a masters in Mathematical Physics from the University of Edinburgh. A failed wrestler (BJJ) and an early adopter of socks, Silas has an interest in digital liberties and the decentralisation of things. His software background includes aspects of machine learning, medium-to-large data, and some work on binary file formats. He likes to run and he can walk on his hands."
 
-jason :
-    name: "Jason Banks"
-    title: "Legal Engineer"
-    gravatar: team-jb.jpeg
-    twitter: jasonnotklein
-    github: jasonklein
-    keybase: jebanks
-    display: true
-    bio: "Jason practiced finance and securities law in New York and London before deciding to seek his fortunes in tech as a developer. Now, bringing his programming talents with him, he's come back around to law as a Legal Engineer at Monax because, like the kid at the soda fountain who is mixing all of the flavors, he really enjoys putting awesome things together. Also, he was and still is that kid."
-
-paul :
-    name: "Paul du Plessis"
-    title: "Head of Partnerships"
-    gravatar: team-pp.jpeg
-    twitter: paulduplessis
-    github: pauldups
-    # keybase: pauldups
-    display: true
-    bio: "Paul was raised with the wild African marmots and honed a keen sense for disruption studying mathematical statistics before it was called machine learning and monetary economics before the first pizza was bought for 10’000 BTC. He can be found staring into the distance, likely watching ships rise on the tide and imagining how humans can be served by DAO + AI. "
-
 yann :
     name: Yann Ranchere
     title: Director
@@ -208,3 +188,23 @@ ben :
     keybase: benjaminbollen
     display: false
     bio: "After researching quantum information in Belgium, Ben started on a quest to distribute computation, privacy on the internet, and Belgian chocolate. He moved to Berlin to join Monax Industries as a developer on the platform team. In his pastime he is working on a mathematical proof that Belgian beer is the best."
+
+jason :
+    name: "Jason Banks"
+    title: "Legal Engineer"
+    gravatar: team-jb.jpeg
+    twitter: jasonnotklein
+    github: jasonklein
+    keybase: jebanks
+    display: false
+    bio: "Jason practiced finance and securities law in New York and London before deciding to seek his fortunes in tech as a developer. Now, bringing his programming talents with him, he's come back around to law as a Legal Engineer at Monax because, like the kid at the soda fountain who is mixing all of the flavors, he really enjoys putting awesome things together. Also, he was and still is that kid."
+
+paul :
+    name: "Paul du Plessis"
+    title: "Head of Partnerships"
+    gravatar: team-pp.jpeg
+    twitter: paulduplessis
+    github: pauldups
+    # keybase: pauldups
+    display: false
+    bio: "Paul was raised with the wild African marmots and honed a keen sense for disruption studying mathematical statistics before it was called machine learning and monetary economics before the first pizza was bought for 10’000 BTC. He can be found staring into the distance, likely watching ships rise on the tide and imagining how humans can be served by DAO + AI. "
