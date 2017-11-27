@@ -38,7 +38,6 @@ variables:
   - schedules
   script:
   - |
-    docker pull $DOCKER_BUILDER_IMAGE &>/dev/null
     docker build \
       --tag $DOCKER_BUILD_IMAGE:$CI_BUILD_REF_NAME \
       --build-arg SITE_NAME=$SITE_NAME \
@@ -46,10 +45,10 @@ variables:
     docker push "$DOCKER_BUILD_IMAGE:$CI_BUILD_REF_NAME" &>/dev/null
 
 .deploy_template: &deploy_template
+  image: $DOCKER_BUILD_IMAGE:$CI_BUILD_REF_NAME
   stage: deploy
   except:
   - schedules
-  image: $DOCKER_BUILD_IMAGE:$CI_BUILD_REF_NAME
   before_script:
   - apk add --no-cache --update bash python
   script:
@@ -64,6 +63,11 @@ variables:
       $BUILD_DIR gs://$GCS_BUCKET/$SITE_NAME
 
 # Builder jobs
+# We use a separate site builder to optimize for the npm install && bower install paths
+# because they take so f-ing long it is easier to build up to that point and cache
+# a docker image. This happens on a once-a-week schedule as managed by gitlab.
+# The fresh build cache image is then use by the normal build jobs (which refresh the
+# npm install; but it is much quicker since all the packages are, at most, a week old).
 build_site_buildr:
   only:
   - schedules
@@ -72,8 +76,8 @@ build_site_buildr:
   stage: build
   script:
   - |
+    docker pull $DOCKER_BUILDER_IMAGE
     docker build \
-      --pull \
       --cache-from $DOCKER_BUILDER_IMAGE \
       --tag $DOCKER_BUILDER_IMAGE \
       --file Dockerfile.buildr `pwd`

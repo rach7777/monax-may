@@ -1,4 +1,4 @@
-FROM jguyomard/hugo-builder:0.31
+FROM jguyomard/hugo-builder:0.31-extras
 
 RUN apk add --no-cache --update \
   automake \
