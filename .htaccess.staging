@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "My Protected Area"
-AuthUserFile /srv/data/web/vhosts/staging.monax.io/.htpasswd
-Require valid-user

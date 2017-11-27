@@ -26,10 +26,7 @@ defaultExtension: "html"
 builddrafts: false
 buildFuture: false
 canonifyurls: true
-disable404: false
-disableRSS: false
 disablePathToLower: false
-disableSitemap: false
 enableRobotsTXT: true
 enableEmoji: false
 noTimes: true

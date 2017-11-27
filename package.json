@@ -37,10 +37,7 @@
     "gulp-clean": "^0.3.2",
     "gulp-filter": "^5.0.0",
     "gulp-flatten": "^0.3.1",
-    "gulp-git": "^2.4.0",
     "gulp-imagemin": "^3.0.3",
-    "gulp-rename": "^1.2.2",
-    "gulp-s3-upload": "^1.6.1",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-uglify": "^3.0.0",
@@ -48,7 +45,6 @@
     "lunr": "^0.7.1",
     "prismjs": "^1.5.1",
     "remove-markdown": "^0.1.0",
-    "through2": "^2.0.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   }
