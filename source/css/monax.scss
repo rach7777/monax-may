@@ -66,7 +66,7 @@ p, blockquote {
 #content-block {
     padding: 0 40px 80px;
     margin-top: 20px;
-    
+
 
     // No border on mobile
     @include responsive(breakpoint) { border: none; }
@@ -170,7 +170,7 @@ pre[class*="language-"] {
         color: $white;
     }
 }
-:not(pre)>code[class*="language-"], 
+:not(pre)>code[class*="language-"],
 pre[class*="language-"] {
     background: $grey_dark;
 }
@@ -322,7 +322,7 @@ nav.navbar {
         position: relative;
         top: 2px;
         @include transition(padding 0.3s);
-        
+
         // flex on mobile
         @include responsive (breakpoint) {
             span,
@@ -332,7 +332,7 @@ nav.navbar {
                 position: static;
             }
         }
-        
+
         &[aria-expanded="true"] {
             padding-left: 0;
             // preserve padding on mobile
@@ -349,7 +349,7 @@ nav.navbar {
         width: auto;
         margin: 8px;
         // flex width on mobile
-        @include responsive (breakpoint) { 
+        @include responsive (breakpoint) {
             @include flex(1, 1, auto);
             margin-right: 15px;
             margin-top: 4px;
@@ -358,9 +358,9 @@ nav.navbar {
         &:focus {
             box-shadow: 0 0 5px $monax;
             border: 1px solid $monax;
-        }  
+        }
     }
-    
+
     li.dropdown {
         // Animate height on mobile
         @include responsive (breakpoint) {
@@ -372,7 +372,7 @@ nav.navbar {
             @include align-items; // stretch
             @include flex-wrap(wrap);
         }
-        
+
         // L1 links
         > a {
             color: $grey_dark !important;
@@ -396,7 +396,7 @@ nav.navbar {
             padding: 10px 15px;
             margin: 6px;
             @include transition(background-color 0.3s);
-            
+
             // Adjust for mobile
             @include responsive(breakpoint) {
                 border-radius: 0;
@@ -408,7 +408,7 @@ nav.navbar {
                 background-color: darken($green, 10%) !important;
             }
         }
-        
+
 
         &.open {
             // Animate height on mobile
@@ -457,7 +457,7 @@ nav.navbar {
                     margin-right: 5px;
                 }
             }
-            
+
             // No results
             &.no-results {
                 display: block;
@@ -559,7 +559,7 @@ nav.navbar {
                         text-align: center;
                     }
                 }
-                
+
                 .button {
                     padding: 14px 28px;
                     height: auto;
@@ -575,7 +575,7 @@ nav.navbar {
                 }
             }
         }
-    } 
+    }
 }
 
 
@@ -632,9 +632,9 @@ nav.navbar {
                     font-size: 18px;
                     padding: 0;
                 }
-            }    
+            }
         }
-        
+
         .author-bio {
             clear: both;
             margin-bottom: 20px;
@@ -643,7 +643,7 @@ nav.navbar {
             text-align: left;
             margin-left: -4px;
         }
-    }    
+    }
 
     a {
         border: none;
@@ -652,7 +652,7 @@ nav.navbar {
     #TableOfContents {
         ul ul {
             list-style: none;
-            
+
             a {
                 color: $links !important;
                 display: block;
@@ -660,7 +660,7 @@ nav.navbar {
                 width: 100%;
                 padding: 4px 15px;
 
-                &:focus, 
+                &:focus,
                 &:hover {
                     background-color: $menu_hover_bg;
                 }
@@ -674,12 +674,12 @@ nav.navbar {
                 border-left: $links solid 2px;
                 background-color: transparent;
             }
-            
+
             // Level 2 links only
             ul {
                 padding-left: 0;
                 margin-left: 0;
-                
+
                 a {
                     font-style: italic;
                     font-size: 85%;
@@ -687,7 +687,7 @@ nav.navbar {
                     font-weight: 300;
                     padding: 2px 8px 2px 30px;
                 }
-                
+
                 // Hide level 3 links
                 ul a {
                     display: none;
@@ -846,78 +846,78 @@ article a {
 /*   Contact Forms          */
 /*                          */
 
-#contact-monax-form {
-    margin-top: 20px;
+// #contact-monax-form {
+//     margin-top: 20px;
 
-    label.control-label,
-    label.checkbox-inline {
-        text-align: left;
-        padding: 0px 15px 4px;
-        font-size: 18px;
-        font-weight: 300;
-        letter-spacing: 0px;
-    }
+//     label.control-label,
+//     label.checkbox-inline {
+//         text-align: left;
+//         padding: 0px 15px 4px;
+//         font-size: 18px;
+//         font-weight: 300;
+//         letter-spacing: 0px;
+//     }
 
-    .form-control {
-        height: 44px;
-        padding: 12px;
-        font-size: 16px;
-        font-weight: 300;
-    }
+//     .form-control {
+//         height: 44px;
+//         padding: 12px;
+//         font-size: 16px;
+//         font-weight: 300;
+//     }
 
-    textarea.form-control {
-        height: 100px;
-        padding: 12px;
-        @include transition(height 0.3s);
+//     textarea.form-control {
+//         height: 100px;
+//         padding: 12px;
+//         @include transition(height 0.3s);
 
-        &:focus,
-        &:active {
-            height: 150px;
-        }
-    }
+//         &:focus,
+//         &:active {
+//             height: 150px;
+//         }
+//     }
 
-    input[type*=checkbox] {
-        left: 8px;
-        top: 2px;
-    }
+//     input[type*=checkbox] {
+//         left: 8px;
+//         top: 2px;
+//     }
 
-    .required-wrap:after {
-        content: "*";
-        position: absolute;
-        top: -13px;
-        right: 1px;
-        color: #ffffff;
-        font-size: 50px;
-        line-height: 54px;
-        width: 30px;
-        height: 30px;
-        background-color: #96b85d;
-        border-radius: 50%;
-        text-align: center;
-    }
+//     .required-wrap:after {
+//         content: "*";
+//         position: absolute;
+//         top: -13px;
+//         right: 1px;
+//         color: #ffffff;
+//         font-size: 50px;
+//         line-height: 54px;
+//         width: 30px;
+//         height: 30px;
+//         background-color: #96b85d;
+//         border-radius: 50%;
+//         text-align: center;
+//     }
 
-    .start-hidden {
-        display: none;
-    }
+//     .start-hidden {
+//         display: none;
+//     }
 
-    // Errors
-    label.error {
-        font-weight: 200;
-        display: block;
-        background-color: #333;
-        padding: 4px 10px;
-        font-size: 85%;
-        text-align: left;
+//     // Errors
+//     label.error {
+//         font-weight: 200;
+//         display: block;
+//         background-color: #333;
+//         padding: 4px 10px;
+//         font-size: 85%;
+//         text-align: left;
 
-        &:before {
-            content: "\43";
-            font-family: hugo;
-            font-weight: 200;
-            font-size: 70%;
-            margin-right: 8px;
-        }
-    }
-}
+//         &:before {
+//             content: "\43";
+//             font-family: hugo;
+//             font-weight: 200;
+//             font-size: 70%;
+//             margin-right: 8px;
+//         }
+//     }
+// }
 
 // Use Case Selector
 form[name=sector-select] {
