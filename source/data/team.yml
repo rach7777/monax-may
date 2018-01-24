@@ -35,7 +35,7 @@ tyler :
     bio: "Dr. Tyler Jackson is Monax Industries' Chief Scientist. Dr. Jackson (who also goes by Dennis McKinnon on the internet) was a quantum information academic before co-founding Monax and continues his work in this field. He was one of the first smart contract writers to begin working on smart contract suites and made meaningful contributions to early theoretical work on smart contract structures. He really exists (we think)."
 jan :
     name: Jan Hendrik Scheufen
-    title: "Head of Product"
+    title: CPO
     gravatar: team-jhs.jpeg
     twitter: jhscheufen
     github: j-h-scheufen
@@ -56,13 +56,27 @@ nina :
 
 silas :
     name: "Silas Davis"
-    title: "Developer"
+    title: CTO
     gravatar: team-sd.jpeg
     twitter: silas_davis
     github: silasdavis
     keybase: silasdavis
     display: true
     bio: "Silas has a masters in Mathematical Physics from the University of Edinburgh. A failed wrestler (BJJ) and an early adopter of socks, Silas has an interest in digital liberties and the decentralisation of things. His software background includes aspects of machine learning, medium-to-large data, and some work on binary file formats. He likes to run and he can walk on his hands."
+
+
+sam :
+    name: "Sam Sinha"
+    title: "Smart Contract Engineer"
+    gravatar: team-ss.jpeg
+    twitter: samsrobotarmy
+    github: sambuds
+    keybase: sambuds
+    display: true
+    bio: "Sam is a former business process engineer for financial services and enterprise developer for a range of large companies. Currently Sam is a smart contract engineer with Monax."
+
+
+# Directors & Advisors
 
 yann :
     name: Yann Ranchere
