@@ -76,7 +76,7 @@ build_site_buildr:
   stage: build
   script:
   - |
-    docker pull $DOCKER_BUILDER_IMAGE
+    docker pull $DOCKER_BUILDER_IMAGE || true
     docker build \
       --cache-from $DOCKER_BUILDER_IMAGE \
       --tag $DOCKER_BUILDER_IMAGE \
