@@ -14,7 +14,7 @@ default:
 # ----------------------- #
 #        TEAM             #
 # ----------------------- #
-casey :
+casey:
     name: Casey Kuhlman
     title: CEO
     gravatar: team-csk.jpeg
@@ -24,7 +24,7 @@ casey :
     display: true
     bio: "Casey is Monax Industries' CEO. Casey has been a lot of things: open data evangelist, international development practitioner, lawyer, hippy, and Marine. But he has rarely had more fun than when he's playing tambourine for the Monax band."
 
-tyler :
+tyler:
     name: Dr. Tyler Jackson
     title: "Chief Scientist"
     gravatar: team-tj.jpeg
@@ -33,7 +33,7 @@ tyler :
     keybase: tylerjackson
     display: true
     bio: "Dr. Tyler Jackson is Monax Industries' Chief Scientist. Dr. Jackson (who also goes by Dennis McKinnon on the internet) was a quantum information academic before co-founding Monax and continues his work in this field. He was one of the first smart contract writers to begin working on smart contract suites and made meaningful contributions to early theoretical work on smart contract structures. He really exists (we think)."
-jan :
+jan:
     name: Jan Hendrik Scheufen
     title: CPO
     gravatar: team-jhs.jpeg
@@ -43,7 +43,7 @@ jan :
     display: true
     bio: "Jan is Monax Industries' Head of Product and Team Leader for the Libraries Team. Originally from Germany, where he studied Information Retrieval he's been living in New York City since 2009 architecting solutions in the finance industry before joining Monax Industries. In a former life he claims to have been the mayor of Ulan Bator and recommends August for vacationing."
 
-nina :
+nina:
     name: Nina Kilbride
     title: "Head of Legal Engineering"
     site: http://cryptolawyer.net
@@ -54,7 +54,7 @@ nina :
     display: true
     bio: "Nina is an experienced U.S. commercial lawyer who has long imagined combining logical, automated processes with the seamless web of law. Her mission is to help translate the functional tools of law into smart contract code. She's inspired by calculus, machine learning and her personal menagerie including humans, dogs, cats, chickens and of course, marmots. Her party trick is finding four-leaf clovers."
 
-silas :
+silas:
     name: "Silas Davis"
     title: CTO
     gravatar: team-sd.jpeg
@@ -64,8 +64,7 @@ silas :
     display: true
     bio: "Silas has a masters in Mathematical Physics from the University of Edinburgh. A failed wrestler (BJJ) and an early adopter of socks, Silas has an interest in digital liberties and the decentralisation of things. His software background includes aspects of machine learning, medium-to-large data, and some work on binary file formats. He likes to run and he can walk on his hands."
 
-
-sam :
+sam:
     name: "Sam Sinha"
     title: "Smart Contract Engineer"
     gravatar: team-ss.jpeg
@@ -75,6 +74,59 @@ sam :
     display: true
     bio: "Sam is a former business process engineer for financial services and enterprise developer for a range of large companies. Currently Sam is a smart contract engineer with Monax."
 
+rachel:
+    name: "Rachel Davidson"
+    title: "Senior Marketing Associate"
+    gravatar: team-rd.jpeg
+    twitter: Cryptojourno_uk
+    display: true
+    bio: "Rachel is a former journalist. Originally a lawyer by training, Rachel now has over a decade of marketing experience, including in the blockchain and cryptocurrency space. She is Monax's senior marketing associate."
+
+ommi:
+    name: "Ommi Shimizu"
+    title: "Full Stack Engineer"
+    gravatar: team-os.jpeg
+    github: ommish
+    # keybase:
+    display: true
+    bio: "Ommi is an enthusiastic open source developer and a full stack engineer for Monax."
+
+chenxiao:
+    name: "Chenxiao Hu Wu"
+    title: "Sales Associate"
+    gravatar: team-chw.jpeg
+    display: true
+    bio: "Chenxiao is originally from Spain where she was a trained lawyer who worked on many varied deals as an associate with multiple law firms across both Europe and Asia. She realized that she loves people and the interactions with her customers and so she took the leap from lawyer to sales person with a legal technology startup. She is Monax's first sales associate."
+
+# tobias:
+#     name: "Tobias Hofmeister"
+#     title: "Smart Contract Engineer"
+#     gravatar: team-ss.jpeg
+#     twitter: samsrobotarmy
+#     github: sambuds
+#     keybase: sambuds
+#     display: true
+#     bio: "Sam is a former business process engineer for financial services and enterprise developer for a range of large companies. Currently Sam is a smart contract engineer with Monax."
+
+# sean:
+#     name: "Sean Young"
+#     title: "Platform Engineer"
+#     gravatar: team-ss.jpeg
+#     twitter: samsrobotarmy
+#     github: sambuds
+#     keybase: sambuds
+#     display: true
+#     bio: "Sam is a former business process engineer for financial services and enterprise developer for a range of large companies. Currently Sam is a smart contract engineer with Monax."
+
+# melanie:
+#     name: "Mel Roy"
+#     title: "Operations Manager"
+#     gravatar: team-ss.jpeg
+#     twitter: samsrobotarmy
+#     github: sambuds
+#     keybase: sambuds
+#     display: true
+#     bio: "Sam is a former business process engineer for financial services and enterprise developer for a range of large companies. Currently Sam is a smart contract engineer with Monax."
 
 # Directors & Advisors
 
