@@ -98,20 +98,17 @@ chenxiao:
     display: true
     bio: "Chenxiao is originally from Spain where she was a trained lawyer who worked on many varied deals as an associate with multiple law firms across both Europe and Asia. She realized that she loves people and the interactions with her customers and so she took the leap from lawyer to sales person with a legal technology startup. She is Monax's first sales associate."
 
-# tobias:
-#     name: "Tobias Hofmeister"
-#     title: "Smart Contract Engineer"
-#     gravatar: team-ss.jpeg
-#     twitter: samsrobotarmy
-#     github: sambuds
-#     keybase: sambuds
-#     display: true
-#     bio: "Sam is a former business process engineer for financial services and enterprise developer for a range of large companies. Currently Sam is a smart contract engineer with Monax."
+tobias:
+    name: "Tobias Hofmeister"
+    title: "Marketing Analyst"
+    gravatar: team-th.jpeg
+    display: true
+    bio: "Tobias is Monax's Marketing Analyst. He combines his engineering and research background with deep marketing and design experience. Grown up in Germany with stops in Scandinavia he now calls Scotland his home, holding dear the Nordic egalitarian ideas.."
 
 # sean:
 #     name: "Sean Young"
 #     title: "Platform Engineer"
-#     gravatar: team-ss.jpeg
+#     gravatar: team-sy.jpeg
 #     twitter: samsrobotarmy
 #     github: sambuds
 #     keybase: sambuds
@@ -121,36 +118,42 @@ chenxiao:
 # melanie:
 #     name: "Mel Roy"
 #     title: "Operations Manager"
-#     gravatar: team-ss.jpeg
+#     gravatar: team-mr.jpeg
 #     twitter: samsrobotarmy
-#     github: sambuds
-#     keybase: sambuds
 #     display: true
 #     bio: "Sam is a former business process engineer for financial services and enterprise developer for a range of large companies. Currently Sam is a smart contract engineer with Monax."
 
 # Directors & Advisors
 
-yann :
+yann:
     name: Yann Ranchere
     title: Director
     gravatar: team-yr.jpeg
     twitter: tek_fin
     display: true
 
-davidg :
+davidg:
     name: David Galbraith
-    title: Advisor
+    title: Director
     gravatar: team-dg.jpeg
     twitter: daveg
     display: true
 
-pascalf :
+pascalf:
     name: Pascal Froux
     title: Advisor
     gravatar: team-pf.jpeg
     site: http://www.flamel.be
     display: true
     bio: "Pascal Froux, is a graduate of a French engineering school. On the strength of his engineering skills, specialized in mathematics, information technology and finance, he co-founded Fermat in 1996, a software company that under his tenure as CEO has provided financial institutions based in Europe, Middle East, Africa, Asia, North and Latin Americas with risk management systems. In 2008, after 12-years of uninterrupted self-finance international growth, Fermat was sold to Moody’s. Pascal, recently formed Flamel Smart Growth, his investment company, that is supporting an involved entrepreneurial approach when investing in start-up."
+
+# jeremyd:
+#     name: Jeremy Drane
+#     title: Advisor
+#     gravatar: team-dg.jpeg
+#     twitter: dranejeremy
+#     display: true
+#     bio: ""
 
 # formers
 
