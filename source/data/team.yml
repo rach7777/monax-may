@@ -105,15 +105,15 @@ tobias:
     display: true
     bio: "Tobias is Monax's Marketing Analyst. He combines his engineering and research background with deep marketing and design experience. Grown up in Germany with stops in Scandinavia he now calls Scotland his home, holding dear the Nordic egalitarian ideas."
 
-# sean:
-#     name: "Sean Young"
-#     title: "Platform Engineer"
-#     gravatar: team-sy.jpeg
-#     twitter: samsrobotarmy
-#     github: sambuds
-#     keybase: sambuds
-#     display: true
-#     bio: "Sam is a former business process engineer for financial services and enterprise developer for a range of large companies. Currently Sam is a smart contract engineer with Monax."
+sean:
+    name: "Sean Young"
+    title: "Platform Engineer"
+    gravatar: team-sy.jpeg
+    twitter: iamseanyoung
+    github: seanyoung
+    keybase: seanyoung
+    display: true
+    bio: "Sean is a platform enigneer. He likes linux kernel hacking and reverse engineering. "
 
 # melanie:
 #     name: "Mel Roy"
