@@ -115,13 +115,20 @@ sean:
     display: true
     bio: "Sean is a platform enigneer. He likes linux kernel hacking and reverse engineering. "
 
-# melanie:
-#     name: "Mel Roy"
-#     title: "Operations Manager"
-#     gravatar: team-mr.jpeg
-#     twitter: samsrobotarmy
-#     display: true
-#     bio: "Sam is a former business process engineer for financial services and enterprise developer for a range of large companies. Currently Sam is a smart contract engineer with Monax."
+melanie:
+    name: "Mel Roy"
+    title: "Operations Manager"
+    gravatar: team-mr.jpeg
+    display: true
+    bio: "Mel is Monax’s Operations Manager supporting the Monax team across the back office.  After leaving Glasgow School of Art she has had a varied working life across recruitment, office and finance support. She is also a visual artist who exhibits and curates exhibitions, recently showing at the RSA."
+
+adam:
+    name: "Adam Locklin"
+    title: "Product Manager"
+    gravatar: team-al.jpeg
+    twitter: AdamLocklin
+    display: true
+    bio: "Adam is Monax’s Product Manager aka Head Marmot Wrangler. He combines his experience in creating audit technology, uplifting financial regulatory compliance actions, and time in the intelligence community to be one powerful all purpose player. In his former life, as a Marine, who’s irreverent humor is alive and well. Self-proclaimed best hair in the industry (blockchainy stuff) since 2013."
 
 # Directors & Advisors
 
