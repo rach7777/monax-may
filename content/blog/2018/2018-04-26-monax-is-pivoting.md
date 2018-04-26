@@ -1,7 +1,7 @@
 ---
 
 # fill in
-date:      2017-04-26T00:00:00Z
+date:      2018-04-26T00:00:00Z
 title:     "Monax is pivoting. Here's why! "
 author:    casey
 excerpt:   "After three years of building as a horizontal software company, Monax is pleased to announce that it is moving up the stack to build a vertically integrated legal technology solution. In this post Casey discusses the background behind that decision."
