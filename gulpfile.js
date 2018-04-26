@@ -104,11 +104,10 @@ function cleanSite() {
 // helper tasks
 gulp.task('build-js', buildJS)
 gulp.task('build-css', buildCSS)
-gulp.task('build-imgs', buildImgs)
 gulp.task('build-data', buildData)
 gulp.task('build-fonts', buildFonts)
 gulp.task('build-index', ['build-data'], buildIndex)
-gulp.task('build-arts', ['build-css', 'build-js', 'build-imgs', 'build-fonts', 'build-index'])
+gulp.task('build-arts', ['build-css', 'build-js', 'build-fonts', 'build-index'])
 
 // build for production
 gulp.task('build', ['build-arts'])
