@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>{{ .Site.Title | safeHTML }} Blog</title>
-    <link>{{ .Site.BaseURL }}blog/</link>
+    <link>{{ .Site.BaseURL }}/blog/</link>
     <description>{{ .Site.Data.sites.tagline }}</description>
     <generator>Hugo -- gohugo.io</generator>{{ with .Site.LanguageCode }}
     <language>{{.}}</language>{{end}}

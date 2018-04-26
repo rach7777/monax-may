@@ -26,10 +26,10 @@ Recently, I had the distinct pleasure to be able to speak at the [Swiss Re block
 
 **N.B. 3** -- If you are unfamiliar with blockchains, smart contracts, or ecosystem applications, or if you find yourself a bit confused about the terminology used in this post, feel free to read our explainer series which tackles:
 
-* [blockchains](/explainers/blockchains?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog)
-* [permissioned blockchains](/explainers/permissioned_blockchains?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog)
-* [smart contracts](/explainers/smart_contracts?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog)
-* [ecosystem applications](/explainers/ecosystem_applications?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog)
+* [blockchains](/learn/blockchains?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog)
+* [permissioned blockchains](/learn/permissioned_blockchains?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog)
+* [smart contracts](/learn/smart_contracts?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog)
+* [ecosystem applications](/learn/ecosystem_applications?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog)
 
 ### Introduction to Insurance Linked Securities
 
@@ -93,7 +93,7 @@ As readers can see, resilience bonds are incredibly complex instruments. Their o
 
 Attribution and authenticity costs stem from the challenge that business ecosystems have around data fidelity and data reliability across the participants. Business ecosystems such as those contemplated by this use case need to be able to manage large sets of important data while also enabling multiple divergent participants to be able to rely on data being accurate, precise, and attributable to a given actor within the ecosystem.
 
-For example, investors need to understand what the state of the infrastructure built is in order to be able to properly price their catastrophe bonds. Sponsors need to be able to rely on the data that provides the parametric trigger. Issuers need to be able to verify what data is being fed into the parametric insurance's pricing engine. Currently the costs in being able to systematically share authenticated, ordered data are prohibitive. However, this is what [blockchains in industry](/explainers/permissioned_blockchains?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog) were born to do.
+For example, investors need to understand what the state of the infrastructure built is in order to be able to properly price their catastrophe bonds. Sponsors need to be able to rely on the data that provides the parametric trigger. Issuers need to be able to verify what data is being fed into the parametric insurance's pricing engine. Currently the costs in being able to systematically share authenticated, ordered data are prohibitive. However, this is what [blockchains in industry](/learn/permissioned_blockchains?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog) were born to do.
 
 #### Reconciliation costs
 
@@ -101,7 +101,7 @@ The servicing of resilience bonds presents enormous reconciliation costs due to 
 
 #### Coordination costs
 
-Finally, we have a range of coordination costs that apply to the components of the resilience bond. How, for example, will infrastructure projects be approved to qualify for the rebating scheme? How will the progress on infrastructure projects be measured? These questions, and a very long list of other coordination requirements, mean that resilience bonds are very unlikely to take off if we continue to build applications and platforms as single-company endeavors. However, when we begin to leverage what [ecosystem applications](/explainers/ecosystem_applications?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog) can provide, we can begin to see how these systems can be systematized which would mean that the giant opportunity that Pascal Bouvier identified above moves into the realm of the possible.
+Finally, we have a range of coordination costs that apply to the components of the resilience bond. How, for example, will infrastructure projects be approved to qualify for the rebating scheme? How will the progress on infrastructure projects be measured? These questions, and a very long list of other coordination requirements, mean that resilience bonds are very unlikely to take off if we continue to build applications and platforms as single-company endeavors. However, when we begin to leverage what [ecosystem applications](/learn/ecosystem_applications?utm_campaign=resilience_bonds&utm_source=monax_io&utm_medium=launch_blog) can provide, we can begin to see how these systems can be systematized which would mean that the giant opportunity that Pascal Bouvier identified above moves into the realm of the possible.
 
 ### Benefits of building resilience bond ecosystems
 

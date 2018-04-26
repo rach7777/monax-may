@@ -11,28 +11,28 @@
         {{- if .IsPage }}{{ if or (eq .Section "blog") (eq .Type "blog") }} | Blog{{ end }}{{ end -}}
         {{- with .Title }} | {{ . }}{{ end -}}
     </title>
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ .Site.BaseURL }}images/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{ .Site.BaseURL }}images/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ .Site.BaseURL }}images/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ .Site.BaseURL }}images/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ .Site.BaseURL }}images/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ .Site.BaseURL }}images/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ .Site.BaseURL }}images/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ .Site.BaseURL }}images/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}images/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="{{ .Site.BaseURL }}images/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}images/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{ .Site.BaseURL }}images/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.BaseURL }}images/icons/favicon-16x16.png">
-    <link rel="manifest" href="{{ .Site.BaseURL }}images/icons/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ .Site.BaseURL }}/images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ .Site.BaseURL }}/images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ .Site.BaseURL }}/images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ .Site.BaseURL }}/images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ .Site.BaseURL }}/images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ .Site.BaseURL }}/images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ .Site.BaseURL }}/images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ .Site.BaseURL }}/images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}/images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ .Site.BaseURL }}/images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ .Site.BaseURL }}/images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.BaseURL }}/images/icons/favicon-16x16.png">
+    <link rel="manifest" href="{{ .Site.BaseURL }}/images/icons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/icons/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ .Site.BaseURL }}/images/icons/favicon.ico" type="image/x-icon" />
     <link href="/css/monax.css" rel="stylesheet" >
     {{- if .Params.css }}<link rel="stylesheet" type="text/css" href='/css/{{ .Params.css }}.css' />{{ end -}}
-    <link href="{{ .Site.BaseURL }}blog/index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title | markdownify }}" />
-    <link href="{{ .Site.BaseURL }}blog/index.xml" rel="feed" type="application/rss+xml" title="{{ .Site.Title | markdownify }}" />
+    <link href="{{ .Site.BaseURL }}/blog/index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title | markdownify }}" />
+    <link href="{{ .Site.BaseURL }}/blog/index.xml" rel="feed" type="application/rss+xml" title="{{ .Site.Title | markdownify }}" />
     <meta name="keywords" content="{{ .Site.Params.keywords }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
     <meta name="twitter:site" content="@{{ .Site.Data.sites.twitter_user }}" />
@@ -59,14 +59,14 @@
             <meta name="twitter:description" content="{{ .Site.Data.sites.tagline | markdownify }}" />
         {{- end }}{{ with .Params.thumbnail -}}
             <meta name="twitter:card" content="summary_large_image" />
-            <meta itemprop="image" content="{{ $.Site.BaseURL }}{{ printf "images/%d/%s" $.Date.Year . }}" />
-            <meta property="og:image" content="{{ $.Site.BaseURL }}{{ printf "images/%d/%s" $.Date.Year . }}" />
-            <meta name="twitter:image" content="{{ $.Site.BaseURL }}{{ printf "images/%d/%s" $.Date.Year . }}" />
+            <meta itemprop="image" content="{{ $.Site.BaseURL }}/{{ printf "images/%d/%s" $.Date.Year . }}" />
+            <meta property="og:image" content="{{ $.Site.BaseURL }}/{{ printf "images/%d/%s" $.Date.Year . }}" />
+            <meta name="twitter:image" content="{{ $.Site.BaseURL }}/{{ printf "images/%d/%s" $.Date.Year . }}" />
         {{- else -}}
             <meta name="twitter:card" content="summary" />
-            <meta itemprop="image" content="{{ .Site.BaseURL }}images/logos/monax_square_400.png" />
-            <meta property="og:image" content="{{ .Site.BaseURL }}images/logos/monax_square_400.png" />
-            <meta name="twitter:image" content="{{ .Site.BaseURL }}images/logos/monax_square_400.png" />
+            <meta itemprop="image" content="{{ .Site.BaseURL }}/images/logos/monax_square_400.png" />
+            <meta property="og:image" content="{{ .Site.BaseURL }}/images/logos/monax_square_400.png" />
+            <meta name="twitter:image" content="{{ .Site.BaseURL }}/images/logos/monax_square_400.png" />
         {{- end }}{{ with $author.twitter -}}
             <meta name="twitter:creator" content="@{{ . }}">
         {{- else -}}
@@ -77,8 +77,14 @@
         <meta property="og:description" content="{{ .Site.Data.sites.tagline | markdownify }}" />
         <meta name="twitter:description" content="{{ .Site.Data.sites.tagline | markdownify }}" />
         <meta name="twitter:card" content="summary" />
-        <meta itemprop="image" content="{{ .Site.BaseURL }}images/logos/monax_square_400.png" />
-        <meta property="og:image" content="{{ .Site.BaseURL }}images/logos/monax_square_400.png" />
-        <meta name="twitter:image" content="{{ .Site.BaseURL }}images/logos/monax_square_400.png" />
+        <meta itemprop="image" content="{{ .Site.BaseURL }}/images/logos/monax_square_400.png" />
+        <meta property="og:image" content="{{ .Site.BaseURL }}/images/logos/monax_square_400.png" />
+        <meta name="twitter:image" content="{{ .Site.BaseURL }}/images/logos/monax_square_400.png" />
         <meta name="twitter:creator" content="@{{ .Site.Data.sites.twitter_user }}">
     {{- end -}}
+    <script>
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://analytics.monax.io/ajs-proxy.min.js";var o=document.getElementsByTagName("script")[0];o.parentNode.insertBefore(n,o);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+      analytics.load("C3YxTEvUK1zpjUrmnv1Oalr7uFHbo2hA");
+      analytics.page('{{ .Site.Title | markdownify }}{{ if .IsPage }}{{ if (eq .Section "blog") }} | Blog{{ end }}{{ end }}{{ with .Title }} | {{ . }}{{ end }}');
+      }}();
+    </script>

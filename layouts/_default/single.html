@@ -1,53 +1,81 @@
-{{- $listOnlyNoContentPage := in .File.Path "documentation/index.md" | or (in .File.Path "tutorials/index.md") | or (in .File.Path "explainers/index.md") -}}
-{{- $documentationPage := in .File.Path "documentation" -}}
-{{- $tutorialsPage := in .File.Path "docs" -}}
-{{- $explainersPage := in .File.Path "explainers" -}}
-{{- $platformPage := in .File.Path "platform" -}}
-{{- $libraryPage := in .File.Path "library" -}}
-{{- $packagesPage := in .File.Path "packages" -}}
-{{- $usesPage := in .File.Path "use_cases" -}}
-{{- if $documentationPage -}}{{- $.Scratch.Set "area" "documentation" -}}
-{{- else if $tutorialsPage -}}{{- $.Scratch.Set "area" "tutorials" -}}
-{{- else if $explainersPage -}}{{- $.Scratch.Set "area" "explainers" -}}
-{{- else if $platformPage -}}{{- $.Scratch.Set "area" "platform" -}}
-{{- else if $libraryPage -}}{{- $.Scratch.Set "area" "library" -}}
-{{- else if $usesPage -}}{{- $.Scratch.Set "area" "use_cases" -}}
-{{- else if $packagesPage -}}{{- $.Scratch.Set "area" "packages" -}}{{- end -}}
-{{- $learnPage := $documentationPage | or $tutorialsPage | or $explainersPage | or $usesPage -}}
-{{- $productsPage := $platformPage | or $libraryPage | or $packagesPage -}}
-{{- if not $documentationPage -}}{{- $.Scratch.Set "toc" true -}}{{- end -}}
 {{- partial "header.html" . -}}
 </head>
-<body class="docs">
-{{ partial "navigation.html" . }}
+<body class="blog-single">
+{{- partial "navigation.html" . -}}
 <div class="container-fluid" id="monax-page">
-  {{ if not .Params.no_header }}
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2 page-header">
-        <header><h1 class="title" role="title">{{ .Title }}</h1></header>
-      </div><!-- .cols -->
-    </div><!-- .row -->
+  {{- if not .Params.no_header -}}
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2 page-header">
+
+  {{ if or ( .NextInSection ) ( .PrevInSection ) }}
+    <ul class="pager" style="float: left;margin: 28px 0 10px;">
+    {{ if .PrevInSection }}
+        <li class="previous">
+          <a href="{{ .PrevInSection.Permalink }}" title="{{ .PrevInSection.Title }}">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          </a>
+        </li>
+    {{end}}
+    </ul>
   {{ end }}
+
+
+{{ if or ( .NextInSection ) ( .PrevInSection ) }}
+    <ul class="pager" style="float: right;margin: 28px 0 10px;">
+    {{ if .NextInSection }}
+      <li class="next">
+        <a href="{{ .NextInSection.Permalink }}" title="{{ .NextInSection.Title }}">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </li>
+    {{end}}
+    </ul>
+  {{ end }}
+
+    <header><h1 class="title" role="title">{{ .Title }}</h1></header>
+
+    </div>
+  {{- end -}}
   <div class="row">
-    <aside class="sidebar col-md-2 col-lg-2 col-lg-offset-2 hidden-xs hidden-sm">
-      <div id="sidebar" class="nav-collapse">
-        {{ partial "docs/sidebar.html" . }}
-      </div>
-    </aside>
-    <article id="main-content">
-      <aside class="topbar col-xs-12 col-sm-12 hidden-md hidden-lg">
-        <div id="topbar" class="nav-collapse">
-          {{ partial "docs/sidebar.html" . }}
-          <hr />
-        </div>
-      </aside>
+    {{- if ne .Params.author nil }}{{ partial "blog/sidebar-author.html" . }}{{ else }}{{ partial "blog/sidebar-default.html" . }}{{ end -}}
       <div class="col-xs-12 col-sm-12 col-md-10 col-lg-6" id="content-block">
+      <article class="content" id="main-content">
+        {{- if .Params.deprecated -}}
+          <div class="deprecation-warning">
+            <div class="note">
+              <h4 style="font-style: normal;">Deprecation Warning</h4>
+              <p>Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to "Monax" in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time.</p>
+            </div>
+          </div>
+        {{- end -}}
         {{ .Content }}
-        <!-- <h4><a class="edit-me" href="https://github.com/{{ .Site.Data.sites.github_user }}/monax.io/tree/master/content/{{ .File.Path }}">Edit this page</a></h4> -->
-      </div><!-- .cols -->
-    </article><!-- #main-content -->
-  </div><!-- .row -->
-</div><!-- .container-fluid -->
-{{ partial "footer.html" . }}
-{{ partial "scripts.html" . }}
-{{ partial "analytics.html" . }}
+
+        <hr style="margin-top:40px;">
+
+        {{- if ne .Params.author nil }}{{ partial "blog/post_meta-author.html" . }}{{ else }}{{ partial "blog/post_meta-default.html" . }}{{ end -}}
+
+        {{ partial "pagination" . }}
+
+        <h4>Related Articles</h4>
+        {{ $page_link := .Permalink }}
+        {{ $categories := .Params.categories }}
+        {{ range $page := .Site.Pages }}
+          {{ $has_common_categories := intersect $categories .Params.categories | len | lt 0 }}
+          {{ if and $has_common_categories (ne $page_link $page.Permalink) (lt ($.Scratch.Get "$c") 5)}}
+            {{ $.Scratch.Add "$c" 1 }}
+            <li><a href="{{ $page.Permalink }}">{{ $page.Title }} ({{ $page.Date.Format "Jan, 2006" }}) </a></li>
+          {{ end }}
+        {{ end }}
+
+      </article>
+      {{- if .Params.comments -}}
+        <div class="comments">
+          {{- partial "blog/comments.html" . -}}
+        </div><!-- .comments -->
+      {{- end -}}
+    </div>
+  </div>
+</div>
+{{- partial "footer.html" . -}}
+{{- partial "scripts.html" . -}}
+</html>
+</body>
