@@ -1,16 +1,8 @@
 ---
 
-type:   docs
-layout: single
+layout: wide
 title:      "Explainer | Dual Integration"
 excerpt:    "Putting the Contracts in Smart Contracts"
-aliases:
-    - /components/erislegal/
-    - /components/monaxlegal/
-index_file: ""
-menu:
-  explainers:
-    weight: 35
 
 ---
 

@@ -13,7 +13,7 @@ archetypedir: "archetype"
 contentdir: "content"
 dataDir: "data"
 layoutdir: "layouts"
-publishdir: "public"
+publishdir: "build"
 staticdir: "static"
 ignoreFiles:
   - "content/blog/images/*"

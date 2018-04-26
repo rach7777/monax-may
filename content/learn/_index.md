@@ -3,27 +3,8 @@
 type:   docs
 layout: single
 title: "Explainers"
-index_file: ""
-menu: "explainer"
-path: "content/explainers"
-aliases:
- - /learn/
 
 ---
-
-## Explainers
-
-Welcome to the Monax Explainers homepage. Get familiar with the concepts behind blockchain applications by reading one of the articles below.
-
-* [Ecosystem Applications <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>](/learn/ecosystem_applications)
-* [Blockchains <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>](/learn/blockchains)
-* [Permissioned Blockchain Networks <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>](/learn/permissioned_blockchains)
-* [Smart Contracts <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>](/learn/smart_contracts)
-* [Legal Engineering <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>](/learn/legal_engineering)
-* [Dual Integration <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>](/learn/dual_integration)
-* [Smart Contracts v. Tokenized Approaches <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>](/learn/contracts_v_tokens)
-
-
 
 ### What Are Ecosystem Applications?
 
@@ -62,7 +43,7 @@ At its simplest, legal engineering is the practice of writing smart contracts th
 
 ### What Is Dual Integration?
 
-Dual integration is the process of integrating a specific legal contract into a specific smart contract running on a distributed data store, such as Monax. 
+Dual integration is the process of integrating a specific legal contract into a specific smart contract running on a distributed data store, such as Monax.
 
 [Read About Dual Integration <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>](/learn/dual_integration)
 

@@ -1,15 +1,8 @@
 ---
 
-type:   docs
-layout: single
-index_file: ""
+layout: wide
 title:      "Explainer | Smart Contracts"
 excerpt:    "What are Smart Contracts and why are these distributed logic gateways so cool?"
-aliases:
-    - /learn/smart_contracts/
-menu:
-  explainers:
-    weight: 20
 
 ---
 

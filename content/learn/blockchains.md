@@ -1,15 +1,8 @@
 ---
 
-type:   docs
-layout: single
+layout: wide
 title: "Explainer | Blockchains"
 excerpt:    "What is a Blockchain and why are these automated data management systems so cool?"
-index_file: ""
-aliases:
-    - /learn/blockchains/
-menu:
-  explainers:
-    weight: 10
 
 ---
 

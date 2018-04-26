@@ -1,14 +1,8 @@
 ---
 
-type:   docs
-layout: single
+layout: wide
 title:      "Explainer | Legal Engineering"
 excerpt:    "What is legal engineering?"
-aliases:
-index_file: ""
-menu:
-  explainers:
-    weight: 30
 
 ---
 
@@ -44,4 +38,3 @@ Legal engineering smart contracts means configuring reliable future events in co
 
 
 ## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Explainers](/learn/)
-

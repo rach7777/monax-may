@@ -1,9 +1,7 @@
 ---
 
 title: "Positions Available"
-aliases:
-  - "/about/jobs/"
-type: company
+layout: wide
 
 ---
 
