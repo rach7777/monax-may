@@ -39,7 +39,6 @@ cache site:
     - |
       hugo \
         --verbose \
-        --canonifyURLs \
         --destination=build \
         --baseURL="https://$SITE_NAME"
   artifacts:
