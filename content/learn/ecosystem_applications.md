@@ -63,7 +63,7 @@ The toolkit for ecosystem application builders includes many of the peer-to-peer
 
 ### Blockchains
 
-The problem that [blockchain technology](/explainers/blockchains) solves is not electronic P2P cash, nor is it settlement latency, it is the problem of `attribution and ordering of inbound events; at an ecosystem level`.
+The problem that [blockchain technology](/learn/blockchains) solves is not electronic P2P cash, nor is it settlement latency, it is the problem of `attribution and ordering of inbound events; at an ecosystem level`.
 
 When we send someone a bitcoin, what are we "really" doing? Well, we're signing a message which says that "I, keyholder of key X, am transferring title over *this* 'object' (in the example's case, a bitcoin) to the keyholder of key Y." Our signed message then is broadcast across the network. The network in turn analyzes this message to determine if the message has been properly signed, if the "sender" does indeed have title over 'object', and if it has the network transfers title over the "object" in question to the keyholder of key Y.
 
@@ -79,13 +79,13 @@ What's the key difference in how blockchains and more simple fault-tolerant data
 
 This is exactly why they are one important tool for opening up a range of new applications -- applications that run cohesively at an ecosystem level.
 
-Learn more about [blockchain technology](/explainers/blockchains).
+Learn more about [blockchain technology](/learn/blockchains).
 
 The *attribution* problem that blockchains solve is insufficient, alone, to actually be able to build coherent applications that run on an ecosystem level beyond very simple applications; such as moving electronic cash from one person to another.
 
 ### Smart Contracts
 
-The next problem that needs to be solved is **deterministic computation**. This is the problem that the "thing" the community currently calls [smart contracts](/explainers/smart_contracts) solves. The problem that smart contract technology solves is not escrowing funds, it is the problem of `is computation happening in an agreed manner`.
+The next problem that needs to be solved is **deterministic computation**. This is the problem that the "thing" the community currently calls [smart contracts](/learn/smart_contracts) solves. The problem that smart contract technology solves is not escrowing funds, it is the problem of `is computation happening in an agreed manner`.
 
 What do we mean by deterministic computation? We mean that all participants in the ecosystem need to be able to compute something and achieve the same result.
 
@@ -101,7 +101,7 @@ The other problem that smart contract technology solves, is a distribution probl
 
 But with ecosystem applications, we typically solve this in a different way. We often, but not always, put the application's logic "on" the blockchain. We use the high evidentiary characteristics blockchain tech gives us, (or, as we say, `who did what when`) along with a smart contracts interpreter (often called, a VM (for virtual machine)) to not have to worry about downloading and installing these computational sequences. We simply connect in to the ecosystem's network and go!
 
-Learn more about [smart contract technology](/explainers/smart_contracts).
+Learn more about [smart contract technology](/learn/smart_contracts).
 
 While blockchains (providing us `who did what when`) and smart contracts (providing us `deterministic computation`) are two tools that give ecosystem application builders two main capabilities necessary for building ecosystem applications, we still have a few more base requirements to really enable this technology to flourish. Namely we need to solve `content` and `privacy`.
 
@@ -122,4 +122,4 @@ The final, major, challenge is around privacy. There are two types of privacy wh
 The second type of privacy is a `come over here I want to tell you a secret` type of privacy. Because within ecosystems, we don't necessarily assume that all participants `need/want/have_a_right` to have all the information about all the things. This is where point-to-point messaging systems and an authenticated public key infrastructure (a PKI) with a given identity mechanism comes into play. Private message queues give us the `come over here ... a secret` part of the whole problem. An authenticated PKI solves the `**I** want to tell **you**` part of the whole problem. Point-to-point messaging gives us the final piece of what, at least theoretically, is a complete look at the major components necessary to build most ecosystem applications.
 
 
-## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Explainers](/explainers/)
+## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Explainers](/learn/)

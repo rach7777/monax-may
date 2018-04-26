@@ -5,7 +5,7 @@ layout: single
 title:      "Explainer | Permissioned Blockchains"
 excerpt:    "What is a Permissioned Blockchain and why are these automated data management systems so cool?"
 aliases:
-    - /explainers/permissioned_blockchains/
+    - /learn/permissioned_blockchains/
 index_file: ""
 menu:
   explainers:
@@ -23,7 +23,7 @@ The first primary difference between a properly conceived permissioned blockchai
 
 Permissioned blockchain networks allow the network to appoint a group of participants in the network who are given the express authority to provide the validation of blocks of transactions. Or, to participate in the consensus mechanism.
 
-The second primary difference between a properly conceived permissioned blockchain network and an unpermissioned blockchain network is whether the participants in the network have an ability to restrict who can create [smart contracts](/explainers/smart_contracts) (if the blockchain node is [logic optimized](/explainers/blockchains)) and/or transact on the blockchain network.
+The second primary difference between a properly conceived permissioned blockchain network and an unpermissioned blockchain network is whether the participants in the network have an ability to restrict who can create [smart contracts](/learn/smart_contracts) (if the blockchain node is [logic optimized](/learn/blockchains)) and/or transact on the blockchain network.
 
 Together, at Monax, we call these **capabilities based permissions**.
 
@@ -119,7 +119,7 @@ While trustlessness is a tricky subject commercially for all the reasons discuss
 
 When it comes to increasing verifiability for all parties to a given data-driven interaction, there are few technologies currently invented which match blockchains.
 
-For more on verifiable [business process automation between stakeholders](/explainers/smart_contracts) please see our smart contracts explainer.
+For more on verifiable [business process automation between stakeholders](/learn/smart_contracts) please see our smart contracts explainer.
 
 
-## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Explainers](/explainers/)
+## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Explainers](/learn/)

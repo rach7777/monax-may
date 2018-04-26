@@ -25,7 +25,7 @@ In the coming year, a lot of people will find themselves tasked with “getting 
 
 **Experimentation.** Try multiple, finite solutions rather than attempt to completely dislodge an existing system. A low-risk path is to experiment in-house with managing physical and digital assets, recording internal transactions, and verifying identities. This will enable your organization to take advantage of coming advances in collaborative architecture while acquiring technical competence and ecosystem knowledge.
 
-**Users first.** To gain traction, tech solutions must deliver functionality as good as traditional ones and must be easy for the ecosystem to absorb and adopt. This is one of the reasons behind Monax [dual integration](/explainers/dual_integration/), to meet existing [legal standards](/2016/08/18/enforcing-legal-smart-contracts/) while pushing the envelope on smart contract technology.
+**Users first.** To gain traction, tech solutions must deliver functionality as good as traditional ones and must be easy for the ecosystem to absorb and adopt. This is one of the reasons behind Monax [dual integration](/learn/dual_integration/), to meet existing [legal standards](/2016/08/18/enforcing-legal-smart-contracts/) while pushing the envelope on smart contract technology.
 
 **Open source.** Open source works as global peer-review that drives interoperability. Part of blockchain value is the ability of users to verify for themselves that the code is forensically accurate, that is, it does what the seller says it does. Proprietary, opaque blockchain solutions are an indication of lack of understanding of this critical value element.
 

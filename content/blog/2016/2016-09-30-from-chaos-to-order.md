@@ -24,7 +24,7 @@ meta:      true
 
 As of today, we are very excited to announce that the company formerly called Eris Industries is now Monax Industries.
 
-The idea that led to us founding a company called Eris began with a simple question. Using two (at the time) nascent pieces of what we now call [ecosystem application technology](/explainers/ecosystem_applications) could we build an application that would be capable of distributing content according to rules that were held in a smart contract?
+The idea that led to us founding a company called Eris began with a simple question. Using two (at the time) nascent pieces of what we now call [ecosystem application technology](/learn/ecosystem_applications) could we build an application that would be capable of distributing content according to rules that were held in a smart contract?
 
 Tyler and I worked late into one night exploring the ideas and suddenly, BOOM, my bittorrent client automagically downloaded a snippet of content. This snippet of content was probably the first instance of a smart contract blockchain being used to facilitate the distribution of content, a paradigm which is increasingly widespread almost to the point of being boring today. At the time, though, this was utter magic to both Tyler and me.
 

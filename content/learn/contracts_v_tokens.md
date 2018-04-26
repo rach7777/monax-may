@@ -5,7 +5,7 @@ layout: single
 title:      "Explainer | Smart Contracts v. Tokenized Approaches"
 excerpt:    "When are smart contracts better than tokenized approaches to blockchaining?"
 aliases:
-    - /explainers/contracts_v_tokens/
+    - /learn/contracts_v_tokens/
 index_file: ""
 menu:
   explainers:
@@ -50,4 +50,4 @@ This is a massive boon for flexibility; particularly while prototyping quick sol
 Smart contracts are also modular. This gives them inherent advantages over tokenized approaches as they can be more easily mixed and matched in a coherent fashion.
 
 
-## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Explainers](/explainers/)
+## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Explainers](/learn/)

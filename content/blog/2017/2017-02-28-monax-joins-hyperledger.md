@@ -21,7 +21,7 @@ url: /2017/02/28/why-were-joining-hyperledger/
 
 [{{< image_blog "hyperledger.jpg" >}}](https://www.flickr.com/photos/50576141@N03/15805560016/)
 
-Earlier today we formally announced that we will be joining the Hyperledger project and that we will be submitting our `eris:db` [blockchain](/explainers/blockchains/) client to it for incubation. In this post I would like to add a bit more color as to our reasons for such a move and explain what this means for current `eris:db` users.
+Earlier today we formally announced that we will be joining the Hyperledger project and that we will be submitting our `eris:db` [blockchain](/learn/blockchains/) client to it for incubation. In this post I would like to add a bit more color as to our reasons for such a move and explain what this means for current `eris:db` users.
 
 ## Introduction
 
@@ -43,7 +43,7 @@ Joining Hyperledger is a key ingredient from our perspective to work on gaining 
 
 ### Reason Number 2: Collaborating is in our DNA
 
-[Blockchains](/explainers/permissioned_blockchains/), [smart contracts](/explainers/smart_contracts), and [ecosystem applications](/explainers/ecosystem_applications) are, fundamentally, frameworks to build collaborative applications which are operated by multiple parties. We have long taken the position that we should practice what we preach so to say, in that the software we produce should be built -- to the greatest extent possible -- collaboratively.
+[Blockchains](/learn/permissioned_blockchains/), [smart contracts](/learn/smart_contracts), and [ecosystem applications](/learn/ecosystem_applications) are, fundamentally, frameworks to build collaborative applications which are operated by multiple parties. We have long taken the position that we should practice what we preach so to say, in that the software we produce should be built -- to the greatest extent possible -- collaboratively.
 
 In the past twelve months we have taken a hard line stance on this with respect to our commercial engagements and we have not been directly involved in the building of a pilot or POC **unless it has been a collaborative delivery**. In other words, we have consistently partnered to deliver ecosystem application POCs and pilots, even when the end using customers have balked at our collaborative approach.
 

@@ -48,7 +48,7 @@ This is a simple minimum viable data schema. Indeed whatever additional informat
 
 ### The Blockchain
 
-The blockchain you would design here would be a very simple blockchain. The court itself could make a single node blockchain which only it could amend or write to (for more about blockchain design [see this here](/explainers/blockchains/)). Alternatively, a library or consortium of courts could pool their resources together to run a collective blockchain which was amended or written to by any of the known and registered members.
+The blockchain you would design here would be a very simple blockchain. The court itself could make a single node blockchain which only it could amend or write to (for more about blockchain design [see this here](/learn/blockchains/)). Alternatively, a library or consortium of courts could pool their resources together to run a collective blockchain which was amended or written to by any of the known and registered members.
 
 `eris:db` makes all that [super simple](/docs). And, by the way, our solution will run on nearly [anything](/2015/04/01/peer-server-networks-current-paradigm/) (except Windows outside of Docker).
 

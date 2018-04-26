@@ -6,7 +6,7 @@ index_file: ""
 title:      "Explainer | Smart Contracts"
 excerpt:    "What are Smart Contracts and why are these distributed logic gateways so cool?"
 aliases:
-    - /explainers/smart_contracts/
+    - /learn/smart_contracts/
 menu:
   explainers:
     weight: 20
@@ -17,7 +17,7 @@ menu:
 
 To begin with, smart contracts are neither particularly smart nor are they, strictly speaking, contracts.
 
-That aside, they do provide a fairly well placed metaphor for what they really are: [blockchain](/explainers/blockchains) housed scripts which represent unilateral promises to provide a determinate computation based on transactions which are sent to the script.
+That aside, they do provide a fairly well placed metaphor for what they really are: [blockchain](/learn/blockchains) housed scripts which represent unilateral promises to provide a determinate computation based on transactions which are sent to the script.
 
 These scripts are compiled into low level operation codes and stored in the blockchain's data store at a particular address -- which is determined when the contracts are deployed to the blockchain. When a transaction is sent to that address the distributed virtual machine on every full node of the blockchain network executes the script's operation codes using the data which is sent with the transaction.
 
@@ -113,7 +113,7 @@ In other words, the sweet spot for smart contracts is data driven *relationships
 
 To get started programming Smart Contracts, please see our [Solidity Series on Smart Systems of Smart Contracts](/docs/solidity/).
 
-To learn more about the differences in approach of a [tokenized blockchain approach *vis a vis* a smart contract approach](/explainers/contracts_v_tokens/) please see our explainer on the subject.
+To learn more about the differences in approach of a [tokenized blockchain approach *vis a vis* a smart contract approach](/learn/contracts_v_tokens/) please see our explainer on the subject.
 
 
-## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Explainers](/explainers/)
+## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Explainers](/learn/)

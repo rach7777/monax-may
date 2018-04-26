@@ -22,11 +22,11 @@ Earlier this week we formally announced that we will be joining the [Enterprise 
 
 ## Introduction
 
-The Enterprise Ethereum Alliance is an industry group formulated around the idea of being the "common knowledge pipe" between the [ethereum virtual machine](/explainers/smart_contracts) using [community and large companies](/explainers/permissioned_blockchains). In the words of the alliance's initial marketing push:
+The Enterprise Ethereum Alliance is an industry group formulated around the idea of being the "common knowledge pipe" between the [ethereum virtual machine](/learn/smart_contracts) using [community and large companies](/learn/permissioned_blockchains). In the words of the alliance's initial marketing push:
 
 > We connect Fortune 500's, startups, academics & tech vendors with Ethereum experts to define enterprise-grade blockchain software.
 
-The key word in this short description, which matches what we understand to be the purposes of the consortium, is `define`. While it is very early days for this new consortium we are very happy to participate in standards bodies -- especially those which are so closely aligned with our strategic goals of increasing production use of [ecosystem applications](/explainers/ecosystem_applications) in enterprises.
+The key word in this short description, which matches what we understand to be the purposes of the consortium, is `define`. While it is very early days for this new consortium we are very happy to participate in standards bodies -- especially those which are so closely aligned with our strategic goals of increasing production use of [ecosystem applications](/learn/ecosystem_applications) in enterprises.
 
 ## Why
 
@@ -51,7 +51,7 @@ We have been long users of the ethereum virtual machine. The founders of Monax (
 
 The ethereum smart contracting community is (relatively) large, but that community doesn't *really* build for the EVM. It basically builds for Solidity or another EVM compatible smart contract language. This requires another conversation, which is that if the EVM is going to be insufficient in the future and we all agree it needs to improve, **how** will in improve.
 
-It is our firm view that the venue for having these discussions should be formalized, participatory, and standards driven. While the Yellow Paper is a good piece of kit, it is our view that it is insufficient as a technical specification which various implementations of a protocol rely upon (also, it is a specification which fundamentally assumes a public chain rather than the purpose of Enterprise Ethereum Alliance -- [permissioned blockchains](/explainers/permissioned_blockchains)).
+It is our firm view that the venue for having these discussions should be formalized, participatory, and standards driven. While the Yellow Paper is a good piece of kit, it is our view that it is insufficient as a technical specification which various implementations of a protocol rely upon (also, it is a specification which fundamentally assumes a public chain rather than the purpose of Enterprise Ethereum Alliance -- [permissioned blockchains](/learn/permissioned_blockchains)).
 
 We hope to actively participate and bring our plurality of lessons learned in building enterprise grade smart contract systems to the Enterprise Ethereum Alliance as it embarks upon this journey.
 
