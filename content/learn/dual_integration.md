@@ -1,7 +1,7 @@
 ---
 
 layout: wide
-title:      "Explainer | Dual Integration"
+title:      "Learn | Dual Integration"
 excerpt:    "Putting the Contracts in Smart Contracts"
 
 ---

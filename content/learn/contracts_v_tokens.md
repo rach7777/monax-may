@@ -1,7 +1,7 @@
 ---
 
 layout: wide
-title:      "Explainer | Smart Contracts v. Tokenized Approaches"
+title:      "Learn | Smart Contracts v. Tokenized Approaches"
 excerpt:    "When are smart contracts better than tokenized approaches to blockchaining?"
 
 ---

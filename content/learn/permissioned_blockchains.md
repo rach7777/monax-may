@@ -1,7 +1,7 @@
 ---
 
 layout: wide
-title:      "Explainer | Permissioned Blockchains"
+title:      "Learn | Permissioned Blockchains"
 excerpt:    "What is a Permissioned Blockchain and why are these automated data management systems so cool?"
 
 ---

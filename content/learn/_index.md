@@ -2,7 +2,7 @@
 
 type:   docs
 layout: single
-title: "Explainers"
+title: "Learn"
 
 ---
 

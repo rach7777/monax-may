@@ -1,7 +1,7 @@
 ---
 
 layout: wide
-title:      "Explainer | Legal Engineering"
+title:      "Learn | Legal Engineering"
 excerpt:    "What is legal engineering?"
 
 ---

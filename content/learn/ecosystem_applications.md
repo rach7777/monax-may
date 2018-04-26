@@ -1,7 +1,7 @@
 ---
 
 layout: wide
-title:      "Explainer | Ecosystem Applications"
+title:      "Learn | Ecosystem Applications"
 excerpt:    "What are Ecosystem Applications and will these impact how we think of building software?"
 
 ---
