@@ -1,10 +1,10 @@
 ---
 
 # fill in
-date:      2017-04-30T00:00:00Z
+date:      2018-04-30T00:00:00Z
 title:     "The Agreements Network: how does it work?"
 author:    casey
-excerpt:   ""
+excerpt:   "Casey speaks with some more depth about how the two major types of users the Agreements Network envisions will use the blockchain-based platform to make their lives better."
 thumbnail: an_logo.png
 categories:
   - announcements
@@ -24,13 +24,7 @@ utm:
 
 {{< image_blog "an_logo.png" >}}
 
-In my previous posts I have spoken about
-[why Monax decided to pivot]({{< relref
-"blog/2018/2018-04-26-monax-is-pivoting.md" >}})
-away from being a horizontal
-enterprise software provider, and also I spoke about
-[what the Agreements
-Network is]({{< relref "blog/2018/2018-04-27-introducing-agreements-network.md" >}}).
+In my previous posts I have spoken about [why Monax decided to pivot]({{< relref "blog/2018/2018-04-26-monax-is-pivoting.md" >}}) away from being a horizontal enterprise software provider, and also I spoke about [what the Agreements Network is]({{< relref "blog/2018/2018-04-27-introducing-agreements-network.md" >}}).
 
 In this post I'd like to speak with some more depth about how the two major
 types of users we envision can use the blockchain-based platform to make their
