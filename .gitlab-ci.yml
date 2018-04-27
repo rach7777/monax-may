@@ -7,6 +7,9 @@ stages:
 
 cache site:
   stage: cache
+  only:
+    - staging@monax/monax.io
+    - production@monax/monax.io
   before_script:
     - apk --no-cache --update add autoconf automake libpng-dev g++ make zlib-dev nasm
     - npm install -g bower
