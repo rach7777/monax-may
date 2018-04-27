@@ -1,7 +1,7 @@
 ---
 
 # fill in
-date:      2017-04-27T00:00:00Z
+date:      2018-04-27T00:00:00Z
 title:     "Monax is Pleased to Introduce the Agreements Network"
 author:    casey
 excerpt:   "This network is a decentralized contract management system for small businesses"
@@ -24,7 +24,7 @@ utm:
 
 {{< image_blog "an_logo.png" >}}
 
-Over the course of the past year, Monax has been engaged in a deep process of defining, refining, and building a public blockchain product we are very proud to introduce to the world. Today, The Agreements Network launches its first public testnet after many months of iterations.
+Over the course of the past year, Monax has been engaged in a deep process of defining, refining, and building a public blockchain product we are very proud to introduce to the world. I wrote about that in some detail in my [previous post]({{< relref "blog/2018/2018-04-26-monax-is-pivoting.md" >}}). Early next week The Agreements Network will launch its first public testnet after many months of iterations.
 
 The Agreements Network is a decentralized contract management platform that uses smart contract technology to create, prove, and operate legal agreements. It's built to revolutionise the way lawyers, businesses, and consumers transact across the globe. The foundation of The Agreements Network consists of blockchain data assurance, along with smart contract Archetypes and Active Agreements.
 
