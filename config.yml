@@ -24,7 +24,7 @@ metadataformat: "yaml"
 defaultExtension: "html"
 
 builddrafts: false
-buildFuture: false
+buildFuture: true
 canonifyurls: true
 disablePathToLower: false
 enableRobotsTXT: true
