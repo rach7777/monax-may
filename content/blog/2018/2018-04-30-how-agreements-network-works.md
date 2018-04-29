@@ -5,7 +5,7 @@ date:      2017-04-30T00:00:00Z
 title:     "The Agreements Network: how does it work?"
 author:    casey
 excerpt:   ""
-thumbnail: an_logo.png
+thumbnail: an-works.jpeg
 categories:
   - announcements
 tags:
@@ -22,7 +22,7 @@ utm:
 
 ---
 
-{{< image_blog "an_logo.png" >}}
+{{< image_blog "an-works.jpeg" >}}
 
 In my previous posts I have spoken about
 [why Monax decided to pivot]({{< relref
@@ -52,6 +52,8 @@ how each of these two groups that are vital to the evolution of the Agreements
 Network ecosystem can use the platform.
 
 ## The Agreements Network for Business Leaders
+
+{{< image_blog "an_logo.png" >}}
 
 <center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ypcTTjv_zbw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 
@@ -116,3 +118,5 @@ platform and how both legal products consumers and legal products producers can
 both make more money and reduce the friction of modern, networked commerce. Stay
 tuned for those posts, and in the meantime, please dig deeper into the
 possibilities that the [Agreements Network allows](https://agreements.network).
+
+<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@barkiple?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from John Carlisle"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">John Carlisle</span></a>
