@@ -1,11 +1,11 @@
 ---
 
 # fill in
-date:      2017-04-30T00:00:00Z
+date:      2018-04-30T00:00:00Z
 title:     "The Agreements Network: how does it work?"
 author:    casey
-excerpt:   ""
-thumbnail: an-works.jpeg
+excerpt:   "Casey speaks with some more depth about how the two major types of users the Agreements Network envisions will use the blockchain-based platform to make their lives better."
+thumbnail: an_logo.png
 categories:
   - announcements
 tags:
