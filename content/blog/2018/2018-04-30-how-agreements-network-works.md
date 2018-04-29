@@ -5,7 +5,7 @@ date:      2018-04-30T00:00:00Z
 title:     "The Agreements Network: how does it work?"
 author:    casey
 excerpt:   "Casey speaks with some more depth about how the two major types of users the Agreements Network envisions will use the blockchain-based platform to make their lives better."
-thumbnail: an_logo.png
+thumbnail: an-works.jpeg
 categories:
   - announcements
 tags:
