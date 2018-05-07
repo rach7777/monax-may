@@ -68,7 +68,7 @@ we had to create it!
 Imagine a system where your sales folks could consume deal agreements that have
 been crafted by legal and technology experts, and finally vetted by someone you
 trust. Then imagine, that when your sales team concludes those agreements --
-entirely electronically -- they can instally trigger your accounting system to
+entirely electronically -- they can instantly trigger your accounting system to
 fire off the initial invoice. Without your sales team member having to call an
 accounts payable person (or, in startup land sending a slack message to the
 CFO). Then the agreements can initiate a new project within your project
