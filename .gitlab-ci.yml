@@ -9,8 +9,8 @@ cache site:
   stage: cache
   image: quay.io/monax/monax:0.19.6-platform_deployer
   only:
-    - staging@monax/monax.io
-    - production@monax/monax.io
+    - staging@success/monax.io
+    - production@success/monax.io
   before_script:
     - apk --no-cache --update add autoconf automake libpng-dev g++ make zlib-dev nasm
     - npm install -g bower
@@ -61,13 +61,13 @@ cache site:
 # Variable packages
 .variables_staging: &vars_staging
   only:
-    - staging@monax/monax.io
+    - staging@success/monax.io
   variables:
     SITE_NAME: "staging.monax.io"
 
 .variables_production: &vars_production
   only:
-    - production@monax/monax.io
+    - production@success/monax.io
   variables:
     SITE_NAME: "monax.io"
 
