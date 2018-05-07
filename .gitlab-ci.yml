@@ -1,4 +1,4 @@
-image: quay.io/monax/monax:0.19.6-platform_deployer
+image: jguyomard/hugo-builder:0.40-extras
 
 stages:
 - cache
@@ -7,6 +7,7 @@ stages:
 
 cache site:
   stage: cache
+  image: quay.io/monax/monax:0.19.6-platform_deployer
   only:
     - staging@monax/monax.io
     - production@monax/monax.io
@@ -31,7 +32,6 @@ cache site:
   # Job templates
 .build_site: &build_template
   stage: build
-  image: jguyomard/hugo-builder:0.40-extras
   dependencies:
     - cache site
   before_script:
@@ -49,14 +49,14 @@ cache site:
 
 .deploy_template: &deploy_template
   stage: deploy
+  image: quay.io/monax/monax:0.19.6-platform_deployer
   before_script:
     - |
       echo $GCS_CLIENT_SECRET_SITES > client-secret.json
       gcloud auth activate-service-account --key-file client-secret.json
       rm client-secret.json
   script:
-    - |
-      gsutil -m rsync -r -d build gs://sites.monax.io/$SITE_NAME
+    - gsutil -m rsync -r -d build gs://sites.monax.io/$SITE_NAME
 
 # Variable packages
 .variables_staging: &vars_staging
