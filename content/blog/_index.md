@@ -1,6 +1,0 @@
----
-
-layout: li
-url: "/blog/"
-
----
