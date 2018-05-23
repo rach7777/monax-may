@@ -79,6 +79,7 @@ rachel:
     title: "Senior Marketing Associate"
     gravatar: team-rd.jpeg
     twitter: Cryptojourno_uk
+    keybase: monaxrach
     display: true
     bio: "Rachel is a former journalist. Originally a lawyer by training, Rachel now has over a decade of marketing experience, including in the blockchain and cryptocurrency space. She is Monax's senior marketing associate."
 
@@ -95,6 +96,7 @@ chenxiao:
     name: "Chenxiao Hu Wu"
     title: "Producer Experience Associate"
     gravatar: team-chw.jpeg
+    keybase: chenxiao
     display: true
     bio: "Chenxiao is originally from Spain where she was a trained lawyer who worked on many varied deals as an associate with multiple law firms across both Europe and Asia. She realized that she loves people and the interactions with her customers and so she took the leap from lawyer to sales person with a legal technology startup. She is Monax's first customer experience associate."
 
@@ -102,6 +104,7 @@ tobias:
     name: "Tobias Barnes Hofmeister"
     title: "Marketing Analyst"
     gravatar: team-th.jpeg
+    keybase: tobiashofmeister
     display: true
     bio: "Tobias is Monax's Marketing Analyst. He combines his engineering and research background with deep marketing and design experience. Grown up in Germany with stops in Scandinavia he now calls Scotland his home, holding dear the Nordic egalitarian ideas."
 
@@ -127,6 +130,7 @@ adam:
     title: "Product Manager"
     gravatar: team-al.jpeg
     twitter: AdamLocklin
+    keybase: adamlocklin
     display: true
     bio: "Adam is Monax’s Product Manager aka Head Marmot Wrangler. He combines his experience in creating audit technology, uplifting financial regulatory compliance actions, and time in the intelligence community to be one powerful all purpose player. In his former life, as a Marine, who’s irreverent humor is alive and well. Self-proclaimed best hair in the industry (blockchainy stuff) since 2013."
 
@@ -154,13 +158,14 @@ pascalf:
     display: true
     bio: "Pascal Froux, is a graduate of a French engineering school. On the strength of his engineering skills, specialized in mathematics, information technology and finance, he co-founded Fermat in 1996, a software company that under his tenure as CEO has provided financial institutions based in Europe, Middle East, Africa, Asia, North and Latin Americas with risk management systems. In 2008, after 12-years of uninterrupted self-finance international growth, Fermat was sold to Moody’s. Pascal, recently formed Flamel Smart Growth, his investment company, that is supporting an involved entrepreneurial approach when investing in start-up."
 
-# jeremyd:
-#     name: Jeremy Drane
-#     title: Advisor
-#     gravatar: team-dg.jpeg
-#     twitter: dranejeremy
-#     display: true
-#     bio: ""
+jeremyd:
+    name: Jeremy Drane
+    title: Advisor
+    gravatar: team-jd.jpeg
+    twitter: dranejeremy
+    site: http://www.libra.tech
+    display: true
+    bio: "Jeremy Drane is the Chief Commercial Officer for Libra, a NYC-based company that builds middle and back office software and data services that aggregate, normalize and process post-trade crypto transactional data into audit-ready financial and operational information. Jeremy joined Libra in 2016 after working for thirteen years at PwC, where in his last role he founded and led their Blockchain practice."
 
 # formers
 
