@@ -1,10 +1,10 @@
 ---
 
 # fill in
-date:      2018-04-30T00:00:00Z
-title:     "The Agreements Network: how does it work?"
-author:    casey
-excerpt:   "Casey speaks with some more depth about how the two major types of users the Agreements Network envisions will use the blockchain-based platform to make their lives better."
+date:      2018-06-01T00:00:00Z
+title:     "Skin in Game: Governance on the Agreements Network"
+author:    nina
+excerpt:   "Nina speaks in more depth about the governance mechanisms ensuring network health for the Agreements Network."
 thumbnail: an-works.jpeg
 categories:
   - announcements
@@ -23,6 +23,23 @@ utm:
 ---
 
 {{< image_blog "an-works.jpeg" >}}
+
+
+# 
+
+Governance -- it's how we manage group activity and plan for a future full of change. In designing an open blockchain application, governance is a foundational issue that blurs the boundaries between tech, law and business. Effective self-governance in the Agreements Network (AN) is critical to its role as infrastructure on which modern legal products operate.
+
+**A resilient decentralized governance system requires sound design from multiple perspectives.**
+
+- It must provide methods for handling the day-to-day needs of platform operations.
+- It must provide mechanisms for dealing with change.
+- It must provide mechanisms for enforcement of governance rules.
+- It must be fair,trustworthy and represent the interests of all stakeholders, a non-zero-sum model.
+- It should utilize network resources in order to enforce community cohesion, e.g., reputation and ratings.
+
+
+
+
 
 In my previous posts I have spoken about
 [why Monax decided to pivot]({{< relref
