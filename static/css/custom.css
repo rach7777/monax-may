@@ -152,6 +152,11 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.img-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 
 
@@ -174,9 +179,7 @@ h1, h2, h3, h4, h5, h6 {
 ================================= */
 
 /* ==============
-  Underlines
-  - - -
-  Support for h1, h2 and h3
+  Underlines - Support for h1, h2 and h3
 =============== */
 
 .underline-full h1,
@@ -305,18 +308,18 @@ h1, h2, h3, h4, h5, h6 {
   Home
 =============== */
 
-.home_hero h1 {
+.section-hero h1 {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 46px;
     letter-spacing: 0.08em;
     color: #fff;
 }
-.home_hero .hero_overlay {
+.section-hero .hero_overlay {
     position: relative;
     z-index: 1;
 }
-.home_hero .dark-mask {
+.section-hero .dark-mask {
     position: absolute;
     top: 0;
     left: 0;
@@ -326,18 +329,29 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.4;
     filter: alpha(opacity=90);
 }
-.home_hero ul, .home_hero p {
+.section-hero ul, .section-hero p {
     font-size: 18px;
     font-weight: 700;
     padding: 0;
     text-transform: uppercase;
     letter-spacing: 0.10em;
 }
-.home_hero h1, .home_hero h2, .home_hero h3, .home_hero p, .home_hero ul {
+.section-hero h1,
+.section-hero h2,
+.section-hero h3,
+.section-hero p,
+.section-hero ul {
     color: #fff;
 }
 
 .section-featured img {
     max-width: 100px;
     margin: 0 auto;
+}
+
+.section-usecases .subtitle {
+    font-size: 18px;
+}
+.section-usecases .img_left {
+  max-height: 160px;
 }

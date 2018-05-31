@@ -1,0 +1,63 @@
+{{ if isset .Site.Data.home "usecases" }}
+{{ if .Site.Data.home.usecases.enable }}
+
+  <section class="section-usecases section-padding-lg">
+      <div class="container">
+
+        {{ range .Site.Data.home.usecases.section }}
+
+          <div class="row flex-grid-md padding-bottom-md">
+
+            <div class="col-md-3">
+              <img class="img_left img-responsive img-center padding-top-sm" src="{{ .img_left }}" alt="">
+            </div>
+
+            <div class="col-md-8">
+
+              <div class="row">
+                <div class="title range-left-md">
+                    <h3>{{ .title }}</h3>
+                </div>
+                <p class="subtitle range-left-md padding-bottom-sm">
+                  {{ .subtitle | markdownify }}
+                </p>
+              </div> <!-- .row -->
+
+              <div class="row">
+                <div class="col-md-6">
+                    <ul class="casestudies_item ul-icon-list">
+                      {{ range first 1 .casestudies.item }}
+                      <li class="padding-bottom-xs">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <h4 class="range-left">{{ .title }}</h4>
+                        <p class="range-left">{{ .description }}</p>
+                        <a href="#" class="!btn !btn-info" role="button">Read this casestudy &#8250;</a>
+                      </li>
+                      {{ end }}
+                    </ul>
+                </div> <!-- .col -->
+
+                <div class="col-md-6">
+                    <ul class="ul-icon-list">
+                      {{ range first 1 .agreements.item }}
+                      <li class="padding-bottom-xs">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        <h4 class="range-left">{{ .title }}</h4>
+                        <p class="range-left">{{ .description }}</p>
+                        <a href="#" class="!btn !btn-info" role="button">Preview this agreement &#8250;</a>
+                      </li>
+                      {{ end }}
+                    </ul>
+                </div> <!-- .col -->
+              </div> <!-- .row -->
+
+            </div> <!-- .col -->
+          </div> <!-- .row -->
+
+        {{ end }}
+
+      </div> <!-- .container -->
+  </section>
+
+{{ end }}
+{{ end }}
