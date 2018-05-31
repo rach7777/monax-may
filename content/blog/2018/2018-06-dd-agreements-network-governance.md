@@ -59,6 +59,11 @@ Any user seeking to make money in the Network by building legal products needs t
 
 The day-to-day operational needs of the Agreements Network are performed by the Network Validators, known entities with proof of stake that operate Agreements Network blockchain nodes. Blockchain token functionality enables us to design liquidity, incentive, evidence and automation processes that execute inexpensively and scale rapidly. Tokens are the means by which data is  transferred and proved in blockchain networks. We can give tokens valuable properties and move them in network commerce to create and enforce incentives to acquire tokens, run validator nodes, maintain operations and encourage healthy content production and consumption.
 
+```## Burrow token model
+asdfasdf
+asdsadf
+sdfdsf```
+
 ## Beyond Tokens: Reputation and the Marketplace
 
 
