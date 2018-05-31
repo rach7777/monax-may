@@ -5,7 +5,7 @@ date:      2018-06-01T00:00:00Z
 title:     "Skin in Game: Governance on the Agreements Network"
 author:    nina
 excerpt:   "Nina speaks in more depth about the governance mechanisms ensuring network health for the Agreements Network."
-thumbnail: an-works.jpeg
+thumbnail: james-wainscoat-521741-unsplash-min.jpg
 categories:
   - announcements
 tags:
