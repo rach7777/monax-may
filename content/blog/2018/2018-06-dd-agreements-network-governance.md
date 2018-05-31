@@ -24,7 +24,7 @@ utm:
 
 {{< image_blog "an-works.jpeg" >}}
 
-Governance -- it's how we manage group activity and plan for a future full of change. In designing an open blockchain application, governance is a foundational issue that blurs the boundaries between tech, law and business. Effective self-governance in the Agreements Network (AN) is critical to its role as infrastructure on which modern legal products operate.
+Governance -- it's how we manage group activity and plan for a future full of change. In designing an open blockchain application, governance is a foundational issue that blurs the boundaries between tech, law and business. Effective self-governance in the [Agreements Network](https://agreements.network) (AN) is critical to its role as infrastructure on which modern legal products operate.
 
 > A resilient decentralized governance system requires sound design from multiple perspectives.
 
