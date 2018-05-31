@@ -1,0 +1,41 @@
+/* ==============
+  GENERAL ~
+=============== */
+
+
+/* ==============
+  Resets
+=============== */
+
+
+/* ==============
+  Typography
+=============== */
+
+
+/* ==============
+  Colors
+=============== */
+
+
+
+
+
+
+
+/* ==============
+  LAYOUTS ~
+=============== */
+
+/* ==============
+  Nav Bar
+=============== */
+
+.navbar-brand>img {
+    height: 46px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.navbar ul.nav > li > a {
+    text-decoration: none;
+}
