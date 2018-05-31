@@ -35,6 +35,29 @@ Governance -- it's how we manage group activity and plan for a future full of ch
 > - It should utilize network resources in order to enforce community cohesion, e.g., reputation and ratings.
 
 
+The Agreements Network carefully combines an open network, trusted validator nodes, voting, skin-in-game staking and token rewards to produce a forward-compatible environment that promotes ecosystem growth. The initial iteration of the governance structure is rooted in a commitment to Agreements Network integrity, our experience operating decentralized governance systems, and our drive to build resilient legal infrastructure for the modern economy.
+
+
+## Governance Incentives and Mechanisms on the Agreements Network
+
+
+In the Agreements Network, the basic tools for managing day-to-day operation of the blockchain are tokens and validator nodes. The same tokens are used as consideration for bonds and products on the Agreements Network.
+
+
+### Token Mechanism
+
+The Agreements Network requires "skin in the game" from many of its user groups. This promotes self-interest and reward for good work within the Agreements Network. People who seek to make money using the Agreements Network must have a stake in the health of the ecosystem in order to earn. In the blockchain-backed Agreements Network, this means acquiring tokens and placing them into a bond. This bond provides two functions to the network. First, it ensures that participants have "skin in the game" when they seek to make money within the context of the network. Second, it provides protection against spam in the Network.
+
+
+Bonds require users to place Agreements Network tokens into contracts resembling machine-controlled escrow. The network uses bonds extensively within its token economics protocol. If the users follow the network's rules and later wish to receive their bond back, they may do so. If the users violate the Network's rules then they have a portion of their bond "slashed," or reduced. This bond is then distributed to the validator pool for platform.
+
+
+Any user seeking to make money in the Network by building legal products needs to place a bond in the form of Agreements Network tokens before their products are added to the network. The number of tokens required to bond an Archetype is an asymptotic variable, a function of the total number of Archetypes within the system, calculated to enable the network to scale dramatically over time.
+
+#### Day-to-day Operations 
+
+
+The day-to-day operational needs of the Agreements Network are performed by the Network Validators, known entities with proof of stake that operate Agreements Network blockchain nodes. Blockchain token functionality enables us to design liquidity, incentive, evidence and automation processes that execute inexpensively and scale rapidly. Tokens are the means by which data is  transferred and proved in blockchain networks. We can give tokens valuable properties and move them in network commerce to create and enforce incentives to acquire tokens, run validator nodes, maintain operations and encourage healthy content production and consumption.
 
 
 
