@@ -10,10 +10,46 @@ section, div.section {
   margin-bottom: 0;
 }
 
+#footer {
+    background: #172027;
+}
+#copyright {
+    background: #131b21;
+    padding: 10px 0;
+}
+
+/* Examples */
+
+.form-placeholder-dark {
+    min-height: 400px;
+    width: 100%;
+    background-color: #383838;
+}
+.form-placeholder {
+    min-height: 400px;
+    width: 100%;
+    background-color: #eee;
+}
+
+/* Resets */
+
+
+
 /* ==============
-  Resets
+  Buttons
 =============== */
 
+.btn-container {
+  text-align: center;
+}
+.btn {
+  background-color: #69af79;
+  border-color: #69b079;
+}
+.btn-xl {
+    padding: 12px 24px;
+    font-size: 18px;
+}
 
 
 /* ==============
@@ -268,7 +304,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* ==============
-  .background-dark
+  Backgrounds
 =============== */
 
 .background-dark {
@@ -284,6 +320,39 @@ h1, h2, h3, h4, h5, h6 {
 .background-dark ul {
     color: #fff;
 }
+.background-dark .btn {
+  background-color: #69b079;
+  color: #fff;
+  border: none;
+}
+.background-dark .btn:hover {
+  background-color: #4b905a;
+  color: #fff;
+  border: none;
+}
+.background-color {
+    background-color: #69b079;
+}
+.background-color h1,
+.background-color h2,
+.background-color h3,
+.background-color h4,
+.background-color h5,
+.background-color h6,
+.background-color p,
+.background-color ul {
+    color: #fff;
+}
+.background-color .btn {
+  background-color: #1d272f;
+  color: #fff;
+  border: none;
+}
+.background-color .btn:hover {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
 
 
 /* ==================================
@@ -294,6 +363,19 @@ h1, h2, h3, h4, h5, h6 {
   Nav Bar
 =============== */
 
+#top {
+    background: #1e2830;
+    color: #eeeeee;
+    padding: 10px 0;
+}
+#top .social a {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    line-height: 22px;
+    font-size: 10px;
+    margin: 0 4px;
+}
 .navbar-brand>img {
     height: 46px;
     padding-top: 8px;
@@ -302,6 +384,12 @@ h1, h2, h3, h4, h5, h6 {
 .navbar ul.nav > li > a {
     text-decoration: none;
 }
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #555555;
+    background-color: inherit;
+}
+
 
 
 /* ==============
@@ -356,13 +444,10 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 160px;
 }
 
-.form-placeholder-dark {
-    min-height: 400px;
-    width: 100%;
-    background-color: #383838;
+
+.section-cta h2 {
+  font-size: 32px;
 }
-.form-placeholder {
-    min-height: 400px;
-    width: 100%;
-    background-color: #eee;
+.section-cta p {
+  font-size: 22px;
 }

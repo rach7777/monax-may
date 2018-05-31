@@ -206,3 +206,10 @@
     enable = true
     title = "Sign up for a webinar"
     subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+[cta]
+    enable = true
+    title = "Get started on our platform"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    button_text = "Get started"
+    button_url = "#"
