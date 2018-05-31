@@ -1,6 +1,12 @@
+/* ============================
+            GENERAL ~
+============================= */
+
+
 /* ==============
-  GENERAL ~
+  Resets
 =============== */
+
 
 
 /* ==============
@@ -112,31 +118,92 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 /* ==============
-  Resets
-=============== */
-
-
-/* ==============
   Typography
 =============== */
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1.1;
+}
 
 .heading {
     text-align: center;
 }
+
 
 /* ==============
   Colors
 =============== */
 
 
-
-
-
-
+/* =================================
+          SPECIFIC STYLES ~
+================================= */
 
 /* ==============
-  LAYOUTS ~
+  Underlines
+  - - -
+  Support for h1, h2 and h3
 =============== */
+
+.underline-full h1,
+.underline-full h2,
+.underline-full h3 {
+    display: inline-block;
+    border-bottom: solid 5px #6aae7a;
+    padding-bottom: 10px;
+}
+
+.underline-sm h1:after,
+.underline-sm h2:after,
+.underline-sm h3:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    margin: 20px auto 0;
+    background-color: #6aae7a;
+}
+
+/* ==============
+  [follow text align]
+=============== */
+
+.range-left.underline-sm h1:after,
+.range-left.underline-sm h2:after,
+.range-left.underline-sm h3:after {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  .range-left-sm.underline-sm h1:after,
+  .range-left-sm.underline-sm h2:after,
+  .range-left-sm.underline-sm h3:after {
+    margin-left: 0;
+  }
+}
+@media (min-width: 992px) {
+  .range-left-md.underline-sm h1:after,
+  .range-left-md.underline-sm h2:after,
+  .range-left-md.underline-sm h3:after {
+    margin-left: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .range-left-lg.underline-sm h1:after,
+  .range-left-lg.underline-sm h2:after,
+  .range-left-lg.underline-sm h3:after {
+    margin-left: 0;
+  }
+}
+
+
+
+
+/* ==================================
+          SPECIFIC LAYOUTS ~
+=================================== */
 
 /* ==============
   Nav Bar
@@ -156,14 +223,6 @@ p, h1, h2, h3, h4, h5, h6 {
   Home
 =============== */
 
-.home_hero {
-    position: relative;
-    background: url(../img/backgrounds/mountains-1.jpg) center center repeat;
-    background-size: cover;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
 .home_hero h1 {
     font-weight: 700;
     text-transform: uppercase;
@@ -171,7 +230,6 @@ p, h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.08em;
     color: #fff;
 }
-
 .home_hero .hero_overlay {
     position: relative;
     z-index: 1;

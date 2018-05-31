@@ -24,28 +24,28 @@ paginate = 10
 
 [[menu.main]]
     name = "Why Monax"
-    url  = "/blog/"
+    url  = "/about-us/"
     weight = 2
 
 [[menu.main]]
     name = "Resources"
     identifier = "faq"
-    url  = "/faq/"
+    url  = "/resources/"
     weight = 3
 
 [[menu.main]]
     name = "Investors"
-    url  = "/contact/"
+    url  = "/investors/"
     weight = 4
 
 [[menu.main]]
     name = "Press"
-    url  = "/contact/"
+    url  = "/press/"
     weight = 5
 
 [[menu.main]]
     name = "Login"
-    url  = "/contact/"
+    url  = "#"
     weight = 6
 
 # Top bar social links menu
@@ -150,14 +150,15 @@ paginate = 10
 
 [params.home_hero]
     enable = true
-    title = "Welcome to monax"
+    title = "Welcome to Monax"
     subtitle = "We have worked with many clients and we always like to hear."
+    img_bg = "img/backgrounds/mountains-1.jpg"
     img_right = "img/carousel/template-homepage.png"
 
 
 [params.home_intro]
     enable = true
-    title = "What is monax?"
+    title = "What is Monax?"
     subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
 #
 #
