@@ -5,6 +5,7 @@
     img_bg = "img/backgrounds/mountains-1.jpg"
     img_right = "img/carousel/template-homepage.png"
 
+
 [featured]
     enable = true
     title = "Featured In:"
@@ -12,10 +13,12 @@
     logo_2 = "img/logos/example-logo.png"
     logo_3 = "img/logos/example-logo.png"
 
+
 [intro]
     enable = true
     title = "What is Monax?"
     subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
 
 [summary]
     enable = true
@@ -38,6 +41,7 @@
       description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
       icon = "fa-facebook"
 
+
 [usecases]
   enable = true
   title = "For Leasing"
@@ -45,7 +49,6 @@
   img_left = "img/agreements-network/agreements-network-diagram-06.png"
 
   [[usecases.section]]
-    enable = true
     category = "lawyers"
     title = "For Lawyers"
     subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
@@ -78,7 +81,6 @@
         agreement_url = "#"
 
   [[usecases.section]]
-    enable = true
     category = "fleet-leasing"
     title = "For Leasing"
     subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
@@ -111,7 +113,6 @@
         agreement_url = "#"
 
   [[usecases.section]]
-    enable = true
     category = "content-creators"
     title = "For Content Creators"
     subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
@@ -144,7 +145,6 @@
         agreement_url = "#"
 
   [[usecases.section]]
-    enable = true
     category = "corporate-governance"
     title = "For Corporate Governance"
     subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
@@ -175,3 +175,34 @@
         title = "Example Agreement 2"
         description = "In the evolving network economy, devices upgrade and proliferate quickly."
         agreement_url = "#"
+
+
+[screencasts]
+    enable = true
+    title = "How the platform works"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+    [[screencasts.item]]
+      title = "Screencast 1"
+      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+      youtube_url = "w7Ft2ymGmfc"
+
+    [[screencasts.item]]
+      title = "Screencast 2"
+      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+      youtube_url = "w7Ft2ymGmfc"
+
+    [[screencasts.item]]
+      title = "Screencast 3"
+      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+      youtube_url = "w7Ft2ymGmfc"
+
+    [[screencasts.item]]
+      title = "Screencast 4"
+      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+      youtube_url = "w7Ft2ymGmfc"
+
+[webinar]
+    enable = true
+    title = "Sign up for a webinar"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."

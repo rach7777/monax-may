@@ -1,0 +1,27 @@
+{{ if isset .Site.Data.home "webinar" }}
+{{ if .Site.Data.home.webinar.enable }}
+<section class="section-screencasts section-padding-xl section-shadow-xl">
+    <div class="container">
+
+        <div class="row">
+          <div class="col-md-5 padding-top-sm">
+            <div class="underline-sm range-left-md">
+                <h3>{{ .Site.Data.home.webinar.title }}</h3>
+            </div>
+            <p class="padding-bottom-md range-left-md">
+              {{ .Site.Data.home.webinar.subtitle | markdownify }}
+            </p>
+          </div> <!-- .col -->
+          <div class="col-md-7">
+            <div class="row flex-grid form-placeholder">
+              <div class="col-sm-12 col-valign-center">
+                  <h4>-- FORM PLACEHOLDER --</h4>
+              </div>
+            </div>
+          </div> <!-- .col -->
+        </div> <!-- .row -->
+
+    </div> <!-- .container -->
+</section>
+{{ end }}
+{{ end }}

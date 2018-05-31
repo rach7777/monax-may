@@ -355,3 +355,14 @@ h1, h2, h3, h4, h5, h6 {
 .section-usecases .img_left {
   max-height: 160px;
 }
+
+.form-placeholder-dark {
+    min-height: 400px;
+    width: 100%;
+    background-color: #383838;
+}
+.form-placeholder {
+    min-height: 400px;
+    width: 100%;
+    background-color: #eee;
+}
