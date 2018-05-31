@@ -148,19 +148,6 @@ paginate = 10
 
 # ADDITIONS
 
-[params.home_hero]
-    enable = true
-    title = "Welcome to Monax"
-    subtitle = "We have worked with many clients and we always like to hear."
-    img_bg = "img/backgrounds/mountains-1.jpg"
-    img_right = "img/carousel/template-homepage.png"
-
-
-[params.home_intro]
-    enable = true
-    title = "What is Monax?"
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
-#
 #
 # [params.home_intro]
 #     enable = true

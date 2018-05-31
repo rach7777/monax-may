@@ -1,15 +1,15 @@
-{{ if isset .Site.Params "home_intro" }}
-{{ if .Site.Params.home_intro.enable }}
-<section class="bar background-white no-mb">
+{{ if isset .Site.Data.home "intro" }}
+{{ if .Site.Data.home.intro.enable }}
+<section class="section-padding-lg">
     <div class="container">
 
         <div class="col-md-12">
             <div class="underline-sm">
-                <h2>{{ .Site.Params.home_intro.title }}</h2>
+                <h2>{{ .Site.Data.home.intro.title }}</h2>
             </div>
 
             <p class="lead text-center">
-              {{ .Site.Params.home_intro.subtitle | markdownify }}
+              {{ .Site.Data.home.intro.subtitle | markdownify }}
             </p>
 
         </div>

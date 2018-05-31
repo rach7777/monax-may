@@ -1,0 +1,61 @@
+{{ if isset .Site.Data.home "summary" }}
+{{ if .Site.Data.home.summary.enable }}
+<section class="section-padding-lg section-shadow-xl">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-12">
+            <!-- <div class="underline-sm">
+                <h2>{{ .Site.Data.home.summary.title }}</h2>
+            </div> -->
+<!--
+            <p class="lead text-center">
+              {{ .Site.Data.home.summary.subtitle | markdownify }}
+            </p> -->
+
+        </div>
+      </div>
+
+      <div class="row flex-grid-md">
+
+        <div class="col-md-5 col-valign-center">
+          <img class="img-responsive" src="{{ .Site.Data.home.summary.img_left }}" alt="">
+        </div>
+
+        <div class="col-md-7">
+
+          <div class="range-left-md">
+              <h3>{{ .Site.Data.home.summary.title }}</h3>
+          </div>
+
+          <p class="range-left-md padding-bottom-md">
+            {{ .Site.Data.home.summary.subtitle | markdownify }}
+          </p>
+<!--
+            <p class="range-left-md padding-bottom-md">
+              {{ .Site.Data.home.summary.description | markdownify }}
+            </p> -->
+
+            <ul class="ul-icon-list">
+              {{ range .Site.Data.home.summary.feature }}
+              <li class="padding-bottom-xs">
+                <i class="fa {{ .icon }}" aria-hidden="true"></i>
+                <h4 class="range-left">{{ .title }}</h4>
+                <p class="range-left">{{ .description }}</p>
+              </li>
+              {{ end }}
+            </ul>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /.bar -->
+{{ end }}
+{{ end }}

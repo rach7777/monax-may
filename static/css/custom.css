@@ -2,6 +2,13 @@
             GENERAL ~
 ============================= */
 
+body {
+  font-size: 16px;
+}
+
+section, div.section {
+  margin-bottom: 0;
+}
 
 /* ==============
   Resets
@@ -44,26 +51,57 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
 .section-padding-sm .container {
     padding-top: 15px;
     padding-bottom: 15px;
 }
-
 .section-padding-md .container {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
 .section-padding-lg .container {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
 .section-padding-xl .container {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
+
+.padding-top-xs {
+    padding-top: 10px;
+}
+.padding-top-sm {
+    padding-top: 15px;
+}
+.padding-top-md {
+    padding-top: 30px;
+}
+.padding-top-lg {
+    padding-top: 60px;
+}
+.padding-top-xl {
+    padding-top: 120px;
+}
+
+
+.padding-bottom-xs {
+    padding-bottom: 10px;
+}
+.padding-bottom-sm {
+    padding-bottom: 15px;
+}
+.padding-bottom-md {
+    padding-bottom: 30px;
+}
+.padding-bottom-lg {
+    padding-bottom: 60px;
+}
+.padding-bottom-xl {
+    padding-bottom: 120px;
+}
+
 
 /* ==============
   Text Aligns
@@ -131,12 +169,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-
-/* ==============
-  Colors
-=============== */
-
-
 /* =================================
           SPECIFIC STYLES ~
 ================================= */
@@ -199,6 +231,56 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* ==============
+  Icon Lists
+=============== */
+
+.ul-icon-list {
+    list-style: none;
+    position: relative;
+    padding-left: 60px;
+}
+.ul-icon-list i {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    border: 2px solid #9ac05f;
+    margin-left: 12px;
+}
+
+
+/* ==============
+  Shadows
+=============== */
+
+.section-shadow-xl {
+    box-shadow: 0px 0px 60px rgba(0,0,0,0.1);
+}
+
+
+/* ==============
+  .background-dark
+=============== */
+
+.background-dark {
+    background-color: #1d272f;
+}
+.background-dark h1,
+.background-dark h2,
+.background-dark h3,
+.background-dark h4,
+.background-dark h5,
+.background-dark h6,
+.background-dark p,
+.background-dark ul {
+    color: #fff;
+}
 
 
 /* ==================================
@@ -253,4 +335,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .home_hero h1, .home_hero h2, .home_hero h3, .home_hero p, .home_hero ul {
     color: #fff;
+}
+
+.section-featured img {
+    max-width: 100px;
+    margin: 0 auto;
 }
