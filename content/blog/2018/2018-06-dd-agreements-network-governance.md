@@ -44,7 +44,7 @@ The Agreements Network carefully combines an open network, trusted validator nod
 In the Agreements Network, the basic tools for managing day-to-day operation of the blockchain are tokens and validator nodes. The same tokens are used as consideration for bonds and products on the Agreements Network.
 
 
-### Token Mechanism
+## Token Mechanism
 
 The Agreements Network requires "skin in the game" from many of its user groups. This promotes self-interest and reward for good work within the Agreements Network. People who seek to make money using the Agreements Network must have a stake in the health of the ecosystem in order to earn. In the blockchain-backed Agreements Network, this means acquiring tokens and placing them into a bond. This bond provides two functions to the network. First, it ensures that participants have "skin in the game" when they seek to make money within the context of the network. Second, it provides protection against spam in the Network.
 
@@ -54,10 +54,26 @@ Bonds require users to place Agreements Network tokens into contracts resembling
 
 Any user seeking to make money in the Network by building legal products needs to place a bond in the form of Agreements Network tokens before their products are added to the network. The number of tokens required to bond an Archetype is an asymptotic variable, a function of the total number of Archetypes within the system, calculated to enable the network to scale dramatically over time.
 
-#### Day-to-day Operations 
+## Day-to-day Operations 
 
 
 The day-to-day operational needs of the Agreements Network are performed by the Network Validators, known entities with proof of stake that operate Agreements Network blockchain nodes. Blockchain token functionality enables us to design liquidity, incentive, evidence and automation processes that execute inexpensively and scale rapidly. Tokens are the means by which data is  transferred and proved in blockchain networks. We can give tokens valuable properties and move them in network commerce to create and enforce incentives to acquire tokens, run validator nodes, maintain operations and encourage healthy content production and consumption.
+
+## Beyond Tokens: Reputation and the Marketplace
+
+
+Archetype Producers have another mechanism of ensuring compliance with Agreements Network standards: reputation. Since Producers have "skin in game" and are known (either explicitly or pseudonymously), another method for Producers to increase their value proposition and earnings in the Network is through maintaining high standards of product quality. Tester results and popularity of an Archetype may increase the value proposition of its creator, creating a virtuous cycle of useful products.
+
+
+## Long-term Governance and Change
+
+
+The primary mechanism for managing Agreements Network priorities over time is voting. The voting mechanism is informed by traditional corporate governance structures, but reimagined for resilience in open, decentralized networks.  Voting power is a function of validator bonding tokens, i.e., skin in the game. Because the Agreements Network is designed and tooled with existing contract and regulatory structures ensures in mind, it encourages user compliance with expected protocols without overly prescribing or restricting user activities.
+
+
+Get skin in the game. Find out more about the Agreements Network at https://agreements.network/.
+
+
 
 
 
