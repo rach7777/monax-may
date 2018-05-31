@@ -24,18 +24,15 @@ utm:
 
 {{< image_blog "an-works.jpeg" >}}
 
-
-# 
-
 Governance -- it's how we manage group activity and plan for a future full of change. In designing an open blockchain application, governance is a foundational issue that blurs the boundaries between tech, law and business. Effective self-governance in the Agreements Network (AN) is critical to its role as infrastructure on which modern legal products operate.
 
-**A resilient decentralized governance system requires sound design from multiple perspectives.**
+> A resilient decentralized governance system requires sound design from multiple perspectives.
 
-- It must provide methods for handling the day-to-day needs of platform operations.
-- It must provide mechanisms for dealing with change.
-- It must provide mechanisms for enforcement of governance rules.
-- It must be fair,trustworthy and represent the interests of all stakeholders, a non-zero-sum model.
-- It should utilize network resources in order to enforce community cohesion, e.g., reputation and ratings.
+> - It must provide methods for handling the day-to-day needs of platform operations.
+> - It must provide mechanisms for dealing with change.
+> - It must provide mechanisms for enforcement of governance rules.
+> - It must be fair,trustworthy and represent the interests of all stakeholders, a non-zero-sum model.
+> - It should utilize network resources in order to enforce community cohesion, e.g., reputation and ratings.
 
 
 
