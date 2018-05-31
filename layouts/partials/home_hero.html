@@ -1,0 +1,34 @@
+{{ if isset .Site.Params "home_hero" }}
+{{ if .Site.Params.home_hero.enable }}
+<section class="section-padding-xl ">
+    <div class="home_hero">
+      <div class="dark-mask"></div>
+
+      <div class="container hero_overlay">
+          <div class="flex-grid-md">
+              <div class="col-md-5 col-valign-center">
+                  <div class="heading range-left-md">
+                      <h1 class="">{{ .Site.Params.home_hero.title }}</h1>
+                  </div>
+
+                  <p class="lead range-left-md">
+                    {{ .Site.Params.home_hero.subtitle | markdownify }}
+                  </p>
+              </div>
+              <div class="col-md-7">
+                  <img class="img-responsive" src="{{ .Site.Params.home_hero.img_right }}" alt="">
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- /.container -->
+</section>
+
+
+
+
+
+
+<!-- /.bar -->
+{{ end }}
+{{ end }}

@@ -1,0 +1,15 @@
+{{ range .Site.Params.googlefonts }}
+      <link rel="stylesheet" {{ printf "href=\"//fonts.googleapis.com/css?family=%s\"" . | safeHTMLAttr }} type="text/css" media="all" />
+    {{ end }}
+
+<style>
+body {
+    font-family: '{{ .Site.Params.fontbody }}';
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: '{{ .Site.Params.fontheadings }}';
+}
+code {
+   font-family: '{{ .Site.Params.fontcode }}';
+}
+</style>

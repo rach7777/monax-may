@@ -1,0 +1,21 @@
+{{ if isset .Site.Params "home_intro" }}
+{{ if .Site.Params.home_intro.enable }}
+<section class="bar background-white no-mb">
+    <div class="container">
+
+        <div class="col-md-12">
+            <div class="heading text-center">
+                <h2>{{ .Site.Params.home_intro.title }}</h2>
+            </div>
+
+            <p class="lead text-center">
+              {{ .Site.Params.home_intro.subtitle | markdownify }}
+            </p>
+
+        </div>
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /.bar -->
+{{ end }}
+{{ end }}
