@@ -54,15 +54,16 @@ The Agreements Network requires "skin in the game" from many of its user groups.
 Bonds require users to place Agreements Network tokens into contracts resembling machine-controlled escrow. The network uses bonds extensively within its token economics protocol. If the users follow the network's rules and later wish to receive their bond back, they may do so. If the users violate the Network's rules then they have a portion of their bond "slashed," or reduced. This bond is then distributed to the validator pool for platform.
 
 
-Any user seeking to make money in the Network by building legal products needs to place a bond in the form of Agreements Network tokens before their products are added to the network. The number of tokens required to bond an Archetype is an asymptotic variable, a function of the total number of Archetypes within the system, calculated to enable the network to scale dramatically over time.
+Any user seeking to make money in the Network by building legal products needs to place a bond in the form of Agreements Network tokens before their products are added to the network. The number of tokens required to bond an Archetype is an asymptotic variable, a function of the total number of Archetypes within the system, calculated to enable the network to scale dramatically over time. For more detail have a look in the [Agreements Network Whitepaper](https://agreements.network/files/an_whitepaper_v1.0.pdf).
+
+<br>
+{{< image_blog "token_flow.png" >}}
+<br>
 
 ## Day-to-day Operations 
 
-
 The day-to-day operational needs of the Agreements Network are performed by the Network Validators, known entities with proof of stake that operate Agreements Network blockchain nodes. Blockchain token functionality enables us to design liquidity, incentive, evidence and automation processes that execute inexpensively and scale rapidly. Tokens are the means by which data is  transferred and proved in blockchain networks. We can give tokens valuable properties and move them in network commerce to create and enforce incentives to acquire tokens, run validator nodes, maintain operations and encourage healthy content production and consumption.
 
-
-{{< image_blog "token_flow.png" >}}
 
 
 
@@ -70,6 +71,7 @@ The day-to-day operational needs of the Agreements Network are performed by the 
 > asdfasdf
 > The primary mechanism for managing Agreements Network priorities over time is voting. The voting mechanism is informed by traditional corporate governance structures, but reimagined for resilience in open, decentralized networks.  Voting power is a function of validator bonding tokens, i.e., skin in the game. Because the Agreements Network is designed and tooled with existing contract and regulatory structures ensures in mind, it encourages user compliance with expected protocols without overly prescribing or restricting user activities.
 > sdfdsf
+> 
 
 ## Beyond Tokens: Reputation and the Marketplace
 
