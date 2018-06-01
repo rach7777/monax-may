@@ -36,7 +36,7 @@ Governance -- it's how we manage group activity and plan for a future full of ch
 
 {{< image_blog "governance_of_the_AN.png" >}}
 
-<img src="blog/images/2018/governance_of_the_AN.png" alt="drawing" style="width: 450px;"/>
+<img src="https://staging.monax.io/images/2018/governance_of_the_AN.png" alt="drawing" style="width: 450px;"/>
 
 
 The Agreements Network carefully combines an open network, trusted validator nodes, voting, skin-in-game staking and token rewards to produce a forward-compatible environment that promotes ecosystem growth. The initial iteration of the governance structure is rooted in a commitment to Agreements Network integrity, our experience operating decentralized governance systems, and our drive to build resilient legal infrastructure for the modern economy.
@@ -73,6 +73,8 @@ The day-to-day operational needs of the Agreements Network are performed by the 
 > asdfasdf
 > The primary mechanism for managing Agreements Network priorities over time is voting. The voting mechanism is informed by traditional corporate governance structures, but reimagined for resilience in open, decentralized networks.  Voting power is a function of validator bonding tokens, i.e., skin in the game. Because the Agreements Network is designed and tooled with existing contract and regulatory structures ensures in mind, it encourages user compliance with expected protocols without overly prescribing or restricting user activities.
 > sdfdsf
+> 
+> 
 > 
 
 ## Beyond Tokens: Reputation and the Marketplace
