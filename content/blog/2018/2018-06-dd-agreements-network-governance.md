@@ -34,7 +34,7 @@ Governance -- it's how we manage group activity and plan for a future full of ch
 > - It must be fair,trustworthy and represent the interests of all stakeholders, a non-zero-sum model.
 > - It should utilize network resources in order to enforce community cohesion, e.g., reputation and ratings.
 
-{{< image_blog "governance of the AN-02.png" >}}
+{{< image_blog "governance_of_the_AN.png" >}}
 
 
 The Agreements Network carefully combines an open network, trusted validator nodes, voting, skin-in-game staking and token rewards to produce a forward-compatible environment that promotes ecosystem growth. The initial iteration of the governance structure is rooted in a commitment to Agreements Network integrity, our experience operating decentralized governance systems, and our drive to build resilient legal infrastructure for the modern economy.
@@ -61,7 +61,7 @@ Any user seeking to make money in the Network by building legal products needs t
 
 The day-to-day operational needs of the Agreements Network are performed by the Network Validators, known entities with proof of stake that operate Agreements Network blockchain nodes. Blockchain token functionality enables us to design liquidity, incentive, evidence and automation processes that execute inexpensively and scale rapidly. Tokens are the means by which data is  transferred and proved in blockchain networks. We can give tokens valuable properties and move them in network commerce to create and enforce incentives to acquire tokens, run validator nodes, maintain operations and encourage healthy content production and consumption.
 
-{{< image_blog "token flow-01.png" >}}
+{{< image_blog "token_flow.png" >}}
 
 
 ```
