@@ -1,0 +1,27 @@
+{{ if isset .Site.Data.about "positions" }}
+{{ if .Site.Data.about.positions.enable }}
+<section class="section-positions section-padding-xl">
+    <div class="container">
+
+        <div class="row">
+          <div class="col-md-5 padding-top-sm">
+            <div class="underline-sm range-left-md">
+                <h3>{{ .Site.Data.about.positions.title }}</h3>
+            </div>
+            <p class="padding-bottom-md range-left-md">
+              {{ .Site.Data.about.positions.subtitle | markdownify }}
+            </p>
+          </div> <!-- .col -->
+          <div class="col-md-7">
+            <div class="flex-grid form-placeholder">
+              <div class="col-sm-12 col-valign-center" style="width: 100%;">
+                  <h4>-- FORM PLACEHOLDER --</h4>
+              </div>
+            </div>
+          </div> <!-- .col -->
+        </div> <!-- .row -->
+
+    </div> <!-- .container -->
+</section>
+{{ end }}
+{{ end }}

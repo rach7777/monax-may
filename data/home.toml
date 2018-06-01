@@ -2,16 +2,16 @@
     enable = true
     title = "Welcome to Monax"
     subtitle = "We have worked with many clients and we always like to hear."
-    img_bg = "img/backgrounds/mountains-1.jpg"
-    img_right = "img/carousel/template-homepage.png"
+    img_bg = "/img/backgrounds/mountains-1.jpg"
+    img_right = "/img/carousel/template-homepage.png"
 
 
 [featured]
     enable = true
     title = "Featured In:"
-    logo_1 = "img/logos/example-logo.png"
-    logo_2 = "img/logos/example-logo.png"
-    logo_3 = "img/logos/example-logo.png"
+    logo_1 = "/img/logos/example-logo.png"
+    logo_2 = "/img/logos/example-logo.png"
+    logo_3 = "/img/logos/example-logo.png"
 
 
 [intro]
@@ -24,7 +24,7 @@
     enable = true
     title = "What can Monax do for you?"
     subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
-    img_left = "img/carousel/template-homepage.png"
+    img_left = "/img/carousel/template-homepage.png"
 
     [[summary.feature]]
       title = "Lorem Ipsum is simply dummy text"
@@ -46,13 +46,13 @@
   enable = true
   title = "For Leasing"
   subtitle = "In the evolving network economy, devices upgrade and proliferate quickly, resulting in a trend towards pay-per-use and leasing models and in deployments of fleets of equipment, for example, robotics like drones. To serve this market, agreements issues such as unit function history, ownership, payments, rights of use, maintenance and insurance may all be parameterized as workflows in the Agreements Network."
-  img_left = "img/agreements-network/agreements-network-diagram-06.png"
+  img_left = "/img/agreements-network/agreements-network-diagram-06.png"
 
   [[usecases.section]]
     category = "lawyers"
     title = "For Lawyers"
     subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
-    img_left = "img/agreements-network/agreements-network-diagram-05.png"
+    img_left = "/img/agreements-network/agreements-network-diagram-05.png"
 
     [usecases.section.casestudies]
 
@@ -84,7 +84,7 @@
     category = "fleet-leasing"
     title = "For Leasing"
     subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
-    img_left = "img/agreements-network/agreements-network-diagram-06.png"
+    img_left = "/img/agreements-network/agreements-network-diagram-06.png"
 
     [usecases.section.casestudies]
 
@@ -116,7 +116,7 @@
     category = "content-creators"
     title = "For Content Creators"
     subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
-    img_left = "img/agreements-network/agreements-network-diagram-07.png"
+    img_left = "/img/agreements-network/agreements-network-diagram-07.png"
 
     [usecases.section.casestudies]
 
@@ -148,7 +148,7 @@
     category = "corporate-governance"
     title = "For Corporate Governance"
     subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
-    img_left = "img/agreements-network/agreements-network-diagram-05.png"
+    img_left = "/img/agreements-network/agreements-network-diagram-05.png"
 
     [usecases.section.casestudies]
 

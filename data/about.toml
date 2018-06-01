@@ -1,0 +1,144 @@
+[hero]
+    enable = true
+    title = "Why Monax?"
+    subtitle = "We have worked with many clients and we always like to hear."
+    img_bg = "/img/backgrounds/mountains-1.jpg"
+    img_right = "/img/carousel/template-homepage.png"
+
+
+[featured]
+    enable = true
+    title = "Featured In:"
+    logo_1 = "/img/logos/example-logo.png"
+    logo_2 = "/img/logos/example-logo.png"
+    logo_3 = "/img/logos/example-logo.png"
+
+[company]
+  enable = true
+  title = "Monax are at the forefront of blockchain technology"
+  subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+  [[company.social_icon]]
+      icon = "fa-github"
+      link = "#"
+      title = "Github"
+
+  [[company.social_icon]]
+      icon = "fa-facebook"
+      link = "#"
+      title = "Facebook"
+
+  [[company.social_icon]]
+      icon = "fa-twitter"
+      link = "#"
+      title = "Twitter"
+
+  [company.partnerships]
+      enable = true
+      title = "Partnerships"
+      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+      [[company.partnerships.logo]]
+          name = "Example"
+          logo = "/img/logos/example-gray-logo.png"
+          link = "#"
+
+      [[company.partnerships.logo]]
+          name = "Example"
+          logo = "/img/logos/example-gray-logo.png"
+          link = "#"
+
+      [[company.partnerships.logo]]
+          name = "Example"
+          logo = "/img/logos/example-gray-logo.png"
+          link = "#"
+
+      [[company.partnerships.logo]]
+          name = "Example"
+          logo = "/img/logos/example-gray-logo.png"
+          link = "#"
+
+      [[company.partnerships.logo]]
+          name = "Example"
+          logo = "/img/logos/example-gray-logo.png"
+          link = "#"
+
+      [[company.partnerships.logo]]
+          name = "Example"
+          logo = "/img/logos/example-gray-logo.png"
+          link = "#"
+
+
+  [company.history]
+
+      [[company.history.item]]
+          date = "Jan 2018"
+          title = "Web Platform is born"
+          highlight = "Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis."
+          bullets = [
+           "Exercitationem enim dolores sunt praesentium dolorum praesentium",
+           "Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo"
+          ]
+
+      [[company.history.item]]
+          date = "Jul 2017"
+          title = "Burrow is born"
+          highlight = "Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis."
+          bullets = [
+           "Rerum sit libero possimus amet excepturi",
+           "Exercitationem enim dolores sunt praesentium dolorum praesentium",
+           "Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo"
+          ]
+
+      [[company.history.item]]
+          date = "Nov 2017"
+          title = "Monax is born"
+          highlight = "Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis."
+          bullets = [
+           "Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo"
+          ]
+
+
+
+[mission]
+    enable = true
+    title = "Here's our mission..."
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+
+[team]
+    enable = true
+    title = "Meet the team"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+    [[team.item]]
+      title = "Team Member 1"
+      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+      youtube_url = "w7Ft2ymGmfc"
+
+    [[team.item]]
+      title = "Team Member 2"
+      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+      youtube_url = "w7Ft2ymGmfc"
+
+    [[team.item]]
+      title = "Team Member 3"
+      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+      youtube_url = "w7Ft2ymGmfc"
+
+    [[team.item]]
+      title = "Team Member 4"
+      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+      youtube_url = "w7Ft2ymGmfc"
+
+[positions]
+    enable = true
+    title = "Positions available"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+[cta]
+    enable = true
+    title = "Get started on our platform"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    button_text = "Get started"
+    button_url = "#"

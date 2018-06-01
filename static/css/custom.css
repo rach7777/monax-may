@@ -18,6 +18,12 @@ section, div.section {
     padding: 10px 0;
 }
 
+.clearfix-before::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 /* Examples */
 
 .form-placeholder-dark {
@@ -293,6 +299,31 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 12px;
 }
 
+.ul-round-icons {
+    list-style: none;
+    padding-left: 0;
+}
+.ul-round-icons::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.ul-round-icons li {
+  float: left;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  font-size: 24px;
+  background-color: #69af79;
+  color: #ffffff;
+}
+.ul-round-icons li a {
+    color: inherit;
+}
+
 
 /* ==============
   Shadows
@@ -353,6 +384,104 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   border: none;
 }
+
+.background-color .underline-full {
+  border-color: #fff;
+}
+.background-color .underline-sm h1:after,
+.background-color .underline-sm h2:after,
+.background-color .underline-sm h3:after {
+  background-color: #fff;
+}
+
+
+/* ==============
+  Timeline
+=============== */
+
+.timeline {
+  padding: 95px 50px 25px;
+  position: relative;
+  margin-top: 38px;
+}
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: calc(33% + 19px);
+  bottom: 0px;
+  width: 4px;
+  background: #ddd;
+}
+.timeline:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.entry {
+  clear: both;
+  text-align: left;
+  position: relative;
+}
+.entry .title {
+  margin-bottom: 0.5em;
+  float: left;
+  width: 33%;
+  padding-right: 30px;
+  text-align: right;
+  position: relative;
+}
+.entry .title:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 8px solid #69b079;
+  background-color: #fff;
+  border-radius: 100%;
+  top: 15%;
+  right: -12px;
+  z-index: 99;
+}
+.entry .title h3 {
+  margin: 0;
+  font-size: 100%;
+  text-align: right;
+}
+.entry .title p {
+    margin: 0;
+    font-size: 100%;
+    text-align: right;
+}
+.entry .body {
+  margin: 0 0 3em;
+  float: right;
+  width: 66%;
+  padding-left: 30px;
+}
+.entry .body p {
+  line-height: 1.4em;
+}
+.entry .body p:first-child {
+  margin-top: 0;
+  font-weight: 400;
+  text-align: left;
+}
+.entry .body ul {
+  color: #aaa;
+  padding-left: 0;
+  list-style-type: none;
+}
+.entry .body ul li:before {
+  content: "–";
+  margin-right: 0.5em;
+}
+
+
+
+
+
 
 
 /* ==================================
