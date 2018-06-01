@@ -34,9 +34,7 @@ Governance -- it's how we manage group activity and plan for a future full of ch
 > - It must be fair,trustworthy and represent the interests of all stakeholders, a non-zero-sum model.
 > - It should utilize network resources in order to enforce community cohesion, e.g., reputation and ratings.
 
-{{< image_blog "governance_of_the_AN.png" >}}
-
-<img src="https://staging.monax.io/images/2018/governance_of_the_AN.png" alt="drawing" style="width: 450px;"/>
+<img src="https://staging.monax.io/images/2018/governance_of_the_AN.png" alt="drawing" style="width: 480px;"/>
 
 
 The Agreements Network carefully combines an open network, trusted validator nodes, voting, skin-in-game staking and token rewards to produce a forward-compatible environment that promotes ecosystem growth. The initial iteration of the governance structure is rooted in a commitment to Agreements Network integrity, our experience operating decentralized governance systems, and our drive to build resilient legal infrastructure for the modern economy.
