@@ -1,0 +1,56 @@
+{{ if isset .Site.Data.resources "developers" }}
+{{ if .Site.Data.resources.developers.enable }}
+<section class="section-developers section-padding-xl section-shadow-xl">
+    <div class="container">
+
+        <div class="row">
+          <div class="col-md-5">
+
+            <div class="content-container padding-bottom-md">
+              <div class="underline-sm range-left-md">
+                  <h3>{{ .Site.Data.resources.developers.title }}</h3>
+              </div>
+              <p class="range-left-md padding-bottom-sm">
+                {{ .Site.Data.resources.developers.subtitle | markdownify }}
+              </p>
+            </div> <!-- .content-container -->
+
+            <div class="content-container padding-bottom-md">
+                <div class="range-left-md">
+                    <h4>{{ .Site.Data.resources.developers.contact.title }}</h4>
+                </div>
+                <p class="range-left-md padding-bottom-sm">
+                  {{ .Site.Data.resources.developers.contact.subtitle | markdownify }}
+                </p>
+            </div> <!-- .content-container -->
+
+          </div> <!-- .col -->
+          <div class="col-md-7 padding-top-md">
+            <div class="content-container padding-bottom-sm">
+              <div class="flex-grid job-placeholder">
+                <div class="col-sm-12 col-valign-center" style="width: 100%;">
+                    <h4>-- JOB PLACEHOLDER --</h4>
+                </div>
+              </div>
+            </div>
+            <div class="content-container padding-bottom-sm">
+              <div class="flex-grid job-placeholder">
+                <div class="col-sm-12 col-valign-center" style="width: 100%;">
+                    <h4>-- JOB PLACEHOLDER --</h4>
+                </div>
+              </div>
+            </div>
+            <div class="content-container padding-bottom-sm">
+              <div class="flex-grid job-placeholder">
+                <div class="col-sm-12 col-valign-center" style="width: 100%;">
+                    <h4>-- JOB PLACEHOLDER --</h4>
+                </div>
+              </div>
+            </div>
+          </div> <!-- .col -->
+        </div> <!-- .row -->
+
+    </div> <!-- .container -->
+</section>
+{{ end }}
+{{ end }}

@@ -1,0 +1,117 @@
+[hero]
+    enable = true
+    title = "Resources"
+    subtitle = "We have worked with many clients and we always like to hear."
+    img_bg = "/img/backgrounds/mountains-1.jpg"
+    img_right = "/img/carousel/template-homepage.png"
+
+[quicklinks]
+    enable = true
+    title = "Jump to a section"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+        [[quicklinks.section]]
+            title = "Screencasts"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+        [[quicklinks.section]]
+            title = "Webinars"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+        [[quicklinks.section]]
+            title = "Developers"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+        [[quicklinks.section]]
+            title = "3rd parties"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+
+[screencasts]
+    enable = true
+    title = "How the platform works"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+    [[screencasts.item]]
+      title = "Screencast 1"
+      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+      youtube_url = "w7Ft2ymGmfc"
+
+    [[screencasts.item]]
+      title = "Screencast 2"
+      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+      youtube_url = "w7Ft2ymGmfc"
+
+    [[screencasts.item]]
+      title = "Screencast 3"
+      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+      youtube_url = "w7Ft2ymGmfc"
+
+    [[screencasts.item]]
+      title = "Screencast 4"
+      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+      youtube_url = "w7Ft2ymGmfc"
+
+
+[webinar]
+    enable = true
+    title = "Sign up for a webinar"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+
+[explainers]
+    enable = true
+    title = "Explainers"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+    [[explainers.section]]
+        title = "Explainer article title"
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+    [[explainers.section]]
+        title = "Explainer article title"
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+    [[explainers.section]]
+        title = "Explainer article title"
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+    [[explainers.section]]
+        title = "Explainer article title"
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+    [[explainers.section]]
+        title = "Explainer article title"
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+    [[explainers.section]]
+        title = "Explainer article title"
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+
+[developers]
+    enable = true
+    title = "Positions available"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+    [developers.contact]
+        title = "Contact us if you're interested"
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us.<br><br>Please email <a href='mailto:jobs@monax.io'>jobs@monax.io</a> with your cv and portfolio."
+
+
+[3rdparties]
+    enable = true
+    title = "Positions available"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+    [3rdparties.contact]
+        title = "Contact us if you're interested"
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us.<br><br>Please email <a href='mailto:jobs@monax.io'>jobs@monax.io</a> with your cv and portfolio."
+
+
+[cta]
+    enable = true
+    title = "Get started on our platform"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    button_text = "Get started"
+    button_url = "#"

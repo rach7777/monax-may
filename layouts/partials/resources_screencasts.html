@@ -1,0 +1,36 @@
+{{ if isset .Site.Data.resources "screencasts" }}
+{{ if .Site.Data.resources.screencasts.enable }}
+<section class="section-screencasts section-padding-lg background-dark">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="underline-sm">
+              <h2>{{ .Site.Data.resources.screencasts.title }}</h2>
+          </div>
+          <p class="padding-bottom-md">
+            {{ .Site.Data.resources.screencasts.subtitle | markdownify }}
+          </p>
+        </div> <!-- .col -->
+      </div> <!-- .row -->
+
+      <div class="row">
+        {{ range .Site.Data.resources.screencasts.item }}
+        <div class="col-md-3">
+          <div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+            <iframe src="//www.youtube.com/embed/{{ .youtube_url }}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+          </div>
+          <div class="">
+              <h5>{{ .title }}</h5>
+          </div>
+          <!-- <p class="padding-bottom-md">
+            {{ .subtitle | markdownify }}
+          </p> -->
+        </div> <!-- .col -->
+        {{ end }}
+      </div> <!-- .row -->
+
+    </div> <!-- .container -->
+</section>
+{{ end }}
+{{ end }}
