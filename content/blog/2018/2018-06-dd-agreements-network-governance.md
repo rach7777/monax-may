@@ -73,7 +73,8 @@ The day-to-day operational needs of the Agreements Network are performed by the 
 > sdfdsf
 > 
 > 
-> 
+
+<br>
 
 ## Beyond Tokens: Reputation and the Marketplace
 
