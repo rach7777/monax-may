@@ -64,49 +64,66 @@
     title = "Explainers"
     subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
 
-    [[explainers.section]]
+    # articles will be auto populated from posts
+    [[explainers.article]]
         title = "Explainer article title"
         subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
 
-    [[explainers.section]]
+    [[explainers.article]]
         title = "Explainer article title"
         subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
 
-    [[explainers.section]]
+    [[explainers.article]]
         title = "Explainer article title"
         subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
 
-    [[explainers.section]]
+    [[explainers.article]]
         title = "Explainer article title"
         subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
 
-    [[explainers.section]]
+    [[explainers.article]]
         title = "Explainer article title"
         subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
 
-    [[explainers.section]]
+    [[explainers.article]]
         title = "Explainer article title"
         subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
 
+
+[faq]
+    enable = true
+    title = "FAQ"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    # faqs content is stored on faq.toml
 
 [developers]
     enable = true
-    title = "Positions available"
+    title = "Monax for Developers"
     subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
 
-    [developers.contact]
-        title = "Contact us if you're interested"
-        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us.<br><br>Please email <a href='mailto:jobs@monax.io'>jobs@monax.io</a> with your cv and portfolio."
+    [[developers.section]]
+        title = "Agreements Network"
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+        link_text = "Read more"
+        link_url = "#"
+
+    [[developers.section]]
+        title = "Hyperledger"
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+        link_text = "Read more"
+        link_url = "#"
+
+    [[developers.section]]
+        title = "Development Docs"
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+        link_text = "Read more"
+        link_url = "#"
 
 
-[3rdparties]
+[thirdparties]
     enable = true
-    title = "Positions available"
+    title = "3rd Party Integrations"
     subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
-
-    [3rdparties.contact]
-        title = "Contact us if you're interested"
-        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us.<br><br>Please email <a href='mailto:jobs@monax.io'>jobs@monax.io</a> with your cv and portfolio."
 
 
 [cta]

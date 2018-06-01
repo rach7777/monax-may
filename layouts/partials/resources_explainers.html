@@ -1,6 +1,6 @@
 {{ if isset .Site.Data.resources "explainers" }}
 {{ if .Site.Data.resources.explainers.enable }}
-<section class="section-explainers padding-bottom-lg">
+<section class="section-explainers section-shadow-xl section-padding-lg">
     <div class="container">
 
               <div class="row">
@@ -20,7 +20,7 @@
 
 
               <div class="row">
-                {{ range .Site.Data.resources.explainers.section }}
+                {{ range .Site.Data.resources.explainers.article }}
 
                   <div class="col-md-4 padding-bottom-sm">
                     <div class="range-left-md">
