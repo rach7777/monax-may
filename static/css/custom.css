@@ -36,6 +36,12 @@ section, div.section {
     width: 100%;
     background-color: #eee;
 }
+.job-placeholder {
+    min-height: 80px;
+    width: 100%;
+    background-color: #eee;
+    border-radius: 5px;
+}
 
 /* Resets */
 
@@ -319,9 +325,39 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   background-color: #69af79;
   color: #ffffff;
+  transition: 0.3s all;
 }
-.ul-round-icons li a {
+.ul-round-icons a {
     color: inherit;
+}
+.ul-round-icons li:hover {
+  background-color: #519661;
+}
+.ul-round-icons a:last-of-type {
+  margin-right: 0;
+}
+.ul-team-icons li {
+    margin-right: 6px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+     background-color: #ffffff;
+    color: #999;
+    border: 1px solid #ccc;
+    transition: 0.2s all;
+    top: 0;
+    position: relative;
+}
+.ul-round-icons li:hover {
+  background-color: #fff;
+  box-shadow: 0px 2px 1px rgba(0,0,0,0.2);
+  top:-2px;
+  /* border-width: 2px;
+  line-height: 28px; */
+}
+.ul-center ul {
+    margin: 0 auto;
 }
 
 

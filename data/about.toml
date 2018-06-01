@@ -112,29 +112,110 @@
     subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
 
     [[team.item]]
-      title = "Team Member 1"
-      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
-      youtube_url = "w7Ft2ymGmfc"
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-al.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
 
     [[team.item]]
-      title = "Team Member 2"
-      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
-      youtube_url = "w7Ft2ymGmfc"
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-al.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
 
     [[team.item]]
-      title = "Team Member 3"
-      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
-      youtube_url = "w7Ft2ymGmfc"
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-al.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
 
     [[team.item]]
-      title = "Team Member 4"
-      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
-      youtube_url = "w7Ft2ymGmfc"
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-al.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-al.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-al.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-al.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-al.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-al.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-al.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-al.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-al.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
 
 [positions]
     enable = true
     title = "Positions available"
     subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+    [positions.contact]
+        title = "Contact us if you're interested"
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us.<br><br>Please email <a href='mailto:jobs@monax.io'>jobs@monax.io</a> with your cv and portfolio."
 
 [cta]
     enable = true

@@ -1,21 +1,50 @@
 {{ if isset .Site.Data.about "positions" }}
 {{ if .Site.Data.about.positions.enable }}
-<section class="section-positions section-padding-xl">
+<section class="section-positions section-padding-xl section-shadow-xl">
     <div class="container">
 
         <div class="row">
-          <div class="col-md-5 padding-top-sm">
-            <div class="underline-sm range-left-md">
-                <h3>{{ .Site.Data.about.positions.title }}</h3>
-            </div>
-            <p class="padding-bottom-md range-left-md">
-              {{ .Site.Data.about.positions.subtitle | markdownify }}
-            </p>
+          <div class="col-md-5">
+
+            <div class="content-container padding-bottom-md">
+              <div class="underline-sm range-left-md">
+                  <h3>{{ .Site.Data.about.positions.title }}</h3>
+              </div>
+              <p class="range-left-md padding-bottom-sm">
+                {{ .Site.Data.about.positions.subtitle | markdownify }}
+              </p>
+            </div> <!-- .content-container -->
+
+            <div class="content-container padding-bottom-md">
+                <div class="range-left-md">
+                    <h4>{{ .Site.Data.about.positions.contact.title }}</h4>
+                </div>
+                <p class="range-left-md padding-bottom-sm">
+                  {{ .Site.Data.about.positions.contact.subtitle | markdownify }}
+                </p>
+            </div> <!-- .content-container -->
+
           </div> <!-- .col -->
-          <div class="col-md-7">
-            <div class="flex-grid form-placeholder">
-              <div class="col-sm-12 col-valign-center" style="width: 100%;">
-                  <h4>-- FORM PLACEHOLDER --</h4>
+          <div class="col-md-7 padding-top-md">
+            <div class="content-container padding-bottom-sm">
+              <div class="flex-grid job-placeholder">
+                <div class="col-sm-12 col-valign-center" style="width: 100%;">
+                    <h4>-- JOB PLACEHOLDER --</h4>
+                </div>
+              </div>
+            </div>
+            <div class="content-container padding-bottom-sm">
+              <div class="flex-grid job-placeholder">
+                <div class="col-sm-12 col-valign-center" style="width: 100%;">
+                    <h4>-- JOB PLACEHOLDER --</h4>
+                </div>
+              </div>
+            </div>
+            <div class="content-container padding-bottom-sm">
+              <div class="flex-grid job-placeholder">
+                <div class="col-sm-12 col-valign-center" style="width: 100%;">
+                    <h4>-- JOB PLACEHOLDER --</h4>
+                </div>
               </div>
             </div>
           </div> <!-- .col -->

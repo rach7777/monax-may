@@ -15,7 +15,7 @@
               </p>
               <ul class="ul-round-icons">
                 {{ range .Site.Data.about.company.social_icon }}
-                  <li><a href="{{ .link }}"><i class='fa {{ .icon }}'></i></a></li>
+                  <a href="{{ .link }}"><li><i class='fa {{ .icon }}'></i></li></a>
                 {{ end }}
               </ul>
             </div> <!-- .content-container -->
