@@ -1,0 +1,96 @@
+[hero]
+    enable = true
+    title = "Information For Investors"
+    subtitle = "We have worked with many clients and we always like to hear."
+    img_bg = "/img/backgrounds/mountains-1.jpg"
+
+
+[featured]
+    enable = true
+    title = "Key Investors:"
+    logo_1 = "/img/logos/example-logo.png"
+    logo_2 = "/img/logos/example-logo.png"
+    logo_3 = "/img/logos/example-logo.png"
+
+
+[updates]
+    enable = true
+    title = "Important Company Updates"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+        # articles will be auto populated from posts
+        [[updates.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+        [[updates.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+        [[updates.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+        [[updates.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+        [[updates.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+        [[updates.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+
+[current]
+    enable = true
+    title = "Our Investors"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+    [[current.investor]]
+        title = "Example Investment Inc."
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+        logo = "/img/logos/example-gray-logo.png"
+        link = "#"
+        link_text = "Read more about this company"
+
+    [[current.investor]]
+        title = "Example Investment Inc."
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+        logo = "/img/logos/example-gray-logo.png"
+        link = "#"
+        link_text = "Read more about this company"
+
+    [[current.investor]]
+        title = "Example Investment Inc."
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+        logo = "/img/logos/example-gray-logo.png"
+        link = "#"
+        link_text = "Read more about this company"
+
+    [[current.investor]]
+        title = "Example Investment Inc."
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+        logo = "/img/logos/example-gray-logo.png"
+        link = "#"
+        link_text = "Read more about this company"
+
+
+[ico]
+    enable = true
+    title = "Read about our upcoming ICO"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    button_text = "Download whitepaper"
+    button_url = "#"
+
+
+[contact]
+    enable = true
+    title = "Investment Information"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+    [contact.contact]
+        title = "Contact us to discuss a partnership"
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us.<br><br>Please email <a href='mailto:jobs@monax.io'>investments@monax.io</a>."

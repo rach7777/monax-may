@@ -361,6 +361,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.icon-container.circle-icon {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    border: 2px solid #9ac05f;
+    margin-left: 12px;
+}
+
+.icon-container.article-icon {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    border: 2px solid #9ac05f;
+}
+
+
 /* ==============
   Shadows
 =============== */

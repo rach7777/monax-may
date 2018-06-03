@@ -1,0 +1,41 @@
+{{ if isset .Site.Data.investors "ico" }}
+{{ if .Site.Data.investors.ico.enable }}
+<section class="section-ico section-padding-lg background-dark">
+    <div class="container">
+
+      <div class="row flex-grid-md">
+
+        <div class="col-md-4 col-valign-center">
+
+          <div class="content-container padding-bottom-sm">
+            <div class="flex-grid form-placeholder-dark">
+              <div class="col-sm-12 col-valign-center" style="width: 100%;">
+                  <h4>-- IMG --</h4>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- .col -->
+
+        <div class="col-md-8 col-valign-center">
+
+          <div class="underline-sm range-left-md">
+              <h2>{{ .Site.Data.investors.ico.title }}</h2>
+          </div>
+
+          <p class="padding-bottom-md range-left-md">
+            {{ .Site.Data.investors.ico.subtitle | markdownify }}
+          </p>
+
+          <div class="btn-container range-left-md" style="">
+            <a href="{{.Site.Data.investors.ico.button_url}}" class="btn btn-primary btn-xl" role="button">{{ .Site.Data.investors.ico.button_text }}</a>
+          </div>
+
+        </div> <!-- .col -->
+
+      </div> <!-- .row -->
+
+    </div> <!-- .container -->
+</section>
+{{ end }}
+{{ end }}
