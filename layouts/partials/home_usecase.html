@@ -6,19 +6,19 @@
 
         {{ range .Site.Data.home.usecases.section }}
 
-          <div class="row flex-grid-md padding-bottom-md">
+          <div class="row flex-grid-sm padding-bottom-md">
 
-            <div class="col-md-3">
+            <div class="col-sm-3">
               <img class="img_left img-responsive img-center padding-top-sm" src="{{ .img_left }}" alt="">
             </div>
 
-            <div class="col-md-8">
+            <div class="col-sm-8">
 
               <div class="row">
-                <div class="title range-left-md">
+                <div class="title range-left-sm">
                     <h3>{{ .title }}</h3>
                 </div>
-                <p class="subtitle range-left-md padding-bottom-sm">
+                <p class="subtitle range-left-sm padding-bottom-sm">
                   {{ .subtitle | markdownify }}
                 </p>
               </div> <!-- .row -->

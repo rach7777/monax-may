@@ -1,0 +1,53 @@
+[about]
+    enable = true
+    title = "About Us"
+    subtitle = "Pellentesque habitant morbi tristique senectus."
+    footer_logo = "/img/Monax_logo_white.png"
+
+    [[about.social_icon]]
+        icon = "fa-github"
+        link = "#"
+        title = "Github"
+
+    [[about.social_icon]]
+        icon = "fa-facebook"
+        link = "#"
+        title = "Facebook"
+
+    [[about.social_icon]]
+        icon = "fa-twitter"
+        link = "#"
+        title = "Twitter"
+
+
+[address]
+    enable = true
+    title = "Contact Address"
+    line1 = "Monax Industries"
+    line2 = "Unit 3B"
+    line3 = "123 New Avenue"
+    line4 = "Washington DC"
+    line5 = "United States"
+
+[col_3]
+    enable = true
+    title = "Developers"
+    subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<br><a href='#'>Read our developer docs  &rsaquo;</a>"
+
+[col_4]
+    enable = true
+    title = "Press & Events"
+    subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<br>Please email <a href='mailto:press@monax.io'>press@monax.io</a>."
+
+[copyright]
+    enable = true
+    copyright_notice = "&copy; Monax Industries. All rights reserved."
+    enable_attribution = true
+
+    [[copyright.link]]
+    link_title = "Privacy Policy"
+    link_url = "#"
+
+    [[copyright.link]]
+    link_title = "Terms of Service"
+    link_url = "#"

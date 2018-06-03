@@ -1,7 +1,7 @@
 [hero]
     enable = true
     title = "Welcome to Monax"
-    subtitle = "We have worked with many clients and we always like to hear."
+    subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
     img_bg = "/img/backgrounds/mountains-1.jpg"
     img_right = "/img/carousel/template-homepage.png"
 
@@ -17,24 +17,24 @@
 [intro]
     enable = true
     title = "What is Monax?"
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
 
 [summary]
     enable = true
     title = "What can Monax do for you?"
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     img_left = "/img/carousel/template-homepage.png"
 
     [[summary.feature]]
       title = "Lorem Ipsum is simply dummy text"
       description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      icon = "fa-facebook"
+      icon = "fa-calendar"
 
     [[summary.feature]]
       title = "Lorem Ipsum is simply dummy text"
       description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      icon = "fa-facebook"
+      icon = "fa-book"
 
     [[summary.feature]]
       title = "Lorem Ipsum is simply dummy text"
@@ -180,36 +180,36 @@
 [screencasts]
     enable = true
     title = "How the platform works"
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
     [[screencasts.item]]
       title = "Screencast 1"
-      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+      subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       youtube_url = "w7Ft2ymGmfc"
 
     [[screencasts.item]]
       title = "Screencast 2"
-      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+      subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       youtube_url = "w7Ft2ymGmfc"
 
     [[screencasts.item]]
       title = "Screencast 3"
-      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+      subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       youtube_url = "w7Ft2ymGmfc"
 
     [[screencasts.item]]
       title = "Screencast 4"
-      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+      subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       youtube_url = "w7Ft2ymGmfc"
 
 [webinar]
     enable = true
     title = "Sign up for a webinar"
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
 [cta]
     enable = true
     title = "Get started on our platform"
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     button_text = "Get started"
     button_url = "#"

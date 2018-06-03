@@ -27,11 +27,11 @@
               <p class="padding-bottom-sm range-left-md">
                 {{ .Site.Data.about.company.partnerships.subtitle | markdownify }}
               </p>
-              <div class="row flex-grid-md">
+              <div class="row row-partnerships flex-grid-md" style="width:100%;">
                 {{ range $i, $p := .Site.Data.about.company.partnerships.logo }}
                   {{if eq $i 3}} <!-- 4th entry -->
                   </div> <!-- start new row -->
-                  <div class="row flex-grid-md">
+                  <div class="row row-partnerships flex-grid-md" style="width:100%;">
                     <div class="col-xs-4 padding-bottom-sm col-valign-center">
                       <a href="{{ .link }}" title="{{ .name }}">
                         <img class="img-responsive img-center" src="{{ .logo }}" alt="{{ .name }}">

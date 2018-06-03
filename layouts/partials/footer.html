@@ -1,85 +1,122 @@
-<footer id="footer">
+<footer id="footer" class="section-footer">
     <div class="container">
 
-        {{ if isset .Site.Params "about_us" }}
-        <div class="col-md-4 col-sm-6 range-left-md">
-            <h4>{{ i18n "aboutUs" }}</h4>
+      <div class="row">
 
-            {{ .Site.Params.about_us | markdownify }}
+        {{ if isset .Site.Data.footer "about" }}
+        {{ if .Site.Data.footer.about.enable }}
 
-            <hr class="hidden-md hidden-lg hidden-sm">
+        <div class="col-md-3 col-sm-6">
+          <div class="content-container padding-bottom-sm padding-top-xs">
+            <a href="{{ .Site.Params.baseurl }}" title="{{ .Site.Params.title }}">
+              <img id="footer-logo" class="img-responsive img-left-sm" src="{{ .Site.Data.footer.about.footer_logo }}" alt="{{ .Site.Params.title }}">
+            </a>
+          </div>
+          <!-- <div class="range-left-sm">
+            <h4>{{ .Site.Data.footer.about.title }}</h4>
+          </div> -->
+          <p class="range-left-sm">
+            {{ .Site.Data.footer.about.subtitle | markdownify }}
+          </p>
 
-        </div>
-        <!-- /.col-md-4 -->
+          <div class="ul-left-sm flex-grid-xs">
+            <ul class="ul-round-icons ul-footer-icons">
+              {{ range .Site.Data.footer.about.social_icon }}
+                <a href="{{ .link }}"><li><i class='fa {{ .icon }}'></i></li></a>
+              {{ end }}
+            </ul>
+          </div>
+
+          <hr class="hidden-md hidden-lg hidden-sm">
+        </div>  <!-- .col -->
+
+        {{ end }}
         {{ end }}
 
-        <div class="col-md-4 col-sm-6 range-left-md">
+        {{ if isset .Site.Data.footer "address" }}
+        {{ if .Site.Data.footer.address.enable }}
 
-            {{ if isset .Site.Params "recent_posts" }} {{ if .Site.Params.recent_posts.enable }}
-            <h4>Recent Resources</h4>
+        <div class="col-md-3 col-sm-6">
+          <div class="range-left-sm">
+            <h4>{{ .Site.Data.footer.address.title }}</h4>
+          </div>
+          <p class="range-left-sm">
+            {{ .Site.Data.footer.address.line1 }}<br>
+            {{ .Site.Data.footer.address.line2 }}<br>
+            {{ .Site.Data.footer.address.line3 }}<br>
+            {{ .Site.Data.footer.address.line4 }}<br>
+            {{ .Site.Data.footer.address.line5 }}<br>
+          </p>
+          <hr class="hidden-md hidden-lg hidden-sm">
+        </div>  <!-- .col -->
 
-            <div class="blog-entries">
-                {{ range first 3 (where .Site.Pages "Type" "blog") }}
-                <div class="item same-height-row clearfix">
-                    <div class="image same-height-always">
-                        <a href="{{ .Permalink }}">
-                          {{ if isset .Params "banner" }}
-                            <img src="{{ .Site.BaseURL}}{{ .Params.banner }}" class="img-responsive" alt="{{ .Title }}">
-                          {{ else }}
-                            <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-responsive" alt="{{ .Title }}">
-                          {{ end }}
-                        </a>
-                    </div>
-                    <div class="name same-height-always">
-                        <h5><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
-                    </div>
-                </div>
-                {{ end }}
-            </div>
-
-            <hr class="hidden-md hidden-lg">
-            {{ end }} {{ end }}
-
-        </div>
-        <!-- /.col-md-4 -->
-
-        {{ if isset .Site.Params "address" }}
-        <div class="col-md-4 col-sm-6 range-left-md">
-
-          <h4>{{ i18n "contactTitle" }}</h4>
-
-            {{ .Site.Params.address | markdownify }}
-
-            <hr class="hidden-md hidden-lg hidden-sm">
-
-        </div>
-        <!-- /.col-md-4 -->
+        {{ end }}
         {{ end }}
 
-    </div>
-    <!-- /.container -->
-</footer>
+        <div class="clearfix visible-sm-block"></div>
 
-<!-- /#footer -->
+        {{ if isset .Site.Data.footer "col_3" }}
+        {{ if .Site.Data.footer.col_3.enable }}
 
-<!-- *** FOOTER END *** -->
+        <div class="col-md-3 col-sm-6">
+          <div class="range-left-sm">
+            <h4>{{ .Site.Data.footer.col_3.title }}</h4>
+          </div>
+          <p class="range-left-sm">
+            {{ .Site.Data.footer.col_3.subtitle | markdownify }}
+          </p>
+          <hr class="hidden-md hidden-lg hidden-sm">
+        </div>  <!-- .col -->
+
+        {{ end }}
+        {{ end }}
+
+        {{ if isset .Site.Data.footer "col_4" }}
+        {{ if .Site.Data.footer.col_4.enable }}
+
+        <div class="col-md-3 col-sm-6">
+          <div class="range-left-sm">
+            <h4>{{ .Site.Data.footer.col_4.title }}</h4>
+          </div>
+          <p class="range-left-sm">
+            {{ .Site.Data.footer.col_4.subtitle | markdownify }}
+          </p>
+          <hr class="hidden-md hidden-lg hidden-sm">
+        </div>  <!-- .col -->
+
+        {{ end }}
+        {{ end }}
+
+      </div> <!-- .row -->
+    </div>  <!-- .container -->
+</footer> <!-- .footer -->
 
 <!-- *** COPYRIGHT ***
 _________________________________________________________ -->
 
+
+{{ if isset .Site.Data.footer "copyright" }}
+{{ if .Site.Data.footer.copyright.enable }}
+
 <div id="copyright">
     <div class="container">
         <div class="col-md-12">
-            {{ if isset .Site.Params "copyright" }}
-            <p class="pull-left">{{ .Site.Params.copyright | safeHTML }}</p>
-            {{ end }}
-            <p class="pull-right">
-              With thanks to <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
-              <!-- Not removing this link is part of the licence conditions of the template. Thanks for understanding :) -->
+            <p class="pull-left">
+              <span>{{ .Site.Data.footer.copyright.copyright_notice | markdownify }}</span>
+
+              {{ range .Site.Data.footer.copyright.link }}
+              <span>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{ .link_url }}">{{ .link_title }}</a></span>
+              {{ end }}
             </p>
+            {{ if .Site.Data.footer.copyright.enable_attribution }}
+              <p class="pull-right">
+                With thanks to <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+                <!-- Not removing this link is part of the licence conditions of the template. Thanks for understanding :) -->
+              </p>
+            {{ end }}
         </div>
     </div>
-</div>
-<!-- /#copyright -->
+</div> <!-- .copyright -->
 
-<!-- *** COPYRIGHT END *** -->
+{{ end }}
+{{ end }}

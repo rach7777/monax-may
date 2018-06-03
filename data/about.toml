@@ -1,7 +1,7 @@
 [hero]
     enable = true
     title = "Why Monax?"
-    subtitle = "We have worked with many clients and we always like to hear."
+    subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
     img_bg = "/img/backgrounds/mountains-1.jpg"
     img_right = "/img/carousel/template-homepage.png"
 
@@ -16,7 +16,7 @@
 [company]
   enable = true
   title = "Monax are at the forefront of blockchain technology"
-  subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+  subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
   [[company.social_icon]]
       icon = "fa-github"
@@ -36,7 +36,7 @@
   [company.partnerships]
       enable = true
       title = "Partnerships"
-      subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+      subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
       [[company.partnerships.logo]]
           name = "Example"
@@ -103,13 +103,13 @@
 [mission]
     enable = true
     title = "Here's our mission..."
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
 
 [team]
     enable = true
     title = "Meet the team"
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
     [[team.item]]
       name = "Team Member"
@@ -122,7 +122,7 @@
     [[team.item]]
       name = "Team Member"
       position = "Position"
-      img = "/img/team/team-al.jpeg"
+      img = "/img/team/team-chw.jpeg"
       twitter = "#"
       linkedin = "#"
       github = "#"
@@ -130,7 +130,7 @@
     [[team.item]]
       name = "Team Member"
       position = "Position"
-      img = "/img/team/team-al.jpeg"
+      img = "/img/team/team-csk.jpeg"
       twitter = "#"
       linkedin = "#"
       github = "#"
@@ -138,7 +138,7 @@
     [[team.item]]
       name = "Team Member"
       position = "Position"
-      img = "/img/team/team-al.jpeg"
+      img = "/img/team/team-dg.jpeg"
       twitter = "#"
       linkedin = "#"
       github = "#"
@@ -146,7 +146,7 @@
     [[team.item]]
       name = "Team Member"
       position = "Position"
-      img = "/img/team/team-al.jpeg"
+      img = "/img/team/team-jd.jpeg"
       twitter = "#"
       linkedin = "#"
       github = "#"
@@ -154,7 +154,7 @@
     [[team.item]]
       name = "Team Member"
       position = "Position"
-      img = "/img/team/team-al.jpeg"
+      img = "/img/team/team-jhs.jpeg"
       twitter = "#"
       linkedin = "#"
       github = "#"
@@ -162,7 +162,7 @@
     [[team.item]]
       name = "Team Member"
       position = "Position"
-      img = "/img/team/team-al.jpeg"
+      img = "/img/team/team-mr.jpeg"
       twitter = "#"
       linkedin = "#"
       github = "#"
@@ -170,7 +170,7 @@
     [[team.item]]
       name = "Team Member"
       position = "Position"
-      img = "/img/team/team-al.jpeg"
+      img = "/img/team/team-nk.jpeg"
       twitter = "#"
       linkedin = "#"
       github = "#"
@@ -178,7 +178,7 @@
     [[team.item]]
       name = "Team Member"
       position = "Position"
-      img = "/img/team/team-al.jpeg"
+      img = "/img/team/team-os.jpeg"
       twitter = "#"
       linkedin = "#"
       github = "#"
@@ -186,7 +186,7 @@
     [[team.item]]
       name = "Team Member"
       position = "Position"
-      img = "/img/team/team-al.jpeg"
+      img = "/img/team/team-pf.jpeg"
       twitter = "#"
       linkedin = "#"
       github = "#"
@@ -194,7 +194,7 @@
     [[team.item]]
       name = "Team Member"
       position = "Position"
-      img = "/img/team/team-al.jpeg"
+      img = "/img/team/team-rd.jpeg"
       twitter = "#"
       linkedin = "#"
       github = "#"
@@ -202,7 +202,47 @@
     [[team.item]]
       name = "Team Member"
       position = "Position"
-      img = "/img/team/team-al.jpeg"
+      img = "/img/team/team-sd.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-ss.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-sy.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-th.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-tj.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-yr.jpeg"
       twitter = "#"
       linkedin = "#"
       github = "#"
@@ -211,15 +251,15 @@
 [positions]
     enable = true
     title = "Positions available"
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
     [positions.contact]
         title = "Contact us if you're interested"
-        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us.<br><br>Please email <a href='mailto:jobs@monax.io'>jobs@monax.io</a> with your cv and portfolio."
+        subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Please email <a href='mailto:jobs@monax.io'>jobs@monax.io</a> with your cv and portfolio."
 
 [cta]
     enable = true
     title = "Get started on our platform"
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     button_text = "Get started"
     button_url = "#"

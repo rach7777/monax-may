@@ -1,7 +1,7 @@
 [hero]
     enable = true
     title = "Information For Investors"
-    subtitle = "We have worked with many clients and we always like to hear."
+    subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
     img_bg = "/img/backgrounds/mountains-1.jpg"
 
 
@@ -16,7 +16,7 @@
 [updates]
     enable = true
     title = "Important Company Updates"
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
         # articles will be auto populated from posts
         [[updates.article]]
@@ -47,7 +47,7 @@
 [current]
     enable = true
     title = "Our Investors"
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
     [[current.investor]]
         title = "Example Investment Inc."
@@ -81,7 +81,7 @@
 [ico]
     enable = true
     title = "Read about our upcoming ICO"
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     button_text = "Download whitepaper"
     button_url = "#"
 
@@ -89,8 +89,8 @@
 [contact]
     enable = true
     title = "Investment Information"
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
     [contact.contact]
         title = "Contact us to discuss a partnership"
-        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us.<br><br>Please email <a href='mailto:jobs@monax.io'>investments@monax.io</a>."
+        subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Please email <a href='mailto:jobs@monax.io'>investments@monax.io</a>."

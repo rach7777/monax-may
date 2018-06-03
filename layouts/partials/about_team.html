@@ -17,7 +17,7 @@
       <div class="row">
         {{ range .Site.Data.about.team.item }}
         <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6 padding-bottom-md">
-            <img class="img-responsive img-center" src="/img/team/team-al.jpeg" alt="">
+            <img class="img-responsive img-center" src="{{ .img }}" alt="">
           <div class="">
               <h5 style="margin-bottom:2px;">{{ .name }}</h5>
               <p>{{ .position }}</p>
