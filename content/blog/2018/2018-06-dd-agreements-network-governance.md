@@ -4,7 +4,7 @@
 date:      2018-06-01T00:00:00Z
 title:     "Skin in Game: Governance on the Agreements Network"
 author:    nina
-excerpt:   "Nina speaks in more depth about the governance mechanisms ensuring network health for the Agreements Network."
+excerpt:   "How does the Agreement Network ensure its health? Introducing a carefully designed forward-compatible environment of an open network, trusted validator nodes, voting, skin-in-game staking and token rewards."
 thumbnail: james-wainscoat-521741-unsplash-min.jpg
 categories:
   - announcements
