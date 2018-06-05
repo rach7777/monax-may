@@ -72,7 +72,7 @@ A concrete example of how we leverage the governance and voting mechanism is the
 
 Producers of legal products have another mechanism of ensuring compliance with Agreements Network standards: reputation. Since Producers have "skin in game" and are known (either explicitly or pseudonymously), another method for Producers to increase their value proposition and earnings in the Network is through maintaining high standards of product quality. Tester results and popularity of an Archetype may increase the value proposition of its creator, creating a virtuous cycle of useful products.
 
-The concept of testers which are first class citizens of the Agreements Network's smart contract protocol allows for other lawyers who are not the producer of a given archetype to signal to the network that an archetype is fit for its purpose by putting their 'skin in the game' via bonding against an archetype. In return for placing this bond, testers receive a portion of the fees that are paid when the archetype is used to create a new Active Agreement within the context of the Network.
+Testers are first class citizens of the Agreements Network's smart contract protocol. Testing involves review by lawyers other than the producer of the archetype to signal to the network that an archetype is fit for its purpose. Testers put their 'skin in the game' via bonding against that archetype. In return for placing this bond, testers receive a portion of the fees that are paid when the archetype is used to create a new Active Agreement within the Network.
 
 ## Long-term Governance and Change
 
