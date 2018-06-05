@@ -26,7 +26,7 @@ utm:
 
 Governance -- it's how we manage group activity and plan for a future full of change. In designing an open blockchain application, governance is a foundational issue that blurs the boundaries between tech, law and business. Effective self-governance in the [Agreements Network](https://agreements.network) (AN) is critical to its role as infrastructure on which modern legal products operate.
 
-Monax got its start in this industry in the summer of 2014 as an experiment in decentralized governance when we built `eris` -- a framework for decentralized organizations using blockchains and smart contract technology.
+Monax got its start in this industry in the summer of 2014 as an experiment in decentralized governance when we built `eris` -- a framework for decentralized organizations using blockchains and smart contract technology. Much of that code was incorporated into Hyperledger as [Hyperledger Burrow]( https://www.hyperledger.org/projects/hyperledger-burrow) in 2017. We've built and tested a strong foundation that will support transformative network governance models. 
 
 A resilient decentralized governance system requires sound design from multiple perspectives.
 
