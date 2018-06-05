@@ -1,7 +1,7 @@
 ---
 
 # fill in
-date:      2018-06-01T00:00:00Z
+date:      2018-06-05T00:00:00Z
 title:     "Skin in Game: Governance on the Agreements Network"
 author:    nina
 excerpt:   "How does the Agreement Network ensure its health? Introducing a carefully designed forward-compatible environment of an open network, trusted validator nodes, voting, skin-in-game staking and token rewards."
@@ -26,7 +26,7 @@ utm:
 
 Governance -- it's how we manage group activity and plan for a future full of change. In designing an open blockchain application, governance is a foundational issue that blurs the boundaries between tech, law and business. Effective self-governance in the [Agreements Network](https://agreements.network) (AN) is critical to its role as infrastructure on which modern legal products operate.
 
-Monax got its start in this industry in the summer of 2014 as an experiment in decentralized governance when we built `eris` -- a framework for decentralized organizations using blockchains and smart contract technology. Much of that code was incorporated into Hyperledger as [Hyperledger Burrow]( https://www.hyperledger.org/projects/hyperledger-burrow) in 2017. We've built and tested a strong foundation that will support transformative network governance models. 
+Monax got its start in this industry in the summer of 2014 as an experiment in decentralized governance when we built `eris` -- a framework for decentralized organizations using blockchains and smart contract technology. Much of that code was incorporated into Hyperledger as [Hyperledger Burrow]( https://www.hyperledger.org/projects/hyperledger-burrow) in 2017. We've built and tested a strong foundation that will support transformative network governance models.
 
 A resilient decentralized governance system requires sound design from multiple perspectives.
 
@@ -46,7 +46,7 @@ In the Agreements Network, the basic tools for managing day-to-day operation of 
 
 ## Token Mechanism
 
-The Agreements Network requires "skin in the game" from many of its user groups. This promotes self-interest and reward for good work within the Agreements Network. 
+The Agreements Network requires "skin in the game" from many of its user groups. This promotes self-interest and reward for good work within the Agreements Network.
 
 People who seek to make money using the Agreements Network must have a stake in the health of the ecosystem in order to earn. This means that folks who want to earn via the Network must acquire tokens and place them into a bond. A bond, in the context of the Agreements Network is essentially a protocol-controlled escrow account. This bond provides two functions to the network. First, it ensures that participants have "skin in the game" when they seek to make money within the context of the network. Second, it provides protection against spam in the Network.
 
@@ -58,7 +58,7 @@ Any user seeking to make money in the Network by building legal products needs t
 {{< image_blog "token_flow.png" >}}
 <br>
 
-## Day-to-day Operations 
+## Day-to-day Operations
 
 The day-to-day operational needs of the Agreements Network are performed by the Network Validators. Validators are known entities with proof of stake that operate Agreements Network blockchain nodes. Blockchain functionality supported by the Network Validators enables us to design liquidity, incentive, evidence and automation processes that execute inexpensively and scale rapidly. Tokens are the means by which data is  transferred and proved in blockchain networks. We can give tokens valuable properties and move them in network commerce to create and enforce incentives to acquire tokens, run validator nodes, maintain operations and encourage healthy content production and consumption.
 
