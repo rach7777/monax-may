@@ -76,7 +76,7 @@ The concept of testers which are first class citizens of the Agreements Network'
 
 ## Long-term Governance and Change
 
-The primary mechanism for managing Agreements Network priorities over time is voting. The voting mechanism is informed by traditional corporate governance structures, but reimagined for resilience in open, decentralized networks.  Voting power is a function of validator bonding tokens, i.e., skin in the game. Because the Agreements Network is designed and tooled with existing contract and regulatory structures ensures in mind, it encourages user compliance with expected protocols without overly prescribing or restricting user activities.
+The primary mechanism for managing Agreements Network priorities over time is voting. The voting mechanism is informed by traditional corporate governance structures, but reimagined for resilience in open, decentralized networks.  Voting power is a function of validator bonding tokens, i.e., skin in the game. Because the Agreements Network is designed and tooled with existing contract and regulatory structures in mind, it encourages user compliance with expected protocols without overly prescribing or restricting user activities.
 
 Get skin in the game. Find out more about the [Agreements Network](https://agreements.network).
 
