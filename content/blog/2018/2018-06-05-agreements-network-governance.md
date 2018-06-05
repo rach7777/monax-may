@@ -36,7 +36,7 @@ A resilient decentralized governance system requires sound design from multiple 
 - It must be fair, trustworthy and represent the interests of all stakeholders, a non-zero-sum model.
 - It should utilize network resources in order to enforce community cohesion, e.g., reputation and ratings.
 
-<img src="https://monax.io/images/2018/governance_of_the_AN.png" alt="drawing" style="width: 530px;"/>
+{{< image_blog "governance_of_the_AN.png" >}}
 
 The Agreements Network carefully combines an open network, trusted validator nodes, voting, skin-in-game staking and token rewards to produce a forward-compatible environment custom designed to promote growth of it's open ecosystem. The initial iteration of the governance structure is rooted in a commitment to integrity and simplicity, leveraging Monax (and our fellow co-founder's) experience operating decentralized governance systems along with a determination to operate resilient legal infrastructure for the modern, networked economy.
 
