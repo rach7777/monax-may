@@ -19,44 +19,65 @@
             <!--/.navbar-header -->
 
             <div class="navbar-collapse collapse" id="navigation">
-                <ul class="nav navbar-nav navbar-right">
-                  {{ range .Site.Menus.main }}
+
+              <!-- nav links - left -->
+              <ul class="nav navbar-nav navbar-left">
+                {{ range .Site.Menus.left }}
+                <li class="dropdown">
+                  {{ if .HasChildren }}
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }} <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    {{ range .Children }}
+                      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                    {{ end }}
+                  </ul>
+                  {{ else }}
+                  <a href="{{ .URL }}">{{ .Name }}</a>
+                  {{ end  }}
+                </li>
+                {{ end }}
+              </ul>
+
+              <!-- nav links - right -->
+              <ul class="nav navbar-nav navbar-right">
+                {{ range .Site.Menus.register }}
                   <li class="dropdown">
-                    {{ if .HasChildren }}
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }} <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      {{ range .Children }}
-                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-                      {{ end }}
-                    </ul>
-                    {{ else }}
-                    <a href="{{ .URL }}">{{ .Name }}</a>
-                    {{ end  }}
-                  </li>
-                  {{ end }}
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-
-            <div class="collapse clearfix" id="search">
-
-                <form class="navbar-form" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <span class="input-group-btn">
-
-                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
-
-                </span>
+                    <div class="nav-button-container">
+                      <a id="nav-register" href="#" class="btn btn-primary nav-button">{{ .Name }}</a>
                     </div>
-                </form>
-
+                  </li>
+                {{ end }}
+                {{ range .Site.Menus.login }}
+                  <li class="dropdown">
+                    <a id="nav-toggle-login" href="#" class="toggle-login">{{ .Name }}</a>
+                  </li>
+                {{ end }}
+              </ul>
             </div>
             <!--/.nav-collapse -->
 
         </div>
     </div>
     <!-- /#navbar -->
+
+    <div id="login-bar" class="nav-row">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="top-register flex-grid">
+              <span class="top-login-text col-valign-center">Login</span>
+              <form action="" class="top-form col-valign-center flex-grid">
+                <input type="text" placeholder="Email" name="email" class="top-email">
+                <input type="password" placeholder="Password" name="pass" class="top-password">
+                <button type="submit" value="Submit" class="btn top-submit icon-wrapper field-email">
+                  <i class="fa fa-angle-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 </div>
 

@@ -592,19 +592,6 @@ h1, h2, h3, h4, h5, h6 {
   Nav Bar
 =============== */
 
-#top {
-    background: #1e2830;
-    color: #eeeeee;
-    padding: 10px 0;
-}
-#top .social a {
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    line-height: 22px;
-    font-size: 10px;
-    margin: 0 4px;
-}
 .navbar-brand>img {
     height: 46px;
     padding-top: 8px;
@@ -614,6 +601,9 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 .navbar ul.nav > li > a:hover {
+    border-top: solid 5px #fff;
+}
+.navbar ul.nav.navbar-left > li > a:hover {
     border-top: solid 5px #96B85D;
 }
 .navbar-default .navbar-nav > li > a:hover,
@@ -621,6 +611,86 @@ h1, h2, h3, h4, h5, h6 {
     color: #555555;
     background-color: inherit;
 }
+.navbar-affixed-top.affix {
+    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+}
+.navbar .nav-button-container {
+    padding: 21px 0 16px;
+}
+.navbar .nav-button {
+  background-color: #96B85D;
+  border: none;
+}
+.navbar .nav-button:hover,
+.navbar .nav-button:focus {
+  background-color: #799844;
+}
+
+#login-bar {
+    background: #1e2830;
+    color: #eee;
+    padding: 14px 0;
+    display: none;
+}
+#login-bar .social a {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    line-height: 22px;
+    font-size: 10px;
+    margin: 0 4px;
+}
+#login-bar .top-login-text {
+    margin-right: 10px;
+    font-size: 14px !important;
+    color: #ccc;
+}
+#login-bar .top-register {
+    float: right;
+}
+#login-bar .top-register input {
+    vertical-align: middle;
+    border: none;
+    padding: 6px 10px;
+    font-size: 14px;
+    color: #1f2931;
+    outline: none;
+    line-height: 1.4;
+    border-radius: 2px;
+    height: 32px;
+    background-color: #eee;
+    margin-right: 6px;
+    transition: 0.3s all;
+}
+#login-bar .top-register input:focus {
+    background-color: #fff;
+}
+#login-bar .top-register input::placeholder {
+    color: #333;
+}
+#login-bar .top-register input:focus::placeholder {
+    color: #fff;
+}
+#login-bar .top-register button {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+    border-radius: 2px;
+    background-color: #484848;
+    color: #ccc;
+    border: none;
+    margin-left: 1px;
+}
+#login-bar .top-register button:hover,
+#login-bar .top-register button:focus {
+    background-color: #656565;
+    color: #f9f9f9;
+}
+
 
 
 

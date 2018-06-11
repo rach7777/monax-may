@@ -17,36 +17,43 @@ paginate = 10
 
 # Main menu
 
-# [[menu.main]]
+# [[menu.left]]
 #     name = "Home"
 #     url  = "/"
 #     weight = 1
 
-[[menu.main]]
+[[menu.left]]
     name = "Why Monax?"
     url  = "/about-us/"
     weight = 2
 
-[[menu.main]]
+[[menu.left]]
     name = "Resources"
     identifier = "faq"
     url  = "/resources/"
     weight = 3
 
-[[menu.main]]
-    name = "Investors"
+[[menu.left]]
+    name = "Invest"
     url  = "/investors/"
     weight = 4
 
-[[menu.main]]
-    name = "Press"
+[[menu.left]]
+    name = "Smart Agreements"
     url  = "/press/"
-    weight = 5
+    weight = 1
 
-[[menu.main]]
+[[menu.register]]
+    name = "Get Started"
+    url  = "#"
+    weight = 1
+
+[[menu.login]]
     name = "Login"
     url  = "#"
-    weight = 6
+    weight = 7
+
+
 
 # Top bar social links menu
 
@@ -127,13 +134,8 @@ paginate = 10
 
 # Enable or disable top bar with social icons
 [params.topbar]
-    enable = true
-    text = """
-
-    <p class="hidden-sm hidden-xs"></p>
-    <p class="hidden-md hidden-lg"></p>
-
-      """
+    enable = false
+    text = ""
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
