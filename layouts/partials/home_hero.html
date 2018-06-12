@@ -14,6 +14,13 @@
                   <p class="lead range-left-md">
                     {{ .Site.Data.home.hero.subtitle | markdownify }}
                   </p>
+
+                  <form action="" class="col-valign-center flex-grid">
+                    <input type="text" placeholder="Email" name="email" class="field-email">
+                    <button type="submit" value="Submit" class="btn field-submit">
+                      <span>Try For Free</span>
+                    </button>
+                  </form>
               </div>
               <div class="col-md-7">
                   <img class="img-responsive" src="{{ .Site.Data.home.hero.img_right }}" alt="">

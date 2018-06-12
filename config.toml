@@ -17,34 +17,39 @@ paginate = 10
 
 # Main menu
 
-# [[menu.left]]
-#     name = "Home"
-#     url  = "/"
-#     weight = 1
 
 [[menu.left]]
-    name = "Why Monax?"
-    url  = "/about-us/"
+    name = "Features"
+    url  = "#"
     weight = 2
 
 [[menu.left]]
-    name = "Resources"
-    identifier = "faq"
-    url  = "/resources/"
+    name = "Use Cases"
+    url  = "#"
     weight = 3
 
 [[menu.left]]
-    name = "Invest"
-    url  = "/investors/"
+    name = "Resources"
+    url  = "/resources/"
     weight = 4
 
 [[menu.left]]
-    name = "Smart Agreements"
-    url  = "/press/"
-    weight = 1
+    name = "Company"
+    url  = "/about-us/"
+    weight = 5
+
+# [[menu.left]]
+#     name = "*Invest"
+#     url  = "/investors/"
+#     weight = 6
+#
+# [[menu.left]]
+#     name = "*Press"
+#     url  = "/press/"
+#     weight = 7
 
 [[menu.register]]
-    name = "Get Started"
+    name = "Try For Free"
     url  = "#"
     weight = 1
 
@@ -95,7 +100,7 @@ paginate = 10
     style = "green"
 
     # Import fonts
-    googlefonts = ["Montserrat", "Source Code Pro"]
+    googlefonts = ["Montserrat:200,300,400,600", "Source Code Pro"]
     fontbody = 'Montserrat'
     fontheadings = 'Montserrat'
     fontcode = 'Source Code Pro'

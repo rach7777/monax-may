@@ -1,6 +1,6 @@
 {{ if isset .Site.Data.home "screencasts" }}
 {{ if .Site.Data.home.screencasts.enable }}
-<section class="section-screencasts section-padding-lg background-dark">
+<section class="section-screencasts section-padding-xl">
     <div class="container">
 
       <div class="row">
@@ -8,27 +8,76 @@
           <div class="underline-sm">
               <h2>{{ .Site.Data.home.screencasts.title }}</h2>
           </div>
-          <p class="padding-bottom-md">
+          <p class="lead padding-bottom-sm">
             {{ .Site.Data.home.screencasts.subtitle | markdownify }}
           </p>
         </div> <!-- .col -->
       </div> <!-- .row -->
 
-      <div class="row">
-        {{ range .Site.Data.home.screencasts.item }}
-        <div class="col-md-3 col-sm-6">
-          <div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
-            <iframe src="//www.youtube.com/embed/{{ .youtube_url }}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
-          </div>
-          <div class="">
-              <h5>{{ .title }}</h5>
-          </div>
-          <!-- <p class="padding-bottom-md">
-            {{ .subtitle | markdownify }}
-          </p> -->
-        </div> <!-- .col -->
+      <div class="row padding-bottom-lg">
+        {{ range first 1 .Site.Data.home.screencasts.item }}
+
+          <div class="col-md-7">
+            <div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+              <iframe src="//www.youtube.com/embed/{{ .youtube_url }}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+            </div>
+          </div> <!-- .col -->
+          <div class="col-md-5">
+            <div class="underline-sm range-left-md">
+                <h3>{{ .title }}</h3>
+            </div>
+            <p class="p2 padding-bottom-sm range-left-md">
+              {{ .subtitle | markdownify }}
+            </p>
+            <div class="range-left-md">
+              <h6>More like this:</h6>
+            </div>
+            <ul class="ul-no-list">
+              <li><a href="#">Read our explainers</a></li>
+              <li><a href="#">Monax blog posts and news</a></li>
+              <li><a href="#">Frequently asked questions</a></li>
+              <li><a href="#">More resources</a></li>
+            </ul>
+          </div> <!-- .col -->
+
         {{ end }}
       </div> <!-- .row -->
+
+      {{ if isset .Site.Data.home "webinar" }}
+      {{ if .Site.Data.home.webinar.enable }}
+
+      <div class="row">
+        <div class="col-md-5">
+          <div class="underline-sm range-left-md">
+              <h3>{{ .Site.Data.home.webinar.title }}</h3>
+          </div>
+          <p class="p2 padding-bottom-sm range-left-md">
+            {{ .Site.Data.home.webinar.subtitle | markdownify }}
+          </p>
+          <div class="range-left-md">
+            <h6>Upcoming webinars:</h6>
+          </div>
+          <ul class="ul-no-list">
+            <li><a href="#">Friday 14th June - How to X without Y</a></li>
+            <li><a href="#">Monday 24th June - How to X without Y</a></li>
+            <li><a href="#">Thursday 27th June - How to X without Y</a></li>
+          </ul>
+        </div> <!-- .col -->
+        <div class="col-md-7">
+          <form action="" class="form">
+            <input type="text" placeholder="Email" name="email" class="field-email">
+            <input type="text" placeholder="First Name" name="fname" class="input-half field-fname">
+            <input type="text" placeholder="Last Name" name="lname" class="input-half field-lname">
+            <input type="text" placeholder="Company Name" name="company" class="field-company">
+            <button type="submit" value="Submit" class="btn btn-xl field-submit">
+              <span>Join the next webinar</span>
+            </button>
+          </form>
+        </div> <!-- .col -->
+      </div> <!-- .row -->
+
+      {{ end }}
+      {{ end }}
 
     </div> <!-- .container -->
 </section>
