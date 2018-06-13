@@ -20,7 +20,7 @@ paginate = 10
 
 [[menu.left]]
     name = "Features"
-    url  = "#"
+    url  = "/features/"
     weight = 2
 
 [[menu.left]]
@@ -38,15 +38,15 @@ paginate = 10
     url  = "/about-us/"
     weight = 5
 
-# [[menu.left]]
-#     name = "*Invest"
-#     url  = "/investors/"
-#     weight = 6
-#
-# [[menu.left]]
-#     name = "*Press"
-#     url  = "/press/"
-#     weight = 7
+[[menu.left]]
+    name = "*Invest"
+    url  = "/investors/"
+    weight = 6
+
+[[menu.left]]
+    name = "*Press"
+    url  = "/press/"
+    weight = 7
 
 [[menu.register]]
     name = "Try For Free"

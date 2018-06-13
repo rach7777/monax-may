@@ -8,6 +8,7 @@ CORPORATE COLORS
 MONAX GREEN:         #96B85D
 GREN HOVER:          #799844
 COLOR BG:            #414b84
+GREY BG:             #e0e0e0
 WHITE:               #FFFFFF
 LIGHT GREY:          #8E8E8E
 DARK GREY:           #484748
@@ -661,6 +662,32 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #fff;
   border: none;
 }
+.background-grey {
+    background-color: #e0e0e0;
+}
+/* .background-grey h1,
+.background-grey h2,
+.background-grey h3,
+.background-grey h4,
+.background-grey h5,
+.background-grey h6 {
+    color: #fff;
+    font-weight: 400;
+}
+.background-grey p,
+.background-grey ul {
+    color: #ccc;
+}
+.background-grey .btn {
+  background-color: #96B85D;
+  color: #fff;
+  border: none;
+}
+.background-grey .btn:hover {
+  background-color: #4b905a;
+  color: #fff;
+  border: none;
+} */
 .background-color {
     background-color: #414b84;
     background: rgb(33,80,128);
@@ -689,14 +716,14 @@ p, h1, h2, h3, h4, h5, h6 {
   border: none;
 }
 
-.background-color .underline-full {
+/* .background-color .underline-full {
   border-color: #fff;
 }
 .background-color .underline-sm h1:after,
 .background-color .underline-sm h2:after,
 .background-color .underline-sm h3:after {
   background-color: #fff;
-}
+} */
 
 
 /* ==============

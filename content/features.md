@@ -1,8 +1,8 @@
 +++
 type = "page"
-layout = "about-us"
+layout = "features"
 date = "2018-05-31T13:42:12+01:00"
-title = "MONAX | About Us"
+title = "MONAX | Features"
 categories = []
 tags = []
 

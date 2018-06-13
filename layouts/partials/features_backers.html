@@ -1,0 +1,46 @@
+{{ if isset .Site.Data.features "backers" }}
+{{ if .Site.Data.features.backers.enable }}
+<section class="section-backers section-shadow-xl section-padding-lg">
+    <div class="container">
+
+      <div class="row padding-bottom-sm">
+        <div class="col-md-5">
+
+          <div class="underline-sm range-left-md">
+              <h3>{{ .Site.Data.features.backers.title }}</h3>
+          </div>
+          <!-- <p class="range-left-md padding-bottom-sm">
+            {{ .Site.Data.features.backers.subtitle | markdownify }}
+          </p> -->
+
+        </div> <!-- .col -->
+      </div> <!-- .row -->
+
+      <div class="row flex-grid-sm padding-bottom-lg">
+        {{ range .Site.Data.features.backers.investor }}
+
+        <div class="col-md-2 col-sm-6 col-valign-center">
+          <a href="{{ .link }}" title="{{ .name }}">
+            <img class="img-responsive img-center" src="{{ .logo }}" alt="{{ .name }}">
+          </a>
+        </div><!-- .col -->
+
+        <div class="col-md-4 col-sm-6 col-valign-center">
+          <div class="range-left-sm">
+              <h6>{{ .title }}</h6>
+          </div>
+          <p class="range-left-sm">
+            {{ .subtitle | markdownify }}
+            <br>
+            <a href="{{ .link_url }}">{{ .link_text }} &rsaquo;</a>
+          </p>
+        </div> <!-- .col -->
+
+        {{ end }}
+      </div> <!-- .row -->
+
+
+    </div> <!-- .container -->
+</section>
+{{ end }}
+{{ end }}

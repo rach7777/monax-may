@@ -1,0 +1,265 @@
+[hero]
+    enable = true
+    title = "Why Monax?"
+    subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+    img_bg = "/img/backgrounds/mountains-1.jpg"
+    img_right = "/img/carousel/template-homepage.png"
+
+
+[featured]
+    enable = true
+    title = "Featured In:"
+    logo_1 = "/img/logos/example-logo.png"
+    logo_2 = "/img/logos/example-logo.png"
+    logo_3 = "/img/logos/example-logo.png"
+
+[company]
+  enable = true
+  title = "Monax are at the forefront of blockchain technology"
+  subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+  [[company.social_icon]]
+      icon = "fa-github"
+      link = "#"
+      title = "Github"
+
+  [[company.social_icon]]
+      icon = "fa-facebook"
+      link = "#"
+      title = "Facebook"
+
+  [[company.social_icon]]
+      icon = "fa-twitter"
+      link = "#"
+      title = "Twitter"
+
+  [company.partnerships]
+      enable = true
+      title = "Partnerships"
+      subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+      [[company.partnerships.logo]]
+          name = "Example"
+          logo = "/img/logos/example-gray-logo.png"
+          link = "#"
+
+      [[company.partnerships.logo]]
+          name = "Example"
+          logo = "/img/logos/example-gray-logo.png"
+          link = "#"
+
+      [[company.partnerships.logo]]
+          name = "Example"
+          logo = "/img/logos/example-gray-logo.png"
+          link = "#"
+
+      [[company.partnerships.logo]]
+          name = "Example"
+          logo = "/img/logos/example-gray-logo.png"
+          link = "#"
+
+      [[company.partnerships.logo]]
+          name = "Example"
+          logo = "/img/logos/example-gray-logo.png"
+          link = "#"
+
+      [[company.partnerships.logo]]
+          name = "Example"
+          logo = "/img/logos/example-gray-logo.png"
+          link = "#"
+
+
+  [company.history]
+
+      [[company.history.item]]
+          date = "Jan 2018"
+          title = "Web Platform is born"
+          highlight = "Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis."
+          bullets = [
+           "Exercitationem enim dolores sunt praesentium dolorum praesentium",
+           "Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo"
+          ]
+
+      [[company.history.item]]
+          date = "Jul 2017"
+          title = "Burrow is born"
+          highlight = "Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis."
+          bullets = [
+           "Rerum sit libero possimus amet excepturi",
+           "Exercitationem enim dolores sunt praesentium dolorum praesentium",
+           "Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo"
+          ]
+
+      [[company.history.item]]
+          date = "Nov 2017"
+          title = "Monax is born"
+          highlight = "Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis."
+          bullets = [
+           "Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo"
+          ]
+
+
+
+[mission]
+    enable = true
+    title = "Here's our mission..."
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+
+[team]
+    enable = true
+    title = "Meet the team"
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-al.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-chw.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-csk.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-dg.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-jd.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-jhs.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-mr.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-nk.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-os.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-pf.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-rd.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-sd.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-ss.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-sy.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-th.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-tj.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+    [[team.item]]
+      name = "Team Member"
+      position = "Position"
+      img = "/img/team/team-yr.jpeg"
+      twitter = "#"
+      linkedin = "#"
+      github = "#"
+
+
+[positions]
+    enable = true
+    title = "Positions available"
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+    [positions.contact]
+        title = "Contact us if you're interested"
+        subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Please email <a href='mailto:jobs@monax.io'>jobs@monax.io</a> with your cv and portfolio."
+
+[cta]
+    enable = true
+    title = "Get started on our platform"
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    button_text = "Get started"
+    button_url = "#"
