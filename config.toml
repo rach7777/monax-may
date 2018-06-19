@@ -34,24 +34,28 @@ paginate = 10
       Name = "Fleet leasing"
       parent = "usecases"
       URL = "/use-cases/fleet-leasing/"
+      Post = "Latest thinking and classic articles on sales and marketing, product management, startups and more"
       Weight = 1
 
     [[menu.left]]
       Name = "Corporate Governance"
       parent = "usecases"
       URL = "/use-cases/corporate-governance/"
+      Post = "Latest thinking and classic articles on sales and marketing, product management, startups and more"
       Weight = 2
 
     [[menu.left]]
       Name = "Content Creators"
       parent = "usecases"
       URL = "/use-cases/content-creators/"
+      Post = "Latest thinking and classic articles on sales and marketing, product management, startups and more"
       Weight = 3
 
     [[menu.left]]
       Name = "Lawyers"
       parent = "usecases"
       URL = "/use-cases/lawyers/"
+      Post = "Latest thinking and classic articles on sales and marketing, product management, startups and more"
       Weight = 4
 
 [[menu.left]]
@@ -65,30 +69,35 @@ paginate = 10
       Name = "Blog"
       parent = "resources"
       URL = "/resources/blog/"
+      Post = "Latest thinking and classic articles on sales and marketing, product management, startups and more"
       Weight = 1
 
     [[menu.left]]
       Name = "Case Studies"
       parent = "resources"
       URL = "/resources/case-studies/"
+      Post = "Latest thinking and classic articles on sales and marketing, product management, startups and more"
       Weight = 2
 
     [[menu.left]]
       Name = "Explainers"
       parent = "resources"
       URL = "/resources/explainers/"
+      Post = "Latest thinking and classic articles on sales and marketing, product management, startups and more"
       Weight = 3
 
     [[menu.left]]
       Name = "Company News"
       parent = "resources"
       URL = "/resources/news/"
+      Post = "Latest thinking and classic articles on sales and marketing, product management, startups and more"
       Weight = 4
 
     [[menu.left]]
       Name = "Webinars"
       parent = "resources"
       URL = "/resources/webinars/"
+      Post = "Latest thinking and classic articles on sales and marketing, product management, startups and more"
       Weight = 5
 
 [[menu.left]]
@@ -194,7 +203,8 @@ paginate = 10
       """
 
 [Permalinks]
-    blog = "/archive/:year/:month/:day/:filename/"
+    blog = "/resources/blog/:year/:month/:day/:filename/"
+    usecases = "/resources/use-cases/:title"
 
 # Enable or disable top bar with social icons
 [params.topbar]

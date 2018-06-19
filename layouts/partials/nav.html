@@ -27,9 +27,31 @@
                   {{ if .HasChildren }}
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }} <span class="caret"></span></a>
                   <ul class="dropdown-menu">
+                    <!-- <div class="arrow-up">▲</div> -->
+                    <div class="dropdown-content visible-md-block visible-lg-block">
+                      <div class="row">
+                        {{ range .Children }}
+                        <div class="col-md-6 hover-dip-opacity">
+                            <a href="{{ .URL }}">
+                              <div class="content-container">
+                                <div class="range-left">
+                                    <h4>{{ .Name }}</h4>
+                                </div>
+                                <p class="range-left">
+                                  {{ .Post }}
+                                </p>
+                              </div>
+                            </a>
+                        </div>
+                        {{ end }}
+                      </div>
+                    </div>
                     {{ range .Children }}
-                      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                    <li class="visible-xs-block visible-sm-block">
+                      <a href="{{ .URL }}">{{ .Name }}</a>
+                    </li>
                     {{ end }}
+
                   </ul>
                   {{ else }}
                   <a href="{{ .URL }}">{{ .Name }}</a>
@@ -80,5 +102,8 @@
     </div>
 
 </div>
+
+<div id="dropdown-overlay"></div> <!-- overlay on dropdown -->
+
 
 <!-- *** NAVBAR END ***-->
