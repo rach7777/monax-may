@@ -1,6 +1,6 @@
 [top]
     enable = true
-    title = "Legal agreements for the many"
+    title = "Explainers"
     subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
 
@@ -19,52 +19,35 @@
       description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
       icon = "fa-facebook"
 
+[articles]
+    enable = true
+    title = "Important Company articles"
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
-[audiences]
-  enable = true
+        # articles will be auto populated from posts
+        [[articles.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
 
-  [[audiences.section]]
-    category = "fleet-leasing"
-    title = "For Fleet Leasing"
-    subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
-    img = "/img/assets/illustrations/user-flat-example-01.jpg"
+        [[articles.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
 
-    [[audiences.section.link]]
-      link_title = "Read this usecase"
-      link_url = "#"
+        [[articles.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
 
+        [[articles.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
 
-  [[audiences.section]]
-    category = "corporate-governance"
-    title = "For Corporate Governance"
-    subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
-    img = "/img/assets/illustrations/user-flat-example-01.jpg"
+        [[articles.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
 
-    [[audiences.section.link]]
-      link_title = "Read this usecase"
-      link_url = "#"
-
-
-  [[audiences.section]]
-    category = "content-creators"
-    title = "For Content Creators"
-    subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
-    img = "/img/assets/illustrations/user-flat-example-01.jpg"
-
-    [[audiences.section.link]]
-      link_title = "Read this usecase"
-      link_url = "#"
-
-
-  [[audiences.section]]
-    category = "lawyers"
-    title = "For Lawyers"
-    subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
-    img = "/img/assets/illustrations/user-flat-example-01.jpg"
-
-    [[audiences.section.link]]
-      link_title = "Read this usecase"
-      link_url = "#"
+        [[articles.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
 
 
 [backers]
@@ -85,7 +68,6 @@
         logo = "/img/logos/example-gray-logo.png"
         link = "#"
         link_text = "Read case study (or testimonial or something)"
-
 
 [cta] # global
     enable = true

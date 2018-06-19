@@ -30,23 +30,55 @@ paginate = 10
 
 [[menu.left]]
     name = "Resources"
-    url  = "/resources/"
+    identifier = "resources"
+    url  = "#"
     weight = 4
+
+    # sub menu items
+    [[menu.left]]
+      Name = "Blog"
+      parent = "resources"
+      URL = "/resources/blog/"
+      Weight = 1
+
+    [[menu.left]]
+      Name = "Case Studies"
+      parent = "resources"
+      URL = "/resources/case-studies/"
+      Weight = 2
+
+    [[menu.left]]
+      Name = "Explainers"
+      parent = "resources"
+      URL = "/resources/explainers/"
+      Weight = 3
+
+    [[menu.left]]
+      Name = "Company Updates"
+      parent = "resources"
+      URL = "/resources/news/"
+      Weight = 4
+
+    [[menu.left]]
+      Name = "Webinars"
+      parent = "resources"
+      URL = "/resources/webinars/"
+      Weight = 5
 
 [[menu.left]]
     name = "Company"
     url  = "/company/"
     weight = 5
 
-[[menu.left]]
-    name = "*Invest"
-    url  = "/investors/"
-    weight = 6
-
-[[menu.left]]
-    name = "*Press"
-    url  = "/press/"
-    weight = 7
+# [[menu.left]]
+#     name = "*Invest"
+#     url  = "/investors/"
+#     weight = 6
+#
+# [[menu.left]]
+#     name = "*Press"
+#     url  = "/press/"
+#     weight = 7
 
 [[menu.register]]
     name = "Try For Free"
@@ -57,6 +89,7 @@ paginate = 10
     name = "Login"
     url  = "#"
     weight = 7
+
 
 
 
@@ -88,7 +121,7 @@ paginate = 10
     pre = "<i class='fa fa-2x fa-envelope'></i>"
 
 [params]
-    viewMorePostLink = "/blog/"
+    viewMorePostLink = "/archive/"
     author = "Monax"
     defaultKeywords = ["monax", "agreements network"]
     defaultDescription = "Monax"
@@ -135,7 +168,7 @@ paginate = 10
       """
 
 [Permalinks]
-    blog = "/blog/:year/:month/:day/:filename/"
+    blog = "/archive/:year/:month/:day/:filename/"
 
 # Enable or disable top bar with social icons
 [params.topbar]

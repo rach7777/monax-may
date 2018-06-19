@@ -15,23 +15,15 @@
 
         </header>
 
-        {{ partial "resources/hero.html" . }}
+        {{ partial "resources/blog/top.html" . }}
 
-        {{ partial "resources/quicklinks.html" . }}
+        {{ partial "resources/blog/articles.html" . }}
 
-        {{ partial "resources/screencasts.html" . }}
-
-        {{ partial "resources/webinar.html" . }}
-
-        {{ partial "resources/explainers.html" . }}
-
-        {{ partial "resources/faq.html" . }}
-
-        {{ partial "resources/developers.html" . }}
+        {{ partial "resources/blog/backers.html" . }}
 
         <!-- global section -->
-        {{ if isset .Site.Data.resources "cta" }}
-          {{ if .Site.Data.resources.cta.enable }}
+        {{ if isset .Site.Data.blog "cta" }}
+          {{ if .Site.Data.blog.cta.enable }}
             {{ partial "_global/cta.html" . }}
           {{ end }}
         {{ end }}

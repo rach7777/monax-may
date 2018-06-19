@@ -15,19 +15,24 @@
 
         </header>
 
-        {{ partial "company_hero.html" . }}
+        {{ partial "company/hero.html" . }}
 
-        {{ partial "company_featured.html" . }}
+        {{ partial "company/featured.html" . }}
 
-        {{ partial "company_about.html" . }}
+        {{ partial "company/about.html" . }}
 
-        {{ partial "company_mission.html" . }}
+        {{ partial "company/mission.html" . }}
 
-        {{ partial "company_team.html" . }}
+        {{ partial "company/team.html" . }}
 
-        {{ partial "company_positions.html" . }}
+        {{ partial "company/positions.html" . }}
 
-        {{ partial "company_cta.html" . }}
+        <!-- global section -->
+        {{ if isset .Site.Data.company "cta" }}
+          {{ if .Site.Data.company.cta.enable }}
+            {{ partial "_global/cta.html" . }}
+          {{ end }}
+        {{ end }}
 
         {{ partial "footer.html" . }}
 

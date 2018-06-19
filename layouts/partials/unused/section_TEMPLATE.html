@@ -1,0 +1,25 @@
+{{ if isset .Site.Data.home "screencasts" }}
+{{ if .Site.Data.home.screencasts.enable }}
+<section class="section-screencasts section-padding-lg section-shadow-xl">
+    <div class="container">
+
+      <div class="row flex-grid-md">
+
+        <div class="col-md-12">
+
+          <div class="underline-sm">
+              <h2>{{ .Site.Data.home.screencasts.title }}</h2>
+          </div>
+
+          <p class="padding-bottom-md">
+            {{ .Site.Data.home.screencasts.subtitle | markdownify }}
+          </p>
+
+        </div> <!-- .col -->
+
+      </div> <!-- .row -->
+
+    </div> <!-- .container -->
+</section>
+{{ end }}
+{{ end }}

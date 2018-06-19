@@ -15,17 +15,24 @@
 
         </header>
 
-        {{ partial "investors_hero.html" . }}
+        {{ partial "investors/hero.html" . }}
 
-        {{ partial "investors_featured.html" . }}
+        {{ partial "investors/featured.html" . }}
 
-        {{ partial "investors_updates.html" . }}
+        {{ partial "investors/updates.html" . }}
 
-        {{ partial "investors_current.html" . }}
+        {{ partial "investors/current.html" . }}
 
-        {{ partial "investors_ico.html" . }}
+        {{ partial "investors/ico.html" . }}
 
-        {{ partial "investors_contact.html" . }}
+        {{ partial "investors/contact.html" . }}
+
+        <!-- global section -->
+        {{ if isset .Site.Data.investors "cta" }}
+          {{ if .Site.Data.investors.cta.enable }}
+            {{ partial "_global/cta.html" . }}
+          {{ end }}
+        {{ end }}
 
         {{ partial "footer.html" . }}
 

@@ -1,5 +1,3 @@
-{{ if isset .Site.Data.features "cta" }}
-{{ if .Site.Data.features.cta.enable }}
 <section class="section-cta section-padding-xl background-dark">
     <div class="container">
 
@@ -8,11 +6,11 @@
         <div class="col-md-12">
 
           <div class="underline-sm">
-              <h2>{{ .Site.Data.features.cta.title }}</h2>
+              <h2>{{ .Site.Data.global.sections.cta.title }}</h2>
           </div>
 
           <!-- <p class="padding-bottom-md">
-            {{ .Site.Data.features.cta.subtitle | markdownify }}
+            {{ .Site.Data.global.sections.cta.subtitle | markdownify }}
           </p> -->
           <div class="form-container padding-bottom-md">
             <div class="onboarding__form onboarding-information form--details">
@@ -40,7 +38,7 @@
   											<option>Publisher</option>
   											<option>Real Estate and Construction</option>
   											<option>Recruiting</option>
-  											<option>Retail, Fashion, Office and features</option>
+  											<option>Retail, Fashion, Office and global</option>
   											<option>Sports</option>
   											<option>Support Services</option>
   											<option>Technology</option>
@@ -60,8 +58,8 @@
             </div>
 
           <div class="btn-container" style="">
-            <a href="{{.Site.Data.features.cta.button_url}}" class="btn btn-primary btn-xl " role="button">{{ .Site.Data.features.cta.button_text }}</a>
-            <a href="{{.Site.Data.features.cta.button_url}}" class="btn btn-primary btn-xl " role="button">Request a demo</a>
+            <a href="{{.Site.Data.global.sections.cta.button_url}}" class="btn btn-primary btn-xl " role="button">{{ .Site.Data.global.sections.cta.button_text }}</a>
+            <a href="{{.Site.Data.global.sections.cta.button_url}}" class="btn btn-primary btn-xl " role="button">Request a demo</a>
           </div>
 
         </div> <!-- .col -->
@@ -70,58 +68,3 @@
 
     </div> <!-- .container -->
 </section>
-<!--
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-  $('#userInfoForm').on('submit', function(e) {
-     var jobTitle = $('#jobTitle').text();
-     var companyName = $('#companyName').text();
-     var userIndustry = $('#userIndustry').val();
-     var userCity = $('#input-city').val();
-     $('#hiddenTitleInput').val(jobTitle);
-     $('#hiddenCompanyInput').val(companyName);
-     $('#hiddenIndustryInput').val(userIndustry);
-    // $.post( "https://insights.newscred.com/wp-admin/admin-ajax.php", {
-    //      'action': 'set_userinfo',
-    //      'job-title': jobTitle,
-    //      'company-name': companyName,
-    //      'industry': userIndustry,
-    //      'city': userCity
-    //    },
-    //    function(response){
-    //      $('#mktForm_1213').submit();
-    //    }
-    //   );
-     e.preventDefault();
-  });
-  var autocompleteOptions = {
-    types: ['(cities)']
-  };
-  google.maps.event.addDomListener(window, 'load', function () {
-    var places = new google.maps.places.Autocomplete(document.getElementById('input-city'), autocompleteOptions);
-    google.maps.event.addListener(places, 'place_changed', function () {
-      var place = places.getPlace();
-      var address = place.formatted_address;
-      $('#input-city, #hiddenCityInput').val(address);
-      if ($('#jobTitle').hasClass('active') && $('#companyName').hasClass('active') && $('#industryActive').hasClass('active')) {
-        $('#onboarding-signup').addClass('active');
-      }
-    });
-  });
-  $('#input-city').on('focus', function(e) {
-    $(this).addClass('entered');
-  }).on('keydown', function(e) {
-    if (e.keyCode == 13 && !$('#onboarding-signup').hasClass('active')) {
-        e.preventDefault();
-    }
-  });
-});
-</script> -->
-
-
-
-
-
-{{ end }}
-{{ end }}

@@ -1,9 +1,9 @@
 +++
 type = "page"
-layout = "resources"
+layout = "resources/blog"
 date = "2018-05-31T13:42:12+01:00"
-title = "MONAX | Resources"
-url = "/resources"
+title = "MONAX | Blog"
+url = "/resources/blog"
 categories = []
 tags = []
 

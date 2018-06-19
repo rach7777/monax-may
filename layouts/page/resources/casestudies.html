@@ -15,23 +15,15 @@
 
         </header>
 
-        {{ partial "resources/hero.html" . }}
+        {{ partial "resources/casestudies/top.html" . }}
 
-        {{ partial "resources/quicklinks.html" . }}
+        {{ partial "resources/casestudies/articles.html" . }}
 
-        {{ partial "resources/screencasts.html" . }}
-
-        {{ partial "resources/webinar.html" . }}
-
-        {{ partial "resources/explainers.html" . }}
-
-        {{ partial "resources/faq.html" . }}
-
-        {{ partial "resources/developers.html" . }}
+        {{ partial "resources/casestudies/backers.html" . }}
 
         <!-- global section -->
-        {{ if isset .Site.Data.resources "cta" }}
-          {{ if .Site.Data.resources.cta.enable }}
+        {{ if isset .Site.Data.casestudies "cta" }}
+          {{ if .Site.Data.casestudies.cta.enable }}
             {{ partial "_global/cta.html" . }}
           {{ end }}
         {{ end }}

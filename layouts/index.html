@@ -15,19 +15,24 @@
 
         </header>
 
-        {{ partial "home_hero.html" . }}
+        {{ partial "home/hero.html" . }}
 
-        {{ partial "home_featured.html" . }}
+        {{ partial "home/featured.html" . }}
 
-        {{ partial "home_summary.html" . }}
+        {{ partial "home/summary.html" . }}
 
-        {{ partial "home_usecases.html" . }}
+        {{ partial "home/usecases.html" . }}
 
-        {{ partial "home_screencasts.html" . }}
+        {{ partial "home/screencasts.html" . }}
 
-        {{ partial "home_webinar.html" . }}
+        {{ partial "home/webinar.html" . }}
 
-        {{ partial "home_cta.html" . }}
+        <!-- global section -->
+        {{ if isset .Site.Data.home "cta" }}
+          {{ if .Site.Data.home.cta.enable }}
+            {{ partial "_global/cta.html" . }}
+          {{ end }}
+        {{ end }}
 
         {{ partial "footer.html" . }}
 

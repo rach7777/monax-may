@@ -2,8 +2,7 @@
     enable = true
     title = "Resources"
     subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
-    img_bg = "/img/backgrounds/mountains-1.jpg"
-    img_right = "/img/carousel/template-homepage.png"
+    img_bg = "/img/assets/backgrounds/mountains-1.jpg"
 
 [quicklinks]
     enable = true
@@ -126,9 +125,5 @@
     subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
 
-[cta]
+[cta] # global
     enable = true
-    title = "Get started on our platform"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    button_text = "Get started"
-    button_url = "#"

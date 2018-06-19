@@ -1,0 +1,53 @@
+{{ if isset .Site.Data.explainers "articles" }}
+{{ if .Site.Data.explainers.articles.enable }}
+<section class="section-articles section-padding-lg">
+    <div class="container">
+
+          <div class="row">
+            <div class="col-md-5">
+
+              <div class="content-container padding-bottom-sm">
+                <div class="underline-sm range-left-md">
+                    <h3>{{ .Site.Data.explainers.articles.title }}</h3>
+                </div>
+                <!-- <p class="range-left-md padding-bottom-sm">
+                  {{ .Site.Data.explainers.articles.subtitle | markdownify }}
+                </p> -->
+              </div> <!-- .content-container -->
+
+            </div> <!-- .col -->
+          </div> <!-- .row -->
+
+
+          <div class="row">
+            {{ range .Site.Data.explainers.articles.article }}
+
+              <div class="col-md-4 col-sm-6 padding-bottom-sm">
+
+                <div class="row">
+                  <div class="col-xs-2">
+                    <div class="icon-container article-icon">
+                      <i class='fa fa-calendar'></i>
+                    </div>
+                  </div> <!-- .col -->
+
+                  <div class="col-xs-10">
+                    <div class="range-left-sm">
+                        <h4>{{ .title }} &rsaquo;</h4>
+                    </div>
+                    <p class="range-left-sm">
+                      {{ .subtitle | markdownify }}
+                    </p>
+                  </div> <!-- .col -->
+
+
+                </div> <!-- .row -->
+              </div> <!-- .col -->
+
+            {{ end }}
+          </div> <!-- .row -->
+
+    </div> <!-- .container -->
+</section>
+{{ end }}
+{{ end }}

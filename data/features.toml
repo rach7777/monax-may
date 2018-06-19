@@ -161,9 +161,5 @@
         link_text = "Read case study (or testimonial or something)"
 
 
-[cta]
+[cta] # global
     enable = true
-    title = "Find your first-class agreement now"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    button_text = "Get started"
-    button_url = "#"

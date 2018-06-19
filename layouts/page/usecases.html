@@ -15,13 +15,18 @@
 
         </header>
 
-        {{ partial "usecases_top.html" . }}
+        {{ partial "usecases/top.html" . }}
 
-        {{ partial "usecases_audiences.html" . }}
+        {{ partial "usecases/audiences.html" . }}
 
-        {{ partial "usecases_backers.html" . }}
+        {{ partial "usecases/backers.html" . }}
 
-        {{ partial "usecases_cta.html" . }}
+        <!-- global section -->
+        {{ if isset .Site.Data.usecases "cta" }}
+          {{ if .Site.Data.usecases.cta.enable }}
+            {{ partial "_global/cta.html" . }}
+          {{ end }}
+        {{ end }}
 
         {{ partial "footer.html" . }}
 

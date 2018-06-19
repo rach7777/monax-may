@@ -15,13 +15,20 @@
 
         </header>
 
-        {{ partial "press_hero.html" . }}
+        {{ partial "press/hero.html" . }}
 
-        {{ partial "press_featured.html" . }}
+        {{ partial "press/featured.html" . }}
 
-        {{ partial "press_past.html" . }}
+        {{ partial "press/past.html" . }}
 
-        {{ partial "press_contact.html" . }}
+        {{ partial "press/contact.html" . }}
+
+        <!-- global section -->
+        {{ if isset .Site.Data.press "cta" }}
+          {{ if .Site.Data.press.cta.enable }}
+            {{ partial "_global/cta.html" . }}
+          {{ end }}
+        {{ end }}
 
         {{ partial "footer.html" . }}
 

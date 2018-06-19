@@ -44,3 +44,7 @@
     [contact.contact]
         title = "Request a callback"
         subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Please email <a href='mailto:press@monax.io'>press@monax.io</a>."
+
+
+[cta] # global
+    enable = false
