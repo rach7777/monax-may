@@ -1,5 +1,5 @@
-{{ if isset .Site.Data.about "mission" }}
-{{ if .Site.Data.about.mission.enable }}
+{{ if isset .Site.Data.company "mission" }}
+{{ if .Site.Data.company.mission.enable }}
 <section class="section-mission section-padding-lg background-dark">
     <div class="container">
 
@@ -7,11 +7,11 @@
 
         <div class="col-md-12">
             <div class="underline-sm">
-                <h2>{{ .Site.Data.about.mission.title }}</h2>
+                <h2>{{ .Site.Data.company.mission.title }}</h2>
             </div>
 
             <p class="lead text-center">
-              {{ .Site.Data.about.mission.subtitle | markdownify }}
+              {{ .Site.Data.company.mission.subtitle | markdownify }}
             </p>
 
         </div>

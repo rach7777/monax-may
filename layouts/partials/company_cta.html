@@ -1,5 +1,5 @@
-{{ if isset .Site.Data.about "cta" }}
-{{ if .Site.Data.about.cta.enable }}
+{{ if isset .Site.Data.company "cta" }}
+{{ if .Site.Data.company.cta.enable }}
 <section class="section-cta section-padding-xl background-dark">
     <div class="container">
 
@@ -8,15 +8,15 @@
         <div class="col-md-12">
 
           <div class="underline-sm">
-              <h2>{{ .Site.Data.about.cta.title }}</h2>
+              <h2>{{ .Site.Data.company.cta.title }}</h2>
           </div>
 
           <p class="padding-bottom-md">
-            {{ .Site.Data.about.cta.subtitle | markdownify }}
+            {{ .Site.Data.company.cta.subtitle | markdownify }}
           </p>
 
           <div class="btn-container" style="">
-            <a href="{{.Site.Data.about.cta.button_url}}" class="btn btn-primary btn-xl" role="button">{{ .Site.Data.about.cta.button_text }}</a>
+            <a href="{{.Site.Data.company.cta.button_url}}" class="btn btn-primary btn-xl" role="button">{{ .Site.Data.company.cta.button_text }}</a>
           </div>
 
         </div> <!-- .col -->

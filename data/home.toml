@@ -43,132 +43,60 @@
     category = "fleet-leasing"
     title = "For Fleet Leasing"
     subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
-    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
-    #
-    # [usecases.section.casestudies]
-    #
-    #   [[usecases.section.casestudies.item]]
-    #     title = "Example Case Study 1"
-    #     description = "In the evolving network economy, devices upgrade and proliferate quickly."
-    #     casestudy_url = "#"
-    #     # will be populated by casestudy archetype - using category declared above
-    #
-    #   [[usecases.section.casestudies.item]]
-    #     title = "Example Case Study 2"
-    #     description = "In the evolving network economy, devices upgrade and proliferate quickly."
-    #     casestudy_url = "#"
-    #     # will be populated by casestudy archetype - using category declared above
-    #
-    # [usecases.section.agreements]
-    #
-    #   [[usecases.section.agreements.item]]
-    #     title = "Example Agreement 1"
-    #     description = "In the evolving network economy, devices upgrade and proliferate quickly."
-    #     agreement_url = "#"
-    #
-    #   [[usecases.section.agreements.item]]
-    #     title = "Example Agreement 2"
-    #     description = "In the evolving network economy, devices upgrade and proliferate quickly."
-    #     agreement_url = "#"
+    img = "/img/assets/illustrations/user-flat-example-01.jpg"
+
+    [[usecases.section.link]]
+      link_title = "Case Studies"
+      link_url = "#"
+
+    [[usecases.section.link]]
+      link_title = "Popular Agreements"
+      link_url = "#"
+
 
   [[usecases.section]]
     category = "corporate-governance"
     title = "For Corporate Governance"
     subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
-    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
-    #
-    # [usecases.section.casestudies]
-    #
-    #   [[usecases.section.casestudies.item]]
-    #     title = "Example Case Study 1"
-    #     description = "In the evolving network economy, devices upgrade and proliferate quickly."
-    #     casestudy_url = "#"
-    #     # will be populated by casestudy archetype - using category declared above
-    #
-    #   [[usecases.section.casestudies.item]]
-    #     title = "Example Case Study 2"
-    #     description = "In the evolving network economy, devices upgrade and proliferate quickly."
-    #     casestudy_url = "#"
-    #     # will be populated by casestudy archetype - using category declared above
-    #
-    # [usecases.section.agreements]
-    #
-    #   [[usecases.section.agreements.item]]
-    #     title = "Example Agreement 1"
-    #     description = "In the evolving network economy, devices upgrade and proliferate quickly."
-    #     agreement_url = "#"
-    #
-    #   [[usecases.section.agreements.item]]
-    #     title = "Example Agreement 2"
-    #     description = "In the evolving network economy, devices upgrade and proliferate quickly."
-    #     agreement_url = "#"
+    img = "/img/assets/illustrations/user-flat-example-01.jpg"
+
+    [[usecases.section.link]]
+      link_title = "Case Studies"
+      link_url = "#"
+
+    [[usecases.section.link]]
+      link_title = "Popular Agreements"
+      link_url = "#"
 
 
   [[usecases.section]]
     category = "content-creators"
     title = "For Content Creators"
     subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
-    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
-    #
-    # [usecases.section.casestudies]
-    #
-    #   [[usecases.section.casestudies.item]]
-    #     title = "Example Case Study 1"
-    #     description = "In the evolving network economy, devices upgrade and proliferate quickly."
-    #     casestudy_url = "#"
-    #     # will be populated by casestudy archetype - using category declared above
-    #
-    #   [[usecases.section.casestudies.item]]
-    #     title = "Example Case Study 2"
-    #     description = "In the evolving network economy, devices upgrade and proliferate quickly."
-    #     casestudy_url = "#"
-    #     # will be populated by casestudy archetype - using category declared above
-    #
-    # [usecases.section.agreements]
-    #
-    #   [[usecases.section.agreements.item]]
-    #     title = "Example Agreement 1"
-    #     description = "In the evolving network economy, devices upgrade and proliferate quickly."
-    #     agreement_url = "#"
-    #
-    #   [[usecases.section.agreements.item]]
-    #     title = "Example Agreement 2"
-    #     description = "In the evolving network economy, devices upgrade and proliferate quickly."
-    #     agreement_url = "#"
+    img = "/img/assets/illustrations/user-flat-example-01.jpg"
+
+    [[usecases.section.link]]
+      link_title = "Case Studies"
+      link_url = "#"
+
+    [[usecases.section.link]]
+      link_title = "Popular Agreements"
+      link_url = "#"
 
 
   [[usecases.section]]
     category = "lawyers"
     title = "For Lawyers"
     subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
-    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
-    #
-    # [usecases.section.casestudies]
-    #
-    #   [[usecases.section.casestudies.item]]
-    #     title = "Example Case Study 1"
-    #     description = "In the evolving network economy, devices upgrade and proliferate quickly."
-    #     casestudy_url = "#"
-    #     # will be populated by casestudy archetype - using category declared above
-    #
-    #   [[usecases.section.casestudies.item]]
-    #     title = "Example Case Study 2"
-    #     description = "In the evolving network economy, devices upgrade and proliferate quickly."
-    #     casestudy_url = "#"
-    #     # will be populated by casestudy archetype - using category declared above
-    #
-    # [usecases.section.agreements]
-    #
-    #   [[usecases.section.agreements.item]]
-    #     title = "Example Agreement 1"
-    #     description = "In the evolving network economy, devices upgrade and proliferate quickly."
-    #     agreement_url = "#"
-    #
-    #   [[usecases.section.agreements.item]]
-    #     title = "Example Agreement 2"
-    #     description = "In the evolving network economy, devices upgrade and proliferate quickly."
-    #     agreement_url = "#"
+    img = "/img/assets/illustrations/user-flat-example-01.jpg"
 
+    [[usecases.section.link]]
+      link_title = "Case Studies"
+      link_url = "#"
+
+    [[usecases.section.link]]
+      link_title = "Popular Agreements"
+      link_url = "#"
 
 
 [screencasts]

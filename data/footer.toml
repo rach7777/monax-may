@@ -1,8 +1,16 @@
 [about]
     enable = true
     title = "About Us"
-    subtitle = "Pellentesque habitant morbi tristique senectus."
+    subtitle = "Deploy smart, legally-binding contracts on the blockchain."
     footer_logo = "/img/Monax_logo_white.png"
+
+    [[about.link]]
+        link_title = "Request a demo"
+        link_url = "#"
+
+    [[about.link]]
+        link_title = "Get started"
+        link_url = "#"
 
     [[about.social_icon]]
         icon = "fa-github"
@@ -20,28 +28,25 @@
         title = "Twitter"
 
 
-[address]
+[col_2]
     enable = true
-    title = "Contact Address"
-    line1 = "Monax Industries"
-    line2 = "Unit 3B"
-    line3 = "123 New Avenue"
-    line4 = "Washington DC"
-    line5 = "United States"
+    title = "Subscribe To Updates"
+    subtitle = "Pellentesque habitant morbi tristique senectus et netus.<div class='flex-grid form-placeholder-dark' style='min-height:160px;'><div class='col-sm-12 col-valign-center'><h4>-- FORM PLACEHOLDER --</h4></div></div>"
+
 
 [col_3]
     enable = true
     title = "Developers"
-    subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<br><a href='#'>Read our developer docs  &rsaquo;</a>"
+    subtitle = "Pellentesque habitant morbi tristique senectus et netus.<br><a href='#'>Read our developer docs  &rsaquo;</a><br><br>Pellentesque habitant morbi tristique senectus et netus.<br><a href='#'>Contact us about 3rd party integrations &rsaquo;</a>"
 
 [col_4]
     enable = true
     title = "Press & Events"
-    subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<br>Please email <a href='mailto:press@monax.io'>press@monax.io</a>."
+    subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<br><br>Please email <a href='mailto:press@monax.io'>press@monax.io</a> to discuss press and events."
 
 [copyright]
     enable = true
-    copyright_notice = "&copy; Monax Industries. All rights reserved."
+    copyright_notice = "<strong>&copy; Monax Industries. All rights reserved.</strong> US registered company: 132978319257."
     enable_attribution = true
 
     [[copyright.link]]

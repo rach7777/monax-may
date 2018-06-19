@@ -1,8 +1,9 @@
 +++
 type = "page"
-layout = "about-us"
+layout = "usecases"
 date = "2018-05-31T13:42:12+01:00"
-title = "MONAX | About Us"
+title = "MONAX | Use Cases"
+url = "/use-cases/"
 categories = []
 tags = []
 

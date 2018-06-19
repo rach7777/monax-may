@@ -1,5 +1,5 @@
-{{ if isset .Site.Data.about "positions" }}
-{{ if .Site.Data.about.positions.enable }}
+{{ if isset .Site.Data.company "positions" }}
+{{ if .Site.Data.company.positions.enable }}
 <section class="section-positions section-padding-xl section-shadow-xl">
     <div class="container">
 
@@ -8,19 +8,19 @@
 
             <div class="content-container padding-bottom-md">
               <div class="underline-sm range-left-md">
-                  <h3>{{ .Site.Data.about.positions.title }}</h3>
+                  <h3>{{ .Site.Data.company.positions.title }}</h3>
               </div>
               <p class="range-left-md padding-bottom-sm">
-                {{ .Site.Data.about.positions.subtitle | markdownify }}
+                {{ .Site.Data.company.positions.subtitle | markdownify }}
               </p>
             </div> <!-- .content-container -->
 
             <div class="content-container padding-bottom-md">
                 <div class="range-left-md">
-                    <h4>{{ .Site.Data.about.positions.contact.title }}</h4>
+                    <h4>{{ .Site.Data.company.positions.contact.title }}</h4>
                 </div>
                 <p class="range-left-md padding-bottom-sm">
-                  {{ .Site.Data.about.positions.contact.subtitle | markdownify }}
+                  {{ .Site.Data.company.positions.contact.subtitle | markdownify }}
                 </p>
             </div> <!-- .content-container -->
 

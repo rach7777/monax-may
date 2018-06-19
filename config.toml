@@ -25,7 +25,7 @@ paginate = 10
 
 [[menu.left]]
     name = "Use Cases"
-    url  = "#"
+    url  = "/use-cases/"
     weight = 3
 
 [[menu.left]]
@@ -35,7 +35,7 @@ paginate = 10
 
 [[menu.left]]
     name = "Company"
-    url  = "/about-us/"
+    url  = "/company/"
     weight = 5
 
 [[menu.left]]

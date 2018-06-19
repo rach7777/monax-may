@@ -13,65 +13,65 @@
     logo_2 = "/img/logos/example-logo.png"
     logo_3 = "/img/logos/example-logo.png"
 
-[company]
+[about]
   enable = true
   title = "Monax are at the forefront of blockchain technology"
   subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
-  [[company.social_icon]]
+  [[about.social_icon]]
       icon = "fa-github"
       link = "#"
       title = "Github"
 
-  [[company.social_icon]]
+  [[about.social_icon]]
       icon = "fa-facebook"
       link = "#"
       title = "Facebook"
 
-  [[company.social_icon]]
+  [[about.social_icon]]
       icon = "fa-twitter"
       link = "#"
       title = "Twitter"
 
-  [company.partnerships]
+  [about.partnerships]
       enable = true
       title = "Partnerships"
       subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
-      [[company.partnerships.logo]]
+      [[about.partnerships.logo]]
           name = "Example"
           logo = "/img/logos/example-gray-logo.png"
           link = "#"
 
-      [[company.partnerships.logo]]
+      [[about.partnerships.logo]]
           name = "Example"
           logo = "/img/logos/example-gray-logo.png"
           link = "#"
 
-      [[company.partnerships.logo]]
+      [[about.partnerships.logo]]
           name = "Example"
           logo = "/img/logos/example-gray-logo.png"
           link = "#"
 
-      [[company.partnerships.logo]]
+      [[about.partnerships.logo]]
           name = "Example"
           logo = "/img/logos/example-gray-logo.png"
           link = "#"
 
-      [[company.partnerships.logo]]
+      [[about.partnerships.logo]]
           name = "Example"
           logo = "/img/logos/example-gray-logo.png"
           link = "#"
 
-      [[company.partnerships.logo]]
+      [[about.partnerships.logo]]
           name = "Example"
           logo = "/img/logos/example-gray-logo.png"
           link = "#"
 
 
-  [company.history]
+  [about.history]
 
-      [[company.history.item]]
+      [[about.history.item]]
           date = "Jan 2018"
           title = "Web Platform is born"
           highlight = "Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis."
@@ -80,7 +80,7 @@
            "Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo"
           ]
 
-      [[company.history.item]]
+      [[about.history.item]]
           date = "Jul 2017"
           title = "Burrow is born"
           highlight = "Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis."
@@ -90,7 +90,7 @@
            "Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo"
           ]
 
-      [[company.history.item]]
+      [[about.history.item]]
           date = "Nov 2017"
           title = "Monax is born"
           highlight = "Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis."

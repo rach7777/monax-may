@@ -1,6 +1,6 @@
-{{ if isset .Site.Data.about "company" }}
-{{ if .Site.Data.about.company.enable }}
-<section class="section-company section-padding-lg">
+{{ if isset .Site.Data.company "about" }}
+{{ if .Site.Data.company.about.enable }}
+<section class="section-about section-padding-lg">
     <div class="container">
 
         <div class="row">
@@ -8,13 +8,13 @@
 
             <div class="content-container padding-bottom-md">
               <div class="underline-sm range-left-md">
-                  <h3>{{ .Site.Data.about.company.title }}</h3>
+                  <h3>{{ .Site.Data.company.about.title }}</h3>
               </div>
               <p class="range-left-md padding-bottom-sm">
-                {{ .Site.Data.about.company.subtitle | markdownify }}
+                {{ .Site.Data.company.about.subtitle | markdownify }}
               </p>
               <ul class="ul-round-icons">
-                {{ range .Site.Data.about.company.social_icon }}
+                {{ range .Site.Data.company.about.social_icon }}
                   <a href="{{ .link }}"><li><i class='fa {{ .icon }}'></i></li></a>
                 {{ end }}
               </ul>
@@ -22,13 +22,13 @@
 
             <div class="content-container padding-bottom-md">
               <div class="underline-sm range-left-md">
-                  <h3>{{ .Site.Data.about.company.partnerships.title }}</h3>
+                  <h3>{{ .Site.Data.company.about.partnerships.title }}</h3>
               </div>
               <p class="padding-bottom-sm range-left-md">
-                {{ .Site.Data.about.company.partnerships.subtitle | markdownify }}
+                {{ .Site.Data.company.about.partnerships.subtitle | markdownify }}
               </p>
               <div class="row row-partnerships flex-grid-md" style="width:100%;">
-                {{ range $i, $p := .Site.Data.about.company.partnerships.logo }}
+                {{ range $i, $p := .Site.Data.company.about.partnerships.logo }}
                   {{if eq $i 3}} <!-- 4th entry -->
                   </div> <!-- start new row -->
                   <div class="row row-partnerships flex-grid-md" style="width:100%;">
@@ -51,9 +51,9 @@
           </div> <!-- .col -->
           <div class="col-md-7">
 
-            {{ if isset .Site.Data.about.company.history "item" }}
+            {{ if isset .Site.Data.company.about.history "item" }}
             <div class="timeline">
-              {{ range .Site.Data.about.company.history.item }}
+              {{ range .Site.Data.company.about.history.item }}
               <div class="entry">
                 <div class="title">
                   <h3>{{ .date }}</h3>

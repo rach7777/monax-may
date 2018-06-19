@@ -12,11 +12,16 @@
               <img id="footer-logo" class="img-responsive img-left-sm" src="{{ .Site.Data.footer.about.footer_logo }}" alt="{{ .Site.Params.title }}">
             </a>
           </div>
-          <!-- <div class="range-left-sm">
-            <h4>{{ .Site.Data.footer.about.title }}</h4>
-          </div> -->
           <p class="range-left-sm">
             {{ .Site.Data.footer.about.subtitle | markdownify }}
+            <br>
+            {{ range $i, $p := .Site.Data.footer.about.link }}
+              {{ if eq $i 0 }}
+                <a href="{{ .link_url }}">{{ .link_title }}</a>
+              {{ else }}
+                &nbsp;|&nbsp;&nbsp;<a href="{{ .link_url }}">{{ .link_title }}</a>
+              {{ end }}
+            {{ end }}
           </p>
 
           <div class="ul-left-sm flex-grid-xs">
@@ -33,22 +38,21 @@
         {{ end }}
         {{ end }}
 
-        {{ if isset .Site.Data.footer "address" }}
-        {{ if .Site.Data.footer.address.enable }}
+        <div class="clearfix visible-sm-block"></div>
 
-        <div class="col-md-3 col-sm-6">
-          <div class="range-left-sm">
-            <h4>{{ .Site.Data.footer.address.title }}</h4>
-          </div>
-          <p class="range-left-sm">
-            {{ .Site.Data.footer.address.line1 }}<br>
-            {{ .Site.Data.footer.address.line2 }}<br>
-            {{ .Site.Data.footer.address.line3 }}<br>
-            {{ .Site.Data.footer.address.line4 }}<br>
-            {{ .Site.Data.footer.address.line5 }}<br>
-          </p>
-          <hr class="hidden-md hidden-lg hidden-sm">
-        </div>  <!-- .col -->
+        {{ if isset .Site.Data.footer "col_2" }}
+        {{ if .Site.Data.footer.col_2.enable }}
+
+          <div class="col-md-3 col-sm-6">
+            <div class="range-left-sm">
+              <h4>{{ .Site.Data.footer.col_2.title }}</h4>
+            </div>
+            <p class="range-left-sm">
+              {{ .Site.Data.footer.col_2.subtitle | markdownify }}
+            </p>
+            <hr class="hidden-md hidden-lg hidden-sm">
+          </div>  <!-- .col -->
+
 
         {{ end }}
         {{ end }}

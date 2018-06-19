@@ -4,12 +4,14 @@
   <section class="section-usecases section-padding-xl background-color">
       <div class="container">
 
-          <div class="row content-container content-card flex-grid-sm">
+          <div class="row content-container flex-grid-sm">
         {{ range .Site.Data.home.usecases.section }}
 
-            <div class="col-sm-3 col-rule" href="#">
+            <div class="col-sm-3 flex-grid-sm">
 
-                <img class="img_left img-responsive img-center padding-bottom-xs padding-top-sm" src="{{ .img_left }}" alt="">
+              <div class="content-container content-card">
+
+                <img class="img_left img-responsive img-center padding-bottom-xs padding-top-sm" src="{{ .img }}" alt="">
                 <div class="row">
                   <div class="col-xs-12">
                     <div class="title">
@@ -18,10 +20,13 @@
                     <p class="subtitle padding-bottom-sm">
                       {{ .subtitle | markdownify }}
                     </p>
-                    <p><a href="#">Case Studies &rsaquo;</a></p>
-                    <p><a href="#">Popular Agreements &rsaquo;</a></p>
+                    {{ range .link }}
+                      <p><a href="{{ .link_url }}">{{ .link_title }} &rsaquo;</a></p>
+                    {{ end }}
                   </div>
                 </div> <!-- .row -->
+
+              </div>
 
             </div>
 

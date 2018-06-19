@@ -1,21 +1,21 @@
-{{ if isset .Site.Data.about "team" }}
-{{ if .Site.Data.about.team.enable }}
+{{ if isset .Site.Data.company "team" }}
+{{ if .Site.Data.company.team.enable }}
 <section class="section-team section-padding-lg">
     <div class="container">
 
       <div class="row">
         <div class="col-md-12">
           <div class="underline-sm">
-              <h2>{{ .Site.Data.about.team.title }}</h2>
+              <h2>{{ .Site.Data.company.team.title }}</h2>
           </div>
           <p class="padding-bottom-md">
-            {{ .Site.Data.about.team.subtitle | markdownify }}
+            {{ .Site.Data.company.team.subtitle | markdownify }}
           </p>
         </div> <!-- .col -->
       </div> <!-- .row -->
 
       <div class="row">
-        {{ range .Site.Data.about.team.item }}
+        {{ range .Site.Data.company.team.item }}
         <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6 padding-bottom-md">
             <img class="img-responsive img-center" src="{{ .img }}" alt="">
           <div class="">

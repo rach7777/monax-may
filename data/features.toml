@@ -1,27 +1,20 @@
-[hero]
-    enable = false
-    title = "Features"
-    subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
-    img_bg = "/img/assets/backgrounds/mountains-1.jpg"
-
-
-[summary]
+[top]
     enable = true
     title = "Overview of features"
     subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
 
-    [[summary.feature]]
+    [[top.feature]]
       title = "Lorem Ipsum is simply dummy text"
       description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
       icon = "fa-calendar"
 
-    [[summary.feature]]
+    [[top.feature]]
       title = "Lorem Ipsum is simply dummy text"
       description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
       icon = "fa-book"
 
-    [[summary.feature]]
+    [[top.feature]]
       title = "Lorem Ipsum is simply dummy text"
       description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
       icon = "fa-facebook"
@@ -147,30 +140,10 @@
     subtitle = "In the evolving network economy, devices upgrade and proliferate."
     url = "#"
 
-  [[examples.agreement]]
-    title = "Agreement Title"
-    subtitle = "In the evolving network economy, devices upgrade and proliferate."
-    url = "#"
-
-  [[examples.agreement]]
-    title = "Agreement Title"
-    subtitle = "In the evolving network economy, devices upgrade and proliferate."
-    url = "#"
-
-  [[examples.agreement]]
-    title = "Agreement Title"
-    subtitle = "In the evolving network economy, devices upgrade and proliferate."
-    url = "#"
-
-  [[examples.agreement]]
-    title = "Agreement Title"
-    subtitle = "In the evolving network economy, devices upgrade and proliferate."
-    url = "#"
-
 
 [backers]
     enable = true
-    title = "Our platform is backed by"
+    title = "Backed by the legal tech elite"
     subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
     [[backers.investor]]
@@ -178,14 +151,14 @@
         subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
         logo = "/img/logos/example-gray-logo.png"
         link = "#"
-        link_text = "Read more about this company"
+        link_text = "Read case study (or testimonial or something)"
 
     [[backers.investor]]
         title = "Example Investment Inc."
         subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
         logo = "/img/logos/example-gray-logo.png"
         link = "#"
-        link_text = "Read more about this company"
+        link_text = "Read case study (or testimonial or something)"
 
 
 [cta]
