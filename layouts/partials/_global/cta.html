@@ -1,3 +1,4 @@
+{{ with .Site.Data.global.sections.cta }}
 <section class="section-cta section-padding-xl background-dark">
     <div class="container">
 
@@ -6,12 +7,8 @@
         <div class="col-md-12">
 
           <div class="underline-sm">
-              <h2>{{ .Site.Data.global.sections.cta.title }}</h2>
+              <h2>{{ .title }}</h2>
           </div>
-
-          <!-- <p class="padding-bottom-md">
-            {{ .Site.Data.global.sections.cta.subtitle | markdownify }}
-          </p> -->
           <div class="form-container padding-bottom-md">
             <div class="onboarding__form onboarding-information form--details">
   							<p>I'm a <span id="jobTitle" contenteditable="true" class="onboarding-information__input input-fake" data-default="Job Title" data-associated-input="#input-job-title"></span> at <span id="companyName" contenteditable="true" class="onboarding-information__input input-fake" data-default="Company Name" data-associated-input="#input-company-name"></span></p>
@@ -58,13 +55,12 @@
             </div>
 
           <div class="btn-container" style="">
-            <a href="{{.Site.Data.global.sections.cta.button_url}}" class="btn btn-primary btn-xl " role="button">{{ .Site.Data.global.sections.cta.button_text }}</a>
-            <a href="{{.Site.Data.global.sections.cta.button_url}}" class="btn btn-primary btn-xl " role="button">Request a demo</a>
+            <a href="{{.button_url}}" class="btn btn-primary btn-xl " role="button">{{ .button_text }}</a>
+            <a href="{{.button_url}}" class="btn btn-primary btn-xl " role="button">Request a demo</a>
           </div>
 
         </div> <!-- .col -->
-
       </div> <!-- .row -->
-
     </div> <!-- .container -->
 </section>
+{{ end }}

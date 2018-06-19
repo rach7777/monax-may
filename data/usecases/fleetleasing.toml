@@ -1,0 +1,23 @@
+[top]
+    enable = true
+    title = "Fleet Leasing"
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
+
+    [[top.feature]]
+      title = "Lorem Ipsum is simply dummy text"
+      description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon = "fa-calendar"
+
+    [[top.feature]]
+      title = "Lorem Ipsum is simply dummy text"
+      description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon = "fa-book"
+
+    [[top.feature]]
+      title = "Lorem Ipsum is simply dummy text"
+      description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon = "fa-facebook"
+
+[cta] # global
+    enable = true

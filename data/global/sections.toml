@@ -3,3 +3,22 @@
     subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     button_text = "Get started"
     button_url = "#"
+
+
+[backers]
+    title = "Backed by the legal tech elite"
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+    [[backers.investor]]
+        title = "Example Investment Inc."
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+        logo = "/img/logos/example-gray-logo.png"
+        link = "#"
+        link_text = "Read case study (or testimonial or something)"
+
+    [[backers.investor]]
+        title = "Example Investment Inc."
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+        logo = "/img/logos/example-gray-logo.png"
+        link = "#"
+        link_text = "Read case study (or testimonial or something)"

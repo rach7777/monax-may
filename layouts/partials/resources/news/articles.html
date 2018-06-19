@@ -1,5 +1,5 @@
-{{ if isset .Site.Data.news "articles" }}
-{{ if .Site.Data.news.articles.enable }}
+{{ with .Site.Data.resources.news.articles }}
+{{ if .enable }}
 <section class="section-articles section-padding-lg">
     <div class="container">
 
@@ -8,10 +8,10 @@
 
               <div class="content-container padding-bottom-sm">
                 <div class="underline-sm range-left-md">
-                    <h3>{{ .Site.Data.news.articles.title }}</h3>
+                    <h3>{{ .title }}</h3>
                 </div>
                 <!-- <p class="range-left-md padding-bottom-sm">
-                  {{ .Site.Data.news.articles.subtitle | markdownify }}
+                  {{ .subtitle | markdownify }}
                 </p> -->
               </div> <!-- .content-container -->
 
@@ -20,7 +20,7 @@
 
 
           <div class="row">
-            {{ range .Site.Data.news.articles.article }}
+            {{ range .article }}
 
               <div class="col-md-4 col-sm-6 padding-bottom-sm">
 

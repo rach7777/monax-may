@@ -1,21 +1,21 @@
-{{ if isset .Site.Data.blog "top" }}
-{{ if .Site.Data.blog.top.enable }}
+{{ with .Site.Data.resources.blog.top }}
+{{ if .enable }}
 <section class="section-top padding-top-md padding-bottom-lg section-shadow-xl">
     <div class="container">
 
       <div class="row flex-grid-md">
           <div class="col-md-5 col-valign-center">
               <div class="underline-sm range-left-md">
-                  <h1>{{ .Site.Data.blog.top.title }}</h1>
+                  <h1>{{ .title }}</h1>
               </div>
               <!-- <p class="lead range-left-md">
-                {{ .Site.Data.blog.top.subtitle | markdownify }}
+                {{ .subtitle | markdownify }}
               </p> -->
-              <img class="img-responsive" src="{{ .Site.Data.blog.top.img_left }}" alt="">
+              <img class="img-responsive" src="{{ .img_left }}" alt="">
           </div>
           <div class="col-md-7 col-valign-center">
               <ul class="ul-icon-list">
-                {{ range .Site.Data.blog.top.feature }}
+                {{ range .feature }}
                 <li class="padding-bottom-xs">
                   <i class="fa {{ .icon }}" aria-hidden="true"></i>
                   <h4 class="range-left">{{ .title }}</h4>

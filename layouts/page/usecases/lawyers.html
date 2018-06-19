@@ -15,20 +15,13 @@
 
         </header>
 
-        {{ partial "resources/news/top.html" . }}
+        {{ partial "usecases/lawyers/top.html" . }}
 
-        {{ partial "resources/news/articles.html" . }}
-
-        <!-- 'Backed by' section [GLOBAL] -->
-        {{ if isset .Site.Data.resources.news "backers" }}
-          {{ if .Site.Data.resources.news.backers.enable }}
-            {{ partial "_global/backers.html" . }}
-          {{ end }}
-        {{ end }}
+        <!-- content here -->
 
         <!-- CTA section [GLOBAL] -->
-        {{ if isset .Site.Data.resources.news "cta" }}
-          {{ if .Site.Data.resources.news.cta.enable }}
+        {{ if isset .Site.Data.usecases.lawyers "cta" }}
+          {{ if .Site.Data.usecases.lawyers.cta.enable }}
             {{ partial "_global/cta.html" . }}
           {{ end }}
         {{ end }}

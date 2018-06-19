@@ -1,5 +1,4 @@
-{{ if isset .Site.Data.news "backers" }}
-{{ if .Site.Data.news.backers.enable }}
+{{ with .Site.Data.global.sections.backers }}
 <section class="section-backers section-shadow-xl section-padding-lg">
     <div class="container">
 
@@ -7,16 +6,16 @@
         <div class="col-md-12">
 
           <div class="underline-sm range-left-md">
-              <h3>{{ .Site.Data.news.backers.title }}</h3>
+              <h3>{{ .title }}</h3>
           </div>
           <!-- <p class="range-left-md padding-bottom-sm">
-            {{ .Site.Data.news.backers.subtitle | markdownify }}
+            {{ .subtitle | markdownify }}
           </p> -->
 
         </div> <!-- .col -->
       </div> <!-- .row -->
 
-      {{ range first 1 .Site.Data.news.backers.investor }}
+      {{ range first 1 .investor }}
       <div class="row flex-grid-sm padding-bottom-lg">
         <div class="col-md-6">
           <div class="row">
@@ -93,5 +92,4 @@
 
     </div> <!-- .container -->
 </section>
-{{ end }}
 {{ end }}

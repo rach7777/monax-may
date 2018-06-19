@@ -25,8 +25,34 @@ paginate = 10
 
 [[menu.left]]
     name = "Use Cases"
-    url  = "/use-cases/"
+    identifier = "usecases"
+    url  = "#"
     weight = 3
+
+    # sub menu items
+    [[menu.left]]
+      Name = "Fleet leasing"
+      parent = "usecases"
+      URL = "/use-cases/fleet-leasing/"
+      Weight = 1
+
+    [[menu.left]]
+      Name = "Corporate Governance"
+      parent = "usecases"
+      URL = "/use-cases/corporate-governance/"
+      Weight = 2
+
+    [[menu.left]]
+      Name = "Content Creators"
+      parent = "usecases"
+      URL = "/use-cases/content-creators/"
+      Weight = 3
+
+    [[menu.left]]
+      Name = "Lawyers"
+      parent = "usecases"
+      URL = "/use-cases/lawyers/"
+      Weight = 4
 
 [[menu.left]]
     name = "Resources"
@@ -54,7 +80,7 @@ paginate = 10
       Weight = 3
 
     [[menu.left]]
-      Name = "Company Updates"
+      Name = "Company News"
       parent = "resources"
       URL = "/resources/news/"
       Weight = 4

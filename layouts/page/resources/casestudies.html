@@ -19,11 +19,16 @@
 
         {{ partial "resources/casestudies/articles.html" . }}
 
-        {{ partial "resources/casestudies/backers.html" . }}
+        <!-- 'Backed by' section [GLOBAL] -->
+        {{ if isset .Site.Data.resources.casestudies "backers" }}
+          {{ if .Site.Data.resources.casestudies.backers.enable }}
+            {{ partial "_global/backers.html" . }}
+          {{ end }}
+        {{ end }}
 
-        <!-- global section -->
-        {{ if isset .Site.Data.casestudies "cta" }}
-          {{ if .Site.Data.casestudies.cta.enable }}
+        <!-- CTA section [GLOBAL] -->
+        {{ if isset .Site.Data.resources.casestudies "cta" }}
+          {{ if .Site.Data.resources.casestudies.cta.enable }}
             {{ partial "_global/cta.html" . }}
           {{ end }}
         {{ end }}
