@@ -27,8 +27,8 @@
   enable = true
 
   [[feature.section]]
-    title = "Feature title"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    title = "How can Monax help power your fleet lease business?"
+    subtitle = "The Monax platform is a powerful solution for your fleet’s legal management issues, allowing you to embrace emergent networked business models. We will equip your business with the framework it needs to grow and scale."
     img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
 
   [[feature.section]]
@@ -40,6 +40,12 @@
     title = "Feature title"
     subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
+
+
+[relatedarticles]
+  enable = true
+  filter_by_tag = "fleetleasing"
+  default_img = "/img/assets/backgrounds/mountains-1.jpg"
 
 
 [cta] # global

@@ -3,7 +3,9 @@
 layout: single
 title:      "Learn | Dual Integration"
 excerpt:    "Putting the Contracts in Smart Contracts"
-
+tags:
+  - fleetleasing
+  
 ---
 
 ## Putting the Contracts in Smart Contracts
