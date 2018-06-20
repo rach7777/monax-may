@@ -1,23 +1,52 @@
 [top]
     enable = true
-    title = "Content Creators"
+    title = "Monax for content creators"
+    subtitle = "Monetize your content while protecting your brand"
+    img_left = false
+    hero_signup = true
+    img_right = "/img/assets/background-elements/wphone-test.png"
+    background_element = "/img/assets/background-elements/abstract-01.jpg"
+
+
+[testimonials]
+    enable = true
+    quote = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    name = "Some person"
+    position = "Some company inc."
+    twitter = "#"
+    linkedin = "#"
+    # CTA
+    link_title = "Read<br>John's<br>story"
+    link_url = "#"
+    # IMG - USE ONE OR THE OTHER, NOT BOTH (SET ONE TO: false)
+    img_cutout = "/img/testimonials/man-on-tablet.jpg"
+    # img_circle = "/img/team/team-dg.jpeg"
+
+
+[feature]
+  enable = true
+
+  [[feature.section]]
+    title = "What can Monax add to your brand?"
+    subtitle = "The Monax marketplace is a powerful solution for your needs as a content creator, providing a better infrastructure for you to build, protect, distribute and monetize your work."
+    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
+
+  [[feature.section]]
+    title = "Feature title"
     subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
 
-    [[top.feature]]
-      title = "Lorem Ipsum is simply dummy text"
-      description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      icon = "fa-calendar"
+  [[feature.section]]
+    title = "Feature title"
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
 
-    [[top.feature]]
-      title = "Lorem Ipsum is simply dummy text"
-      description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      icon = "fa-book"
 
-    [[top.feature]]
-      title = "Lorem Ipsum is simply dummy text"
-      description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      icon = "fa-facebook"
+[relatedarticles]
+  enable = true
+  filter_by_tag = "contentcreators" # changed in partials/monaxfor/contentcreators/relatedarticles.html
+  default_img = "/img/assets/backgrounds/mountains-1.jpg"
+
 
 [cta] # global
     enable = true

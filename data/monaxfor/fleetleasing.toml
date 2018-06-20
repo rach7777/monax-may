@@ -1,6 +1,6 @@
 [top]
     enable = true
-    title = "Fleet Leasing"
+    title = "Monax for fleet leasing"
     subtitle = "Deploy smart, legally binding agreements for fleets of any scale."
     img_left = false
     hero_signup = true
@@ -44,7 +44,7 @@
 
 [relatedarticles]
   enable = true
-  filter_by_tag = "fleetleasing"
+  filter_by_tag = "fleetleasing" # changed in partials/monaxfor/fleetleasing/relatedarticles.html
   default_img = "/img/assets/backgrounds/mountains-1.jpg"
 
 

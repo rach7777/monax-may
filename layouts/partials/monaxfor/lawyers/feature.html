@@ -1,0 +1,59 @@
+{{ with .Site.Data.monaxfor.lawyers.feature }}
+{{ if .enable }}
+<section class="section-feature padding-top-xl padding-bottom-lg section-shadow-xl">
+    <div class="container">
+
+      {{ range $i, $p := .section }}
+
+        {{ if (modBool $i 2) }} <!-- odd row -->
+          <div class="row flex-grid-md padding-bottom-lg">
+            <div class="col-md-4 col-md-offset-1 col-valign-center">
+              <img class="img-responsive" src="{{ .img_left }}" alt="">
+            </div> <!-- .col -->
+            <div class="col-md-6 col-valign-center">
+              <div class="range-left-sm underline-sm">
+                  <h2>{{ .title }}</h2>
+              </div>
+              <p class="lead range-left-sm">
+                {{ .subtitle | markdownify }}
+              </p>
+              <ul class="ul-icon-list">
+                {{ range .bullet }}
+                <li class="padding-bottom-xs">
+                  <i class="fa {{ .icon }}" aria-hidden="true"></i>
+                  <h4 class="range-left">{{ .title }}</h4>
+                  <p class="range-left">{{ .description }}</p>
+                </li>
+                {{ end }}
+              </ul>
+            </div> <!-- .col -->
+          </div>  <!-- .row -->
+          {{ else }} <!-- even row -->
+          <div class="row flex-grid-md padding-bottom-lg">
+            <div class="col-md-6 col-md-offset-1 col-valign-center">
+              <div class="range-left-sm underline-sm">
+                  <h2>{{ .title }}</h2>
+              </div>
+              <p class="lead range-left-sm">
+                {{ .subtitle | markdownify }}
+              </p>
+              <ul class="ul-icon-list">
+                {{ range .bullet }}
+                <li class="padding-bottom-xs">
+                  <i class="fa {{ .icon }}" aria-hidden="true"></i>
+                  <h4 class="range-left">{{ .title }}</h4>
+                  <p class="range-left">{{ .description }}</p>
+                </li>
+                {{ end }}
+              </ul>
+            </div> <!-- .col -->
+            <div class="col-md-4 col-valign-center">
+              <img class="img-responsive" src="{{ .img_left }}" alt="">
+            </div> <!-- .col -->
+          </div>  <!-- .row -->
+        {{ end }}
+      {{ end }}
+    </div> <!-- .container -->
+</section> <!-- .section -->
+{{ end }}
+{{ end }}

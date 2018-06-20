@@ -3,6 +3,10 @@
 layout: wide
 title:      "Learn | Legal Engineering"
 excerpt:    "What is legal engineering?"
+tags:
+  - lawyers
+  - contentcreators
+  - corporate
 
 ---
 

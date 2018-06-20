@@ -1,6 +1,6 @@
 {{ with .Site.Data.monaxfor.corporate.top }}
 {{ if .enable }}
-<section class="section-top padding-top-md padding-bottom-lg section-shadow-xl">
+<section class="section-top padding-top-md padding-bottom-lg section-shadow-xl" style="background: url({{ .background_element }}) right bottom no-repeat; background-size: 520px;">
     <div class="container">
 
       <div class="row flex-grid-md">
@@ -8,21 +8,30 @@
               <div class="underline-sm range-left-md">
                   <h1>{{ .title }}</h1>
               </div>
-              <!-- <p class="lead range-left-md">
+              <p class="lead range-left-md">
                 {{ .subtitle | markdownify }}
-              </p> -->
-              <img class="img-responsive" src="{{ .img_left }}" alt="">
+              </p>
+
+              <!-- Sign up section [GLOBAL] -->
+              {{ if .hero_signup }}
+                {{ partial "_global/hero_signup.html" . }}
+              {{ end }}
+
+              {{ if .img_left }}
+                <img class="img-responsive" src="{{ .img_left }}" alt="">
+              {{ end }}
           </div>
-          <div class="col-md-7 col-valign-center">
-              <ul class="ul-icon-list">
-                {{ range .feature }}
-                <li class="padding-bottom-xs">
-                  <i class="fa {{ .icon }}" aria-hidden="true"></i>
-                  <h4 class="range-left">{{ .title }}</h4>
-                  <p class="range-left">{{ .description }}</p>
-                </li>
-                {{ end }}
-              </ul>
+          <div class="col-md-7">
+
+            {{ if .img_right }}
+              <!-- test only -->
+              <div class="row flex-grid-md">
+                <div class="col-sm-12 col-valign-bottom">
+                  <img class="img-responsive img-center" src="{{ .img_right }}" alt="" style="position: relative;bottom: -60px;right: -55px;">
+                </div>
+              </div>
+            {{ end }}
+
           </div>
       </div>
 

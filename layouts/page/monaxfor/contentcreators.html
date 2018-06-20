@@ -17,7 +17,11 @@
 
         {{ partial "monaxfor/contentcreators/top.html" . }}
 
-        <!-- content here -->
+        {{ partial "monaxfor/contentcreators/testimonials.html" . }}
+
+        {{ partial "monaxfor/contentcreators/feature.html" . }}
+
+        {{ partial "monaxfor/contentcreators/relatedarticles.html" . }}
 
         <!-- CTA section [GLOBAL] -->
         {{ if isset .Site.Data.monaxfor.contentcreators "cta" }}

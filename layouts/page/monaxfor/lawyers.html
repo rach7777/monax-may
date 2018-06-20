@@ -17,7 +17,11 @@
 
         {{ partial "monaxfor/lawyers/top.html" . }}
 
-        <!-- content here -->
+        {{ partial "monaxfor/lawyers/testimonials.html" . }}
+
+        {{ partial "monaxfor/lawyers/feature.html" . }}
+
+        {{ partial "monaxfor/lawyers/relatedarticles.html" . }}
 
         <!-- CTA section [GLOBAL] -->
         {{ if isset .Site.Data.monaxfor.lawyers "cta" }}

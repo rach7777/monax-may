@@ -3,6 +3,8 @@
 layout: wide
 title:      "Learn | Smart Contracts"
 excerpt:    "What are Smart Contracts and why are these distributed logic gateways so cool?"
+tags:
+  - contentcreators
 
 ---
 
