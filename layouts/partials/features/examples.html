@@ -1,5 +1,5 @@
-{{ if isset .Site.Data.features "examples" }}
-{{ if .Site.Data.features.examples.enable }}
+{{ with .Site.Data.features.examples }}
+{{ if .enable }}
 
   <section class="section-examples padding-bottom-md padding-top-lg section-shadow-xl background-color">
       <div class="container">
@@ -13,7 +13,7 @@
         </div> -->
 
         <div class="row flex-grid-sm padding-bottom-md">
-          {{ range $i, $p := first 8 .Site.Data.features.examples.agreement }}
+          {{ range $i, $p := first 8 .agreement }}
 
             {{if eq $i 4}} <!-- 5th entry -->
         </div> <!-- start new row -->

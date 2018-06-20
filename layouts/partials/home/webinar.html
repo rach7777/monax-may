@@ -1,15 +1,15 @@
-<!-- {{ if isset .Site.Data.home "webinar" }}
-{{ if .Site.Data.home.webinar.enable }}
+<!-- {{ with .Site.Data.home.webinar }}
+{{ if .enable }}
 <section class="section-screencasts section-padding-xl">
     <div class="container">
 
         <div class="row">
           <div class="col-md-5 padding-top-sm">
             <div class="underline-sm range-left-md">
-                <h3>{{ .Site.Data.home.webinar.title }}</h3>
+                <h3>{{ .title }}</h3>
             </div>
             <p class="padding-bottom-md range-left-md">
-              {{ .Site.Data.home.webinar.subtitle | markdownify }}
+              {{ .subtitle | markdownify }}
             </p>
           </div>
           <div class="col-md-7">

@@ -1,5 +1,5 @@
-{{ if isset .Site.Data.features "backers" }}
-{{ if .Site.Data.features.backers.enable }}
+{{ with .Site.Data.features.backers }}
+{{ if .enable }}
 <section class="section-backers section-shadow-xl section-padding-lg">
     <div class="container">
 
@@ -7,16 +7,16 @@
         <div class="col-md-12">
 
           <div class="underline-sm range-left-md">
-              <h3>{{ .Site.Data.features.backers.title }}</h3>
+              <h3>{{ .title }}</h3>
           </div>
           <!-- <p class="range-left-md padding-bottom-sm">
-            {{ .Site.Data.features.backers.subtitle | markdownify }}
+            {{ .subtitle | markdownify }}
           </p> -->
 
         </div> <!-- .col -->
       </div> <!-- .row -->
 
-      {{ range first 1 .Site.Data.features.backers.investor }}
+      {{ range first 1 .investor }}
       <div class="row flex-grid-sm padding-bottom-lg">
         <div class="col-md-6">
           <div class="row">

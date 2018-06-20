@@ -1,21 +1,21 @@
-{{ if isset .Site.Data.home "screencasts" }}
-{{ if .Site.Data.home.screencasts.enable }}
+{{ with .Site.Data.home.screencasts }}
+{{ if .enable }}
 <section class="section-screencasts section-padding-xl">
     <div class="container">
 
       <div class="row">
         <div class="col-md-12">
           <div class="underline-sm">
-              <h2>{{ .Site.Data.home.screencasts.title }}</h2>
+              <h2>{{ .title }}</h2>
           </div>
           <p class="lead padding-bottom-sm">
-            {{ .Site.Data.home.screencasts.subtitle | markdownify }}
+            {{ .subtitle | markdownify }}
           </p>
         </div> <!-- .col -->
       </div> <!-- .row -->
 
       <div class="row padding-bottom-lg">
-        {{ range first 1 .Site.Data.home.screencasts.item }}
+        {{ range first 1 .item }}
 
           <div class="col-md-7">
             <div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">

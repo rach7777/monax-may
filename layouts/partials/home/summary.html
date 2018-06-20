@@ -1,5 +1,5 @@
-{{ if isset .Site.Data.home "summary" }}
-{{ if .Site.Data.home.summary.enable }}
+{{ with .Site.Data.home.summary }}
+{{ if .enable }}
 <section class="section-summary section-padding-xl section-shadow-xl">
     <div class="container">
 
@@ -8,11 +8,11 @@
         <div class="col-md-12">
 
             <div class="underline-sm">
-                <h2>{{ .Site.Data.home.summary.title }}</h2>
+                <h2>{{ .title }}</h2>
             </div>
 
             <p class="lead text-center">
-              {{ .Site.Data.home.summary.subtitle | markdownify }}
+              {{ .subtitle | markdownify }}
             </p>
 
         </div>
@@ -21,13 +21,13 @@
       <div class="row flex-grid-md">
 
         <div class="col-md-5 col-valign-center">
-          <img class="img-responsive" src="{{ .Site.Data.home.summary.img_left }}" alt="">
+          <img class="img-responsive" src="{{ .img_left }}" alt="">
         </div>
 
         <div class="col-md-7">
 
             <ul class="ul-icon-list">
-              {{ range .Site.Data.home.summary.feature }}
+              {{ range .feature }}
               <li class="padding-bottom-xs">
                 <i class="fa {{ .icon }}" aria-hidden="true"></i>
                 <h4 class="range-left">{{ .title }}</h4>

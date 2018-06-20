@@ -1,18 +1,18 @@
-{{ if isset .Site.Data.home "hero" }}
-{{ if .Site.Data.home.hero.enable }}
+{{ with .Site.Data.home.hero }}
+{{ if .enable }}
 <section class="section-hero section-padding-xl">
-    <div class="home_hero" style="position: relative; background: url( {{ .Site.Data.home.hero.img_bg }} ) center center repeat; background-size: cover;">
+    <div class="home_hero" style="position: relative; background: url( {{ .img_bg }} ) center center repeat; background-size: cover;">
       <div class="dark-mask"></div>
 
       <div class="container hero_overlay">
           <div class="flex-grid-md">
               <div class="col-md-5 col-valign-center">
                   <div class="underline-sm range-left-md">
-                      <h1>{{ .Site.Data.home.hero.title }}</h1>
+                      <h1>{{ .title }}</h1>
                   </div>
 
                   <p class="lead range-left-md">
-                    {{ .Site.Data.home.hero.subtitle | markdownify }}
+                    {{ .subtitle | markdownify }}
                   </p>
 
                   <form action="" class="col-valign-center flex-grid">
@@ -23,7 +23,7 @@
                   </form>
               </div>
               <div class="col-md-7">
-                  <img class="img-responsive" src="{{ .Site.Data.home.hero.img_right }}" alt="">
+                  <img class="img-responsive" src="{{ .img_right }}" alt="">
               </div>
           </div>
       </div>

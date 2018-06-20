@@ -1,24 +1,24 @@
-{{ if isset .Site.Data.home "featured" }}
-{{ if .Site.Data.home.featured.enable }}
+{{ with .Site.Data.home.featured }}
+{{ if .enable }}
 <section class="section-padding-sm background-dark section-featured">
     <div class="container">
 
       <div class="row flex-grid-sm">
 
         <div class="col-sm-3 col-valign-center">
-            <h4>{{ .Site.Data.home.featured.title }}</h4>
+            <h4>{{ .title }}</h4>
         </div>
 
         <div class="col-sm-3 col-xs-4 col-valign-center">
-          <img class="img-responsive img-center" src="{{ .Site.Data.home.featured.logo_1 }}" alt="">
+          <img class="img-responsive img-center" src="{{ .logo_1 }}" alt="">
         </div>
 
         <div class="col-sm-3 col-xs-4 col-valign-center">
-          <img class="img-responsive img-center" src="{{ .Site.Data.home.featured.logo_2 }}" alt="">
+          <img class="img-responsive img-center" src="{{ .logo_2 }}" alt="">
         </div>
 
         <div class="col-sm-3 col-xs-4 col-valign-center">
-          <img class="img-responsive img-center" src="{{ .Site.Data.home.featured.logo_3 }}" alt="">
+          <img class="img-responsive img-center" src="{{ .logo_3 }}" alt="">
         </div>
 
       </div>
