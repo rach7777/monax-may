@@ -50,7 +50,7 @@
             subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
 
 [backers] # global
-    enable = true
+    enable = false
 
 [cta] # global
     enable = true

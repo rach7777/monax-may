@@ -24,37 +24,37 @@ paginate = 10
     weight = 2
 
 [[menu.left]]
-    name = "Use Cases"
-    identifier = "usecases"
+    name = "Monax For"
+    identifier = "monaxfor"
     url  = "#"
     weight = 3
 
     # sub menu items
     [[menu.left]]
       Name = "Fleet leasing"
-      parent = "usecases"
-      URL = "/use-cases/fleet-leasing/"
+      parent = "monaxfor"
+      URL = "/for/fleet-leasing/"
       Post = "Latest thinking and classic articles on sales and marketing, product management, startups and more"
       Weight = 1
 
     [[menu.left]]
       Name = "Corporate Governance"
-      parent = "usecases"
-      URL = "/use-cases/corporate-governance/"
+      parent = "monaxfor"
+      URL = "/for/corporate-governance/"
       Post = "Latest thinking and classic articles on sales and marketing, product management, startups and more"
       Weight = 2
 
     [[menu.left]]
       Name = "Content Creators"
-      parent = "usecases"
-      URL = "/use-cases/content-creators/"
+      parent = "monaxfor"
+      URL = "/for/content-creators/"
       Post = "Latest thinking and classic articles on sales and marketing, product management, startups and more"
       Weight = 3
 
     [[menu.left]]
       Name = "Lawyers"
-      parent = "usecases"
-      URL = "/use-cases/lawyers/"
+      parent = "monaxfor"
+      URL = "/for/lawyers/"
       Post = "Latest thinking and classic articles on sales and marketing, product management, startups and more"
       Weight = 4
 
@@ -68,35 +68,35 @@ paginate = 10
     [[menu.left]]
       Name = "Blog"
       parent = "resources"
-      URL = "/resources/blog/"
+      URL = "/blog/"
       Post = "Latest thinking and classic articles on sales and marketing, product management, startups and more"
       Weight = 1
 
     [[menu.left]]
       Name = "Case Studies"
       parent = "resources"
-      URL = "/resources/case-studies/"
+      URL = "/casestudies/"
       Post = "Latest thinking and classic articles on sales and marketing, product management, startups and more"
       Weight = 2
 
     [[menu.left]]
       Name = "Explainers"
       parent = "resources"
-      URL = "/resources/explainers/"
-      Post = "Latest thinking and classic articles on sales and marketing, product management, startups and more"
+      URL = "/explainers/"
+      Post = "BPMN and legal products design... Latest thinking and classic articles on sales and marketing, product management, startups and more"
       Weight = 3
 
     [[menu.left]]
       Name = "Company News"
       parent = "resources"
-      URL = "/resources/news/"
+      URL = "/news/"
       Post = "Latest thinking and classic articles on sales and marketing, product management, startups and more"
       Weight = 4
 
     [[menu.left]]
       Name = "Webinars"
       parent = "resources"
-      URL = "/resources/webinars/"
+      URL = "/webinars/"
       Post = "Latest thinking and classic articles on sales and marketing, product management, startups and more"
       Weight = 5
 
@@ -104,16 +104,6 @@ paginate = 10
     name = "Company"
     url  = "/company/"
     weight = 5
-
-# [[menu.left]]
-#     name = "*Invest"
-#     url  = "/investors/"
-#     weight = 6
-#
-# [[menu.left]]
-#     name = "*Press"
-#     url  = "/press/"
-#     weight = 7
 
 [[menu.register]]
     name = "Try For Free"
@@ -126,9 +116,7 @@ paginate = 10
     weight = 7
 
 
-
-
-# Top bar social links menu
+# Top bar social links menu [UNUSED]
 
 [[menu.topbar]]
     weight = 1
@@ -188,28 +176,23 @@ paginate = 10
     # Enable the contact form by entering your Formspree.io email
     email = "info@monax.io"
 
-    about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
-    copyright = "&copy; Monax Industries. All rights reserved."
-
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
 
     logo = "/img/logo.png"
-    address = """<p><strong>Monax Industries</strong>
-        <br>123 New Avenue
-        <br>Washington DC
-        <br>United States
-      </p>
-      """
 
 [Permalinks]
-    blog = "/resources/blog/:year/:month/:day/:filename/"
-    usecases = "/resources/use-cases/:title"
+    blog = "/blog/:year/:month/:title/"
+    casestudies = "/casestudies/:title/"
+    explainers = "/explainers/:title/"
+    news = "/news/:year/:month/:title/"
+    webinars = "/webinars/:year/:month/:title/"
+    for = "/for/:title"
+
 
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = false
-    text = ""
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]

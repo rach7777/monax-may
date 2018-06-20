@@ -20,7 +20,7 @@
 
 
           <div class="row">
-            {{ range .article }}
+            {{ range first 6 (where $.Site.Pages "Section" "casestudies") }}
 
               <div class="col-md-4 col-sm-6 padding-bottom-sm">
 
@@ -33,13 +33,12 @@
 
                   <div class="col-xs-10">
                     <div class="range-left-sm">
-                        <h4>{{ .title }} &rsaquo;</h4>
+                        <a href="{{ .Permalink }}"><h4>{{ .Title }} &rsaquo;</h4></a>
                     </div>
                     <p class="range-left-sm">
-                      {{ .subtitle | markdownify }}
+                      {{ .Summary | markdownify }}
                     </p>
                   </div> <!-- .col -->
-
 
                 </div> <!-- .row -->
               </div> <!-- .col -->
