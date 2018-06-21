@@ -5,14 +5,24 @@
 /*
 CORPORATE COLORS
 ---
-MONAX GREEN:         #96B85D
-GREN HOVER:          #799844
+MONAX GREEN:         #96B85D => 98b762
+GREEN HOVER:          #799844
 COLOR BG:            #414b84
 GREY BG:             #e0e0e0
 WHITE:               #FFFFFF
 LIGHT GREY:          #8E8E8E
 DARK GREY:           #484748
 BLACK:               #000000
+*/
+
+/*
+BIRGHT PALLETE
+---
+GREEN:               #98b762
+BLUE:                #248ab1
+PURPLE:              #852774
+YELLOW:              #cea033
+BROWN:               #4e5125
 */
 
 body {
@@ -336,7 +346,9 @@ select.onboarding-information__select {
   font-weight: 400;
   color: #fff;
 }
-.btn:hover {
+.btn:hover,
+.btn:focus,
+.btn:active:focus {
     background-color: #799844;
     border: none;
     font-weight: 400;
@@ -460,6 +472,32 @@ select.onboarding-information__select {
     -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
   }
+}
+
+
+/* ==============
+  Positioning
+=============== */
+
+.pin-top-right {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.pin-top-left {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.pin-bottom-right {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.pin-bottom-left {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
 }
 
 
@@ -823,31 +861,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .background-grey {
     background-color: #e0e0e0;
 }
-/* .background-grey h1,
-.background-grey h2,
-.background-grey h3,
-.background-grey h4,
-.background-grey h5,
-.background-grey h6 {
-    color: #fff;
-    font-weight: 400;
-}
-.background-grey p,
-.background-grey ul {
-    color: #ccc;
-}
-.background-grey .btn {
-  background-color: #96B85D;
-  color: #fff;
-  border: none;
-}
-.background-grey .btn:hover {
-  background-color: #4b905a;
-  color: #fff;
-  border: none;
-} */
 .background-color {
-    background-color: #414b84;
     background: rgb(33,80,128);
     background: -webkit-linear-gradient(bottom, rgba(33,80,128,1) 0%, rgba(65,75,132,1) 100%);
     background: -o-linear-gradient(bottom, rgba(33,80,128,1) 0%, rgba(65,75,132,1) 100%);
@@ -863,26 +877,21 @@ p, h1, h2, h3, h4, h5, h6 {
 .background-color ul {
     color: #fff;
 }
-.background-color .btn {
-  background-color: #1d272f;
-  color: #fff;
-  border: none;
+.background-color.green {
+    background: #98b762;
 }
-.background-color .btn:hover {
-  background-color: #000;
-  color: #fff;
-  border: none;
+.background-color.blue {
+    background: #248ab1;
 }
-
-/* .background-color .underline-full {
-  border-color: #fff;
+.background-color.purple {
+    background: #852774;
 }
-.background-color .underline-sm h1:after,
-.background-color .underline-sm h2:after,
-.background-color .underline-sm h3:after {
-  background-color: #fff;
-} */
-
+.background-color.yellow {
+    background: #cea033;
+}
+.background-color.brown {
+    background: #4e5125;
+}
 
 /* ==============
   Timeline
@@ -988,7 +997,8 @@ p, h1, h2, h3, h4, h5, h6 {
 .content-card p {
   color: #666;
 }
-.content-card-full {
+.content-card-full,
+.content-card-stack {
   padding: 0px;
 }
 .content-card-full .text-container {
@@ -1007,6 +1017,20 @@ p, h1, h2, h3, h4, h5, h6 {
     clip-path: polygon(65% 0, 100% 0, 100% 100%, 0% 100%);
   }
 }
+.content-card-stack .img-container {
+    min-height: 200px;
+}
+.content-card-stack .text-container {
+  padding: 20px 35px 20px 35px;
+}
+.content-card .meta {
+    border-top: 1px solid #ddd;
+    padding-top: 8px;
+}
+.content-card .meta p {
+    font-size: 14px;
+}
+/* .content-card links */
 .a-card {
   color: inherit !important;
   text-decoration: none !important;
@@ -1029,6 +1053,38 @@ p, h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 10px 100px rgba(0,0,0,0.5);
 }
 
+/* .content-circle */
+.content-cicle {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    padding: 18px 0px;
+    font-size: 16px;
+}
+.button-icon-circle {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    padding: 12px 0px;
+    font-size: 24px;
+}
+
+
+
+/* ==============
+  Pagination
+=============== */
+
+.pagination-container .button-prev,
+.pagination-container .button-next {
+  margin: 0 5px;
+}
 
 
 /* ==================================

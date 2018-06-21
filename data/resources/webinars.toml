@@ -1,54 +1,16 @@
 [top]
     enable = true
-    title = "Webinars"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
-
-    [[top.feature]]
-      title = "Lorem Ipsum is simply dummy text"
-      description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      icon = "fa-calendar"
-
-    [[top.feature]]
-      title = "Lorem Ipsum is simply dummy text"
-      description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      icon = "fa-book"
-
-    [[top.feature]]
-      title = "Lorem Ipsum is simply dummy text"
-      description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      icon = "fa-facebook"
+    title = "Upcoming webinars"
+    subtitle = "Learn how Monax can help you streamline your business. Explore best practices for Monax tools and ask questions."
+    img_left = false
+    hero_signup = true
+    # img_right = "/img/assets/background-elements/wphone-test.png"
+    background_element = "/img/assets/background-elements/abstract-01.jpg"
 
 [articles]
-    enable = true
-    title = "Important Company articles"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-
-        # articles will be auto populated from posts
-        [[articles.article]]
-            title = "Explainer article title"
-            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
-
-        [[articles.article]]
-            title = "Explainer article title"
-            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
-
-        [[articles.article]]
-            title = "Explainer article title"
-            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
-
-        [[articles.article]]
-            title = "Explainer article title"
-            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
-
-        [[articles.article]]
-            title = "Explainer article title"
-            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
-
-        [[articles.article]]
-            title = "Explainer article title"
-            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
-
+  enable = true
+  filter_by_category = "webinars" # changed in partials/resources/webinars/articles.html
+  default_img = "/img/assets/backgrounds/mountains-1.jpg"
 
 [backers] # global
     enable = false

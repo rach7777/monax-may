@@ -1,52 +1,83 @@
 {{ with .Site.Data.resources.casestudies.articles }}
 {{ if .enable }}
-<section class="section-articles section-padding-lg">
-    <div class="container">
+{{ $defaultImg := .default_img }}
 
-          <div class="row">
-            <div class="col-md-5">
+  <section class="section-usecases section-padding-xl background-color">
+      <div class="container">
 
-              <div class="content-container padding-bottom-sm">
-                <div class="underline-sm range-left-md">
-                    <h3>{{ .title }}</h3>
-                </div>
-                <!-- <p class="range-left-md padding-bottom-sm">
-                  {{ .subtitle | markdownify }}
-                </p> -->
-              </div> <!-- .content-container -->
+        <div class="row content-container flex-grid-sm padding-bottom-md">
+          {{ range $i, $p := $.Paginator.Pages }}
 
-            </div> <!-- .col -->
-          </div> <!-- .row -->
-
-
-          <div class="row">
-            {{ range first 6 (where $.Site.Pages "Type" "casestudies") }}
-
-              <div class="col-md-4 col-sm-6 padding-bottom-sm">
-
-                <div class="row">
-                  <div class="col-xs-2">
-                    <div class="icon-container article-icon">
-                      <i class='fa fa-calendar'></i>
-                    </div>
-                  </div> <!-- .col -->
-
-                  <div class="col-xs-10">
-                    <div class="range-left-sm">
-                        <a href="{{ .Permalink }}"><h4>{{ .Title }} &rsaquo;</h4></a>
-                    </div>
-                    <p class="range-left-sm">
-                      {{ .Summary | markdownify }}
-                    </p>
-                  </div> <!-- .col -->
-
-                </div> <!-- .row -->
-              </div> <!-- .col -->
-
+            {{ if (modBool $i 3) }} <!-- paginate after 3 entries -->
+        </div>
+        <div class="row content-container flex-grid-sm padding-bottom-md">
             {{ end }}
-          </div> <!-- .row -->
 
-    </div> <!-- .container -->
-</section>
+            <!-- check for img override -->
+            {{ if .Params.img }}
+              {{ $defaultImg := .Params.img }}
+            {{ end }}
+
+            <div class="col-sm-4 flex-grid-sm">
+              <a href="{{ .Permalink }}" class="flex-grid-sm a-card">
+              <div class="content-container content-card content-card-stack">
+                <div class="img-container background-dark" style="background:url({{ $defaultImg }}) center center no-repeat; background-size: cover;">
+                  <!-- <div class="content-container content-cicle background-color green pin-top-right">
+                    <div class="circle-top">
+                      {{ dateFormat "Jan 2" .Date }}
+                    </div>
+                    <div class="circle-bottom">
+                      {{ dateFormat "2006" .Date }}
+                    </div>
+                  </div> -->
+                </div>
+                <div class="text-container">
+                  <div class="title range-left">
+                      <h5>{{ .Title }} &rsaquo;</h5>
+                  </div>
+                  <p class="subtitle range-left">
+                    {{ if .Params.excerpt }}
+                      {{ if gt (len .Params.excerpt) 140 }}
+                        {{ substr .Params.excerpt 0 140 }}...
+                      {{ else }}
+                        {{ .Params.excerpt }}
+                      {{ end }}
+                    {{ else }}
+                      {{ if gt (len .Summary) 140 }}
+                        {{ substr .Summary 0 140 }}...
+                      {{ else }}
+                        {{ .Summary }}
+                      {{ end }}
+                    {{ end }}
+                  </p>
+                  <div class="meta range-left">
+                    <p><span><i class="fa fa-calendar"></i> {{ dateFormat "Jan 2 2006" .Date }}</span> | <span><i class="fa fa-user-o"></i> {{ .Params.author }}</span></p>
+                  </div>
+                </div>
+              </div>  <!-- .content-card -->
+              </a>
+            </div>  <!-- .col -->
+          {{ end }}
+        </div> <!-- .row -->
+
+        {{ if or ($.Paginator.HasPrev) ($.Paginator.HasNext) }}
+          <div class="btn-container pagination-container" style="">
+            {{ if $.Paginator.HasPrev }}
+              <a href="{{ .Site.BaseURL }}{{ $.Paginator.Prev.URL }}" class="btn btn-primary btn-xl button-icon-circle button-prev" role="button"><i class="fa fa-arrow-left"></i></a>
+            {{ else }}
+              <a href="#" class="btn btn-primary btn-xl button-icon-circle button-prev disabled" role="button"><i class="fa fa-arrow-left"></i></a>
+            {{ end }}
+
+            {{ if $.Paginator.HasNext }}
+              <a href="{{ .Site.BaseURL }}{{ $.Paginator.Next.URL }}" class="btn btn-primary btn-xl button-icon-circle button-next" role="button"><i class="fa fa-arrow-right"></i></a>
+            {{ else }}
+              <a href="#" class="btn btn-primary btn-xl button-icon-circle button-next disabled" role="button"><i class="fa fa-arrow-right"></i></a>
+            {{ end }}
+          </div>
+        {{ end }}
+
+      </div> <!-- .container -->
+  </section>
+
 {{ end }}
 {{ end }}
