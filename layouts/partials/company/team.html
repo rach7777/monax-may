@@ -1,23 +1,40 @@
-{{ if isset .Site.Data.company "team" }}
-{{ if .Site.Data.company.team.enable }}
+{{ with .Site.Data.company.team }}
+{{ if .enable }}
 <section class="section-team section-padding-lg">
     <div class="container">
 
       <div class="row">
         <div class="col-md-12">
           <div class="underline-sm">
-              <h2>{{ .Site.Data.company.team.title }}</h2>
+              <h2>{{ .title }}</h2>
           </div>
-          <p class="padding-bottom-md">
-            {{ .Site.Data.company.team.subtitle | markdownify }}
+          <p class="p1 padding-bottom-sm">
+            {{ .subtitle | markdownify }}
           </p>
+          <div class="content-container padding-bottom-lg">
+            <div class="row flex-grid-sm">
+              {{ range .office }}
+              <div class="col-sm-4 col-valign-center">
+                <img class="img-responsive img-center img-city hover-scale" src="{{ .img }}" alt="">
+                <h5 style="">{{ .city }}</h5>
+              </div>
+              {{ end }}
+            </div>
+
+          </div>
         </div> <!-- .col -->
       </div> <!-- .row -->
 
       <div class="row">
-        {{ range .Site.Data.company.team.item }}
-        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6 padding-bottom-md">
-            <img class="img-responsive img-center img-headshot" src="{{ .img }}" alt="">
+        {{ range $i, $p := sort .item "weight" }}
+
+          {{ if (modBool $i 6) }} <!-- new row after 6 entries -->
+      </div>
+      <div class="row">
+          {{ end }}
+
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6 padding-bottom-sm">
+            <img class="img-responsive img-center img-headshot hover-scale" src="{{ .img }}" alt="">
           <div class="">
               <h5 style="margin-bottom:2px;">{{ .name }}</h5>
               <p>{{ .position }}</p>
@@ -25,13 +42,19 @@
           <div class="ul-center flex-grid-xs">
             <ul class="ul-round-icons ul-team-icons">
               {{ with .twitter}}
-                <a href="{{ . }}"><li><i class='fa fa-twitter'></i></li></a>
+                <a href="{{ . }}" target="_blank"><li><i class='fa fa-twitter'></i></li></a>
               {{ end }}
               {{ with .linkedin}}
-                <a href="{{ . }}"><li><i class='fa fa-linkedin'></i></li></a>
+                <a href="{{ . }}" target="_blank"><li><i class='fa fa-linkedin'></i></li></a>
               {{ end }}
               {{ with .github}}
-                <a href="{{ . }}"><li><i class='fa fa-github'></i></li></a>
+                <a href="{{ . }}" target="_blank"><li><i class='fa fa-github'></i></li></a>
+              {{ end }}
+              {{ with .keybase}}
+                <a href="{{ . }}" target="_blank"><li><i class='fa fa-key'></i></li></a>
+              {{ end }}
+              {{ with .website}}
+                <a href="{{ . }}" target="_blank"><li><i class='fa fa-github'></i></li></a>
               {{ end }}
             </ul>
           </div>

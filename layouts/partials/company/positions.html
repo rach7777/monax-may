@@ -1,6 +1,6 @@
-{{ if isset .Site.Data.company "positions" }}
-{{ if .Site.Data.company.positions.enable }}
-<section class="section-positions section-padding-xl section-shadow-xl">
+{{ with .Site.Data.company.positions }}
+{{ if .enable }}
+<section class="section-positions padding-bottom-xl">
     <div class="container">
 
         <div class="row">
@@ -8,44 +8,50 @@
 
             <div class="content-container padding-bottom-md">
               <div class="underline-sm range-left-md">
-                  <h3>{{ .Site.Data.company.positions.title }}</h3>
+                  <h3>{{ .title }}</h3>
               </div>
               <p class="range-left-md padding-bottom-sm">
-                {{ .Site.Data.company.positions.subtitle | markdownify }}
+                {{ .subtitle | markdownify }}
               </p>
             </div> <!-- .content-container -->
 
             <div class="content-container padding-bottom-md">
                 <div class="range-left-md">
-                    <h4>{{ .Site.Data.company.positions.contact.title }}</h4>
+                    <h4>{{ .contact.title }}</h4>
                 </div>
                 <p class="range-left-md padding-bottom-sm">
-                  {{ .Site.Data.company.positions.contact.subtitle | markdownify }}
+                  {{ .contact.subtitle | markdownify }}
                 </p>
             </div> <!-- .content-container -->
 
           </div> <!-- .col -->
-          <div class="col-md-7 padding-top-md">
-            <div class="content-container padding-bottom-sm">
-              <div class="flex-grid job-placeholder">
-                <div class="col-sm-12 col-valign-center" style="width: 100%;">
-                    <h4>-- JOB PLACEHOLDER --</h4>
-                </div>
-              </div>
+          <div class="col-md-7">
+            <div class="row flex-grid-sm">
+              {{ range $i, $p := .job }}
+
+                {{ if (modBool $i 2) }} <!-- new row after 6 entries -->
             </div>
-            <div class="content-container padding-bottom-sm">
-              <div class="flex-grid job-placeholder">
-                <div class="col-sm-12 col-valign-center" style="width: 100%;">
-                    <h4>-- JOB PLACEHOLDER --</h4>
-                </div>
+            <div class="row flex-grid-sm">
+                {{ end }}
+
+              <div class="col-sm-6 padding-bottom-md flex-grid-sm" style="width: 100%;">
+                <div class="content-container content-card content-card-stack flex-grid-sm hover-scale" style="width: 100%;">
+                  <div class="text-container">
+                    <div class="title range-left">
+                      <h5>{{ .title }}</h5>
+                      <p class="subtitle range-left">
+                        {{ .description }}
+                      </p>
+                    </div>
+                    <div class="meta range-left">
+                      <p><span><i class="fa fa-calendar"></i> &nbsp;{{ .hours }}</span>&nbsp; - &nbsp;<span><i class="fa fa-clock-o"></i> &nbsp;{{ .type }}</span></p>
+                      <p><span><i class="fa fa-calendar"></i> &nbsp;{{ .location }}</span>&nbsp; - &nbsp;<span><i class="fa fa-calendar"></i> &nbsp;{{ .posted_date }}</span></p>
+                    </div>
+                  </div>
+                </div>  <!-- .content-card -->
               </div>
-            </div>
-            <div class="content-container padding-bottom-sm">
-              <div class="flex-grid job-placeholder">
-                <div class="col-sm-12 col-valign-center" style="width: 100%;">
-                    <h4>-- JOB PLACEHOLDER --</h4>
-                </div>
-              </div>
+
+              {{ end }}
             </div>
           </div> <!-- .col -->
         </div> <!-- .row -->

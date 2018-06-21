@@ -1,8 +1,11 @@
-[hero]
+[top]
     enable = true
-    title = "Why Monax?"
-    subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
-    img_bg = "/img/assets/backgrounds/mountains-1.jpg"
+    title = "Disrupting the legal tech industry"
+    subtitle = "Discover our journey, how we think and the paradigm shift we see happening toward legal products."
+    img_left = false
+    hero_signup = false
+    img_right = "/img/assets/background-elements/wphone-test.png"
+    background_element = "/img/assets/background-elements/abstract-01.jpg"
 
 
 [featured]
@@ -12,97 +15,53 @@
     logo_2 = "/img/logos/example-logo.png"
     logo_3 = "/img/logos/example-logo.png"
 
-[about]
-  enable = true
-  title = "Monax are at the forefront of blockchain technology"
-  subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
-  [[about.social_icon]]
-      icon = "fa-github"
-      link = "#"
-      title = "Github"
-
-  [[about.social_icon]]
-      icon = "fa-facebook"
-      link = "#"
-      title = "Facebook"
-
-  [[about.social_icon]]
-      icon = "fa-twitter"
-      link = "#"
-      title = "Twitter"
-
-  [about.partnerships]
-      enable = true
-      title = "Partnerships"
-      subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-
-      [[about.partnerships.logo]]
-          name = "Example"
-          logo = "/img/logos/example-gray-logo.png"
-          link = "#"
-
-      [[about.partnerships.logo]]
-          name = "Example"
-          logo = "/img/logos/example-gray-logo.png"
-          link = "#"
-
-      [[about.partnerships.logo]]
-          name = "Example"
-          logo = "/img/logos/example-gray-logo.png"
-          link = "#"
-
-      [[about.partnerships.logo]]
-          name = "Example"
-          logo = "/img/logos/example-gray-logo.png"
-          link = "#"
-
-      [[about.partnerships.logo]]
-          name = "Example"
-          logo = "/img/logos/example-gray-logo.png"
-          link = "#"
-
-      [[about.partnerships.logo]]
-          name = "Example"
-          logo = "/img/logos/example-gray-logo.png"
-          link = "#"
-
-
-  [about.history]
-
-      [[about.history.item]]
-          date = "Jan 2018"
-          title = "Web Platform is born"
-          highlight = "Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis."
-          bullets = [
-           "Exercitationem enim dolores sunt praesentium dolorum praesentium",
-           "Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo"
-          ]
-
-      [[about.history.item]]
-          date = "Jul 2017"
-          title = "Burrow is born"
-          highlight = "Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis."
-          bullets = [
-           "Rerum sit libero possimus amet excepturi",
-           "Exercitationem enim dolores sunt praesentium dolorum praesentium",
-           "Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo"
-          ]
-
-      [[about.history.item]]
-          date = "Nov 2017"
-          title = "Monax is born"
-          highlight = "Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis."
-          bullets = [
-           "Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo"
-          ]
-
-
-
-[mission]
+[history]
     enable = true
-    title = "Here's our mission..."
+    title = "Monax are at the forefront of blockchain technology"
     subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+    [[history.time]]
+      date = "June 2014"
+      label = "Eris Industries Founded"
+      logo = "/img/logos/Eris_icon_white.png"
+      description_text = "Eris Industries Founded"
+
+    [[history.time]]
+      date = "Dec 2014"
+      label = "Burrow Launched"
+      logo = "/img/logos/Burrow_icon_white.png"
+      description_text = "Burrow - the first permissioned blockchain - is launched"
+
+    [[history.time]]
+      date = "2015"
+      label = "Eris Platform Launched"
+      logo = "/img/logos/Eris_icon_white.png"
+      description_text = "Eris v0.10 platform is launched"
+
+    [[history.time]]
+      date = "2016"
+      label = "Rebrand To Monax"
+      logo = "/img/logos/monax_icon_white.png"
+      description_text = "Rebrand of Eris to Monax"
+
+    [[history.time]]
+      date = "Feb 2017"
+      label = "Monax Joins Hyperledger"
+      logo = "/img/logos/Hyperledger_icon_white.png"
+      description_text = "Monax joins the Hyperledger Consortium"
+
+    [[history.time]]
+      date = "March 2017"
+      label = "Monax Joins The EEA"
+      logo = "/img/logos/eea_icon_white.png"
+      description_text = "Monax joins the Enterprise Ethereum Alliance"
+
+    [[history.time]]
+      date = "April 2018"
+      label = "Agreements Network"
+      logo = "/img/logos/AgreementsNetwork_icon_white.png"
+      description_text = "Monax announces the Agreements Network as one of the founding companies behind it"
 
 
 [team]
@@ -110,141 +69,200 @@
     title = "Meet the team"
     subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
+    [[team.office]]
+    city = "New York"
+    img = "/img/cities/New-York.png"
+
+    [[team.office]]
+    city = "London"
+    img = "/img/cities/London.png"
+
+    [[team.office]]
+    city = "Edinburgh"
+    img = "/img/cities/Rome.png"
+
     [[team.item]]
-      name = "Team Member"
-      position = "Position"
+      name = "Adam Locklin"
+      position = "Product Manager"
+      weight = 1
       img = "/img/team/team-al.jpeg"
-      twitter = "#"
-      linkedin = "#"
-      github = "#"
+      twitter = "https://twitter.com/AdamLocklin"
+      # linkedin = "#"
+      keybase = "https://keybase.io/adamlocklin"
+      # github = "#"
+      # website = "#"
 
     [[team.item]]
-      name = "Team Member"
-      position = "Position"
-      img = "/img/team/team-chw.jpeg"
-      twitter = "#"
-      linkedin = "#"
-      github = "#"
-
-    [[team.item]]
-      name = "Team Member"
-      position = "Position"
+      name = "Casey Kuhlman"
+      position = "CEO"
+      weight = 2
       img = "/img/team/team-csk.jpeg"
-      twitter = "#"
-      linkedin = "#"
-      github = "#"
+      twitter = "https://twitter.com/compleatang"
+      # linkedin = "#"
+      keybase = "https://keybase.io/compleatang"
+      github = "https://github.com/compleatang"
+      # website = "#"
 
     [[team.item]]
-      name = "Team Member"
-      position = "Position"
+      name = "Chenxiao Hu Wu"
+      position = "Producer Experience Associate"
+      weight = 1
+      img = "/img/team/team-chw.jpeg"
+      # twitter = "#"
+      # linkedin = "#"
+      keybase = "https://keybase.io/chenxiao"
+      # github = "#"
+      # website = "#"
+
+    [[team.item]]
+      name = "David Galbraith"
+      position = "Director"
+      weight = 2
       img = "/img/team/team-dg.jpeg"
-      twitter = "#"
-      linkedin = "#"
-      github = "#"
+      twitter = "https://twitter.com/daveg"
+      # linkedin = "#"
+      # github = "#"
+      # website = "#"
 
     [[team.item]]
-      name = "Team Member"
-      position = "Position"
+      name = "Jeremy Drane"
+      position = "Advisor"
+      weight = 3
       img = "/img/team/team-jd.jpeg"
-      twitter = "#"
-      linkedin = "#"
-      github = "#"
+      twitter = "https://twitter.com/dranejeremy"
+      # linkedin = "#"
+      # github = "#"
+      website = "http://www.libra.tech/"
 
     [[team.item]]
-      name = "Team Member"
-      position = "Position"
+      name = "Jan Hendrik Scheufen"
+      position = "CPO"
+      weight = 2
       img = "/img/team/team-jhs.jpeg"
-      twitter = "#"
-      linkedin = "#"
-      github = "#"
+      twitter = "https://twitter.com/jhscheufen"
+      # linkedin = "#"
+      keybase = "https://keybase.io/jhscheufen"
+      github = "https://github.com/j-h-scheufen"
+      # website = "#"
 
     [[team.item]]
-      name = "Team Member"
-      position = "Position"
+      name = "Mel Roy"
+      position = "Operations Manager"
+      weight = 1
       img = "/img/team/team-mr.jpeg"
-      twitter = "#"
-      linkedin = "#"
-      github = "#"
+      # twitter = "#"
+      # linkedin = "#"
+      # github = "#"
+      # website = "#"
 
     [[team.item]]
-      name = "Team Member"
-      position = "Position"
+      name = "Nina Kilbride"
+      position = "Head of Legal Engineering"
+      weight = 1
       img = "/img/team/team-nk.jpeg"
-      twitter = "#"
-      linkedin = "#"
-      github = "#"
+      twitter = "https://twitter.com/NinaKilbride"
+      # linkedin = "#"
+      keybase = "https://keybase.io/ninakilbride"
+      github = "https://github.com/ngk26200"
+      website = "http://cryptolawyer.net/"
 
     [[team.item]]
-      name = "Team Member"
-      position = "Position"
+      name = "Ommi Shimizu"
+      position = "Full Stack Engineer"
+      weight = 1
       img = "/img/team/team-os.jpeg"
-      twitter = "#"
-      linkedin = "#"
-      github = "#"
+      # twitter = "#"
+      # linkedin = "#"
+      github = "https://github.com/ommish"
+      # website = "#"
 
     [[team.item]]
-      name = "Team Member"
-      position = "Position"
+      name = "Pascal Froux"
+      position = "Advisor"
+      weight = 3
       img = "/img/team/team-pf.jpeg"
-      twitter = "#"
-      linkedin = "#"
-      github = "#"
+      # twitter = "#"
+      # linkedin = "#"
+      # keybase = "#"
+      # github = "#"
+      website = "http://www.flamel.be/"
 
     [[team.item]]
-      name = "Team Member"
-      position = "Position"
+      name = "Rachel Davidson"
+      position = "Senior Marketing Associate"
+      weight = 1
       img = "/img/team/team-rd.jpeg"
-      twitter = "#"
-      linkedin = "#"
-      github = "#"
+      twitter = "https://twitter.com/Cryptojourno_uk"
+      # linkedin = "#"
+      keybase = "https://keybase.io/monaxrach"
+      # github = "#"
+      # website = "#"
 
     [[team.item]]
-      name = "Team Member"
-      position = "Position"
-      img = "/img/team/team-sd.jpeg"
-      twitter = "#"
-      linkedin = "#"
-      github = "#"
-
-    [[team.item]]
-      name = "Team Member"
-      position = "Position"
+      name = "Sam Sinha"
+      position = "Smart Contract Engineer"
+      weight = 1
       img = "/img/team/team-ss.jpeg"
-      twitter = "#"
-      linkedin = "#"
-      github = "#"
+      twitter = "https://twitter.com/samsrobotarmy"
+      # linkedin = "#"
+      keybase = "https://keybase.io/sambuds"
+      github = "https://github.com/sambuds"
+      # website = "#"
 
     [[team.item]]
-      name = "Team Member"
-      position = "Position"
+      name = "Silas Davis"
+      position = "CTO"
+      weight = 2
+      img = "/img/team/team-sd.jpeg"
+      twitter = "https://twitter.com/silas_davis"
+      # linkedin = "#"
+      keybase = "https://keybase.io/silasdavis"
+      github = "https://github.com/silasdavis"
+      # website = "#"
+
+    [[team.item]]
+      name = "Sean Young"
+      position = "Platform Engineer"
+      weight = 1
       img = "/img/team/team-sy.jpeg"
-      twitter = "#"
-      linkedin = "#"
-      github = "#"
+      twitter = "https://twitter.com/iamseanyoung"
+      # linkedin = "#"
+      keybase = "https://keybase.io/seanyoung"
+      github = "https://github.com/seanyoung"
+      # website = "#"
 
     [[team.item]]
-      name = "Team Member"
-      position = "Position"
+      name = "Tobias Barnes Hofmeister"
+      position = "Marketing Analyst"
+      weight = 1
       img = "/img/team/team-th.jpeg"
-      twitter = "#"
-      linkedin = "#"
-      github = "#"
+      # twitter = "#"
+      # linkedin = "#"
+      keybase = "https://keybase.io/tobiashofmeister"
+      # github = "#"
+      # website = "#"
 
     [[team.item]]
-      name = "Team Member"
-      position = "Position"
+      name = "Dr. Tyler Jackson"
+      position = "Chief Scientist"
+      weight = 1
       img = "/img/team/team-tj.jpeg"
-      twitter = "#"
-      linkedin = "#"
-      github = "#"
+      twitter = "https://twitter.com/dennismckinnon"
+      # linkedin = "#"
+      keybase = "https://keybase.io/tylerjackson"
+      github = "https://github.com/dennismckinnon"
+      # website = "#"
 
     [[team.item]]
-      name = "Team Member"
-      position = "Position"
+      name = "Yann Ranchere"
+      position = "Director"
+      weight = 2
       img = "/img/team/team-yr.jpeg"
-      twitter = "#"
-      linkedin = "#"
-      github = "#"
+      twitter = "https://twitter.com/tek_fin"
+      # linkedin = "#"
+      # keybase = "#"
+      # github = "#"
+      # website = "#"
 
 
 [positions]
@@ -255,6 +273,73 @@
     [positions.contact]
         title = "Contact us if you're interested"
         subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Please email <a href='mailto:jobs@monax.io'>jobs@monax.io</a> with your cv and portfolio."
+
+    [[positions.job]]
+        title = "Job title"
+        description = "This is an example of a job description. This is an example of a job description."
+        hours = "Full time"
+        type = "Permanent"
+        location = "London"
+        posted_date = "June 2 2018"
+
+    [[positions.job]]
+        title = "Job title"
+        description = "This is an example of a job description. This is an example of a job description."
+        hours = "Full time"
+        type = "Permanent"
+        location = "London"
+        posted_date = "June 2 2018"
+
+    [[positions.job]]
+        title = "Job title"
+        description = "This is an example of a job description. This is an example of a job description."
+        hours = "Full time"
+        type = "Permanent"
+        location = "London"
+        posted_date = "June 2 2018"
+
+    [[positions.job]]
+        title = "Job title"
+        description = "This is an example of a job description. This is an example of a job description."
+        hours = "Full time"
+        type = "Permanent"
+        location = "London"
+        posted_date = "June 2 2018"
+
+
+[press]
+    enable = true
+    title = "Past press features"
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+    [[press.article]]
+        title = "Featured in Forbes"
+        summary = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+        img = "/img/logos/example-logo.png"
+        published_date = "June 2 2018"
+        link_url = "#"
+
+    [[press.article]]
+        title = "Featured in Forbes"
+        summary = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+        img = "/img/logos/example-logo.png"
+        published_date = "June 2 2018"
+        link_url = "#"
+
+    [[press.article]]
+        title = "Featured in Forbes"
+        summary = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+        img = "/img/logos/example-logo.png"
+        published_date = "June 2 2018"
+        link_url = "#"
+
+    [[press.article]]
+        title = "Featured in Forbes"
+        summary = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+        img = "/img/logos/example-logo.png"
+        published_date = "June 2 2018"
+        link_url = "#"
+
 
 [cta] # global
     enable = true

@@ -1,7 +1,7 @@
 [top]
     enable = true
     title = "Upcoming webinars"
-    subtitle = "Learn how Monax can help you streamline your business. Explore best practices for Monax tools and ask questions."
+    subtitle = "Join us for industry insight and best practice advice on using legal products to streamline your business."
     img_left = false
     hero_signup = true
     # img_right = "/img/assets/background-elements/wphone-test.png"

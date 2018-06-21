@@ -1,7 +1,7 @@
 [top]
     enable = true
     title = "Monax for lawyers"
-    subtitle = "Turn your knowledge into commoditisable products"
+    subtitle = "How Monax can simplify your workflow and turn your knowledge into commoditisable legal products"
     img_left = false
     hero_signup = true
     img_right = "/img/assets/background-elements/wphone-test.png"

@@ -15,17 +15,17 @@
 
         </header>
 
-        {{ partial "company/hero.html" . }}
+        {{ partial "company/top.html" . }}
 
         {{ partial "company/featured.html" . }}
 
-        {{ partial "company/about.html" . }}
-
-        {{ partial "company/mission.html" . }}
+        {{ partial "company/history.html" . }}
 
         {{ partial "company/team.html" . }}
 
         {{ partial "company/positions.html" . }}
+
+        {{ partial "company/press.html" . }}
 
         <!-- global section -->
         {{ if isset .Site.Data.company "cta" }}
