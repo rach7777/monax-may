@@ -30,7 +30,13 @@
                     <!-- <div class="arrow-up">▲</div> -->
                     <div class="dropdown-content visible-md-block visible-lg-block">
                       <div class="row">
-                        {{ range .Children }}
+                        {{ range $i, $p := .Children }}
+
+                          {{ if (modBool $i 2) }} <!-- new row after 6 entries -->
+                      </div>
+                      <div class="row">
+                          {{ end }}
+
                         <div class="col-md-6 hover-dip-opacity">
                             <a href="{{ .URL }}">
                               <div class="content-container">

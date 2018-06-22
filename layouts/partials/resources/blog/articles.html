@@ -1,6 +1,9 @@
 {{ with .Site.Data.resources.blog.articles }}
 {{ if .enable }}
-{{ $defaultImg := .default_img }}
+
+  {{ if .default_img }}
+    {{ $.Scratch.Set "defaultImg" .default_img }}
+  {{ end }}
 
   <section class="section-usecases section-padding-xl background-color">
       <div class="container">
@@ -15,13 +18,17 @@
 
             <!-- check for img override -->
             {{ if .Params.img }}
-              {{ $defaultImg := .Params.img }}
+              {{ .Scratch.Set "postImg" .Params.img }}
+            {{ else if .Params.thumbnail }}
+              {{ .Scratch.Set "postImg" (printf "/blog/images/%d/%s" .Date.Year .Params.thumbnail) }}
+            {{ else if not (.Scratch.Get "postImg") }}
+              {{ .Scratch.Set "postImg" ($.Scratch.Get "defaultImg") }}
             {{ end }}
 
             <div class="col-sm-4 flex-grid-sm">
               <a href="{{ .Permalink }}" class="flex-grid-sm a-card">
               <div class="content-container content-card content-card-stack">
-                <div class="img-container background-dark" style="background:url({{ $defaultImg }}) center center no-repeat; background-size: cover;">
+                <div class="img-container background-dark" style='background:url({{ .Scratch.Get "postImg" }}) center center no-repeat; background-size: cover;'>
                   <!-- <div class="content-container content-cicle background-color green pin-top-right">
                     <div class="circle-top">
                       {{ dateFormat "Jan 2" .Date }}
