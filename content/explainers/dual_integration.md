@@ -38,4 +38,4 @@ Once the dual integration process is finished the result will be a smart contrac
 Monax has created a [dual integration tool](https://github.com/monax/hello-doug/tree/master/deprecated_apps/dual_integration) to get smart contract writers going.
 
 
-## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Explainers](/learn/)
+

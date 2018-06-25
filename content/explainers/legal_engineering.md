@@ -41,4 +41,4 @@ With careful prospective legal engineering, entities can create smart contract r
 Legal engineering smart contracts means configuring reliable future events in code, enabling humans to make decisions and commitments today. In order to serve industrial needs, smart contracts must be built by a team with deep understanding of coding systems and legal systems, as well as the vision to put it together. Monax legal engineers are experienced lawyers and developers with the technical know-how to bring smart contract use cases to life.
 
 
-## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Explainers](/learn/)
+

@@ -20,7 +20,7 @@
             {{ if .Params.img }}
               {{ .Scratch.Set "postImg" .Params.img }}
             {{ else if .Params.thumbnail }}
-              {{ .Scratch.Set "postImg" (printf "/blog/images/%d/%s" .Date.Year .Params.thumbnail) }}
+              {{ .Scratch.Set "postImg" (printf "/explainers/images/%s" .Params.thumbnail) }}
             {{ else if not (.Scratch.Get "postImg") }}
               {{ .Scratch.Set "postImg" ($.Scratch.Get "defaultImg") }}
             {{ end }}
@@ -57,9 +57,6 @@
                       {{ end }}
                     {{ end }}
                   </p>
-                  <!-- <div class="meta range-left">
-                    <p><span><i class="fa fa-calendar"></i> {{ dateFormat "Jan 2 2006" .Date }}</span> | <span><i class="fa fa-user-o"></i> {{ .Params.author }}</span></p>
-                  </div> -->
                 </div>
               </div>  <!-- .content-card -->
               </a>

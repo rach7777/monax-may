@@ -1,4 +1,5 @@
 # [GLOBAL] Enable and disable widgets for the right sidebar
+
 [widgets]
   categories = true
   tags = true
@@ -10,12 +11,30 @@
   subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
 
 
-# [BLOG POSTS]
+# TAXONOMIES [CATEGORIES & TAGS]
+
+[taxonomies]
+  default_img = "/img/assets/backgrounds/mountains-1.jpg"
+
+  [taxonomies.top]
+    hero_signup = true
+    background_element = "/img/assets/background-elements/abstract-01.jpg"
+
+  [taxonomies.cta] # global
+    enable = true
+
+
+# [SINLE BLOG POSTS]
+
 [blog]
 
   [blog.top]
     hero_signup = true
     background_element = "/img/assets/background-elements/abstract-01.jpg"
+
+  [blog.relatedposts] # global
+    enable = true
+    default_img = "/img/assets/backgrounds/mountains-1.jpg"
 
   [blog.cta] # global
     enable = true

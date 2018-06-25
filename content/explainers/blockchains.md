@@ -3,6 +3,7 @@
 layout: single
 title: "Learn | Blockchains"
 excerpt:    "What is a Blockchain and why are these automated data management systems so cool?"
+thumbnail: example-image.jpg
 tags:
   - lawyers
   - corporate
@@ -110,8 +111,6 @@ Blockchain clients generally fall into one of four quadrants. These quadrants va
 1. Is the blockchain network permissionable?
 2. Is the blockchain node optimized to do X?
 
-{{< image src="/images/docs/blockchain-quadrant.png" >}}
-
 ### The Optimization Spectrum
 
 On the lower half of the quadrant are blockchain nodes which give application developers a clear and efficient way to verifiably track title transfers in a distributed environment.
@@ -147,6 +146,3 @@ Permissionable blockchain networks are not susceptible to external attack by unk
 These networks also have performance advantages over public blockchain networks because they are only dealing with the functionality required for that network rather than all the functionality for a larger, unpermissioned network load.
 
 For more information, please see our [explainer on permissionable blockchains](/learn/permissioned_blockchains).
-
-
-## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Explainers](/learn/)

@@ -1,6 +1,9 @@
 {{ with .Site.Data.monaxfor.lawyers.relatedarticles }}
 {{ if .enable }}
-{{ $defaultImg := .default_img }}
+
+  {{ if .default_img }}
+    {{ $.Scratch.Set "defaultImg" .default_img }}
+  {{ end }}
 
   <section class="section-usecases section-padding-xl background-color">
       <div class="container">
@@ -13,14 +16,42 @@
           <div class="row content-container flex-grid-sm padding-bottom-md">
               {{ end }}
 
-            <!-- check for img override -->
-            {{ if .Page.Params.img }}
-              {{ $defaultImg := .Page.Params.img }}
-            {{ end }}
+
+              <!-- check for img override -->
+              {{ $postImg := "" }}
+              {{ if .Page.Params.thumbnail }}
+
+                {{ if eq .Page.Type "blog" }}
+                  <!-- {{ printf "/blog/images/%d/%s" .Date.Year .Page.Params.thumbnail }} -->
+                  {{ $postImg := (printf "/blog/images/%d/%s" .Date.Year .Page.Params.thumbnail) }}
+                  {{ $.Scratch.Set "postImg" $postImg }}
+
+                {{ else if eq .Page.Type "casestudies" }}
+                  <!-- {{ printf "/casestudies/images/%s" .Page.Params.thumbnail }} -->
+                  {{ $postImg := (printf "/casestudies/images/%s" .Page.Params.thumbnail) }}
+                  {{ $.Scratch.Set "postImg" $postImg }}
+
+                {{ else if eq .Page.Type "explainers" }}
+                  <!-- {{ printf "/explainers/images/%s" .Page.Params.thumbnail }} -->
+                  {{ $postImg := (printf "/explainers/images/%s" .Page.Params.thumbnail) }}
+                  {{ $.Scratch.Set "postImg" $postImg }}
+
+                {{ else if eq .Page.Type "webinars" }}
+                  <!-- {{ printf "/webinars/images/%s" .Page.Params.thumbnail }} -->
+                  {{ $postImg := (printf "/webinars/images/%s" .Page.Params.thumbnail) }}
+                  {{ $.Scratch.Set "postImg" $postImg }}
+
+                {{ end }}
+                <!-- {{ $.Scratch.Get "postImg" }} -->
+              {{ else if not $postImg }}
+                {{ $postImg := ($.Scratch.Get "defaultImg") }}
+                {{ $.Scratch.Set "postImg" $postImg }}
+              {{ end }}
+
 
             <div class="col-sm-4 flex-grid-sm">
               <a href="{{ .Page.Permalink }}" class="flex-grid-sm a-card">
-              <div class="content-container content-card content-card-full flex-grid-sm">
+              <div class="content-container content-card content-card-full content-card-related flex-grid-sm">
                 <div class="row flex-grid-sm">
                   <div class="col-xs-8">
                     <div class="text-container">
@@ -33,8 +64,8 @@
                     </div>
                   </div>
                   <div class="col-xs-4 flex-grid-sm">
-                    <div class="img-container background-dark col-slant-left" style="background:url({{ $defaultImg }}) center center no-repeat; background-size: cover;">
-                      <img class="img_left img-responsive img-center padding-bottom-sm padding-top-sm" src="{{ $defaultImg }}" alt="" style="visibility:hidden;">
+                    <div class="img-container background-dark col-slant-left" style='background:url({{ $.Scratch.Get "postImg" }}) center center no-repeat; background-size: cover;'>
+                      <img class="img_left img-responsive img-center padding-bottom-sm padding-top-sm" src='{{ $.Scratch.Get "postImg" }}' alt="" style="visibility:hidden;">
                     </div>
                   </div>
                 </div> <!-- .row -->

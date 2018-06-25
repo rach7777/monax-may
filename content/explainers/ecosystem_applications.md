@@ -119,4 +119,4 @@ The final, major, challenge is around privacy. There are two types of privacy wh
 The second type of privacy is a `come over here I want to tell you a secret` type of privacy. Because within ecosystems, we don't necessarily assume that all participants `need/want/have_a_right` to have all the information about all the things. This is where point-to-point messaging systems and an authenticated public key infrastructure (a PKI) with a given identity mechanism comes into play. Private message queues give us the `come over here ... a secret` part of the whole problem. An authenticated PKI solves the `**I** want to tell **you**` part of the whole problem. Point-to-point messaging gives us the final piece of what, at least theoretically, is a complete look at the major components necessary to build most ecosystem applications.
 
 
-## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Explainers](/learn/)
+

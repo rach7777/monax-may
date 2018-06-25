@@ -111,4 +111,4 @@ To get started programming Smart Contracts, please see our [Solidity Series on S
 To learn more about the differences in approach of a [tokenized blockchain approach *vis a vis* a smart contract approach](/learn/contracts_v_tokens/) please see our explainer on the subject.
 
 
-## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Explainers](/learn/)
+

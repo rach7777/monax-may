@@ -117,4 +117,4 @@ When it comes to increasing verifiability for all parties to a given data-driven
 For more on verifiable [business process automation between stakeholders](/learn/smart_contracts) please see our smart contracts explainer.
 
 
-## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Explainers](/learn/)
+
