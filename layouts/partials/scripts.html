@@ -12,4 +12,20 @@
 <script src="{{ .Site.BaseURL }}js/custom.js"></script>
 
 <!-- owl carousel -->
-<!-- <script src="{{ .Site.BaseURL }}js/owl.carousel.min.js"></script> -->
+<script src="{{ .Site.BaseURL }}js/owl.carousel.min.js"></script>
+
+<!-- init animations -->
+<script src="{{ .Site.BaseURL }}js/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 200,
+    duration: 600,
+    easing: 'ease-in-sine',
+    delay: 50,
+    once: false,
+    anchorPlacement: 'top-center'
+  });
+</script>
+
+<!-- init tilt -->
+<script src="{{ .Site.BaseURL }}js/tilt.jquery.js"></script>

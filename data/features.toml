@@ -1,117 +1,74 @@
 [top]
     enable = true
     title = "Overview of features"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
-
-    [[top.feature]]
-      title = "Lorem Ipsum is simply dummy text"
-      description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      icon = "fa-calendar"
-
-    [[top.feature]]
-      title = "Lorem Ipsum is simply dummy text"
-      description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      icon = "fa-book"
-
-    [[top.feature]]
-      title = "Lorem Ipsum is simply dummy text"
-      description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      icon = "fa-facebook"
-
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+    img_left = false
+    # hero_signup = true
+    # img_right = "/img/assets/background-elements/wphone-test.png"
+    background_element = "/img/assets/background-elements/abstract-01.jpg"
 
 [feature]
   enable = true
 
-  [[feature.section]]
-    title = "Feature title"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
+  [feature.consumer]
+    enable = true
 
-    # [[feature.section.bullet]]
-    #   title = "Lorem Ipsum is simply dummy text"
-    #   description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-    #   icon = "fa-calendar"
-    #
-    # [[feature.section.bullet]]
-    #   title = "Lorem Ipsum is simply dummy text"
-    #   description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-    #   icon = "fa-calendar"
+    [[feature.consumer.section]]
+      title = "Consumer feature title"
+      subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      img_left = "/img/assets/screenshots/iPhone-screen-2.png"
+      img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
+      img_left_popover_width = 80
+      img_left_popover_top = 26
+      img_left_popover_left = 10
 
-  [[feature.section]]
-    title = "Feature title"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
+    [[feature.consumer.section]]
+      title = "Consumer feature title"
+      subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      img_left = "/img/assets/screenshots/iPhone-screen-2.png"
+      img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
+      img_left_popover_width = 80
+      img_left_popover_top = 26
+      img_left_popover_left = 10
 
-    # [[feature.section.bullet]]
-    #   title = "Lorem Ipsum is simply dummy text"
-    #   description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-    #   icon = "fa-calendar"
-    #
-    # [[feature.section.bullet]]
-    #   title = "Lorem Ipsum is simply dummy text"
-    #   description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-    #   icon = "fa-calendar"
+    [[feature.consumer.section]]
+      title = "Consumer feature title"
+      subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      img_left = "/img/assets/screenshots/iPhone-screen-2.png"
+      img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
+      img_left_popover_width = 80
+      img_left_popover_top = 26
+      img_left_popover_left = 10
 
-  [[feature.section]]
-    title = "Feature title"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
+  [feature.producer]
+    enable = true
 
-    # [[feature.section.bullet]]
-    #   title = "Lorem Ipsum is simply dummy text"
-    #   description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-    #   icon = "fa-calendar"
-    #
-    # [[feature.section.bullet]]
-    #   title = "Lorem Ipsum is simply dummy text"
-    #   description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-    #   icon = "fa-calendar"
+    [[feature.producer.section]]
+      title = "Producer feature title"
+      subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      img_left = "/img/assets/screenshots/iPhone-screen-2.png"
+      img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
+      img_left_popover_width = 80
+      img_left_popover_top = 26
+      img_left_popover_left = 10
 
-  [[feature.section]]
-    title = "Feature title"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
+    [[feature.producer.section]]
+      title = "Producer feature title"
+      subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      img_left = "/img/assets/screenshots/iPhone-screen-2.png"
+      img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
+      img_left_popover_width = 80
+      img_left_popover_top = 26
+      img_left_popover_left = 10
 
-    # [[feature.section.bullet]]
-    #   title = "Lorem Ipsum is simply dummy text"
-    #   description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-    #   icon = "fa-calendar"
-    #
-    # [[feature.section.bullet]]
-    #   title = "Lorem Ipsum is simply dummy text"
-    #   description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-    #   icon = "fa-calendar"
-
-  [[feature.section]]
-    title = "Feature title"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
-
-    # [[feature.section.bullet]]
-    #   title = "Lorem Ipsum is simply dummy text"
-    #   description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-    #   icon = "fa-calendar"
-    #
-    # [[feature.section.bullet]]
-    #   title = "Lorem Ipsum is simply dummy text"
-    #   description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-    #   icon = "fa-calendar"
-
-  [[feature.section]]
-    title = "Feature title"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
-
-    # [[feature.section.bullet]]
-    #   title = "Lorem Ipsum is simply dummy text"
-    #   description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-    #   icon = "fa-calendar"
-    #
-    # [[feature.section.bullet]]
-    #   title = "Lorem Ipsum is simply dummy text"
-    #   description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-    #   icon = "fa-calendar"
+    [[feature.producer.section]]
+      title = "Producer feature title"
+      subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      img_left = "/img/assets/screenshots/iPhone-screen-2.png"
+      img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
+      img_left_popover_width = 80
+      img_left_popover_top = 26
+      img_left_popover_left = 10
 
 
 [examples]

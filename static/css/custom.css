@@ -806,6 +806,36 @@ p, h1, h2, h3, h4, h5, h6 {
 .img-city {
     max-width: 250px;
 }
+.img-popover {
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+}
+
+
+
+/* ==============
+  Reveals
+=============== */
+
+.tab-reveal {
+    /* display: none; */
+    /* visibility: hidden; */
+    opacity: 0;
+    max-height: 0px;
+    overflow: hidden;
+    -webkit-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+.tab-reveal.active {
+    /* display: block; */
+    /* visibility: visible; */
+    opacity: 1;
+    max-height: 5000px;
+}
+
+
 
 
 /* ==============
@@ -818,12 +848,10 @@ p, h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease-in-out;
 }
 .hover-scale:hover {
--webkit-transform: scale(1.05);
--ms-transform: scale(1.05);
-transform: scale(1.05);
+-webkit-transform: scale(1.05) !important;
+-ms-transform: scale(1.05) !important;
+transform: scale(1.05) !important;
 }
-
-
 
 
 

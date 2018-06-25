@@ -32,12 +32,14 @@ $(document).ready(function() {
     console.log("hide");
     $('#dropdown-overlay').stop(true, true).fadeOut();
   });
-
+  $('#dropdown-overlay').click(function() {
+    console.log("hide");
+    $('#dropdown-overlay').stop(true, true).fadeOut();
+  });
 
 });
 
-
-
+// HANDLE TIMELINE INTERACTIONS
 $(function(){
 	var inputs = $('.timeline-date');
 	var paras = $('.timeline-info-container').find('p');
