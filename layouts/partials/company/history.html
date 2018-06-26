@@ -48,26 +48,6 @@
 </section>
 <!-- /.bar -->
 
-<script type="text/javascript">
-// HANDLE TIMELINE INTERACTIONS
-window.onload = function() {
-  if (window.jQuery) {
-    $(function(){
-    	var inputs = $('.timeline-date');
-    	var paras = $('.timeline-info-container').find('p');
-    	$(inputs).click(function(){
-    		var t = $(this),
-    				ind = t.index(),
-    				matchedPara = $(paras).eq(ind);
-
-    		$(t).add(matchedPara).addClass('active');
-    		$(inputs).not(t).add($(paras).not(matchedPara)).removeClass('active');
-    	});
-    });
-  }
-}
-</script>
-
 {{ end }}
 {{ end }}
 

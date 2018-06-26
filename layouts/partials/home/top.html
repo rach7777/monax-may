@@ -44,23 +44,5 @@
     </div> <!-- .container -->
 </section> <!-- .section -->
 
-{{ if .illustration.enable }}
-  <script type="text/javascript">
-  // HANDLE ANIMATIONS ON ILLUSTRATION
-  window.onload = function() {
-      if (window.jQuery) {
-          // jQuery is loaded
-          setTimeout(function(){
-            $('.laptop-illustration').addClass('active');
-            $('.laptop-illustration .img-to-float.delay-0').addClass('animate-float');
-            setTimeout(function(){
-              $('.laptop-illustration .img-to-float.delay-1').addClass('animate-float');
-            }, 750);
-          }, 300);
-      }
-  }
-  </script>
-{{ end}}
-
 {{ end }}
 {{ end }}

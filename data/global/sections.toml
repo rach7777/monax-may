@@ -1,8 +1,61 @@
 [cta]
     title = "Find your first-class agreement now"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    button_text = "Get started"
-    button_url = "#"
+
+    [cta.form]
+      enable = true
+      industry_options = [
+        "Advertising Industry",
+        "Legal services industry",
+        "Aerospace industry",
+        "Agriculture industry",
+        "Chemical industry",
+        "Software industry",
+        "Technology industry",
+        "Construction industry",
+        "Real estate industry",
+        "Public utilities industry",
+        "Defense industry",
+        "Education industry",
+        "Energy industry",
+        "Entertainment industry",
+        "Financial services industry",
+        "Food industry",
+        "Health care industry",
+        "Hospitality industry",
+        "Information industry",
+        "Manufacturing industry",
+        "Media industry",
+        "Mining industry",
+        "Telecommunications industry",
+        "Transport industry",
+        "Water industry",
+        "Other industry",
+      ]
+      agreement_options = [
+        "Non-Disclosure Agreements",
+        "Material Transfer Agreements",
+        "Sponsored Research Agreements",
+        "Memorandum of Understandings",
+        "Interagency Cooperation Contracts",
+        "Subaward Agreements",
+        "Collaborative Research Agreements",
+        "Consortium Agreements",
+        "Teaming Agreements",
+        "Multiple Agreement Types",
+      ]
+      frequency_options = [
+        "Every day",
+        "A few times each week",
+        "A few times each month",
+        "A few times each year",
+        "Ocassionally",
+      ]
+      submit_button_text = "Request a demo"
+      submit_form_action = "https://beta.monax.io/register"
+      enable_button_two = true
+      button_two_text = "Try for free"
+      button_two_url = "https://beta.monax.io/register"
+      show_button_separator = true
 
 
 [backers]

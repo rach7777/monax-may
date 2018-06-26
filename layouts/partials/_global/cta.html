@@ -1,66 +1,83 @@
 {{ with .Site.Data.global.sections.cta }}
 <section class="section-cta section-padding-xl background-dark">
-    <div class="container">
+  <div class="container">
 
-      <div class="row flex-grid-md">
+    <div class="row flex-grid-md">
+      <div class="col-md-12">
 
-        <div class="col-md-12">
+        <div class="underline-sm">
+            <h2>{{ .title }}</h2>
+        </div>
 
-          <div class="underline-sm">
-              <h2>{{ .title }}</h2>
-          </div>
-          <div class="form-container padding-bottom-md">
-            <div class="onboarding__form onboarding-information form--details">
-  							<p>I'm a <span id="jobTitle" contenteditable="true" class="onboarding-information__input input-fake" data-default="Job Title" data-associated-input="#input-job-title"></span> at <span id="companyName" contenteditable="true" class="onboarding-information__input input-fake" data-default="Company Name" data-associated-input="#input-company-name"></span></p>
-  							<p>We're a(n)
-  								<span class="onboarding-select-wrapper" id="industryActive">
-  									<select id="userIndustry" name="industry" class="form-control onboarding-information__select select-needs-sizing" data-associated-select="#select-industry-sizer">
-  											<option value="" disabled="" selected="">Industry</option>
-  											<option>Advertising</option>
-  											<option>Aerospace/Defense</option>
-  											<option>Agency</option>
-  											<option>Agriculture</option>
-  											<option>Auto</option>
-  											<option>CPG</option>
-  											<option>Education</option>
-  											<option>Energy and Utilities</option>
-  											<option>Entertainment</option>
-  											<option>Financial Services</option>
-  											<option>Government / Nonprofits</option>
-  											<option>Health and Sciences</option>
-  											<option>Industrials</option>
-  											<option>Insurance (excluding Health)</option>
-  											<option>Legal Services / Consulting</option>
-  											<option>Other</option>
-  											<option>Publisher</option>
-  											<option>Real Estate and Construction</option>
-  											<option>Recruiting</option>
-  											<option>Retail, Fashion, Office and global</option>
-  											<option>Sports</option>
-  											<option>Support Services</option>
-  											<option>Technology</option>
-  											<option>Telecommunications</option>
-  											<option>Textiles</option>
-  											<option>Transportation and Logistics</option>
-  											<option>Travel and Hospitality</option>
-  											<option>QSR</option>
-  									</select>
-  								</span>
-  								<!-- <select id="select-industry-sizer" name="industry-sizer" class="form-control onboarding-information__select" style="visibility: hidden; position: absolute; width: auto;">
-  									<option value=""></option>
-  								</select> -->
-  							 <!-- company located in <span id="userCity" contenteditable="true" class="onboarding-information__input input-fake" data-default="City" data-associated-input="#input-city"></span><input type="text" id="input-city" placeholder="City" autocomplete="off">.</p> -->
-  							 company located in <span id="userCity" contenteditable="true" class="onboarding-information__input input-fake" data-default="City" data-associated-input="#input-city"></span>.</p>
-  						</div>
-            </div>
+        {{ with .form }}
 
-          <div class="btn-container" style="">
-            <a href="{{.button_url}}" class="btn btn-primary btn-xl " role="button">{{ .button_text }}</a>
-            <a href="{{.button_url}}" class="btn btn-primary btn-xl " role="button">Request a demo</a>
-          </div>
+        <div class="form-container padding-bottom-md">
+          <form action="{{ .submit_form_action }}" class="form-main-cta">
 
-        </div> <!-- .col -->
-      </div> <!-- .row -->
-    </div> <!-- .container -->
+              <div class="content-container padding-bottom-sm">
+                <p>
+                  I'm working in the
+                  <label for="userIndustry" class="select-wrap">
+                    <select id="userIndustry" name="industry" class="form-control onboarding-information__select resizeselect">
+                      {{ range $i, $p := .industry_options }}
+                        {{ if eq $i 0 }}
+                          <option selected="">{{ . }}</option>
+                        {{ else }}
+                          <option>{{ . }}</option>
+                        {{ end }}
+                      {{ end }}
+                    </select>
+                  </label>
+                </p>
+                <p>
+                  and we need to make
+                  <label for="userAgreementsType" class="select-wrap">
+                    <select id="userAgreementsType" name="agreementsType" class="form-control onboarding-information__select resizeselect">
+                      {{ range $i, $p := .agreement_options }}
+                        {{ if eq $i 0 }}
+                          <option selected="">{{ . }}</option>
+                        {{ else }}
+                          <option>{{ . }}</option>
+                        {{ end }}
+                      {{ end }}
+                    </select>
+                  </label>
+                </p>
+                <p>
+                  typically
+                  <label for="userAgreementsType" class="select-wrap">
+                    <select id="userFrequency" name="frequency" class="form-control onboarding-information__select resizeselect">
+                      {{ range $i, $p := .frequency_options }}
+                        {{ if eq $i 1 }}
+                          <option selected="">{{ . }}</option>
+                        {{ else }}
+                          <option>{{ . }}</option>
+                        {{ end }}
+                      {{ end }}
+                    </select>
+                  </label>
+                </p>
+              </div>
+
+              <div class="btn-container" style="">
+                <button type="submit" class="btn btn-primary btn-xl" role="button">{{ .submit_button_text }}</button>
+                {{ if .enable_button_two }}
+                  {{ if .show_button_separator }}
+                    <span class="button-divider">or</span>
+                  {{ end }}
+                  <a href="{{ .button_two_url }}" class="btn btn-primary btn-xl" role="button">{{ .button_two_text }}</a>
+                {{ end }}
+              </div>
+
+          </form>
+        </div> <!-- .form-container -->
+
+        {{ end }}
+
+      </div> <!-- .col -->
+    </div> <!-- .row -->
+
+  </div> <!-- .container -->
 </section>
+
 {{ end }}
