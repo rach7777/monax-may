@@ -1,57 +1,62 @@
 {{ with .Site.Data.features.examples }}
 {{ if .enable }}
 
-  <section class="section-examples padding-bottom-md padding-top-lg section-shadow-xl background-color">
-      <div class="container">
+  <section class="section-examples padding-bottom-sm padding-top-lg background-color">
+      <div class="container container-docs">
+        <div class="row flex-grid-sm padding-bottom-md">
 
-        <!-- <div class="row padding-bottom-md">
-          <div class="col-xs-12">
-            <div class="underline-sm">
-                <h2>Try it out for yourself</h2>
+          <div class="col-md-9">
+            <div class="row">
+
+              {{ range $i, $p := first 4 .agreement }}
+
+                <div class="col-sm-3 padding-bottom-md hover-dip-opacity">
+                  <a href="{{ .url }}" class="a-card">
+                    <div class="doc-container" data-tilt style="transform-style: preserve-3d">
+                      <div class="doc-outer">
+                        <div class="doc-inner">
+                          <div class="content-container">
+                            <div class="title range-left underline-xs">
+                                <h5>{{ .title }}</h5>
+                            </div>
+                            <div class="doc-skin" style="transform: translateZ(10px);background:url({{ $.Site.Data.features.examples.default_img }}) center center no-repeat;background-size:cover;">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div> <!-- .col -->
+
+              {{ end }}
+
             </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <h6 style="margin:0;">{{ .subtitle }}</h6>
+              </div>
+            </div>
+
           </div>
-        </div> -->
+          <div class="col-md-3 padding-bottom-md hover-dip-opacity">
 
-        <div class="row flex-grid-sm padding-bottom-md">
-          {{ range $i, $p := first 8 .agreement }}
-
-            {{if eq $i 4}} <!-- 5th entry -->
-        </div> <!-- start new row -->
-        <div class="row flex-grid-sm padding-bottom-md">
-            <div class="col-sm-3" href="#">
-              <div class="content-container content-card" data-tilt>
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="title">
-                        <h5>{{ .title }}</h5>
+            <a href="{{ .new_agreement_url }}" class="a-card">
+              <div class="doc-container new-doc" data-tilt style="transform-style: preserve-3d">
+                <div class="doc-outer">
+                  <div class="doc-inner flex-grid-sm">
+                    <div class="content-container col-valign-center">
+                      <div class="doc-icon padding-top-sm" style="transform: translateZ(10px);">
+                        <i class="fa fa-plus-circle"></i>
+                      </div>
+                      <h5>{{ .new_agreement_text }}</h5>
                     </div>
-                    <p class="subtitle padding-bottom-sm">
-                      {{ .subtitle | markdownify }}
-                    </p>
-                    <p><a href="#">Try this agreement &rsaquo;</a></p>
                   </div>
-                </div> <!-- .row -->
+                </div>
               </div>
-            </div> <!-- .col -->
-            {{ else }} <!-- normal row -->
-            <div class="col-sm-3" href="#">
-              <div class="content-container content-card" data-tilt>
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="title">
-                        <h5>{{ .title }}</h5>
-                    </div>
-                    <p class="subtitle padding-bottom-sm">
-                      {{ .subtitle | markdownify }}
-                    </p>
-                    <p><a href="#">Try this agreement &rsaquo;</a></p>
-                  </div>
-                </div> <!-- .row -->
-              </div>
-            </div> <!-- .col -->
-            {{ end }}
+            </a>
 
-          {{ end }}
+          </div>
+
         </div> <!-- .row -->
       </div> <!-- .container -->
   </section>

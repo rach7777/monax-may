@@ -24,17 +24,22 @@ $(document).ready(function() {
   // CLOSE DROPDOWN MENU OVERLAY
   $('.dropdown-toggle').on("click", function() {
     if ( $(this).parent(".dropdown").hasClass("open") && $(window).width() > 750 ) {
-      console.log("hide");
       $('#dropdown-overlay').stop(true, true).fadeOut();
     }
   });
   $('#dropdown-overlay').click(function() {
-    console.log("hide");
     $('#dropdown-overlay').stop(true, true).fadeOut();
   });
   $('#dropdown-overlay').click(function() {
-    console.log("hide");
     $('#dropdown-overlay').stop(true, true).fadeOut();
+  });
+
+  // Document .dip-opacity
+  $('.container-docs').hover(function(){
+    console.log("hello");
+    if ($(window).width() > 750) {
+      $(this).toggleClass("active");
+    }
   });
 
 });

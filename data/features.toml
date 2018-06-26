@@ -73,28 +73,27 @@
 
 [examples]
   enable = true
-  title = "Agreement Examples"
-  subtitle = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  subtitle = "Get started using one of our agreements"
+  default_img = "/img/assets/agreements/3.jpg"
+  new_agreement_text = "Create A New Agreement"
+  new_agreement_url = "#"
+
 
   # Agreements should be auto populated
   [[examples.agreement]]
     title = "Agreement Title"
-    subtitle = "In the evolving network economy, devices upgrade and proliferate."
     url = "#"
 
   [[examples.agreement]]
     title = "Agreement Title"
-    subtitle = "In the evolving network economy, devices upgrade and proliferate."
     url = "#"
 
   [[examples.agreement]]
     title = "Agreement Title"
-    subtitle = "In the evolving network economy, devices upgrade and proliferate."
     url = "#"
 
   [[examples.agreement]]
     title = "Agreement Title"
-    subtitle = "In the evolving network economy, devices upgrade and proliferate."
     url = "#"
 
 

@@ -4,16 +4,26 @@
 <section class="section-feature background-color section-padding-md">
     <div class="container">
 
-      <div class="btn-container" style="">
-        <a href="#1a" class="btn btn-primary btn-xl" data-toggle="tab" onClick="recalcAnimations()" role="tab">I produce legal templates</a>
-        <a href="#1b" class="btn btn-primary btn-xl" data-toggle="tab" onClick="recalcAnimations()" role="tab">I use legal templates</a>
+      <div class="row flex-grid-md">
+
+        <div class="col-md-12">
+
+          <div class="padding-bottom-sm">
+              <h3>How do you use legal templates?</h3>
+          </div>
+
+          <div class="btn-container padding-bottom-md" style="">
+            <a href="#1a" class="btn btn-xl active" data-toggle="tab" onClick="recalcAnimations()" role="tab">I produce legal templates</a>
+            <a href="#1b" class="btn btn-xl" data-toggle="tab" onClick="recalcAnimations()" role="tab">I use legal templates</a>
+          </div>
+        </div>
       </div>
     </div>
 </section>
 
 <div class="tab-reveal tab-producer active" id="1a">
 
-  <section class="section-feature padding-top-lg padding-bottom-lg">
+  <section class="section-feature padding-top-lg">
       <div class="container">
 
         {{ range $i, $p := .producer.section }}
@@ -65,7 +75,7 @@
 
 <div class="tab-reveal tab-consumer" id="1b">
 
-  <section class="section-feature padding-top-lg padding-bottom-lg">
+  <section class="section-feature padding-top-lg">
       <div class="container">
 
 
@@ -123,9 +133,6 @@ function recalcAnimations() {
 }
 
 </script>
-
-
-
 
 {{ end }}
 {{ end }}
