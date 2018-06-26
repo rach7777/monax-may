@@ -21,7 +21,11 @@
       <div class="row flex-grid-md">
 
         <div class="col-md-5 col-valign-center">
-          <img class="img-responsive" src="{{ .img_left }}" alt="">
+          <img class="img-responsive img-center" src="{{ .img_left }}" alt="">
+          <img class="img-responsive img-popover hover-scale" src="{{ .img_left_popover }}" data-aos="zoom-in" alt="" style="
+                    width: {{ .img_left_popover_width }}%;
+                    top: {{ .img_left_popover_top }}%;
+                    left: {{ .img_left_popover_left }}%">
         </div>
 
         <div class="col-md-7">

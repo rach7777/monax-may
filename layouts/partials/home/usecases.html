@@ -1,39 +1,34 @@
 {{ with .Site.Data.home.usecases }}
 {{ if .enable }}
 
-  <section class="section-usecases section-padding-xl background-color">
-      <div class="container">
+  <section class="section-usecases section-padding-lg background-grey">
+    <div class="container">
 
-          <div class="row content-container flex-grid-sm">
+      <div class="row content-container flex-grid-sm">
         {{ range .section }}
 
             <div class="col-sm-3 flex-grid-sm">
-
-              <div class="content-container content-card">
-
-                <img class="img_left img-responsive img-center padding-bottom-xs padding-top-sm" src="{{ .img }}" alt="">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="title">
-                        <h5>{{ .title }}</h5>
+              <a href="{{ .link_url }}" class="flex-grid-sm a-card">
+                <div class="content-container content-card content-card-shadow-sm">
+                  <img class="img_left img-responsive img-center padding-bottom-xs padding-top-xs" src="{{ .img }}" alt="">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="title">
+                          <h5>{{ .title }}</h5>
+                      </div>
+                      <p class="subtitle padding-bottom-sm">
+                        {{ .subtitle | markdownify }}
+                      </p>
                     </div>
-                    <p class="subtitle padding-bottom-sm">
-                      {{ .subtitle | markdownify }}
-                    </p>
-                    {{ range .link }}
-                      <p><a href="{{ .link_url }}">{{ .link_title }} &rsaquo;</a></p>
-                    {{ end }}
-                  </div>
-                </div> <!-- .row -->
-
-              </div>
-
+                  </div> <!-- .row -->
+                </div>
+              </a>
             </div>
 
         {{ end }}
       </div> <!-- .row -->
 
-      </div> <!-- .container -->
+    </div> <!-- .container -->
   </section>
 
 {{ end }}

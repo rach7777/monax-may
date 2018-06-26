@@ -86,18 +86,18 @@ paginate = 6
       Post = "Learn how Monax can help you streamline your business. Explore best practices for Monax tools and ask questions."
       Weight = 3
 
-    # [[menu.left]]
-    #   Name = "Company News"
-    #   parent = "resources"
-    #   URL = "/news/"
-    #   Post = "Keep up to date on all things Monax"
-    #   Weight = 4
-
     [[menu.left]]
       Name = "Webinars"
       parent = "resources"
       URL = "/webinars/"
       Post = "Join us for industry insight and best practice advice on using legal products to streamline your business."
+      Weight = 4
+
+    [[menu.left]]
+      Name = "Screencasts"
+      parent = "resources"
+      URL = "/screencasts/"
+      Post = "Learn how Monax can help you streamline your business using our latest walkthroughs and screencasts."
       Weight = 5
 
 [[menu.left]]
@@ -107,7 +107,7 @@ paginate = 6
 
 [[menu.register]]
     name = "Try For Free"
-    url  = "#"
+    url  = "https://beta.monax.io/"
     weight = 1
 
 [[menu.login]]

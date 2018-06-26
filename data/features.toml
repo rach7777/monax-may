@@ -3,7 +3,7 @@
     title = "Overview of features"
     subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
     img_left = false
-    # hero_signup = true
+    hero_signup = true
     # img_right = "/img/assets/background-elements/wphone-test.png"
     background_element = "/img/assets/background-elements/abstract-01.jpg"
 
@@ -14,8 +14,8 @@
     enable = true
 
     [[feature.consumer.section]]
-      title = "Consumer feature title"
-      subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      title = "100% transparency on your legal matters."
+      subtitle = "Maintain constant insight as to what is happening in your contracts. Track every step along the way, gathering evidence required to fulfill an agreement from signing to shipping or payments and the like. Put your mind at ease and concentrate on nurturing your business."
       img_left = "/img/assets/screenshots/iPhone-screen-2.png"
       img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
       img_left_popover_width = 80
@@ -23,8 +23,8 @@
       img_left_popover_left = 10
 
     [[feature.consumer.section]]
-      title = "Consumer feature title"
-      subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      title = "Trusted legal products at your fingertips."
+      subtitle = "Buy lawyer-tested legal products in the same way you shop for books, clothing or food. The Monax marketplace opens the doors to legal trust without the legal hassle."
       img_left = "/img/assets/screenshots/iPhone-screen-2.png"
       img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
       img_left_popover_width = 80
@@ -32,8 +32,17 @@
       img_left_popover_left = 10
 
     [[feature.consumer.section]]
-      title = "Consumer feature title"
-      subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      title = "Create self-executable legal agreements in minutes."
+      subtitle = "Pick the legal template that meets your needs, complete it with your details and launch. Monax’s legal workflow engine takes care of the rest."
+      img_left = "/img/assets/screenshots/iPhone-screen-2.png"
+      img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
+      img_left_popover_width = 80
+      img_left_popover_top = 26
+      img_left_popover_left = 10
+
+    [[feature.consumer.section]]
+      title = "Increased quality at reduced cost."
+      subtitle = "Cut out legal paper-shuffling and pay for actual value. Monax combines legal expertise with automation and reproducibility delivering legal products with higher precision at a fraction of their cost."
       img_left = "/img/assets/screenshots/iPhone-screen-2.png"
       img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
       img_left_popover_width = 80
@@ -44,8 +53,8 @@
     enable = true
 
     [[feature.producer.section]]
-      title = "Producer feature title"
-      subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      title = "Put your legal knowledge assets to work."
+      subtitle = "Earn more by translating your legal knowledge into legal products. Monax’s three step template creation process guides you from uploading your prose template to setting up contractual workflows. "
       img_left = "/img/assets/screenshots/iPhone-screen-2.png"
       img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
       img_left_popover_width = 80
@@ -53,17 +62,8 @@
       img_left_popover_left = 10
 
     [[feature.producer.section]]
-      title = "Producer feature title"
-      subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      img_left = "/img/assets/screenshots/iPhone-screen-2.png"
-      img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
-      img_left_popover_width = 80
-      img_left_popover_top = 26
-      img_left_popover_left = 10
-
-    [[feature.producer.section]]
-      title = "Producer feature title"
-      subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      title = "Increase your margins."
+      subtitle = "Offer your legal expertise through legal products in the Monax marketplace and broaden your customer base. Kick back and let process automation and reproducibility of your assets earn you money."
       img_left = "/img/assets/screenshots/iPhone-screen-2.png"
       img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
       img_left_popover_width = 80
@@ -98,7 +98,7 @@
 
 
 [backers]
-    enable = true
+    enable = false
     title = "Backed by the legal tech elite"
     subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 

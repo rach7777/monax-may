@@ -31,7 +31,7 @@
                       <div class="row">
                         {{ range $i, $p := .Children }}
 
-                          {{ if (modBool $i 2) }} <!-- new row after 6 entries -->
+                          {{ if (modBool $i 2) }} <!-- new row after 2 entries -->
                       </div>
                       <div class="row">
                           {{ end }}
@@ -70,13 +70,13 @@
                 {{ range .Site.Menus.register }}
                   <li class="dropdown">
                     <div class="nav-button-container">
-                      <a id="nav-register" href="#" class="btn btn-primary nav-button">{{ .Name }}</a>
+                      <a id="nav-register" href="{{ .URL }}" class="btn btn-primary nav-button">{{ .Name }}</a>
                     </div>
                   </li>
                 {{ end }}
                 {{ range .Site.Menus.login }}
                   <li class="dropdown">
-                    <a id="nav-toggle-login" href="#" class="toggle-login">{{ .Name }}</a>
+                    <a id="nav-toggle-login" href="{{ .URL }}" class="toggle-login">{{ .Name }}</a>
                   </li>
                 {{ end }}
               </ul>

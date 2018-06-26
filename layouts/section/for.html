@@ -15,12 +15,6 @@
 
         </header>
 
-        {{ partial "monaxfor/top.html" . }}
-
-        {{ partial "monaxfor/audiences.html" . }}
-
-        {{ partial "monaxfor/backers.html" . }}
-
         <!-- global section -->
         {{ if isset .Site.Data.monaxfor "cta" }}
           {{ if .Site.Data.monaxfor.cta.enable }}

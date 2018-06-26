@@ -13,67 +13,15 @@
           </div>
 
           <div class="btn-container padding-bottom-md" style="">
-            <a href="#1a" class="btn btn-xl active" data-toggle="tab" onClick="recalcAnimations()" role="tab">I produce legal templates</a>
-            <a href="#1b" class="btn btn-xl" data-toggle="tab" onClick="recalcAnimations()" role="tab">I use legal templates</a>
+            <a href="#1b" class="btn btn-xl active" data-toggle="tab" onClick="recalcAnimations()" role="tab">I use legal templates</a>
+            <a href="#1a" class="btn btn-xl" data-toggle="tab" onClick="recalcAnimations()" role="tab">I produce legal templates</a>
           </div>
         </div>
       </div>
     </div>
 </section>
 
-<div class="tab-reveal tab-producer active" id="1a">
-
-  <section class="section-feature padding-top-lg">
-      <div class="container">
-
-        {{ range $i, $p := .producer.section }}
-
-          {{ if (modBool $i 2) }} <!-- odd row -->
-            <div class="row flex-grid-md padding-bottom-xl">
-              <div class="col-md-7 col-valign-center">
-                <img class="img-responsive img-center" src="{{ .img_left }}" alt="">
-                <img class="img-responsive img-popover hover-scale" src="{{ .img_left_popover }}" data-aos="zoom-in" alt="" style="
-                          width: {{ .img_left_popover_width }}%;
-                          top: {{ .img_left_popover_top }}%;
-                          left: {{ .img_left_popover_left }}%">
-              </div> <!-- .col -->
-              <div class="col-md-5 col-valign-center"  data-aos="fade-left"  data-aos-delay="600">
-                <div class="range-left-sm underline-sm">
-                    <h2>{{ .title }}</h2>
-                </div>
-                <p class="lead range-left-sm">
-                  {{ .subtitle | markdownify }}
-                </p>
-              </div> <!-- .col -->
-            </div>  <!-- .row -->
-            {{ else }} <!-- even row -->
-            <div class="row flex-grid-md padding-bottom-xl">
-              <div class="col-md-5 col-valign-center"  data-aos="fade-right"  data-aos-delay="600">
-                <div class="range-left-sm underline-sm">
-                    <h2>{{ .title }}</h2>
-                </div>
-                <p class="lead range-left-sm">
-                  {{ .subtitle | markdownify }}
-                </p>
-              </div> <!-- .col -->
-              <div class="col-md-7 col-valign-center">
-                <img class="img-responsive img-center" src="{{ .img_left }}" alt="">
-                <img class="img-responsive img-popover hover-scale" src="{{ .img_left_popover }}" data-aos="zoom-in" alt="" style="
-                          width: {{ .img_left_popover_width }}%;
-                          top: {{ .img_left_popover_top }}%;
-                          left: {{ .img_left_popover_left }}%">
-              </div> <!-- .col -->
-            </div>  <!-- .row -->
-          {{ end }}
-        {{ end }}
-
-
-      </div>
-  </section>
-
-</div>
-
-<div class="tab-reveal tab-consumer" id="1b">
+<div class="tab-reveal tab-consumer active" id="1b">
 
   <section class="section-feature padding-top-lg">
       <div class="container">
@@ -122,6 +70,59 @@
 
       </div> <!-- .container -->
   </section> <!-- .section -->
+
+</div>
+
+
+<div class="tab-reveal tab-producer" id="1a">
+
+  <section class="section-feature padding-top-lg">
+      <div class="container">
+
+        {{ range $i, $p := .producer.section }}
+
+          {{ if (modBool $i 2) }} <!-- odd row -->
+            <div class="row flex-grid-md padding-bottom-xl">
+              <div class="col-md-7 col-valign-center">
+                <img class="img-responsive img-center" src="{{ .img_left }}" alt="">
+                <img class="img-responsive img-popover hover-scale" src="{{ .img_left_popover }}" data-aos="zoom-in" alt="" style="
+                          width: {{ .img_left_popover_width }}%;
+                          top: {{ .img_left_popover_top }}%;
+                          left: {{ .img_left_popover_left }}%">
+              </div> <!-- .col -->
+              <div class="col-md-5 col-valign-center"  data-aos="fade-left"  data-aos-delay="600">
+                <div class="range-left-sm underline-sm">
+                    <h2>{{ .title }}</h2>
+                </div>
+                <p class="lead range-left-sm">
+                  {{ .subtitle | markdownify }}
+                </p>
+              </div> <!-- .col -->
+            </div>  <!-- .row -->
+            {{ else }} <!-- even row -->
+            <div class="row flex-grid-md padding-bottom-xl">
+              <div class="col-md-5 col-valign-center"  data-aos="fade-right"  data-aos-delay="600">
+                <div class="range-left-sm underline-sm">
+                    <h2>{{ .title }}</h2>
+                </div>
+                <p class="lead range-left-sm">
+                  {{ .subtitle | markdownify }}
+                </p>
+              </div> <!-- .col -->
+              <div class="col-md-7 col-valign-center">
+                <img class="img-responsive img-center" src="{{ .img_left }}" alt="">
+                <img class="img-responsive img-popover hover-scale" src="{{ .img_left_popover }}" data-aos="zoom-in" alt="" style="
+                          width: {{ .img_left_popover_width }}%;
+                          top: {{ .img_left_popover_top }}%;
+                          left: {{ .img_left_popover_left }}%">
+              </div> <!-- .col -->
+            </div>  <!-- .row -->
+          {{ end }}
+        {{ end }}
+
+
+      </div>
+  </section>
 
 </div>
 

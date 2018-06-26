@@ -1,10 +1,17 @@
-[hero]
+[top]
     enable = true
     title = "Deploy smart, legally-binding contracts on the blockchain"
     subtitle = "Be the first to explore the future of making agreements"
-    img_bg = "/img/assets/backgrounds/mountains-1.jpg"
-    img_right = "/img/carousel/template-tablets-2.png"
+    img_left = false
+    hero_signup = true
+    img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
+    background_element = "/img/assets/background-elements/abstract-01.jpg"
 
+    [top.illustration]
+      enable = true   # replaces img_right
+      img_base = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
+      img_layer_one = "/img/assets/illustrations/monax-laptop/Composition_Layer_02_AN.png"
+      img_layer_two = "/img/assets/illustrations/monax-laptop/Composition_Layer_01_Agreement.png"
 
 [featured]
     enable = true
@@ -12,13 +19,17 @@
     logo_1 = "/img/logos/example-logo.png"
     logo_2 = "/img/logos/example-logo.png"
     logo_3 = "/img/logos/example-logo.png"
-
+    # @@@ change logos
 
 [summary]
     enable = true
     title = "What can Monax do for you?"
     subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
+    img_left = "/img/assets/screenshots/iPhone-screen-2.png"
+    img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
+    img_left_popover_width = 80
+    img_left_popover_top = 26
+    img_left_popover_left = 10
 
     [[summary.feature]]
       title = "Lorem Ipsum is simply dummy text"
@@ -43,91 +54,78 @@
     category = "fleet-leasing"
     title = "For Fleet Leasing"
     subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
-    img = "/img/assets/illustrations/user-flat-example-01.jpg"
-
-    [[usecases.section.link]]
-      link_title = "Case Studies"
-      link_url = "#"
-
-    [[usecases.section.link]]
-      link_title = "Popular Agreements"
-      link_url = "#"
-
+    img = "/img/assets/homepage/usecases/fleet-leasing/fleet-leasing-small.png"
+    link_url = "/for/fleet-leasing/"
 
   [[usecases.section]]
     category = "corporate-governance"
     title = "For Corporate Governance"
     subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
-    img = "/img/assets/illustrations/user-flat-example-01.jpg"
-
-    [[usecases.section.link]]
-      link_title = "Case Studies"
-      link_url = "#"
-
-    [[usecases.section.link]]
-      link_title = "Popular Agreements"
-      link_url = "#"
-
+    img = "/img/assets/homepage/usecases/corporate-governance/corporate-governance-small.png"
+    link_url = "/for/corporate-governance/"
 
   [[usecases.section]]
     category = "content-creators"
     title = "For Content Creators"
     subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
-    img = "/img/assets/illustrations/user-flat-example-01.jpg"
-
-    [[usecases.section.link]]
-      link_title = "Case Studies"
-      link_url = "#"
-
-    [[usecases.section.link]]
-      link_title = "Popular Agreements"
-      link_url = "#"
-
+    img = "/img/assets/homepage/usecases/content-creators/content-creators-small.png"
+    link_url = "/for/content-creators/"
 
   [[usecases.section]]
     category = "lawyers"
     title = "For Lawyers"
     subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
-    img = "/img/assets/illustrations/user-flat-example-01.jpg"
-
-    [[usecases.section.link]]
-      link_title = "Case Studies"
-      link_url = "#"
-
-    [[usecases.section.link]]
-      link_title = "Popular Agreements"
-      link_url = "#"
+    img = "/img/assets/homepage/usecases/lawyers/lawyers-small.png"
+    link_url = "/for/lawyers/"
 
 
 [screencasts]
     enable = true
-    title = "Start using the platform today"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    show_related_links = true
 
-    [[screencasts.item]]
-      title = "Screencast title"
-      subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      youtube_url = "w7Ft2ymGmfc"
-    #
-    # [[screencasts.item]]
-    #   title = "Screencast 2"
-    #   subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    #   youtube_url = "w7Ft2ymGmfc"
-    #
-    # [[screencasts.item]]
-    #   title = "Screencast 3"
-    #   subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    #   youtube_url = "w7Ft2ymGmfc"
-    #
-    # [[screencasts.item]]
-    #   title = "Screencast 4"
-    #   subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    #   youtube_url = "w7Ft2ymGmfc"
+    [[screencasts.relatedlinks]]
+      link_title = "Read our explainers"
+      link_url = "/explainers/"
+
+    [[screencasts.relatedlinks]]
+      link_title = "Monax blog posts and news"
+      link_url = "/blog/"
+
+    [[screencasts.relatedlinks]]
+      link_title = "Case studies"
+      link_url = "/casestudies/"
+
+    # [[screencasts.relatedlinks]]
+    #   link_title = "More screencasts"
+    #   link_url = "/screencasts/"
+
 
 [webinar]
     enable = true
     title = "Sign up for a webinar"
     subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    show_upcoming = true
+
+    [[webinar.upcoming]]
+      link_title = "Friday 14th June - How to X without Y"
+      link_url = "#"
+
+    [[webinar.upcoming]]
+      link_title = "Monday 24th June - How to X without Y"
+      link_url = "#"
+
+    [[webinar.upcoming]]
+      link_title = "Thursday 27th June - How to X without Y"
+      link_url = "#"
+
+    [webinar.form]
+      email = true
+      fname = true
+      lname = true
+      company_name = true
+      form_action = "#"
+      submit_text = "Get notified"
+
 
 [cta] # global
     enable = true
