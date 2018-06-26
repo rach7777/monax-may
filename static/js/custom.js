@@ -2,12 +2,7 @@ console.log("custom.js loaded");
 
 $(document).ready(function() {
 
-  // OPEN LOGIN BAR
-  $('#nav-toggle-login').click(function() {
-    $('#login-bar').slideToggle();
-  });
-
-  // MENU
+  // MENU HOVER OPACITY ANIMATION
   $('.nav .dropdown-content').hover(function(){
     if ($(window).width() > 750) {
       $(this).toggleClass("active");
@@ -42,18 +37,4 @@ $(document).ready(function() {
     }
   });
 
-});
-
-// HANDLE TIMELINE INTERACTIONS
-$(function(){
-	var inputs = $('.timeline-date');
-	var paras = $('.timeline-info-container').find('p');
-	$(inputs).click(function(){
-		var t = $(this),
-				ind = t.index(),
-				matchedPara = $(paras).eq(ind);
-
-		$(t).add(matchedPara).addClass('active');
-		$(inputs).not(t).add($(paras).not(matchedPara)).removeClass('active');
-	});
 });
