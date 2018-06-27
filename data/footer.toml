@@ -6,38 +6,53 @@
 
     [[about.link]]
         link_title = "Request a demo"
-        link_url = "#"
+        link_url = "https://beta.monax.io/register"
+        # @@@ change url
 
     [[about.link]]
         link_title = "Get started"
-        link_url = "#"
-
-    [[about.social_icon]]
-        icon = "fa-github"
-        link = "#"
-        title = "Github"
+        link_url = "https://beta.monax.io/register"
 
     [[about.social_icon]]
         icon = "fa-facebook"
-        link = "#"
+        link = "https://www.facebook.com/monaxHQ/"
         title = "Facebook"
 
     [[about.social_icon]]
         icon = "fa-twitter"
-        link = "#"
+        link = "https://twitter.com/monaxhq"
         title = "Twitter"
 
+    [[about.social_icon]]
+        icon = "fa-linkedin"
+        link = "https://www.linkedin.com/company/monax/"
+        title = "LinkedIn"
+
+    [[about.social_icon]]
+        icon = "fa-instagram"
+        link = "https://www.instagram.com/monaxhq/"
+        title = "Instagram"
+
+    # [[about.social_icon]]
+    #     icon = "fa-envelope"
+    #     link = "mailto:contact@monax.io"
+    #     title = "Email"
+    #
+    # [[about.social_icon]]
+    #     icon = "fa-github"
+    #     link = "https://github.com/monax"
+    #     title = "Github"
 
 [col_2]
     enable = true
     title = "Subscribe To Updates"
-    subtitle = "Pellentesque habitant morbi tristique senectus et netus.<div class='flex-grid form-placeholder-dark' style='min-height:160px;'><div class='col-sm-12 col-valign-center'><h4>-- FORM PLACEHOLDER --</h4></div></div>"
-
+    subtitle = "Pellentesque habitant morbi tristique senectus et netus."
+    enable_intercom_form = false
 
 [col_3]
     enable = true
     title = "Developers"
-    subtitle = "Pellentesque habitant morbi tristique senectus et netus.<br><a href='#'>Read our developer docs  &rsaquo;</a><br><br>Pellentesque habitant morbi tristique senectus et netus.<br><a href='#'>Contact us about 3rd party integrations &rsaquo;</a>"
+    subtitle = "Pellentesque habitant morbi tristique senectus et netus.<br><a href='https://docs.agreements.network/'>Read our developer docs  &rsaquo;</a><br><br>Pellentesque habitant morbi tristique senectus et netus.<br><a href='mailto:contact@monax.io'>Contact us about 3rd party integrations &rsaquo;</a>"
 
 [col_4]
     enable = true
@@ -51,8 +66,8 @@
 
     [[copyright.link]]
     link_title = "Privacy Policy"
-    link_url = "#"
+    link_url = "/legal/privacy-policy/"
 
-    [[copyright.link]]
-    link_title = "Terms of Service"
-    link_url = "#"
+    # [[copyright.link]]
+    # link_title = "Terms of Service"
+    # link_url = "#"

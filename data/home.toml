@@ -5,7 +5,7 @@
     img_left = false
     hero_signup = true
     img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
-    background_element = "/img/assets/background-elements/abstract-01.jpg"
+    # background_element = "/img/assets/background-elements/abstract-01.jpg"
 
     [top.illustration]
       enable = true   # replaces img_right

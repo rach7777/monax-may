@@ -1,4 +1,4 @@
-/* ============================
+f7f7f7f7f7f7/* ============================
             GENERAL ~
 ============================= */
 
@@ -33,6 +33,10 @@ section, div.section {
 }
 a {
     color: #96B85D;
+}
+a:hover,
+a:focus {
+    color: #799844;
 }
 
 /* Examples & placeholders */
@@ -167,7 +171,7 @@ p.lead,
 
 .form {
     padding: 40px;
-    background: #f4f4f4;
+    background: #f7f7f7;
     border-radius: 5px;
 }
 .form input {
@@ -277,7 +281,7 @@ p.lead,
 /* *** */
 .bubble {
     padding: 20px 30px 30px;
-    background-color: #f4f4f4;
+    background-color: #f7f7f7;
     border-radius: 15px;
     position: relative;
     font-style: italic;
@@ -288,7 +292,7 @@ p.lead,
     height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-bottom: 20px solid #f4f4f4;
+    border-bottom: 20px solid #f7f7f7;
     display: block;
     position: absolute;
     top: -20px;
@@ -300,7 +304,7 @@ p.lead,
     height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-top: 20px solid #f4f4f4;
+    border-top: 20px solid #f7f7f7;
     display: block;
     position: absolute;
     bottom: -20px;
@@ -455,7 +459,7 @@ p.lead,
 .panel.sidebar-menu ul.category-cloud li a:hover,
 .panel.sidebar-menu ul.category-cloud li a:focus {
   text-decoration: none;
-  background: #f4f4f4;
+  background: #f7f7f7;
 }
 .panel.sidebar-menu ul.category-cloud li a i.fa {
     color: #95b85d;
@@ -518,7 +522,8 @@ p.lead,
     text-align: center;
     background: #fff;
     padding: 10px 20px;
-    box-shadow: 0px 0px 40px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 40px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 40px rgba(0,0,0,0.15);
 }
 .doc-inner:before {
     content: "";
@@ -532,7 +537,7 @@ p.lead,
     -moz-box-shadow: -1px 1px 0px rgba(0,0,0,.3);
     box-shadow: -1px 1px 0px rgba(0,0,0,.3);
     border-width: 15px;
-    border-color: #b7b7b7 #b7b7b7 #fff #fff;
+    border-color: #e7e7e7 #e7e7e7 #fff #fff;
     -webkit-border-bottom-left-radius: 5px;
     -moz-border-radius: 0 0 0 5px;
     border-radius: 0 0 0 5px;
@@ -1316,10 +1321,7 @@ transform: scale(1.05) !important;
   border: none;
 }
 .background-grey {
-    background: #d0d0d0;
-    background: -webkit-linear-gradient(bottom, #f5f5f5 0%, #d0d0d0 100%);
-    background: -o-linear-gradient(bottom, #f5f5f5 0%, #d0d0d0 100%);
-    background: linear-gradient(to top, #f5f5f5 0%, #d0d0d0 100%);
+    background: #f7f7f7;
 }
 .background-color {
     background: rgb(33,80,128);
