@@ -1,8 +1,17 @@
-{{ with .Site.Data.features.examples }}
+{{ with .Site.Data.monaxfor.corporate.examples }}
 {{ if .enable }}
 
   <section class="section-examples padding-bottom-sm padding-top-lg background-grey">
       <div class="container container-docs">
+
+      <div class="row padding-bottom-md">
+        <div class="col-md-12">
+            <div class="">
+                <h3>{{ .title }}</h3>
+            </div>
+        </div>
+      </div>
+
         <div class="row flex-grid-sm padding-bottom-md">
 
           <div class="col-md-9">
@@ -19,7 +28,7 @@
                             <div class="title range-left underline-xs">
                                 <h5>{{ .title }}</h5>
                             </div>
-                            <div class="doc-skin" style="transform: translateZ(10px);background:url({{ $.Site.Data.features.examples.default_img }}) center center no-repeat;background-size:cover;">
+                            <div class="doc-skin" style="transform: translateZ(10px);background:url({{ $.Site.Data.monaxfor.corporate.examples.default_img }}) center center no-repeat;background-size:cover;">
                             </div>
                           </div>
                         </div>
@@ -31,11 +40,6 @@
               {{ end }}
 
             </div>
-            <!-- <div class="row">
-              <div class="col-sm-12">
-                <h6 style="margin:0;">{{ .subtitle }}</h6>
-              </div>
-            </div> -->
 
           </div>
           <div class="col-md-3 padding-bottom-md hover-dip-opacity">

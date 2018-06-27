@@ -17,13 +17,22 @@
 
         {{ partial "monaxfor/corporate/top.html" . }}
 
+        <!-- global section -->
+        {{ if isset .Site.Data.monaxfor.corporate "press" }}
+          {{ if .Site.Data.monaxfor.corporate.press.enable }}
+            {{ partial "_global/press.html" . }}
+          {{ end }}
+        {{ end }}
+
         {{ partial "monaxfor/corporate/testimonials.html" . }}
 
         {{ partial "monaxfor/corporate/feature.html" . }}
 
+        {{ partial "monaxfor/corporate/examples.html" . }}
+
         {{ partial "monaxfor/corporate/relatedarticles.html" . }}
 
-        <!-- content here -->
+        {{ partial "monaxfor/corporate/faq.html" . }}
 
         <!-- CTA section [GLOBAL] -->
         {{ if isset .Site.Data.monaxfor.corporate "cta" }}

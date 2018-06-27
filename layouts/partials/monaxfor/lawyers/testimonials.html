@@ -1,53 +1,44 @@
 {{ with .Site.Data.monaxfor.lawyers.testimonials }}
 {{ if .enable }}
-
-<section class="section-padding-sm section-testimonials">
-<!-- full width -->
-  <div class="row flex-grid-xs">
-    <div class="col-sm-3 flex-grid-xs">
-      {{ if .img_cutout }}
-      <div class="row flex-grid-xs" style="width: 100%">
-        <div class="col-sm-12 col-valign-bottom range-right">
-          <img class="img-responsive img-right padding-top-sm" src="{{ .img_cutout }}" alt="">
+<section class="section-testimonials">
+  <div class="container">
+    <div class="row flex-grid-xs">
+      <div class="col-sm-3 col-flex-3 flex-grid-xs">
+        {{ if .img_cutout }}
+        <div class="row flex-grid-xs" style="width: 100%">
+          <div class="col-flex-12 col-valign-bottom range-right">
+            <img class="img-responsive img-right padding-top-sm" src="{{ .img_cutout }}" alt="" style="max-height: 240px;">
+          </div>
+        </div>
+        {{ else if .img_circle }}
+        <div class="row flex-grid-xs" style="width: 100%">
+          <div class="col-flex-12 col-valign-center range-right">
+            <img class="img-responsive img-right img-headshot" src="{{ .img_circle }}" alt="" style="max-height:190px;">
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      <div class="col-sm-9 col-flex-9 col-valign-center">
+        <div class="content-container testimonial-container">
+          <div class="range-left-sm">
+            <h4 class="testimonial-quote padding-bottom-sm">&quot;{{ .quote }}&quot; {{ if .read_more_link }}<span style="font-size: 20px;"><a href="{{ .read_more_link }}">(read more)</a></span>{{ end }}</h4>
+            <h5 style="margin-bottom:2px;">{{ .name }}</h5>
+            <p>{{ .position }}</p>
+          </div>
+          <div class="flex-grid-xs">
+            <ul class="ul-round-icons ul-team-icons">
+              {{ with .twitter}}
+                <a href="{{ . }}"><li><i class='fa fa-twitter'></i></li></a>
+              {{ end }}
+              {{ with .linkedin}}
+                <a href="{{ . }}"><li><i class='fa fa-linkedin'></i></li></a>
+              {{ end }}
+            </ul>
+          </div>
         </div>
       </div>
-      {{ else if .img_circle }}
-      <div class="row flex-grid-xs" style="width: 100%">
-        <div class="col-sm-12 col-valign-center range-right">
-          <img class="img-responsive img-right img-headshot" src="{{ .img_circle }}" alt="" style="max-height:190px;">
-        </div>
-      </div>
-      {{ end }}
-    </div>
-    <div class="col-sm-6 col-valign-center">
-      <div class="content-container testimonial-container">
-        <div class="range-left-sm">
-          <h4 class="testimonial-quote padding-bottom-sm">&quot;{{ .quote }}&quot;</h4>
-          <h5 style="margin-bottom:2px;">{{ .name }}</h5>
-          <p>{{ .position }}</p>
-        </div>
-        <div class="flex-grid-xs">
-          <ul class="ul-round-icons ul-team-icons">
-            {{ with .twitter}}
-              <a href="{{ . }}"><li><i class='fa fa-twitter'></i></li></a>
-            {{ end }}
-            {{ with .linkedin}}
-              <a href="{{ . }}"><li><i class='fa fa-linkedin'></i></li></a>
-            {{ end }}
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3 background-color col-slant-left flex-grid-xs">
-      <div class="row flex-grid-xs" style="width: 100%">
-        <div class="col-sm-12 col-valign-bottom range-right">
-          <a href="{{ .link_url }}" class="full-case-study">
-            <h2>{{ .link_title | markdownify }} &rsaquo;</h2>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div> <!-- .row -->
+    </div> <!-- .row -->
+  </div>
 </section> <!-- .section -->
 
 {{ end }}

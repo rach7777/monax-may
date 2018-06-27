@@ -11,9 +11,9 @@
 [featured]
     enable = true
     title = "Featured In:"
-    logo_1 = "/img/logos/example-logo.png"
-    logo_2 = "/img/logos/example-logo.png"
-    logo_3 = "/img/logos/example-logo.png"
+    logo_1 = "/img/logos/coindesk-logo-white.png"
+    logo_2 = "/img/logos/coindesk-logo-white.png"
+    logo_3 = "/img/logos/coindesk-logo-white.png"
 
 
 [history]

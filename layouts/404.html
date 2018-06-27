@@ -19,7 +19,11 @@
 
         <section>
           <div class="content-container padding-top-xl">
-            <p>You're lost. <a href="/">Return to the homepage?</a></p>
+            <p class="padding-bottom-md">You're lost. <a href="/">Return to the homepage?</a></p>
+            <p>Or maybe you meant to visit:</p>
+              {{ range $i, $p := $.Paginator.Pages }}
+                <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+              {{ end }}
           </div>
         </section>
 

@@ -3,23 +3,18 @@
 <section class="section-summary section-padding-xl">
     <div class="container">
 
-
       <div class="row">
         <div class="col-md-12">
-
             <div class="underline-sm">
                 <h2>{{ .title }}</h2>
             </div>
-
             <p class="lead text-center">
               {{ .subtitle | markdownify }}
             </p>
-
         </div>
       </div>
 
       <div class="row flex-grid-md">
-
         <div class="col-md-5 col-valign-center">
           <img class="img-responsive img-center" src="{{ .img_left }}" alt="">
           <img class="img-responsive img-popover hover-scale" src="{{ .img_left_popover }}" data-aos="zoom-in" alt="" style="
@@ -27,9 +22,7 @@
                     top: {{ .img_left_popover_top }}%;
                     left: {{ .img_left_popover_left }}%">
         </div>
-
         <div class="col-md-7">
-
             <ul class="ul-icon-list">
               {{ range .feature }}
               <li class="padding-bottom-xs">
@@ -40,15 +33,9 @@
               {{ end }}
             </ul>
         </div>
-
       </div>
 
-
-
-
-    </div>
-    <!-- /.container -->
-</section>
-<!-- /.bar -->
+    </div>  <!-- .container -->
+</section> <!-- .section -->
 {{ end }}
 {{ end }}

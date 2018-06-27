@@ -17,11 +17,22 @@
 
         {{ partial "monaxfor/contentcreators/top.html" . }}
 
+        <!-- global section -->
+        {{ if isset .Site.Data.monaxfor.contentcreators "press" }}
+          {{ if .Site.Data.monaxfor.contentcreators.press.enable }}
+            {{ partial "_global/press.html" . }}
+          {{ end }}
+        {{ end }}
+
         {{ partial "monaxfor/contentcreators/testimonials.html" . }}
 
         {{ partial "monaxfor/contentcreators/feature.html" . }}
 
+        {{ partial "monaxfor/contentcreators/examples.html" . }}
+
         {{ partial "monaxfor/contentcreators/relatedarticles.html" . }}
+
+        {{ partial "monaxfor/contentcreators/faq.html" . }}
 
         <!-- CTA section [GLOBAL] -->
         {{ if isset .Site.Data.monaxfor.contentcreators "cta" }}

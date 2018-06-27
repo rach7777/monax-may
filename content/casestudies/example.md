@@ -5,6 +5,8 @@ title:     "Example Case Study"
 author:    casey
 excerpt:   "This network is a decentralized contract management system for small businesses"
 # thumbnail: example-image.jpg
+tags:
+  - fleetleasing
 
 ---
 

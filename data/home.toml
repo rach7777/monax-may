@@ -13,13 +13,10 @@
       img_layer_one = "/img/assets/illustrations/monax-laptop/Composition_Layer_02_AN.png"
       img_layer_two = "/img/assets/illustrations/monax-laptop/Composition_Layer_01_Agreement.png"
 
-[featured]
+
+[press] # global
     enable = true
-    title = "Featured In:"
-    logo_1 = "/img/logos/example-logo.png"
-    logo_2 = "/img/logos/example-logo.png"
-    logo_3 = "/img/logos/example-logo.png"
-    # @@@ change logos
+
 
 [summary]
     enable = true

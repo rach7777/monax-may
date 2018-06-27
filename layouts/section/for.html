@@ -15,14 +15,17 @@
 
         </header>
 
-        <!-- global section -->
-        {{ if isset .Site.Data.monaxfor "cta" }}
-          {{ if .Site.Data.monaxfor.cta.enable }}
-            {{ partial "_global/cta.html" . }}
-          {{ end }}
-        {{ end }}
+        <!-- BLANK TEMPLATE / 404 -->
 
-        {{ partial "footer.html" . }}
+        <section>
+          <div class="content-container padding-top-xl">
+            <p class="padding-bottom-md">You're lost. <a href="/">Return to the homepage?</a></p>
+            <p>Or maybe you meant to visit:</p>
+              {{ range $i, $p := $.Paginator.Pages }}
+                <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+              {{ end }}
+          </div>
+        </section>
 
     </div>
     <!-- /#all -->

@@ -4,8 +4,12 @@
     subtitle = "How Monax can simplify your workflow and turn your knowledge into commoditisable legal products"
     img_left = false
     hero_signup = true
-    img_right = "/img/assets/background-elements/wphone-test.png"
-    background_element = "/img/assets/background-elements/abstract-01.jpg"
+    img_right = "/img/assets/landing-pages/lawyers/lawyers-header.png"
+    # background_element = "/img/assets/background-elements/abstract-01.jpg"
+
+
+[press] # global
+    enable = true
 
 
 [testimonials]
@@ -15,9 +19,7 @@
     position = "Some company inc."
     twitter = "#"
     linkedin = "#"
-    # CTA
-    link_title = "Read<br>John's<br>story"
-    link_url = "#"
+    read_more_link = "#"
     # IMG - USE ONE OR THE OTHER, NOT BOTH (SET ONE TO: false)
     img_cutout = "/img/testimonials/man-on-tablet.jpg"
     # img_circle = "/img/team/team-dg.jpeg"
@@ -27,25 +29,79 @@
   enable = true
 
   [[feature.section]]
-    title = "How can Monax make your life easier as a lawyer?"
-    subtitle = "The Monax platform is a way to make money building in-demand legal products for a wide range of consumers."
-    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
+    title = "Put your legal knowledge assets to work."
+    subtitle = "Earn more by translating your legal knowledge into legal products. Monax’s three step template creation process guides you from uploading your prose template to setting up contractual workflows. "
+    img_left = "/img/assets/screenshots/iPhone-screen-2.png"
+    img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
+    img_left_popover_width = 80
+    img_left_popover_top = 26
+    img_left_popover_left = 10
 
   [[feature.section]]
-    title = "Feature title"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
+    title = "Increase your margins."
+    subtitle = "Offer your legal expertise through legal products in the Monax marketplace and broaden your customer base. Kick back and let process automation and reproducibility of your assets earn you money."
+    img_left = "/img/assets/screenshots/iPhone-screen-2.png"
+    img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
+    img_left_popover_width = 80
+    img_left_popover_top = 26
+    img_left_popover_left = 10
 
-  [[feature.section]]
-    title = "Feature title"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
+
+[examples]
+  enable = true
+  title = "Get started using one of our agreements"
+  default_img = "/img/assets/agreements/3.jpg"
+  new_agreement_text = "Create A New Agreement"
+  new_agreement_url = "#"
+
+  # Agreements should be auto populated
+  [[examples.agreement]]
+    title = "Agreement Title"
+    url = "#"
+
+  [[examples.agreement]]
+    title = "Agreement Title"
+    url = "#"
+
+  [[examples.agreement]]
+    title = "Agreement Title"
+    url = "#"
+
+  [[examples.agreement]]
+    title = "Agreement Title"
+    url = "#"
 
 
 [relatedarticles]
   enable = true
+  title = "Or learn how to get started here"
   filter_by_tag = "lawyers" # changed in partials/monaxfor/lawyers/relatedarticles.html
   default_img = "/img/assets/backgrounds/mountains-1.jpg"
+
+
+# FAQ section
+[faq]
+  enable = true
+
+    [[faq.item]]
+        question = "Why do people want to enter into agreements at all?"
+        answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+
+    [[faq.item]]
+        question = "Why do people want to enter into agreements at all?"
+        answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+
+    [[faq.item]]
+        question = "Why do people want to enter into agreements at all?"
+        answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+
+    [[faq.item]]
+        question = "Why do people want to enter into agreements at all?"
+        answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+
+    [[faq.item]]
+        question = "Why do people want to enter into agreements at all?"
+        answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
 
 
 [cta] # global

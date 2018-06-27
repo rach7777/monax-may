@@ -1,3 +1,10 @@
+[press]
+    enable = true
+    title = "Featured In:"
+    logo_1 = "/img/press-logos/coindesk-logo-white.png"
+    logo_2 = "/img/press-logos/digital-journal-logo-white.png"
+    logo_3 = "/img/press-logos/wall-street-journal-logo-white.png"
+
 [cta]
     title = "Find your first-class agreement now"
 

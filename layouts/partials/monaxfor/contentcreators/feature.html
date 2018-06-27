@@ -1,59 +1,53 @@
 {{ with .Site.Data.monaxfor.contentcreators.feature }}
 {{ if .enable }}
-<section class="section-feature padding-top-xl padding-bottom-lg section-shadow-xl">
-    <div class="container">
+  <section class="section-feature padding-top-xl section-shadow-xl">
+      <div class="container">
 
-      {{ range $i, $p := .section }}
+          {{ range $i, $p := .section }}
+            {{ if (modBool $i 2) }} <!-- odd row -->
 
-        {{ if (modBool $i 2) }} <!-- odd row -->
-          <div class="row flex-grid-md padding-bottom-lg">
-            <div class="col-md-4 col-md-offset-1 col-valign-center">
-              <img class="img-responsive" src="{{ .img_left }}" alt="">
-            </div> <!-- .col -->
-            <div class="col-md-6 col-valign-center">
-              <div class="range-left-sm underline-sm">
-                  <h2>{{ .title }}</h2>
-              </div>
-              <p class="lead range-left-sm">
-                {{ .subtitle | markdownify }}
-              </p>
-              <ul class="ul-icon-list">
-                {{ range .bullet }}
-                <li class="padding-bottom-xs">
-                  <i class="fa {{ .icon }}" aria-hidden="true"></i>
-                  <h4 class="range-left">{{ .title }}</h4>
-                  <p class="range-left">{{ .description }}</p>
-                </li>
-                {{ end }}
-              </ul>
-            </div> <!-- .col -->
-          </div>  <!-- .row -->
-          {{ else }} <!-- even row -->
-          <div class="row flex-grid-md padding-bottom-lg">
-            <div class="col-md-6 col-md-offset-1 col-valign-center">
-              <div class="range-left-sm underline-sm">
-                  <h2>{{ .title }}</h2>
-              </div>
-              <p class="lead range-left-sm">
-                {{ .subtitle | markdownify }}
-              </p>
-              <ul class="ul-icon-list">
-                {{ range .bullet }}
-                <li class="padding-bottom-xs">
-                  <i class="fa {{ .icon }}" aria-hidden="true"></i>
-                  <h4 class="range-left">{{ .title }}</h4>
-                  <p class="range-left">{{ .description }}</p>
-                </li>
-                {{ end }}
-              </ul>
-            </div> <!-- .col -->
-            <div class="col-md-4 col-valign-center">
-              <img class="img-responsive" src="{{ .img_left }}" alt="">
-            </div> <!-- .col -->
-          </div>  <!-- .row -->
-        {{ end }}
-      {{ end }}
-    </div> <!-- .container -->
-</section> <!-- .section -->
+              <div class="row flex-grid-md padding-bottom-xl">
+                <div class="col-md-7 col-valign-center">
+                  <img class="img-responsive img-center" src="{{ .img_left }}" alt="">
+                  <img class="img-responsive img-popover hover-scale" src="{{ .img_left_popover }}" data-aos="zoom-in" data-aos-duration="400" alt="" style="
+                            width: {{ .img_left_popover_width }}%;
+                            top: {{ .img_left_popover_top }}%;
+                            left: {{ .img_left_popover_left }}%">
+                </div> <!-- .col -->
+                <div class="col-md-5 col-valign-center"  data-aos="fade-left" data-aos-delay="400" data-aos-duration="400">
+                  <div class="range-left-sm underline-sm">
+                      <h2>{{ .title }}</h2>
+                  </div>
+                  <p class="lead range-left-sm">
+                    {{ .subtitle | markdownify }}
+                  </p>
+                </div> <!-- .col -->
+              </div>  <!-- .row -->
+
+              {{ else }} <!-- even row -->
+
+              <div class="row flex-grid-md padding-bottom-xl">
+                <div class="col-md-5 col-valign-center"  data-aos="fade-right" data-aos-delay="400" data-aos-duration="400">
+                  <div class="range-left-sm underline-sm">
+                      <h2>{{ .title }}</h2>
+                  </div>
+                  <p class="lead range-left-sm">
+                    {{ .subtitle | markdownify }}
+                  </p>
+                </div> <!-- .col -->
+                <div class="col-md-7 col-valign-center">
+                  <img class="img-responsive img-center" src="{{ .img_left }}" alt="">
+                  <img class="img-responsive img-popover hover-scale" src="{{ .img_left_popover }}" data-aos="zoom-in"  data-aos-duration="400" alt="" style="
+                            width: {{ .img_left_popover_width }}%;
+                            top: {{ .img_left_popover_top }}%;
+                            left: {{ .img_left_popover_left }}%">
+                </div> <!-- .col -->
+              </div>  <!-- .row -->
+
+            {{ end }}
+          {{ end }}
+
+      </div> <!-- .container -->
+  </section> <!-- .section -->
 {{ end }}
 {{ end }}

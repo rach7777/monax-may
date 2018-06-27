@@ -4,8 +4,12 @@
     subtitle = "How Monax can simplify and speed up your corporate governance, and give you full control over your agreements"
     img_left = false
     hero_signup = true
-    img_right = "/img/assets/background-elements/wphone-test.png"
-    background_element = "/img/assets/background-elements/abstract-01.jpg"
+    img_right = "/img/assets/landing-pages/corporate-governance/corporate-governance-header.png"
+    # background_element = "/img/assets/background-elements/abstract-01.jpg"
+
+
+[press] # global
+    enable = true
 
 
 [testimonials]
@@ -15,9 +19,7 @@
     position = "Some company inc."
     twitter = "#"
     linkedin = "#"
-    # CTA
-    link_title = "Read<br>John's<br>story"
-    link_url = "#"
+    read_more_link = "#"
     # IMG - USE ONE OR THE OTHER, NOT BOTH (SET ONE TO: false)
     img_cutout = "/img/testimonials/man-on-tablet.jpg"
     # img_circle = "/img/team/team-dg.jpeg"
@@ -27,25 +29,97 @@
   enable = true
 
   [[feature.section]]
-    title = "How can Monax help your company?"
-    subtitle = "The Monax marketplace is a powerful solution for your contracting needs as a company, from incorporation and beyond, we will be with you every step of the way."
-    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
+    title = "100% transparency on your legal matters."
+    subtitle = "Maintain constant insight as to what is happening in your contracts. Track every step along the way, gathering evidence required to fulfill an agreement from signing to shipping or payments and the like. Put your mind at ease and concentrate on nurturing your business."
+    img_left = "/img/assets/screenshots/iPhone-screen-2.png"
+    img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
+    img_left_popover_width = 80
+    img_left_popover_top = 26
+    img_left_popover_left = 10
 
   [[feature.section]]
-    title = "Feature title"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
+    title = "Trusted legal products at your fingertips."
+    subtitle = "Buy lawyer-tested legal products in the same way you shop for books, clothing or food. The Monax marketplace opens the doors to legal trust without the legal hassle."
+    img_left = "/img/assets/screenshots/iPhone-screen-2.png"
+    img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
+    img_left_popover_width = 80
+    img_left_popover_top = 26
+    img_left_popover_left = 10
 
   [[feature.section]]
-    title = "Feature title"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
+    title = "Create self-executable legal agreements in minutes."
+    subtitle = "Pick the legal template that meets your needs, complete it with your details and launch. Monax’s legal workflow engine takes care of the rest."
+    img_left = "/img/assets/screenshots/iPhone-screen-2.png"
+    img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
+    img_left_popover_width = 80
+    img_left_popover_top = 26
+    img_left_popover_left = 10
+
+  [[feature.section]]
+    title = "Increased quality at reduced cost."
+    subtitle = "Cut out legal paper-shuffling and pay for actual value. Monax combines legal expertise with automation and reproducibility delivering legal products with higher precision at a fraction of their cost."
+    img_left = "/img/assets/screenshots/iPhone-screen-2.png"
+    img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
+    img_left_popover_width = 80
+    img_left_popover_top = 26
+    img_left_popover_left = 10
+
+
+[examples]
+  enable = true
+  title = "Get started using one of our agreements"
+  default_img = "/img/assets/agreements/3.jpg"
+  new_agreement_text = "Create A New Agreement"
+  new_agreement_url = "#"
+
+  # Agreements should be auto populated
+  [[examples.agreement]]
+    title = "Agreement Title"
+    url = "#"
+
+  [[examples.agreement]]
+    title = "Agreement Title"
+    url = "#"
+
+  [[examples.agreement]]
+    title = "Agreement Title"
+    url = "#"
+
+  [[examples.agreement]]
+    title = "Agreement Title"
+    url = "#"
 
 
 [relatedarticles]
   enable = true
+  title = "Or learn how to get started here"
   filter_by_tag = "corporate" # changed in partials/monaxfor/corporate/relatedarticles.html
   default_img = "/img/assets/backgrounds/mountains-1.jpg"
+
+
+# FAQ section
+[faq]
+  enable = true
+
+    [[faq.item]]
+        question = "Why do people want to enter into agreements at all?"
+        answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+
+    [[faq.item]]
+        question = "Why do people want to enter into agreements at all?"
+        answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+
+    [[faq.item]]
+        question = "Why do people want to enter into agreements at all?"
+        answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+
+    [[faq.item]]
+        question = "Why do people want to enter into agreements at all?"
+        answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+
+    [[faq.item]]
+        question = "Why do people want to enter into agreements at all?"
+        answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
 
 
 [cta] # global

@@ -21,13 +21,12 @@
                 <img class="img-responsive" src="{{ .img_left }}" alt="">
               {{ end }}
           </div>
-          <div class="col-md-7">
+          <div class="col-md-7 flex-grid-md">
 
             {{ if .img_right }}
-              <!-- test only -->
               <div class="row flex-grid-md">
-                <div class="col-sm-12 col-valign-bottom">
-                  <img class="img-responsive img-center" src="{{ .img_right }}" alt="" style="position: relative;bottom: -60px;right: -55px;">
+                <div class="col-sm-8 col-sm-offset-2 col-valign-center">
+                  <img class="img-responsive img-center" src="{{ .img_right }}" alt="">
                 </div>
               </div>
             {{ end }}

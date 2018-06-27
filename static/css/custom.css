@@ -276,9 +276,13 @@ p.lead,
   max-width: 180px;
   padding: 20px;
 }
-/* *** */
 
-/* *** */
+
+
+/*======================
+    ELEMENTS - BUBBLE
+=======================*/
+
 .bubble {
     padding: 20px 30px 30px;
     background-color: #f7f7f7;
@@ -313,6 +317,10 @@ p.lead,
 
 
 
+/*======================
+    ELEMENTS - TESTIMONIAL
+=======================*/
+
 .testimonial-container {
     margin: 40px 0 30px;
 }
@@ -331,6 +339,55 @@ p.lead,
 .full-case-study:focus {
     color: inherit;
     text-decoration: none;
+}
+
+
+/*======================
+    ELEMENTS - FAQ
+=======================*/
+
+ul, ol {
+  list-style: none;
+}
+.accordion {
+    padding: 0 15px 0 15px;
+}
+.accordion-section-content .question .question-toggle {
+  	transition: all 0.3s;
+    -webkit-transform: rotate(0deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+        -ms-transform: rotate(0deg); /* IE 9 */
+            transform: rotate(0deg); /* IE 10, Fx 16+, Op 12.1+ */
+}
+.accordion-section-content .question.active .question-toggle {
+  -webkit-transform: rotate(-180deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: rotate(-180deg); /* IE 9 */
+          transform: rotate(-180deg); /* IE 10, Fx 16+, Op 12.1+ */
+}
+.accordion-toggle {
+    cursor: pointer;
+    line-height: 1.6;
+}
+.accordion-content {
+    display: none;
+    border-top: 1px solid #98B762;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.accordion-content p {
+    margin-bottom: 0.8em;
+}
+.accordion-content p:empty {
+    display: none;
+}
+.accordion-content ul,
+.accordion-content ol {
+  list-style:none;
+  padding-left: 40px;
+}
+.accordion-content ul li,
+.accordion-content ol li {
+  padding-bottom: 10px;
+  transition: all 0.3s;
 }
 
 
@@ -968,6 +1025,12 @@ p, h1, h2, h3, h4, h5, h6 {
     /* visibility: visible; */
     opacity: 1;
     max-height: 5000px;
+}
+.btn-tab-select {
+    opacity: 0.4;
+}
+.btn-tab-select.active {
+    opacity: 1;
 }
 
 
@@ -2216,11 +2279,11 @@ transform: scale(1.05) !important;
     color: #fff;
 }
 
-.section-featured img {
-    max-width: 100px;
+.section-press img {
+    max-height: 50px;
     margin: 0 auto;
+    max-width: 150px;
 }
-
 .section-usecases .subtitle {
     font-size: 18px;
 }

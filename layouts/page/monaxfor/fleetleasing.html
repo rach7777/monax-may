@@ -17,14 +17,22 @@
 
         {{ partial "monaxfor/fleetleasing/top.html" . }}
 
+        <!-- global section -->
+        {{ if isset .Site.Data.monaxfor.fleetleasing "press" }}
+          {{ if .Site.Data.monaxfor.fleetleasing.press.enable }}
+            {{ partial "_global/press.html" . }}
+          {{ end }}
+        {{ end }}
+
         {{ partial "monaxfor/fleetleasing/testimonials.html" . }}
 
         {{ partial "monaxfor/fleetleasing/feature.html" . }}
 
+        {{ partial "monaxfor/fleetleasing/examples.html" . }}
+
         {{ partial "monaxfor/fleetleasing/relatedarticles.html" . }}
 
-
-        <!-- content here -->
+        {{ partial "monaxfor/fleetleasing/faq.html" . }}
 
         <!-- CTA section [GLOBAL] -->
         {{ if isset .Site.Data.monaxfor.fleetleasing "cta" }}

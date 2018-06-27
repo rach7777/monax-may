@@ -31,7 +31,6 @@ $(document).ready(function() {
 
   // Document .dip-opacity
   $('.container-docs').hover(function(){
-    console.log("hello");
     if ($(window).width() > 750) {
       $(this).toggleClass("active");
     }
@@ -89,5 +88,35 @@ $(document).ready(function() {
   		$(inputs).not(t).add($(paras).not(matchedPara)).removeClass('active');
   	});
   });
+
+  // HANDLE TAB SELECT ON FEATURES
+  $('.btn-tab-select').on('click', function(e) {
+    e.preventDefault();
+    var id = $(this).attr('href');
+    // hide previous panel
+    $('.tab-reveal').removeClass('active');
+    // show current panel
+    $(id).addClass('active');
+    // switch active button
+    $(this).addClass('active');
+    $('.btn-tab-select').not(this).removeClass('active');
+    // reset animations
+    setTimeout(function(){
+      AOS.refreshHard();
+    }, 600);
+  });
+
+
+	// Accordions - FAQ Sections
+		$('.accordion-toggle').on('click', function() {
+      // slide section down
+			$(this).next().slideToggle('600');
+      // slide others up
+			$(".accordion-content").not($(this).next()).slideUp('600');
+      // toggle classes
+			$(this).parent('.question').toggleClass('active').siblings().removeClass('active');
+		});
+
+
 
 });

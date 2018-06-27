@@ -17,11 +17,22 @@
 
         {{ partial "monaxfor/lawyers/top.html" . }}
 
+        <!-- global section -->
+        {{ if isset .Site.Data.monaxfor.lawyers "press" }}
+          {{ if .Site.Data.monaxfor.lawyers.press.enable }}
+            {{ partial "_global/press.html" . }}
+          {{ end }}
+        {{ end }}
+
         {{ partial "monaxfor/lawyers/testimonials.html" . }}
 
         {{ partial "monaxfor/lawyers/feature.html" . }}
 
+        {{ partial "monaxfor/lawyers/examples.html" . }}
+
         {{ partial "monaxfor/lawyers/relatedarticles.html" . }}
+
+        {{ partial "monaxfor/lawyers/faq.html" . }}
 
         <!-- CTA section [GLOBAL] -->
         {{ if isset .Site.Data.monaxfor.lawyers "cta" }}

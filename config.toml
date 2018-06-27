@@ -91,12 +91,12 @@ paginate = 6
       Post = "Join us for industry insight and best practice advice on using legal products to streamline your business."
       Weight = 4
 
-    [[menu.left]]
-      Name = "Screencasts"
-      parent = "resources"
-      URL = "/screencasts/"
-      Post = "Learn how Monax can help you streamline your business using our latest walkthroughs and screencasts."
-      Weight = 5
+    # [[menu.left]]
+    #   Name = "Screencasts"
+    #   parent = "resources"
+    #   URL = "/screencasts/"
+    #   Post = "Learn how Monax can help you streamline your business using our latest walkthroughs and screencasts."
+    #   Weight = 5
 
 [[menu.left]]
     name = "Company"

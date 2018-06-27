@@ -9,6 +9,9 @@
 
 [feature]
   enable = true
+  title = "How do you use legal templates?"
+  consumer_option = "I use legal templates"
+  producer_option = "I produce legal templates"
 
   [feature.consumer]
     enable = true
