@@ -8,6 +8,7 @@ excerpt:   "This network is a decentralized contract management system for small
 thumbnail: introducing.jpg
 categories:
   - announcements
+  - press
 tags:
   - agreements network
 

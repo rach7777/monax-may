@@ -78,7 +78,7 @@ $(document).ready(function() {
   // HANDLE COMPANY HISTORY SELECT
   $(function(){
   	var inputs = $('.timeline-date');
-  	var paras = $('.timeline-info-container').find('p');
+  	var paras = $('.timeline-info-container').find('.timeline-content');
   	$(inputs).click(function(){
   		var t = $(this),
   				ind = t.index(),

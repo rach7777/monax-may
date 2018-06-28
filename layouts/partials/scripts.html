@@ -2,6 +2,7 @@
 <script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+<!-- @@@ Optimise and remove unnecessary scripts -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
@@ -12,7 +13,7 @@
 <script src="{{ .Site.BaseURL }}js/custom.js"></script>
 
 <!-- owl carousel -->
-<script src="{{ .Site.BaseURL }}js/owl.carousel.min.js"></script>
+<!-- <script src="{{ .Site.BaseURL }}js/owl.carousel.min.js"></script> -->
 
 <!-- init animations -->
 <script src="{{ .Site.BaseURL }}js/aos.js"></script>
@@ -29,3 +30,19 @@
 
 <!-- init tilt -->
 <script src="{{ .Site.BaseURL }}js/tilt.jquery.js"></script>
+
+<!-- init reading bar -->
+<script src="{{ .Site.BaseURL }}js/scrollgress.jquery.js"></script>
+<script type="text/javascript">
+	$('#post-content').scrollgress({
+    height: '5px',
+    color: '#98b762',
+		success: function() {
+			console.log('Scrollgress has been initiated.');
+		}
+	});
+</script>
+
+{{ range $.Site.Params.additional_footer_script_urls }}
+  <script async src="{{ . }}" type="text/javascript"></script>
+{{ end }}

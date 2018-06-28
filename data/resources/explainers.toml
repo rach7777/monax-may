@@ -12,8 +12,5 @@
   filter_by_category = "explainers" # changed in partials/resources/explainers/articles.html
   default_img = "/img/assets/backgrounds/mountains-1.jpg"
 
-[backers] # global
-    enable = false
-
 [cta] # global
     enable = true

@@ -8,7 +8,7 @@ excerpt:   "Monax is pleased to announce the launch of the TrustedChain® networ
 thumbnail: trustedchain.jpg
 categories:
   - announcements
-  - press releases
+  - press
 tags:
   - trusted chain
   - Italy

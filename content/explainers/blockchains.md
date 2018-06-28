@@ -3,7 +3,7 @@
 layout: single
 title: "Learn | Blockchains"
 excerpt:    "What is a Blockchain and why are these automated data management systems so cool?"
-thumbnail: example-image.jpg
+# thumbnail: example-image.jpg
 tags:
   - lawyers
   - corporate

@@ -17,7 +17,12 @@
 
         {{ partial "company/top.html" . }}
 
-        {{ partial "company/featured.html" . }}
+        <!-- global section -->
+        {{ if isset .Site.Data.company "press" }}
+          {{ if .Site.Data.company.press.enable }}
+            {{ partial "_global/press.html" . }}
+          {{ end }}
+        {{ end }}
 
         {{ partial "company/history.html" . }}
 
@@ -25,7 +30,7 @@
 
         {{ partial "company/positions.html" . }}
 
-        {{ partial "company/press.html" . }}
+        {{ partial "company/pressreleases.html" . }}
 
         <!-- global section -->
         {{ if isset .Site.Data.company "cta" }}

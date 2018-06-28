@@ -5,66 +5,84 @@
     {{ $.Scratch.Set "defaultImg" .default_img }}
   {{ end }}
 
-  <section class="section-usecases section-padding-xl background-color">
+  <section class="section-articles padding-top-md padding-bottom-xl background-grey">
       <div class="container">
 
         <div class="row content-container flex-grid-sm padding-bottom-md">
-          {{ range $i, $p := $.Paginator.Pages }}
+          {{ if gt (len $.Paginator.Pages) 0 }}
+            {{ range $i, $p := $.Paginator.Pages }}
 
-            {{ if (modBool $i 3) }} <!-- paginate after 3 entries -->
-        </div>
-        <div class="row content-container flex-grid-sm padding-bottom-md">
-            {{ end }}
+              {{ if (modBool $i 3) }} <!-- paginate after 3 entries -->
+          </div>
+          <div class="row content-container flex-grid-sm padding-bottom-md">
+              {{ end }}
 
-            <!-- check for img override -->
-            {{ if .Params.img }}
-              {{ .Scratch.Set "postImg" .Params.img }}
-            {{ else if .Params.thumbnail }}
-              {{ .Scratch.Set "postImg" (printf "/screencasts/images/%s" .Params.thumbnail) }}
-            {{ else if not (.Scratch.Get "postImg") }}
-              {{ .Scratch.Set "postImg" ($.Scratch.Get "defaultImg") }}
-            {{ end }}
+              <!-- check for img override -->
+              {{ if .Params.img }}
+                {{ .Scratch.Set "postImg" .Params.img }}
+              {{ else if .Params.thumbnail }}
+                {{ .Scratch.Set "postImg" (printf "/screencasts/images/%s" .Params.thumbnail) }}
+              {{ else if not (.Scratch.Get "postImg") }}
+                {{ .Scratch.Set "postImg" ($.Scratch.Get "defaultImg") }}
+              {{ end }}
 
-            <div class="col-sm-4 flex-grid-sm">
-              <a href="{{ .Permalink }}" class="flex-grid-sm a-card">
-              <div class="content-container content-card content-card-stack">
-                <div class="img-container background-dark" style='background:url({{ .Scratch.Get "postImg" }}) center center no-repeat; background-size: cover;'>
-                  <!-- <div class="content-container content-cicle background-color green pin-top-right">
-                    <div class="circle-top">
-                      {{ dateFormat "Jan 2" .Date }}
-                    </div>
-                    <div class="circle-bottom">
-                      {{ dateFormat "2006" .Date }}
-                    </div>
-                  </div> -->
-                </div>
-                <div class="text-container">
-                  <div class="title range-left">
-                      <h5>{{ .Title }} &rsaquo;</h5>
+              <div class="col-sm-4 flex-grid-sm">
+                <a href="{{ .Permalink }}" class="flex-grid-sm a-card">
+                <div class="content-container content-card content-card-stack content-card-shadow-sm article-card">
+                  <div class="img-container background-dark" style='background:url({{ .Scratch.Get "postImg" }}) center center no-repeat; background-size: cover;'>
+                    <!-- <div class="content-container content-cicle background-color green pin-top-right">
+                      <div class="circle-top">
+                        {{ dateFormat "Jan 2" .Date }}
+                      </div>
+                      <div class="circle-bottom">
+                        {{ dateFormat "2006" .Date }}
+                      </div>
+                    </div> -->
                   </div>
-                  <p class="subtitle range-left">
-                    {{ if .Params.excerpt }}
-                      {{ if gt (len .Params.excerpt) 140 }}
-                        {{ substr .Params.excerpt 0 140 }}...
-                      {{ else }}
-                        {{ .Params.excerpt }}
+                  <div class="text-container">
+                    <div class="title range-left">
+                      {{ if isset .Params "categories" }}
+                        <h6 class="article-category">{{ index .Params.categories 0 }}</h6>
                       {{ end }}
-                    {{ else }}
-                      {{ if gt (len .Summary) 140 }}
-                        {{ substr .Summary 0 140 }}...
+                      <h5 class="article-title" >{{ .Title }} &rsaquo;</h5>
+                    </div>
+                    <p class="subtitle range-left">
+                      {{ if .Params.excerpt }}
+                        {{ if gt (len .Params.excerpt) 140 }}
+                          {{ substr .Params.excerpt 0 140 }}...
+                        {{ else }}
+                          {{ .Params.excerpt }}
+                        {{ end }}
                       {{ else }}
-                        {{ .Summary }}
+                        {{ if gt (len .Summary) 140 }}
+                          {{ substr .Summary 0 140 }}...
+                        {{ else }}
+                          {{ .Summary }}
+                        {{ end }}
+                      {{ end }}
+                    </p>
+                    {{ if .Date }}
+                      {{ if gt .Date.Year 2000 }}
+                        <div class="meta range-left">
+                          <p><span><i class="fa fa-calendar"></i> {{ dateFormat "Jan 2 2006" .Date }}</span>{{ if .Params.author }} | <span><i class="fa fa-user-o"></i> {{ .Params.author }}</span>{{ end }}</p>
+                        </div>
                       {{ end }}
                     {{ end }}
-                  </p>
-                  <div class="meta range-left">
-                    <p><span><i class="fa fa-calendar"></i> {{ dateFormat "Jan 2 2006" .Date }}</span> | <span><i class="fa fa-user-o"></i> {{ .Params.author }}</span></p>
                   </div>
-                </div>
-              </div>  <!-- .content-card -->
-              </a>
-            </div>  <!-- .col -->
+                </div>  <!-- .content-card -->
+                </a>
+              </div>  <!-- .col -->
+            {{ end }}
+
+          <!-- if no posts -->
+          {{ else }}
+            <div class="col-sm-12">
+              <div class="range-left-md padding-top-md padding-bottom-xl">
+                <h2 class="coming-soon">{{ $.Site.Data.resources.screencasts.top.title }} are coming soon!</h2>
+              </div>
+            </div>
           {{ end }}
+
         </div> <!-- .row -->
 
         {{ if or ($.Paginator.HasPrev) ($.Paginator.HasNext) }}

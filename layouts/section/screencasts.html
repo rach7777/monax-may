@@ -19,13 +19,6 @@
 
         {{ partial "resources/screencasts/articles.html" . }}
 
-        <!-- 'Backed by' section [GLOBAL] -->
-        {{ if isset .Site.Data.resources.screencasts "backers" }}
-          {{ if .Site.Data.resources.screencasts.backers.enable }}
-            {{ partial "_global/backers.html" . }}
-          {{ end }}
-        {{ end }}
-
         <!-- CTA section [GLOBAL] -->
         {{ if isset .Site.Data.resources.screencasts "cta" }}
           {{ if .Site.Data.resources.screencasts.cta.enable }}

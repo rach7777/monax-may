@@ -8,6 +8,7 @@ excerpt:   "How does the Agreement Network ensure its health? Introducing a care
 thumbnail: james-wainscoat-521741-unsplash-min.jpg
 categories:
   - announcements
+  - press
 tags:
   - agreements network
   - fleetleasing

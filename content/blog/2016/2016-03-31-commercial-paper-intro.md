@@ -2,6 +2,7 @@
 author: nina
 categories:
 - announcements
+- press
 comments: true
 date: 2016-03-31T00:00:00Z
 excerpt: An introduction to smart contract commercial paper for the digital non-native.
@@ -50,4 +51,3 @@ Monax's inaugural smart contract product, **Monax Industries’ Commercial Paper
 Crafted to work in multiple blockchain environments, Monax Commercial Paper Bundles deliver tools to build a strong smart contract use case system. Monax's Commercial Paper is engineered for multidimensional applications, incorporating the lessons of history and precedent as well as the promise of the future.
 
 To learn more about Monax Industries' Smart Contract Libraries subscriptions, please write us at [contact@monax.io](mailto:contact@monax.io).
-

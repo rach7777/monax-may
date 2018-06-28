@@ -19,13 +19,6 @@
 
         {{ partial "resources/blog/articles.html" . }}
 
-        <!-- 'Backed by' section [GLOBAL] -->
-        {{ if isset .Site.Data.resources.blog "backers" }}
-          {{ if .Site.Data.resources.blog.backers.enable }}
-            {{ partial "_global/backers.html" . }}
-          {{ end }}
-        {{ end }}
-
         <!-- CTA section [GLOBAL] -->
         {{ if isset .Site.Data.resources.blog "cta" }}
           {{ if .Site.Data.resources.blog.cta.enable }}

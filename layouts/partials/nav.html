@@ -23,7 +23,7 @@
               <!-- nav links -->
               <ul class="nav navbar-nav navbar-right">
                 {{ $url := .URL }}
-                {{ range .Site.Menus.left }}
+                {{ range .Site.Menus.main }}
                 <li class="dropdown {{ if eq $url .URL }}active{{ end }}">
                   {{ if .HasChildren }}
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }} <span class="caret"></span></a>

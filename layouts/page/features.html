@@ -21,8 +21,6 @@
 
         {{ partial "features/examples.html" . }}
 
-        {{ partial "features/backers.html" . }}
-
         <!-- global section -->
         {{ if isset .Site.Data.features "cta" }}
           {{ if .Site.Data.features.cta.enable }}

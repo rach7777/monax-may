@@ -26,16 +26,15 @@
 
           </div> <!-- .col -->
           <div class="col-md-7">
-            <div class="row flex-grid-sm">
+            <div class="row">
               {{ range $i, $p := .job }}
 
-                {{ if (modBool $i 2) }} <!-- new row after 6 entries -->
-            </div>
-            <div class="row flex-grid-sm">
+                {{ if (modBool $i 2) }} <!-- new row after 2 entries -->
+                  <div class="clearfix visible-lg-block"></div>
                 {{ end }}
 
-              <div class="col-sm-6 padding-bottom-md flex-grid-sm" style="width: 100%;">
-                <div class="content-container content-card content-card-stack flex-grid-sm hover-scale" style="width: 100%;">
+              <div class="col-sm-6 padding-bottom-md">
+                <div class="content-container content-card content-card-stack content-card-shadow-sm hover-scale" style="width: 100%;">
                   <div class="text-container">
                     <div class="title range-left">
                       <h5>{{ .title }}</h5>

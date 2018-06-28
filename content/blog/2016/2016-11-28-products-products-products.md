@@ -10,6 +10,7 @@ thumbnail: new_products.jpg
 url:       /2016/11/28/products-products-products/
 categories:
   - products
+  - press
 tags:
   - announcements
   - products

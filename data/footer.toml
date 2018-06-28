@@ -57,7 +57,7 @@
 [col_4]
     enable = true
     title = "Press & Events"
-    subtitle = "Here at Monax we are always happy to talk to the press. For current press releases <a href='/categories/press-releases/'>have a look here</a>.<br><br>Talk to us! Please email <a href='mailto:press@monax.io'>press@monax.io</a> for all things press-related."
+    subtitle = "Here at Monax we are always happy to talk to the press. For current press releases <a href='/categories/press/'>have a look here</a>.<br><br>Talk to us! Please email <a href='mailto:press@monax.io'>press@monax.io</a> for all things press-related."
 
 [copyright]
     enable = true

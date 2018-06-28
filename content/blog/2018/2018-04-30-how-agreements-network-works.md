@@ -8,6 +8,7 @@ excerpt:   "Casey speaks with some more depth about how the two major types of u
 thumbnail: an-works.jpeg
 categories:
   - announcements
+  - press
 tags:
   - agreements network
 

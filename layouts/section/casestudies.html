@@ -19,13 +19,6 @@
 
         {{ partial "resources/casestudies/articles.html" . }}
 
-        <!-- 'Backed by' section [GLOBAL] -->
-        {{ if isset .Site.Data.resources.casestudies "backers" }}
-          {{ if .Site.Data.resources.casestudies.backers.enable }}
-            {{ partial "_global/backers.html" . }}
-          {{ end }}
-        {{ end }}
-
         <!-- CTA section [GLOBAL] -->
         {{ if isset .Site.Data.resources.casestudies "cta" }}
           {{ if .Site.Data.resources.casestudies.cta.enable }}

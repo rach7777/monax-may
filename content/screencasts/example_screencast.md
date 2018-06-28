@@ -5,7 +5,7 @@ title:     "Quickstart guide"
 author:    casey
 excerpt:   "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 # thumbnail: example-image.jpg
-youtube_url: "w7Ft2ymGmfc"
+youtube_id: "w7Ft2ymGmfc"
 
 ---
 

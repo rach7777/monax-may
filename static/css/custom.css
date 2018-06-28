@@ -1,4 +1,4 @@
-f7f7f7f7f7f7/* ============================
+/* ============================
             GENERAL ~
 ============================= */
 
@@ -346,11 +346,12 @@ p.lead,
     ELEMENTS - FAQ
 =======================*/
 
-ul, ol {
-  list-style: none;
-}
 .accordion {
     padding: 0 15px 0 15px;
+    list-style: none;
+}
+.accordion ul {
+    list-style: none;
 }
 .accordion-section-content .question .question-toggle {
   	transition: all 0.3s;
@@ -391,10 +392,31 @@ ul, ol {
 }
 
 
+
+/* ==============
+  Blog Post Lists
+=============== */
+
+.article-category {
+    color: #95b85d;
+}
+#blog-listing-medium .post {
+    margin-bottom: 30px;
+}
+.coming-soon {
+    color: #b7b7b7;
+}
+
+
+
 /* ==============
   Blog Posts
 =============== */
 
+.single-post .article-category {
+    margin: 0 0 -10px 0;
+    color: #b7b7b7;
+}
 #post-content p,
 #post-content li {
     font-size: 19px;
@@ -553,6 +575,19 @@ ul, ol {
     letter-spacing: 0;
     border-radius: 0 5px 5px 0;
 }
+
+/* ==============
+  Blog Posts - Scrollgress
+=============== */
+.scrollgress {
+    top: auto !important;
+    bottom: 0px !important;
+    z-index: 99 !important;
+}
+
+
+
+
 
 /* ==============
   Documents
@@ -1422,94 +1457,6 @@ transform: scale(1.05) !important;
   Timeline
 =============== */
 
-.timeline {
-  padding: 95px 50px 25px;
-  position: relative;
-  margin-top: 38px;
-}
-.timeline:before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: calc(33% + 19px);
-  bottom: 0px;
-  width: 4px;
-  background: #ddd;
-}
-.timeline:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.entry {
-  clear: both;
-  text-align: left;
-  position: relative;
-}
-.entry .title {
-  margin-bottom: 0.5em;
-  float: left;
-  width: 33%;
-  padding-right: 30px;
-  text-align: right;
-  position: relative;
-}
-.entry .title:before {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border: 8px solid #96B85D;
-  background-color: #fff;
-  border-radius: 100%;
-  top: 15%;
-  right: -12px;
-  z-index: 99;
-}
-.entry .title h3 {
-  margin: 0;
-  font-size: 100%;
-  text-align: right;
-}
-.entry .title p {
-    margin: 0;
-    font-size: 100%;
-    text-align: right;
-}
-.entry .body {
-  margin: 0 0 3em;
-  float: right;
-  width: 66%;
-  padding-left: 30px;
-}
-.entry .body p {
-  line-height: 1.4em;
-}
-.entry .body p:first-child {
-  margin-top: 0;
-  font-weight: 400;
-  text-align: left;
-}
-.entry .body ul {
-  color: #aaa;
-  padding-left: 0;
-  list-style-type: none;
-}
-.entry .body ul li:before {
-  content: "–";
-  margin-right: 0.5em;
-}
-
-
-
-
-
-
-
-
-
-
 .timeline-container {
   display: flex;
   flex-direction: column;
@@ -1623,13 +1570,19 @@ transform: scale(1.05) !important;
   margin-top: 50px;
   max-width: 1000px;
 }
-.timeline-info-container p {
-    margin-top: 0;
+.timeline-info-container .timeline-content {
     display: none;
+}
+.timeline-info-container .timeline-content.active {
+  display: block;
+}
+.timeline-info-container .timeline-content p {
     font-size: 24px;
 }
-.timeline-info-container p.active {
-  display: block;
+.timeline-info-container .timeline-content .img-history {
+    max-height: 130px;
+    max-width: 400px;
+    margin-bottom: 20px;
 }
 @media (min-width: 1250px) {
   .timeline-date::before {

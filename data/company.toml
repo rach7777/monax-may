@@ -4,16 +4,12 @@
     subtitle = "Discover our journey, how we think and the paradigm shift we see happening toward legal products."
     img_left = false
     hero_signup = false
-    img_right = "/img/assets/background-elements/wphone-test.png"
+    # img_right = "/img/assets/background-elements/wphone-test.png"
     background_element = "/img/assets/background-elements/abstract-01.jpg"
 
 
-[featured]
+[press] # global
     enable = true
-    title = "Featured In:"
-    logo_1 = "/img/logos/coindesk-logo-white.png"
-    logo_2 = "/img/logos/coindesk-logo-white.png"
-    logo_3 = "/img/logos/coindesk-logo-white.png"
 
 
 [history]
@@ -24,49 +20,56 @@
     [[history.time]]
       date = "June 2014"
       label = "Eris Industries Founded"
-      logo = "/img/logos/Eris_icon_white.png"
+      logo_icon = "/img/logos/Eris_icon_white.png"
+      logo_full = "/img/logos/Eris.png"
       description_text = "Eris Industries Founded"
 
     [[history.time]]
       date = "Dec 2014"
       label = "Burrow Launched"
-      logo = "/img/logos/Burrow_icon_white.png"
+      logo_icon = "/img/logos/Burrow_icon_white.png"
+      logo_full = "/img/logos/Hyperledger_Burrow.png"
       description_text = "Burrow - the first permissioned blockchain - is launched"
 
     [[history.time]]
       date = "2015"
       label = "Eris Platform Launched"
-      logo = "/img/logos/Eris_icon_white.png"
+      logo_icon = "/img/logos/Eris_icon_white.png"
+      logo_full = "/img/logos/Eris.png"
       description_text = "Eris v0.10 platform is launched"
 
     [[history.time]]
       date = "2016"
       label = "Rebrand To Monax"
-      logo = "/img/logos/monax_icon_white.png"
+      logo_icon = "/img/logos/monax_icon_white.png"
+      logo_full = "/img/logo-small.png"
       description_text = "Rebrand of Eris to Monax"
 
     [[history.time]]
       date = "Feb 2017"
       label = "Monax Joins Hyperledger"
-      logo = "/img/logos/Hyperledger_icon_white.png"
+      logo_icon = "/img/logos/Hyperledger_icon_white.png"
+      logo_full = "/img/logos/Hyperledger.png"
       description_text = "Monax joins the Hyperledger Consortium"
 
     [[history.time]]
       date = "March 2017"
       label = "Monax Joins The EEA"
-      logo = "/img/logos/eea_icon_white.png"
+      logo_icon = "/img/logos/eea_icon_white.png"
+      logo_full = "/img/logos/eea.png"
       description_text = "Monax joins the Enterprise Ethereum Alliance"
 
     [[history.time]]
       date = "April 2018"
       label = "Agreements Network"
-      logo = "/img/logos/AgreementsNetwork_icon_white.png"
+      logo_icon = "/img/logos/AgreementsNetwork_icon_white.png"
+      logo_full = "/img/logos/AgreementsNetwork.png"
       description_text = "Monax announces the Agreements Network as one of the founding companies behind it"
 
 
 [team]
     enable = true
-    title = "Meet the team"
+    title = "Meet the people behind Monax"
     subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
     [[team.office]]
@@ -305,41 +308,14 @@
         type = "Permanent"
         location = "London"
         posted_date = "June 2 2018"
+        
 
-
-[press]
+[pressreleases]
     enable = true
-    title = "Past press features"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-
-    [[press.article]]
-        title = "Featured in Forbes"
-        summary = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-        img = "/img/logos/example-logo.png"
-        published_date = "June 2 2018"
-        link_url = "#"
-
-    [[press.article]]
-        title = "Featured in Forbes"
-        summary = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-        img = "/img/logos/example-logo.png"
-        published_date = "June 2 2018"
-        link_url = "#"
-
-    [[press.article]]
-        title = "Featured in Forbes"
-        summary = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-        img = "/img/logos/example-logo.png"
-        published_date = "June 2 2018"
-        link_url = "#"
-
-    [[press.article]]
-        title = "Featured in Forbes"
-        summary = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-        img = "/img/logos/example-logo.png"
-        published_date = "June 2 2018"
-        link_url = "#"
-
+    title = "Past press releases"
+    filter_by_category = "press" # changed in partials/company/pressreleases.html
+    default_img = "/img/assets/backgrounds/mountains-1.jpg"
+    next_page_url = "/categories/press/"
 
 [cta] # global
     enable = true

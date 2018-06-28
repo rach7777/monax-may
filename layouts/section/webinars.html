@@ -19,13 +19,6 @@
 
         {{ partial "resources/webinars/articles.html" . }}
 
-        <!-- 'Backed by' section [GLOBAL] -->
-        {{ if isset .Site.Data.resources.webinars "backers" }}
-          {{ if .Site.Data.resources.webinars.backers.enable }}
-            {{ partial "_global/backers.html" . }}
-          {{ end }}
-        {{ end }}
-
         <!-- CTA section [GLOBAL] -->
         {{ if isset .Site.Data.resources.webinars "cta" }}
           {{ if .Site.Data.resources.webinars.cta.enable }}

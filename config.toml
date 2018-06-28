@@ -15,90 +15,89 @@ paginate = 6
 
 # Main menu
 
-
-[[menu.left]]
+[[menu.main]]
     name = "Features"
     url  = "/features/"
     weight = 2
 
-[[menu.left]]
+[[menu.main]]
     name = "Monax For"
     identifier = "monaxfor"
     url  = "#"
     weight = 3
 
     # sub menu items
-    [[menu.left]]
+    [[menu.main]]
       Name = "Fleet leasing"
       parent = "monaxfor"
       URL = "/for/fleet-leasing/"
       Post = "How Monax can power your fleet leases, simplify your business processes and drive new revenue streams"
       Weight = 1
 
-    [[menu.left]]
+    [[menu.main]]
       Name = "Corporate Governance"
       parent = "monaxfor"
       URL = "/for/corporate-governance/"
       Post = "How Monax can simplify and speed up your corporate governance, and give you full control over your agreements"
       Weight = 2
 
-    [[menu.left]]
+    [[menu.main]]
       Name = "Content Creators"
       parent = "monaxfor"
       URL = "/for/content-creators/"
       Post = "How Monax can strengthen your brand, protect your IP and drive new revenue streams for your content"
       Weight = 3
 
-    [[menu.left]]
+    [[menu.main]]
       Name = "Lawyers"
       parent = "monaxfor"
       URL = "/for/lawyers/"
       Post = "How Monax can simplify your workflow and turn your knowledge into commoditisable legal products"
       Weight = 4
 
-[[menu.left]]
+[[menu.main]]
     name = "Resources"
     identifier = "resources"
     url  = "#"
     weight = 4
 
     # sub menu items
-    [[menu.left]]
+    [[menu.main]]
       Name = "Blog"
       parent = "resources"
       URL = "/blog/"
       Post = "Discover our journey, how we think and the paradigm shift we see happening toward legal products."
       Weight = 1
 
-    [[menu.left]]
+    [[menu.main]]
       Name = "Case Studies"
       parent = "resources"
       URL = "/casestudies/"
       Post = "Explore how other individuals and companies are transforming business with Monax"
       Weight = 2
 
-    [[menu.left]]
+    [[menu.main]]
       Name = "Explainers"
       parent = "resources"
       URL = "/explainers/"
       Post = "Learn how Monax can help you streamline your business. Explore best practices for Monax tools and ask questions."
       Weight = 3
 
-    [[menu.left]]
+    [[menu.main]]
       Name = "Webinars"
       parent = "resources"
       URL = "/webinars/"
       Post = "Join us for industry insight and best practice advice on using legal products to streamline your business."
       Weight = 4
 
-    # [[menu.left]]
+    # [[menu.main]]
     #   Name = "Screencasts"
     #   parent = "resources"
     #   URL = "/screencasts/"
     #   Post = "Learn how Monax can help you streamline your business using our latest walkthroughs and screencasts."
     #   Weight = 5
 
-[[menu.left]]
+[[menu.main]]
     name = "Company"
     url  = "/company/"
     weight = 5
@@ -115,47 +114,42 @@ paginate = 6
 
 
 [params]
-    viewMorePostLink = "/archive/"
+    # viewMorePostLink = "/archive/"
     author = "Monax"
     defaultKeywords = ["monax", "agreements network"]
     defaultDescription = "Monax"
-
-    # Google Maps API key (if not set will default to not passing a key.)
-    googleMapsApiKey = "AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y"
 
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
     style = "green"
 
     # Import fonts
-    googlefonts = ["Montserrat:200,300,400,600", "Source Code Pro", "Caveat"]
+    googlefonts = ["Montserrat:200,300,400,600", "Source Code Pro"]
     fontbody = 'Montserrat'
     fontheadings = 'Montserrat'
     fontcode = 'Source Code Pro'
 
-    # Since this template is static, the contact form uses www.formspree.io as a
-    # proxy. The form makes a POST request to their servers to send the actual
-    # email. Visitors can send up to a 1000 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - set your email address under 'email' below
-    # - upload the generated site to your server
-    # - send a dummy email yourself to confirm your account
-    # - click the confirm link in the email from www.formspree.io
-    # - you're done. Happy mailing!
-    #
     # Enable the contact form by entering your Formspree.io email
     email = "info@monax.io"
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
 
+    # Main site logo
     logo = "/img/logo.png"
+
+    # Additional scripts - header
+    additional_header_script_urls = [
+     "",
+    ]
+    # Additional scripts - footer
+    additional_footer_script_urls = [
+     "",
+    ]
+
 
 [Permalinks]
     blog = "/blog/:year/:month/:title/"
     casestudies = "/casestudies/:title/"
     explainers = "/explainers/:title/"
-    news = "/news/:year/:month/:title/"
+    screencasts = "/screencasts/:title/"
     webinars = "/webinars/:year/:month/:title/"
-    for = "/for/:title"

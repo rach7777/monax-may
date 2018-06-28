@@ -12,8 +12,5 @@
   filter_by_category = "blog" # changed in partials/resources/blog/articles.html
   default_img = "/img/assets/backgrounds/mountains-1.jpg"
 
-[backers] # global
-    enable = false
-
 [cta] # global
     enable = true
