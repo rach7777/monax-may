@@ -74,6 +74,58 @@ $(document).ready(function() {
   }, 300);
 
 
+  // DETECT ANIMATION AOS FINISHED
+
+  // Find all animation float elements
+  var $animationContainer = $(".animate-after-aos");
+
+  // for each element
+  $($animationContainer).each( function( index ) {
+
+    // calculate the animation delay
+    var animationTimeout = ( $($animationContainer[index]).data('aos-delay') + $($animationContainer[index]).data('aos-duration') );
+    console.log(animationTimeout);
+
+    // if it's already on screen, animate
+    if ($($animationContainer[index]).hasClass("aos-animate")) {
+      console.log("no observer needed");
+      // init float animation
+      setTimeout(function(){
+        $($animationContainer[index]).addClass('next-animation');
+      }, animationTimeout);
+    } else {
+    // otherwise, watch for class change
+      console.log("added observer");
+      var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+          if (mutation.attributeName === "class") {
+            var attributeValue = $(mutation.target).prop(mutation.attributeName);
+            console.log("Class attribute changed to:", attributeValue);
+            if (attributeValue.includes("aos-animate")) {
+              // init float animation
+              setTimeout(function(){
+                $(mutation.target).addClass('next-animation');
+              }, animationTimeout);
+              // don't watch for any more changes
+              observer.disconnect();
+              console.log("class changed - observer removed");
+            }
+          }
+        });
+      });
+      observer.observe($animationContainer[index], {
+        attributes: true
+      });
+    }
+
+  });
+
+
+
+  //
+  // $animationContainer.addClass('red');
+
+
 
   // HANDLE COMPANY HISTORY SELECT
   $(function(){

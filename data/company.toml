@@ -73,16 +73,21 @@
     subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
     [[team.office]]
-    city = "New York"
-    img = "/img/cities/New-York.png"
+    city = "Edinburgh"
+    img = "/img/assets/cities/office-edinburgh.png"
 
     [[team.office]]
     city = "London"
-    img = "/img/cities/London.png"
+    img = "/img/assets/cities/office-london.png"
 
     [[team.office]]
-    city = "Edinburgh"
-    img = "/img/cities/Rome.png"
+    city = "New York"
+    img = "/img/assets/cities/office-new-york.png"
+
+    [[team.office]]
+    city = "Remote"
+    img = "/img/assets/cities/office-remote.png"
+    
 
     [[team.item]]
       name = "Adam Locklin"
@@ -308,7 +313,7 @@
         type = "Permanent"
         location = "London"
         posted_date = "June 2 2018"
-        
+
 
 [pressreleases]
     enable = true

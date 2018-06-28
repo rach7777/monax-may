@@ -25,51 +25,64 @@
     # img_circle = "/img/team/team-dg.jpeg"
 
 
-[feature]
-  enable = true
+  [feature]
+    enable = true
 
-  [[feature.section]]
-    title = "Put your legal knowledge assets to work."
-    subtitle = "Earn more by translating your legal knowledge into legal products. Monax’s three step template creation process guides you from uploading your prose template to setting up contractual workflows. "
-    img_left = "/img/assets/screenshots/iPhone-screen-2.png"
-    img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
-    img_left_popover_width = 80
-    img_left_popover_top = 26
-    img_left_popover_left = 10
+    [[feature.section]]
+      title = "Put your legal knowledge assets to work."
+      subtitle = "Earn more by translating your legal knowledge into legal products. Monax’s three step template creation process guides you from uploading your prose template to setting up contractual workflows. "
+      #### ZOOM TEMPLATE
+      animation_id = "feature-animation-5"
+      animation_type = "zoom"
+      img_base = "/img/assets/animations/shared/base-mac.png"
+      img_content_container = "mac" # set to 'mac' or 'iphone'
+      img_content_layer_src = "/img/assets/animations/5-legal-knowledge-assets/content-archetypes-new.png"
+      img_content_animation_delay = "300"
+      img_content_animation_duration = "300"
+      img_popover_layer_src = "/img/assets/animations/5-legal-knowledge-assets/zoom-archetype-created.png"
+      img_popover_animation_delay = "100" # too large - set via css to 6.5s
+      img_popover_animation_duration = "600"
 
-  [[feature.section]]
-    title = "Increase your margins."
-    subtitle = "Offer your legal expertise through legal products in the Monax marketplace and broaden your customer base. Kick back and let process automation and reproducibility of your assets earn you money."
-    img_left = "/img/assets/screenshots/iPhone-screen-2.png"
-    img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
-    img_left_popover_width = 80
-    img_left_popover_top = 26
-    img_left_popover_left = 10
+
+    [[feature.section]]
+      title = "Increase your margins."
+      subtitle = "Offer your legal expertise through legal products in the Monax marketplace and broaden your customer base. Kick back and let process automation and reproducibility of your assets earn you money."
+      #### ZOOM TEMPLATE
+      animation_id = "feature-animation-6"
+      animation_type = "zoom"
+      img_base = "/img/assets/animations/shared/base-mac.png"
+      img_content_container = "mac" # set to 'mac' or 'iphone'
+      img_content_layer_src = "/img/assets/animations/6-increase-your-margins/content-overview.png"
+      img_content_animation_delay = "300"
+      img_content_animation_duration = "300"
+      img_popover_layer_src = "/img/assets/animations/6-increase-your-margins/zoom-earnings.png"
+      img_popover_animation_delay = "1000"
+      img_popover_animation_duration = "300"
 
 
 [examples]
   enable = true
-  title = "Get started using one of our agreements"
+  title = "Get started using one of our templates"
   default_img = "/img/assets/agreements/3.jpg"
-  new_agreement_text = "Create A New Agreement"
-  new_agreement_url = "#"
+  new_agreement_text = "Create A New Template"
+  new_agreement_url = "https://beta.monax.io/register"
 
   # Agreements should be auto populated
   [[examples.agreement]]
-    title = "Agreement Title"
-    url = "#"
+    title = "Non-Disclosure Template"
+    url = "https://beta.monax.io/register"
 
   [[examples.agreement]]
-    title = "Agreement Title"
-    url = "#"
+    title = "M.O.U. Template"
+    url = "https://beta.monax.io/register"
 
   [[examples.agreement]]
-    title = "Agreement Title"
-    url = "#"
+    title = "Consortium Template"
+    url = "https://beta.monax.io/register"
 
   [[examples.agreement]]
-    title = "Agreement Title"
-    url = "#"
+    title = "Material Transfer Template"
+    url = "https://beta.monax.io/register"
 
 
 [relatedarticles]

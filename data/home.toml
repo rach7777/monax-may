@@ -9,9 +9,9 @@
 
     [top.illustration]
       enable = true   # replaces img_right
-      img_base = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
-      img_layer_one = "/img/assets/illustrations/monax-laptop/Composition_Layer_02_AN.png"
-      img_layer_two = "/img/assets/illustrations/monax-laptop/Composition_Layer_01_Agreement.png"
+      img_base = "/img/assets/animations/monax-laptop/Composition_Layer_03_Blockchain.png"
+      img_layer_one = "/img/assets/animations/monax-laptop/Composition_Layer_02_AN.png"
+      img_layer_two = "/img/assets/animations/monax-laptop/Composition_Layer_01_Agreement.png"
 
 
 [press] # global
@@ -21,27 +21,42 @@
 [summary]
     enable = true
     title = "What can Monax do for you?"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    img_left = "/img/assets/screenshots/iPhone-screen-2.png"
-    img_left_popover = "/img/assets/screenshots/iPhone-screen-2-popover.png"
-    img_left_popover_width = 80
-    img_left_popover_top = 26
-    img_left_popover_left = 10
+    subtitle = ""
+    #### ZOOM TEMPLATE
+    animation_id = "feature-animation-5"
+    animation_type = "zoom"
+    img_base = "/img/assets/animations/shared/base-mac.png"
+    img_content_container = "mac" # set to 'mac' or 'iphone'
+    img_content_layer_src = "/img/assets/animations/5-legal-knowledge-assets/content-archetypes-new.png"
+    img_content_animation_delay = "1200"
+    img_content_animation_duration = "300"
+    img_popover_layer_src = "/img/assets/animations/5-legal-knowledge-assets/zoom-archetype-created.png"
+    img_popover_animation_delay = "100" # too large - set via css to 6.5s
+    img_popover_animation_duration = "600"
 
     [[summary.feature]]
-      title = "Lorem Ipsum is simply dummy text"
-      description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      icon = "fa-calendar"
+      title = "Create self-executable legal agreements in minutes."
+      description = ""
+      icon = "fa-chevron-left"
+      animation_type = "fade-left"
+      animation_delay = "600"
+      animation_duration = "600"
 
     [[summary.feature]]
-      title = "Lorem Ipsum is simply dummy text"
-      description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      icon = "fa-book"
+      title = "An intuitive interface to the most advanced tech in the legal sector."
+      description = ""
+      icon = "fa-chevron-left"
+      animation_type = "fade-left"
+      animation_delay = "1600"
+      animation_duration = "600"
 
     [[summary.feature]]
-      title = "Lorem Ipsum is simply dummy text"
-      description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      icon = "fa-facebook"
+      title = "Trusted legal products at your fingertips."
+      description = ""
+      icon = "fa-chevron-left"
+      animation_type = "fade-left"
+      animation_delay = "2600"
+      animation_duration = "600"
 
 
 [usecases]
@@ -50,28 +65,28 @@
   [[usecases.section]]
     category = "fleet-leasing"
     title = "For Fleet Leasing"
-    subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
+    subtitle = "How Monax can power your fleet leases, simplify your business processes and drive new revenue streams."
     img = "/img/assets/homepage/usecases/fleet-leasing/fleet-leasing-small.png"
     link_url = "/for/fleet-leasing/"
 
   [[usecases.section]]
     category = "corporate-governance"
     title = "For Corporate Governance"
-    subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
+    subtitle = "How Monax can simplify and speed up your corporate governance, and give you full control over your agreements."
     img = "/img/assets/homepage/usecases/corporate-governance/corporate-governance-small.png"
     link_url = "/for/corporate-governance/"
 
   [[usecases.section]]
     category = "content-creators"
     title = "For Content Creators"
-    subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
+    subtitle = "How Monax can strengthen your brand, protect your IP and drive new revenue streams for your content."
     img = "/img/assets/homepage/usecases/content-creators/content-creators-small.png"
     link_url = "/for/content-creators/"
 
   [[usecases.section]]
     category = "lawyers"
     title = "For Lawyers"
-    subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
+    subtitle = "How Monax can simplify your workflow and turn your knowledge into commoditisable legal products."
     img = "/img/assets/homepage/usecases/lawyers/lawyers-small.png"
     link_url = "/for/lawyers/"
 
@@ -100,20 +115,8 @@
 [webinar]
     enable = true
     title = "Sign up for a webinar"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    subtitle = "We are a series of webinars based around what our customers have told us they want to find out...check back here soon or sign up to be informed of upcoming ones."
     show_upcoming = true
-
-    [[webinar.upcoming]]
-      link_title = "Friday 14th June - How to X without Y"
-      link_url = "#"
-
-    [[webinar.upcoming]]
-      link_title = "Monday 24th June - How to X without Y"
-      link_url = "#"
-
-    [[webinar.upcoming]]
-      link_title = "Thursday 27th June - How to X without Y"
-      link_url = "#"
 
     [webinar.form]
       email = true

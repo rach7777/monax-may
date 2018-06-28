@@ -1,8 +1,10 @@
 ---
 
-layout: wide
-title:      "Learn | Smart Contracts"
+layout: single
+title:      "Smart Contracts"
 excerpt:    "What are Smart Contracts and why are these distributed logic gateways so cool?"
+categories:
+  - explainer
 tags:
   - contentcreators
 
@@ -109,6 +111,3 @@ In other words, the sweet spot for smart contracts is data driven *relationships
 To get started programming Smart Contracts, please see our [Solidity Series on Smart Systems of Smart Contracts](/docs/solidity/).
 
 To learn more about the differences in approach of a [tokenized blockchain approach *vis a vis* a smart contract approach](/learn/contracts_v_tokens/) please see our explainer on the subject.
-
-
-

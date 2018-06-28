@@ -1,8 +1,10 @@
 ---
 
 layout: single
-title:      "Learn | Dual Integration"
+title:      "Dual Integration"
 excerpt:    "Putting the Contracts in Smart Contracts"
+categories:
+  - explainer
 tags:
   - fleetleasing
   - contentcreators
@@ -36,6 +38,3 @@ That's it. If those steps are followed then there will be a cryptographically-ce
 Once the dual integration process is finished the result will be a smart contract which references a specific fingerprint of a real world contract (this is called the hash of a file, or sometimes it is called the checksum of a file) and a real world contract which integrates the specific fingerprint of a smart contract (this utilizes the chainID of the distributed data store which the smart contract runs on as well as the contractAddress of the specific smart contract). This circular reference ensures -- to a cryptographic certainty -- that the specific file which contains the real world contract and the specific smart contract both properly reference one another.
 
 Monax has created a [dual integration tool](https://github.com/monax/hello-doug/tree/master/deprecated_apps/dual_integration) to get smart contract writers going.
-
-
-

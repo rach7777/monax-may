@@ -15,20 +15,53 @@
       </div>
 
       <div class="row flex-grid-md">
-        <div class="col-md-5 col-valign-center">
-          <img class="img-responsive img-center" src="{{ .img_left }}" alt="">
-          <img class="img-responsive img-popover hover-scale" src="{{ .img_left_popover }}" data-aos="zoom-in" alt="" style="
-                    width: {{ .img_left_popover_width }}%;
-                    top: {{ .img_left_popover_top }}%;
-                    left: {{ .img_left_popover_left }}%">
+        <div class="col-md-8 col-valign-center">
+          <div id="{{ .animation_id }}" class='animation-container {{ if eq .img_content_container "mac" }}animation-container-mac{{ end }}{{ if eq .img_content_container "iphone" }}animation-container-iphone{{ end }}'>
+            <div class="img-layer-container">
+              <img class="img-responsive img-center img-layer img-animation-base" src="{{ .img_base }}" alt="">
+
+              {{ if eq .animation_type "zoom" }}
+                <div class='content-container animation-content-frame animation-zoom animate-after-aos'   data-aos="none"  data-aos-delay="{{ .img_content_animation_delay }}" data-aos-duration="{{ .img_content_animation_duration }}">
+                  <img class="img-responsive img-center img-layer img-animate" src="{{ .img_content_layer_src }}" alt="">
+                </div>
+                <div class="content-container animation-popover-frame animation-zoom animate-after-aos" data-aos="zoom-in"  data-aos-delay="{{ .img_popover_animation_delay }}" data-aos-duration="{{ .img_popover_animation_duration }}">
+                  <img class="img-responsive img-center img-layer img-animate" src="{{ .img_popover_layer_src }}" alt="">
+                </div>
+              {{ end }}
+
+              {{ if eq .animation_type "scroll" }}
+                <div class='content-container animation-content-frame animation-scroll animate-after-aos'  data-aos="none"  data-aos-delay="{{ .animation_delay }}" data-aos-duration="{{ .animation_duration }}">
+                  <img class="img-responsive img-center img-layer img-animate" src="{{ .img_popover_layer_src }}" alt="">
+                </div>
+                <div class="content-container animation-popover-frame animation-scroll">
+                  <img class="img-responsive img-center img-layer img-animate {{ if .reveal_only_on_scroll }}animate-reveal-onscroll{{ end }}" src="{{ .img_content_layer_src }}" alt="">
+                </div>
+              {{ end }}
+
+              {{ if eq .animation_type "multipop" }}
+                <div class='content-container animation-content-frame animation-multipop animate-after-aos' data-aos="none"  data-aos-delay="{{ .animation_delay }}" data-aos-duration="{{ .animation_duration }}">
+                  <img class="img-responsive img-center img-layer img-animate" src="{{ .img_content_layer_src }}" alt="">
+                </div>
+                {{ range .pop }}
+                <div id="{{ .img_pop_id }}-container" class="content-container animation-popover-frame animation-multipop animate-after-aos" data-aos="zoom-in"  data-aos-delay="{{ .animation_delay }}" data-aos-duration="{{ .animation_duration }}">
+                  <img id="{{ .img_pop_id }}" class="img-responsive img-center img-layer img-animate" src="{{ .img_pop_src }}" alt="">
+                </div>
+                {{ end }}
+              {{ end }}
+
+            </div>
+          </div>
         </div>
-        <div class="col-md-7">
-            <ul class="ul-icon-list">
+        <div class="col-md-4 col-valign-center">
+            <ul class="ul-icon-list ul-home-summary">
               {{ range .feature }}
-              <li class="padding-bottom-xs">
-                <i class="fa {{ .icon }}" aria-hidden="true"></i>
-                <h4 class="range-left">{{ .title }}</h4>
-                <p class="range-left">{{ .description }}</p>
+              <!-- <div class="range-left-sm padding-bottom-md">
+                <h4>{{ .title }}</h4>
+              </div> -->
+              <li class="padding-bottom-md">
+                <i class="fa {{ .icon }}" data-aos="{{ .animation_type }}"  data-aos-delay="{{ .animation_delay }}" data-aos-duration="{{ .animation_duration }}" aria-hidden="true"></i>
+                <p class="range-left" data-aos="{{ .animation_type }}"  data-aos-delay="{{ .animation_delay }}" data-aos-duration="{{ .animation_duration }}">{{ .title }}</p>
+                <!-- <p class="range-left">{{ .description }}</p> -->
               </li>
               {{ end }}
             </ul>
