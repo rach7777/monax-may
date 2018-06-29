@@ -34,12 +34,16 @@
               {{ range $i, $p := .time }}
                 {{ if eq $i 5 }} <!-- 1st entry -->
                   <div class="timeline-content active">
-                    <img src="{{ .logo_full }}" class="img-responsive img-center img-history" alt="">
+                    {{ with .logo_full }}
+                      <img src="{{ . }}" class="img-responsive img-center img-history" alt="">
+                    {{ end }}
                     <p>{{ .description_text }}</p>
                   </div>
                 {{ else }}
                   <div class="timeline-content">
-                    <img src="{{ .logo_full }}" class="img-responsive img-center img-history" alt="">
+                    {{ with .logo_full }}
+                      <img src="{{ . }}" class="img-responsive img-center img-history" alt="">
+                    {{ end }}
                     <p>{{ .description_text }}</p>
                   </div>
                 {{ end }}

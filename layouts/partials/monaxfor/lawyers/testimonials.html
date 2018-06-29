@@ -3,7 +3,7 @@
 <section class="section-testimonials">
   <div class="container">
     <div class="row flex-grid-xs">
-      <div class="col-sm-3 col-flex-3 flex-grid-xs">
+      <div class="col-sm-3 col-flex-3 flex-grid-xs hidden-xs">
         {{ if .img_cutout }}
         <div class="row flex-grid-xs" style="width: 100%">
           <div class="col-flex-12 col-valign-bottom range-right">
@@ -25,7 +25,7 @@
             <h5 style="margin-bottom:2px;">{{ .name }}</h5>
             <p>{{ .position }}</p>
           </div>
-          <div class="flex-grid-xs">
+          <div class="flex-grid-sm btn-container">
             <ul class="ul-round-icons ul-team-icons">
               {{ with .twitter}}
                 <a href="{{ . }}"><li><i class='fa fa-twitter'></i></li></a>

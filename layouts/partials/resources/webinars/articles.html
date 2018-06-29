@@ -8,13 +8,13 @@
   <section class="section-articles padding-top-md padding-bottom-xl background-grey">
       <div class="container">
 
-        <div class="row content-container flex-grid-sm padding-bottom-md">
+        <div class="row content-container flex-grid-sm">
           {{ if gt (len $.Paginator.Pages) 0 }}
             {{ range $i, $p := sort $.Paginator.Pages "Params.event_date" "desc" }}
 
               {{ if (modBool $i 3) }} <!-- paginate after 3 entries -->
           </div>
-          <div class="row content-container flex-grid-sm padding-bottom-md">
+          <div class="row content-container flex-grid-sm">
               {{ end }}
 
               <!-- check for img override -->
@@ -26,7 +26,7 @@
                 {{ .Scratch.Set "postImg" ($.Scratch.Get "defaultImg") }}
               {{ end }}
 
-              <div class="col-sm-4 flex-grid-sm">
+              <div class="col-sm-4 flex-grid-sm padding-bottom-md">
                 <a href="{{ .Permalink }}" class="flex-grid-sm a-card">
                 <div class="content-container content-card content-card-stack content-card-shadow-sm article-card">
                   <div class="img-container background-dark" style='background:url({{ .Scratch.Get "postImg" }}) center center no-repeat; background-size: cover;'>
