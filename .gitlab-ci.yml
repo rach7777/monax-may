@@ -32,8 +32,8 @@ stages:
   # Job templates
 .build_site: &build_template
   stage: build
-  dependencies:
-    - cache site
+  # dependencies:
+  #   - cache site
   before_script:
     # - apk --no-cache --update add nodejs
     # - npm install -g gulp
