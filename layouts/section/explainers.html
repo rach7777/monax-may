@@ -15,13 +15,13 @@
 
         </header>
 
-        {{ partial "resources/explainers/top.html" . }}
+        {{ partial "resources.learn/top.html" . }}
 
-        {{ partial "resources/explainers/articles.html" . }}
+        {{ partial "resources.learn/articles.html" . }}
 
         <!-- CTA section [GLOBAL] -->
-        {{ if isset .Site.Data.resources.explainers "cta" }}
-          {{ if .Site.Data.resources.explainers.cta.enable }}
+        {{ if isset .Site.Data.resources.learn "cta" }}
+          {{ if .Site.Data.resources.learn.cta.enable }}
             {{ partial "_global/cta.html" . }}
           {{ end }}
         {{ end }}

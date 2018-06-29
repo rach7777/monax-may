@@ -1,4 +1,4 @@
-{{ with .Site.Data.resources.explainers.articles }}
+{{ with .Site.Data.resources.learn.articles }}
 {{ if .enable }}
 
   {{ if .default_img }}
@@ -21,7 +21,7 @@
               {{ if .Params.img }}
                 {{ .Scratch.Set "postImg" .Params.img }}
               {{ else if .Params.thumbnail }}
-                {{ .Scratch.Set "postImg" (printf "/explainers/images/%s" .Params.thumbnail) }}
+                {{ .Scratch.Set "postImg" (printf ".learn/images/%s" .Params.thumbnail) }}
               {{ else if not (.Scratch.Get "postImg") }}
                 {{ .Scratch.Set "postImg" ($.Scratch.Get "defaultImg") }}
               {{ end }}
@@ -78,7 +78,7 @@
           {{ else }}
             <div class="col-sm-12">
               <div class="range-left-md padding-top-md padding-bottom-xl">
-                <h2 class="coming-soon">{{ $.Site.Data.resources.explainers.top.title }} are coming soon!</h2>
+                <h2 class="coming-soon">{{ $.Site.Data.resources.learn.top.title }} are coming soon!</h2>
               </div>
             </div>
           {{ end }}

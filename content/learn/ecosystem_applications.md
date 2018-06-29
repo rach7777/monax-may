@@ -4,7 +4,7 @@ layout: single
 title:      "Ecosystem Applications"
 excerpt:    "What are Ecosystem Applications and will these impact how we think of building software?"
 categories:
-  - explainer
+  - learn
 tags:
   - fleetleasing
   - corporate

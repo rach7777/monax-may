@@ -15,7 +15,7 @@
 
         </header>
 
-        <section class="section-top padding-top-md padding-bottom-lg section-shadow-xl" style="background: url({{ .Site.Data.global.posts.explainers.top.background_element }}) right bottom no-repeat; background-size: 520px;">
+        <section class="section-top padding-top-md padding-bottom-lg section-shadow-xl" style="background: url({{ .Site.Data.global.posts.learn.top.background_element }}) right bottom no-repeat; background-size: 520px;">
             <div class="container">
               <div class="row flex-grid-md">
                   <div class="col-md-7 col-valign-center">
@@ -30,7 +30,7 @@
                       </p>
 
                       <!-- Sign up section [GLOBAL] -->
-                      {{ if .Site.Data.global.posts.explainers.top.hero_signup }}
+                      {{ if .Site.Data.global.posts.learn.top.hero_signup }}
                         {{ partial "_global/hero_newsletter.html" . }}
                       {{ end }}
                   </div>
@@ -42,7 +42,7 @@
             <div class="container">
                 <div class="row padding-top-lg padding-bottom-xl">
 
-                    <div class="col-md-9" id="explainers-post">
+                    <div class="col-md-9" id=.learn-post">
                       {{ if gt .Date.Year 2000 }}
                         <p class="text-muted text-uppercase mb-small text-right">{{ if .Params.author }}{{ i18n "authorBy" }} <a href="#">{{ .Params.author }}</a> | {{ end }}{{ .Date.Format .Site.Params.date_format }}</p>
                       {{ end }}
@@ -60,7 +60,7 @@
         </div> <!-- .#content -->
 
         <!-- CTA section [GLOBAL] -->
-        {{ if .Site.Data.global.posts.explainers.cta.enable }}
+        {{ if .Site.Data.global.posts.learn.cta.enable }}
           {{ partial "_global/cta.html" . }}
         {{ end }}
 

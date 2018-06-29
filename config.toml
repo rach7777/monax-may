@@ -1,5 +1,5 @@
 baseurl = "https://monax.io"
-title = "MONAX"
+title = "Monax"
 theme = "hugo-universal-theme"
 themesDir = "./themes/"
 languageCode = "en-us"
@@ -79,7 +79,7 @@ paginate = 6
     [[menu.main]]
       Name = "Explainers"
       parent = "resources"
-      URL = "/explainers/"
+      URL = "/learn/"
       Post = "Learn how Monax can help you streamline your business. Explore best practices for Monax tools and ask questions."
       Weight = 3
 
@@ -129,10 +129,10 @@ paginate = 6
     fontcode = 'Source Code Pro'
 
     # Enable the contact form by entering your Formspree.io email
-    email = "info@monax.io"
+    email = "content@monax.io"
 
     # Format dates with Go's time formatting
-    date_format = "January 2, 2006"
+    date_format = "2 January, 2006"
 
     # Main site logo
     logo = "/img/logo.png"
@@ -150,6 +150,6 @@ paginate = 6
 [Permalinks]
     blog = "/blog/:year/:month/:title/"
     casestudies = "/casestudies/:title/"
-    explainers = "/explainers/:title/"
+    learn = "/learn/:title/"
     screencasts = "/screencasts/:title/"
     webinars = "/webinars/:year/:month/:title/"

@@ -4,7 +4,7 @@ layout: single
 title:      "Smart Contracts v. Tokenized Approaches"
 excerpt:    "When are smart contracts better than tokenized approaches to blockchaining?"
 categories:
-  - explainer
+  - learn
 tags:
   - fleetleasing
   - corporate
