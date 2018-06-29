@@ -1,0 +1,57 @@
+[top]
+    enable = true
+    title = "Company updates"
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
+
+    [[top.feature]]
+      title = "Lorem Ipsum is simply dummy text"
+      description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon = "fa-calendar"
+
+    [[top.feature]]
+      title = "Lorem Ipsum is simply dummy text"
+      description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon = "fa-book"
+
+    [[top.feature]]
+      title = "Lorem Ipsum is simply dummy text"
+      description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon = "fa-facebook"
+
+[articles]
+    enable = true
+    title = "Important Company articles"
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+        # articles will be auto populated from posts
+        [[articles.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+        [[articles.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+        [[articles.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+        [[articles.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+        [[articles.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+        [[articles.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+
+[backers] # global
+    enable = false
+
+[cta] # global
+    enable = true

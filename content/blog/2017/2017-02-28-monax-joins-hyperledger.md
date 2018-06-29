@@ -1,7 +1,8 @@
 ---
 author: casey
 categories:
-- announcements
+  - announcements
+  - press
 comments: false
 date: 2017-02-28T00:00:00Z
 deprecated: true

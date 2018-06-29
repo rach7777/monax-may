@@ -1,0 +1,40 @@
+{{ if isset .Site.Data.resources "quicklinks" }}
+{{ if .Site.Data.resources.quicklinks.enable }}
+<section class="section-quicklinks section-padding-md background-dark">
+    <div class="container">
+
+        <div class="row">
+          <div class="col-md-5">
+
+            <div class="content-container padding-bottom-sm">
+              <div class="underline-sm range-left-md">
+                  <h3>{{ .Site.Data.resources.quicklinks.title }}</h3>
+              </div>
+              <!-- <p class="range-left-md padding-bottom-sm">
+                {{ .Site.Data.resources.quicklinks.subtitle | markdownify }}
+              </p> -->
+            </div> <!-- .content-container -->
+
+          </div> <!-- .col -->
+        </div> <!-- .row -->
+
+
+        <div class="row">
+          {{ range .Site.Data.resources.quicklinks.section }}
+
+            <div class="col-md-6 padding-bottom-sm">
+              <div class="range-left-md">
+                  <h4>{{ .title }} <i class="fa fa-angle-double-down"></i></h4>
+              </div>
+              <p class="range-left-md">
+                {{ .subtitle | markdownify }}
+              </p>
+            </div> <!-- .col -->
+
+          {{ end }}
+        </div> <!-- .row -->
+
+    </div> <!-- .container -->
+</section>
+{{ end }}
+{{ end }}

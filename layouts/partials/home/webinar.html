@@ -1,0 +1,58 @@
+{{ with .Site.Data.home.webinar }}
+{{ if .enable }}
+<section class="section-screencasts padding-bottom-xl">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-5 padding-bottom-md">
+
+          <div class="underline-sm range-left-md">
+              <h3>{{ .title }}</h3>
+          </div>
+          <p class="p2 padding-bottom-sm range-left-md">
+            {{ .subtitle | markdownify }}
+          </p>
+
+          {{ if .show_upcoming }}
+            <div class="range-left-md">
+              <h6>Upcoming webinars:</h6>
+            </div>
+            <ul class="ul-no-list">
+              {{ range first 3 (where $.Site.RegularPages "Type" "webinars") }}
+              <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+              {{ end }}
+            </ul>
+          {{ end }}
+
+        </div> <!-- .col -->
+        <div class="col-md-7">
+
+          {{ with .form }}
+
+          <form action="{{ .form_action }}" class="form">
+            {{ with .email }}
+              <input type="text" placeholder="Email" name="email" class="field-email">
+            {{ end }}
+            {{ with .fname }}
+              <input type="text" placeholder="First Name" name="fname" class="input-half field-fname">
+            {{ end }}
+            {{ with .lname }}
+              <input type="text" placeholder="Last Name" name="lname" class="input-half field-lname">
+            {{ end }}
+            {{ with .company_name }}
+              <input type="text" placeholder="Company Name" name="company" class="field-company">
+            {{ end }}
+            <button type="submit" value="Submit" class="btn btn-xl field-submit">
+              <span>{{ .submit_text | default "Submit" }}</span>
+            </button>
+          </form>
+
+          {{ end }}
+
+        </div> <!-- .col -->
+      </div> <!-- .row -->
+
+    </div>
+</section>
+{{ end }}
+{{ end }}

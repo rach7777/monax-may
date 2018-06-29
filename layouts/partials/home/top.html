@@ -1,0 +1,48 @@
+{{ with .Site.Data.home.top }}
+{{ if .enable }}
+<section class="section-top padding-top-md padding-bottom-lg section-shadow-xl" style="background: url({{ .background_element }}) right bottom no-repeat; background-size: 520px;">
+    <div class="container">
+
+      <div class="row flex-grid-md">
+          <div class="col-md-5 col-valign-center">
+            <div class="underline-sm range-left-md">
+                <h1>{{ .title }}</h1>
+            </div>
+
+            <p class="lead range-left-md">
+              {{ .subtitle | markdownify }}
+            </p>
+
+            <!-- Sign up section [GLOBAL] -->
+            {{ if .hero_signup }}
+              {{ partial "_global/hero_signup.html" . }}
+            {{ end }}
+          </div>
+          <div class="col-md-7">
+
+            {{ if .illustration.enable }}
+              {{ with .illustration }}
+                <div class="content-container laptop-illustration">
+                  <div class="img-layer-container">
+                    <img class="img-responsive img-center img-layer img-laptop-base" src="{{ .img_base }}" alt="">
+                    <img class="img-responsive img-center img-layer img-animate img-to-float delay-0 img-laptop-layer-one" src="{{ .img_layer_one }}" alt="">
+                    <img class="img-responsive img-center img-layer img-animate img-to-float delay-1 img-laptop-layer-two" src="{{ .img_layer_two }}" alt="">
+                  </div>
+                </div>
+              {{ end }}
+            {{ else if .img_right }}
+              <div class="row flex-grid-md">
+                <div class="col-sm-12">
+                  <img class="img-responsive img-center" src="{{ .img_right }}" alt="">
+                </div>
+              </div>
+            {{ end }}
+
+          </div>
+      </div>
+
+    </div> <!-- .container -->
+</section> <!-- .section -->
+
+{{ end }}
+{{ end }}

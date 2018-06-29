@@ -1,0 +1,310 @@
+[top]
+    enable = true
+    title = "Disrupting the legal tech industry"
+    subtitle = "Discover our journey, how we think and the paradigm shift we see happening toward legal products."
+    img_left = false
+    hero_signup = false
+    # img_right = "/img/assets/background-elements/wphone-test.png"
+    background_element = "/img/assets/background-elements/abstract-01.jpg"
+
+
+[press] # global
+    enable = true
+
+
+[history]
+    enable = true
+    title = "Monax are at the forefront of blockchain technology"
+    subtitle = ""
+
+    [[history.time]]
+      date = "June 2014"
+      label = "Eris Industries Founded"
+      logo_icon = "/img/logos/Eris_icon_white.png"
+      # logo_full = "/img/logos/Eris.png"
+      description_text = "Born out of Ethereum skype rooms Eris Industries set out to replace the Bitcoin Foundation as part of a US$100,000 contest, creating the world's first decentralised organisation upgrade functionality."
+
+    [[history.time]]
+      date = "Dec 2014"
+      label = "Burrow Launched"
+      logo_icon = "/img/logos/Burrow_icon_white.png"
+      # logo_full = "/img/logos/Hyperledger_Burrow.png"
+      description_text = "Burrow is launched as the world's first permissioned Ethereum smart-contract blockchain node."
+
+    [[history.time]]
+      date = "2015"
+      label = "Eris Platform Launched"
+      logo_icon = "/img/logos/Eris_icon_white.png"
+      # logo_full = "/img/logos/Eris.png"
+      description_text = "Eris 0.10 is the world's first open source smart contract suite allowing  users to build, test, deploy and operate their own secure, low-cost, run-anywhere data infrastructure using blockchain and smart contract technology."
+
+    [[history.time]]
+      date = "2016"
+      label = "Rebrand To Monax"
+      logo_icon = "/img/logos/monax_icon_white.png"
+      # logo_full = "/img/logo-small.png"
+      description_text = "In the spirit of democratisation and decentralisation Eris rebrands to Monax pivoting its business focus from enterprise grade solutions to the small business community, setting out to disrupt contracting."
+
+    [[history.time]]
+      date = "Feb 2017"
+      label = "Monax Joins Hyperledger"
+      logo_icon = "/img/logos/Hyperledger_icon_white.png"
+      # logo_full = "/img/logos/Hyperledger.png"
+      description_text = "Monax submits its smart contract machine to Hyperledger with the  intention to participate in the furtherance of cross-industry blockchain technologies."
+
+    [[history.time]]
+      date = "March 2017"
+      label = "Monax Joins The EEA"
+      logo_icon = "/img/logos/eea_icon_white.png"
+      # logo_full = "/img/logos/eea.png"
+      description_text = "Monax joins the Enterprise Ethereum Alliance connecting Fortune 500 enterprises, startups, academics, and technology vendors with the objective to define enterprise-grade software capable of handling the most complex, highly demanding applications at the speed of business."
+
+    [[history.time]]
+      date = "April 2018"
+      label = "Agreements Network"
+      logo_icon = "/img/logos/AgreementsNetwork_icon_white.png"
+      # logo_full = "/img/logos/AgreementsNetwork.png"
+      description_text = "Co-founded by some of the world most prominent law firms, the Agreements Network is becoming the legal layer for a networked world. It's the vehicle for a paradigm from legal services to legal products."
+
+
+[team]
+    enable = true
+    title = "Meet the people behind Monax"
+    subtitle = ""
+
+    [[team.office]]
+    city = "Edinburgh"
+    img = "/img/assets/cities/office-edinburgh.png"
+
+    [[team.office]]
+    city = "London"
+    img = "/img/assets/cities/office-london.png"
+
+    [[team.office]]
+    city = "New York"
+    img = "/img/assets/cities/office-new-york.png"
+
+    [[team.office]]
+    city = "Remote"
+    img = "/img/assets/cities/office-remote.png"
+
+
+    [[team.item]]
+      name = "Adam Locklin"
+      position = "Product Manager"
+      weight = 1
+      img = "/img/team/team-al.jpeg"
+      twitter = "https://twitter.com/AdamLocklin"
+      # linkedin = "#"
+      keybase = "https://keybase.io/adamlocklin"
+      # github = "#"
+      # website = "#"
+
+    [[team.item]]
+      name = "Casey Kuhlman"
+      position = "CEO"
+      weight = 2
+      img = "/img/team/team-csk.jpeg"
+      twitter = "https://twitter.com/compleatang"
+      # linkedin = "#"
+      keybase = "https://keybase.io/compleatang"
+      github = "https://github.com/compleatang"
+      # website = "#"
+
+    [[team.item]]
+      name = "Chenxiao Hu Wu"
+      position = "Producer Experience Associate"
+      weight = 1
+      img = "/img/team/team-chw.jpeg"
+      # twitter = "#"
+      # linkedin = "#"
+      keybase = "https://keybase.io/chenxiao"
+      # github = "#"
+      # website = "#"
+
+    [[team.item]]
+      name = "David Galbraith"
+      position = "Director"
+      weight = 2
+      img = "/img/team/team-dg.jpeg"
+      twitter = "https://twitter.com/daveg"
+      # linkedin = "#"
+      # github = "#"
+      # website = "#"
+
+    [[team.item]]
+      name = "Jeremy Drane"
+      position = "Advisor"
+      weight = 3
+      img = "/img/team/team-jd.jpeg"
+      twitter = "https://twitter.com/dranejeremy"
+      # linkedin = "#"
+      # github = "#"
+      website = "http://www.libra.tech/"
+
+    [[team.item]]
+      name = "Jan Hendrik Scheufen"
+      position = "CPO"
+      weight = 2
+      img = "/img/team/team-jhs.jpeg"
+      twitter = "https://twitter.com/jhscheufen"
+      # linkedin = "#"
+      keybase = "https://keybase.io/jhscheufen"
+      github = "https://github.com/j-h-scheufen"
+      # website = "#"
+
+    [[team.item]]
+      name = "Mel Roy"
+      position = "Operations Manager"
+      weight = 1
+      img = "/img/team/team-mr.jpeg"
+      # twitter = "#"
+      # linkedin = "#"
+      # github = "#"
+      # website = "#"
+
+    [[team.item]]
+      name = "Nina Kilbride"
+      position = "Head of Legal Engineering"
+      weight = 1
+      img = "/img/team/team-nk.jpeg"
+      twitter = "https://twitter.com/NinaKilbride"
+      # linkedin = "#"
+      keybase = "https://keybase.io/ninakilbride"
+      github = "https://github.com/ngk26200"
+      website = "http://cryptolawyer.net/"
+
+    [[team.item]]
+      name = "Ommi Shimizu"
+      position = "Full Stack Engineer"
+      weight = 1
+      img = "/img/team/team-os.jpeg"
+      # twitter = "#"
+      # linkedin = "#"
+      github = "https://github.com/ommish"
+      # website = "#"
+
+    [[team.item]]
+      name = "Pascal Froux"
+      position = "Advisor"
+      weight = 3
+      img = "/img/team/team-pf.jpeg"
+      # twitter = "#"
+      # linkedin = "#"
+      # keybase = "#"
+      # github = "#"
+      website = "http://www.flamel.be/"
+
+    [[team.item]]
+      name = "Rachel Davidson"
+      position = "Senior Marketing Associate"
+      weight = 1
+      img = "/img/team/team-rd.jpeg"
+      twitter = "https://twitter.com/Cryptojourno_uk"
+      # linkedin = "#"
+      keybase = "https://keybase.io/monaxrach"
+      # github = "#"
+      # website = "#"
+
+    [[team.item]]
+      name = "Sam Sinha"
+      position = "Smart Contract Engineer"
+      weight = 1
+      img = "/img/team/team-ss.jpeg"
+      twitter = "https://twitter.com/samsrobotarmy"
+      # linkedin = "#"
+      keybase = "https://keybase.io/sambuds"
+      github = "https://github.com/sambuds"
+      # website = "#"
+
+    [[team.item]]
+      name = "Silas Davis"
+      position = "CTO"
+      weight = 2
+      img = "/img/team/team-sd.jpeg"
+      twitter = "https://twitter.com/silas_davis"
+      # linkedin = "#"
+      keybase = "https://keybase.io/silasdavis"
+      github = "https://github.com/silasdavis"
+      # website = "#"
+
+    [[team.item]]
+      name = "Sean Young"
+      position = "Platform Engineer"
+      weight = 1
+      img = "/img/team/team-sy.jpeg"
+      twitter = "https://twitter.com/iamseanyoung"
+      # linkedin = "#"
+      keybase = "https://keybase.io/seanyoung"
+      github = "https://github.com/seanyoung"
+      # website = "#"
+
+    [[team.item]]
+      name = "Tobias Barnes Hofmeister"
+      position = "Marketing Analyst"
+      weight = 1
+      img = "/img/team/team-th.jpeg"
+      # twitter = "#"
+      # linkedin = "#"
+      keybase = "https://keybase.io/tobiashofmeister"
+      # github = "#"
+      # website = "#"
+
+    [[team.item]]
+      name = "Dr. Tyler Jackson"
+      position = "Chief Scientist"
+      weight = 1
+      img = "/img/team/team-tj.jpeg"
+      twitter = "https://twitter.com/dennismckinnon"
+      # linkedin = "#"
+      keybase = "https://keybase.io/tylerjackson"
+      github = "https://github.com/dennismckinnon"
+      # website = "#"
+
+    [[team.item]]
+      name = "Yann Ranchere"
+      position = "Director"
+      weight = 2
+      img = "/img/team/team-yr.jpeg"
+      twitter = "https://twitter.com/tek_fin"
+      # linkedin = "#"
+      # keybase = "#"
+      # github = "#"
+      # website = "#"
+
+
+[positions]
+    enable = true
+    title = "Positions available"
+    subtitle = "Come and be part of our diverse and talented team"
+
+    [positions.contact]
+        title = "Contact us if you're interested"
+        subtitle = "Please email <a href='mailto:jobs@monax.io'>jobs@monax.io</a> with your cv and portfolio."
+
+    [[positions.job]]
+        title = "Site Reliability Engineer"
+        description = "Help us build a decentralised, blockchain-based legal agreements network"
+        hours = "Full time"
+        type = "Permanent"
+        location = "London or Edinburgh"
+        posted_date = "June 28 2018"
+
+    [[positions.job]]
+        title = "Systems Reliability Engineer"
+        description = "Help us build a decentralised, blockchain-based legal agreements network"
+        hours = "Full time"
+        type = "Permanent"
+        location = "London or Edinburgh"
+        posted_date = "June 28 2018"
+
+
+[pressreleases]
+    enable = true
+    title = "Past press releases"
+    filter_by_category = "press" # changed in partials/company/pressreleases.html
+    default_img = "/img/assets/backgrounds/mountains-1.jpg"
+    next_page_url = "/categories/press/"
+
+[cta] # global
+    enable = true

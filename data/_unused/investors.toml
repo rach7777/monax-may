@@ -1,0 +1,100 @@
+[hero]
+    enable = true
+    title = "Information For Investors"
+    subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+    img_bg = "/img/assets/backgrounds/mountains-1.jpg"
+
+
+[featured]
+    enable = true
+    title = "Key Investors:"
+    logo_1 = "/img/logos/example-logo.png"
+    logo_2 = "/img/logos/example-logo.png"
+    logo_3 = "/img/logos/example-logo.png"
+
+
+[updates]
+    enable = true
+    title = "Important Company Updates"
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+        # articles will be auto populated from posts
+        [[updates.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+        [[updates.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+        [[updates.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+        [[updates.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+        [[updates.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+        [[updates.article]]
+            title = "Explainer article title"
+            subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+
+
+[current]
+    enable = true
+    title = "Our Investors"
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+    [[current.investor]]
+        title = "Example Investment Inc."
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+        logo = "/img/logos/example-gray-logo.png"
+        link = "#"
+        link_text = "Read more about this company"
+
+    [[current.investor]]
+        title = "Example Investment Inc."
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+        logo = "/img/logos/example-gray-logo.png"
+        link = "#"
+        link_text = "Read more about this company"
+
+    [[current.investor]]
+        title = "Example Investment Inc."
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+        logo = "/img/logos/example-gray-logo.png"
+        link = "#"
+        link_text = "Read more about this company"
+
+    [[current.investor]]
+        title = "Example Investment Inc."
+        subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied."
+        logo = "/img/logos/example-gray-logo.png"
+        link = "#"
+        link_text = "Read more about this company"
+
+
+[ico]
+    enable = true
+    title = "Read about our upcoming ICO"
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    button_text = "Download whitepaper"
+    button_url = "#"
+
+
+[contact]
+    enable = true
+    title = "Investment Information"
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+    [contact.contact]
+        title = "Contact us to discuss a partnership"
+        subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Please email <a href='mailto:jobs@monax.io'>investments@monax.io</a>."
+
+
+[cta] # global
+    enable = false

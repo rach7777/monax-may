@@ -1,0 +1,64 @@
+{{ with .Site.Data.company.history }}
+{{ if .enable }}
+<section class="section-mission section-padding-lg section-shadow-xl">
+    <div class="container">
+
+      <div class="row padding-bottom-lg">
+        <div class="col-md-12">
+            <div class="underline-sm">
+                <h3>{{ .title }}</h3>
+            </div>
+            <p class="lead text-center">
+              {{ .subtitle | markdownify }}
+            </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="timeline-container">
+          	<div class="timeline-date-container">
+              {{ range $i, $p := .time }}
+                {{ if eq $i 5 }} <!-- 1st entry -->
+              		<div class="timeline-date active" style="background-image: url({{ .logo_icon }});">
+              			<span data-year="{{ .date }}" data-info="{{ .label }}"></span>
+              		</div>
+                {{ else }}
+                  <div class="timeline-date" style="background-image: url({{ .logo_icon }});">
+                    <span data-year="{{ .date }}" data-info="{{ .label }}"></span>
+                  </div>
+                {{ end }}
+              {{ end }}
+          	</div>
+          	<div class="timeline-info-container">
+              {{ range $i, $p := .time }}
+                {{ if eq $i 5 }} <!-- 1st entry -->
+                  <div class="timeline-content active">
+                    {{ with .logo_full }}
+                      <img src="{{ . }}" class="img-responsive img-center img-history" alt="">
+                    {{ end }}
+                    <p>{{ .description_text }}</p>
+                  </div>
+                {{ else }}
+                  <div class="timeline-content">
+                    {{ with .logo_full }}
+                      <img src="{{ . }}" class="img-responsive img-center img-history" alt="">
+                    {{ end }}
+                    <p>{{ .description_text }}</p>
+                  </div>
+                {{ end }}
+              {{ end }}
+          	</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /.bar -->
+
+{{ end }}
+{{ end }}
+
+<div class="visible-block padding-bottom-lg"></div>

@@ -1,0 +1,68 @@
+{{ if isset .Site.Data.resources "developers" }}
+{{ if .Site.Data.resources.developers.enable }}
+<section class="section-developers section-padding-xl section-shadow-xl">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-5">
+
+          <div class="content-container padding-bottom-sm">
+            <div class="underline-sm range-left-md">
+                <h2>{{ .Site.Data.resources.developers.title }}</h2>
+            </div>
+            <!-- <p class="range-left-md padding-bottom-sm">
+              {{ .Site.Data.resources.developers.subtitle | markdownify }}
+            </p> -->
+          </div> <!-- .content-container -->
+
+        </div> <!-- .col -->
+      </div> <!-- .row -->
+
+
+      <div class="row padding-bottom-lg">
+          {{ range .Site.Data.resources.developers.section }}
+
+          <div class="col-md-4 padding-bottom-sm">
+            <div class="range-left-md">
+                <h4>{{ .title }}</h4>
+            </div>
+            <p class="range-left-md">
+              {{ .subtitle | markdownify }}
+            </p>
+            <a href="{{ .link_url }}">{{ .link_text }} &rsaquo;</a>
+          </div> <!-- .col -->
+
+          {{ end }}
+      </div> <!-- .row -->
+
+
+      {{ if isset .Site.Data.resources "thirdparties" }}
+      {{ if .Site.Data.resources.thirdparties.enable }}
+
+      <div class="row">
+        <div class="col-md-5 padding-top-sm">
+          <div class="underline-sm range-left-md">
+              <h3>{{ .Site.Data.resources.thirdparties.title }}</h3>
+          </div>
+          <p class="padding-bottom-md range-left-md">
+            {{ .Site.Data.resources.thirdparties.subtitle | markdownify }}
+          </p>
+        </div> <!-- .col -->
+        <div class="col-md-7">
+          <div class="flex-grid form-placeholder">
+            <div class="col-sm-12 col-valign-center" style="width: 100%;">
+                <h4>-- FORM PLACEHOLDER --</h4>
+            </div>
+          </div>
+        </div> <!-- .col -->
+      </div> <!-- .row -->
+
+      {{ end }}
+      {{ end }}
+
+
+
+    </div> <!-- .container -->
+</section>
+{{ end }}
+{{ end }}

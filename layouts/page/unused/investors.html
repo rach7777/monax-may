@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  {{ partial "head_fonts.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "investors/hero.html" . }}
+
+        {{ partial "investors/featured.html" . }}
+
+        {{ partial "investors/updates.html" . }}
+
+        {{ partial "investors/current.html" . }}
+
+        {{ partial "investors/ico.html" . }}
+
+        {{ partial "investors/contact.html" . }}
+
+        <!-- global section -->
+        {{ if isset .Site.Data.investors "cta" }}
+          {{ if .Site.Data.investors.cta.enable }}
+            {{ partial "_global/cta.html" . }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "footer.html" . }}
+
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

@@ -1,25 +1,138 @@
-{{- partial "header.html" . -}}
-</head>
-<body class="blog-list">
-{{- partial "navigation.html" . -}}
-<div class="container-fluid" id="monax-page">
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2 page-header">
-        <header><h1 class="title" role="title">{{ .Title }}</h1></header>
-    </div>
-  </div>
-  <div class="row">
-    {{- partial "blog/sidebar-default.html" . -}}
-    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-6" id="content-block">
-      <article class="content" id="main-content">
-        {{ range .Data.Pages }}
-          {{- partial "blog/li-entry_listing.html" . -}}
-        {{- end -}}
-      </article>
-    </div>
-  </div>
-</div>
-{{- partial "footer.html" . -}}
-{{- partial "scripts.html" . -}}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  {{ partial "head_fonts.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        <section class="section-top padding-top-md padding-bottom-lg section-shadow-xl" style="background: url({{ .Site.Data.global.posts.taxonomies.top.background_element }}) right bottom no-repeat; background-size: 520px;">
+            <div class="container">
+              <div class="row flex-grid-md">
+                  <div class="col-md-7 col-valign-center">
+                      <div class="underline-sm range-left-md">
+                          <h1>{{ .Title }}</h1>
+                      </div>
+                      <p class="lead range-left-md">
+                        Here's a list of posts filed under the {{ .Data.Singular }} "{{ .Title }}"
+                      </p>
+
+                      <!-- Sign up section [GLOBAL] -->
+                      {{ if .Site.Data.global.posts.taxonomies.top.hero_signup }}
+                        {{ partial "_global/hero_newsletter.html" . }}
+                      {{ end }}
+                  </div>
+              </div>
+            </div> <!-- .container -->
+        </section> <!-- .section -->
+
+      <!-- Get default image -->
+      {{ if .Site.Data.global.posts.taxonomies.default_img }}
+        {{ $.Scratch.Set "defaultImg" .Site.Data.global.posts.taxonomies.default_img }}
+      {{ end }}
+
+        <div id="content">
+          <div class="container">
+            <div class="row padding-top-lg padding-bottom-xl">
+              <div class="col-md-9" id="blog-listing-medium">
+                {{ range $i, $p := .Paginator.Pages }}
+                  <section class="post">
+
+                      <!-- check for img override -->
+                      {{ if .Params.img }}
+                        {{ .Scratch.Set "postImg" .Params.img }}
+                      {{ else if .Params.thumbnail }}
+                        {{ .Scratch.Set "postImg" (printf "/blog/images/%d/%s" .Date.Year .Params.thumbnail) }}
+                      {{ else if not (.Scratch.Get "postImg") }}
+                        {{ .Scratch.Set "postImg" ($.Scratch.Get "defaultImg") }}
+                      {{ end }}
+
+                    <a href="{{ .Permalink }}" class="flex-grid-sm a-card">
+                    <div class="content-container content-card content-card-full content-card-shadow-sm flex-grid-sm col-flex-12">
+                      <div class="row flex-grid-sm col-flex-12">
+                        <div class="col-xs-4 flex-grid-sm col-flex-4">
+                          <div class="img-container background-dark col-flex-12" style='background:url({{ .Scratch.Get "postImg" }}) center center no-repeat; background-size: cover;'>
+                          </div>
+                        </div>
+                        <div class="col-xs-8 col-flex-8 col-valign-center padding-top-sm padding-bottom-sm">
+                          <div class="text-container">
+                            <div class="title range-left">
+                                <h5>{{ .Title }} &rsaquo;</h5>
+                            </div>
+                            <p class="subtitle range-left">
+                              {{ if .Params.excerpt }}
+                                {{ if gt (len .Params.excerpt) 140 }}
+                                  {{ substr .Params.excerpt 0 140 }}...
+                                {{ else }}
+                                  {{ .Params.excerpt }}
+                                {{ end }}
+                              {{ else }}
+                                {{ if gt (len .Summary) 140 }}
+                                  {{ substr .Summary 0 140 }}...
+                                {{ else }}
+                                  {{ .Summary }}
+                                {{ end }}
+                              {{ end }}
+                            </p>
+                            {{ if .Date }}
+                              {{ if gt .Date.Year 2000 }}
+                                <div class="meta range-left">
+                                  <p><span><i class="fa fa-calendar"></i> {{ dateFormat "Jan 2 2006" .Date }}</span>{{ if .Params.author }} | <span><i class="fa fa-user-o"></i> {{ .Params.author }}</span>{{ end }}</p>
+                                </div>
+                              {{ end }}
+                            {{ end }}
+                          </div>
+                        </div>
+                      </div>
+                    </div>  <!-- .content-card -->
+                    </a>
+
+                        </section>
+                        {{ end }}
+
+                        {{ if or ($.Paginator.HasPrev) ($.Paginator.HasNext) }}
+                          <div class="btn-container pagination-container" style="">
+                            {{ if $.Paginator.HasPrev }}
+                              <a href="{{ .Site.BaseURL }}{{ $.Paginator.Prev.URL }}" class="btn btn-primary btn-xl button-icon-circle button-prev" role="button"><i class="fa fa-arrow-left"></i></a>
+                            {{ else }}
+                              <a href="#" class="btn btn-primary btn-xl button-icon-circle button-prev disabled" role="button"><i class="fa fa-arrow-left"></i></a>
+                            {{ end }}
+                            {{ if $.Paginator.HasNext }}
+                              <a href="{{ .Site.BaseURL }}{{ $.Paginator.Next.URL }}" class="btn btn-primary btn-xl button-icon-circle button-next" role="button"><i class="fa fa-arrow-right"></i></a>
+                            {{ else }}
+                              <a href="#" class="btn btn-primary btn-xl button-icon-circle button-next disabled" role="button"><i class="fa fa-arrow-right"></i></a>
+                            {{ end }}
+                          </div>
+                        {{ end }}
+
+                    </div> <!-- .col -->
+
+                    <div class="col-md-3">
+                        {{ partial "sidebar.html" . }}
+                    </div> <!-- .col -->
+                </div>  <!-- .row -->
+            </div>  <!-- .container -->
+        </div>  <!-- .#content -->
+
+        <!-- CTA section [GLOBAL] -->
+        {{ if .Site.Data.global.posts.taxonomies.cta.enable }}
+          {{ partial "_global/cta.html" . }}
+        {{ end }}
+
+        {{ partial "footer.html" . }}
+
+    </div> <!-- .#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
 </html>
-</body>

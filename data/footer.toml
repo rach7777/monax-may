@@ -1,0 +1,73 @@
+[about]
+    enable = true
+    title = "About Us"
+    subtitle = "Deploy smart, legally-binding contracts on the blockchain."
+    footer_logo = "/img/Monax_logo_white.png"
+
+    [[about.link]]
+        link_title = "Request a demo"
+        link_url = "https://beta.monax.io/register"
+        # @@@ change url
+
+    [[about.link]]
+        link_title = "Get started"
+        link_url = "https://beta.monax.io/register"
+
+    [[about.social_icon]]
+        icon = "fa-facebook"
+        link = "https://www.facebook.com/monaxHQ/"
+        title = "Facebook"
+
+    [[about.social_icon]]
+        icon = "fa-twitter"
+        link = "https://twitter.com/monaxhq"
+        title = "Twitter"
+
+    [[about.social_icon]]
+        icon = "fa-linkedin"
+        link = "https://www.linkedin.com/company/monax/"
+        title = "LinkedIn"
+
+    [[about.social_icon]]
+        icon = "fa-instagram"
+        link = "https://www.instagram.com/monaxhq/"
+        title = "Instagram"
+
+    # [[about.social_icon]]
+    #     icon = "fa-envelope"
+    #     link = "mailto:contact@monax.io"
+    #     title = "Email"
+    #
+    # [[about.social_icon]]
+    #     icon = "fa-github"
+    #     link = "https://github.com/monax"
+    #     title = "Github"
+
+[col_2]
+    enable = true
+    title = "Subscribe To Updates"
+    subtitle = "Be the first to hear about all things Monax"
+    enable_intercom_form = true
+
+[col_3]
+    enable = true
+    title = "Developers"
+    subtitle = "Find all the resources you need as a developer.<br><br><a href='https://docs.agreements.network/'>Read our developer docs  &rsaquo;</a><br><br><a href='mailto:contact@monax.io'>Contact us about 3rd party integrations &rsaquo;</a>"
+
+[col_4]
+    enable = true
+    title = "Press & Events"
+    subtitle = "Here at Monax we are always happy to talk to the press. For current press releases <a href='/categories/press/'>have a look here</a>.<br><br>Talk to us! Please email <a href='mailto:press@monax.io'>press@monax.io</a> for all things press-related."
+
+[copyright]
+    enable = true
+    copyright_notice = "<strong>&copy; Monax Industries. All rights reserved.</strong> US registered company: 132978319257."
+    enable_attribution = true
+
+    [[copyright.link]]
+    link_title = "Privacy Policy"
+    link_url = "/legal/privacy-policy/"
+
+    # [[copyright.link]]
+    # link_title = "Terms of Service"
+    # link_url = "#"

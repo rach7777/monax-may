@@ -1,6 +1,0 @@
-{{- if .Params.meta -}}
-
-<div class="meta"><i class="fa fa-calendar" aria-hidden="true"></i> <span class="meta-date">{{ .Params.date }}</span> <i class="fa fa-bookmark" aria-hidden="true"></i> <span class="meta-cat">{{ with .Params.categories }}{{ with (index . 0) }}<a href="{{ "/categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}{{ end }}</span> <i class="fa fa-tags" aria-hidden="true"></i> <span class="meta-tags">{{ with .Params.tags }} {{ delimit (apply (apply (sort .) "partial" "blog/tag_link.html" ".") "chomp" ".") ", " }}{{ end }}</span></div>
-
-{{- end -}}
-

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  {{ partial "head_fonts.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "monaxfor/fleetleasing/top.html" . }}
+
+        <!-- global section -->
+        {{ if isset .Site.Data.monaxfor.fleetleasing "press" }}
+          {{ if .Site.Data.monaxfor.fleetleasing.press.enable }}
+            {{ partial "_global/press.html" . }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "monaxfor/fleetleasing/testimonials.html" . }}
+
+        {{ partial "monaxfor/fleetleasing/feature.html" . }}
+
+        {{ partial "monaxfor/fleetleasing/examples.html" . }}
+
+        {{ partial "monaxfor/fleetleasing/relatedarticles.html" . }}
+
+        {{ partial "monaxfor/fleetleasing/faq.html" . }}
+
+        <!-- CTA section [GLOBAL] -->
+        {{ if isset .Site.Data.monaxfor.fleetleasing "cta" }}
+          {{ if .Site.Data.monaxfor.fleetleasing.cta.enable }}
+            {{ partial "_global/cta.html" . }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

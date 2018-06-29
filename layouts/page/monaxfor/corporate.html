@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  {{ partial "head_fonts.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "monaxfor/corporate/top.html" . }}
+
+        <!-- global section -->
+        {{ if isset .Site.Data.monaxfor.corporate "press" }}
+          {{ if .Site.Data.monaxfor.corporate.press.enable }}
+            {{ partial "_global/press.html" . }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "monaxfor/corporate/testimonials.html" . }}
+
+        {{ partial "monaxfor/corporate/feature.html" . }}
+
+        {{ partial "monaxfor/corporate/examples.html" . }}
+
+        {{ partial "monaxfor/corporate/relatedarticles.html" . }}
+
+        {{ partial "monaxfor/corporate/faq.html" . }}
+
+        <!-- CTA section [GLOBAL] -->
+        {{ if isset .Site.Data.monaxfor.corporate "cta" }}
+          {{ if .Site.Data.monaxfor.corporate.cta.enable }}
+            {{ partial "_global/cta.html" . }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

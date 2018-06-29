@@ -1,0 +1,16 @@
+[top]
+    enable = true
+    title = "Upcoming webinars"
+    subtitle = "Join us for industry insight and best practice advice on using legal products to streamline your business."
+    img_left = false
+    hero_signup = true
+    # img_right = "/img/assets/background-elements/wphone-test.png"
+    background_element = "/img/assets/background-elements/abstract-01.jpg"
+
+[articles]
+  enable = true
+  filter_by_category = "webinars" # changed in partials/resources/webinars/articles.html
+  default_img = "/img/assets/backgrounds/mountains-1.jpg"
+
+[cta] # global
+    enable = true

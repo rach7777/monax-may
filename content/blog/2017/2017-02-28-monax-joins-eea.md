@@ -1,7 +1,8 @@
 ---
 author: casey
 categories:
-- announcements
+  - announcements
+  - press
 comments: false
 date: 2017-03-01T00:00:00Z
 meta: true

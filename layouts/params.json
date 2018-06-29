@@ -1,1 +1,0 @@
-{"google":"","tagline":"{{ .Site.Data.sites.tagline }}","name":"{{ .Site.Title }}"}

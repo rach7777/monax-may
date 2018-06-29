@@ -1,0 +1,49 @@
+{{ if isset .Site.Data.press "past" }}
+{{ if .Site.Data.press.past.enable }}
+<section class="section-past section-padding-xl section-shadow-xl">
+    <div class="container">
+
+        <div class="row">
+          <div class="col-md-5">
+
+            <div class="content-container padding-bottom-md">
+              <div class="underline-sm range-left-md">
+                  <h3>{{ .Site.Data.press.past.title }}</h3>
+              </div>
+              <p class="range-left-md padding-bottom-sm">
+                {{ .Site.Data.press.past.subtitle | markdownify }}
+              </p>
+            </div> <!-- .content-container -->
+
+
+          </div> <!-- .col -->
+          <div class="col-md-7">
+            {{ range .Site.Data.press.past.article }}
+
+            <div class="content-container padding-bottom-sm">
+              <div class="flex-grid article-placeholder">
+                <div class="col-sm-3">
+                    <div class="square-placeholder"></div>
+                </div>
+                <div class="col-sm-9 padding-top-sm padding-bottom-sm">
+                    <h4 class="range-left">{{ .title }}</h4>
+                    <p class="range-left">
+                      {{ .subtitle | markdownify }}
+                    </p>
+                </div>
+              </div>
+            </div>
+
+            {{ end }}
+            <div class="content-container padding-top-sm" style="text-align: center;">
+              <a href="#">Read more entries &rsaquo;</a>
+            </div>
+
+          </div> <!-- .col -->
+        </div> <!-- .row -->
+
+
+    </div> <!-- .container -->
+</section>
+{{ end }}
+{{ end }}

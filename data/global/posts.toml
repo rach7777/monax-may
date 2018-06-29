@@ -1,0 +1,88 @@
+# [GLOBAL] Enable and disable widgets for the right sidebar
+
+[widgets]
+  search = true
+  categories = true
+  tags = true
+
+
+# TAXONOMIES [CATEGORIES & TAGS]
+
+[taxonomies]
+  default_img = "/img/assets/backgrounds/mountains-1.jpg"
+
+  [taxonomies.top]
+    hero_signup = true
+    background_element = "/img/assets/background-elements/abstract-01.jpg"
+
+  [taxonomies.cta] # global
+    enable = true
+
+
+# [SINLE BLOG POSTS]
+
+[blog]
+
+  [blog.top]
+    hero_signup = true
+    background_element = "/img/assets/background-elements/abstract-01.jpg"
+
+  [blog.cta] # global
+    enable = true
+
+
+# [SINLE WEBINAR POSTS]
+
+[webinars]
+
+  [webinars.top]
+    hero_signup = true
+    background_element = "/img/assets/background-elements/abstract-01.jpg"
+
+  [webinars.form]
+    enable_signup_form = true
+    email = true
+    fname = true
+    lname = true
+    company_name = true
+    form_action = "#"
+    submit_text = "Get notified"
+
+  [webinars.cta] # global
+    enable = true
+
+
+# [SINLE SCREENCAST POSTS]
+
+[screencasts]
+
+  [screencasts.top]
+    hero_signup = true
+    background_element = "/img/assets/background-elements/abstract-01.jpg"
+
+  [screencasts.cta] # global
+    enable = true
+
+
+# [SINLE EXPLAINER POSTS]
+
+[explainers]
+
+  [explainers.top]
+    hero_signup = true
+    background_element = "/img/assets/background-elements/abstract-01.jpg"
+
+  [explainers.cta] # global
+    enable = true
+
+
+# [SINLE CASESTUDY POSTS]
+
+[casestudies]
+
+  [casestudies.top]
+    hero_signup = true
+    background_element = "/img/assets/background-elements/abstract-01.jpg"
+
+  [casestudies.cta] # global
+    enable = true

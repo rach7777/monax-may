@@ -1,0 +1,71 @@
+[top]
+    enable = true
+    title = "Legal agreements for the many"
+    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    img_left = "/img/assets/illustrations/user-flat-example-01.jpg"
+
+    [[top.feature]]
+      title = "Lorem Ipsum is simply dummy text"
+      description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon = "fa-calendar"
+
+    [[top.feature]]
+      title = "Lorem Ipsum is simply dummy text"
+      description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon = "fa-book"
+
+    [[top.feature]]
+      title = "Lorem Ipsum is simply dummy text"
+      description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon = "fa-facebook"
+
+
+[audiences]
+  enable = true
+
+  [[audiences.section]]
+    category = "fleet-leasing"
+    title = "For Fleet Leasing"
+    subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
+    img = "/img/assets/illustrations/user-flat-example-01.jpg"
+
+    [[audiences.section.link]]
+      link_title = "Read this usecase"
+      link_url = "#"
+
+
+  [[audiences.section]]
+    category = "corporate-governance"
+    title = "For Corporate Governance"
+    subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
+    img = "/img/assets/illustrations/user-flat-example-01.jpg"
+
+    [[audiences.section.link]]
+      link_title = "Read this usecase"
+      link_url = "#"
+
+
+  [[audiences.section]]
+    category = "content-creators"
+    title = "For Content Creators"
+    subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
+    img = "/img/assets/illustrations/user-flat-example-01.jpg"
+
+    [[audiences.section.link]]
+      link_title = "Read this usecase"
+      link_url = "#"
+
+
+  [[audiences.section]]
+    category = "lawyers"
+    title = "For Lawyers"
+    subtitle = "In the evolving network economy, devices upgrade and proliferate quickly. In the evolving network economy, devices upgrade and proliferate quickly."
+    img = "/img/assets/illustrations/user-flat-example-01.jpg"
+
+    [[audiences.section.link]]
+      link_title = "Read this usecase"
+      link_url = "#"
+
+
+[cta] # global
+    enable = true

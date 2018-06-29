@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  {{ partial "head_fonts.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "resources/news/top.html" . }}
+
+        {{ partial "resources/news/articles.html" . }}
+
+        <!-- 'Backed by' section [GLOBAL] -->
+        {{ if isset .Site.Data.resources.news "backers" }}
+          {{ if .Site.Data.resources.news.backers.enable }}
+            {{ partial "_global/backers.html" . }}
+          {{ end }}
+        {{ end }}
+
+        <!-- CTA section [GLOBAL] -->
+        {{ if isset .Site.Data.resources.news "cta" }}
+          {{ if .Site.Data.resources.news.cta.enable }}
+            {{ partial "_global/cta.html" . }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

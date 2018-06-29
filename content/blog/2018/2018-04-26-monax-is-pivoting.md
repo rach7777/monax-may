@@ -8,6 +8,7 @@ excerpt:   "After three years of building as a horizontal software company, Mona
 thumbnail: pivot.jpg
 categories:
   - announcements
+  - press
 tags:
   - agreements network
 

@@ -1,5 +1,133 @@
-</div><!-- /.container-fluid -->
-</div><!-- #container -->
-<footer>
-  <p>Copyright &copy; 2014-{{ now.Year }} Monax</p>
-</footer>
+{{ with .Site.Data.footer }}
+
+  <footer id="footer" class="section-footer">
+      <div class="container">
+
+        <div class="row">
+
+          {{ with .about }}
+          {{ if .enable }}
+
+          <div class="col-md-3 col-sm-6">
+            <div class="content-container padding-bottom-sm padding-top-xs">
+              <a href="{{ .Site.Params.baseurl }}" title="{{ .Site.Params.title }}">
+                <img id="footer-logo" class="img-responsive img-left-sm" src="{{ .footer_logo }}" alt="{{ .Site.Params.title }}">
+              </a>
+            </div>
+            <p class="range-left-sm">
+              {{ .subtitle | markdownify }}
+              <br>
+              {{ range $i, $p := .link }}
+                {{ if eq $i 0 }}
+                  <a href="{{ .link_url }}">{{ .link_title }}</a>
+                {{ else }}
+                  &nbsp;|&nbsp;&nbsp;<a href="{{ .link_url }}">{{ .link_title }}</a>
+                {{ end }}
+              {{ end }}
+            </p>
+
+            <div class="ul-left-sm flex-grid-sm btn-container range-left">
+              <ul class="ul-round-icons ul-footer-icons">
+                {{ range .social_icon }}
+                  <a href="{{ .link }}"><li><i class='fa {{ .icon }}'></i></li></a>
+                {{ end }}
+              </ul>
+            </div>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+          </div>  <!-- .col -->
+
+          {{ end }}
+          {{ end }}
+
+          {{ with .col_2 }}
+          {{ if .enable }}
+
+            <div class="col-md-3 col-sm-6">
+              <div class="range-left-sm">
+                <h4>{{ .title }}</h4>
+              </div>
+              <p class="range-left-sm">
+                {{ .subtitle | markdownify }}
+              </p>
+              {{ if .enable_intercom_form }}
+                {{ partial "footer_form.html" . }}
+              {{ else }}
+                <div class='flex-grid form-placeholder-dark' style='min-height:160px;'>
+                  <div class='col-sm-12 col-flex-12 col-valign-center'>
+                    <h4>-- FORM PLACEHOLDER --</h4>
+                  </div>
+                </div>
+              {{ end }}
+              <hr class="hidden-md hidden-lg hidden-sm">
+            </div>  <!-- .col -->
+
+
+          {{ end }}
+          {{ end }}
+
+          <div class="clearfix visible-sm-block padding-bottom-md"></div>
+
+          {{ with .col_3 }}
+          {{ if .enable }}
+
+          <div class="col-md-3 col-sm-6">
+            <div class="range-left-sm">
+              <h4>{{ .title }}</h4>
+            </div>
+            <p class="range-left-sm">
+              {{ .subtitle | markdownify }}
+            </p>
+            <hr class="hidden-md hidden-lg hidden-sm">
+          </div>  <!-- .col -->
+
+          {{ end }}
+          {{ end }}
+
+          {{ with .col_4 }}
+          {{ if .enable }}
+
+          <div class="col-md-3 col-sm-6">
+            <div class="range-left-sm">
+              <h4>{{ .title }}</h4>
+            </div>
+            <p class="range-left-sm">
+              {{ .subtitle | markdownify }}
+            </p>
+            <hr class="hidden-md hidden-lg hidden-sm">
+          </div>  <!-- .col -->
+
+          {{ end }}
+          {{ end }}
+
+        </div> <!-- .row -->
+      </div>  <!-- .container -->
+  </footer> <!-- .footer -->
+
+  {{ with .copyright }}
+  {{ if .enable }}
+
+  <div id="copyright">
+      <div class="container">
+          <div class="col-md-12">
+              <p class="pull-left">
+                <span>{{ .copyright_notice | markdownify }}</span>
+
+                {{ range .link }}
+                <span>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{ .link_url }}">{{ .link_title }}</a></span>
+                {{ end }}
+              </p>
+              {{ if .enable_attribution }}
+                <p class="pull-right">
+                  With thanks to <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+                  <!-- Not removing this link is part of the licence conditions of the template. Thanks for understanding :) -->
+                </p>
+              {{ end }}
+          </div>
+      </div>
+  </div> <!-- .copyright -->
+
+  {{ end }}
+  {{ end }}
+
+{{ end }}
