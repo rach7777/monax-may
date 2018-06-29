@@ -43,7 +43,7 @@ stages:
       hugo \
         --destination build \
         --verbose \
-        --baseURL="https://$SITE_NAME"
+        --baseURL="https://$SITE_NAME/"
   artifacts:
     paths:
       - build
