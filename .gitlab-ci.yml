@@ -41,6 +41,7 @@ stages:
     # - gulp build
     - |
       hugo \
+        --destination build \
         --verbose \
         --baseURL="https://$SITE_NAME"
   artifacts:
