@@ -32,7 +32,7 @@
                   <div class="img-container background-dark" style='background:url({{ .Scratch.Get "postImg" }}) center center no-repeat; background-size: cover;'>
 
                     {{ $t := (time .Params.event_date) }}
-                    {{ if not ($t.After .Now) }}
+                    {{ if not ($t.After now) }}
                       <div class="content-container content-cicle background-color green pin-top-right">
                         <div class="circle-top">
                           Watch
@@ -55,7 +55,7 @@
                   </div>
                   <div class="text-container">
                     <div class="title range-left">
-                      {{ if not ($t.After .Now) }}
+                      {{ if not ($t.After now) }}
                         <h6 class="article-category">Webinar Ended</h6>
                       {{ else }}
                         <h6 class="article-category" style="color:#852774">Upcoming Webinar</h6>
