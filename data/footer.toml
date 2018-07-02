@@ -52,7 +52,8 @@
 [col_3]
     enable = true
     title = "Developers"
-    subtitle = "Find all the resources you need as a developer.<br><br><a href='https://docs.agreements.network/'>Read our developer docs  &rsaquo;</a><br><br><a href='mailto:contact@monax.io'>Contact us about 3rd party integrations &rsaquo;</a>"
+    subtitle = "Find all the resources you need as a developer.<br><br><a href='mailto:contact@monax.io'>Contact us about 3rd party integrations &rsaquo;</a>"
+    # <a href='https://docs.agreements.network/'>Read our developer docs  &rsaquo;</a><br><br>
 
 [col_4]
     enable = true
