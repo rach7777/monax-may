@@ -11,8 +11,16 @@ googleAnalytics = ""
 # Define the number of posts per page
 paginate = 6
 
-[menu]
+[imaging]
+# Default resample filter used for resizing. Default is Box,
+# a simple and fast averaging filter appropriate for downscaling.
+# See https://github.com/disintegration/imaging
+resampleFilter = "box"
 
+# Defatult JPEG quality setting. Default is 75.
+quality = 80
+
+[menu]
 # Main menu
 [[menu.main]]
     name = "Features"

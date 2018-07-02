@@ -15,12 +15,12 @@
 
     [[about.social_icon]]
         icon = "fa-facebook"
-        link = "https://www.facebook.com/monaxHQ/"
+        link = "https://www.facebook.com/monaxHQ"
         title = "Facebook"
 
     [[about.social_icon]]
         icon = "fa-twitter"
-        link = "https://twitter.com/monaxhq"
+        link = "https://twitter.com/monaxHQ"
         title = "Twitter"
 
     [[about.social_icon]]
@@ -30,18 +30,18 @@
 
     [[about.social_icon]]
         icon = "fa-instagram"
-        link = "https://www.instagram.com/monaxhq/"
+        link = "https://www.instagram.com/monaxHQ"
         title = "Instagram"
 
-    # [[about.social_icon]]
-    #     icon = "fa-envelope"
-    #     link = "mailto:contact@monax.io"
-    #     title = "Email"
-    #
-    # [[about.social_icon]]
-    #     icon = "fa-github"
-    #     link = "https://github.com/monax"
-    #     title = "Github"
+    [[about.social_icon]]
+        icon = "fa-envelope"
+        link = "mailto:contact@monax.io"
+        title = "Email"
+
+    [[about.social_icon]]
+        icon = "fa-github"
+        link = "https://github.com/monax"
+        title = "Github"
 
 [col_2]
     enable = true
