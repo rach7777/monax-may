@@ -1,6 +1,6 @@
 +++
 layout = "blog"
-title = "MONAX | Blog"
+title = "Monax | Blog"
 
 +++
 

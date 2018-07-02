@@ -1,6 +1,6 @@
 +++
 layout = "news"
-title = "MONAX | Company News"
+title = "Monax | Company News"
 
 +++
 

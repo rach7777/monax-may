@@ -1,7 +1,7 @@
 +++
-layout = "explainers"
-title = "MONAX | Explainers"
+layout = "learn"
+title = "Monax | Learn"
 
 +++
 
-<!-- section layout stored in /layouts/section/explainers.html -->
+<!-- section layout stored in /layouts/section/learn.html -->

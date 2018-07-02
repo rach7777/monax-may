@@ -1,6 +1,6 @@
 +++
 layout = "blank"
-title = "MONAX | Legal"
+title = "Monax | Legal"
 
 +++
 

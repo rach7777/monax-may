@@ -1,6 +1,6 @@
 +++
 layout = "screencasts"
-title = "MONAX | Screencasts"
+title = "Monax | Screencasts"
 
 +++
 

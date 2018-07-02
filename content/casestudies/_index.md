@@ -1,6 +1,6 @@
 +++
 layout = "casestudies"
-title = "MONAX | Case Studies"
+title = "Monax | Case Studies"
 
 +++
 

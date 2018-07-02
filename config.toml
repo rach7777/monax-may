@@ -14,7 +14,6 @@ paginate = 6
 [menu]
 
 # Main menu
-
 [[menu.main]]
     name = "Features"
     url  = "/features/"
@@ -90,13 +89,6 @@ paginate = 6
       Post = "Join us for industry insight and best practice advice on using legal products to streamline your business."
       Weight = 4
 
-    # [[menu.main]]
-    #   Name = "Screencasts"
-    #   parent = "resources"
-    #   URL = "/screencasts/"
-    #   Post = "Learn how Monax can help you streamline your business using our latest walkthroughs and screencasts."
-    #   Weight = 5
-
 [[menu.main]]
     name = "Company"
     url  = "/company/"
@@ -111,7 +103,6 @@ paginate = 6
     name = "Login"
     url  = "https://beta.monax.io/"
     weight = 7
-
 
 [params]
     # viewMorePostLink = "/archive/"
@@ -129,7 +120,7 @@ paginate = 6
     fontcode = 'Source Code Pro'
 
     # Enable the contact form by entering your Formspree.io email
-    email = "content@monax.io"
+    email = "contact@monax.io"
 
     # Format dates with Go's time formatting
     date_format = "2 January, 2006"
@@ -138,14 +129,9 @@ paginate = 6
     logo = "/img/logo.png"
 
     # Additional scripts - header
-    additional_header_script_urls = [
-     "",
-    ]
+    additional_header_script_urls = [""]
     # Additional scripts - footer
-    additional_footer_script_urls = [
-     "",
-    ]
-
+    additional_footer_script_urls = [""]
 
 [Permalinks]
     blog = "/blog/:year/:month/:title/"

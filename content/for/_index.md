@@ -1,6 +1,6 @@
 +++
 layout = "for"
-title = "MONAX | Monax For"
+title = "Monax | Monax For"
 
 +++
 
