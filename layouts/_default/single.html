@@ -49,6 +49,11 @@
                         <p class="text-muted text-uppercase mb-small text-right">{{ if .Params.author }}{{ i18n "authorBy" }} <a href="#">{{ .Params.author }}</a> | {{ end }}{{ .Date.Format .Site.Params.date_format }}</p>
                       {{ end }}
                       <div id="post-content" class="range-left-sm">
+                        {{ if .Params.deprecated }}
+                          <div class="deprecation-warning">
+                            <p>{{ .Site.Params.deprecation_warning_text }}</p>
+                          </div>
+                        {{ end }}
                         {{ .Content }}
                       </div>
                     </div> <!-- .post content -->

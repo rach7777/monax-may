@@ -592,6 +592,16 @@ p.lead,
     max-width: 100% !important;
 }
 
+/* ==============
+  Blog Posts - Deprecation Warning
+=============== */
+.deprecation-warning {
+    padding: 25px 30px 10px;
+    background: #f4f4f4;
+    font-style: italic;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
 
 
 
