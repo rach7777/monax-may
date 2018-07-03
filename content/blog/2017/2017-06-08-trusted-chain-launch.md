@@ -3,7 +3,7 @@
 # fill in
 date:      2017-06-08T00:00:00Z
 title:     "Announcement: TrustedChain® Launches using Hyperledger Burrow"
-author:    casey
+author: Casey Kuhlman, CEO
 excerpt:   "Monax is pleased to announce the launch of the TrustedChain® network in Italy."
 thumbnail: trustedchain.jpg
 categories:

@@ -1,5 +1,5 @@
 ---
-author: casey
+author: Casey Kuhlman, CEO
 categories:
 - banks
 comments: true

@@ -3,7 +3,7 @@
 # fill in
 date:      2018-06-19T00:00:00Z
 title:     "Supply and Demand: The Mechanics of Legal Products"
-author:    casey
+author: Casey Kuhlman, CEO
 excerpt:   "When people think about \"legal\" they think almost entirely of the provision of bespoke services. Yet the world is changing, and \"legal\" needs to keep up."
 thumbnail: vladislav-m-414275-unsplash.jpg
 categories:

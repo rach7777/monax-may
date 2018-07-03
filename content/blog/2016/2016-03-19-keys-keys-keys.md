@@ -1,5 +1,5 @@
 ---
-author: casey
+author: Casey Kuhlman, CEO
 categories:
 - platform
 comments: true

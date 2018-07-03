@@ -3,7 +3,7 @@
 # fill in
 date: 2016-10-16T00:00:00Z
 title:     "Prizes, Permissions and Ecosystem Applications"
-author:    nina
+author: Nina Kilbride, CCO
 excerpt:   "Permissions are things of value in themselves, independent of currency or token."
 thumbnail: nobel.jpg
 categories:

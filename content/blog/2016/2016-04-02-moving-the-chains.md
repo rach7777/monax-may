@@ -1,5 +1,5 @@
 ---
-author: zach
+author: Monax
 categories:
 - distributed business
 comments: true

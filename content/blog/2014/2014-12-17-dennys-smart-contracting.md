@@ -1,5 +1,5 @@
 ---
-author: tyler
+author: Dr Tyler Jackson, Chief Scientist
 categories:
 - smart contracts
 comments: true

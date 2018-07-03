@@ -1,5 +1,5 @@
 ---
-author: nina
+author: Nina Kilbride, CCO
 categories:
 -
 comments: true

@@ -1,6 +1,6 @@
 ---
 
-author: brian
+author: Monax
 categories:
 - distributed business
 comments: true

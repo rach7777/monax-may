@@ -1,5 +1,5 @@
 ---
-author: ethan
+author: Monax
 categories:
 - explainers
 comments: true

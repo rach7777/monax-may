@@ -4,7 +4,7 @@
 date:      2016-11-28T14:07:59+01:00
 deprecated: true
 title:     "Monax's First Two Product Lines: Premium Support and SDKs"
-author:    casey
+author: Casey Kuhlman, CEO
 excerpt:   "We are pleased to announce our product offerings of premium support and software development kits. Both product lines are built to empower your company to get up to speed fast building ecosystem applications."
 thumbnail: new_products.jpg
 # url:       /2016/11/28/products-products-products/

@@ -3,7 +3,7 @@
 # fill in
 date:      2018-06-05T00:00:00Z
 title:     "Skin in Game: Governance on the Agreements Network"
-author:    nina
+author: Nina Kilbride, CCO
 excerpt:   "How does the Agreement Network ensure its health? Introducing a carefully designed forward-compatible environment of an open network, trusted validator nodes, voting, skin-in-game staking and token rewards."
 thumbnail: james-wainscoat-521741-unsplash-min.jpg
 categories:
@@ -82,4 +82,3 @@ The primary mechanism for managing Agreements Network priorities over time is vo
 Get skin in the game. Find out more about the [Agreements Network](https://agreements.network).
 
 [Photo](https://unsplash.com/photos/b7MZ6iGIoSI) by [James Wainscoat](https://unsplash.com/photos/b7MZ6iGIoSI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-

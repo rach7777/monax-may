@@ -3,7 +3,7 @@
 # fill in
 date:      2018-04-27T00:00:00Z
 title:     "Monax is Pleased to Introduce the Agreements Network"
-author:    casey
+author: Casey Kuhlman, CEO
 excerpt:   "This network is a decentralized contract management system for small businesses"
 thumbnail: introducing.jpg
 categories:

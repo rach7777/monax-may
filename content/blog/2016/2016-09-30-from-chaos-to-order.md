@@ -3,7 +3,7 @@
 # fill in
 date: 2016-09-30T00:00:00Z
 title:     "From Chaos to Order -- Rebranding Eris to Monax"
-author:    casey
+author: Casey Kuhlman, CEO
 excerpt:   "We are excited to turn the company's marmot factor up to 11."
 thumbnail: rebrand.jpg
 categories:

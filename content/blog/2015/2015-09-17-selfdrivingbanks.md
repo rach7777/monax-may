@@ -1,5 +1,5 @@
 ---
-author: preston
+author: Monax
 categories:
 - legal tech
 comments: true

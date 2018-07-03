@@ -1,5 +1,5 @@
 ---
-author: andreas
+author: Monax
 categories:
 - products
 comments: true

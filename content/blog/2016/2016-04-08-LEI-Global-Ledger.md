@@ -1,5 +1,5 @@
 ---
-author: jan
+author: Jan Scheufen, CPO
 categories:
 - business, finance, regulation
 comments: true

@@ -1,5 +1,5 @@
 ---
-author: zach
+author: Monax
 categories:
 - philosophy
 comments: true
