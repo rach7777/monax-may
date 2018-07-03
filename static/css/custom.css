@@ -123,14 +123,14 @@ h5 {
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 0;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.4;
 }
 h6 {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.4;
 }
 body, p {
@@ -196,7 +196,7 @@ p.lead,
 
 /* MAIN CTA FORM */
 .form-main-cta {
-    font-weight: 200;
+    font-weight: 300;
 }
 .section-cta .form-main-cta p {
     margin: 0;
@@ -220,7 +220,7 @@ p.lead,
     pointer-events: none;
     box-sizing: border-box;
     font-size: 17px;
-    font-weight: 200;
+    font-weight: 300;
     color: rgba(183, 183, 183, 0.6);
 }
 .form-main-cta select {
@@ -1861,7 +1861,7 @@ transform: scale(1.05) !important;
   background-color: #AEB6BF;
 }
 .timeline-date.active span {
-  font-weight: 700;
+  font-weight: 600;
 }
 .timeline-date.active span::before {
     /* font-size: 13px; */
