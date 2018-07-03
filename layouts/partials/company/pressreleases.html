@@ -38,9 +38,9 @@
                 {{ $postImg := (printf "/casestudies/images/%s" .Page.Params.thumbnail) }}
                 {{ $.Scratch.Set "postImg" $postImg }}
 
-              {{ else if eq .Page.Type ".learn" }}
-                <!-- {{ printf ".learn/images/%s" .Page.Params.thumbnail }} -->
-                {{ $postImg := (printf ".learn/images/%s" .Page.Params.thumbnail) }}
+              {{ else if eq .Page.Type "learn" }}
+                <!-- {{ printf "/learn/images/%s" .Page.Params.thumbnail }} -->
+                {{ $postImg := (printf "/learn/images/%s" .Page.Params.thumbnail) }}
                 {{ $.Scratch.Set "postImg" $postImg }}
 
               {{ else if eq .Page.Type "webinars" }}

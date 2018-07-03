@@ -42,7 +42,7 @@
             <div class="container">
                 <div class="row padding-top-lg padding-bottom-xl">
 
-                    <div class="col-md-9" id=".learn-post">
+                    <div class="col-md-9" id="learn-post">
                       {{ if gt .Date.Year 2000 }}
                         <p class="text-muted text-uppercase mb-small text-right">{{ if .Params.author }}{{ i18n "authorBy" }} <a href="#">{{ .Params.author }}</a> | {{ end }}{{ .Date.Format .Site.Params.date_format }}</p>
                       {{ end }}
