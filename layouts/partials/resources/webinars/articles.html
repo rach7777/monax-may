@@ -32,16 +32,20 @@
                   <div class="img-container background-dark" style='background:url({{ .Scratch.Get "postImg" }}) center center no-repeat; background-size: cover;'>
 
                     {{ $t := (time .Params.event_date) }}
+                    <!-- If it's in the past and has a replay -->
                     {{ if not ($t.After now) }}
-                      <div class="content-container content-cicle background-color green pin-top-right">
-                        <div class="circle-top">
-                          Watch
+                      {{ if .Params.replay_youtube_id }}
+                        <div class="content-container content-cicle background-color green pin-top-right">
+                          <div class="circle-top">
+                            Watch
+                          </div>
+                          <div class="circle-bottom">
+                            Replay
+                          </div>
                         </div>
-                        <div class="circle-bottom">
-                          Replay
-                        </div>
-                      </div>
+                      {{ end }}
                     {{ else }}
+                    <!-- Otherwise show when it's coming -->
                       <div class="content-container content-cicle background-color purple pin-top-right">
                         <div class="circle-top">
                           {{ dateFormat "Jan 2" $t }}
