@@ -46,7 +46,7 @@
 
                     <div class="col-md-9" id="blog-post">
                       {{ if gt .Date.Year 2000 }}
-                        <p class="text-muted text-uppercase mb-small text-right">{{ if .Params.author }}{{ i18n "authorBy" }} <a href="#">{{ .Params.author }}</a> | {{ end }}{{ .Date.Format .Site.Params.date_format }}</p>
+                        <p class="post-meta text-right">{{ if .Params.author }}<i class="fa fa-user-o"></i> {{ .Params.author }}{{ end }}<i class="fa fa-calendar"></i> {{ .Date.Format .Site.Params.date_format }}</p>
                       {{ end }}
                       <div id="post-content" class="range-left-sm">
                         {{ .Content }}

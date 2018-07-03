@@ -417,6 +417,15 @@ p.lead,
     margin: 0 0 -10px 0;
     color: #b7b7b7;
 }
+.post-meta {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.post-meta i {
+    padding: 0 5px 0 25px;
+}
 #post-content p,
 #post-content li {
     font-size: 19px;
@@ -2120,8 +2129,11 @@ transform: scale(1.05) !important;
     border-top: 1px solid #ddd;
     padding-top: 8px;
 }
+.content-card .meta span {
+    margin-right: 5px;
+}
 .content-card .meta p {
-    font-size: 14px;
+    font-size: 13px;
 }
 .content-card-shadow-sm {
     box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
