@@ -66,13 +66,13 @@
 
 # [SINLE EXPLAINER POSTS]
 
-[explainers]
+[learn]
 
-  [explainers.top]
+  [learn.top]
     hero_signup = true
     background_element = "/img/assets/background-elements/abstract-01.jpg"
 
-  [explainers.cta] # global
+  [learn.cta] # global
     enable = true
 
 
