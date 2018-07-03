@@ -16,7 +16,8 @@ tags:
 - streaming music
 thumbnail: streaming_music.jpg
 title: 'The Smart Contract System MVP Series: Streaming Music'
-url: /2016/01/01/mvp-streaming-music/
+# url: /blog/2016/01/01/mvp-streaming-music/
+slug: mvp-streaming-music
 ---
 
 [{{< image_blog "streaming_music.jpg" >}}](https://www.flickr.com/photos/bangdoll/6475249341/)

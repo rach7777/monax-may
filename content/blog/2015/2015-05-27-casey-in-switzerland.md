@@ -12,7 +12,8 @@ tags:
 - blockchains
 thumbnail: screenshot-caseyslecture.png
 title: Casey Goes to Switzerland to Talk Eris
-url: /2015/05/27/casey-in-switzerland/
+# url: /blog/2015/05/27/casey-in-switzerland/
+slug: casey-in-switzerland
 ---
 
 
@@ -31,4 +32,3 @@ Enjoy!
 <div class="video-wrap">
     <iframe src="//www.youtube.com/embed/XB0pHaghPIg?rel=0;modestbranding=1;autohide=1;showinfo=0;controls=1;color=white;theme=dark;" allowfullscreen></iframe>
 </div>
-

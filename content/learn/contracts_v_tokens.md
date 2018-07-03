@@ -3,6 +3,7 @@
 layout: single
 title:      "Smart Contracts v. Tokenized Approaches"
 excerpt:    "When are smart contracts better than tokenized approaches to blockchaining?"
+# thumbnail: example-image.jpg
 categories:
   - learn
 tags:

@@ -15,7 +15,8 @@ tags:
 - thelonious
 - decerver
 title: Blockchain your business in just 7 steps
-url: /2014/12/17/blockchain-your-business/
+# url: /blog/2014/12/17/blockchain-your-business/
+slug: blockchain-your-business
 ---
 
 

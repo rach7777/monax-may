@@ -12,7 +12,7 @@ tags:
 - blockchains
 deprecated: true
 title: On Blockchains
-url: /2015/04/30/on-blockchains/
+# url: /blog/2015/04/30/on-blockchains/
 ---
 
 Much digital ink has been spilled over the past couple weeks concerning the relevance, necessity, use cases, and definition of that most remarkable piece of technology: the blockchain. Much of it was perhaps provoked by the [cuddly marmoteering of our very own Marmot Byrne](https://twitter.com/prestonjbyrne/).

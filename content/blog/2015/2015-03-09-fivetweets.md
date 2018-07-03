@@ -14,7 +14,8 @@ tags:
 - decerver
 thumbnail: null
 title: Blockchains (& smart contracts) without cryptocurrency, in five tweets.
-url: /2015/03/09/fivetweets/
+# url: /blog/2015/03/09/fivetweets/
+slug: fivetweets
 ---
 
 

@@ -13,10 +13,11 @@ tags:
 - awesome
 thumbnail: team-db.jpeg
 title: David is (Officially) a Marmot
-url: /2016/06/06/david-is-a-marmot/
+# url: /blog/2016/06/06/david-is-a-marmot/
+slug: david-is-a-marmot
 ---
 
-I'm very pleased to announce that David Braun has joined Monax as a software engineer on our applications team. 
+I'm very pleased to announce that David Braun has joined Monax as a software engineer on our applications team.
 
 Dave has actually been a marmot for quite a long little while now. Although only recently did he move into being a full-time employed marmot.
 

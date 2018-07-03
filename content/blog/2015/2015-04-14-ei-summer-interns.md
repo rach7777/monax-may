@@ -12,7 +12,8 @@ tags:
 - decerver
 thumbnail: doug.png
 title: Eris Industries 2015 Summer Internships
-url: /2015/04/14/ei-summer-interns/
+# url: /blog/2015/04/14/ei-summer-interns/
+slug: ei-summer-interns
 ---
 
 

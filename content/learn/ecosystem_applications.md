@@ -3,6 +3,7 @@
 layout: single
 title:      "Ecosystem Applications"
 excerpt:    "What are Ecosystem Applications and will these impact how we think of building software?"
+# thumbnail: example-image.jpg
 categories:
   - learn
 tags:

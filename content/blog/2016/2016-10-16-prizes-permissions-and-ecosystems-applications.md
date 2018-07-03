@@ -8,7 +8,7 @@ excerpt:   "Permissions are things of value in themselves, independent of curren
 thumbnail: nobel.jpg
 categories:
   - company
-url: /2016/10/16/prizes-permissions-and-ecosystem-applications/
+# url: /blog/2016/10/16/prizes-permissions-and-ecosystem-applications/
 tags:
   - monax
   - nobel

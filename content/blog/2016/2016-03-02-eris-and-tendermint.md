@@ -16,7 +16,8 @@ tags:
 - web services
 - blockchain
 title: 'On Eris and Tendermint: Application and Consensus'
-url: /2016/03/02/eris-and-tendermint/
+# url: /blog/2016/03/02/eris-and-tendermint/
+slug: eris-and-tendermint
 ---
 
 

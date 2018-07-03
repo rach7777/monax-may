@@ -13,7 +13,7 @@ tags:
 - awesome
 thumbnail: team-jhs.jpeg
 title: Jan is a Marmot
-url: /2016/01/20/jan-is-a-marmot/
+# url: /blog/2016/01/20/jan-is-a-marmot/
 ---
 
 It is my great pleasure to announce that Jan Scheufen has joined Monax full time as our Head of Product.

@@ -17,7 +17,8 @@ tags:
 - smart contracts
 thumbnail: blockchain-quadrant.png
 title: How I (currently) Explain The State of Blockchains To Executives and Researchers
-url: /2015/08/10/how-i-current-explain-blockchains/
+# url: /blog/2015/08/10/how-i-current-explain-blockchains/
+slug: how-i-current-explain-blockchains
 ---
 
 Seems everyone these days is getting into the game of providing frameworks for thinking about blockchains and trying to convince others that their definitions are the correct definitions. Into that marketplace of metaphors, I provide this entry.

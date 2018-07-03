@@ -3,6 +3,7 @@
 layout: single
 title:      "Smart Contracts"
 excerpt:    "What are Smart Contracts and why are these distributed logic gateways so cool?"
+# thumbnail: example-image.jpg
 categories:
   - learn
 tags:

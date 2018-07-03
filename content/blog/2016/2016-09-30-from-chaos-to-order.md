@@ -8,7 +8,7 @@ excerpt:   "We are excited to turn the company's marmot factor up to 11."
 thumbnail: rebrand.jpg
 categories:
   - company
-url: /2016/09/30/from-chaos-to-order/
+# url: /blog/2016/09/30/from-chaos-to-order/
 tags:
   - monax
   - eris

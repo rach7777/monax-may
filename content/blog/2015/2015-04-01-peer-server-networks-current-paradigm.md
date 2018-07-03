@@ -16,7 +16,8 @@ tags:
 - peer server networks
 thumbnail: relay-nodes.png
 title: How We Set Up Peer Server Networks Using Tutum and Docker
-url: /2015/04/01/peer-server-networks-current-paradigm/
+# url: /blog/2015/04/01/peer-server-networks-current-paradigm/
+slug: peer-server-networks-current-paradigm
 ---
 
 Peer server networks are one of the most important aspects of running any distributed system -- of which blockchains can easily be classified. For developers seeking to build application specific blockchains, they will obviously have the responsibility of establishing the peer server networks which their application specific blockchains hook into. Whether developers are also using other blockchains or not, alongside an application specific blockchain the same principles will apply.

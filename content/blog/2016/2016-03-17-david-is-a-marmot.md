@@ -14,7 +14,7 @@ tags:
 - awesome
 thumbnail: team-djg.jpeg
 title: David is a Marmot
-url: /2016/03/17/david-is-a-marmot/
+# url: /blog/2016/03/17/david-is-a-marmot/
 ---
 
 

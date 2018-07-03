@@ -15,7 +15,8 @@ tags:
 - ecosystem applications
 thumbnail: ecosystem_applications.jpg
 title: What are ecosystem applications?
-url: /2016/06/05/ecosystem-applications/
+# url: /blog/2016/06/05/ecosystem-applications/
+slug: ecosystem-applications
 ---
 
 

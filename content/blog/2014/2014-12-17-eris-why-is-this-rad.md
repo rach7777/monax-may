@@ -16,7 +16,8 @@ tags:
 - thelonious
 - decerver
 title: Eris Industries -- Why Do I Do What I Do?
-url: /2014/12/17/eris-why-is-this-rad/
+# url: /blog/2014/12/17/eris-why-is-this-rad/
+slug: eris-why-is-this-rad
 ---
 
 

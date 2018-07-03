@@ -13,7 +13,7 @@ tags:
 - awesome
 thumbnail: team-bb.jpeg
 title: Ben is a Marmot
-url: /2016/02/03/ben-is-a-marmot/
+# url: /blog/2016/02/03/ben-is-a-marmot/
 ---
 
 It is my great pleasure to announce that Ben Bollen has joined Monax Industries as a developer on our platform team. Originally from Belguim, Ben will be working from our soon-to-be-opened office in Berlin.

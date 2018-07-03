@@ -14,7 +14,7 @@ tags:
 - engineering
 thumbnail: legal-engineering.jpg
 title: Blockchain Legal Engineering
-url: /2016/05/02/blockchain-legal-engineering/
+# url: /blog/2016/05/02/blockchain-legal-engineering/
 ---
 
 {{< image_blog "legal-engineering.jpg" >}}

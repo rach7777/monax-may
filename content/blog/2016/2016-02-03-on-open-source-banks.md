@@ -14,7 +14,8 @@ tags:
 - banks
 thumbnail: open_source.jpg
 title: What Bankers Could Learn From the Open Source Community
-url: /2016/02/03/on-open-source-banks/
+# url: /blog/2016/02/03/on-open-source-banks/
+slug: on-open-source-banks
 ---
 
 

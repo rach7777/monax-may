@@ -13,7 +13,8 @@ tags:
 - decerver
 thumbnail: doug.jpg
 title: 'Bitcoin vs Blockchain: a few thoughts'
-url: /2015/03/14/btcvblkch/
+# url: /blog/2015/03/14/btcvblkch/
+slug: btcvblkch
 ---
 
 The latest hot meme in Bitcoin: shooting down the "Blockchain not Bitcoin" concept by way of little analogies. See, e.g., this particular example from a personal hero of mine, Andreas Antonopoulos:
@@ -56,5 +57,3 @@ But equally, it’s also cool to be evangelistic about using blockchain data str
 People should be free to use this technology for **whatever they damn well please**.
 
 Hence why our platform exists, and is open-source. Blaze your own trail in crypto valley: [**roll your own personally-tailored blockchain today**](/docs/).
-
-

@@ -13,7 +13,7 @@ tags:
 - awesome
 thumbnail: team-jb.jpeg
 title: Jason is a Marmot
-url: /2016/05/12/jason-is-a-marmot/
+# url: /blog/2016/05/12/jason-is-a-marmot/
 ---
 
 I'm very pleased to announce that Jason Banks has joined Monax as a legal engineer on our library team. He started on Monday and will be working out of our Berlin office.

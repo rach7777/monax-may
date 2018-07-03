@@ -17,7 +17,8 @@ tags:
 - decerver
 thumbnail: perms-1-thumb.png
 title: 'Permissions Part I: Oh no he didn''t!'
-url: /2015/03/15/permissions-1/
+# url: /blog/2015/03/15/permissions-1/
+slug: permissions-1
 ---
 
 This tutorial has been deprecated. Please see our [current tutorials](/docs/).

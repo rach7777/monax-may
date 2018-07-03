@@ -13,7 +13,8 @@ tags:
 - '#marmotden'
 - community
 title: The Marmot Den - Our Community Slack - is Open For Business!
-url: /2016/08/08/the-marmot-den-open-for-business/
+# url: /blog/2016/08/08/the-marmot-den-open-for-business/
+slug: the-marmot-den-open-for-business
 ---
 
 Today we're excited to announce the launch of our new [Slack Community - The Marmot Den](https://slack.monax.io), allowing anyone to easily sign-up and access various discussion/support channels. This decision comes after the realization that the Slack experience we were offering to our users was lackluster. The migration is about providing a harmonized user experience.

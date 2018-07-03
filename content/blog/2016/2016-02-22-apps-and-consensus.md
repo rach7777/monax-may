@@ -16,7 +16,8 @@ tags:
 - amazon
 thumbnail: null
 title: On Applications and Consensus
-url: /2016/02/22/apps-and-consensus/
+# url: /blog/2016/02/22/apps-and-consensus/
+slug: apps-and-consensus
 ---
 
 Bitcoin appears to have introduced something new to the world. The question is, what? The term "blockchain" will be entirely useless to our discussion, so let's dispense with it, for now. Instead, let's treat Bitcoin like any other internet service. It has an application state; in this case, a currency. It has a mechanism to maintain this application state; in this case, a digital consensus engine. What is unique about bitcoin is the relationship between its application state and its consensus engine.

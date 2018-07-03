@@ -20,7 +20,8 @@ tags:
 - blockchain
 thumbnail: null
 title: 'Monax CLI Tool Walkabout: Services'
-url: /2015/08/05/eris-services/
+# url: /blog/2015/08/05/eris-services/
+slug: eris-services
 ---
 
 
@@ -100,4 +101,3 @@ docker rm -v -f $(docker ps -a -q)
 but be careful with this command.
 
 Note to OSX users - save yourself a lot of headache by working on a remote box or use Kitematic.
-

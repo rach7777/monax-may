@@ -14,7 +14,8 @@ tags:
 - erisserver
 title: Eris Industries Statement on the Reintroduction of the UK Investigatory Powers
   Bill
-url: /2015/05/29/ei-comms-data-bill/
+# url: /blog/2015/05/29/ei-comms-data-bill/
+slug: ei-comms-data-bill
 ---
 
 

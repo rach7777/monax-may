@@ -13,7 +13,8 @@ tags:
 - blockchains
 thumbnail: licensing.jpg
 title: 'On Licensing: Why Monax is GPLv3'
-url: /2015/08/30/on-licensing/
+# url: /blog/2015/08/30/on-licensing/
+slug: on-licensing
 ---
 
 

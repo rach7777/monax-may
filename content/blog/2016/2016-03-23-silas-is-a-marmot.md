@@ -14,7 +14,7 @@ tags:
 - awesome
 thumbnail: team-sd.jpeg
 title: Silas is a Marmot
-url: /2016/03/23/silas-is-a-marmot/
+# url: /blog/2016/03/23/silas-is-a-marmot/
 ---
 
 

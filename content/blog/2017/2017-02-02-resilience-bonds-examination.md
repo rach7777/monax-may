@@ -13,7 +13,7 @@ tags:
 thumbnail: resilience_bonds.jpg
 excerpt: "In this post Casey does a deep dive into an interesting use case for ecosystem applications, resilience bonds."
 title: "Use Case Deep Dive: Insurance Linked Securities"
-url: /2017/02/02/use-case-deep-dive-insurance-linked-securities/
+# url: /blog/2017/02/02/use-case-deep-dive-insurance-linked-securities/
 ---
 
 [{{< image_blog "resilience_bonds.jpg" >}}](https://www.flickr.com/photos/graciouswarrior/3679403408)

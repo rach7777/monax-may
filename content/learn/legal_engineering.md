@@ -3,6 +3,7 @@
 layout: single
 title:      "Legal Engineering"
 excerpt:    "Legal engineering is the practice of writing smart contracts that automate legally-enforceable rights and obligations."
+# thumbnail: example-image.jpg
 categories:
   - learn
 tags:

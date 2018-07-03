@@ -18,7 +18,8 @@ tags:
 - eris
 thumbnail: 7866197978_faa9ac1ee0_z.jpg
 title: On Teamwork
-url: /2014/12/31/on-teamwork/
+# url: /blog/2014/12/31/on-teamwork/
+slug: on-teamwork
 ---
 
 

@@ -14,7 +14,8 @@ tags:
 - idiocy
 thumbnail: banks-blockchains.jpg
 title: Blockchains and Banks, or Why Hearn's Post Isn't a PR Stunt
-url: /2016/01/17/blockchains-and-banks/
+# url: /blog/2016/01/17/blockchains-and-banks/
+slug: blockchains-and-banks
 ---
 
 **This is a subjective piece full of selection bias and my own experiences. Take it for what it is worth: one human's experiences and opinions. It is no more, nor less, than that.** It's also quite inside baseball for many who are not entrenched in the blockchains space. If you find yourself reading this and do not know what I'm talking about, then this post probably wasn't written with you in mind.

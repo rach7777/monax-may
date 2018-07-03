@@ -14,7 +14,8 @@ tags:
 - blockchain
 thumbnail: null
 title: 'Blockchains For Science: Aligning Research Incentives'
-url: /2016/03/14/blockchains-and-science/
+# url: /blog/2016/03/14/blockchains-and-science/
+slug: blockchains-and-science
 ---
 
 
@@ -22,7 +23,7 @@ url: /2016/03/14/blockchains-and-science/
 Author's Note: This post originally appeared as [How Blockchains Can Further Public Science](https://bitcoinmagazine.com/articles/how-blockchains-can-further-public-science-1457972964) in Bitcoin Magazine. It is maintained here for archival purposes. Eventually, it'll all be on IPFS. [Part 2 is now available](/2016/03/15/chains-and-science-how-to/)
 
 
-The thing that had me most excited about Bitcoin back in 2013 was its potential to re-align the incentives in academia and re-define how science and research is conducted. 
+The thing that had me most excited about Bitcoin back in 2013 was its potential to re-align the incentives in academia and re-define how science and research is conducted.
 
 At the time, I was spending my days training rats in [Skinner boxes](https://en.wikipedia.org/wiki/Operant_conditioning_chamber) to hunt crickets, listening to every possible Bitcoin explainer I could get my hands on. It took a good two years, and now the problem set is much clearer. This post a think-piece on how academia might be improved with blockchain technology.
 
@@ -34,7 +35,7 @@ Alice is a researcher in cell biology. One night she dreams up an idea for a pot
 
 Bob is also a cell biology researcher. Independently of Alice – but after reading much of the same literature – Bob dreams up a similar "groundbreaking" experiment. After many tries, Bob also fails to get the expected result. Bob moves on.
 
-What's the problem here? Bob duplicated Alice's efforts. Why? Alice's efforts were not accessible to Bob; instead, they were siloed away under "things-that-don't-work" on her hard drive. 
+What's the problem here? Bob duplicated Alice's efforts. Why? Alice's efforts were not accessible to Bob; instead, they were siloed away under "things-that-don't-work" on her hard drive.
 
 Both Alice and Bob have Internet. From a technical point of view, it should be really easy for Bob to access all the experiments Alice tried. But it isn't easy. Why?
 
@@ -70,7 +71,7 @@ Perhaps the budding school-aged scientist of the future will spend his days trai
 
 Enough talk. About a week ago, I put together the [now deprecated Marmot Checker](https://github.com/zramsay/marmot), which is another piece of the puzzle in terms of automating knowledge generation throughput. Briefly, an image is uploaded, processed, and sent to the Google Cloud Vision API to get descriptions of the image; these descriptions are checked against a user-defined list of words, and if there is a match, the image is added to the toadserver. Although the implementation is quite is simple, a few hundred lines more of code and you'd have, say, a smart contract that sends the submitter of matched content some amount of tokens as a function of the match score and/or the users' reputation.
 
-On the whole, this is part a growing set of tools for the scientific community. Already we're seeing more and more startups building tools to streamline the collaboration workflow process between research laboratories.   That won't cut it so long as the data is siloed within research labs/groups, journals are pay-per-view for the public and the average citizen hasn't the means or method to contribute meaningfully to global shared knowledge. After all, shouldn't [citizen science](https://en.wikipedia.org/wiki/Citizen_science) really be called science proper? With blockchains I think it can be.
+On the whole, this is part a growing set of tools for the scientific community. Already we're seeing more and more startups building tools to streamline the collaboration workflow process between research laboratories.  That won't cut it so long as the data is siloed within research labs/groups, journals are pay-per-view for the public and the average citizen hasn't the means or method to contribute meaningfully to global shared knowledge. After all, shouldn't [citizen science](https://en.wikipedia.org/wiki/Citizen_science) really be called science proper? With blockchains I think it can be.
 
 The fight for open access to knowledge has been an ongoing battle – a battle that ultimately took [Aaron Swartz's life](http://bigthink.com/neurobonkers/the-robin-hood-of-science-the-missing-chapter) while simultaneously stalling the progress of humanity and lining the pockets of shareholders. All this to protect copyright yet in clear violation of the [Universal Declaration of Human Rights Article 27](http://www.un.org/en/universal-declaration-human-rights/) which states that "everyone has the right freely to ... share in scientific advancement and its benefits."
 

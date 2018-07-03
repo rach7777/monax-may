@@ -15,7 +15,8 @@ tags:
 - smart contracts
 thumbnail: hargeisa-1.jpg
 title: Why The 'Crypto Will Save Africa' Line Irks Me
-url: /2015/03/17/btc-and-smbs/
+# url: /blog/2015/03/17/btc-and-smbs/
+slug: btc-and-smbs
 ---
 
 #### Bitcoin and Emerging Markets

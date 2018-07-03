@@ -584,6 +584,13 @@ p.lead,
     z-index: 99 !important;
 }
 
+/* ==============
+  Blog Posts - Lucid Chart
+=============== */
+.lucidchart-zoom img,
+#post-content img {
+    max-width: 100% !important;
+}
 
 
 

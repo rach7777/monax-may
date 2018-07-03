@@ -142,8 +142,8 @@ quality = 80
     additional_footer_script_urls = [""]
 
 [Permalinks]
-    blog = "/blog/:year/:month/:title/"
-    casestudies = "/casestudies/:title/"
-    learn = "/learn/:title/"
-    screencasts = "/screencasts/:title/"
-    webinars = "/webinars/:year/:month/:title/"
+    blog = "/blog/:year/:month/:day/:slug/"
+    casestudies = "/casestudies/:slug/"
+    learn = "/learn/:filename/"
+    screencasts = "/screencasts/:slug/"
+    webinars = "/webinars/:year/:month/:slug/"

@@ -16,7 +16,8 @@ tags:
 - smart contracts
 thumbnail: saas-structure.png
 title: On Increasing Verifiability of Data For Small Businesses
-url: /2015/01/08/on-increasing-verifiability/
+# url: /blog/2015/01/08/on-increasing-verifiability/
+slug: on-increasing-verifiability
 ---
 
 The other night, a friend posed the following:

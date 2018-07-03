@@ -14,7 +14,8 @@ tags:
 - thelonious
 - decerver
 title: Decerver and Thelonious from a DApp-maker Perspective
-url: /2014/12/20/dapp-makers-ahoy/
+# url: /blog/2014/12/20/dapp-makers-ahoy/
+slug: dapp-makers-ahoy
 ---
 
 

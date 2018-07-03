@@ -14,7 +14,8 @@ tags:
 - thelonious
 - decerver
 title: 'Smart contracts: a brief introduction for the financial services industry'
-url: /2014/12/17/smart-v-legal/
+# url: /blog/2014/12/17/smart-v-legal/
+slug: smart-v-legal
 ---
 
 

@@ -14,7 +14,7 @@ tags:
 - awesome
 thumbnail: team-zr.jpeg
 title: Zach is a Marmot
-url: /2016/01/05/zach-is-a-marmot/
+# url: /blog/2016/01/05/zach-is-a-marmot/
 ---
 
 

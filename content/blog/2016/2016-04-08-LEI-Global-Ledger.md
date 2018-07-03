@@ -18,7 +18,8 @@ tags:
 - RDM
 - MDM
 title: Legal Entity Global Ledger - How to liberate public data (with chains)
-url: /2016/04/08/lei-global-ledger/
+# url: /blog/2016/04/08/lei-global-ledger/
+slug: lei-global-ledger
 ---
 
 
@@ -202,5 +203,3 @@ We are going to collect requests by interested parties and intend to make the `L
 The smart contracts controlling the LEI lifecycle and workflow can be used as the basis to implement similar data repositories. They are being made available to subscribers of the [*Monax Smart Contracts SDKs*](/library).
 
 <span style="font-size: smaller;">Disclaimer: Diagram graphics by [Timothy Morgan](https://www.flickr.com/photos/timothymorgan/sets/1615269) redistributed under [CC License](https://creativecommons.org/licenses/by/2.0/)</span>
-
-

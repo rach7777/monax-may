@@ -12,7 +12,8 @@ tags:
 - eris
 - commercial paper
 title: 'Monax Commercial Paper Bundles: Toolkit for Financial Engineering'
-url: /2016/03/31/commercial-paper-intro/
+# url: /blog/2016/03/31/commercial-paper-intro/
+slug: commercial-paper-intro
 ---
 
 #### Monax Commercial Paper Bundles: Toolkit for Financial Engineering

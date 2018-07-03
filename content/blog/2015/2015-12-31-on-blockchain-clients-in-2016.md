@@ -13,7 +13,8 @@ tags:
 - modularity
 thumbnail: blockchain_clients_2016.jpg
 title: On 2016 Blockchain Clients
-url: /2015/12/31/on-blockchain-clients-in-2016/
+# url: /blog/2015/12/31/on-blockchain-clients-in-2016/
+slug: on-blockchain-clients-in-2016
 ---
 
 

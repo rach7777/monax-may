@@ -16,7 +16,8 @@ tags:
 thumbnail: scallthethings.jpg
 title: 'Smart securitisation, or: why it''s time to stop talking tokens and start
   talking smart contracts'
-url: /2015/04/28/smart-securitisation/
+# url: /blog/2015/04/28/smart-securitisation/
+slug: smart-securitisation
 ---
 
 

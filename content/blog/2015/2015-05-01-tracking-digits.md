@@ -16,7 +16,8 @@ tags:
 - smart contract systems
 thumbnail: racer.jpg
 title: 'Tracking Digits: How to Design Your Smart Contract Tracking System'
-url: /2015/05/01/tracking-digits/
+# url: /blog/2015/05/01/tracking-digits/
+slug: tracking-digits
 ---
 
 

@@ -14,7 +14,8 @@ tags:
 - thelonious
 thumbnail: genConfig.png
 title: How to Roll Your Own (Thelonious) Chain
-url: /2015/04/25/make-thelonious-chain/
+# url: /blog/2015/04/25/make-thelonious-chain/
+slug: make-thelonious-chain
 ---
 
 We have been updating our messaging to [a simple three step process](/docs/) for getting up to speed with our stack:

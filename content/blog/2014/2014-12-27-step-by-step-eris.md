@@ -15,7 +15,8 @@ tags:
 - decerver
 thumbnail: Eris-structural-visual.png
 title: 'From Blockchains to Eris: a step-by-step guide'
-url: /2014/12/27/step-by-step-eris/
+# url: /blog/2014/12/27/step-by-step-eris/
+slug: step-by-step-eris
 ---
 
 

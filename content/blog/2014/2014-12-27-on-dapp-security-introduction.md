@@ -14,7 +14,8 @@ tags:
 - security
 thumbnail: 23390123_b6caaefc16_z.jpg
 title: An Introduction to Distributed Application Security
-url: /2014/12/27/on-dapp-security-introduction/
+# url: /blog/2014/12/27/on-dapp-security-introduction/
+slug: on-dapp-security-introduction
 ---
 
 

@@ -14,7 +14,8 @@ tags:
 - blockchain
 thumbnail: crystal-ball.jpg
 title: Fact Patterns, Predictions and Building Decentralized Organizations
-url: /2016/06/18/fact-patterns-DAO-legal-engineering/
+# url: /blog/2016/06/18/fact-patterns-DAO-legal-engineering/
+slug: fact-patterns-DAO-legal-engineering
 ---
 
 {{< image_blog "crystal-ball.jpg" >}}

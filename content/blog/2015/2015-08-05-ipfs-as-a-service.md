@@ -20,7 +20,8 @@ tags:
 - eris
 thumbnail: ipfs-logo-black.png
 title: 'Eris CLI Services Walkabout: IPFS'
-url: /2015/08/05/ipfs-as-a-service/
+# url: /blog/2015/08/05/ipfs-as-a-service/
+slug: ipfs-as-a-service
 ---
 
 
@@ -105,5 +106,3 @@ mintdump restore [new_chain_name] --ipfs="fileHash"
 ```
 
 where `fileHash` is the output from `dump`.
-
-
