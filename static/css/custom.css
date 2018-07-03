@@ -509,6 +509,19 @@ p.lead,
     margin-left: 0;
   }
 }
+#post-content table {
+    border: 5px solid #eeeeee;
+}
+#post-content table thead {
+    background: #f7f7f7;
+}
+#post-content table td,
+#post-content table th {
+    padding: 10px 15px;
+}
+#post-content table tbody tr:nth-child(even) {
+    background: #f7f7f7;
+}
 /* CATEGORIES & TAGS */
 .panel.sidebar-menu h5 {
   margin-top: 0;
@@ -602,7 +615,6 @@ p.lead,
     margin-bottom: 30px;
     border-radius: 5px;
 }
-
 
 
 /* ==============
