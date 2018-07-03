@@ -26,7 +26,7 @@ slug: eris-services
 
 
 
-##Services as a Service
+## Services as a Service
 
 Services are what you, as a developer, stitch together to build an application. They are the glue that holds everything together, run in docker containers, and can be built on top of other services.
 
@@ -45,7 +45,7 @@ Perhaps Alice operates an army of delivery drones in the warehouse next door. Sh
 
 That's a neat example. What's your service?
 
-##Getting Started
+## Getting Started
 [Install Eris CLI](https://github.com/monax/monax/tree/develop#install-eris)
 
 Read the [README](https://github.com/monax/monax/tree/develop#services)

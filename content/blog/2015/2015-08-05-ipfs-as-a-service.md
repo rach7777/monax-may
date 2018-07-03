@@ -30,7 +30,7 @@ Part 1 explains `eris files`; the command for working with IPFS.
 
 Part 2 highlights additional IPFS integrations in Monax Industries' Eris stack.
 
-##Part 1: eris files
+## Part 1: eris files
 
 Hello [IPFS](https://ipfs.io/)
 
@@ -78,9 +78,9 @@ eris files ls [objectHash]
 
 There you have it; `eris files` in five commands.
 
-##Other IPFS integrations in the Monax stack
+## Other IPFS integrations in the Monax stack
 
-###import/export service definition files from/to IPFS
+### import/export service definition files from/to IPFS
 
 ```bash
 eris services import/export
@@ -88,7 +88,7 @@ eris services import/export
 
 This is useful for sharing custom service definition files.
 
-###mintdump
+### mintdump
 
 The [mint client](https://github.com/monax/mint-client) is used for managing eris:db chains.
 Dump the chain state to IPFS
