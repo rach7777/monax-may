@@ -69,6 +69,7 @@
                               <form action="{{ .form_action }}" id="single-webinar-signup" class="form">
                                 {{ with .source }}
                                   <input type="text" name="source" value="{{ . }}" class="hidden">
+                                  <input type="text" name="webinar" value="{{ .Permalink }}" class="hidden">
                                 {{ end }}
                                 {{ with .webinar_signup }}
                                   <input type="text" name="webinar_signup" value="{{ . }}" class="hidden">

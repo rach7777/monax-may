@@ -128,13 +128,13 @@
     show_upcoming = false
 
     [webinar.form]
-      source = "monax.io" # required for Segment to process
+      source = "home webinar signup" # required for Segment to process
       webinar_signup = "true" # required for Segment to process
       email = true
       fname = true
       lname = true
       company_name = false
-      form_action = "https://analytics.monax.io/mailinglist"
+      form_action = "https://analytics.monax.io/monaxioregistry"
       submit_text = "Get notified"
 
 
