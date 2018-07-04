@@ -2,8 +2,11 @@
     enable = true
     title = "Featured In:"
     logo_1 = "/img/press-logos/coindesk-logo-white.png"
+    logo_1_url = "https://www.coindesk.com/"
     logo_2 = "/img/press-logos/digital-journal-logo-white.png"
+    logo_2_url = "http://www.digitaljournal.com/"
     logo_3 = "/img/press-logos/wall-street-journal-logo-white.png"
+    logo_3_url = "https://www.wsj.com/europe"
 
 [cta]
     title = "Find your first-class agreement now"
