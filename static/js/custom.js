@@ -179,11 +179,12 @@ $(document).ready(function() {
           request_demo_email: email,
           location: "hero-signup-form"
         };
-        console.log("Data submitted to intercom:");
+        console.log("Data submitted to intercom with trackEvent request-demo:");
         console.log(metadata);
         $('#hero-signup-submit').addClass('disabled');
         Intercom('trackEvent', 'request-demo', metadata);
-        Intercom('showNewMessage', "I'd like a demo of the Monax Portal");
+        var string = "I'd like to see a demo of the Monax Platform. Is " + email + "the best email to contact you on?";
+        Intercom('showNewMessage', string);
       },
       invalidHandler: function(event, validator) {
         var errors = validator.numberOfInvalids();
@@ -216,11 +217,11 @@ $(document).ready(function() {
           request_demo_frequency: frequency,
           location: "main-cta-section"
         };
-        console.log("Data submitted to intercom:");
+        console.log("Data submitted to intercom with trackEvent request-demo:");
         console.log(metadata);
         $("#main-cta-section button").addClass('disabled');
         Intercom('trackEvent', 'request-demo', metadata);
-        Intercom('showNewMessage', "I'd like a demo of the Monax Portal");
+        Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
       },
       invalidHandler: function(event, validator) {
         var errors = validator.numberOfInvalids();
@@ -319,20 +320,20 @@ $(document).ready(function() {
       var metadata = {
         location: "request-demo-footer"
       };
-      console.log("Data submitted to intercom:");
+      console.log("Data submitted to intercom with trackEvent request-demo:");
       console.log(metadata);
       Intercom('trackEvent', 'request-demo', metadata);
-      Intercom('showNewMessage', "I'd like a demo of the Monax Portal");
+      Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
     });
     $('#nav-register').on('click', function(event){
       event.preventDefault();
       var metadata = {
         location: "nav-request-demo"
       };
-      console.log("Data submitted to intercom:");
+      console.log("Data submitted to intercom with trackEvent request-demo:");
       console.log(metadata);
       Intercom('trackEvent', 'request-demo', metadata);
-      Intercom('showNewMessage', "I'd like a demo of the Monax Portal");
+      Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
     });
 
 

@@ -1,7 +1,7 @@
 [top]
     enable = false
     title = "Overview of features"
-    subtitle = "Explore the unique features of the Monax Portal"
+    subtitle = "Explore the unique features of the Monax Platform"
     img_left = false
     hero_signup = true
     # img_right = "/img/assets/background-elements/wphone-test.png"
