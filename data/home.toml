@@ -125,7 +125,7 @@
     enable = true
     title = "Sign up for a webinar"
     subtitle = "We are a series of webinars based around what our customers have told us they want to find out... check back here soon or sign up to be informed of upcoming ones."
-    show_upcoming = true
+    show_upcoming = false
 
     [webinar.form]
       source = "monax.io" # required for Segment to process
