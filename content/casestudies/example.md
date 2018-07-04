@@ -7,7 +7,6 @@ excerpt:   "This network is a decentralized contract management system for small
 draft: true
 # thumbnail: example-image.jpg
 tags:
-  - fleetleasing
 
 ---
 

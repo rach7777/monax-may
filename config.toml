@@ -150,4 +150,4 @@ quality = 80
     casestudies = "/casestudies/:slug/"
     learn = "/learn/:filename/"
     screencasts = "/screencasts/:slug/"
-    webinars = "/webinars/:year/:month/:slug/"
+    webinars = "/webinars/:year/:month/:day/:slug/"
