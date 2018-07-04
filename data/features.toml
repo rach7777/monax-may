@@ -1,7 +1,7 @@
 [top]
     enable = false
     title = "Overview of features"
-    subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+    subtitle = "Explore the unique features of the Monax Portal"
     img_left = false
     hero_signup = true
     # img_right = "/img/assets/background-elements/wphone-test.png"
