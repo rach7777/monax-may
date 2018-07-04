@@ -20,23 +20,21 @@
 
   {{ .Hugo.Generator }}
 
-  <!-- ROBOTO NOT USED -->
-  <!-- <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'> -->
-
   <!-- Bootstrap and Font Awesome css -->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <!-- Css animations  -->
-  <link href="{{ .Site.BaseURL }}css/animate.css" rel="stylesheet">
-  <!-- animate on scroll -->
-  <link href="{{ .Site.BaseURL }}css/aos.css" rel="stylesheet">
 
   <!-- Theme stylesheet, if possible do not edit this stylesheet -->
   <link href="{{ .Site.BaseURL }}css/base.css" rel="stylesheet" id="theme-stylesheet">
 
   <!-- Custom stylesheet - for your changes -->
   <link href="{{ .Site.BaseURL }}css/custom.css" rel="stylesheet">
+
+  <!-- Css animations  -->
+  <link href="{{ .Site.BaseURL }}css/animate.css" rel="stylesheet">
+
+  <!-- animate on scroll -->
+  <link href="{{ .Site.BaseURL }}css/aos.css" rel="stylesheet">
 
   <!-- Responsivity for older IE -->
   {{ `
@@ -49,11 +47,6 @@
   <!-- Favicon and apple touch icons-->
   <link rel="shortcut icon" href="{{ .Site.BaseURL }}img/favicon2.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}img/apple-touch-icon2.png" />
-  <!-- owl carousel css -->
-
-  <!-- OWL CAROUSEL NOT USED -->
-  <!-- <link href="{{ .Site.BaseURL }}css/owl.carousel.css" rel="stylesheet">
-  <link href="{{ .Site.BaseURL }}css/owl.theme.css" rel="stylesheet"> -->
 
   <link rel="alternate" href="{{ "/index.xml" | absURL }}" type="application/rss+xml" title="{{ .Site.Title }}">
 

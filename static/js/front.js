@@ -1,25 +1,25 @@
 /* global $this: true */
 /* eslint no-unused-vars: ["error", { "varsIgnorePattern": "animationsSlider" }] */
 
-if ($.cookie('themeCSSpath')) {
-  $('link#theme-stylesheet').attr('href', $.cookie('themeCSSpath'))
-}
-if ($.cookie('themeLayout')) {
-  $('body').addClass($.cookie('themeLayout'))
-}
+// if ($.cookie('themeCSSpath')) {
+//   $('link#theme-stylesheet').attr('href', $.cookie('themeCSSpath'))
+// }
+// if ($.cookie('themeLayout')) {
+//   $('body').addClass($.cookie('themeLayout'))
+// }
 
 $(function () {
-  sliderHomepage()
-  sliders()
+  // sliderHomepage()
+  // sliders()
   fullScreenContainer()
-  productDetailGallery(4000)
+  // productDetailGallery(4000)
   menuSliding()
   productDetailSizes()
   utils()
   animations()
-  counters()
-  demo()
-  contactForm()
+  // counters()
+  // demo()
+  // contactForm()
 })
 
 // Ajax contact

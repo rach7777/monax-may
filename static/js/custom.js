@@ -84,23 +84,23 @@ $(document).ready(function() {
 
     // calculate the animation delay
     var animationTimeout = ( $($animationContainer[index]).data('aos-delay') + $($animationContainer[index]).data('aos-duration') );
-    console.log(animationTimeout);
+    // console.log(animationTimeout);
 
     // if it's already on screen, animate
     if ($($animationContainer[index]).hasClass("aos-animate")) {
-      console.log("no observer needed");
+      // console.log("no observer needed");
       // init float animation
       setTimeout(function(){
         $($animationContainer[index]).addClass('next-animation');
       }, animationTimeout);
     } else {
     // otherwise, watch for class change
-      console.log("added observer");
+      // console.log("added observer");
       var observer = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
           if (mutation.attributeName === "class") {
             var attributeValue = $(mutation.target).prop(mutation.attributeName);
-            console.log("Class attribute changed to:", attributeValue);
+            // console.log("Class attribute changed to:", attributeValue);
             if (attributeValue.includes("aos-animate")) {
               // init float animation
               setTimeout(function(){
@@ -108,7 +108,7 @@ $(document).ready(function() {
               }, animationTimeout);
               // don't watch for any more changes
               observer.disconnect();
-              console.log("class changed - observer removed");
+              // console.log("class changed - observer removed");
             }
           }
         });
