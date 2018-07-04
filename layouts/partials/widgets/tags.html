@@ -9,7 +9,7 @@
               <ul class="category-cloud">
                   {{ range $name, $items := .Site.Taxonomies.tags }}
                     {{ if $name }}
-                      {{ if gt (len $items) 1 }}
+                      {{ if gt (len $items) 3 }}
                         <li>
                           <a href="{{ $.Site.BaseURL }}tags/{{ $name | urlize | lower }}"><i class="fa fa-tags"></i> {{ $name }} ({{ len $items }})</a>
                         </li>
