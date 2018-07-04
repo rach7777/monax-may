@@ -1,5 +1,5 @@
 [top]
-    enable = true
+    enable = false
     title = "Overview of features"
     subtitle = "Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
     img_left = false

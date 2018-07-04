@@ -3,9 +3,9 @@
     title = "Screencasts"
     subtitle = "Learn how Monax can help you streamline your business using our latest walkthroughs and screencasts."
     img_left = false
-    hero_signup = true
+    hero_signup = false
     # img_right = "/img/assets/background-elements/wphone-test.png"
-    background_element = "/img/assets/background-elements/abstract-01.jpg"
+    # background_element = "/img/assets/background-elements/abstract-01.jpg"
 
 [articles]
   enable = true
