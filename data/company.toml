@@ -93,7 +93,7 @@
       name = "Adam Locklin"
       position = "Product Manager"
       weight = 1
-      img = "/img/team/team-al.jpeg"
+      img = "/img/team/team-al.jpg"
       twitter = "https://twitter.com/AdamLocklin"
       linkedin = "https://www.linkedin.com/in/adamlocklin/"
       keybase = "https://keybase.io/adamlocklin"
@@ -104,7 +104,7 @@
       name = "Casey Kuhlman"
       position = "CEO"
       weight = 2
-      img = "/img/team/team-csk.jpeg"
+      img = "/img/team/team-csk.jpg"
       twitter = "https://twitter.com/compleatang"
       linkedin = "https://www.linkedin.com/in/compleatang/"
       keybase = "https://keybase.io/compleatang"
@@ -115,7 +115,7 @@
       name = "Chenxiao Hu Wu"
       position = "Producer Experience Associate"
       weight = 1
-      img = "/img/team/team-chw.jpeg"
+      img = "/img/team/team-chw.jpg"
       twitter = "https://twitter.com/chenxiao_hu"
       linkedin = "https://www.linkedin.com/in/chenxiaoh/"
       keybase = "https://keybase.io/chenxiao"
@@ -126,7 +126,7 @@
       name = "David Galbraith"
       position = "Director"
       weight = 2
-      img = "/img/team/team-dg.jpeg"
+      img = "/img/team/team-dg.jpg"
       twitter = "https://twitter.com/daveg"
       # linkedin = "#"
       # github = "#"
@@ -136,7 +136,7 @@
       name = "Jeremy Drane"
       position = "Advisor"
       weight = 3
-      img = "/img/team/team-jd.jpeg"
+      img = "/img/team/team-jd.jpg"
       twitter = "https://twitter.com/dranejeremy"
       linkedin = "https://www.linkedin.com/in/jeremydrane/"
       # github = "#"
@@ -146,7 +146,7 @@
       name = "Jan Hendrik Scheufen"
       position = "CPO"
       weight = 2
-      img = "/img/team/team-jhs.jpeg"
+      img = "/img/team/team-jhs.jpg"
       twitter = "https://twitter.com/jhscheufen"
       linkedin = "https://www.linkedin.com/in/jan-hendrik-scheufen-a7259b/"
       keybase = "https://keybase.io/jhscheufen"
@@ -157,7 +157,7 @@
       name = "Mel Roy"
       position = "Operations Manager"
       weight = 1
-      img = "/img/team/team-mr.jpeg"
+      img = "/img/team/team-mr.jpg"
       twitter = "https://twitter.com/melaniemoar"
       linkedin = "https://www.linkedin.com/in/mmoar/"
       # github = "#"
@@ -167,7 +167,7 @@
       name = "Nina Kilbride"
       position = "CCO"
       weight = 1
-      img = "/img/team/team-nk.jpeg"
+      img = "/img/team/team-nk.jpg"
       twitter = "https://twitter.com/NinaKilbride"
       linkedin = "https://www.linkedin.com/in/nina-kilbride-71185610b/"
       keybase = "https://keybase.io/ninakilbride"
@@ -178,7 +178,7 @@
       name = "Ommi Shimizu"
       position = "Full Stack Engineer"
       weight = 1
-      img = "/img/team/team-os.jpeg"
+      img = "/img/team/team-os.jpg"
       # twitter = "#"
       linkedin = "https://www.linkedin.com/in/ommish/"
       github = "https://github.com/ommish"
@@ -188,7 +188,7 @@
       name = "Pascal Froux"
       position = "Advisor"
       weight = 3
-      img = "/img/team/team-pf.jpeg"
+      img = "/img/team/team-pf.jpg"
       # twitter = "#"
       # linkedin = "#"
       # keybase = "#"
@@ -199,7 +199,7 @@
       name = "Rachel Davidson"
       position = "Senior Marketing Associate"
       weight = 1
-      img = "/img/team/team-rd.jpeg"
+      img = "/img/team/team-rd.jpg"
       twitter = "https://twitter.com/Cryptojourno_uk"
       linkedin = "https://linkedin.com/in/rach-davidson"
       keybase = "https://keybase.io/monaxrach"
@@ -210,7 +210,7 @@
       name = "Sam Sinha"
       position = "Smart Contract Engineer"
       weight = 1
-      img = "/img/team/team-ss.jpeg"
+      img = "/img/team/team-ss.jpg"
       twitter = "https://twitter.com/samsrobotarmy"
       linkedin = "https://www.linkedin.com/in/sam-sinha/"
       keybase = "https://keybase.io/sambuds"
@@ -221,7 +221,7 @@
       name = "Silas Davis"
       position = "CTO"
       weight = 2
-      img = "/img/team/team-sd.jpeg"
+      img = "/img/team/team-sd.jpg"
       twitter = "https://twitter.com/silas_davis"
       linkedin = "https://www.linkedin.com/in/silas-davis-ba92951a/"
       keybase = "https://keybase.io/silasdavis"
@@ -232,7 +232,7 @@
       name = "Sean Young"
       position = "Platform Engineer"
       weight = 1
-      img = "/img/team/team-sy.jpeg"
+      img = "/img/team/team-sy.jpg"
       twitter = "https://twitter.com/iamseanyoung"
       linkedin = "https://www.linkedin.com/in/sean-young-881a011/"
       keybase = "https://keybase.io/seanyoung"
@@ -243,7 +243,7 @@
       name = "Tobias Barnes Hofmeister"
       position = "Marketing Analyst"
       weight = 1
-      img = "/img/team/team-th.jpeg"
+      img = "/img/team/team-th.jpg"
       # twitter = "#"
       linkedin = "https://www.linkedin.com/in/tobiashofmeister/"
       keybase = "https://keybase.io/tobiashofmeister"
@@ -254,7 +254,7 @@
       name = "Dr. Tyler Jackson"
       position = "Chief Scientist"
       weight = 1
-      img = "/img/team/team-tj.jpeg"
+      img = "/img/team/team-tj.jpg"
       twitter = "https://twitter.com/dennismckinnon"
       linkedin = "https://www.linkedin.com/in/tyler-jackson-567789bb/"
       keybase = "https://keybase.io/tylerjackson"
@@ -265,7 +265,7 @@
       name = "Yann Ranchere"
       position = "Director"
       weight = 2
-      img = "/img/team/team-yr.jpeg"
+      img = "/img/team/team-yr.jpg"
       twitter = "https://twitter.com/tek_fin"
       # linkedin = "#"
       # keybase = "#"
