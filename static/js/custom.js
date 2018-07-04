@@ -183,7 +183,7 @@ $(document).ready(function() {
         console.log(metadata);
         $('#hero-signup-submit').addClass('disabled');
         Intercom('trackEvent', 'request-demo', metadata);
-        Intercom('showNewMessage', 'Request a demo of the Monax Portal:');
+        Intercom('showNewMessage', "I'd like a demo of the Monax Portal");
       },
       invalidHandler: function(event, validator) {
         var errors = validator.numberOfInvalids();
@@ -220,7 +220,7 @@ $(document).ready(function() {
         console.log(metadata);
         $("#main-cta-section button").addClass('disabled');
         Intercom('trackEvent', 'request-demo', metadata);
-        Intercom('showNewMessage', 'Request a demo of the Monax Portal:');
+        Intercom('showNewMessage', "I'd like a demo of the Monax Portal");
       },
       invalidHandler: function(event, validator) {
         var errors = validator.numberOfInvalids();
@@ -322,7 +322,7 @@ $(document).ready(function() {
       console.log("Data submitted to intercom:");
       console.log(metadata);
       Intercom('trackEvent', 'request-demo', metadata);
-      Intercom('showNewMessage', 'Request a demo of the Monax Portal:');
+      Intercom('showNewMessage', "I'd like a demo of the Monax Portal");
     });
     $('#nav-register').on('click', function(event){
       event.preventDefault();
@@ -332,7 +332,7 @@ $(document).ready(function() {
       console.log("Data submitted to intercom:");
       console.log(metadata);
       Intercom('trackEvent', 'request-demo', metadata);
-      Intercom('showNewMessage', 'Request a demo of the Monax Portal:');
+      Intercom('showNewMessage', "I'd like a demo of the Monax Portal");
     });
 
 
