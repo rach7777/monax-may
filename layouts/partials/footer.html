@@ -18,7 +18,7 @@
               {{ .subtitle | markdownify }}
               <br>
               {{ if .enable_request_demo }}
-                <a href="#" class="request-demo-footer">{{ .request_demo_title }}</a>
+                <a href="#" id="request-demo-footer">{{ .request_demo_title }}</a>
               {{ end }}
               {{ range $i, $p := .link }}
                 &nbsp;|&nbsp;&nbsp;<a href="{{ .link_url }}">{{ .link_title }}</a>

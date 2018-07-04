@@ -314,10 +314,20 @@ $(document).ready(function() {
         }
       }
     });
-    $('.request-demo-footer').on('click', function(event){
+    $('#request-demo-footer').on('click', function(event){
       event.preventDefault();
       var metadata = {
         location: "request-demo-footer"
+      };
+      console.log("Data submitted to intercom:");
+      console.log(metadata);
+      Intercom('trackEvent', 'request-demo', metadata);
+      Intercom('showNewMessage', 'Request a demo of the Monax Portal:');
+    });
+    $('#nav-register').on('click', function(event){
+      event.preventDefault();
+      var metadata = {
+        location: "nav-request-demo"
       };
       console.log("Data submitted to intercom:");
       console.log(metadata);
