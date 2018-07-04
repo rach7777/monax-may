@@ -12,8 +12,8 @@
   default_img = "/img/assets/backgrounds/mountains-1.jpg"
 
   [taxonomies.top]
-    hero_signup = true
-    background_element = "/img/assets/background-elements/abstract-01.jpg"
+    # hero_signup = true
+    # background_element = "/img/assets/background-elements/abstract-01.jpg"
 
   [taxonomies.cta] # global
     enable = true
@@ -24,8 +24,8 @@
 [blog]
 
   [blog.top]
-    hero_signup = true
-    background_element = "/img/assets/background-elements/abstract-01.jpg"
+    # hero_signup = true
+    # background_element = "/img/assets/background-elements/abstract-01.jpg"
 
   [blog.cta] # global
     enable = true
@@ -36,8 +36,8 @@
 [webinars]
 
   [webinars.top]
-    hero_signup = true
-    background_element = "/img/assets/background-elements/abstract-01.jpg"
+    # hero_signup = true
+    # background_element = "/img/assets/background-elements/abstract-01.jpg"
 
   [webinars.form]
     enable_signup_form = true
@@ -59,8 +59,8 @@
 [screencasts]
 
   [screencasts.top]
-    hero_signup = true
-    background_element = "/img/assets/background-elements/abstract-01.jpg"
+    # hero_signup = true
+    # background_element = "/img/assets/background-elements/abstract-01.jpg"
 
   [screencasts.cta] # global
     enable = true
@@ -71,8 +71,8 @@
 [learn]
 
   [learn.top]
-    hero_signup = true
-    background_element = "/img/assets/background-elements/abstract-01.jpg"
+    # hero_signup = true
+    # background_element = "/img/assets/background-elements/abstract-01.jpg"
 
   [learn.cta] # global
     enable = true
@@ -83,8 +83,8 @@
 [casestudies]
 
   [casestudies.top]
-    hero_signup = true
-    background_element = "/img/assets/background-elements/abstract-01.jpg"
+    # hero_signup = true
+    # background_element = "/img/assets/background-elements/abstract-01.jpg"
 
   [casestudies.cta] # global
     enable = true

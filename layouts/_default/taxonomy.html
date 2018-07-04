@@ -15,7 +15,7 @@
 
         </header>
 
-        <section class="section-top padding-top-md padding-bottom-lg section-shadow-xl" style="background: url({{ .Site.Data.global.posts.taxonomies.top.background_element }}) right bottom no-repeat; background-size: 520px;">
+        <section class="section-top padding-top-md" style="background: url({{ .Site.Data.global.posts.taxonomies.top.background_element }}) right bottom no-repeat; background-size: 520px;">
             <div class="container">
               <div class="row flex-grid-md">
                   <div class="col-md-7 col-valign-center">
@@ -42,8 +42,8 @@
 
         <div id="content">
           <div class="container">
-            <div class="row padding-top-lg padding-bottom-xl">
-              <div class="col-md-9 padding-bottom-lg" id="blog-listing-medium">
+            <div class="row padding-bottom-xl">
+              <div class="col-md-9 padding-bottom-lg" id="taxonomy-list">
                 {{ range $i, $p := .Paginator.Pages }}
                   <section class="post">
 

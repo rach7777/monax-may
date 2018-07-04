@@ -407,7 +407,7 @@ form label.error {
 .article-category {
     color: #95b85d;
 }
-#blog-listing-medium .post {
+#taxonomy-list .post {
     margin-bottom: 30px;
 }
 .coming-soon {
@@ -435,6 +435,9 @@ form label.error {
 }
 .post-meta i {
     padding: 0 5px 0 25px;
+}
+.post-meta i:first-of-type {
+    padding-left: 0;
 }
 #post-content p,
 #post-content li {
