@@ -9,9 +9,9 @@
 
     [top.illustration]
       enable = true   # replaces img_right
-      img_base = "/img/assets/animations/monax-laptop/Composition_Layer_03_Blockchain.png"
-      img_layer_one = "/img/assets/animations/monax-laptop/Composition_Layer_02_AN.png"
-      img_layer_two = "/img/assets/animations/monax-laptop/Composition_Layer_01_Agreement.png"
+      img_base = "/img/assets/animations/monax-laptop/laptop-animation-base.png"
+      img_layer_one = "/img/assets/animations/monax-laptop/laptop-animation-layer-1.png"
+      img_layer_two = "/img/assets/animations/monax-laptop/laptop-animation-layer-2.png"
 
 
 [press] # global
