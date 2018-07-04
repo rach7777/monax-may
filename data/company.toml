@@ -95,7 +95,7 @@
       weight = 1
       img = "/img/team/team-al.jpeg"
       twitter = "https://twitter.com/AdamLocklin"
-      # linkedin = "#"
+      linkedin = "https://www.linkedin.com/in/adamlocklin/"
       keybase = "https://keybase.io/adamlocklin"
       # github = "#"
       # website = "#"
@@ -106,7 +106,7 @@
       weight = 2
       img = "/img/team/team-csk.jpeg"
       twitter = "https://twitter.com/compleatang"
-      # linkedin = "#"
+      linkedin = "https://www.linkedin.com/in/compleatang/"
       keybase = "https://keybase.io/compleatang"
       github = "https://github.com/compleatang"
       # website = "#"
@@ -116,8 +116,8 @@
       position = "Producer Experience Associate"
       weight = 1
       img = "/img/team/team-chw.jpeg"
-      # twitter = "#"
-      # linkedin = "#"
+      twitter = "https://twitter.com/chenxiao_hu"
+      linkedin = "https://www.linkedin.com/in/chenxiaoh/"
       keybase = "https://keybase.io/chenxiao"
       # github = "#"
       # website = "#"
@@ -138,7 +138,7 @@
       weight = 3
       img = "/img/team/team-jd.jpeg"
       twitter = "https://twitter.com/dranejeremy"
-      # linkedin = "#"
+      linkedin = "https://www.linkedin.com/in/jeremydrane/"
       # github = "#"
       website = "http://www.libra.tech/"
 
@@ -148,7 +148,7 @@
       weight = 2
       img = "/img/team/team-jhs.jpeg"
       twitter = "https://twitter.com/jhscheufen"
-      # linkedin = "#"
+      linkedin = "https://www.linkedin.com/in/jan-hendrik-scheufen-a7259b/"
       keybase = "https://keybase.io/jhscheufen"
       github = "https://github.com/j-h-scheufen"
       # website = "#"
@@ -158,8 +158,8 @@
       position = "Operations Manager"
       weight = 1
       img = "/img/team/team-mr.jpeg"
-      # twitter = "#"
-      # linkedin = "#"
+      twitter = "https://twitter.com/melaniemoar"
+      linkedin = "https://www.linkedin.com/in/mmoar/"
       # github = "#"
       # website = "#"
 
@@ -169,10 +169,10 @@
       weight = 1
       img = "/img/team/team-nk.jpeg"
       twitter = "https://twitter.com/NinaKilbride"
-      # linkedin = "#"
+      linkedin = "https://www.linkedin.com/in/nina-kilbride-71185610b/"
       keybase = "https://keybase.io/ninakilbride"
       github = "https://github.com/ngk26200"
-      website = "http://cryptolawyer.net/"
+      # website = "http://cryptolawyer.net/"
 
     [[team.item]]
       name = "Ommi Shimizu"
@@ -180,7 +180,7 @@
       weight = 1
       img = "/img/team/team-os.jpeg"
       # twitter = "#"
-      # linkedin = "#"
+      linkedin = "https://www.linkedin.com/in/ommish/"
       github = "https://github.com/ommish"
       # website = "#"
 
@@ -201,7 +201,7 @@
       weight = 1
       img = "/img/team/team-rd.jpeg"
       twitter = "https://twitter.com/Cryptojourno_uk"
-      # linkedin = "#"
+      linkedin = "https://linkedin.com/in/rach-davidson"
       keybase = "https://keybase.io/monaxrach"
       # github = "#"
       # website = "#"
@@ -212,7 +212,7 @@
       weight = 1
       img = "/img/team/team-ss.jpeg"
       twitter = "https://twitter.com/samsrobotarmy"
-      # linkedin = "#"
+      linkedin = "https://www.linkedin.com/in/sam-sinha/"
       keybase = "https://keybase.io/sambuds"
       github = "https://github.com/sambuds"
       # website = "#"
@@ -223,7 +223,7 @@
       weight = 2
       img = "/img/team/team-sd.jpeg"
       twitter = "https://twitter.com/silas_davis"
-      # linkedin = "#"
+      linkedin = "https://www.linkedin.com/in/silas-davis-ba92951a/"
       keybase = "https://keybase.io/silasdavis"
       github = "https://github.com/silasdavis"
       # website = "#"
@@ -234,7 +234,7 @@
       weight = 1
       img = "/img/team/team-sy.jpeg"
       twitter = "https://twitter.com/iamseanyoung"
-      # linkedin = "#"
+      linkedin = "https://www.linkedin.com/in/sean-young-881a011/"
       keybase = "https://keybase.io/seanyoung"
       github = "https://github.com/seanyoung"
       # website = "#"
@@ -245,7 +245,7 @@
       weight = 1
       img = "/img/team/team-th.jpeg"
       # twitter = "#"
-      # linkedin = "#"
+      linkedin = "https://www.linkedin.com/in/tobiashofmeister/"
       keybase = "https://keybase.io/tobiashofmeister"
       # github = "#"
       # website = "#"
@@ -256,7 +256,7 @@
       weight = 1
       img = "/img/team/team-tj.jpeg"
       twitter = "https://twitter.com/dennismckinnon"
-      # linkedin = "#"
+      linkedin = "https://www.linkedin.com/in/tyler-jackson-567789bb/"
       keybase = "https://keybase.io/tylerjackson"
       github = "https://github.com/dennismckinnon"
       # website = "#"
