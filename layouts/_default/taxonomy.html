@@ -43,7 +43,7 @@
         <div id="content">
           <div class="container">
             <div class="row padding-top-lg padding-bottom-xl">
-              <div class="col-md-9" id="blog-listing-medium">
+              <div class="col-md-9 padding-bottom-lg" id="blog-listing-medium">
                 {{ range $i, $p := .Paginator.Pages }}
                   <section class="post">
 
@@ -59,11 +59,11 @@
                     <a href="{{ .Permalink }}" class="flex-grid-sm a-card">
                     <div class="content-container content-card content-card-full content-card-shadow-sm flex-grid-sm col-flex-12">
                       <div class="row flex-grid-sm col-flex-12">
-                        <div class="col-xs-4 flex-grid-sm col-flex-4">
+                        <div class="col-sm-4 hidden-xs flex-grid-sm col-flex-4">
                           <div class="img-container background-dark col-flex-12" style='background:url({{ .Scratch.Get "postImg" }}) center center no-repeat; background-size: cover;'>
                           </div>
                         </div>
-                        <div class="col-xs-8 col-flex-8 col-valign-center padding-top-sm padding-bottom-sm">
+                        <div class="col-xs-12 col-sm-8 col-flex-8 col-valign-center padding-top-sm padding-bottom-sm">
                           <div class="text-container">
                             <div class="title range-left">
                                 <h5>{{ .Title }} &rsaquo;</h5>
@@ -86,7 +86,7 @@
                             {{ if .Date }}
                               {{ if gt .Date.Year 2000 }}
                                 <div class="meta range-left">
-                                  <p><span><i class="fa fa-calendar"></i> {{ dateFormat "Jan 2 2006" .Date }}</span>{{ if .Params.author }} | <span><i class="fa fa-user-o"></i> {{ .Params.author }}</span>{{ end }}</p>
+                                  <p><span><i class="fa fa-calendar"></i> {{ .Date.Format .Site.Params.date_format }}</span>{{ if .Params.author }} | <span><i class="fa fa-user-o"></i> {{ .Params.author }}</span>{{ end }}</p>
                                 </div>
                               {{ end }}
                             {{ end }}

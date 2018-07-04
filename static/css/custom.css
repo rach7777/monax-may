@@ -2095,10 +2095,16 @@ transform: scale(1.05) !important;
   padding: 0px;
 }
 .content-card-full .text-container {
-  padding: 20px 20px 20px 0;
+    padding: 10px 30px;
 }
 .content-card-related .text-container {
   padding: 10px 20px;
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .content-card-full .text-container {
+    padding: 20px 20px 20px 0;
+  }
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {

@@ -44,7 +44,7 @@
             <div class="container">
                 <div class="row padding-top-lg padding-bottom-xl">
 
-                    <div class="col-md-9" id="casestudies-post">
+                    <div class="col-md-9 padding-bottom-lg" id="casestudies-post">
                       {{ if gt .Date.Year 2000 }}
                         <p class="post-meta text-right">{{ if .Params.author }}<i class="fa fa-user-o"></i> {{ .Params.author }}{{ end }}<i class="fa fa-calendar"></i> {{ .Date.Format .Site.Params.date_format }}</p>
                       {{ end }}

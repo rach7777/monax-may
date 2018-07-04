@@ -84,7 +84,7 @@
                     {{ if .Date }}
                       {{ if gt .Date.Year 2000 }}
                         <div class="meta range-left">
-                          <p><span><i class="fa fa-calendar"></i> {{ dateFormat "Jan 2 2006" .Date }}</span>{{ if .Params.author }} | <span><i class="fa fa-user-o"></i> {{ .Params.author }}</span>{{ end }}</p>
+                          <p><span><i class="fa fa-calendar"></i> {{ .Date.Format .Site.Params.date_format }}</span>{{ if .Params.author }} | <span><i class="fa fa-user-o"></i> {{ .Params.author }}</span>{{ end }}</p>
                         </div>
                       {{ end }}
                     {{ end }}
