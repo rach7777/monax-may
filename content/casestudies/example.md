@@ -4,7 +4,7 @@ date: "2018-06-21T14:09:26+01:00"
 title:     "Example Case Study"
 author: Casey Kuhlman, CEO
 excerpt:   "This network is a decentralized contract management system for small businesses"
-draft: false
+draft: true
 # thumbnail: example-image.jpg
 tags:
   - fleetleasing
