@@ -66,10 +66,10 @@ $(document).ready(function() {
 
   // HANDLE HOMEPAGE TOP ANIMATION
   setTimeout(function(){
-    $('.laptop-illustration').addClass('active');
-    $('.laptop-illustration .img-to-float.delay-0').addClass('animate-float');
+    $('#home-animation').addClass('active');
+    $('#home-animation .img-to-float.delay-0').addClass('animate-float');
     setTimeout(function(){
-      $('.laptop-illustration .img-to-float.delay-1').addClass('animate-float');
+      $('#home-animation .img-to-float.delay-1').addClass('animate-float');
     }, 750);
   }, 300);
 
