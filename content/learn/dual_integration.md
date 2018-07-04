@@ -7,8 +7,6 @@ excerpt:    "Putting the Contracts in Smart Contracts"
 categories:
   - learn
 tags:
-  - fleetleasing
-  - contentcreators
 
 ---
 

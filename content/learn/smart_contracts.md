@@ -7,7 +7,10 @@ excerpt:    "What are Smart Contracts and why are these distributed logic gatewa
 categories:
   - learn
 tags:
+  - fleetleasing
   - contentcreators
+  - lawyers
+  - corporate
 
 ---
 

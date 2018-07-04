@@ -101,7 +101,7 @@
 
 
 [screencasts]
-    enable = true
+    enable = false # pulls out most recent screencast by default
     show_related_links = true
 
     [[screencasts.relatedlinks]]

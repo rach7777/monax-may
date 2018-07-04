@@ -7,8 +7,6 @@ excerpt:    "What are Ecosystem Applications and will these impact how we think 
 categories:
   - learn
 tags:
-  - fleetleasing
-  - corporate
 
 ---
 

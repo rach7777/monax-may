@@ -7,8 +7,9 @@ excerpt:    "Legal engineering is the practice of writing smart contracts that a
 categories:
   - learn
 tags:
-  - lawyers
+  - fleetleasing
   - contentcreators
+  - lawyers
   - corporate
 
 ---

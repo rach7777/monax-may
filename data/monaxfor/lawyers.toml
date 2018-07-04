@@ -94,7 +94,7 @@
 
 # FAQ section
 [faq]
-  enable = true
+  enable = false
 
     [[faq.item]]
         question = "Why do people want to enter into agreements at all?"

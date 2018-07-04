@@ -10,7 +10,6 @@ categories:
   - announcements
 tags:
   - agreements network
-  - fleetleasing
 
 # use if needed
 published: true

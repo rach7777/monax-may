@@ -7,7 +7,6 @@ excerpt:    "What is a Permissioned Blockchain and why are these automated data 
 categories:
   - learn
 tags:
-  - lawyers
 
 ---
 

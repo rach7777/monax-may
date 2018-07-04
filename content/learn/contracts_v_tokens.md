@@ -7,8 +7,6 @@ excerpt:    "When are smart contracts better than tokenized approaches to blockc
 categories:
   - learn
 tags:
-  - fleetleasing
-  - corporate
 
 ---
 

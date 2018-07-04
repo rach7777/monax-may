@@ -7,6 +7,8 @@ excerpt:    "What is a Blockchain and why are these automated data management sy
 categories:
   - learn
 tags:
+  - fleetleasing
+  - contentcreators
   - lawyers
   - corporate
 
