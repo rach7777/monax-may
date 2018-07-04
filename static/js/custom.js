@@ -177,13 +177,14 @@ $(document).ready(function() {
 
         var metadata = {
           request_demo_email: email,
-          location: "hero-signup-form"
+          request_demo_url: window.location.pathname,
+          request_demo_location: "hero-signup-form"
         };
         console.log("Data submitted to intercom with trackEvent request-demo:");
         console.log(metadata);
         $('#hero-signup-submit').addClass('disabled');
         Intercom('trackEvent', 'request-demo', metadata);
-        var string = "I'd like to see a demo of the Monax Platform. Is " + email + "the best email to contact you on?";
+        var string = "I'd like to see a demo of the Monax Platform";
         Intercom('showNewMessage', string);
       },
       invalidHandler: function(event, validator) {
@@ -215,7 +216,8 @@ $(document).ready(function() {
           request_demo_industry: industry,
           request_demo_agreeements_type: agreements_type,
           request_demo_frequency: frequency,
-          location: "main-cta-section"
+          request_demo_url: window.location.pathname,
+          request_demo_location: "main-cta-section"
         };
         console.log("Data submitted to intercom with trackEvent request-demo:");
         console.log(metadata);
@@ -239,6 +241,13 @@ $(document).ready(function() {
         }
       },
       submitHandler: function(form) {
+        var metadata = {
+          newsletter_signup_url: window.location.pathname,
+          newsletter_signup_location: "hero-newsletter-form"
+        };
+        console.log("Data submitted to intercom with trackEvent newsletter-signup:");
+        console.log(metadata);
+        Intercom('trackEvent', 'newsletter-signup', metadata);
         form.submit();
       },
       invalidHandler: function(event, validator) {
@@ -257,6 +266,13 @@ $(document).ready(function() {
         }
       },
       submitHandler: function(form) {
+        var metadata = {
+          newsletter_signup_url: window.location.pathname,
+          newsletter_signup_location: "footer-newsletter-form"
+        };
+        console.log("Data submitted to intercom with trackEvent newsletter-signup:");
+        console.log(metadata);
+        Intercom('trackEvent', 'newsletter-signup', metadata);
         form.submit();
       },
       invalidHandler: function(event, validator) {
@@ -281,6 +297,13 @@ $(document).ready(function() {
         }
       },
       submitHandler: function(form) {
+        var metadata = {
+          newsletter_signup_url: window.location.pathname,
+          newsletter_signup_location: "home-webinar-signup"
+        };
+        console.log("Data submitted to intercom with trackEvent webinar-subscribe:");
+        console.log(metadata);
+        Intercom('trackEvent', 'webinar-subscribe', metadata);
         form.submit();
       },
       invalidHandler: function(event, validator) {
@@ -305,6 +328,13 @@ $(document).ready(function() {
         }
       },
       submitHandler: function(form) {
+        var metadata = {
+          newsletter_signup_url: window.location.pathname,
+          newsletter_signup_location: "single-webinar-signup"
+        };
+        console.log("Data submitted to intercom with trackEvent webinar-signup:");
+        console.log(metadata);
+        Intercom('trackEvent', 'webinar-signup', metadata);
         form.submit();
       },
       invalidHandler: function(event, validator) {
@@ -318,7 +348,8 @@ $(document).ready(function() {
     $('#request-demo-footer').on('click', function(event){
       event.preventDefault();
       var metadata = {
-        location: "request-demo-footer"
+        request_demo_url: window.location.pathname,
+        request_demo_location: "request-demo-footer"
       };
       console.log("Data submitted to intercom with trackEvent request-demo:");
       console.log(metadata);
@@ -328,7 +359,8 @@ $(document).ready(function() {
     $('#nav-register').on('click', function(event){
       event.preventDefault();
       var metadata = {
-        location: "nav-request-demo"
+        request_demo_url: window.location.pathname,
+        request_demo_location: "nav-request-demo"
       };
       console.log("Data submitted to intercom with trackEvent request-demo:");
       console.log(metadata);
