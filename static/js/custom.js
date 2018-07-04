@@ -121,12 +121,6 @@ $(document).ready(function() {
   });
 
 
-
-  //
-  // $animationContainer.addClass('red');
-
-
-
   // HANDLE COMPANY HISTORY SELECT
   $(function(){
   	var inputs = $('.timeline-date');
@@ -169,6 +163,167 @@ $(document).ready(function() {
 			$(this).parent('.question').toggleClass('active').siblings().removeClass('active');
 		});
 
+
+    // Form validation
+    $("#hero-signup-form").validate({
+      rules: {
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      submitHandler: function(form) {
+        var email = $('#hero-signup-email').val();
+
+        var metadata = {
+          request_demo_email: email,
+          location: "hero-signup-form"
+        };
+        console.log("Data submitted to intercom:");
+        console.log(metadata);
+        $('#hero-signup-submit').addClass('disabled');
+        Intercom('trackEvent', 'request-demo', metadata);
+        Intercom('showNewMessage', 'Request a demo of the Monax Portal:');
+      },
+      invalidHandler: function(event, validator) {
+        var errors = validator.numberOfInvalids();
+        if (errors) {
+          console.log("form returned invalid");
+          $('#hero-signup-submit').addClass('animated headShake');
+        }
+      }
+    });
+    $("#main-cta-section").validate({
+      rules: {
+        industry: {
+          required: true
+        },
+        agreementsType: {
+          required: true
+        },
+        frequency: {
+          required: true
+        }
+      },
+      submitHandler: function(form) {
+        var industry = $('#userIndustry').find(":selected").text();
+        var agreements_type = $('#userAgreementsType').find(":selected").text();
+        var frequency =  $('#userFrequency').find(":selected").text();
+
+        var metadata = {
+          request_demo_industry: industry,
+          request_demo_agreeements_type: agreements_type,
+          request_demo_frequency: frequency,
+          location: "main-cta-section"
+        };
+        console.log("Data submitted to intercom:");
+        console.log(metadata);
+        $("#main-cta-section button").addClass('disabled');
+        Intercom('trackEvent', 'request-demo', metadata);
+        Intercom('showNewMessage', 'Request a demo of the Monax Portal:');
+      },
+      invalidHandler: function(event, validator) {
+        var errors = validator.numberOfInvalids();
+        if (errors) {
+          console.log("form returned invalid");
+          $('#main-cta-section button').addClass('animated headShake');
+        }
+      }
+    });
+    $("#hero-newsletter-form").validate({
+      rules: {
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      submitHandler: function(form) {
+        form.submit();
+      },
+      invalidHandler: function(event, validator) {
+        var errors = validator.numberOfInvalids();
+        if (errors) {
+          console.log("form returned invalid");
+          $('#hero-newsletter-form button').addClass('animated headShake');
+        }
+      }
+    });
+    $("#footer-newsletter-form").validate({
+      rules: {
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      submitHandler: function(form) {
+        form.submit();
+      },
+      invalidHandler: function(event, validator) {
+        var errors = validator.numberOfInvalids();
+        if (errors) {
+          console.log("form returned invalid");
+          $('#footer-newsletter-form button').addClass('animated headShake');
+        }
+      }
+    });
+    $("#home-webinar-signup").validate({
+      rules: {
+        fname: {
+          required: true
+        },
+        lname: {
+          required: true
+        },
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      submitHandler: function(form) {
+        form.submit();
+      },
+      invalidHandler: function(event, validator) {
+        var errors = validator.numberOfInvalids();
+        if (errors) {
+          console.log("form returned invalid");
+          $('#home-webinar-signup button').addClass('animated headShake');
+        }
+      }
+    });
+    $("#single-webinar-signup").validate({
+      rules: {
+        fname: {
+          required: true
+        },
+        lname: {
+          required: true
+        },
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      submitHandler: function(form) {
+        form.submit();
+      },
+      invalidHandler: function(event, validator) {
+        var errors = validator.numberOfInvalids();
+        if (errors) {
+          console.log("form returned invalid");
+          $('#single-webinar-signup button').addClass('animated headShake');
+        }
+      }
+    });
+    $('.request-demo-footer').on('click', function(event){
+      event.preventDefault();
+      var metadata = {
+        location: "request-demo-footer"
+      };
+      console.log("Data submitted to intercom:");
+      console.log(metadata);
+      Intercom('trackEvent', 'request-demo', metadata);
+      Intercom('showNewMessage', 'Request a demo of the Monax Portal:');
+    });
 
 
 });

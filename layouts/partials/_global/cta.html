@@ -12,14 +12,14 @@
         {{ with .form }}
 
         <div class="form-container padding-bottom-md">
-          <form action="{{ .submit_form_action }}" class="form-main-cta">
+          <form action="{{ .submit_form_action }}" id="main-cta-section" class="form-main-cta">
 
               <div class="content-container padding-bottom-sm">
                 <p>
                   I'm working in the
                   <label for="userIndustry" class="select-wrap">
-                    <select id="userIndustry" name="industry" class="form-control onboarding-information__select resizeselect">
-                      {{ range $i, $p := .industry_options }}
+                    <select id="userIndustry" name="industry" class="form-control resizeselect">
+                      {{ range $i, $p := sort .industry_options }}
                         {{ if eq $i 0 }}
                           <option selected="">{{ . }}</option>
                         {{ else }}
@@ -32,8 +32,8 @@
                 <p>
                   and we need to make
                   <label for="userAgreementsType" class="select-wrap">
-                    <select id="userAgreementsType" name="agreementsType" class="form-control onboarding-information__select resizeselect">
-                      {{ range $i, $p := .agreement_options }}
+                    <select id="userAgreementsType" name="agreementsType" class="form-control resizeselect">
+                      {{ range $i, $p := sort .agreement_options }}
                         {{ if eq $i 0 }}
                           <option selected="">{{ . }}</option>
                         {{ else }}
@@ -45,8 +45,8 @@
                 </p>
                 <p>
                   typically
-                  <label for="userAgreementsType" class="select-wrap">
-                    <select id="userFrequency" name="frequency" class="form-control onboarding-information__select resizeselect">
+                  <label for="userFrequency" class="select-wrap">
+                    <select id="userFrequency" name="frequency" class="form-control resizeselect">
                       {{ range $i, $p := .frequency_options }}
                         {{ if eq $i 1 }}
                           <option selected="">{{ . }}</option>

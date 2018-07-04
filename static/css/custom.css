@@ -186,12 +186,19 @@ p.lead,
     width: 48%;
     float: left;
 }
-.form input.input-half:nth-child(2n+1) {
+.form input.input-half:nth-of-type(even) {
     float: right;
 }
 .form button {
   margin-top: 10px;
   margin-bottom: 20px;
+}
+/* VALIDATION */
+form input.error {
+    border-color: #d21111 !important;
+}
+form label.error {
+    display: none !important;
 }
 
 /* MAIN CTA FORM */
@@ -233,7 +240,7 @@ p.lead,
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    font-size: 0.9em;
+    font-size: 26px;
     font-weight: 300;
     display: inline-block;
     border: none;
@@ -2598,8 +2605,16 @@ transform: scale(1.05) !important;
   }
 }
 
-.section-top form input,
-.section-hero form input {
+/* @@@ ^ reformat top to include hero signup container */
+.signup-container {
+}
+.signup-container form {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+.signup-container form input {
+    text-align: center;
     vertical-align: middle;
     padding: 10px 16px;
     font-size: 16px;
@@ -2614,29 +2629,19 @@ transform: scale(1.05) !important;
     border: 2px solid #eee;
     border-right: none;
 }
-/* Small Devices, Tablets */
-@media only screen and (min-width : 480px) {
-  .section-top form input,
-  .section-hero form input {
-      border-radius: 5px 0 0 5px;
-  }
-}
-.section-top form input:focus,
-.section-hero form input:focus {
+
+.signup-container form input:focus {
     background-color: #fff;
     border: 2px solid #eee;
     border-right: none;
 }
-.section-top form input::placeholder,
-.section-hero form input::placeholder {
+.signup-container form input::placeholder {
     color: #333;
 }
-.section-top form input:focus::placeholder,
-.section-hero form input:focus::placeholder {
+.signup-container form input:focus::placeholder {
     color: #fff;
 }
-.section-top form button,
-.section-hero form button {
+.signup-container form button {
     color: #fff;
     border: none;
     font-size: 18px;
@@ -2645,47 +2650,59 @@ transform: scale(1.05) !important;
     text-transform: capitalize;
     letter-spacing: 0;
 }
-/* Small Devices, Tablets */
-@media only screen and (min-width : 480px) {
-  .section-top form button,
-  .section-hero form button {
-      border-radius: 0 5px 5px 0;
-  }
-}
-.section-top form button:hover,
-.section-top form button:focus,
-.section-hero form button:hover,
-.section-hero form button:focus {
+.signup-container form button:hover,
+.signup-container form button:focus {
     background-color: #799844;
     color: #fff;
 }
-/* @@@ ^ reformat top to include hero signup container */
-.hero-signup-container {
-}
-.hero-signup-container > form {
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-}
-.hero-signup-container > form > input {
-    text-align: center;
-}
 /* Small Devices, Tablets */
 @media only screen and (min-width : 480px) {
-  .hero-signup-container > form {
+  .signup-container form {
       flex-direction: row;
       width: auto;
   }
-  .hero-signup-container > form > input {
+  .signup-container form input {
       text-align: left;
+      border-radius: 5px 0 0 5px;
+  }
+  .signup-container form button {
+      border-radius: 0 5px 5px 0;
   }
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-  .hero-signup-container > form {
+  .signup-container form {
       margin: 0;
   }
 }
+/* footer signup form */
+.signup-footer form {
+  flex-direction: column;
+}
+.signup-footer form input {
+  border-radius: 5px 5px 0 0;
+  padding: 8px 14px;
+  font-size: 14px;
+  min-width: auto;
+  width: 100%;
+  height: auto;
+}
+.signup-footer form button {
+  border-radius: 0 0 5px 5px;
+  font-size: 16px;
+  padding: 8px 14px;
+  height: auto;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+/* ===== */
 
 .section-press img {
     max-height: 50px;
@@ -2716,6 +2733,10 @@ transform: scale(1.05) !important;
 }
 #footer h4 {
     font-weight: 400;
+}
+#footer hr {
+    border-color: #555555;
+    max-width: 90%;
 }
 
 #copyright {

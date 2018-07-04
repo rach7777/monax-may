@@ -103,7 +103,7 @@ quality = 80
     weight = 5
 
 [[menu.register]]
-    name = "Try For Free"
+    name = "Request a demo"
     url  = "https://beta.monax.io/register"
     weight = 1
 

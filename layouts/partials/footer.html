@@ -17,19 +17,18 @@
             <p class="range-left-sm">
               {{ .subtitle | markdownify }}
               <br>
+              {{ if .enable_request_demo }}
+                <a href="#" class="request-demo-footer">{{ .request_demo_title }}</a>
+              {{ end }}
               {{ range $i, $p := .link }}
-                {{ if eq $i 0 }}
-                  <a href="{{ .link_url }}">{{ .link_title }}</a>
-                {{ else }}
-                  &nbsp;|&nbsp;&nbsp;<a href="{{ .link_url }}">{{ .link_title }}</a>
-                {{ end }}
+                &nbsp;|&nbsp;&nbsp;<a href="{{ .link_url }}">{{ .link_title }}</a>
               {{ end }}
             </p>
 
             <div class="ul-left-sm flex-grid-sm btn-container range-left">
               <ul class="ul-round-icons ul-footer-icons">
                 {{ range .social_icon }}
-                  <a href="{{ .link }}"><li><i class='fa {{ .icon }}'></i></li></a>
+                  <a href="{{ .link }}" target="_blank"><li><i class='fa {{ .icon }}'></i></li></a>
                 {{ end }}
               </ul>
             </div>
@@ -50,15 +49,10 @@
               <p class="range-left-sm">
                 {{ .subtitle | markdownify }}
               </p>
-              {{ if .enable_intercom_form }}
-                {{ partial "footer_form.html" . }}
-              {{ else }}
-                <div class='flex-grid form-placeholder-dark' style='min-height:160px;'>
-                  <div class='col-sm-12 col-flex-12 col-valign-center'>
-                    <h4>-- FORM PLACEHOLDER --</h4>
-                  </div>
-                </div>
+              {{ if .enable_newsletter_signup_form }}
+                {{ partial "_global/footer_newsletter.html" . }}
               {{ end }}
+
               <hr class="hidden-md hidden-lg hidden-sm">
             </div>  <!-- .col -->
 

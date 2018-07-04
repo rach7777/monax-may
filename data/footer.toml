@@ -3,15 +3,16 @@
     title = "About Us"
     subtitle = "Deploy smart, legally-binding contracts on the blockchain."
     footer_logo = "/img/Monax_logo_white.png"
+    enable_request_demo = true
+    request_demo_title = "Request a demo"
 
-    [[about.link]]
-        link_title = "Request a demo"
-        link_url = "https://beta.monax.io/register"
-        # @@@ change url
+    # [[about.link]]
+    #     link_title = ""
+    #     link_url = ""
 
-    [[about.link]]
-        link_title = "Get started"
-        link_url = "https://beta.monax.io/register"
+    # [[about.link]]
+    #     link_title = "Get started"
+    #     link_url = "https://beta.monax.io/register"
 
     [[about.social_icon]]
         icon = "fa-facebook"
@@ -47,18 +48,18 @@
     enable = true
     title = "Subscribe To Updates"
     subtitle = "Be the first to hear about all things Monax"
-    enable_intercom_form = true
+    enable_newsletter_signup_form = true
 
 [col_3]
     enable = true
     title = "Developers"
-    subtitle = "Find all the resources you need as a developer.<br><br><a href='mailto:contact@monax.io'>Contact us about 3rd party integrations &rsaquo;</a>"
+    subtitle = "Find all the resources you need as a developer.<br><br><a href='mailto:contact@monax.io' target='_blank'>Contact us about 3rd party integrations &rsaquo;</a>"
     # <a href='https://docs.agreements.network/'>Read our developer docs  &rsaquo;</a><br><br>
 
 [col_4]
     enable = true
     title = "Press & Events"
-    subtitle = "Here at Monax we are always happy to talk to the press. For current press releases <a href='/categories/press/'>have a look here</a>.<br><br>Talk to us! Please email <a href='mailto:press@monax.io'>press@monax.io</a> for all things press-related."
+    subtitle = "Here at Monax we are always happy to talk to the press. For current press releases <a href='/categories/press/'>have a look here</a>.<br><br>Talk to us! Please email <a href='mailto:press@monax.io' target='_blank'>press@monax.io</a> for all things press-related."
 
 [copyright]
     enable = true

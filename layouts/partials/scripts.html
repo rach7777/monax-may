@@ -43,6 +43,9 @@
 	});
 </script>
 
+<!-- init form validation -->
+<script src="{{ .Site.BaseURL }}js/validate.jquery.js"></script>
+
 {{ range $.Site.Params.additional_footer_script_urls }}
   <script async src="{{ . }}" type="text/javascript"></script>
 {{ end }}

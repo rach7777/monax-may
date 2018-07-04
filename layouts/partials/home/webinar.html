@@ -29,15 +29,25 @@
 
           {{ with .form }}
 
-          <form action="{{ .form_action }}" class="form">
+          <form action="{{ .form_action }}" id="home-webinar-signup" class="form">
+            {{ with .source }}
+              <input type="text" name="source" value="{{ . }}" class="hidden">
+            {{ end }}
+            {{ with .webinar_signup }}
+              <input type="text" name="webinar_signup" value="{{ . }}" class="hidden">
+            {{ end }}
             {{ with .email }}
               <input type="text" placeholder="Email" name="email" class="field-email">
             {{ end }}
-            {{ with .fname }}
-              <input type="text" placeholder="First Name" name="fname" class="input-half field-fname">
-            {{ end }}
-            {{ with .lname }}
-              <input type="text" placeholder="Last Name" name="lname" class="input-half field-lname">
+            {{ if or .fname .lname }}
+              <div class="content-container clearfix">
+                {{ with .fname }}
+                  <input type="text" placeholder="First Name" name="fname" class="input-half field-fname">
+                {{ end }}
+                {{ with .lname }}
+                  <input type="text" placeholder="Last Name" name="lname" class="input-half field-lname">
+                {{ end }}
+              </div>
             {{ end }}
             {{ with .company_name }}
               <input type="text" placeholder="Company Name" name="company" class="field-company">

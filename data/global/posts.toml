@@ -41,11 +41,13 @@
 
   [webinars.form]
     enable_signup_form = true
+    source = "monax.io" # required for Segment to process
+    webinar_signup = "true" # required for Segment to process
     email = true
     fname = true
     lname = true
-    company_name = true
-    form_action = "#"
+    company_name = false
+    form_action = "https://analytics.monax.io/mailinglist"
     submit_text = "Get notified"
 
   [webinars.cta] # global
