@@ -2,11 +2,11 @@
     enable = true
     title = "Featured In:"
     logo_1 = "/img/press-logos/coindesk-logo-white.png"
-    logo_1_url = "https://www.coindesk.com/"
+    logo_1_url = "https://www.coindesk.com/hyperledger-tech-heats-ahead-blockchain-software-debuts/"
     logo_2 = "/img/press-logos/digital-journal-logo-white.png"
-    logo_2_url = "http://www.digitaljournal.com/"
+    logo_2_url = "http://www.digitaljournal.com/business/q-a-how-technology-is-shaking-up-legal-firms/article/525554"
     logo_3 = "/img/press-logos/wall-street-journal-logo-white.png"
-    logo_3_url = "https://www.wsj.com/europe"
+    logo_3_url = "https://blogs.wsj.com/cio/2016/03/02/key-blockchain-vendors-cloud-providers-square-off-in-major-test/"
 
 [cta]
     title = "Find your first-class agreement now"
