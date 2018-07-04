@@ -13,7 +13,7 @@
 
 
 [testimonials]
-    enable = true
+    enable = false
     quote = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     name = "Some person"
     position = "Some company inc."
