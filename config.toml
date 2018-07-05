@@ -107,10 +107,11 @@ quality = 80
     url  = "https://beta.monax.io/register"
     weight = 1
 
-[[menu.login]]
-    name = "Login"
-    url  = "https://beta.monax.io/"
-    weight = 7
+# commenting this until we're closer to GA
+# [[menu.login]]
+#     name = "Login"
+#     url  = "https://beta.monax.io/"
+#     weight = 7
 
 [params]
     # viewMorePostLink = "/archive/"
