@@ -100,8 +100,8 @@
     link_url = "/for/lawyers/"
 
 
-[screencasts]
-    enable = false # pulls out most recent screencast by default
+[tutorials]
+    enable = true # pulls out most recent tutorial by default
     show_related_links = true
 
     [[screencasts.relatedlinks]]
@@ -117,14 +117,14 @@
       link_url = "/casestudies/"
 
     # [[screencasts.relatedlinks]]
-    #   link_title = "More screencasts"
-    #   link_url = "/screencasts/"
+    #   link_title = "More tutorials"
+    #   link_url = "/tutorials/"
 
 
 [webinar]
     enable = true
     title = "Sign up for a webinar"
-    subtitle = "We are a series of webinars based around what our customers have told us they want to find out... check back here soon or sign up to be informed of upcoming ones."
+    subtitle = "We are making a series of webinars based around what our customers have told us they want to find out... check back here soon or sign up to be informed of upcoming ones."
     show_upcoming = false
 
     [webinar.form]
