@@ -19,7 +19,7 @@
 
     [[feature.consumer.section]]
       title = "100% transparency on your legal matters."
-      subtitle = "Maintain constant insight as to what is happening in your contracts. Track every step along the way, gathering evidence required to fulfill an agreement from signing to shipping or payments and the like. Put your mind at ease and concentrate on nurturing your business."
+      subtitle = "Maintain constant insight as to what is happening in your contracts. Track every step along the way, gathering evidence required to fulfill an agreement from signing to shipping or payments and so on. Put your mind at ease and concentrate on growing your business."
       #### ZOOM TEMPLATE
       animation_id = "feature-animation-1"
       animation_type = "zoom"
@@ -34,7 +34,7 @@
 
     [[feature.consumer.section]]
       title = "Trusted legal products at your fingertips."
-      subtitle = "Buy lawyer-tested legal products in the same way you shop for books, clothing or food. The Monax marketplace opens the doors to legal trust without the legal hassle."
+      subtitle = "Buy lawyer-tested legal products in the same way you shop for books, clothing or food. The Monax platform opens the doors to legal trust without the legal hassle."
       #### SCROLL TEMPLATE
       animation_id = "feature-animation-2"
       animation_type = "scroll"
@@ -48,7 +48,7 @@
 
     [[feature.consumer.section]]
       title = "Create self-executable legal agreements in minutes."
-      subtitle = "Pick the legal template that meets your needs, complete it with your details and launch. Monax’s legal workflow engine takes care of the rest."
+      subtitle = "Pick the legal template that meets your needs, complete it with your details and go! Monax’s legal workflow engine takes care of the rest."
       #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
       animation_id = "feature-animation-3"
       animation_type = "multipop"
@@ -122,7 +122,7 @@
 
     [[feature.producer.section]]
       title = "Increase your margins."
-      subtitle = "Offer your legal expertise through legal products in the Monax marketplace and broaden your customer base. Kick back and let process automation and reproducibility of your assets earn you money."
+      subtitle = "Offer your legal expertise through legal products in the Monax platform and broaden your customer base. Kick back and let process automation and reproducibility of your assets earn you money."
       #### ZOOM TEMPLATE
       animation_id = "feature-animation-6"
       animation_type = "zoom"

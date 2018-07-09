@@ -88,6 +88,16 @@
     city = "Remote"
     img = "/img/assets/cities/office-remote.png"
 
+    [[team.item]]
+      name = "Anjlee Khurana"
+      position = "Legal Engineer"
+      weight = 1
+      img = ""get IMG
+      twitter = "https://twitter.com/Anjleekhurana"
+      linkedin = "https://www.linkedin.com/in/anjlee-khurana-286630122"
+      keybase = ""
+      # github = "#"
+      # website = "#"
 
     [[team.item]]
       name = "Adam Locklin"
