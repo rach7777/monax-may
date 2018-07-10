@@ -2,12 +2,12 @@
 author: Casey Kuhlman, CEO
 categories:
 - hiring
-comments: true
+comments: false
 date: 2016-05-12T00:00:00Z
 excerpt: We are immensely excited to announce that Jason Banks has joined Monax as
   a legal engineer on our Library Team.
-meta: true
-published: true
+meta: false
+published: false
 tags:
 - hiring
 - awesome

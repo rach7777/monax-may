@@ -2,12 +2,12 @@
 author: Casey Kuhlman, CEO
 categories:
 - hiring
-comments: true
+comments: false
 date: 2016-06-06T00:00:00Z
 excerpt: We are immensely excited to announce that Paul du Plessis has joined Monax
   as a senior product manager on our Success Team.
-meta: true
-published: true
+meta: false
+published: false
 tags:
 - hiring
 - awesome
