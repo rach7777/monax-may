@@ -2,11 +2,11 @@
 author: Casey Kuhlman, CEO
 categories:
 - hiring
-comments: true
+comments: false
 date: 2015-08-03T00:00:00Z
 excerpt: We are immensely excited to announce that Brian Fabian Crain has joined Monax as our Head of Business Development.
 meta: true
-published: true
+published: false
 tags:
 - hiring
 - awesome

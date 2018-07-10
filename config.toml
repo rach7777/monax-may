@@ -90,12 +90,12 @@ quality = 80
       Post = "Learn how Monax can help you streamline your business. Explore best practices for Monax tools and ask questions."
       Weight = 3
 
-    # [[menu.main]]
-    #   Name = "Webinars"
-    #   parent = "resources"
-    #   URL = "/webinars/"
-    #   Post = "Join us for industry insight and best practice advice on using legal products to streamline your business."
-    #   Weight = 4
+    [[menu.main]]
+     Name = "Webinars"
+     parent = "resources"
+     URL = "/webinars/"
+     Post = "Join us for industry insight and best practice advice on using legal products to streamline your business."
+     Weight = 4
 
 [[menu.main]]
     name = "Company"

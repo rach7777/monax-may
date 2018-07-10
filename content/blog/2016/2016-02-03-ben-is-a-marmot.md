@@ -2,12 +2,12 @@
 author: Casey Kuhlman, CEO
 categories:
 - hiring
-comments: true
+comments: false
 date: 2016-02-03T00:00:00Z
 excerpt: We are immensely excited to announce that Ben Bollen has joined Monax as a
   Developer on our Platform Team.
-meta: true
-published: true
+meta: false
+published: false
 tags:
 - hiring
 - awesome

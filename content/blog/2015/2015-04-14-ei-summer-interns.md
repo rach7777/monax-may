@@ -1,11 +1,11 @@
 ---
 author: Monax
-comments: true
+comments: false
 date: 2015-04-14T00:00:00Z
 excerpt: Why go to the beach? Let's build distributed systems instead!
-meta: true
-published: true
-deprecated: true
+meta: false
+published: false
+deprecated: false
 tags:
 - eris
 - thelonious

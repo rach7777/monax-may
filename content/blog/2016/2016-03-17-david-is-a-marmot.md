@@ -2,13 +2,13 @@
 author: Casey Kuhlman, CEO
 categories:
 - hiring
-comments: true
+comments: false
 date: 2016-03-17T00:00:00Z
-deprecated: true
+deprecated: false
 excerpt: We are immensely excited to announce that David Gardner has joined Monax as
   our Head of Partnerships on our Success Team.
-meta: true
-published: true
+meta: false
+published: false
 tags:
 - hiring
 - awesome
@@ -21,7 +21,7 @@ title: David is a Marmot
 
 I'm very pleased to announce that David Gardner has joined Monax as our Head of Partnerships on our success team. He started on Wednesday this week and will be working out of our London office.
 
-David is coming to us after a break in his "formal" career (which he spent building a music studio!). 
+David is coming to us after a break in his "formal" career (which he spent building a music studio!).
 
 After meeting with him for the first time and reading the "proof of work" he had submitted (we screen applicants by asking them to write a little bit before progressing to interview), I was sold that he was a marmot. I ended my notes with this:
 
