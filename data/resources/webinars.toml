@@ -1,6 +1,6 @@
 [top]
     enable = true
-    title = "Upcoming webinars"
+    title = "Webinars"
     subtitle = "Join us for industry insight and best practice advice on using legal products to streamline your business."
     img_left = false
     hero_signup = false
