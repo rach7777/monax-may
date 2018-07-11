@@ -1,5 +1,5 @@
 ---
-author: nina
+author: Nina Kilbride, CCO
 categories:
 - eris
 comments: true
@@ -14,7 +14,7 @@ tags:
 - blockchain
 thumbnail: computer-deal.jpg
 title: Enforcing Legal Smart Contracts
-url: /2016/08/18/enforcing-legal-smart-contracts/
+# url: /blog/2016/08/18/enforcing-legal-smart-contracts/
 ---
 
 ## Enforcing Legal Smart Contracts

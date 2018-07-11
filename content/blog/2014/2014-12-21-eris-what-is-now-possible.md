@@ -1,5 +1,5 @@
 ---
-author: casey
+author: Casey Kuhlman, CEO
 categories:
 - products
 comments: true
@@ -16,7 +16,8 @@ tags:
 - thelonious
 - decerver
 title: Expanding the Range of the Possible for DApp Makers
-url: /2014/12/21/eris-what-is-now-possible/
+# url: /blog/2014/12/21/eris-what-is-now-possible/
+slug: eris-what-is-now-possible
 ---
 
 

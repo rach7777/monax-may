@@ -1,5 +1,5 @@
 ---
-author: preston
+author: Monax
 categories:
 - products
 comments: true
@@ -14,7 +14,8 @@ tags:
 - decerver
 thumbnail: doug.png
 title: 'Bounty: #2014MarmotAward for XCP Decerver Module'
-url: /2014/12/19/marmotprize/
+# url: /blog/2014/12/19/marmotprize/
+slug: marmotprize
 ---
 
 

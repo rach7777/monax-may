@@ -3,11 +3,12 @@
 # fill in
 date:      2017-06-08T00:00:00Z
 title:     "Announcement: TrustedChain® Launches using Hyperledger Burrow"
-author:    casey
+author: Casey Kuhlman, CEO
 excerpt:   "Monax is pleased to announce the launch of the TrustedChain® network in Italy."
 thumbnail: trustedchain.jpg
 categories:
   - announcements
+  - press
 tags:
   - trusted chain
   - Italy
@@ -50,4 +51,3 @@ At Monax, what we especially like about the TrustedChain® network is that it cl
 ## Get Involved!
 
 TrustedChain® is one of the first networks we know of that is leveraging the core design paradigms of Hyperledger Burrow; namely the ability to grow a permissioned network over time as an ecosystem develops in size and governance functionality. If you are in the Italian market and you would like to get involved in the network, please [visit their site and get in touch](https://trustedchain.it/en/)!
-

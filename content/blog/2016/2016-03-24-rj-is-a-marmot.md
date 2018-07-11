@@ -1,20 +1,20 @@
 ---
-author: casey
+author: Casey Kuhlman, CEO
 categories:
 - hiring
-comments: true
+comments: false
 date: 2016-03-24T00:00:00Z
-deprecated: true
+deprecated: false
 excerpt: We are immensely excited to announce that RJ Catalano has joined Monax as
   a developer on our Platform Team.
-meta: true
-published: true
+meta: false
+published: false
 tags:
 - hiring
 - awesome
 thumbnail: team-rc.jpeg
 title: RJ is a Marmot
-url: /2016/03/24/rj-is-a-marmot/
+# url: /blog/2016/03/24/rj-is-a-marmot/
 ---
 
 

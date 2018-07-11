@@ -1,5 +1,5 @@
 ---
-author: casey
+author: Casey Kuhlman, CEO
 categories:
 - business
 comments: true
@@ -12,7 +12,8 @@ tags:
 - eris
 thumbnail: wtf-eris-rt.png
 title: What is Eris? 2016 Edition
-url: /2016/04/03/wtf-is-eris/
+# url: /blog/2016/04/03/wtf-is-eris/
+slug: wtf-is-eris
 ---
 
 
@@ -225,5 +226,3 @@ The other side of `eris` is our legal engineering side. That bit [we don't give 
 ## Eris: The Bottom Line
 
 Move faster. Move *with* the flow of distributed computing. #profit
-
-

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  {{ partial "head_fonts.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "resources/blog/top.html" . }}
+
+        {{ partial "resources/blog/articles.html" . }}
+
+        <!-- CTA section [GLOBAL] -->
+        {{ if isset .Site.Data.resources.blog "cta" }}
+          {{ if .Site.Data.resources.blog.cta.enable }}
+            {{ partial "_global/cta.html" . }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

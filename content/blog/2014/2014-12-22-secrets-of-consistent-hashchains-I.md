@@ -1,5 +1,5 @@
 ---
-author: ethan
+author: Monax
 categories:
 - blockchains
 comments: true
@@ -13,7 +13,8 @@ published: true
 tags:
 - blockchains
 title: 'Secrets of Consistent Hashchains I: Eventual Consistency'
-url: /2014/12/22/secrets-of-consistent-hashchains-i/
+# url: /blog/2014/12/22/secrets-of-consistent-hashchains-i/
+slug: secrets-of-consistent-hashchains-i
 ---
 
 

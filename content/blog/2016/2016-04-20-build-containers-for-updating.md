@@ -1,5 +1,5 @@
 ---
-author: zach
+author: Monax
 categories:
 - tutorials
 comments: true
@@ -20,7 +20,8 @@ tags:
 - ssh
 - scp
 title: Updating Your Application Using Docker Build Containers
-url: /2016/04/20/build-containers-for-updating/
+# url: /blog/2016/04/20/build-containers-for-updating/
+slug: build-containers-for-updating
 ---
 
 
@@ -41,7 +42,7 @@ The [go-dockerclient](https://github.com/fsouza/go-dockerclient) shines here, as
 // Function is ~ to `docker build -t imageName .`
 // where a Dockerfile is in the `pwd`
 func DockerBuild(imageName, dockerfile string) error {
-	// adapted from: 
+	// adapted from:
 	// https://godoc.org/github.com/fsouza/go-dockerclient#Client.BuildImage
 	t := time.Now()
 	inputbuf := bytes.NewBuffer(nil)
@@ -103,7 +104,7 @@ imgOpts := docker.BuildImageOptions{
 
 A few things to note. We name our image, and we remove temporary build containers to clean up. The Dockerfile is written to a tarball `tr.Write([]byte(dockerfile))` and passed in as a buffer to `InputStream: inputbuf`. Together (with the help of a channel), the `OutputStream` and `rawJSONStream` pipe the logs to stdout while the build is running.
 
-After the build is complete, we check the presence of the named image. This is done because the build error is not caught (rather than, say, a docker client error). 
+After the build is complete, we check the presence of the named image. This is done because the build error is not caught (rather than, say, a docker client error).
 
 The code to check that the image exists is straight-forward:
 
@@ -155,7 +156,7 @@ func UpdateEris(do *definitions.Do) error {
 		if err := UpdateErisGo(do.Branch); err != nil {
 			return err
 		}
-	
+
 	} else if whichEris == "binary" {
 		if err := UpdateErisViaBinary(do.Branch, binPath); err != nil {
 			return err
@@ -215,7 +216,7 @@ func BuildErisBinContainer(branch, binaryPath string) error {
 	doCp.Source = "/usr/local/bin/eris"
 	doCp.Destination = newPath
 	doCp.Operations.SkipCheck = true
-	
+
 	if err := data.ExportData(doCp); err != nil {
 		return err
 	}
@@ -257,7 +258,7 @@ For now, ignore `MakeDockerfile()` and assume the Dockerfile looks like:
 
 ```Dockerfile
 FROM quay.io/eris/base
-	
+
 ENV NAME         eris-cli
 ENV REPO	 eris-ltd/$NAME
 ENV BRANCH       %s
@@ -403,7 +404,7 @@ Last but not least, we'll need to delete the old binary and replace it with the 
 
 ```go
 // takes a new binary and replaces the old one
-// prompts windows users to do manually 
+// prompts windows users to do manually
 func ReplaceOldBinaryWithNew(oldPath, newPath string) error {
 
 	platform := runtime.GOOS
@@ -438,7 +439,7 @@ which does exactly what we want it to (except maybe on windows :(). Awesome! But
 
 #### Docker-Machine Wizardy
 
-It's no secret; we love all things docker. Especially docker-machine though. Having only used it for a few things ([see our docker-machine tutorial](/docs/deprecated), I forgot about its handy `ssh/scp` commands. Testing that a binary installation could update itself while developing in go proved somewhat incovenient and I had a convoluted process that was wearing my patience thin (nor did I want to be moving things around in `/usr/bin` on my local machine). 
+It's no secret; we love all things docker. Especially docker-machine though. Having only used it for a few things ([see our docker-machine tutorial](/docs/deprecated), I forgot about its handy `ssh/scp` commands. Testing that a binary installation could update itself while developing in go proved somewhat incovenient and I had a convoluted process that was wearing my patience thin (nor did I want to be moving things around in `/usr/bin` on my local machine).
 
 The solution: `scp` the binary from every `go install` into `/usr/bin` on a docker-machine. Assume the machine `dev-testing` has already been created.
 
@@ -462,4 +463,4 @@ rm /usr/bin/eris
 exit
 ```
 
-And I'm back on the host ready for another round of writing code, compiling via go & testing it on the docker-machine. 
+And I'm back on the host ready for another round of writing code, compiling via go & testing it on the docker-machine.

@@ -1,5 +1,5 @@
 ---
-author: zach
+author: Monax
 categories:
 - tutorials
 comments: true
@@ -20,12 +20,13 @@ tags:
 - blockchain
 thumbnail: null
 title: 'Monax CLI Tool Walkabout: Services'
-url: /2015/08/05/eris-services/
+# url: /blog/2015/08/05/eris-services/
+slug: eris-services
 ---
 
 
 
-##Services as a Service
+## Services as a Service
 
 Services are what you, as a developer, stitch together to build an application. They are the glue that holds everything together, run in docker containers, and can be built on top of other services.
 
@@ -44,7 +45,7 @@ Perhaps Alice operates an army of delivery drones in the warehouse next door. Sh
 
 That's a neat example. What's your service?
 
-##Getting Started
+## Getting Started
 [Install Eris CLI](https://github.com/monax/monax/tree/develop#install-eris)
 
 Read the [README](https://github.com/monax/monax/tree/develop#services)
@@ -100,4 +101,3 @@ docker rm -v -f $(docker ps -a -q)
 but be careful with this command.
 
 Note to OSX users - save yourself a lot of headache by working on a remote box or use Kitematic.
-

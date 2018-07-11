@@ -1,5 +1,5 @@
 ---
-author: casey
+author: Casey Kuhlman, CEO
 categories:
 - blockchains
 comments: true
@@ -15,7 +15,8 @@ tags:
 - blockchains
 thumbnail: ecosystems.jpg
 title: An Ecosystems Approach to Blockchaining
-url: /2015/08/25/on-blockchain-ecosystems/
+# url: /blog/2015/08/25/on-blockchain-ecosystems/
+slug: on-blockchain-ecosystems
 ---
 
 

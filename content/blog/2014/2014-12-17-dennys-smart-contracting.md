@@ -1,5 +1,5 @@
 ---
-author: tyler
+author: Dr Tyler Jackson, Chief Scientist
 categories:
 - smart contracts
 comments: true
@@ -16,7 +16,8 @@ tags:
 - esl
 - smart contracts
 title: Smart Contract Writing, LLL and the creation of the Eris Standard Library
-url: /2014/12/17/dennys-smart-contracting/
+# url: /blog/2014/12/17/dennys-smart-contracting/
+slug: dennys-smart-contracting
 ---
 
 #### DOUG, C3D, Eris - how it all began
@@ -107,4 +108,3 @@ I hear you ask. C3D has been implemented as a Type. It is technically in a diffe
 I am just one smart contract writer, and of course a little biased, but I love Denny's Type Templates and am looking forward to teaching you how to use them to make your DApp writing cleaner and easier to read. Look for my Tutorials on LLL contract writting, both Basic and advanced, and usage of the Eris Standard Library.
 
 I'll have you writing DApps far more complex then the original Eris in no time!
-

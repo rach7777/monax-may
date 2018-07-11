@@ -1,18 +1,19 @@
 ---
-author: preston
-comments: true
+author: Monax
+comments: false
 date: 2015-04-14T00:00:00Z
 excerpt: Why go to the beach? Let's build distributed systems instead!
-meta: true
-published: true
-deprecated: true
+meta: false
+published: false
+deprecated: false
 tags:
 - eris
 - thelonious
 - decerver
 thumbnail: doug.png
 title: Eris Industries 2015 Summer Internships
-url: /2015/04/14/ei-summer-interns/
+# url: /blog/2015/04/14/ei-summer-interns/
+slug: ei-summer-interns
 ---
 
 

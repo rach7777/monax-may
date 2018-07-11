@@ -1,0 +1,24 @@
+{{ if .Site.Data.global.posts.widgets.categories }}
+  {{ if isset .Site.Taxonomies "categories" }}
+    {{ if not (eq (len .Site.Taxonomies.categories) 0) }}
+      <div class="panel panel-default sidebar-menu">
+          <div class="range-left-md">
+              <h5>{{ i18n "categoriesTitle" }}</h5>
+          </div>
+          <div class="panel-body">
+              <ul class="category-cloud">
+                  {{ range $name, $items := .Site.Taxonomies.categories }}
+                    {{ if $name }}
+                      {{ if gt (len $items) 3 }}
+                        <li>
+                          <a href="{{ $.Site.BaseURL }}categories/{{ $name | urlize | lower }}"><i class="fa fa-bookmark"></i> {{ $name }} ({{ len $items }})</a>
+                        </li>
+                      {{ end }}
+                    {{ end }}
+                  {{ end }}
+              </ul>
+          </div>
+      </div>
+    {{ end }}
+  {{ end }}
+{{ end }}

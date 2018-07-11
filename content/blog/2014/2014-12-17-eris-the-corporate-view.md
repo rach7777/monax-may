@@ -1,5 +1,5 @@
 ---
-author: preston
+author: Monax
 categories:
 - products
 comments: false
@@ -14,7 +14,8 @@ tags:
 - thelonious
 - decerver
 title: Meet Eris. The distributed computing solution for industry.
-url: /2014/12/17/eris-the-corporate-view/
+# url: /blog/2014/12/17/eris-the-corporate-view/
+slug: eris-the-corporate-view
 ---
 
 
@@ -196,6 +197,3 @@ An introduction to the open alpha release of Eris in ten points:
 * If you think blockchains are about the "TCP/IP of value" or the "internet of money," we'd suggest descending a few levels of abstraction. From there, you can pretty easily abstract your way back up to money and value, but along entirely traditional economic and commercial lines if you prefer.
 
 * We don't have a uniform corporate view on what to call this approach. I call it "thinking commercially about how to build useful enterprise tools with blockchain databases." The rest of the team calls it "**crypto-utilitarianism**." *Vive la différence.*
-
-
-

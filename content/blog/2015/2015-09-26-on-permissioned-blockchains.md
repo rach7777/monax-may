@@ -1,5 +1,5 @@
 ---
-author: casey
+author: Casey Kuhlman, CEO
 categories:
 - blockchain design
 comments: true
@@ -15,7 +15,8 @@ tags:
 - private blockchains
 thumbnail: mostpit.jpg
 title: On Permissioning Your Blockchains
-url: /2015/09/26/on-permissioned-blockchains/
+# url: /blog/2015/09/26/on-permissioned-blockchains/
+slug: on-permissioned-blockchains
 ---
 
 

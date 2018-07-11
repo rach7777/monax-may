@@ -1,5 +1,5 @@
 ---
-author: casey
+author: Casey Kuhlman, CEO
 categories:
 - legal tech
 comments: true
@@ -14,7 +14,8 @@ tags:
 - smart contracts v. paper contracts
 thumbnail: contract.jpg
 title: WTF Are Smart Contracts Anyway?
-url: /2015/09/15/smart-contracts-intro/
+# url: /blog/2015/09/15/smart-contracts-intro/
+slug: smart-contracts-intro
 ---
 
 [{{< image_blog "contract.jpg" >}}](https://www.flickr.com/photos/stevensnodgrass/5480863464/)

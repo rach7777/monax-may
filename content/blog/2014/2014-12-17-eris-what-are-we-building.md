@@ -1,5 +1,5 @@
 ---
-author: casey
+author: Casey Kuhlman, CEO
 categories:
 - products
 comments: false
@@ -16,7 +16,8 @@ tags:
 - thelonious
 - decerver
 title: Eris Industries -- What Are We Building?
-url: /2014/12/17/eris-what-are-we-building/
+# url: /blog/2014/12/17/eris-what-are-we-building/
+slug: eris-what-are-we-building
 ---
 
 

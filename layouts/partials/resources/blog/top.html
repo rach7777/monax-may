@@ -1,0 +1,26 @@
+{{ with .Site.Data.resources.blog.top }}
+{{ if .enable }}
+<section class="section-top padding-top-md padding-bottom-md section-shadow-xl" style="background: url({{ .background_element }}) right bottom no-repeat; background-size: 520px;">
+    <div class="container">
+
+      <div class="row flex-grid-md">
+          <div class="col-md-8 col-md-offset-2 col-valign-center">
+              <div class="underline-sm">
+                  <h1>{{ .title }}</h1>
+              </div>
+              <p class="lead">
+                {{ .subtitle | markdownify }}
+              </p>
+
+              <!-- Sign up section [GLOBAL] -->
+              {{ if .hero_signup }}
+                {{ partial "_global/hero_newsletter.html" . }}
+              {{ end }}
+
+          </div>
+      </div>
+
+    </div> <!-- .container -->
+</section> <!-- .section -->
+{{ end }}
+{{ end }}

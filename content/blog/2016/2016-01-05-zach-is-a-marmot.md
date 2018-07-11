@@ -1,20 +1,20 @@
 ---
-author: casey
+author: Casey Kuhlman, CEO
 categories:
 - hiring
-comments: true
+comments:
 date: 2016-01-05T00:00:00Z
-deprecated: true
+deprecated: false
 excerpt: We are immensely excited to announce that Zach Ramsay has joined Monax Industries as
   a Developer on our Platform Team.
-meta: true
-published: true
+meta: false
+published: false
 tags:
 - hiring
 - awesome
 thumbnail: team-zr.jpeg
 title: Zach is a Marmot
-url: /2016/01/05/zach-is-a-marmot/
+# url: /blog/2016/01/05/zach-is-a-marmot/
 ---
 
 

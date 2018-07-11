@@ -1,5 +1,5 @@
 ---
-author: rj
+author: Monax
 categories:
 - programming
 comments: true
@@ -15,10 +15,11 @@ tags:
 - ethereum
 thumbnail: 2016-06-18-doug-dao.png
 title: Lessons on Preparation for Disaster from the DAO
-url: /2016/06/18/lessons-learned-dao/
+# url: /blog/2016/06/18/lessons-learned-dao/
+slug: lessons-learned-dao
 aliases:
   - /2016/06/18/fact-patterns-dao-legal-engineering
-    
+
 ---
 
 Much has been written about the fall of the DAO in the past 24 hours and there has been a lot of talk of what happened and what didn't happen that should have happened. I'm not going to talk about how it happened. There are many colorful and wonderful pieces explaining the attack, one of which I recommend reading for this particular instance is [Peter Vessenes's](http://vessenes.com/deconstructing-thedao-attack-a-brief-code-tour/)

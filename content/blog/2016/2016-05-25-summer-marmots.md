@@ -1,13 +1,13 @@
 ---
-author: zach
+author: Monax
 categories:
 - hiring
-comments: true
+comments: false
 date: 2016-05-25T00:00:00Z
-deprecated: true
+deprecated: false
 excerpt: Two summer interns with awesome skills join Monax
-meta: true
-published: true
+meta: false
+published: false
 tags:
 - hiring
 - awesome
@@ -16,7 +16,8 @@ tags:
 - ARM
 - lawyerswhocode
 title: Summer Interns Grow the Burrow
-url: /2016/05/25/summer-marmots/
+# url: /blog/2016/05/25/summer-marmots/
+slug: summer-marmots
 ---
 
 

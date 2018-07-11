@@ -1,7 +1,8 @@
 ---
-author: casey
+author: Casey Kuhlman, CEO
 categories:
-- announcements
+  - announcements
+  - press
 comments: false
 date: 2017-02-28T00:00:00Z
 deprecated: true
@@ -14,7 +15,7 @@ tags:
 thumbnail: hyperledger.jpg
 excerpt: "Monax announces it has joined Hyperledger and will be submitting its market-leading blockchain client, eris:db, for incubation."
 title: "Why we're joining Hyperledger"
-url: /2017/02/28/why-were-joining-hyperledger/
+# url: /blog/2017/02/28/why-were-joining-hyperledger/
 ---
 
 

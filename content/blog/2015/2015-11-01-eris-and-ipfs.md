@@ -1,6 +1,6 @@
 ---
 
-author: brian
+author: Monax
 categories:
 - distributed business
 comments: true
@@ -16,7 +16,8 @@ tags:
 - smart contracts
 thumbnail: null
 title: Eris + IPFS
-url: /2015/11/01/eris-and-ipfs/
+# url: /blog/2015/11/01/eris-and-ipfs/
+slug: eris-and-ipfs
 
 ---
 

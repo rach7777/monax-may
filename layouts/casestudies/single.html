@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  {{ partial "head_fonts.html" . }}
+
+  <body>
+
+    <div id="all" class="single-post">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        <section class="section-top padding-top-md" style="background: url({{ .Site.Data.global.posts.casestudies.top.background_element }}) right bottom no-repeat; background-size: 520px;">
+            <div class="container">
+              <div class="row flex-grid-md">
+                  <div class="col-md-7 col-valign-center">
+                      {{ if isset .Params "categories" }}
+                        <div class="range-left-md">
+                          <h5 class="article-category" style="margin-bottom:-10px;">{{ index .Params.categories 0 }}</h5>
+                        </div>
+                      {{ end }}
+                      <div class="range-left-md underline-sm">
+                        <h1>{{ .Title }}</h1>
+                      </div>
+                      {{ if gt .Date.Year 2000 }}
+                        <p class="post-meta range-left-md">{{ if .Params.author }}<i class="fa fa-user-o"></i> {{ .Params.author }}{{ end }}<i class="fa fa-calendar"></i> {{ .Date.Format .Site.Params.date_format }}</p>
+                      {{ end }}
+                      <p class="lead range-left-md">
+                        {{ .Params.excerpt }}
+                      </p>
+
+                      <!-- Sign up section [GLOBAL] -->
+                      {{ if .Site.Data.global.posts.casestudies.top.hero_signup }}
+                        {{ partial "_global/hero_newsletter.html" . }}
+                      {{ end }}
+                  </div>
+              </div>
+            </div> <!-- .container -->
+        </section> <!-- .section -->
+
+        <div id="content">
+            <div class="container">
+                <div class="row padding-bottom-xl">
+
+                    <div class="col-md-9 padding-bottom-lg" id="casestudies-post">
+                      <div id="post-content" class="range-left-md">
+                        {{ .Content }}
+                      </div>
+                    </div> <!-- .post content -->
+
+                    <div class="col-md-3">
+                        {{ partial "sidebar.html" . }}
+                    </div> <!-- .sidebar col -->
+
+                </div> <!-- .row -->
+            </div> <!-- .container -->
+        </div> <!-- .#content -->
+
+        <!-- CTA section [GLOBAL] -->
+        {{ if .Site.Data.global.posts.casestudies.cta.enable }}
+          {{ partial "_global/cta.html" . }}
+        {{ end }}
+
+        {{ partial "footer.html" . }}
+
+
+    </div> <!-- .#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

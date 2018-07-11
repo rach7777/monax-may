@@ -1,8 +1,12 @@
 ---
 
-layout: wide
-title:      "Learn | Permissioned Blockchains"
+layout: single
+title:      "Permissioned Blockchains"
 excerpt:    "What is a Permissioned Blockchain and why are these automated data management systems so cool?"
+# thumbnail: example-image.jpg
+categories:
+  - learn
+tags:
 
 ---
 
@@ -113,6 +117,3 @@ While trustlessness is a tricky subject commercially for all the reasons discuss
 When it comes to increasing verifiability for all parties to a given data-driven interaction, there are few technologies currently invented which match blockchains.
 
 For more on verifiable [business process automation between stakeholders](/learn/smart_contracts) please see our smart contracts explainer.
-
-
-## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Explainers](/learn/)

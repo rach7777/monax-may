@@ -1,5 +1,5 @@
 ---
-author: casey
+author: Casey Kuhlman, CEO
 categories:
 - legal tech
 comments: true
@@ -17,7 +17,8 @@ tags:
 - legal tech
 - legalhacking
 title: 'Why We Built the Best #Legalhack ing Tool I Know Of'
-url: /2014/12/17/the-best-legal-hacking-tool-i-know/
+# url: /blog/2014/12/17/the-best-legal-hacking-tool-i-know/
+slug: the-best-legal-hacking-tool-i-know
 ---
 
 

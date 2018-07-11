@@ -1,5 +1,5 @@
 ---
-author: nina
+author: Nina Kilbride, CCO
 categories:
 -
 comments: true
@@ -13,7 +13,7 @@ tags:
 - ecosystem
 thumbnail: association.png
 title: Engineering Blockchain Consortia
-url: /2017/04/18/engineering-blockchain-consortia/
+# url: /blog/2017/04/18/engineering-blockchain-consortia/
 ---
 
 **Collaborative solutions.**

@@ -1,0 +1,142 @@
+[top]
+    enable = true
+    title = "Deploy smart, legally-binding contracts on the blockchain"
+    subtitle = "Be the first to explore the future of making agreements"
+    img_left = false
+    hero_signup = true
+    img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
+    # background_element = "/img/assets/background-elements/abstract-01.jpg"
+
+    [top.illustration]
+      enable = true   # replaces img_right
+      img_base = "/img/assets/animations/monax-laptop/laptop-animation-base.png"
+      img_layer_one = "/img/assets/animations/monax-laptop/laptop-animation-layer-1.png"
+      img_layer_two = "/img/assets/animations/monax-laptop/laptop-animation-layer-2.png"
+
+
+[press] # global
+    enable = true
+
+
+[summary]
+    enable = true
+    title = "What can Monax do for you?"
+    subtitle = ""
+    #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
+    animation_id = "feature-animation-4"
+    animation_type = "multipop"
+    img_base = "/img/assets/animations/shared/base-mac.png"
+    img_content_container = "mac" # set to 'mac' or 'iphone'
+    img_content_layer_src = "/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
+    animation_delay = "0"
+    animation_duration = "300"
+
+    [[summary.pop]]
+      img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-1-reviewed-agreement.png"
+      img_pop_id = "pop-1"
+      animation_delay = "900"
+      animation_duration = "600"
+
+    [[summary.pop]]
+      img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-2-signed-agreement.png"
+      img_pop_id = "pop-2"
+      animation_delay = "1500"
+      animation_duration = "600"
+
+    [[summary.feature]]
+      title = "Create self-executable legal agreements in minutes."
+      description = ""
+      icon = "fa-chevron-right"
+      animation_type = "fade-up"
+      animation_delay = "600"
+      animation_duration = "600"
+
+    [[summary.feature]]
+      title = "An intuitive interface to the most advanced tech in the legal sector."
+      description = ""
+      icon = "fa-chevron-right"
+      animation_type = "fade-up"
+      animation_delay = "1600"
+      animation_duration = "600"
+
+    [[summary.feature]]
+      title = "Trusted legal products at your fingertips."
+      description = ""
+      icon = "fa-chevron-right"
+      animation_type = "fade-up"
+      animation_delay = "2600"
+      animation_duration = "600"
+
+
+[usecases]
+  enable = true
+
+  [[usecases.section]]
+    category = "fleet-leasing"
+    title = "For Fleet Leasing"
+    subtitle = "How Monax can power your fleet leases, simplify your business processes and drive new revenue streams."
+    img = "/img/assets/homepage/usecases/fleet-leasing/fleet-leasing-small.png"
+    link_url = "/for/fleet-leasing/"
+
+  [[usecases.section]]
+    category = "corporate-governance"
+    title = "For Corporate Governance"
+    subtitle = "How Monax can simplify and speed up your corporate governance, and give you full control over your agreements."
+    img = "/img/assets/homepage/usecases/corporate-governance/corporate-governance-small.png"
+    link_url = "/for/corporate-governance/"
+
+  [[usecases.section]]
+    category = "content-creators"
+    title = "For Content Creators"
+    subtitle = "How Monax can strengthen your brand, protect your IP and drive new revenue streams for your content."
+    img = "/img/assets/homepage/usecases/content-creators/content-creators-small.png"
+    link_url = "/for/content-creators/"
+
+  [[usecases.section]]
+    category = "lawyers"
+    title = "For Lawyers"
+    subtitle = "How Monax can simplify your workflow and turn your knowledge into commoditisable legal products."
+    img = "/img/assets/homepage/usecases/lawyers/lawyers-small.png"
+    link_url = "/for/lawyers/"
+
+
+[tutorials]
+    enable = true # pulls out most recent tutorial by default
+    show_related_links = true
+
+    [[screencasts.relatedlinks]]
+      link_title = "Read our explainers"
+      link_url = "/explainers/"
+
+    [[screencasts.relatedlinks]]
+      link_title = "Monax blog posts and news"
+      link_url = "/blog/"
+
+    [[screencasts.relatedlinks]]
+      link_title = "Case studies"
+      link_url = "/casestudies/"
+
+    # [[screencasts.relatedlinks]]
+    #   link_title = "More tutorials"
+    #   link_url = "/tutorials/"
+
+
+[webinar]
+    enable = true
+    title = "Sign up for a webinar"
+    subtitle = "We are making a series of webinars based around what our customers have told us they want to find out... check back here soon or sign up to be informed of upcoming ones."
+    show_upcoming = false
+
+    [webinar.form]
+      source = "home webinar signup" # required for Segment to process
+      webinar_signup = "true" # required for Segment to process
+      email = true
+      fname = true
+      lname = true
+      company_name = false
+      form_action = "https://analytics.monax.io/monaxioregistry"
+      submit_text = "Get notified"
+
+
+[cta] # global
+    enable = true

@@ -1,5 +1,5 @@
 ---
-author: casey
+author: Casey Kuhlman, CEO
 categories:
 - hiring
 comments: true
@@ -13,7 +13,7 @@ tags:
 - awesome
 thumbnail: team-nk.jpeg
 title: Nina is a Marmot
-url: /2016/02/08/nina-is-a-marmot/
+# url: /blog/2016/02/08/nina-is-a-marmot/
 ---
 
 It is my great pleasure to announce that Nina Kilbride has joined Monax as a developer on our libraries team. She will be working out of our New York office but will be working remote most of the time. I'm excited because today I get to move Nina from my super secret Twitter list I call `to hire...?` to my less secret Twitter list `monax staff` :-)

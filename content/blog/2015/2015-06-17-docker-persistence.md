@@ -1,5 +1,5 @@
 ---
-author: ethan
+author: Monax
 categories:
 - tutorials
 comments: true
@@ -13,7 +13,8 @@ tags:
 - persistence
 thumbnail_raw: http://i.ytimg.com/vi/Q5POuMHxW-0/maxresdefault.jpg
 title: Persisting Data with Docker Containers
-url: /2015/06/17/docker-persistence/
+# url: /blog/2015/06/17/docker-persistence/
+slug: docker-persistence
 ---
 
 After days of wrestling with the concept of persisting data in Docker containers deep in the bowels of that

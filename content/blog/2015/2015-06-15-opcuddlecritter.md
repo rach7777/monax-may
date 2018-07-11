@@ -1,5 +1,5 @@
 ---
-author: preston
+author: Monax
 categories:
 - products
 comments: true
@@ -14,7 +14,8 @@ tags:
 - decerver
 thumbnail: totallyadorable.jpg
 title: 'Operation: Cuddly Critter, Part 1'
-url: /2015/06/15/opcuddlecritter/
+# url: /blog/2015/06/15/opcuddlecritter/
+slug: opcuddlecritter
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-author: preston
+author: Monax
 categories:
 - products
 comments: true
@@ -12,7 +12,8 @@ tags:
 - monax
 thumbnail: doug.png
 title: 'Open Document Monkey: A sketch and proposal'
-url: /2015/02/16/opendocumentmonkey/
+# url: /blog/2015/02/16/opendocumentmonkey/
+slug: opendocumentmonkey
 ---
 
 ## Open Document Monkey: a proposal for a utility blockchain application.

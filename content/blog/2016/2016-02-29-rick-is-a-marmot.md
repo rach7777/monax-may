@@ -1,5 +1,5 @@
 ---
-author: casey
+author: Casey Kuhlman, CEO
 categories:
 - hiring
 comments: true
@@ -12,7 +12,7 @@ tags:
 - hiring
 - awesome
 title: Rick is a Marmot
-url: /2016/02/29/rick-is-a-marmot/
+# url: /blog/2016/02/29/rick-is-a-marmot/
 ---
 
 It is my great pleasure to announce that Rick Dudley has joined Monax as a developer on our platform team. He started on Thursday last week (and he came not a moment too soon) and will be working out of our New York office.

@@ -1,5 +1,5 @@
 ---
-author: nina
+author: Nina Kilbride, CCO
 categories:
 -
 comments: true
@@ -12,7 +12,7 @@ tags:
 - smart contracts
 thumbnail: arrows-1577983_1920.png
 title: 2017 Blockchain Planning
-url: /2017/01/13/2017-blockchain-planning/
+# url: /blog/2017/01/13/2017-blockchain-planning/
 ---
 
 In the coming year, a lot of people will find themselves tasked with “getting up to speed on blockchain.” Two recent must-reads offer sober, practical guidance for blockchain technology in an enterprise setting. [Harvard Business Review](https://hbr.org/2017/01/the-truth-about-blockchain) and [Boston Consulting Group](http://www.bcg.com/blockchain/thinking-outside-the-blocks.html) recently published excellent summaries of the blockchain landscape and a little sober advice on building solutions that are likely to work. *TL;DR:* Smart contracts are the most transformative application of blockchain technology, and the most likely pathway to success is to build Monax-style.

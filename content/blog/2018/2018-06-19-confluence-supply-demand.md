@@ -3,7 +3,7 @@
 # fill in
 date:      2018-06-19T00:00:00Z
 title:     "Supply and Demand: The Mechanics of Legal Products"
-author:    casey
+author: Casey Kuhlman, CEO
 excerpt:   "When people think about \"legal\" they think almost entirely of the provision of bespoke services. Yet the world is changing, and \"legal\" needs to keep up."
 thumbnail: vladislav-m-414275-unsplash.jpg
 categories:
@@ -65,4 +65,4 @@ And this -- along with a range of new, user-focused legal tech startups (such as
 
 If you are interested in turning your bespoke legal services practice into scalable legal products we are formulating our second tranche of Co-Founders for the Agreements Network. Find out more at: the [Agreements Network](https://agreements.network) site.
 
-<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@vladislavleo?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Vladislav M"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Vladislav M</span></a>
+[Photo](https://unsplash.com/photos/WI62j3uzORo) by [Vladislav M](https://unsplash.com/photos/WI62j3uzORo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

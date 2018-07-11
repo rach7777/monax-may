@@ -1,0 +1,61 @@
+{{ with .Site.Data.company.positions }}
+{{ if .enable }}
+<section class="section-positions padding-bottom-xl">
+    <div class="container">
+
+        <div class="row">
+          <div class="col-md-5">
+
+            <div class="content-container padding-bottom-md">
+              <div class="underline-sm range-left-md">
+                  <h3>{{ .title }}</h3>
+              </div>
+              <p class="range-left-md padding-bottom-sm">
+                {{ .subtitle | markdownify }}
+              </p>
+            </div> <!-- .content-container -->
+
+            <div class="content-container padding-bottom-md">
+                <div class="range-left-md">
+                    <h4>{{ .contact.title }}</h4>
+                </div>
+                <p class="range-left-md padding-bottom-sm">
+                  {{ .contact.subtitle | markdownify }}
+                </p>
+            </div> <!-- .content-container -->
+
+          </div> <!-- .col -->
+          <div class="col-md-7">
+            <div class="row">
+              {{ range $i, $p := .job }}
+
+                {{ if (modBool $i 2) }} <!-- new row after 2 entries -->
+                  <div class="clearfix visible-lg-block"></div>
+                {{ end }}
+
+              <div class="col-sm-6 padding-bottom-md">
+                <div class="content-container content-card content-card-stack content-card-shadow-sm hover-scale" style="width: 100%;">
+                  <div class="text-container">
+                    <div class="title range-left">
+                      <h5>{{ .title }}</h5>
+                      <p class="subtitle range-left">
+                        {{ .description }}
+                      </p>
+                    </div>
+                    <div class="meta range-left">
+                      <p><span><i class="fa fa-calendar"></i> &nbsp;{{ .hours }}</span>&nbsp; - &nbsp;<span><i class="fa fa-clock-o"></i> &nbsp;{{ .type }}</span></p>
+                      <p><span><i class="fa fa-calendar"></i> &nbsp;{{ .location }}</span>&nbsp; - &nbsp;<span><i class="fa fa-calendar"></i> &nbsp;{{ .posted_date }}</span></p>
+                    </div>
+                  </div>
+                </div>  <!-- .content-card -->
+              </div>
+
+              {{ end }}
+            </div>
+          </div> <!-- .col -->
+        </div> <!-- .row -->
+
+    </div> <!-- .container -->
+</section>
+{{ end }}
+{{ end }}

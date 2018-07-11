@@ -1,5 +1,5 @@
 ---
-author: casey
+author: Casey Kuhlman, CEO
 categories:
 - videos
 comments: true
@@ -12,7 +12,8 @@ tags:
 thumbnail: screenshot-ethanslecture.png
 deprecated: true
 title: 'Ethan Lectures At Blockchain U: Eris, Ethereum, and Tendermint'
-url: /2015/05/12/ethan-at-blockchain-u/
+# url: /blog/2015/05/12/ethan-at-blockchain-u/
+slug: ethan-at-blockchain-u
 ---
 
 Ethan was recently at BlockchainU to give two lectures. Enjoy!

@@ -1,8 +1,12 @@
 ---
 
-layout: wide
-title:      "Learn | Smart Contracts v. Tokenized Approaches"
+layout: single
+title:      "Smart Contracts v. Tokenized Approaches"
 excerpt:    "When are smart contracts better than tokenized approaches to blockchaining?"
+# thumbnail: example-image.jpg
+categories:
+  - learn
+tags:
 
 ---
 
@@ -41,6 +45,3 @@ This is a massive boon for flexibility; particularly while prototyping quick sol
 ## The Modularity of Smart Contracts
 
 Smart contracts are also modular. This gives them inherent advantages over tokenized approaches as they can be more easily mixed and matched in a coherent fashion.
-
-
-## [<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> All Explainers](/learn/)

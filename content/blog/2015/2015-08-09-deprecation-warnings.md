@@ -1,5 +1,5 @@
 ---
-author: casey
+author: Casey Kuhlman, CEO
 categories:
 - products
 comments: true
@@ -17,7 +17,8 @@ tags:
 - eris-cli
 thumbnail: null
 title: 'Deprecation Warnings: What Do They Mean'
-url: /2015/08/09/deprecation-warnings/
+# url: /blog/2015/08/09/deprecation-warnings/
+slug: deprecation-warnings
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-author: casey
+author: Casey Kuhlman, CEO
 categories:
 - tutorials
 comments: true
@@ -16,7 +16,8 @@ tags:
 - blockchaini
 - eris
 title: 'Eris CLI Services Walkabout: BTCD'
-url: /2015/09/01/btcd-as-a-service/
+# url: /blog/2015/09/01/btcd-as-a-service/
+slug: btcd-as-a-service
 ---
 
 
@@ -114,4 +115,3 @@ Now your chain should boot with your custom config file.
 `eris` isn't optimized for btcd like containers. It fully runs them, but it does take a bit of work to get set up with containers that us a config file instead of being having a bootable config passed in as environment variables. In general we are of the opinion that start scripts and environment files go further than config files for configuring how things run in containers.
 
 How could this be improved? Well, for one a start script that would recieve the relevant env vars and dump those into a config before starting btcd would go a long way. We haven't had time to do that yet, but as they say.... pull requests welcome.
-

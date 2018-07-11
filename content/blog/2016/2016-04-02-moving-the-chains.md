@@ -1,5 +1,5 @@
 ---
-author: zach
+author: Monax
 categories:
 - distributed business
 comments: true
@@ -12,7 +12,8 @@ tags:
 - sportslaw
 - legaltech
 title: Moving The Chains to the Blockchain
-url: /2016/04/02/moving-the-chains/
+# url: /blog/2016/04/02/moving-the-chains/
+slug: moving-the-chains
 ---
 
 What do blockchains and sports have in common? A lot more than one might expect. This post is a think-piece written collaboratively with [Samir Patel](https://twitter.com/samirpatellaw) while we were kicking it marmot style at Michigan State University this weekend. #lawyerswhocode

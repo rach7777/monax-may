@@ -1,5 +1,5 @@
 ---
-author: casey
+author: Casey Kuhlman, CEO
 categories:
 - platform
 comments: true
@@ -14,7 +14,8 @@ tags:
 - modularity
 thumbnail: keys.keys.keys.jpg
 title: So Here's the Problem(s) With Keys
-url: /2016/03/19/keys-keys-keys/
+# url: /blog/2016/03/19/keys-keys-keys/
+slug: keys-keys-keys
 ---
 
 

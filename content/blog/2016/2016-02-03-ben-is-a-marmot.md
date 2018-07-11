@@ -1,19 +1,19 @@
 ---
-author: casey
+author: Casey Kuhlman, CEO
 categories:
 - hiring
-comments: true
+comments: false
 date: 2016-02-03T00:00:00Z
 excerpt: We are immensely excited to announce that Ben Bollen has joined Monax as a
   Developer on our Platform Team.
-meta: true
-published: true
+meta: false
+published: false
 tags:
 - hiring
 - awesome
 thumbnail: team-bb.jpeg
 title: Ben is a Marmot
-url: /2016/02/03/ben-is-a-marmot/
+# url: /blog/2016/02/03/ben-is-a-marmot/
 ---
 
 It is my great pleasure to announce that Ben Bollen has joined Monax Industries as a developer on our platform team. Originally from Belguim, Ben will be working from our soon-to-be-opened office in Berlin.

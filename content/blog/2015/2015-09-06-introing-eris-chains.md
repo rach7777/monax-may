@@ -1,5 +1,5 @@
 ---
-author: casey
+author: Casey Kuhlman, CEO
 categories:
 - tutorials
 comments: true
@@ -18,9 +18,10 @@ tags:
 - blockchaini
 - eris
 title: 'Eris CLI Chains Walkabout: New'
-url: /2015/09/06/introing-eris-chains/
+# url: /blog/2015/09/06/introing-eris-chains/
+slug: introing-eris-chains
 aliases:
-- /2015/09/05/docker-and-eris/
+- /blog/2015/09/05/docker-and-eris/
 ---
 
 

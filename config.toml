@@ -1,0 +1,161 @@
+baseurl = "https://monax.io"
+title = "Monax"
+theme = "hugo-universal-theme"
+themesDir = "./themes/"
+languageCode = "en-us"
+# Site language. Available translations in the theme's `/i18n` directory.
+defaultContentLanguage = "en"
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+
+# Define the number of posts per page
+paginate = 6
+
+[imaging]
+# Default resample filter used for resizing. Default is Box,
+# a simple and fast averaging filter appropriate for downscaling.
+# See https://github.com/disintegration/imaging
+resampleFilter = "box"
+
+# Defatult JPEG quality setting. Default is 75.
+quality = 80
+
+[menu]
+# Main menu
+[[menu.main]]
+    name = "Features"
+    url  = "/features/"
+    weight = 2
+
+[[menu.main]]
+    name = "Monax For"
+    identifier = "monaxfor"
+    url  = "#"
+    weight = 3
+
+    # sub menu items
+    [[menu.main]]
+      Name = "Fleet leasing"
+      parent = "monaxfor"
+      URL = "/for/fleet-leasing/"
+      Post = "How Monax can power your fleet leases, simplify your business processes and drive new revenue streams"
+      Weight = 1
+
+    [[menu.main]]
+      Name = "Corporate Governance"
+      parent = "monaxfor"
+      URL = "/for/corporate-governance/"
+      Post = "How Monax can simplify and speed up your corporate governance, and give you full control over your agreements"
+      Weight = 2
+
+    [[menu.main]]
+      Name = "Content Creators"
+      parent = "monaxfor"
+      URL = "/for/content-creators/"
+      Post = "How Monax can strengthen your brand, protect your IP and drive new revenue streams for your content"
+      Weight = 3
+
+    [[menu.main]]
+      Name = "Lawyers"
+      parent = "monaxfor"
+      URL = "/for/lawyers/"
+      Post = "How Monax can simplify your workflow and turn your knowledge into commoditisable legal products"
+      Weight = 4
+
+[[menu.main]]
+    name = "Resources"
+    identifier = "resources"
+    url  = "#"
+    weight = 4
+
+    # sub menu items
+    [[menu.main]]
+      Name = "Blog"
+      parent = "resources"
+      URL = "/blog/"
+      Post = "Discover our journey, how we think and the paradigm shift we see happening toward legal products."
+      Weight = 1
+
+    [[menu.main]]
+    Name = "Case Studies"
+    parent = "resources"
+    URL = "/casestudies/"
+    Post = "Explore how other individuals and companies are transforming business with Monax"
+    Weight = 2
+
+    [[menu.main]]
+      Name = "Tutorials"
+      parent = "resources"
+      URL = "/screencasts/"
+      Post = "Learn how Monax can help you streamline your business using our latest walkthrough tutorials."
+      Weight = 3
+
+    [[menu.main]]
+      Name = "Explainers"
+      parent = "resources"
+      URL = "/learn/"
+      Post = "Learn how Monax can help you streamline your business. Explore best practices for Monax tools and ask questions."
+      Weight = 4
+
+    [[menu.main]]
+     Name = "Webinars"
+     parent = "resources"
+     URL = "/webinars/"
+     Post = "Join us for industry insight and best practice advice on using legal products to streamline your business."
+     Weight = 5
+
+[[menu.main]]
+    name = "Company"
+    url  = "/company/"
+    weight = 5
+
+[[menu.register]]
+    name = "Request a demo"
+    url  = "https://beta.monax.io/register"
+    weight = 1
+
+# commenting this until we're closer to GA
+# [[menu.login]]
+#     name = "Login"
+#     url  = "https://beta.monax.io/"
+#     weight = 7
+
+[params]
+    # viewMorePostLink = "/archive/"
+    author = "Monax"
+    defaultKeywords = ["monax", "agreements network"]
+    defaultDescription = "Monax"
+
+    # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
+    style = "green"
+
+    # Import fonts
+    googlefonts = ["Montserrat:300,400,600", "Source Code Pro"]
+    fontbody = 'Montserrat'
+    fontheadings = 'Montserrat'
+    fontcode = 'Source Code Pro'
+
+    # Enable the contact form by entering your Formspree.io email
+    email = "contact@monax.io"
+
+    # Format dates with Go's time formatting
+    date_format = "2 January, 2006"
+
+    # Main site logo
+    logo = "/img/logo.png"
+
+    # Additional scripts - header
+    additional_header_script_urls = [""]
+    # Additional scripts - footer
+    additional_footer_script_urls = [""]
+
+    # Deprecation notices
+    enable_deprecation_warnings = true
+    deprecation_warning_text = "Note: since this blog post was written, we have changed our name to Monax Industries and will be changing the name of our product to 'Monax' in early 2017. We have left these posts unedited for the purposes of historical record, as the software was named Eris at the time."
+
+[Permalinks]
+    blog = "/blog/:year/:month/:day/:slug/"
+    casestudies = "/casestudies/:slug/"
+    learn = "/learn/:filename/"
+    screencasts = "/screencasts/:slug/"
+    webinars = "/webinars/:year/:month/:day/:slug/"

@@ -1,5 +1,5 @@
 ---
-author: nina
+author: Nina Kilbride, CCO
 categories:
 - eris
 comments: true
@@ -13,7 +13,8 @@ tags:
 - blockchain
 thumbnail: Louisville_Kentucky_1861_cover+3c.jpg
 title: Blockchain, Timestamps and the Art of Legal Engineering
-url: /2016/06/15/blockchain-timestamp-engineering/
+# url: /blog/2016/06/15/blockchain-timestamp-engineering/
+slug: blockchain-timestamp-engineering
 ---
 
 {{< image_blog "Louisville_Kentucky_1861_cover+3c.jpg" >}}
@@ -33,5 +34,3 @@ The mailbox rule, a deviation from existing contract rule, created predictabilit
 The mailbox rule, far from being an anachronism of the postal age, scales to electronic commerce. I’ve both won and settled lawsuits involving electronic messages using mailbox rule case law. Blockchain timestamps and an immutable stream of data are more effective than postal stamps and human sworn statements to prove when a legally significant communication took place. Blockchains and smart contracts provide certain evidence of timing and authenticity. The mailbox rule will flex to guide blockchain commerce, even as the latency that necessitated it decreases.
 
 The mailbox rule is a centuries-old example of legal engineering, that is, creation of new rules that build on existing models, evolving them to fit current tools and future relationships. While the need for lawyers to build engineered systems is particularly pressing as we change from one commercial medium to another, the concept of legal engineering is not new. Case law systems, modular statutory code, digest systems, commercial paper, uniform best practices standards and computerized legal research are just a few world-changing and prediction-enabling achievements of legal engineers over the years. Blockchain smart contracts bring new tools to the ancient art of legal engineering and new possibilities for fostering development of commercial and human potential.
-
-

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  {{ partial "head_fonts.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "press/hero.html" . }}
+
+        {{ partial "press/featured.html" . }}
+
+        {{ partial "press/past.html" . }}
+
+        {{ partial "press/contact.html" . }}
+
+        <!-- global section -->
+        {{ if isset .Site.Data.press "cta" }}
+          {{ if .Site.Data.press.cta.enable }}
+            {{ partial "_global/cta.html" . }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

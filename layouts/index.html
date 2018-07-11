@@ -1,88 +1,51 @@
-{{- partial "header.html" . }}
-    <link href="/css/home.css" rel="stylesheet" >
-</head>
-<body class="home">
-{{ partial "navigation.html" . -}}
-  <link href="/css/home.css" rel="stylesheet" >
-</head>
-<body id="home-page">
-  <!-- Full Page Image Header Area -->
-  <div id="top" class="header">
-    <div class="vert-text">
-      <img src="/images/logos/monax_rect.svg" class="logo">
-      <br />
-      <h3 class="tagline">{{ .Site.Data.sites.tagline | markdownify }}</h3>
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  {{ partial "head_fonts.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "home/top.html" . }}
+
+        <!-- global section -->
+        {{ if isset .Site.Data.home "press" }}
+          {{ if .Site.Data.home.press.enable }}
+            {{ partial "_global/press.html" . }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "home/summary.html" . }}
+
+        {{ partial "home/usecases.html" . }}
+
+        {{ partial "home/screencasts.html" . }}
+
+        {{ partial "home/webinar.html" . }}
+
+        <!-- global section -->
+        {{ if isset .Site.Data.home "cta" }}
+          {{ if .Site.Data.home.cta.enable }}
+            {{ partial "_global/cta.html" . }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "footer.html" . }}
+
+
     </div>
-  </div>
-  <!-- /Full Page Image Header Area -->
-  <div id="main">
-  {{- range $index, $element := .Data.Pages.ByWeight -}}
-    {{- if in .File.Path "home" }}
-      <!-- Intro -->
-      {{- if modBool $index 2 }}<div id="intro-{{ $index }}" class="point">{{ else }}<div id="intro-{{ $index }}" class="counterpoint">{{ end }}
-        <!-- {{ $index }} -->
-        <div class="container">
-          <div class="row">
-            {{- if (isset .Params "carousel" ) }}
-              <div class="col-md-12 text-center">
-            {{ else }}
-              <div class="col-md-8 col-md-offset-2 text-center">
-            {{ end }}
-              {{- if (isset .Params "carousel" ) }}
-                <div class="col-md-8 col-md-offset-2 text-center">
-              {{ end -}}
-                {{- if (isset .Params "icon") }}
-                  <i class="lead-icon icon-{{ .Params.icon }}"></i>
-                {{ end -}}
-                <h2>{{ .Title }}</h2>
-                <p class="lead">
-                    {{- .Content -}}
-                </p>
-              {{- if (isset .Params "carousel" ) }}
-                </div>
-              {{ end -}}
-              {{- if (isset .Params "carousel" ) }}
-                <div class="carousel-inner owl-carousel logos-carousel" id="{{ .Params.carousel_id }}" ><!-- Wrapper for slides -->
-                    {{- range .Params.carousel }}
-                      {{- if ne .icon nil }}
-                        <div class="item"><i class="carousel-logo fa fa-5x fa-{{ .icon }}"></i><p></p><p>{{ .name }}</p></div>
-                      {{- else if ne .logo nil }}
-                        <div class="item"><a href="{{ .link }}" target="_blank" ><img src="/images/logos/external/site/{{ .logo }}" class="carousel-logo" /></a></div>
-                      {{- else if ne .explanation nil }}
-                        <div class="item"><blockquote><p class="item-header">{{ .name }}</p>{{ .explanation | markdownify }}</blockquote></div>
-                      {{ end -}}
-                    {{ end -}}
-                </div>
-              {{ end -}}
-              {{- if (isset .Params "call_to_action") }}
-                <a href="{{ .Params.call_to_action.link }}" class="btn btn-lg btn-primary {{ .Params.call_to_action.class }}">{{ .Params.call_to_action.text }} <i class="fa fa-{{ .Params.call_to_action.icon }}"></i></a>
-              {{ end -}}
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /Intro -->
-    {{ end -}}
-    {{ end -}}
-    <div id="contact-monax" class="callout"><a name="contact-monax"></a>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1 text-center">
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Call to Action -->
-    <div id="action" class="call-to-action">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1 text-center">
-          </div>
-        </div>
-      </div>
-    </div><!-- /Call to Action -->
-  </div><!-- #main -->
-{{- partial "footer.html" . -}}
-{{- partial "scripts.html" . -}}
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
 </html>
-</body>

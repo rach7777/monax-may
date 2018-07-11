@@ -1,0 +1,119 @@
+<div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="{{ .Site.BaseURL }}">
+                    <img src="{{ .Site.BaseURL }}img/logo.png" alt="{{ .Title }} logo" class="hidden-xs hidden-sm">
+                    <img src="{{ .Site.BaseURL }}img/logo-small.png" alt="{{ .Title }} logo" class="visible-xs visible-sm">
+                    <span class="sr-only">{{ .Title }} - {{ i18n "navHome" }}</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">{{ i18n "navToggle" }}</span>
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            <!--/.navbar-header -->
+
+            <div class="navbar-collapse collapse" id="navigation">
+
+              <!-- nav links -->
+              <ul class="nav navbar-nav navbar-right">
+                {{ $url := .URL }}
+                {{ range .Site.Menus.main }}
+                <li class="dropdown {{ if eq $url .URL }}active{{ end }}">
+                  {{ if .HasChildren }}
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }} <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <div class="dropdown-content visible-md-block visible-lg-block">
+                      <div class="row">
+                        {{ range $i, $p := .Children }}
+
+                          {{ if (modBool $i 2) }} <!-- new row after 2 entries -->
+                      </div>
+                      <div class="row">
+                          {{ end }}
+
+                        <div class="col-md-6 hover-dip-opacity">
+                            <a href="{{ .URL }}">
+                              <div class="content-container">
+                                <div class="range-left">
+                                    <h4>{{ .Name }}</h4>
+                                </div>
+                                <p class="range-left">
+                                  {{ .Post }}
+                                </p>
+                              </div>
+                            </a>
+                        </div>
+                        {{ end }}
+                      </div>
+                    </div>
+                    {{ range .Children }}
+                    <li class="visible-xs-block visible-sm-block">
+                      <a href="{{ .URL }}">{{ .Name }}</a>
+                    </li>
+                    {{ end }}
+
+                  </ul>
+                  {{ else }}
+                  <a href="{{ .URL }}">{{ .Name }}</a>
+                  {{ end  }}
+                </li>
+                {{ end }}
+                {{ range .Site.Menus.register }}
+                  <li class="dropdown">
+                    <div class="nav-button-container">
+                      <a id="nav-register" href="{{ .URL }}" class="btn btn-primary nav-button">{{ .Name }}</a>
+                    </div>
+                  </li>
+                {{ end }}
+                {{ range .Site.Menus.login }}
+                  <li class="dropdown">
+                    <a id="nav-toggle-login" href="{{ .URL }}" class="toggle-login">{{ .Name }}</a>
+                  </li>
+                {{ end }}
+
+                <div class="clearfix visible-sm-block padding-bottom-xs"></div>
+
+              </ul>
+            </div>
+            <!--/.nav-collapse -->
+
+        </div>
+    </div>
+    <!-- /#navbar -->
+
+    <!-- LOGIN BAR [DISABLED]
+    <div id="login-bar" class="nav-row">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="top-register flex-grid">
+              <span class="top-login-text col-valign-center">Login</span>
+              <form action="" class="top-form col-valign-center flex-grid">
+                <input type="text" placeholder="Email" name="email" class="top-email">
+                <input type="password" placeholder="Password" name="pass" class="top-password">
+                <button type="submit" value="Submit" class="btn top-submit icon-wrapper field-email">
+                  <i class="fa fa-angle-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+</div>
+
+<div id="dropdown-overlay"></div> <!-- overlay on dropdown -->
+
+<!-- <script type="text/javascript">
+  // OPEN LOGIN BAR [DISABLED]
+  // $('#nav-toggle-login').click(function() {
+  //   $('#login-bar').slideToggle();
+  // });
+</script> -->

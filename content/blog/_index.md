@@ -1,6 +1,7 @@
----
++++
+layout = "blog"
+title = "Monax | Blog"
 
-layout: li
-url: "/blog/"
++++
 
----
+<!-- section layout stored in /layouts/section/blog.html -->

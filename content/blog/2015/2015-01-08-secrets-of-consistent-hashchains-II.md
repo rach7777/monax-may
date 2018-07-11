@@ -1,5 +1,5 @@
 ---
-author: ethan
+author: Monax
 categories:
 - blockchains
 comments: true
@@ -12,7 +12,8 @@ published: true
 tags:
 - blockchains
 title: 'Secrets of Consistent Hashchains II: History on Deposit'
-url: /2015/01/08/secrets-of-consistent-hashchains-ii/
+# url: /blog/2015/01/08/secrets-of-consistent-hashchains-ii/
+slug: secrets-of-consistent-hashchains-ii
 ---
 
 ### Preface

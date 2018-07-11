@@ -1,0 +1,68 @@
+[press]
+    enable = true
+    title = "Featured In:"
+    logo_1 = "/img/press-logos/coindesk-logo-white.png"
+    logo_1_url = "https://www.coindesk.com/hyperledger-tech-heats-ahead-blockchain-software-debuts/"
+    logo_2 = "/img/press-logos/digital-journal-logo-white.png"
+    logo_2_url = "http://www.digitaljournal.com/business/q-a-how-technology-is-shaking-up-legal-firms/article/525554"
+    logo_3 = "/img/press-logos/wall-street-journal-logo-white.png"
+    logo_3_url = "https://blogs.wsj.com/cio/2016/03/02/key-blockchain-vendors-cloud-providers-square-off-in-major-test/"
+
+[cta]
+    title = "Find your first-class agreement now"
+
+    [cta.form]
+      enable = true
+      industry_options = [
+        "Advertising Industry",
+        "Legal services industry",
+        "Aerospace industry",
+        "Agriculture industry",
+        "Chemical industry",
+        "Software industry",
+        "Technology industry",
+        "Construction industry",
+        "Real estate industry",
+        "Public utilities industry",
+        "Defense industry",
+        "Education industry",
+        "Energy industry",
+        "Entertainment industry",
+        "Financial services industry",
+        "Food industry",
+        "Health care industry",
+        "Hospitality industry",
+        "Information industry",
+        "Manufacturing industry",
+        "Media industry",
+        "Mining industry",
+        "Telecommunications industry",
+        "Transport industry",
+        "Water industry",
+        "Other industry",
+      ]
+      agreement_options = [
+        "Non-Disclosure Agreements",
+        "Material Transfer Agreements",
+        "Sponsored Research Agreements",
+        "Memorandum of Understandings",
+        "Interagency Cooperation Contracts",
+        "Subaward Agreements",
+        "Collaborative Research Agreements",
+        "Consortium Agreements",
+        "Teaming Agreements",
+        "Multiple Agreement Types",
+      ]
+      frequency_options = [
+        "Every day",
+        "A few times each week",
+        "A few times each month",
+        "A few times each year",
+        "Ocassionally",
+      ]
+      submit_button_text = "Request a demo"
+      submit_form_action = ""
+      enable_button_two = false
+      # button_two_text = "Try for free"
+      # button_two_url = "https://beta.monax.io/register"
+      # show_button_separator = true

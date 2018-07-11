@@ -1,5 +1,5 @@
 ---
-author: preston
+author: Monax
 categories:
 - distributed business
 comments: false
@@ -14,12 +14,13 @@ tags:
 - thelonious
 - decerver
 title: 'Smart contracts: a brief introduction for the financial services industry'
-url: /2014/12/17/smart-v-legal/
+# url: /blog/2014/12/17/smart-v-legal/
+slug: smart-v-legal
 ---
 
 
 
-##Before we begin: a recap of the last 12 months of Bitcoinmania in the blockchain space.
+## Before we begin: a recap of the last 12 months of Bitcoinmania in the blockchain space.
 
 This time last year, the fever pitch of Bitcoinmania saw the price of a single bitcoin token surge to $1200.
 
@@ -31,7 +32,7 @@ But those solutions were flawed. Some companies claim to offer "smart contract" 
 
 Bitcoin was a pretty big deal. We don't think it can - or should - be repeated.
 
-##So we followed another path.
+## So we followed another path.
 
 At Eris Industries, we were cautiously skeptical during Bitcoinmania. Don't get me wrong, we like Bitcoin as much as anyone else. And if Bitcoin were the only successful blockchain network in existence, ever, then it might have made sense to go out and buy as many as we could and hope it went up in price.
 
@@ -57,7 +58,7 @@ Because you control the system, you can comply with any and all legal or regulat
 
 All you need to do is give your best developers and data scientists the resources to get the job done.
 
-###1. So what's the difference between a smart contract and a legal contract, anyway?
+### 1. So what's the difference between a smart contract and a legal contract, anyway?
 
 **Smart contracts** are scripts on a blockchain database which automatically manage data-driven relationships on distributed networks on a peer-to-peer basis, without servers. They can change their parameters and meaning over time, meaning a system upgrade is as simple as broadcasting a signal to the network - instead of purchasing additional hardware.
 
@@ -67,7 +68,7 @@ Smart contract-enabled blockchain systems are a form of distributed computing ar
 
 It's really that simple. As such:
 
-###2. Smart contracts govern data, or data-driven relationships. Legal contracts govern legal (equitable, statutory, etc.) relationships.
+### 2. Smart contracts govern data, or data-driven relationships. Legal contracts govern legal (equitable, statutory, etc.) relationships.
 
 Blockchains aren't magical money machines. They're just databases with some very unique properties.
 
@@ -77,7 +78,7 @@ This means that you don't need to call in the lawyers to make efficiency gains w
 
 Existing legal arrangements relating to your current database architecture (e.g. clearing system membership agreements) should continue to apply to an Eris database.
 
-###3. Smart contracts aren't about asking third parties to run hosting services that codify and interpret standard-form legal agreements. That's just silly.
+### 3. Smart contracts aren't about asking third parties to run hosting services that codify and interpret standard-form legal agreements. That's just silly.
 
 We at Eris Industries understand, unlike other firms in the blockchain space, that a hosted fee-paying solution operated by a third party is not what you want.
 
@@ -87,7 +88,7 @@ In the long-term, though, automating legal agreements is definitely going to be 
 
 With Eris, you can start developing bespoke blockchain-based solutions to those pain points **right now,** using your own developers - who know your needs and your systems better than anyone in the world.
 
-###4. Code away all manner of infrastructure with the blockchain.
+### 4. Code away all manner of infrastructure with the blockchain.
 
 Our product is a platform - you know your needs better than we do. All we know is that you need a secure way to automate your business processes. So we designed a system for you to build blockchain-backed ecosystem applications for enterprise with ease. Call up your best devs and see what you can define:
 

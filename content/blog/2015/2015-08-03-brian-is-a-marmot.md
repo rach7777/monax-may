@@ -1,18 +1,18 @@
 ---
-author: casey
+author: Casey Kuhlman, CEO
 categories:
 - hiring
-comments: true
+comments: false
 date: 2015-08-03T00:00:00Z
 excerpt: We are immensely excited to announce that Brian Fabian Crain has joined Monax as our Head of Business Development.
 meta: true
-published: true
+published: false
 tags:
 - hiring
 - awesome
 thumbnail: team-bfc.jpeg
 title: Brian is a Marmot
-url: /2015/08/03/brian-is-a-marmot/
+# url: /blog/2015/08/03/brian-is-a-marmot/
 ---
 
 It is my great pleasure to announce that Brian Fabian Crain's first day as Monax's Head of Business Development is today. Brian will be helping us build out our startup outreach programme, continue our enterprise outreach programme, as well as working on the myriad of other ancillary tasks necessary to build out our capacity in this area. As with any new business, in the early days, we all have to wear more hats than would be ideal, and Brian will be no exception.

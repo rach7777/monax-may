@@ -1,5 +1,5 @@
 ---
-author: preston
+author: Monax
 categories:
 - legal tech
 comments: true
@@ -16,7 +16,8 @@ tags:
 - smart contracts v. paper contracts
 thumbnail: marmot.jpg
 title: 'Self-driving banks: industrial verification without industrial capex'
-url: /2015/09/17/selfdrivingbanks/
+# url: /blog/2015/09/17/selfdrivingbanks/
+slug: selfdrivingbanks
 ---
 
 {{< image_blog "marmot.jpg" >}}
