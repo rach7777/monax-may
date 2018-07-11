@@ -56,14 +56,14 @@
 
 # [SINLE SCREENCAST POSTS]
 
-[screencasts]
+[tutorials]
 
-  [screencasts.top]
+  [tutorials.top]
     # hero_signup = true
     # background_element = "/img/assets/background-elements/abstract-01.jpg"
 
-  [screencasts.cta] # global
-    enable = true
+  [tutorials.cta] # global
+    enable = false
 
 
 # [SINLE EXPLAINER POSTS]
@@ -87,4 +87,4 @@
     # background_element = "/img/assets/background-elements/abstract-01.jpg"
 
   [casestudies.cta] # global
-    enable = true
+    enable = false
