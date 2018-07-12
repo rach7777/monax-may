@@ -22,18 +22,20 @@
 
             {{ if .illustration.enable }}
               {{ with .illustration }}
-                <div id="home-animation" class="content-container">
-                  <div class="img-layer-container">
-                    <img class="img-responsive img-center img-layer img-laptop-base" src="{{ .img_base }}" alt="">
-                    <img class="img-responsive img-center img-layer img-animate img-to-float delay-0 img-laptop-layer-one" src="{{ .img_layer_one }}" alt="">
-                    <img class="img-responsive img-center img-layer img-animate img-to-float delay-1 img-laptop-layer-two" src="{{ .img_layer_two }}" alt="">
+                <div class="animation-container">
+                  <div id="home-animation" class="content-container">
+                    <div class="img-layer-container">
+                      <img class="img-responsive img-center img-layer img-laptop-base" src="{{ .img_base }}" alt="">
+                      <img class="img-responsive img-center img-layer img-animate img-to-float delay-0 img-laptop-layer-one" src="{{ .img_layer_one }}" alt="">
+                      <img class="img-responsive img-center img-layer img-animate img-to-float delay-1 img-laptop-layer-two" src="{{ .img_layer_two }}" alt="">
+                    </div>
                   </div>
                 </div>
               {{ end }}
             {{ else if .img_right }}
               <div class="row flex-grid-md">
                 <div class="col-sm-12">
-                  <img class="img-responsive img-center" src="{{ .img_right }}" alt="">
+                  <img class="img-responsive img-center img-top" src="{{ .img_right }}" alt="">
                 </div>
               </div>
             {{ end }}
