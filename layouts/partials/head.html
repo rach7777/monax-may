@@ -53,8 +53,8 @@
   <!-- Facebook OpenGraph tags -->
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ .URL }}/" />
-  <meta property="og:image" content="{{ .Site.Params.logo }}" />
+  <meta property="og:url" content="{{ .URL | absURL }}/" />
+  <meta property="og:image" content="{{ .Site.Params.share_img | absURL }}" />
 
   <!-- Segment Analytics -->
 <script>

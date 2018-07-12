@@ -144,6 +144,9 @@ quality = 80
     # Main site logo
     logo = "/img/logo.png"
 
+    # Img to display when sharing
+    share_img = "/img/share-img.png"
+
     # Additional scripts - header
     additional_header_script_urls = [""]
     # Additional scripts - footer
