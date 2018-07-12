@@ -21,7 +21,7 @@ draft: true
 # set this to 'false' when you're ready to publish
 utm:
   source: "website"
-  medium: "screencasts"
+  medium: "tutorials"
   campaign: ""
 # used when using the shortcode utm_link in a blog post to another
 

@@ -86,7 +86,7 @@ quality = 80
     [[menu.main]]
       Name = "Tutorials"
       parent = "resources"
-      URL = "/screencasts/"
+      URL = "/tutorials/"
       Post = "Learn how Monax can help you streamline your business using our latest walkthrough tutorials."
       Weight = 3
 
@@ -158,5 +158,5 @@ quality = 80
     blog = "/blog/:year/:month/:day/:slug/"
     casestudies = "/casestudies/:slug/"
     learn = "/learn/:filename/"
-    screencasts = "/screencasts/:slug/"
+    tutorials = "/tutorials/:slug/"
     webinars = "/webinars/:year/:month/:day/:slug/"

@@ -4,13 +4,13 @@
 date:      {{ .Date }}
 title:     "Screencast example"
 slug:
-# by default, the URL will be generated from the title. Set the slug if you want to simplify or change the URL. Format: "my-slug" will turn into /screencasts/my-slug
+# by default, the URL will be generated from the title. Set the slug if you want to simplify or change the URL. Format: "my-slug" will turn into /tutorials/my-slug
 author: Casey Kuhlman, CEO
 # use your full name and title here
 excerpt:   "When people think about legal they think almost entirely of the provision of bespoke services. Yet the world is changing, and legal needs to keep up."
 # if no excerpt is provided, one will be generated from the post content
 thumbnail: example-image.jpg
-# this image should be stored in /content/screencasts/images/. It will appear as a thumbnail on any listings, as well as at the top of the post itself
+# this image should be stored in /content/tutorials/images/. It will appear as a thumbnail on any listings, as well as at the top of the post itself
 categories:
   - legal products
 tags:
@@ -21,7 +21,7 @@ draft: true
 # set this to 'false' when you're ready to publish
 utm:
   source: "website"
-  medium: "screencasts"
+  medium: "tutorials"
   campaign: ""
 # used when using the shortcode utm_link in a blog post to another
 youtube_id:
