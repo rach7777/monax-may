@@ -1,11 +1,11 @@
-{{ with .Site.Data.home.screencasts }}
+{{ with .Site.Data.home.tutorials }}
 {{ if .enable }}
-<section class="section-screencasts padding-top-xl padding-bottom-md">
+<section class="section-tutorials padding-top-xl padding-bottom-md">
     <div class="container">
 
       <div class="row  padding-bottom-md">
 
-        {{ range first 1 (where $.Site.RegularPages "Type" "screencasts") }}
+        {{ range first 1 (where $.Site.RegularPages "Type" "tutorials") }}
 
           <div class="col-md-7 padding-bottom-md">
             <div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
