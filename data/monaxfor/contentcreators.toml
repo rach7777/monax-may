@@ -30,7 +30,7 @@
 
   [[feature.section]]
     title = "100% transparency on your legal matters."
-    subtitle = "Maintain constant insight as to what is happening in your contracts. Track every step along the way, gathering evidence required to fulfill an agreement from signing to shipping or payments and so on. Put your mind at ease and concentrate on growing your business."
+    subtitle = "Maintain constant insight about what is happening in your contracts. Track every step along the way, gathering the evidence required to fulfill an agreement from signing to shipping or payments and so on. Put your mind at ease and concentrate on growing your business."
     #### ZOOM TEMPLATE
     animation_id = "feature-animation-1"
     animation_type = "zoom"
@@ -89,7 +89,7 @@
 
   [[feature.section]]
     title = "Increased quality at reduced cost."
-    subtitle = "Cut out legal paper-shuffling and pay for actual value. Monax combines legal expertise with automation and reproducibility delivering legal products with higher precision at a fraction of their cost."
+    subtitle = "Cut out legal paper-shuffling and pay for actual value. Monax combines legal expertise with automation and reproducibility, delivering legal products with higher precision at a fraction of the cost."
     #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
     animation_id = "feature-animation-4"
     animation_type = "multipop"
