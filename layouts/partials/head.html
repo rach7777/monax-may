@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ .Title }}</title>
   <meta name="author" content="{{ .Site.Author.name }}" />
-
+<meta name="google-site-verification" content="3unfuKVdv2W-5jUytj80UQA2kVe1cX3J37nsmUx9EQM" />
   {{ if .Keywords }}
   <meta name="keywords" content="{{ delimit .Keywords ", " }}">
   {{ else if .Site.Params.DefaultKeywords }}
@@ -51,10 +51,12 @@
   <link rel="alternate" href="{{ "/index.xml" | absURL }}" type="application/rss+xml" title="{{ .Site.Title }}">
 
   <!-- Facebook OpenGraph tags -->
-  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:title" content="Monax Industries" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ .URL }}/" />
-  <meta property="og:image" content="{{ .Site.Params.logo }}" />
+    <meta property="og:description" content="Monax is a platform to build legal products for tomorrow's businesses">
+  <meta property="og:url" content="https://www.monax.io/" />
+  <meta property="og:image" content="https://monax.io/img/logo.png" />
+
 
   <!-- Segment Analytics -->
 <script>
