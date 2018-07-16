@@ -23,27 +23,10 @@
   <!-- Bootstrap and Font Awesome css -->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <!-- Theme stylesheet, if possible do not edit this stylesheet -->
-  <link href="{{ .Site.BaseURL }}css/base.css" rel="stylesheet" id="theme-stylesheet">
-
-  <!-- Custom stylesheet - for your changes -->
-  <link href="{{ .Site.BaseURL }}css/custom.css" rel="stylesheet">
-
-  <!-- Css animations  -->
-  <link href="{{ .Site.BaseURL }}css/animate.css" rel="stylesheet">
-
-  <!-- animate on scroll -->
-  <link href="{{ .Site.BaseURL }}css/aos.css" rel="stylesheet">
-
-  <!-- Google Optimise page hiding snippet -->
-  <style>.async-hide { opacity: 0 !important} </style>
-<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
-  h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
-  (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
-  })(window,document.documentElement,'async-hide','dataLayer',4000,
-  {'GTM-P9HW9W9':true});
-</script>
+  <!-- Theme stylesheet, if possible do not edit this stylesheet --><link href="{{ .Site.BaseURL }}css/base.css" rel="stylesheet" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes --><link href="{{ .Site.BaseURL }}css/custom.css" rel="stylesheet">
+  <!-- Css animations  --><link href="{{ .Site.BaseURL }}css/animate.css" rel="stylesheet">
+  <!-- animate on scroll --><link href="{{ .Site.BaseURL }}css/aos.css" rel="stylesheet">
 
   <!-- Responsivity for older IE -->
   {{ `
@@ -65,7 +48,14 @@
   <meta property="og:image" content="{{ .Site.Params.share_img | absURL }}" />
   <meta property="og:description" content="{{ with .Params.excerpt }}{{ . }}{{ else }}Monax is a platform to build legal products for tomorrow's businesses{{ end }}">
 
-
+  <!-- Google Optimise page hiding snippet -->
+  <style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+  h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+  (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+  })(window,document.documentElement,'async-hide','dataLayer',4000,
+  {'GTM-P9HW9W9':true});
+</script>
 
   <!-- Segment Analytics -->
 <script>
