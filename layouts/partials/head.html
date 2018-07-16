@@ -5,21 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ .Title }}</title>
   <meta name="author" content="{{ .Site.Author.name }}" />
-<meta name="google-site-verification" content="3unfuKVdv2W-5jUytj80UQA2kVe1cX3J37nsmUx9EQM" />
-  {{ if .Keywords }}
+  <meta name="google-site-verification" content="3unfuKVdv2W-5jUytj80UQA2kVe1cX3J37nsmUx9EQM" />
+{{ if .Keywords }}
   <meta name="keywords" content="{{ delimit .Keywords ", " }}">
-  {{ else if .Site.Params.DefaultKeywords }}
+{{ else if .Site.Params.DefaultKeywords }}
   <meta name="keywords" content="{{ delimit .Site.Params.DefaultKeywords ", " }}">
-  {{ end }}
+{{ end }}
 
-  {{ if .Description }}
+{{ if .Description }}
   <meta name="description" content="{{ .Description }}">
-  {{ else if .Site.Params.DefaultDescription }}
+{{ else if .Site.Params.DefaultDescription }}
   <meta name="description" content="{{ .Site.Params.DefaultDescription }}">
-  {{ end }}
+{{ end }}
 
   {{ .Hugo.Generator }}
-
   <!-- Bootstrap and Font Awesome css -->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -47,7 +46,6 @@
   <!-- Favicon and apple touch icons-->
   <link rel="shortcut icon" href="{{ .Site.BaseURL }}img/favicon2.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}img/apple-touch-icon2.png" />
-
   <link rel="alternate" href="{{ "/index.xml" | absURL }}" type="application/rss+xml" title="{{ .Site.Title }}">
 
   <!-- Facebook OpenGraph tags -->
@@ -55,13 +53,13 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ .URL | absURL }}/" />
   <meta property="og:image" content="{{ .Site.Params.share_img | absURL }}" />
+  <meta property="og:description" content="{{ with .Page.excerpt }}{{ . }}{{ else }}Monax is a platform to build legal products for tomorrow's businesses{{ end }}">
 
   <!-- Segment Analytics -->
 <script>
- !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
- analytics.load("BhFrW02ipjQdSFBcANCmacfkzexYdTAt");
- analytics.page('{{ .Site.Title | markdownify }}{{ if .IsPage }}{{ if (eq .Section "blog") }} | Blog{{ end }}{{ end }}{{ with .Title }} | {{ . }}{{ end }}');
- }}();
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://analytics.monax.io/ajs-proxy.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+   analytics.load("BhFrW02ipjQdSFBcANCmacfkzexYdTAt");
+   analytics.page('{{ .Site.Title | markdownify }}{{ if .IsPage }}{{ if (eq .Section "blog") }} | Blog{{ end }}{{ end }}{{ with .Title }} | {{ . }}{{ end }}');
+  }}();
 </script>
-
 </head>
