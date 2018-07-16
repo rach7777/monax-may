@@ -101,8 +101,8 @@
 
 
 [tutorials]
-    enable = true # pulls out most recent tutorial by default
-    show_related_links = true
+    enable = false # pulls out most recent tutorial by default
+    show_related_links = false
 
     [[screencasts.relatedlinks]]
       link_title = "Read our explainers"
