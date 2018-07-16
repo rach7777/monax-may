@@ -14,7 +14,7 @@
 
 [history]
     enable = true
-    title = "Monax are at the forefront of blockchain technology"
+    title = "Monax is at the forefront of blockchain technology"
     subtitle = ""
 
     [[history.time]]
@@ -22,7 +22,7 @@
       label = "Eris Industries Founded"
       logo_icon = "/img/logos/Eris_icon_white.png"
       # logo_full = "/img/logos/Eris.png"
-      description_text = "Born out of Ethereum skype rooms Eris Industries set out to replace the Bitcoin Foundation as part of a US$100,000 contest, creating the world's first decentralised organisation upgrade functionality."
+      description_text = "Born out of Ethereum skype rooms, Eris Industries set out to replace the Bitcoin Foundation as part of a US$100,000 contest - creating the world's first decentralised organisation upgrade functionality."
 
     [[history.time]]
       date = "Dec 2014"
@@ -43,28 +43,28 @@
       label = "Rebrand To Monax"
       logo_icon = "/img/logos/monax_icon_white.png"
       # logo_full = "/img/logo-small.png"
-      description_text = "In the spirit of democratisation and decentralisation Eris rebrands to Monax pivoting its business focus from enterprise grade solutions to the small business community, setting out to disrupt contracting."
+      description_text = "In the spirit of democratisation and decentralisation Eris rebrands to Monax, pivoting its business focus from enterprise grade solutions to the small business community and setting out to disrupt contracting."
 
     [[history.time]]
       date = "Feb 2017"
       label = "Monax Joins Hyperledger"
       logo_icon = "/img/logos/Hyperledger_icon_white.png"
       # logo_full = "/img/logos/Hyperledger.png"
-      description_text = "Monax submits its smart contract machine to Hyperledger with the  intention to participate in the furtherance of cross-industry blockchain technologies."
+      description_text = "Monax submits its smart contract machine to Hyperledger with the intention to participate in the furtherance of cross-industry blockchain technologies."
 
     [[history.time]]
       date = "March 2017"
       label = "Monax Joins The EEA"
       logo_icon = "/img/logos/eea_icon_white.png"
       # logo_full = "/img/logos/eea.png"
-      description_text = "Monax joins the Enterprise Ethereum Alliance connecting Fortune 500 enterprises, startups, academics, and technology vendors with the objective to define enterprise-grade software capable of handling the most complex, highly demanding applications at the speed of business."
+      description_text = "Monax joins the Enterprise Ethereum Alliance connecting Fortune 500 enterprises, startups, academics and technology vendors with the objective of developing enterprise-grade software capable of handling the most complex, highly demanding applications at the speed of business."
 
     [[history.time]]
       date = "April 2018"
       label = "Agreements Network"
       logo_icon = "/img/logos/AgreementsNetwork_icon_white.png"
       # logo_full = "/img/logos/AgreementsNetwork.png"
-      description_text = "Co-founded by some of the world most prominent law firms, the Agreements Network is becoming the legal layer for a networked world. It's the vehicle for a paradigm shift from legal services to legal products."
+      description_text = "Co-founded by some of the world's most prominent law firms, the Agreements Network will provide the legal layer for a networked world. It's the vehicle for a paradigm shift from legal services to legal products."
 
 
 [team]
@@ -286,11 +286,11 @@
 [positions]
     enable = true
     title = "Positions available"
-    subtitle = "Come and be part of our diverse and talented team"
+    subtitle = "Come and be a part of our diverse and talented team"
 
     [positions.contact]
         title = "Contact us if you're interested"
-        subtitle = "Please email <a href='mailto:jobs@monax.io'>jobs@monax.io</a> with your cv and portfolio."
+        subtitle = "Please email <a href='mailto:jobs@monax.io'>jobs@monax.io</a> with your CV"
 
     [[positions.job]]
         title = "Site Reliability Engineer"
