@@ -18,8 +18,8 @@
         {{ partial "monaxfor/corporate/top.html" . }}
 
         <!-- global section -->
-        {{ if isset .Site.Data.monaxfor.corporate "press" }}
-          {{ if .Site.Data.monaxfor.corporate.press.enable }}
+        {{ if isset .Site.Data.for.corporate "press" }}
+          {{ if .Site.Data.for.corporate.press.enable }}
             {{ partial "_global/press.html" . }}
           {{ end }}
         {{ end }}
@@ -35,8 +35,8 @@
         {{ partial "monaxfor/corporate/faq.html" . }}
 
         <!-- CTA section [GLOBAL] -->
-        {{ if isset .Site.Data.monaxfor.corporate "cta" }}
-          {{ if .Site.Data.monaxfor.corporate.cta.enable }}
+        {{ if isset .Site.Data.for.corporate "cta" }}
+          {{ if .Site.Data.for.corporate.cta.enable }}
             {{ partial "_global/cta.html" . }}
           {{ end }}
         {{ end }}

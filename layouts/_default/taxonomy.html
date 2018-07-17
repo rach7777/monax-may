@@ -15,7 +15,7 @@
 
         </header>
 
-        <section class="section-top padding-top-md" style="background: url({{ .Site.Data.global.posts.taxonomies.top.background_element }}) right bottom no-repeat; background-size: 520px;">
+        <section class="section-top padding-top-md" style="background: url({{ .Site.Data.global.taxonomies.top.background_element }}) right bottom no-repeat; background-size: 520px;">
             <div class="container">
               <div class="row flex-grid-md">
                   <div class="col-md-7 col-valign-center">
@@ -27,7 +27,7 @@
                       </p>
 
                       <!-- Sign up section [GLOBAL] -->
-                      {{ if .Site.Data.global.posts.taxonomies.top.hero_signup }}
+                      {{ if .Site.Data.global.taxonomies.top.hero_signup }}
                         {{ partial "_global/hero_newsletter.html" . }}
                       {{ end }}
                   </div>
@@ -36,8 +36,8 @@
         </section> <!-- .section -->
 
       <!-- Get default image -->
-      {{ if .Site.Data.global.posts.taxonomies.default_img }}
-        {{ $.Scratch.Set "defaultImg" .Site.Data.global.posts.taxonomies.default_img }}
+      {{ if .Site.Data.global.taxonomies.default_img }}
+        {{ $.Scratch.Set "defaultImg" .Site.Data.global.taxonomies.default_img }}
       {{ end }}
 
         <div id="content">
@@ -124,7 +124,7 @@
         </div>  <!-- .#content -->
 
         <!-- CTA section [GLOBAL] -->
-        {{ if .Site.Data.global.posts.taxonomies.cta.enable }}
+        {{ if .Site.Data.global.taxonomies.cta.enable }}
           {{ partial "_global/cta.html" . }}
         {{ end }}
 

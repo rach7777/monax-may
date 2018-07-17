@@ -15,7 +15,7 @@
 
         </header>
 
-        <section class="section-top padding-top-md" style="background: url({{ .Site.Data.global.posts.tutorials.top.background_element }}) right bottom no-repeat; background-size: 520px;">
+        <section class="section-top padding-top-md" style="background: url({{ .Site.Data.global.tutorials.top.background_element }}) right bottom no-repeat; background-size: 520px;">
             <div class="container">
               <div class="row flex-grid-md">
                   <div class="col-md-7 col-valign-center">
@@ -33,7 +33,7 @@
                       </p>
 
                       <!-- Sign up section [GLOBAL] -->
-                      {{ if .Site.Data.global.posts.tutorials.top.hero_signup }}
+                      {{ if .Site.Data.global.tutorials.top.hero_signup }}
                         {{ partial "_global/hero_newsletter.html" . }}
                       {{ end }}
                   </div>
@@ -70,7 +70,7 @@
         </div> <!-- .#content -->
 
         <!-- CTA section [GLOBAL] -->
-        {{ if .Site.Data.global.posts.tutorials.cta.enable }}
+        {{ if .Site.Data.global.tutorials.cta.enable }}
           {{ partial "_global/cta.html" . }}
         {{ end }}
 

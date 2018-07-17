@@ -18,8 +18,8 @@
         {{ partial "monaxfor/lawyers/top.html" . }}
 
         <!-- global section -->
-        {{ if isset .Site.Data.monaxfor.lawyers "press" }}
-          {{ if .Site.Data.monaxfor.lawyers.press.enable }}
+        {{ if isset .Site.Data.for.lawyers "press" }}
+          {{ if .Site.Data.for.lawyers.press.enable }}
             {{ partial "_global/press.html" . }}
           {{ end }}
         {{ end }}
@@ -35,8 +35,8 @@
         {{ partial "monaxfor/lawyers/faq.html" . }}
 
         <!-- CTA section [GLOBAL] -->
-        {{ if isset .Site.Data.monaxfor.lawyers "cta" }}
-          {{ if .Site.Data.monaxfor.lawyers.cta.enable }}
+        {{ if isset .Site.Data.for.lawyers "cta" }}
+          {{ if .Site.Data.for.lawyers.cta.enable }}
             {{ partial "_global/cta.html" . }}
           {{ end }}
         {{ end }}
