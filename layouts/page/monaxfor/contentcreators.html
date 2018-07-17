@@ -18,8 +18,8 @@
         {{ partial "monaxfor/contentcreators/top.html" . }}
 
         <!-- global section -->
-        {{ if isset .Site.Data.monaxfor.contentcreators "press" }}
-          {{ if .Site.Data.monaxfor.contentcreators.press.enable }}
+        {{ if isset .Site.Data.for.contentcreators "press" }}
+          {{ if .Site.Data.for.contentcreators.press.enable }}
             {{ partial "_global/press.html" . }}
           {{ end }}
         {{ end }}
@@ -35,8 +35,8 @@
         {{ partial "monaxfor/contentcreators/faq.html" . }}
 
         <!-- CTA section [GLOBAL] -->
-        {{ if isset .Site.Data.monaxfor.contentcreators "cta" }}
-          {{ if .Site.Data.monaxfor.contentcreators.cta.enable }}
+        {{ if isset .Site.Data.for.contentcreators "cta" }}
+          {{ if .Site.Data.for.contentcreators.cta.enable }}
             {{ partial "_global/cta.html" . }}
           {{ end }}
         {{ end }}

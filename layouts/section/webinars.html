@@ -20,8 +20,8 @@
         {{ partial "resources/webinars/articles.html" . }}
 
         <!-- CTA section [GLOBAL] -->
-        {{ if isset .Site.Data.resources.webinars "cta" }}
-          {{ if .Site.Data.resources.webinars.cta.enable }}
+        {{ if isset .Site.Data.webinars "cta" }}
+          {{ if .Site.Data.webinars.cta.enable }}
             {{ partial "_global/cta.html" . }}
           {{ end }}
         {{ end }}

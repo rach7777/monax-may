@@ -20,8 +20,8 @@
         {{ partial "resources/learn/articles.html" . }}
 
         <!-- CTA section [GLOBAL] -->
-        {{ if isset .Site.Data.resources.learn "cta" }}
-          {{ if .Site.Data.resources.learn.cta.enable }}
+        {{ if isset .Site.Data.learn "cta" }}
+          {{ if .Site.Data.learn.cta.enable }}
             {{ partial "_global/cta.html" . }}
           {{ end }}
         {{ end }}
