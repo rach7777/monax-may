@@ -134,7 +134,6 @@
       fname = true
       lname = true
       company_name = false
-      form_action = "https://analytics.monax.io/monaxioregistry"
       submit_text = "Get notified"
 
 
