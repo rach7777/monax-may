@@ -4,7 +4,7 @@ $(document).ready(function() {
   // ANALYTICS
   const analyticsIdentifyAndTrack = (form, eventName) => {
     const serialized = Array.isArray(form) ? form : $(form).serializeArray();
-    const formData = { url: window.location.host + window.location.pathname };
+    const formData = {};
     serialized.forEach((input) => formData[input.name] = input.value);
     analytics.identify(formData.email || analytics.user().anonymousId(), formData);
     analytics.track(eventName, formData);
