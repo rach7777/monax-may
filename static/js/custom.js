@@ -1,6 +1,15 @@
 console.log("custom.js loaded");
 
 $(document).ready(function() {
+  // ANALYTICS
+  const analyticsIdentifyAndTrack = (form, eventName) => {
+    const serialized = Array.isArray(form) ? form : $(form).serializeArray();
+    const formData = { url: window.location.host + window.location.pathname };
+    serialized.forEach((input) => formData[input.name] = input.value);
+    analytics.identify(formData.email || analytics.user().anonymousId(), formData);
+    analytics.track(eventName, formData);
+    return formData;
+  };
 
   // MENU HOVER OPACITY ANIMATION
   $('.nav .dropdown-content').hover(function(){
@@ -173,17 +182,8 @@ $(document).ready(function() {
         }
       },
       submitHandler: function(form) {
-        var email = $('#hero-signup-email').val();
-
-        var metadata = {
-          request_demo_email: email,
-          request_demo_url: window.location.pathname,
-          request_demo_location: "hero-signup-form"
-        };
-        console.log("Data submitted to intercom with trackEvent request-demo:");
-        console.log(metadata);
+        analyticsIdentifyAndTrack(form, "demo-requested");
         $('#hero-signup-submit').addClass('disabled');
-        Intercom('trackEvent', 'request-demo', metadata);
         var string = "I'd like to see a demo of the Monax Platform";
         Intercom('showNewMessage', string);
       },
@@ -208,22 +208,9 @@ $(document).ready(function() {
         }
       },
       submitHandler: function(form) {
-        var industry = $('#userIndustry').find(":selected").text();
-        var agreements_type = $('#userAgreementsType').find(":selected").text();
-        var frequency =  $('#userFrequency').find(":selected").text();
-
-        var metadata = {
-          request_demo_industry: industry,
-          request_demo_agreeements_type: agreements_type,
-          request_demo_frequency: frequency,
-          request_demo_url: window.location.pathname,
-          request_demo_location: "main-cta-section"
-        };
-        console.log("Data submitted to intercom with trackEvent request-demo:");
-        console.log(metadata);
+        const { industry, agreementsType, frequency } = analyticsIdentifyAndTrack(form, "demo-requested");
         $("#main-cta-section button").addClass('disabled');
-        Intercom('trackEvent', 'request-demo', metadata);
-        Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
+        Intercom('showNewMessage', `I'm working in the ${industry} and am interested in creating ${agreementsType} ${frequency}. I'd like to see a demo of the Monax Platform.`);
       },
       invalidHandler: function(event, validator) {
         var errors = validator.numberOfInvalids();
@@ -241,14 +228,11 @@ $(document).ready(function() {
         }
       },
       submitHandler: function(form) {
-        var metadata = {
-          newsletter_signup_url: window.location.pathname,
-          newsletter_signup_location: "hero-newsletter-form"
-        };
-        console.log("Data submitted to intercom with trackEvent newsletter-signup:");
-        console.log(metadata);
-        Intercom('trackEvent', 'newsletter-signup', metadata);
-        form.submit();
+        analyticsIdentifyAndTrack(form, "newsletter-subscribed");
+        const formParent = $(form).parent();
+        $(form).remove();
+        const confirmMessage = '<h4 class="range-left-sm" >Thank you for subscribing! You\'ll hear from us soon.</h4>';
+        formParent.append(confirmMessage)
       },
       invalidHandler: function(event, validator) {
         var errors = validator.numberOfInvalids();
@@ -266,14 +250,11 @@ $(document).ready(function() {
         }
       },
       submitHandler: function(form) {
-        var metadata = {
-          newsletter_signup_url: window.location.pathname,
-          newsletter_signup_location: "footer-newsletter-form"
-        };
-        console.log("Data submitted to intercom with trackEvent newsletter-signup:");
-        console.log(metadata);
-        Intercom('trackEvent', 'newsletter-signup', metadata);
-        form.submit();
+        analyticsIdentifyAndTrack(form, "newsletter-subscribed");
+        const formParent = $(form).parent();
+        $(form).remove();
+        const confirmMessage = '<p class="range-left-sm" >Thank you for subscribing! You\'ll hear from us soon.</p>';
+        formParent.append(confirmMessage)
       },
       invalidHandler: function(event, validator) {
         var errors = validator.numberOfInvalids();
@@ -285,10 +266,10 @@ $(document).ready(function() {
     });
     $("#home-webinar-signup").validate({
       rules: {
-        fname: {
+        firstName: {
           required: true
         },
-        lname: {
+        lastName: {
           required: true
         },
         email: {
@@ -297,14 +278,11 @@ $(document).ready(function() {
         }
       },
       submitHandler: function(form) {
-        var metadata = {
-          newsletter_signup_url: window.location.pathname,
-          newsletter_signup_location: "home-webinar-signup"
-        };
-        console.log("Data submitted to intercom with trackEvent webinar-subscribe:");
-        console.log(metadata);
-        Intercom('trackEvent', 'webinar-subscribe', metadata);
-        form.submit();
+        analyticsIdentifyAndTrack(form, "webinar-subscribed");
+        const formParent = $(form).parent();
+        $(form).remove();
+        const confirmMessage = '<h4 class="range-left-sm" >Thank you for subscribing! You\'ll hear from us soon.</h4>';
+        formParent.append(confirmMessage)
       },
       invalidHandler: function(event, validator) {
         var errors = validator.numberOfInvalids();
@@ -316,10 +294,10 @@ $(document).ready(function() {
     });
     $("#single-webinar-signup").validate({
       rules: {
-        fname: {
+        firstName: {
           required: true
         },
-        lname: {
+        lastName: {
           required: true
         },
         email: {
@@ -328,14 +306,8 @@ $(document).ready(function() {
         }
       },
       submitHandler: function(form) {
-        var metadata = {
-          newsletter_signup_url: window.location.pathname,
-          newsletter_signup_location: "single-webinar-signup"
-        };
-        console.log("Data submitted to intercom with trackEvent webinar-signup:");
-        console.log(metadata);
-        Intercom('trackEvent', 'webinar-signup', metadata);
-        form.submit();
+        analyticsIdentifyAndTrack(form, 'webinar-subscribed');
+        $('#single-webinar-signup button').addClass('disabled');
       },
       invalidHandler: function(event, validator) {
         var errors = validator.numberOfInvalids();
@@ -347,24 +319,12 @@ $(document).ready(function() {
     });
     $('#request-demo-footer').on('click', function(event){
       event.preventDefault();
-      var metadata = {
-        request_demo_url: window.location.pathname,
-        request_demo_location: "request-demo-footer"
-      };
-      console.log("Data submitted to intercom with trackEvent request-demo:");
-      console.log(metadata);
-      Intercom('trackEvent', 'request-demo', metadata);
+      analyticsIdentifyAndTrack([ { name: 'source', value: 'footer demo request' }], 'demo-requested');
       Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
     });
     $('#nav-register').on('click', function(event){
       event.preventDefault();
-      var metadata = {
-        request_demo_url: window.location.pathname,
-        request_demo_location: "nav-request-demo"
-      };
-      console.log("Data submitted to intercom with trackEvent request-demo:");
-      console.log(metadata);
-      Intercom('trackEvent', 'request-demo', metadata);
+      analyticsIdentifyAndTrack([ { name: 'source', value: 'nav demo request' }], 'demo-requested');
       Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
     });
 
