@@ -6,7 +6,7 @@ $(document).ready(function() {
     const serialized = Array.isArray(form) ? form : $(form).serializeArray();
     const formData = { url: window.location.host + window.location.pathname };
     serialized.forEach((input) => formData[input.name] = input.value);
-    analytics.identify(formData.email || analytics.user().anonymousId(), formData);
+    if (formData.email) analytics.identify(formData.email, formData);
     analytics.track(eventName, formData);
     return formData;
   };
