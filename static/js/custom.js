@@ -8,6 +8,7 @@ $(document).ready(function() {
     serialized.forEach((input) => formData[input.name] = input.value);
     if (formData.email) analytics.identify(formData.email, formData);
     analytics.track(eventName, formData);
+    Intercom('update', formData);
     return formData;
   };
 
