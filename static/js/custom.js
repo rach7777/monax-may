@@ -6,7 +6,7 @@ $(document).ready(function() {
     const serialized = Array.isArray(form) ? form : $(form).serializeArray();
     const formData = { url: window.location.host + window.location.pathname };
     serialized.forEach((input) => formData[input.name] = input.value);
-    if (formData.email) analytics.identify(formData.email, formData);
+    analytics.identify(formData.email || analytics.user().anonymousId(), formData);
     analytics.track(eventName, formData);
     Intercom('update', formData);
     return formData;
