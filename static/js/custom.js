@@ -183,7 +183,7 @@ $(document).ready(function() {
         }
       },
       submitHandler: function(form) {
-        analyticsIdentifyAndTrack(form, "demo-requested");
+        analyticsIdentifyAndTrack(form, "Demo Requested");
         $('#hero-signup-submit').addClass('disabled');
         var string = "I'd like to see a demo of the Monax Platform";
         Intercom('showNewMessage', string);
@@ -209,7 +209,7 @@ $(document).ready(function() {
         }
       },
       submitHandler: function(form) {
-        const { industry, agreementsType, frequency } = analyticsIdentifyAndTrack(form, "demo-requested");
+        const { industry, agreementsType, frequency } = analyticsIdentifyAndTrack(form, "Demo Requested");
         $("#main-cta-section button").addClass('disabled');
         Intercom('showNewMessage', `I'm working in the ${industry} and am interested in creating ${agreementsType} ${frequency}. I'd like to see a demo of the Monax Platform.`);
       },
@@ -229,7 +229,7 @@ $(document).ready(function() {
         }
       },
       submitHandler: function(form) {
-        analyticsIdentifyAndTrack(form, "newsletter-subscribed");
+        analyticsIdentifyAndTrack(form, "Newsletter Subscribed");
         const formParent = $(form).parent();
         $(form).remove();
         const confirmMessage = '<h4 class="range-left-sm" >Thank you for subscribing! You\'ll hear from us soon.</h4>';
@@ -251,7 +251,7 @@ $(document).ready(function() {
         }
       },
       submitHandler: function(form) {
-        analyticsIdentifyAndTrack(form, "newsletter-subscribed");
+        analyticsIdentifyAndTrack(form, "Newsletter Subscribed");
         const formParent = $(form).parent();
         $(form).remove();
         const confirmMessage = '<p class="range-left-sm" >Thank you for subscribing! You\'ll hear from us soon.</p>';
@@ -279,7 +279,7 @@ $(document).ready(function() {
         }
       },
       submitHandler: function(form) {
-        analyticsIdentifyAndTrack(form, "webinar-subscribed");
+        analyticsIdentifyAndTrack(form, "Webinar Subscribed");
         const formParent = $(form).parent();
         $(form).remove();
         const confirmMessage = '<h4 class="range-left-sm" >Thank you for subscribing! You\'ll hear from us soon.</h4>';
@@ -307,7 +307,7 @@ $(document).ready(function() {
         }
       },
       submitHandler: function(form) {
-        analyticsIdentifyAndTrack(form, 'webinar-subscribed');
+        analyticsIdentifyAndTrack(form, 'Webinar Subscribed');
         $('#single-webinar-signup button').addClass('disabled');
       },
       invalidHandler: function(event, validator) {
@@ -320,12 +320,12 @@ $(document).ready(function() {
     });
     $('#request-demo-footer').on('click', function(event){
       event.preventDefault();
-      analyticsIdentifyAndTrack([ { name: 'source', value: 'footer demo request' }], 'demo-requested');
+      analyticsIdentifyAndTrack([ { name: 'source', value: 'footer demo request' }], 'Demo Requested');
       Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
     });
     $('#nav-register').on('click', function(event){
       event.preventDefault();
-      analyticsIdentifyAndTrack([ { name: 'source', value: 'nav demo request' }], 'demo-requested');
+      analyticsIdentifyAndTrack([ { name: 'source', value: 'nav demo request' }], 'Demo Requested');
       Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
     });
 
