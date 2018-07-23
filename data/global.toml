@@ -47,7 +47,6 @@
     fname = true
     lname = true
     company_name = false
-    form_action = "https://analytics.monax.io/monaxioregistry"
     submit_text = "Get notified"
 
   [webinars.cta] # global
@@ -161,7 +160,6 @@
         "Ocassionally",
       ]
       submit_button_text = "Request a demo"
-      submit_form_action = ""
       enable_button_two = false
       # button_two_text = "Try for free"
       # button_two_url = "https://beta.monax.io/register"
