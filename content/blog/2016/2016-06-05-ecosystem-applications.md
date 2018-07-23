@@ -11,7 +11,6 @@ meta: true
 published: true
 tags:
 - value
-- eris
 - ecosystem applications
 thumbnail: ecosystem_applications.jpg
 title: What are ecosystem applications?
