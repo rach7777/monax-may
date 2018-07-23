@@ -1,7 +1,6 @@
 ---
 author: Nina Kilbride, CCO
 categories:
-- eris
 comments: true
 date: 2016-08-18T00:00:00Z
 excerpt: The size of the legal engineer’s undertaking is tremendous, but it is proportional

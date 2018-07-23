@@ -1,7 +1,6 @@
 ---
 author: Nina Kilbride, CCO
 categories:
-- eris
 comments: true
 date: 2016-06-18T00:00:00Z
 excerpt: The DAO debacle is a testament to the crucial need to get corporate governance

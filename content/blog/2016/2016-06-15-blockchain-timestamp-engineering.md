@@ -1,7 +1,6 @@
 ---
 author: Nina Kilbride, CCO
 categories:
-- eris
 comments: true
 date: 2016-06-15T00:00:00Z
 excerpt: Blockchain smart contracts bring new tools to the ancient art of legal engineering.
