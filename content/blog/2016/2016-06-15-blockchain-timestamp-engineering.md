@@ -8,7 +8,6 @@ excerpt: Blockchain smart contracts bring new tools to the ancient art of legal 
 meta: true
 published: true
 tags:
-- eris
 - legal engineering
 - blockchain
 thumbnail: Louisville_Kentucky_1861_cover+3c.jpg

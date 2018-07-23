@@ -9,7 +9,6 @@ excerpt: The DAO debacle is a testament to the crucial need to get corporate gov
 meta: true
 published: true
 tags:
-- eris
 - DAO
 - blockchain
 thumbnail: crystal-ball.jpg
