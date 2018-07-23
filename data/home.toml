@@ -104,19 +104,19 @@
     enable = false # pulls out most recent tutorial by default
     show_related_links = false
 
-    [[screencasts.relatedlinks]]
+    [[tutorials.relatedlinks]]
       link_title = "Read our explainers"
       link_url = "/explainers/"
 
-    [[screencasts.relatedlinks]]
+    [[tutorials.relatedlinks]]
       link_title = "Monax blog posts and news"
       link_url = "/blog/"
 
-    [[screencasts.relatedlinks]]
+    [[tutorials.relatedlinks]]
       link_title = "Case studies"
       link_url = "/casestudies/"
 
-    # [[screencasts.relatedlinks]]
+    # [[tutorials.relatedlinks]]
     #   link_title = "More tutorials"
     #   link_url = "/tutorials/"
 

@@ -1,4 +1,4 @@
-{{ with .Site.Data.global.sections.cta }}
+{{ with .Site.Data.global.cta }}
 <section class="section-cta section-padding-xl background-dark">
   <div class="container">
 
@@ -17,10 +17,26 @@
               <div class="content-container padding-bottom-sm">
                 <p>
                   I'm working in the
-                  <label for="userIndustry" class="select-wrap">
-                    <select id="userIndustry" name="industry" class="form-control resizeselect">
-                      {{ range $i, $p := sort .industry_options }}
-                        {{ if eq $i 0 }}
+                  <span class="label-container">
+                    <label for="userIndustry" class="select-wrap">
+                      <select id="userIndustry" name="industry" class="form-control resizeselect">
+                        {{ range $i, $p := sort .industry_options }}
+                          {{ if eq $i 0 }}
+                            <option selected="">{{ . }}</option>
+                          {{ else }}
+                            <option>{{ . }}</option>
+                          {{ end }}
+                        {{ end }}
+                      </select>
+                    </label>
+                  </span>
+                </p>
+                <p>
+                  and I
+                  <label for="userFrequency" class="select-wrap">
+                    <select id="userFrequency" name="frequency" class="form-control resizeselect">
+                      {{ range $i, $p := .usage_options }}
+                        {{ if eq $i 1 }}
                           <option selected="">{{ . }}</option>
                         {{ else }}
                           <option>{{ . }}</option>
@@ -30,7 +46,7 @@
                   </label>
                 </p>
                 <p>
-                  and we need to make
+                  a contract management platform, needing to make
                   <label for="userAgreementsType" class="select-wrap">
                     <select id="userAgreementsType" name="agreementsType" class="form-control resizeselect">
                       {{ range $i, $p := sort .agreement_options }}
@@ -43,21 +59,39 @@
                     </select>
                   </label>
                 </p>
+                  <!-- ENABLE ONCE BETA IS LIVE
+                  and we need to make
+                  <span class="label-container">
+                    <label for="userAgreementsType" class="select-wrap">
+                      <select id="userAgreementsType" name="agreementsType" class="form-control resizeselect">
+                        {{ range $i, $p := sort .agreement_options }}
+                          {{ if eq $i 0 }}
+                            <option selected="">{{ . }}</option>
+                          {{ else }}
+                            <option>{{ . }}</option>
+                          {{ end }}
+                        {{ end }}
+                      </select>
+                    </label>
+                  </span>
+                </p>
                 <p>
                   typically
-                  <label for="userFrequency" class="select-wrap">
-                    <select id="userFrequency" name="frequency" class="form-control resizeselect">
-                      {{ range $i, $p := .frequency_options }}
-                        {{ if eq $i 1 }}
-                          <option selected="">{{ . }}</option>
-                        {{ else }}
-                          <option>{{ . }}</option>
+                  <span class="label-container">
+                    <label for="userFrequency" class="select-wrap">
+                      <select id="userFrequency" name="frequency" class="form-control resizeselect">
+                        {{ range $i, $p := .frequency_options }}
+                          {{ if eq $i 1 }}
+                            <option selected="">{{ . }}</option>
+                          {{ else }}
+                            <option>{{ . }}</option>
+                          {{ end }}
                         {{ end }}
-                      {{ end }}
-                    </select>
-                  </label>
+                      </select>
+                    </label>
+                  </span>
                 </p>
-              </div>
+              </div> -->
 
               <div class="btn-container" style="">
                 <button type="submit" class="btn btn-primary btn-xl" role="button">{{ .submit_button_text }}</button>

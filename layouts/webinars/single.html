@@ -15,7 +15,7 @@
 
         </header>
 
-        <section class="section-top padding-top-md" style="background: url({{ .Site.Data.global.posts.webinars.top.background_element }}) right bottom no-repeat; background-size: 520px;">
+        <section class="section-top padding-top-md" style="background: url({{ .Site.Data.global.webinars.top.background_element }}) right bottom no-repeat; background-size: 520px;">
             <div class="container">
               <div class="row flex-grid-md">
                   <div class="col-md-7 col-valign-center">
@@ -38,7 +38,7 @@
                     </p>
 
                     <!-- Sign up section [GLOBAL] -->
-                    {{ if .Site.Data.global.posts.webinars.top.hero_signup }}
+                    {{ if .Site.Data.global.webinars.top.hero_signup }}
                       {{ partial "_global/hero_newsletter.html" . }}
                     {{ end }}
                   </div>
@@ -59,7 +59,7 @@
 
                           {{ .Content }}
 
-                          {{ with $.Site.Data.global.posts.webinars.form }}
+                          {{ with $.Site.Data.global.webinars.form }}
                             {{ if .enable_signup_form }}
 
                               <div class="range-left-md underline-sm">
@@ -127,7 +127,7 @@
         </div> <!-- .#content -->
 
         <!-- CTA section [GLOBAL] -->
-        {{ if .Site.Data.global.posts.webinars.cta.enable }}
+        {{ if .Site.Data.global.webinars.cta.enable }}
           {{ partial "_global/cta.html" . }}
         {{ end }}
 

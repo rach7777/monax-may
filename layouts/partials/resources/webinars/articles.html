@@ -1,4 +1,4 @@
-{{ with .Site.Data.resources.webinars.articles }}
+{{ with .Site.Data.webinars.articles }}
 {{ if .enable }}
 
   {{ if .default_img }}
@@ -98,7 +98,7 @@
           {{ else }}
             <div class="col-sm-12">
               <div class="padding-top-md padding-bottom-xl">
-                <h2 class="coming-soon">{{ $.Site.Data.resources.webinars.top.title }} are coming soon!</h2>
+                <h2 class="coming-soon">{{ $.Site.Data.webinars.top.title }} are coming soon!</h2>
               </div>
             </div>
           {{ end }}

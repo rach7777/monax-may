@@ -1,4 +1,4 @@
-{{ if .Site.Data.global.posts.widgets.tags }}
+{{ if .Site.Data.global.widgets.tags }}
   {{ if isset .Site.Taxonomies "tags" }}
     {{ if not (eq (len .Site.Taxonomies.tags) 0) }}
       <div class="panel panel-default sidebar-menu">

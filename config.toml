@@ -76,19 +76,19 @@ quality = 80
       Post = "Discover our journey, how we think and the paradigm shift we see happening toward legal products."
       Weight = 1
 
-    [[menu.main]]
-    Name = "Case Studies"
-    parent = "resources"
-    URL = "/casestudies/"
-    Post = "Explore how other individuals and companies are transforming business with Monax"
-    Weight = 2
+    # [[menu.main]]
+    #   Name = "Case Studies"
+    #   parent = "resources"
+    #   URL = "/casestudies/"
+    #   Post = "Explore how other individuals and companies are transforming business with Monax"
+    #   Weight = 2
 
-    [[menu.main]]
-      Name = "Tutorials"
-      parent = "resources"
-      URL = "/screencasts/"
-      Post = "Learn how Monax can help you streamline your business using our latest walkthrough tutorials."
-      Weight = 3
+    # [[menu.main]]
+    #   Name = "Tutorials"
+    #   parent = "resources"
+    #   URL = "/tutorials/"
+    #   Post = "Learn how Monax can help you streamline your business using our latest walkthrough tutorials."
+    #   Weight = 3
 
     [[menu.main]]
       Name = "Explainers"
@@ -97,12 +97,12 @@ quality = 80
       Post = "Learn how Monax can help you streamline your business. Explore best practices for Monax tools and ask questions."
       Weight = 4
 
-    [[menu.main]]
-     Name = "Webinars"
-     parent = "resources"
-     URL = "/webinars/"
-     Post = "Join us for industry insight and best practice advice on using legal products to streamline your business."
-     Weight = 5
+    # [[menu.main]]
+    #  Name = "Webinars"
+    #  parent = "resources"
+    #  URL = "/webinars/"
+    #  Post = "Join us for industry insight and best practice advice on using legal products to streamline your business."
+    #  Weight = 5
 
 [[menu.main]]
     name = "Company"
@@ -144,8 +144,9 @@ quality = 80
     # Main site logo
     logo = "/img/logo.png"
 
-    # Additional scripts - header
-    additional_header_script_urls = [""]
+    # Img to display when sharing
+    share_img = "/img/share-img.png"
+
     # Additional scripts - footer
     additional_footer_script_urls = [""]
 
@@ -157,5 +158,5 @@ quality = 80
     blog = "/blog/:year/:month/:day/:slug/"
     casestudies = "/casestudies/:slug/"
     learn = "/learn/:filename/"
-    screencasts = "/screencasts/:slug/"
+    tutorials = "/tutorials/:slug/"
     webinars = "/webinars/:year/:month/:day/:slug/"

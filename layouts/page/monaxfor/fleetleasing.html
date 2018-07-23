@@ -18,8 +18,8 @@
         {{ partial "monaxfor/fleetleasing/top.html" . }}
 
         <!-- global section -->
-        {{ if isset .Site.Data.monaxfor.fleetleasing "press" }}
-          {{ if .Site.Data.monaxfor.fleetleasing.press.enable }}
+        {{ if isset .Site.Data.for.fleetleasing "press" }}
+          {{ if .Site.Data.for.fleetleasing.press.enable }}
             {{ partial "_global/press.html" . }}
           {{ end }}
         {{ end }}
@@ -35,8 +35,8 @@
         {{ partial "monaxfor/fleetleasing/faq.html" . }}
 
         <!-- CTA section [GLOBAL] -->
-        {{ if isset .Site.Data.monaxfor.fleetleasing "cta" }}
-          {{ if .Site.Data.monaxfor.fleetleasing.cta.enable }}
+        {{ if isset .Site.Data.for.fleetleasing "cta" }}
+          {{ if .Site.Data.for.fleetleasing.cta.enable }}
             {{ partial "_global/cta.html" . }}
           {{ end }}
         {{ end }}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  {{ partial "head_fonts.html" . }}
+
+  <body>
+
+    <div id="all" class="single-post">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        <section class="section-top padding-top-md" style="background: url({{ .Site.Data.global.tutorials.top.background_element }}) right bottom no-repeat; background-size: 520px;">
+            <div class="container">
+              <div class="row flex-grid-md">
+                  <div class="col-md-7 col-valign-center">
+                      <div class="range-left-md">
+                        <h5 class="article-category" style="margin-bottom:-10px;">Screencast</h5>
+                      </div>
+                      <div class="range-left-md underline-sm">
+                        <h1>{{ .Title }}</h1>
+                      </div>
+                      {{ if gt .Date.Year 2000 }}
+                        <p class="post-meta range-left-md">{{ if .Params.author }}<i class="fa fa-user-o"></i> {{ .Params.author }}{{ end }}<i class="fa fa-calendar"></i> {{ .Date.Format .Site.Params.date_format }}</p>
+                      {{ end }}
+                      <p class="lead range-left-md">
+                        {{ .Params.excerpt }}
+                      </p>
+
+                      <!-- Sign up section [GLOBAL] -->
+                      {{ if .Site.Data.global.tutorials.top.hero_signup }}
+                        {{ partial "_global/hero_newsletter.html" . }}
+                      {{ end }}
+                  </div>
+              </div>
+            </div> <!-- .container -->
+        </section> <!-- .section -->
+
+        <div id="content">
+            <div class="container">
+                <div class="row padding-bottom-xl">
+
+                    <div class="col-md-9 padding-bottom-lg" id="tutorials-post">
+                      <div id="post-content" class="range-left-md">
+
+                        {{ if .Params.youtube_id }}
+                        <div class="content-container padding-bottom-md">
+                          <div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+                            <iframe src="//www.youtube.com/embed/{{ .Params.youtube_id }}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+                          </div>
+                        </div>
+                        {{ end }}
+
+                        {{ .Content }}
+
+                      </div>
+                    </div> <!-- .post content -->
+
+                    <div class="col-md-3">
+                        {{ partial "sidebar.html" . }}
+                    </div> <!-- .sidebar col -->
+
+                </div> <!-- .row -->
+            </div> <!-- .container -->
+        </div> <!-- .#content -->
+
+        <!-- CTA section [GLOBAL] -->
+        {{ if .Site.Data.global.tutorials.cta.enable }}
+          {{ partial "_global/cta.html" . }}
+        {{ end }}
+
+        {{ partial "footer.html" . }}
+
+
+    </div> <!-- .#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>
