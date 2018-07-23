@@ -137,7 +137,7 @@
 
 
 [examples]
-  enable = true
+  enable = false
   title = "Get started using one of our templates"
   default_img = "/img/assets/agreements/3.jpg"
   new_agreement_text = "Create A New Template"
