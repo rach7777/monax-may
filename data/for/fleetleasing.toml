@@ -1,7 +1,7 @@
 [top]
     enable = true
     title = "Monax for fleet leasing"
-    subtitle = "How Monax can power your fleet leases, simplify your business processes and drive new revenue streams"
+    subtitle = "How the Monax decentralized contract management platform can power your fleet leases, simplify your business processes and drive new revenue streams"
     img_left = false
     hero_signup = true
     img_right = "/img/assets/landing-pages/fleet-leasing/fleet-leasing-header.png"

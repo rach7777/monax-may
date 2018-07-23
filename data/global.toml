@@ -107,7 +107,10 @@
       industry_options = [
         "Advertising Industry",
         "Legal services industry",
+        "Legal tech industry",
         "Aerospace industry",
+        "Government & NGOs",
+        "Consulting & professional services",
         "Agriculture industry",
         "Chemical industry",
         "Software industry",
@@ -115,6 +118,7 @@
         "Construction industry",
         "Real estate industry",
         "Public utilities industry",
+        "Insurance & risk",
         "Defense industry",
         "Education industry",
         "Energy industry",
@@ -131,6 +135,11 @@
         "Transport industry",
         "Water industry",
         "Other industry",
+      ]
+      usage_options = [
+      "am already using",
+      "don't use",
+      "don't know what is",
       ]
       agreement_options = [
         "Non-Disclosure Agreements",

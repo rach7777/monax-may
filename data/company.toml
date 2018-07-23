@@ -290,7 +290,7 @@
 
     [positions.contact]
         title = "Contact us if you're interested"
-        subtitle = "Please email <a href='mailto:jobs@monax.io'>jobs@monax.io</a> with your CV"
+        subtitle = "Please email <a href='mailto:contact@monax.io'>contact@monax.io</a> with your CV"
 
     [[positions.job]]
         title = "Site Reliability Engineer"
