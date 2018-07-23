@@ -7,7 +7,7 @@ $(document).ready(function() {
     const formData = {};
     serialized.forEach((input) => formData[input.name] = input.value);
     analytics.identify(formData.email || analytics.user().anonymousId(), formData);
-    analytics.track(eventName, formData);
+    analytics.track(`${eventName}_${formData.source}`, formData);
     Intercom('update', formData);
     return formData;
   };
