@@ -29,12 +29,12 @@
 
           {{ with .form }}
 
-          <form action="{{ .form_action }}" id="home-webinar-signup" class="form">
+          <form id="home-webinar-signup" class="form">
             {{ with .source }}
               <input type="text" name="source" value="{{ . }}" class="hidden">
             {{ end }}
             {{ with .webinar_signup }}
-              <input type="text" name="webinar_signup" value="{{ . }}" class="hidden">
+              <input type="text" name="webinarSignup" value="{{ . }}" class="hidden">
             {{ end }}
             {{ with .email }}
               <input type="text" placeholder="Email" name="email" class="field-email">
@@ -42,10 +42,10 @@
             {{ if or .fname .lname }}
               <div class="content-container clearfix">
                 {{ with .fname }}
-                  <input type="text" placeholder="First Name" name="fname" class="input-half field-fname">
+                  <input type="text" placeholder="First Name" name="firstName" class="input-half field-fname">
                 {{ end }}
                 {{ with .lname }}
-                  <input type="text" placeholder="Last Name" name="lname" class="input-half field-lname">
+                  <input type="text" placeholder="Last Name" name="lastName" class="input-half field-lname">
                 {{ end }}
               </div>
             {{ end }}
