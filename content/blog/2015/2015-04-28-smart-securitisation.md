@@ -10,7 +10,6 @@ excerpt: Crypto-tokens are so, like, totally last week. You don't need 'em - and
 meta: true
 published: true
 tags:
-- eris
 - thelonious
 - decerver
 thumbnail: scallthethings.jpg

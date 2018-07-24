@@ -12,7 +12,6 @@ excerpt: Saying one wants to change the world *is* cliche, and it is also passe.
 meta: true
 published: true
 tags:
-- eris
 - thelonious
 - decerver
 title: Eris Industries -- Why Do I Do What I Do?

@@ -8,7 +8,7 @@ excerpt: Marmots in Singapore.
 meta: true
 published: true
 tags:
-- eris
+- public appearance
 thumbnail: null
 title: Preston talks smart contracts at the SWIFT Innotribe keynote panel 2015
 # url: /blog/2015/10/28/innotribe/

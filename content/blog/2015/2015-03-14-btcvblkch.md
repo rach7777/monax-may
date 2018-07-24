@@ -8,7 +8,6 @@ excerpt: 'Just pulling them together for the peanut gallery. '
 meta: true
 published: true
 tags:
-- eris
 - thelonious
 - decerver
 thumbnail: doug.jpg

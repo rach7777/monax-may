@@ -10,7 +10,6 @@ excerpt: Smart Contracts have arrived. Here's how Eris v 0.9 works, and how the 
 meta: true
 published: true
 tags:
-- eris
 - thelonious
 - decerver
 title: Meet Eris. The distributed computing solution for industry.

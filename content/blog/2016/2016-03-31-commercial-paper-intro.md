@@ -9,7 +9,6 @@ excerpt: An introduction to smart contract commercial paper for the digital non-
 meta: false
 published: true
 tags:
-- eris
 - commercial paper
 title: 'Monax Commercial Paper Bundles: Toolkit for Financial Engineering'
 # url: /blog/2016/03/31/commercial-paper-intro/

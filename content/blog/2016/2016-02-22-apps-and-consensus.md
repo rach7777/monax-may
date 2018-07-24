@@ -8,7 +8,6 @@ excerpt: Application and Consensus Modules
 meta: true
 published: true
 tags:
-- eris
 - tendermint
 - application
 - consensus
