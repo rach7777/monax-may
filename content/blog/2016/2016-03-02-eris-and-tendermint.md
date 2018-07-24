@@ -9,7 +9,6 @@ excerpt: Sensible Blockchain Stacks
 meta: true
 published: true
 tags:
-- eris
 - tendermint
 - consensus
 - application

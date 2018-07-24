@@ -12,7 +12,6 @@ excerpt: 'I’m incredibly pleased to announce that Eris Industries will release
 meta: true
 published: true
 tags:
-- eris
 - thelonious
 - decerver
 title: Eris Industries -- What Are We Building?

@@ -10,7 +10,6 @@ excerpt: You said you wanted us to shoot a little straighter to help everyone gr
 meta: true
 published: true
 tags:
-- eris
 - thelonious
 - decerver
 thumbnail: Eris-structural-visual.png

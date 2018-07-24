@@ -11,7 +11,6 @@ excerpt: Businesses want to benefit from blockchain technology now, not wait for
 meta: true
 published: true
 tags:
-- eris
 - thelonious
 - decerver
 title: Blockchain your business in just 7 steps

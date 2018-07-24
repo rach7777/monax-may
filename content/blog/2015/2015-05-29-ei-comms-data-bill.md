@@ -9,9 +9,7 @@ excerpt: Eris Industries' Position is that this proposed bill would impinge vita
 meta: true
 published: true
 tags:
-- eris
-- erisDB
-- erisserver
+- announcements
 title: Eris Industries Statement on the Reintroduction of the UK Investigatory Powers
   Bill
 # url: /blog/2015/05/29/ei-comms-data-bill/

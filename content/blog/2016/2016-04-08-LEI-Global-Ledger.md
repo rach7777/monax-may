@@ -9,7 +9,6 @@ excerpt: A call to free public data like the Legal Entity Identifier (LEI)
 meta: true
 published: true
 tags:
-- eris
 - consensus
 - application
 - blockchain
