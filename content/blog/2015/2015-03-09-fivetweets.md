@@ -9,7 +9,6 @@ excerpt: Casey sums it up nicely.
 meta: true
 published: true
 tags:
-- eris
 - thelonious
 - decerver
 thumbnail: null

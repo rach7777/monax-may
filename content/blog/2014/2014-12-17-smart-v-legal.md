@@ -10,7 +10,6 @@ excerpt: Business thinking, FinTech, legal tech, blockchain tech - let's see wha
 meta: true
 published: true
 tags:
-- eris
 - thelonious
 - decerver
 title: 'Smart contracts: a brief introduction for the financial services industry'

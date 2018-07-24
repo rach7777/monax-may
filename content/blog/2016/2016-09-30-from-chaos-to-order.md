@@ -11,7 +11,6 @@ categories:
 # url: /blog/2016/09/30/from-chaos-to-order/
 tags:
   - monax
-  - eris
   - marketing
   - company
 

@@ -232,8 +232,9 @@ $(document).ready(function() {
         analyticsIdentifyAndTrack(form, "Newsletter Subscribed");
         const formParent = $(form).parent();
         $(form).remove();
-        const confirmMessage = '<h4 class="range-left-sm" >Thank you for subscribing! You\'ll hear from us soon.</h4>';
-        formParent.append(confirmMessage)
+        const confirmMessage = '<span class="range-left-sm" >Thank you for subscribing! You\'ll hear from us soon.</span>';
+        const messageBox = `<div class="confirm-message"><img height="60px" src="${window.location.protocol}//${window.location.host}/img/logos/doug.png" alt="Doug"/>${confirmMessage}</div>`;
+        formParent.append(messageBox);
       },
       invalidHandler: function(event, validator) {
         var errors = validator.numberOfInvalids();
@@ -254,8 +255,9 @@ $(document).ready(function() {
         analyticsIdentifyAndTrack(form, "Newsletter Subscribed");
         const formParent = $(form).parent();
         $(form).remove();
-        const confirmMessage = '<p class="range-left-sm" >Thank you for subscribing! You\'ll hear from us soon.</p>';
-        formParent.append(confirmMessage)
+        const confirmMessage = '<span class="range-left-sm" >Thank you for subscribing! You\'ll hear from us soon.</span>';
+        const messageBox = `<div class="confirm-message"><img height="60px" src="${window.location.protocol}//${window.location.host}/img/logos/doug.png" alt="Doug"/>${confirmMessage}</div>`;
+        formParent.append(messageBox);
       },
       invalidHandler: function(event, validator) {
         var errors = validator.numberOfInvalids();
@@ -282,8 +284,9 @@ $(document).ready(function() {
         analyticsIdentifyAndTrack(form, "Webinar Subscribed");
         const formParent = $(form).parent();
         $(form).remove();
-        const confirmMessage = '<h4 class="range-left-sm" >Thank you for subscribing! You\'ll hear from us soon.</h4>';
-        formParent.append(confirmMessage)
+        const confirmMessage = '<span class="range-left-sm" >Thank you for subscribing!</br>You\'ll hear from us soon.</span>';
+        const messageBox = `<div class="confirm-message"><img height="160px" src="${window.location.protocol}//${window.location.host}/img/logos/doug.png" alt="Doug"/>${confirmMessage}</div>`;
+        formParent.append(messageBox);
       },
       invalidHandler: function(event, validator) {
         var errors = validator.numberOfInvalids();

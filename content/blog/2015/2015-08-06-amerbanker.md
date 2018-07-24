@@ -8,7 +8,6 @@ excerpt: Blockchains, smart contracts, and marmots.
 meta: true
 published: true
 tags:
-- eris
 - thelonious
 - decerver
 thumbnail: doug.jpg

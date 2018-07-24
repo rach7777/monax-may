@@ -437,7 +437,27 @@ form label.error {
   height: auto;
   width: 100%;
 }
+.signup-footer .confirm-message {
+  border-radius: 5px;
+  background-color: #96B85D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f7f7f7;
+  padding: 8px;
+  font-size: 12px;
+}
 
+/* webinar signup form */
+.section-webinar .confirm-message {
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px 8px 8px;
+    font-size: 16px;
+  }
 
 /*======================
     ELEMENTS - BUBBLE
