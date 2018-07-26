@@ -211,7 +211,7 @@ $(document).ready(function() {
       submitHandler: function(form) {
         const { industry, agreementsType, frequency } = analyticsIdentifyAndTrack(form, "Demo Requested");
         $("#main-cta-section button").addClass('disabled');
-        Intercom('showNewMessage', `I'm working in the ${industry} and am interested in creating ${agreementsType} ${frequency}. I'd like to see a demo of the Monax Platform.`);
+        Intercom('showNewMessage', `I'm working in the ${industry} and am interested in creating ${agreementsType}. I ${frequency} a contract management platform. I'd like to see a demo of the Monax Platform.`);
       },
       invalidHandler: function(event, validator) {
         var errors = validator.numberOfInvalids();
