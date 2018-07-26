@@ -292,21 +292,21 @@
         title = "Contact us if you're interested"
         subtitle = "Please email <a href='mailto:contact@monax.io'>contact@monax.io</a> with your CV"
 
-    [[positions.job]]
-        title = "Site Reliability Engineer"
-        description = "Help us build a decentralised, blockchain-based legal agreements network"
-        hours = "Full time"
-        type = "Permanent"
-        location = "London or Edinburgh"
-        posted_date = "June 28 2018"
+  #  [[positions.job]]
+    #    title = "Site Reliability Engineer"
+      #  description = "Help us build a decentralised, blockchain-based legal agreements network"
+    #    hours = "Full time"
+    #    type = "Permanent"
+    #    location = "London or Edinburgh"
+    #    posted_date = "June 28 2018"
 
-    [[positions.job]]
-        title = "Systems Reliability Engineer"
-        description = "Help us build a decentralised, blockchain-based legal agreements network"
-        hours = "Full time"
-        type = "Permanent"
-        location = "London or Edinburgh"
-        posted_date = "June 28 2018"
+  #  [[positions.job]]
+    #    title = "Systems Reliability Engineer"
+    #    description = "Help us build a decentralised, blockchain-based legal agreements network"
+    #    hours = "Full time"
+    #    type = "Permanent"
+    #    location = "London or Edinburgh"
+    #    posted_date = "June 28 2018"
 
 
 [pressreleases]
