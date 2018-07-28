@@ -10,6 +10,7 @@ googleAnalytics = ""
 
 # Define the number of posts per page
 paginate = 6
+rssLimit = 20
 
 [imaging]
 # Default resample filter used for resizing. Default is Box,
