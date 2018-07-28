@@ -6,9 +6,19 @@ $(document).ready(function() {
     const serialized = Array.isArray(form) ? form : $(form).serializeArray();
     const formData = {};
     serialized.forEach((input) => formData[input.name] = input.value);
+    formData.email = formData.email || analytics.user().id();
     analytics.identify(formData.email || analytics.user().anonymousId(), formData);
     analytics.track(`${eventName}_${formData.source}`, formData);
     Intercom('update', formData);
+    if (formData.email) {
+        $.ajax('https://analytics.monax.io/monaxioregistry', {
+          data: formData,
+        }).done(() => {
+          console.log('Requested lead creation');
+        }).fail(() => {
+          console.log('Error requesting lead creation');
+        });
+    }
     return formData;
   };
 
