@@ -24,7 +24,7 @@ The increasing need for automated data-driven solutions across multiple business
 
 ### Blockchains are legal tech
 
-The advent of distributed ledger technology and blockchains has enabled writing smart contracts that can execute the terms of a contract, make decisions, store information, and interact with other smart contracts. For a more in-depth explanation of blockchains and smart contracts, please see our [blockchains](/learn/blockchains/) and [smart contract](/learn/smart_contracts/) explainers.
+The advent of distributed ledger technology and blockchains has enabled writing smart contracts that can execute the terms of a contract, make decisions, store information and interact with other smart contracts. For a more in-depth explanation of blockchains and smart contracts, please see our [blockchains](/learn/blockchains/) and [smart contract](/learn/smart_contracts/) explainers.
 
 At Monax, "legal engineering" means writing smart contracts that leverage the capabilities of ecosystem application technology to automate complex legal transactions, resulting in greater efficiency and lower transaction costs. Use cases we have seen pursued include automating the gathering of evidence, management of money and property, automation of property registerss, and automation of audit for trade and supply chain finance. Indeed almost any financial standard can be modelled in smart contracts (SWIFT, for example, built [several prototypes](https://www.swift.com/insights/press-releases/swift-examines-application-of-financial-business-standards-to-distributed-ledger-technology-and-smart-contracts), including a bond and ISO 20022 messaging, with our software).
 
