@@ -2,13 +2,13 @@
 author: Monax
 categories:
 - distributed business
-comments: true
+comments: false
 date: 2015-04-28T00:00:00Z
 deprecated: true
 excerpt: Crypto-tokens are so, like, totally last week. You don't need 'em - and indeed
   don't want 'em - in commercial applications.
 meta: true
-published: true
+published: false
 tags:
 - thelonious
 - decerver

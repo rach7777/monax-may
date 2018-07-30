@@ -2,12 +2,12 @@
 author: Monax
 categories:
 - blockchain
-comments: true
+comments: false
 date: 2015-04-30T00:00:00Z
 excerpt: "In this post Ethan explores Monax's definition, as well as the greater relevance, of some of the use cases of that most remarkable piece of technology: the
   blockchain."
 meta: true
-published: true
+published: false
 tags:
 - blockchains
 deprecated: true
@@ -83,4 +83,3 @@ Meh. I prefer to think of blockchains as platforms for experimenting in shared g
 So if you don't think blockchains will be useful without a bitcoin, that's fine. Just please get out of our way while we sneak the underlying principles of openness, transparency, and collaborative decision making into the rest of society.
 
 Cheers.
-

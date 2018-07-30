@@ -8,7 +8,7 @@ deprecated: true
 excerpt: Smart Contracts have arrived. Here's how Eris v 0.9 works, and how the rules
   of the blockchain game have changed.
 meta: true
-published: true
+published: false
 tags:
 - thelonious
 - decerver
