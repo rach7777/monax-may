@@ -9,7 +9,7 @@ excerpt: Businesses want to benefit from blockchain technology now, not wait for
   change to legalize existing 'Blockchain 1.0' networks. Thanks to Eris, the wait
   is over.
 meta: true
-published: true
+published: false
 tags:
 - thelonious
 - decerver

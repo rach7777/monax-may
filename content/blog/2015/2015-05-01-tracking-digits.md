@@ -2,14 +2,14 @@
 author: Casey Kuhlman, CEO
 categories:
 - legal tech
-comments: true
+comments: false
 date: 2015-05-01T00:00:00Z
 deprecated: true
 excerpt: Blockchain and smart contract tracking of digital goods and raw information
   could not be easier when using Monax Industries' Distributed Application Platform. Here's how
   to do it.
 meta: true
-published: true
+published: false
 tags:
 - digitial authenticity
 - information assurance

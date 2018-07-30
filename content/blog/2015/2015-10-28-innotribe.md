@@ -2,11 +2,11 @@
 author: Monax
 categories:
 - products
-comments: true
+comments: false
 date: 2015-10-28T00:00:00Z
 excerpt: Marmots in Singapore.
 meta: true
-published: true
+published: false
 tags:
 - public appearance
 thumbnail: null

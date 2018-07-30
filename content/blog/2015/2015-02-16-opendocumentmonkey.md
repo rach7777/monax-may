@@ -2,12 +2,12 @@
 author: Monax
 categories:
 - products
-comments: true
+comments: false
 date: 2015-02-16T00:00:00Z
 excerpt: Legal process and document management is expensive, time-consuming, and soul-destroying.
   Could blockchains offer a better way to go about the practice of transactional law?
 meta: true
-published: true
+published: false
 tags:
 - monax
 thumbnail: doug.png

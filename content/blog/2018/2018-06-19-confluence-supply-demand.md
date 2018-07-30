@@ -27,7 +27,7 @@ utm:
 
 Legal. It's most often thought of as a bad word. But a necessary word nonetheless.
 
-There are, historically, a range of reasons for this, but there is one in particular that I'd like to explore in the context of this post: delivery. How "legal" is delivered is a pain. It's a pain point for both the suppliers of "legal" as well as the demanders of "legal". Let's take a closer look.
+There are, historically, a range of reasons for this, but there is one in particular that I'd like to explore in the context of this post: delivery. Ho]w "legal" is delivered is a pain. It's a pain point for both the suppliers of "legal" as well as the demanders of "legal". Let's take a closer look.
 
 ## Legal Departments: The Final Frontier for Digital
 
