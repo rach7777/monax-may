@@ -2,13 +2,13 @@
 author: Casey Kuhlman, CEO
 categories:
 - business in emerging markets
-comments: true
+comments: false
 date: 2015-03-17T00:00:00Z
 excerpt: Technological solutions alone are insufficient to address societal problems.
   Technologists, particularly in the cryptocurrency space, can help; but maybe not
   in the ways current rhetoric would suggest.
 meta: true
-published: true
+published: false
 tags:
 - emerging markets
 - sme

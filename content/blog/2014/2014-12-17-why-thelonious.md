@@ -2,7 +2,7 @@
 author: Monax
 categories:
 - blockchains
-comments: true
+comments: false
 date: 2014-12-17T00:00:00Z
 deprecated: true
 excerpt: In all modern blockchains, the rules of the protocol are defined in the client
@@ -12,7 +12,7 @@ excerpt: In all modern blockchains, the rules of the protocol are defined in the
   The end goal of our Thelonious project is a blockchain client which is purely a
   p2p network library and a virtual machine.
 meta: true
-published: true
+published: false
 tags:
 - thelonious
 - blockchains

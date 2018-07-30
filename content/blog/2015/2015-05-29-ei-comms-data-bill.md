@@ -2,12 +2,12 @@
 author: Monax
 comments: false
 date: 2015-05-29T00:00:00Z
-deprecated: true
+deprecated: false
 excerpt: Eris Industries' Position is that this proposed bill would impinge vital,
   and legitimate business interests of our company. As such we will be relocating
   staff out of the United Kingdom until further clarity is achieved.
 meta: true
-published: true
+published: false
 tags:
 - announcements
 title: Eris Industries Statement on the Reintroduction of the UK Investigatory Powers

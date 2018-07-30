@@ -2,11 +2,11 @@
 author: Monax
 categories:
 - products
-comments: true
+comments: false
 date: 2015-03-14T00:00:00Z
 excerpt: 'Just pulling them together for the peanut gallery. '
 meta: true
-published: true
+published: false
 tags:
 - thelonious
 - decerver
