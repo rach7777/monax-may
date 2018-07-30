@@ -16,9 +16,9 @@ tags:
 
 ## Monax Legal Engineering
 
-At its simplest, legal engineering is the practice of writing [smart contracts](/learn/smart_contracts/) that automate legally-enforceable rights and obligations.
+Legal engineering is the combination of legal design and software engineering. Legal engineering enables, among other things, automation of rights and obligations in [smart contracts](/learn/smart_contracts/).
 
-Usually, legal rights and obligations are set out in "dumb" paper documents which must be read and interpreted, and acted on, by people. This takes a lot of time and effort. In today's increasingly data-driven world, it makes much more sense for contractual obligations to be represented in code and processed at least in part by computers - improving adherence, easing compliance, and automating performance.
+Usually, legal rights and obligations are set out in "inert" paper documents which must be read and interpreted, and acted on, by people. This takes a lot of time and effort. In today's increasingly data-driven world, it makes much more sense for contractual obligations to be represented in code and processed at least in part by computers - improving adherence, easing compliance, and automating performance.
 
 The increasing need for automated data-driven solutions across multiple business verticals means an opportunity to create ecosystem applications: programs, platforms and solutions that enable businesses, governments, organizations and individuals to automate their network interactions via smart contract rules. Drafting the rules of commercial interactions is traditionally the job of a lawyer. In a data-driven ecosystem, it's the job of legal engineers.
 
