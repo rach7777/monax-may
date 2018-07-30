@@ -2,12 +2,12 @@
 author: Casey Kuhlman, CEO
 categories:
 - hiring
-comments: true
+comments: false
 date: 2016-02-29T00:00:00Z
 excerpt: We are immensely excited to announce that Rick Dudley has joined Monax Industries as
   a Developer on our Platform Team.
 meta: true
-published: true
+published: false
 tags:
 - hiring
 - awesome

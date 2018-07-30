@@ -3,14 +3,14 @@
 author: Monax
 categories:
 - distributed business
-comments: true
+comments: false
 date: 2015-11-01T00:00:00Z
 deprecated: true
 excerpt: IPFS is a revolutionary new file system that aims to decentralize the web.
   It also has characteristics that make it a great fit with smart contracts, which
   is why we have integrated it into Monax.
 meta: true
-published: true
+published: false
 tags:
 - IPFS
 - smart contracts
