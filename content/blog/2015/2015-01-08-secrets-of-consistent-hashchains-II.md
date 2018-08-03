@@ -9,7 +9,7 @@ excerpt: A blockchain is a silly sort of a datastructure designed to keep thousa
   owned by anyone in particular. Read more of Part 2 of Ethan's blockchain tome here.
 meta: true
 published: false
-- blockchains
+tags: blockchains
 title: 'Secrets of Consistent Hashchains II: History on Deposit'
 # url: /blog/2015/01/08/secrets-of-consistent-hashchains-ii/
 slug: secrets-of-consistent-hashchains-ii
