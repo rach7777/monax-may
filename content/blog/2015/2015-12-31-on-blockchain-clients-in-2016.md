@@ -2,12 +2,12 @@
 author: Casey Kuhlman, CEO
 categories:
 - blockchains
-comments: true
+comments: false
 date: 2015-12-31T00:00:00Z
 deprecated: true
 excerpt: Blockchain clients evolved significantly in 2015 and we at Monax fully expect they will continue evolving during 2016. Although we expect they will evolve more slowly and in particular ways.
 meta: true
-published: true
+published: false
 tags:
 - blockchains
 - modularity

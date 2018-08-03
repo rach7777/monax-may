@@ -2,13 +2,13 @@
 author: Monax
 categories:
 - DApps
-comments: true
+comments: false
 date: 2014-12-27T00:00:00Z
 deprecated: true
 excerpt: How are DApps secured? How does the Decerver and Thelonious handle DApp security?
   These questions are addressed in this post.
 meta: true
-published: true
+published: false
 tags:
 - dapps
 - security

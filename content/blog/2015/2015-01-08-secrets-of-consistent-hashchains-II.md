@@ -2,15 +2,14 @@
 author: Monax
 categories:
 - blockchains
-comments: true
+comments: false
 date: 2015-01-08T00:00:00Z
 excerpt: A blockchain is a silly sort of a datastructure designed to keep thousands
   of computers in sync while providing a useful service that is not controlled or
   owned by anyone in particular. Read more of Part 2 of Ethan's blockchain tome here.
 meta: true
-published: true
-tags:
-- blockchains
+published: false
+tags: blockchains
 title: 'Secrets of Consistent Hashchains II: History on Deposit'
 # url: /blog/2015/01/08/secrets-of-consistent-hashchains-ii/
 slug: secrets-of-consistent-hashchains-ii

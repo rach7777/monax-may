@@ -2,9 +2,9 @@
 author: Casey Kuhlman, CEO
 categories:
 - products
-comments: true
+comments: false
 date: 2014-12-31T00:00:00Z
-deprecated: true
+deprecated: false
 excerpt: As 2014 becomes 2015, Eris Industries remains committed to working with many
   actors within cryptoeconomic community and within the broader community for change.
   We want to be a positive member of many different communities which means listening,

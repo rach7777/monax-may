@@ -2,11 +2,11 @@
 author: Monax
 categories:
 - products
-comments: true
+comments: false
 date: 2015-08-06T00:00:00Z
 excerpt: Blockchains, smart contracts, and marmots.
 meta: true
-published: true
+published: false
 tags:
 - thelonious
 - decerver

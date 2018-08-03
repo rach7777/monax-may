@@ -2,11 +2,11 @@
 author: Casey Kuhlman, CEO
 categories:
 - videos
-comments: true
+comments: false
 date: 2015-05-12T00:00:00Z
 excerpt: Ethan's BlockchainU Lectures.
 meta: true
-published: true
+published: false
 tags:
 - blockchains
 thumbnail: screenshot-ethanslecture.png

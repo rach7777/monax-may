@@ -2,9 +2,9 @@
 author: Monax
 categories:
 - products
-comments: true
+comments: false
 date: 2014-12-27T00:00:00Z
-deprecated: true
+deprecated: false
 excerpt: You said you wanted us to shoot a little straighter to help everyone grok
   Eris. We listened. Now with visuals!
 meta: true
