@@ -91,12 +91,12 @@
 [press]
     enable = true
     title = "Featured In:"
-    logo_1 = "/img/press-logos/coindesk-logo-white.png"
-    logo_1_url = "https://www.coindesk.com/hyperledger-tech-heats-ahead-blockchain-software-debuts/"
-    logo_2 = "/img/press-logos/digital-journal-logo-white.png"
-    logo_2_url = "http://www.digitaljournal.com/business/q-a-how-technology-is-shaking-up-legal-firms/article/525554"
-    logo_3 = "/img/press-logos/wall-street-journal-logo-white.png"
-    logo_3_url = "https://blogs.wsj.com/cio/2016/03/02/key-blockchain-vendors-cloud-providers-square-off-in-major-test/"
+    logo_1 = "/img/forbes_logo_white.png"
+    logo_1_url = "https://www.forbes.com/sites/sarahhansen/2018/07/26/11-companies-join-agreements-network-to-develop-ethereum-platform-for-lawyers/#1db52de84aec"
+    logo_2 = "/img/ABA-journal.white.png"
+    logo_2_url = "http://www.abajournal.com/news/article/law_firms_tech_companies_partner_to_build_new_blockchain_based_platform_for"
+    logo_3 = "/img/ledger-insights.white.png"
+    logo_3_url = "https://www.ledgerinsights.com/agreements-network-legal-blockchain-contracts/"
 
 [cta]
     title = "Find your first-class agreement now"
