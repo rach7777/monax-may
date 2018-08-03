@@ -64,4 +64,6 @@ an `Active Agreement`.
 
 In the meantime, please dig deeper into the possibilities that the [Agreements Network allows](https://agreements.network) and a previous blog post discusses in greater detail [what the Agreements Network is]({{< relref "blog/2018/2018-04-27-introducing-agreements-network.md" >}}).
 
-[Photo](https://unsplash.com/photos/l090uFWoPaI) by [John Carlisle](https://unsplash.com/photos/l090uFWoPaI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+
+[Photo](https://unsplash.com/photos/bq31L0jQAjU) by [life Through A Lens](https://unsplash.com/@bamagal?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge) on [Unsplash](https://unsplash.com?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
