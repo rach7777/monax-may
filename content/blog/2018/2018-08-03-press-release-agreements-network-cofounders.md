@@ -49,20 +49,13 @@ The Agreements Network is:
 > a decentralized contract management solution that uses smart contract
 > technology to bring together producers and consumers of legal products
 
-This means, at a fundamental level, that the blockchain platform -- and the
-smart contracts that operate it -- are sitting across multiple participants
-within the ecosystem. While the platform does much more than simply provide a
-marketplace for forms, it does offer a connection point between traditional
-marketplace actors: namely buyers and sellers. The outcome of the bargaining
-relationship will operate within the context of the Network itself in terms of
-an `Active Agreement`.
 
 {{< image_blog "an_logo.png" >}}
 
 <center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ypcTTjv_zbw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 
 
-In the meantime, please dig deeper into the possibilities that the [Agreements Network allows](https://agreements.network) and a previous blog post discusses in greater detail [what the Agreements Network is]({{< relref "blog/2018/2018-04-27-introducing-agreements-network.md" >}}).
+In the meantime, please dig deeper into the possibilities that the [Agreements Network allows](https://agreements.network) and a previous blog post discusses the network in greater detail [what the Agreements Network is]({{< relref "blog/2018/2018-04-27-introducing-agreements-network.md" >}}).
 
 
 
