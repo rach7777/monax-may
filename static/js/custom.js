@@ -9,7 +9,6 @@ $(document).ready(function() {
     formData.email = formData.email || analytics.user().id();
     analytics.identify(formData.email || analytics.user().anonymousId(), formData);
     analytics.track(`${eventName}_${formData.source}`, formData);
-    Intercom('update', formData);
     if (formData.email) {
         $.ajax('https://analytics.monax.io/monaxioregistry', {
           data: formData,
