@@ -27,12 +27,15 @@
           </div> <!-- .col -->
           <div class="col-md-7">
             <div class="row">
+
+              <div id="BambooHR"><script src="https://monax.bamboohr.co.uk/js/jobs2.php" type="text/javascript"></script><div id="BambooHR-Footer">Powered by<a href="http://www.bamboohr.com" target="_blank" rel="noopener external nofollow"><img src="https://resources.bamboohr.com/images/footer-logo.png" alt="BambooHR - HR software"/></a></div></div>
+
               {{ range $i, $p := .job }}
-
-                {{ if (modBool $i 2) }} <!-- new row after 2 entries -->
-                  <div class="clearfix visible-lg-block"></div>
-                {{ end }}
-
+              
+              {{ if (modBool $i 2) }} <!-- new row after 2 entries -->
+              <div class="clearfix visible-lg-block"></div>
+              {{ end }}
+              
               <div class="col-sm-6 padding-bottom-md">
                 <div class="content-container content-card content-card-stack content-card-shadow-sm hover-scale" style="width: 100%;">
                   <div class="text-container">
