@@ -88,22 +88,22 @@
     city = "Remote"
     img = "/img/assets/cities/office-remote.png"
 
-#    [[team.item]]
-#      name = "Anjlee Khurana"
-#      position = "Legal Engineer"
-#      weight = 1
-#      img = ""
-#      twitter = "https://twitter.com/Anjleekhurana"
-#      linkedin = "https://www.linkedin.com/in/anjlee-khurana-286630122"
-#      keybase = ""
-#      # github = "#"
+ [[team.item]]
+     name = "Anjlee Khurana"
+     position = "Legal Engineer"
+     weight = 1
+     img = "/img/team/team-ak.jpeg"
+     twitter = "https://twitter.com/Anjleekhurana"
+     linkedin = "https://www.linkedin.com/in/anjlee-khurana-286630122"
+  #   keybase = ""
+      # github = "#"
 #      # website = "#"
 
     [[team.item]]
       name = "Adam Locklin"
       position = "Product Manager"
       weight = 1
-      img = "/img/team/team-al.jpg"
+      img = "/img/team/team-al2.jpg"
       twitter = "https://twitter.com/AdamLocklin"
       linkedin = "https://www.linkedin.com/in/adamlocklin/"
       keybase = "https://keybase.io/adamlocklin"
