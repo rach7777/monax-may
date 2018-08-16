@@ -7,7 +7,11 @@ $(document).ready(function() {
     const formData = {};
     serialized.forEach((input) => formData[input.name] = input.value);
     formData.email = formData.email || analytics.user().id();
-    analytics.identify(formData.email || analytics.user().anonymousId(), formData);
+    analytics.identify(
+      formData.email || analytics.user().anonymousId(),
+      formData,
+      { integrations: { Intercom: false } },
+    );
     analytics.track(`${eventName}_${formData.source}`, formData);
     if (formData.email) {
         $.ajax('https://analytics.monax.io/monaxioregistry', {
