@@ -92,7 +92,7 @@
      name = "Anjlee Khurana"
      position = "Legal Engineer"
      weight = 1
-     img = "/img/team/team-ak.jpeg"
+     img = "/img/team/team-ak.jpg"
      twitter = "https://twitter.com/Anjleekhurana"
      linkedin = "https://www.linkedin.com/in/anjlee-khurana-286630122"
   #   keybase = ""
@@ -156,7 +156,7 @@
       name = "Jan Hendrik Scheufen"
       position = "CPO"
       weight = 2
-      img = "/img/team/team-jhs.jpg"
+      img = "/img/team/team-jh.jpg"
       twitter = "https://twitter.com/jhscheufen"
       linkedin = "https://www.linkedin.com/in/jan-hendrik-scheufen-a7259b/"
       keybase = "https://keybase.io/jhscheufen"
