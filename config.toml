@@ -1,6 +1,7 @@
 baseurl = "https://monax.io"
 title = "Monax"
 theme = "hugo-universal-theme"
+site_about = "Monax is a platform to build, distribute, and operate active agreements for growing businesses."
 themesDir = "./themes/"
 languageCode = "en-us"
 # Site language. Available translations in the theme's `/i18n` directory.
