@@ -55,8 +55,12 @@
 {{ range .Params.tags }}
   <meta property="article:tag" content="{{ . }}" />
 {{- end }}
-  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Monax Blog | {{ .Params.title }}" />
   <meta property="twitter:site" content="@monaxHQ" />
+  <meta property="twitter:creator" content="@monaxHQ" />
+  <meta property="twitter:image" content="{{ with .Params.thumbnail }}{{ printf "/blog/images/%d/%s" $.Page.Date.Year . | absURL }}{{ else }}{{ .Site.Params.share_img | absURL }}{{ end }}" />
+  <meta property="twitter:description" content="{{ with .Params.excerpt }}{{ . }}{{ else }}{{ .Site.Params.site_about }}{{ end }}" />
 {{- else }}
   <meta property="og:title" content="Monax Industries" />
   <meta property="og:type" content="website" />
