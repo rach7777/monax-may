@@ -9,7 +9,7 @@ author: Casey Kuhlman, CEO
 # use your full name and title here
 excerpt:   "When people think about legal they think almost entirely of the provision of bespoke services. Yet the world is changing, and legal needs to keep up."
 # if no excerpt is provided, one will be generated from the post content
-thumbnail: vladislav-m-414275-unsplash.jpg
+thumbnail: example-image.jpg
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings, as well as at the top of the post itself
 categories:
   - legal products
