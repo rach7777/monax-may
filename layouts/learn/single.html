@@ -19,16 +19,16 @@
             <div class="container">
               <div class="row flex-grid-md">
                   <div class="col-md-7 col-valign-center">
-                      <div class="range-left-md">
+                      <div class="range-left">
                         <h5 class="article-category" style="margin-bottom:-10px;">Learn</h5>
                       </div>
-                      <div class="range-left-md underline-sm">
+                      <div class="range-left underline-sm">
                         <h1>{{ .Title }}</h1>
                       </div>
                       {{ if gt .Date.Year 2000 }}
-                        <p class="post-meta range-left-md">{{ if .Params.author }}<i class="fa fa-user-o"></i> {{ .Params.author }}{{ end }}<i class="fa fa-calendar"></i> {{ .Date.Format .Site.Params.date_format }}</p>
+                        <p class="post-meta range-left">{{ if .Params.author }}<i class="fa fa-user-o"></i> {{ .Params.author }}{{ end }}<i class="fa fa-calendar"></i> {{ .Date.Format .Site.Params.date_format }}</p>
                       {{ end }}
-                      <p class="lead range-left-md">
+                      <p class="lead range-left">
                         {{ .Params.excerpt }}
                       </p>
 
@@ -46,7 +46,7 @@
                 <div class="row padding-bottom-xl">
 
                     <div class="col-md-9 padding-bottom-lg" id="learn-post">
-                      <div id="post-content" class="range-left-md">
+                      <div id="post-content" class="range-left">
                         {{ .Content }}
                       </div>
                     </div> <!-- .post content -->
