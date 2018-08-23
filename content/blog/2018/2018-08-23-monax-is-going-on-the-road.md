@@ -12,10 +12,10 @@ excerpt:   "Monax is focused on growing a strong community and we’re really ex
 thumbnail: monax-on-the-road.jpg
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings, as well as at the top of the post itself
 categories:
-  - press
+  - news
 tags:
-  - legal products
-  - agreements network
+  - events
+  - blockchain
 # if you want this article to show on a 'use case' page, you can use the following TAGS -  'fleetleasing' 'contentcreators' 'lawyers' or 'corporate'
 draft: false
 # set this to 'false' when you're ready to publish
