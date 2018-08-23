@@ -147,12 +147,13 @@ $(document).ready(function() {
 
   // HANDLE COMPANY HISTORY SELECT
   $(function(){
-  	var inputs = $('.timeline-date');
+  	var inputs = $('.timeline-date-entry');
   	var paras = $('.timeline-info-container').find('.timeline-content');
   	$(inputs).click(function(){
   		var t = $(this),
   				ind = t.index(),
   				matchedPara = $(paras).eq(ind);
+          console.log(t);
 
   		$(t).add(matchedPara).addClass('active');
   		$(inputs).not(t).add($(paras).not(matchedPara)).removeClass('active');

@@ -20,12 +20,21 @@
           	<div class="timeline-date-container">
               {{ range $i, $p := .time }}
                 {{ if eq $i 5 }} <!-- 1st entry -->
-              		<div class="timeline-date active" style="background-image: url({{ .logo_icon }});">
-              			<span data-year="{{ .date }}" data-info="{{ .label }}"></span>
-              		</div>
-                {{ else }}
-                  <div class="timeline-date" style="background-image: url({{ .logo_icon }});">
-                    <span data-year="{{ .date }}" data-info="{{ .label }}"></span>
+                  <div class="timeline-date-entry active">
+                    <span class="timeline-date-before"></span>
+                		<div class="timeline-date hover-scale" style="background-image: url({{ .logo_icon }});">
+                			<span data-year="{{ .date }}" data-info="{{ .label }}"></span>
+                		</div>
+                    <span class="timeline-date-after"></span>
+                  </div>
+
+                {{ else if eq 1 1 }}
+                  <div class="timeline-date-entry">
+                    <span class="timeline-date-before"></span>
+                    <div class="timeline-date hover-scale" style="background-image: url({{ .logo_icon }});">
+                      <span data-year="{{ .date }}" data-info="{{ .label }}"></span>
+                    </div>
+                    <span class="timeline-date-after"></span>
                   </div>
                 {{ end }}
               {{ end }}
