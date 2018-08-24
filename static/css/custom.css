@@ -2353,9 +2353,47 @@ transform: scale(1.05) !important;
 }
 
 
+/* ==================
+TEAM ICONS
+================= */
 
 
-
+@media (min-width: 768px) {
+  .locations-container .hover-dip-opacity,
+  .team-container .team-entry {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .locations-container.active .hover-dip-opacity,
+  .locations-container.toggleActive .hover-dip-opacity {
+    opacity: 0.3;
+  }
+  .locations-container.active .hover-dip-opacity:hover,
+  .locations-container.active .hover-dip-opacity.toggleActive,
+  .locations-container.toggleActive .hover-dip-opacity:hover,
+  .locations-container.toggleActive .hover-dip-opacity.toggleActive {
+    opacity: 1;
+    -webkit-transform: scale(1.05) !important;
+    -ms-transform: scale(1.05) !important;
+    transform: scale(1.05) !important;
+  }
+  .js-select-city {
+    cursor: pointer;
+  }
+  .team-container[data-selected='edn'] .team-entry:not([data-location='edn']) {
+    opacity: 0.3;
+  }
+  .team-container[data-selected='lon'] .team-entry:not([data-location='lon']) {
+    opacity: 0.3;
+  }
+  .team-container[data-selected='nyc'] .team-entry:not([data-location='nyc']) {
+    opacity: 0.3;
+  }
+  .team-container[data-selected='remote'] .team-entry:not([data-location='remote']) {
+    opacity: 0.3;
+  }
+}
 
 
 

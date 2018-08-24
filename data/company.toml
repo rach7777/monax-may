@@ -74,24 +74,29 @@
 
     [[team.office]]
     city = "Edinburgh"
+    select = "edn" #set to edn, lon, nyc, remote or none
     img = "/img/assets/cities/office-edinburgh.png"
 
     [[team.office]]
     city = "London"
+    select = "lon" #set to edn, lon, nyc, remote or none
     img = "/img/assets/cities/office-london.png"
 
     [[team.office]]
     city = "New York"
+    select = "nyc" #set to edn, lon, nyc, remote or none
     img = "/img/assets/cities/office-new-york.png"
 
     [[team.office]]
     city = "Remote"
+    select = "remote" #set to edn, lon, nyc, remote or none
     img = "/img/assets/cities/office-remote.png"
 
  [[team.item]]
      name = "Anjlee Khurana"
      position = "Legal Engineer"
      weight = 1
+     location = "nyc" #set to edn, lon, nyc, remote or none
      img = "/img/team/team-ak.jpg"
      twitter = "https://twitter.com/Anjleekhurana"
      linkedin = "https://www.linkedin.com/in/anjlee-khurana-286630122"
@@ -103,6 +108,7 @@
       name = "Adam Locklin"
       position = "Product Manager"
       weight = 1
+      location = "nyc" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-al2.jpg"
       twitter = "https://twitter.com/AdamLocklin"
       linkedin = "https://www.linkedin.com/in/adamlocklin/"
@@ -114,6 +120,7 @@
       name = "Casey Kuhlman"
       position = "CEO"
       weight = 2
+      location = "edn" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-csk.jpg"
       twitter = "https://twitter.com/compleatang"
       linkedin = "https://www.linkedin.com/in/compleatang/"
@@ -125,6 +132,7 @@
       name = "Chenxiao Hu Wu"
       position = "Producer Experience Associate"
       weight = 1
+      location = "edn" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-chw.jpg"
       twitter = "https://twitter.com/chenxiao_hu"
       linkedin = "https://www.linkedin.com/in/chenxiaoh/"
@@ -136,6 +144,7 @@
       name = "David Galbraith"
       position = "Director"
       weight = 2
+      location = "none" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-dg.jpg"
       twitter = "https://twitter.com/daveg"
       # linkedin = "#"
@@ -146,6 +155,7 @@
       name = "Jeremy Drane"
       position = "Advisor"
       weight = 3
+      location = "none" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-jd.jpg"
       twitter = "https://twitter.com/dranejeremy"
       linkedin = "https://www.linkedin.com/in/jeremydrane/"
@@ -156,6 +166,7 @@
       name = "Jan Hendrik Scheufen"
       position = "CPO"
       weight = 2
+      location = "nyc" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-jh.jpg"
       twitter = "https://twitter.com/jhscheufen"
       linkedin = "https://www.linkedin.com/in/jan-hendrik-scheufen-a7259b/"
@@ -167,6 +178,7 @@
       name = "Mel Roy"
       position = "Operations Manager"
       weight = 1
+      location = "edn" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-mr.jpg"
       twitter = "https://twitter.com/melaniemoar"
       linkedin = "https://www.linkedin.com/in/mmoar/"
@@ -177,6 +189,7 @@
       name = "Nina Kilbride"
       position = "CCO"
       weight = 1
+      location = "remote" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-nk.jpg"
       twitter = "https://twitter.com/NinaKilbride"
       linkedin = "https://www.linkedin.com/in/nina-kilbride-71185610b/"
@@ -188,6 +201,7 @@
       name = "Ommi Shimizu"
       position = "Full Stack Engineer"
       weight = 1
+      location = "nyc" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-os.jpg"
       # twitter = "#"
       linkedin = "https://www.linkedin.com/in/ommish/"
@@ -198,6 +212,7 @@
       name = "Pascal Froux"
       position = "Advisor"
       weight = 3
+      location = "none" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-pf.jpg"
       # twitter = "#"
       # linkedin = "#"
@@ -209,6 +224,7 @@
       name = "Rachel Davidson"
       position = "Senior Marketing Associate"
       weight = 1
+      location = "edn" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-rd.jpg"
       twitter = "https://twitter.com/Cryptojourno_uk"
       linkedin = "https://linkedin.com/in/rach-davidson"
@@ -220,6 +236,7 @@
       name = "Sam Sinha"
       position = "Smart Contract Engineer"
       weight = 1
+      location = "nyc" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-ss.jpg"
       twitter = "https://twitter.com/samsrobotarmy"
       linkedin = "https://www.linkedin.com/in/sam-sinha/"
@@ -231,6 +248,7 @@
       name = "Silas Davis"
       position = "CTO"
       weight = 2
+      location = "lon" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-sd.jpg"
       twitter = "https://twitter.com/silas_davis"
       linkedin = "https://www.linkedin.com/in/silas-davis-ba92951a/"
@@ -242,6 +260,7 @@
       name = "Sean Young"
       position = "Platform Engineer"
       weight = 1
+      location = "lon" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-sy.jpg"
       twitter = "https://twitter.com/iamseanyoung"
       linkedin = "https://www.linkedin.com/in/sean-young-881a011/"
@@ -253,6 +272,7 @@
       name = "Tobias Barnes Hofmeister"
       position = "Marketing Analyst"
       weight = 1
+      location = "edn" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-th.jpg"
       # twitter = "#"
       linkedin = "https://www.linkedin.com/in/tobiashofmeister/"
@@ -264,6 +284,7 @@
       name = "Dr. Tyler Jackson"
       position = "Chief Scientist"
       weight = 1
+      location = "remote" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-tj.jpg"
       twitter = "https://twitter.com/dennismckinnon"
       linkedin = "https://www.linkedin.com/in/tyler-jackson-567789bb/"
@@ -275,6 +296,7 @@
       name = "Yann Ranchere"
       position = "Director"
       weight = 2
+      location = "none" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-yr.jpg"
       twitter = "https://twitter.com/tek_fin"
       # linkedin = "#"

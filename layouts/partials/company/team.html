@@ -11,14 +11,14 @@
           <p class="p1 padding-bottom-sm">
             {{ .subtitle | markdownify }}
           </p>
-          <div class="content-container padding-bottom-lg">
+          <div class="content-container locations-container">
             <div class="row flex-grid-sm">
               {{ range $i, $p := .office }}
               {{ if (modBool $i 2) }}
                 <div class="clearfix visible-xs-block"></div>
               {{ end }}
               <div class="col-sm-3 col-xs-6 col-valign-center">
-                <img class="img-responsive img-center img-city" src="{{ .img }}" alt="">
+                <img class="img-responsive img-center img-city hover-dip-opacity js-select-city" src="{{ .img }}" alt="" data-select="{{ .select }}">
                 <h5 style="">{{ .city }}</h5>
               </div>
               {{ end }}
@@ -28,7 +28,7 @@
         </div> <!-- .col -->
       </div> <!-- .row -->
 
-      <div class="row">
+      <div class="row padding-top-lg team-container" data-selected="">
         {{ range $i, $p := sort .item "name" }}
 
           {{ if (modBool $i 6) }}
@@ -43,8 +43,8 @@
             <div class="clearfix visible-xs-block"></div>
           {{ end }}
 
-        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6 padding-bottom-sm">
-            <img class="img-responsive img-center img-headshot hover-scale" src="{{ .img }}" alt="">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6 padding-bottom-sm team-entry" data-location="{{ .location }}">
+            <img class="img-responsive img-center img-headshot img-team" src="{{ .img }}" alt="">
           <div class="">
               <h5 style="margin-bottom:2px;">{{ .name }}</h5>
               <p>{{ .position }}</p>

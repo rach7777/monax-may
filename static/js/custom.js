@@ -160,6 +160,50 @@ $(document).ready(function() {
   	});
   });
 
+
+  // COMPANY TEAM LOCATION SELECT
+  $(function(){
+  	var locations = $('.js-select-city');
+  	$(locations).click(function(){
+      if ($(window).width() > 750) {
+        var locationsContainer = $('.locations-container');
+        var teamContainer = $('.team-container');
+    		var elem = $(this);
+    		var selectLocationRef = $(this).data("select");
+        console.log(selectLocationRef);
+        if ( ! $(elem).hasClass('toggleActive') ) {
+        // Toggle new elem
+          $(elem).add($(locationsContainer)).addClass('toggleActive');
+      		$(locations).not(elem).removeClass('toggleActive');
+          $(teamContainer).attr('data-selected', selectLocationRef);
+        } else {
+        // Untoggle elem
+          $(elem).add($(locationsContainer)).removeClass('toggleActive');
+          $(locationsContainer).removeClass('active');
+          $(teamContainer).attr('data-selected', "");
+        }
+      }
+  	});
+  });
+  $('.locations-container').mouseenter(function(){
+    if ($(window).width() > 750) {
+      $(this).addClass("active");
+    }
+  });
+  $('.locations-container').mouseleave(function(){
+    if ($(window).width() > 750) {
+      $(this).removeClass("active");
+    }
+  });
+
+
+
+
+
+
+
+
+
   // HANDLE TAB SELECT ON FEATURES
   $('.btn-tab-select').on('click', function(e) {
     e.preventDefault();
