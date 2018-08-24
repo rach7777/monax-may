@@ -95,7 +95,7 @@
  [[team.item]]
      name = "Anjlee Khurana"
      position = "Legal Engineer"
-     weight = 1
+     weight = 101
      location = "nyc" #set to edn, lon, nyc, remote or none
      img = "/img/team/team-ak.jpg"
      twitter = "https://twitter.com/Anjleekhurana"
@@ -107,7 +107,7 @@
     [[team.item]]
       name = "Adam Locklin"
       position = "Product Manager"
-      weight = 1
+      weight = 100
       location = "nyc" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-al2.jpg"
       twitter = "https://twitter.com/AdamLocklin"
@@ -119,7 +119,7 @@
     [[team.item]]
       name = "Casey Kuhlman"
       position = "CEO"
-      weight = 2
+      weight = 200
       location = "edn" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-csk.jpg"
       twitter = "https://twitter.com/compleatang"
@@ -131,7 +131,7 @@
     [[team.item]]
       name = "Chenxiao Hu Wu"
       position = "Producer Experience Associate"
-      weight = 1
+      weight = 102
       location = "edn" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-chw.jpg"
       twitter = "https://twitter.com/chenxiao_hu"
@@ -143,7 +143,7 @@
     [[team.item]]
       name = "David Galbraith"
       position = "Director"
-      weight = 2
+      weight = 300
       location = "none" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-dg.jpg"
       twitter = "https://twitter.com/daveg"
@@ -154,7 +154,7 @@
     [[team.item]]
       name = "Jeremy Drane"
       position = "Advisor"
-      weight = 3
+      weight = 400
       location = "none" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-jd.jpg"
       twitter = "https://twitter.com/dranejeremy"
@@ -165,7 +165,7 @@
     [[team.item]]
       name = "Jan Hendrik Scheufen"
       position = "CPO"
-      weight = 2
+      weight = 201
       location = "nyc" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-jh.jpg"
       twitter = "https://twitter.com/jhscheufen"
@@ -177,7 +177,7 @@
     [[team.item]]
       name = "Mel Roy"
       position = "Operations Manager"
-      weight = 1
+      weight = 104
       location = "edn" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-mr.jpg"
       twitter = "https://twitter.com/melaniemoar"
@@ -188,7 +188,7 @@
     [[team.item]]
       name = "Nina Kilbride"
       position = "CCO"
-      weight = 1
+      weight = 202
       location = "remote" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-nk.jpg"
       twitter = "https://twitter.com/NinaKilbride"
@@ -200,7 +200,7 @@
     [[team.item]]
       name = "Ommi Shimizu"
       position = "Full Stack Engineer"
-      weight = 1
+      weight = 105
       location = "nyc" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-os.jpg"
       # twitter = "#"
@@ -211,7 +211,7 @@
     [[team.item]]
       name = "Pascal Froux"
       position = "Advisor"
-      weight = 3
+      weight = 401
       location = "none" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-pf.jpg"
       # twitter = "#"
@@ -223,7 +223,7 @@
     [[team.item]]
       name = "Rachel Davidson"
       position = "Senior Marketing Associate"
-      weight = 1
+      weight = 106
       location = "edn" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-rd.jpg"
       twitter = "https://twitter.com/Cryptojourno_uk"
@@ -235,7 +235,7 @@
     [[team.item]]
       name = "Sam Sinha"
       position = "Smart Contract Engineer"
-      weight = 1
+      weight = 107
       location = "nyc" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-ss.jpg"
       twitter = "https://twitter.com/samsrobotarmy"
@@ -247,7 +247,7 @@
     [[team.item]]
       name = "Silas Davis"
       position = "CTO"
-      weight = 2
+      weight = 203
       location = "lon" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-sd.jpg"
       twitter = "https://twitter.com/silas_davis"
@@ -259,7 +259,7 @@
     [[team.item]]
       name = "Sean Young"
       position = "Platform Engineer"
-      weight = 1
+      weight = 108
       location = "lon" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-sy.jpg"
       twitter = "https://twitter.com/iamseanyoung"
@@ -271,7 +271,7 @@
     [[team.item]]
       name = "Tobias Barnes Hofmeister"
       position = "Marketing Analyst"
-      weight = 1
+      weight = 110
       location = "edn" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-th.jpg"
       # twitter = "#"
@@ -283,7 +283,7 @@
     [[team.item]]
       name = "Dr. Tyler Jackson"
       position = "Chief Scientist"
-      weight = 1
+      weight = 103
       location = "remote" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-tj.jpg"
       twitter = "https://twitter.com/dennismckinnon"
@@ -295,7 +295,7 @@
     [[team.item]]
       name = "Yann Ranchere"
       position = "Director"
-      weight = 2
+      weight = 301
       location = "none" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-yr.jpg"
       twitter = "https://twitter.com/tek_fin"
