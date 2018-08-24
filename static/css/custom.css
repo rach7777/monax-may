@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 30px;
     text-transform: none;
     letter-spacing: -0.04em;
     font-weight: 300;
@@ -126,21 +126,21 @@ h1 {
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 26px;
     text-transform: none;
     letter-spacing: -0.04em;
     font-weight: 300;
     line-height: 1.1;
 }
 h3 {
-    font-size: 26px;
+    font-size: 22px;
     text-transform: none;
     letter-spacing: -0.02em;
     font-weight: 300;
     line-height: 1.1;
 }
 h4 {
-    font-size: 22px;
+    font-size: 20px;
     text-transform: none;
     letter-spacing: 0;
     font-weight: 400;
@@ -163,22 +163,9 @@ h6 {
 body, p {
     font-size: 16px;
 }
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-  h1 {font-size: 52px;}
-  h2 {font-size: 36px;}
-  h3 {font-size: 32px;}
-  h4 {font-size: 24px;}
-}
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-  h1 {font-size: 60px;}
-  h2 {font-size: 42px;}
-}
-
 p.lead,
 .p1 {
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: -0.02em;
     font-weight: 300;
 }
@@ -186,6 +173,30 @@ p.lead,
     font-size: 18px;
     letter-spacing: -0.02em;
     font-weight: 400;
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  h1 {font-size: 40px;}
+  h2 {font-size: 32px;}
+  h3 {font-size: 26px;}
+  h4 {font-size: 22px;}
+  p.lead, .p1 {font-size: 18px;}
+  .p2 {font-size: 18px;}
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  h1 {font-size: 52px;}
+  h2 {font-size: 36px;}
+  h3 {font-size: 32px;}
+  h4 {font-size: 24px;}
+  p.lead, .p1 {font-size: 22px;}
+  .p2 {font-size: 18px;}
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  h1 {font-size: 60px;}
+  h2 {font-size: 42px;}
 }
 
 /* ******* */
@@ -1940,7 +1951,7 @@ transform: scale(1.05) !important;
   }
 }
 .ul-home-summary p {
-    font-size: 22px;
+    font-size: 18px;
 }
 .ul-home-summary i.fa-chevron-right:before {
     position: relative;
@@ -1949,6 +1960,15 @@ transform: scale(1.05) !important;
 .ul-home-summary i.fa-chevron-left:before {
     position: relative;
     left: -1px;
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  .ul-home-summary p {font-size: 20px;}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .ul-home-summary p {font-size: 22px;}
 }
 
 
