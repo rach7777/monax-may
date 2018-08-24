@@ -2357,7 +2357,10 @@ transform: scale(1.05) !important;
 TEAM ICONS
 ================= */
 
-
+.img-team {
+    width: 165px;
+    max-height: 165px;
+}
 @media (min-width: 768px) {
   .locations-container .hover-dip-opacity,
   .team-container .team-entry {
