@@ -147,27 +147,33 @@ $(document).ready(function() {
 
   // HANDLE COMPANY HISTORY SELECT
   $(function(){
-  	var inputs = $('.timeline-date-entry');
-  	var paras = $('.timeline-info-container').find('.timeline-content');
-  	$(inputs).click(function(){
-  		var t = $(this),
-  				ind = t.index(),
-  				matchedPara = $(paras).eq(ind);
-          console.log(t);
-
-  		$(t).add(matchedPara).addClass('active');
-  		$(inputs).not(t).add($(paras).not(matchedPara)).removeClass('active');
+    var timelineContainer = $('.timeline-date-container');
+  	var dateEntries = $('.timeline-date-entry');
+  	var dateInfoArr = $('.timeline-info-container').find('.timeline-content');
+    // date clicked
+  	$(dateEntries).click(function(){
+  		var dateSelected = $(this);
+			var dateIndex = $(dateEntries).index(dateSelected);
+			var matchedDate = $(dateInfoArr).eq(dateIndex);
+  		$(dateSelected).add(dateInfoArr[dateIndex]).addClass('active');
+  		$(dateEntries).not(dateSelected).add($(dateInfoArr).not(matchedDate)).removeClass('active');
   	});
+    // hover on dates
+    $(timelineContainer).hover(function(){
+      if ($(window).width() > 750) {
+        $(this).toggleClass("active");
+      }
+    });
   });
 
 
   // COMPANY TEAM LOCATION SELECT
   $(function(){
   	var locations = $('.js-select-city');
+    var locationsContainer = $('.locations-container');
+    var teamContainer = $('.team-container');
   	$(locations).click(function(){
       if ($(window).width() > 750) {
-        var locationsContainer = $('.locations-container');
-        var teamContainer = $('.team-container');
     		var elem = $(this);
     		var selectLocationRef = $(this).data("select");
         console.log(selectLocationRef);
@@ -184,17 +190,19 @@ $(document).ready(function() {
         }
       }
   	});
+    $(locationsContainer).mouseenter(function(){
+      if ($(window).width() > 750) {
+        $(this).addClass("active");
+      }
+    });
+    $(locationsContainer).mouseleave(function(){
+      if ($(window).width() > 750) {
+        $(this).removeClass("active");
+      }
+    });
   });
-  $('.locations-container').mouseenter(function(){
-    if ($(window).width() > 750) {
-      $(this).addClass("active");
-    }
-  });
-  $('.locations-container').mouseleave(function(){
-    if ($(window).width() > 750) {
-      $(this).removeClass("active");
-    }
-  });
+
+
 
 
 

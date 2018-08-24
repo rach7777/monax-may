@@ -2203,7 +2203,7 @@ transform: scale(1.05) !important;
     width: 8vw;
     height: 5px;
     max-width: 100px;
-    left: calc(-8vw + 25px);
+    right: 100%;
 }
 .timeline-date-after {
     content: "";
@@ -2216,7 +2216,7 @@ transform: scale(1.05) !important;
     width: 8vw;
     height: 5px;
     max-width: 100px;
-    right: calc(-8vw + 25px);
+    left: 100%;
 }
 .timeline-date {
   width: 50px;
@@ -2369,6 +2369,34 @@ transform: scale(1.05) !important;
   .timeline-info-container {
     margin-top: 0px;
     text-align: center;
+  }
+}
+
+/* ANIMATE HISTORY */
+
+@media (min-width: 768px) {
+  .timeline-date-container .hover-dip-opacity .timeline-date,
+  .timeline-date-container .hover-dip-opacity span {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .timeline-date-container.active .hover-dip-opacity .timeline-date {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  .timeline-date-container.active .hover-dip-opacity .timeline-date-before,
+  .timeline-date-container.active .hover-dip-opacity .timeline-date-after {
+    opacity: 0.15;
+  }
+  .timeline-date-container.active .hover-dip-opacity .timeline-date:hover,
+  .timeline-date-container.active .hover-dip-opacity.active .timeline-date {
+    opacity: 1;
+  }
+  .timeline-date-container.active .hover-dip-opacity .timeline-date:hover {
+    -webkit-transform: scale(1.05) !important;
+    -ms-transform: scale(1.05) !important;
+    transform: scale(1.05) !important;
   }
 }
 
