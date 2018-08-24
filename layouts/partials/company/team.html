@@ -29,7 +29,7 @@
       </div> <!-- .row -->
 
       <div class="row padding-top-lg team-container" data-selected="">
-        {{ range $i, $p := sort .item "name" }}
+        {{ range $i, $p := sort .item "weight" }}
 
           {{ if (modBool $i 6) }}
             <div class="clearfix visible-lg-block"></div>
