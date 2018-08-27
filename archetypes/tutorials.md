@@ -2,7 +2,7 @@
 
 # fill in
 date:      {{ .Date }}
-title:     "Screencast example"
+title:     "Tutorial example"
 slug:
 # by default, the URL will be generated from the title. Set the slug if you want to simplify or change the URL. Format: "my-slug" will turn into /tutorials/my-slug
 author: Casey Kuhlman, CEO

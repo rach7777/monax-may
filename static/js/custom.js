@@ -146,17 +146,70 @@ $(document).ready(function() {
 
   // HANDLE COMPANY HISTORY SELECT
   $(function(){
-  	var inputs = $('.timeline-date');
-  	var paras = $('.timeline-info-container').find('.timeline-content');
-  	$(inputs).click(function(){
-  		var t = $(this),
-  				ind = t.index(),
-  				matchedPara = $(paras).eq(ind);
-
-  		$(t).add(matchedPara).addClass('active');
-  		$(inputs).not(t).add($(paras).not(matchedPara)).removeClass('active');
+    var timelineContainer = $('.timeline-date-container');
+  	var dateEntries = $('.timeline-date-entry');
+  	var dateInfoArr = $('.timeline-info-container').find('.timeline-content');
+    // date clicked
+  	$(dateEntries).click(function(){
+  		var dateSelected = $(this);
+			var dateIndex = $(dateEntries).index(dateSelected);
+			var matchedDate = $(dateInfoArr).eq(dateIndex);
+  		$(dateSelected).add(dateInfoArr[dateIndex]).addClass('active');
+  		$(dateEntries).not(dateSelected).add($(dateInfoArr).not(matchedDate)).removeClass('active');
   	});
+    // hover on dates
+    $(timelineContainer).hover(function(){
+      if ($(window).width() > 750) {
+        $(this).toggleClass("active");
+      }
+    });
   });
+
+
+  // COMPANY TEAM LOCATION SELECT
+  $(function(){
+  	var locations = $('.js-select-city');
+    var locationsContainer = $('.locations-container');
+    var teamContainer = $('.team-container');
+  	$(locations).click(function(){
+      if ($(window).width() > 750) {
+    		var elem = $(this);
+    		var selectLocationRef = $(this).data("select");
+        console.log(selectLocationRef);
+        if ( ! $(elem).hasClass('toggleActive') ) {
+        // Toggle new elem
+          $(elem).add($(locationsContainer)).addClass('toggleActive');
+      		$(locations).not(elem).removeClass('toggleActive');
+          $(teamContainer).attr('data-selected', selectLocationRef);
+        } else {
+        // Untoggle elem
+          $(elem).add($(locationsContainer)).removeClass('toggleActive');
+          $(locationsContainer).removeClass('active');
+          $(teamContainer).attr('data-selected', "");
+        }
+      }
+  	});
+    $(locationsContainer).mouseenter(function(){
+      if ($(window).width() > 750) {
+        $(this).addClass("active");
+      }
+    });
+    $(locationsContainer).mouseleave(function(){
+      if ($(window).width() > 750) {
+        $(this).removeClass("active");
+      }
+    });
+  });
+
+
+
+
+
+
+
+
+
+
 
   // HANDLE TAB SELECT ON FEATURES
   $('.btn-tab-select').on('click', function(e) {

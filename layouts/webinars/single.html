@@ -19,7 +19,7 @@
             <div class="container">
               <div class="row flex-grid-md">
                   <div class="col-md-7 col-valign-center">
-                    <div class="range-left-md">
+                    <div class="range-left">
                       {{ $t := (time .Params.event_date) }}
                       {{ if not ($t.After now) }}
                         <h5 class="article-category" style="margin-bottom:-10px;">Webinar Ended</h5>
@@ -27,13 +27,13 @@
                         <h5 class="article-category" style="margin-bottom:-10px;">Upcoming Webinar</h5>
                       {{ end }}
                     </div>
-                    <div class="range-left-md underline-sm">
+                    <div class="range-left underline-sm">
                       <h1>{{ .Title }}</h1>
                     </div>
                     {{ if gt .Date.Year 2000 }}
-                      <p class="post-meta range-left-md">{{ if .Params.author }}<i class="fa fa-user-o"></i> {{ .Params.author }}{{ end }}<i class="fa fa-calendar"></i> {{ .Date.Format .Site.Params.date_format }}</p>
+                      <p class="post-meta range-left">{{ if .Params.author }}<i class="fa fa-user-o"></i> {{ .Params.author }}{{ end }}<i class="fa fa-calendar"></i> {{ .Date.Format .Site.Params.date_format }}</p>
                     {{ end }}
-                    <p class="lead range-left-md">
+                    <p class="lead range-left">
                       {{ .Params.excerpt }}
                     </p>
 
@@ -51,7 +51,7 @@
                 <div class="row padding-bottom-xl">
 
                     <div class="col-md-9 padding-bottom-lg" id="webinars-post">
-                      <div id="post-content" class="range-left-md">
+                      <div id="post-content" class="range-left">
 
                         {{ $t := (time .Params.event_date) }}
                         <!-- If in the future -->
@@ -62,14 +62,14 @@
                           {{ with $.Site.Data.global.webinars.form }}
                             {{ if .enable_signup_form }}
 
-                              <div class="range-left-md underline-sm">
+                              <div class="range-left underline-sm">
                                 <h2>Sign up for this webinar!</h2>
                               </div>
 
                               <form id="single-webinar-signup" class="form">
                                 {{ with .source }}
                                   <input type="text" name="source" value="{{ . }}" class="hidden">
-                                  <input type="text" name="webinar" value="{{ .Permalink }}" class="hidden">
+                                  <input type="text" name="webinar" value="E.G. WEBINAR ID HERE" class="hidden">
                                 {{ end }}
                                 {{ with .webinar_signup }}
                                   <input type="text" name="webinarSignup" value="{{ . }}" class="hidden">

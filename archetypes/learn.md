@@ -1,7 +1,8 @@
 ---
 
 # fill in
-date:      {{ .Date }}
+date:      1900-01-01
+# The DATE / AUTHOR meta information displayed below each explainer is disabled if we set an old date - so we're setting it to the year 1900 on purpose here to hide the meta info
 title:     "Explainer example"
 # The URL will be generated automatically from the FILENAME on explainer posts
 author: Casey Kuhlman, CEO
@@ -11,10 +12,12 @@ excerpt:   "When people think about legal they think almost entirely of the prov
 thumbnail: example-image.jpg
 # this image should be stored in /content/learn/images/. It will appear as a thumbnail on any listings, as well as at the top of the post itself
 categories:
-  - legal products
+  - learn
 tags:
-  - legal products
-  - agreements network
+  - fleetleasing
+  - contentcreators
+  - lawyers
+  - corporate
 # if you want this article to show on a 'use case' page, you can use the following TAGS -  'fleetleasing' 'contentcreators' 'lawyers' or 'corporate'
 draft: true
 # set this to 'false' when you're ready to publish
