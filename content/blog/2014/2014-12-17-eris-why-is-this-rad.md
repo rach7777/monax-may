@@ -11,10 +11,7 @@ excerpt: Saying one wants to change the world *is* cliche, and it is also passe.
   around us. This post is about a few of the things that smart contracts can improve.
 meta: true
 published: true
-tags:
-- thelonious
-- decerver
-title: Eris Industries -- Why Do I Do What I Do?
+title: Why Do I Do What I Do?
 # url: /blog/2014/12/17/eris-why-is-this-rad/
 slug: eris-why-is-this-rad
 ---
@@ -27,7 +24,7 @@ Real change doesn't happen by talking. It happens by planning and by doing.
 
 More precisely, to change things, one must start with a working hypothesis, a plan for testing that hypothesis, and finally a plan for scaling that hypothesis beyond the original testing environment. In other words, one must iterate **towards a smarter world** via data driven interactions, if we are to build resilient systems which *actually* change the world for the better.
 
-When people ask me what I think the most exciting thing about smart contracts and the other technical parts of what we are building at Eris Industries is, I always come back to their ability to (1) handle complexity and (2) their ability to ease the ideation to implementation cycle. In other words their ability to help us, collectively, work **towards a smarter world**.
+When people ask me what I think the most exciting thing about smart contracts and the other technical parts of what we are building is, I always come back to their ability to (1) handle complexity and (2) their ability to ease the ideation to implementation cycle. In other words their ability to help us, collectively, work **towards a smarter world**.
 
 For those of us who think that, to some extent, law as code will be a reality, smart contracts are not only a curiousity but a necessity. But even for those who do not believe that law as code will occur any time soon, they should view smart contracts at least as a curiousity.
 
@@ -59,6 +56,6 @@ In this light smart contract systems can play a role in the management of many g
 
 ### Putting The Pieces Together
 
-We have a lot of challenges as a human species. Not the least of which are how we interact with one another, especially in the context of negotiating rule frameworks which make sense and in the delivery and management of public services and public goods. What I love about my job at Eris Industries is that we get to make the tools which we hope will allow developers to begin addressing such challenges in a real and meaningful way.
+We have a lot of challenges as a human species. Not the least of which are how we interact with one another, especially in the context of negotiating rule frameworks which make sense and in the delivery and management of public services and public goods. What I love about my job is that we get to make the tools which we hope will allow developers to begin addressing such challenges in a real and meaningful way.
 
 ~ # ~

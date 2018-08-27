@@ -10,7 +10,7 @@ meta: true
 published: true
 tags:
 - legal
-- blockchain
+- blockchains
 - engineering
 thumbnail: legal-engineering.jpg
 title: Blockchain Legal Engineering

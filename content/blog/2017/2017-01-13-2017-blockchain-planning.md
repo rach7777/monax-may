@@ -8,7 +8,7 @@ excerpt: How to build viable blockchain applications in 2017.
 meta: true
 published: true
 tags:
-- blockchain
+- blockchains
 - smart contracts
 thumbnail: arrows-1577983_1920.png
 title: 2017 Blockchain Planning

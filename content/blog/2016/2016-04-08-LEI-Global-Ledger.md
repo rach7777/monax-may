@@ -11,7 +11,7 @@ published: true
 tags:
 - consensus
 - application
-- blockchain
+- blockchains
 - Legal Entity Identifier
 - LEI
 - RDM

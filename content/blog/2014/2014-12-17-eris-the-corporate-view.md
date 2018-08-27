@@ -9,9 +9,6 @@ excerpt: Smart Contracts have arrived. Here's how Eris v 0.9 works, and how the 
   of the blockchain game have changed.
 meta: true
 published: false
-tags:
-- thelonious
-- decerver
 title: Meet Eris. The distributed computing solution for industry.
 # url: /blog/2014/12/17/eris-the-corporate-view/
 slug: eris-the-corporate-view
@@ -153,7 +150,7 @@ An introduction to the open alpha release of Eris in ten points:
 
 * No magic there. Just... you know, databases interacting with legal rules in exactly the same way they do today. [Simples!](https://www.youtube.com/watch?v=dTSCUYcp20A)
 
-* But if you really want to do a deep dive into smart contracts-as-legal contracts, we thought of that too (Eris Industries' CEO and COO are also qualified lawyers in the U.S. and England, respectively). They're doable but would need a lot of context provided by a DApp - and some things (like a will or a deed) that can't get electronically signed are obvious no-gos. (Though on that last point, you could always hash a PDF into whatever distributed file storage system your DApp uses.)
+* But if you really want to do a deep dive into smart contracts-as-legal contracts, we thought of that too (Our CEO and COO are also qualified lawyers in the U.S. and England, respectively). They're doable but would need a lot of context provided by a DApp - and some things (like a will or a deed) that can't get electronically signed are obvious no-gos. (Though on that last point, you could always hash a PDF into whatever distributed file storage system your DApp uses.)
 
 * We suggest you check out Eris Legal Markdown to get started.
 

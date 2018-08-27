@@ -6,19 +6,15 @@ excerpt: Why go to the beach? Let's build distributed systems instead!
 meta: false
 published: false
 deprecated: false
-tags:
-- eris
-- thelonious
-- decerver
 thumbnail: doug.png
-title: Eris Industries 2015 Summer Internships
+title: 2015 Summer Internships
 # url: /blog/2015/04/14/ei-summer-interns/
 slug: ei-summer-interns
 ---
 
 
 
-### 2015 Summer Internships with Eris Industries
+### 2015 Summer Internships
 
 I'll get straight to the point:
 

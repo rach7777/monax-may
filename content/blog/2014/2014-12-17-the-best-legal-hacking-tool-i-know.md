@@ -12,10 +12,7 @@ excerpt: The Legal Hacker movement has been interested in applying the process a
 meta: true
 published: true
 tags:
-- decerver
-- thelonious
 - legal tech
-- legalhacking
 title: 'Why We Built the Best #Legalhack ing Tool I Know Of'
 # url: /blog/2014/12/17/the-best-legal-hacking-tool-i-know/
 slug: the-best-legal-hacking-tool-i-know
@@ -61,7 +58,7 @@ As some late night shows tend to say, but wait, there's more! There is a paradig
 
 When I first built legal markdown the idea was to take contracts and to reduce those into templates as a coder would. This process extracts the parameters of the contract into front matter which any programming language can deal with and leaves the template text to render as it normally would after the parameters have been provided. In the original version of legal markdown, which I built in Ruby, these parameters were in the form of YAML front matter. In the completely updated version of legal markdown parameters can be in the form of YAML front matter or passed separately as json or yaml.
 
-At Eris Industries, we have been building systems of smart contracts using a very similar paradigm. We use what we call factories, which are similar to legal markdown templates. These factories are passed a set of parameters and from that they derive an individual smart contract which matches the template and is responsive to the parameters. This process exactly mirrors what legal markdown does.
+We have been building systems of smart contracts using a very similar paradigm. We use what we call factories, which are similar to legal markdown templates. These factories are passed a set of parameters and from that they derive an individual smart contract which matches the template and is responsive to the parameters. This process exactly mirrors what legal markdown does.
 
 So when smart contract factories are combined with legal markdown templates, lawyers are able to have the best of all worlds. Legal applications can be developed which accept a single set of parameters and from that set a real world legal contract (in PDF or other form) can be outputted as well as a smart contract can also be deployed. And, oh by the way, the real world contract PDFs can be encrypted and disseminated in a peer-to-peer manner using a distributed file system. Indeed, we have developed the sequencing for dual integration of real world and computer world contracts for our MarketPlace application.
 

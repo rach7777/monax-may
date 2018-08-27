@@ -1,7 +1,7 @@
 ---
 author: Monax
 categories:
-- blockchain
+- blockchains
 comments: false
 date: 2015-04-30T00:00:00Z
 excerpt: "In this post Ethan explores Monax's definition, as well as the greater relevance, of some of the use cases of that most remarkable piece of technology: the

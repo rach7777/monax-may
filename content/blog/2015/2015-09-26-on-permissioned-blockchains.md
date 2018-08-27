@@ -1,7 +1,7 @@
 ---
 author: Casey Kuhlman, CEO
 categories:
-- blockchain design
+- blockchains
 comments: true
 date: 2015-09-26T00:00:00Z
 deprecated: true
@@ -10,9 +10,7 @@ excerpt: This is a think piece examining the idea of application-specific blockc
 meta: true
 published: true
 tags:
-- blockchain design
-- public blockchains
-- private blockchains
+- blockchains
 thumbnail: mostpit.jpg
 title: On Permissioning Your Blockchains
 # url: /blog/2015/09/26/on-permissioned-blockchains/
