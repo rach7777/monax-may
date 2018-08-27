@@ -11,7 +11,7 @@ published: true
 tags:
 - science
 - research
-- blockchain
+- blockchains
 thumbnail: null
 title: 'Blockchains For Science: Aligning Research Incentives'
 # url: /blog/2016/03/14/blockchains-and-science/

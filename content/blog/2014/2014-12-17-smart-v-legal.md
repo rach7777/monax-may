@@ -9,9 +9,6 @@ excerpt: Business thinking, FinTech, legal tech, blockchain tech - let's see wha
   happens when we mix it all up.
 meta: true
 published: true
-tags:
-- thelonious
-- decerver
 title: 'Smart contracts: a brief introduction for the financial services industry'
 # url: /blog/2014/12/17/smart-v-legal/
 slug: smart-v-legal
@@ -33,7 +30,7 @@ Bitcoin was a pretty big deal. We don't think it can - or should - be repeated.
 
 ## So we followed another path.
 
-At Eris Industries, we were cautiously skeptical during Bitcoinmania. Don't get me wrong, we like Bitcoin as much as anyone else. And if Bitcoin were the only successful blockchain network in existence, ever, then it might have made sense to go out and buy as many as we could and hope it went up in price.
+We were cautiously skeptical during Bitcoinmania. Don't get me wrong, we like Bitcoin as much as anyone else. And if Bitcoin were the only successful blockchain network in existence, ever, then it might have made sense to go out and buy as many as we could and hope it went up in price.
 
 That was too easy. We knew that if we could crack **smart contracts**, it would be possible to secure a distributed blockchain without needing to follow Bitcoin's security model.
 
@@ -61,7 +58,7 @@ All you need to do is give your best developers and data scientists the resource
 
 **Smart contracts** are scripts on a blockchain database which automatically manage data-driven relationships on distributed networks on a peer-to-peer basis, without servers. They can change their parameters and meaning over time, meaning a system upgrade is as simple as broadcasting a signal to the network - instead of purchasing additional hardware.
 
-Smart contract-enabled blockchain systems are a form of distributed computing architecture which is capable of operating over the public internet which employ public-key cryptography to render the possibility of a successful malicious attack exceedingly low. They can carry out and manage any data-driven interaction a developer can define, and if widely enough distributed, are nearly indestructible. With Eris Industries' Thelonious design, administrators of these databases - unlike existing blockchain databases - can quickly update their consensus and security parameters at will through the broadcast of the relevant private key.
+Smart contract-enabled blockchain systems are a form of distributed computing architecture which is capable of operating over the public internet which employ public-key cryptography to render the possibility of a successful malicious attack exceedingly low. They can carry out and manage any data-driven interaction a developer can define, and if widely enough distributed, are nearly indestructible. With Thelonious, administrators of these databases - unlike existing blockchain databases - can quickly update their consensus and security parameters at will through the broadcast of the relevant private key.
 
 **Legal contracts**, on the other hand, are legal fictions which, if breached, give rise to further imaginary critters known as choses (things) in action. They are customarily evidenced in writing. The threat of enforcement compels their performance. The rights and obligations they create become real when a court orders their enforcement.
 
@@ -79,7 +76,7 @@ Existing legal arrangements relating to your current database architecture (e.g.
 
 ### 3. Smart contracts aren't about asking third parties to run hosting services that codify and interpret standard-form legal agreements. That's just silly.
 
-We at Eris Industries understand, unlike other firms in the blockchain space, that a hosted fee-paying solution operated by a third party is not what you want.
+We understand, unlike other firms in the blockchain space, that a hosted fee-paying solution operated by a third party is not what you want.
 
 We get your business. That means we understand that what you want is an in-house business process efficiency solution that is tailored to address and automate specific pain points arising from your existing back- and middle-office administration. And you want to be able to iterate and customize that solution, over and over again, for new business problems you face, without spending vast sums on new infrastructure.
 

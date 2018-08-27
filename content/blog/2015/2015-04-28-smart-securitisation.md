@@ -9,9 +9,6 @@ excerpt: Crypto-tokens are so, like, totally last week. You don't need 'em - and
   don't want 'em - in commercial applications.
 meta: true
 published: true
-tags:
-- thelonious
-- decerver
 thumbnail: scallthethings.jpg
 title: 'Smart securitisation, or: why it''s time to stop talking tokens and start
   talking smart contracts'

@@ -14,7 +14,6 @@ excerpt: In all modern blockchains, the rules of the protocol are defined in the
 meta: true
 published: false
 tags:
-- thelonious
 - blockchains
 title: Why We Built Thelonious
 # url: /blog/2014/12/17/why-thelonious/

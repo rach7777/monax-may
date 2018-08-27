@@ -8,7 +8,7 @@ excerpt: Science for Everybody
 meta: true
 published: true
 tags:
-- blockchain
+- blockchains
 - science
 - academia
 - research
