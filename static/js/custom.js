@@ -6,22 +6,23 @@ $(document).ready(function() {
     const serialized = Array.isArray(form) ? form : $(form).serializeArray();
     const formData = {};
     serialized.forEach((input) => formData[input.name] = input.value);
-    formData.email = formData.email || analytics.user().id();
-    analytics.identify(
-      formData.email || analytics.user().anonymousId(),
-      formData,
-      { integrations: { Intercom: false } },
-    );
-    analytics.track(`${eventName}_${formData.source}`, formData);
-    if (formData.email) {
-        $.ajax('https://analytics.monax.io/monaxioregistry', {
-          data: formData,
-        }).done(() => {
-          console.log('Requested lead creation');
-        }).fail(() => {
-          console.log('Error requesting lead creation');
-        });
-    }
+    formData.userId = analytics.user().id();
+    const method = formData.userId ? 'PUT' : 'POST';
+    $.ajax({
+      url: 'https://analytics.monax.io/monaxioregistry',
+      method,
+      data: formData,
+    }).done((userId) => {
+      formData.userId = userId;
+      analytics.identify(
+        userId,
+        formData,
+        { integrations: { Intercom: false } },
+      );
+      analytics.track(`${eventName}_${formData.source}`, formData);
+    }).fail((err) => {
+      console.log('Error requesting lead creation');
+    });
     return formData;
   };
 
