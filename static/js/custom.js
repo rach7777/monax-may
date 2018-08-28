@@ -9,7 +9,7 @@ $(document).ready(function() {
     formData.userId = analytics.user().id();
     const method = formData.userId ? 'PUT' : 'POST';
     $.ajax({
-      url: 'localhost:8080/monaxioregistry',
+      url: 'https://analytics.monax.io/monaxioregistry',
       method,
       data: formData,
     }).done((userId) => {
