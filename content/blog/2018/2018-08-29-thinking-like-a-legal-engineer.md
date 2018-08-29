@@ -3,14 +3,14 @@
 # fill in
 date:      2018-08-29T00:00:00Z
 title:     "Thinking Like a Legal Engineer"
-author: Nina Kilbride, specification
+author: Nina Kilbride, CCO
 excerpt:   "This is the second installment in a series outlining how the Monax Platform and the Agreements Network can be used in harmony to create the legal products of the future. This post covers the mindset of legal engineering."
 thumbnail: gearheads.jpg
 categories:
   - active agreements
+  - legal engineering
 tags:
   - monax
-  - agreements network
   - legal products
   - legal engineering
 
@@ -21,9 +21,11 @@ meta:      true
 utm:
   source: "website"
   medium: "blog"
-  campaign: "agreements network"
+  campaign: "legal engineering"
 
 ---
+
+{{< image_blog "gearheads.jpg" >}} 
 
 **Legal products** are digital solutions to legal problems in the network economy. They hold the promise of broader financial inclusion and access to justice while offering countless creative monetization opportunities. We at Monax like to call this “legal engineering,” to distinguish our work in collaborative software product development from the practice of law.
 
