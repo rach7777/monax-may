@@ -5,7 +5,7 @@ date:      2018-08-29T00:00:00Z
 title:     "Thinking Like a Legal Engineer"
 author: Nina Kilbride, CCO
 excerpt:   "This is the second installment in a series outlining how the Monax Platform and the Agreements Network can be used in harmony to create the legal products of the future. This post covers the mindset of legal engineering."
-thumbnail: gearheads.jpg
+thumbnail: gearheads.png
 categories:
   - legal engineering
 tags:
