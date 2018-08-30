@@ -7,7 +7,6 @@ author: Nina Kilbride, CCO
 excerpt:   "This is the second installment in a series outlining how the Monax Platform and the Agreements Network can be used in harmony to create the legal products of the future. This post covers the mindset of legal engineering."
 thumbnail: gearheads.jpg
 categories:
-  - active agreements
   - legal engineering
 tags:
   - monax
