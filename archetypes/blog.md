@@ -1,32 +1,44 @@
 ---
 
-# fill in
+# Pretty normal stuff
 date:      {{ .Date }}
 title:     "Blog Post Title Here"
-slug:
-# by default, the URL will be generated from the title. Set the slug if you want to simplify or change the URL. Format: "my-slug" will turn into /blog/YEAR/MONTH/DAY/my-slug
-author: Casey Kuhlman, CEO
-# use your full name and title here
+author:    "Your Name, Title Here"
+
+# excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
 excerpt:   "When people think about legal they think almost entirely of the provision of bespoke services. Yet the world is changing, and legal needs to keep up."
-# if no excerpt is provided, one will be generated from the post content
+
+# this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
+# as well as at the top of the post itself
 thumbnail: example-image.jpg
-# this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings, as well as at the top of the post itself
+
+# check the categories on the existing blog. should only have ONE
 categories:
   - legal products
+
+# tags should be meaningful for your blog. if you want this article to show on a 'use case' page, you can use
+# the following TAGS -  'fleetleasing' 'contentcreators' 'lawyers' or 'corporate'
 tags:
   - legal products
   - agreements network
-# if you want this article to show on a 'use case' page, you can use the following TAGS -  'fleetleasing' 'contentcreators' 'lawyers' or 'corporate'
+
+# set draft to 'false' when you're ready to publish
 draft: true
-# set this to 'false' when you're ready to publish
+
+# used when using the shortcode utm_link in a blog post to another
+# the campaign generally should match the category above
 utm:
   source: "website"
   medium: "blog"
   campaign: ""
-# used when using the shortcode utm_link in a blog post to another
 
 ---
 
-<!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
+<!-- In general the filename below should match thumbnail category above -->
+{{< image_blog "example-image.jpg" >}}
 
+<!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
 Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+<!-- IF NEEDED use the below. Unsplash is recommended for images that have the right licensing. This should be at the end of the post -->
+[Photo](LINK) by PHOTOGRAPHER on [Unsplash](https://unsplash.com).
