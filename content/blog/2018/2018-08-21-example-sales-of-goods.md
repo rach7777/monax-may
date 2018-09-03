@@ -2,9 +2,9 @@
 
 # fill in
 date:      2018-08-21T00:00:00Z
-title:     "Example Active Agreement: Simple Sale of Goods"
+title:     "Example Active Agreement: Worlflows and Interfaces"
 author: Casey Kuhlman, CEO
-excerpt:   "This is a series of posts where the marmots will be outlining how the Monax Platform and the Agreements Network can be used in harmony to create the legal products of the future. This post is the first in the series and covers a simple sale of goods contract."
+excerpt:   "This post covers a simple sale of goods contract and how to use workflows along with integration providers to bring agreements to life."
 thumbnail: sale-of-goods.jpg
 categories:
   - active agreements
@@ -14,7 +14,11 @@ tags:
   - legal products
   - sample archetypes
 
-# use if needed
+series:
+  id: active-agreement-samples
+  number: 1
+  about: "This is a series of posts where the marmots will be outlining how the Monax Platform and the Agreements Network can be used in harmony to create the legal products of the future."
+
 published: true
 comments:  false
 meta:      true
@@ -26,8 +30,6 @@ utm:
 ---
 
 {{< image_blog "sale-of-goods.jpg" >}}
-
-This is a series of posts where the marmots will be outlining how the Monax Platform and the Agreements Network can be used in harmony to create the legal products of the future. This post is the first in the series and covers a simple sale of goods contract.
 
 If you'd like to learn more about the Agreements Network you can find out more at: the [Agreements Network](https://agreements.network) site. We've also written about the network on [our blog](https://monax.io/tags/agreements-network/). This post is written for those who have a baseline understanding of the goals and aims of the Agreements Network, so if you're unfamiliar at least start with [this introductory post](https://monax.io/blog/2018/04/27/monax-is-pleased-to-introduce-the-agreements-network/).
 
