@@ -1128,7 +1128,7 @@ form label.error {
     font-size: 18px;
     letter-spacing: 0;
     opacity: 1;
-    background-color: #fff;
+    background-color: transparent;
     color: #96B85D;
     border: 2px solid #96B85D;
 }
