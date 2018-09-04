@@ -2,7 +2,7 @@
 
 # fill in
 date:      2018-08-21T00:00:00Z
-title:     "Example Active Agreement: Worlflows and Interfaces"
+title:     "Example Active Agreement: Workflows and Interfaces"
 author: Casey Kuhlman, CEO
 excerpt:   "This post covers a simple sale of goods contract and how to use workflows along with integration providers to bring agreements to life."
 thumbnail: sale-of-goods.jpg
