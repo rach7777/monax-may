@@ -203,15 +203,6 @@ $(document).ready(function() {
   });
 
 
-
-
-
-
-
-
-
-
-
   // HANDLE TAB SELECT ON FEATURES
   $('.btn-tab-select').on('click', function(e) {
     e.preventDefault();
@@ -396,6 +387,23 @@ $(document).ready(function() {
     $('#nav-register').on('click', function(event){
       event.preventDefault();
       analyticsIdentifyAndTrack([ { name: 'source', value: 'nav demo request' }], 'Demo Requested');
+      Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
+    });
+
+  
+    // HANDLE HOME CTA SECTION
+    $('#home-cta-trigger-form').on('click', function(e) {
+      e.preventDefault();
+      $('#home-webinar-signup').slideToggle();
+      $('#home-cta-options').toggleClass('form-triggered');
+    });
+    $('#home-cta-register').on('click', function(event){
+      event.preventDefault();
+      if ( $('#home-cta-options').hasClass('form-triggered') ) {
+        $('#home-webinar-signup').slideToggle();
+        $('#home-cta-options').toggleClass('form-triggered');
+      }
+      analyticsIdentifyAndTrack([ { name: 'source', value: 'home cta demo request' }], 'Demo Requested');
       Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
     });
 

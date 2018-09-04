@@ -17,27 +17,19 @@
 
         {{ partial "home/top.html" . }}
 
-        <!-- global section -->
-        {{ if isset .Site.Data.home "press" }}
-          {{ if .Site.Data.home.press.enable }}
-            {{ partial "_global/press.html" . }}
-          {{ end }}
-        {{ end }}
+        {{ partial "home/press_home.html" . }}
 
-        {{ partial "home/summary.html" . }}
+        <!-- {{ partial "home/summary.html" . }} -->
 
-        {{ partial "home/usecases.html" . }}
-
-        {{ partial "home/tutorials.html" . }}
+        {{ partial "home/features_home.html" . }}
 
         {{ partial "home/webinar.html" . }}
 
-        <!-- global section -->
-        {{ if isset .Site.Data.home "cta" }}
-          {{ if .Site.Data.home.cta.enable }}
-            {{ partial "_global/cta.html" . }}
-          {{ end }}
-        {{ end }}
+        <!-- {{ partial "home/tutorials.html" . }} -->
+
+        {{ partial "home/home_cta.html" . }}
+
+        {{ partial "home/usecases.html" . }}
 
         {{ partial "footer.html" . }}
 

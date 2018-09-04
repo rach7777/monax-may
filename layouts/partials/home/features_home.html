@@ -1,0 +1,185 @@
+{{ with .Site.Data.home.features_home }}
+{{ if .enable }}
+
+<section class="section-feature section-padding-md padding-top-md">
+    <div class="container">
+
+      <div class="row flex-grid-md">
+
+        <div class="col-md-12">
+
+          <div class="padding-bottom-sm">
+              <h3>{{ .title }}</h3>
+          </div>
+
+          <div class="padding-bottom-md btn-container" style="">
+            <a href="#1b" class="btn btn-tab-select btn-lg active" data-toggle="tab" onClick="" role="tab">{{ .consumer_option }}</a>
+            <a href="#1a" class="btn btn-tab-select btn-lg" data-toggle="tab" onClick="" role="tab">{{ .producer_option }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<div class="tab-reveal tab-consumer active" id="1b">
+
+  <section class="section-feature padding-top-md">
+      <div class="container">
+
+          {{ range $i, $p := .consumer.section }}
+
+            <div class="row flex-grid-md padding-bottom-xl {{ if not (modBool $i 2) }}flex-grid-reverse{{ end}}">
+              <div class="col-md-7 col-valign-center">
+                <div class="animation-container">
+                  <div id="{{ .animation_id }}" class='{{ if eq .img_content_container "mac" }}animation-container-mac{{ end }}{{ if eq .img_content_container "iphone" }}animation-container-iphone{{ end }}'>
+                    <div class="img-layer-container">
+                      <img class="img-responsive img-center img-layer img-animation-base" src="{{ .img_base }}" alt="">
+
+                      {{ if eq .animation_type "zoom" }}
+                        <div class='content-container animation-content-frame animation-zoom animate-after-aos'   data-aos="none"  data-aos-delay="{{ .img_content_animation_delay }}" data-aos-duration="{{ .img_content_animation_duration }}">
+                          <img class="img-responsive img-center img-layer img-animate" src="{{ .img_content_layer_src }}" alt="">
+                        </div>
+                        <div class="content-container animation-popover-frame animation-zoom animate-after-aos" data-aos="zoom-in"  data-aos-delay="{{ .img_popover_animation_delay }}" data-aos-duration="{{ .img_popover_animation_duration }}">
+                          <img class="img-responsive img-center img-layer img-animate" src="{{ .img_popover_layer_src }}" alt="">
+                        </div>
+                      {{ end }}
+
+                      {{ if eq .animation_type "scroll" }}
+                        <div class='content-container animation-content-frame animation-scroll animate-after-aos'  data-aos="none"  data-aos-delay="{{ .animation_delay }}" data-aos-duration="{{ .animation_duration }}">
+                          <img class="img-responsive img-center img-layer img-animate" src="{{ .img_popover_layer_src }}" alt="">
+                        </div>
+                        <div class="content-container animation-popover-frame animation-scroll">
+                          <img class="img-responsive img-center img-layer img-animate {{ if .reveal_only_on_scroll }}animate-reveal-onscroll{{ end }}" src="{{ .img_content_layer_src }}" alt="">
+                        </div>
+                      {{ end }}
+
+                      {{ if eq .animation_type "multipop" }}
+                        <div class='content-container animation-content-frame animation-multipop animate-after-aos' data-aos="none"  data-aos-delay="{{ .animation_delay }}" data-aos-duration="{{ .animation_duration }}">
+                          <img class="img-responsive img-center img-layer img-animate" src="{{ .img_content_layer_src }}" alt="">
+                        </div>
+                        {{ range .pop }}
+                        <div id="{{ .img_pop_id }}-container" class="content-container animation-popover-frame animation-multipop animate-after-aos" data-aos="zoom-in"  data-aos-delay="{{ .animation_delay }}" data-aos-duration="{{ .animation_duration }}">
+                          <img id="{{ .img_pop_id }}" class="img-responsive img-center img-layer img-animate" src="{{ .img_pop_src }}" alt="">
+                        </div>
+                        {{ end }}
+                      {{ end }}
+
+                      {{ if eq .animation_type "none" }}
+                        <div class='content-container animation-content-frame'>
+                          <img class="img-responsive img-center img-layer img-animate" src="{{ .img_content_layer_src }}" alt="">
+                        </div>
+                      {{ end }}
+
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- .col -->
+              <div class="col-md-5 col-valign-center padding-top-sm"  data-aos="{{ if (modBool $i 2) }}fade-left{{ else }}fade-right{{ end}}" data-aos-delay="50" data-aos-duration="400">
+                <div class="range-left-md content-container circle-container">
+                  <div class="content-feature-circle">
+                    <div class="feature-circle-inner">
+                      {{ add $i 1 }}
+                    </div>
+                  </div>
+                </div>
+                <div class="range-left-md">
+                    <h2 class="green">{{ .title }}</h2>
+                </div>
+                <p class="lead range-left-md">
+                  {{ .subtitle | markdownify }}
+                </p>
+              </div> <!-- .col -->
+            </div>  <!-- .row -->
+
+          {{ end }}
+
+      </div> <!-- .container -->
+  </section> <!-- .section -->
+
+</div>
+
+
+<div class="tab-reveal tab-producer" id="1a">
+
+  <section class="section-feature padding-top-lg">
+      <div class="container">
+
+        {{ range $i, $p := .producer.section }}
+
+          <div class="row flex-grid-md padding-bottom-xl {{ if not (modBool $i 2) }}flex-grid-reverse{{ end}}">
+            <div class="col-md-7 col-valign-center">
+              <div class="animation-container">
+                <div id="{{ .animation_id }}" class='{{ if eq .img_content_container "mac" }}animation-container-mac{{ end }}{{ if eq .img_content_container "iphone" }}animation-container-iphone{{ end }}'>
+                  <div class="img-layer-container">
+                    <img class="img-responsive img-center img-layer img-animation-base" src="{{ .img_base }}" alt="">
+
+                    {{ if eq .animation_type "zoom" }}
+                      <div class='content-container animation-content-frame animation-zoom animate-after-aos'   data-aos="none"  data-aos-delay="{{ .img_content_animation_delay }}" data-aos-duration="{{ .img_content_animation_duration }}">
+                        <img class="img-responsive img-center img-layer img-animate" src="{{ .img_content_layer_src }}" alt="">
+                      </div>
+                      <div class="content-container animation-popover-frame animation-zoom animate-after-aos" data-aos="zoom-in"  data-aos-delay="{{ .img_popover_animation_delay }}" data-aos-duration="{{ .img_popover_animation_duration }}">
+                        <img class="img-responsive img-center img-layer img-animate" src="{{ .img_popover_layer_src }}" alt="">
+                      </div>
+                    {{ end }}
+
+                    {{ if eq .animation_type "scroll" }}
+                      <div class='content-container animation-content-frame animation-scroll animate-after-aos'  data-aos="none"  data-aos-delay="{{ .animation_delay }}" data-aos-duration="{{ .animation_duration }}">
+                        <img class="img-responsive img-center img-layer img-animate" src="{{ .img_popover_layer_src }}" alt="">
+                      </div>
+                      <div class="content-container animation-popover-frame animation-scroll">
+                        <img class="img-responsive img-center img-layer img-animate {{ if .reveal_only_on_scroll }}animate-reveal-onscroll{{ end }}" src="{{ .img_content_layer_src }}" alt="">
+                      </div>
+                    {{ end }}
+
+                    {{ if eq .animation_type "multipop" }}
+                      <div class='content-container animation-content-frame animation-multipop animate-after-aos' data-aos="none"  data-aos-delay="{{ .animation_delay }}" data-aos-duration="{{ .animation_duration }}">
+                        <img class="img-responsive img-center img-layer img-animate" src="{{ .img_content_layer_src }}" alt="">
+                      </div>
+                      {{ range .pop }}
+                      <div id="{{ .img_pop_id }}-container" class="content-container animation-popover-frame animation-multipop animate-after-aos" data-aos="zoom-in"  data-aos-delay="{{ .animation_delay }}" data-aos-duration="{{ .animation_duration }}">
+                        <img id="{{ .img_pop_id }}" class="img-responsive img-center img-layer img-animate" src="{{ .img_pop_src }}" alt="">
+                      </div>
+                      {{ end }}
+                    {{ end }}
+
+                    {{ if eq .animation_type "none" }}
+                      <div class='content-container animation-content-frame'>
+                        <img class="img-responsive img-center img-layer img-animate" src="{{ .img_content_layer_src }}" alt="">
+                      </div>
+                    {{ end }}
+
+                  </div>
+                </div>
+              </div> <!-- .col -->
+            </div> <!-- .col -->
+            <div class="col-md-5 col-valign-center"  data-aos="{{ if (modBool $i 2) }}fade-left{{ else }}fade-right{{ end}}" data-aos-delay="50" data-aos-duration="400">
+              <div class="range-left-md content-container circle-container">
+                <div class="content-feature-circle">
+                  <div class="feature-circle-inner">
+                    {{ add $i 1 }}
+                  </div>
+                </div>
+              </div>
+              <div class="range-left-md underline-sm">
+                  <h2>{{ .title }}</h2>
+              </div>
+              <p class="lead range-left-md">
+                {{ .subtitle | markdownify }}
+              </p>
+            </div> <!-- .col -->
+          </div>  <!-- .row -->
+
+        {{ end }}
+
+      </div>
+  </section>
+
+</div>
+
+<script type="text/javascript">
+
+
+</script>
+
+{{ end }}
+{{ end }}
