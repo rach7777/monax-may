@@ -9,7 +9,11 @@ excerpt: Casey explains how he would set up a very simple streaming music MVP us
   involved in the process.
 meta: true
 published: true
-series: smart_contract_mvps
+
+series:
+  id: smart_contract_mvps
+  number: 1
+
 tags:
 - strategy
 - smart contracts mvp

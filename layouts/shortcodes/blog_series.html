@@ -1,0 +1,23 @@
+{{ $series_id := $.Page.Params.series.id }}
+{{ $num_in_series := len (where (where $.Site.Pages "Params.series" "!=" nil ) ".Params.series.id" $series_id) }}
+
+<!-- if more than 1 post in series, show article series list -->
+{{ if gt $num_in_series 1 }}
+  <div class="article-series">
+    <h6>Article Series</h6>
+    {{ if isset $.Page.Params.series "about" }}
+    <p>{{ $.Page.Params.series.about }}</p>
+    {{ end }}
+    <ol>
+      {{ range $i, $post := (where $.Site.Pages "Params.series" "!=" nil).ByParam "series.number" }}
+        {{ if eq $post.Params.series.id $series_id }}
+          {{ if ne $post.Permalink $.Page.Permalink }}
+            <li class="rel"><a href="{{ .URL }}">{{ $post.Title }}</a></li>
+          {{ else }}
+            <li class="curr"><span class="curr">{{ $post.Title }}</span></li>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </ol>
+  </div>
+{{ end }}
