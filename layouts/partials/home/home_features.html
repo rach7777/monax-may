@@ -1,4 +1,4 @@
-{{ with .Site.Data.home.features_home }}
+{{ with .Site.Data.home.home_features }}
 {{ if .enable }}
 
 <section class="section-feature section-padding-md padding-top-md">
@@ -13,8 +13,7 @@
           </div>
 
           <div class="padding-bottom-md btn-container" style="">
-            <a href="#1b" class="btn btn-tab-select btn-lg active" data-toggle="tab" onClick="" role="tab">{{ .consumer_option }}</a>
-            <a href="#1a" class="btn btn-tab-select btn-lg" data-toggle="tab" onClick="" role="tab">{{ .producer_option }}</a>
+            <a href="#1b" class="btn btn-tab-select btn-tab-pill btn-lg active" data-toggle="tab" onClick="" role="tab">{{ .consumer_option }}</a><a href="#1a" class="btn btn-tab-select btn-tab-pill btn-lg" data-toggle="tab" onClick="" role="tab">{{ .producer_option }}</a>
           </div>
         </div>
       </div>
@@ -83,7 +82,7 @@
                   </div>
                 </div>
                 <div class="range-left-md">
-                    <h2 class="green">{{ .title }}</h2>
+                    <h3 class="green">{{ .title }}</h3>
                 </div>
                 <p class="lead range-left-md">
                   {{ .subtitle | markdownify }}
@@ -160,8 +159,8 @@
                   </div>
                 </div>
               </div>
-              <div class="range-left-md underline-sm">
-                  <h2>{{ .title }}</h2>
+              <div class="range-left-md">
+                  <h3 class="green">{{ .title }}</h3>
               </div>
               <p class="lead range-left-md">
                 {{ .subtitle | markdownify }}

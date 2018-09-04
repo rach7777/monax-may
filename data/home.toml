@@ -14,15 +14,17 @@
       img_layer_two = "/img/assets/animations/monax-laptop/laptop-animation-layer-2.png"
 
 
-[press_home]
+[home_press]
     enable = true
     title = "Featured in international business and tech press"
-    logo_1 = "/img/press-logos/forbes-logo-white-trans.png"
+    logo_1 = "/img/logos/Sothebys_grey.jpg"
     logo_1_url = "https://www.forbes.com/sites/sarahhansen/2018/07/26/11-companies-join-agreements-network-to-develop-ethereum-platform-for-lawyers/#1db52de84aec"
-    logo_2 = "/img/press-logos/ABA-Journal-white-ng.png"
+    logo_2 = "/img/logos/New-relic_grey.jpg"
     logo_2_url = "http://www.abajournal.com/news/article/law_firms_tech_companies_partner_to_build_new_blockchain_based_platform_for"
-    logo_3 = "/img/press-logos/ledger-inisights-white.png"
+    logo_3 = "/img/logos/YCombinator_grey.jpg"
     logo_3_url = "https://www.ledgerinsights.com/agreements-network-legal-blockchain-contracts/"
+    logo_4 = "/img/logos/Sothebys_grey.jpg"
+    logo_4_url = "https://www.ledgerinsights.com/agreements-network-legal-blockchain-contracts/"
 
 #
 # [summary]
@@ -75,16 +77,16 @@
 #       animation_duration = "600"
 
 
-[features_home]
+[home_features]
   enable = true
   title = "Gain 100% oversight over your contractual agreements, track progress and obligations and keep everything important in one place. We help you staying focussed on what your doing best: growing your business."
-  consumer_option = "I use legal templates"
-  producer_option = "I create legal templates"
+  consumer_option = "Use legal templates"
+  producer_option = "Create legal templates"
 
-  [features_home.consumer]
+  [home_features.consumer]
     enable = true
 
-    [[features_home.consumer.section]]
+    [[home_features.consumer.section]]
       title = "Browse templates"
       subtitle = "Lawyer tested legal templates at your fingertips. Legal knowledge at affordable prices in the same way you by anything else online.<br><br>Purchasing legal products has never been easier."
       #### STATIC TEMPLATE
@@ -94,7 +96,7 @@
       img_content_container = "mac" # set to 'mac' or 'iphone'
       img_content_layer_src = "/img/assets/animations/1-100-percent-transparency/content-agreement-grid.png"
 
-    [[features_home.consumer.section]]
+    [[home_features.consumer.section]]
       title = "Create agreement"
       subtitle = "Select, fill out and hit create. You’ve created both a legally binding agreement and an auto-enforcable smart contract with just a couple of clicks.<br><br>As simple as filling a form."
       #### ZOOM TEMPLATE
@@ -104,7 +106,7 @@
       img_content_container = "mac" # set to 'mac' or 'iphone'
       img_content_layer_src = "/img/assets/animations/1-100-percent-transparency/content-agreement-grid.png"
 
-    [[features_home.consumer.section]]
+    [[home_features.consumer.section]]
       title = "Track every obligation"
       subtitle = "Track every contract and obligation in one place. Every event is recorded immutably in a blockchain.<br><br>No more admin hassle."
       #### ZOOM TEMPLATE
@@ -114,7 +116,7 @@
       img_content_container = "mac" # set to 'mac' or 'iphone'
       img_content_layer_src = "/img/assets/animations/1-100-percent-transparency/content-agreement-grid.png"
 
-    [[features_home.consumer.section]]
+    [[home_features.consumer.section]]
       title = "Fulfill"
       subtitle = "Visualise, monitor and control the execution of the contract throughout its entire life cycle.<br><br>Get the transparency you need to focus on what your business is doing best."
       #### ZOOM TEMPLATE
@@ -124,10 +126,10 @@
       img_content_container = "mac" # set to 'mac' or 'iphone'
       img_content_layer_src = "/img/assets/animations/1-100-percent-transparency/content-agreement-grid.png"
 
-  [features_home.producer]
+  [home_features.producer]
     enable = true
 
-    [[features_home.producer.section]]
+    [[home_features.producer.section]]
       title = "Create templates"
       subtitle = "Lawyer tested legal templates at your fingertips. Legal knowledge at affordable prices in the same way you by anything else online.<br><br>Purchasing legal products has never been easier."
       #### ZOOM TEMPLATE
@@ -137,7 +139,7 @@
       img_content_container = "mac" # set to 'mac' or 'iphone'
       img_content_layer_src = "/img/assets/animations/1-100-percent-transparency/content-agreement-grid.png"
 
-    [[features_home.producer.section]]
+    [[home_features.producer.section]]
       title = "Sell your skills"
       subtitle = "Select, fill out and hit create. You’ve created both a legally binding agreement and an auto-enforcable smart contract with just a couple of clicks.<br><br>As simple as filling a form."
       #### ZOOM TEMPLATE

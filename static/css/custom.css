@@ -130,21 +130,21 @@ h2 {
     text-transform: none;
     letter-spacing: -0.04em;
     font-weight: 300;
-    line-height: 1.1;
+    line-height: 1.3;
 }
 h3 {
     font-size: 22px;
     text-transform: none;
     letter-spacing: -0.02em;
     font-weight: 300;
-    line-height: 1.1;
+    line-height: 1.3;
 }
 h4 {
     font-size: 20px;
     text-transform: none;
     letter-spacing: 0;
     font-weight: 400;
-    line-height: 1.1;
+    line-height: 1.3;
 }
 h5 {
     font-size: 18px;
@@ -177,7 +177,7 @@ p.lead,
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-  h1 {font-size: 40px;}
+  h1 {font-size: 36px;}
   h2 {font-size: 32px;}
   h3 {font-size: 26px;}
   h4 {font-size: 22px;}
@@ -186,16 +186,16 @@ p.lead,
 }
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-  h1 {font-size: 52px;}
+  h1 {font-size: 42px;}
   h2 {font-size: 36px;}
   h3 {font-size: 32px;}
   h4 {font-size: 24px;}
-  p.lead, .p1 {font-size: 22px;}
+  p.lead, .p1 {font-size: 20px;}
   .p2 {font-size: 18px;}
 }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-  h1 {font-size: 60px;}
+  h1 {font-size: 50px;}
   h2 {font-size: 42px;}
 }
 
@@ -1118,6 +1118,56 @@ form label.error {
     font-size: 16px;
   }
 }
+/* pill tabs */
+.btn-container > a.btn-tab-pill {
+    display: block;
+    max-width: 300px;
+}
+.btn-tab-select.btn-tab-pill {
+    text-transform: capitalize;
+    font-size: 18px;
+    letter-spacing: 0;
+    opacity: 1;
+    background-color: #fff;
+    color: #96B85D;
+    border: 2px solid #96B85D;
+}
+.btn-tab-pill:first-of-type {
+    border-radius: 10px 10px 0px 0px;
+    border-bottom:none;
+}
+.btn-tab-pill:last-of-type {
+    border-radius: 0px 0px 10px 10px;
+    border-top:none;
+}
+.btn-tab-select.btn-tab-pill.active,
+.btn-tab-select.btn-tab-pill:focus,
+.btn-tab-select.btn-tab-pill:active:focus,
+.btn-tab-select.btn-tab-pill:active {
+    opacity: 1;
+    box-shadow: none;
+    background-color: #96B85D;
+    color: #FFF;
+    border: 2px solid #96B85D;
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 600px) {
+  .btn-container > a.btn-tab-pill {
+      display: inline-block;
+      max-width: none;
+  }
+  .btn-tab-pill:first-of-type {
+      border-radius: 10px 0px 0px 10px;
+      border: 2px solid #96B85D;
+      border-right:none;
+  }
+  .btn-tab-pill:last-of-type {
+      border-radius: 0px 10px 10px 0px;
+      border: 2px solid #96B85D;
+      border-left:none;
+  }
+}
+
 
 
 /* ==============
