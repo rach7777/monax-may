@@ -25,12 +25,12 @@ quality = 80
 [menu]
 # Main menu
 [[menu.main]]
-    name = "Features"
+    name = "Platform"
     url  = "/features/"
     weight = 2
 
 [[menu.main]]
-    name = "Monax For"
+    name = "Use Cases"
     identifier = "monaxfor"
     url  = "#"
     weight = 3
