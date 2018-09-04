@@ -28,7 +28,7 @@ utm:
 
 {{< image_blog "ravi-sharma-651030-unsplash.jpg" >}}
 
-<!-- Enable if this blog post is part of a series -->
+<!-- if this article is part of a series, related articles will appear here -->
 {{< blog_series >}}
 
 In my previous post in this series I looked at the extensibility of active agreements process engine when combined with service providers. In this post we are going to dig a bit deeper into the object model of an active agreement as a means of showing how all the various pieces fit together.

@@ -31,7 +31,7 @@ utm:
 
 {{< image_blog "sale-of-goods.jpg" >}}
 
-<!-- Enable if this blog post is part of a series -->
+<!-- if this article is part of a series, related articles will appear here -->
 {{< blog_series >}}
 
 If you'd like to learn more about the Agreements Network you can find out more at: the [Agreements Network](https://agreements.network) site. We've also written about the network on [our blog](https://monax.io/tags/agreements-network/). This post is written for those who have a baseline understanding of the goals and aims of the Agreements Network, so if you're unfamiliar at least start with [this introductory post](https://monax.io/blog/2018/04/27/monax-is-pleased-to-introduce-the-agreements-network/).

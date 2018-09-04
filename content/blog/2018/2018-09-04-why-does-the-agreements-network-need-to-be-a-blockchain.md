@@ -37,7 +37,7 @@ utm:
 <!-- In general the filename below should match thumbnail category above -->
 {{< image_blog "why-blockchain.jpg" >}}
 
-<!-- Enable if this blog post is part of a series -->
+<!-- if this article is part of a series, related articles will appear here -->
 {{< blog_series >}}
 
 This is part of a blog series taking a look at the Monax Platform from a non-tech perspective. The system has many layers of technology but can be accessed by those who don’t code amongst us. Here we unpick one of the foundation elements: the fact that the [Agreements Network](https://agreements.network/) (on which the Monax Platform is based) uses a [blockchain](https://monax.io/learn/blockchains/).

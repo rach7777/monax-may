@@ -45,8 +45,8 @@ utm:
 <!-- In general the filename below should match thumbnail category above -->
 {{< image_blog "example-image.jpg" >}}
 
-<!-- Enable if this blog post is part of a series -->
-<!-- {{< blog_series >}} -->
+<!-- if this article is part of a series, related articles will automatically appear here -->
+{{< blog_series >}}
 
 <!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
 Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
