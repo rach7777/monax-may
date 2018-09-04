@@ -22,6 +22,14 @@ tags:
   - legal products
   - agreements network
 
+# if this post is part of a series, uncomment the information below. The 'article series' box
+# will only display if there is more than one article in the series. 'id', 'number' and 'about' all must be present.
+# 'id' is used to identify the series. It's not displayed to the user.
+# series:
+#   id: active-agreement-samples
+#   number: 1
+#   about: "This is a series of posts where the marmots will be outlining how the Monax Platform and the Agreements Network can be used in harmony to create the legal products of the future."
+
 # set draft to 'false' when you're ready to publish
 draft: true
 
