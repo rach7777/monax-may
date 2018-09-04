@@ -16,6 +16,7 @@ tags:
 series:
   id: active-agreement-samples
   number: 2
+  about: "This is a series of posts where the marmots will be outlining how the Monax Platform and the Agreements Network can be used in harmony to create the legal products of the future."
 
 draft: false
 utm:
@@ -26,6 +27,9 @@ utm:
 ---
 
 {{< image_blog "ravi-sharma-651030-unsplash.jpg" >}}
+
+<!-- if this article is part of a series, related articles will appear here -->
+{{< blog_series >}}
 
 In my previous post in this series I looked at the extensibility of active agreements process engine when combined with service providers. In this post we are going to dig a bit deeper into the object model of an active agreement as a means of showing how all the various pieces fit together.
 

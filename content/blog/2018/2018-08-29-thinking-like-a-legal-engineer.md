@@ -24,7 +24,10 @@ utm:
 
 ---
 
-{{< image_blog "gearheads.png" >}} 
+{{< image_blog "gearheads.png" >}}
+
+<!-- if this article is part of a series, related articles will appear here -->
+{{< blog_series >}}
 
 **Legal products** are digital solutions to legal problems in the network economy. They hold the promise of broader financial inclusion and access to justice while offering countless creative monetization opportunities. We at Monax like to call this “legal engineering,” to distinguish our work in collaborative software product development from the practice of law.
 
