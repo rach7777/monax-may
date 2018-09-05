@@ -17,14 +17,14 @@
 [home_press]
     enable = true
     title = "Featured in international business and tech press"
-    logo_1 = "/img/logos/Sothebys_grey.jpg"
-    logo_1_url = "https://www.forbes.com/sites/sarahhansen/2018/07/26/11-companies-join-agreements-network-to-develop-ethereum-platform-for-lawyers/#1db52de84aec"
-    logo_2 = "/img/logos/New-relic_grey.jpg"
-    logo_2_url = "http://www.abajournal.com/news/article/law_firms_tech_companies_partner_to_build_new_blockchain_based_platform_for"
-    logo_3 = "/img/logos/YCombinator_grey.jpg"
-    logo_3_url = "https://www.ledgerinsights.com/agreements-network-legal-blockchain-contracts/"
-    logo_4 = "/img/logos/Sothebys_grey.jpg"
-    logo_4_url = "https://www.ledgerinsights.com/agreements-network-legal-blockchain-contracts/"
+    logo_1 = "/img/logos/bloomsberg_grey.png"
+    logo_1_url = "https://www.bloomberg.com/news/audio/2018-08-07/bloomberg-markets-zillow-s-wobbly-results-tesla-going-private"
+    logo_2 = "/img/logos/forbes_grey.png"
+    logo_2_url = "https://www.forbes.com/sites/sarahhansen/2018/07/26/11-companies-join-agreements-network-to-develop-ethereum-platform-for-lawyers/#3d1be5e94aec"
+    logo_3 = "/img/logos/digital-journal_grey.png"
+    logo_3_url = "http://www.digitaljournal.com/business/q-a-how-technology-is-shaking-up-legal-firms/article/525554"
+    logo_4 = "/img/logos/market-watch_grey.png"
+    logo_4_url = "https://www.marketwatch.com/press-release/leaders-in-blockchain-law-and-legal-technology-team-up-to-launch-the-agreements-network-2018-07-26"
 
 #
 # [summary]

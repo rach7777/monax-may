@@ -6,7 +6,7 @@ $(document).ready(function() {
     const serialized = Array.isArray(form) ? form : $(form).serializeArray();
     const formData = {};
     serialized.forEach((input) => formData[input.name] = input.value);
-    formData.userId = analytics.user().id();
+    if (typeof analytics.user === 'function') formData.userId = analytics.user().id(); // added function check for local environment bug fix
     const method = formData.userId ? 'PUT' : 'POST';
     $.ajax({
       url: 'https://analytics.monax.io/monaxioregistry',
@@ -25,43 +25,6 @@ $(document).ready(function() {
     });
     return formData;
   };
-
-
-  // ========== NAV =============== //
-
-  // MENU HOVER OPACITY ANIMATION
-  $('.nav .dropdown-content').hover(function(){
-    if ($(window).width() > 750) {
-      $(this).toggleClass("active");
-    }
-  });
-
-  // OPEN DROPDOWN MENU OVERLAY
-  $('.dropdown').on('show.bs.dropdown', function(){
-    if ( ! $('.dropdown').hasClass("open") && $(window).width() > 750 ) {
-      $('#dropdown-overlay').stop(true, true).fadeIn();
-    }
-  });
-
-  // CLOSE DROPDOWN MENU OVERLAY
-  $('.dropdown-toggle').on("click", function() {
-    if ( $(this).parent(".dropdown").hasClass("open") && $(window).width() > 750 ) {
-      $('#dropdown-overlay').stop(true, true).fadeOut();
-    }
-  });
-  $('#dropdown-overlay').click(function() {
-    $('#dropdown-overlay').stop(true, true).fadeOut();
-  });
-  $('#dropdown-overlay').click(function() {
-    $('#dropdown-overlay').stop(true, true).fadeOut();
-  });
-
-  // NAV - REGISTER CTA ['REQUEST DEMO' FOR NOW]
-  $('#nav-register').on('click', function(event){
-    event.preventDefault();
-    analyticsIdentifyAndTrack([ { name: 'source', value: 'nav demo request' }], 'Demo Requested');
-    Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
-  });
 
 
   // ========== GLOBAL ELEMENTS =============== //
@@ -158,6 +121,43 @@ $(document).ready(function() {
   });
 
 
+  // ========== NAV =============== //
+
+  // MENU HOVER OPACITY ANIMATION
+  $('.nav .dropdown-content').hover(function(){
+    if ($(window).width() > 750) {
+      $(this).toggleClass("active");
+    }
+  });
+
+  // OPEN DROPDOWN MENU OVERLAY
+  $('.dropdown').on('show.bs.dropdown', function(){
+    if ( ! $('.dropdown').hasClass("open") && $(window).width() > 750 ) {
+      $('#dropdown-overlay').stop(true, true).fadeIn();
+    }
+  });
+
+  // CLOSE DROPDOWN MENU OVERLAY
+  $('.dropdown-toggle').on("click", function() {
+    if ( $(this).parent(".dropdown").hasClass("open") && $(window).width() > 750 ) {
+      $('#dropdown-overlay').stop(true, true).fadeOut();
+    }
+  });
+  $('#dropdown-overlay').click(function() {
+    $('#dropdown-overlay').stop(true, true).fadeOut();
+  });
+  $('#dropdown-overlay').click(function() {
+    $('#dropdown-overlay').stop(true, true).fadeOut();
+  });
+
+  // NAV - REGISTER CTA ['REQUEST DEMO' FOR NOW]
+  $('#nav-register').on('click', function(event){
+    event.preventDefault();
+    analyticsIdentifyAndTrack([ { name: 'source', value: 'nav demo request' }], 'Demo Requested');
+    Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
+  });
+
+
   // ========== GLOBAL SECTIONS =============== //
 
   // GLOBAL - HERO HEADER NEWSLETTER
@@ -170,11 +170,9 @@ $(document).ready(function() {
     },
     submitHandler: function(form) {
       analyticsIdentifyAndTrack(form, "Newsletter Subscribed");
-      const formParent = $(form).parent();
-      $(form).remove();
-      const confirmMessage = '<span class="range-left-sm" >Thank you for subscribing! You\'ll hear from us soon.</span>';
-      const messageBox = `<div class="confirm-message"><img height="60px" src="${window.location.protocol}//${window.location.host}/img/logos/doug.png" alt="Doug"/>${confirmMessage}</div>`;
-      formParent.append(messageBox);
+      $('#hero-newsletter-form button').attr('disabled', 'disabled').html("Subscribed <i class='fa fa-check'></i>");
+      successPopup.open();
+      return false;
     },
     invalidHandler: function(event, validator) {
       var errors = validator.numberOfInvalids();
@@ -195,9 +193,9 @@ $(document).ready(function() {
     },
     submitHandler: function(form) {
       analyticsIdentifyAndTrack(form, "Demo Requested");
-      $('#hero-signup-submit').addClass('disabled');
-      var string = "I'd like to see a demo of the Monax Platform";
-      Intercom('showNewMessage', string);
+      $('#hero-signup-submit').attr('disabled', 'disabled').html("Requested <i class='fa fa-check'></i>");
+      successPopup.open();
+      return false;
     },
     invalidHandler: function(event, validator) {
       var errors = validator.numberOfInvalids();
@@ -250,7 +248,7 @@ $(document).ready(function() {
     },
     submitHandler: function(form) {
       const { industry, agreementsType, frequency } = analyticsIdentifyAndTrack(form, "Demo Requested");
-      $("#main-cta-section button").addClass('disabled');
+      $("#main-cta-section button").addClass('disabled'); // Change @@@
       Intercom('showNewMessage', `I'm working in the ${industry} and am interested in creating ${agreementsType}. I ${frequency} a contract management platform. I'd like to see a demo of the Monax Platform.`);
     },
     invalidHandler: function(event, validator) {
@@ -272,11 +270,9 @@ $(document).ready(function() {
     },
     submitHandler: function(form) {
       analyticsIdentifyAndTrack(form, "Newsletter Subscribed");
-      const formParent = $(form).parent();
-      $(form).remove();
-      const confirmMessage = '<span class="range-left-sm" >Thank you for subscribing! You\'ll hear from us soon.</span>';
-      const messageBox = `<div class="confirm-message"><img height="60px" src="${window.location.protocol}//${window.location.host}/img/logos/doug.png" alt="Doug"/>${confirmMessage}</div>`;
-      formParent.append(messageBox);
+      $('#footer-newsletter-form button').attr('disabled', 'disabled').html("Subscribed <i class='fa fa-check'></i>");
+      successPopup.open();
+      return false;
     },
     invalidHandler: function(event, validator) {
       var errors = validator.numberOfInvalids();
@@ -343,8 +339,10 @@ $(document).ready(function() {
     submitHandler: function(form) {
       analyticsIdentifyAndTrack(form, "Webinar Subscribed");
       $(form).slideToggle();
+      $('#home-cta-trigger-webinar-form').unbind( "click" ).attr('disabled', 'disabled').html("Subscribed <i class='fa fa-check'></i>");
       $ctaOptions.removeClass('form-triggered');
       successPopup.open();
+      return false;
     },
     invalidHandler: function(event, validator) {
       var errors = validator.numberOfInvalids();
@@ -387,6 +385,7 @@ $(document).ready(function() {
     submitHandler: function(form) {
       analyticsIdentifyAndTrack(form, "Demo Requested");
       $(form).slideToggle();
+      $('#home-cta-trigger-demo-form').unbind( "click" ).attr('disabled', 'disabled').html("Requested <i class='fa fa-check'></i>");
       $ctaOptions.removeClass('form-triggered');
       successPopup.open();
       return false;
