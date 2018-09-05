@@ -191,28 +191,39 @@
     enable = true
     title = "Simplify your contracting"
 
-    enable_button_one = true # links to url or triggers form
+    enable_button_one = true # links to url or triggers form one
     button_one_text = "Join a webinar"
     button_one_trigger_form = true # if false set url
     button_one_url = "#webinar"
 
-    enable_button_two = true # links to url or triggers intercom
+    enable_button_two = true # links to url or form two
     button_two_text = "Request a demo"
-    button_two_trigger_intercom = true # if false set url
+    button_two_trigger_form = true # if false set url
     button_two_url = "#demo"
 
     show_button_separator = true
 
-    [home_cta.form]
+    [home_cta.form_one]
       enable = true
       id = "webinar"
-      source = "home webinar signup" # required for Segment to process
+      source = "home cta webinar signup" # required for Segment to process
       webinar_signup = "true" # required for Segment to process
       email = true
       fname = true
       lname = true
       company_name = true
       submit_text = "Sign up for our next webinar"
+
+    [home_cta.form_two]
+      enable = true
+      id = "demo"
+      source = "home cta demo signup" # required for Segment to process
+      request_demo = "true" # required for Segment to process @@@@@
+      email = true
+      fname = true
+      lname = true
+      company_name = true
+      submit_text = "Request a demo of the platform"
 
 
 

@@ -325,7 +325,7 @@ $(document).ready(function() {
         }
       }
     });
-    $("#home-webinar-signup").validate({
+    $("#home-cta-webinar-signup").validate({
       rules: {
         firstName: {
           required: true
@@ -350,7 +350,36 @@ $(document).ready(function() {
         var errors = validator.numberOfInvalids();
         if (errors) {
           console.log("form returned invalid");
-          $('#home-webinar-signup button').addClass('animated headShake');
+          $('#home-cta-webinar-signup button').addClass('animated headShake');
+        }
+      }
+    });
+    $("#home-cta-request-demo").validate({
+      rules: {
+        firstName: {
+          required: true
+        },
+        lastName: {
+          required: true
+        },
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      submitHandler: function(form) {
+        analyticsIdentifyAndTrack(form, "Demo Requested");
+        const formParent = $(form).parent();
+        $(form).remove();
+        const confirmMessage = '<span class="range-left-sm" >Thank you for requesting a demo!</br>You\'ll hear from us soon.</span>';
+        const messageBox = `<div class="confirm-message"><img height="160px" src="${window.location.protocol}//${window.location.host}/img/logos/doug.png" alt="Doug"/>${confirmMessage}</div>`;
+        formParent.append(messageBox);
+      },
+      invalidHandler: function(event, validator) {
+        var errors = validator.numberOfInvalids();
+        if (errors) {
+          console.log("form returned invalid");
+          $('#home-cta-request-demo button').addClass('animated headShake');
         }
       }
     });
@@ -390,21 +419,50 @@ $(document).ready(function() {
       Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
     });
 
-  
+
     // HANDLE HOME CTA SECTION
-    $('#home-cta-trigger-form').on('click', function(e) {
+    $('#home-cta-trigger-webinar-form').on('click', function(e) {
       e.preventDefault();
-      $('#home-webinar-signup').slideToggle();
-      $('#home-cta-options').toggleClass('form-triggered');
+      var $ctaOptions = $('#home-cta-options');
+      if ( ! $ctaOptions.hasClass('form-triggered') ) {
+        $('#home-cta-webinar-signup').slideToggle();
+        $ctaOptions.addClass('form-triggered');
+      } else {
+        if ( $('#home-cta-webinar-signup').is(":visible") ) {
+          // stuff if webinar is already open
+            $('#home-cta-webinar-signup').slideToggle();
+            $ctaOptions.removeClass('form-triggered');
+        } else {
+          // stuff is webinar isn't open
+          $('#home-cta-webinar-signup').show();
+          $('#home-cta-request-demo').hide();
+        }
+      }
+    });
+    $('#home-cta-trigger-demo-form').on('click', function(e) {
+      e.preventDefault();
+      var $ctaOptions = $('#home-cta-options');
+      if ( ! $ctaOptions.hasClass('form-triggered') ) {
+        $('#home-cta-request-demo').slideToggle();
+        $('#home-cta-options').toggleClass('form-triggered');
+      } else {
+        if ( $('#home-cta-request-demo').is(":visible") ) {
+          // stuff if webinar is already open
+            $('#home-cta-request-demo').slideToggle();
+            $ctaOptions.removeClass('form-triggered');
+        } else {
+          // stuff is webinar isn't open
+          $('#home-cta-webinar-signup').hide();
+          $('#home-cta-request-demo').show();
+        }
+      }
     });
     $('#home-cta-register').on('click', function(event){
       event.preventDefault();
       if ( $('#home-cta-options').hasClass('form-triggered') ) {
-        $('#home-webinar-signup').slideToggle();
+        $('#home-cta-webinar-signup').slideToggle();
         $('#home-cta-options').toggleClass('form-triggered');
       }
-      analyticsIdentifyAndTrack([ { name: 'source', value: 'home cta demo request' }], 'Demo Requested');
-      Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
     });
 
 
