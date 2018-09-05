@@ -218,7 +218,7 @@
       enable = true
       id = "demo"
       source = "home cta demo signup" # required for Segment to process
-      request_demo = "true" # required for Segment to process @@@@@
+      request_demo = "true" # required for Segment to process
       email = true
       fname = true
       lname = true

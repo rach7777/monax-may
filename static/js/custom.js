@@ -26,6 +26,9 @@ $(document).ready(function() {
     return formData;
   };
 
+
+  // ========== NAV =============== //
+
   // MENU HOVER OPACITY ANIMATION
   $('.nav .dropdown-content').hover(function(){
     if ($(window).width() > 750) {
@@ -53,14 +56,159 @@ $(document).ready(function() {
     $('#dropdown-overlay').stop(true, true).fadeOut();
   });
 
-  // Document .dip-opacity
+  // NAV - REGISTER CTA ['REQUEST DEMO' FOR NOW]
+  $('#nav-register').on('click', function(event){
+    event.preventDefault();
+    analyticsIdentifyAndTrack([ { name: 'source', value: 'nav demo request' }], 'Demo Requested');
+    Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
+  });
+
+
+  // ========== GLOBAL ELEMENTS =============== //
+
+  // DEFINE CONFIRMATION/SUCCESS POPUP ON FORMS
+  const successPopup = $.alert({
+      lazyOpen: true,
+      theme: 'modern',
+      closeIcon: true,
+      animation: 'scale',
+      title: "Thanks, we'll be in touch soon!",
+      content: '<img class="img-responsive img-center" style="max-height:150px;" src="/img/assets/doug/doug_lo.png">',
+      buttons: {
+          close: {
+              text: 'Great!',
+              btnClass: 'btn btn-primary',
+              keys: ['enter'],
+          },
+      },
+      scrollToPreviousElement: false,
+      backgroundDismiss: true,
+  });
+
+  // DOCUMENTS - '.dip-opacity' EFFECT
   $('.container-docs').hover(function(){
     if ($(window).width() > 750) {
       $(this).toggleClass("active");
     }
   });
 
-  // HANDLE CTA FUNCTIONS
+  // Accordions - FAQ Sections
+  $('.accordion-toggle').on('click', function() {
+    // slide section down
+    $(this).next().slideToggle('600');
+    // slide others up
+    $(".accordion-content").not($(this).next()).slideUp('600');
+    // toggle classes
+    $(this).parent('.question').toggleClass('active').siblings().removeClass('active');
+  });
+
+  // ELEMENTS - TABS
+  $('.btn-tab-select').on('click', function(e) {
+    e.preventDefault();
+    var id = $(this).attr('href');
+    // hide previous panel
+    $('.tab-reveal').removeClass('active');
+    // show current panel
+    $(id).addClass('active');
+    // switch active button
+    $(this).addClass('active');
+    $('.btn-tab-select').not(this).removeClass('active');
+    // reset animations
+    setTimeout(function(){
+      AOS.refreshHard();
+    }, 600);
+  });
+
+
+  // ========== ANIMATIONS =============== //
+
+  // DETECT ANIMATION AOS FINISHED
+  // Find all animation float elements
+  var $animationContainer = $(".animate-after-aos");
+  $($animationContainer).each( function( index ) {
+    // calculate the animation delay
+    var animationTimeout = ( $($animationContainer[index]).data('aos-delay') + $($animationContainer[index]).data('aos-duration') );
+    // if it's already on screen, animate
+    if ($($animationContainer[index]).hasClass("aos-animate")) {
+      // init float animation
+      setTimeout(function(){
+        $($animationContainer[index]).addClass('next-animation');
+      }, animationTimeout);
+    } else {
+    // otherwise, watch for class change
+      var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+          if (mutation.attributeName === "class") {
+            var attributeValue = $(mutation.target).prop(mutation.attributeName);
+            if (attributeValue.includes("aos-animate")) {
+              // init float animation
+              setTimeout(function(){
+                $(mutation.target).addClass('next-animation');
+              }, animationTimeout);
+              // don't watch for any more changes
+              observer.disconnect();
+            }
+          }
+        });
+      });
+      observer.observe($animationContainer[index], {
+        attributes: true
+      });
+    }
+  });
+
+
+  // ========== GLOBAL SECTIONS =============== //
+
+  // GLOBAL - HERO HEADER NEWSLETTER
+  $("#hero-newsletter-form").validate({
+    rules: {
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    submitHandler: function(form) {
+      analyticsIdentifyAndTrack(form, "Newsletter Subscribed");
+      const formParent = $(form).parent();
+      $(form).remove();
+      const confirmMessage = '<span class="range-left-sm" >Thank you for subscribing! You\'ll hear from us soon.</span>';
+      const messageBox = `<div class="confirm-message"><img height="60px" src="${window.location.protocol}//${window.location.host}/img/logos/doug.png" alt="Doug"/>${confirmMessage}</div>`;
+      formParent.append(messageBox);
+    },
+    invalidHandler: function(event, validator) {
+      var errors = validator.numberOfInvalids();
+      if (errors) {
+        console.log("form returned invalid");
+        $('#hero-newsletter-form button').addClass('animated headShake');
+      }
+    }
+  });
+
+  // GLOBAL - HERO HEADER SIGNUP
+  $("#hero-signup-form").validate({
+    rules: {
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    submitHandler: function(form) {
+      analyticsIdentifyAndTrack(form, "Demo Requested");
+      $('#hero-signup-submit').addClass('disabled');
+      var string = "I'd like to see a demo of the Monax Platform";
+      Intercom('showNewMessage', string);
+    },
+    invalidHandler: function(event, validator) {
+      var errors = validator.numberOfInvalids();
+      if (errors) {
+        console.log("form returned invalid");
+        $('#hero-signup-submit').addClass('animated headShake');
+      }
+    }
+  });
+
+  // GLOBAL - MAIN CTA SECTION
   var arrowWidth = 20;
   $.fn.resizeselect = function(settings) {
     return this.each(function() {
@@ -87,8 +235,74 @@ $(document).ready(function() {
   $("select.resizeselect").on('click', function(){
     $(this).parent().addClass('chosen');
   });
+  // validate main CTA section
+  $("#main-cta-section").validate({
+    rules: {
+      industry: {
+        required: true
+      },
+      agreementsType: {
+        required: true
+      },
+      frequency: {
+        required: true
+      }
+    },
+    submitHandler: function(form) {
+      const { industry, agreementsType, frequency } = analyticsIdentifyAndTrack(form, "Demo Requested");
+      $("#main-cta-section button").addClass('disabled');
+      Intercom('showNewMessage', `I'm working in the ${industry} and am interested in creating ${agreementsType}. I ${frequency} a contract management platform. I'd like to see a demo of the Monax Platform.`);
+    },
+    invalidHandler: function(event, validator) {
+      var errors = validator.numberOfInvalids();
+      if (errors) {
+        console.log("form returned invalid");
+        $('#main-cta-section button').addClass('animated headShake');
+      }
+    }
+  });
 
-  // HANDLE HOMEPAGE TOP ANIMATION
+  // GLOBAL - FOOTER NEWSLETTER
+  $("#footer-newsletter-form").validate({
+    rules: {
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    submitHandler: function(form) {
+      analyticsIdentifyAndTrack(form, "Newsletter Subscribed");
+      const formParent = $(form).parent();
+      $(form).remove();
+      const confirmMessage = '<span class="range-left-sm" >Thank you for subscribing! You\'ll hear from us soon.</span>';
+      const messageBox = `<div class="confirm-message"><img height="60px" src="${window.location.protocol}//${window.location.host}/img/logos/doug.png" alt="Doug"/>${confirmMessage}</div>`;
+      formParent.append(messageBox);
+    },
+    invalidHandler: function(event, validator) {
+      var errors = validator.numberOfInvalids();
+      if (errors) {
+        console.log("form returned invalid");
+        $('#footer-newsletter-form button').addClass('animated headShake');
+      }
+    }
+  });
+
+  // GLOBAL - FOOTER REQUEST DEMO @@@ [REMOVE?]
+  $('#request-demo-footer').on('click', function(event){
+    event.preventDefault();
+    analyticsIdentifyAndTrack([ { name: 'source', value: 'footer demo request' }], 'Demo Requested');
+    Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
+  });
+
+
+  // ========== HOME =============== //
+
+  // HOMEPAGE - ELEMENTS - CTA SECTION
+  const $ctaOptions = $('#home-cta-options');
+  const $ctaWebinarForm = $('#home-cta-webinar-signup');
+  const $ctaDemoForm = $('#home-cta-request-demo');
+
+  // HOMEPAGE - TOP - ANIMATION
   setTimeout(function(){
     $('#home-animation').addClass('active');
     $('#home-animation .img-to-float.delay-0').addClass('animate-float');
@@ -97,53 +311,124 @@ $(document).ready(function() {
     }, 750);
   }, 300);
 
-
-  // DETECT ANIMATION AOS FINISHED
-
-  // Find all animation float elements
-  var $animationContainer = $(".animate-after-aos");
-
-  // for each element
-  $($animationContainer).each( function( index ) {
-
-    // calculate the animation delay
-    var animationTimeout = ( $($animationContainer[index]).data('aos-delay') + $($animationContainer[index]).data('aos-duration') );
-    // console.log(animationTimeout);
-
-    // if it's already on screen, animate
-    if ($($animationContainer[index]).hasClass("aos-animate")) {
-      // console.log("no observer needed");
-      // init float animation
-      setTimeout(function(){
-        $($animationContainer[index]).addClass('next-animation');
-      }, animationTimeout);
+  // HOMEPAGE - CTA - WEBINAR SIGNUP
+  $('#home-cta-trigger-webinar-form').on('click', function(e) {
+    e.preventDefault();
+    if ( ! $ctaOptions.hasClass('form-triggered') ) {
+      $ctaWebinarForm.slideToggle();
+      $ctaOptions.addClass('form-triggered');
     } else {
-    // otherwise, watch for class change
-      // console.log("added observer");
-      var observer = new MutationObserver(function(mutations) {
-        mutations.forEach(function(mutation) {
-          if (mutation.attributeName === "class") {
-            var attributeValue = $(mutation.target).prop(mutation.attributeName);
-            // console.log("Class attribute changed to:", attributeValue);
-            if (attributeValue.includes("aos-animate")) {
-              // init float animation
-              setTimeout(function(){
-                $(mutation.target).addClass('next-animation');
-              }, animationTimeout);
-              // don't watch for any more changes
-              observer.disconnect();
-              // console.log("class changed - observer removed");
-            }
-          }
-        });
-      });
-      observer.observe($animationContainer[index], {
-        attributes: true
-      });
+      if ( $ctaWebinarForm.is(":visible") ) {
+          $ctaWebinarForm.slideToggle();
+          $ctaOptions.removeClass('form-triggered');
+      } else {
+        $ctaWebinarForm.show();
+        $ctaDemoForm.hide();
+      }
     }
-
+  });
+  $ctaWebinarForm.validate({
+    rules: {
+      firstName: {
+        required: true
+      },
+      lastName: {
+        required: true
+      },
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    submitHandler: function(form) {
+      analyticsIdentifyAndTrack(form, "Webinar Subscribed");
+      $(form).slideToggle();
+      $ctaOptions.removeClass('form-triggered');
+      successPopup.open();
+    },
+    invalidHandler: function(event, validator) {
+      var errors = validator.numberOfInvalids();
+      if (errors) {
+        console.log("form returned invalid");
+        $('#home-cta-webinar-signup button').addClass('animated headShake');
+      }
+    }
   });
 
+  // HOMEPAGE - CTA - REQUEST A DEMO
+  $('#home-cta-trigger-demo-form').on('click', function(e) {
+    e.preventDefault();
+    if ( ! $ctaOptions.hasClass('form-triggered') ) {
+      $ctaDemoForm.slideToggle();
+      $ctaOptions.toggleClass('form-triggered');
+    } else {
+      if ( $ctaDemoForm.is(":visible") ) {
+          $ctaDemoForm.slideToggle();
+          $ctaOptions.removeClass('form-triggered');
+      } else {
+        $ctaWebinarForm.hide();
+        $ctaDemoForm.show();
+      }
+    }
+  });
+  $ctaDemoForm.validate({
+    rules: {
+      firstName: {
+        required: true
+      },
+      lastName: {
+        required: true
+      },
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    submitHandler: function(form) {
+      analyticsIdentifyAndTrack(form, "Demo Requested");
+      $(form).slideToggle();
+      $ctaOptions.removeClass('form-triggered');
+      successPopup.open();
+      return false;
+    },
+    invalidHandler: function(event, validator) {
+      var errors = validator.numberOfInvalids();
+      if (errors) {
+        console.log("form returned invalid");
+        $('#home-cta-request-demo button').addClass('animated headShake');
+      }
+    }
+  });
+
+  // HOMEPAGE - WEBINAR SECTION [UNUSED AT THIS MOMENT]
+  // $("#single-webinar-signup").validate({
+  //   rules: {
+  //     firstName: {
+  //       required: true
+  //     },
+  //     lastName: {
+  //       required: true
+  //     },
+  //     email: {
+  //       required: true,
+  //       email: true
+  //     }
+  //   },
+  //   submitHandler: function(form) {
+  //     analyticsIdentifyAndTrack(form, 'Webinar Subscribed');
+  //     $('#single-webinar-signup button').addClass('disabled');
+  //   },
+  //   invalidHandler: function(event, validator) {
+  //     var errors = validator.numberOfInvalids();
+  //     if (errors) {
+  //       console.log("form returned invalid");
+  //       $('#single-webinar-signup button').addClass('animated headShake');
+  //     }
+  //   }
+  // });
+
+
+  // ========== COMPANY =============== //
 
   // HANDLE COMPANY HISTORY SELECT
   $(function(){
@@ -201,269 +486,6 @@ $(document).ready(function() {
       }
     });
   });
-
-
-  // HANDLE TAB SELECT ON FEATURES
-  $('.btn-tab-select').on('click', function(e) {
-    e.preventDefault();
-    var id = $(this).attr('href');
-    // hide previous panel
-    $('.tab-reveal').removeClass('active');
-    // show current panel
-    $(id).addClass('active');
-    // switch active button
-    $(this).addClass('active');
-    $('.btn-tab-select').not(this).removeClass('active');
-    // reset animations
-    setTimeout(function(){
-      AOS.refreshHard();
-    }, 600);
-  });
-
-
-	// Accordions - FAQ Sections
-		$('.accordion-toggle').on('click', function() {
-      // slide section down
-			$(this).next().slideToggle('600');
-      // slide others up
-			$(".accordion-content").not($(this).next()).slideUp('600');
-      // toggle classes
-			$(this).parent('.question').toggleClass('active').siblings().removeClass('active');
-		});
-
-
-    // Form validation
-    $("#hero-signup-form").validate({
-      rules: {
-        email: {
-          required: true,
-          email: true
-        }
-      },
-      submitHandler: function(form) {
-        analyticsIdentifyAndTrack(form, "Demo Requested");
-        $('#hero-signup-submit').addClass('disabled');
-        var string = "I'd like to see a demo of the Monax Platform";
-        Intercom('showNewMessage', string);
-      },
-      invalidHandler: function(event, validator) {
-        var errors = validator.numberOfInvalids();
-        if (errors) {
-          console.log("form returned invalid");
-          $('#hero-signup-submit').addClass('animated headShake');
-        }
-      }
-    });
-    $("#main-cta-section").validate({
-      rules: {
-        industry: {
-          required: true
-        },
-        agreementsType: {
-          required: true
-        },
-        frequency: {
-          required: true
-        }
-      },
-      submitHandler: function(form) {
-        const { industry, agreementsType, frequency } = analyticsIdentifyAndTrack(form, "Demo Requested");
-        $("#main-cta-section button").addClass('disabled');
-        Intercom('showNewMessage', `I'm working in the ${industry} and am interested in creating ${agreementsType}. I ${frequency} a contract management platform. I'd like to see a demo of the Monax Platform.`);
-      },
-      invalidHandler: function(event, validator) {
-        var errors = validator.numberOfInvalids();
-        if (errors) {
-          console.log("form returned invalid");
-          $('#main-cta-section button').addClass('animated headShake');
-        }
-      }
-    });
-    $("#hero-newsletter-form").validate({
-      rules: {
-        email: {
-          required: true,
-          email: true
-        }
-      },
-      submitHandler: function(form) {
-        analyticsIdentifyAndTrack(form, "Newsletter Subscribed");
-        const formParent = $(form).parent();
-        $(form).remove();
-        const confirmMessage = '<span class="range-left-sm" >Thank you for subscribing! You\'ll hear from us soon.</span>';
-        const messageBox = `<div class="confirm-message"><img height="60px" src="${window.location.protocol}//${window.location.host}/img/logos/doug.png" alt="Doug"/>${confirmMessage}</div>`;
-        formParent.append(messageBox);
-      },
-      invalidHandler: function(event, validator) {
-        var errors = validator.numberOfInvalids();
-        if (errors) {
-          console.log("form returned invalid");
-          $('#hero-newsletter-form button').addClass('animated headShake');
-        }
-      }
-    });
-    $("#footer-newsletter-form").validate({
-      rules: {
-        email: {
-          required: true,
-          email: true
-        }
-      },
-      submitHandler: function(form) {
-        analyticsIdentifyAndTrack(form, "Newsletter Subscribed");
-        const formParent = $(form).parent();
-        $(form).remove();
-        const confirmMessage = '<span class="range-left-sm" >Thank you for subscribing! You\'ll hear from us soon.</span>';
-        const messageBox = `<div class="confirm-message"><img height="60px" src="${window.location.protocol}//${window.location.host}/img/logos/doug.png" alt="Doug"/>${confirmMessage}</div>`;
-        formParent.append(messageBox);
-      },
-      invalidHandler: function(event, validator) {
-        var errors = validator.numberOfInvalids();
-        if (errors) {
-          console.log("form returned invalid");
-          $('#footer-newsletter-form button').addClass('animated headShake');
-        }
-      }
-    });
-    $("#home-cta-webinar-signup").validate({
-      rules: {
-        firstName: {
-          required: true
-        },
-        lastName: {
-          required: true
-        },
-        email: {
-          required: true,
-          email: true
-        }
-      },
-      submitHandler: function(form) {
-        analyticsIdentifyAndTrack(form, "Webinar Subscribed");
-        const formParent = $(form).parent();
-        $(form).remove();
-        const confirmMessage = '<span class="range-left-sm" >Thank you for subscribing!</br>You\'ll hear from us soon.</span>';
-        const messageBox = `<div class="confirm-message"><img height="160px" src="${window.location.protocol}//${window.location.host}/img/logos/doug.png" alt="Doug"/>${confirmMessage}</div>`;
-        formParent.append(messageBox);
-      },
-      invalidHandler: function(event, validator) {
-        var errors = validator.numberOfInvalids();
-        if (errors) {
-          console.log("form returned invalid");
-          $('#home-cta-webinar-signup button').addClass('animated headShake');
-        }
-      }
-    });
-    $("#home-cta-request-demo").validate({
-      rules: {
-        firstName: {
-          required: true
-        },
-        lastName: {
-          required: true
-        },
-        email: {
-          required: true,
-          email: true
-        }
-      },
-      submitHandler: function(form) {
-        analyticsIdentifyAndTrack(form, "Demo Requested");
-        const formParent = $(form).parent();
-        $(form).remove();
-        const confirmMessage = '<span class="range-left-sm" >Thank you for requesting a demo!</br>You\'ll hear from us soon.</span>';
-        const messageBox = `<div class="confirm-message"><img height="160px" src="${window.location.protocol}//${window.location.host}/img/logos/doug.png" alt="Doug"/>${confirmMessage}</div>`;
-        formParent.append(messageBox);
-      },
-      invalidHandler: function(event, validator) {
-        var errors = validator.numberOfInvalids();
-        if (errors) {
-          console.log("form returned invalid");
-          $('#home-cta-request-demo button').addClass('animated headShake');
-        }
-      }
-    });
-    $("#single-webinar-signup").validate({
-      rules: {
-        firstName: {
-          required: true
-        },
-        lastName: {
-          required: true
-        },
-        email: {
-          required: true,
-          email: true
-        }
-      },
-      submitHandler: function(form) {
-        analyticsIdentifyAndTrack(form, 'Webinar Subscribed');
-        $('#single-webinar-signup button').addClass('disabled');
-      },
-      invalidHandler: function(event, validator) {
-        var errors = validator.numberOfInvalids();
-        if (errors) {
-          console.log("form returned invalid");
-          $('#single-webinar-signup button').addClass('animated headShake');
-        }
-      }
-    });
-    $('#request-demo-footer').on('click', function(event){
-      event.preventDefault();
-      analyticsIdentifyAndTrack([ { name: 'source', value: 'footer demo request' }], 'Demo Requested');
-      Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
-    });
-    $('#nav-register').on('click', function(event){
-      event.preventDefault();
-      analyticsIdentifyAndTrack([ { name: 'source', value: 'nav demo request' }], 'Demo Requested');
-      Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
-    });
-
-
-    // HANDLE HOME CTA SECTION
-    $('#home-cta-trigger-webinar-form').on('click', function(e) {
-      e.preventDefault();
-      var $ctaOptions = $('#home-cta-options');
-      if ( ! $ctaOptions.hasClass('form-triggered') ) {
-        $('#home-cta-webinar-signup').slideToggle();
-        $ctaOptions.addClass('form-triggered');
-      } else {
-        if ( $('#home-cta-webinar-signup').is(":visible") ) {
-          // stuff if webinar is already open
-            $('#home-cta-webinar-signup').slideToggle();
-            $ctaOptions.removeClass('form-triggered');
-        } else {
-          // stuff is webinar isn't open
-          $('#home-cta-webinar-signup').show();
-          $('#home-cta-request-demo').hide();
-        }
-      }
-    });
-    $('#home-cta-trigger-demo-form').on('click', function(e) {
-      e.preventDefault();
-      var $ctaOptions = $('#home-cta-options');
-      if ( ! $ctaOptions.hasClass('form-triggered') ) {
-        $('#home-cta-request-demo').slideToggle();
-        $('#home-cta-options').toggleClass('form-triggered');
-      } else {
-        if ( $('#home-cta-request-demo').is(":visible") ) {
-          // stuff if webinar is already open
-            $('#home-cta-request-demo').slideToggle();
-            $ctaOptions.removeClass('form-triggered');
-        } else {
-          // stuff is webinar isn't open
-          $('#home-cta-webinar-signup').hide();
-          $('#home-cta-request-demo').show();
-        }
-      }
-    });
-    $('#home-cta-register').on('click', function(event){
-      event.preventDefault();
-      if ( $('#home-cta-options').hasClass('form-triggered') ) {
-        $('#home-cta-webinar-signup').slideToggle();
-        $('#home-cta-options').toggleClass('form-triggered');
-      }
-    });
 
 
 });
