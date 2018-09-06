@@ -48,6 +48,32 @@ $(document).ready(function() {
       backgroundDismiss: true,
   });
 
+  // DEFINE REQUEST A DEMO POPUP FROM NAV
+  const requestDemoPopup = $.dialog({
+      lazyOpen: true,
+      theme: 'supervan',
+      closeIcon: true,
+      animation: 'scale',
+      title: ' ',
+      content: '<form id="home-webinar-signup" class="form">' +
+        '<div class="underline-sm">' +
+        '<h3>Request A Demo With The Team</h3>' +
+        '</div>' +
+        '<input type="text" name="source" value="nav signup" class="hidden">' +
+        '<input type="text" placeholder="Email" name="email" class="field-email">' +
+        '<input type="text" placeholder="First Name" name="firstName" class="field-fname">' +
+        '<input type="text" placeholder="Last Name" name="lastName" class="field-lname">' +
+        '<input type="text" placeholder="Company Name" name="company" class="field-company">' +
+        '<button type="submit" value="Submit" class="btn btn-xl field-submit">' +
+          '<span>Request A Demo</span>' +
+        '</button>' +
+      '</form>',
+      scrollToPreviousElement: false,
+      backgroundDismiss: true,
+      columnClass: 'col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-12',
+      containerFluid: true, // this will add 'container-fluid' instead of 'container'
+  });
+
   // DOCUMENTS - '.dip-opacity' EFFECT
   $('.container-docs').hover(function(){
     if ($(window).width() > 750) {
@@ -152,9 +178,11 @@ $(document).ready(function() {
 
   // NAV - REGISTER CTA ['REQUEST DEMO' FOR NOW]
   $('#nav-register').on('click', function(event){
+    requestDemoPopup.open();
+
     event.preventDefault(); // Change @@@
-    analyticsIdentifyAndTrack([ { name: 'source', value: 'nav demo request' }], 'Demo Requested');
-    Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
+    // analyticsIdentifyAndTrack([ { name: 'source', value: 'nav demo request' }], 'Demo Requested');
+    // Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
   });
 
 
@@ -171,7 +199,25 @@ $(document).ready(function() {
     submitHandler: function(form) {
       analyticsIdentifyAndTrack(form, "Newsletter Subscribed");
       $('#hero-newsletter-form button').attr('disabled', 'disabled').html("Subscribed <i class='fa fa-check'></i>");
-      successPopup.open();
+      // animate Doug
+      const successMessageCont = $(form).next();
+      const successDoug = $(successMessageCont).find('.success-doug');
+      const successText = $(successMessageCont).find('.success-text');
+      const successInfo = $(successMessageCont).find('.success-info');
+      $(successText).html('Subscribed <i class="fa fa-check"></i>');
+      $(form).slideToggle(400, function() {
+        setTimeout(function(){
+          $(form).parent().removeClass('flex-grid');
+          $(successMessageCont).animate({width:'toggle'},600, function() {
+            $(successDoug).animate({width:'toggle',height:'toggle'},400, function() {
+                setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+            });
+          });
+        }, 200);
+        // remove form
+        $(form).remove();
+      });
+      // prevent redirect
       return false;
     },
     invalidHandler: function(event, validator) {
@@ -193,8 +239,25 @@ $(document).ready(function() {
     },
     submitHandler: function(form) {
       analyticsIdentifyAndTrack(form, "Demo Requested");
-      $('#hero-signup-submit').attr('disabled', 'disabled').html("Requested <i class='fa fa-check'></i>");
-      successPopup.open();
+      // animate Doug
+      const successMessageCont = $(form).next();
+      const successDoug = $(successMessageCont).find('.success-doug');
+      const successText = $(successMessageCont).find('.success-text');
+      const successInfo = $(successMessageCont).find('.success-info');
+      $(successText).html('Requested <i class="fa fa-check"></i>');
+      $(form).slideToggle(400, function() {
+        $(form).parent().removeClass('flex-grid');
+        setTimeout(function(){
+          $(successMessageCont).animate({width:'toggle'},600, function() {
+            $(successDoug).animate({width:'toggle',height:'toggle'},400, function() {
+                setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+            });
+          });
+        }, 200);
+        // remove form
+        $(form).remove();
+      });
+      // prevent redirect
       return false;
     },
     invalidHandler: function(event, validator) {
@@ -270,8 +333,24 @@ $(document).ready(function() {
     },
     submitHandler: function(form) {
       analyticsIdentifyAndTrack(form, "Newsletter Subscribed");
-      $('#footer-newsletter-form button').attr('disabled', 'disabled').html("Subscribed <i class='fa fa-check'></i>");
-      successPopup.open();
+      // animate Doug
+      const successMessageCont = $(form).next();
+      const successDoug = $(successMessageCont).find('.success-doug');
+      const successText = $(successMessageCont).find('.success-text');
+      const successInfo = $(successMessageCont).find('.success-info');
+      $(successText).html('Subscribed <i class="fa fa-check"></i>');
+      $(form).slideToggle(400, function() {
+        setTimeout(function(){
+          $(successMessageCont).animate({width:'toggle'},400, function() {
+            $(successDoug).animate({width:'toggle',height:'toggle'},400, function() {
+                setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+            });
+          });
+        }, 200);
+        // remove form
+        $(form).remove();
+      });
+      // prevent redirect
       return false;
     },
     invalidHandler: function(event, validator) {
@@ -283,12 +362,12 @@ $(document).ready(function() {
     }
   });
 
-  // GLOBAL - FOOTER REQUEST DEMO @@@ [REMOVE?]
-  $('#request-demo-footer').on('click', function(event){
-    event.preventDefault(); // Change @@@
-    analyticsIdentifyAndTrack([ { name: 'source', value: 'footer demo request' }], 'Demo Requested');
-    Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
-  });
+  // GLOBAL - FOOTER REQUEST DEMO [UNUSED]
+  // $('#request-demo-footer').on('click', function(event){
+  //   event.preventDefault();
+  //   analyticsIdentifyAndTrack([ { name: 'source', value: 'footer demo request' }], 'Demo Requested');
+  //   Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
+  // });
 
 
   // ========== HOME =============== //
@@ -338,10 +417,25 @@ $(document).ready(function() {
     },
     submitHandler: function(form) {
       analyticsIdentifyAndTrack(form, "Webinar Subscribed");
-      $(form).slideToggle();
-      $('#home-cta-trigger-webinar-form').unbind( "click" ).attr('disabled', 'disabled').html("Subscribed <i class='fa fa-check'></i>");
-      $ctaOptions.removeClass('form-triggered');
-      successPopup.open();
+      // animate Doug
+      const successMessageCont = $($ctaOptions).next().find('.success-message-container');
+      const successDoug = $(successMessageCont).find('.success-doug');
+      const successText = $(successMessageCont).find('.success-text');
+      const successInfo = $(successMessageCont).find('.success-info');
+      $(successText).html('Subscribed <i class="fa fa-check"></i>');
+      $($ctaOptions).slideToggle();
+      $(form).slideToggle(400, function() {
+        setTimeout(function(){
+          $(successMessageCont).animate({width:'toggle'},600, function() {
+            $(successDoug).animate({width:'toggle',height:'toggle'},400, function() {
+                setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+            });
+          });
+        }, 200);
+        // remove form
+        $(form).remove();
+      });
+      // prevent redirect
       return false;
     },
     invalidHandler: function(event, validator) {
@@ -384,10 +478,25 @@ $(document).ready(function() {
     },
     submitHandler: function(form) {
       analyticsIdentifyAndTrack(form, "Demo Requested");
-      $(form).slideToggle();
-      $('#home-cta-trigger-demo-form').unbind( "click" ).attr('disabled', 'disabled').html("Requested <i class='fa fa-check'></i>");
-      $ctaOptions.removeClass('form-triggered');
-      successPopup.open();
+      // animate Doug
+      const successMessageCont = $($ctaOptions).next().find('.success-message-container');
+      const successDoug = $(successMessageCont).find('.success-doug');
+      const successText = $(successMessageCont).find('.success-text');
+      const successInfo = $(successMessageCont).find('.success-info');
+      $(successText).html('Requested <i class="fa fa-check"></i>');
+      $($ctaOptions).slideToggle();
+      $(form).slideToggle(400, function() {
+        setTimeout(function(){
+          $(successMessageCont).animate({width:'toggle'},600, function() {
+            $(successDoug).animate({width:'toggle',height:'toggle'},400, function() {
+                setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+            });
+          });
+        }, 200);
+        // remove form
+        $(form).remove();
+      });
+      // prevent redirect
       return false;
     },
     invalidHandler: function(event, validator) {

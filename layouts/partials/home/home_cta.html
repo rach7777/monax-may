@@ -5,7 +5,7 @@
   <div class="container">
 
     <div class="row flex-grid-md">
-      <div class="col-md-12">
+      <div class="col-md-12 home-cta-options-container">
 
         <div class="padding-bottom-sm">
             <h2>{{ .title }}</h2>
@@ -21,6 +21,20 @@
           {{ if .enable_button_two }}
             <a {{ if .button_two_trigger_form }} id="home-cta-trigger-demo-form" {{ else }} href="{{ .button_two_url }}" {{ end }} class="btn btn-primary btn-xl" onClick="" role="button">{{ .button_two_text }}</a>
           {{ end }}
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <div class="success-message-container"> <!-- must be directly after options -->
+              <div class="success-message">
+                <div class="success-doug">
+                  <div class="success-doug-circle"></div>
+                  <img class="success-doug-img" src="/img/assets/doug/doug.png" alt="Doug">
+                </div>
+                <span class="success-text">Subscribed <i class="fa fa-check"></i></span>
+              </div>
+              <p class="success-info" style="margin-top: 20px;">Thanks for getting in touch! We'll get back to you soon.</p>
+            </div>
+          </div>
         </div>
 
         <div class="row">
