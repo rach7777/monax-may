@@ -1935,6 +1935,28 @@ transform: scale(1.05) !important;
               animation: float 6s ease-in-out infinite;
 }
 
+/* ANIMATION #A */
+#feature-animation-A .animation-content-frame.next-animation {
+    opacity: 0.6;
+}
+#feature-animation-A .animation-popover-frame {
+  width: 24.5%;
+  height: 34.5%;
+  border-radius: 3px;
+}
+#feature-animation-A #pop-1-container {
+    top: 24%;
+    left: 9%;
+}
+#feature-animation-A #pop-2-container {
+    top: 24%;
+    left: 37.5%;
+}
+#feature-animation-A #pop-3-container {
+    top: 24%;
+    left: 66%;
+}
+
 /* HOMEPAGE ANIMATION */
 #home-animation {
     padding-bottom: 80%;
