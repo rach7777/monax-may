@@ -55,19 +55,55 @@ $(document).ready(function() {
       closeIcon: true,
       animation: 'scale',
       title: ' ',
-      content: '<form id="home-webinar-signup" class="form">' +
-        '<div class="underline-sm">' +
-        '<h3>Request A Demo With The Team</h3>' +
-        '</div>' +
-        '<input type="text" name="source" value="nav signup" class="hidden">' +
-        '<input type="text" placeholder="Email" name="email" class="field-email">' +
-        '<input type="text" placeholder="First Name" name="firstName" class="field-fname">' +
-        '<input type="text" placeholder="Last Name" name="lastName" class="field-lname">' +
-        '<input type="text" placeholder="Company Name" name="company" class="field-company">' +
-        '<button type="submit" value="Submit" class="btn btn-xl field-submit">' +
-          '<span>Request A Demo</span>' +
-        '</button>' +
-      '</form>',
+      content: 'url:/html/nav_signup.html',
+      onContentReady: function () {
+        $("#nav-signup").validate({
+          rules: {
+            firstName: {
+              required: true
+            },
+            lastName: {
+              required: true
+            },
+            email: {
+              required: true,
+              email: true
+            }
+          },
+          submitHandler: function(form) {
+            analyticsIdentifyAndTrack(form, 'Demo Requested');
+            // animate Doug
+            const successMessageCont = $("#nav-signup .form-fields").next();
+            const successDoug = $(successMessageCont).find('.success-doug');
+            const successText = $(successMessageCont).find('.success-text');
+            const successInfo = $(successMessageCont).find('.success-info');
+            $(successText).html('Requested <i class="fa fa-check"></i>');
+            $("#nav-signup .form-fields").slideToggle(400, function() {
+              setTimeout(function(){
+                $(form).parent().removeClass('flex-grid');
+                $(successMessageCont).animate({width:'toggle'},600, function() {
+                  $(successDoug).animate({width:'toggle',height:'toggle'},400, function() {
+                    setTimeout(function(){
+                      $(successInfo).slideToggle(800, function() {
+                        setTimeout(function(){ requestDemoPopup.close(); }, 2400);
+                      });
+                    }, 400);
+                  });
+                });
+              }, 200);
+            });
+            // prevent redirect
+            return false;
+          },
+          invalidHandler: function(event, validator) {
+            var errors = validator.numberOfInvalids();
+            if (errors) {
+              console.log("form returned invalid");
+              $('#nav-signup button').addClass('animated headShake');
+            }
+          }
+        });
+      },
       scrollToPreviousElement: false,
       backgroundDismiss: true,
       columnClass: 'col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-12',
@@ -198,7 +234,6 @@ $(document).ready(function() {
     },
     submitHandler: function(form) {
       analyticsIdentifyAndTrack(form, "Newsletter Subscribed");
-      $('#hero-newsletter-form button').attr('disabled', 'disabled').html("Subscribed <i class='fa fa-check'></i>");
       // animate Doug
       const successMessageCont = $(form).next();
       const successDoug = $(successMessageCont).find('.success-doug');

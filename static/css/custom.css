@@ -509,6 +509,12 @@ form label.error {
   width: 100%;
 }
 
+/* nav signup form */
+#nav-signup input,
+#nav-signup p {
+    color: #000;
+}
+
 
 /*==================================
     FORM SUBMIT SUCCESS ANIMATIONS
