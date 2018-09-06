@@ -172,7 +172,7 @@
     title = "About Us"
     subtitle = "Deploy smart, legally-binding contracts on the blockchain."
     footer_logo = "/img/Monax_logo_white.png"
-    enable_request_demo = true
+    enable_request_demo = false
     request_demo_title = "Request a demo"
 
     # [[about.link]]
