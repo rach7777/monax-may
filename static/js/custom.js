@@ -152,7 +152,7 @@ $(document).ready(function() {
 
   // NAV - REGISTER CTA ['REQUEST DEMO' FOR NOW]
   $('#nav-register').on('click', function(event){
-    event.preventDefault();
+    event.preventDefault(); // Change @@@
     analyticsIdentifyAndTrack([ { name: 'source', value: 'nav demo request' }], 'Demo Requested');
     Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
   });
@@ -285,7 +285,7 @@ $(document).ready(function() {
 
   // GLOBAL - FOOTER REQUEST DEMO @@@ [REMOVE?]
   $('#request-demo-footer').on('click', function(event){
-    event.preventDefault();
+    event.preventDefault(); // Change @@@
     analyticsIdentifyAndTrack([ { name: 'source', value: 'footer demo request' }], 'Demo Requested');
     Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
   });
