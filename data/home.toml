@@ -84,7 +84,7 @@
   producer_option = "Create legal templates"
 
   [home_features.consumer]
-    enable = true
+    enable = false
 
     [[home_features.consumer.section]]
       title = "Browse templates"
