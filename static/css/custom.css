@@ -2009,7 +2009,7 @@ transform: scale(1.05) !important;
               animation: float 6s ease-in-out infinite;
 }
 
-/* ANIMATION #A */
+/* ANIMATION #A - Home */
 #feature-animation-A .animation-content-frame.next-animation {
     opacity: 0.6;
 }
@@ -2029,6 +2029,25 @@ transform: scale(1.05) !important;
 #feature-animation-A #pop-3-container {
     top: 24%;
     left: 66%;
+}
+
+/* ANIMATION #B - Home */
+#feature-animation-B .animation-content-frame.next-animation {
+    opacity: 0.6;
+}
+#feature-animation-B .animation-popover-frame {
+    width: 24.5%;
+    height: 37%;
+    border-radius: 50%;
+    background: #7fa540;
+}
+#feature-animation-B #pop-1-container {
+    top: 24%;
+    left: 22%;
+}
+#feature-animation-B #pop-2-container {
+    top: 24%;
+    left: 53.5%;
 }
 
 /* HOMEPAGE ANIMATION */

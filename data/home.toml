@@ -120,7 +120,7 @@
       title = "Create agreement"
       subtitle = "Select, fill out and hit create. You’ve created both a legally binding agreement and an auto-enforcable smart contract with just a couple of clicks.<br><br>As simple as filling a form."
       #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
-      animation_id = "feature-animation-3"
+      animation_id = "feature-animation-B"
       animation_type = "multipop"
       img_base = "/img/assets/animations/shared/base-mac.png"
       img_content_container = "mac" # set to 'mac' or 'iphone'
@@ -140,11 +140,11 @@
         animation_delay = "1500"
         animation_duration = "300"
 
-      [[home_features.consumer.section.pop]]
-        img_pop_src = "/img/assets/animations/3-self-executable-agreements/zoom-3-executed.png"
-        img_pop_id = "pop-3"
-        animation_delay = "2100"
-        animation_duration = "300"
+      # [[home_features.consumer.section.pop]]
+      #   img_pop_src = "/img/assets/animations/3-self-executable-agreements/zoom-3-executed.png"
+      #   img_pop_id = "pop-3"
+      #   animation_delay = "2100"
+      #   animation_duration = "300"
 
     [[home_features.consumer.section]]
       title = "Track every obligation"

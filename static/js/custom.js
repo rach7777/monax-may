@@ -77,6 +77,7 @@ $(document).ready(function() {
             const successDoug = $(successMessageCont).find('.success-doug');
             const successText = $(successMessageCont).find('.success-text');
             const successInfo = $(successMessageCont).find('.success-info');
+            // $(successInfo).html('custom success text'); // enable to customize success information
             $(successText).html('Requested <i class="fa fa-check"></i>');
             $("#nav-signup .form-fields").slideToggle(400, function() {
               setTimeout(function(){
@@ -236,6 +237,7 @@ $(document).ready(function() {
       const successDoug = $(successMessageCont).find('.success-doug');
       const successText = $(successMessageCont).find('.success-text');
       const successInfo = $(successMessageCont).find('.success-info');
+      // $(successInfo).html('custom success text'); // enable to customize success information
       $(successText).html('Subscribed <i class="fa fa-check"></i>');
       $(form).slideToggle(400, function() {
         setTimeout(function(){
@@ -276,6 +278,7 @@ $(document).ready(function() {
       const successDoug = $(successMessageCont).find('.success-doug');
       const successText = $(successMessageCont).find('.success-text');
       const successInfo = $(successMessageCont).find('.success-info');
+      // $(successInfo).html('custom success text'); // enable to customize success information
       $(successText).html('Requested <i class="fa fa-check"></i>');
       $(form).slideToggle(400, function() {
         $(form).parent().removeClass('flex-grid');
@@ -367,6 +370,7 @@ $(document).ready(function() {
       const successDoug = $(successMessageCont).find('.success-doug');
       const successText = $(successMessageCont).find('.success-text');
       const successInfo = $(successMessageCont).find('.success-info');
+      // $(successInfo).html('custom success text'); // enable to customize success information
       $(successText).html('Requested <i class="fa fa-check"></i>');
       $(form).slideToggle(400, function() {
         setTimeout(function(){
@@ -406,6 +410,7 @@ $(document).ready(function() {
       const successDoug = $(successMessageCont).find('.success-doug');
       const successText = $(successMessageCont).find('.success-text');
       const successInfo = $(successMessageCont).find('.success-info');
+      // $(successInfo).html('custom success text'); // enable to customize success information
       $(successText).html('Subscribed <i class="fa fa-check"></i>');
       $(form).slideToggle(400, function() {
         setTimeout(function(){
@@ -490,6 +495,7 @@ $(document).ready(function() {
       const successDoug = $(successMessageCont).find('.success-doug');
       const successText = $(successMessageCont).find('.success-text');
       const successInfo = $(successMessageCont).find('.success-info');
+      // $(successInfo).html('custom success text'); // enable to customize success information
       $(successText).html('Subscribed <i class="fa fa-check"></i>');
       $($ctaOptions).slideToggle();
       $(form).slideToggle(400, function() {
@@ -551,6 +557,7 @@ $(document).ready(function() {
       const successDoug = $(successMessageCont).find('.success-doug');
       const successText = $(successMessageCont).find('.success-text');
       const successInfo = $(successMessageCont).find('.success-info');
+      // $(successInfo).html('custom success text'); // enable to customize success information
       $(successText).html('Requested <i class="fa fa-check"></i>');
       $($ctaOptions).slideToggle();
       $(form).slideToggle(400, function() {
