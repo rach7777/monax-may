@@ -340,9 +340,9 @@ form label.error {
     font-weight: 300;
     color: rgba(183, 183, 183, 0.6);
 }
-.label-container {
+.form-main-cta .label-container {
     text-align: center;
-    display: block;
+    display: inline;
 }
 .form-main-cta select {
     outline: none;
@@ -361,12 +361,15 @@ form label.error {
     background: none;
     color: #b7b7b7;
     border-radius: 0;
-    border-bottom: 2px solid #7e876f;
+    border-bottom: 2px solid #999999;
     height: 34px;
     width: 330px;
     max-width: 100%;
     pointer-events: all;
     cursor: pointer;
+}
+.select-error select {
+    border-color: #d21111;
 }
 .form-main-cta select:focus {
     outline: none;
@@ -382,6 +385,9 @@ form label.error {
 }
 .form-main-cta .select-wrap.chosen:after {
     color: rgba(183, 183, 183, 0.2);
+}
+.form-main-cta .hide-until-active {
+    display: none;
 }
 .form-main-cta .button-divider,
 .section-cta .button-divider {
@@ -523,6 +529,8 @@ form label.error {
 .signup-footer { min-height: 120px; }
 .signup-container { min-height: 50px; }
 .home-cta-options-container { min-height: 160px; }
+.section-cta .form-container { min-height: 160px; }
+#nav-signup { min-height: 280px; }
 
 .success-message-container {
   display: none;

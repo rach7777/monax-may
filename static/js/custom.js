@@ -215,10 +215,7 @@ $(document).ready(function() {
   // NAV - REGISTER CTA ['REQUEST DEMO' FOR NOW]
   $('#nav-register').on('click', function(event){
     requestDemoPopup.open();
-
-    event.preventDefault(); // Change @@@
-    // analyticsIdentifyAndTrack([ { name: 'source', value: 'nav demo request' }], 'Demo Requested');
-    // Intercom('showNewMessage', "I'd like to see a demo of the Monax Platform");
+    event.preventDefault();
   });
 
 
@@ -330,6 +327,8 @@ $(document).ready(function() {
   $("select.resizeselect").resizeselect();
   $("select.resizeselect").on('click', function(){
     $(this).parent().addClass('chosen');
+    // if main cta reveal hidden fields
+    $("#main-cta-section .hide-until-active").slideDown();
   });
   // validate main CTA section
   $("#main-cta-section").validate({
@@ -342,12 +341,46 @@ $(document).ready(function() {
       },
       frequency: {
         required: true
+      },
+      firstName: {
+        required: true
+      },
+      lastName: {
+        required: true
+      },
+      email: {
+        required: true,
+        email: true
       }
     },
     submitHandler: function(form) {
+      // force user to choose at least one option
+      if ( ! $("#main-cta-section .select-wrap.chosen").length ) {
+        $("#main-cta-section .select-wrap").addClass('select-error');
+        // $("#main-cta-section .hide-until-active").slideDown();
+        console.log('no options chosen');
+        return false;
+      }
       const { industry, agreementsType, frequency } = analyticsIdentifyAndTrack(form, "Demo Requested");
-      $("#main-cta-section button").addClass('disabled'); // Change @@@
-      Intercom('showNewMessage', `I'm working in the ${industry} and am interested in creating ${agreementsType}. I ${frequency} a contract management platform. I'd like to see a demo of the Monax Platform.`);
+      // animate Doug
+      const successMessageCont = $(form).next().find('.success-message-container');
+      const successDoug = $(successMessageCont).find('.success-doug');
+      const successText = $(successMessageCont).find('.success-text');
+      const successInfo = $(successMessageCont).find('.success-info');
+      $(successText).html('Requested <i class="fa fa-check"></i>');
+      $(form).slideToggle(400, function() {
+        setTimeout(function(){
+          $(successMessageCont).animate({width:'toggle'},600, function() {
+            $(successDoug).animate({width:'toggle',height:'toggle'},400, function() {
+                setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+            });
+          });
+        }, 200);
+        // remove form
+        // $(form).remove();
+      });
+      // prevent redirect
+      return false;
     },
     invalidHandler: function(event, validator) {
       var errors = validator.numberOfInvalids();
