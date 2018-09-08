@@ -1,10 +1,10 @@
 {{ with .Site.Data.home.top }}
 {{ if .enable }}
-<section class="section-top padding-top-md padding-bottom-lg section-shadow-xl" style="background: url({{ .background_element }}) right bottom no-repeat; background-size: 520px;">
+<section class="section-top padding-top-md padding-bottom-lg" style="background: url({{ .background_element }}) right bottom no-repeat; background-size: 520px;">
     <div class="container">
 
       <div class="row flex-grid-md">
-          <div class="col-md-5 col-valign-center">
+          <div class="col-md-7 col-valign-center">
             <div class="underline-sm range-left-md">
                 <h1>{{ .title }}</h1>
             </div>
@@ -18,7 +18,7 @@
               {{ partial "_global/hero_signup.html" . }}
             {{ end }}
           </div>
-          <div class="col-md-7">
+          <div class="col-md-5">
 
             {{ if .illustration.enable }}
               {{ with .illustration }}

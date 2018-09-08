@@ -6,21 +6,23 @@
 
       <div class="row flex-grid-md">
 
-        <div class="col-md-12 range-left-md">
+        <div class="col-md-12">
 
           <div class="padding-bottom-sm">
               <h3>{{ .title }}</h3>
           </div>
 
-          <div class="padding-bottom-md btn-container range-left-md" style="">
-            <a href="#1b" class="btn btn-tab-select btn-xl active" data-toggle="tab" onClick="" role="tab">{{ .consumer_option }}</a>
-            <a href="#1a" class="btn btn-tab-select btn-xl" data-toggle="tab" onClick="" role="tab">{{ .producer_option }}</a>
+          {{ if and .consumer.enable .producer.enable }}
+          <div class="padding-bottom-md btn-container" style="">
+            <a href="#1b" class="btn btn-tab-select btn-tab-pill btn-xl active" data-toggle="tab" onClick="" role="tab">{{ .consumer_option }}</a><a href="#1a" class="btn btn-tab-select btn-tab-pill btn-xl" data-toggle="tab" onClick="" role="tab">{{ .producer_option }}</a>
           </div>
+          {{ end }}
         </div>
       </div>
     </div>
 </section>
 
+{{ if .consumer.enable }}
 <div class="tab-reveal tab-consumer active" id="1b">
 
   <section class="section-feature padding-top-lg">
@@ -84,9 +86,10 @@
   </section> <!-- .section -->
 
 </div>
+{{ end }}
 
-
-<div class="tab-reveal tab-producer" id="1a">
+{{ if .producer.enable }}
+<div class="tab-reveal tab-producer {{ if not .consumer.enable }}active{{ end }}" id="1a">
 
   <section class="section-feature padding-top-lg">
       <div class="container">
@@ -149,11 +152,7 @@
   </section>
 
 </div>
-
-<script type="text/javascript">
-
-
-</script>
+{{ end }}
 
 {{ end }}
 {{ end }}

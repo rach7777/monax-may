@@ -159,9 +159,16 @@
         "A few times each year",
         "Ocassionally",
       ]
+
+      source = "main cta request demo" # required for Segment to process
+      email = true
+      fname = true
+      lname = true
+      company_name = true
+
       submit_button_text = "Request a demo"
       enable_button_two = false
-      # button_two_text = "Try for free"
+      # button_two_text = "Try for free" # url link only
       # button_two_url = "https://beta.monax.io/register"
       # show_button_separator = true
 
@@ -172,7 +179,7 @@
     title = "About Us"
     subtitle = "Deploy smart, legally-binding contracts on the blockchain."
     footer_logo = "/img/Monax_logo_white.png"
-    enable_request_demo = true
+    enable_request_demo = false
     request_demo_title = "Request a demo"
 
     # [[about.link]]

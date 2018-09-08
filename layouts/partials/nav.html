@@ -66,9 +66,20 @@
                 {{ end }}
                 {{ range .Site.Menus.register }}
                   <li class="dropdown">
-                    <div class="nav-button-container">
-                      <a id="nav-register" href="{{ .URL }}" class="btn btn-primary nav-button">{{ .Name }}</a>
+                    <div  id="nav-register" class="nav-button-container dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      <a href="{{ .URL }}" class="btn btn-primary nav-button">{{ .Name }}</a>
                     </div>
+
+                    <ul class="dropdown-menu dropdown-form">
+                      <div class="dropdown-content visible-md-block visible-lg-block">
+                        <div class="row">
+                          <div class="col-md-12">
+                            {{ partial "forms/nav_signup_desktop.html" . }}
+                          </div>
+                        </div>
+                      </div>
+                    </ul>
+
                   </li>
                 {{ end }}
                 {{ range .Site.Menus.login }}
