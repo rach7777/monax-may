@@ -533,6 +533,7 @@ form label.error {
 .home-cta-options-container { min-height: 160px; }
 .section-cta .form-container { min-height: 160px; }
 #nav-signup { min-height: 280px; }
+#nav-signup-desktop { min-height: 260px; }
 
 .success-message-container {
   display: none;
@@ -3047,6 +3048,14 @@ TEAM ICONS
   }
   .navbar ul.dropdown-menu li a {
     color: #333;
+  }
+  /* nav form */
+  .dropdown-menu.dropdown-form {
+      width: auto;
+      right: 0 !important;
+  }
+  .dropdown-menu.dropdown-form .dropdown-content {
+      padding: 0;
   }
 }
 

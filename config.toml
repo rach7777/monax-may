@@ -113,7 +113,7 @@ quality = 80
 
 [[menu.register]]
     name = "Request a demo"
-    url  = "https://beta.monax.io/register"
+    url  = "#"
     weight = 1
 
 # commenting this until we're closer to GA

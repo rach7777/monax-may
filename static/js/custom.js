@@ -72,14 +72,16 @@ $(document).ready(function() {
           },
           submitHandler: function(form) {
             analyticsIdentifyAndTrack(form, 'Demo Requested');
+            // vars
+            const formFields = $('#nav-signup .form-fields');
             // animate Doug
-            const successMessageCont = $("#nav-signup .form-fields").next();
+            const successMessageCont = $(formFields).next();
             const successDoug = $(successMessageCont).find('.success-doug-img');
             const successText = $(successMessageCont).find('.success-text');
             // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
             const successInfo = $(successMessageCont).find('.success-info');
             // $(successInfo).html('custom success text'); // enable to customize success information
-            $("#nav-signup .form-fields").slideToggle(400, function() {
+            $(formFields).slideToggle(400, function() {
               setTimeout(function(){
                 $(successMessageCont).animate({width:'toggle'},600, function() {
                   setTimeout(function(){
@@ -107,6 +109,57 @@ $(document).ready(function() {
       columnClass: 'col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-12',
       containerFluid: true, // this will add 'container-fluid' instead of 'container'
   });
+
+  // NAV SIGNUP REQUEST A DEMO FORM ON DESKTOP
+  $("#nav-signup-desktop").validate({
+    rules: {
+      firstName: {
+        required: true
+      },
+      lastName: {
+        required: true
+      },
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    submitHandler: function(form) {
+      analyticsIdentifyAndTrack(form, 'Demo Requested');
+      // vars
+      const formFields = $('#nav-signup-desktop .form-fields');
+      // animate Doug
+      const successMessageCont = $(formFields).next();
+      const successDoug = $(successMessageCont).find('.success-doug-img');
+      const successText = $(successMessageCont).find('.success-text');
+      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
+      const successInfo = $(successMessageCont).find('.success-info');
+      // $(successInfo).html('custom success text'); // enable to customize success information
+      $(formFields).slideToggle(400, function() {
+        setTimeout(function(){
+          $(successMessageCont).animate({width:'toggle'},600, function() {
+            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+          });
+        }, 200);
+      });
+      // prevent redirect
+      return false;
+    },
+    invalidHandler: function(event, validator) {
+      var errors = validator.numberOfInvalids();
+      if (errors) {
+        console.log("form returned invalid");
+        $('#nav-signup-desktop button').addClass('animated headShake');
+      }
+    }
+  });
+
+
+
+
+
+
+
 
   // DOCUMENTS - '.dip-opacity' EFFECT
   $('.container-docs').hover(function(){
@@ -210,9 +263,15 @@ $(document).ready(function() {
     $('#dropdown-overlay').stop(true, true).fadeOut();
   });
 
-  // NAV - REGISTER CTA ['REQUEST DEMO' FOR NOW]
+  // NAV - REGISTER CTA ['REQUEST DEMO']
   $('#nav-register').on('click', function(event){
-    requestDemoPopup.open();
+    // open a popup on mobile devices, open rollout box on desktop
+    if ( $(window).width() > 982 ) {
+      $(this).parent().parent(".dropdown").toggleClass("open");
+    } else {
+      requestDemoPopup.open();
+    }
+    // prevent redirect
     event.preventDefault();
   });
 
