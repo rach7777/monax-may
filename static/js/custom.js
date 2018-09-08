@@ -74,22 +74,19 @@ $(document).ready(function() {
             analyticsIdentifyAndTrack(form, 'Demo Requested');
             // animate Doug
             const successMessageCont = $("#nav-signup .form-fields").next();
-            const successDoug = $(successMessageCont).find('.success-doug');
+            const successDoug = $(successMessageCont).find('.success-doug-img');
             const successText = $(successMessageCont).find('.success-text');
+            // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
             const successInfo = $(successMessageCont).find('.success-info');
             // $(successInfo).html('custom success text'); // enable to customize success information
-            $(successText).html('Requested <i class="fa fa-check"></i>');
             $("#nav-signup .form-fields").slideToggle(400, function() {
               setTimeout(function(){
-                $(form).parent().removeClass('flex-grid');
                 $(successMessageCont).animate({width:'toggle'},600, function() {
-                  $(successDoug).animate({width:'toggle',height:'toggle'},400, function() {
-                    setTimeout(function(){
-                      $(successInfo).slideToggle(800, function() {
-                        setTimeout(function(){ requestDemoPopup.close(); }, 2400);
-                      });
-                    }, 400);
-                  });
+                  setTimeout(function(){
+                    $(successInfo).slideToggle(800, function() {
+                      setTimeout(function(){ requestDemoPopup.close(); }, 2400);
+                    });
+                  }, 400);
                 });
               }, 200);
             });
@@ -233,19 +230,17 @@ $(document).ready(function() {
     submitHandler: function(form) {
       analyticsIdentifyAndTrack(form, "Newsletter Subscribed");
       // animate Doug
-      const successMessageCont = $(form).next();
-      const successDoug = $(successMessageCont).find('.success-doug');
+      const successMessageCont = $(form).next().find('.success-message-container');
+      const successDoug = $(successMessageCont).find('.success-doug-img');
       const successText = $(successMessageCont).find('.success-text');
+      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
       const successInfo = $(successMessageCont).find('.success-info');
       // $(successInfo).html('custom success text'); // enable to customize success information
-      $(successText).html('Subscribed <i class="fa fa-check"></i>');
       $(form).slideToggle(400, function() {
+        $(form).parent().removeClass('flex-grid');
         setTimeout(function(){
-          $(form).parent().removeClass('flex-grid');
           $(successMessageCont).animate({width:'toggle'},600, function() {
-            $(successDoug).animate({width:'toggle',height:'toggle'},400, function() {
-                setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
-            });
+            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
           });
         }, 200);
         // remove form
@@ -274,19 +269,17 @@ $(document).ready(function() {
     submitHandler: function(form) {
       analyticsIdentifyAndTrack(form, "Demo Requested");
       // animate Doug
-      const successMessageCont = $(form).next();
-      const successDoug = $(successMessageCont).find('.success-doug');
+      const successMessageCont = $(form).next().find('.success-message-container');
+      const successDoug = $(successMessageCont).find('.success-doug-img');
       const successText = $(successMessageCont).find('.success-text');
+      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
       const successInfo = $(successMessageCont).find('.success-info');
       // $(successInfo).html('custom success text'); // enable to customize success information
-      $(successText).html('Requested <i class="fa fa-check"></i>');
       $(form).slideToggle(400, function() {
         $(form).parent().removeClass('flex-grid');
         setTimeout(function(){
           $(successMessageCont).animate({width:'toggle'},600, function() {
-            $(successDoug).animate({width:'toggle',height:'toggle'},400, function() {
-                setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
-            });
+            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
           });
         }, 200);
         // remove form
@@ -367,21 +360,19 @@ $(document).ready(function() {
       const { industry, agreementsType, frequency } = analyticsIdentifyAndTrack(form, "Demo Requested");
       // animate Doug
       const successMessageCont = $(form).next().find('.success-message-container');
-      const successDoug = $(successMessageCont).find('.success-doug');
+      const successDoug = $(successMessageCont).find('.success-doug-img');
       const successText = $(successMessageCont).find('.success-text');
+      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
       const successInfo = $(successMessageCont).find('.success-info');
       // $(successInfo).html('custom success text'); // enable to customize success information
-      $(successText).html('Requested <i class="fa fa-check"></i>');
       $(form).slideToggle(400, function() {
         setTimeout(function(){
           $(successMessageCont).animate({width:'toggle'},600, function() {
-            $(successDoug).animate({width:'toggle',height:'toggle'},400, function() {
-                setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
-            });
+            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
           });
         }, 200);
         // remove form
-        // $(form).remove();
+        $(form).remove();
       });
       // prevent redirect
       return false;
@@ -407,17 +398,15 @@ $(document).ready(function() {
       analyticsIdentifyAndTrack(form, "Newsletter Subscribed");
       // animate Doug
       const successMessageCont = $(form).next();
-      const successDoug = $(successMessageCont).find('.success-doug');
+      const successDoug = $(successMessageCont).find('.success-doug-img');
       const successText = $(successMessageCont).find('.success-text');
+      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
       const successInfo = $(successMessageCont).find('.success-info');
       // $(successInfo).html('custom success text'); // enable to customize success information
-      $(successText).html('Subscribed <i class="fa fa-check"></i>');
       $(form).slideToggle(400, function() {
         setTimeout(function(){
-          $(successMessageCont).animate({width:'toggle'},400, function() {
-            $(successDoug).animate({width:'toggle',height:'toggle'},400, function() {
-                setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
-            });
+          $(successMessageCont).animate({width:'toggle'},600, function() {
+            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
           });
         }, 200);
         // remove form
@@ -492,18 +481,16 @@ $(document).ready(function() {
       analyticsIdentifyAndTrack(form, "Webinar Subscribed");
       // animate Doug
       const successMessageCont = $($ctaOptions).next().find('.success-message-container');
-      const successDoug = $(successMessageCont).find('.success-doug');
+      const successDoug = $(successMessageCont).find('.success-doug-img');
       const successText = $(successMessageCont).find('.success-text');
+      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
       const successInfo = $(successMessageCont).find('.success-info');
       // $(successInfo).html('custom success text'); // enable to customize success information
-      $(successText).html('Subscribed <i class="fa fa-check"></i>');
       $($ctaOptions).slideToggle();
       $(form).slideToggle(400, function() {
         setTimeout(function(){
           $(successMessageCont).animate({width:'toggle'},600, function() {
-            $(successDoug).animate({width:'toggle',height:'toggle'},400, function() {
-                setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
-            });
+            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
           });
         }, 200);
         // remove form
@@ -554,18 +541,16 @@ $(document).ready(function() {
       analyticsIdentifyAndTrack(form, "Demo Requested");
       // animate Doug
       const successMessageCont = $($ctaOptions).next().find('.success-message-container');
-      const successDoug = $(successMessageCont).find('.success-doug');
+      const successDoug = $(successMessageCont).find('.success-doug-img');
       const successText = $(successMessageCont).find('.success-text');
+      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
       const successInfo = $(successMessageCont).find('.success-info');
       // $(successInfo).html('custom success text'); // enable to customize success information
-      $(successText).html('Requested <i class="fa fa-check"></i>');
       $($ctaOptions).slideToggle();
       $(form).slideToggle(400, function() {
         setTimeout(function(){
           $(successMessageCont).animate({width:'toggle'},600, function() {
-            $(successDoug).animate({width:'toggle',height:'toggle'},400, function() {
-                setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
-            });
+            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
           });
         }, 200);
         // remove form
