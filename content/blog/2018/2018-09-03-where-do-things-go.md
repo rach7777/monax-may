@@ -35,7 +35,7 @@ In my previous post in this series I looked at the extensibility of active agree
 
 ## Defining our puzzle pieces
 
-The object model is, in a nutshell, the placeholders for things. In programming parlance `object models` act similarly to **coat racks**. The let us know, for example, that the "coats" go here, the "hats" go there, and the "umbrellas" go in the other place.
+The object model is, in a nutshell, the placeholders for things. In programming parlance `object models` act similarly to **coat racks**. They let us know, for example, that the "coats" go here, the "hats" go there, and the "umbrellas" go in the other place.
 
 Within the context of the Agreements Network, we provide an established object model for an active agreement (what we call a legally compliant "contract" that runs within the context of the network).
 
