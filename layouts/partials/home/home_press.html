@@ -1,0 +1,47 @@
+{{ with .Site.Data.home.home_press }}
+{{ if .enable }}
+<section class="section-padding-sm section-press">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-12 padding-bottom-sm">
+          <h4 class="grey">{{ .title }}</h4>
+        </div>
+      </div>
+
+      <div class="row flex-grid-sm">
+
+        <div class="col-sm-3 col-xs-6 col-valign-center">
+          <a href="{{ .logo_1_url }}" target="_blank">
+            <img class="img-responsive img-center" src="{{ .logo_1 }}" alt="">
+          </a>
+        </div>
+
+        <div class="col-sm-3 col-xs-6 col-valign-center">
+          <a href="{{ .logo_2_url }}" target="_blank">
+            <img class="img-responsive img-center" src="{{ .logo_2 }}" alt="">
+          </a>
+        </div>
+
+        <div class="clearfix visible-xs-block padding-bottom-sm"></div>
+
+        <div class="col-sm-3 col-xs-6 col-valign-center">
+          <a href="{{ .logo_3_url }}" target="_blank">
+            <img class="img-responsive img-center" src="{{ .logo_3 }}" alt="">
+          </a>
+        </div>
+
+        <div class="col-sm-3 col-xs-6 col-valign-center">
+          <a href="{{ .logo_4_url }}" target="_blank">
+            <img class="img-responsive img-center" src="{{ .logo_4 }}" alt="">
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /.bar -->
+{{ end }}
+{{ end }}

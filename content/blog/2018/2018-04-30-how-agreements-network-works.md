@@ -27,11 +27,11 @@ utm:
 
 In my previous posts I have spoken about
 [why Monax decided to pivot]({{< relref
-"blog/2018/2018-04-26-monax-is-pivoting.md" >}})
+"/blog/2018/2018-04-26-monax-is-pivoting.md" >}})
 away from being a horizontal
 enterprise software provider, and also I spoke about
 [what the Agreements
-Network is]({{< relref "blog/2018/2018-04-27-introducing-agreements-network.md" >}}).
+Network is]({{< relref "/blog/2018/2018-04-27-introducing-agreements-network.md" >}}).
 
 In this post I'd like to speak with some more depth about how the two major
 types of users we envision can use the blockchain-based platform to make their
@@ -121,4 +121,3 @@ tuned for those posts, and in the meantime, please dig deeper into the
 possibilities that the [Agreements Network allows](https://agreements.network).
 
 [Photo](https://unsplash.com/photos/l090uFWoPaI) by [John Carlisle](https://unsplash.com/photos/l090uFWoPaI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-

@@ -70,5 +70,4 @@ Monax have harnessed blockchain technology to bring real change to the business 
 
 The next blog post in this series will cover Active Agreements which are the exciting next step in the evolution of contracting.
 
-<!-- IF NEEDED use the below. Unsplash is recommended for images that have the right licensing. This should be at the end of the post -->
-<!-- [Photo](LINK) by PHOTOGRAPHER on [Unsplash](https://unsplash.com). -->
+[Photo](https://unsplash.com/photos/ahSFjjLru4Y) by [Miguel Souza](https://unsplash.com/photos/ahSFjjLru4Y?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
