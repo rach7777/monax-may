@@ -4,7 +4,7 @@ date:      2018-09-11T00:25:01+01:00
 title:     "Solving problems with Active Agreements: supply chain fraud."
 author:    Nina Kilbride, CCO
 excerpt:   "Using Monax and legal engineering to match fulfillment contracts in the supply chain."
-thumbnail: "check.png"
+thumbnail: "4-way-match.png"
 categories:
   - legal engineering
 tags:
@@ -20,7 +20,7 @@ utm:
 
 ---
 
-{{<image_blog "check.png">}}
+{{<image_blog "4-way-match.png">}}
 
 # Legal Engineering Design Example: Four Way Match for supply chain fraud reduction
 
@@ -64,8 +64,4 @@ These parameters are the same fields required for an invoice, but at a separate 
 
 ## The Result:
 
-Prevention of fraud in the supply chain saves money and enables growth. Automating trade finance means not only efficiency, but certainty and control of operations and risk to unlock trapped value in the supply chain, for example, expanded access to capital via trade receivables finance.
-
-{{<image_blog "4-way-match.png">}}
-
-In our upcoming legal engineering blogs, we will discuss the next steps: integrating the physical, financial and regulatory back end using Monax’s legal process modeling tool, as well as document assembly and more legal product modeling, user stories and more..... Stay tuned!
+Prevention of fraud in the supply chain saves money and enables growth. Automating trade finance means not only efficiency, but certainty and control of operations and risk to unlock trapped value in the supply chain, for example, expanded access to capital via trade receivables finance. In our upcoming legal engineering blogs, we will discuss the next steps: integrating the physical, financial and regulatory back end using Monax’s legal process modeling tool, as well as document assembly and more legal product modeling, user stories and more..... Stay tuned!
