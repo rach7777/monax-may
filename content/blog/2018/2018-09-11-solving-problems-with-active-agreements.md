@@ -4,7 +4,7 @@ date:      2018-09-11T00:25:01+01:00
 title:     "Solving problems with Active Agreements: supply chain fraud."
 author:    Nina Kilbride, CCO
 excerpt:   "Using Monax and legal engineering to match fulfillment contracts in the supply chain."
-thumbnail: "check.png"
+thumbnail: "4-way-match.png"
 categories:
   - legal engineering
 tags:
