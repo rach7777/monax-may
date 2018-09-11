@@ -4,21 +4,13 @@ date:      2018-09-011T00:00:59+01:00
 title:     "Solving problems with Active Agreements: supply chain fraud."
 author:    Nina Kilbride, CCO
 excerpt:   "Using Monax and legal engineering to match fulfillment contracts in the supply chain."
-thumbnail: {{<image_blog "check.png">}}
+thumbnail: "check.png"
 categories:
-  - active agreements
   - legal engineering
-  - supply chain
 tags:
-  - monax
   - agreements network
   - legal products
   - sample archetypes
-
-series:
-  id: active-agreement-samples
-  number: 2
-  about: "This is a series of posts where the marmots will be outlining how the Monax Platform and the Agreements Network can be used in harmony to create the legal products of the future."
 
 draft: false
 utm:
@@ -40,7 +32,7 @@ This post discusses how legal operations that underpin the global supply chain c
 
 ## Modeling a package: 4-way match.
 
-Monax's Legal Product Modeler simplifies the complexities of the global supply chain with FOSS tools. Monax's Legal Product Modeler enables grouping of legal templates and processes in order to connect contracts and fulfillment events together. 
+Monax's Legal Product Modeler simplifies the complexities of the global supply chain with FOSS tools. Monax's Legal Product Modeler enables grouping of legal templates and processes in order to connect contracts and fulfillment events together.
 
 {{<image_blog "supplychain-archetypes.png">}}
 
@@ -76,4 +68,4 @@ Prevention of fraud in the supply chain saves money and enables growth. Automati
 
 {{<image_blog "4-way-match.jpg">}}
 
-In our upcoming legal engineering blogs, we will discuss the next steps: integrating the physical, financial and regulatory back end using Monax’s legal process modeling tool, as well as document assembly and more legal product modeling, user stories and more..... Stay tuned! 
+In our upcoming legal engineering blogs, we will discuss the next steps: integrating the physical, financial and regulatory back end using Monax’s legal process modeling tool, as well as document assembly and more legal product modeling, user stories and more..... Stay tuned!
