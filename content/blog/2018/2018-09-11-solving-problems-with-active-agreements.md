@@ -66,6 +66,6 @@ These parameters are the same fields required for an invoice, but at a separate 
 
 Prevention of fraud in the supply chain saves money and enables growth. Automating trade finance means not only efficiency, but certainty and control of operations and risk to unlock trapped value in the supply chain, for example, expanded access to capital via trade receivables finance.
 
-{{<image_blog "4-way-match.jpg">}}
+{{<image_blog "4-way-match.png">}}
 
 In our upcoming legal engineering blogs, we will discuss the next steps: integrating the physical, financial and regulatory back end using Monax’s legal process modeling tool, as well as document assembly and more legal product modeling, user stories and more..... Stay tuned!
