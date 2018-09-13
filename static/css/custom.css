@@ -3022,6 +3022,28 @@ TEAM ICONS
 
 
 
+/*==================================
+    NAV - MOBILE POPUP REQUEST DEMO FORM
+===================================*/
+.jconfirm.jconfirm-monax-mobile-only .jconfirm-bg {
+  background-color: rgba(0,0,0,0.5);
+}
+.jconfirm.jconfirm-monax-mobile-only .jconfirm-holder {
+  padding: 0 !important;
+}
+.jconfirm.jconfirm-monax-mobile-only .jconfirm-box {
+  padding: 0;
+  background-color: #f7f7f7;
+}
+.jconfirm.jconfirm-monax-mobile-only .jconfirm-box .jconfirm-title-c {
+  display: none !important;
+}
+.jconfirm.jconfirm-monax-mobile-only .jconfirm-box .jconfirm-content-pane {
+  margin: 0;
+  padding: 0;
+}
+
+
 
 
 

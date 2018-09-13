@@ -51,7 +51,7 @@ $(document).ready(function() {
   // DEFINE REQUEST A DEMO POPUP FROM NAV
   const requestDemoPopup = $.dialog({
       lazyOpen: true,
-      theme: 'supervan',
+      theme: 'monax-mobile-only',
       closeIcon: true,
       animation: 'scale',
       title: ' ',
