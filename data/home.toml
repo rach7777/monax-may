@@ -233,7 +233,7 @@
 # [webinar]
 #     enable = false
 #     title = "Sign up for a webinar"
-#     subtitle = "We are making a series of webinars based around what our customers have told us they want to find out... check back here soon or sign up to be informed of upcoming ones."
+#     subtitle = "We are making a series of webinars based around what our customers have told us they want to find out...check back here soon or sign up to be informed of upcoming ones."
 #     show_upcoming = false
 #
 #     [webinar.form]
