@@ -1,7 +1,7 @@
 [top]
     enable = true
     title = "An easy, seamless and secure contracting platform"
-    subtitle = "The platfrom for the future of making and managing agreements"
+    subtitle = "The platform for the future of making and managing agreements"
     img_left = false
     hero_signup = true
     img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
@@ -233,7 +233,7 @@
 # [webinar]
 #     enable = false
 #     title = "Sign up for a webinar"
-#     subtitle = "We are making a series of webinars based around what our customers have told us they want to find out... check back here soon or sign up to be informed of upcoming ones."
+#     subtitle = "We are making a series of webinars based around what our customers have told us they want to find out...check back here soon or sign up to be informed of upcoming ones."
 #     show_upcoming = false
 #
 #     [webinar.form]
