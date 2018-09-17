@@ -1,7 +1,7 @@
 [top]
     enable = true
     title = "An easy, seamless and secure contracting platform"
-    subtitle = "The platfrom for the future of making and managing agreements"
+    subtitle = "The platform for the future of making and managing agreements"
     img_left = false
     hero_signup = true
     img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
