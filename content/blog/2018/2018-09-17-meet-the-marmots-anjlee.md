@@ -1,6 +1,6 @@
 ---
 
-date:      2018-09-014T00:00:59+01:00
+date:      2018-09-17T00:00:59+01:00
 title:     "Meet the Marmots: Anjlee Khurana, Legal Engineer"
 author:    Rachel Davidson, Senior Marketing Associate
 excerpt:   "This is a series of posts where each of our hardworking marmots* have a chance to talk about themselves - what they get up to at Monax and in their wider habitats - so you can understand a bit more about the folk who are bringing the Monax vision to life."
@@ -13,7 +13,7 @@ tags:
   - team
 
 series:
-  id: meet-marmot-blogs
+  id: meet-the-marmots
   number: 1
   about: "This is a series of posts where each of our hardworking marmots * have a chance to talk about themselves - what they get up to at Monax and in their wider habitats - so you can understand a bit more about the folk who are bringing the Monax vision to life."
 
@@ -25,10 +25,8 @@ utm:
 
 ---
 
-<!-- In general the filename below should match thumbnail category above -->
 {{< image_blog "anjlee_hat_marmot.jpg" >}}
 
-<!-- if this article is part of a series, related articles will automatically appear here -->
 {{< blog_series >}}
 
 Monax is bursting at the seams with talent from both tech, legal and business.  Our team is split between offices in London,  Edinburgh and New York - and a few remote marmots too!
@@ -64,7 +62,6 @@ As an attorney I was surrounded by lack of tech and lack of interest in tech. In
 ### Tell us a quirky fact about yourself…
 
 One of my legs is longer than the other.
-
 
 ### Thank you so much Anjlee!
 {{< image_blog "anjlee_yoda_marmot.jpg" >}}
