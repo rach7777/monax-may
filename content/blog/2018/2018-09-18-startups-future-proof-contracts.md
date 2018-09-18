@@ -55,7 +55,7 @@ Next: a suite of business processes are set in motion and subsequently tracked. 
 
 The process above offers far more functionality than an off-the-shelf legal form library. The value lies in the ability to manage and track legal obligations in a more dynamic way, streamline processes and store for future purposes connected records of how and when important documents have been used. This represents a step change from the standard functionality (fill out a form, download a PDF, sign by hand, scan and email to the counterparty). Not only can you automate legal contracting, you can now track every event related to the contract lifecycle and, better still, these events are indelibly recorded on a blockchain for future proof-ed legal operations.
 
-{{image_blog "find-right-contract.png">}}
+{{image_blog "Find-right-contract.png">}}
 
 ### How This Works In Practise
 
