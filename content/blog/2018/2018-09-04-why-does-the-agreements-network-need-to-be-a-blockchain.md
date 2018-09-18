@@ -22,6 +22,11 @@ tags:
   - legal products
   - agreements network
 
+series:
+  id: "general-business-series"
+  number: 1
+  about: "This is a series of posts where the marmots will be outlining how the Monax Platform can be used by a variety of diverse business sectors."
+
 # set draft to 'false' when you're ready to publish
 draft: false
 
@@ -62,7 +67,7 @@ In the past, there was an issue with running contracts collaboratively on comput
 
 #### The Blueprint for Trust
 
-The blockchain ecosystem gives all users the ability to verify events, have visibility on whether an event has occurred and to recall the history of any particular event. This digitisation of transactions allows for a unique blueprint for trust which can be applied to many business situations. Let’s look at this from a legal example: when something goes wrong in the course of a business contract, a huge amount of time and money can be spent digging out papers, pulling PDFs that have been documented in various states of organisation, and then building an evidence dossier to hold up the claim. Imagine if all of the paperwork and evidence was at your fingertips, complete with a transparent record of who did what, when notarized by an ecosystem of non-interested (in that particular contract) parties who had no reason to lie about any of these events?  
+The blockchain ecosystem gives all users the ability to verify events, have visibility on whether an event has occurred and to recall the history of any particular event. This digitisation of transactions allows for a unique blueprint for trust which can be applied to many business situations. Let’s look at this from a legal example: when something goes wrong in the course of a business contract, a huge amount of time and money can be spent digging out papers, pulling PDFs that have been documented in various states of organisation, and then building an evidence dossier to hold up the claim. Imagine if all of the paperwork and evidence was at your fingertips, complete with a transparent record of who did what, when notarized by an ecosystem of non-interested (in that particular contract) parties who had no reason to lie about any of these events?
 
 #### The Anti-Hype
 
