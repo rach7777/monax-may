@@ -4,7 +4,7 @@ $(document).ready(function() {
   // ANALYTICS
   const analyticsIdentifyAndTrack = (form, eventName) => {
     const serialized = Array.isArray(form) ? form : $(form).serializeArray();
-    const formData = {};
+    const formData = { [eventName]: true };
     serialized.forEach((input) => formData[input.name] = input.value);
     if (typeof analytics.user === 'function') formData.userId = analytics.user().id(); // added function check for local environment bug fix
     const method = formData.userId ? 'PUT' : 'POST';
