@@ -18,10 +18,10 @@ tags:
   - team
   - Monax Platform
 
-# series:
-#   id: meet-the-marmots
-#   number: 2
-#   about: "This is a series of posts where each of our hardworking marmots * have a chance to talk about themselves - what they get up to at Monax and in their wider habitats - so you can understand a bit more about the folk who are bringing the Monax vision to life."
+series:
+  id: meet-the-marmots
+  number: 2
+  about: "This is a series of posts where each of our hardworking marmots * have a chance to talk about themselves - what they get up to at Monax and in their wider habitats - so you can understand a bit more about the folk who are bringing the Monax vision to life."
 
 draft: true
 
@@ -49,7 +49,7 @@ I’m big fan of food, all things pink, naps and travel - oh, and cats. Don’t 
 
 ### How did you cross paths with Monax?
 
-Fate. As a complete newbie in the techy world, was researching a bit about artificial intelligence, machine learning, and of course, blockchain, and ended up applying for a non-techy position in this amazing startup. 
+Fate. As a complete newbie in the techy world, was researching a bit about artificial intelligence, machine learning, and of course, blockchain, and ended up applying for a non-techy position in this amazing startup.
 
 ### What’s your background?
 
@@ -59,18 +59,18 @@ Spanish-born-Chinese who, after lawyering over 3 years in different areas and di
 
 In short, to make the Monax platform super-accessible. I regularly test the continuously improving platform to ensure a smooth user journey experience for both producers and consumers. I also lead the internationalization of the platform by enabling the webapp in the two most widely used languages after English (Spanish and Chinese) and I also focus on the diversification of the participating law firms. Once the platform goes live,  I will mainly be helping producers transform their legal knowledge into legal products while teaching consumers how easy and simple it is to acquire high quality yet low cost and time-saving products using the Monax platform.[hyperlink to other setion on site]
 
-### If you had to choose one aspect of our culture that best defines you, which  one would it be and why? 
+### If you had to choose one aspect of our culture that best defines you, which  one would it be and why?
 
 Multiculturality.
 
-Monax is an open-minded company which different cultures people play together and conversations flow smoothly between different teams, while you still get to enjoy your personal passions. 
+Monax is an open-minded company which different cultures people play together and conversations flow smoothly between different teams, while you still get to enjoy your personal passions.
 
 
 This is the company value that also best defines me as an individual. I am committed to my community. I think when we engage others and encourage them to participate, the community gets stronger, both in terms of the commitment of members to each other and also in terms of the commitment of members to the community’s quality of life and the shared values that unite us.
 
 ### What challenges does your role bring and how do you meet them?
 
-Everything is new to me -  the tech world, the role, working for a company where my mother tongue is not the first language… But the legal-tech world is fascinating and completely absorbing for me to learn more about it and about how tech can improve the world, so the trick is persistence, and the belief that with my contribution to the company I will be contributing my own little share of making the world a better place -at least the legal world-. And always, speaking with a colleague, they will help giving valuable ideas, and if not, there always is a friendly marmot hug.  
+Everything is new to me -  the tech world, the role, working for a company where my mother tongue is not the first language… But the legal-tech world is fascinating and completely absorbing for me to learn more about it and about how tech can improve the world, so the trick is persistence, and the belief that with my contribution to the company I will be contributing my own little share of making the world a better place -at least the legal world-. And always, speaking with a colleague, they will help giving valuable ideas, and if not, there always is a friendly marmot hug.
 
 ### Tell us a quirky fact about yourself…
 
