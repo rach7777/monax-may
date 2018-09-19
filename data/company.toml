@@ -92,6 +92,18 @@
     select = "remote" #set to edn, lon, nyc, remote or none
     img = "/img/assets/cities/office-remote.png"
 
+[[team.item]]
+      name = "Greg Hill"
+      position = "Site Reliability Engineer"
+      weight = 104
+      location = "edn" #set to edn, lon, nyc, remote or none
+      img = "/img/team/team-gh.jpg"
+      twitter = "https://twitter.com/gregorydhill"
+      linkedin = "https://www.linkedin.com/in/gregorydhill95/"
+      keybase = "https://keybase.io/gregdhill"
+      github = "https://github.com/gregdhill"
+      website = "https://www.greghill.io/"
+      
  [[team.item]]
      name = "Anjlee Khurana"
      position = "Legal Engineer"
@@ -177,7 +189,7 @@
     [[team.item]]
       name = "Mel Roy"
       position = "Operations Manager"
-      weight = 104
+      weight = 105
       location = "edn" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-mr.jpg"
       twitter = "https://twitter.com/melaniemoar"
@@ -200,7 +212,7 @@
     [[team.item]]
       name = "Ommi Shimizu"
       position = "Full Stack Engineer"
-      weight = 105
+      weight = 106
       location = "nyc" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-os.jpg"
       # twitter = "#"
@@ -223,7 +235,7 @@
     [[team.item]]
       name = "Rachel Davidson"
       position = "Senior Marketing Associate"
-      weight = 106
+      weight = 107
       location = "edn" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-rd.jpg"
       twitter = "https://twitter.com/Cryptojourno_uk"
@@ -259,7 +271,7 @@
     [[team.item]]
       name = "Sean Young"
       position = "Platform Engineer"
-      weight = 108
+      weight = 109
       location = "lon" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-sy.jpg"
       twitter = "https://twitter.com/iamseanyoung"
