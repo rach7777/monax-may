@@ -4,7 +4,7 @@ date:      2018-09-11T00:25:01+01:00
 title:     "The Monax Stack: What Makes Legal Products Go."
 author:    Nina Kilbride, CCO
 excerpt:   "An overview of the free and open-source components of the Monax Stack."
-thumbnail: "-----.png"
+thumbnail: "maglev.jpg"
 categories:
   - legal engineering
 tags:
@@ -20,7 +20,7 @@ utm:
 
 ---
 
-{{<image_blog " -----.png">}}
+{{<image_blog "maglev.jpg">}}
 
 # The Monax Stack: What Makes Legal Products Go
 
@@ -29,6 +29,8 @@ One critical feature of the Monax stack is that it is composed almost entirely o
 The Monax stack has grown out of a longstanding mission: to simplify processes over the legal contract lifecycle that help businesses startup, succeed and grow. This means building a best-in-class stack of tools that performs interoperably with growing ecosystems, from the ground up, where necessary. Combined, these tools create the necessary infrastructure layer for companies and lawyers to answer the question: “what if legal agreements could talk to each other?”
 
 The next question is, “how does it work?” The Monax stack is composed of a number of tools that combine to deliver the infrastructure necessary to create the **legal layer for networked commerce.** The Monax Platform offers users a suite of tools to help them grow their value propositions with legal products. Monax Platform tools are user-friendly products that make it easy to get started running and maintaining digital legal products.
+
+{{<image_blog "monax-stack-simple.png">}}
 
 ## The Monax Platform
 
@@ -72,3 +74,5 @@ Vent, built by Monax, enables caching and querying of solidity smart contracts. 
 One critical feature of the Monax stack is that it is composed almost entirely of free and open-source tools. Open-source codebase means quick iteration and auditability and forensic validation of operations, while encryption of content enables protection of valuable data.
 
 That’s it, the Monax stack for  legal contracts that can “talk to each other!”! To find out more, contact us for a demo.
+
+[Photo](https://www.flickr.com/photos/salim/18693202) by Salim Vijri on [Flickr](https://www.flickr.com/).
