@@ -38,7 +38,9 @@ The next question is, “how does it work?” The Monax stack is composed of a n
 
 The Monax LPM is a product-authoring engine that enables legal template producers to design and deploy smart contracts on the Agreements Network. The LPM combines several user needs into one tool. First, it memorializes a prose template of complete legal terms and conditions associated with a contract. Second, the modeler connects that template with a set of parameters, which are the data points that will need tracking during the lifecycle of an Active Agreement. These parameters are then used to design process models conforming to Business Process Modeling Notation (BPMN). The Monax LPM converts BPMN files to Solidity code, deployed and operated using the Agreements Network. Because BPMN is a well-adopted, open-source standard, it serves as an interoperable model for designing, deploying and proving
 legally significant processes on The Agreements Network.
+
 [More about building legal products by Casey Kuhlman.](https://monax.io/blog/2018/09/03/example-active-agreement-what-goes-where/)
+
 [More about BPMN for legal product by Jan Henrik Scheufen and Nina Kilbride.](https://www.hyperledger.org/blog/2018/08/16/business-process-modeling-the-missing-link-between-legal-know-how-and-blockchain-based-legal-products)
 
 ### Monax Smart Contracts Suite
@@ -73,6 +75,31 @@ Vent, built by Monax, enables caching and querying of solidity smart contracts. 
 
 One critical feature of the Monax stack is that it is composed almost entirely of free and open-source tools. Open-source codebase means quick iteration and auditability and forensic validation of operations, while encryption of content enables protection of valuable data.
 
-That’s it, the Monax stack for  legal contracts that can “talk to each other!”! To find out more, contact us for a demo.
+That’s it, the Monax stack for  legal contracts that can “talk to each other!” To find out more, contact us for a demo.
+
+If you want to learn more about how Monax can help you focus on your business instead of drowning in legal hassle - sign up to a demo below!
+
+<form id="nav-signup" class="form">
+  <div class="underline-sm padding-bottom-sm">
+    <h3>Request A Demo With The Team</h3>
+  </div>
+  <div class="form-fields">
+    <input type="text" name="source" value="nav signup" class="hidden">
+    <input type="text" placeholder="Email" name="email" class="field-email">
+    <input type="text" placeholder="First Name" name="firstName" class="field-fname">
+    <input type="text" placeholder="Last Name" name="lastName" class="field-lname">
+    <input type="text" placeholder="Company Name" name="company" class="field-company">
+    <button type="submit" value="Submit" class="btn btn-xl field-submit">
+      <span>Request A Demo</span>
+    </button>
+  </div>
+  <div class="success-message-container"> <!-- must be directly after form -->
+    <div class="success-message">
+      <img class="success-doug-img" src="/img/assets/doug/doug_lo.png" alt="Doug">
+      <span class="success-text">Requested <i class="fa fa-check"></i></span>
+    </div>
+    <p class="success-info" style="margin-top: 20px;">Thanks for getting in touch! We'll get back to you soon.</p>
+  </div>
+</form>
 
 [Photo](https://www.flickr.com/photos/salim/18693202) by Salim Vijri on [Flickr](https://www.flickr.com/).
