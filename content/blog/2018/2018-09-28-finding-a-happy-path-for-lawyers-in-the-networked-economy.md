@@ -2,7 +2,7 @@
 
 # Pretty normal stuff
 date:       2018-09-28T00:00:00+00:00
-title:     "Finding a happy path for lawyers in the networked economy."
+title:     "Finding a happy path for lawyers in the networked economy"
 author:    "Anjlee Khurana, Senior Legal Engineering and Implementation Associate"
 excerpt:   "Developers like to talk about the \"happy path,\" that is, the way things are supposed to work in the usual course of business using technology. Happy paths can exist in law too, but the happy path is rarely where lawyers get to spend their time."
 
@@ -29,9 +29,9 @@ utm:
 
 Developers like to talk about the "happy path," that is, the way things are supposed to work in the usual course of business using technology. Happy paths can exist in law too, but the happy path is rarely where lawyers get to spend their time.
 
-Attorneys regularly complain about missed opportunities to prevent problems, i.e., preparation to be on a "happy path." Attorneys wish their clients had spent $5,000 setting their affairs properly in the first place rather than $20,000 to try to clean up the mess down the line. In essence, attorneys wish they could help clients find happy paths rather than later approaching their attorney in distress the attorney can do only so much to alleviate.
+Attorneys regularly complain about missed opportunities to prevent problems i.e., preparation to be on a "happy path." Attorneys wish their clients had spent $5,000 setting their affairs properly in the first place rather than $20,000 to try to clean up the mess down the line. In essence, attorneys wish they could help clients find happy paths rather than later approaching their attorney in distress - the attorney can do only so much to alleviate.
 
-Lawyers spend far less time thinking about their own happy path. Because their interests typically align with their clients’ interests, a happy outcome for clients is part of the lawyer’s own happy path: it makes the lawyer’s job easier and allows the lawyer to do his or her best for clients. But what if lawyers could do better still? Is there a still happier path in view?
+Lawyers spend far less time thinking about their own happy path. Because their interests typically align with their clients’ interests, a happy outcome for clients is part of the lawyer’s own happy path: it makes the lawyer’s job easier and allows them to do his or her best for clients. But what if lawyers could do better still? Is there a still happier path in view?
 
 ## What if lawyers could create automated legal products?
 
@@ -70,7 +70,7 @@ When an attorney can advise a client or potential client on which template is be
 
 I don’t know about trickle down, but I can bear witness to seeping in all directions. The legal industry is not immune to the disruptive forces and efficiency overhauls affecting the industries where our clients work. Any transactional attorney whose clients have faced the threat of extinction has had to embrace efficiency as an important and relevant measure of the quality of legal services. If we, as attorneys, do not take a hand in the overhaul of our own industry, we will lose our opportunity to ensure the quality of legal services going forward.
 
-The Agreements Network gives attorneys the agency they need. Using the [Agreements Network](https://agreements.network/), attorneys can vet and even design legal products to their own specifications. With the Monax Stack, attorneys WILL have the chance to play a part in how legal products transform both their own practices and the practice of law in general.
+The [Agreements Network](https://agreements.network/) gives attorneys the agency they need. Using the Network, attorneys can vet and even design legal products to their own specifications. With the Monax Stack, attorneys WILL have the chance to play a part in how legal products transform both their own practices and the practice of law in general.
 
 If you want to learn more about how Monax can help you grow on a happy path, contact us for a demo today!
 
