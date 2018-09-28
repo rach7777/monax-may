@@ -27,8 +27,6 @@ utm:
 
 {{< image_blog "happy_path.jpeg" >}}
 
-Developers like to talk about the "happy path," that is, the way things are supposed to work in the usual course of business using technology. Happy paths can exist in law too, but the happy path is rarely where lawyers get to spend their time.
-
 Attorneys regularly complain about missed opportunities to prevent problems i.e., preparation to be on a "happy path." Attorneys wish their clients had spent $5,000 setting their affairs properly in the first place rather than $20,000 to try to clean up the mess down the line. In essence, attorneys wish they could help clients find happy paths rather than later approaching their attorney in distress - the attorney can do only so much to alleviate.
 
 Lawyers spend far less time thinking about their own happy path. Because their interests typically align with their clients’ interests, a happy outcome for clients is part of the lawyer’s own happy path: it makes the lawyer’s job easier and allows them to do his or her best for clients. But what if lawyers could do better still? Is there a still happier path in view?
