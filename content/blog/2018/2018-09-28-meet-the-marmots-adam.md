@@ -1,6 +1,6 @@
 ---
 
-date:      2018-09-28T00:00:59+01:00
+date:      2018-10-05T00:00:59+01:00
 title:    "Meet the Marmots: Adam Locklin, Director of Partnerships"
 author:   Rachel Davidson, Senior Marketing Associate
 excerpt:   "This is a series of posts where each of our hardworking marmots* have a chance to talk about themselves - what they get up to at Monax and in their wider habitats - so you can understand a bit more about the folks who are bringing the Monax vision to life."

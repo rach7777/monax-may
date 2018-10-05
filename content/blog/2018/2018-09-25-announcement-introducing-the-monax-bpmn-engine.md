@@ -15,6 +15,7 @@ thumbnail: alex-holyoake-60250-unsplash.png
 # check the categories on the existing blog. should only have ONE
 categories:
   - announcements
+  - press
 
 # tags should be meaningful for your blog. if you want this article to show on a 'use case' page, you can use
 # the following TAGS -  'fleetleasing' 'contentcreators' 'lawyers' or 'corporate'
@@ -22,6 +23,8 @@ tags:
   - legal products
   - agreements network
   - monax
+  - smart contracts
+  - announcements
 
 # set draft to 'false' when you're ready to publish
 draft: false
