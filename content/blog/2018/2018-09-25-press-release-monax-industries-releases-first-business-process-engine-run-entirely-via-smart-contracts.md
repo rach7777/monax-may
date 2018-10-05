@@ -11,6 +11,7 @@ thumbnail: monax-press-release.png
 
 categories:
   - Announcements
+  - press
 
 tags:
   - legal products
