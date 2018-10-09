@@ -39,7 +39,7 @@ Cool idea! How do get it done? Here’s where design thinking, legal engineering
 
 ## Monax Legal Product Modeler turns legal contracts into Active Agreements.
 
-**Pick a starting point.** While sometimes it makes sense to start at the beginning, in a solution as complex and variable as the supply chain, it’s often simpler to pick a pain point with finite inputs, outputs and metrics of success. That way, ecosystem design evolution is agile, iterative, and capable of evolving quickly in a rapidly changing world. As an example, building on the 4-way supply chain match, we can model how an Active Agreement turns a moment in a contract lifecycle (in this instance, purchase order approval) into reliable, actionable, cash forecasting, as reflected in the integrated supply chain diagram above.
+**Pick a starting point.** While sometimes it makes sense to start at the beginning, in a solution as complex and variable as the supply chain, it’s often simpler to pick a pain point with finite inputs, outputs and metrics of success. That way, ecosystem design is agile, iterative, and capable of evolving quickly in a rapidly changing world. As an example, building on the 4-way supply chain match, we can model how an Active Agreement turns a moment in a contract lifecycle (in this instance, purchase order approval) into reliable, actionable, cash forecasting, as reflected in the integrated supply chain diagram above.
 
 Cash flow forecasting enables a business to predict and manage its revenue and investment needs. By giving an instant window on approval of purchase orders, an automated smart cash forecasting report can help businesses plan better and operate more efficiently.
 
