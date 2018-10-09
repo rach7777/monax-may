@@ -45,7 +45,7 @@ Cash flow forecasting enables a business to predict and manage its revenue and i
 
 To build an Active Agreement that communicates with cash forecasting utilities, we begin with a basic purchase order Archetype, which consists of a prose template, a set of parameters, a formation workflow (buyer places purchase order) and an execution workflow (seller approves purchase order). The cash forecast message adds an additional execution step to the archetype: sending a verified message about terms and conditions to the cash forecasting recipient. Digital legal processes and proof mean the cash forecast has reliable foundations and can support good business decisions.
 
-{{<image_blog "purchase-order-cash-forecast.png>"}}
+{{<image_blog "purchase-order-cash-forecast.png">}}
 
 Voila, one more step in the integrated supply chain executed!
 
