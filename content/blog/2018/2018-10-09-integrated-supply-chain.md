@@ -1,6 +1,6 @@
 ---
 
-date:      2018-10-09 T00:25:01+01:00
+date:      2018-09-10T00:00:00Z
 title:     "Integrating Supply Chain Agreements with Legal Products."
 author:    Nina Kilbride, CCO
 excerpt:   "how Active Agreements bring the integrated supply chain to life."
