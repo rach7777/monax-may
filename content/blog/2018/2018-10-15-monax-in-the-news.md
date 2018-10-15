@@ -96,7 +96,7 @@ Here is the list of our most recent press:
 
 - Fintek News: [Leaders in Blockchain, Law and Legal Technology Team Up to Launch the Agreements Network](http://finteknews.com/leaders-in-blockchain-law-and-legal-technology-team-up-to-launch-the-agreements-network/) (07/26/18)
 
-- Washington Business Journal: [Leaders in Blockchain, Law and Legal Technology Team Up to Launch the Agreements (07/26/18)
+- Washington Business Journal: [Leaders in Blockchain, Law and Legal Technology Team Up to Launch the Agreements Network](https://www.bizjournals.com/washington/prnewswire/press_releases/Washington/2018/07/26/NY63804?ana=prnews) (07/26/18)
 
 - FSTech.co.uk: [Law and FinTech combine for blockchain network](http://www.fstech.co.uk/fst/Agreements_Network_Law_FinTech_Collaboration.php) (07/26/18)
 
