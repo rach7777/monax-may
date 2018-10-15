@@ -10,7 +10,7 @@ excerpt:   "Monax has been in the press a lot this year - here's a list of the h
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: elijah.odonnell.jpg
+thumbnail: elijah-odonnell.jpg
 
 # check the categories on the existing blog. should only have ONE
 categories:
