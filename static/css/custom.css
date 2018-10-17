@@ -1127,6 +1127,7 @@ form label.error {
   font-weight: 400;
   color: #fff;
   white-space: normal;
+  border-radius: 5px;
 }
 .btn:hover,
 .btn:focus,
@@ -2913,6 +2914,12 @@ TEAM ICONS
 }
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+  .navbar ul.nav > li > a {
+    padding-left: 6px;
+    padding-right: 6px;
+    letter-spacing: 0.04em;
+    /**/
+  }
   .navbar ul.nav > li > a:hover {
       border-color: transparent;
   }
@@ -2926,6 +2933,10 @@ TEAM ICONS
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+  .navbar ul.nav > li > a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .navbar ul.nav > li > a:hover {
       border-color: #95b85d;
   }
@@ -2934,12 +2945,20 @@ TEAM ICONS
       border-color: #95b85d;
   }
 }
+@media only screen and (min-width : 1200px) {
+  .navbar ul.nav > li > a {
+    padding-left: 15px;
+    padding-right: 15px;
+    letter-spacing: 0.08em;
+  }
+}
 
 /* NAV button */
 .navbar .nav-button {
     display: block;
     text-align: left;
     padding: 12px 15px;
+    border-radius: 5px;
 }
 .navbar .nav-button {
   background-color: #96B85D;
