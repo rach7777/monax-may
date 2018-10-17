@@ -499,10 +499,10 @@ form label.error {
 }
 /* footer signup form */
 .signup-footer form {
-  flex-direction: column;
+  flex-direction: row;
 }
 .signup-footer form input {
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px 0 0 5px;
   padding: 8px 14px;
   font-size: 14px;
   min-width: auto;
@@ -510,11 +510,11 @@ form label.error {
   height: auto;
 }
 .signup-footer form button {
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 5px 5px 0;
   font-size: 16px;
   padding: 8px 14px;
   height: auto;
-  width: 100%;
+  /* width: 100%; */
 }
 
 /* nav signup form */
@@ -2295,11 +2295,11 @@ transform: scale(1.05) !important;
   }
 }
 .ul-footer-icons li {
-    margin-right: 6px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 16px;
+    margin-right: 4px;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
 }
 
 .ul-no-list {
@@ -3319,10 +3319,24 @@ TEAM ICONS
 }
 #footer h4 {
     font-weight: 400;
+    margin-bottom: 20px;
 }
 #footer hr {
     border-color: #555555;
     max-width: 90%;
+}
+#footer ul {
+    margin-bottom: 5px;
+}
+#footer ul a {
+    color: #999999;
+}
+#footer ul a:hover,
+#footer ul a:focus {
+    color: #eeeeee;
+}
+#footer .ul-footer-menu li {
+    padding-bottom: 5px;
 }
 
 #copyright {

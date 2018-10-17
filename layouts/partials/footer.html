@@ -5,50 +5,18 @@
 
         <div class="row">
 
-          {{ with .about }}
-          {{ if .enable }}
-
-          <div class="col-md-3 col-sm-6">
-            <div class="content-container padding-bottom-sm padding-top-xs">
-              <a href="{{ .Site.Params.baseurl }}" title="{{ .Site.Params.title }}">
-                <img id="footer-logo" class="img-responsive img-left-sm" src="{{ .footer_logo }}" alt="{{ .Site.Params.title }}">
-              </a>
-            </div>
-            <p class="range-left-sm">
-              {{ .subtitle | markdownify }}
-              <br>
-              {{ if .enable_request_demo }}
-                <a href="#" id="request-demo-footer">{{ .request_demo_title }}</a>
-              {{ end }}
-              {{ range $i, $p := .link }}
-                &nbsp;|&nbsp;&nbsp;<a href="{{ .link_url }}">{{ .link_title }}</a>
-              {{ end }}
-            </p>
-
-            <div class="ul-left-sm flex-grid-sm btn-container range-left-md">
-              <ul class="ul-round-icons ul-footer-icons">
-                {{ range .social_icon }}
-                  <a href="{{ .link }}" target="_blank"><li><i class='fa {{ .icon }}'></i></li></a>
-                {{ end }}
-              </ul>
-            </div>
-
-            <hr class="hidden-md hidden-lg hidden-sm">
-          </div>  <!-- .col -->
-
-          {{ end }}
-          {{ end }}
-
-          {{ with .col_2 }}
+          {{ with .col_1 }}
           {{ if .enable }}
 
             <div class="col-md-3 col-sm-6">
               <div class="range-left-sm">
                 <h4>{{ .title }}</h4>
               </div>
-              <p class="range-left-sm">
-                {{ .subtitle | markdownify }}
-              </p>
+              {{ with .subtitle }}
+                <p class="range-left-sm">
+                  {{ . | markdownify }}
+                </p>
+              {{ end }}
               {{ if .enable_newsletter_signup_form }}
                 {{ partial "_global/footer_newsletter.html" . }}
               {{ end }}
@@ -56,6 +24,30 @@
               <hr class="hidden-md hidden-lg hidden-sm">
             </div>  <!-- .col -->
 
+          {{ end }}
+          {{ end }}
+
+          {{ with .col_2 }}
+          {{ if .enable }}
+
+          <div class="col-md-3 col-sm-6">
+            <div class="range-left-sm">
+              <h4>{{ .title }}</h4>
+            </div>
+            {{ with .subtitle }}
+              <p class="range-left-sm">
+                {{ . | markdownify }}
+              </p>
+            {{ end }}
+            <ul class="ul-footer-menu">
+              {{ range $i, $p := .link }}
+                <li>
+                  <a href="{{ .link_url }}">{{ .link_title }}</a>
+                </li>
+              {{ end }}
+            </ul>
+            <hr class="hidden-md hidden-lg hidden-sm">
+          </div>  <!-- .col -->
 
           {{ end }}
           {{ end }}
@@ -69,9 +61,18 @@
             <div class="range-left-sm">
               <h4>{{ .title }}</h4>
             </div>
-            <p class="range-left-sm">
-              {{ .subtitle | markdownify }}
-            </p>
+            {{ with .subtitle }}
+              <p class="range-left-sm">
+                {{ . | markdownify }}
+              </p>
+            {{ end }}
+            <ul class="ul-footer-menu">
+              {{ range $i, $p := .link }}
+                <li>
+                  <a href="{{ .link_url }}">{{ .link_title }}</a>
+                </li>
+              {{ end }}
+            </ul>
             <hr class="hidden-md hidden-lg hidden-sm">
           </div>  <!-- .col -->
 
@@ -85,9 +86,27 @@
             <div class="range-left-sm">
               <h4>{{ .title }}</h4>
             </div>
-            <p class="range-left-sm">
-              {{ .subtitle | markdownify }}
-            </p>
+            {{ with .subtitle }}
+              <p class="range-left-sm">
+                {{ . | markdownify }}
+              </p>
+            {{ end }}
+            <ul class="ul-footer-menu">
+              {{ range $i, $p := .link }}
+                <li>
+                  <a href="{{ .link_url }}">{{ .link_title }}</a>
+                </li>
+              {{ end }}
+            </ul>
+
+            <div class="ul-left-sm flex-grid-sm btn-container range-left-md">
+              <ul class="ul-round-icons ul-footer-icons">
+                {{ range .social_icon }}
+                  <a href="{{ .link }}" target="_blank"><li><i class='fa {{ .icon }}'></i></li></a>
+                {{ end }}
+              </ul>
+            </div>
+
             <hr class="hidden-md hidden-lg hidden-sm">
           </div>  <!-- .col -->
 
