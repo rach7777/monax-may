@@ -11,135 +11,141 @@
 
         {{ with .form }}
 
-        <div class="form-container padding-bottom-md">
-          <form id="main-cta-section" class="form form-main-cta">
-            <input type="text" name="source" value="main cta" class="hidden">
-            <div class="content-container padding-bottom-sm">
-              <p>
-                I'm working in the
-                <span class="label-container">
-                  <label for="userIndustry" class="select-wrap">
-                    <select id="userIndustry" name="industry" class="form-control resizeselect">
-                      {{ range $i, $p := sort .industry_options }}
+          <div class="form-container padding-bottom-md">
+            <form id="main-cta-section" class="form form-main-cta">
+              <input type="text" name="source" value="main cta" class="hidden">
+              <div class="content-container padding-bottom-sm">
+                <p>
+                  I'm working in the
+                  <span class="label-container">
+                    <label for="userIndustry" class="select-wrap">
+                      <select id="userIndustry" name="industry" class="form-control resizeselect">
+                        <optgroup>
+                          {{ range $i, $p := sort .industry_options }}
+                            {{ if eq $i 0 }}
+                              <option selected="">{{ . }}</option>
+                            {{ else }}
+                              <option>{{ . }}</option>
+                            {{ end }}
+                          {{ end }}
+                        </optgroup>
+                      </select>
+                    </label>
+                  </span>
+                </p>
+                <p>
+                  and I
+                  <label for="userFrequency" class="select-wrap">
+                    <select id="userFrequency" name="frequency" class="form-control resizeselect">
+                      <optgroup>
+                      {{ range $i, $p := .usage_options }}
+                        {{ if eq $i 1 }}
+                          <option selected="">{{ . }}</option>
+                        {{ else }}
+                          <option>{{ . }}</option>
+                        {{ end }}
+                      {{ end }}
+                      </optgroup>
+                    </select>
+                  </label>
+                  a contract management platform,
+                </p>
+                <p>
+                  needing to make
+                  <label for="userAgreementsType" class="select-wrap">
+                    <select id="userAgreementsType" name="agreementsType" class="form-control resizeselect">
+                      <optgroup>
+                      {{ range $i, $p := sort .agreement_options }}
                         {{ if eq $i 0 }}
                           <option selected="">{{ . }}</option>
                         {{ else }}
                           <option>{{ . }}</option>
                         {{ end }}
                       {{ end }}
+                    </optgroup>
                     </select>
                   </label>
-                </span>
-              </p>
-              <p>
-                and I
-                <label for="userFrequency" class="select-wrap">
-                  <select id="userFrequency" name="frequency" class="form-control resizeselect">
-                    {{ range $i, $p := .usage_options }}
-                      {{ if eq $i 1 }}
-                        <option selected="">{{ . }}</option>
-                      {{ else }}
-                        <option>{{ . }}</option>
-                      {{ end }}
-                    {{ end }}
-                  </select>
-                </label>
-                a contract management platform,
-              </p>
-              <p>
-                needing to make
-                <label for="userAgreementsType" class="select-wrap">
-                  <select id="userAgreementsType" name="agreementsType" class="form-control resizeselect">
-                    {{ range $i, $p := sort .agreement_options }}
-                      {{ if eq $i 0 }}
-                        <option selected="">{{ . }}</option>
-                      {{ else }}
-                        <option>{{ . }}</option>
-                      {{ end }}
-                    {{ end }}
-                  </select>
-                </label>
-              </p>
-              <!-- ENABLE ONCE BETA IS LIVE
-                  and we need to make
-                  <span class="label-container">
-                    <label for="userAgreementsType" class="select-wrap">
-                      <select id="userAgreementsType" name="agreementsType" class="form-control resizeselect">
-                        {{ range $i, $p := sort .agreement_options }}
-                          {{ if eq $i 0 }}
-                            <option selected="">{{ . }}</option>
-                          {{ else }}
-                            <option>{{ . }}</option>
-                          {{ end }}
-                        {{ end }}
-                      </select>
-                    </label>
-                  </span>
                 </p>
-                <p>
-                  typically
-                  <span class="label-container">
-                    <label for="userFrequency" class="select-wrap">
-                      <select id="userFrequency" name="frequency" class="form-control resizeselect">
-                        {{ range $i, $p := .frequency_options }}
-                          {{ if eq $i 1 }}
-                            <option selected="">{{ . }}</option>
-                          {{ else }}
-                            <option>{{ . }}</option>
+                <!-- ENABLE ONCE BETA IS LIVE
+                    and we need to make
+                    <span class="label-container">
+                      <label for="userAgreementsType" class="select-wrap">
+                        <select id="userAgreementsType" name="agreementsType" class="form-control resizeselect">
+                          {{ range $i, $p := sort .agreement_options }}
+                            {{ if eq $i 0 }}
+                              <option selected="">{{ . }}</option>
+                            {{ else }}
+                              <option>{{ . }}</option>
+                            {{ end }}
                           {{ end }}
+                        </select>
+                      </label>
+                    </span>
+                  </p>
+                  <p>
+                    typically
+                    <span class="label-container">
+                      <label for="userFrequency" class="select-wrap">
+                        <select id="userFrequency" name="frequency" class="form-control resizeselect">
+                          {{ range $i, $p := .frequency_options }}
+                            {{ if eq $i 1 }}
+                              <option selected="">{{ . }}</option>
+                            {{ else }}
+                              <option>{{ . }}</option>
+                            {{ end }}
+                          {{ end }}
+                        </select>
+                      </label>
+                    </span>
+                  </p>
+                </div> -->
+                <div class="row hide-until-active">
+                  <div class="col-md-8 col-md-offset-2">
+                    {{ with .email }}
+                      <input type="text" placeholder="Email" name="email" class="field-email">
+                    {{ end }}
+                    {{ if or .fname .lname }}
+                      <div class="content-container clearfix">
+                        {{ with .fname }}
+                          <input type="text" placeholder="First Name" name="firstName" class="input-half field-fname">
                         {{ end }}
-                      </select>
-                    </label>
-                  </span>
-                </p>
-              </div> -->
-              <div class="row hide-until-active">
-                <div class="col-md-8 col-md-offset-2">
-                  {{ with .email }}
-                    <input type="text" placeholder="Email" name="email" class="field-email">
-                  {{ end }}
-                  {{ if or .fname .lname }}
-                    <div class="content-container clearfix">
-                      {{ with .fname }}
-                        <input type="text" placeholder="First Name" name="firstName" class="input-half field-fname">
-                      {{ end }}
-                      {{ with .lname }}
-                        <input type="text" placeholder="Last Name" name="lastName" class="input-half field-lname">
-                      {{ end }}
-                    </div>
-                  {{ end }}
-                  {{ with .company_name }}
-                    <input type="text" placeholder="Company Name" name="company" class="field-company">
+                        {{ with .lname }}
+                          <input type="text" placeholder="Last Name" name="lastName" class="input-half field-lname">
+                        {{ end }}
+                      </div>
+                    {{ end }}
+                    {{ with .company_name }}
+                      <input type="text" placeholder="Company Name" name="company" class="field-company">
+                    {{ end }}
+                  </div>
+                </div>
+
+                <div class="btn-container" style="">
+                  <button type="submit" class="btn btn-primary btn-xl" role="button">{{ .submit_button_text }}</button>
+                  {{ if .enable_button_two }}
+                    {{ if .show_button_separator }}
+                      <span class="button-divider">or</span>
+                    {{ end }}
+                    <a href="{{ .button_two_url }}" class="btn btn-primary btn-xl" role="button">{{ .button_two_text }}</a>
                   {{ end }}
                 </div>
+
               </div>
+            </form>
 
-              <div class="btn-container" style="">
-                <button type="submit" class="btn btn-primary btn-xl" role="button">{{ .submit_button_text }}</button>
-                {{ if .enable_button_two }}
-                  {{ if .show_button_separator }}
-                    <span class="button-divider">or</span>
-                  {{ end }}
-                  <a href="{{ .button_two_url }}" class="btn btn-primary btn-xl" role="button">{{ .button_two_text }}</a>
-                {{ end }}
-              </div>
-
-            </div>
-          </form>
-
-          <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-              <div class="success-message-container"> <!-- must be directly after form -->
-                <div class="success-message">
-                  <img class="success-doug-img" src="/img/assets/doug/doug_lo.png" alt="Doug">
-                  <span class="success-text">Requested <i class="fa fa-check"></i></span>
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <div class="success-message-container"> <!-- must be directly after form -->
+                  <div class="success-message">
+                    <img class="success-doug-img" src="/img/assets/doug/doug_lo.png" alt="Doug">
+                    <span class="success-text">Requested <i class="fa fa-check"></i></span>
+                  </div>
+                  <p class="success-info" style="margin-top: 20px;">Thanks for getting in touch! We'll get back to you soon.</p>
                 </div>
-                <p class="success-info" style="margin-top: 20px;">Thanks for getting in touch! We'll get back to you soon.</p>
               </div>
             </div>
-          </div>
 
-        </div> <!-- .form-container -->
+          </div> <!-- .form-container -->
 
         {{ end }}
 

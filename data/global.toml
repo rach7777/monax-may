@@ -99,7 +99,7 @@
     logo_3_url = "https://www.ledgerinsights.com/agreements-network-legal-blockchain-contracts/"
 
 [cta]
-    title = "Find your first-class agreement now"
+    title = "<strong>Let your contracts work for you</strong>"
 
     [cta.form]
       enable = true

@@ -344,6 +344,9 @@ form label.error {
     text-align: center;
     display: inline;
 }
+.form-main-cta optgroup { /* fix for chrome bug where the select options are too large */
+    font-size: 16px;
+}
 .form-main-cta select {
     outline: none;
     background-image: none;
@@ -368,7 +371,7 @@ form label.error {
     pointer-events: all;
     cursor: pointer;
 }
-.select-error select {
+.form-main-cta .select-error select {
     border-color: #d21111;
 }
 .form-main-cta select:focus {
@@ -395,6 +398,27 @@ form label.error {
     padding: 10px;
     font-size: 20px;
 }
+/* support for white background */
+.form-main-cta.form-white {
+    background: none;
+}
+.form-main-cta.form-white select {
+    color: #444444;
+    border-bottom: 3px solid #e8e8e8;
+}
+.form-main-cta.form-white .select-wrap:after {
+    color: rgba(183, 183, 183, 0.8);
+}
+.form-main-cta.form-white select:focus,
+.form-main-cta.form-white .select-wrap.chosen select {
+    border-bottom: 3px solid #95b85d;
+}
+.form-main-cta.form-white .select-wrap.chosen:after {
+    color: rgba(183, 183, 183, 0.6);
+}
+.form-main-cta.form-white .select-error select {
+    border-color: #d21111;
+}
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
     .section-cta .form-main-cta p {
@@ -416,13 +440,13 @@ form label.error {
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
   .section-cta .form-main-cta p {
-      font-size: 26px;
+      font-size: 22px;
   }
   .label-container {
     display: inline;
   }
   .form-main-cta select {
-      font-size: 26px;
+      font-size: 22px;
   }
 }
 

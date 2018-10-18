@@ -15,16 +15,18 @@
 
         </header>
 
-        {{ partial "features/top.html" . }}
+        {{ partial "features/features_top.html" . }}
 
-        {{ partial "features/feature.html" . }}
+        {{ partial "features/features_new.html" . }}
 
-        {{ partial "features/examples.html" . }}
+        {{ partial "features/workflow.html" . }}
+
+        <!-- {{ partial "features/examples.html" . }} -->
 
         <!-- global section -->
         {{ if isset .Site.Data.features "cta" }}
           {{ if .Site.Data.features.cta.enable }}
-            {{ partial "_global/cta.html" . }}
+            {{ partial "features/features_cta.html" . }}
           {{ end }}
         {{ end }}
 
