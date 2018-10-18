@@ -57,7 +57,7 @@ quality = 80
       Post = "How Monax can strengthen your brand, protect your IP and drive new revenue streams for your content"
       Weight = 3
 
-  [[menu.main]]
+[[menu.main]]
     Name = "Lawyers"
     indentifier = "lawyers"
     URL = "/for/lawyers/"
@@ -112,6 +112,12 @@ quality = 80
         url  = "/company/"
         Post = "Learn about the history of Monax and meet the team behind smart, legally binding contacts on the blockchain."
         weight = 5
+
+[[menu.main]]
+    Name = "Pricing"
+    indentifier = "pricing"
+    URL = "/pricing/"
+    Weight = 5
 
 [[menu.register]]
     name = "Request a demo"

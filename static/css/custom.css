@@ -546,6 +546,12 @@ form label.error {
 #nav-signup p {
     color: #000;
 }
+/* hero signup browser fix */
+@media only screen and (min-width : 480px) {
+  #hero-signup-submit span {
+    white-space: pre;
+  }
+}
 
 
 /*==================================
@@ -3100,8 +3106,8 @@ TEAM ICONS
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
   .navbar ul.nav > li > a {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
     letter-spacing: 0.04em;
   }
   .navbar ul.nav > li > a:hover {
