@@ -1175,6 +1175,9 @@ form label.error {
     color: #96B85D;
     border: 2px solid #96B85D;
 }
+.btn-outline.btn-lg {
+    padding: 8px 14px;
+}
 .btn-outline.btn-xl {
     padding: 10px 22px;
 }
@@ -1614,8 +1617,6 @@ p, h1, h2, h3, h4, h5, h6, .circle-container {
 =============== */
 
 .tab-reveal {
-    /* display: none; */
-    /* visibility: hidden; */
     opacity: 0;
     max-height: 0px;
     overflow: hidden;
@@ -1624,8 +1625,6 @@ p, h1, h2, h3, h4, h5, h6, .circle-container {
     transition: opacity 1s;
 }
 .tab-reveal.active {
-    /* display: block; */
-    /* visibility: visible; */
     opacity: 1;
     max-height: 5000px;
 }
@@ -1635,7 +1634,126 @@ p, h1, h2, h3, h4, h5, h6, .circle-container {
 .btn-tab-select.active {
     opacity: 1;
 }
-
+/* pricing tables */
+.tab-title {
+    font-size: 18px;
+    margin: 0;
+}
+.tab-subtitle {
+    font-size: 14px;
+    margin: 0;
+}
+.pricing-table-content {
+    border: none;
+    border-radius: 0 0 5px 5px;
+    z-index: 3;
+    position: relative;
+    background: #fff;
+}
+.pricing-table {
+    border: 2px solid #e8e8e8;
+    border-radius: 10px 10px 5px 5px;
+}
+.pricing-table.no-border {
+    border: none;
+}
+.pricing-table .panel-heading {
+    background-color: #e8e8e8;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    margin-left: -2px;
+    margin-right: -2px;
+    margin-top: -2px;
+}
+.pricing-table .panel-heading h1,
+.pricing-table .panel-heading h2,
+.pricing-table .panel-heading h3,
+.pricing-table .panel-heading h4,
+.pricing-table .panel-heading p,
+.pricing-table .panel-heading span {
+    line-height: 40px;
+    max-height: 40px;
+    margin: 0;
+}
+.pricing-table .panel-heading.highlight {
+    background-color: #95b85d;
+}
+.pricing-table .panel-heading.highlight h1,
+.pricing-table .panel-heading.highlight h2,
+.pricing-table .panel-heading.highlight h3,
+.pricing-table .panel-heading.highlight h4,
+.pricing-table .panel-heading.highlight p {
+    color: #fff;
+}
+.pricing-table .panel-body,
+.pricing-table .list-group {
+    border-bottom: 2px solid #e8e8e8;
+}
+.pricing-table .panel-body {
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+.pricing-table .list-group {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.pricing-table .list-group:last-child {
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+.pricing-table .list-group-item {
+    border: none;
+}
+.pricing-table .price {
+    font-size: 36px;
+    font-weight: 600;
+}
+.pricing-table hr {
+    margin: 10px;
+    border-color: #e8e8e8;
+}
+/* pricing-table-shadows */
+#pricing-table-tabs > li > a {
+  border: none;
+  border-left: 1px solid rgba(0,0,0,0.1);
+  border-radius: 0;
+  background-color: #e8e8e8;
+  color: #333;
+  transition: none;
+}
+#pricing-table-tabs > li:first-of-type > a {
+  border-radius: 5px 0 0 0;
+  border: none;
+}
+#pricing-table-tabs > li:last-of-type > a {
+  border-radius: 0 5px 0 0;
+}
+#pricing-table-tabs > li.active + li > a {
+  border: none;
+}
+#pricing-table-tabs > li.active > a,
+#pricing-table-tabs > li.active > a:hover,
+#pricing-table-tabs > li.active > a:focus {
+  background-color: #fff;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
+  border: none;
+}
+#pricing-table-tabs > li.active > a p {
+  position: relative;
+  z-index: 10;
+}
+#pricing-table-tabs > li.active > a:after {
+    content: "";
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    z-index: 9;
+    height: 20px;
+    display: block;
+    left: 0px;
+    bottom: 0px;
+}
 
 
 
@@ -2414,6 +2532,9 @@ transform: scale(1.05) !important;
     box-shadow: 0px 0px 60px rgba(0,0,0,0.1);
     position: relative;
     z-index: 1;
+}
+.content-shadow-sm {
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
 }
 
 

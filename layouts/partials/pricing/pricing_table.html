@@ -1,0 +1,207 @@
+{{ with .Site.Data.pricing.pricing_table }}
+{{ if .enable }}
+<section class="section-top padding-bottom-xl" style="">
+    <div class="container">
+
+      <div class="row flex-grid-md">
+        <div class="col-md-12 col-valign-center">
+          <div class="content-container">
+            <ul class="nav nav-tabs nav-justified" id="pricing-table-tabs" role="tablist">
+              {{ with .tier1 }}
+                {{ if .enable }}
+                  <li class="nav-item {{ if .active_tab }}active{{ end }}">
+                    <a class="nav-link {{ if .active_tab }}active{{ end }}" id="tier1-tab" data-toggle="tab" href="#tier1" role="tab" aria-controls="tier1" {{ if .active_tab }}aria-selected="true"{{ else }}aria-selected="false"{{ end }}>
+                      <h4 class="tab-title">{{ .title | markdownify }}</h4>
+                      <p class="tab-subtitle">{{ .subtitle | markdownify }}</p>
+                    </a>
+                  </li>
+                {{ end }}
+              {{ end }}
+              {{ with .tier2 }}
+                {{ if .enable }}
+                  <li class="nav-item {{ if .active_tab }}active{{ end }}">
+                    <a class="nav-link {{ if .active_tab }}active{{ end }}" id="tier2-tab" data-toggle="tab" href="#tier2" role="tab" aria-controls="tier2" {{ if .active_tab }}aria-selected="true"{{ else }}aria-selected="false"{{ end }}>
+                      <h4 class="tab-title">{{ .title | markdownify }}</h4>
+                      <p class="tab-subtitle">{{ .subtitle | markdownify }}</p>
+                    </a>
+                  </li>
+                {{ end }}
+              {{ end }}
+              {{ with .tier3 }}
+                {{ if .enable }}
+                  <li class="nav-item {{ if .active_tab }}active{{ end }}">
+                    <a class="nav-link {{ if .active_tab }}active{{ end }}" id="tier3-tab" data-toggle="tab" href="#tier3" role="tab" aria-controls="tier3" {{ if .active_tab }}aria-selected="true"{{ else }}aria-selected="false"{{ end }}>
+                      <h4 class="tab-title">{{ .title | markdownify }}</h4>
+                      <p class="tab-subtitle">{{ .subtitle | markdownify }}</p>
+                    </a>
+                  </li>
+                {{ end }}
+              {{ end }}
+            </ul>
+            <div class="tab-content pricing-table-content content-shadow-sm padding-top-md" id="pricing-table-content">
+              {{ with .tier1 }}
+                {{ if .enable }}
+                  <div class="tab-pane fade {{ if .active_tab }}in active{{ end }} padding-top-md" id="tier1" role="tabpanel" aria-labelledby="tier1-tab">
+
+                    <div class="row">
+                      <div class="col-md-4 padding-bottom-md">
+                        <div class="range-left-md">
+                          <h2>{{ .content_title | markdownify }}</h2>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="row">
+                          {{ range .column }}
+                          <div class="col-sm-6 padding-bottom-lg">
+
+                            <div class="panel pricing-table">
+                              <div class="panel-heading {{ if .highlight_column }}highlight{{ end }}">
+                                  <h3 class="">{{ .title }}</h3>
+                              </div>
+                              <div class="panel-body text-center">
+                                  <p class="p1"><span class="price">{{ .billed_yearly_price }}</span>/month</p>
+                                  <p class="p1 padding-bottom-sm">{{ .subtitle }}</p>
+                                  <a class="btn btn-xl {{ if not .highlight_column }}btn-outline{{ end }}" href="{{ .link_url }}">{{ .link_title }}</a>
+                              </div>
+                              <ul class="list-group list-group-flush text-center">
+                                {{ range .features_list }}
+                                  <li class="list-group-item">{{ . | markdownify }}</li>
+                                {{ end }}
+                              </ul>
+                              <div class="">
+                                <p><strong>{{ .benefits_title }}&nbsp;</strong></p>
+                              </div>
+                              <ul class="list-group list-group-flush text-center">
+                                {{ range .benefits_list }}
+                                  <li class="list-group-item"><i class="fa fa-check"></i> {{ . | markdownify }}</li>
+                                {{ end }}
+                              </ul>
+                            </div>
+                            {{ if ne .show_all_features_url "" }}
+                              <p><a href="{{ .show_all_features_url }}">Show all features</a></p>
+                            {{ end }}
+
+                          </div>
+                          {{ end }}
+                        </div>
+                      </div>
+                    </div>
+
+                  </div> <!-- .tab-content -->
+                {{ end }}
+              {{ end }}
+              {{ with .tier2 }}
+                {{ if .enable }}
+                  <div class="tab-pane fade {{ if .active_tab }}in active{{ end }} padding-top-md" id="tier2" role="tabpanel" aria-labelledby="tier2-tab">
+
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="range-left-md">
+                          <h2>{{ .content_title | markdownify }}</h2>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="row">
+                          {{ range .column }}
+                          <div class="col-sm-12 padding-bottom-lg">
+
+                            <div class="panel pricing-table">
+                              <div class="panel-heading {{ if .highlight_column }}highlight{{ end }}">
+                                <div class="row">
+                                  <div class="col-sm-6">
+                                    <h3 class="range-left-sm">{{ .title }}</h3>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <p class="p1 range-left-sm"><span class="price">{{ .billed_yearly_price }}</span>/month</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel-body">
+                                  <h4 class="padding-bottom-sm range-left-sm">{{ .subtitle }}</h4>
+                                  <div class="btn-container range-left-sm">
+                                    <a class="btn btn-xl {{ if not .highlight_column }}btn-outline{{ end }}" href="{{ .link_url }}">{{ .link_title }}</a>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <div class="">
+                                    <p><strong>{{ .features_title }}</strong></p>
+                                  </div>
+                                  <ul class="list-group list-group-flush">
+                                    {{ range .features_list }}
+                                      <li class="list-group-item">{{ . | markdownify }}</li>
+                                    {{ end }}
+                                  </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="">
+                                    <p><strong>{{ .benefits_title }}</strong></p>
+                                  </div>
+                                  <ul class="list-group list-group-flush">
+                                    {{ range .benefits_list }}
+                                      <li class="list-group-item"><i class="fa fa-check"></i> {{ . | markdownify }}</li>
+                                    {{ end }}
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            {{ if ne .show_all_features_url "" }}
+                              <p class="range-left-sm"><a href="{{ .show_all_features_url }}">Show all features</a></p>
+                            {{ end }}
+                          </div>
+                          {{ end }}
+                        </div>
+                      </div>
+                    </div>
+
+                  </div> <!-- .tab-content -->
+                {{ end }}
+              {{ end }}
+              {{ with .tier3 }}
+                {{ if .enable }}
+                  <div class="tab-pane fade {{ if .active_tab }}in active{{ end }} padding-top-md" id="tier3" role="tabpanel" aria-labelledby="tier3-tab">
+
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="range-left-md">
+                          <h2>{{ .content_title | markdownify }}</h2>
+                        </div>
+                        <div class="btn-container range-left-sm">
+                          <a class="btn btn-xl" href="{{ .link_url }}">{{ .link_title }}</a>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="row">
+                          <div class="col-sm-12 padding-bottom-lg">
+
+                            <div class="panel pricing-table no-border">
+                              <div class="row">
+                                <div class="col-sm-8 col-sm-offset-1 padding-top-md">
+                                  <div class="">
+                                    <p><strong>{{ .benefits_title }}</strong></p>
+                                  </div>
+                                  <ul class="list-group list-group-flush">
+                                    {{ range .benefits_list }}
+                                      <li class="list-group-item"><i class="fa fa-check"></i> {{ . | markdownify }}</li>
+                                    {{ end }}
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div> <!-- .tab-content -->
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- .container -->
+</section> <!-- .section -->
+{{ end }}
+{{ end }}
