@@ -1,0 +1,50 @@
+{{ with .Site.Data.home.home_audience }}
+{{ if .enable }}
+
+<section class="section-audience padding-top-md padding-bottom-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 padding-bottom-md">
+
+          {{ with .title }}
+            <div class="">
+                <h2>{{ . | markdownify }}</h2>
+            </div>
+          {{ end }}
+
+          {{ with .subtitle }}
+            <div class="padding-bottom-sm">
+              <h3>{{ . | markdownify }}</h3>
+            </div>
+          {{ end }}
+
+        </div>
+
+        <div class="row">
+          {{ range .card_link }}
+          <div class="col-md-6 padding-bottom-md">
+            <a class="flex-grid-sm a-card" href="{{ .link_url }}">
+              <div class="content-container content-card-full content-card-shadow-sm flex-grid-sm audience-card">
+                <div class="row flex-grid">
+                  <div class="col-xs-4 col-valign-center">
+                    <img class="img-responsive" src="{{ .img }}" alt="">
+                  </div>
+                  <div class="col-xs-8 col-valign-center range-left">
+                    <h4>{{ .title | markdownify }} <i class="fa {{.icon}}"></i></h4>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          {{ end }}
+        </div>
+
+
+
+
+      </div>
+    </div>
+</section>
+
+{{ end }}
+{{ end }}

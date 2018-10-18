@@ -213,7 +213,7 @@
         link_url = "/learn/"
 
     [[col_3.link]]
-        link_title = "Developers"
+        link_title = "Developers <i class='fa fa-external-link'></i>"
         link_url = "https://docs.agreements.network/"
 
 [col_4]

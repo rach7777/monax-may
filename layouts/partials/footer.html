@@ -42,7 +42,7 @@
             <ul class="ul-footer-menu">
               {{ range $i, $p := .link }}
                 <li>
-                  <a href="{{ .link_url }}">{{ .link_title }}</a>
+                  <a href="{{ .link_url }}">{{ .link_title | markdownify }}</a>
                 </li>
               {{ end }}
             </ul>
@@ -66,10 +66,10 @@
                 {{ . | markdownify }}
               </p>
             {{ end }}
-            <ul class="ul-footer-menu">
+            <ul class="ul-footer-menu ul-center">
               {{ range $i, $p := .link }}
                 <li>
-                  <a href="{{ .link_url }}">{{ .link_title }}</a>
+                  <a href="{{ .link_url }}">{{ .link_title | markdownify }}</a>
                 </li>
               {{ end }}
             </ul>
@@ -94,7 +94,7 @@
             <ul class="ul-footer-menu">
               {{ range $i, $p := .link }}
                 <li>
-                  <a href="{{ .link_url }}">{{ .link_title }}</a>
+                  <a href="{{ .link_url }}">{{ .link_title | markdownify }}</a>
                 </li>
               {{ end }}
             </ul>

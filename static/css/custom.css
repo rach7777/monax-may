@@ -1131,7 +1131,8 @@ form label.error {
 }
 .btn:hover,
 .btn:focus,
-.btn:active:focus {
+.btn:active:focus,
+.btn:active:hover {
     background-color: #799844;
     border: none;
     font-weight: 400;
@@ -1143,6 +1144,21 @@ form label.error {
 }
 .btn-container > ul {
     display: inline-block;
+}
+/* btn-outline style */
+.btn-outline { /* ***@@@*** */
+    background: none;
+    color: #96B85D;
+    border: 2px solid #96B85D;
+}
+.btn-outline.btn-xl {
+    padding: 10px 22px;
+}
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active:focus,
+.btn-outline:active:hover {
+    border: 2px solid #799844;
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 768px) {
@@ -2347,6 +2363,25 @@ transform: scale(1.05) !important;
 }
 
 
+.ul-img-button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.ul-img-button .img-container {
+    max-width: 200px;
+    float: left;
+}
+
+.img-button-container {
+    background-color: #f7f7f7;
+    overflow: hidden;
+}
+
+
+
+
+
 /* ==============
   Shadows
 =============== */
@@ -2798,6 +2833,11 @@ TEAM ICONS
 .a-card:hover .content-card-shadow-sm,
 .a-card:focus .content-card-shadow-sm {
     box-shadow: 0px 5px 50px rgba(0,0,0,0.3);
+}
+/* .audience-card */
+.audience-card {
+    background-color: #eee;
+    box-shadow: none;
 }
 
 /* .content-circle */
@@ -3337,6 +3377,13 @@ TEAM ICONS
 }
 #footer .ul-footer-menu li {
     padding-bottom: 5px;
+    text-align: center;
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  #footer .ul-footer-menu li {
+      text-align: left;
+  }
 }
 
 #copyright {
