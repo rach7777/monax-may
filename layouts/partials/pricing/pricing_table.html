@@ -5,6 +5,24 @@
 
       <div class="row flex-grid-md">
         <div class="col-md-12 col-valign-center">
+          <div class="content-container hidden-xs">
+            <h4>Introductory pricing</h4>
+            <div class="content-container price-select padding-bottom-md">
+              <div class="input-group">
+                <div class="input-container">
+                  <label><span class="p1"> Billed monthly</span></label>
+                  <div class="switch-container">
+                    <div class="onoffswitch">
+                      <input id="billing-period-switch" type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" checked>
+                      <label class="onoffswitch-label" for="billing-period-switch"></label>
+                    </div>
+                  </div>
+                  <label><span class="p1"> Billed yearly</span></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- PRICING TABS SELECT -->
           <div class="content-container">
             <ul class="nav nav-tabs nav-justified" id="pricing-table-tabs" role="tablist">
               {{ with .tier1 }}
@@ -38,6 +56,7 @@
                 {{ end }}
               {{ end }}
             </ul>
+            <!-- TAB CONTENT -->
             <div class="tab-content pricing-table-content content-shadow-sm padding-top-md" id="pricing-table-content">
               {{ with .tier1 }}
                 {{ if .enable }}
@@ -59,7 +78,7 @@
                                   <h3 class="">{{ .title }}</h3>
                               </div>
                               <div class="panel-body text-center">
-                                  <p class="p1"><span class="price">{{ .billed_yearly_price }}</span>/month</p>
+                                  <p class="p1"><span class="price" data-billed-yearly="{{ .billed_yearly_price }}" data-billed-monthly="{{ .billed_monthly_price }}">{{ .billed_yearly_price }}</span>/month</p>
                                   <p class="p1 padding-bottom-sm">{{ .subtitle }}</p>
                                   <a class="btn btn-xl {{ if not .highlight_column }}btn-outline{{ end }}" href="{{ .link_url }}">{{ .link_title }}</a>
                               </div>
@@ -112,7 +131,7 @@
                                     <h3 class="range-left-sm">{{ .title }}</h3>
                                   </div>
                                   <div class="col-sm-6">
-                                    <p class="p1 range-left-sm"><span class="price">{{ .billed_yearly_price }}</span>/month</p>
+                                    <p class="p1 range-left-sm"><span class="price" data-billed-yearly="{{ .billed_yearly_price }}" data-billed-monthly="{{ .billed_monthly_price }}">{{ .billed_yearly_price }}</span>/month</p>
                                   </div>
                                 </div>
                               </div>
@@ -166,7 +185,7 @@
                         <div class="range-left-md">
                           <h2>{{ .content_title | markdownify }}</h2>
                         </div>
-                        <div class="btn-container range-left-sm">
+                        <div class="btn-container range-left-md">
                           <a class="btn btn-xl" href="{{ .link_url }}">{{ .link_title }}</a>
                         </div>
                       </div>
@@ -176,7 +195,7 @@
 
                             <div class="panel pricing-table no-border">
                               <div class="row">
-                                <div class="col-sm-8 col-sm-offset-1 padding-top-md">
+                                <div class="col-md-8 col-md-offset-1 col-sm-8 col-sm-offset-2 padding-top-md">
                                   <div class="">
                                     <p><strong>{{ .benefits_title }}</strong></p>
                                   </div>
