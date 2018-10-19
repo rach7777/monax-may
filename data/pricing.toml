@@ -103,12 +103,14 @@
       link_title = "Contact Us"
       link_url = "mailto:contact@monax.io"
       link_style_outline = false
-      benefits_title = ""
+      benefits_title = "All of Professional plus:"
       benefits_list = [
         "Unlimited users",
         "Unlimited active contract templates",
         "Unlimited new contracts",
         "Unlimited storage of fulfilled contracts",
+        "Deployed on-premise",
+        "Custom branding",
       ]
       show_all_features_url = "" # set to "" to hide
 

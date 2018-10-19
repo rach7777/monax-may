@@ -82,7 +82,7 @@
                                   <p class="p1 padding-bottom-sm">{{ .subtitle }}</p>
                                   <a class="btn btn-xl {{ if not .highlight_column }}btn-outline{{ end }}" href="{{ .link_url }}">{{ .link_title }}</a>
                               </div>
-                              <ul class="list-group list-group-flush text-center">
+                              <ul class="list-group list-group-flush">
                                 {{ range .features_list }}
                                   <li class="list-group-item">{{ . | markdownify }}</li>
                                 {{ end }}
@@ -90,9 +90,9 @@
                               <div class="">
                                 <p><strong>{{ .benefits_title }}&nbsp;</strong></p>
                               </div>
-                              <ul class="list-group list-group-flush text-center">
+                              <ul class="list-group list-group-flush fa-ul">
                                 {{ range .benefits_list }}
-                                  <li class="list-group-item"><i class="fa fa-check"></i> {{ . | markdownify }}</li>
+                                  <li class="list-group-item"><span class="fa-li" ><i class="fa fa-check"></i></span> {{ . | markdownify }}</li>
                                 {{ end }}
                               </ul>
                             </div>
@@ -122,6 +122,7 @@
                       <div class="col-md-8">
                         <div class="row">
                           {{ range .column }}
+                          {{ if .enable }}
                           <div class="col-sm-12 padding-bottom-lg">
 
                             <div class="panel pricing-table">
@@ -156,9 +157,9 @@
                                   <div class="">
                                     <p><strong>{{ .benefits_title }}</strong></p>
                                   </div>
-                                  <ul class="list-group list-group-flush">
+                                  <ul class="list-group list-group-flush fa-ul">
                                     {{ range .benefits_list }}
-                                      <li class="list-group-item"><i class="fa fa-check"></i> {{ . | markdownify }}</li>
+                                      <li class="list-group-item"><span class="fa-li" ><i class="fa fa-check"></i></span> {{ . | markdownify }}</li>
                                     {{ end }}
                                   </ul>
                                 </div>
@@ -168,6 +169,7 @@
                               <p class="range-left-sm"><a href="{{ .show_all_features_url }}">Show all features</a></p>
                             {{ end }}
                           </div>
+                          {{ end }}
                           {{ end }}
                         </div>
                       </div>
@@ -196,12 +198,12 @@
                             <div class="panel pricing-table no-border">
                               <div class="row">
                                 <div class="col-md-8 col-md-offset-1 col-sm-8 col-sm-offset-2 padding-top-md">
-                                  <div class="">
-                                    <p><strong>{{ .benefits_title }}</strong></p>
+                                  <div class="range-left-sm">
+                                    <p style="padding: 0 25px;"><strong>{{ .benefits_title }}</strong></p>
                                   </div>
-                                  <ul class="list-group list-group-flush">
+                                  <ul class="list-group list-group-flush fa-ul">
                                     {{ range .benefits_list }}
-                                      <li class="list-group-item"><i class="fa fa-check"></i> {{ . | markdownify }}</li>
+                                      <li class="list-group-item"><span class="fa-li" ><i class="fa fa-check"></i></span> {{ . | markdownify }}</li>
                                     {{ end }}
                                   </ul>
                                 </div>
