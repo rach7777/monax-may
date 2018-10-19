@@ -140,7 +140,7 @@
 [relatedarticles]
   enable = true
   title = "Or learn how to get started here"
-  filter_by_tag = "fleetleasing" # changed in partials/monaxfor/fleetleasing/relatedarticles.html
+  filter_by_tag = "fleetleasing" # changed in partials/fleetleasing/relatedarticles.html
   default_img = "/img/assets/backgrounds/mountains-1.jpg"
 
 

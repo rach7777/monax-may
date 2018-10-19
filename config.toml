@@ -39,7 +39,7 @@ quality = 80
     # [[menu.main]]
     #   Name = "Fleet leasing"
     #   parent = "customers"
-    #   URL = "/for/fleet-leasing/"
+    #   URL = "/fleet-leasing/"
     #   Post = "How Monax can power your fleet leases, simplify your business processes and drive new revenue streams"
     #   Weight = 1
 

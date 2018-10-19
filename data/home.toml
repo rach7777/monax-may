@@ -310,7 +310,7 @@
 #     title = "For Fleet Leasing"
 #     subtitle = "How Monax can power your fleet leases, simplify your business processes and drive new revenue streams."
 #     img = "/img/assets/homepage/usecases/fleet-leasing/fleet-leasing-small.png"
-#     link_url = "/for/fleet-leasing/"
+#     link_url = "/fleet-leasing/"
 #
 #   [[usecases.section]]
 #     category = "corporate-governance"

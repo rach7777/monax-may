@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  {{ partial "head_fonts.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "fleetleasing/top.html" . }}
+
+        <!-- global section -->
+        {{ if isset .Site.Data.fleetleasing "press" }}
+          {{ if .Site.Data.fleetleasing.press.enable }}
+            {{ partial "_global/press.html" . }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "fleetleasing/testimonials.html" . }}
+
+        {{ partial "fleetleasing/feature.html" . }}
+
+        {{ partial "fleetleasing/examples.html" . }}
+
+        {{ partial "fleetleasing/relatedarticles.html" . }}
+
+        {{ partial "fleetleasing/faq.html" . }}
+
+        <!-- CTA section [GLOBAL] -->
+        {{ if isset .Site.Data.fleetleasing "cta" }}
+          {{ if .Site.Data.fleetleasing.cta.enable }}
+            {{ partial "_global/cta.html" . }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

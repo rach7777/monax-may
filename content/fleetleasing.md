@@ -1,9 +1,9 @@
 +++
 type = "page"
-layout = "monaxfor/fleetleasing"
+layout = "fleetleasing"
 date = "2018-05-31T13:42:12+01:00"
 title = "Monax | Fleet Leasing"
-url = "/for/fleet-leasing"
+url = "/fleet-leasing"
 categories = []
 tags = []
 
