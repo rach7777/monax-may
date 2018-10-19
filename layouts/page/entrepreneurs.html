@@ -15,28 +15,28 @@
 
         </header>
 
-        {{ partial "monaxfor/corporate/top.html" . }}
+        {{ partial "entrepreneurs/top.html" . }}
 
         <!-- global section -->
-        {{ if isset .Site.Data.for.corporate "press" }}
-          {{ if .Site.Data.for.corporate.press.enable }}
+        {{ if isset .Site.Data.entrepreneurs "press" }}
+          {{ if .Site.Data.entrepreneurs.press.enable }}
             {{ partial "_global/press.html" . }}
           {{ end }}
         {{ end }}
 
-        {{ partial "monaxfor/corporate/testimonials.html" . }}
+        {{ partial "entrepreneurs/testimonials.html" . }}
 
-        {{ partial "monaxfor/corporate/feature.html" . }}
+        {{ partial "entrepreneurs/feature.html" . }}
 
-        {{ partial "monaxfor/corporate/examples.html" . }}
+        {{ partial "entrepreneurs/examples.html" . }}
 
-        {{ partial "monaxfor/corporate/relatedarticles.html" . }}
+        {{ partial "entrepreneurs/relatedarticles.html" . }}
 
-        {{ partial "monaxfor/corporate/faq.html" . }}
+        {{ partial "entrepreneurs/faq.html" . }}
 
         <!-- CTA section [GLOBAL] -->
-        {{ if isset .Site.Data.for.corporate "cta" }}
-          {{ if .Site.Data.for.corporate.cta.enable }}
+        {{ if isset .Site.Data.entrepreneurs "cta" }}
+          {{ if .Site.Data.entrepreneurs.cta.enable }}
             {{ partial "_global/cta.html" . }}
           {{ end }}
         {{ end }}

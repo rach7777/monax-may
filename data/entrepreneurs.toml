@@ -1,6 +1,6 @@
 [top]
     enable = true
-    title = "Monax for corporate governance"
+    title = "Monax for entrepreneurs"
     subtitle = "How Monax can simplify and speed up your corporate governance, and give you full control over your agreements"
     img_left = false
     hero_signup = true
@@ -140,7 +140,7 @@
 [relatedarticles]
   enable = true
   title = "Or learn how to get started here"
-  filter_by_tag = "corporate" # changed in partials/monaxfor/corporate/relatedarticles.html
+  filter_by_tag = "entrepreneurs" # changed in partials/entrepreneurs/relatedarticles.html
   default_img = "/img/assets/backgrounds/mountains-1.jpg"
 
 

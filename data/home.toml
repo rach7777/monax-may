@@ -74,13 +74,13 @@
     title = "For Entrepreneurs"
     img = "/img/assets/audiences/entrepreneurs_600.jpg"
     icon = "fa-angle-right"
-    link_url = "/for/corporate-governance/"
+    link_url = "/entrepreneurs/"
 
   [[home_audience.card_link]]
     title = "For Creatives"
     img = "/img/assets/audiences/creatives_600.jpg"
     icon = "fa-angle-right"
-    link_url = "/for/content-creators/"
+    link_url = "/creatives/"
 
 
 [home_demo]
@@ -317,14 +317,14 @@
 #     title = "For Corporate Governance"
 #     subtitle = "How Monax can simplify and speed up your corporate governance, and give you full control over your agreements."
 #     img = "/img/assets/homepage/usecases/corporate-governance/corporate-governance-small.png"
-#     link_url = "/for/corporate-governance/"
+#     link_url = "/entrepreneurs/"
 #
 #   [[usecases.section]]
 #     category = "content-creators"
 #     title = "For Content Creators"
 #     subtitle = "How Monax can strengthen your brand, protect your IP and drive new revenue streams for your content."
 #     img = "/img/assets/homepage/usecases/content-creators/content-creators-small.png"
-#     link_url = "/for/content-creators/"
+#     link_url = "/creatives/"
 #
 #   [[usecases.section]]
 #     category = "lawyers"

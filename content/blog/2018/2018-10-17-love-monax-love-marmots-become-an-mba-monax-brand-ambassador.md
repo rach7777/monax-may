@@ -16,7 +16,7 @@ categories:
   - monax
   
 # tags should be meaningful for your blog. if you want this article to show on a 'use case' page, you can use
-# the following TAGS -  'fleetleasing' 'contentcreators' 'lawyers' or 'corporate'
+# the following TAGS -  'fleetleasing' 'creatives' 'lawyers' or 'entrepreneurs'
 tags:
   - legal products
   - monax platform

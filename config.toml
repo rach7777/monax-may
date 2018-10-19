@@ -31,29 +31,29 @@ quality = 80
 
 [[menu.main]]
     name = "Customers"
-    identifier = "monaxfor"
+    identifier = "customers"
     url  = "#"
     weight = 3
 
     # sub menu items
     # [[menu.main]]
     #   Name = "Fleet leasing"
-    #   parent = "monaxfor"
+    #   parent = "customers"
     #   URL = "/for/fleet-leasing/"
     #   Post = "How Monax can power your fleet leases, simplify your business processes and drive new revenue streams"
     #   Weight = 1
 
     [[menu.main]]
       Name = "Entrepreneurs"
-      parent = "monaxfor"
-      URL = "/for/corporate-governance/"
+      parent = "customers"
+      URL = "/entrepreneurs/"
       Post = "How Monax can simplify and speed up your corporate governance, and give you full control over your agreements"
       Weight = 2
 
     [[menu.main]]
       Name = "Creatives"
-      parent = "monaxfor"
-      URL = "/for/content-creators/"
+      parent = "customers"
+      URL = "/creatives/"
       Post = "How Monax can strengthen your brand, protect your IP and drive new revenue streams for your content"
       Weight = 3
 

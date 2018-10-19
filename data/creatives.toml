@@ -1,6 +1,6 @@
 [top]
     enable = true
-    title = "Monax for content creators"
+    title = "Monax for creatives"
     subtitle = "How Monax can strengthen your brand, protect your IP and drive new revenue streams for your content"
     img_left = false
     hero_signup = true
@@ -141,7 +141,7 @@
 [relatedarticles]
   enable = true
   title = "Or learn how to get started here"
-  filter_by_tag = "contentcreators" # changed in partials/monaxfor/contentcreators/relatedarticles.html
+  filter_by_tag = "contentcreators" # changed in partials/creatives/relatedarticles.html
   default_img = "/img/assets/backgrounds/mountains-1.jpg"
 
 
