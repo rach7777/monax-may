@@ -60,7 +60,7 @@ quality = 80
 [[menu.main]]
     Name = "Lawyers"
     indentifier = "lawyers"
-    URL = "/for/lawyers/"
+    URL = "/lawyers/"
     Post = "How Monax can simplify your workflow and turn your knowledge into commoditisable legal products"
     Weight = 4
 

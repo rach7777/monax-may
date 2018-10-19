@@ -15,28 +15,28 @@
 
         </header>
 
-        {{ partial "monaxfor/lawyers/top.html" . }}
+        {{ partial "lawyers/top.html" . }}
 
         <!-- global section -->
-        {{ if isset .Site.Data.for.lawyers "press" }}
-          {{ if .Site.Data.for.lawyers.press.enable }}
+        {{ if isset .Site.Data.lawyers "press" }}
+          {{ if .Site.Data.lawyers.press.enable }}
             {{ partial "_global/press.html" . }}
           {{ end }}
         {{ end }}
 
-        {{ partial "monaxfor/lawyers/testimonials.html" . }}
+        {{ partial "lawyers/testimonials.html" . }}
 
-        {{ partial "monaxfor/lawyers/feature.html" . }}
+        {{ partial "lawyers/feature.html" . }}
 
-        {{ partial "monaxfor/lawyers/examples.html" . }}
+        {{ partial "lawyers/examples.html" . }}
 
-        {{ partial "monaxfor/lawyers/relatedarticles.html" . }}
+        {{ partial "lawyers/relatedarticles.html" . }}
 
-        {{ partial "monaxfor/lawyers/faq.html" . }}
+        {{ partial "lawyers/faq.html" . }}
 
         <!-- CTA section [GLOBAL] -->
-        {{ if isset .Site.Data.for.lawyers "cta" }}
-          {{ if .Site.Data.for.lawyers.cta.enable }}
+        {{ if isset .Site.Data.lawyers "cta" }}
+          {{ if .Site.Data.lawyers.cta.enable }}
             {{ partial "_global/cta.html" . }}
           {{ end }}
         {{ end }}

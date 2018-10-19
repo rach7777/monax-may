@@ -331,7 +331,7 @@
 #     title = "For Lawyers"
 #     subtitle = "How Monax can simplify your workflow and turn your knowledge into commoditisable legal products."
 #     img = "/img/assets/homepage/usecases/lawyers/lawyers-small.png"
-#     link_url = "/for/lawyers/"
+#     link_url = "/lawyers/"
 
 
 [home_press]

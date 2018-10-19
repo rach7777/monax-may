@@ -88,7 +88,7 @@
 [relatedarticles]
   enable = true
   title = "Or learn how to get started here"
-  filter_by_tag = "lawyers" # changed in partials/monaxfor/lawyers/relatedarticles.html
+  filter_by_tag = "lawyers" # changed in partials/lawyers/relatedarticles.html
   default_img = "/img/assets/backgrounds/mountains-1.jpg"
 
 
