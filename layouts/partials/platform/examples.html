@@ -1,0 +1,107 @@
+{{ with .Site.Data.platform.examples }}
+{{ if .enable }}
+
+  <section class="section-examples padding-bottom-sm padding-top-lg background-grey">
+      <div class="container container-docs">
+
+        <div class="row padding-bottom-md">
+          <div class="col-md-12">
+              <div class="">
+                  <h3>{{ .title }}</h3>
+              </div>
+          </div>
+        </div>
+
+        <div class="row flex-grid-md padding-bottom-md">
+
+          <div class="col-md-9 col-flex-9 hidden-sm hidden-xs">
+            <div class="row">
+
+              {{ range $i, $p := first 4 .agreement }}
+
+                <div class="col-sm-3 padding-bottom-md hover-dip-opacity">
+                  <a href="{{ .url }}" class="a-card">
+                    <div class="doc-container" data-tilt style="transform-style: preserve-3d">
+                      <div class="doc-outer">
+                        <div class="doc-inner">
+                          <div class="content-container">
+                            <div class="title range-left underline-xs">
+                                <h5>{{ .title }}</h5>
+                            </div>
+                            <div class="doc-skin" style="transform: translateZ(10px);background:url({{ $.Site.Data.platform.examples.default_img }}) center center no-repeat;background-size:cover;">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div> <!-- .col -->
+
+              {{ end }}
+
+            </div>
+
+          </div>
+          <div class="col-md-3 col-flex-3 hidden-sm hidden-xs padding-bottom-md hover-dip-opacity">
+            <a href="{{ .new_agreement_url }}" class="a-card">
+              <div class="doc-container new-doc" data-tilt style="transform-style: preserve-3d">
+                <div class="doc-outer">
+                  <div class="doc-inner flex-grid-sm">
+                    <div class="content-container col-valign-center">
+                      <div class="doc-icon padding-top-sm" style="transform: translateZ(10px);">
+                        <i class="fa fa-plus-circle"></i>
+                      </div>
+                      <h5>{{ .new_agreement_text }}</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+            {{ range $i, $p := first 4 .agreement }}
+
+              <div class="col-md-2 col-sm-4 col-xs-6 hidden-md hidden-lg padding-bottom-md">
+                <a href="{{ .url }}" class="a-card">
+                  <div class="doc-container">
+                    <div class="doc-outer">
+                      <div class="doc-inner">
+                        <div class="content-container">
+                          <div class="title range-left underline-xs">
+                              <h5>{{ .title }}</h5>
+                          </div>
+                          <div class="doc-skin" style="background:url({{ $.Site.Data.platform.examples.default_img }}) center center no-repeat;background-size:cover;">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div> <!-- .col -->
+
+            {{ end }}
+
+              <div class="col-md-3 col-sm-4 col-xs-6 hidden-md hidden-lg padding-bottom-md">
+                <a href="{{ .new_agreement_url }}" class="a-card">
+                  <div class="doc-container new-doc">
+                    <div class="doc-outer">
+                      <div class="doc-inner flex-grid-sm">
+                        <div class="content-container col-valign-center">
+                          <div class="doc-icon padding-top-sm">
+                            <i class="fa fa-plus-circle"></i>
+                          </div>
+                          <h5>{{ .new_agreement_text }}</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+  </section>
+
+{{ end }}
+{{ end }}

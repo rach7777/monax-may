@@ -15,7 +15,7 @@ tags:
   - legal products
   - agreements network
   - monax
-  
+
 
 # if this post is part of a series, uncomment the information below. The 'article series' box
 # will only display if there is more than one article in the series. 'id', 'number' and 'about' all must be present.
@@ -50,11 +50,11 @@ Read the full transcript below.
 
 Q: Now we have a huge lineup of guests, now we're going to interview a bunch of entrepreneurs and here's our first one, his name is Casey Kuhlman, and he’s the CEO of Monax Industries, welcome Casey.
 
-> A: Thank you for having me 
+> A: Thank you for having me
 
-Q: Can you tell us a bit about Monax 
+Q: Can you tell us a bit about Monax
 
-> A: Sure, Monax is a [platform](https://monax.io/features/) for rethinking how digital contracts work, we view the legal function of small businesses as being the Final Frontier, an entrepreneur can go get an accounting system, can go get an HR system, and those will all be first class citizens of their digital office, but in terms of legal, this is stuck in the old ages. and we’re trying to be able to digitise that and bring it forward.
+> A: Sure, Monax is a [platform](https://monax.io/platform/) for rethinking how digital contracts work, we view the legal function of small businesses as being the Final Frontier, an entrepreneur can go get an accounting system, can go get an HR system, and those will all be first class citizens of their digital office, but in terms of legal, this is stuck in the old ages. and we’re trying to be able to digitise that and bring it forward.
 
 Q: So it says here that you were part of Somaliland first law firm, for people who don’t know about Somaliland tell us a little bit about that.
 
@@ -63,7 +63,7 @@ Q: So it says here that you were part of Somaliland first law firm, for people w
 
 Q: That sounds exciting, so it's the same concept as Liberland and Croatia have you heard about that?
 
-> A: Yes, similar idea, they have a old colonial context that’s quite different from the other parts of Somalia in so there is a lot 
+> A: Yes, similar idea, they have a old colonial context that’s quite different from the other parts of Somalia in so there is a lot
 > of distinct differences between the two.
 
 Q: So let’s talk about crypto, so it’s not just cryptocurrency, blockchain technology has a lot of uses, so tell us about that and the future of everything.
@@ -77,11 +77,11 @@ Q: So let’s talk about crypto, so it’s not just cryptocurrency, blockchain t
 
 Q: So how does your software solve a problem that exists in the current legacy world?
 
-> A: Sure, so in the current legacy world, if you and I are in a contract and we want to make that digital in other words we want the computers to run this contract, we get to a difficult place because if the computers are going to run the contracts and you and I are in the contract, whose computers are going to run this contract? And in legacy systems, where I have my computers and you have your computers, there is really an inability to provide a collaboratively managed data and events infrastructure where we could both be running the contracts, and that’s what blockchain technology offers to the fulfillment of legal rights and obligations, and the tracking of those. 
+> A: Sure, so in the current legacy world, if you and I are in a contract and we want to make that digital in other words we want the computers to run this contract, we get to a difficult place because if the computers are going to run the contracts and you and I are in the contract, whose computers are going to run this contract? And in legacy systems, where I have my computers and you have your computers, there is really an inability to provide a collaboratively managed data and events infrastructure where we could both be running the contracts, and that’s what blockchain technology offers to the fulfillment of legal rights and obligations, and the tracking of those.
 
 Q: Can you explain that in a bit more detail as some people don’t really understand how blockchain works.
 
-> A: Sure, so blockchain is built to get at this idea that throws away an old idea, in an old idea we said we might have many computers running a data infrastructure and those would all be owned by one company, and blockchain technology says let’s throw away this assumption that that they're going to be all owned by one company, and so what the technology does from a software perspective is that it allows us to have our computers in sync and we take the assumption that those computers are not owned by the single company and this is what gets at the decentralised nature of the software 
+> A: Sure, so blockchain is built to get at this idea that throws away an old idea, in an old idea we said we might have many computers running a data infrastructure and those would all be owned by one company, and blockchain technology says let’s throw away this assumption that that they're going to be all owned by one company, and so what the technology does from a software perspective is that it allows us to have our computers in sync and we take the assumption that those computers are not owned by the single company and this is what gets at the decentralised nature of the software
 
 Q: So if I may extrapolate how your product works, so you are saying that we have a legal contract here, and if I have a computer and you have a computer I can edit it and then change it, and then at the end, you’re going to say well that’s not what we agreed upon, so there’s a problem because it’s not in sync, but there's the blockchain, which is an immutable record, that can be downloaded on different devices where you can have one copy of the contract, basically that one party cannot change without the agreement of the other party. Is that more or less what it is?
 
@@ -118,7 +118,3 @@ Q: And what do you think the future is for your company, what would you like to 
 Q: Cool, well thank you so much for joining us Casey.
 
 > A: Thank you so much for having me.
-
-
-
-

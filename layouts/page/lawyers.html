@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  {{ partial "head_fonts.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "lawyers/top.html" . }}
+
+        <!-- global section -->
+        {{ if isset .Site.Data.lawyers "press" }}
+          {{ if .Site.Data.lawyers.press.enable }}
+            {{ partial "_global/press.html" . }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "lawyers/testimonials.html" . }}
+
+        {{ partial "lawyers/feature.html" . }}
+
+        {{ partial "lawyers/examples.html" . }}
+
+        {{ partial "lawyers/relatedarticles.html" . }}
+
+        {{ partial "lawyers/faq.html" . }}
+
+        <!-- CTA section [GLOBAL] -->
+        {{ if isset .Site.Data.lawyers "cta" }}
+          {{ if .Site.Data.lawyers.cta.enable }}
+            {{ partial "_global/cta.html" . }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

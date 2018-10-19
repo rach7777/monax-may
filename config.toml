@@ -26,43 +26,43 @@ quality = 80
 # Main menu
 [[menu.main]]
     name = "Platform"
-    url  = "/features/"
+    url  = "/platform/"
     weight = 2
 
 [[menu.main]]
-    name = "Use Cases"
-    identifier = "monaxfor"
+    name = "Customers"
+    identifier = "customers"
     url  = "#"
     weight = 3
 
     # sub menu items
-    [[menu.main]]
-      Name = "Fleet leasing"
-      parent = "monaxfor"
-      URL = "/for/fleet-leasing/"
-      Post = "How Monax can power your fleet leases, simplify your business processes and drive new revenue streams"
-      Weight = 1
+    # [[menu.main]]
+    #   Name = "Fleet leasing"
+    #   parent = "customers"
+    #   URL = "/fleet-leasing/"
+    #   Post = "How Monax can power your fleet leases, simplify your business processes and drive new revenue streams"
+    #   Weight = 1
 
     [[menu.main]]
-      Name = "Corporate Governance"
-      parent = "monaxfor"
-      URL = "/for/corporate-governance/"
+      Name = "Entrepreneurs"
+      parent = "customers"
+      URL = "/entrepreneurs/"
       Post = "How Monax can simplify and speed up your corporate governance, and give you full control over your agreements"
       Weight = 2
 
     [[menu.main]]
-      Name = "Content Creators"
-      parent = "monaxfor"
-      URL = "/for/content-creators/"
+      Name = "Creatives"
+      parent = "customers"
+      URL = "/creatives/"
       Post = "How Monax can strengthen your brand, protect your IP and drive new revenue streams for your content"
       Weight = 3
 
-    [[menu.main]]
-      Name = "Lawyers"
-      parent = "monaxfor"
-      URL = "/for/lawyers/"
-      Post = "How Monax can simplify your workflow and turn your knowledge into commoditisable legal products"
-      Weight = 4
+[[menu.main]]
+    Name = "Lawyers"
+    indentifier = "lawyers"
+    URL = "/lawyers/"
+    Post = "How Monax can simplify your workflow and turn your knowledge into commoditisable legal products"
+    Weight = 4
 
 [[menu.main]]
     name = "Resources"
@@ -106,10 +106,18 @@ quality = 80
     #  Post = "Join us for industry insight and best practice advice on using legal products to streamline your business."
     #  Weight = 5
 
+    [[menu.main]]
+        name = "Company"
+        parent = "resources"
+        url  = "/company/"
+        Post = "Learn about the history of Monax and meet the team behind smart, legally binding contacts on the blockchain."
+        weight = 5
+
 [[menu.main]]
-    name = "Company"
-    url  = "/company/"
-    weight = 5
+    Name = "Pricing"
+    indentifier = "pricing"
+    URL = "/pricing/"
+    Weight = 5
 
 [[menu.register]]
     name = "Request a demo"

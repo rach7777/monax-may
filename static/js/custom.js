@@ -715,4 +715,27 @@ $(document).ready(function() {
   });
 
 
+
+    // ========== PRICING =============== //
+
+
+    $('#billing-period-switch').change(function(){
+      const prices_arr = $('span.price');
+      if( this.checked ) {
+        $.each( prices_arr, function(i, elm){
+          // console.log(elm);
+          $(elm).html( $(this).data('billedYearly') );
+        });
+      } else {
+        $.each( prices_arr, function(i, elm){
+          // console.log(elm);
+          $(elm).html( $(this).data('billedMonthly') );
+        });
+      }
+    })
+
+
+
+
+
 });

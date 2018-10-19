@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  {{ partial "head_fonts.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "entrepreneurs/top.html" . }}
+
+        <!-- global section -->
+        {{ if isset .Site.Data.entrepreneurs "press" }}
+          {{ if .Site.Data.entrepreneurs.press.enable }}
+            {{ partial "_global/press.html" . }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "entrepreneurs/testimonials.html" . }}
+
+        {{ partial "entrepreneurs/feature.html" . }}
+
+        {{ partial "entrepreneurs/examples.html" . }}
+
+        {{ partial "entrepreneurs/relatedarticles.html" . }}
+
+        {{ partial "entrepreneurs/faq.html" . }}
+
+        <!-- CTA section [GLOBAL] -->
+        {{ if isset .Site.Data.entrepreneurs "cta" }}
+          {{ if .Site.Data.entrepreneurs.cta.enable }}
+            {{ partial "_global/cta.html" . }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

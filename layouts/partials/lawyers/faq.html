@@ -1,0 +1,51 @@
+{{ with .Site.Data.lawyers.faq }}
+{{ if .enable }}
+
+  <section class="section-examples padding-bottom-xl">
+      <div class="container">
+
+				<div class="row range-left-sm">
+					<ul class="accordion">
+						<li>
+							<div class="accordion-section-content">
+								<div class="col-sm-6 row-bottom-padded-sm">
+                  <ul class="ul-icon-list">
+                    {{ range $i, $p := .item }}
+									  	{{ if (modBool $i 2) }}
+                        <li class="padding-bottom-xs question">
+                          <i class="fa fa-angle-down question-toggle" aria-hidden="true"></i>
+                          <h4 class="accordion-toggle range-left">{{ .question | markdownify }}</h4>
+													<div class="accordion-content">
+														<p>{{ .answer | markdownify }}</p>
+													</div>
+                        </li>
+                      {{ end }}
+                    {{ end }}
+                  </ul>
+								</div>
+								<div class="col-sm-6 row-bottom-padded-sm">
+                  <ul class="ul-icon-list">
+                    {{ range $i, $p := .item }}
+									  	{{ if (modBool $i 2) }}
+                        <li class="padding-bottom-xs question">
+                          <i class="fa fa-angle-down question-toggle" aria-hidden="true"></i>
+                          <h4 class="accordion-toggle range-left">{{ .question | markdownify }}</h4>
+													<div class="accordion-content">
+														<p>{{ .answer | markdownify }}</p>
+													</div>
+                        </li>
+                      {{ end }}
+                    {{ end }}
+                  </ul>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+  </div>
+</section>
+
+{{ end }}
+{{ end }}

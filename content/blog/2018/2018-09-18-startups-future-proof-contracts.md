@@ -11,7 +11,7 @@ categories:
 tags:
   - legal products
   - monax platform
-  - corporate
+  - entrepreneurs
 
 series:
   id: "general-business-series"

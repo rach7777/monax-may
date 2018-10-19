@@ -1,0 +1,88 @@
+{{ with .Site.Data.platform.workflow }}
+{{ if .enable }}
+
+<section class="section-feature section-padding-md padding-bottom-md background-grey">
+    <div class="container">
+
+            <div class="row flex-grid-md padding-bottom-md padding-top-md">
+                <div class="col-md-12 col-valign-top">
+                    <div class="">
+                        <h1>{{ .title | markdownify }}</h1>
+                    </div>
+                    {{ with .subtitle }}
+                      <h4>{{ . | markdownify }}</h4>
+                    {{ end }}
+              </div>
+          </div>
+
+          <div class="row flex-grid-md">
+            {{ range $i, $p := .section }}
+              <div class="col-md-6 col-valign-top">
+
+                <div class="animation-container padding-bottom-md">
+                  <div id="{{ .animation_id }}" class='{{ if eq .img_content_container "mac" }}animation-container-mac{{ end }}{{ if eq .img_content_container "iphone" }}animation-container-iphone{{ end }}'>
+                    <div class="img-layer-container">
+                      <img class="img-responsive img-center img-layer img-animation-base" src="{{ .img_base }}" alt="">
+
+                      {{ if eq .animation_type "zoom" }}
+                        <div class='content-container animation-content-frame animation-zoom animate-after-aos'   data-aos="none"  data-aos-delay="{{ .img_content_animation_delay }}" data-aos-duration="{{ .img_content_animation_duration }}">
+                          <img class="img-responsive img-center img-layer img-animate" src="{{ .img_content_layer_src }}" alt="">
+                        </div>
+                        <div class="content-container animation-popover-frame animation-zoom animate-after-aos" data-aos="zoom-in"  data-aos-delay="{{ .img_popover_animation_delay }}" data-aos-duration="{{ .img_popover_animation_duration }}">
+                          <img class="img-responsive img-center img-layer img-animate" src="{{ .img_popover_layer_src }}" alt="">
+                        </div>
+                      {{ end }}
+
+                      {{ if eq .animation_type "scroll" }}
+                        <div class='content-container animation-content-frame animation-scroll animate-after-aos'  data-aos="none"  data-aos-delay="{{ .animation_delay }}" data-aos-duration="{{ .animation_duration }}">
+                          <img class="img-responsive img-center img-layer img-animate" src="{{ .img_popover_layer_src }}" alt="">
+                        </div>
+                        <div class="content-container animation-popover-frame animation-scroll">
+                          <img class="img-responsive img-center img-layer img-animate {{ if .reveal_only_on_scroll }}animate-reveal-onscroll{{ end }}" src="{{ .img_content_layer_src }}" alt="">
+                        </div>
+                      {{ end }}
+
+                      {{ if eq .animation_type "multipop" }}
+                        <div class='content-container animation-content-frame animation-multipop animate-after-aos' data-aos="none"  data-aos-delay="{{ .animation_delay }}" data-aos-duration="{{ .animation_duration }}">
+                          <img class="img-responsive img-center img-layer img-animate" src="{{ .img_content_layer_src }}" alt="">
+                        </div>
+                        {{ range .pop }}
+                        <div id="{{ .img_pop_id }}-container" class="content-container animation-popover-frame animation-multipop animate-after-aos" data-aos="zoom-in"  data-aos-delay="{{ .animation_delay }}" data-aos-duration="{{ .animation_duration }}">
+                          <img id="{{ .img_pop_id }}" class="img-responsive img-center img-layer img-animate" src="{{ .img_pop_src }}" alt="">
+                        </div>
+                        {{ end }}
+                      {{ end }}
+
+                      {{ if eq .animation_type "none" }}
+                        <div class='content-container animation-content-frame'>
+                          <img class="img-responsive img-center img-layer img-animate" src="{{ .img_content_layer_src }}" alt="">
+                        </div>
+                      {{ end }}
+
+                    </div>
+                  </div>
+                </div> <!-- .animation-container -->
+
+                <!-- <div class="range-left-md content-container circle-container">
+                  <div class="content-feature-circle">
+                    <div class="feature-circle-inner">
+                      {{ add $i 1 }}
+                    </div>
+                  </div>
+                </div> -->
+                <div class="">
+                    <h4 class="">{{ .title | markdownify }}</h4>
+                </div>
+                <p class="lead">
+                  {{ .subtitle | markdownify }}
+                </p>
+
+              </div> <!-- .col -->
+            {{ end }}
+          </div>  <!-- .row -->
+
+      </div> <!-- .container -->
+  </section> <!-- .section -->
+
+{{ end }}
+{{ end }}

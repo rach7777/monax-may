@@ -1,0 +1,25 @@
+{{ with .Site.Data.platform.top }}
+{{ if .enable }}
+<section class="section-top padding-top-md padding-bottom-sm" style="background: url({{ .background_element }}) right bottom no-repeat; background-size: 520px;">
+    <div class="container">
+
+      <div class="row flex-grid-md">
+          <div class="col-md-12 col-valign-center">
+              <div class="">
+                  <h1>{{ .title | markdownify }}</h1>
+              </div>
+              {{ with .subtitle }}
+                <h4>{{ . | markdownify }}</h4>
+              {{ end }}
+
+              <!-- Sign up section [GLOBAL] -->
+              {{ if .hero_signup }}
+                {{ partial "_global/hero_signup.html" . }}
+              {{ end }}
+          </div>
+      </div>
+
+    </div> <!-- .container -->
+</section> <!-- .section -->
+{{ end }}
+{{ end }}
