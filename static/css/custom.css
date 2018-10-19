@@ -3348,7 +3348,7 @@ TEAM ICONS
 @media only screen and (min-width : 992px) {
   .dropdown-menu {
       width: 720px;
-      left: -220px !important;
+      left: -280px !important;
       box-shadow: 0 0 10px rgba(0,0,0,0.17);
       border: none;
       border-radius: 5px !important;
