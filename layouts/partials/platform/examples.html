@@ -1,4 +1,4 @@
-{{ with .Site.Data.features.examples }}
+{{ with .Site.Data.platform.examples }}
 {{ if .enable }}
 
   <section class="section-examples padding-bottom-sm padding-top-lg background-grey">
@@ -28,7 +28,7 @@
                             <div class="title range-left underline-xs">
                                 <h5>{{ .title }}</h5>
                             </div>
-                            <div class="doc-skin" style="transform: translateZ(10px);background:url({{ $.Site.Data.features.examples.default_img }}) center center no-repeat;background-size:cover;">
+                            <div class="doc-skin" style="transform: translateZ(10px);background:url({{ $.Site.Data.platform.examples.default_img }}) center center no-repeat;background-size:cover;">
                             </div>
                           </div>
                         </div>
@@ -70,7 +70,7 @@
                           <div class="title range-left underline-xs">
                               <h5>{{ .title }}</h5>
                           </div>
-                          <div class="doc-skin" style="background:url({{ $.Site.Data.features.examples.default_img }}) center center no-repeat;background-size:cover;">
+                          <div class="doc-skin" style="background:url({{ $.Site.Data.platform.examples.default_img }}) center center no-repeat;background-size:cover;">
                           </div>
                         </div>
                       </div>

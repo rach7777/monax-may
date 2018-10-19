@@ -15,18 +15,18 @@
 
         </header>
 
-        {{ partial "features/features_top.html" . }}
+        {{ partial "platform/top.html" . }}
 
-        {{ partial "features/features_new.html" . }}
+        {{ partial "platform/features.html" . }}
 
-        {{ partial "features/workflow.html" . }}
+        {{ partial "platform/workflow.html" . }}
 
-        <!-- {{ partial "features/examples.html" . }} -->
+        <!-- {{ partial "platform/examples.html" . }} -->
 
         <!-- global section -->
-        {{ if isset .Site.Data.features "cta" }}
-          {{ if .Site.Data.features.cta.enable }}
-            {{ partial "features/features_cta.html" . }}
+        {{ if isset .Site.Data.platform "cta" }}
+          {{ if .Site.Data.platform.cta.enable }}
+            {{ partial "platform/cta.html" . }}
           {{ end }}
         {{ end }}
 
