@@ -399,7 +399,8 @@ form label.error {
     font-size: 20px;
 }
 /* support for white background */
-.form-main-cta.form-white {
+.form-main-cta.form-white,
+.form.form-white {
     background: none;
 }
 .form-main-cta.form-white select {
@@ -1698,6 +1699,15 @@ p, h1, h2, h3, h4, h5, h6, .circle-container {
 .pricing-table .panel-body {
     padding-bottom: 30px;
     margin-bottom: 20px;
+}
+.pricing-table .form {
+  padding: 20px;
+}
+.pricing-table #pricing-trigger-demo.form-triggered {
+    opacity: 0.3;
+}
+.pricing-table .inner-heading {
+    padding: 0 25px;
 }
 .pricing-table .list-group {
     padding: 0 20px 30px 20px;

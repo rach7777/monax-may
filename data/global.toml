@@ -184,8 +184,8 @@
 [col_2]
     enable = true
     title = "Customers"
-    # subtitle = "Find all the resources you need as a developer.<br><br><a href='mailto:contact@monax.io' target='_blank'>Contact us about 3rd party integrations &rsaquo;</a>"
-    # <a href='https://docs.agreements.network/'>Read our developer docs  &rsaquo;</a><br><br>
+    # subtitle = "Find all the resources you need as a developer.<br><br><a href='mailto:contact@monax.io' target='_blank'>Contact us about 3rd party integrations&nbsp;&rsaquo;</a>"
+    # <a href='https://docs.agreements.network/'>Read our developer docs &nbsp;&rsaquo;</a><br><br>
 
     [[col_2.link]]
         link_title = "Entrepreneurs"
