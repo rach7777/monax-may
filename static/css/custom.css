@@ -399,7 +399,8 @@ form label.error {
     font-size: 20px;
 }
 /* support for white background */
-.form-main-cta.form-white {
+.form-main-cta.form-white,
+.form.form-white {
     background: none;
 }
 .form-main-cta.form-white select {
