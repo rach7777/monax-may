@@ -87,8 +87,8 @@
                                   <li class="list-group-item">{{ . | markdownify }}</li>
                                 {{ end }}
                               </ul>
-                              <div class="">
-                                <p><strong>{{ .benefits_title }}&nbsp;</strong></p>
+                              <div class="range-left">
+                                <p class="inner-heading"><strong>{{ .benefits_title }}&nbsp;</strong></p>
                               </div>
                               <ul class="list-group list-group-flush fa-ul">
                                 {{ range .benefits_list }}
@@ -154,8 +154,8 @@
                                   </ul>
                                 </div>
                                 <div class="col-sm-6">
-                                  <div class="">
-                                    <p><strong>{{ .benefits_title }}</strong></p>
+                                  <div class="range-left">
+                                    <p class="inner-heading"><strong>{{ .benefits_title }}</strong></p>
                                   </div>
                                   <ul class="list-group list-group-flush fa-ul">
                                     {{ range .benefits_list }}
@@ -183,7 +183,7 @@
                   <div class="tab-pane fade {{ if .active_tab }}in active{{ end }} padding-top-md" id="tier3" role="tabpanel" aria-labelledby="tier3-tab">
 
                     <div class="row">
-                      <div class="col-md-4">
+                      <div class="col-md-4 padding-bottom-md">
                         <div class="range-left-md">
                           <h2>{{ .content_title | markdownify }}</h2>
                         </div>
@@ -197,9 +197,9 @@
 
                             <div class="panel pricing-table no-border">
                               <div class="row">
-                                <div class="col-md-8 col-md-offset-1 col-sm-8 col-sm-offset-2 padding-top-md">
-                                  <div class="range-left-sm">
-                                    <p style="padding: 0 25px;"><strong>{{ .benefits_title }}</strong></p>
+                                <div class="col-md-8 col-md-offset-1 col-sm-6 col-sm-offset-3 padding-top-md">
+                                  <div class="range-left-md">
+                                    <p class="inner-heading"><strong>{{ .benefits_title }}</strong></p>
                                   </div>
                                   <ul class="list-group list-group-flush fa-ul">
                                     {{ range .benefits_list }}

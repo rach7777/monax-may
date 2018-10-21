@@ -1700,6 +1700,9 @@ p, h1, h2, h3, h4, h5, h6, .circle-container {
     padding-bottom: 30px;
     margin-bottom: 20px;
 }
+.pricing-table .inner-heading {
+    padding: 0 25px;
+}
 .pricing-table .list-group {
     padding: 0 20px 30px 20px;
     margin-bottom: 30px;
