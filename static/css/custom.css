@@ -1700,6 +1700,12 @@ p, h1, h2, h3, h4, h5, h6, .circle-container {
     padding-bottom: 30px;
     margin-bottom: 20px;
 }
+.pricing-table .form {
+  padding: 20px;
+}
+.pricing-table #pricing-trigger-demo.form-triggered {
+    opacity: 0.3;
+}
 .pricing-table .inner-heading {
     padding: 0 25px;
 }

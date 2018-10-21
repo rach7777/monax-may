@@ -20,8 +20,9 @@
         billed_yearly_price = "$150" # /month
         billed_monthly_price = "$189" # /month
         subtitle = "Streamline your operations and collectively manage your contracts"
-        link_title = "Try it out"
-        link_url = "https://beta.monax.io/"
+        link_title = "Try It Out"
+        link_triggers_demo_form = true # if false set url
+        link_url = "#demo1"
         features_title = ""
         features_list = [
           "<strong>3</strong> users",
@@ -37,6 +38,17 @@
         ]
         show_all_features_url = ""
 
+        [[pricing_table.tier1.column.form]]
+          enable = true
+          id = "demo1"
+          source = "pricing essential demo signup" # required for Segment to process
+          request_demo = "true" # required for Segment to process
+          email = true
+          fname = true
+          lname = true
+          company_name = true
+          submit_text = "Request a demo"
+
       [[pricing_table.tier1.column]]
         enable = true
         highlight_column = false
@@ -44,8 +56,9 @@
         billed_yearly_price = "$500" # /month
         billed_monthly_price = "$625" # /month
         subtitle = "Scale operations manage permissions and customize your processes"
-        link_title = "Try it out"
-        link_url = "https://beta.monax.io/"
+        link_title = "Try It Out"
+        link_triggers_demo_form = true # if false set url
+        link_url = "#demo2"
         features_title = ""
         features_list = [
           "<strong>10</strong> users",
@@ -61,6 +74,17 @@
         ]
         show_all_features_url = ""
 
+        [[pricing_table.tier1.column.form]]
+          enable = true
+          id = "demo2"
+          source = "pricing professional demo signup" # required for Segment to process
+          request_demo = "true" # required for Segment to process
+          email = true
+          fname = true
+          lname = true
+          company_name = true
+          submit_text = "Request a demo"
+
     [pricing_table.tier2]
       enable = true
       active_tab = false
@@ -75,8 +99,9 @@
         billed_yearly_price = "$25" # /month
         billed_monthly_price = "$31" # /month
         subtitle = "Organize your contracts and create clarity for your business relationships"
-        link_title = "Try it out"
-        link_url = "https://beta.monax.io/"
+        link_title = "Try It Out"
+        link_triggers_demo_form = true # if false set url
+        link_url = "#demo3"
         link_style_outline = false
         features_title = ""
         features_list = [
@@ -93,6 +118,17 @@
         ]
         show_all_features_url = ""
 
+        [[pricing_table.tier2.column.form]]
+          enable = true
+          id = "demo3"
+          source = "pricing starter demo request" # required for Segment to process
+          request_demo = "true" # required for Segment to process
+          email = true
+          fname = true
+          lname = true
+          company_name = true
+          submit_text = "Request a demo"
+
 
     [pricing_table.tier3]
       enable = true
@@ -102,6 +138,7 @@
       content_title = "<strong>Comprehensive. Secure. Flexible. Unlimited.</strong>"
       link_title = "Contact Us"
       link_url = "mailto:contact@monax.io"
+      # text_below_link = "contact@monax.io" // may want to enable this to display email address for users who don't have a mail client configured
       link_style_outline = false
       benefits_title = "All of Professional plus:"
       benefits_list = [
