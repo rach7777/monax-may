@@ -1,13 +1,13 @@
 [top]
     enable = true
-    title = "<strong>Stay in control of your contracts.</strong>"
+    title = "<strong>Stay in control of your contracts</strong>"
     subtitle = "Turn contracts into the backbone of your business relationships. Gain clarity, know where to focus and fulfill contracts collaboratively."
 
 
 [features]
   enable = true
-  title = "<strong>Built for Entrepreneurs and Creatives.</strong>"
-  subtitle = "Gain 100% oversight over your contractual agreements, track progress and obligations and keep everything important in one place. We help you staying focussed on what your doing best: growing your business."
+  title = "<strong>Built for entrepreneurs and creatives</strong>"
+  subtitle = "Gain 100% oversight on your contractual agreements, track progress and obligations and keep everything important in one place. We help you to stay focused on what you do best: growing your business."
   consumer_option = "Use legal templates"
   producer_option = "Create legal templates"
   enable_title_block = false
@@ -17,7 +17,7 @@
 
     # [[features.consumer.section]]
     #   title = "Browse templates"
-    #   subtitle = "Lawyer tested legal templates at your fingertips. Legal knowledge at affordable prices in the same way you by anything else online. Purchasing legal products has never been easier."
+    #   subtitle = "Lawyer tested legal templates at your fingertips. Obtain legal knowledge at affordable prices in the same way you buy anything else online - purchasing legal products has never been easier."
     #   #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
     #   animation_id = "feature-animation-A"
     #   animation_type = "multipop"
@@ -47,7 +47,7 @@
 
     [[features.consumer.section]]
       title = "Create agreement"
-      subtitle = "Select, fill out and hit create. You’ve created both a legally binding agreement and an auto-enforcable smart contract with just a couple of clicks. As simple as filling a form."
+      subtitle = "Select, fill out a form then press create. You’ve made both a legally binding agreement and an auto-enforcable smart contract with just a couple of clicks. As simple as filling out a form."
       #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
       animation_id = "feature-animation-B"
       animation_type = "multipop"
@@ -77,7 +77,7 @@
 
     [[features.consumer.section]]
       title = "Track every obligation"
-      subtitle = "Track every contract and obligation in one place. Every event is recorded immutably in a blockchain. No more admin hassle."
+      subtitle = "Track every contract and obligation in one place. Each event is permanently recorded on a blockchain - no more admin stress."
       #### ZOOM TEMPLATE
       animation_id = "feature-animation-1"
       animation_type = "zoom"
@@ -92,7 +92,7 @@
 
     [[features.consumer.section]]
       title = "Fulfill"
-      subtitle = "Visualise, monitor and control the execution of the contract throughout its entire life cycle. Get the transparency you need to focus on what your business is doing best."
+      subtitle = "Visualise, monitor and control the execution of the contract throughout its entire life-cycle. Obtain the transparency you need to focus on your business."
       #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
       animation_id = "feature-animation-4"
       animation_type = "multipop"
@@ -119,7 +119,7 @@
   #
   #   [[features.producer.section]]
   #     title = "Create templates"
-  #     subtitle = "Lawyer tested legal templates at your fingertips. Legal knowledge at affordable prices in the same way you by anything else online. Purchasing legal products has never been easier."
+  #     subtitle = "Lawyer-tested legal templates at your fingertips. Obtain legal knowledge at affordable prices in the same way you buy anything else online. Purchasing legal products has never been easier."
   #     #### ZOOM TEMPLATE
   #     animation_id = "feature-animation-1"
   #     animation_type = "none"
@@ -141,11 +141,11 @@
 [workflow]
     enable = true
     title = "<strong>Automate your templates.</strong>"
-    # subtitle = "Turn contracts into the backbone of your business relationships. Gain clarity, know where to focus and fulfill contracts collaboratively."
+    # subtitle = "Turn contracts into the backbone of your business relationships. Gain clarity, know where to focus and fulfil contracts collaboratively."
 
     [[workflow.section]]
       title = "<strong>Cut your legal spend with legal products</strong>"
-      subtitle = "Lawyer tested legal templates at your fingertips. Legal knowledge at affordable prices in the same way you by anything else online."
+      subtitle = "Lawyer tested legal templates at your fingertips. Obtain legal knowledge at affordable prices in the same way you buy anything else online."
       #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
       animation_id = "feature-animation-A"
       animation_type = "multipop"
