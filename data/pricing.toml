@@ -27,7 +27,8 @@
         features_list = [
           "<strong>3</strong> users",
           "<strong>5</strong> active contract templates",
-          "<strong>20</strong> new contracts/month",
+          "<strong>25</strong> new contracts/month",
+          "<strong>50</strong> active CantingTribe NDAs",
           "<strong>Unlimited</strong> storage for fulfilled contracts",
         ]
         benefits_title = ""
@@ -62,8 +63,9 @@
         features_title = ""
         features_list = [
           "<strong>10</strong> users",
-          "<strong>20</strong> active contract templates",
-          "<strong>100</strong> new contracts/month",
+          "<strong>15</strong> active contract templates",
+          "<strong>75</strong> new contracts/month",
+          "<strong>150</strong> active CantingTribe NDAs",
           "<strong>Unlimited</strong> storage for fulfilled contracts",
         ]
         benefits_title = "All of Essential plus:"
@@ -107,7 +109,8 @@
         features_list = [
           "<strong>1</strong> user",
           "<strong>1</strong> active contract template",
-          "<strong>3</strong> new contracts/month",
+          "<strong>5</strong> new contracts/month",
+          "<strong>10</strong> active CantingTribe NDAs",
           "<strong>Unlimited</strong> storage for fulfilled contracts",
         ]
         benefits_title = ""
