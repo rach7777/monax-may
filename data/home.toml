@@ -1,7 +1,7 @@
 [top]
     enable = true
-    title = "<strong>Stay focused on what you're building</strong> 
-    Let your contracts work for you"
+    title = """<strong>Stay focused on what you're building</strong>
+    Let your contracts work for you"""
     # subtitle = "The platform for the future of making and managing agreements"
     img_left = false
     hero_signup = true
