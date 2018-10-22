@@ -69,7 +69,7 @@
 [home_audience]
   enable = true
   title = "<strong>Built for entrepreneurs and creatives</strong>"
-  subtitle = "Gain 100% oversight over your contractual agreements, track progress and obligations and keep everything important in one place. We enable you to stay focused on what you do best: growing your business."
+  subtitle = "Gain 100% oversight on your contractual agreements, track progress and obligations and keep everything important in one place. We enable you to stay focused on what you do best: growing your business."
 
   [[home_audience.card_link]]
     title = "For entrepreneurs"
@@ -88,7 +88,7 @@
   enable = true
   title = "<strong>Designed to empower you</strong>"
   subtitle = "Turn contracts into the common thread of your business relationships. Gain clarity, know where to focus and fulfil your contracts collaboratively."
-  youtube_url = "-eMPz8D-VlA"
+  youtube_url = "sdX0jFFZKuo"
 
 
 # [home_features]
@@ -103,7 +103,7 @@
 #
 #     [[home_features.consumer.section]]
 #       title = "Browse templates"
-#       subtitle = "Lawyer-tested legal templates at your fingertips. Legal knowledge at affordable prices, purchased the same way you buy anything else online.<br><br>Purchasing legal products has never been easier"
+#       subtitle = "Lawyer-tested legal templates at your fingertips. Legal knowledge at affordable prices, purchased the same way you would anything else online.<br><br>Purchasing legal products has never been easier"
 #       #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
 #       animation_id = "feature-animation-A"
 #       animation_type = "multipop"
@@ -266,7 +266,7 @@
     title = "<strong>Let your contracts work for you</strong>"
 
     enable_button_one = true # links to url or triggers form one
-    button_one_text = "Sign up to webinar"
+    button_one_text = "Sign up to a webinar"
     button_one_trigger_form = true # if false set url
     button_one_url = "#webinar"
     button_one_style_outline = true # outline if true, solid if false
