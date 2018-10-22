@@ -1,6 +1,7 @@
 [top]
     enable = true
-    title = "<strong>Stay focused on what you're building.</strong> Let your contracts work for you."
+    title = "<strong>Stay focused on what you're building</strong> 
+    Let your contracts work for you"
     # subtitle = "The platform for the future of making and managing agreements"
     img_left = false
     hero_signup = true
@@ -41,7 +42,7 @@
 #       animation_duration = "600"
 #
 #     [[summary.feature]]
-#       title = "Create self-executable legal agreements in minutes."
+#       title = "Create self-executable legal agreements in minutes"
 #       description = ""
 #       icon = "fa-chevron-right"
 #       animation_type = "fade-up"
@@ -49,7 +50,7 @@
 #       animation_duration = "600"
 #
 #     [[summary.feature]]
-#       title = "An intuitive interface to the most advanced tech in the legal sector."
+#       title = "An intuitive interface to the most advanced tech in the legal sector"
 #       description = ""
 #       icon = "fa-chevron-right"
 #       animation_type = "fade-up"
@@ -57,7 +58,7 @@
 #       animation_duration = "600"
 #
 #     [[summary.feature]]
-#       title = "Trusted legal products at your fingertips."
+#       title = "Trusted legal products at your fingertips"
 #       description = ""
 #       icon = "fa-chevron-right"
 #       animation_type = "fade-up"
@@ -67,17 +68,17 @@
 
 [home_audience]
   enable = true
-  title = "<strong>Built for Entrepreneurs and Creatives</strong>"
+  title = "<strong>Built for entrepreneurs and creatives</strong>"
   subtitle = "Gain 100% oversight over your contractual agreements, track progress and obligations and keep everything important in one place. We enable you to stay focused on what you do best: growing your business."
 
   [[home_audience.card_link]]
-    title = "For Entrepreneurs"
+    title = "For entrepreneurs"
     img = "/img/assets/audiences/entrepreneurs_600.jpg"
     icon = "fa-angle-right"
     link_url = "/entrepreneurs/"
 
   [[home_audience.card_link]]
-    title = "For Creatives"
+    title = "For creatives"
     img = "/img/assets/audiences/creatives_600.jpg"
     icon = "fa-angle-right"
     link_url = "/creatives/"
@@ -92,7 +93,7 @@
 
 # [home_features]
 #   enable = true
-#   title = "<strong>Built for Entrepreneurs and Creatives.</strong>"
+#   title = "<strong>Built for entrepreneurs and creatives</strong>"
 #   subtitle = "Gain 100% oversight on your contractual agreements, track progress and obligations and keep everything important in one place. We enable you to stay focused on what you do best: growing your business."
 #   consumer_option = "Use legal templates"
 #   producer_option = "Create legal templates"
@@ -102,7 +103,7 @@
 #
 #     [[home_features.consumer.section]]
 #       title = "Browse templates"
-#       subtitle = "Lawyer tested legal templates at your fingertips. Legal knowledge at affordable prices, purchased the same way you buy anything else online.<br><br>Purchasing legal products has never been easier"
+#       subtitle = "Lawyer-tested legal templates at your fingertips. Legal knowledge at affordable prices, purchased the same way you buy anything else online.<br><br>Purchasing legal products has never been easier"
 #       #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
 #       animation_id = "feature-animation-A"
 #       animation_type = "multipop"
@@ -176,7 +177,7 @@
 #       img_popover_animation_duration = "600"
 #
 #     [[home_features.consumer.section]]
-#       title = "Fulfill"
+#       title = "Fulfil"
 #       subtitle = "Visualise, monitor and control the execution of the contract throughout its entire lifecycle.<br><br>Obtain the transparency you need to focus on your business."
 #       #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
 #       animation_id = "feature-animation-4"
@@ -262,7 +263,7 @@
 
 [home_cta]
     enable = true
-    title = "<strong>Let your contracts work for you.</strong>"
+    title = "<strong>Let your contracts work for you</strong>"
 
     enable_button_one = true # links to url or triggers form one
     button_one_text = "Sign up to webinar"
