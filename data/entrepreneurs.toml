@@ -1,7 +1,7 @@
 [top]
     enable = true
     title = "Monax for entrepreneurs"
-    subtitle = "How Monax can simplify and speed up your corporate governance, and give you full control over your agreements"
+    subtitle = "How Monax can simplify and speed up your corporate governance and give you full control over your agreements"
     img_left = false
     hero_signup = true
     img_right = "/img/assets/landing-pages/corporate-governance/corporate-governance-header.png"
@@ -29,8 +29,8 @@
   enable = true
 
   [[feature.section]]
-    title = "100% transparency on your legal matters."
-    subtitle = "Maintain constant insight as to what is happening in your contracts. Track every step along the way, gathering evidence required to fulfill an agreement from signing to shipping or payments and so on. Put your mind at ease and concentrate on growing your business."
+    title = "100% transparency on your legal matters"
+    subtitle = "Maintain constant insight as to what is happening in your contracts. Track every step along the way, gathering the evidence required to fulfil an agreement from signing to shipping or payments and so on. Put your mind at ease and concentrate on growing your business."
     #### ZOOM TEMPLATE
     animation_id = "feature-animation-1"
     animation_type = "zoom"
@@ -44,7 +44,7 @@
     img_popover_animation_duration = "600"
 
   [[feature.section]]
-    title = "Trusted legal products at your fingertips."
+    title = "Trusted legal products at your fingertips"
     subtitle = "Buy lawyer-tested legal products in the same way you shop for books, clothing or food. The Monax platform opens the doors to legal trust without the legal hassle."
     #### SCROLL TEMPLATE
     animation_id = "feature-animation-2"
@@ -88,8 +88,8 @@
       animation_duration = "300"
 
   [[feature.section]]
-    title = "Increased quality at reduced cost."
-    subtitle = "Cut out legal paper-shuffling and pay for actual value. Monax combines legal expertise with automation and reproducibility delivering legal products with higher precision at a fraction of their cost."
+    title = "Increased quality at reduced cost"
+    subtitle = "Cut out legal paper-shuffling and pay for actual value. Monax combines expertise with automation and reproducibility, delivering legal products with higher precision at a fraction of the cost."
     #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
     animation_id = "feature-animation-4"
     animation_type = "multipop"
@@ -121,19 +121,19 @@
 
   # Agreements should be auto populated
   [[examples.agreement]]
-    title = "Non-Disclosure Template"
+    title = "Non-Disclosure template"
     url = "https://beta.monax.io/register"
 
   [[examples.agreement]]
-    title = "M.O.U. Template"
+    title = "M.O.U. template"
     url = "https://beta.monax.io/register"
 
   [[examples.agreement]]
-    title = "Consortium Template"
+    title = "Consortium template"
     url = "https://beta.monax.io/register"
 
   [[examples.agreement]]
-    title = "Material Transfer Template"
+    title = "Material Transfer template"
     url = "https://beta.monax.io/register"
 
 

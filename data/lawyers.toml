@@ -29,8 +29,8 @@
     enable = true
 
     [[feature.section]]
-      title = "Put your legal knowledge assets to work."
-      subtitle = "Earn more by translating your legal knowledge into legal products. Monax’s three step template creation process guides you from uploading your prose template to setting up contractual workflows. "
+      title = "Put your legal knowledge assets to work"
+      subtitle = "Earn more by translating your legal knowledge into legal products. Monax’s three-step template creation process guides you all the way through, from uploading your prose template to setting up contractual workflows. "
       #### ZOOM TEMPLATE
       animation_id = "feature-animation-5"
       animation_type = "zoom"
@@ -45,7 +45,7 @@
 
 
     [[feature.section]]
-      title = "Increase your margins."
+      title = "Increase your margins"
       subtitle = "Offer your legal expertise through legal products in the Monax platform and broaden your customer base. Kick back and let process automation and reproducibility of your assets earn you money."
       #### ZOOM TEMPLATE
       animation_id = "feature-animation-6"

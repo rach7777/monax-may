@@ -1,7 +1,7 @@
 [top]
     enable = true
     title = "Blog posts"
-    subtitle = "Discover our journey, how we think and the paradigm shift we see happening toward legal products."
+    subtitle = "Discover our journey, how we think and the paradigm shift towards legal products"
     img_left = false
     hero_signup = false
     # img_right = "/img/assets/background-elements/wphone-test.png"
