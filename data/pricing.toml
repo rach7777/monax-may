@@ -1,7 +1,7 @@
 [top]
     enable = true
-    title = "<strong>Stay in control of your contracts.</strong>"
-    subtitle = "Turn contracts into the backbone of your business relationships. Gain clarity, know where to focus and fulfill contracts collaboratively."
+    title = "<strong>Stay in control of your contracts</strong>"
+    subtitle = "Turn contracts into the backbone of your business relationships - gain clarity, know where to focus and fulfil your contracts collaboratively."
 
 [pricing_table]
     enable = true
@@ -11,7 +11,7 @@
       active_tab = true
       title = "Growing Businesses"
       subtitle = "Starts at $150 USD"
-      content_title = "<strong>Empowering. Productive. Gamechanging.</strong>"
+      content_title = "<strong>Empowering Productive Game-changing</strong>"
 
       [[pricing_table.tier1.column]]
         enable = true
@@ -56,7 +56,7 @@
         title = "Professional"
         billed_yearly_price = "$500" # /month
         billed_monthly_price = "$625" # /month
-        subtitle = "Scale operations manage permissions and customize your processes"
+        subtitle = "Scale operations, manage permissions and customize your processes"
         link_title = "Try It Out"
         link_triggers_demo_form = true # if false set url
         link_url = "#demo2"
@@ -64,7 +64,7 @@
         features_list = [
           "<strong>10</strong> users",
           "<strong>15</strong> active contract templates",
-          "<strong>75</strong> new contracts/month",
+          "<strong>75</strong> new contracts/ month",
           "<strong>150</strong> active CantingTribe NDAs",
           "<strong>Unlimited</strong> storage for fulfilled contracts",
         ]
@@ -92,7 +92,7 @@
       active_tab = false
       title = "New Businesses"
       subtitle = "Starts at $25 USD"
-      content_title = "<strong>Freelancer or just starting out?</strong><br>Get going on the right foot."
+      content_title = "<strong>Freelancer or just starting out?</strong><br>Get going on the right foot"
 
       [[pricing_table.tier2.column]]
         enable = true
@@ -100,7 +100,7 @@
         title = "Starter"
         billed_yearly_price = "$25" # /month
         billed_monthly_price = "$31" # /month
-        subtitle = "Organize your contracts and create clarity for your business relationships"
+        subtitle = "Organize your contracts and gain clarity over your business relationships"
         link_title = "Try It Out"
         link_triggers_demo_form = true # if false set url
         link_url = "#demo3"
@@ -109,7 +109,7 @@
         features_list = [
           "<strong>1</strong> user",
           "<strong>1</strong> active contract template",
-          "<strong>5</strong> new contracts/month",
+          "<strong>5</strong> new contracts/ month",
           "<strong>10</strong> active CantingTribe NDAs",
           "<strong>Unlimited</strong> storage for fulfilled contracts",
         ]
