@@ -50,13 +50,13 @@ variables:
 # Variable packages
 .variables_staging: &vars_staging
   only:
-    - staging@success/monax.io
+    - staging@revenue/monax.io
   variables:
     SITE_NAME: "staging.monax.io"
 
 .variables_production: &vars_production
   only:
-    - production@success/monax.io
+    - production@revenue/monax.io
   variables:
     SITE_NAME: "monax.io"
 
