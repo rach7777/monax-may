@@ -1,4 +1,4 @@
-image: jguyomard/hugo-builder:0.42-extras
+image: jguyomard/hugo-builder:0.49-extras
 
 stages:
 - build
@@ -32,6 +32,8 @@ variables:
         --recursive \
         --output=$BUILD_DIR/ \
         $BUILD_DIR/
+
+.save_artifacts_template: &save_artifacts_template
   artifacts:
     paths:
       - build
@@ -61,13 +63,20 @@ variables:
     SITE_NAME: "monax.io"
 
 # Build jobs
+build generic:
+  variables:
+    SITE_NAME: "test.monax.io"
+  <<: *build_template
+
 build staging:
   <<: *vars_staging
   <<: *build_template
+  <<: *save_artifacts_template
 
 build production:
   <<: *vars_production
   <<: *build_template
+  <<: *save_artifacts_template
 
 # Deploy jobs
 deploy staging:
