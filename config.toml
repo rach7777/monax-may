@@ -96,7 +96,7 @@ quality = 80
       Name = "Explainers"
       parent = "resources"
       URL = "/learn/"
-      Post = "Learn how Monax can help you streamline your business. Explore best practices for Monax tools and ask questions."
+      Post = "Learn how Monax can help you streamline your business. Explore best practices and ask questions."
       Weight = 4
 
     # [[menu.main]]
