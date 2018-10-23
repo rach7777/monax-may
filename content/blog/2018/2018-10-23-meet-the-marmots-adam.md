@@ -66,7 +66,7 @@ Four years is the longest I’ve lived in one place and that is New York, New Yo
 
 Thanks - also if you're reading this and you'd like to chat more, just reach out via [twitter](https://twitter.com/AdamLocklin)
 
-{{< adam_pirate.png >}}
+{{< image_blog "adam_pirate.png" >}}
 
 *The word ‘Monax’ comprises part of the binomial name for a groundhog (marmota monax) and our company mascot is a rock n’ roll marmot called Doug. Folks who work for Monax traditionally refer to themselves as marmots, and no prizes for guessing how we came up with the name [Hyperledger Burrow](https://www.hyperledger.org/projects/hyperledger-burrow)!
 
