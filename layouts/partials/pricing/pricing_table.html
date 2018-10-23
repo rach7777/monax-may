@@ -1,0 +1,307 @@
+{{ with .Site.Data.pricing.pricing_table }}
+{{ if .enable }}
+<section class="section-top padding-bottom-xl" style="">
+    <div class="container">
+
+      <div class="row flex-grid-md">
+        <div class="col-md-12 col-valign-center">
+          <div class="content-container hidden-xs">
+            <h4>Introductory pricing</h4>
+            <div class="content-container price-select padding-bottom-md">
+              <div class="input-group">
+                <div class="input-container">
+                  <label><span class="p1"> Billed monthly</span></label>
+                  <div class="switch-container">
+                    <div class="onoffswitch">
+                      <input id="billing-period-switch" type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" checked>
+                      <label class="onoffswitch-label" for="billing-period-switch"></label>
+                    </div>
+                  </div>
+                  <label><span class="p1"> Billed yearly</span></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- PRICING TABS SELECT -->
+          <div class="content-container">
+            <ul class="nav nav-tabs nav-justified" id="pricing-table-tabs" role="tablist">
+              {{ with .tier1 }}
+                {{ if .enable }}
+                  <li class="nav-item {{ if .active_tab }}active{{ end }}">
+                    <a class="nav-link {{ if .active_tab }}active{{ end }}" id="tier1-tab" data-toggle="tab" href="#tier1" role="tab" aria-controls="tier1" {{ if .active_tab }}aria-selected="true"{{ else }}aria-selected="false"{{ end }}>
+                      <h4 class="tab-title">{{ .title | markdownify }}</h4>
+                      <p class="tab-subtitle">{{ .subtitle | markdownify }}</p>
+                    </a>
+                  </li>
+                {{ end }}
+              {{ end }}
+              {{ with .tier2 }}
+                {{ if .enable }}
+                  <li class="nav-item {{ if .active_tab }}active{{ end }}">
+                    <a class="nav-link {{ if .active_tab }}active{{ end }}" id="tier2-tab" data-toggle="tab" href="#tier2" role="tab" aria-controls="tier2" {{ if .active_tab }}aria-selected="true"{{ else }}aria-selected="false"{{ end }}>
+                      <h4 class="tab-title">{{ .title | markdownify }}</h4>
+                      <p class="tab-subtitle">{{ .subtitle | markdownify }}</p>
+                    </a>
+                  </li>
+                {{ end }}
+              {{ end }}
+              {{ with .tier3 }}
+                {{ if .enable }}
+                  <li class="nav-item {{ if .active_tab }}active{{ end }}">
+                    <a class="nav-link {{ if .active_tab }}active{{ end }}" id="tier3-tab" data-toggle="tab" href="#tier3" role="tab" aria-controls="tier3" {{ if .active_tab }}aria-selected="true"{{ else }}aria-selected="false"{{ end }}>
+                      <h4 class="tab-title">{{ .title | markdownify }}</h4>
+                      <p class="tab-subtitle">{{ .subtitle | markdownify }}</p>
+                    </a>
+                  </li>
+                {{ end }}
+              {{ end }}
+            </ul>
+            <!-- TAB CONTENT -->
+            <div class="tab-content pricing-table-content content-shadow-sm padding-top-md" id="pricing-table-content">
+              {{ with .tier1 }}
+                {{ if .enable }}
+                  <div class="tab-pane fade {{ if .active_tab }}in active{{ end }} padding-top-md" id="tier1" role="tabpanel" aria-labelledby="tier1-tab">
+
+                    <div class="row">
+                      <div class="col-md-4 padding-bottom-md">
+                        <div class="range-left-md">
+                          <h2>{{ .content_title | markdownify }}</h2>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="row">
+                          {{ range .column }}
+                          <div class="col-sm-6 padding-bottom-lg">
+
+                            <div class="panel pricing-table">
+                              <div class="panel-heading {{ if .highlight_column }}highlight{{ end }}">
+                                  <h3 class="">{{ .title }}</h3>
+                              </div>
+                              <div class="panel-body text-center">
+                                  <p class="p1"><span class="price" data-billed-yearly="{{ .billed_yearly_price }}" data-billed-monthly="{{ .billed_monthly_price }}">{{ .billed_yearly_price }}</span>/month</p>
+                                  <p class="p1 padding-bottom-sm">{{ .subtitle }}</p>
+                                  <a {{ if .link_triggers_demo_form }} id="pricing-trigger-demo" {{ else }} href="{{ .link_url }}" {{ end }} class="btn btn-xl {{ if not .highlight_column }}btn-outline{{ end }}">{{ .link_title }}</a>
+
+                                  {{ range .form }}
+                                  {{ if .enable }}
+                                  <form id="pricing-demo-signup" data-source="{{ with .source }}{{.}}{{ end }}" class="form form-white padding-top-md" style="display: none;">
+                                    {{ with .source }}
+                                      <input type="text" name="source" value="{{ . }}" class="hidden">
+                                    {{ end }}
+                                    {{ with .email }}
+                                      <input type="text" placeholder="Email" name="email" class="field-email">
+                                    {{ end }}
+                                    {{ with .fname }}
+                                      <input type="text" placeholder="First Name" name="firstName" class="field-fname">
+                                    {{ end }}
+                                    {{ with .lname }}
+                                      <input type="text" placeholder="Last Name" name="lastName" class="field-lname">
+                                    {{ end }}
+                                    {{ with .company_name }}
+                                      <input type="text" placeholder="Company Name" name="company" class="field-company">
+                                    {{ end }}
+                                    <div class="btn-container padding-top-sm">
+                                      <button type="submit" value="Submit" class="btn btn-xl field-submit">
+                                        <span>{{ .submit_text | default "Submit" }}</span>
+                                      </button>
+                                    </div>
+                                  </form>
+                                  <div class="success-message-container"> <!-- must be directly after form -->
+                                    <div class="success-message">
+                                      <img class="success-doug-img" src="/img/assets/doug/doug_lo.png" alt="Doug">
+                                      <span class="success-text">Requested <i class="fa fa-check"></i></span>
+                                    </div>
+                                    <p class="success-info" style="margin-top: 20px;">Thanks for getting in touch! We'll get back to you soon.</p>
+                                  </div>
+                                  {{ end }}
+                                  {{ end }}
+
+                              </div>
+                              <ul class="list-group list-group-flush">
+                                {{ range .features_list }}
+                                  <li class="list-group-item">{{ . | markdownify }}</li>
+                                {{ end }}
+                              </ul>
+                              <div class="range-left">
+                                <p class="inner-heading"><strong>{{ .benefits_title }}&nbsp;</strong></p>
+                              </div>
+                              <ul class="list-group list-group-flush fa-ul">
+                                {{ range .benefits_list }}
+                                  <li class="list-group-item"><span class="fa-li" ><i class="fa fa-check"></i></span> {{ . | markdownify }}</li>
+                                {{ end }}
+                              </ul>
+                            </div>
+                            {{ if ne .show_all_features_url "" }}
+                              <p><a href="{{ .show_all_features_url }}">Show all features</a></p>
+                            {{ end }}
+
+                          </div>
+                          {{ end }}
+                        </div>
+                      </div>
+                    </div>
+
+                  </div> <!-- .tab-content -->
+                {{ end }}
+              {{ end }}
+              {{ with .tier2 }}
+                {{ if .enable }}
+                  <div class="tab-pane fade {{ if .active_tab }}in active{{ end }} padding-top-md" id="tier2" role="tabpanel" aria-labelledby="tier2-tab">
+
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="range-left-md">
+                          <h2>{{ .content_title | markdownify }}</h2>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="row">
+                          {{ range .column }}
+                          {{ if .enable }}
+                          <div class="col-sm-12 padding-bottom-lg">
+
+                            <div class="panel pricing-table">
+                              <div class="panel-heading {{ if .highlight_column }}highlight{{ end }}">
+                                <div class="row">
+                                  <div class="col-sm-6">
+                                    <h3 class="range-left-sm">{{ .title }}</h3>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <p class="p1 range-left-sm"><span class="price" data-billed-yearly="{{ .billed_yearly_price }}" data-billed-monthly="{{ .billed_monthly_price }}">{{ .billed_yearly_price }}</span>/month</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel-body">
+                                  <h4 class="padding-bottom-sm range-left-sm">{{ .subtitle }}</h4>
+                                  <div class="btn-container range-left-sm">
+                                    <a {{ if .link_triggers_demo_form }} id="pricing-trigger-demo" {{ else }} href="{{ .link_url }}" {{ end }} class="btn btn-xl {{ if not .highlight_column }}btn-outline{{ end }}">{{ .link_title }}</a>
+
+                                    {{ range .form }}
+                                    {{ if .enable }}
+                                    <form id="pricing-demo-signup" data-source="{{ with .source }}{{.}}{{ end }}" class="form form-white padding-top-md" style="display: none; padding-left: 0; padding-right: 0;">
+                                      {{ with .source }}
+                                        <input type="text" name="source" value="{{ . }}" class="hidden">
+                                      {{ end }}
+                                      {{ with .email }}
+                                        <input type="text" placeholder="Email" name="email" class="field-email">
+                                      {{ end }}
+                                      {{ if or .fname .lname }}
+                                        <div class="content-container clearfix">
+                                          {{ with .fname }}
+                                            <input type="text" placeholder="First Name" name="firstName" class="input-half field-fname">
+                                          {{ end }}
+                                          {{ with .lname }}
+                                            <input type="text" placeholder="Last Name" name="lastName" class="input-half field-lname">
+                                          {{ end }}
+                                        </div>
+                                      {{ end }}
+                                      {{ with .company_name }}
+                                        <input type="text" placeholder="Company Name" name="company" class="field-company">
+                                      {{ end }}
+                                      <div class="btn-container range-left-sm padding-top-sm">
+                                        <button type="submit" value="Submit" class="btn btn-xl field-submit">
+                                          <span>{{ .submit_text | default "Submit" }}</span>
+                                        </button>
+                                      </div>
+                                    </form>
+                                    <div class="success-message-container"> <!-- must be directly after form -->
+                                      <div class="success-message">
+                                        <img class="success-doug-img" src="/img/assets/doug/doug_lo.png" alt="Doug">
+                                        <span class="success-text">Requested <i class="fa fa-check"></i></span>
+                                      </div>
+                                      <p class="success-info" style="margin-top: 20px;">Thanks for getting in touch! We'll get back to you soon.</p>
+                                    </div>
+                                    {{ end }}
+                                    {{ end }}
+
+                                  </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <div class="">
+                                    <p><strong>{{ .features_title }}</strong></p>
+                                  </div>
+                                  <ul class="list-group list-group-flush">
+                                    {{ range .features_list }}
+                                      <li class="list-group-item">{{ . | markdownify }}</li>
+                                    {{ end }}
+                                  </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="range-left">
+                                    <p class="inner-heading"><strong>{{ .benefits_title }}</strong></p>
+                                  </div>
+                                  <ul class="list-group list-group-flush fa-ul">
+                                    {{ range .benefits_list }}
+                                      <li class="list-group-item"><span class="fa-li" ><i class="fa fa-check"></i></span> {{ . | markdownify }}</li>
+                                    {{ end }}
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            {{ if ne .show_all_features_url "" }}
+                              <p class="range-left-sm"><a href="{{ .show_all_features_url }}">Show all features</a></p>
+                            {{ end }}
+                          </div>
+                          {{ end }}
+                          {{ end }}
+                        </div>
+                      </div>
+                    </div>
+
+                  </div> <!-- .tab-content -->
+                {{ end }}
+              {{ end }}
+              {{ with .tier3 }}
+                {{ if .enable }}
+                  <div class="tab-pane fade {{ if .active_tab }}in active{{ end }} padding-top-md" id="tier3" role="tabpanel" aria-labelledby="tier3-tab">
+
+                    <div class="row">
+                      <div class="col-md-4 padding-bottom-md">
+                        <div class="range-left-md">
+                          <h2>{{ .content_title | markdownify }}</h2>
+                        </div>
+                        <div class="btn-container range-left-md">
+                          <a class="btn btn-xl" href="{{ .link_url }}">{{ .link_title }}</a>
+                        </div>
+                        {{ with .text_below_link }}
+                        <div class="range-left-sm padding-top-sm">
+                          <p>{{ . }}</p>
+                        </div>
+                        {{ end }}
+                      </div>
+                      <div class="col-md-8">
+                        <div class="row">
+                          <div class="col-sm-12 padding-bottom-lg">
+
+                            <div class="panel pricing-table no-border">
+                              <div class="row">
+                                <div class="col-md-8 col-md-offset-1 col-sm-6 col-sm-offset-3 padding-top-md">
+                                  <div class="range-left-md">
+                                    <p class="inner-heading"><strong>{{ .benefits_title }}</strong></p>
+                                  </div>
+                                  <ul class="list-group list-group-flush fa-ul">
+                                    {{ range .benefits_list }}
+                                      <li class="list-group-item"><span class="fa-li" ><i class="fa fa-check"></i></span> {{ . | markdownify }}</li>
+                                    {{ end }}
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div> <!-- .tab-content -->
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- .container -->
+</section> <!-- .section -->
+{{ end }}
+{{ end }}

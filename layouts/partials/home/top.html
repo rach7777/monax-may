@@ -5,13 +5,15 @@
 
       <div class="row flex-grid-md">
           <div class="col-md-7 col-valign-center">
-            <div class="underline-sm range-left-md">
-                <h1>{{ .title }}</h1>
+            <div class="range-left-md">
+                <h2>{{ .title | markdownify }}</h2>
             </div>
 
-            <p class="lead range-left-md">
-              {{ .subtitle | markdownify }}
-            </p>
+            {{ with .subtitle }}
+              <p class="lead range-left-md">
+                {{ . | markdownify }}
+              </p>
+            {{ end }}
 
             <!-- Sign up section [GLOBAL] -->
             {{ if .hero_signup }}

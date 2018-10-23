@@ -36,15 +36,15 @@ utm:
 
 ### Hey Adam, can you introduce yourself in a sentence?
 
-I'm Adam, a passionate guy, with an internal optimism that keeps him going (and a sweet tooth that might kill him!).
+I'm Adam, a passionate guy, with an internal optimism that keeps me going (and a sweet tooth that might kill me!).
 
 ### How did you cross paths with Monax?
 
-It all started in New York city, 2014/15 when I met a marmot of Monax (formerly Eris) at a [BitDevs NYC Meetup](https://www.google.com/url?q=https://www.meetup.com/BitDevsNYC/&sa=D&ust=1537264153239000&usg=AFQjCNG2NzQSYRdHhHxC1UXNwFBxeNmJbQ). Over a beer that marmot described their views on private blockchain instances and ecosystem applications. Fast forward to 2018, I decided to leave corporate America and work at a startup, but I wanted to be inspired and fall in love. Here I am in the honeymoon phase still.
+It all started in New York city, late 2014 when I met a marmot of Monax (formerly Eris) at a [BitDevs NYC Meetup](https://www.google.com/url?q=https://www.meetup.com/BitDevsNYC/&sa=D&ust=1537264153239000&usg=AFQjCNG2NzQSYRdHhHxC1UXNwFBxeNmJbQ). Over a beer that marmot described their views on private blockchain instances and ecosystem applications. Fast forward to 2018, I decided to leave corporate America and work at a startup, but I wanted to be inspired and fall in love. Here I am in the honeymoon phase still.
 
 ### What’s your background?
 
-I joined the United States Marine Corps out of high school, spent nine years mainly working as an intelligence analyst, also taught Marine Corps martial arts - judo chop! Continued my higher education between numerous deployments. Following the same role, I left the Marines to work at BAE Systems as an intel analyst. I read [Satoshi Nakamoto's](https://bitcoin.org/bitcoin.pdf)     Bitcoin white paper and I quit the intelligence work and moved to NYC0 to “work in bitcoin”. [NYSDFS](https://www.dfs.ny.gov/legal/regulations/bitlicense_reg_framework.htm) bitlicense crushed my dreams! Ended up at JPMorgan Chase as a compliance officer. Moved to PwC and had an amazing opportunity to work with assurance, advisory and new ventures focusing on moving blockchain technology forward.
+I joined the United States Marine Corps out of high school, spent nine years mainly working as an intelligence analyst, also taught Marine Corps martial arts - judo chop! Continued my higher education between numerous overseas deployments. Following the same role, I left the Marines to work at BAE Systems as an intel analyst. I read [Satoshi Nakamoto's](https://bitcoin.org/bitcoin.pdf)     Bitcoin white paper and I quit the intelligence work and moved to NYC to “work in bitcoin”. [NYSDFS](https://www.dfs.ny.gov/legal/regulations/bitlicense_reg_framework.htm) bitlicense crushed my dreams! Ended up at JPMorgan Chase as a compliance officer. Moved to PwC and had an amazing opportunity to work with assurance, advisory and new ventures focusing on moving blockchain technology forward.
 
 ### What does your work at Monax involve?
 
@@ -56,7 +56,7 @@ Marmots give a shit about each other and the humans we interact with. They also 
 
 ### What challenges does your role bring and how do you meet them?
 
-The Agreements Network and Monax can have dozens of different user groups. From BigLaw attorneys to solo practitioner lawyers to consumers of legal agreements, data providers, template producers, clients of each of these, and so on. Therefore I have to be able to not only describe the network and Monax application to each different type of user, but also articulate “why blockchain” and so forth to a wide-ranging of technical understanding.
+The Agreements Network and Monax can have dozens of different user groups. From BigLaw attorneys to solo practitioner lawyers to consumers of legal agreements, data providers, template producers, clients of each of these, and so on. Therefore I have to be able to not only describe the network and Monax application to each different type of user, but also articulate “why blockchain” and so forth to a wide-ranging of technical understanding individuals.
 
 ### Tell us a quirky fact about yourself…
 

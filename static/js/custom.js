@@ -715,4 +715,87 @@ $(document).ready(function() {
   });
 
 
+
+    // ========== PRICING =============== //
+
+    $('#billing-period-switch').change(function(){
+      const prices_arr = $('span.price');
+      if( this.checked ) {
+        $.each( prices_arr, function(i, elm){
+          // console.log(elm);
+          $(elm).html( $(this).data('billedYearly') );
+        });
+      } else {
+        $.each( prices_arr, function(i, elm){
+          // console.log(elm);
+          $(elm).html( $(this).data('billedMonthly') );
+        });
+      }
+    })
+
+    // pricing table 'request a demo' forms
+    $('a[id*="pricing-trigger-demo"]').each(function(index){
+      console.log('pricing trigger found: ' + index);
+      $(this).on('click', function(e) {
+        e.preventDefault();
+        if ( ! $(this).hasClass('form-triggered') ) {
+          $(this).next().slideToggle();
+          $(this).toggleClass('form-triggered');
+        } else {
+          $(this).next().slideToggle();
+          $(this).toggleClass('form-triggered');
+        }
+      });
+    });
+    $('form[id*="pricing-demo-signup"]').each(function(index){
+      console.log('pricing form found: ' + index);
+      $(this).validate({
+        rules: {
+          firstName: {
+            required: true
+          },
+          lastName: {
+            required: true
+          },
+          email: {
+            required: true,
+            email: true
+          }
+        },
+        submitHandler: function(form) {
+          analyticsIdentifyAndTrack(form, "Demo Requested");
+          // animate Doug
+          const successMessageCont = $(form).next(); // .successmessagecontainer
+          const successDoug = $(successMessageCont).find('.success-doug-img');
+          const successText = $(successMessageCont).find('.success-text');
+          // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
+          const successInfo = $(successMessageCont).find('.success-info');
+          // $(successInfo).html('custom success text'); // enable to customize success information
+          $(form).prev().slideToggle(400);
+          $(form).slideToggle(400, function() {
+            setTimeout(function(){
+              $(successMessageCont).animate({width:'toggle'},600, function() {
+                setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+              });
+            }, 200);
+            // remove form
+            $(form).remove();
+          });
+          // prevent redirect
+          return false;
+        },
+        invalidHandler: function(event, validator) {
+          var errors = validator.numberOfInvalids();
+          if (errors) {
+            console.log("form returned invalid");
+            $(this).find('button').addClass('animated headShake');
+          }
+        }
+      });
+    })
+
+
+
+
+
 });

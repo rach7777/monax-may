@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  {{ partial "head_fonts.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "creatives/top.html" . }}
+
+        <!-- global section -->
+        {{ if isset .Site.Data.creatives "press" }}
+          {{ if .Site.Data.creatives.press.enable }}
+            {{ partial "_global/press.html" . }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "creatives/testimonials.html" . }}
+
+        {{ partial "creatives/feature.html" . }}
+
+        {{ partial "creatives/examples.html" . }}
+
+        {{ partial "creatives/relatedarticles.html" . }}
+
+        {{ partial "creatives/faq.html" . }}
+
+        <!-- CTA section [GLOBAL] -->
+        {{ if isset .Site.Data.creatives "cta" }}
+          {{ if .Site.Data.creatives.cta.enable }}
+            {{ partial "_global/cta.html" . }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

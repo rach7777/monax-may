@@ -15,10 +15,10 @@ categories:
   - learn
 tags:
   - fleetleasing
-  - contentcreators
+  - creatives
   - lawyers
-  - corporate
-# if you want this article to show on a 'use case' page, you can use the following TAGS -  'fleetleasing' 'contentcreators' 'lawyers' or 'corporate'
+  - entrepreneurs
+# if you want this article to show on a 'use case' page, you can use the following TAGS -  'fleetleasing' 'creatives' 'lawyers' or 'entrepreneurs'
 draft: true
 # set this to 'false' when you're ready to publish
 utm:

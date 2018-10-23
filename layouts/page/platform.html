@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  {{ partial "head_fonts.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "platform/top.html" . }}
+
+        {{ partial "platform/features.html" . }}
+
+        {{ partial "platform/workflow.html" . }}
+
+        <!-- {{ partial "platform/examples.html" . }} -->
+
+        <!-- global section -->
+        {{ if isset .Site.Data.platform "cta" }}
+          {{ if .Site.Data.platform.cta.enable }}
+            {{ partial "platform/cta.html" . }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

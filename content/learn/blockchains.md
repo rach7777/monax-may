@@ -8,9 +8,9 @@ categories:
   - learn
 tags:
   - fleetleasing
-  - contentcreators
+  - creatives
   - lawyers
-  - corporate
+  - entrepreneurs
 
 ---
 

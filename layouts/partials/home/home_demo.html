@@ -1,0 +1,34 @@
+{{ with .Site.Data.home.home_demo }}
+{{ if .enable }}
+
+<section class="section-audience background-grey padding-top-lg padding-bottom-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          {{ with .title }}
+            <div class="">
+                <h2>{{ . | markdownify }}</h2>
+            </div>
+          {{ end }}
+
+          {{ with .subtitle }}
+            <div class="padding-bottom-sm">
+              <h3>{{ . | markdownify }}</h3>
+            </div>
+          {{ end }}
+
+        </div>
+        <div class="col-md-8 col-md-offset-2 padding-bottom-md">
+
+          <div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+            <iframe src="//www.youtube.com/embed/{{ .youtube_url }}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+          </div>
+
+        </div> <!-- .col -->
+      </div>
+    </div>
+</section>
+
+{{ end }}
+{{ end }}

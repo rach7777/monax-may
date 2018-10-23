@@ -1,0 +1,160 @@
+[top]
+    enable = true
+    title = "<strong>Stay in control of your contracts</strong>"
+    subtitle = "Turn contracts into the backbone of your business relationships - gain clarity, know where to focus and fulfil your contracts collaboratively."
+
+[pricing_table]
+    enable = true
+
+    [pricing_table.tier1]
+      enable = true
+      active_tab = true
+      title = "Growing Businesses"
+      subtitle = "Starts at $150 USD"
+      content_title = "<strong>Empowering Productive Game-changing</strong>"
+
+      [[pricing_table.tier1.column]]
+        enable = true
+        highlight_column = true
+        title = "Essential"
+        billed_yearly_price = "$150" # /month
+        billed_monthly_price = "$189" # /month
+        subtitle = "Streamline your operations and collectively manage your contracts"
+        link_title = "Try It Out"
+        link_triggers_demo_form = true # if false set url
+        link_url = "#demo1"
+        features_title = ""
+        features_list = [
+          "<strong>3</strong> users",
+          "<strong>5</strong> active contract templates",
+          "<strong>25</strong> new contracts/month",
+          "<strong>50</strong> active CantingTribe NDAs",
+          "<strong>Unlimited</strong> storage for fulfilled contracts",
+        ]
+        benefits_title = ""
+        benefits_list = [
+          "Access advanced integrations",
+          "Collaborate with external partners",
+          "Collaboratively manage contracts within your organization",
+        ]
+        show_all_features_url = ""
+
+        [[pricing_table.tier1.column.form]]
+          enable = true
+          id = "demo1"
+          source = "pricing essential demo request" # required for Segment to process
+          request_demo = "true" # required for Segment to process
+          email = true
+          fname = true
+          lname = true
+          company_name = true
+          submit_text = "Request a demo"
+
+      [[pricing_table.tier1.column]]
+        enable = true
+        highlight_column = false
+        title = "Professional"
+        billed_yearly_price = "$500" # /month
+        billed_monthly_price = "$625" # /month
+        subtitle = "Scale operations, manage permissions and customize your processes"
+        link_title = "Try It Out"
+        link_triggers_demo_form = true # if false set url
+        link_url = "#demo2"
+        features_title = ""
+        features_list = [
+          "<strong>10</strong> users",
+          "<strong>15</strong> active contract templates",
+          "<strong>75</strong> new contracts/ month",
+          "<strong>150</strong> active CantingTribe NDAs",
+          "<strong>Unlimited</strong> storage for fulfilled contracts",
+        ]
+        benefits_title = "All of Essential plus:"
+        benefits_list = [
+          "Access premium integrations",
+          "Organize your company through organizations",
+          "Package and execute multicontract workflows",
+        ]
+        show_all_features_url = ""
+
+        [[pricing_table.tier1.column.form]]
+          enable = true
+          id = "demo2"
+          source = "pricing professional demo request" # required for Segment to process
+          request_demo = "true" # required for Segment to process
+          email = true
+          fname = true
+          lname = true
+          company_name = true
+          submit_text = "Request a demo"
+
+    [pricing_table.tier2]
+      enable = true
+      active_tab = false
+      title = "New Businesses"
+      subtitle = "Starts at $25 USD"
+      content_title = "<strong>Freelancer or just starting out?</strong><br>Get going on the right foot"
+
+      [[pricing_table.tier2.column]]
+        enable = true
+        highlight_column = true
+        title = "Starter"
+        billed_yearly_price = "$25" # /month
+        billed_monthly_price = "$31" # /month
+        subtitle = "Organize your contracts and gain clarity over your business relationships"
+        link_title = "Try It Out"
+        link_triggers_demo_form = true # if false set url
+        link_url = "#demo3"
+        link_style_outline = false
+        features_title = ""
+        features_list = [
+          "<strong>1</strong> user",
+          "<strong>1</strong> active contract template",
+          "<strong>5</strong> new contracts/ month",
+          "<strong>10</strong> active CantingTribe NDAs",
+          "<strong>Unlimited</strong> storage for fulfilled contracts",
+        ]
+        benefits_title = ""
+        benefits_list = [
+          "Access basic integrations",
+          "Get alerts to meet your contract obligations",
+          "Create custom collaborative templates",
+        ]
+        show_all_features_url = ""
+
+        [[pricing_table.tier2.column.form]]
+          enable = true
+          id = "demo3"
+          source = "pricing starter demo request" # required for Segment to process
+          request_demo = "true" # required for Segment to process
+          email = true
+          fname = true
+          lname = true
+          company_name = true
+          submit_text = "Request a demo"
+
+
+    [pricing_table.tier3]
+      enable = true
+      active_tab = false
+      title = "Enterprise"
+      subtitle = "Contact Us"
+      content_title = "<strong>Comprehensive. Secure. Flexible. Unlimited.</strong>"
+      link_title = "Contact Us"
+      link_url = "mailto:contact@monax.io"
+      # text_below_link = "contact@monax.io" // may want to enable this to display email address for users who don't have a mail client configured
+      link_style_outline = false
+      benefits_title = "All of Professional plus:"
+      benefits_list = [
+        "Unlimited users",
+        "Unlimited active contract templates",
+        "Unlimited new contracts",
+        "Unlimited storage of fulfilled contracts",
+        "Deployed on-premise",
+        "Custom branding",
+      ]
+      show_all_features_url = "" # set to "" to hide
+
+
+
+[cta] # global
+    enable = true

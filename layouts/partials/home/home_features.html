@@ -8,9 +8,17 @@
 
         <div class="col-md-12">
 
-          <div class="padding-bottom-sm">
-              <h3>{{ .title }}</h3>
-          </div>
+          {{ with .title }}
+            <div class="">
+                <h2>{{ . | markdownify }}</h2>
+            </div>
+          {{ end }}
+
+          {{ with .subtitle }}
+            <div class="padding-bottom-sm">
+              <h3>{{ . | markdownify }}</h3>
+            </div>
+          {{ end }}
 
           {{ if and .consumer.enable .producer.enable }}
           <div class="padding-bottom-md btn-container" style="">
