@@ -1,0 +1,42 @@
+{{ with .Site.Data.entrepreneurs.bullets }}
+{{ if .enable }}
+  <section class="section-feature padding-top-lg padding-bottom-xl">
+      <div class="container">
+            <div class="row">
+              {{ range $i, $p := .section }}
+
+                {{ if (modBool $i 2) }} <!-- new row after 2 entries -->
+                  <div class="clearfix visible-lg-block visible-md-block"></div>
+                {{ end }}
+
+              <div class="col-md-6 padding-bottom-lg">
+                <div class="range-left-md">
+                    <h3><strong>{{ .title }}</strong></h3>
+                </div>
+                <p class="p1 padding-bottom-sm range-left-md">
+                  {{ .text | markdownify }}
+                </p>
+                <p class="range-left-md">
+                  <strong>
+                    {{ .highlights | markdownify }}
+                  </strong>
+                </p>
+              </div> <!-- .col -->
+              {{ end }}
+            </div>  <!-- .row -->
+
+            {{ if .enable_request_demo }}
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="content-container signup-center">
+                    <!-- global section -->
+                      {{ partial "_global/hero_signup.html" . }}
+                  </div>
+                </div>
+              </div>
+            {{ end }}
+
+      </div> <!-- .container -->
+  </section> <!-- .section -->
+{{ end }}
+{{ end }}

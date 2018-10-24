@@ -1,0 +1,38 @@
+{{ with .Site.Data.entrepreneurs.integrations }}
+{{ if .enable }}
+<section class="padding-top-md padding-bottom-md background-grey section-integrations">
+    <div class="container">
+
+      <div class="row flex-grid-md padding-bottom-md">
+          <div class="col-md-12 col-valign-center">
+              <div class="">
+                  <h3><strong>{{ .title | markdownify }}</strong></h3>
+              </div>
+              {{ with .subtitle }}
+                <h4>{{ . | markdownify }}</h4>
+              {{ end }}
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="row">
+            {{ range .logo }}
+              <div class="col-sm-3 col-xs-6 padding-bottom-md">
+                  <div class="img-container integration-img-container force-center">
+                    <img class="img-responsive img-center" src="{{ .img }}" alt="">
+                  </div>
+                  <p class="p3">{{ .text }}</p>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /.bar -->
+{{ end }}
+{{ end }}

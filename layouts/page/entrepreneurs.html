@@ -17,6 +17,16 @@
 
         {{ partial "entrepreneurs/top.html" . }}
 
+        {{ partial "entrepreneurs/intro.html" . }}
+
+        {{ partial "entrepreneurs/testimonials.html" . }}
+
+        {{ partial "entrepreneurs/bullets.html" . }}
+
+        {{ partial "entrepreneurs/integrations.html" . }}
+
+        {{ partial "entrepreneurs/cta.html" . }}
+
         <!-- global section -->
         <!-- {{ if isset .Site.Data.entrepreneurs "press" }}
           {{ if .Site.Data.entrepreneurs.press.enable }}
@@ -24,22 +34,20 @@
           {{ end }}
         {{ end }} -->
 
-        {{ partial "entrepreneurs/testimonials.html" . }}
+        <!-- {{ partial "entrepreneurs/feature.html" . }} -->
 
-        {{ partial "entrepreneurs/feature.html" . }}
+        <!-- {{ partial "entrepreneurs/examples.html" . }} -->
 
-        {{ partial "entrepreneurs/examples.html" . }}
+        <!-- {{ partial "entrepreneurs/relatedarticles.html" . }} -->
 
-        {{ partial "entrepreneurs/relatedarticles.html" . }}
-
-        {{ partial "entrepreneurs/faq.html" . }}
+        <!-- {{ partial "entrepreneurs/faq.html" . }} -->
 
         <!-- CTA section [GLOBAL] -->
-        {{ if isset .Site.Data.entrepreneurs "cta" }}
+        <!-- {{ if isset .Site.Data.entrepreneurs "cta" }}
           {{ if .Site.Data.entrepreneurs.cta.enable }}
             {{ partial "_global/cta.html" . }}
           {{ end }}
-        {{ end }}
+        {{ end }} -->
 
         {{ partial "footer.html" . }}
 
