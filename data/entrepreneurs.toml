@@ -1,15 +1,15 @@
 [top]
     enable = true
-    title = "Monax for entrepreneurs"
-    subtitle = "How Monax can simplify and speed up your corporate governance and give you full control over your agreements"
-    img_left = false
-    hero_signup = true
-    img_right = "/img/assets/landing-pages/corporate-governance/corporate-governance-header.png"
-    # background_element = "/img/assets/background-elements/abstract-01.jpg"
+    title = "<strong>Build and run your company without the legal hassle</strong>"
+    # subtitle = "How Monax can simplify and speed up your corporate governance and give you full control over your agreements"
+    request_demo = true
+    # enable youtube_id or img_right
+    youtube_id = "sdX0jFFZKuo" # after ?v= on YouTube urls, e.g. "sdX0jFFZKuo"
+    # img_right = "/img/assets/landing-pages/corporate-governance/corporate-governance-header.png"
 
 
 [press] # global
-    enable = true
+    enable = false
 
 
 [testimonials]

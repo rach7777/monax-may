@@ -502,6 +502,25 @@ form label.error {
     background-color: #799844;
     color: #fff;
 }
+/* signup container short */
+.signup-container.signup-short form input {
+    flex: 1;
+}
+@media only screen and (min-width : 992px) {
+  .signup-container.signup-short {
+      width: 100%;
+  }
+  .signup-container.signup-short form {
+      flex-direction: column;
+      width: 100%;
+  }
+  .signup-container.signup-short form input {
+      border-radius: 5px 5px 0 0;
+  }
+  .signup-container.signup-short form button {
+  border-radius: 0 0 5px 5px;
+  }
+}
 /* Small Devices, Tablets */
 @media only screen and (min-width : 480px) {
   .signup-container form {
