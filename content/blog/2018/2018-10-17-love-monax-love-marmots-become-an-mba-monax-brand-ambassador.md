@@ -9,7 +9,7 @@ author:    "Rachel Davidson, Senior Marketing Associate"
 excerpt:   "We’re on the hunt for some awesome marmot-friendly humans to spread the word about all things Monax!"
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: malte-bickel-387952-unsplash.jpg
+thumbnail: malte-bickel-387952-unsplash.png
 
 # check the categories on the existing blog. should only have ONE
 categories:
