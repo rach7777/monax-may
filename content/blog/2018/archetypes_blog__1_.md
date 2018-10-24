@@ -1,7 +1,7 @@
 ---
 
 # Pretty normal stuff
-date:      {{ .Date }}
+date:      2018-10-24T13:25:03+01:00
 title:     "Blog Post Title Here"
 author:    "Your Name, Title Here"
 
@@ -17,7 +17,7 @@ categories:
   - legal products
 
 # tags should be meaningful for your blog. if you want this article to show on a 'use case' page, you can use
-# the following TAGS -  'fleetleasing' 'contentcreators' 'lawyers' or 'corporate'
+# the following TAGS -  'fleetleasing' 'creatives' 'lawyers' or 'entrepreneurs'
 tags:
   - legal products
   - agreements network
