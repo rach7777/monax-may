@@ -1,4 +1,4 @@
-console.log("custom.js loaded");
+// console.log("custom.js loaded");
 
 $(document).ready(function() {
   // ANALYTICS
