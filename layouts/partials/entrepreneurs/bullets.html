@@ -16,11 +16,20 @@
                 <p class="p1 padding-bottom-sm range-left-md">
                   {{ .text | markdownify }}
                 </p>
-                <p class="range-left-md">
-                  <strong>
-                    {{ .highlights | markdownify }}
-                  </strong>
-                </p>
+                <div class="row flex-grid-sm content-container bullets-list">
+                  <div class="col-sm-4 col-xs-5 col-valign-center">
+                    <div class="img-container">
+                      <img class="img-responsive img-right img-bullets-icon" src="{{ .img_src }}" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-8 col-xs-7 col-valign-center">
+                      <ul class="ul-no-list">
+                        {{ range .bullets_list }}
+                        <li><p class="p2 range-left">{{ . }}</p></li>
+                        {{ end }}
+                      </ul>
+                  </div>
+                </div>
               </div> <!-- .col -->
               {{ end }}
             </div>  <!-- .row -->

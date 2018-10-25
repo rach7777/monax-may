@@ -3601,10 +3601,25 @@ TEAM ICONS
 .section-cta p {
   font-size: 22px;
 }
+/* entrepreneurs */
+.bullets-list {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.bullets-list .img-bullets-icon {
+  max-width: 100px;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .bullets-list {
+      margin: 0 -15px;
+  }
+}
 
 
 /* ==============
-  Home CTA
+  cta_two_button
 =============== */
 
 .section-cta #cta-options {
