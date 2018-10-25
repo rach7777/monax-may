@@ -75,26 +75,37 @@ $(document).ready(function() {
           },
           submitHandler: function(form) {
             analyticsIdentifyAndTrack(form, 'Demo Requested');
-            // vars
-            const formFields = $('#nav-signup .form-fields');
-            // animate Doug
-            const successMessageCont = $(formFields).next();
-            const successDoug = $(successMessageCont).find('.success-doug-img');
-            const successText = $(successMessageCont).find('.success-text');
-            // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
-            const successInfo = $(successMessageCont).find('.success-info');
-            // $(successInfo).html('custom success text'); // enable to customize success information
-            $(formFields).slideToggle(400, function() {
-              setTimeout(function(){
-                $(successMessageCont).animate({width:'toggle'},600, function() {
-                  setTimeout(function(){
-                    $(successInfo).slideToggle(800, function() {
-                      setTimeout(function(){ requestDemoPopup.close(); }, 2400);
-                    });
-                  }, 400);
-                });
-              }, 200);
+            // get form data for parsing
+            var formDataArr = {};
+            $.each( $(form).serializeArray(), function(i, field) {
+                formDataArr[field.name] = field.value;
             });
+            const qString = "?name=" + encodeURIComponent( formDataArr['firstName'] + " " + formDataArr['lastName'] ) + "&email=" + encodeURIComponent( formDataArr['email'] ) + "&a1=" + encodeURIComponent( formDataArr['company'] );
+            var calendlyUrl = 'https://calendly.com/monax/demo' + qString;
+            // redirect for mobile
+            window.location.href = calendlyUrl;
+
+            // // vars
+            // const formFields = $('#nav-signup .form-fields');
+            // // animate Doug
+            // const successMessageCont = $(formFields).next();
+            // const successDoug = $(successMessageCont).find('.success-doug-img');
+            // const successText = $(successMessageCont).find('.success-text');
+            // // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
+            // const successInfo = $(successMessageCont).find('.success-info');
+            // // $(successInfo).html('custom success text'); // enable to customize success information
+            // $(formFields).slideToggle(400, function() {
+            //   setTimeout(function(){
+            //     $(successMessageCont).animate({width:'toggle'},600, function() {
+            //       setTimeout(function(){
+            //         $(successInfo).slideToggle(800, function() {
+            //           setTimeout(function(){ requestDemoPopup.close(); }, 2400);
+            //         });
+            //       }, 400);
+            //     });
+            //   }, 200);
+            // });
+
             // prevent redirect
             return false;
           },
@@ -129,22 +140,33 @@ $(document).ready(function() {
     },
     submitHandler: function(form) {
       analyticsIdentifyAndTrack(form, 'Demo Requested');
-      // vars
-      const formFields = $('#nav-signup-desktop .form-fields');
-      // animate Doug
-      const successMessageCont = $(formFields).next();
-      const successDoug = $(successMessageCont).find('.success-doug-img');
-      const successText = $(successMessageCont).find('.success-text');
-      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
-      const successInfo = $(successMessageCont).find('.success-info');
-      // $(successInfo).html('custom success text'); // enable to customize success information
-      $(formFields).slideToggle(400, function() {
-        setTimeout(function(){
-          $(successMessageCont).animate({width:'toggle'},600, function() {
-            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
-          });
-        }, 200);
+      // get form data for parsing
+      var formDataArr = {};
+      $.each( $(form).serializeArray(), function(i, field) {
+          formDataArr[field.name] = field.value;
       });
+      const qString = "?name=" + encodeURIComponent( formDataArr['firstName'] + " " + formDataArr['lastName'] ) + "&email=" + encodeURIComponent( formDataArr['email'] ) + "&a1=" + encodeURIComponent( formDataArr['company'] );
+      var calendlyUrl = 'https://calendly.com/monax/demo' + qString;
+      // popup for desktops
+      Calendly.showPopupWidget( calendlyUrl );
+
+      // // vars
+      // const formFields = $('#nav-signup-desktop .form-fields');
+      // // animate Doug
+      // const successMessageCont = $(formFields).next();
+      // const successDoug = $(successMessageCont).find('.success-doug-img');
+      // const successText = $(successMessageCont).find('.success-text');
+      // // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
+      // const successInfo = $(successMessageCont).find('.success-info');
+      // // $(successInfo).html('custom success text'); // enable to customize success information
+      // $(formFields).slideToggle(400, function() {
+      //   setTimeout(function(){
+      //     $(successMessageCont).animate({width:'toggle'},600, function() {
+      //       setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+      //     });
+      //   }, 200);
+      // });
+
       // prevent redirect
       return false;
     },
@@ -261,14 +283,12 @@ $(document).ready(function() {
       });
       const qString = "?name=" + encodeURIComponent( formDataArr['firstName'] + " " + formDataArr['lastName'] ) + "&email=" + encodeURIComponent( formDataArr['email'] ) + "&a1=" + encodeURIComponent( formDataArr['company'] );
       var calendlyUrl = 'https://calendly.com/monax/demo' + qString;
-
       // redirect if mobile, otherwise show popup form
       if( $(window).width() < 768 ) {
         window.location.href = calendlyUrl;
       } else {
         Calendly.showPopupWidget( calendlyUrl );
       }
-
       // prevent redirect
       return false;
     },

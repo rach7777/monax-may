@@ -572,6 +572,12 @@ form label.error {
 }
 
 /* nav signup form */
+#nav-signup {
+  background: #fff;
+}
+#nav-signup h5 {
+  text-transform: none;
+}
 #nav-signup input,
 #nav-signup p {
     color: #000;
