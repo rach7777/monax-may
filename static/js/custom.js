@@ -9,7 +9,7 @@ $(document).ready(function() {
     if (typeof analytics.user === 'function') formData.userId = analytics.user().id(); // added function check for local environment bug fix
     const method = formData.userId ? 'PUT' : 'POST';
     $.ajax({
-      url: 'https://analytics.monax.io/monaxioregistry',
+      url: 'https://analytics.monax.io/monaxioregistry{{ if eq (printf "%s" .Site.BaseURL) "https://staging.monax.io/" }}?sentfrom=staging{{ end }}',
       method,
       data: formData,
     }).done((userId) => {
