@@ -110,3 +110,7 @@
       lname = true
       company_name = true
       submit_text = "Request a demo of the platform"
+            
+
+[press] # global
+    enable = true

@@ -23,7 +23,12 @@
 
         {{ partial "home/cta_two_button.html" . }}
 
-        {{ partial "home/press.html" . }}
+        <!-- global section -->
+        {{ if isset .Site.Data.home "press" }}
+          {{ if .Site.Data.home.press.enable }}
+            {{ partial "_global/press.html" . }}
+          {{ end }}
+        {{ end }}
 
         {{ partial "footer.html" . }}
 

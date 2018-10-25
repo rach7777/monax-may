@@ -27,6 +27,13 @@
 
         {{ partial "entrepreneurs/cta_two_button.html" . }}
 
+        <!-- global section -->
+        {{ if isset .Site.Data.entrepreneurs "press" }}
+          {{ if .Site.Data.entrepreneurs.press.enable }}
+            {{ partial "_global/press.html" . }}
+          {{ end }}
+        {{ end }}
+
         {{ partial "footer.html" . }}
 
     </div>

@@ -1,7 +1,6 @@
 [top]
     enable = true
-    title = """<strong>Stay focused on what you're building.</strong>
-    Let your contracts work for you."""
+    title = "<strong>Stay focused on what you're building.</strong> Let your contracts work for you."
     # subtitle = "The platform for the future of making and managing agreements"
     img_left = false
     hero_signup = true
@@ -81,14 +80,5 @@
       submit_text = "Request a demo of the platform"
 
 
-[press]
+[press] # global
     enable = true
-    title = "Featured in international business and tech press"
-    logo_1 = "/img/press-logos/bloomsberg_lo_grey.png"
-    logo_1_url = "https://www.bloomberg.com/news/audio/2018-08-07/bloomberg-markets-zillow-s-wobbly-results-tesla-going-private"
-    logo_2 = "/img/press-logos/forbes_lo_grey.png"
-    logo_2_url = "https://www.forbes.com/sites/sarahhansen/2018/07/26/11-companies-join-agreements-network-to-develop-ethereum-platform-for-lawyers/#3d1be5e94aec"
-    logo_3 = "/img/press-logos/digital-journal_lo_grey.png"
-    logo_3_url = "http://www.digitaljournal.com/business/q-a-how-technology-is-shaking-up-legal-firms/article/525554"
-    logo_4 = "/img/press-logos/market-watch_lo_grey.png"
-    logo_4_url = "https://www.marketwatch.com/press-release/leaders-in-blockchain-law-and-legal-technology-team-up-to-launch-the-agreements-network-2018-07-26"
