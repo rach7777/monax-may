@@ -64,6 +64,9 @@ variables:
 
 # Build jobs
 build generic:
+  except:
+    - staging@revenue/monax.io
+    - production@revenue/monax.io
   variables:
     SITE_NAME: "test.monax.io"
   <<: *build_template
