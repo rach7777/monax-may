@@ -1,11 +1,11 @@
-{{ with .Site.Data.entrepreneurs.cta }}
+{{ with .Site.Data.home.cta_two_button }}
 {{ if .enable }}
 
 <section class="section-cta padding-top-lg padding-bottom-lg">
   <div class="container">
 
     <div class="row flex-grid-md">
-      <div class="col-md-12 home-cta-options-container">
+      <div class="col-md-12 cta-options-container">
 
         {{ with .title }}
         <div class="padding-bottom-sm">
@@ -13,15 +13,15 @@
         </div>
         {{ end }}
 
-        <div id="home-cta-options" class="btn-container padding-bottom-sm" style="">
+        <div id="cta-options" class="btn-container padding-bottom-sm" style="">
           {{ if .enable_button_one }}
-            <a {{ if .button_one_trigger_form }} id="home-cta-trigger-webinar-form" {{ else }} href="{{ .button_one_url }}" {{ end }} class="btn btn-primary btn-xl {{ if .button_one_style_outline }}btn-outline{{ end }}" onClick="" role="button">{{ .button_one_text }}</a>
+            <a {{ if .button_one_trigger_form }} id="cta-trigger-webinar-form" {{ else }} href="{{ .button_one_url }}" {{ end }} class="btn btn-primary btn-xl {{ if .button_one_style_outline }}btn-outline{{ end }}" onClick="" role="button">{{ .button_one_text }}</a>
           {{ end }}
           {{ if .show_button_separator }}
             <span class="button-divider grey">or</span>
           {{ end }}
           {{ if .enable_button_two }}
-            <a {{ if .button_two_trigger_form }} id="home-cta-trigger-demo-form" {{ else }} href="{{ .button_two_url }}" {{ end }} class="btn btn-primary btn-xl" onClick="" role="button">{{ .button_two_text }}</a>
+            <a {{ if .button_two_trigger_form }} id="cta-trigger-demo-form" {{ else }} href="{{ .button_two_url }}" {{ end }} class="btn btn-primary btn-xl" onClick="" role="button">{{ .button_two_text }}</a>
           {{ end }}
         </div>
         <div class="row">
@@ -42,7 +42,7 @@
             {{ with .form_one }}
             {{ if .enable }}
 
-            <form id="home-cta-webinar-signup" class="form form-white" style="display: none;">
+            <form id="cta-webinar-signup" class="form form-white" style="display: none;">
               {{ with .source }}
                 <input type="text" name="source" value="{{ . }}" class="hidden">
               {{ end }}
@@ -75,7 +75,7 @@
             {{ with .form_two }}
             {{ if .enable }}
 
-            <form id="home-cta-request-demo" class="form form-white" style="display: none;">
+            <form id="cta-request-demo" class="form form-white" style="display: none;">
               {{ with .source }}
                 <input type="text" name="source" value="{{ . }}" class="hidden">
               {{ end }}

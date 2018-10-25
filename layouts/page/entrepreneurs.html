@@ -25,29 +25,7 @@
 
         {{ partial "entrepreneurs/integrations.html" . }}
 
-        {{ partial "entrepreneurs/cta.html" . }}
-
-        <!-- global section -->
-        <!-- {{ if isset .Site.Data.entrepreneurs "press" }}
-          {{ if .Site.Data.entrepreneurs.press.enable }}
-            {{ partial "_global/press.html" . }}
-          {{ end }}
-        {{ end }} -->
-
-        <!-- {{ partial "entrepreneurs/feature.html" . }} -->
-
-        <!-- {{ partial "entrepreneurs/examples.html" . }} -->
-
-        <!-- {{ partial "entrepreneurs/relatedarticles.html" . }} -->
-
-        <!-- {{ partial "entrepreneurs/faq.html" . }} -->
-
-        <!-- CTA section [GLOBAL] -->
-        <!-- {{ if isset .Site.Data.entrepreneurs "cta" }}
-          {{ if .Site.Data.entrepreneurs.cta.enable }}
-            {{ partial "_global/cta.html" . }}
-          {{ end }}
-        {{ end }} -->
+        {{ partial "entrepreneurs/cta_two_button.html" . }}
 
         {{ partial "footer.html" . }}
 

@@ -494,9 +494,9 @@ $(document).ready(function() {
   // ========== HOME =============== //
 
   // HOMEPAGE - ELEMENTS - CTA SECTION
-  const $ctaOptions = $('#home-cta-options');
-  const $ctaWebinarForm = $('#home-cta-webinar-signup');
-  const $ctaDemoForm = $('#home-cta-request-demo');
+  const $ctaOptions = $('#cta-options');
+  const $ctaWebinarForm = $('#cta-webinar-signup');
+  const $ctaDemoForm = $('#cta-request-demo');
 
   // HOMEPAGE - TOP - ANIMATION
   setTimeout(function(){
@@ -508,7 +508,7 @@ $(document).ready(function() {
   }, 300);
 
   // HOMEPAGE - CTA - WEBINAR SIGNUP
-  $('#home-cta-trigger-webinar-form').on('click', function(e) {
+  $('#cta-trigger-webinar-form').on('click', function(e) {
     e.preventDefault();
     if ( ! $ctaOptions.hasClass('form-triggered') ) {
       $ctaWebinarForm.slideToggle();
@@ -562,13 +562,13 @@ $(document).ready(function() {
       var errors = validator.numberOfInvalids();
       if (errors) {
         console.log("form returned invalid");
-        $('#home-cta-webinar-signup button').addClass('animated headShake');
+        $('#cta-webinar-signup button').addClass('animated headShake');
       }
     }
   });
 
   // HOMEPAGE - CTA - REQUEST A DEMO
-  $('#home-cta-trigger-demo-form').on('click', function(e) {
+  $('#cta-trigger-demo-form').on('click', function(e) {
     e.preventDefault();
     if ( ! $ctaOptions.hasClass('form-triggered') ) {
       $ctaDemoForm.slideToggle();
@@ -622,7 +622,7 @@ $(document).ready(function() {
       var errors = validator.numberOfInvalids();
       if (errors) {
         console.log("form returned invalid");
-        $('#home-cta-request-demo button').addClass('animated headShake');
+        $('#cta-request-demo button').addClass('animated headShake');
       }
     }
   });

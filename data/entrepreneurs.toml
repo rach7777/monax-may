@@ -14,16 +14,16 @@
     subtitle = "The Monax platform supports entrepreneurs following their dreams while taking care of business."
 
 
-[testimonials]
-    enable = true
-
-    [testimonials.card_link]
-      img = "/img/assets/audiences/entrepreneurs_600.jpg"
-      title = "John Johnson, CEO Tupix"
-      blurb = "Testimonial blurb"
-      icon = "fa-angle-right"
-      link_url = "/entrepreneurs/"
-      link_title = "John's Story"
+# [testimonials]
+#     enable = true
+#
+#     [testimonials.card_link]
+#       img = "/img/assets/audiences/entrepreneurs_600.jpg"
+#       title = "John Johnson, CEO Tupix"
+#       blurb = "Testimonial blurb"
+#       icon = "fa-angle-right"
+#       link_url = "/entrepreneurs/"
+#       link_title = "John's Story"
 
 
 [bullets]
@@ -71,7 +71,7 @@
         img = "/img/integrations-logos/stripe-logo.png"
         text = "coming early 2019"
 
-[cta] # non-global
+[cta_two_button] # non-global
     enable = true
     title = "<strong>Let your contracts work for you</strong>"
 
@@ -89,10 +89,10 @@
 
     show_button_separator = false
 
-    [cta.form_one]
+    [cta_two_button.form_one]
       enable = true
       id = "webinar"
-      source = "home cta webinar signup" # required for Segment to process
+      source = "entrepreneurs cta webinar signup" # required for Segment to process
       webinar_signup = "true" # required for Segment to process
       email = true
       fname = true
@@ -100,159 +100,13 @@
       company_name = true
       submit_text = "Sign up for our next webinar"
 
-    [cta.form_two]
+    [cta_two_button.form_two]
       enable = true
       id = "demo"
-      source = "home cta demo signup" # required for Segment to process
+      source = "entrepreneurs cta demo signup" # required for Segment to process
       request_demo = "true" # required for Segment to process
       email = true
       fname = true
       lname = true
       company_name = true
       submit_text = "Request a demo of the platform"
-
-# [feature]
-#   enable = true
-#
-#   [[feature.section]]
-#     title = "100% transparency on your legal matters"
-#     subtitle = "Maintain constant insight as to what is happening in your contracts. Track every step along the way, gathering the evidence required to fulfil an agreement from signing to shipping or payments and so on. Put your mind at ease and concentrate on growing your business."
-#     #### ZOOM TEMPLATE
-#     animation_id = "feature-animation-1"
-#     animation_type = "zoom"
-#     img_base = "/img/assets/animations/shared/base-mac.png"
-#     img_content_container = "mac" # set to 'mac' or 'iphone'
-#     img_content_layer_src = "/img/assets/animations/1-100-percent-transparency/content-agreement-grid.png"
-#     img_content_animation_delay = "600"
-#     img_content_animation_duration = "300"
-#     img_popover_layer_src = "/img/assets/animations/1-100-percent-transparency/zoom-agreement-detail.png"
-#     img_popover_animation_delay = "1500"
-#     img_popover_animation_duration = "600"
-#
-#   [[feature.section]]
-#     title = "Trusted legal products at your fingertips"
-#     subtitle = "Buy lawyer-tested legal products in the same way you shop for books, clothing or food. The Monax platform opens the doors to legal trust without the legal hassle."
-#     #### SCROLL TEMPLATE
-#     animation_id = "feature-animation-2"
-#     animation_type = "scroll"
-#     img_base = "/img/assets/animations/shared/base-iphone.png"
-#     img_content_container = "iphone" # set to 'mac' or 'iphone'
-#     img_content_layer_src = "/img/assets/animations/2-trusted-legal-products/content-fab-buttons.png"
-#     img_popover_layer_src = "/img/assets/animations/2-trusted-legal-products/scroll-my-archetypes.png"
-#     reveal_only_on_scroll = false
-#     animation_delay = "0"
-#     animation_duration = "300"
-#
-#   [[feature.section]]
-#     title = "Create self-executable legal agreements in minutes."
-#     subtitle = "Pick the legal template that meets your needs, complete it with your details and go! Monax’s legal workflow engine takes care of the rest."
-#     #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
-#     animation_id = "feature-animation-3"
-#     animation_type = "multipop"
-#     img_base = "/img/assets/animations/shared/base-mac.png"
-#     img_content_container = "mac" # set to 'mac' or 'iphone'
-#     img_content_layer_src = "/img/assets/animations/3-self-executable-agreements/content-agreements-detail.png"
-#     animation_delay = "0"
-#     animation_duration = "300"
-#
-#     [[feature.section.pop]]
-#       img_pop_src = "/img/assets/animations/3-self-executable-agreements/zoom-1-draft.png"
-#       img_pop_id = "pop-1"
-#       animation_delay = "900"
-#       animation_duration = "300"
-#
-#     [[feature.section.pop]]
-#       img_pop_src = "/img/assets/animations/3-self-executable-agreements/zoom-2-formulated.png"
-#       img_pop_id = "pop-2"
-#       animation_delay = "1500"
-#       animation_duration = "300"
-#
-#     [[feature.section.pop]]
-#       img_pop_src = "/img/assets/animations/3-self-executable-agreements/zoom-3-executed.png"
-#       img_pop_id = "pop-3"
-#       animation_delay = "2100"
-#       animation_duration = "300"
-#
-#   [[feature.section]]
-#     title = "Increased quality at reduced cost"
-#     subtitle = "Cut out legal paper-shuffling and pay for actual value. Monax combines expertise with automation and reproducibility, delivering legal products with higher precision at a fraction of the cost."
-#     #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
-#     animation_id = "feature-animation-4"
-#     animation_type = "multipop"
-#     img_base = "/img/assets/animations/shared/base-mac.png"
-#     img_content_container = "mac" # set to 'mac' or 'iphone'
-#     img_content_layer_src = "/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
-#     animation_delay = "0"
-#     animation_duration = "300"
-#
-#     [[feature.section.pop]]
-#       img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-1-reviewed-agreement.png"
-#       img_pop_id = "pop-1"
-#       animation_delay = "900"
-#       animation_duration = "600"
-#
-#     [[feature.section.pop]]
-#       img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-2-signed-agreement.png"
-#       img_pop_id = "pop-2"
-#       animation_delay = "1500"
-#       animation_duration = "600"
-#
-#
-# [press] # global
-#     enable = false
-
-# [examples]
-#   enable = false
-#   title = "Get started using one of our templates"
-#   default_img = "/img/assets/agreements/3.jpg"
-#   new_agreement_text = "Create A New Template"
-#   new_agreement_url = "https://beta.monax.io/register"
-#
-#   # Agreements should be auto populated
-#   [[examples.agreement]]
-#     title = "Non-Disclosure template"
-#     url = "https://beta.monax.io/register"
-#
-#   [[examples.agreement]]
-#     title = "M.O.U. template"
-#     url = "https://beta.monax.io/register"
-#
-#   [[examples.agreement]]
-#     title = "Consortium template"
-#     url = "https://beta.monax.io/register"
-#
-#   [[examples.agreement]]
-#     title = "Material Transfer template"
-#     url = "https://beta.monax.io/register"
-
-
-# [relatedarticles]
-#   enable = true
-#   title = "Or learn how to get started here"
-#   filter_by_tag = "entrepreneurs" # changed in partials/entrepreneurs/relatedarticles.html
-#   default_img = "/img/assets/backgrounds/mountains-1.jpg"
-
-
-# # FAQ section
-# [faq]
-#   enable = true
-#
-#     [[faq.item]]
-#         question = "Why do people want to enter into agreements at all?"
-#         answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-#
-#     [[faq.item]]
-#         question = "Why do people want to enter into agreements at all?"
-#         answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-#
-#     [[faq.item]]
-#         question = "Why do people want to enter into agreements at all?"
-#         answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-#
-#     [[faq.item]]
-#         question = "Why do people want to enter into agreements at all?"
-#         answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-#
-#     [[faq.item]]
-#         question = "Why do people want to enter into agreements at all?"
-#         answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."

@@ -589,7 +589,7 @@ form label.error {
 
 .signup-footer { min-height: 120px; }
 .signup-container { min-height: 50px; }
-.home-cta-options-container { min-height: 160px; }
+.cta-options-container { min-height: 160px; }
 .section-cta .form-container { min-height: 160px; }
 #nav-signup { min-height: 280px; }
 #nav-signup-desktop { min-height: 260px; }
@@ -3607,16 +3607,20 @@ TEAM ICONS
   Home CTA
 =============== */
 
-.section-cta #home-cta-options {
+.section-cta #cta-options {
     -webkit-transition: 0.4s all;
     -o-transition: 0.4s all;
     transition: 0.4s all;
 }
-.section-cta #home-cta-options.form-triggered {
+.section-cta #cta-options.form-triggered {
     opacity: 0.3;
 }
-.section-cta #home-cta-options.form-triggered .btn:hover {
+.section-cta #cta-options.form-triggered .btn:hover {
     background-color: #96B85D;
+}
+.section-cta .cta-options-container .btn {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /* ==============

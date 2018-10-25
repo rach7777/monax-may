@@ -1,7 +1,7 @@
 [top]
     enable = true
-    title = """<strong>Stay focused on what you're building</strong>
-    Let your contracts work for you"""
+    title = """<strong>Stay focused on what you're building.</strong>
+    Let your contracts work for you."""
     # subtitle = "The platform for the future of making and managing agreements"
     img_left = false
     hero_signup = true
@@ -15,253 +15,32 @@
       img_layer_two = "/img/assets/animations/monax-laptop/laptop-animation-layer-2.png"
 
 
-#
-# [summary]
-#     enable = true
-#     title = "What can Monax do for you?"
-#     subtitle = ""
-#     #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
-#     animation_id = "feature-animation-4"
-#     animation_type = "multipop"
-#     img_base = "/img/assets/animations/shared/base-mac.png"
-#     img_content_container = "mac" # set to 'mac' or 'iphone'
-#     img_content_layer_src = "/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
-#     animation_delay = "0"
-#     animation_duration = "300"
-#
-#     [[summary.pop]]
-#       img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-1-reviewed-agreement.png"
-#       img_pop_id = "pop-1"
-#       animation_delay = "900"
-#       animation_duration = "600"
-#
-#     [[summary.pop]]
-#       img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-2-signed-agreement.png"
-#       img_pop_id = "pop-2"
-#       animation_delay = "1500"
-#       animation_duration = "600"
-#
-#     [[summary.feature]]
-#       title = "Create self-executable legal agreements in minutes"
-#       description = ""
-#       icon = "fa-chevron-right"
-#       animation_type = "fade-up"
-#       animation_delay = "600"
-#       animation_duration = "600"
-#
-#     [[summary.feature]]
-#       title = "An intuitive interface to the most advanced tech in the legal sector"
-#       description = ""
-#       icon = "fa-chevron-right"
-#       animation_type = "fade-up"
-#       animation_delay = "1600"
-#       animation_duration = "600"
-#
-#     [[summary.feature]]
-#       title = "Trusted legal products at your fingertips"
-#       description = ""
-#       icon = "fa-chevron-right"
-#       animation_type = "fade-up"
-#       animation_delay = "2600"
-#       animation_duration = "600"
-
-
-[home_audience]
+[audiences]
   enable = true
   title = "<strong>Built for entrepreneurs and creatives</strong>"
   subtitle = "Gain 100% oversight on your contractual agreements, track progress and obligations and keep everything important in one place. We enable you to stay focused on what you do best: growing your business."
 
-  [[home_audience.card_link]]
+  [[audiences.card_link]]
     title = "For entrepreneurs"
     img = "/img/assets/audiences/entrepreneurs_600.jpg"
     icon = "fa-angle-right"
     link_url = "/entrepreneurs/"
 
-  [[home_audience.card_link]]
+  [[audiences.card_link]]
     title = "For creatives"
     img = "/img/assets/audiences/creatives_600.jpg"
     icon = "fa-angle-right"
     link_url = "/creatives/"
 
 
-[home_demo]
+[demo]
   enable = true
   title = "<strong>Designed to empower you</strong>"
   subtitle = "Turn contracts into the common thread of your business relationships. Gain clarity, know where to focus and fulfil your contracts collaboratively."
   youtube_url = "sdX0jFFZKuo"
 
 
-# [home_features]
-#   enable = true
-#   title = "<strong>Built for entrepreneurs and creatives</strong>"
-#   subtitle = "Gain 100% oversight on your contractual agreements, track progress and obligations and keep everything important in one place. We enable you to stay focused on what you do best: growing your business."
-#   consumer_option = "Use legal templates"
-#   producer_option = "Create legal templates"
-#
-#   [home_features.consumer]
-#     enable = true
-#
-#     [[home_features.consumer.section]]
-#       title = "Browse templates"
-#       subtitle = "Lawyer-tested legal templates at your fingertips. Legal knowledge at affordable prices, purchased the same way you would anything else online.<br><br>Purchasing legal products has never been easier"
-#       #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
-#       animation_id = "feature-animation-A"
-#       animation_type = "multipop"
-#       img_base = "/img/assets/animations/shared/base-mac.png"
-#       img_content_container = "mac" # set to 'mac' or 'iphone'
-#       img_content_layer_src = "/img/assets/animations/A-browse-templates/base-screen_lo.png"
-#       animation_delay = "0"
-#       animation_duration = "300"
-#
-#       [[home_features.consumer.section.pop]]
-#         img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_1_crop.png"
-#         img_pop_id = "pop-1"
-#         animation_delay = "900"
-#         animation_duration = "300"
-#
-#       [[home_features.consumer.section.pop]]
-#         img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_2_crop.png"
-#         img_pop_id = "pop-2"
-#         animation_delay = "1500"
-#         animation_duration = "300"
-#
-#       [[home_features.consumer.section.pop]]
-#         img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_3_crop.png"
-#         img_pop_id = "pop-3"
-#         animation_delay = "2100"
-#         animation_duration = "300"
-#
-#     [[home_features.consumer.section]]
-#       title = "Create agreement"
-#       subtitle = "Select, fill out and hit create. You’ve created both a legally binding agreement and an auto-enforcable smart contract with just a couple of clicks<br><br>- by simply filling out a form."
-#       #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
-#       animation_id = "feature-animation-B"
-#       animation_type = "multipop"
-#       img_base = "/img/assets/animations/shared/base-mac.png"
-#       img_content_container = "mac" # set to 'mac' or 'iphone'
-#       img_content_layer_src = "/img/assets/animations/3-self-executable-agreements/content-agreements-detail.png"
-#       animation_delay = "0"
-#       animation_duration = "300"
-#
-#       [[home_features.consumer.section.pop]]
-#         img_pop_src = "/img/assets/animations/3-self-executable-agreements/zoom-1-draft.png"
-#         img_pop_id = "pop-1"
-#         animation_delay = "900"
-#         animation_duration = "300"
-#
-#       [[home_features.consumer.section.pop]]
-#         img_pop_src = "/img/assets/animations/3-self-executable-agreements/zoom-2-formulated.png"
-#         img_pop_id = "pop-2"
-#         animation_delay = "1500"
-#         animation_duration = "300"
-#
-#       # [[home_features.consumer.section.pop]]
-#       #   img_pop_src = "/img/assets/animations/3-self-executable-agreements/zoom-3-executed.png"
-#       #   img_pop_id = "pop-3"
-#       #   animation_delay = "2100"
-#       #   animation_duration = "300"
-#
-#     [[home_features.consumer.section]]
-#       title = "Track every obligation"
-#       subtitle = "Track every contract and obligation in one place. Each event is permanently recorded on a blockchain -<br><br>no more admin stress."
-#       #### ZOOM TEMPLATE
-#       animation_id = "feature-animation-1"
-#       animation_type = "zoom"
-#       img_base = "/img/assets/animations/shared/base-mac.png"
-#       img_content_container = "mac" # set to 'mac' or 'iphone'
-#       img_content_layer_src = "/img/assets/animations/1-100-percent-transparency/content-agreement-grid.png"
-#       img_content_animation_delay = "600"
-#       img_content_animation_duration = "300"
-#       img_popover_layer_src = "/img/assets/animations/1-100-percent-transparency/zoom-agreement-detail.png"
-#       img_popover_animation_delay = "1500"
-#       img_popover_animation_duration = "600"
-#
-#     [[home_features.consumer.section]]
-#       title = "Fulfil"
-#       subtitle = "Visualise, monitor and control the execution of the contract throughout its entire lifecycle.<br><br>Obtain the transparency you need to focus on your business."
-#       #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
-#       animation_id = "feature-animation-4"
-#       animation_type = "multipop"
-#       img_base = "/img/assets/animations/shared/base-mac.png"
-#       img_content_container = "mac" # set to 'mac' or 'iphone'
-#       img_content_layer_src = "/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
-#       animation_delay = "0"
-#       animation_duration = "300"
-#
-#       [[home_features.consumer.section.pop]]
-#         img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-1-reviewed-agreement.png"
-#         img_pop_id = "pop-1"
-#         animation_delay = "900"
-#         animation_duration = "600"
-#
-#       [[home_features.consumer.section.pop]]
-#         img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-2-signed-agreement.png"
-#         img_pop_id = "pop-2"
-#         animation_delay = "1500"
-#         animation_duration = "600"
-#
-#   [home_features.producer]
-#     enable = false
-#
-#     [[home_features.producer.section]]
-#       title = "Create templates"
-#       subtitle = "Lawyer tested legal templates at your fingertips. Legal knowledge at affordable prices in the same way you by anything else online.<br><br>Purchasing legal products has never been easier."
-#       #### ZOOM TEMPLATE
-#       animation_id = "feature-animation-1"
-#       animation_type = "none"
-#       img_base = "/img/assets/animations/shared/base-mac.png"
-#       img_content_container = "mac" # set to 'mac' or 'iphone'
-#       img_content_layer_src = "/img/assets/animations/1-100-percent-transparency/content-agreement-grid.png"
-#
-#     [[home_features.producer.section]]
-#       title = "Sell your skills"
-#       subtitle = "Select, fill out and hit create. You’ve created both a legally binding agreement and an auto-enforcable smart contract with just a couple of clicks.<br><br>As simple as filling a form."
-#       #### ZOOM TEMPLATE
-#       animation_id = "feature-animation-1"
-#       animation_type = "none"
-#       img_base = "/img/assets/animations/shared/base-mac.png"
-#       img_content_container = "mac" # set to 'mac' or 'iphone'
-#       img_content_layer_src = "/img/assets/animations/1-100-percent-transparency/content-agreement-grid.png"
-
-
-# [tutorials]
-#     enable = false # pulls out most recent tutorial by default
-#     show_related_links = false
-#
-#     [[tutorials.relatedlinks]]
-#       link_title = "Read our explainers"
-#       link_url = "/explainers/"
-#
-#     [[tutorials.relatedlinks]]
-#       link_title = "Monax blog posts and news"
-#       link_url = "/blog/"
-#
-#     [[tutorials.relatedlinks]]
-#       link_title = "Case studies"
-#       link_url = "/casestudies/"
-#
-#     # [[tutorials.relatedlinks]]
-#     #   link_title = "More tutorials"
-#     #   link_url = "/tutorials/"
-
-
-# [webinar]
-#     enable = false
-#     title = "Sign up for a webinar"
-#     subtitle = "We are making a series of webinars based around what our customers have told us they want to find out...check back here soon or sign up to be informed of upcoming ones."
-#     show_upcoming = false
-#
-#     [webinar.form]
-#       source = "home webinar signup" # required for Segment to process
-#       webinar_signup = "true" # required for Segment to process
-#       email = true
-#       fname = true
-#       lname = true
-#       company_name = false
-#       submit_text = "Get notified"
-
-
-[home_cta]
+[cta_two_button]
     enable = true
     title = "<strong>Let your contracts work for you</strong>"
 
@@ -279,7 +58,7 @@
 
     show_button_separator = false
 
-    [home_cta.form_one]
+    [cta_two_button.form_one]
       enable = true
       id = "webinar"
       source = "home cta webinar signup" # required for Segment to process
@@ -290,7 +69,7 @@
       company_name = true
       submit_text = "Sign up for our next webinar"
 
-    [home_cta.form_two]
+    [cta_two_button.form_two]
       enable = true
       id = "demo"
       source = "home cta demo signup" # required for Segment to process
@@ -302,40 +81,7 @@
       submit_text = "Request a demo of the platform"
 
 
-
-# [usecases]
-#   enable = true
-#
-#   [[usecases.section]]
-#     category = "fleet-leasing"
-#     title = "For Fleet Leasing"
-#     subtitle = "How Monax can power your fleet leases, simplify your business processes and drive new revenue streams."
-#     img = "/img/assets/homepage/usecases/fleet-leasing/fleet-leasing-small.png"
-#     link_url = "/fleet-leasing/"
-#
-#   [[usecases.section]]
-#     category = "corporate-governance"
-#     title = "For Corporate Governance"
-#     subtitle = "How Monax can simplify and speed up your corporate governance, and give you full control over your agreements."
-#     img = "/img/assets/homepage/usecases/corporate-governance/corporate-governance-small.png"
-#     link_url = "/entrepreneurs/"
-#
-#   [[usecases.section]]
-#     category = "content-creators"
-#     title = "For Content Creators"
-#     subtitle = "How Monax can strengthen your brand, protect your IP and drive new revenue streams for your content."
-#     img = "/img/assets/homepage/usecases/content-creators/content-creators-small.png"
-#     link_url = "/creatives/"
-#
-#   [[usecases.section]]
-#     category = "lawyers"
-#     title = "For Lawyers"
-#     subtitle = "How Monax can simplify your workflow and turn your knowledge into commoditisable legal products."
-#     img = "/img/assets/homepage/usecases/lawyers/lawyers-small.png"
-#     link_url = "/lawyers/"
-
-
-[home_press]
+[press]
     enable = true
     title = "Featured in international business and tech press"
     logo_1 = "/img/press-logos/bloomsberg_lo_grey.png"
