@@ -168,7 +168,8 @@
       lname = true
       company_name = true
 
-      submit_button_text = "Request a demo"
+      submit_button_text = "Book a demo"
+      enable_calendly_page = true # if true form continues to calendly
       enable_button_two = false
       # button_two_text = "Try for free" # url link only
       # button_two_url = "https://beta.monax.io/register"

@@ -583,22 +583,41 @@ $(document).ready(function() {
         return false;
       }
       const { industry, agreementsType, frequency } = analyticsIdentifyAndTrack(form, "Demo Requested");
-      // animate Doug
-      const successMessageCont = $(form).next().find('.success-message-container');
-      const successDoug = $(successMessageCont).find('.success-doug-img');
-      const successText = $(successMessageCont).find('.success-text');
-      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
-      const successInfo = $(successMessageCont).find('.success-info');
-      // $(successInfo).html('custom success text'); // enable to customize success information
-      $(form).slideToggle(400, function() {
-        setTimeout(function(){
-          $(successMessageCont).animate({width:'toggle'},600, function() {
-            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
-          });
-        }, 200);
-        // remove form
-        $(form).remove();
-      });
+
+      // if calendly is enabled, show popup/redirect, otherwise show thankyou message
+      if ( $(form).data('enableCalendly') ){
+        // get form data for parsing
+        var formDataArr = {};
+        $.each( $(form).serializeArray(), function(i, field) {
+            formDataArr[field.name] = field.value;
+        });
+        const qString = "?name=" + encodeURIComponent( formDataArr['firstName'] + " " + formDataArr['lastName'] ) + "&email=" + encodeURIComponent( formDataArr['email'] ) + "&a1=" + encodeURIComponent( formDataArr['company'] ) + "&a2=" + encodeURIComponent( formDataArr['industry'] );
+        var calendlyUrl = 'https://calendly.com/monax/demo' + qString;
+
+        // redirect if mobile, otherwise show popup form
+        if( $(window).width() < 768 ) {
+          window.location.href = calendlyUrl;
+        } else {
+          Calendly.showPopupWidget( calendlyUrl );
+        }
+      } else {
+        // animate Doug
+        const successMessageCont = $(form).next().find('.success-message-container');
+        const successDoug = $(successMessageCont).find('.success-doug-img');
+        const successText = $(successMessageCont).find('.success-text');
+        // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
+        const successInfo = $(successMessageCont).find('.success-info');
+        // $(successInfo).html('custom success text'); // enable to customize success information
+        $(form).slideToggle(400, function() {
+          setTimeout(function(){
+            $(successMessageCont).animate({width:'toggle'},600, function() {
+              setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+            });
+          }, 200);
+          // remove form
+          $(form).remove();
+        });
+      }
       // prevent redirect
       return false;
     },

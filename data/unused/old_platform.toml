@@ -1,0 +1,24 @@
+
+# [examples]
+#   enable = false
+#   title = "Get started using one of our templates"
+#   default_img = "/img/assets/agreements/3.jpg"
+#   new_agreement_text = "Create A New Template"
+#   new_agreement_url = "https://beta.monax.io/register"
+#
+#   # Agreements should be auto populated
+#   [[examples.agreement]]
+#     title = "Non-Disclosure Template"
+#     url = "https://beta.monax.io/register"
+#
+#   [[examples.agreement]]
+#     title = "M.O.U. Template"
+#     url = "https://beta.monax.io/register"
+#
+#   [[examples.agreement]]
+#     title = "Consortium Template"
+#     url = "https://beta.monax.io/register"
+#
+#   [[examples.agreement]]
+#     title = "Material Transfer Template"
+#     url = "https://beta.monax.io/register"

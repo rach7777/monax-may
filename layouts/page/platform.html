@@ -21,12 +21,10 @@
 
         {{ partial "platform/workflow.html" . }}
 
-        <!-- {{ partial "platform/examples.html" . }} -->
-
         <!-- global section -->
         {{ if isset .Site.Data.platform "cta" }}
           {{ if .Site.Data.platform.cta.enable }}
-            {{ partial "platform/cta.html" . }}
+            {{ partial "_global/cta.html" . }}
           {{ end }}
         {{ end }}
 

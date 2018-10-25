@@ -278,7 +278,8 @@ h6.white {
 .form input.input-half {
     width: 100%;
 }
-.form button {
+.form button,
+.form .btn {
   margin-top: 10px;
   margin-bottom: 20px;
 }
