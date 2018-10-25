@@ -60,7 +60,7 @@ We were proud to be one of only four ‘Featured Startups’ this year, and had 
 
 Our hero-marmot of the day had to be [Chenxiao](https://monax.io/blog/2018/10/05/meet-the-marmots-chenxiao-hu-wu-producer-experience-associate/) who not only did a presentation on stage 2 (see below) but spent hours excitedly walking folks through the new demo environment which the development team built especially for the event (thanks guys!). As a side note, Chenxiao is our producer experience associate and she's currently on the lookout for awesome Monax brand ambassadors - more info [here](https://monax.io/blog/2018/10/17/love-monax-love-marmots-become-an-mba-monax-brand-ambassador/).
 
-It wasn’t just UK marmots at the event - our CCO, Nina Kilbride, flew in from the US especially, and was a highlight of the afternoon’s main stage with her talk - if you missed out, the slides are available [here].
+It wasn’t just UK marmots at the event - our CCO, Nina Kilbride, flew in from the US especially, and was a highlight of the afternoon’s main stage with her talk - if you missed out, the slides are available [here](https://docs.google.com/presentation/d/e/2PACX-1vTvzVnrPF1JKbenYekp34pp8b4Tvq8dG0LhTFNe8G5hJ3yk7O0xp23ydwSDAlBZToJ0wg8I8zwrj7Uf/pub?start=false&loop=false&delayms=3000).
 
 {{< image_blog "nina_chenxiao_geeks_stage.png" >}}
 
