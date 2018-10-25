@@ -15,36 +15,6 @@
   [features.consumer]
     enable = true
 
-    # [[features.consumer.section]]
-    #   title = "Browse templates"
-    #   subtitle = "Lawyer tested legal templates at your fingertips. Obtain legal knowledge at affordable prices in the same way you buy anything else online - purchasing legal products has never been easier."
-    #   #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
-    #   animation_id = "feature-animation-A"
-    #   animation_type = "multipop"
-    #   img_base = "/img/assets/animations/shared/base-mac.png"
-    #   img_content_container = "mac" # set to 'mac' or 'iphone'
-    #   img_content_layer_src = "/img/assets/animations/A-browse-templates/base-screen_lo.png"
-    #   animation_delay = "0"
-    #   animation_duration = "300"
-    #
-    #   [[features.consumer.section.pop]]
-    #     img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_1_crop.png"
-    #     img_pop_id = "pop-1"
-    #     animation_delay = "900"
-    #     animation_duration = "300"
-    #
-    #   [[features.consumer.section.pop]]
-    #     img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_2_crop.png"
-    #     img_pop_id = "pop-2"
-    #     animation_delay = "1500"
-    #     animation_duration = "300"
-    #
-    #   [[features.consumer.section.pop]]
-    #     img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_3_crop.png"
-    #     img_pop_id = "pop-3"
-    #     animation_delay = "2100"
-    #     animation_duration = "300"
-
     [[features.consumer.section]]
       title = "Create agreement"
       subtitle = "Select, fill out a form then press create. You’ve made both a legally binding agreement and an auto-enforcable smart contract with just a couple of clicks. As simple as filling out a form."
@@ -68,12 +38,6 @@
         img_pop_id = "pop-2"
         animation_delay = "1500"
         animation_duration = "300"
-
-      # [[features.consumer.section.pop]]
-      #   img_pop_src = "/img/assets/animations/3-self-executable-agreements/zoom-3-executed.png"
-      #   img_pop_id = "pop-3"
-      #   animation_delay = "2100"
-      #   animation_duration = "300"
 
     [[features.consumer.section]]
       title = "Track every obligation"
@@ -113,29 +77,6 @@
         img_pop_id = "pop-2"
         animation_delay = "1500"
         animation_duration = "600"
-
-  # [features.producer]
-  #   enable = false
-  #
-  #   [[features.producer.section]]
-  #     title = "Create templates"
-  #     subtitle = "Lawyer-tested legal templates at your fingertips. Obtain legal knowledge at affordable prices in the same way you buy anything else online. Purchasing legal products has never been easier."
-  #     #### ZOOM TEMPLATE
-  #     animation_id = "feature-animation-1"
-  #     animation_type = "none"
-  #     img_base = "/img/assets/animations/shared/base-mac.png"
-  #     img_content_container = "mac" # set to 'mac' or 'iphone'
-  #     img_content_layer_src = "/img/assets/animations/1-100-percent-transparency/content-agreement-grid.png"
-  #
-  #   [[features.producer.section]]
-  #     title = "Sell your skills"
-  #     subtitle = "Select, fill out and hit create. You’ve created both a legally binding agreement and an auto-enforcable smart contract with just a couple of clicks. As simple as filling a form."
-  #     #### ZOOM TEMPLATE
-  #     animation_id = "feature-animation-1"
-  #     animation_type = "none"
-  #     img_base = "/img/assets/animations/shared/base-mac.png"
-  #     img_content_container = "mac" # set to 'mac' or 'iphone'
-  #     img_content_layer_src = "/img/assets/animations/1-100-percent-transparency/content-agreement-grid.png"
 
 
 [workflow]
@@ -187,31 +128,6 @@
       img_popover_layer_src = "/img/assets/animations/5-legal-knowledge-assets/zoom-archetype-created.png"
       img_popover_animation_delay = "100" # too large - set via css to 6.5s
       img_popover_animation_duration = "600"
-
-
-# [examples]
-#   enable = false
-#   title = "Get started using one of our templates"
-#   default_img = "/img/assets/agreements/3.jpg"
-#   new_agreement_text = "Create A New Template"
-#   new_agreement_url = "https://beta.monax.io/register"
-#
-#   # Agreements should be auto populated
-#   [[examples.agreement]]
-#     title = "Non-Disclosure Template"
-#     url = "https://beta.monax.io/register"
-#
-#   [[examples.agreement]]
-#     title = "M.O.U. Template"
-#     url = "https://beta.monax.io/register"
-#
-#   [[examples.agreement]]
-#     title = "Consortium Template"
-#     url = "https://beta.monax.io/register"
-#
-#   [[examples.agreement]]
-#     title = "Material Transfer Template"
-#     url = "https://beta.monax.io/register"
 
 
 [cta] # global

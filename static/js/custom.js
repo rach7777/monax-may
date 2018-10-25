@@ -75,26 +75,37 @@ $(document).ready(function() {
           },
           submitHandler: function(form) {
             analyticsIdentifyAndTrack(form, 'Demo Requested');
-            // vars
-            const formFields = $('#nav-signup .form-fields');
-            // animate Doug
-            const successMessageCont = $(formFields).next();
-            const successDoug = $(successMessageCont).find('.success-doug-img');
-            const successText = $(successMessageCont).find('.success-text');
-            // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
-            const successInfo = $(successMessageCont).find('.success-info');
-            // $(successInfo).html('custom success text'); // enable to customize success information
-            $(formFields).slideToggle(400, function() {
-              setTimeout(function(){
-                $(successMessageCont).animate({width:'toggle'},600, function() {
-                  setTimeout(function(){
-                    $(successInfo).slideToggle(800, function() {
-                      setTimeout(function(){ requestDemoPopup.close(); }, 2400);
-                    });
-                  }, 400);
-                });
-              }, 200);
+            // get form data for parsing
+            var formDataArr = {};
+            $.each( $(form).serializeArray(), function(i, field) {
+                formDataArr[field.name] = field.value;
             });
+            const qString = "?name=" + encodeURIComponent( formDataArr['firstName'] + " " + formDataArr['lastName'] ) + "&email=" + encodeURIComponent( formDataArr['email'] ) + "&a1=" + encodeURIComponent( formDataArr['company'] );
+            var calendlyUrl = 'https://calendly.com/monax/demo' + qString;
+            // redirect for mobile
+            window.location.href = calendlyUrl;
+
+            // // vars
+            // const formFields = $('#nav-signup .form-fields');
+            // // animate Doug
+            // const successMessageCont = $(formFields).next();
+            // const successDoug = $(successMessageCont).find('.success-doug-img');
+            // const successText = $(successMessageCont).find('.success-text');
+            // // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
+            // const successInfo = $(successMessageCont).find('.success-info');
+            // // $(successInfo).html('custom success text'); // enable to customize success information
+            // $(formFields).slideToggle(400, function() {
+            //   setTimeout(function(){
+            //     $(successMessageCont).animate({width:'toggle'},600, function() {
+            //       setTimeout(function(){
+            //         $(successInfo).slideToggle(800, function() {
+            //           setTimeout(function(){ requestDemoPopup.close(); }, 2400);
+            //         });
+            //       }, 400);
+            //     });
+            //   }, 200);
+            // });
+
             // prevent redirect
             return false;
           },
@@ -129,22 +140,33 @@ $(document).ready(function() {
     },
     submitHandler: function(form) {
       analyticsIdentifyAndTrack(form, 'Demo Requested');
-      // vars
-      const formFields = $('#nav-signup-desktop .form-fields');
-      // animate Doug
-      const successMessageCont = $(formFields).next();
-      const successDoug = $(successMessageCont).find('.success-doug-img');
-      const successText = $(successMessageCont).find('.success-text');
-      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
-      const successInfo = $(successMessageCont).find('.success-info');
-      // $(successInfo).html('custom success text'); // enable to customize success information
-      $(formFields).slideToggle(400, function() {
-        setTimeout(function(){
-          $(successMessageCont).animate({width:'toggle'},600, function() {
-            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
-          });
-        }, 200);
+      // get form data for parsing
+      var formDataArr = {};
+      $.each( $(form).serializeArray(), function(i, field) {
+          formDataArr[field.name] = field.value;
       });
+      const qString = "?name=" + encodeURIComponent( formDataArr['firstName'] + " " + formDataArr['lastName'] ) + "&email=" + encodeURIComponent( formDataArr['email'] ) + "&a1=" + encodeURIComponent( formDataArr['company'] );
+      var calendlyUrl = 'https://calendly.com/monax/demo' + qString;
+      // popup for desktops
+      Calendly.showPopupWidget( calendlyUrl );
+
+      // // vars
+      // const formFields = $('#nav-signup-desktop .form-fields');
+      // // animate Doug
+      // const successMessageCont = $(formFields).next();
+      // const successDoug = $(successMessageCont).find('.success-doug-img');
+      // const successText = $(successMessageCont).find('.success-text');
+      // // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
+      // const successInfo = $(successMessageCont).find('.success-info');
+      // // $(successInfo).html('custom success text'); // enable to customize success information
+      // $(formFields).slideToggle(400, function() {
+      //   setTimeout(function(){
+      //     $(successMessageCont).animate({width:'toggle'},600, function() {
+      //       setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+      //     });
+      //   }, 200);
+      // });
+
       // prevent redirect
       return false;
     },
@@ -153,6 +175,128 @@ $(document).ready(function() {
       if (errors) {
         console.log("form returned invalid");
         $('#nav-signup-desktop button').addClass('animated headShake');
+      }
+    }
+  });
+
+
+  // GLOBAL - ELEMENTS - CTA_TWO_BUTTON SECTION
+  const $ctaOptions = $('#cta-options');
+  const $ctaWebinarForm = $('#cta-webinar-signup');
+  const $ctaDemoForm = $('#cta-request-demo');
+
+  // GLOBAL CTA_TWO_BUTTON - WEBINAR SIGNUP
+  $('#cta-trigger-webinar-form').on('click', function(e) {
+    e.preventDefault();
+    if ( ! $ctaOptions.hasClass('form-triggered') ) {
+      $ctaWebinarForm.slideToggle();
+      $ctaOptions.addClass('form-triggered');
+    } else {
+      if ( $ctaWebinarForm.is(":visible") ) {
+          $ctaWebinarForm.slideToggle();
+          $ctaOptions.removeClass('form-triggered');
+      } else {
+        $ctaWebinarForm.show();
+        $ctaDemoForm.hide();
+      }
+    }
+  });
+  $ctaWebinarForm.validate({
+    rules: {
+      firstName: {
+        required: true
+      },
+      lastName: {
+        required: true
+      },
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    submitHandler: function(form) {
+      analyticsIdentifyAndTrack(form, "Webinar Subscribed");
+      // animate Doug
+      const successMessageCont = $($ctaOptions).next().find('.success-message-container');
+      const successDoug = $(successMessageCont).find('.success-doug-img');
+      const successText = $(successMessageCont).find('.success-text');
+      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
+      const successInfo = $(successMessageCont).find('.success-info');
+      // $(successInfo).html('custom success text'); // enable to customize success information
+      $($ctaOptions).slideToggle();
+      $(form).slideToggle(400, function() {
+        setTimeout(function(){
+          $(successMessageCont).animate({width:'toggle'},600, function() {
+            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+          });
+        }, 200);
+        // remove form
+        $(form).remove();
+      });
+      // prevent redirect
+      return false;
+    },
+    invalidHandler: function(event, validator) {
+      var errors = validator.numberOfInvalids();
+      if (errors) {
+        console.log("form returned invalid");
+        $('#cta-webinar-signup button').addClass('animated headShake');
+      }
+    }
+  });
+
+  // GLOBAL - CTA_TWO_BUTTON - REQUEST A DEMO
+  $('#cta-trigger-demo-form').on('click', function(e) {
+    e.preventDefault();
+    if ( ! $ctaOptions.hasClass('form-triggered') ) {
+      $ctaDemoForm.slideToggle();
+      $ctaOptions.toggleClass('form-triggered');
+    } else {
+      if ( $ctaDemoForm.is(":visible") ) {
+          $ctaDemoForm.slideToggle();
+          $ctaOptions.removeClass('form-triggered');
+      } else {
+        $ctaWebinarForm.hide();
+        $ctaDemoForm.show();
+      }
+    }
+  });
+  $ctaDemoForm.validate({
+    rules: {
+      firstName: {
+        required: true
+      },
+      lastName: {
+        required: true
+      },
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    submitHandler: function(form) {
+      analyticsIdentifyAndTrack(form, "Demo Requested");
+      // get form data for parsing
+      var formDataArr = {};
+      $.each( $(form).serializeArray(), function(i, field) {
+          formDataArr[field.name] = field.value;
+      });
+      const qString = "?name=" + encodeURIComponent( formDataArr['firstName'] + " " + formDataArr['lastName'] ) + "&email=" + encodeURIComponent( formDataArr['email'] ) + "&a1=" + encodeURIComponent( formDataArr['company'] );
+      var calendlyUrl = 'https://calendly.com/monax/demo' + qString;
+      // redirect if mobile, otherwise show popup form
+      if( $(window).width() < 768 ) {
+        window.location.href = calendlyUrl;
+      } else {
+        Calendly.showPopupWidget( calendlyUrl );
+      }
+      // prevent redirect
+      return false;
+    },
+    invalidHandler: function(event, validator) {
+      var errors = validator.numberOfInvalids();
+      if (errors) {
+        console.log("form returned invalid");
+        $('#cta-request-demo button').addClass('animated headShake');
       }
     }
   });
@@ -331,7 +475,7 @@ $(document).ready(function() {
     submitHandler: function(form) {
       analyticsIdentifyAndTrack(form, "Demo Requested");
       // animate Doug
-      const successMessageCont = $(form).next().find('.success-message-container');
+      const successMessageCont = $(form).closest('.signup-container').find('.success-message-container');
       const successDoug = $(successMessageCont).find('.success-doug-img');
       const successText = $(successMessageCont).find('.success-text');
       // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
@@ -355,6 +499,45 @@ $(document).ready(function() {
       if (errors) {
         console.log("form returned invalid");
         $('#hero-signup-submit').addClass('animated headShake');
+      }
+    }
+  });
+
+  // GLOBAL - SECONDARY_CTA SIGNUP
+  $("#secondary-cta").validate({
+    rules: {
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    submitHandler: function(form) {
+      analyticsIdentifyAndTrack(form, "Demo Requested");
+      // animate Doug
+      const successMessageCont = $(form).closest('.signup-container').find('.success-message-container');
+      const successDoug = $(successMessageCont).find('.success-doug-img');
+      const successText = $(successMessageCont).find('.success-text');
+      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
+      const successInfo = $(successMessageCont).find('.success-info');
+      // $(successInfo).html('custom success text'); // enable to customize success information
+      $(form).slideToggle(400, function() {
+        $(form).parent().removeClass('flex-grid');
+        setTimeout(function(){
+          $(successMessageCont).animate({width:'toggle'},600, function() {
+            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+          });
+        }, 200);
+        // remove form
+        $(form).remove();
+      });
+      // prevent redirect
+      return false;
+    },
+    invalidHandler: function(event, validator) {
+      var errors = validator.numberOfInvalids();
+      if (errors) {
+        console.log("form returned invalid");
+        $('#secondary-cta-submit').addClass('animated headShake');
       }
     }
   });
@@ -420,22 +603,41 @@ $(document).ready(function() {
         return false;
       }
       const { industry, agreementsType, frequency } = analyticsIdentifyAndTrack(form, "Demo Requested");
-      // animate Doug
-      const successMessageCont = $(form).next().find('.success-message-container');
-      const successDoug = $(successMessageCont).find('.success-doug-img');
-      const successText = $(successMessageCont).find('.success-text');
-      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
-      const successInfo = $(successMessageCont).find('.success-info');
-      // $(successInfo).html('custom success text'); // enable to customize success information
-      $(form).slideToggle(400, function() {
-        setTimeout(function(){
-          $(successMessageCont).animate({width:'toggle'},600, function() {
-            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
-          });
-        }, 200);
-        // remove form
-        $(form).remove();
-      });
+
+      // if calendly is enabled, show popup/redirect, otherwise show thankyou message
+      if ( $(form).data('enableCalendly') ){
+        // get form data for parsing
+        var formDataArr = {};
+        $.each( $(form).serializeArray(), function(i, field) {
+            formDataArr[field.name] = field.value;
+        });
+        const qString = "?name=" + encodeURIComponent( formDataArr['firstName'] + " " + formDataArr['lastName'] ) + "&email=" + encodeURIComponent( formDataArr['email'] ) + "&a1=" + encodeURIComponent( formDataArr['company'] ) + "&a2=" + encodeURIComponent( formDataArr['industry'] );
+        var calendlyUrl = 'https://calendly.com/monax/demo' + qString;
+
+        // redirect if mobile, otherwise show popup form
+        if( $(window).width() < 768 ) {
+          window.location.href = calendlyUrl;
+        } else {
+          Calendly.showPopupWidget( calendlyUrl );
+        }
+      } else {
+        // animate Doug
+        const successMessageCont = $(form).next().find('.success-message-container');
+        const successDoug = $(successMessageCont).find('.success-doug-img');
+        const successText = $(successMessageCont).find('.success-text');
+        // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
+        const successInfo = $(successMessageCont).find('.success-info');
+        // $(successInfo).html('custom success text'); // enable to customize success information
+        $(form).slideToggle(400, function() {
+          setTimeout(function(){
+            $(successMessageCont).animate({width:'toggle'},600, function() {
+              setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+            });
+          }, 200);
+          // remove form
+          $(form).remove();
+        });
+      }
       // prevent redirect
       return false;
     },
@@ -494,12 +696,9 @@ $(document).ready(function() {
   // });
 
 
-  // ========== HOME =============== //
 
-  // HOMEPAGE - ELEMENTS - CTA SECTION
-  const $ctaOptions = $('#home-cta-options');
-  const $ctaWebinarForm = $('#home-cta-webinar-signup');
-  const $ctaDemoForm = $('#home-cta-request-demo');
+
+  // ========== HOMEPAGE =============== //
 
   // HOMEPAGE - TOP - ANIMATION
   setTimeout(function(){
@@ -509,126 +708,6 @@ $(document).ready(function() {
       $('#home-animation .img-to-float.delay-1').addClass('animate-float');
     }, 750);
   }, 300);
-
-  // HOMEPAGE - CTA - WEBINAR SIGNUP
-  $('#home-cta-trigger-webinar-form').on('click', function(e) {
-    e.preventDefault();
-    if ( ! $ctaOptions.hasClass('form-triggered') ) {
-      $ctaWebinarForm.slideToggle();
-      $ctaOptions.addClass('form-triggered');
-    } else {
-      if ( $ctaWebinarForm.is(":visible") ) {
-          $ctaWebinarForm.slideToggle();
-          $ctaOptions.removeClass('form-triggered');
-      } else {
-        $ctaWebinarForm.show();
-        $ctaDemoForm.hide();
-      }
-    }
-  });
-  $ctaWebinarForm.validate({
-    rules: {
-      firstName: {
-        required: true
-      },
-      lastName: {
-        required: true
-      },
-      email: {
-        required: true,
-        email: true
-      }
-    },
-    submitHandler: function(form) {
-      analyticsIdentifyAndTrack(form, "Webinar Subscribed");
-      // animate Doug
-      const successMessageCont = $($ctaOptions).next().find('.success-message-container');
-      const successDoug = $(successMessageCont).find('.success-doug-img');
-      const successText = $(successMessageCont).find('.success-text');
-      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
-      const successInfo = $(successMessageCont).find('.success-info');
-      // $(successInfo).html('custom success text'); // enable to customize success information
-      $($ctaOptions).slideToggle();
-      $(form).slideToggle(400, function() {
-        setTimeout(function(){
-          $(successMessageCont).animate({width:'toggle'},600, function() {
-            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
-          });
-        }, 200);
-        // remove form
-        $(form).remove();
-      });
-      // prevent redirect
-      return false;
-    },
-    invalidHandler: function(event, validator) {
-      var errors = validator.numberOfInvalids();
-      if (errors) {
-        console.log("form returned invalid");
-        $('#home-cta-webinar-signup button').addClass('animated headShake');
-      }
-    }
-  });
-
-  // HOMEPAGE - CTA - REQUEST A DEMO
-  $('#home-cta-trigger-demo-form').on('click', function(e) {
-    e.preventDefault();
-    if ( ! $ctaOptions.hasClass('form-triggered') ) {
-      $ctaDemoForm.slideToggle();
-      $ctaOptions.toggleClass('form-triggered');
-    } else {
-      if ( $ctaDemoForm.is(":visible") ) {
-          $ctaDemoForm.slideToggle();
-          $ctaOptions.removeClass('form-triggered');
-      } else {
-        $ctaWebinarForm.hide();
-        $ctaDemoForm.show();
-      }
-    }
-  });
-  $ctaDemoForm.validate({
-    rules: {
-      firstName: {
-        required: true
-      },
-      lastName: {
-        required: true
-      },
-      email: {
-        required: true,
-        email: true
-      }
-    },
-    submitHandler: function(form) {
-      analyticsIdentifyAndTrack(form, "Demo Requested");
-      // animate Doug
-      const successMessageCont = $($ctaOptions).next().find('.success-message-container');
-      const successDoug = $(successMessageCont).find('.success-doug-img');
-      const successText = $(successMessageCont).find('.success-text');
-      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
-      const successInfo = $(successMessageCont).find('.success-info');
-      // $(successInfo).html('custom success text'); // enable to customize success information
-      $($ctaOptions).slideToggle();
-      $(form).slideToggle(400, function() {
-        setTimeout(function(){
-          $(successMessageCont).animate({width:'toggle'},600, function() {
-            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
-          });
-        }, 200);
-        // remove form
-        $(form).remove();
-      });
-      // prevent redirect
-      return false;
-    },
-    invalidHandler: function(event, validator) {
-      var errors = validator.numberOfInvalids();
-      if (errors) {
-        console.log("form returned invalid");
-        $('#home-cta-request-demo button').addClass('animated headShake');
-      }
-    }
-  });
 
   // HOMEPAGE - WEBINAR SECTION [UNUSED AT THIS MOMENT]
   // $("#single-webinar-signup").validate({
@@ -738,7 +817,6 @@ $(document).ready(function() {
 
     // pricing table 'request a demo' forms
     $('a[id*="pricing-trigger-demo"]').each(function(index){
-      console.log('pricing trigger found: ' + index);
       $(this).on('click', function(e) {
         e.preventDefault();
         if ( ! $(this).hasClass('form-triggered') ) {
@@ -751,7 +829,6 @@ $(document).ready(function() {
       });
     });
     $('form[id*="pricing-demo-signup"]').each(function(index){
-      console.log('pricing form found: ' + index);
       $(this).validate({
         rules: {
           firstName: {

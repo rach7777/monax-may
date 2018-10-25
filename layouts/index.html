@@ -17,23 +17,23 @@
 
         {{ partial "home/top.html" . }}
 
-        <!-- {{ partial "home/summary.html" . }} -->
+        {{ partial "home/audiences.html" . }}
 
-        {{ partial "home/home_audience.html" . }}
+        {{ partial "home/demo.html" . }}
 
-        <!-- {{ partial "home/home_features.html" . }} -->
+        <!-- global section -->
+        {{ if isset .Site.Data.home "cta_two_button" }}
+          {{ if .Site.Data.home.cta_two_button.enable }}
+            {{ partial "_global/cta_two_button.html" . }}
+          {{ end }}
+        {{ end }}
 
-        {{ partial "home/home_demo.html" . }}
-
-        <!-- {{ partial "home/webinar.html" . }} -->
-
-        <!-- {{ partial "home/tutorials.html" . }} -->
-
-        {{ partial "home/home_cta.html" . }}
-
-        <!-- {{ partial "home/usecases.html" . }} -->
-
-        {{ partial "home/home_press.html" . }}
+        <!-- global section -->
+        {{ if isset .Site.Data.home "press" }}
+          {{ if .Site.Data.home.press.enable }}
+            {{ partial "_global/press.html" . }}
+          {{ end }}
+        {{ end }}
 
         {{ partial "footer.html" . }}
 
