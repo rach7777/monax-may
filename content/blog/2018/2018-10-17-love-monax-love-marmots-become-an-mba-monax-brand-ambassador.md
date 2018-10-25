@@ -9,7 +9,7 @@ author:    "Rachel Davidson, Senior Marketing Associate"
 excerpt:   "We’re on the hunt for some awesome marmot-friendly humans to spread the word about all things Monax!"
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: mba_infographic_new.png
+thumbnail: malte-bickel-387952-unsplash.png
 
 # check the categories on the existing blog. should only have ONE
 categories:
@@ -60,7 +60,8 @@ We have a vibrant online community of brand ambassadors, just as excited about M
 
 We want marmots from all around, with one simple mission - to tell the world about Monax through all kinds of chat, be it social media, face-to-face in your local pub or at industry-wide events etc. There will be some awesome perks for those who successfully apply. 
 
-We’re currently finalising the full programme and benefits, and hope to launch things real soon, so if you want to be one of the first to find out please reach out to our MBA lead marmot, [Chenxiao](contact@monax.io).
+We’re currently finalising the full programme and benefits, and hope to launch things real soon, so if you want to be one of the first to find out please reach out to our MBA lead marmot, [Chenxiao](https://monax.io/blog/2018/10/05/meet-the-marmots-chenxiao-hu-wu-producer-experience-associate/) contact.monax.io.
 
 Happy contracting!
 
+[Photo](https://unsplash.com/photos/rGYdVCMQBCY) by MALTE BICKEL on [Unsplash](https://unsplash.com).
