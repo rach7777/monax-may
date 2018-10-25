@@ -817,7 +817,6 @@ $(document).ready(function() {
 
     // pricing table 'request a demo' forms
     $('a[id*="pricing-trigger-demo"]').each(function(index){
-      console.log('pricing trigger found: ' + index);
       $(this).on('click', function(e) {
         e.preventDefault();
         if ( ! $(this).hasClass('form-triggered') ) {
@@ -830,7 +829,6 @@ $(document).ready(function() {
       });
     });
     $('form[id*="pricing-demo-signup"]').each(function(index){
-      console.log('pricing form found: ' + index);
       $(this).validate({
         rules: {
           firstName: {
