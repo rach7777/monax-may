@@ -1,4 +1,8 @@
 // console.log("custom.js loaded");
+console.log(window.location.hostname);
+if (window.location.hostname.includes("staging")) {
+  console.log("YUP!!!!")
+}
 
 $(document).ready(function() {
   // ANALYTICS
@@ -8,7 +12,7 @@ $(document).ready(function() {
     serialized.forEach((input) => formData[input.name] = input.value);
     if (typeof analytics.user === 'function') formData.userId = analytics.user().id(); // added function check for local environment bug fix
     const method = formData.userId ? 'PUT' : 'POST';
-    console.log(window.location.hostname);
+    var analyticsURL = 'https://analytics.monax.io/monaxioregistry'
     $.ajax({
       url: 'https://analytics.monax.io/monaxioregistry{{ if eq (printf "%s" .Site.BaseURL) "https://staging.monax.io/" }}?sentfrom=staging{{ end }}',
       method,
