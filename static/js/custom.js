@@ -1,10 +1,5 @@
 
 $(document).ready(function() {
-    var analyticsURL = 'https://analytics.monax.io/monaxioregistry'
-    if (window.location.hostname.includes("staging")) {
-      analyticsURL = analyticsURL + '?sentfrom=staging'
-    }
-    console.log(analyticsURL);
   // ANALYTICS
   const analyticsIdentifyAndTrack = (form, eventName) => {
     const serialized = Array.isArray(form) ? form : $(form).serializeArray();
@@ -12,6 +7,10 @@ $(document).ready(function() {
     serialized.forEach((input) => formData[input.name] = input.value);
     if (typeof analytics.user === 'function') formData.userId = analytics.user().id(); // added function check for local environment bug fix
     const method = formData.userId ? 'PUT' : 'POST';
+    var analyticsURL = 'https://analytics.monax.io/monaxioregistry'
+    if (window.location.hostname.includes("staging")) {
+      analyticsURL = analyticsURL + '?sentfrom=staging'
+    }
     $.ajax({
       url: analyticsURL,
       method,
