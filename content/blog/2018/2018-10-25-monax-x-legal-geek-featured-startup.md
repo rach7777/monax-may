@@ -1,20 +1,20 @@
 ---
 
 # Pretty normal stuff
-date:      2018-10-24T13:25:03+01:00
-title:     "Blog Post Title Here"
-author:    "Your Name, Title Here"
+date:      2018-10-25T00:00:00+00:00
+title:     "Monax x Legal Geek 2018, London"
+author:    "Rachel Davidson, Senior Marketing Associate"
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
-excerpt:   "When people think about legal they think almost entirely of the provision of bespoke services. Yet the world is changing, and legal needs to keep up."
+excerpt:   "Monax attended the Legal Geek event for the second year in a row, and it was a super-productive and fun day."
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: example-image.jpg
+thumbnail:
 
 # check the categories on the existing blog. should only have ONE
 categories:
-  - legal products
+  - Monax
 
 # tags should be meaningful for your blog. if you want this article to show on a 'use case' page, you can use
 # the following TAGS -  'fleetleasing' 'creatives' 'lawyers' or 'entrepreneurs'
@@ -38,15 +38,13 @@ draft: true
 utm:
   source: "website"
   medium: "blog"
-  campaign: ""
+  campaign: "monax"
 
 ---
 
 <!-- In general the filename below should match thumbnail category above -->
 {{< image_blog "example-image.jpg" >}}
 
-<!-- if this article is part of a series, related articles will automatically appear here -->
-{{< blog_series >}}
 
 <!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
 ### Monax attend 'the biggest party in legal tech'
@@ -64,8 +62,9 @@ It wasn’t just UK marmots at the event - our CCO, Nina Kilbride, flew in from 
 All in all, we had a fantastic day with so many curious folks passing the stand, intrigued by the question on the front of our leaflets:
 “What if your agreements could talk to each other?”
 The event was attended by over 2000 people and needless to say, we can’t wait to be involved next year! Here’s some of the photo highlights and the official event video, courtesy of Legal Geek!
-youtube_url = https://youtu.be/45BwpLmL8lc
-Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+- youtube_url = https://youtu.be/45BwpLmL8lc
+
 
 ### Who are Legal Geek?
 Legal Geek is the largest UK community of lawtech start-ups with over 4,000 members. See [here](https://www.legalgeek.co) for more info.
