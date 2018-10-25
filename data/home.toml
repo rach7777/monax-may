@@ -77,7 +77,7 @@
       fname = true
       lname = true
       company_name = true
-      submit_text = "Request a demo of the platform"
+      submit_text = 'Book a time <i class="fa fa-chevron-right"></i>'
 
 
 [press] # global

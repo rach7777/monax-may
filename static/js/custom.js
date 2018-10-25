@@ -262,12 +262,10 @@ $(document).ready(function() {
       const qString = "?name=" + encodeURIComponent( formDataArr['firstName'] + " " + formDataArr['lastName'] ) + "&email=" + encodeURIComponent( formDataArr['email'] ) + "&a1=" + encodeURIComponent( formDataArr['company'] );
       var calendlyUrl = 'https://calendly.com/monax/demo' + qString;
 
-      // redirect if mobile
+      // redirect if mobile, otherwise show popup form
       if( $(window).width() < 768 ) {
-        console.log('mobile. redirecting to ' + calendlyUrl);
         window.location.href = calendlyUrl;
       } else {
-        console.log('desktop. showing popup');
         Calendly.showPopupWidget( calendlyUrl );
       }
 
@@ -457,7 +455,7 @@ $(document).ready(function() {
     submitHandler: function(form) {
       analyticsIdentifyAndTrack(form, "Demo Requested");
       // animate Doug
-      const successMessageCont = $(form).next().find('.success-message-container');
+      const successMessageCont = $(form).closest('.signup-container').find('.success-message-container');
       const successDoug = $(successMessageCont).find('.success-doug-img');
       const successText = $(successMessageCont).find('.success-text');
       // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
@@ -481,6 +479,45 @@ $(document).ready(function() {
       if (errors) {
         console.log("form returned invalid");
         $('#hero-signup-submit').addClass('animated headShake');
+      }
+    }
+  });
+
+  // GLOBAL - SECONDARY_CTA SIGNUP
+  $("#secondary-cta").validate({
+    rules: {
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    submitHandler: function(form) {
+      analyticsIdentifyAndTrack(form, "Demo Requested");
+      // animate Doug
+      const successMessageCont = $(form).closest('.signup-container').find('.success-message-container');
+      const successDoug = $(successMessageCont).find('.success-doug-img');
+      const successText = $(successMessageCont).find('.success-text');
+      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
+      const successInfo = $(successMessageCont).find('.success-info');
+      // $(successInfo).html('custom success text'); // enable to customize success information
+      $(form).slideToggle(400, function() {
+        $(form).parent().removeClass('flex-grid');
+        setTimeout(function(){
+          $(successMessageCont).animate({width:'toggle'},600, function() {
+            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+          });
+        }, 200);
+        // remove form
+        $(form).remove();
+      });
+      // prevent redirect
+      return false;
+    },
+    invalidHandler: function(event, validator) {
+      var errors = validator.numberOfInvalids();
+      if (errors) {
+        console.log("form returned invalid");
+        $('#secondary-cta-submit').addClass('animated headShake');
       }
     }
   });

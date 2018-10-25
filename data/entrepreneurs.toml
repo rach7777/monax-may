@@ -51,6 +51,11 @@
       highlights = "Analytics - Data Monetization - Productization"
 
 
+[secondary_cta]
+    enable = true
+    source = "entrepreneurs secondary_cta demo signup"
+
+
 [integrations]
     enable = true
     title = "Seamlessly integrates with your systems"

@@ -1,6 +1,6 @@
 {{ with .Site.Data.entrepreneurs.bullets }}
 {{ if .enable }}
-  <section class="section-feature padding-top-lg padding-bottom-xl">
+  <section class="section-feature padding-top-lg">
       <div class="container">
             <div class="row">
               {{ range $i, $p := .section }}
@@ -24,17 +24,6 @@
               </div> <!-- .col -->
               {{ end }}
             </div>  <!-- .row -->
-
-            {{ if .enable_request_demo }}
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="content-container signup-center">
-                    <!-- global section -->
-                      {{ partial "_global/hero_signup.html" . }}
-                  </div>
-                </div>
-              </div>
-            {{ end }}
 
       </div> <!-- .container -->
   </section> <!-- .section -->
