@@ -21,7 +21,12 @@
 
         {{ partial "home/demo.html" . }}
 
-        {{ partial "home/cta_two_button.html" . }}
+        <!-- global section -->
+        {{ if isset .Site.Data.home "cta_two_button" }}
+          {{ if .Site.Data.home.cta_two_button.enable }}
+            {{ partial "_global/cta_two_button.html" . }}
+          {{ end }}
+        {{ end }}
 
         <!-- global section -->
         {{ if isset .Site.Data.home "press" }}
