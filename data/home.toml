@@ -17,7 +17,7 @@
 [audiences]
   enable = true
   title = "<strong>Built for entrepreneurs and creatives</strong>"
-  subtitle = "Gain 100% oversight on your contractual agreements, track progress and obligations and keep everything important in one place. We enable you to stay focused on what you do best: growing your business."
+  subtitle = "Gain 100% oversight on your contractual agreements, track progress and obligations, and keep everything important in one place. We enable you to stay focused on what you do best: growing your business."
 
   [[audiences.card_link]]
     title = "For entrepreneurs"
