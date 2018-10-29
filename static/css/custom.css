@@ -763,6 +763,33 @@ form label.error {
 }
 
 
+/*======================
+    ELEMENTS - BambooHR
+=======================*/
+
+.BambooHR-ATS-board h2 {
+    display: none;
+}
+.BambooHR-ATS-board ul {
+    background-color: #f7f7f7;
+    padding: 20px 20px 0 !important;
+    border-radius: 5px;
+}
+.BambooHR-ATS-board li {
+    font-size: 16px;
+}
+.BambooHR-ATS-board a {
+    font-size: 20px !important;
+}
+.BambooHR-ATS-board ul ul {
+    border: none !important;
+    padding-bottom: 15px !important;
+    padding-top: 2px !important;
+}
+#BambooHR-Footer {
+    display: none;
+}
+
 
 /* ==============
   Blog Post Lists
