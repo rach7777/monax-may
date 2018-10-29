@@ -301,6 +301,33 @@
         </div>
       </div>
 
+
+<div class="content-container padding-top-lg">
+  <div class="flex-table flex-table-3col flex-table-collapse">
+  {{ range .tier2.column }}
+    <div style="order:0;" class="flex-td flex-th"><h3>{{ .title }}</h3></div>
+    {{ range $i, $p:= .all_features_managing_contracts }}
+      <div style="order:{{ add $i 1 }};" class="flex-td{{ if eq .disabled true }} background-dark{{ end }}">{{ .desc }}</div>
+    {{ end }}
+    {{ range $i, $p:= .all_features_managing_templates }}
+      <div style="order:{{ add $i 50 }};" class="flex-td{{ if eq .disabled true }} background-dark{{ end }}">{{ .desc }}</div>
+    {{ end }}
+  {{ end }}
+  {{ range .tier1.column }}
+    <div style="order:0;" class="flex-td flex-th"><h3>{{ .title }}</h3></div>
+    {{ range $i, $p:= .all_features_managing_contracts }}
+      <div style="order:{{ add $i 1 }};" class="flex-td{{ if eq .disabled true }} background-dark{{ end }}">{{ .desc }}</div>
+    {{ end }}
+    {{ range $i, $p:= .all_features_managing_templates }}
+      <div style="order:{{ add $i 50 }};" class="flex-td{{ if eq .disabled true }} background-dark{{ end }}">{{ .desc }}</div>
+    {{ end }}
+  {{ end }}
+  </div>
+</div>
+
+
+
+
     </div> <!-- .container -->
 </section> <!-- .section -->
 {{ end }}

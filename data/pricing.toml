@@ -38,6 +38,26 @@
           "Collaboratively manage contracts within your organization",
         ]
         show_all_features_url = ""
+        all_features_managing_contracts = [
+          { desc = "25 new contracts / month", disabled = false },
+          { desc = "250 contractual transactions / month", disabled = false },
+          { desc = "Organize existing contracts with tags", disabled = false },
+          { desc = "50 active CantingTribe NDAs", disabled = false },
+          { desc = "In-application task management", disabled = false },
+          { desc = "5 reminder notifications / contract", disabled = false },
+          { desc = "Alerts and notifications on contractual execution steps", disabled = false },
+          { desc = "Operate approved open souce contracts", disabled = false },
+          { desc = "Buy and operate Monax approved contracts (additional fees apply)", disabled = false },
+          { desc = "Exclusive first access to legal products created by Monax platform partners", disabled = false },
+        ]
+        all_features_managing_templates = [
+          { desc = "15 active contract templates", disabled = false },
+          { desc = "Create custom collaborative templates and parameters", disabled = false },
+          { desc = "Select contract workflows from Monax's extensive library", disabled = false },
+          { desc = "Import / export custom workflows", disabled = false },
+          { desc = "Set governing templates and subtemplates", disabled = false },
+          { desc = "Package templates into custom multi-contract workflows", disabled = true },
+        ]
 
         [[pricing_table.tier1.column.form]]
           enable = true
@@ -75,6 +95,26 @@
           "Package and execute multicontract workflows",
         ]
         show_all_features_url = ""
+        all_features_managing_contracts = [
+          { desc = "25 new contracts / month", disabled = false },
+          { desc = "250 contractual transactions / month", disabled = false },
+          { desc = "Organize existing contracts with tags", disabled = false },
+          { desc = "50 active CantingTribe NDAs", disabled = false },
+          { desc = "In-application task management", disabled = false },
+          { desc = "5 reminder notifications / contract", disabled = false },
+          { desc = "Alerts and notifications on contractual execution steps", disabled = false },
+          { desc = "Operate approved open souce contracts", disabled = false },
+          { desc = "Buy and operate Monax approved contracts (additional fees apply)", disabled = false },
+          { desc = "Exclusive first access to legal products created by Monax platform partners", disabled = false },
+        ]
+        all_features_managing_templates = [
+          { desc = "15 active contract templates", disabled = false },
+          { desc = "Create custom collaborative templates and parameters", disabled = false },
+          { desc = "Select contract workflows from Monax's extensive library", disabled = false },
+          { desc = "Import / export custom workflows", disabled = false },
+          { desc = "Set governing templates and subtemplates", disabled = false },
+          { desc = "Package templates into custom multi-contract workflows", disabled = false },
+        ]
 
         [[pricing_table.tier1.column.form]]
           enable = true
@@ -120,6 +160,26 @@
           "Create custom collaborative templates",
         ]
         show_all_features_url = ""
+        all_features_managing_contracts = [
+          { desc = "25 new contracts / month", disabled = false },
+          { desc = "250 contractual transactions / month", disabled = false },
+          { desc = "Organize existing contracts with tags", disabled = false },
+          { desc = "50 active CantingTribe NDAs", disabled = false },
+          { desc = "In-application task management", disabled = false },
+          { desc = "5 reminder notifications / contract", disabled = false },
+          { desc = "Alerts and notifications on contractual execution steps", disabled = false },
+          { desc = "Operate approved open souce contracts", disabled = false },
+          { desc = "Buy and operate Monax approved contracts (additional fees apply)", disabled = false },
+          { desc = "Exclusive first access to legal products created by Monax platform partners", disabled = true },
+        ]
+        all_features_managing_templates = [
+          { desc = "15 active contract templates", disabled = false },
+          { desc = "Create custom collaborative templates and parameters", disabled = false },
+          { desc = "Select contract workflows from Monax's extensive library", disabled = false },
+          { desc = "Import / export custom workflows", disabled = true },
+          { desc = "Set governing templates and subtemplates", disabled = true },
+          { desc = "Package templates into custom multi-contract workflows", disabled = true },
+        ]
 
         [[pricing_table.tier2.column.form]]
           enable = true
@@ -153,7 +213,6 @@
         "Custom branding",
       ]
       show_all_features_url = "" # set to "" to hide
-
 
 
 [cta] # global
