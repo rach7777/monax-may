@@ -59,12 +59,50 @@
       title = "Audit Trails"
 
     [[icons.section]]
-      icon_img = "/img/assets/lawyers/marketplace.png"
+    icon_img = "/img/assets/lawyers/workflows.png"
       title = "Workflows"
 
     [[icons.section]]
-      icon_img = "/img/assets/lawyers/workflows.png"
+    icon_img = "/img/assets/lawyers/marketplace.png"
       title = "Marketplace"
+
+    [icons.cta]
+      enable = true
+      enable_button_one = false # links to url or triggers form one
+      button_one_text = "Sign up to a webinar"
+      button_one_trigger_form = true # if false set url
+      button_one_url = "#webinar"
+      button_one_style_outline = true # outline if true, solid if false
+
+      enable_button_two = true # links to url or form two
+      button_two_text = "Request a demo"
+      button_two_trigger_form = true # if false set url
+      button_two_url = "#demo"
+      button_two_style_outline = false # outline if true, solid if false
+
+      show_button_separator = false
+
+      [icons.cta.form_one]
+        enable = false
+        id = "webinar"
+        source = "cta_two_button webinar signup" # required for Segment to process
+        webinar_signup = "true" # required for Segment to process
+        email = true
+        fname = true
+        lname = true
+        company_name = true
+        submit_text = "Sign up for our next webinar"
+
+      [icons.cta.form_two]
+        enable = true
+        id = "demo"
+        source = "cta_two_button demo signup" # required for Segment to process
+        request_demo = "true" # required for Segment to process
+        email = true
+        fname = true
+        lname = true
+        company_name = true
+        submit_text = 'Book a time <i class="fa fa-chevron-right"></i>'
 
 
 [lawyer_cta]
