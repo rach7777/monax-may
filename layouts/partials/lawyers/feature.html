@@ -1,11 +1,11 @@
 {{ with .Site.Data.lawyers.feature }}
 {{ if .enable }}
-  <section class="section-feature padding-top-xl section-shadow-xl">
+  <section class="section-feature padding-top-md padding-bottom-md">
       <div class="container">
 
           {{ range $i, $p := .section }}
 
-            <div class="row flex-grid-md padding-bottom-xl {{ if not (modBool $i 2) }}flex-grid-reverse{{ end}}">
+            <div class="row flex-grid-md padding-bottom-lg {{ if not (modBool $i 2) }}flex-grid-reverse{{ end}}">
               <div class="col-md-7 col-valign-center">
                 <div class="animation-container">
                   <div id="{{ .animation_id }}" class='{{ if eq .img_content_container "mac" }}animation-container-mac{{ end }}{{ if eq .img_content_container "iphone" }}animation-container-iphone{{ end }}'>
@@ -46,8 +46,8 @@
                 </div> <!-- .col -->
               </div> <!-- .col -->
               <div class="col-md-5 col-valign-center"  data-aos="{{ if (modBool $i 2) }}fade-left{{ else }}fade-right{{ end}}" data-aos-delay="50" data-aos-duration="400">
-                <div class="range-left-md underline-sm">
-                    <h2>{{ .title }}</h2>
+                <div class="range-left-md">
+                    <h2><strong>{{ .title }}</strong></h2>
                 </div>
                 <p class="lead range-left-md">
                   {{ .subtitle | markdownify }}

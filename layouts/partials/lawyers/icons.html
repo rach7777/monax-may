@@ -1,0 +1,41 @@
+{{ with .Site.Data.lawyers.icons }}
+{{ if .enable }}
+<section class="section-icons padding-top-lg padding-bottom-lg background-grey">
+    <div class="container">
+
+      <div class="row flex-grid-md">
+          <div class="col-md-12 col-valign-center">
+              {{ with .title }}
+              <div class="">
+                  <h2>{{ . | markdownify }}</h2>
+              </div>
+              {{ end }}
+              {{ with .subtitle }}
+                <h4>{{ . | markdownify }}</h4>
+              {{ end }}
+          </div>
+      </div>
+      <div class="row padding-top-md">
+        {{ range .section }}
+          <div class="col-sm-4 padding-bottom-md">
+            <div class="img-container padding-bottom-sm">
+              <img class="img-responsive img-center img-icons" src="{{ .icon_img }}" alt="{{ .title }}">
+            </div>
+            <div class="title-container">
+              <h4>{{ .title }}</h4>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="btn-container">
+            <a href="#" class="btn btn-xl">Request a demo</a>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- .container -->
+</section> <!-- .section -->
+{{ end }}
+{{ end }}
