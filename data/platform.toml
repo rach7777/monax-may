@@ -2,6 +2,7 @@
     enable = true
     title = "<strong>Stay in control of your contracts</strong>"
     subtitle = "Turn contracts into the backbone of your business relationships. Gain clarity, know where to focus and fulfill contracts collaboratively."
+    hero_signup = false
 
 
 [features]

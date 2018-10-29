@@ -1,27 +1,32 @@
 {{ with .Site.Data.company.team }}
 {{ if .enable }}
-<section class="section-team section-padding-lg">
+<section class="section-team padding-bottom-md padding-top-lg">
     <div class="container">
 
       <div class="row">
         <div class="col-md-12">
-          <div class="underline-sm">
-              <h2>{{ .title }}</h2>
-          </div>
-          <p class="p1 padding-bottom-sm">
-            {{ .subtitle | markdownify }}
-          </p>
-          <div class="content-container locations-container">
-            <div class="row flex-grid-sm">
-              {{ range $i, $p := .office }}
-              {{ if (modBool $i 2) }}
-                <div class="clearfix visible-xs-block"></div>
-              {{ end }}
-              <div class="col-sm-3 col-xs-6 col-valign-center">
-                <img class="img-responsive img-center img-city hover-dip-opacity js-select-city" src="{{ .img }}" alt="" data-select="{{ .select }}">
-                <h5 style="">{{ .city }}</h5>
+          {{ with .title }}
+            <div class="">
+                <h2>{{ . | markdownify }}</h2>
+            </div>
+          {{ end }}
+          {{ with .subtitle }}
+            <p class="p1 padding-bottom-sm">
+              {{ . | markdownify }}
+            </p>
+          {{ end }}
+          <div class="content-container padding-top-md">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <div class="row flex-grid-sm locations-container">
+                  {{ range $i, $p := .office }}
+                    <div class="col-sm-4 col-xs-4 col-valign-center">
+                      <img class="img-responsive img-center img-city hover-dip-opacity js-select-city" src="{{ .img }}" alt="" data-select="{{ .select }}">
+                      <h6 style=""><span class="no-wrap">{{ .city }}</span></h6>
+                    </div>
+                  {{ end }}
+                </div>
               </div>
-              {{ end }}
             </div>
 
           </div>
@@ -36,7 +41,7 @@
           {{ end }}
 
           {{ if (modBool $i 3) }}
-            <div class="clearfix visible-sm-block"></div>
+            <div class="clearfix visible-md-block visible-sm-block"></div>
           {{ end }}
 
           {{ if (modBool $i 2) }}

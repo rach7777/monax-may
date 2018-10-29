@@ -220,6 +220,9 @@ p.lead,
     text-align: left;
   }
 }
+span.no-wrap {
+  white-space: pre;
+}
 
 /* ==============
   Font colors
