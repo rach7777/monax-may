@@ -82,10 +82,9 @@ Everyone here in the company is wonderfully talented and we’re a social specie
 
 Running a ‘blockchain’ is not like ordinary infrastructure because there are so many new variables to consider. The main concern is anticipating causality when updating the architecture but I also need to be on hand to react quickly to any bugs in the matrix ;)
 
-### Tell us a quirky fact about yourself…
+### Tell us a quirky fact about youself
 
-I’m your stereotypical geek; Jurassic Park, Mass Effect & Star Trek are among my favourites. I’m also a bit of a dino-lover, I somehow even coined my old high school band the ‘Jazz Raptors’ and I have a dino tattoo.
-
+I'm your stereotypical geek, complete with a hidden dinosaur tattoo!
 
 ### Thank you so much Greg! 
 
