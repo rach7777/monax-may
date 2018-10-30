@@ -37,7 +37,7 @@
           "Collaborate with external partners",
           "Collaboratively manage contracts within your organization",
         ]
-        show_all_features_url = ""
+        show_all_features_url = "#reveal"
         all_features_managing_contracts = [
           { desc = "25 new contracts / month", disabled = false },
           { desc = "250 contractual transactions / month", disabled = false },
@@ -94,7 +94,7 @@
           "Organize your company through organizations",
           "Package and execute multicontract workflows",
         ]
-        show_all_features_url = ""
+        show_all_features_url = "#reveal"
         all_features_managing_contracts = [
           { desc = "25 new contracts / month", disabled = false },
           { desc = "250 contractual transactions / month", disabled = false },
@@ -159,7 +159,7 @@
           "Get alerts to meet your contract obligations",
           "Create custom collaborative templates",
         ]
-        show_all_features_url = ""
+        show_all_features_url = "#reveal"
         all_features_managing_contracts = [
           { desc = "25 new contracts / month", disabled = false },
           { desc = "250 contractual transactions / month", disabled = false },
