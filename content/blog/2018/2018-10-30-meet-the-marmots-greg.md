@@ -10,7 +10,7 @@ excerpt:   "When people think about legal they think almost entirely of the prov
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: greg_grafitti.png
+thumbnail: greg_graffiti.png
 
 # check the categories on the existing blog. should only have ONE
 categories:
@@ -44,7 +44,7 @@ utm:
 ---
 
 <!-- In general the filename below should match thumbnail category above -->
-{{< image_blog "greg_regular_png" >}}
+{{< image_blog "greg_regular.png" >}}
 
 <!-- if this article is part of a series, related articles will automatically appear here -->
 {{< blog_series >}}
