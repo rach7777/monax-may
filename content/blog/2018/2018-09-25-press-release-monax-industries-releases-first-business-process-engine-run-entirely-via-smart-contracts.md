@@ -10,8 +10,7 @@ excerpt:   "LONDON – September 25, 2018 – Monax Industries, a leader in open
 thumbnail: monax-press-release.png
 
 categories:
-  - Announcements
-  - press
+  - announcements
 
 tags:
   - legal products
@@ -20,18 +19,13 @@ tags:
   - announcements
   - press
 
-series:
- id: press-releases
- number: 2
- about: "This is a series of press releases - for further media enquirires, please contact press@monax.io"
 
 draft: false
 
 utm:
   source: "website"
   medium: "blog"
-  campaign: "monax"
-
+  campaign: "announcements"
 ---
 
 {{< image_blog "monax-press-release.png" >}}
