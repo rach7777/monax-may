@@ -1,4 +1,4 @@
-{{ with .Site.Data.home.home_audience }}
+{{ with .Site.Data.home.audiences }}
 {{ if .enable }}
 
 <section class="section-audience padding-top-md padding-bottom-lg">
@@ -24,7 +24,7 @@
           {{ range .card_link }}
           <div class="col-md-6 padding-bottom-md">
             <a class="flex-grid-sm a-card" href="{{ .link_url }}">
-              <div class="content-container content-card-full content-card-shadow-sm flex-grid-sm audience-card">
+              <div class="content-container content-card-full content-card-shadow-sm flex-grid-sm card-grey">
                 <div class="row flex-grid">
                   <div class="col-xs-4 col-valign-center">
                     <img class="img-responsive" src="{{ .img }}" alt="">
