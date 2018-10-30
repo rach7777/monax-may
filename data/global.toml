@@ -88,15 +88,23 @@
   [casestudies.cta] # global
     enable = false
 
+
+# PRESS SECTION
+
 [press]
     enable = true
-    title = "Featured In:"
-    logo_1 = "/img/press-logos/forbes-logo-white-trans.png"
-    logo_1_url = "https://www.forbes.com/sites/sarahhansen/2018/07/26/11-companies-join-agreements-network-to-develop-ethereum-platform-for-lawyers/#1db52de84aec"
-    logo_2 = "/img/press-logos/ABA-Journal-white-ng.png"
-    logo_2_url = "http://www.abajournal.com/news/article/law_firms_tech_companies_partner_to_build_new_blockchain_based_platform_for"
-    logo_3 = "/img/press-logos/ledger-inisights-white.png"
-    logo_3_url = "https://www.ledgerinsights.com/agreements-network-legal-blockchain-contracts/"
+    title = "Featured in international business and tech press"
+    logo_1 = "/img/press-logos/bloomsberg_lo_grey.png"
+    logo_1_url = "https://www.bloomberg.com/news/audio/2018-08-07/bloomberg-markets-zillow-s-wobbly-results-tesla-going-private"
+    logo_2 = "/img/press-logos/forbes_lo_grey.png"
+    logo_2_url = "https://www.forbes.com/sites/sarahhansen/2018/07/26/11-companies-join-agreements-network-to-develop-ethereum-platform-for-lawyers/#3d1be5e94aec"
+    logo_3 = "/img/press-logos/digital-journal_lo_grey.png"
+    logo_3_url = "http://www.digitaljournal.com/business/q-a-how-technology-is-shaking-up-legal-firms/article/525554"
+    logo_4 = "/img/press-logos/market-watch_lo_grey.png"
+    logo_4_url = "https://www.marketwatch.com/press-release/leaders-in-blockchain-law-and-legal-technology-team-up-to-launch-the-agreements-network-2018-07-26"
+
+
+# MAIN CTA SECTION
 
 [cta]
     title = "<strong>Let your contracts work for you</strong>"
@@ -118,6 +126,7 @@
         "Real estate industry",
         "Public utilities industry",
         "Insurance & risk",
+        "Creative Industry",
         "Defense industry",
         "Education industry",
         "Energy industry",
@@ -166,11 +175,55 @@
       lname = true
       company_name = true
 
-      submit_button_text = "Request a demo"
+      submit_button_text = "Book a demo"
+      enable_calendly_page = true # if true form continues to calendly
       enable_button_two = false
       # button_two_text = "Try for free" # url link only
       # button_two_url = "https://beta.monax.io/register"
       # show_button_separator = true
+
+
+# CTA SECTION - TWO BUTTON VARIATION
+
+[cta_two_button]
+    enable = true
+    title = "<strong>Let your contracts work for you</strong>"
+
+    enable_button_one = true # links to url or triggers form one
+    button_one_text = "Sign up to a webinar"
+    button_one_trigger_form = true # if false set url
+    button_one_url = "#webinar"
+    button_one_style_outline = true # outline if true, solid if false
+
+    enable_button_two = true # links to url or form two
+    button_two_text = "Request a demo"
+    button_two_trigger_form = true # if false set url
+    button_two_url = "#demo"
+    button_two_style_outline = false # outline if true, solid if false
+
+    show_button_separator = false
+
+    [cta_two_button.form_one]
+      enable = true
+      id = "webinar"
+      source = "cta_two_button webinar signup" # required for Segment to process
+      webinar_signup = "true" # required for Segment to process
+      email = true
+      fname = true
+      lname = true
+      company_name = true
+      submit_text = "Sign up for our next webinar"
+
+    [cta_two_button.form_two]
+      enable = true
+      id = "demo"
+      source = "cta_two_button demo signup" # required for Segment to process
+      request_demo = "true" # required for Segment to process
+      email = true
+      fname = true
+      lname = true
+      company_name = true
+      submit_text = 'Book a time <i class="fa fa-chevron-right"></i>'
 
 
 # FOOTER
