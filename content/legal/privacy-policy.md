@@ -112,15 +112,6 @@ Edinburgh
 UK
 EH2 3JZ
 
-Monax.com participates in and has certified its compliance with the EU-U.S. Privacy Shield Framework (the “Framework”).  Monax is committed to subjecting all personal data received from European Union (EU) member countries, to the Framework’s applicable Principles.  This specifically refers to all EU personal data received by Monax’s U.S. websites. To learn more about the Privacy Shield Framework, visit the U.S. Department of Commerce’s Privacy Shield List.
-
-Under the Privacy Shield Framework, Monax is responsible for the processing of personal data it receives and subsequently transfers to a third party acting as an agent on its behalf.  Monax complies with the Privacy Shield Principles for all onward transfers of personal data from the EU, including the onward transfer liability provisions.
-
-With respect to personal data received or transferred pursuant to the Privacy Shield Framework, Monax is subject to the regulatory enforcement powers of the U.S. Federal Trade Commission.
-
-If you have an unresolved privacy or data use concern that we have not addressed satisfactorily, please contact our U.S.-based third party dispute resolution provider (free of charge) at https://feedback-form.truste.com/watchdog/request.
-
-Under certain conditions, more fully described on the Privacy Shield website, you may invoke binding arbitration when other dispute resolution procedures have been exhausted.
 
 Privacy Policy Revision History
 
