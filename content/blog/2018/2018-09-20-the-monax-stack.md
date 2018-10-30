@@ -58,7 +58,7 @@ Blackstone is the Monax-built RESTful API that enables users to connect seamless
 
 ### Scalia
 
-Scalia is a legal document assembly and parsing tool first released by Casey Kuhlman as LegalMarkdown in 2012. It is used to construct and interpret parameterized legal prose documents and structured data models useful during the contract lifecycle.
+Scalia is a legal document assembly and parsing tool first released by Casey Kuhlman as LegalMarkdown in 2013. It is used to construct and interpret parameterized legal prose documents and structured data models useful during the contract lifecycle.
 
 ### Hoard
 
