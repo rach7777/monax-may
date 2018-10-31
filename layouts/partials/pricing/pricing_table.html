@@ -102,7 +102,7 @@
                                     {{ end }}
                                     <div class="btn-container padding-top-sm">
                                       <button type="submit" value="Submit" class="btn btn-xl field-submit">
-                                        <span>{{ .submit_text | default "Submit" }}</span>
+                                        <span>{{ .submit_text | default "Submit" | markdownify }}</span>
                                       </button>
                                     </div>
                                   </form>
@@ -319,7 +319,7 @@
                                       {{ end }}
                                       <div class="btn-container range-left-sm padding-top-sm">
                                         <button type="submit" value="Submit" class="btn btn-xl field-submit">
-                                          <span>{{ .submit_text | default "Submit" }}</span>
+                                          <span>{{ .submit_text | default "Submit" | markdownify }}</span>
                                         </button>
                                       </div>
                                     </form>

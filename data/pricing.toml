@@ -28,7 +28,7 @@
         billed_yearly_price = "$150" # /month
         billed_monthly_price = "$189" # /month
         subtitle = "Streamline your operations and collectively manage your contracts"
-        link_title = "Try It Out"
+        link_title = "Request A Demo"
         link_triggers_demo_form = true # if false set url
         link_url = "#demo1"
         features_title = ""
@@ -109,7 +109,7 @@
           fname = true
           lname = true
           company_name = true
-          submit_text = "Request a demo"
+          submit_text = "Book A Time <i class='fa fa-angle-right'></i>"
 
       [[pricing_table.tier1.column]]
         enable = true
@@ -118,7 +118,7 @@
         billed_yearly_price = "$500" # /month
         billed_monthly_price = "$625" # /month
         subtitle = "Scale operations, manage permissions and customize your processes"
-        link_title = "Try It Out"
+        link_title = "Request A Demo"
         link_triggers_demo_form = true # if false set url
         link_url = "#demo2"
         features_title = ""
@@ -199,7 +199,7 @@
           fname = true
           lname = true
           company_name = true
-          submit_text = "Request a demo"
+          submit_text = "Book A Time <i class='fa fa-angle-right'></i>"
 
     [pricing_table.tier2]
       enable = true
@@ -215,7 +215,7 @@
         billed_yearly_price = "$25" # /month
         billed_monthly_price = "$31" # /month
         subtitle = "Organize your contracts and gain clarity over your business relationships"
-        link_title = "Try It Out"
+        link_title = "Request A Demo"
         link_triggers_demo_form = true # if false set url
         link_url = "#demo3"
         link_style_outline = false
@@ -297,7 +297,7 @@
           fname = true
           lname = true
           company_name = true
-          submit_text = "Request a demo"
+          submit_text = "Book A Time <i class='fa fa-angle-right'></i>"
 
 
     [pricing_table.tier3]
