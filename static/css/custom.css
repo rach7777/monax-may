@@ -1427,6 +1427,26 @@ form label.error {
   width: 16.6%;
 }
 
+/* Cell colspan
+================================== */
+.flex-table-3col .flex-td-colspan-3  { width: 100%; }
+.flex-table-3col .flex-td-colspan-2  { width: 66.66%; }
+
+.flex-table-4col .flex-td-colspan-4  { width: 100%; }
+.flex-table-4col .flex-td-colspan-3  { width: 75%; }
+.flex-table-4col .flex-td-colspan-2  { width: 50%; }
+
+.flex-table-5col .flex-td-colspan-5  { width: 100%; }
+.flex-table-5col .flex-td-colspan-4  { width: 80%; }
+.flex-table-5col .flex-td-colspan-3  { width: 60%; }
+.flex-table-5col .flex-td-colspan-2  { width: 40%; }
+
+.flex-table-6col .flex-td-colspan-6  { width: 100%; }
+.flex-table-6col .flex-td-colspan-5  { width: 83.33%; }
+.flex-table-6col .flex-td-colspan-4  { width: 66.66%; }
+.flex-table-6col .flex-td-colspan-3  { width: 50%; }
+.flex-table-6col .flex-td-colspan-2  { width: 33.33%; }
+
 /* Cell styles
 ================================== */
 .flex-td.background-dark {
@@ -1457,9 +1477,13 @@ form label.error {
   background-color: #b8c0c8;
   border-color: #a9b3bc;
 }
+.flex-td-separator {
+  padding: 0;
+}
+
 /* Responsive
 ==================================== */
-@media all and (max-width: 500px) {
+@media all and (max-width: 767px) {
   .flex-table-collapse {
     display: block;
   }
@@ -1469,7 +1493,11 @@ form label.error {
   .flex-table-collapse > .flex-tfoot {
     margin-bottom: 1em;
   }
+  .flex-td-row-end {
+    margin-bottom: 1em;
+  }
 }
+
 .no-flexbox .flex-table {
   display: block;
 }
@@ -2020,9 +2048,25 @@ p, h1, h2, h3, h4, h5, h6, .circle-container {
     right: 0px;
 }
 /* all features table */
+.flex-table-pricing .flex-td.flex-th {
+    padding-left: 0;
+    padding-right: 0;
+}
+.flex-table-pricing .flex-th h1,
+.flex-table-pricing .flex-th h2,
+.flex-table-pricing .flex-th h3,
+.flex-table-pricing .flex-th h4,
+.flex-table-pricing .flex-th h5,
+.flex-table-pricing .flex-th h6 {
+  margin: 0;
+}
 .flex-table-pricing .flex-td {
     padding-left: 2.4em;
     position: relative;
+}
+.flex-table-pricing .flex-td-separator {
+    padding-left: 3%;
+    padding-right: 3%;
 }
 .flex-table-pricing .flex-td .fa-li {
     left: 0.2em;
@@ -2032,7 +2076,35 @@ p, h1, h2, h3, h4, h5, h6, .circle-container {
     display: none;
 }
 .flex-table-pricing .flex-td.disabled {
-    color: #999;
+    color: #ccc;
+}
+/* separators */
+.flex-td-separator {
+     overflow: hidden;
+     text-align: center;
+     position: relative;
+ }
+.flex-td-separator h6 {
+    position: relative;
+    display: inline-block;
+}
+.flex-td-separator h6:before,
+.flex-td-separator h6:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 2px solid #eee;
+    width: 800px;
+    margin: 0 20px;
+}
+.flex-td-separator h6:before {
+    right: 100%;
+}
+.flex-td-separator h6:after {
+    left: 100%;
+}
+.flex-td-separator .inner-content {
+  overflow: hidden;
 }
 
 

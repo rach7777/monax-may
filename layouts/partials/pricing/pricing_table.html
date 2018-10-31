@@ -142,32 +142,68 @@
                     </div>
 
                     <div class="content-container padding-bottom-lg">
-                      <div class="flex-table flex-table-3col flex-table-collapse flex-table-pricing">
-                      {{ range $.Site.Data.pricing.pricing_table.tier2.column }}
-                        <div style="order:0;" class="flex-td flex-th">
+                      <div id="pricing-all-features" class="flex-table flex-table-3col flex-table-collapse flex-table-pricing">
+                      {{ range $i, $p := $.Site.Data.pricing.pricing_table.tier2.column }}
+
+                        <div style="order:0;" class="flex-td flex-th padding-top-md">
                           <h4>{{ .title }}</h4>
                         </div>
-                        <div style="order:1;" class="flex-td">line</div>
+
+                        <div style="order:1;" class="flex-td flex-td-separator padding-top-sm {{ if eq $i 0 }} flex-td-colspan-3 {{ else }} visible-xs-block {{ end }}">
+                          <div class="inner-content">
+                            <h6>Managing Contracts</h6>
+                          </div>
+                        </div>
+
                         {{ range $i, $p:= .all_features_managing_contracts }}
-                          <div style="order:{{ add $i 5 }};" class="flex-td{{ if eq .disabled true }} disabled{{ end }}"><span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}</div>
+                          <div style="order:{{ add $i 5 }};" class="flex-td {{ if eq .disabled true }} disabled {{ end }}">
+                            <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                          </div>
                         {{ end }}
-                          <div style="order:45;" class="flex-td">line</div>
+
+                        <div style="order:45;" class="flex-td flex-td-separator padding-top-md {{ if eq $i 0 }} flex-td-colspan-3 {{ else }} visible-xs-block {{ end }}">
+                          <div class="inner-content">
+                            <h6>Managing Templates</h6>
+                          </div>
+                        </div>
+
                         {{ range $i, $p:= .all_features_managing_templates }}
-                          <div style="order:{{ add $i 50 }};" class="flex-td{{ if eq .disabled true }} disabled{{ end }}"><span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}</div>
+                          <div style="order:{{ add $i 50 }};" class="flex-td {{ if eq .disabled true }} disabled {{ end }}">
+                            <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                          </div>
                         {{ end }}
+
                       {{ end }}
-                      {{ range $.Site.Data.pricing.pricing_table.tier1.column }}
-                        <div style="order:0;" class="flex-td flex-th">
+                      {{ range $i, $p := $.Site.Data.pricing.pricing_table.tier1.column }}
+
+                        <div style="order:0;" class="flex-td flex-th padding-top-md">
                           <h4>{{ .title }}</h4>
                         </div>
-                        <div style="order:1;" class="flex-td">line</div>
+
+                        <div style="order:1;" class="flex-td flex-td-separator visible-xs-block padding-top-sm">
+                          <div class="inner-content">
+                            <h6>Managing Contracts</h6>
+                          </div>
+                        </div>
+
                         {{ range $i, $p:= .all_features_managing_contracts }}
-                          <div style="order:{{ add $i 5 }};" class="flex-td{{ if eq .disabled true }} disabled{{ end }}"><span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}</div>
+                          <div style="order:{{ add $i 5 }};" class="flex-td {{ if eq .disabled true }} disabled {{ end }}">
+                            <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                          </div>
                         {{ end }}
-                          <div style="order:45;" class="flex-td">line</div>
+
+                        <div style="order:45;" class="flex-td flex-td-separator padding-top-md visible-xs-block">
+                          <div class="inner-content">
+                            <h6>Managing Templates</h6>
+                          </div>
+                        </div>
+
                         {{ range $i, $p:= .all_features_managing_templates }}
-                          <div style="order:{{ add $i 50 }};" class="flex-td{{ if eq .disabled true }} disabled{{ end }}"><span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}</div>
+                          <div style="order:{{ add $i 50 }};" class="flex-td {{ if eq .disabled true }} disabled {{ end }}">
+                            <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                          </div>
                         {{ end }}
+
                       {{ end }}
                       </div>
                     </div>
