@@ -131,8 +131,8 @@
                                 {{ end }}
                               </ul>
                             </div>
-                            {{ if ne .show_all_features_url "" }}
-                              <p><a href="{{ .show_all_features_url }}">Show all features</a></p>
+                            {{ if .enable_show_all_features }}
+                              <p><a id="trigger-all-features-table" class="hidden-xs" href="#features-table">Show all features</a></p>
                             {{ end }}
 
                           </div>
@@ -143,70 +143,122 @@
 
                     <div class="content-container padding-bottom-lg">
                       <div id="pricing-all-features" class="flex-table flex-table-3col flex-table-collapse flex-table-pricing">
-                      {{ range $i, $p := $.Site.Data.pricing.pricing_table.tier2.column }}
+                        {{ range $i, $p := $.Site.Data.pricing.pricing_table.tier2.column }}
 
-                        <div style="order:0;" class="flex-td flex-th padding-top-md">
-                          <h4>{{ .title }}</h4>
-                        </div>
-
-                        <div style="order:1;" class="flex-td flex-td-separator padding-top-sm {{ if eq $i 0 }} flex-td-colspan-3 {{ else }} visible-xs-block {{ end }}">
-                          <div class="inner-content">
-                            <h6>Managing Contracts</h6>
+                          <div style="order:0;" class="flex-td flex-th padding-top-md hidden-xs">
+                            <h4>{{ .title }}</h4>
                           </div>
-                        </div>
-
-                        {{ range $i, $p:= .all_features_managing_contracts }}
-                          <div style="order:{{ add $i 5 }};" class="flex-td {{ if eq .disabled true }} disabled {{ end }}">
-                            <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                          <div style="order:1;" class="flex-td flex-td-separator padding-top-sm hidden-xs {{ if eq $i 0 }} flex-td-colspan-3 {{ else }} visible-xs-block {{ end }}">
+                            <div class="inner-content">
+                              <h6>Managing Contracts</h6>
+                            </div>
                           </div>
+                          {{ range $i, $p:= .all_features_managing_contracts }}
+                            <div style="order:{{ add $i 5 }};" class="flex-td hidden-xs {{ if eq .disabled true }} disabled {{ end }}">
+                              <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                            </div>
+                          {{ end }}
+                          <div style="order:45;" class="flex-td flex-td-separator padding-top-md hidden-xs {{ if eq $i 0 }} flex-td-colspan-3 {{ else }} visible-xs-block {{ end }}">
+                            <div class="inner-content">
+                              <h6>Managing Templates</h6>
+                            </div>
+                          </div>
+                          {{ range $i, $p:= .all_features_managing_templates }}
+                            <div style="order:{{ add $i 50 }};" class="flex-td hidden-xs {{ if eq .disabled true }} disabled {{ end }}">
+                              <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                            </div>
+                          {{ end }}
+                          <div style="order:95;" class="flex-td flex-td-separator padding-top-md hidden-xs {{ if eq $i 0 }} flex-td-colspan-3 {{ else }} visible-xs-block {{ end }}">
+                            <div class="inner-content">
+                              <h6>Managing People</h6>
+                            </div>
+                          </div>
+                          {{ range $i, $p:= .all_features_managing_people }}
+                            <div style="order:{{ add $i 100 }};" class="flex-td hidden-xs {{ if eq .disabled true }} disabled {{ end }}">
+                              <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                            </div>
+                          {{ end }}
+                          <div style="order:145;" class="flex-td flex-td-separator padding-top-md hidden-xs {{ if eq $i 0 }} flex-td-colspan-3 {{ else }} visible-xs-block {{ end }}">
+                            <div class="inner-content">
+                              <h6>Integrations</h6>
+                            </div>
+                          </div>
+                          {{ range $i, $p:= .all_features_integrations }}
+                            <div style="order:{{ add $i 150 }};" class="flex-td hidden-xs {{ if eq .disabled true }} disabled {{ end }}">
+                              <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                            </div>
+                          {{ end }}
+                          <div style="order:195;" class="flex-td flex-td-separator padding-top-md hidden-xs {{ if eq $i 0 }} flex-td-colspan-3 {{ else }} visible-xs-block {{ end }}">
+                            <div class="inner-content">
+                              <h6>Support and services</h6>
+                            </div>
+                          </div>
+                          {{ range $i, $p:= .all_features_support_services }}
+                            <div style="order:{{ add $i 200 }};" class="flex-td hidden-xs {{ if eq .disabled true }} disabled {{ end }}">
+                              <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                            </div>
+                          {{ end }}
+
                         {{ end }}
+                        {{ range $i, $p := $.Site.Data.pricing.pricing_table.tier1.column }}
 
-                        <div style="order:45;" class="flex-td flex-td-separator padding-top-md {{ if eq $i 0 }} flex-td-colspan-3 {{ else }} visible-xs-block {{ end }}">
-                          <div class="inner-content">
-                            <h6>Managing Templates</h6>
+                          <div style="order:0;" class="flex-td flex-th padding-top-md">
+                            <h4>{{ .title }}</h4>
                           </div>
-                        </div>
+                          <div style="order:1;" class="flex-td flex-td-separator visible-xs-block padding-top-sm">
+                            <div class="inner-content">
+                              <h6>Managing Contracts</h6>
+                            </div>
+                          </div>
+                          {{ range $i, $p:= .all_features_managing_contracts }}
+                            <div style="order:{{ add $i 5 }};" class="flex-td {{ if eq .disabled true }} disabled {{ end }}">
+                              <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                            </div>
+                          {{ end }}
+                          <div style="order:45;" class="flex-td flex-td-separator padding-top-md visible-xs-block">
+                            <div class="inner-content">
+                              <h6>Managing Templates</h6>
+                            </div>
+                          </div>
+                          {{ range $i, $p:= .all_features_managing_templates }}
+                            <div style="order:{{ add $i 50 }};" class="flex-td {{ if eq .disabled true }} disabled {{ end }}">
+                              <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                            </div>
+                          {{ end }}
+                          <div style="order:95;" class="flex-td flex-td-separator padding-top-md visible-xs-block">
+                            <div class="inner-content">
+                              <h6>Managing People</h6>
+                            </div>
+                          </div>
+                          {{ range $i, $p:= .all_features_managing_people }}
+                            <div style="order:{{ add $i 100 }};" class="flex-td {{ if eq .disabled true }} disabled {{ end }}">
+                              <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                            </div>
+                          {{ end }}
+                          <div style="order:145;" class="flex-td flex-td-separator padding-top-md visible-xs-block">
+                            <div class="inner-content">
+                              <h6>Integrations</h6>
+                            </div>
+                          </div>
+                          {{ range $i, $p:= .all_features_integrations }}
+                            <div style="order:{{ add $i 150 }};" class="flex-td {{ if eq .disabled true }} disabled {{ end }}">
+                              <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                            </div>
+                          {{ end }}
+                          <div style="order:195;" class="flex-td flex-td-separator padding-top-md visible-xs-block">
+                            <div class="inner-content">
+                              <h6>Support and services</h6>
+                            </div>
+                          </div>
+                          {{ range $i, $p:= .all_features_support_services }}
+                            <div style="order:{{ add $i 200 }};" class="flex-td {{ if eq .disabled true }} disabled {{ end }}">
+                              <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                            </div>
+                          {{ end }}
 
-                        {{ range $i, $p:= .all_features_managing_templates }}
-                          <div style="order:{{ add $i 50 }};" class="flex-td {{ if eq .disabled true }} disabled {{ end }}">
-                            <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
-                          </div>
                         {{ end }}
-
-                      {{ end }}
-                      {{ range $i, $p := $.Site.Data.pricing.pricing_table.tier1.column }}
-
-                        <div style="order:0;" class="flex-td flex-th padding-top-md">
-                          <h4>{{ .title }}</h4>
-                        </div>
-
-                        <div style="order:1;" class="flex-td flex-td-separator visible-xs-block padding-top-sm">
-                          <div class="inner-content">
-                            <h6>Managing Contracts</h6>
-                          </div>
-                        </div>
-
-                        {{ range $i, $p:= .all_features_managing_contracts }}
-                          <div style="order:{{ add $i 5 }};" class="flex-td {{ if eq .disabled true }} disabled {{ end }}">
-                            <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
-                          </div>
-                        {{ end }}
-
-                        <div style="order:45;" class="flex-td flex-td-separator padding-top-md visible-xs-block">
-                          <div class="inner-content">
-                            <h6>Managing Templates</h6>
-                          </div>
-                        </div>
-
-                        {{ range $i, $p:= .all_features_managing_templates }}
-                          <div style="order:{{ add $i 50 }};" class="flex-td {{ if eq .disabled true }} disabled {{ end }}">
-                            <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
-                          </div>
-                        {{ end }}
-
-                      {{ end }}
                       </div>
-                    </div>
+                    </div> <!-- .all features container -->
 
                   </div> <!-- .tab-content -->
                 {{ end }}
@@ -306,8 +358,8 @@
                                 </div>
                               </div>
                             </div>
-                            {{ if ne .show_all_features_url "" }}
-                              <p class="range-left-sm"><a href="{{ .show_all_features_url }}">Show all features</a></p>
+                            {{ if .enable_show_all_features }}
+                              <p><a id="trigger-all-features-table" class="hidden-xs" href="#features-table">Show all features</a></p>
                             {{ end }}
                           </div>
                           {{ end }}
@@ -316,7 +368,124 @@
                       </div>
                     </div>
 
-<!-- @@@ -->
+                    <div class="content-container padding-bottom-lg">
+                      <div id="pricing-all-features" class="flex-table flex-table-3col flex-table-collapse flex-table-pricing">
+                        {{ range $i, $p := $.Site.Data.pricing.pricing_table.tier2.column }}
+
+                          <div style="order:0;" class="flex-td flex-th padding-top-md">
+                            <h4>{{ .title }}</h4>
+                          </div>
+                          <div style="order:1;" class="flex-td flex-td-separator padding-top-sm {{ if eq $i 0 }} flex-td-colspan-3 {{ else }} visible-xs-block {{ end }}">
+                            <div class="inner-content">
+                              <h6>Managing Contracts</h6>
+                            </div>
+                          </div>
+                          {{ range $i, $p:= .all_features_managing_contracts }}
+                            <div style="order:{{ add $i 5 }};" class="flex-td {{ if eq .disabled true }} disabled {{ end }}">
+                              <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                            </div>
+                          {{ end }}
+                          <div style="order:45;" class="flex-td flex-td-separator padding-top-md {{ if eq $i 0 }} flex-td-colspan-3 {{ else }} visible-xs-block {{ end }}">
+                            <div class="inner-content">
+                              <h6>Managing Templates</h6>
+                            </div>
+                          </div>
+                          {{ range $i, $p:= .all_features_managing_templates }}
+                            <div style="order:{{ add $i 50 }};" class="flex-td {{ if eq .disabled true }} disabled {{ end }}">
+                              <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                            </div>
+                          {{ end }}
+                          <div style="order:95;" class="flex-td flex-td-separator padding-top-md {{ if eq $i 0 }} flex-td-colspan-3 {{ else }} visible-xs-block {{ end }}">
+                            <div class="inner-content">
+                              <h6>Managing People</h6>
+                            </div>
+                          </div>
+                          {{ range $i, $p:= .all_features_managing_people }}
+                            <div style="order:{{ add $i 100 }};" class="flex-td {{ if eq .disabled true }} disabled {{ end }}">
+                              <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                            </div>
+                          {{ end }}
+                          <div style="order:145;" class="flex-td flex-td-separator padding-top-md {{ if eq $i 0 }} flex-td-colspan-3 {{ else }} visible-xs-block {{ end }}">
+                            <div class="inner-content">
+                              <h6>Integrations</h6>
+                            </div>
+                          </div>
+                          {{ range $i, $p:= .all_features_integrations }}
+                            <div style="order:{{ add $i 150 }};" class="flex-td {{ if eq .disabled true }} disabled {{ end }}">
+                              <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                            </div>
+                          {{ end }}
+                          <div style="order:195;" class="flex-td flex-td-separator padding-top-md {{ if eq $i 0 }} flex-td-colspan-3 {{ else }} visible-xs-block {{ end }}">
+                            <div class="inner-content">
+                              <h6>Support and services</h6>
+                            </div>
+                          </div>
+                          {{ range $i, $p:= .all_features_support_services }}
+                            <div style="order:{{ add $i 200 }};" class="flex-td {{ if eq .disabled true }} disabled {{ end }}">
+                              <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                            </div>
+                          {{ end }}
+
+                        {{ end }}
+                        {{ range $i, $p := $.Site.Data.pricing.pricing_table.tier1.column }}
+
+                          <div style="order:0;" class="flex-td flex-th padding-top-md hidden-xs">
+                            <h4>{{ .title }}</h4>
+                          </div>
+                          <div style="order:1;" class="flex-td flex-td-separator visible-xs-block padding-top-sm hidden-xs">
+                            <div class="inner-content">
+                              <h6>Managing Contracts</h6>
+                            </div>
+                          </div>
+                          {{ range $i, $p:= .all_features_managing_contracts }}
+                            <div style="order:{{ add $i 5 }};" class="flex-td hidden-xs {{ if eq .disabled true }} disabled {{ end }}">
+                              <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                            </div>
+                          {{ end }}
+                          <div style="order:45;" class="flex-td flex-td-separator padding-top-md visible-xs-block hidden-xs">
+                            <div class="inner-content">
+                              <h6>Managing Templates</h6>
+                            </div>
+                          </div>
+                          {{ range $i, $p:= .all_features_managing_templates }}
+                            <div style="order:{{ add $i 50 }};" class="flex-td hidden-xs {{ if eq .disabled true }} disabled {{ end }}">
+                              <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                            </div>
+                          {{ end }}
+                          <div style="order:95;" class="flex-td flex-td-separator padding-top-md visible-xs-block hidden-xs">
+                            <div class="inner-content">
+                              <h6>Managing People</h6>
+                            </div>
+                          </div>
+                          {{ range $i, $p:= .all_features_managing_people }}
+                            <div style="order:{{ add $i 100 }};" class="flex-td hidden-xs {{ if eq .disabled true }} disabled {{ end }}">
+                              <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                            </div>
+                          {{ end }}
+                          <div style="order:145;" class="flex-td flex-td-separator padding-top-md visible-xs-block hidden-xs">
+                            <div class="inner-content">
+                              <h6>Integrations</h6>
+                            </div>
+                          </div>
+                          {{ range $i, $p:= .all_features_integrations }}
+                            <div style="order:{{ add $i 150 }};" class="flex-td hidden-xs {{ if eq .disabled true }} disabled {{ end }}">
+                              <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                            </div>
+                          {{ end }}
+                          <div style="order:195;" class="flex-td flex-td-separator padding-top-md visible-xs-block hidden-xs">
+                            <div class="inner-content">
+                              <h6>Support and services</h6>
+                            </div>
+                          </div>
+                          {{ range $i, $p:= .all_features_support_services }}
+                            <div style="order:{{ add $i 200 }};" class="flex-td hidden-xs {{ if eq .disabled true }} disabled {{ end }}">
+                              <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+                            </div>
+                          {{ end }}
+
+                        {{ end }}
+                      </div>
+                    </div> <!-- .all features container -->
 
                   </div> <!-- .tab-content -->
                 {{ end }}

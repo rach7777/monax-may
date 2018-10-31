@@ -2078,6 +2078,22 @@ p, h1, h2, h3, h4, h5, h6, .circle-container {
 .flex-table-pricing .flex-td.disabled {
     color: #ccc;
 }
+/* reveal - hide on desktop by default */
+#pricing-all-features {
+  max-height: none;
+  -webkit-transition: all 700ms cubic-bezier(0.675, 0.170, 0.245, 0.795);
+  -o-transition: all 700ms cubic-bezier(0.675, 0.170, 0.245, 0.795);
+  transition: all 700ms cubic-bezier(0.675, 0.170, 0.245, 0.795);
+  overflow: hidden;
+}
+@media only screen and (min-width : 768px) {
+  #pricing-all-features {
+    max-height: 0;
+  }
+  #pricing-all-features.active {
+    max-height: 4000px;
+  }
+}
 /* separators */
 .flex-td-separator {
      overflow: hidden;

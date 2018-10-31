@@ -800,6 +800,7 @@ $(document).ready(function() {
 
     // ========== PRICING =============== //
 
+    // switch pricing period
     $('#billing-period-switch').change(function(){
       const prices_arr = $('span.price');
       if( this.checked ) {
@@ -814,6 +815,24 @@ $(document).ready(function() {
         });
       }
     })
+
+    // reveal all features
+
+    const triggerFeaturesArr = $('a[id*="trigger-all-features-table"]');
+    $(triggerFeaturesArr).each(function(index){
+      console.log('found: ' + index);
+      const featuresTableArr = $('div[id*="pricing-all-features"]');
+      $(this).on('click', function(e) {
+        e.preventDefault();
+        if ( ! $(featuresTableArr).first().hasClass('active') ) {
+          $(featuresTableArr).addClass('active');
+          $(triggerFeaturesArr).html('Hide all features');
+        } else {
+          $(featuresTableArr).removeClass('active');
+          $(triggerFeaturesArr).html('Show all features');
+        }
+      });
+    });
 
     // pricing table 'request a demo' forms
     $('a[id*="pricing-trigger-demo"]').each(function(index){
