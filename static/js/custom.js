@@ -817,10 +817,8 @@ $(document).ready(function() {
     })
 
     // reveal all features
-
     const triggerFeaturesArr = $('a[id*="trigger-all-features-table"]');
     $(triggerFeaturesArr).each(function(index){
-      console.log('found: ' + index);
       const featuresTableArr = $('div[id*="pricing-all-features"]');
       $(this).on('click', function(e) {
         e.preventDefault();
