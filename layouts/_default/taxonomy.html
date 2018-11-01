@@ -19,9 +19,11 @@
             <div class="container">
               <div class="row flex-grid-md">
                   <div class="col-md-7 col-valign-center">
-                      <div class="underline-sm range-left-md">
-                          <h1>{{ .Title }}</h1>
-                      </div>
+                      {{ with .Title }}
+                        <div class="range-left-md">
+                            <h1><strong>{{ . | markdownify }}</strong></h1>
+                        </div>
+                      {{ end }}
                       <p class="lead range-left-md">
                         Here's a list of posts filed under the {{ .Data.Singular }} "{{ .Title }}"
                       </p>

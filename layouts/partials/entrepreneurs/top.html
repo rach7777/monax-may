@@ -6,14 +6,14 @@
       <div class="row flex-grid-md">
           <div class="col-md-4 col-valign-center padding-top-md padding-bottom-lg">
               {{ with .title }}
-              <div class="range-left-md">
-                  <h1 style="margin-top: 0;">{{ . | markdownify }}</h1>
-              </div>
+                <div class="range-left-md">
+                    <h1 style="margin-top: 0;">{{ . | markdownify }}</h1>
+                </div>
               {{ end }}
               {{ with .subtitle }}
-              <p class="lead range-left-md">
-                {{ . | markdownify }}
-              </p>
+                <p class="lead range-left-md">
+                  {{ . | markdownify }}
+                </p>
               {{ end }}
 
               <!-- Sign up section [GLOBAL] -->

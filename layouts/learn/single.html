@@ -22,9 +22,11 @@
                       <div class="range-left">
                         <h5 class="article-category" style="margin-bottom:-10px;">Learn</h5>
                       </div>
-                      <div class="range-left underline-sm">
-                        <h1>{{ .Title }}</h1>
-                      </div>
+                      {{ with .Title }}
+                        <div class="range-left">
+                            <h1><strong>{{ . | markdownify }}</strong></h1>
+                        </div>
+                      {{ end }}
                       {{ if gt .Date.Year 2000 }}
                         <p class="post-meta range-left">{{ if .Params.author }}<i class="fa fa-user-o"></i> {{ .Params.author }}{{ end }}<i class="fa fa-calendar"></i> {{ .Date.Format .Site.Params.date_format }}</p>
                       {{ end }}
