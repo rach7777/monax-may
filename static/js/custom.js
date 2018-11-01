@@ -150,22 +150,22 @@ $(document).ready(function() {
       // popup for desktops
       Calendly.showPopupWidget( calendlyUrl );
 
-      // // vars
-      // const formFields = $('#nav-signup-desktop .form-fields');
-      // // animate Doug
-      // const successMessageCont = $(formFields).next();
-      // const successDoug = $(successMessageCont).find('.success-doug-img');
-      // const successText = $(successMessageCont).find('.success-text');
-      // // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
-      // const successInfo = $(successMessageCont).find('.success-info');
-      // // $(successInfo).html('custom success text'); // enable to customize success information
-      // $(formFields).slideToggle(400, function() {
-      //   setTimeout(function(){
-      //     $(successMessageCont).animate({width:'toggle'},600, function() {
-      //       setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
-      //     });
-      //   }, 200);
-      // });
+      // vars
+      const formFields = $('#nav-signup-desktop .form-fields');
+      // animate Doug
+      const successMessageCont = $(formFields).next();
+      const successDoug = $(successMessageCont).find('.success-doug-img');
+      const successText = $(successMessageCont).find('.success-text');
+      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
+      const successInfo = $(successMessageCont).find('.success-info');
+      // $(successInfo).html('custom success text'); // enable to customize success information
+      $(formFields).slideToggle(400, function() {
+        setTimeout(function(){
+          $(successMessageCont).animate({width:'toggle'},600, function() {
+            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+          });
+        }, 200);
+      });
 
       // prevent redirect
       return false;
@@ -289,6 +289,25 @@ $(document).ready(function() {
       } else {
         Calendly.showPopupWidget( calendlyUrl );
       }
+
+      // animate Doug
+      const successMessageCont = $($ctaOptions).next().find('.success-message-container');
+      const successDoug = $(successMessageCont).find('.success-doug-img');
+      const successText = $(successMessageCont).find('.success-text');
+      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
+      const successInfo = $(successMessageCont).find('.success-info');
+      // $(successInfo).html('custom success text'); // enable to customize success information
+      $($ctaOptions).slideToggle();
+      $(form).slideToggle(400, function() {
+        setTimeout(function(){
+          $(successMessageCont).animate({width:'toggle'},600, function() {
+            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+          });
+        }, 200);
+        // remove form
+        $(form).remove();
+      });
+
       // prevent redirect
       return false;
     },
@@ -488,23 +507,23 @@ $(document).ready(function() {
         Calendly.showPopupWidget( calendlyUrl );
       }
 
-      // // animate Doug
-      // const successMessageCont = $(form).closest('.signup-container').find('.success-message-container');
-      // const successDoug = $(successMessageCont).find('.success-doug-img');
-      // const successText = $(successMessageCont).find('.success-text');
-      // // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
-      // const successInfo = $(successMessageCont).find('.success-info');
-      // // $(successInfo).html('custom success text'); // enable to customize success information
-      // $(form).slideToggle(400, function() {
-      //   $(form).parent().removeClass('flex-grid');
-      //   setTimeout(function(){
-      //     $(successMessageCont).animate({width:'toggle'},600, function() {
-      //       setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
-      //     });
-      //   }, 200);
-      //   // remove form
-      //   $(form).remove();
-      // });
+      // animate Doug
+      const successMessageCont = $(form).closest('.signup-container').find('.success-message-container');
+      const successDoug = $(successMessageCont).find('.success-doug-img');
+      const successText = $(successMessageCont).find('.success-text');
+      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
+      const successInfo = $(successMessageCont).find('.success-info');
+      // $(successInfo).html('custom success text'); // enable to customize success information
+      $(form).slideToggle(400, function() {
+        $(form).parent().removeClass('flex-grid');
+        setTimeout(function(){
+          $(successMessageCont).animate({width:'toggle'},600, function() {
+            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+          });
+        }, 200);
+        // remove form
+        $(form).remove();
+      });
 
       // prevent redirect
       return false;
@@ -542,23 +561,23 @@ $(document).ready(function() {
         Calendly.showPopupWidget( calendlyUrl );
       }
 
-      // // animate Doug
-      // const successMessageCont = $(form).closest('.signup-container').find('.success-message-container');
-      // const successDoug = $(successMessageCont).find('.success-doug-img');
-      // const successText = $(successMessageCont).find('.success-text');
-      // // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
-      // const successInfo = $(successMessageCont).find('.success-info');
-      // // $(successInfo).html('custom success text'); // enable to customize success information
-      // $(form).slideToggle(400, function() {
-      //   $(form).parent().removeClass('flex-grid');
-      //   setTimeout(function(){
-      //     $(successMessageCont).animate({width:'toggle'},600, function() {
-      //       setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
-      //     });
-      //   }, 200);
-      //   // remove form
-      //   $(form).remove();
-      // });
+      // animate Doug
+      const successMessageCont = $(form).closest('.signup-container').find('.success-message-container');
+      const successDoug = $(successMessageCont).find('.success-doug-img');
+      const successText = $(successMessageCont).find('.success-text');
+      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
+      const successInfo = $(successMessageCont).find('.success-info');
+      // $(successInfo).html('custom success text'); // enable to customize success information
+      $(form).slideToggle(400, function() {
+        $(form).parent().removeClass('flex-grid');
+        setTimeout(function(){
+          $(successMessageCont).animate({width:'toggle'},600, function() {
+            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+          });
+        }, 200);
+        // remove form
+        $(form).remove();
+      });
 
       // prevent redirect
       return false;
@@ -650,24 +669,25 @@ $(document).ready(function() {
         } else {
           Calendly.showPopupWidget( calendlyUrl );
         }
-      } else {
-        // animate Doug
-        const successMessageCont = $(form).next().find('.success-message-container');
-        const successDoug = $(successMessageCont).find('.success-doug-img');
-        const successText = $(successMessageCont).find('.success-text');
-        // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
-        const successInfo = $(successMessageCont).find('.success-info');
-        // $(successInfo).html('custom success text'); // enable to customize success information
-        $(form).slideToggle(400, function() {
-          setTimeout(function(){
-            $(successMessageCont).animate({width:'toggle'},600, function() {
-              setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
-            });
-          }, 200);
-          // remove form
-          $(form).remove();
-        });
       }
+
+      // animate Doug
+      const successMessageCont = $(form).next().find('.success-message-container');
+      const successDoug = $(successMessageCont).find('.success-doug-img');
+      const successText = $(successMessageCont).find('.success-text');
+      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
+      const successInfo = $(successMessageCont).find('.success-info');
+      // $(successInfo).html('custom success text'); // enable to customize success information
+      $(form).slideToggle(400, function() {
+        setTimeout(function(){
+          $(successMessageCont).animate({width:'toggle'},600, function() {
+            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+          });
+        }, 200);
+        // remove form
+        $(form).remove();
+      });
+
       // prevent redirect
       return false;
     },
@@ -905,23 +925,23 @@ $(document).ready(function() {
             Calendly.showPopupWidget( calendlyUrl );
           }
 
-          // // animate Doug
-          // const successMessageCont = $(form).next(); // .successmessagecontainer
-          // const successDoug = $(successMessageCont).find('.success-doug-img');
-          // const successText = $(successMessageCont).find('.success-text');
-          // // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
-          // const successInfo = $(successMessageCont).find('.success-info');
-          // // $(successInfo).html('custom success text'); // enable to customize success information
-          // $(form).prev().slideToggle(400);
-          // $(form).slideToggle(400, function() {
-          //   setTimeout(function(){
-          //     $(successMessageCont).animate({width:'toggle'},600, function() {
-          //       setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
-          //     });
-          //   }, 200);
-          //   // remove form
-          //   $(form).remove();
-          // });
+          // animate Doug
+          const successMessageCont = $(form).next(); // .successmessagecontainer
+          const successDoug = $(successMessageCont).find('.success-doug-img');
+          const successText = $(successMessageCont).find('.success-text');
+          // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
+          const successInfo = $(successMessageCont).find('.success-info');
+          // $(successInfo).html('custom success text'); // enable to customize success information
+          $(form).prev().slideToggle(400);
+          $(form).slideToggle(400, function() {
+            setTimeout(function(){
+              $(successMessageCont).animate({width:'toggle'},600, function() {
+                setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+              });
+            }, 200);
+            // remove form
+            $(form).remove();
+          });
 
           // prevent redirect
           return false;
