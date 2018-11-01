@@ -32,24 +32,24 @@ $(document).ready(function() {
 
   // ========== GLOBAL ELEMENTS =============== //
 
-  // DEFINE CONFIRMATION/SUCCESS POPUP ON FORMS
-  const successPopup = $.alert({
-      lazyOpen: true,
-      theme: 'modern',
-      closeIcon: true,
-      animation: 'scale',
-      title: "Thanks, we'll be in touch soon!",
-      content: '<img class="img-responsive img-center" style="max-height:150px;" src="/img/assets/doug/doug_lo.png">',
-      buttons: {
-          close: {
-              text: 'Great!',
-              btnClass: 'btn btn-primary',
-              keys: ['enter'],
-          },
-      },
-      scrollToPreviousElement: false,
-      backgroundDismiss: true,
-  });
+  // DEFINE CONFIRMATION/SUCCESS POPUP ON FORMS - UNUSED
+  // const successPopup = $.alert({
+  //     lazyOpen: true,
+  //     theme: 'modern',
+  //     closeIcon: true,
+  //     animation: 'scale',
+  //     title: "Thanks, we'll be in touch soon!",
+  //     content: '<img class="img-responsive img-center" style="max-height:150px;" src="/img/assets/doug/doug_lo.png">',
+  //     buttons: {
+  //         close: {
+  //             text: 'Great!',
+  //             btnClass: 'btn btn-primary',
+  //             keys: ['enter'],
+  //         },
+  //     },
+  //     scrollToPreviousElement: false,
+  //     backgroundDismiss: true,
+  // });
 
   // DEFINE REQUEST A DEMO POPUP FROM NAV
   const requestDemoPopup = $.dialog({
@@ -75,7 +75,7 @@ $(document).ready(function() {
           },
           submitHandler: function(form) {
             analyticsIdentifyAndTrack(form, 'Demo Requested');
-            // get form data for parsing
+            // get form data and pass onto Calendly
             var formDataArr = {};
             $.each( $(form).serializeArray(), function(i, field) {
                 formDataArr[field.name] = field.value;
@@ -140,7 +140,7 @@ $(document).ready(function() {
     },
     submitHandler: function(form) {
       analyticsIdentifyAndTrack(form, 'Demo Requested');
-      // get form data for parsing
+      // get form data and pass onto Calendly
       var formDataArr = {};
       $.each( $(form).serializeArray(), function(i, field) {
           formDataArr[field.name] = field.value;
@@ -150,22 +150,22 @@ $(document).ready(function() {
       // popup for desktops
       Calendly.showPopupWidget( calendlyUrl );
 
-      // // vars
-      // const formFields = $('#nav-signup-desktop .form-fields');
-      // // animate Doug
-      // const successMessageCont = $(formFields).next();
-      // const successDoug = $(successMessageCont).find('.success-doug-img');
-      // const successText = $(successMessageCont).find('.success-text');
-      // // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
-      // const successInfo = $(successMessageCont).find('.success-info');
-      // // $(successInfo).html('custom success text'); // enable to customize success information
-      // $(formFields).slideToggle(400, function() {
-      //   setTimeout(function(){
-      //     $(successMessageCont).animate({width:'toggle'},600, function() {
-      //       setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
-      //     });
-      //   }, 200);
-      // });
+      // vars
+      const formFields = $('#nav-signup-desktop .form-fields');
+      // animate Doug
+      const successMessageCont = $(formFields).next();
+      const successDoug = $(successMessageCont).find('.success-doug-img');
+      const successText = $(successMessageCont).find('.success-text');
+      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
+      const successInfo = $(successMessageCont).find('.success-info');
+      // $(successInfo).html('custom success text'); // enable to customize success information
+      $(formFields).slideToggle(400, function() {
+        setTimeout(function(){
+          $(successMessageCont).animate({width:'toggle'},600, function() {
+            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+          });
+        }, 200);
+      });
 
       // prevent redirect
       return false;
@@ -276,7 +276,7 @@ $(document).ready(function() {
     },
     submitHandler: function(form) {
       analyticsIdentifyAndTrack(form, "Demo Requested");
-      // get form data for parsing
+      // get form data and pass onto Calendly
       var formDataArr = {};
       $.each( $(form).serializeArray(), function(i, field) {
           formDataArr[field.name] = field.value;
@@ -289,6 +289,25 @@ $(document).ready(function() {
       } else {
         Calendly.showPopupWidget( calendlyUrl );
       }
+
+      // animate Doug
+      const successMessageCont = $($ctaOptions).next().find('.success-message-container');
+      const successDoug = $(successMessageCont).find('.success-doug-img');
+      const successText = $(successMessageCont).find('.success-text');
+      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
+      const successInfo = $(successMessageCont).find('.success-info');
+      // $(successInfo).html('custom success text'); // enable to customize success information
+      $($ctaOptions).slideToggle();
+      $(form).slideToggle(400, function() {
+        setTimeout(function(){
+          $(successMessageCont).animate({width:'toggle'},600, function() {
+            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+          });
+        }, 200);
+        // remove form
+        $(form).remove();
+      });
+
       // prevent redirect
       return false;
     },
@@ -474,6 +493,20 @@ $(document).ready(function() {
     },
     submitHandler: function(form) {
       analyticsIdentifyAndTrack(form, "Demo Requested");
+      // get form data and pass onto Calendly
+      var formDataArr = {};
+      $.each( $(form).serializeArray(), function(i, field) {
+          formDataArr[field.name] = field.value;
+      });
+      const qString = "?email=" + encodeURIComponent( formDataArr['email'] );
+      var calendlyUrl = 'https://calendly.com/monax/demo' + qString;
+      // redirect if mobile, otherwise show popup form
+      if( $(window).width() < 768 ) {
+        window.location.href = calendlyUrl;
+      } else {
+        Calendly.showPopupWidget( calendlyUrl );
+      }
+
       // animate Doug
       const successMessageCont = $(form).closest('.signup-container').find('.success-message-container');
       const successDoug = $(successMessageCont).find('.success-doug-img');
@@ -491,6 +524,7 @@ $(document).ready(function() {
         // remove form
         $(form).remove();
       });
+
       // prevent redirect
       return false;
     },
@@ -513,6 +547,20 @@ $(document).ready(function() {
     },
     submitHandler: function(form) {
       analyticsIdentifyAndTrack(form, "Demo Requested");
+      // get form data and pass onto Calendly
+      var formDataArr = {};
+      $.each( $(form).serializeArray(), function(i, field) {
+          formDataArr[field.name] = field.value;
+      });
+      const qString = "?email=" + encodeURIComponent( formDataArr['email'] );
+      var calendlyUrl = 'https://calendly.com/monax/demo' + qString;
+      // redirect if mobile, otherwise show popup form
+      if( $(window).width() < 768 ) {
+        window.location.href = calendlyUrl;
+      } else {
+        Calendly.showPopupWidget( calendlyUrl );
+      }
+
       // animate Doug
       const successMessageCont = $(form).closest('.signup-container').find('.success-message-container');
       const successDoug = $(successMessageCont).find('.success-doug-img');
@@ -530,6 +578,7 @@ $(document).ready(function() {
         // remove form
         $(form).remove();
       });
+
       // prevent redirect
       return false;
     },
@@ -606,7 +655,7 @@ $(document).ready(function() {
 
       // if calendly is enabled, show popup/redirect, otherwise show thankyou message
       if ( $(form).data('enableCalendly') ){
-        // get form data for parsing
+        // get form data and pass onto Calendly
         var formDataArr = {};
         $.each( $(form).serializeArray(), function(i, field) {
             formDataArr[field.name] = field.value;
@@ -620,24 +669,25 @@ $(document).ready(function() {
         } else {
           Calendly.showPopupWidget( calendlyUrl );
         }
-      } else {
-        // animate Doug
-        const successMessageCont = $(form).next().find('.success-message-container');
-        const successDoug = $(successMessageCont).find('.success-doug-img');
-        const successText = $(successMessageCont).find('.success-text');
-        // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
-        const successInfo = $(successMessageCont).find('.success-info');
-        // $(successInfo).html('custom success text'); // enable to customize success information
-        $(form).slideToggle(400, function() {
-          setTimeout(function(){
-            $(successMessageCont).animate({width:'toggle'},600, function() {
-              setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
-            });
-          }, 200);
-          // remove form
-          $(form).remove();
-        });
       }
+
+      // animate Doug
+      const successMessageCont = $(form).next().find('.success-message-container');
+      const successDoug = $(successMessageCont).find('.success-doug-img');
+      const successText = $(successMessageCont).find('.success-text');
+      // $(successText).html('Requested <i class="fa fa-check"></i>'); // enable to customize success message text
+      const successInfo = $(successMessageCont).find('.success-info');
+      // $(successInfo).html('custom success text'); // enable to customize success information
+      $(form).slideToggle(400, function() {
+        setTimeout(function(){
+          $(successMessageCont).animate({width:'toggle'},600, function() {
+            setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
+          });
+        }, 200);
+        // remove form
+        $(form).remove();
+      });
+
       // prevent redirect
       return false;
     },
@@ -800,6 +850,7 @@ $(document).ready(function() {
 
     // ========== PRICING =============== //
 
+    // switch pricing period
     $('#billing-period-switch').change(function(){
       const prices_arr = $('span.price');
       if( this.checked ) {
@@ -814,6 +865,22 @@ $(document).ready(function() {
         });
       }
     })
+
+    // reveal all features
+    const triggerFeaturesArr = $('a[id*="trigger-all-features-table"]');
+    $(triggerFeaturesArr).each(function(index){
+      const featuresTableArr = $('div[id*="pricing-all-features"]');
+      $(this).on('click', function(e) {
+        e.preventDefault();
+        if ( ! $(featuresTableArr).first().hasClass('active') ) {
+          $(featuresTableArr).addClass('active');
+          $(triggerFeaturesArr).html('Hide all features');
+        } else {
+          $(featuresTableArr).removeClass('active');
+          $(triggerFeaturesArr).html('Show all features');
+        }
+      });
+    });
 
     // pricing table 'request a demo' forms
     $('a[id*="pricing-trigger-demo"]').each(function(index){
@@ -844,6 +911,20 @@ $(document).ready(function() {
         },
         submitHandler: function(form) {
           analyticsIdentifyAndTrack(form, "Demo Requested");
+          // get form data and pass onto Calendly
+          var formDataArr = {};
+          $.each( $(form).serializeArray(), function(i, field) {
+              formDataArr[field.name] = field.value;
+          });
+          const qString = "?name=" + encodeURIComponent( formDataArr['firstName'] + " " + formDataArr['lastName'] ) + "&email=" + encodeURIComponent( formDataArr['email'] ) + "&a1=" + encodeURIComponent( formDataArr['company'] );
+          var calendlyUrl = 'https://calendly.com/monax/demo' + qString;
+          // redirect if mobile, otherwise show popup form
+          if( $(window).width() < 768 ) {
+            window.location.href = calendlyUrl;
+          } else {
+            Calendly.showPopupWidget( calendlyUrl );
+          }
+
           // animate Doug
           const successMessageCont = $(form).next(); // .successmessagecontainer
           const successDoug = $(successMessageCont).find('.success-doug-img');
@@ -861,6 +942,7 @@ $(document).ready(function() {
             // remove form
             $(form).remove();
           });
+
           // prevent redirect
           return false;
         },

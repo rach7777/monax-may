@@ -1,24 +1,26 @@
-{{ with .Site.Data.company.top }}
+{{ with .Site.Data.lawyers.lawyer_cta }}
 {{ if .enable }}
-<section class="section-top padding-top-md padding-bottom-lg">
+<section class="section-lawyer_cta padding-top-xl padding-bottom-xl">
     <div class="container">
 
       <div class="row flex-grid-md">
           <div class="col-md-12 col-valign-center">
               {{ with .title }}
               <div class="">
-                  <h1>{{ . | markdownify }}</h1>
+                  <h2>{{ . | markdownify }}</h2>
               </div>
               {{ end }}
               {{ with .subtitle }}
                 <h4>{{ . | markdownify }}</h4>
               {{ end }}
-
-              <!-- Sign up section [GLOBAL] -->
-              {{ if .hero_signup }}
-                {{ partial "_global/hero_signup.html" . }}
-              {{ end }}
           </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <a href="{{ .link_url }}" class="">
+            <h4 class="green">{{ .link_title }}&nbsp;<i class="fa fa-angle-right"></i></h4>
+          </a>
+        </div>
       </div>
 
     </div> <!-- .container -->

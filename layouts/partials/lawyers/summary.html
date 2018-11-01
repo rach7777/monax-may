@@ -1,13 +1,15 @@
-{{ with .Site.Data.entrepreneurs.intro }}
+{{ with .Site.Data.lawyers.summary }}
 {{ if .enable }}
-<section class="section-top padding-top-md padding-bottom-md">
+<section class="section-top padding-top-sm padding-bottom-sm">
     <div class="container">
 
       <div class="row flex-grid-md">
           <div class="col-md-12 col-valign-center">
+              {{ with .title }}
               <div class="">
-                  <h1>{{ .title | markdownify }}</h1>
+                  <h2>{{ . | markdownify }}</h2>
               </div>
+              {{ end }}
               {{ with .subtitle }}
                 <h4>{{ . | markdownify }}</h4>
               {{ end }}

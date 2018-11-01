@@ -220,6 +220,9 @@ p.lead,
     text-align: left;
   }
 }
+span.no-wrap {
+  white-space: pre;
+}
 
 /* ==============
   Font colors
@@ -759,6 +762,33 @@ form label.error {
   transition: all 0.3s;
 }
 
+
+/*======================
+    ELEMENTS - BambooHR
+=======================*/
+
+.BambooHR-ATS-board h2 {
+    display: none;
+}
+.BambooHR-ATS-board ul {
+    background-color: #f7f7f7;
+    padding: 20px 20px 0 !important;
+    border-radius: 5px;
+}
+.BambooHR-ATS-board li {
+    font-size: 16px;
+}
+.BambooHR-ATS-board a {
+    font-size: 20px !important;
+}
+.BambooHR-ATS-board ul ul {
+    border: none !important;
+    padding-bottom: 15px !important;
+    padding-top: 2px !important;
+}
+#BambooHR-Footer {
+    display: none;
+}
 
 
 /* ==============
@@ -1360,6 +1390,148 @@ form label.error {
 .col-flex-11 {flex: 11 11 91.66666667% !important;}
 .col-flex-12 {flex: 12 12 100% !important;}
 
+
+/* Flex Tables
+================================== */
+.flex-table {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 3em 0;
+  padding: 0;
+}
+.flex-td {
+    box-sizing: border-box;
+    flex-grow: 1;
+    width: 100%;
+    padding: 0.8em 1.2em;
+    overflow: hidden;
+    list-style: none;
+    /* border: solid 1px rgba(0,0,0,0.1); */
+}
+
+/* Table column sizing
+================================== */
+.flex-table-2col > .flex-td {
+  width: 50%;
+}
+.flex-table-3col > .flex-td {
+  width: 33.33%;
+}
+.flex-table-4col > .flex-td {
+  width: 25%;
+}
+.flex-table-5col > .flex-td {
+  width: 20%;
+}
+.flex-table-6col > .flex-td {
+  width: 16.6%;
+}
+
+/* Cell colspan
+================================== */
+.flex-table-3col .flex-td-colspan-3  { width: 100%; }
+.flex-table-3col .flex-td-colspan-2  { width: 66.66%; }
+
+.flex-table-4col .flex-td-colspan-4  { width: 100%; }
+.flex-table-4col .flex-td-colspan-3  { width: 75%; }
+.flex-table-4col .flex-td-colspan-2  { width: 50%; }
+
+.flex-table-5col .flex-td-colspan-5  { width: 100%; }
+.flex-table-5col .flex-td-colspan-4  { width: 80%; }
+.flex-table-5col .flex-td-colspan-3  { width: 60%; }
+.flex-table-5col .flex-td-colspan-2  { width: 40%; }
+
+.flex-table-6col .flex-td-colspan-6  { width: 100%; }
+.flex-table-6col .flex-td-colspan-5  { width: 83.33%; }
+.flex-table-6col .flex-td-colspan-4  { width: 66.66%; }
+.flex-table-6col .flex-td-colspan-3  { width: 50%; }
+.flex-table-6col .flex-td-colspan-2  { width: 33.33%; }
+
+/* Cell styles
+================================== */
+.flex-td.background-dark {
+  background-color: slategrey;
+  border-color: #5a6673;
+  color: white;
+}
+.flex-td.background-dark > h1,
+.flex-td.background-dark > h2,
+.flex-td.background-dark > h3,
+.flex-td.background-dark > h4,
+.flex-td.background-dark > h5,
+.flex-td.background-dark > h6 {
+  color: white;
+}
+.flex-td.background-grey {
+  background-color: #b8c0c8;
+  border-color: #a9b3bc;
+}
+.flex-td.background-color {
+  background-color: lightgreen;
+  border-color: #64e764;
+}
+.flex-th {
+    /* padding: 0; */
+}
+.flex-tfoot {
+  background-color: #b8c0c8;
+  border-color: #a9b3bc;
+}
+.flex-td-separator {
+  padding: 0;
+}
+
+/* Responsive
+==================================== */
+@media all and (max-width: 767px) {
+  .flex-table-collapse {
+    display: block;
+  }
+  .flex-table-collapse > .flex-td {
+    width: 100% !important;
+  }
+  .flex-table-collapse > .flex-tfoot {
+    margin-bottom: 1em;
+  }
+  .flex-td-row-end {
+    margin-bottom: 1em;
+  }
+}
+
+.no-flexbox .flex-table {
+  display: block;
+}
+.no-flexbox .flex-table > .flex-td {
+  width: 100%;
+}
+.no-flexbox .flex-table > .flex-tfoot {
+  margin-bottom: 1em;
+}
+/* Column margins
+   ========================================================================== */
+@media all and (min-width: 500px) {
+  .flex-table-col-margins.flex-table-2col > .flex-td {
+    width: 48%;
+  }
+  .flex-table-col-margins.flex-table-3col > .flex-td {
+    width: 31.33%;
+  }
+  .flex-table-col-margins.flex-table-4col > .flex-td {
+    width: 23%;
+  }
+  .flex-table-col-margins.flex-table-5col > .flex-td {
+    width: 18%;
+  }
+  .flex-table-col-margins.flex-table-6col > .flex-td {
+    width: 14.6%;
+  }
+  .flex-table-col-margins > .flex-td {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}
+
+
 /* ==============
   Containers
 =============== */
@@ -1662,7 +1834,9 @@ p, h1, h2, h3, h4, h5, h6, .circle-container {
     margin: 0 auto;
     max-width: 100%;
 }
-
+.img-icons {
+    max-height: 120px;
+}
 
 /* ==============
   Reveals
@@ -1873,7 +2047,81 @@ p, h1, h2, h3, h4, h5, h6, .circle-container {
 .onoffswitch-checkbox:checked + .onoffswitch-label:before {
     right: 0px;
 }
-
+/* all features table */
+.flex-table-pricing .flex-td.flex-th {
+    padding-left: 0;
+    padding-right: 0;
+}
+.flex-table-pricing .flex-th h1,
+.flex-table-pricing .flex-th h2,
+.flex-table-pricing .flex-th h3,
+.flex-table-pricing .flex-th h4,
+.flex-table-pricing .flex-th h5,
+.flex-table-pricing .flex-th h6 {
+  margin: 0;
+}
+.flex-table-pricing .flex-td {
+    padding-left: 2.4em;
+    position: relative;
+}
+.flex-table-pricing .flex-td-separator {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.flex-table-pricing .flex-td .fa-li {
+    left: 0.2em;
+    top: 0.8em;
+}
+.flex-table-pricing .flex-td.disabled .fa-li {
+    display: none;
+}
+.flex-table-pricing .flex-td.disabled {
+    color: #ccc;
+}
+/* reveal - hide on desktop by default */
+#pricing-all-features {
+  max-height: none;
+  -webkit-transition: all 700ms cubic-bezier(0.675, 0.170, 0.245, 0.795);
+  -o-transition: all 700ms cubic-bezier(0.675, 0.170, 0.245, 0.795);
+  transition: all 700ms cubic-bezier(0.675, 0.170, 0.245, 0.795);
+  overflow: hidden;
+}
+@media only screen and (min-width : 768px) {
+  #pricing-all-features {
+    max-height: 0;
+  }
+  #pricing-all-features.active {
+    max-height: 4000px;
+  }
+}
+/* separators */
+.flex-td-separator {
+     overflow: hidden;
+     text-align: center;
+     position: relative;
+ }
+.flex-td-separator h6 {
+    position: relative;
+    display: inline-block;
+}
+.flex-td-separator h6:before,
+.flex-td-separator h6:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 2px solid #eee;
+    width: 800px;
+    margin: 0 20px;
+}
+.flex-td-separator h6:before {
+    right: 100%;
+}
+.flex-td-separator h6:after {
+    left: 100%;
+}
+.flex-td-separator .inner-content {
+  overflow: hidden;
+}
 
 
 /* ==============
