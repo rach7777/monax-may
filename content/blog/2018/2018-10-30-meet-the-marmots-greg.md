@@ -73,7 +73,7 @@ As a Site Reliability Engineer I dabble in a bit of everything, though my primar
 
 ### If you had to choose one aspect of our culture that best defines you, which  one would it be and why? 
 
-As a Marmot, I adapt and overcome; I don’t just “throw up my paws up and say it can’t be done.”
+As a Marmot, I adapt and overcome; I don’t just “throw my paws up and say it can’t be done.”
 
 Everyone here in the company is wonderfully talented and we’re a social species so it’s easy to communicate when facing a problem.
 
