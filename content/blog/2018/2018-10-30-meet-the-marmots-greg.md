@@ -64,7 +64,7 @@ I was exploring different opportunities related to blockchains / cryptography an
 
 ### What’s your background?
 
-I’m a hacker at heart; I’ve been programming for as long as I can remember, from my wee AI bots back in high school to my recent publication on machine learning for cryptographic primitive classification.
+I’m a hacker at heart; I’ve been programming for as long as I can remember, from my wee chatbots back in high school to my recent publication on machine learning for cryptographic primitive classification.
 
 ### What does your work at Monax involve?
 
