@@ -24,9 +24,9 @@
                             <h1>{{ . | markdownify }}</h1>
                         </div>
                       {{ end }}
-                      <p class="lead range-left-md">
+                      <h4 class="padding-bottom-lg range-left-md">
                         Here's a list of posts filed under the {{ .Data.Singular }} "{{ .Title }}"
-                      </p>
+                      </h4>
 
                       <!-- Sign up section [GLOBAL] -->
                       {{ if .Site.Data.global.taxonomies.top.hero_signup }}
