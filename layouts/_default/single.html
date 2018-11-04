@@ -25,8 +25,8 @@
                         </div>
                       {{ end }}
                       {{ with .Title }}
-                        <div class="range-left">
-                            <h1><strong>{{ . | markdownify }}</strong></h1>
+                        <div class="strong range-left">
+                            <h1>{{ . | markdownify }}</h1>
                         </div>
                       {{ end }}
                       {{ if gt .Date.Year 2000 }}

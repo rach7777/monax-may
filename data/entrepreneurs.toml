@@ -1,6 +1,6 @@
 [top]
     enable = true
-    title = "<strong>Build and run your company without the legal hassle</strong>"
+    title = "Build and run your company without the legal hassle"
     # subtitle = "How Monax can simplify and speed up your corporate governance and give you full control over your agreements"
     request_demo = true
     # enable youtube_id or img_right
@@ -10,7 +10,7 @@
 
 [intro]
     enable = true
-    title = "<strong>Empowering every step of the process</strong>"
+    title = "Empowering every step of the process"
     subtitle = "The Monax platform supports entrepreneurs following their dreams while taking care of business."
 
 

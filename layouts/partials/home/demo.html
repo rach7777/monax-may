@@ -5,19 +5,16 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-
           {{ with .title }}
-            <div class="">
+            <div class="strong">
                 <h2>{{ . | markdownify }}</h2>
             </div>
           {{ end }}
-
           {{ with .subtitle }}
             <div class="padding-bottom-sm">
               <h3>{{ . | markdownify }}</h3>
             </div>
           {{ end }}
-
         </div>
         <div class="col-md-8 col-md-offset-2 padding-bottom-md">
           <div class="content-container content-card content-card-full content-card-shadow-sm">

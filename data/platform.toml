@@ -1,13 +1,13 @@
 [top]
     enable = true
-    title = "<strong>Stay in control of your contracts</strong>"
+    title = "Stay in control of your contracts"
     subtitle = "Turn contracts into the backbone of your business relationships. Gain clarity, know where to focus and fulfill contracts collaboratively."
     hero_signup = false
 
 
 [features]
   enable = true
-  title = "<strong>Built for entrepreneurs and creatives</strong>"
+  title = "Built for entrepreneurs and creatives"
   subtitle = "Gain 100% oversight on your contractual agreements, track progress and obligations and keep everything important in one place. We help you to stay focused on what you do best: growing your business."
   consumer_option = "Use legal templates"
   producer_option = "Create legal templates"
@@ -82,11 +82,11 @@
 
 [workflow]
     enable = true
-    title = "<strong>Automate your templates.</strong>"
+    title = "Automate your templates."
     # subtitle = "Turn contracts into the backbone of your business relationships. Gain clarity, know where to focus and fulfil contracts collaboratively."
 
     [[workflow.section]]
-      title = "<strong>Cut your legal spend with legal products</strong>"
+      title = "Cut your legal spend with legal products"
       subtitle = "Lawyer tested legal templates at your fingertips. Obtain legal knowledge at affordable prices in the same way you buy anything else online."
       #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
       animation_id = "feature-animation-A"
@@ -116,7 +116,7 @@
         animation_duration = "300"
 
     [[workflow.section]]
-      title = "<strong>Upgrade and automate your own templates</strong>"
+      title = "Upgrade and automate your own templates"
       subtitle = "Add workflows to your own contract templates and turn them into facilitators for your business."
       #### ZOOM TEMPLATE
       animation_id = "feature-animation-5"

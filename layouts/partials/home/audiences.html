@@ -5,21 +5,17 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 padding-bottom-md">
-
           {{ with .title }}
-            <div class="">
+            <div class="strong">
                 <h2>{{ . | markdownify }}</h2>
             </div>
           {{ end }}
-
           {{ with .subtitle }}
             <div class="padding-bottom-sm">
               <h3>{{ . | markdownify }}</h3>
             </div>
           {{ end }}
-
         </div>
-
         <div class="row">
           {{ range .card_link }}
           <div class="col-md-6 padding-bottom-md">
@@ -38,10 +34,6 @@
           </div>
           {{ end }}
         </div>
-
-
-
-
       </div>
     </div>
 </section>

@@ -107,7 +107,7 @@
 # MAIN CTA SECTION
 
 [cta]
-    title = "<strong>Let your contracts work for you</strong>"
+    title = "Let your contracts work for you"
 
     [cta.form]
       enable = true
@@ -187,7 +187,7 @@
 
 [cta_two_button]
     enable = true
-    title = "<strong>Let your contracts work for you</strong>"
+    title = "Let your contracts work for you"
 
     enable_button_one = true # links to url or triggers form one
     button_one_text = "Sign up to a webinar"
