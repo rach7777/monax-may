@@ -2,10 +2,8 @@
     enable = true
     title = "<strong>Stay focused on what you're building.</strong> Let your contracts work for you."
     # subtitle = "The platform for the future of making and managing agreements"
-    img_left = false
     hero_signup = true
     img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
-    # background_element = "/img/assets/background-elements/abstract-01.jpg"
 
     [top.illustration]
       enable = true   # replaces img_right

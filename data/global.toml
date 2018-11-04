@@ -13,7 +13,6 @@
 
   [taxonomies.top]
     # hero_signup = true
-    # background_element = "/img/assets/background-elements/abstract-01.jpg"
 
   [taxonomies.cta] # global
     enable = true
@@ -25,7 +24,6 @@
 
   [blog.top]
     # hero_signup = true
-    # background_element = "/img/assets/background-elements/abstract-01.jpg"
 
   [blog.cta] # global
     enable = true
@@ -37,7 +35,6 @@
 
   [webinars.top]
     # hero_signup = true
-    # background_element = "/img/assets/background-elements/abstract-01.jpg"
 
   [webinars.form]
     enable_signup_form = true
@@ -59,7 +56,6 @@
 
   [tutorials.top]
     # hero_signup = true
-    # background_element = "/img/assets/background-elements/abstract-01.jpg"
 
   [tutorials.cta] # global
     enable = false
@@ -71,7 +67,6 @@
 
   [learn.top]
     # hero_signup = true
-    # background_element = "/img/assets/background-elements/abstract-01.jpg"
 
   [learn.cta] # global
     enable = true
@@ -83,7 +78,6 @@
 
   [casestudies.top]
     # hero_signup = true
-    # background_element = "/img/assets/background-elements/abstract-01.jpg"
 
   [casestudies.cta] # global
     enable = false
