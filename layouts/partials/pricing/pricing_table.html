@@ -126,7 +126,7 @@
                                 {{ end }}
                               </ul>
                               <div class="range-left">
-                                <p class="inner-heading"><strong>{{ .benefits_title }}&nbsp;</strong></p>
+                                <p class="strong inner-heading">{{ .benefits_title }}&nbsp;</p>
                               </div>
                               <ul class="list-group list-group-flush fa-ul">
                                 {{ range .benefits_list }}
@@ -148,7 +148,7 @@
                       <div id="pricing-all-features" class="flex-table flex-table-3col flex-table-collapse flex-table-pricing">
                         {{ range $i, $p := $.Site.Data.pricing.pricing_table.tier2.column }}
 
-                          <div style="order:0;" class="flex-td flex-th padding-top-md hidden-xs">
+                          <div style="order:0;" class="flex-td flex-th padding-top-md hidden-xs strong">
                             <h4>{{ .title }}</h4>
                           </div>
                           <div style="order:1;" class="flex-td flex-td-separator padding-top-sm hidden-xs {{ if eq $i 0 }} flex-td-colspan-3 {{ else }} visible-xs-block {{ end }}">
@@ -205,7 +205,7 @@
                         {{ end }}
                         {{ range $i, $p := $.Site.Data.pricing.pricing_table.tier1.column }}
 
-                          <div style="order:0;" class="flex-td flex-th padding-top-md">
+                          <div style="order:0;" class="flex-td flex-th padding-top-md strong">
                             <h4>{{ .title }}</h4>
                           </div>
                           <div style="order:1;" class="flex-td flex-td-separator visible-xs-block padding-top-sm">
@@ -343,9 +343,11 @@
                               </div>
                               <div class="row">
                                 <div class="col-sm-6">
-                                  <div class="">
-                                    <p><strong>{{ .features_title }}</strong></p>
-                                  </div>
+                                  {{ with .features_title }}
+                                    <div class="strong">
+                                      <p>{{ . | markdownify }}</p>
+                                    </div>
+                                  {{ end }}
                                   <ul class="list-group list-group-flush">
                                     {{ range .features_list }}
                                       <li class="list-group-item">{{ . | markdownify }}</li>
@@ -353,9 +355,11 @@
                                   </ul>
                                 </div>
                                 <div class="col-sm-6">
+                                  {{ with .benefits_title }}
                                   <div class="range-left">
-                                    <p class="inner-heading"><strong>{{ .benefits_title }}</strong></p>
+                                    <p class="strong inner-heading">{{ . | markdownify }}</p>
                                   </div>
+                                  {{ end }}
                                   <ul class="list-group list-group-flush fa-ul">
                                     {{ range .benefits_list }}
                                       <li class="list-group-item"><span class="fa-li" ><i class="fa fa-check"></i></span> {{ . | markdownify }}</li>
@@ -378,7 +382,7 @@
                       <div id="pricing-all-features" class="flex-table flex-table-3col flex-table-collapse flex-table-pricing">
                         {{ range $i, $p := $.Site.Data.pricing.pricing_table.tier2.column }}
 
-                          <div style="order:0;" class="flex-td flex-th padding-top-md">
+                          <div style="order:0;" class="flex-td flex-th padding-top-md strong">
                             <h4>{{ .title }}</h4>
                           </div>
                           <div style="order:1;" class="flex-td flex-td-separator padding-top-sm {{ if eq $i 0 }} flex-td-colspan-3 {{ else }} visible-xs-block {{ end }}">
@@ -435,7 +439,7 @@
                         {{ end }}
                         {{ range $i, $p := $.Site.Data.pricing.pricing_table.tier1.column }}
 
-                          <div style="order:0;" class="flex-td flex-th padding-top-md hidden-xs">
+                          <div style="order:0;" class="flex-td flex-th padding-top-md hidden-xs strong">
                             <h4>{{ .title }}</h4>
                           </div>
                           <div style="order:1;" class="flex-td flex-td-separator visible-xs-block padding-top-sm hidden-xs">
@@ -522,7 +526,7 @@
                               <div class="row">
                                 <div class="col-md-8 col-md-offset-1 col-sm-6 col-sm-offset-3 padding-top-md">
                                   <div class="range-left-md">
-                                    <p class="inner-heading"><strong>{{ .benefits_title }}</strong></p>
+                                    <p class="strong inner-heading">{{ .benefits_title }}</p>
                                   </div>
                                   <ul class="list-group list-group-flush fa-ul">
                                     {{ range .benefits_list }}
