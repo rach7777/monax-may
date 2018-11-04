@@ -876,6 +876,7 @@ form label.error {
 #post-content h4 {
     margin-top: 50px;
     line-height: 1.4;
+    font-weight: 600;
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
@@ -915,7 +916,7 @@ form label.error {
     color: #333;
     font-weight: 600;
 }
-#post-content h1:after,
+/* #post-content h1:after,
 #post-content h2:after,
 #post-content h3:after {
     content: "";
@@ -952,7 +953,7 @@ form label.error {
   #post-content.range-left-lg h3:after {
     margin-left: 0;
   }
-}
+} */
 #post-content table {
     border: 5px solid #eeeeee;
 }
