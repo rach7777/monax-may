@@ -15,7 +15,7 @@
 
         </header>
 
-        <section class="section-top padding-top-md" style="background: url({{ .Site.Data.global.webinars.top.background_element }}) right bottom no-repeat; background-size: 520px;">
+        <section class="section-top padding-top-md">
             <div class="container">
               <div class="row flex-grid-md">
                   <div class="col-md-7 col-valign-center">
@@ -27,9 +27,11 @@
                         <h5 class="article-category" style="margin-bottom:-10px;">Upcoming Webinar</h5>
                       {{ end }}
                     </div>
-                    <div class="range-left underline-sm">
-                      <h1>{{ .Title }}</h1>
-                    </div>
+                    {{ with .Title }}
+                      <div class="strong range-left">
+                          <h1>{{ . | markdownify }}</h1>
+                      </div>
+                    {{ end }}
                     {{ if gt .Date.Year 2000 }}
                       <p class="post-meta range-left">{{ if .Params.author }}<i class="fa fa-user-o"></i> {{ .Params.author }}{{ end }}<i class="fa fa-calendar"></i> {{ .Date.Format .Site.Params.date_format }}</p>
                     {{ end }}

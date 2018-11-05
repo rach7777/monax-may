@@ -143,7 +143,7 @@ h4 {
     font-size: 20px;
     text-transform: none;
     letter-spacing: 0;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.3;
 }
 h5 {
@@ -204,24 +204,15 @@ p.lead,
   h2 {font-size: 42px;}
 }
 
-/* ******* */
-@media (min-width: 768px) {
-  .sm {
-    text-align: left;
-  }
-}
-@media (min-width: 992px) {
-  .md {
-    text-align: left;
-  }
-}
-@media (min-width: 1200px) {
-  .lg {
-    text-align: left;
-  }
-}
+/* typography styles  */
 span.no-wrap {
   white-space: pre;
+}
+
+.strong,
+.strong p, .strong span, .strong h1, .strong h2, .strong h3, .strong h4, .strong h5, .strong h6,
+p.strong, span.strong, h1.strong, h2.strong, h3.strong, h4.strong, h5.strong, h6.strong {
+  font-weight: 600;
 }
 
 /* ==============
@@ -885,6 +876,7 @@ form label.error {
 #post-content h4 {
     margin-top: 50px;
     line-height: 1.4;
+    font-weight: 600;
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
@@ -924,7 +916,7 @@ form label.error {
     color: #333;
     font-weight: 600;
 }
-#post-content h1:after,
+/* #post-content h1:after,
 #post-content h2:after,
 #post-content h3:after {
     content: "";
@@ -961,7 +953,7 @@ form label.error {
   #post-content.range-left-lg h3:after {
     margin-left: 0;
   }
-}
+} */
 #post-content table {
     border: 5px solid #eeeeee;
 }
@@ -1285,7 +1277,10 @@ form label.error {
     font-size: 16px;
   }
 }
-/* pill tabs */
+
+/* ==============
+  Pill Tabs
+=============== */
 .btn-container > a.btn-tab-pill {
     display: block;
     max-width: 300px;
@@ -1298,6 +1293,9 @@ form label.error {
     background-color: transparent;
     color: #96B85D;
     border: 2px solid #96B85D;
+}
+.btn-tab-pill {
+    border-radius: 0;
 }
 .btn-tab-pill:first-of-type {
     border-radius: 10px 10px 0px 0px;
@@ -1318,7 +1316,7 @@ form label.error {
     border: 2px solid #96B85D;
 }
 /* Small Devices, Tablets */
-@media only screen and (min-width : 600px) {
+@media only screen and (min-width : 768px) {
   .btn-container > a.btn-tab-pill {
       display: inline-block;
       max-width: none;
@@ -1335,6 +1333,37 @@ form label.error {
   }
 }
 
+/* ==============
+  Tabs - Explainer categories
+=============== */
+.article-container .article-entry {
+  -webkit-transition: all 0.4s cubic-bezier(0.675, 0.170, 0.245, 0.795);
+  -o-transition: all 0.4s cubic-bezier(0.675, 0.170, 0.245, 0.795);
+  transition: all 0.4s cubic-bezier(0.675, 0.170, 0.245, 0.795);
+  max-height: 1000px;
+  overflow: hidden;
+}
+.js-select-explainers {
+  cursor: pointer;
+}
+/* Hide on Mobile only  */
+@media only screen and (max-width : 767px) {
+  .article-container[data-selected='workflows'] .article-entry:not([data-category='workflows']),
+  .article-container[data-selected='templates'] .article-entry:not([data-category='templates']),
+  .article-container[data-selected='contracts'] .article-entry:not([data-category='contracts']) {
+    max-height: 0;
+    opacity: 0;
+    padding: 0;
+  }
+}
+/* Small Devices, Tablets and up */
+@media only screen and (min-width : 768px) {
+  .article-container[data-selected='workflows'] .article-entry:not([data-category='workflows']),
+  .article-container[data-selected='templates'] .article-entry:not([data-category='templates']),
+  .article-container[data-selected='contracts'] .article-entry:not([data-category='contracts']) {
+    opacity: 0.3;
+  }
+}
 
 
 /* ==============
@@ -3813,6 +3842,10 @@ TEAM ICONS
   Specific section fixes
 =============== */
 
+/* Hide Cookie Consent when opted in */
+.cc-revoke {
+    display: none !important;
+}
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
   .section-top {

@@ -5,21 +5,25 @@
 
       <div class="row flex-grid-md">
           <div class="col-md-5 col-valign-center">
-              <div class="underline-sm range-left-md">
-                  <h1>{{ .title }}</h1>
+            {{ with .title }}
+              <div class="strong range-left-md">
+                  <h1>{{ . | markdownify }}</h1>
               </div>
+            {{ end }}
+            {{ with .subtitle }}
               <p class="lead range-left-md">
-                {{ .subtitle | markdownify }}
+                {{ . | markdownify }}
               </p>
+            {{ end }}
 
-              <!-- Sign up section [GLOBAL] -->
-              {{ if .hero_signup }}
-                {{ partial "_global/hero_signup.html" . }}
-              {{ end }}
+            <!-- Sign up section [GLOBAL] -->
+            {{ if .hero_signup }}
+              {{ partial "_global/hero_signup.html" . }}
+            {{ end }}
 
-              {{ if .img_left }}
-                <img class="img-responsive" src="{{ .img_left }}" alt="">
-              {{ end }}
+            {{ if .img_left }}
+              <img class="img-responsive" src="{{ .img_left }}" alt="">
+            {{ end }}
           </div>
           <div class="col-md-7 flex-grid-md">
 

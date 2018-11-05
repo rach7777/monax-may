@@ -4,15 +4,17 @@
 <section class="section-feature section-padding-md padding-bottom-md background-grey">
     <div class="container">
 
-            <div class="row flex-grid-md padding-bottom-md padding-top-md">
-                <div class="col-md-12 col-valign-top">
-                    <div class="">
-                        <h1>{{ .title | markdownify }}</h1>
-                    </div>
-                    {{ with .subtitle }}
-                      <h4>{{ . | markdownify }}</h4>
-                    {{ end }}
-              </div>
+          <div class="row flex-grid-md padding-bottom-md padding-top-md">
+            <div class="col-md-12 col-valign-top">
+              {{ with .title }}
+                <div class="strong">
+                    <h1>{{ . | markdownify }}</h1>
+                </div>
+              {{ end }}
+              {{ with .subtitle }}
+                <h4>{{ . | markdownify }}</h4>
+              {{ end }}
+            </div>
           </div>
 
           <div class="row flex-grid-md">
@@ -70,12 +72,16 @@
                     </div>
                   </div>
                 </div> -->
-                <div class="">
-                    <h4 class="">{{ .title | markdownify }}</h4>
-                </div>
-                <p class="lead">
-                  {{ .subtitle | markdownify }}
-                </p>
+                {{ with .title }}
+                  <div class="strong">
+                      <h4>{{ . | markdownify }}</h4>
+                  </div>
+                {{ end }}
+                {{ with .subtitle }}
+                  <p class="lead">
+                    {{ . | markdownify }}
+                  </p>
+                {{ end }}
 
               </div> <!-- .col -->
             {{ end }}

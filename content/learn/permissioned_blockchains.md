@@ -7,6 +7,8 @@ excerpt:    "What is a Permissioned Blockchain and why are these automated data 
 categories:
   - learn
 tags:
+explainer_category: contracts
+# Set the explainer_category to 'workflows', 'templates' or 'contracts'
 
 ---
 

@@ -1,12 +1,12 @@
 [top]
     enable = true
-    title = "<strong>We believe in a world where law empowers</strong>"
+    title = "We believe in a world where law empowers"
     subtitle = "At Monax we are on a mission to empower people through a new way of executing law. Active legal products merge the current practice of law with the power of distributed computing to create collaborative ecosystems in which new businesses with innovative business models can grow."
     hero_signup = false
 
 [history]
     enable = true
-    title = "<strong>At the forefront of blockchain technology</strong>"
+    title = "At the forefront of blockchain technology"
     subtitle = ""
 
     [[history.time]]
@@ -61,7 +61,7 @@
 
 [team]
     enable = true
-    title = "<strong>Our people and offices</strong>"
+    title = "Our people and offices"
     subtitle = ""
 
     [[team.office]]
@@ -311,7 +311,7 @@
 
 [positions]
     enable = true
-    title = "<strong>Join us in shaping a new paradigm</strong>"
+    title = "Join us in shaping a new paradigm"
     subtitle = "We're a diverse and talented team, complementing each other in our strengths to build a truly remarkable product."
     enable_bamboo = true # if true, [[positions.jobs]] posted below will not display
     contact_info = "Please email <a href='mailto:contact@monax.io'>contact@monax.io</a> with your CV."
@@ -335,7 +335,7 @@
 
 [pressreleases]
     enable = true
-    title = "<strong>Press highlights</strong>"
+    title = "Press highlights"
     filter_by_category = "press" # changed in partials/company/pressreleases.html
     default_img = "/img/assets/backgrounds/mountains-1.jpg"
     next_page_url = "/categories/press/"

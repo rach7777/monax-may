@@ -1,6 +1,6 @@
 [top]
     enable = true
-    title = "<strong>Access a new way to make money with your legal knowledge</strong>"
+    title = "Access a new way to make money with your legal knowledge"
     # subtitle = "How Monax can simplify and speed up your corporate governance and give you full control over your agreements"
     request_demo = true
     # enable youtube_id or img_right
@@ -10,7 +10,7 @@
 
 [summary]
     enable = true
-    title = "<strong>Legal Services &nbsp;<i class='fa fa-long-arrow-right'></i>&nbsp; Legal Products</strong>"
+    title = "Legal Services &nbsp;<i class='fa fa-long-arrow-right'></i>&nbsp; Legal Products"
     subtitle = "A paradigm shift in the practice of law to open new revenue streams"
 
 
@@ -51,7 +51,7 @@
 
 [icons]
     enable = true
-    title = "<strong>Tools to empower legal product creators</strong>"
+    title = "Tools to empower legal product creators"
     subtitle = "Increase your revenues, grow your client base and bill more hours"
 
     [[icons.section]]
@@ -107,9 +107,9 @@
 
 [lawyer_cta]
     enable = true
-    title = "<strong>Let your legal knowledge work for you</strong>"
+    title = "Let your legal knowledge work for you"
     link_title = "Learn more about how to create legal products"
-    link_url = "/learn/" # @@@ add explainer section
+    link_url = "/learn/"
 
 
 [cta] # global

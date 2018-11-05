@@ -7,6 +7,8 @@ excerpt:    "What are Ecosystem Applications and will these impact how we think 
 categories:
   - learn
 tags:
+explainer_category: workflows
+# Set the explainer_category to 'workflows', 'templates' or 'contracts'
 
 ---
 

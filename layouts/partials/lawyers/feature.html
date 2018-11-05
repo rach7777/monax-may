@@ -46,12 +46,16 @@
                 </div> <!-- .col -->
               </div> <!-- .col -->
               <div class="col-md-5 col-valign-center"  data-aos="{{ if (modBool $i 2) }}fade-left{{ else }}fade-right{{ end}}" data-aos-delay="50" data-aos-duration="400">
-                <div class="range-left-md">
-                    <h2><strong>{{ .title }}</strong></h2>
-                </div>
-                <p class="lead range-left-md">
-                  {{ .subtitle | markdownify }}
-                </p>
+                {{ with .title }}
+                  <div class="strong range-left-md">
+                      <h2>{{ . | markdownify }}</h2>
+                  </div>
+                {{ end }}
+                {{ with .subtitle }}
+                  <p class="lead range-left-md">
+                    {{ . | markdownify }}
+                  </p>
+                {{ end }}
               </div> <!-- .col -->
             </div>  <!-- .row -->
 
