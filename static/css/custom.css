@@ -3842,6 +3842,10 @@ TEAM ICONS
   Specific section fixes
 =============== */
 
+/* Hide Cookie Consent when opted in */
+.cc-revoke {
+    display: none !important;
+}
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
   .section-top {
