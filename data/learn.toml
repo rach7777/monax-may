@@ -5,9 +5,21 @@
     hero_signup = false
 
 [articles]
-  enable = true
-  filter_by_category = "explainers" # changed in partials/resources/explainers/articles.html
-  default_img = "/img/assets/backgrounds/mountains-1.jpg"
+    enable = true
+    filter_by_category = "explainers" # changed in partials/resources/explainers/articles.html
+    default_img = "/img/assets/backgrounds/mountains-1.jpg"
+
+    [[articles.explainer_category]]
+      id = "workflows" # search query for explainer_category set in explainer FM
+      title = "Creating Workflows"
+
+    [[articles.explainer_category]]
+      id = "templates" # search query for explainer_category set in explainer FM
+      title = "Creating Templates"
+
+    [[articles.explainer_category]]
+      id = "contracts" # search query for explainer_category set in explainer FM
+      title = "Creating Contracts"
 
 [cta] # global
     enable = true

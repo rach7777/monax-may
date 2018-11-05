@@ -1291,6 +1291,9 @@ form label.error {
     color: #96B85D;
     border: 2px solid #96B85D;
 }
+.btn-tab-pill {
+    border-radius: 0;
+}
 .btn-tab-pill:first-of-type {
     border-radius: 10px 10px 0px 0px;
     border-bottom:none;
@@ -3241,6 +3244,40 @@ TEAM ICONS
     opacity: 0.3;
   }
 }
+
+
+/* Explainers category select */
+.article-container .article-entry {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.js-select-explainers {
+  cursor: pointer;
+}
+/* Mobile only  */
+@media only screen and (max-width : 767px) {
+  .article-container[data-selected='workflows'] .article-entry:not([data-category='workflows']),
+  .article-container[data-selected='templates'] .article-entry:not([data-category='templates']),
+  .article-container[data-selected='contracts'] .article-entry:not([data-category='contracts']) {
+    display: none;
+  }
+}
+/* Small Devices, Tablets and up */
+@media only screen and (min-width : 768px) {
+  .article-container[data-selected='workflows'] .article-entry:not([data-category='workflows']),
+  .article-container[data-selected='templates'] .article-entry:not([data-category='templates']),
+  .article-container[data-selected='contracts'] .article-entry:not([data-category='contracts']) {
+    opacity: 0.3;
+  }
+}
+
+
+
+
+
+
+
 
 
 /* ==============

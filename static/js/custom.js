@@ -353,13 +353,37 @@ $(document).ready(function() {
     // show current panel
     $(id).addClass('active');
     // switch active button
-    $(this).addClass('active');
-    $('.btn-tab-select').not(this).removeClass('active');
+    if ( ! $(this).hasClass('active') ) {
+      $(this).addClass('active');
+      $('.btn-tab-select').not(this).removeClass('active');
+      // if clicked on active deselectable btn, deselect it
+    } else if ( $(this).hasClass('deselectable') ) {
+      $(this).removeClass('active').blur();
+    }
     // reset animations
     setTimeout(function(){
       AOS.refreshHard();
     }, 600);
   });
+
+
+    // EXPLAINERS TAB SELECT
+    $(function(){
+      var explainerCategoryTabs = $('.js-select-explainers');
+      var categoryContainer = $('.category-container');
+      var articleContainer = $('.article-container');
+    	$(explainerCategoryTabs).click(function(e){
+    		var selectCategoryRef = $(this).data("select");
+        // console.log(selectCategoryRef);
+        if ( $(this).hasClass('active') ) {
+          $(articleContainer).attr('data-selected', selectCategoryRef);
+        } else {
+          $(articleContainer).attr('data-selected', "");
+        }
+        // prevent redirect
+        return false;
+    	});
+    });
 
 
   // ========== ANIMATIONS =============== //

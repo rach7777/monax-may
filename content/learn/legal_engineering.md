@@ -11,6 +11,8 @@ tags:
   - creatives
   - lawyers
   - entrepreneurs
+explainer_category: workflows
+# Set the explainer_category to 'workflows', 'templates' or 'contracts' 
 
 ---
 

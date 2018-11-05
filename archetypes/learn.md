@@ -19,6 +19,8 @@ tags:
   - lawyers
   - entrepreneurs
 # if you want this article to show on a 'use case' page, you can use the following TAGS -  'fleetleasing' 'creatives' 'lawyers' or 'entrepreneurs'
+explainer_category: workflows
+# Set the explainer_category to 'workflows', 'templates' or 'contracts'
 draft: true
 # set this to 'false' when you're ready to publish
 utm:
