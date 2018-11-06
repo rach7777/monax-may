@@ -18,7 +18,7 @@
 
     [[features.consumer.section]]
       title = "Create agreements"
-      subtitle = "Select, fill out a form then press create. You’ve made both a legally binding agreement and an auto-enforcable smart contract with just a couple of clicks. As simple as filling out a form."
+      subtitle = "Select, fill out a form then press create. You’ve made both a legally binding agreement and an auto-enforceable smart contract with just a couple of clicks. As simple as filling out a form."
       #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
       animation_id = "feature-animation-B"
       animation_type = "multipop"
