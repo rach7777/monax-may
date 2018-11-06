@@ -1,20 +1,12 @@
 [top]
-    enable = false
-    title = "Disrupting the legal tech industry"
-    subtitle = "Discover our journey, how we think and the paradigm shift we see happening toward legal products."
-    img_left = false
-    hero_signup = false
-    # img_right = "/img/assets/background-elements/wphone-test.png"
-    background_element = "/img/assets/background-elements/abstract-01.jpg"
-
-
-[press] # global
     enable = true
-
+    title = "We believe in a world where law empowers"
+    subtitle = "At Monax we are on a mission to empower people through a new way of executing law. Active legal products merge the current practice of law with the power of distributed computing to create collaborative ecosystems in which new businesses with innovative business models can grow."
+    hero_signup = false
 
 [history]
     enable = true
-    title = "Monax is at the forefront of blockchain technology"
+    title = "At the forefront of blockchain technology"
     subtitle = ""
 
     [[history.time]]
@@ -69,7 +61,7 @@
 
 [team]
     enable = true
-    title = "Meet the people behind Monax"
+    title = "Our people and offices"
     subtitle = ""
 
     [[team.office]]
@@ -77,10 +69,10 @@
     select = "edn" #set to edn, lon, nyc, remote or none
     img = "/img/assets/cities/office-edinburgh.png"
 
-    [[team.office]]
-    city = "London"
-    select = "lon" #set to edn, lon, nyc, remote or none
-    img = "/img/assets/cities/office-london.png"
+    # [[team.office]]
+    # city = "London"
+    # select = "lon" #set to edn, lon, nyc, remote or none
+    # img = "/img/assets/cities/office-london.png"
 
     [[team.office]]
     city = "New York"
@@ -112,9 +104,9 @@
      img = "/img/team/team-ak.jpg"
      twitter = "https://twitter.com/Anjleekhurana"
      linkedin = "https://www.linkedin.com/in/anjlee-khurana-286630122"
-  #   keybase = ""
-      # github = "#"
-#      # website = "#"
+     # keybase = ""
+     # github = "#"
+     # website = "#"
 
     [[team.item]]
       name = "Adam Locklin"
@@ -247,7 +239,7 @@
     [[team.item]]
       name = "Sam Sinha"
       position = "Smart Contract Engineer"
-      weight = 107
+      weight = 108
       location = "nyc" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-ss.jpg"
       twitter = "https://twitter.com/samsrobotarmy"
@@ -260,7 +252,7 @@
       name = "Silas Davis"
       position = "CTO"
       weight = 203
-      location = "lon" #set to edn, lon, nyc, remote or none
+      location = "remote" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-sd.jpg"
       twitter = "https://twitter.com/silas_davis"
       linkedin = "https://www.linkedin.com/in/silas-davis-ba92951a/"
@@ -272,7 +264,7 @@
       name = "Sean Young"
       position = "Platform Engineer"
       weight = 109
-      location = "lon" #set to edn, lon, nyc, remote or none
+      location = "remote" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-sy.jpg"
       twitter = "https://twitter.com/iamseanyoung"
       linkedin = "https://www.linkedin.com/in/sean-young-881a011/"
@@ -319,36 +311,45 @@
 
 [positions]
     enable = true
-    title = "Positions available"
-    subtitle = "Come and be a part of our diverse and talented team"
+    title = "Join us in shaping a new paradigm"
+    subtitle = "We're a diverse and talented team, complementing each other in our strengths to build a truly remarkable product."
+    enable_bamboo = true # if true, [[positions.jobs]] posted below will not display
+    contact_info = "Please email <a href='mailto:contact@monax.io'>contact@monax.io</a> with your CV."
 
-    [positions.contact]
-        title = "Contact us if you're interested"
-        subtitle = "Please email <a href='mailto:contact@monax.io'>contact@monax.io</a> with your CV"
-
-  #  [[positions.job]]
-    #    title = "Site Reliability Engineer"
-      #  description = "Help us build a decentralised, blockchain-based legal agreements network"
-    #    hours = "Full time"
-    #    type = "Permanent"
-    #    location = "London or Edinburgh"
-    #    posted_date = "June 28 2018"
-
-  #  [[positions.job]]
-    #    title = "Systems Reliability Engineer"
-    #    description = "Help us build a decentralised, blockchain-based legal agreements network"
-    #    hours = "Full time"
-    #    type = "Permanent"
-    #    location = "London or Edinburgh"
-    #    posted_date = "June 28 2018"
+   # [[positions.job]]
+   #     title = "Site Reliability Engineer"
+   #     description = "Help us build a decentralised, blockchain-based legal agreements network"
+   #     hours = "Full time"
+   #     type = "Permanent"
+   #     location = "London or Edinburgh"
+   #     posted_date = "June 28 2018"
+   #
+   # [[positions.job]]
+   #     title = "Systems Reliability Engineer"
+   #     description = "Help us build a decentralised, blockchain-based legal agreements network"
+   #     hours = "Full time"
+   #     type = "Permanent"
+   #     location = "London or Edinburgh"
+   #     posted_date = "June 28 2018"
 
 
 [pressreleases]
     enable = true
-    title = "Past press releases"
+    title = "Press highlights"
     filter_by_category = "press" # changed in partials/company/pressreleases.html
     default_img = "/img/assets/backgrounds/mountains-1.jpg"
     next_page_url = "/categories/press/"
 
+    [pressreleases.cta]
+      enable = true
+      link_text = "Interested in writing about Monax?"
+      link_url = "mailto:contact@monax.io"
+      outline_style = true
+
+
 [cta] # global
-    enable = true
+    enable = false
+
+
+[press] # global
+    enable = false

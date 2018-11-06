@@ -17,27 +17,25 @@
 
         {{ partial "lawyers/top.html" . }}
 
-        <!-- global section -->
-        {{ if isset .Site.Data.lawyers "press" }}
-          {{ if .Site.Data.lawyers.press.enable }}
-            {{ partial "_global/press.html" . }}
-          {{ end }}
-        {{ end }}
-
-        {{ partial "lawyers/testimonials.html" . }}
+        {{ partial "lawyers/summary.html" . }}
 
         {{ partial "lawyers/feature.html" . }}
 
-        {{ partial "lawyers/examples.html" . }}
+        {{ partial "lawyers/icons.html" . }}
 
-        {{ partial "lawyers/relatedarticles.html" . }}
-
-        {{ partial "lawyers/faq.html" . }}
+        {{ partial "lawyers/lawyer_cta.html" . }}
 
         <!-- CTA section [GLOBAL] -->
         {{ if isset .Site.Data.lawyers "cta" }}
           {{ if .Site.Data.lawyers.cta.enable }}
             {{ partial "_global/cta.html" . }}
+          {{ end }}
+        {{ end }}
+
+        <!-- global section -->
+        {{ if isset .Site.Data.lawyers "press" }}
+          {{ if .Site.Data.lawyers.press.enable }}
+            {{ partial "_global/press.html" . }}
           {{ end }}
         {{ end }}
 

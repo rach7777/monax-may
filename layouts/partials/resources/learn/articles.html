@@ -5,16 +5,24 @@
     {{ $.Scratch.Set "defaultImg" .default_img }}
   {{ end }}
 
-  <section class="section-articles padding-top-md padding-bottom-xl background-grey">
+  <section class="section-articles padding-top-sm padding-bottom-xl">
       <div class="container">
 
-        <div class="row content-container flex-grid-sm">
+        <div class="row padding-bottom-md category-container">
+          <div class="col-md-12">
+            <div class="padding-bottom-md btn-container" style="">
+              {{ range .explainer_category }}<a href="#{{ .id }}" class="btn btn-tab-select btn-tab-pill btn-xl deselectable js-select-explainers" data-toggle="tab" role="tab" data-select="{{ .id }}">{{ .title }}</a>{{ end }}
+            </div>
+          </div>
+        </div>
+
+        <div class="row content-container flex-grid-sm article-container">
           {{ if gt (len $.Paginator.Pages) 0 }}
             {{ range $i, $p := $.Paginator.Pages }}
 
               {{ if (modBool $i 3) }} <!-- paginate after 3 entries -->
           </div>
-          <div class="row content-container flex-grid-sm">
+          <div class="row content-container flex-grid-sm article-container">
               {{ end }}
 
               <!-- check for img override -->
@@ -26,7 +34,7 @@
                 {{ .Scratch.Set "postImg" ($.Scratch.Get "defaultImg") }}
               {{ end }}
 
-              <div class="col-sm-4 flex-grid-sm padding-bottom-md">
+              <div class="col-sm-4 flex-grid-sm padding-bottom-md article-entry" data-category="{{ .Params.explainer_category }}">
                 <a href="{{ .Permalink }}" class="flex-grid-sm a-card">
                 <div class="content-container content-card content-card-stack content-card-shadow-sm article-card">
                   <div class="img-container background-dark" style='background:url({{ .Scratch.Get "postImg" }}) center center no-repeat; background-size: cover;'>

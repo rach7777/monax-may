@@ -5,7 +5,6 @@
     img_left = false
     hero_signup = true
     img_right = "/img/assets/landing-pages/fleet-leasing/fleet-leasing-header.png"
-    # background_element = "/img/assets/background-elements/abstract-01.jpg"
 
 
 [press] # global

@@ -7,6 +7,8 @@ excerpt:    "When are smart contracts better than tokenized approaches to blockc
 categories:
   - learn
 tags:
+explainer_category: templates
+# Set the explainer_category to 'workflows', 'templates' or 'contracts'
 
 ---
 

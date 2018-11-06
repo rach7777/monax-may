@@ -1,15 +1,15 @@
 {{ with .Site.Data.entrepreneurs.intro }}
 {{ if .enable }}
-<section class="section-top padding-top-md padding-bottom-md" style="background: url({{ .background_element }}) right bottom no-repeat; background-size: 520px;">
+<section class="section-top padding-top-md padding-bottom-md">
     <div class="container">
 
       <div class="row flex-grid-md">
           <div class="col-md-12 col-valign-center">
-              <div class="">
-                  <h1>{{ .title | markdownify }}</h1>
+              <div class="strong">
+                  <h2>{{ .title | markdownify }}</h2>
               </div>
               {{ with .subtitle }}
-                <h4>{{ . | markdownify }}</h4>
+                <h3>{{ . | markdownify }}</h3>
               {{ end }}
           </div>
       </div>

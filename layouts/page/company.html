@@ -19,13 +19,6 @@
 
         {{ partial "company/history.html" . }}
 
-        <!-- global section -->
-        {{ if isset .Site.Data.company "press" }}
-          {{ if .Site.Data.company.press.enable }}
-            {{ partial "_global/press.html" . }}
-          {{ end }}
-        {{ end }}
-        
         {{ partial "company/team.html" . }}
 
         {{ partial "company/positions.html" . }}
@@ -36,6 +29,13 @@
         {{ if isset .Site.Data.company "cta" }}
           {{ if .Site.Data.company.cta.enable }}
             {{ partial "_global/cta.html" . }}
+          {{ end }}
+        {{ end }}
+
+        <!-- global section -->
+        {{ if isset .Site.Data.company "press" }}
+          {{ if .Site.Data.company.press.enable }}
+            {{ partial "_global/press.html" . }}
           {{ end }}
         {{ end }}
 

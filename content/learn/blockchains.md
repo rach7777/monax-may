@@ -11,7 +11,8 @@ tags:
   - creatives
   - lawyers
   - entrepreneurs
-
+explainer_category: templates
+# Set the explainer_category to 'workflows', 'templates' or 'contracts'
 ---
 
 ## What is a Blockchain?

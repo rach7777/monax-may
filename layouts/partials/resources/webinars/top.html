@@ -1,21 +1,23 @@
 {{ with .Site.Data.webinars.top }}
 {{ if .enable }}
-<section class="section-top padding-top-md padding-bottom-md section-shadow-xl" style="background: url({{ .background_element }}) right bottom no-repeat; background-size: 520px;">
+<section class="section-top padding-top-md padding-bottom-md section-shadow-xl">
     <div class="container">
 
       <div class="row flex-grid-md">
           <div class="col-md-8 col-md-offset-2 col-valign-center">
-              <div class="underline-sm">
-                  <h1>{{ .title }}</h1>
+            {{ with .title }}
+              <div class="strong">
+                  <h1>{{ . | markdownify }}</h1>
               </div>
-              <p class="lead">
-                {{ .subtitle | markdownify }}
-              </p>
+            {{ end }}
+            {{ with .subtitle }}
+              <h4>{{ . | markdownify }}</h4>
+            {{ end }}
 
-              <!-- Sign up section [GLOBAL] -->
-              {{ if .hero_signup }}
-                {{ partial "_global/hero_newsletter.html" . }}
-              {{ end }}
+            <!-- Sign up section [GLOBAL] -->
+            {{ if .hero_signup }}
+              {{ partial "_global/hero_newsletter.html" . }}
+            {{ end }}
           </div>
       </div>
 

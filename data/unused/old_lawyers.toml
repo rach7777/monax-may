@@ -1,0 +1,72 @@
+#
+# [testimonials]
+#     enable = false
+#     quote = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+#     name = "Some person"
+#     position = "Some company inc."
+#     twitter = "#"
+#     linkedin = "#"
+#     read_more_link = "#"
+#     # IMG - USE ONE OR THE OTHER, NOT BOTH (SET ONE TO: false)
+#     img_cutout = "/img/testimonials/man-on-tablet.jpg"
+#     # img_circle = "/img/team/team-dg.jpeg"
+
+
+#
+# [examples]
+#   enable = false
+#   title = "Get started using one of our templates"
+#   default_img = "/img/assets/agreements/3.jpg"
+#   new_agreement_text = "Create A New Template"
+#   new_agreement_url = "https://beta.monax.io/register"
+#
+#   # Agreements should be auto populated
+#   [[examples.agreement]]
+#     title = "Non-Disclosure Template"
+#     url = "https://beta.monax.io/register"
+#
+#   [[examples.agreement]]
+#     title = "M.O.U. Template"
+#     url = "https://beta.monax.io/register"
+#
+#   [[examples.agreement]]
+#     title = "Consortium Template"
+#     url = "https://beta.monax.io/register"
+#
+#   [[examples.agreement]]
+#     title = "Material Transfer Template"
+#     url = "https://beta.monax.io/register"
+#
+#
+#
+#
+# [relatedarticles]
+#   enable = false
+#   title = "Or learn how to get started here"
+#   filter_by_tag = "lawyers" # changed in partials/lawyers/relatedarticles.html
+#   default_img = "/img/assets/backgrounds/mountains-1.jpg"
+#
+#
+# # FAQ section
+# [faq]
+#   enable = false
+#
+#     [[faq.item]]
+#         question = "Why do people want to enter into agreements at all?"
+#         answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+#
+#     [[faq.item]]
+#         question = "Why do people want to enter into agreements at all?"
+#         answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+#
+#     [[faq.item]]
+#         question = "Why do people want to enter into agreements at all?"
+#         answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+#
+#     [[faq.item]]
+#         question = "Why do people want to enter into agreements at all?"
+#         answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+#
+#     [[faq.item]]
+#         question = "Why do people want to enter into agreements at all?"
+#         answer = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."

@@ -87,4 +87,30 @@
    analytics.page('{{ .Site.Title | markdownify }}{{ if .IsPage }}{{ if (eq .Section "blog") }} | Blog{{ end }}{{ end }}{{ with .Title }} | {{ . }}{{ end }}');
   }}();
 </script>
+
+<!-- Cookie notice - see https://cookieconsent.insites.com/download/ -->
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#eeeeee",
+      "text": "#333333"
+    },
+    "button": {
+      "background": "#96b85d",
+      "text": "#ffffff"
+    }
+  },
+  "theme": "classic",
+  "type": "opt-out",
+  "content": {
+    "message": "By using our platform you agree to our use of cookies. To learn about the cookies we use and information about your preferences and opt-out choices",
+    "link": "click here.",
+    "href": "/legal/privacy-policy/"
+  }
+})});
+</script>
 </head>

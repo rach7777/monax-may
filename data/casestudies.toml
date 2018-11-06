@@ -2,10 +2,7 @@
     enable = true
     title = "Case studies"
     subtitle = "Explore how other individuals and companies are transforming business with Monax."
-    img_left = false
     hero_signup = false
-    # img_right = "/img/assets/background-elements/wphone-test.png"
-    # background_element = "/img/assets/background-elements/abstract-01.jpg"
 
 [articles]
   enable = true

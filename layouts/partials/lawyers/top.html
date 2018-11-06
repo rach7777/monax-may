@@ -1,29 +1,35 @@
 {{ with .Site.Data.lawyers.top }}
 {{ if .enable }}
-<section class="section-top padding-top-md padding-bottom-lg section-shadow-xl" style="background: url({{ .background_element }}) right bottom no-repeat; background-size: 520px;">
+<section class="section-top padding-top-md padding-bottom-md">
     <div class="container">
 
       <div class="row flex-grid-md">
-          <div class="col-md-5 col-valign-center">
-              <div class="underline-sm range-left-md">
-                  <h1>{{ .title }}</h1>
-              </div>
-              <p class="lead range-left-md">
-                {{ .subtitle | markdownify }}
-              </p>
+          <div class="col-md-4 col-valign-center padding-top-md padding-bottom-lg">
+              {{ with .title }}
+                <div class="strong range-left-md">
+                    <h1 style="margin-top: 0;">{{ . | markdownify }}</h1>
+                </div>
+              {{ end }}
+              {{ with .subtitle }}
+                <p class="lead range-left-md">
+                  {{ . | markdownify }}
+                </p>
+              {{ end }}
 
               <!-- Sign up section [GLOBAL] -->
-              {{ if .hero_signup }}
-                {{ partial "_global/hero_signup.html" . }}
-              {{ end }}
-
-              {{ if .img_left }}
-                <img class="img-responsive" src="{{ .img_left }}" alt="">
+              {{ if .request_demo }}
+                {{ partial "_global/hero_signup_short.html" . }}
               {{ end }}
           </div>
-          <div class="col-md-7 flex-grid-md">
+          <div class="col-md-7 col-md-offset-1 col-valign-center">
 
-            {{ if .img_right }}
+            {{ if .youtube_id }}
+              <div class="content-container content-card content-card-full content-card-shadow-sm">
+                <div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+                  <iframe src="//www.youtube.com/embed/{{ .youtube_id }}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+                </div>
+              </div>
+            {{ else if .img_right }}
               <div class="row flex-grid-md">
                 <div class="col-sm-8 col-sm-offset-2 col-valign-center">
                   <img class="img-responsive img-center img-top" src="{{ .img_right }}" alt="">
