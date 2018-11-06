@@ -58,6 +58,10 @@ Below is a collection of print, online and broadcast news featuring both the com
 
 Here is the list of our most recent press:
 
+- Tech4Law: [Interview with Casey Kuhlman of Monax about Smart Contracts](https://www.tech4law.co.za/business4law/158-blockchain/2936-interview-with-casey-kuhlman-of-monax-about-smart-contracts) (11/06/18)
+
+- LexBlog (Legal Tech Founders Series): [Casey Kuhlman, CEO of Monax, on His Incredible Journey to Founding a Legal Tech Startup](https://www.lexblog.com/2018/10/18/casey-kuhlman-ceo-monax-incredible-journey-founding-legal-tech-startup/) (10/18/18)
+
 - Forbes: [Hyperledger And Enterprise Ethereum Alliance Join Forces In Enterprise Blockchain Boost](https://www.forbes.com/sites/astanley/2018/10/01/hyperledger-and-enterprise-ethereum-alliance-join-forces-in-enterprise-blockchain-boost/#210f1b0a4aa) (10/01/18)
 
 - GenFKD: [Casey Kuhlman, CEO of Monax Industries](http://www.genfkd.org/casey-kuhlman-ceo-of-monax-industries?utm_campaign=coschedule&utm_source=twitter&utm_medium=GenFKD&utm_content=Casey%20Kuhlman,%20CEO%20of%20Monax%20Industries) (10/01/18)
@@ -84,7 +88,7 @@ Here is the list of our most recent press:
 
 - ABA Journal (American Bar Association Journal): [Law firms, tech companies partner to build new blockchain-based platform for smart contracts ](http://www.abajournal.com/news/article/law_firms_tech_companies_partner_to_build_new_blockchain_based_platform_for) (07/30/18)
 
-- Ledger Insights: [Agreements Network marries legal contracts with blockchain](https://www.ledgerinsights.com/agreements-network-legal-blockchain-contracts/] (07/30/18)
+- Ledger Insights: [Agreements Network marries legal contracts with blockchain](https://www.ledgerinsights.com/agreements-network-legal-blockchain-contracts/) (07/30/18)
 
 - AMBCrypto.com: [Ethereum (ETH) to make the field of law more effective, law firms come together to achieve this goal](https://ambcrypto.com/ethereum-eth-to-make-the-field-of-law-more-effective-law-firms-come-together-to-achieve-this-goal/) (07/27/18)
 
