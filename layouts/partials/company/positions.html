@@ -4,57 +4,62 @@
     <div class="container">
 
         <div class="row">
-          <div class="col-md-5">
-
-            <div class="content-container padding-bottom-md">
-              <div class="underline-sm range-left-md">
-                  <h3>{{ .title }}</h3>
-              </div>
-              <p class="range-left-md padding-bottom-sm">
-                {{ .subtitle | markdownify }}
-              </p>
-            </div> <!-- .content-container -->
-
-            <div class="content-container padding-bottom-md">
-                <div class="range-left-md">
-                    <h4>{{ .contact.title }}</h4>
-                </div>
-                <p class="range-left-md padding-bottom-sm">
-                  {{ .contact.subtitle | markdownify }}
-                </p>
-            </div> <!-- .content-container -->
-
-          </div> <!-- .col -->
-          <div class="col-md-7">
-            <div class="row">
-
-              <div id="BambooHR"><script src="https://monax.bamboohr.co.uk/js/jobs2.php" type="text/javascript"></script><div id="BambooHR-Footer">Powered by<a href="http://www.bamboohr.com" target="_blank" rel="noopener external nofollow"><img src="https://resources.bamboohr.com/images/footer-logo.png" alt="BambooHR - HR software"/></a></div></div>
-
-              {{ range $i, $p := .job }}
-              
-              {{ if (modBool $i 2) }} <!-- new row after 2 entries -->
-              <div class="clearfix visible-lg-block"></div>
-              {{ end }}
-              
-              <div class="col-sm-6 padding-bottom-md">
-                <div class="content-container content-card content-card-stack content-card-shadow-sm hover-scale" style="width: 100%;">
-                  <div class="text-container">
-                    <div class="title range-left">
-                      <h5>{{ .title }}</h5>
-                      <p class="subtitle range-left">
-                        {{ .description }}
-                      </p>
-                    </div>
-                    <div class="meta range-left">
-                      <p><span><i class="fa fa-calendar"></i> &nbsp;{{ .hours }}</span>&nbsp; - &nbsp;<span><i class="fa fa-clock-o"></i> &nbsp;{{ .type }}</span></p>
-                      <p><span><i class="fa fa-calendar"></i> &nbsp;{{ .location }}</span>&nbsp; - &nbsp;<span><i class="fa fa-calendar"></i> &nbsp;{{ .posted_date }}</span></p>
-                    </div>
-                  </div>
-                </div>  <!-- .content-card -->
-              </div>
-
-              {{ end }}
+          <div class="col-md-12">
+            {{ with .title }}
+            <div class="strong">
+                <h2>{{ . | markdownify }}</h2>
             </div>
+            {{ end }}
+            {{ with .subtitle }}
+              <h4>{{ . | markdownify }}</h4>
+            {{ end }}
+
+            <div class="content-container padding-top-md padding-bottom-md">
+              {{ if .enable_bamboo }}
+
+                <div id="BambooHR">
+                  <script src="https://monax.bamboohr.co.uk/js/jobs2.php" type="text/javascript"></script>
+                  <div id="BambooHR-Footer">
+                    Powered by
+                    <a href="http://www.bamboohr.com" target="_blank" rel="noopener external nofollow"><img src="https://resources.bamboohr.com/images/footer-logo.png" alt="BambooHR - HR software"/></a>
+                  </div>
+                </div>
+
+              {{ else }}
+
+                {{ range $i, $p := .job }}
+                  {{ if (modBool $i 2) }} <!-- new row after 2 entries -->
+                    <div class="clearfix visible-lg-block"></div>
+                  {{ end }}
+                  <div class="col-sm-6 padding-bottom-md">
+                    <div class="content-container content-card content-card-stack content-card-shadow-sm hover-scale" style="width: 100%;">
+                      <div class="text-container">
+                        <div class="title range-left">
+                          <h5>{{ .title }}</h5>
+                          <p class="subtitle range-left">
+                            {{ .description }}
+                          </p>
+                        </div>
+                        <div class="meta range-left">
+                          <p><span><i class="fa fa-calendar"></i> &nbsp;{{ .hours }}</span>&nbsp; - &nbsp;<span><i class="fa fa-clock-o"></i> &nbsp;{{ .type }}</span></p>
+                          <p><span><i class="fa fa-calendar"></i> &nbsp;{{ .location }}</span>&nbsp; - &nbsp;<span><i class="fa fa-calendar"></i> &nbsp;{{ .posted_date }}</span></p>
+                        </div>
+                      </div>
+                    </div>  <!-- .content-card -->
+                  </div>
+                {{ end }}
+
+
+              {{ end }}
+            </div>  <!-- .content-container -->
+
+
+            {{ with .contact_info }}
+              <div class="">
+                <h4>{{ . | markdownify }}</h4>
+              </div>
+            {{ end }}
+
           </div> <!-- .col -->
         </div> <!-- .row -->
 

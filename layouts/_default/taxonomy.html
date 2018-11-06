@@ -15,16 +15,18 @@
 
         </header>
 
-        <section class="section-top padding-top-md" style="background: url({{ .Site.Data.global.taxonomies.top.background_element }}) right bottom no-repeat; background-size: 520px;">
+        <section class="section-top padding-top-md">
             <div class="container">
               <div class="row flex-grid-md">
                   <div class="col-md-7 col-valign-center">
-                      <div class="underline-sm range-left-md">
-                          <h1>{{ .Title }}</h1>
-                      </div>
-                      <p class="lead range-left-md">
+                      {{ with .Title }}
+                        <div class="strong range-left-md">
+                            <h1>{{ . | markdownify }}</h1>
+                        </div>
+                      {{ end }}
+                      <h4 class="padding-bottom-lg range-left-md">
                         Here's a list of posts filed under the {{ .Data.Singular }} "{{ .Title }}"
-                      </p>
+                      </h4>
 
                       <!-- Sign up section [GLOBAL] -->
                       {{ if .Site.Data.global.taxonomies.top.hero_signup }}

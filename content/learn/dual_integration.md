@@ -7,6 +7,8 @@ excerpt:    "Putting the Contracts in Smart Contracts"
 categories:
   - learn
 tags:
+explainer_category: contracts
+# Set the explainer_category to 'workflows', 'templates' or 'contracts'
 
 ---
 

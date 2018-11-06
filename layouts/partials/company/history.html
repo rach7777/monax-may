@@ -1,16 +1,20 @@
 {{ with .Site.Data.company.history }}
 {{ if .enable }}
-<section class="section-mission section-padding-lg section-shadow-xl">
+<section class="section-history section-padding-lg background-grey">
     <div class="container">
 
       <div class="row padding-bottom-lg">
         <div class="col-md-12">
-            <div class="underline-sm">
-                <h2>{{ .title }}</h2>
+          {{ with .title }}
+            <div class="strong padding-bottom-md">
+                <h2>{{ . | markdownify }}</h2>
             </div>
+          {{ end }}
+          {{ with .subtitle }}
             <p class="lead text-center">
-              {{ .subtitle | markdownify }}
+              {{ . | markdownify }}
             </p>
+          {{ end }}
         </div>
       </div>
 
