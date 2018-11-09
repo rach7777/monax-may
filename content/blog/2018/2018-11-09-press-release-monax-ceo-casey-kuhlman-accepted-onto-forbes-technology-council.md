@@ -10,7 +10,7 @@ excerpt:   "When people think about legal they think almost entirely of the prov
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: forbes_casey_banner.png
+thumbnail: Casey_forbes_banner.png
 
 # check the categories on the existing blog. should only have ONE
 categories:
