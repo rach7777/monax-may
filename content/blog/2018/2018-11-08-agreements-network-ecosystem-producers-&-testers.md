@@ -1,3 +1,52 @@
+---
+
+# Pretty normal stuff
+date:      2018-10-30T00:00:00Z
+title:     "Press Release: The Agreements Network Collaborators Monax and Wolfram Blockchain Labs Team Up on New Framework"
+author:    Rachel Davidson, Senior Marketing Associate
+
+# excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
+excerpt:   "Monax, a leader in open-source blockchain technology, today announced it is teaming up with one of its Agreements Network collaborators, Wolfram Blockchain Labs to create infrastructure for networked, computable contracts."
+
+# this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
+# as well as at the top of the post itself
+thumbnail: monax-press-release.png
+
+# check the categories on the existing blog. should only have ONE
+categories:
+  - press
+
+# tags should be meaningful for your blog. if you want this article to show on a 'use case' page, you can use
+# the following TAGS -  'fleetleasing' 'contentcreators' 'lawyers' or 'corporate'
+tags:
+  - legal products
+  - agreements network
+  - monax
+  - press
+  - announcments
+
+
+
+# set draft to 'false' when you're ready to publish
+draft: false
+
+# used when using the shortcode utm_link in a blog post to another
+# the campaign generally should match the category above
+utm:
+  source: "website"
+  medium: "blog"
+  campaign: "press"
+
+---
+
+<!-- In general the filename below should match thumbnail category above -->
+{{< image_blog "monax-press-release.png" >}}
+
+<!-- if this article is part of a series, related articles will automatically appear here -->
+{{< blog_series >}}
+
+<!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
+
 # The Agreements Network Ecosystem: Legal Template Producers and Testers.
 
 The Agreements Network is an open, permissioned infrastructure for operation of digital legal products, and it will change the way the global business of law is conducted. Legal products are the software that enable legal solutions at scale, in ever-expanding markets and ever-growing complexity of transactions. In this blog we examine the Agreements Network ecosytem participants who build legal products on the Agreements Network: legal template “Producers” and “Testers.”
