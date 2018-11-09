@@ -81,4 +81,4 @@ The Agreements Network includes natural checks and balances to support quality l
 
 In our upcoming blogs we explore the Agreements Network’s other ecosystem participants: network Validators, Services Providers, and of course, Customers. Stay tuned!
 
-Find out more about the Agreements Network (here)[https://agreements.network/]. Ready to get started? Head to (docs.agreements.network)[https://docs.agreements.network/] for details.
+Find out more about the Agreements Network [here](https://agreements.network/). Ready to get started? Head to [docs.agreements.network](https://docs.agreements.network/) for details.
