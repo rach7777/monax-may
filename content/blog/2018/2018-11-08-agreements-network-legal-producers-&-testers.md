@@ -1,29 +1,29 @@
 ---
 
 # Pretty normal stuff
-date:      2018-10-30T00:00:00Z
-title:     "Press Release: The Agreements Network Collaborators Monax and Wolfram Blockchain Labs Team Up on New Framework"
-author:    Rachel Davidson, Senior Marketing Associate
+date:      2018-11-08T00:00:00Z
+title:     "Agreements Network Ecosystem: Legal Template Producers and Consumers"
+author:    Nina Kilbride, CCO
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
-excerpt:   "Monax, a leader in open-source blockchain technology, today announced it is teaming up with one of its Agreements Network collaborators, Wolfram Blockchain Labs to create infrastructure for networked, computable contracts."
+excerpt:   "The Agreements Network includes natural checks and balances to support quality legal products."
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: monax-press-release.png
+thumbnail: products.jpg
 
 # check the categories on the existing blog. should only have ONE
 categories:
-  - press
+  - legal engineering
+  - agreements network
 
 # tags should be meaningful for your blog. if you want this article to show on a 'use case' page, you can use
 # the following TAGS -  'fleetleasing' 'contentcreators' 'lawyers' or 'corporate'
 tags:
   - legal products
   - agreements network
-  - monax
-  - press
-  - announcments
+  - lawyers
+
 
 
 
@@ -35,12 +35,12 @@ draft: false
 utm:
   source: "website"
   medium: "blog"
-  campaign: "press"
+  campaign: "agreements network"
 
 ---
 
 <!-- In general the filename below should match thumbnail category above -->
-{{< image_blog "monax-press-release.png" >}}
+{{< image_blog "products.jpg" >}}
 
 <!-- if this article is part of a series, related articles will automatically appear here -->
 {{< blog_series >}}
@@ -77,32 +77,8 @@ At the platform level, tokens representing his stake are attached to the templat
 
 ## Ecosystem Symbiosis
 
-The Agreements Network includes natural checks and balances to ensure quality of legal product. The ecosystem symbiosis of legal template design, manufacture, operations, quality assurance and market-making creates and environment where reliable existing legal processes are harnessed to create innovative products, opportunities and value.
+The Agreements Network includes natural checks and balances to support quality legal products. The ecosystem symbiosis of legal template design, manufacture, operations, quality assurance and market-making creates a growth environment. Agreements Network digital legal infrastructure harnesses reliable existing legal processes to create innovative products, opportunities and value.
 
-In our upcoming blogs we explore the Agreements Network’s other ecosystem participants: network Validators, and of course, Customers. Stay tuned!
+In our upcoming blogs we explore the Agreements Network’s other ecosystem participants: network Validators, Services Providers, and of course, Customers. Stay tuned!
 
-If you want to learn more about how Monax can help you focus on your business instead of drowning in legal hassle - sign up to a demo below!
-
-<form id="nav-signup" class="form">
-  <div class="underline-sm padding-bottom-sm">
-    <h3>Request A Demo With The Team</h3>
-  </div>
-  <div class="form-fields">
-    <input type="text" name="source" value="nav signup" class="hidden">
-    <input type="text" placeholder="Email" name="email" class="field-email">
-    <input type="text" placeholder="First Name" name="firstName" class="field-fname">
-    <input type="text" placeholder="Last Name" name="lastName" class="field-lname">
-    <input type="text" placeholder="Company Name" name="company" class="field-company">
-    <button type="submit" value="Submit" class="btn btn-xl field-submit">
-      <span>Request A Demo</span>
-    </button>
-  </div>
-  <div class="success-message-container"> <!-- must be directly after form -->
-    <div class="success-message">
-      <img class="success-doug-img" src="/img/assets/doug/doug_lo.png" alt="Doug">
-      <span class="success-text">Requested <i class="fa fa-check"></i></span>
-    </div>
-    <p class="success-info" style="margin-top: 20px;">Thanks for getting in touch! We'll get back to you soon.</p>
-  </div>
-</form>
-
+Find out more about the Agreements Network (here)[https://agreements.network/]. Ready to get started? Head to (docs.agreements.network)[https://docs.agreements.network/] for details.
