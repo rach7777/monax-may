@@ -33,22 +33,10 @@
         </div> <!-- .col -->
       </div> <!-- .row -->
 
-      <div class="row padding-top-lg team-container" data-selected="">
+      <div class="row padding-top-lg flex-grid-xs team-container" data-selected="">
         {{ range $i, $p := sort .item "weight" }}
 
-          {{ if (modBool $i 6) }}
-            <div class="clearfix visible-lg-block"></div>
-          {{ end }}
-
-          {{ if (modBool $i 3) }}
-            <div class="clearfix visible-md-block visible-sm-block"></div>
-          {{ end }}
-
-          {{ if (modBool $i 2) }}
-            <div class="clearfix visible-xs-block"></div>
-          {{ end }}
-
-        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6 padding-bottom-sm team-entry" data-location="{{ .location }}">
+        <div class="col-flex-lg-2 col-flex-md-4 col-flex-sm-4 col-flex-xs-6 padding-bottom-sm team-entry" data-location="{{ .location }}">
             <img class="img-responsive img-center img-headshot img-team" src="{{ .img }}" alt="">
           <div class="">
               <h5 style="margin-bottom:2px;">{{ .name }}</h5>
