@@ -1367,33 +1367,33 @@ form label.error {
 
 
 /* ==============
-  Flex Grids
+  Flex Containers (flexbox)
 =============== */
 
-.flex-grid,
-.flex-grid-xs {
+.flex-container,
+.flex-container-xs {
   display: flex;
   align-items: stretch;
 }
 @media (min-width: 768px) {
-  .flex-grid-sm {
+  .flex-container-sm {
     display: flex;
     align-items: stretch;
   }
 }
 @media (min-width: 992px) {
-  .flex-grid-md {
+  .flex-container-md {
     display: flex;
     align-items: stretch;
   }
 }
 @media (min-width: 1200px) {
-  .flex-grid-lg {
+  .flex-container-lg {
     display: flex;
     align-items: stretch;
   }
 }
-.flex-grid-reverse {
+.flex-container-reverse {
     flex-direction: row-reverse;
 }
 .col-valign-top {
@@ -1405,8 +1405,8 @@ form label.error {
 .col-valign-bottom {
   align-self: flex-end;
 }
-/* proportion override */
-.col-flex-1 {flex: 1 1 8.33333333% !important;}
+/* proportion override @@@ */
+/* .col-flex-1 {flex: 1 1 8.33333333% !important;}
 .col-flex-2 {flex: 2 2 16.66666667% !important;}
 .col-flex-3 {flex: 3 3 25% !important;}
 .col-flex-4 {flex: 4 4 33.33333333% !important;}
@@ -1417,25 +1417,27 @@ form label.error {
 .col-flex-9 {flex: 9 9 75% !important;}
 .col-flex-10 {flex: 10 10 83.33333333% !important;}
 .col-flex-11 {flex: 11 11 91.66666667% !important;}
-.col-flex-12 {flex: 12 12 100% !important;}
+.col-flex-12 {flex: 12 12 100% !important;} */
 
 
 
 /* ==============
-  Rigid flex grids
+  Flex Grids
 =============== */
 
 /*
 === USAGE ===
 .row > .col-md-12
-.flex-grid > .col-flex-md-3
-.flex-grid > .col-flex-sm-4
-.flex-grid > .col-flex-xs-12
+.flex-container > .col-flex-md-3
+.flex-container > .col-flex-sm-4
+.flex-container > .col-flex-xs-12
 */
 
+/* define flex-grid containers */
+
 /* all */
-.flex-rigid-grid,
-.flex-rigid-grid-xs {
+.flex-grid,
+.flex-grid-xs {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 0;
@@ -1447,7 +1449,7 @@ form label.error {
 }
 /* sm+ */
 @media (min-width: 768px) {
-  .flex-rigid-grid-sm {
+  .flex-grid-sm {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 0;
@@ -1460,7 +1462,7 @@ form label.error {
 }
 /* md+ */
 @media (min-width: 992px) {
-  .flex-rigid-grid-md {
+  .flex-grid-md {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 0;
@@ -1473,7 +1475,7 @@ form label.error {
 }
 /* lg+ */
 @media (min-width: 1200px) {
-  .flex-rigid-grid-lg {
+  .flex-grid-lg {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 0;
@@ -1484,10 +1486,7 @@ form label.error {
     transition: all 0.6s;
   }
 }
-/* div.row[class*="flex-rigid-grid-"] {
-  background: red;
-} */
-div.row[class*="flex-rigid-grid-"]:before {
+div.row[class*="flex-grid-"]:before {
   content: none;
 }
 

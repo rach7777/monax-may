@@ -486,7 +486,7 @@ $(document).ready(function() {
       const successInfo = $(successMessageCont).find('.success-info');
       // $(successInfo).html('custom success text'); // enable to customize success information
       $(form).slideToggle(400, function() {
-        $(form).parent().removeClass('flex-grid');
+        $(form).parent().removeClass('flex-container');
         setTimeout(function(){
           $(successMessageCont).animate({width:'toggle'},600, function() {
             setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
@@ -539,7 +539,7 @@ $(document).ready(function() {
       const successInfo = $(successMessageCont).find('.success-info');
       // $(successInfo).html('custom success text'); // enable to customize success information
       $(form).slideToggle(400, function() {
-        $(form).parent().removeClass('flex-grid');
+        $(form).parent().removeClass('flex-container');
         setTimeout(function(){
           $(successMessageCont).animate({width:'toggle'},600, function() {
             setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
@@ -593,7 +593,7 @@ $(document).ready(function() {
       const successInfo = $(successMessageCont).find('.success-info');
       // $(successInfo).html('custom success text'); // enable to customize success information
       $(form).slideToggle(400, function() {
-        $(form).parent().removeClass('flex-grid');
+        $(form).parent().removeClass('flex-container');
         setTimeout(function(){
           $(successMessageCont).animate({width:'toggle'},600, function() {
             setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);

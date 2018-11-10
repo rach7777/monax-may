@@ -17,7 +17,7 @@
 
         <section class="section-top padding-top-md">
             <div class="container">
-              <div class="row flex-grid-md">
+              <div class="row flex-container-md">
                   <div class="col-md-7 col-valign-center">
                       {{ with .Title }}
                         <div class="strong range-left-md">
@@ -58,10 +58,10 @@
                         {{ .Scratch.Set "postImg" ($.Scratch.Get "defaultImg") }}
                       {{ end }}
 
-                    <a href="{{ .Permalink }}" class="flex-grid-sm a-card">
-                    <div class="content-container content-card content-card-full content-card-shadow-sm flex-grid-sm col-flex-12">
-                      <div class="row flex-grid-sm col-flex-12">
-                        <div class="col-sm-4 hidden-xs flex-grid-sm col-flex-4">
+                    <a href="{{ .Permalink }}" class="flex-container-sm a-card">
+                    <div class="content-container content-card content-card-full content-card-shadow-sm flex-container-sm col-flex-12">
+                      <div class="row flex-container-sm col-flex-12">
+                        <div class="col-sm-4 hidden-xs flex-container-sm col-flex-4">
                           <div class="img-container background-dark col-flex-12" style='background:url({{ .Scratch.Get "postImg" }}) center center no-repeat; background-size: cover;'>
                           </div>
                         </div>

@@ -2,16 +2,16 @@
 {{ if .enable }}
 <section class="section-testimonials">
   <div class="container">
-    <div class="row flex-grid-xs">
-      <div class="col-sm-3 col-flex-3 flex-grid-xs hidden-xs">
+    <div class="row flex-container-xs">
+      <div class="col-sm-3 col-flex-3 flex-container-xs hidden-xs">
         {{ if .img_cutout }}
-        <div class="row flex-grid-xs" style="width: 100%">
+        <div class="row flex-container-xs" style="width: 100%">
           <div class="col-flex-12 col-valign-bottom range-right">
             <img class="img-responsive img-right padding-top-sm" src="{{ .img_cutout }}" alt="" style="max-height: 240px;">
           </div>
         </div>
         {{ else if .img_circle }}
-        <div class="row flex-grid-xs" style="width: 100%">
+        <div class="row flex-container-xs" style="width: 100%">
           <div class="col-flex-12 col-valign-center range-right">
             <img class="img-responsive img-right img-headshot" src="{{ .img_circle }}" alt="" style="max-height:190px;">
           </div>
@@ -25,7 +25,7 @@
             <h5 style="margin-bottom:2px;">{{ .name }}</h5>
             <p>{{ .position }}</p>
           </div>
-          <div class="flex-grid-sm btn-container">
+          <div class="flex-container-sm btn-container">
             <ul class="ul-round-icons ul-team-icons">
               {{ with .twitter}}
                 <a href="{{ . }}"><li><i class='fa fa-twitter'></i></li></a>

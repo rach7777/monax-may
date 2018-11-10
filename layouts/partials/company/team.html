@@ -18,7 +18,7 @@
           <div class="content-container padding-top-md">
             <div class="row">
               <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-                <div class="row flex-grid-sm locations-container">
+                <div class="row flex-container-sm locations-container">
                   {{ range $i, $p := .office }}
                     <div class="col-sm-4 col-xs-4 col-valign-center">
                       <img class="img-responsive img-center img-city hover-dip-opacity js-select-city" src="{{ .img }}" alt="" data-select="{{ .select }}">
@@ -54,7 +54,7 @@
               <h5 style="margin-bottom:2px;">{{ .name }}</h5>
               <p>{{ .position }}</p>
           </div>
-          <div class="ul-center flex-grid-xs">
+          <div class="ul-center flex-container-xs">
             <ul class="ul-round-icons ul-team-icons">
               {{ with .twitter}}
                 <a href="{{ . }}" target="_blank"><li><i class='fa fa-twitter'></i></li></a>
