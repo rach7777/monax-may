@@ -59,13 +59,13 @@
                       {{ end }}
 
                     <a href="{{ .Permalink }}" class="flex-container-sm a-card">
-                    <div class="content-container content-card content-card-full content-card-shadow-sm flex-container-sm col-flex-12">
-                      <div class="row flex-container-sm col-flex-12">
-                        <div class="col-sm-4 hidden-xs flex-container-sm col-flex-4">
-                          <div class="img-container background-dark col-flex-12" style='background:url({{ .Scratch.Get "postImg" }}) center center no-repeat; background-size: cover;'>
+                    <div class="content-container content-card content-card-full content-card-shadow-sm flex-force-fill">
+                      <div class="row flex-container-sm">
+                        <div class="col-sm-4 hidden-xs flex-force-fill">
+                          <div class="img-container background-dark flex-force-fill" style='background:url({{ .Scratch.Get "postImg" }}) center center no-repeat; background-size: cover;'>
                           </div>
                         </div>
-                        <div class="col-xs-12 col-sm-8 col-flex-8 col-valign-center padding-top-sm padding-bottom-sm">
+                        <div class="col-xs-12 col-sm-8  col-valign-center padding-top-sm padding-bottom-sm">
                           <div class="text-container">
                             <div class="title range-left">
                                 <h5>{{ .Title }}&nbsp;&rsaquo;</h5>

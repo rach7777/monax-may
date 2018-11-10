@@ -1,4 +1,4 @@
--md/* ============================
+/* ============================
             GENERAL ~
 ============================= */
 
@@ -1271,6 +1271,9 @@ form label.error {
   }
   .btn-container > a {
       display: block;
+  }
+  .btn-container.pagination-container > a {
+      display: inline-block;
   }
   .btn-container > .btn-xl {
     padding: 12px 16px;
@@ -3539,7 +3542,7 @@ TEAM ICONS
   }
 }
 .content-card-full .img-container {
-  margin: -2px;
+  margin: 0;
 }
 .content-card-related .img-container {
   margin-left: -30px;
@@ -3569,6 +3572,9 @@ TEAM ICONS
 .content-card-shadow-sm {
     box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
 }
+.content-card-shadow-xs {
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+}
 /* .content-card links */
 .a-card {
   color: inherit !important;
@@ -3594,6 +3600,10 @@ TEAM ICONS
 .a-card:hover .content-card-shadow-sm,
 .a-card:focus .content-card-shadow-sm {
     box-shadow: 0px 5px 50px rgba(0,0,0,0.3);
+}
+.a-card:hover .content-card-shadow-xs,
+.a-card:focus .content-card-shadow-xs {
+    box-shadow: 0px 5px 30px rgba(0,0,0,0.2);
 }
 /* .card-grey */
 .card-grey {
