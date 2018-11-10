@@ -1,7 +1,7 @@
 ---
 
 # Pretty normal stuff
-date:      2018-11-08T00:00:00Z
+date:      2018-11-09T00:00:00Z
 title:     "Press Release - Monax CEO Casey Kuhlman Accepted onto Forbes Technology Council"
 author:    "Rachel Davidson, Senior Marketing Associate"
 
@@ -10,7 +10,7 @@ excerpt:   "When people think about legal they think almost entirely of the prov
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: monax-press-release.png
+thumbnail: Casey_forbes_banner.png
 
 # check the categories on the existing blog. should only have ONE
 categories:
