@@ -1341,7 +1341,7 @@ form label.error {
   -o-transition: all 0.4s cubic-bezier(0.675, 0.170, 0.245, 0.795);
   transition: all 0.4s cubic-bezier(0.675, 0.170, 0.245, 0.795);
   max-height: 1000px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .js-select-explainers {
   cursor: pointer;
@@ -1484,7 +1484,12 @@ form label.error {
     transition: all 0.6s;
   }
 }
-
+/* div.row[class*="flex-rigid-grid-"] {
+  background: red;
+} */
+div.row[class*="flex-rigid-grid-"]:before {
+  content: none;
+}
 
 /* define flex-grid cols */
 .col-flex-lg-1, .col-flex-lg-10, .col-flex-lg-11, .col-flex-lg-12,
@@ -1619,9 +1624,6 @@ form label.error {
   .col-flex-lg-offset-2 { grid-column-start: span 2; }
   .col-flex-lg-offset-1 { grid-column-start: span 1; }
 }
-
-
-
 
 /* force-fill */
 .flex-force-fill {

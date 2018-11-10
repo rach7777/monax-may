@@ -17,113 +17,9 @@
           </div>
         </div>
 
-        <div class="flex-rigid-grid">
-          <div class="col-flex-md-4 col-flex-sm-6">
-            <div class="padding-bottom-md article-entry flex-force-fill" data-category="templates">
-              <a href="http://localhost:1313/learn/blockchains/" class="flex-force-fill a-card">
-              <div class="content-container content-card content-card-stack content-card-shadow-sm article-card">
-                <div class="img-container background-dark" style="background:url(/img/assets/backgrounds/mountains-1.jpg) center center no-repeat; background-size: cover;"></div>
-                <div class="text-container">
-                  <div class="title range-left">
-                    <h6 class="article-category">learn</h6>
-                    <h5 class="article-title">Blockchains&nbsp;›</h5>
-                  </div>
-                  <p class="subtitle range-left">What is a Blockchain and why are these automated data management systems so cool?</p>
-                </div>
-              </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-flex-md-4 col-flex-sm-6">
-            <div class="padding-bottom-md article-entry flex-force-fill" data-category="templates">
-              <a href="http://localhost:1313/learn/blockchains/" class="flex-force-fill a-card">
-              <div class="content-container content-card content-card-stack content-card-shadow-sm article-card">
-                <div class="img-container background-dark" style="background:url(/img/assets/backgrounds/mountains-1.jpg) center center no-repeat; background-size: cover;"></div>
-                <div class="text-container">
-                  <div class="title range-left">
-                    <h6 class="article-category">learn</h6>
-                    <h5 class="article-title">Blockchains&nbsp;›</h5>
-                  </div>
-                  <p class="subtitle range-left">What is a Blockchain and why are these automated data management systems so cool? What is a Blockchain and why are these automated data management systems so cool?</p>
-                </div>
-              </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-flex-md-4 col-flex-sm-6">
-            <div class="padding-bottom-md article-entry flex-force-fill" data-category="templates">
-              <a href="http://localhost:1313/learn/blockchains/" class="flex-force-fill a-card">
-              <div class="content-container content-card content-card-stack content-card-shadow-sm article-card">
-                <div class="img-container background-dark" style="background:url(/img/assets/backgrounds/mountains-1.jpg) center center no-repeat; background-size: cover;"></div>
-                <div class="text-container">
-                  <div class="title range-left">
-                    <h6 class="article-category">learn</h6>
-                    <h5 class="article-title">Blockchains&nbsp;›</h5>
-                  </div>
-                  <p class="subtitle range-left">What is a Blockchain and why are these automated data management systems so cool?</p>
-                </div>
-              </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-flex-md-4 col-flex-sm-6">
-            <div class="padding-bottom-md article-entry flex-force-fill" data-category="templates">
-              <a href="http://localhost:1313/learn/blockchains/" class="flex-force-fill a-card">
-              <div class="content-container content-card content-card-stack content-card-shadow-sm article-card">
-                <div class="img-container background-dark" style="background:url(/img/assets/backgrounds/mountains-1.jpg) center center no-repeat; background-size: cover;"></div>
-                <div class="text-container">
-                  <div class="title range-left">
-                    <h6 class="article-category">learn</h6>
-                    <h5 class="article-title">Blockchains&nbsp;›</h5>
-                  </div>
-                  <p class="subtitle range-left">What is a Blockchain and why are these automated data management systems so cool?</p>
-                </div>
-              </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-flex-md-4 col-flex-sm-6">
-            <div class="padding-bottom-md article-entry flex-force-fill" data-category="templates">
-              <a href="http://localhost:1313/learn/blockchains/" class="flex-force-fill a-card">
-              <div class="content-container content-card content-card-stack content-card-shadow-sm article-card">
-                <div class="img-container background-dark" style="background:url(/img/assets/backgrounds/mountains-1.jpg) center center no-repeat; background-size: cover;"></div>
-                <div class="text-container">
-                  <div class="title range-left">
-                    <h6 class="article-category">learn</h6>
-                    <h5 class="article-title">Blockchains&nbsp;›</h5>
-                  </div>
-                  <p class="subtitle range-left">What is a Blockchain and why are these automated data management systems so cool? What is a Blockchain and why are these automated data management systems so cool?</p>
-                </div>
-              </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-flex-md-4 col-flex-sm-6">
-            <div class="padding-bottom-md article-entry flex-force-fill" data-category="templates">
-              <a href="http://localhost:1313/learn/blockchains/" class="flex-force-fill a-card">
-              <div class="content-container content-card content-card-stack content-card-shadow-sm article-card">
-                <div class="img-container background-dark" style="background:url(/img/assets/backgrounds/mountains-1.jpg) center center no-repeat; background-size: cover;"></div>
-                <div class="text-container">
-                  <div class="title range-left">
-                    <h6 class="article-category">learn</h6>
-                    <h5 class="article-title">Blockchains&nbsp;›</h5>
-                  </div>
-                  <p class="subtitle range-left">What is a Blockchain and why are these automated data management systems so cool?</p>
-                </div>
-              </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="row content-container flex-grid-sm article-container">
+        <div class="row content-container flex-rigid-grid-sm article-container">
           {{ if gt (len $.Paginator.Pages) 0 }}
             {{ range $i, $p := $.Paginator.Pages }}
-
-              {{ if (modBool $i 3) }} <!-- paginate after 3 entries -->
-          </div>
-          <div class="row content-container flex-grid-sm article-container">
-              {{ end }}
 
               <!-- check for img override -->
               {{ if .Params.img }}
@@ -134,8 +30,8 @@
                 {{ .Scratch.Set "postImg" ($.Scratch.Get "defaultImg") }}
               {{ end }}
 
-              <div class="col-sm-4 flex-grid-sm padding-bottom-md article-entry" data-category="{{ .Params.explainer_category }}">
-                <a href="{{ .Permalink }}" class="flex-grid-sm a-card">
+              <div class="col-flex-md-4 col-flex-sm-6 padding-bottom-md article-entry" data-category="{{ .Params.explainer_category }}">
+                <a href="{{ .Permalink }}" class="a-card flex-force-fill">
                 <div class="content-container content-card content-card-stack content-card-shadow-sm article-card">
                   <div class="img-container background-dark" style='background:url({{ .Scratch.Get "postImg" }}) center center no-repeat; background-size: cover;'>
                     <!-- <div class="content-container content-circle background-color green pin-top-right">
@@ -184,7 +80,7 @@
 
           <!-- if no posts -->
           {{ else }}
-            <div class="col-sm-12">
+            <div class="col-flex-sm-12">
               <div class="padding-top-md padding-bottom-xl">
                 <h2 class="coming-soon">{{ $.Site.Data.learn.top.title }} are coming soon!</h2>
               </div>
