@@ -4032,10 +4032,18 @@ TEAM ICONS
   Specific section fixes
 =============== */
 
-/* Hide Cookie Consent when opted in */
+/* Cookie consent */
 .cc-revoke {
     display: none !important;
 }
+@media only screen and (min-width : 737px) {
+  .cc-window.cc-banner {
+    margin: 0px 10%;
+    width: 80%;
+    border-radius: 5px 5px 0 0;
+  }
+}
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
   .section-top {
