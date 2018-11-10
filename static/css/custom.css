@@ -1339,33 +1339,13 @@ form label.error {
 /* ==============
   Tabs - Explainer categories
 =============== */
-.article-container .article-entry {
-  -webkit-transition: all 0.4s cubic-bezier(0.675, 0.170, 0.245, 0.795);
-  -o-transition: all 0.4s cubic-bezier(0.675, 0.170, 0.245, 0.795);
-  transition: all 0.4s cubic-bezier(0.675, 0.170, 0.245, 0.795);
-  max-height: 1000px;
-  /* overflow: hidden; */
+@media only screen and (min-width : 768px) {
+  .article-container .article-entry .article-card {
+    min-height: 480px !important;
+  }
 }
 .js-select-explainers {
   cursor: pointer;
-}
-/* Hide on Mobile only  */
-@media only screen and (max-width : 767px) {
-  .article-container[data-selected='workflows'] .article-entry:not([data-category='workflows']),
-  .article-container[data-selected='templates'] .article-entry:not([data-category='templates']),
-  .article-container[data-selected='contracts'] .article-entry:not([data-category='contracts']) {
-    max-height: 0;
-    opacity: 0;
-    padding: 0;
-  }
-}
-/* Small Devices, Tablets and up */
-@media only screen and (min-width : 768px) {
-  .article-container[data-selected='workflows'] .article-entry:not([data-category='workflows']),
-  .article-container[data-selected='templates'] .article-entry:not([data-category='templates']),
-  .article-container[data-selected='contracts'] .article-entry:not([data-category='contracts']) {
-    opacity: 0.3;
-  }
 }
 
 
@@ -1408,19 +1388,6 @@ form label.error {
 .col-valign-bottom {
   align-self: flex-end;
 }
-/* proportion override @@@ */
-/* .col-flex-1 {flex: 1 1 8.33333333% !important;}
-.col-flex-2 {flex: 2 2 16.66666667% !important;}
-.col-flex-3 {flex: 3 3 25% !important;}
-.col-flex-4 {flex: 4 4 33.33333333% !important;}
-.col-flex-5 {flex: 5 5 41.66666667% !important;}
-.col-flex-6 {flex: 6 6 50% !important;}
-.col-flex-7 {flex: 7 7 58.33333333% !important;}
-.col-flex-8 {flex: 8 8 66.66666667% !important;}
-.col-flex-9 {flex: 9 9 75% !important;}
-.col-flex-10 {flex: 10 10 83.33333333% !important;}
-.col-flex-11 {flex: 11 11 91.66666667% !important;}
-.col-flex-12 {flex: 12 12 100% !important;} */
 
 
 
