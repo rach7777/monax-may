@@ -2,41 +2,31 @@
 {{ if .enable }}
 <section class="section-testimonials">
   <div class="container">
-    <div class="row flex-container-xs">
-      <div class="col-sm-3  flex-container-xs hidden-xs">
-        {{ if .img_cutout }}
-        <div class="row flex-container-xs" style="width: 100%">
-          <div class=" col-valign-bottom range-right">
-            <img class="img-responsive img-right padding-top-sm" src="{{ .img_cutout }}" alt="" style="max-height: 240px;">
+    <div class="row">
+      {{ with .card_link }}
+      <div class="col-md-12 padding-bottom-md">
+          <div class="content-container content-card content-card-full content-card-shadow-sm flex-container-sm card-grey testimonial-card">
+            <div class="row flex-container" style="width:100%;">
+              <div class="col-sm-4 hidden-xs"  style="background: url({{ .img }}) center center no-repeat; background-size: cover;">
+                <img class="img-responsive hidden-sm hidden-xs" src="{{ .img }}" alt="">
+              </div>
+              <div class="col-sm-8 col-xs-12 col-valign-center">
+                <div class="text-container range-left">
+                  {{ with .title }}
+                  <h6>{{ . | markdownify }}</h6>
+                  {{ end }}
+                  {{ with .blurb }}
+                  <h3>{{ . | markdownify }}</h3>
+                  {{ end }}
+                  {{ if and .link_title .link_url }}
+                  <a href="{{ .link_url }}"><h4 class="green">{{ .link_title | markdownify }} <i class="fa {{.icon}}"></i></h4></a>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        {{ else if .img_circle }}
-        <div class="row flex-container-xs" style="width: 100%">
-          <div class=" col-valign-center range-right">
-            <img class="img-responsive img-right img-headshot" src="{{ .img_circle }}" alt="" style="max-height:190px;">
-          </div>
-        </div>
-        {{ end }}
       </div>
-      <div class="col-sm-9  col-valign-center">
-        <div class="content-container testimonial-container">
-          <div class="range-left-sm">
-            <h4 class="testimonial-quote padding-bottom-sm">&quot;{{ .quote }}&quot; {{ if .read_more_link }}<span style="font-size: 20px;"><a href="{{ .read_more_link }}">(read more)</a></span>{{ end }}</h4>
-            <h5 style="margin-bottom:2px;">{{ .name }}</h5>
-            <p>{{ .position }}</p>
-          </div>
-          <div class="flex-container-sm btn-container">
-            <ul class="ul-round-icons ul-team-icons">
-              {{ with .twitter}}
-                <a href="{{ . }}"><li><i class='fa fa-twitter'></i></li></a>
-              {{ end }}
-              {{ with .linkedin}}
-                <a href="{{ . }}"><li><i class='fa fa-linkedin'></i></li></a>
-              {{ end }}
-            </ul>
-          </div>
-        </div>
-      </div>
+      {{ end }}
     </div> <!-- .row -->
   </div>
 </section> <!-- .section -->

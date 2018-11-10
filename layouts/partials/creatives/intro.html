@@ -1,0 +1,20 @@
+{{ with .Site.Data.creatives.intro }}
+{{ if .enable }}
+<section class="section-top padding-top-md padding-bottom-md">
+    <div class="container">
+
+      <div class="row flex-container-md">
+          <div class="col-md-12 col-valign-center">
+              <div class="strong">
+                  <h2>{{ .title | markdownify }}</h2>
+              </div>
+              {{ with .subtitle }}
+                <h3>{{ . | markdownify }}</h3>
+              {{ end }}
+          </div>
+      </div>
+
+    </div> <!-- .container -->
+</section> <!-- .section -->
+{{ end }}
+{{ end }}
