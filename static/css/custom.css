@@ -4038,9 +4038,9 @@ TEAM ICONS
 }
 @media only screen and (min-width : 737px) {
   .cc-window.cc-banner {
-    margin: 0px 10%;
-    width: 80%;
-    border-radius: 5px 5px 0 0;
+    margin: 0px 10% !important;
+    width: 80% !important;
+    border-radius: 5px 5px 0 0 !important;
   }
 }
 
