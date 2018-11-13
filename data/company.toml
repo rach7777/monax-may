@@ -95,7 +95,17 @@
       keybase = "https://keybase.io/gregdhill"
       github = "https://github.com/gregdhill"
       website = "https://www.greghill.io/"
-
+[[team.item]]
+     name = "ALice Ide"
+      position = "Executive Assistant and Marketing Associate at Monax"
+      weight = 99
+      location = "remote"
+      img = "/img/team/team-ai.jpg"
+      #twitter = "https://twitter.com/"
+      linkedin = "https://www.linkedin.com/in/alice-ide-91575a21/"
+      #keybase = "https://keybase.io/"
+      #github = "https://github.com/"
+      #website = "https://"
  [[team.item]]
      name = "Anjlee Khurana"
      position = "Legal Engineer"
