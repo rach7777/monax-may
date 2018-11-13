@@ -96,7 +96,7 @@
       github = "https://github.com/gregdhill"
       website = "https://www.greghill.io/"
 [[team.item]]
-     name = "ALice Ide"
+     name = "Alice Ide"
       position = "Executive Assistant and Marketing Associate at Monax"
       weight = 99
       location = "remote"
