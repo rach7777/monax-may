@@ -71,7 +71,7 @@ The network calculates the amount of Beth’s bonded tokens that should be retur
 
 Martin is an experienced, licensed English commercial lawyer growing his practice with technology. Martin participates in the Agreements Network and purchases tokens for use on the network. Martin is able to browse uploaded and public legal products on the Monax platform.
 
-He selects Beth’s lease template for testing. He examines the legal prose template, the parameters, and the business process model diagram. He also tests instantiating an Active Agreement created with the template. He agrees that the lease template is sufficient under English law, stakes a bond in tokens, thereby signalling to the network his approval.
+He selects Beth’s lease template for testing. He examines the legal prose template, the parameters, and the business process model diagram. He also tests instantiating an Active Agreement created with the template. He agrees that the lease template is sufficient under English law, stakes a bond in tokens, thereby signaling to the network his approval.
 
 At the platform level, tokens representing his stake are attached to the template, and the template is offered for sale. At the end of the quarter, Beth has sold 10 templates and Martin’s token balance reflects an increase in tokens in a pro-rata proportion to Beth. The bonded token remains bonded as long as Martin would like to signal to the network that Beth’s template is fit for purpose.
 
