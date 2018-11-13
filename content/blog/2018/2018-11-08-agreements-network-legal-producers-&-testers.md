@@ -6,7 +6,7 @@ title:     "Agreements Network Ecosystem: Legal Template Producers and Consumers
 author:    Nina Kilbride, CCO
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
-excerpt:   "The Agreements Network includes natural checks and balances to support quality legal products."
+excerpt:   "The Agreements Network includes natural checks and balances to support quality legal products and harnesses existing legal processes to create opportunity and value."
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
