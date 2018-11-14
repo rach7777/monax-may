@@ -1,7 +1,7 @@
 [top]
     enable = true
     title = "We believe in a world where law empowers"
-    subtitle = "At Monax we are on a mission to empower people through a new way of executing law. Active legal products merge the current practice of law with the power of distributed computing to create collaborative ecosystems in which new businesses with innovative business models can grow."
+    subtitle = "Monax is on a mission to empower people with a new way to execute law. Active legal products merge the current practice of law with the power of distributed computing. This creates collaborative ecosystems where new businesses with innovative models can grow."
     hero_signup = false
 
 [history]
@@ -11,42 +11,42 @@
 
     [[history.time]]
       date = "June 2014"
-      label = "Eris Industries Founded"
+      label = "Eris Industries founded"
       logo_icon = "/img/logos/Eris_icon_white.png"
       # logo_full = "/img/logos/Eris.png"
       description_text = "Born out of Ethereum skype rooms, Eris Industries set out to replace the Bitcoin Foundation as part of a US$100,000 contest - creating the world's first decentralised organisation upgrade functionality."
 
     [[history.time]]
       date = "Dec 2014"
-      label = "Burrow Launched"
+      label = "Burrow launched"
       logo_icon = "/img/logos/Burrow_icon_white.png"
       # logo_full = "/img/logos/Hyperledger_Burrow.png"
       description_text = "Burrow is launched as the world's first permissioned Ethereum smart-contract blockchain node."
 
     [[history.time]]
       date = "2015"
-      label = "Eris Platform Launched"
+      label = "Eris Platform launched"
       logo_icon = "/img/logos/Eris_icon_white.png"
       # logo_full = "/img/logos/Eris.png"
       description_text = "Eris 0.10 is the world's first open source smart contract suite allowing  users to build, test, deploy and operate their own secure, low-cost, run-anywhere data infrastructure using blockchain and smart contract technology."
 
     [[history.time]]
       date = "2016"
-      label = "Rebrand To Monax"
+      label = "Rebrand to Monax"
       logo_icon = "/img/logos/monax_icon_white.png"
       # logo_full = "/img/logo-small.png"
       description_text = "In the spirit of democratisation and decentralisation Eris rebrands to Monax, pivoting its business focus from enterprise grade solutions to the small business community and setting out to disrupt contracting."
 
     [[history.time]]
       date = "Feb 2017"
-      label = "Monax Joins Hyperledger"
+      label = "Monax joins Hyperledger"
       logo_icon = "/img/logos/Hyperledger_icon_white.png"
       # logo_full = "/img/logos/Hyperledger.png"
       description_text = "Monax submits its smart contract machine to Hyperledger with the intention to participate in the furtherance of cross-industry blockchain technologies."
 
     [[history.time]]
       date = "March 2017"
-      label = "Monax Joins The EEA"
+      label = "Monax joins the EEA"
       logo_icon = "/img/logos/eea_icon_white.png"
       # logo_full = "/img/logos/eea.png"
       description_text = "Monax joins the Enterprise Ethereum Alliance connecting Fortune 500 enterprises, startups, academics and technology vendors with the objective of developing enterprise-grade software capable of handling the most complex, highly demanding applications at the speed of business."
@@ -95,7 +95,17 @@
       keybase = "https://keybase.io/gregdhill"
       github = "https://github.com/gregdhill"
       website = "https://www.greghill.io/"
-
+[[team.item]]
+     name = "Alice Ide"
+      position = "Executive Assistant and Marketing Associate at Monax"
+      weight = 99
+      location = "remote"
+      img = "/img/team/team-ai.jpg"
+      #twitter = "https://twitter.com/"
+      linkedin = "https://www.linkedin.com/in/alice-ide-91575a21/"
+      #keybase = "https://keybase.io/"
+      #github = "https://github.com/"
+      #website = "https://"
  [[team.item]]
      name = "Anjlee Khurana"
      position = "Legal Engineer"
