@@ -98,7 +98,7 @@
 [[team.item]]
      name = "Alice Ide"
       position = "Executive Assistant and Marketing Associate at Monax"
-      weight = 99
+      weight = 100
       location = "remote"
       img = "/img/team/team-ai.jpg"
       #twitter = "https://twitter.com/"
@@ -121,7 +121,7 @@
     [[team.item]]
       name = "Adam Locklin"
       position = "Director of Partnerships"
-      weight = 100
+      weight = 99
       location = "nyc" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-al2.jpg"
       twitter = "https://twitter.com/AdamLocklin"
