@@ -1,7 +1,7 @@
 ---
 
 # Pretty normal stuff
-date:      2018-11-08T00:00:00Z
+date:      2018-11-15T00:00:00Z
 title:     "Agreements Network Ecosystem: Legal Template Producers and Consumers"
 author:    Nina Kilbride, CCO
 
