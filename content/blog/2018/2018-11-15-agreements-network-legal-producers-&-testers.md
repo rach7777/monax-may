@@ -47,7 +47,7 @@ utm:
 
 <!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
 
-# The Agreements Network Ecosystem: Legal Template Producers and Testers.
+# The Agreements Network Ecosystem: Legal Template Producers and Testers
 
 The Agreements Network is an open, permissioned infrastructure for operation of digital legal products, and it will change the way the global business of law is conducted. Legal products are the software that enable legal solutions at scale, in ever-expanding markets and ever-growing complexity of transactions. In this blog we examine the Agreements Network ecosytem participants who build legal products on the Agreements Network: legal template “Producers” and “Testers.”
 
@@ -81,4 +81,6 @@ The Agreements Network includes natural checks and balances to support quality l
 
 In our upcoming blogs we explore the Agreements Network’s other ecosystem participants: network Validators, Services Providers, and of course, Customers. Stay tuned!
 
-Find out more about the Agreements Network [here](https://agreements.network/). Ready to get started? Head to [docs.agreements.network](https://docs.agreements.network/) for details.
+Find out more about the Agreements Network [here](https://agreements.network/). 
+
+Ready to get started? Head to [docs.agreements.network](https://docs.agreements.network/) for details.
