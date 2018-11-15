@@ -34,28 +34,28 @@
       text = "Integrate payment process automation right from the outset of your contractual relationship."
       img_src = "/img/assets/creatives/creatives-icon-1.png"
       
-      ]
+      
 
     [[bullets.section]]
       title = "Organise Licencing"
       text = "Communicate your licensing clearly and enable your clients to easily review their licensing options."
       img_src = "/img/assets/creatives/creatives-icon-2.png"
       
-     ]
+     
 
     [[bullets.section]]
       title = "Collective delivery"
       text = "Structure the delivery of your creative work and minimise out-of-scope requests."
       img_src = "/img/assets/creatives/creatives-icon-3.png"
       
-      ]
+      
 
     [[bullets.section]]
       title = "Gain clairty"
       text = "Guide your business relationships with mutual clarity and remain focussed on the project at hand."
       img_src = "/img/assets/creatives/creatives-icon-4.png"
       
-      ]
+      
 
 
 [secondary_cta]
