@@ -11,7 +11,7 @@
 [intro]
     enable = true
     title = "Empowering every step of the process"
-    subtitle = "The Monax platform supports entrepreneurs following their dreams while taking care of business."
+    subtitle = "The Monax platform allows creatives to follow their dreams whilst taking care of essential business."
 
 
 # [testimonials]
@@ -31,8 +31,8 @@
     enable_request_demo = true
 
     [[bullets.section]]
-      title = "Form a Company"
-      text = "Company Active Agreements manage internal legal matters from organization, shareholders, boards and beyond. Use Active Agreements to automate, execute and simplify basic company functions."
+      title = "Ensure you get paid"
+      text = "Integrate payment process automation right from the outset of your contractual relationship."
       img_src = "/img/assets/creatives/creatives-icon-1.png"
       bullets_list = [
         "Incorporations",
@@ -41,8 +41,8 @@
       ]
 
     [[bullets.section]]
-      title = "Streamline Operations"
-      text = "Active Agreements for daily operations enable companies and individuals to execute and fulfill their commercial obligations more easily, so you can focus on building value for your brand."
+      title = "Organise Licencing"
+      text = "Communicate your licensing clearly and enable your clients to easily review their licensing options."
       img_src = "/img/assets/creatives/creatives-icon-2.png"
       bullets_list = [
         "Sales",
@@ -51,8 +51,8 @@
       ]
 
     [[bullets.section]]
-      title = "Simplify Funding"
-      text = "At some point, most growing companies need liquidity. Active Agreements make due diligence fast and easy, while the Monax Platform makes it easier to find the right funding partners for your company."
+      title = "Collective delivery"
+      text = "Structure the delivery of your creative work and minimise out-of-scope requests."
       img_src = "/img/assets/creatives/creatives-icon-3.png"
       bullets_list = [
         "Loans",
@@ -61,8 +61,8 @@
       ]
 
     [[bullets.section]]
-      title = "Take the Leap"
-      text = "Entrepreneurs and creatives dreaming of big returns need access to flexible tools that will grow with them. The Monax platform contains a complete toolkit to take your company's growth to the next level, at the cutting edge of technology."
+      title = "Gain clairty"
+      text = "Guide your business relationships with mutual clarity and remain focused on the project at hand."
       img_src = "/img/assets/creatives/creatives-icon-4.png"
       bullets_list = [
         "Analytics",
