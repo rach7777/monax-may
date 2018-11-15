@@ -1,7 +1,6 @@
 [top]
     enable = true
-    title = "Build and run your company without the legal hassle"
-    # subtitle = "How Monax can simplify and speed up your corporate governance and give you full control over your agreements"
+    title = "Spend more time on your projects and less on the business side"
     request_demo = true
     # enable youtube_id or img_right
     youtube_id = "sdX0jFFZKuo" # after ?v= on YouTube urls, e.g. "sdX0jFFZKuo"
@@ -10,7 +9,7 @@
 
 [intro]
     enable = true
-    title = "Empowering every step of the process"
+    title = "Freeing up time for creative processes"
     subtitle = "The Monax platform allows creatives to follow their dreams whilst taking care of essential business."
 
 
