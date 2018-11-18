@@ -5,17 +5,12 @@
     {{ $.Scratch.Set "defaultImg" .default_img }}
   {{ end }}
 
-  <section class="section-articles padding-top-md padding-bottom-xl background-grey">
+  <section class="section-articles padding-top-sm padding-bottom-xl">
       <div class="container">
 
         <div class="row content-container flex-grid-sm">
           {{ if gt (len $.Paginator.Pages) 0 }}
             {{ range $i, $p := $.Paginator.Pages }}
-
-              {{ if (modBool $i 3) }} <!-- paginate after 3 entries -->
-          </div>
-          <div class="row content-container flex-grid-sm">
-              {{ end }}
 
               <!-- check for img override -->
               {{ if .Params.img }}
@@ -26,9 +21,9 @@
                 {{ .Scratch.Set "postImg" ($.Scratch.Get "defaultImg") }}
               {{ end }}
 
-              <div class="col-sm-4 flex-grid-sm padding-bottom-md">
-                <a href="{{ .Permalink }}" class="flex-grid-sm a-card">
-                <div class="content-container content-card content-card-stack content-card-shadow-sm article-card">
+              <div class="col-flex-md-4 col-flex-sm-6 padding-bottom-md">
+                <a href="{{ .Permalink }}" class="a-card flex-force-fill">
+                <div class="content-container content-card content-card-stack content-card-shadow-xs article-card">
                   <div class="img-container background-dark" style='background:url({{ .Scratch.Get "postImg" }}) center center no-repeat; background-size: cover;'>
                     <!-- <div class="content-container content-circle background-color green pin-top-right">
                       <div class="circle-top">
@@ -76,7 +71,7 @@
 
           <!-- if no posts -->
           {{ else }}
-            <div class="col-sm-12">
+            <div class="col-flex-sm-12">
               <div class="padding-top-md padding-bottom-xl">
                 <h2 class="coming-soon">{{ $.Site.Data.casestudies.top.title }} are coming soon!</h2>
               </div>

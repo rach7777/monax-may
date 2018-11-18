@@ -367,23 +367,24 @@ $(document).ready(function() {
   });
 
 
-    // EXPLAINERS TAB SELECT
-    $(function(){
-      var explainerCategoryTabs = $('.js-select-explainers');
-      var categoryContainer = $('.category-container');
-      var articleContainer = $('.article-container');
-    	$(explainerCategoryTabs).click(function(e){
-    		var selectCategoryRef = $(this).data("select");
-        // console.log(selectCategoryRef);
-        if ( $(this).hasClass('active') ) {
-          $(articleContainer).attr('data-selected', selectCategoryRef);
-        } else {
-          $(articleContainer).attr('data-selected', "");
-        }
-        // prevent redirect
-        return false;
-    	});
+  // EXPLAINERS TAB SELECT
+  $(function(){
+    var explainerCategoryTabs = $('.js-select-explainers');
+    // filterizr object
+    var articleContainer = $('.article-container').filterizr({
+      layout: 'sameSize'
     });
+  	$(explainerCategoryTabs).click(function(e){
+  		var selectCategoryRef = $(this).data("filter");
+      if ( $(this).hasClass('active') ) {
+        articleContainer.filterizr('filter', selectCategoryRef);
+      } else {
+        articleContainer.filterizr('filter', 'all');
+      }
+      // prevent redirect
+      return false;
+  	});
+  });
 
 
   // ========== ANIMATIONS =============== //
@@ -486,7 +487,7 @@ $(document).ready(function() {
       const successInfo = $(successMessageCont).find('.success-info');
       // $(successInfo).html('custom success text'); // enable to customize success information
       $(form).slideToggle(400, function() {
-        $(form).parent().removeClass('flex-grid');
+        $(form).parent().removeClass('flex-container');
         setTimeout(function(){
           $(successMessageCont).animate({width:'toggle'},600, function() {
             setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
@@ -539,7 +540,7 @@ $(document).ready(function() {
       const successInfo = $(successMessageCont).find('.success-info');
       // $(successInfo).html('custom success text'); // enable to customize success information
       $(form).slideToggle(400, function() {
-        $(form).parent().removeClass('flex-grid');
+        $(form).parent().removeClass('flex-container');
         setTimeout(function(){
           $(successMessageCont).animate({width:'toggle'},600, function() {
             setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);
@@ -593,7 +594,7 @@ $(document).ready(function() {
       const successInfo = $(successMessageCont).find('.success-info');
       // $(successInfo).html('custom success text'); // enable to customize success information
       $(form).slideToggle(400, function() {
-        $(form).parent().removeClass('flex-grid');
+        $(form).parent().removeClass('flex-container');
         setTimeout(function(){
           $(successMessageCont).animate({width:'toggle'},600, function() {
             setTimeout(function(){ $(successInfo).slideToggle(800); }, 400);

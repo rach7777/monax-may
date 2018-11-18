@@ -17,7 +17,7 @@
 
         <section class="section-top padding-top-md">
             <div class="container">
-              <div class="row flex-grid-md">
+              <div class="row flex-container-md">
                   <div class="col-md-7 col-valign-center">
                       {{ with .Title }}
                         <div class="strong range-left-md">
@@ -58,14 +58,14 @@
                         {{ .Scratch.Set "postImg" ($.Scratch.Get "defaultImg") }}
                       {{ end }}
 
-                    <a href="{{ .Permalink }}" class="flex-grid-sm a-card">
-                    <div class="content-container content-card content-card-full content-card-shadow-sm flex-grid-sm col-flex-12">
-                      <div class="row flex-grid-sm col-flex-12">
-                        <div class="col-sm-4 hidden-xs flex-grid-sm col-flex-4">
-                          <div class="img-container background-dark col-flex-12" style='background:url({{ .Scratch.Get "postImg" }}) center center no-repeat; background-size: cover;'>
-                          </div>
+                    <a href="{{ .Permalink }}" class="flex-container-sm a-card">
+                    <div class="content-container content-card content-card-full content-card-shadow-xs col-flex-12">
+                      <div class="flex-grid-sm">
+                        <div class="col-flex-sm-4 hidden-xs">
+                          <div class="img-container background-dark flex-force-fill" style='background:url({{ .Scratch.Get "postImg" }}) center center no-repeat; background-size: cover;'>
+                          &nbsp;</div>
                         </div>
-                        <div class="col-xs-12 col-sm-8 col-flex-8 col-valign-center padding-top-sm padding-bottom-sm">
+                        <div class="col-flex-xs-12 col-flex-sm-8 col-valign-center padding-top-sm padding-bottom-sm">
                           <div class="text-container">
                             <div class="title range-left">
                                 <h5>{{ .Title }}&nbsp;&rsaquo;</h5>
