@@ -1,4 +1,4 @@
-{{ with .Site.Data.fleetleasing.top }}
+{{ with .Site.Data.creatives.top }}
 {{ if .enable }}
 <section class="section-top padding-top-md padding-bottom-lg section-shadow-xl">
     <div class="container">
@@ -6,12 +6,14 @@
       <div class="row flex-container-md">
           <div class="col-md-5 col-valign-center">
             {{ with .title }}
-              <div class="strong">
+              <div class="strong range-left-md">
                   <h1>{{ . | markdownify }}</h1>
               </div>
             {{ end }}
             {{ with .subtitle }}
-              <h4>{{ . | markdownify }}</h4>
+              <p class="lead range-left-md">
+                {{ . | markdownify }}
+              </p>
             {{ end }}
 
             <!-- Sign up section [GLOBAL] -->

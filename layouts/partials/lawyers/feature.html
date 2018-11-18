@@ -5,7 +5,7 @@
 
           {{ range $i, $p := .section }}
 
-            <div class="row flex-grid-md padding-bottom-lg {{ if not (modBool $i 2) }}flex-grid-reverse{{ end}}">
+            <div class="row flex-container-md padding-bottom-lg {{ if not (modBool $i 2) }}flex-container-reverse{{ end}}">
               <div class="col-md-7 col-valign-center">
                 <div class="animation-container">
                   <div id="{{ .animation_id }}" class='{{ if eq .img_content_container "mac" }}animation-container-mac{{ end }}{{ if eq .img_content_container "iphone" }}animation-container-iphone{{ end }}'>
