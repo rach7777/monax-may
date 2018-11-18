@@ -97,8 +97,8 @@
       website = "https://www.greghill.io/"
 [[team.item]]
      name = "Alice Ide"
-      position = "Executive Assistant and Marketing Associate at Monax"
-      weight = 100
+      position = "Executive Assistant and Marketing Associate"
+      weight = 99
       location = "remote"
       img = "/img/team/team-ai.jpg"
       #twitter = "https://twitter.com/"
