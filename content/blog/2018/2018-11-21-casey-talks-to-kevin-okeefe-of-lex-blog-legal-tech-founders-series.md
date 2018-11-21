@@ -2,7 +2,7 @@
 
 # Pretty normal stuff
 date:      2018-11-21T00:00:00Z
-title:     "Video Interview with LexBlog: Casey Kuhlman, CEO of Monax, on His Incredible Journey to Founding a Legal Tech Startup"
+title:     "Video Interview with LexBlog: Casey Kuhlman on His Incredible Journey to Founding a Legal Tech Startup"
 author:    "Rachel Davidson, Senior Marketing Associate"
 excerpt: "Full transcript and video below"
 thumbnail: julio-gutierrez-678312-unsplash.png
