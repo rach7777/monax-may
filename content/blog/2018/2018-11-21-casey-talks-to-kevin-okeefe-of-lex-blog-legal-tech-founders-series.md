@@ -1,11 +1,11 @@
 ---
 
 # Pretty normal stuff
-date:      2018-11-20T00:00:00Z
+date:      2018-11-21T00:00:00Z
 title:     "Video Interview with LexBlog: Casey Kuhlman, CEO of Monax, on His Incredible Journey to Founding a Legal Tech Startup"
 author:    "Rachel Davidson, Senior Marketing Associate"
 excerpt: "Full transcript and video below"
-thumbnail: casey_lexblog.png
+thumbnail: julio-gutierrez-678312-unsplash.png
 categories:
   - press
 tags:
@@ -24,7 +24,7 @@ utm:
 ---
 
 <!-- In general the filename below should match thumbnail category above -->
-{{< image_blog "casey_lexblog.png" >}}
+{{< image_blog "julio-gutierrez-678312-unsplash.png" >}}
 
 <!-- if this article is part of a series, related articles will automatically appear here -->
 {{< blog_series >}}
@@ -147,3 +147,5 @@ CSK: Thank you Kevin.
 
 
 If you'd like to read more of Casey's interviews, we keep a list of published Monax press in [this blog](https://monax.io/blog/2018/10/15/monax-in-the-news/)(updated regularly) and there's another interesting video interview transcribed [here](https://monax.io/blog/2018/09/13/ceo-casey-interviewed-on-bold-tv-bold-biz-talks-future-of-tech-industry-blockchain--tips-on-business/).
+
+[Photo](https://unsplash.com/photos/r427ZzVVbwU) by [Julio Gutierrez](https://unsplash.com/photos/r427ZzVVbwU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/tv)  
