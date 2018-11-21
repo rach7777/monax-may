@@ -1,7 +1,7 @@
 ---
 
 # Pretty normal stuff
-date:      2018-11-20T00:00:00Z
+date:      2018-11-21T00:00:00Z
 title:     "Video Interview with LexBlog: Casey Kuhlman, CEO of Monax, on His Incredible Journey to Founding a Legal Tech Startup"
 author:    "Rachel Davidson, Senior Marketing Associate"
 excerpt: "Full transcript and video below"
@@ -147,3 +147,4 @@ CSK: Thank you Kevin.
 
 
 If you'd like to read more of Casey's interviews, we keep a list of published Monax press in [this blog](https://monax.io/blog/2018/10/15/monax-in-the-news/)(updated regularly) and there's another interesting video interview transcribed [here](https://monax.io/blog/2018/09/13/ceo-casey-interviewed-on-bold-tv-bold-biz-talks-future-of-tech-industry-blockchain--tips-on-business/).
+
