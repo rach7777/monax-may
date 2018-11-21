@@ -15,33 +15,33 @@
 
         </header>
 
-        {{ partial "creatives/top.html" . }}
+          {{ partial "creatives/top.html" . }}
 
-        <!-- global section -->
-        {{ if isset .Site.Data.creatives "press" }}
-          {{ if .Site.Data.creatives.press.enable }}
-            {{ partial "_global/press.html" . }}
+          {{ partial "creatives/intro.html" . }}
+
+          {{ partial "creatives/testimonials.html" . }}
+
+          {{ partial "creatives/bullets.html" . }}
+
+          {{ partial "creatives/secondary_cta.html" . }}
+
+          {{ partial "creatives/integrations.html" . }}
+
+          <!-- global section -->
+          {{ if isset .Site.Data.creatives "cta_two_button" }}
+            {{ if .Site.Data.creatives.cta_two_button.enable }}
+              {{ partial "_global/cta_two_button.html" . }}
+            {{ end }}
           {{ end }}
-        {{ end }}
 
-        {{ partial "creatives/testimonials.html" . }}
-
-        {{ partial "creatives/feature.html" . }}
-
-        {{ partial "creatives/examples.html" . }}
-
-        {{ partial "creatives/relatedarticles.html" . }}
-
-        {{ partial "creatives/faq.html" . }}
-
-        <!-- CTA section [GLOBAL] -->
-        {{ if isset .Site.Data.creatives "cta" }}
-          {{ if .Site.Data.creatives.cta.enable }}
-            {{ partial "_global/cta.html" . }}
+          <!-- global section -->
+          {{ if isset .Site.Data.creatives "press" }}
+            {{ if .Site.Data.creatives.press.enable }}
+              {{ partial "_global/press.html" . }}
+            {{ end }}
           {{ end }}
-        {{ end }}
 
-        {{ partial "footer.html" . }}
+          {{ partial "footer.html" . }}
 
     </div>
     <!-- /#all -->

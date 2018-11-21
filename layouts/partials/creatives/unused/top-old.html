@@ -1,0 +1,44 @@
+{{ with .Site.Data.creatives.top }}
+{{ if .enable }}
+<section class="section-top padding-top-md padding-bottom-lg section-shadow-xl">
+    <div class="container">
+
+      <div class="row flex-container-md">
+          <div class="col-md-5 col-valign-center">
+            {{ with .title }}
+              <div class="strong range-left-md">
+                  <h1>{{ . | markdownify }}</h1>
+              </div>
+            {{ end }}
+            {{ with .subtitle }}
+              <p class="lead range-left-md">
+                {{ . | markdownify }}
+              </p>
+            {{ end }}
+
+            <!-- Sign up section [GLOBAL] -->
+            {{ if .hero_signup }}
+              {{ partial "_global/hero_signup.html" . }}
+            {{ end }}
+
+            {{ if .img_left }}
+              <img class="img-responsive" src="{{ .img_left }}" alt="">
+            {{ end }}
+          </div>
+          <div class="col-md-7 flex-container-md">
+
+            {{ if .img_right }}
+              <div class="row flex-container-md">
+                <div class="col-sm-8 col-sm-offset-2 col-valign-center">
+                  <img class="img-responsive img-center img-top" src="{{ .img_right }}" alt="">
+                </div>
+              </div>
+            {{ end }}
+
+          </div>
+      </div>
+
+    </div> <!-- .container -->
+</section> <!-- .section -->
+{{ end }}
+{{ end }}

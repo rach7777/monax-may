@@ -4,7 +4,7 @@
 <section class="section-feature section-padding-md padding-top-md">
     <div class="container">
 
-      <div class="row flex-grid-md">
+      <div class="row flex-container-md">
 
         <div class="col-md-12">
 
@@ -38,7 +38,7 @@
 
           {{ range $i, $p := .consumer.section }}
 
-            <div class="row flex-grid-md padding-bottom-xl {{ if not (modBool $i 2) }}flex-grid-reverse{{ end}}">
+            <div class="row flex-container-md padding-bottom-xl {{ if not (modBool $i 2) }}flex-container-reverse{{ end}}">
               <div class="col-md-7 col-valign-center">
                 <div class="animation-container">
                   <div id="{{ .animation_id }}" class='{{ if eq .img_content_container "mac" }}animation-container-mac{{ end }}{{ if eq .img_content_container "iphone" }}animation-container-iphone{{ end }}'>
@@ -117,7 +117,7 @@
 
         {{ range $i, $p := .producer.section }}
 
-          <div class="row flex-grid-md padding-bottom-xl {{ if not (modBool $i 2) }}flex-grid-reverse{{ end}}">
+          <div class="row flex-container-md padding-bottom-xl {{ if not (modBool $i 2) }}flex-container-reverse{{ end}}">
             <div class="col-md-7 col-valign-center">
               <div class="animation-container">
                 <div id="{{ .animation_id }}" class='{{ if eq .img_content_container "mac" }}animation-container-mac{{ end }}{{ if eq .img_content_container "iphone" }}animation-container-iphone{{ end }}'>

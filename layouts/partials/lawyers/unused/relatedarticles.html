@@ -16,12 +16,12 @@
             </div>
           </div>
 
-          <div class="row content-container flex-grid-sm padding-bottom-md">
+          <div class="row content-container flex-container-sm padding-bottom-md">
             {{ range $i, $p := first 3 $.Site.Taxonomies.tags.lawyers }}
 
               {{ if (modBool $i 3) }} <!-- paginate after 3 entries -->
           </div>
-          <div class="row content-container flex-grid-sm padding-bottom-md">
+          <div class="row content-container flex-container-sm padding-bottom-md">
               {{ end }}
 
               <!-- check for img override -->
@@ -55,10 +55,10 @@
                 {{ $.Scratch.Set "postImg" $postImg }}
               {{ end }}
 
-            <div class="col-sm-4 flex-grid-sm padding-bottom-md">
-              <a href="{{ .Page.Permalink }}" class="flex-grid-sm a-card">
-              <div class="content-container content-card content-card-full content-card-related content-card-shadow-sm flex-grid-sm">
-                <div class="row flex-grid-sm">
+            <div class="col-sm-4 flex-container-sm padding-bottom-md">
+              <a href="{{ .Page.Permalink }}" class="flex-container-sm a-card">
+              <div class="content-container content-card content-card-full content-card-related content-card-shadow-sm flex-container-sm">
+                <div class="row flex-container-sm">
                   <div class="col-md-8">
                     <div class="text-container">
                       <div class="title range-left">
@@ -81,7 +81,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="col-md-4 flex-grid-sm hidden-sm hidden-xs">
+                  <div class="col-md-4 flex-container-sm hidden-sm hidden-xs">
                     <div class="img-container background-dark col-slant-left" style='background:url({{ $.Scratch.Get "postImg" }}) center center no-repeat; background-size: cover;'>
                       <img class="img_left img-responsive img-center padding-bottom-sm padding-top-sm" src='{{ $.Scratch.Get "postImg" }}' alt="" style="visibility:hidden;">
                     </div>
