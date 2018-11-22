@@ -100,3 +100,6 @@ If you want to learn more about how Monax can help you focus on your business in
     <p class="success-info" style="margin-top: 20px;">Thanks for getting in touch! We'll get back to you soon.</p>
   </div>
 </form>
+
+
+[Photo](https://unsplash.com/photos/RnCPiXixooY) by EFE KURNAZ on [Unsplash](https://unsplash.com).
