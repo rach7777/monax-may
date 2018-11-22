@@ -10,7 +10,7 @@ excerpt:   "The Monax Legal Product Studio is a collaborative commercial environ
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: harry-potter.png
+thumbnail: efe-kurnaz-315384-unsplash.png
 
 # check the categories on the existing blog. should only have ONE
 categories:
@@ -50,7 +50,7 @@ Today we announce the Monax Legal Products Studio, a collaborative, solutions-an
 
 Recently we released the [Monax Legal Product Modeler](https://monax.io/blog/2018/09/25/introducing-the-monax-bpmn-engine---the-powerhouse-for-legal-products./) (LPM), a  product authoring tool leveraging a combination of BPMN and Solidity to create, deploy, operate, monitor, and prove Active Agreements. The Monax Legal Product Studio (LPS) is a collaborative commercial environment that leverages the power of the Monax LPM to build market-ready legal templates available for individual or business use. With Studio, users can create, test and market their work product in a community who understand the promise of legal technology in digital networks.
 
-{{< image_blog "producer-tester-bpm.jpg" >}}
+{{< image_blog "producer-tester-bpm.png" >}}
 
 Below is a sampling of functionalities built into the LPM that studio users can combine and leverage for endless legal product development:
 
