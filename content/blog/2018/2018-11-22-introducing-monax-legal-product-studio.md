@@ -15,8 +15,6 @@ thumbnail: harry-potter.png
 # check the categories on the existing blog. should only have ONE
 categories:
   - legal engineering
-  - monax
-  - bpmn
 
 # tags should be meaningful for your blog. if you want this article to show on a 'use case' page, you can use
 # the following TAGS -  'fleetleasing' 'contentcreators' 'lawyers' or 'corporate'
@@ -24,17 +22,19 @@ tags:
   - legal products
   - monax
   - lawyers
+  - monax platform
+ 
 
 
 # set draft to 'false' when you're ready to publish
-draft: true
+draft: false
 
 # used when using the shortcode utm_link in a blog post to another
 # the campaign generally should match the category above
 utm:
   source: "website"
   medium: "blog"
-  campaign: "monax"
+  campaign: "legal engineering"
 
 ---
 
@@ -48,7 +48,7 @@ The Monax Platform is dedicated to a paradigm shift in the ability for everyday 
 
 Today we announce the Monax Legal Products Studio, a collaborative, solutions-and-tools driven workspace within the Monax platform for businesses, legal and tech professionals to come together.
 
-Recently we released the [Monax Legal Product Modeler](https://monax.io/blog/2018/09/25/introducing-the-monax-bpmn-engine---the-powerhouse-for-legal-products./) (LPM), a  product authoring tool leveraging a combination of BPMN and Solidity to create, deploy, operate, monitor, and prove Active Agreements. The Monax Legal Product Studio is a collaborative commercial environment that leverages the power of the Monax LPM to build market-ready legal templates available for individual or business use. With Studio, users can create, test and market their work product in a community who understand the promise of legal technology in digital networks.
+Recently we released the [Monax Legal Product Modeler](https://monax.io/blog/2018/09/25/introducing-the-monax-bpmn-engine---the-powerhouse-for-legal-products./) (LPM), a  product authoring tool leveraging a combination of BPMN and Solidity to create, deploy, operate, monitor, and prove Active Agreements. The Monax Legal Product Studio (LPS) is a collaborative commercial environment that leverages the power of the Monax LPM to build market-ready legal templates available for individual or business use. With Studio, users can create, test and market their work product in a community who understand the promise of legal technology in digital networks.
 
 {{< image_blog "producer-tester-bpm.jpg" >}}
 
@@ -72,9 +72,9 @@ Below is a sampling of functionalities built into the LPM that studio users can 
 
 - Access to quality legal products that suit a variety of needs -- `Templates Library` + `Jurisdiction` sort.
 
-The Monax Legal Product Studio gives legal product designers and builders the business context to give bring these tools to life. The studio ensures that Monax commercial customers have a dynamic environment that encourages legal to keep up with their demands and needs.
+The Monax Legal Product Studio gives legal product designers and builders the business context to bring these tools to life. The studio ensures that Monax commercial customers have a dynamic environment that encourages legal to keep up with their demands and needs.
 
-Monax. Fulfilling the promise of the digital revolution, one legal machine at a time.
+Monax - fulfilling the promise of the digital revolution, one legal machine at a time.
 
 If you want to learn more about how Monax can help you focus on your business instead of drowning in legal hassle - sign up to a demo below!
 
