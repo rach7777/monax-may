@@ -6,7 +6,7 @@ title:     "The Beginning of the Journey - Company Templates: what they do and w
 author:    "Anjlee Khurana, Senior Legal Engineer"
 excerpt:   "Monax will give your Company Templates a power and flexibility they never had as paper forms."
 
-thumbnail: happy_path.jpeg
+thumbnail: huaihang-tang-804518-unsplash.png
 
 categories:
   - legal engineering
@@ -24,7 +24,7 @@ utm:
 
 ---
 
-{{< image_blog "happy_path.jpeg" >}}
+{{< image_blog "huaihang-tang-804518-unsplash.png" >}}
 
 # **The Beginning of the Journey - Company Templates: what they do and why using Monax makes them more powerful**
 
@@ -45,5 +45,5 @@ The formation process gains signature collection functionality. No more tracking
 The Monax Legal Product Studio adds even more functionality to the execution process. Instead of just writing down in words exactly what obligations each party will perform and in what order, you design a digital model of that process. The digitized process model becomes part of the agreement. Each task then becomes a digitally structured event. This allows the task not only to be automated but to be automated within the order of events established by the model. For example, without the aid of human management over the parties in the performance of their tasks, automated payment can now be a process that does not begin until goods paid for have been accepted or verified as authentic. The model you create for your Company Template holds parties to the implementation process to which they agreed. Tasks can now be coordinated across platforms through integrations: tasks performed on one system can be implemented in multiple systems and recorded in a decentralized location that is accessible to all parties. The ways in which integrations can increase the functionality of the model know only the bounds of our imaginations.
 
 
-photograph courtesy of Wavebreakmedia Ltd | Dreamstime.com File ID: 55513011
-© Wavebreakmedia Ltd | Dreamstime.com File ID: 55513011
+
+[Photo](https://unsplash.com/photos/BccFsgYftVo) by [Huaihang Tang](https://unsplash.com/photos/BccFsgYftVo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com)
