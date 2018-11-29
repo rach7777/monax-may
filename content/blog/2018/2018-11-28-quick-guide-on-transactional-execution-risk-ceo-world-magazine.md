@@ -1,7 +1,7 @@
 ---
 
 # Pretty normal stuff
-date:      2018-11-29T00:00:00Z
+date:      2018-11-28T00:00:00Z
 title:     "Quick Guide On Transactional Execution Risk: The Biggest Problem No Company Wants to Admit They Have"
 author:    Casey Kuhlman, CEO
 
