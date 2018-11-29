@@ -84,6 +84,7 @@ Those two components, if one were combine them, would provide the base framework
 
 You knew this article was going to culminate with a reference to blockchains, didn’t you? Well, now we get to that part. Blockchains are the first piece of business technical infrastructure which have been architected to fulfill both of the aforementioned needs. By their very nature, blockchains help to solve transactional execution risk. An example of this is the Agreements Network – a no-code blockchain-based contract management system that helps companies visualize, monitor and control their risk by ensuring that all the parties to an agreement have visibility on the legally relevant events within an agreement and the status of each of those events.
 
+*This article was originally published by [CEOworld Magazine](https://ceoworld.biz/2018/07/11/quick-guide-on-transactional-execution-risk-the-biggest-problem-no-company-wants-to-admit-they-have/) on July 11, 2018. 
 
 
 <!-- IF NEEDED use the below. Unsplash is recommended for images that have the right licensing. This should be at the end of the post -->
