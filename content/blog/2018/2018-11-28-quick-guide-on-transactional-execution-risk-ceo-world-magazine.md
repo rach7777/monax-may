@@ -10,7 +10,7 @@ excerpt:   "This article seeks to illuminate transactional execution risk and ho
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: 
+thumbnail: oscar-sutton-251737-unsplash.png
 
 # check the categories on the existing blog. should only have ONE
 categories:
@@ -43,7 +43,7 @@ utm:
 ---
 
 <!-- In general the filename below should match thumbnail category above -->
-{{< image_blog "example-image.jpg" >}}
+{{< image_blog "oscar-sutton-251737-unsplash.png" >}}
 
 <!-- if this article is part of a series, related articles will automatically appear here -->
 {{< blog_series >}}
