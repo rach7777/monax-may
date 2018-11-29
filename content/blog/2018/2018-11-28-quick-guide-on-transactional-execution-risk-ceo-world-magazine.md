@@ -10,7 +10,7 @@ excerpt:   "This article seeks to illuminate transactional execution risk and ho
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: example-image.jpg
+thumbnail: 
 
 # check the categories on the existing blog. should only have ONE
 categories:
@@ -88,4 +88,4 @@ You knew this article was going to culminate with a reference to blockchains, di
 
 
 <!-- IF NEEDED use the below. Unsplash is recommended for images that have the right licensing. This should be at the end of the post -->
-[Photo](LINK) by PHOTOGRAPHER on [Unsplash](https://unsplash.com).
+[Photo](https://unsplash.com/photos/rNTXkBaQAvk) by Oscar Sutton on [Unsplash](https://unsplash.com).
