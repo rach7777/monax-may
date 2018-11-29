@@ -53,20 +53,20 @@ Ask yourself: how many contracts does my company have? Then ask yourself: within
 
 This is not an abstract thought process. It’s a very real problem that nearly every company in the world has. Very few, if any, CEOs and their C-Suites have the capacity to understand one of the most fundamental components of risk exposure within their company: transactional execution risk. This article seeks to illuminate transactional execution risk and how new generations of technology will allow C-Suites to better control it.
 
-##What is Transactional Execution Risk
+## What is Transactional Execution Risk
 
 Transactional execution risk is the risk that accrues between and amongst parties to a contract (transaction) that each party will execute on the obligations contained within the four corners of the contract. This risk, though rarely discussed, is one of the most omnipresent risks that any business faces, because it is derived from the contracts underlying nearly everything that a business does.
 
 The activities your accounting function conducts, your human resources function conducts, your purchasing function conducts, your inventory function conducts, all of these functional areas, and others, do what they do because of a legal contract. Within each of those legal contracts both parties promise to do something (or, at times, to refrain from doing something). Very often, but not always, these contracts are painstakingly negotiated down to the minute detail. After a signing party, the contracts are then archived and promptly forgotten about. And here is where transactional execution risk starts to accrue.
 
-##Why is Transactional Execution Risk Hidden
+## Why is Transactional Execution Risk Hidden
 
 One may argue that this risk is not hidden within your company because you track what happens within your accounting, human resources or inventory department. That is laudable, but the question becomes how do you actually track what was agreed to within the four corners of a contractual agreement and map that to specific business processes and outcomes siloed across your back office? The typical answer is “we don’t.”
 
 Transactional execution risk remains hidden because, at a fundamental level, the legal function of businesses have not joined the rest of the digital enterprise. This is not necessarily because lawyers are technically inept. Mostly it is because legal, as a function, fundamentally exists as the gateway between one company and counterparties, but only becomes integrated with the rest of its own enterprise at two points along a transaction. It is involved during the establishment of a new business relationship. Once those are signed, the legal function basically tells the rest of the digital enterprise: “call us if there’s a problem” (which is the second time legal is typically involved).
 
 
-##What are the Components Needed to Surface Transactional Execution Risk
+## What are the Components Needed to Surface Transactional Execution Risk
 
 If one were able to wave a magic wand to solve this area of risk, where would that magic wand actually make changes?
 
@@ -80,7 +80,7 @@ Second, that magic wand would build a system that was fundamentally capable of b
 
 Those two components, if one were combine them, would provide the base framework for surfacing transactional execution risk. They would also fundamentally transform a number of mechanisms governing how businesses surface, understand and control risk at a more general level.
 
-##How Can We Get a Piece of That
+## How Can We Get a Piece of That
 
 You knew this article was going to culminate with a reference to blockchains, didn’t you? Well, now we get to that part. Blockchains are the first piece of business technical infrastructure which have been architected to fulfill both of the aforementioned needs. By their very nature, blockchains help to solve transactional execution risk. An example of this is the Agreements Network – a no-code blockchain-based contract management system that helps companies visualize, monitor and control their risk by ensuring that all the parties to an agreement have visibility on the legally relevant events within an agreement and the status of each of those events.
 
