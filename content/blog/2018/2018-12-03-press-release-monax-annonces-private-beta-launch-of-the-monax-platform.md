@@ -63,7 +63,7 @@ The Monax Platform is built on an open-source, universal blockchain, [The Agreem
 Kuhlman concluded, “At Monax, we believe that if we make it easier for legal professionals to turn their work into software-based legal products, it will benefit the legal system as whole. The traditional legal system was one of the least digitized industries, and we’re setting out to make sure that we build the tools necessary to make the legal products better and more suited to the digital age.” 
 
 Monax is currently on-boarding customers for private beta testing for the Monax Platform. Those wishing to participate should reach out to contact@monax.io. 
-For more information, [visit](www.monax.io) or follow the link below for an overview of the Monax Platform dashboard.
+For more information, visit [here](www.monax.io) or follow the link below for an overview of the Monax Platform dashboard.
 
 <form id="nav-signup" class="form">
   <div class="underline-sm padding-bottom-sm">
