@@ -2,8 +2,8 @@
 
 # Pretty normal stuff
 date:      2018-12-03T00:00:00Z
-title:     Press Release: Monax Announces Private Beta Launch of the Monax Platform 
-author:    Rachel Davidson, Senior Marketing Associate
+title:     "Press Release - Monax Announces Private Beta Launch of the Monax Platform"
+author:    "Rachel Davidson, Senior Marketing Associate"
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
 excerpt:    The Monax Platform is a collaborative workspace for businesses, legal and tech professionals, complete with market-ready smart contract templates available for individual or commercial use. 
