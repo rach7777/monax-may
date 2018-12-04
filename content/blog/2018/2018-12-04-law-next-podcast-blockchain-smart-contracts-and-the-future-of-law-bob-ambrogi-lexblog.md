@@ -1,7 +1,7 @@
 ---
 
 # Pretty normal stuff
-date:      2018-04-26T00:00:00Z
+date:      2018-12-04T00:00:00Z
 title:     "LawNext Podcast: Blockchain, Smart Contracts and the Future of Law, with Casey Kuhlman of Monax"
 author:    "Casey talks to Bob Ambrogi on his LawNext podcast, Dec 3rd 2018"
 
