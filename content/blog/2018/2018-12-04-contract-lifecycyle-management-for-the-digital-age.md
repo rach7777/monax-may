@@ -50,7 +50,6 @@ utm:
 {{< blog_series >}}
 
 <!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
-# Contract Lifecycle Management for the Digital Age.
 
 Regardless of size, industry or turnover, if you’re in business there’s no escaping the fact that contracts play a vital role in every aspect of your entity. These contractual agreements can be between any number of parties and across multiple jurisdictions - the one thing they have in common is their centrality to the success or failure of your operation: contracts form the nexus of all business relationships. It makes sense to manage these agreements in the way that best manages your resources in both the short term and the long term...
 
