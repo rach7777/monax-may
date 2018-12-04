@@ -56,7 +56,7 @@ Regardless of size, industry or turnover, if you’re in business there’s no e
 Conversely, failure to maintain sufficient insight into contractual liabilities and relationships that affect your business is a well-established, commonly experienced operational risk, and the consequences can be dire indeed.
 
 
-### “Estimates indicate that the inability to properly manage effective contracts costs the buyers’ bottom lines 20% year-over-year.” (Forbes)
+> “Estimates indicate that the inability to properly manage effective contracts costs the buyers’ bottom lines 20% year-over-year.” (Forbes)
 
 
 The very nature of business today gives rise to ever-increasing contractual difficulty - from intricately nuanced supply agreements to performance-led remuneration packages. It is no longer sufficient to sign something, stick it in a drawer, grab a coffee and forget about it. Contract management has been elevated from mere operational necessity for legal auditing, to  “an enterprise-level core system addressing business risk, costs and the pursuit of revenue maximization” (Gartner*)
@@ -85,6 +85,28 @@ The Platform has been 4 years in the architecture, and is currently in private b
 
 (*The programmable economy is a term created by research firm [Gartner Inc.](https://www.gartner.com/en) in 2014 to describe the revolutionary changes happening in the global economy due to innovation)
 
+<form id="nav-signup" class="form">
+  <div class="underline-sm padding-bottom-sm">
+    <h3>Request A Demo With The Team</h3>
+  </div>
+  <div class="form-fields">
+    <input type="text" name="source" value="nav signup" class="hidden">
+    <input type="text" placeholder="Email" name="email" class="field-email">
+    <input type="text" placeholder="First Name" name="firstName" class="field-fname">
+    <input type="text" placeholder="Last Name" name="lastName" class="field-lname">
+    <input type="text" placeholder="Company Name" name="company" class="field-company">
+    <button type="submit" value="Submit" class="btn btn-xl field-submit">
+      <span>Request A Demo</span>
+    </button>
+  </div>
+  <div class="success-message-container"> <!-- must be directly after form -->
+    <div class="success-message">
+      <img class="success-doug-img" src="/img/assets/doug/doug_lo.png" alt="Doug">
+      <span class="success-text">Requested <i class="fa fa-check"></i></span>
+    </div>
+    <p class="success-info" style="margin-top: 20px;">Thanks for getting in touch! We'll get back to you soon.</p>
+  </div>
+</form>
 
 
 
