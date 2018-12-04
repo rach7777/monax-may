@@ -2,8 +2,8 @@
 
 # Pretty normal stuff
 date:      2018-04-26T00:00:00Z
-title:     "Blog Post Title Here"
-author:    "Your Name, Title Here"
+title:     "LawNext Podcast: Blockchain, Smart Contracts and the Future of Law, with Casey Kuhlman of Monax"
+author:    "Casey talks to Bob Ambrogi on his LawNext podcast, Dec 3rd 2018"
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
 excerpt:   "When people think about legal they think almost entirely of the provision of bespoke services. Yet the world is changing, and legal needs to keep up."
