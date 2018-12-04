@@ -49,7 +49,20 @@ utm:
 {{< blog_series >}}
 
 <!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
-Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
+
+## Is the traditional form of contracting broken? Are static legal agreements irrelevant in a fast-moving global economy? Casey Kuhlman, CEO of the blockchain and smart contracts company Monax, believes we’re on the brink of a paradigm shift in how we form and execute legal agreements.
+
+Kuhlman and Monax are the principal forces behind the launch of the [Agreements Network](www.agreements.network), which he describes as the “legal layer for a networked world.” The Agreements Network provides a base blockchain layer and other tools to serve as an ecosystem to create, distribute, and operate legal agreements.
+
+Kuhlman envisions that lawyers will be able to generate new revenue by converting agreements they’ve created into products that can be sold through these networks. These “archetypes,” as Kuhlman calls them, would combine legal text with smart-contract workflows to allow commercial clients to create their own active agreements.
+
+Now based in Scotland, Kuhlman is a U.S.-trained lawyer who went to work in Somaliland in eastern Africa and started a law firm there. His work representing companies in transactional matters helped convince him that there had to be a better way to manage agreements. That led him to launch Monax and the Agreements Network.
+
+Listen above, on Apple Podcasts, or via your favorite podcast player. To never miss an episode, subscribe on Apple Podcasts or via RSS, or like us on Facebook. And if you like what you hear, say something nice in Apple Podcasts. Your ratings help us reach more listeners.
+
+Comment on this show: Record a voice comment on your mobile phone and send it to info@lawnext.com
+
+(This podcast and commentary originally appeared on the [Lexblog](www.lexblog.com) site on Dec 3rd 2018 and is reproduced here courtesy of Lexblog)
 <!-- IF NEEDED use the below. Unsplash is recommended for images that have the right licensing. This should be at the end of the post -->
 [Photo](LINK) by PHOTOGRAPHER on [Unsplash](https://unsplash.com).
