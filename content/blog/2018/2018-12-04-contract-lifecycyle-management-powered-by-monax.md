@@ -1,12 +1,12 @@
 ---
 
 # Pretty normal stuff
-date:      2018-04-26T00:00:00Z
-title:     "Blog Post Title Here"
+date:      2018-12-04T00:00:00Z
+title:     Contract Lifecycle Management Contract 
 author:    "Your Name, Title Here"
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
-excerpt:   "When people think about legal they think almost entirely of the provision of bespoke services. Yet the world is changing, and legal needs to keep up."
+excerpt:   "Discussing the Monax Platform - a collaborative workspace environment for businesses and legal professionals"
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
