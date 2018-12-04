@@ -6,7 +6,7 @@ title:     The Monax Platform - Contract Lifecycle Management for the Digital Ag
 author:    "Rachel Davidson, Senior Marketing Associate"
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
-excerpt:   "Discussing the Monax Platform - a collaborative workspace environment for businesses and legal professionals"
+excerpt:   "Introducing the Monax Platform - a collaborative workspace environment for businesses and legal professionals"
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
@@ -14,13 +14,14 @@ thumbnail: example-image.jpg
 
 # check the categories on the existing blog. should only have ONE
 categories:
-  - legal products
+  - monax
 
 # tags should be meaningful for your blog. if you want this article to show on a 'use case' page, you can use
 # the following TAGS -  'fleetleasing' 'contentcreators' 'lawyers' or 'corporate'
 tags:
   - legal products
   - agreements network
+  - monax
 
 # if this post is part of a series, uncomment the information below. The 'article series' box
 # will only display if there is more than one article in the series. 'id', 'number' and 'about' all must be present.
@@ -31,14 +32,14 @@ tags:
 #   about: "This is a series of posts where the marmots will be outlining how the Monax Platform and the Agreements Network can be used in harmony to create the legal products of the future."
 
 # set draft to 'false' when you're ready to publish
-draft: true
+draft: false
 
 # used when using the shortcode utm_link in a blog post to another
 # the campaign generally should match the category above
 utm:
   source: "website"
   medium: "blog"
-  campaign: ""
+  campaign: "monax"
 
 ---
 
