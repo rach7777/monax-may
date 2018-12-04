@@ -10,7 +10,7 @@ excerpt:   "Introducing the Monax Platform - a collaborative workspace environme
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: example-image.jpg
+thumbnail: marius-masalar-138931-unsplash.jpg
 
 # check the categories on the existing blog. should only have ONE
 categories:
@@ -44,7 +44,7 @@ utm:
 ---
 
 <!-- In general the filename below should match thumbnail category above -->
-{{< image_blog "example-image.jpg" >}}
+{{< image_blog "marius-masalar-138931-unsplash.jpg" >}}
 
 <!-- if this article is part of a series, related articles will automatically appear here -->
 {{< blog_series >}}
@@ -56,7 +56,7 @@ Regardless of size, industry or turnover, if you’re in business there’s no e
 
 Conversely, failure to maintain sufficient insight into contractual liabilities and relationships that affect your business is a well-established, commonly experienced operational risk, and the consequences can be dire indeed.
 
-## “Estimates indicate that the inability to properly manage effective contracts costs the buyers’ bottom lines 20% year-over-year.” (Forbes)
+# “Estimates indicate that the inability to properly manage effective contracts costs the buyers’ bottom lines 20% year-over-year.” (Forbes)
 
 The very nature of business today gives rise to ever-increasing contractual difficulty - from intricately nuanced supply agreements to performance-led remuneration packages. It is no longer sufficient to sign something, stick it in a drawer, grab a coffee and forget about it. Contract management has been elevated from mere operational necessity for legal auditing, to  “an enterprise-level core system addressing business risk, costs and the pursuit of revenue maximization” (Gartner*)
 
@@ -87,4 +87,4 @@ The Platform has been 4 years in the architecture, and is currently in private b
 
 
 <!-- IF NEEDED use the below. Unsplash is recommended for images that have the right licensing. This should be at the end of the post -->
-[Photo](LINK) by PHOTOGRAPHER on [Unsplash](https://unsplash.com).
+[Photo](https://unsplash.com/photos/CyFBmFEsytU) by MARIUS MASALAR on [Unsplash](https://unsplash.com).
