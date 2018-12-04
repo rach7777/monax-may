@@ -2,8 +2,8 @@
 
 # Pretty normal stuff
 date:      2018-12-04T00:00:00Z
-title:     Contract Lifecycle Management Contract 
-author:    "Your Name, Title Here"
+title:     The Monax Platform - Contract Lifecycle Management for the Digital Age
+author:    "Rachel Davidson, Senior Marketing Associate"
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
 excerpt:   "Discussing the Monax Platform - a collaborative workspace environment for businesses and legal professionals"
