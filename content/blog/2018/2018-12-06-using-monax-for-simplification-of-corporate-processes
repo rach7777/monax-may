@@ -1,12 +1,12 @@
 ---
 
 # Pretty normal stuff
-date:       2018-11-28T00:00:00+00:00
-title:     "The Beginning of the Journey - Company Templates: what they do and why using Monax makes them more powerful"
+date:       2018-12-06T00:00:00+00:00
+title:     "Using Monax for Simplification of Corporate Processes"
 author:    "Anjlee Khurana, Senior Legal Engineer"
-excerpt:   "Monax will give your Company Templates a power and flexibility they never had as paper forms."
+excerpt:   "Monax simplifies the organization, tracking, and record-keeping related to each task included in the model"
 
-thumbnail: happy_path.jpeg
+thumbnail: jamie-street-493144-unsplash.jpg
 
 categories:
   - legal engineering
@@ -24,26 +24,24 @@ utm:
 
 ---
 
-{{< image_blog "happy_path.jpeg" >}}
+{{< image_blog "jamie-street-493144-unsplash.jpg" >}}
 
-# **The Beginning of the Journey - Company Templates: what they do and why using Monax makes them more powerful**
+# **Using Monax for Simplification of Corporate Processes**
 
-When you own or operate a business, you find that a number of agreements get used repeatedly, such as agreements with customers and agreements with repeat suppliers. These are Company Templates. Just like any other process that gets repeated time and again in the course of business operations, Company Templates become the obvious subject of efforts to streamline and, to whatever extent possible, efforts to automate.
+Business operations necessarily include a number of repeated processes. Your company’s corporate governance documents, for example, are likely to contain several, like procedures for calling meetings or for recording votes. Generally speaking, each of the oft-repeated processes dictated by corporate governance documents bears little or no relationship to the subject matter to which it is applied; the process required to initiate board action without a meeting remains the same for each board action regardless of the nature of the action to be taken. The action to be taken is the subject of other documents that do not consider the corporate processes involved in the execution of its terms.
 
-**Current Options:**
-Companies already recognize the repeatability of their Company Templates. When a company uses the same terms repeatedly, they usually turn these sets of terms into forms that are designed to allow the company to reuse the same terms but fill in the who and when variables that are specific to that agreement. Using a form streamlines the agreement formation process for any repeatable set of terms.
+In the current world of paper agreements, digitized processes are not included as part of an agreement at all. In some cases, the process is at least described in the prose of the agreement, but processes unrelated to the subject matter of the document are never brought to bear, even when the process is an integral first step necessary to legitimize the desired end product.
 
-But what about after the agreement is formed? Companies also make efforts to streamline the execution process wherever possible. For example, all customer relationships and the agreements that govern those relationships are usually managed by the same personnel and housed in the same location. Many external processes, like periodic payments, can be automated. Internal processes can also be automated. For example, a digital product is often automatically delivered to you after payment is verified and accepted.
+Enter Monax. Just like any other process that gets repeated time and again in the course of business operations, corporate governance processes should be streamlined and automated. The Monax Legal Product Studio incorporates a digitized business process model into each template. The model initially organizes and later tracks the tasks involved in forming and executing the terms of the agreement. The person who uploads the prose is free to design whatever process would be most useful to realize the goal of the agreement; he or she is free to include as needed steps that are not described in the prose. The user can create a model that incorporates any number of corporate processes required to properly carry out and monitor performance of the obligations contained in the prose.
 
-Meanwhile, the agreement itself sits in a file. It serves only as a record of the terms agreed to, and it is only consulted in the event of dispute or confusion. This part of the process is equally repeated and repeatable. But streamlining that consists of filling in blanks on a paper form involves no digitization and therefore does not lend itself well to further automation and integration. While the surrounding processes are ever more automated, the agreements that give rise to those processes remain stale and inactive.
+Users can piece together modular processes they create, e.g. corporate processes, regularly used payment processes, regularly used distribution processes, etc. Once the user has modeled out the process for corporate action without a meeting, for example, the user can incorporate that task flow into any larger process as needed.
 
-**How Monax broadens your options:**
-Monax will give your Company Templates a power and flexibility they never had as paper forms. Streamlining will no longer stop with the creation of a form. Instead, using the Monax Product Legal Studio, the process agreed to by the parties becomes digitized.
+Including a corporate process in your models simplifies the execution of that process. Let us consider as an example signature collection. Each process that requires signature collection from board members, officers, shareholders, or any combination thereof can be accomplished by using the modeler to create a signing task that applies to all parties to the agreement. Each signature collection process then becomes a Monax-Platform-and-email-based automated process whereby the platform uses both its interface and email integrations to notify participants of tasks that are ripe for fulfillment.
 
-The formation process gains signature collection functionality. No more tracking down disparately executed copies stored in email attachments or paper files. The Monax Platform records the signature collection process. With the Monax Platform, there is a complete log of each signature: when it was provided, by whom, and to exactly what terms.
+Not only is the process itself automated, but the record keeping also becomes a seamless process. Let us continue with our signature collection example. When a signing task has been completed by the signing party, an event log is created. The event log provided by the Monax Platform notifies each party of the precise date and time each user’s signature was collected. This event log provides the evidence needed to bind each signing party to the terms of the document. Monax provides an event log not just for signing tasks but for all tasks. Voting is equally easy to track and prove, as would be the establishment of a quorum, the appointment of an officer, and the submission of a filing form to the secretary of state or other relevant state entity. Monax simplifies the organization, tracking, and record-keeping related to each task included in the model.
 
-The Monax Legal Product Studio adds even more functionality to the execution process. Instead of just writing down in words exactly what obligations each party will perform and in what order, you design a digital model of that process. The digitized process model becomes part of the agreement. Each task then becomes a digitally structured event. This allows the task not only to be automated but to be automated within the order of events established by the model. For example, without the aid of human management over the parties in the performance of their tasks, automated payment can now be a process that does not begin until goods paid for have been accepted or verified as authentic. The model you create for your Company Template holds parties to the implementation process to which they agreed. Tasks can now be coordinated across platforms through integrations: tasks performed on one system can be implemented in multiple systems and recorded in a decentralized location that is accessible to all parties. The ways in which integrations can increase the functionality of the model know only the bounds of our imaginations.
+The usefulness and corresponding monetary value of a template that includes a business process model far exceeds the usefulness and monetary value of its hard copy counterpart.
+A consumer in possession of a Template that includes a business process model holds a far greater value than does the holder of an old-school paper agreement. Incorporation of process models into a template changes (1) the value proposition offered to the consumer by the Template creator as well as (2) the value proposition offered by the Template consumer to its customers. Over time, that digital asset accumulates data that will give you unprecedented insight into the value to your business, and that can be monetized in its own right. With Monax, you can upgrade the value of all of your company’s agreements.
 
 
-photograph courtesy of Wavebreakmedia Ltd | Dreamstime.com File ID: 55513011
-© Wavebreakmedia Ltd | Dreamstime.com File ID: 55513011
+Photo by Jamie Street on Unsplash
