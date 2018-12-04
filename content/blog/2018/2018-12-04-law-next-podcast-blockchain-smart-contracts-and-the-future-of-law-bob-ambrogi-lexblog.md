@@ -63,7 +63,7 @@ Kuhlman envisions that lawyers will be able to generate new revenue by convertin
 Now based in Scotland, Kuhlman is a U.S.-trained lawyer who went to work in Somaliland in eastern Africa and started a law firm there. His work representing companies in transactional matters helped convince him that there had to be a better way to manage agreements. That led him to launch Monax and the Agreements Network.
 
 Listen above
-Listen to the full podcast [here](https://itunes.apple.com/us/podcast/episode-7-jeff-pfeifer-lexisnexis-on-data-driven-lawyering/id1408859036?i=1000418402599&mt=2) on Apple Podcasts. To never miss an episode, subscribe on Apple Podcasts or via RSS, or [like us on Facebook](https://www.facebook.com/LawNext/). And if you like what you hear, say something nice in Apple Podcasts. Your ratings help us reach more listeners.
+Listen to the full podcast [here](https://itunes.apple.com/us/podcast/episode-7-jeff-pfeifer-lexisnexis-on-data-driven-lawyering/id1408859036?i=1000418402599&mt=2) on Apple Podcasts or [here](https://www.lawsitesblog.com) on Lawsites.com. To never miss an episode, subscribe on Apple Podcasts or via RSS, or [like us on Facebook](https://www.facebook.com/LawNext/). And if you like what you hear, say something nice in Apple Podcasts. Your ratings help us reach more listeners.
 
 Comment on this show: Record a voice comment on your mobile phone and send it to info@lawnext.com
 
