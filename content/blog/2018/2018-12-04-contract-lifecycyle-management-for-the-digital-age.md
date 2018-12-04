@@ -10,7 +10,7 @@ excerpt:   "The Monax Platform - a collaborative workspace environment for busin
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: marius-masalar-138931-unsplash.jpg
+thumbnail: marius-masalar-138931-unsplash.png
 
 # check the categories on the existing blog. should only have ONE
 categories:
@@ -44,7 +44,7 @@ utm:
 ---
 
 <!-- In general the filename below should match thumbnail category above -->
-{{< image_blog "marius-masalar-138931-unsplash.jpg" >}}
+{{< image_blog "marius-masalar-138931-unsplash.png" >}}
 
 <!-- if this article is part of a series, related articles will automatically appear here -->
 {{< blog_series >}}
