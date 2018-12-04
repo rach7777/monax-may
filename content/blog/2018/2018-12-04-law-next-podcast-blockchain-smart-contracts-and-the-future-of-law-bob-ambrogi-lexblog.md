@@ -54,8 +54,6 @@ utm:
 
 ## Is the traditional form of contracting broken? Are static legal agreements irrelevant in a fast-moving global economy? Casey Kuhlman, CEO of the blockchain and smart contracts company Monax, believes we’re on the brink of a paradigm shift in how we form and execute legal agreements.
 
-Listen to the full podcast [here](https://itunes.apple.com/us/podcast/episode-7-jeff-pfeifer-lexisnexis-on-data-driven-lawyering/id1408859036?i=1000418402599&mt=2)
-
 Kuhlman and Monax are the principal forces behind the launch of the [Agreements Network](www.agreements.network), which he describes as the “legal layer for a networked world.” The Agreements Network provides a base blockchain layer and other tools to serve as an ecosystem to create, distribute, and operate legal agreements.
 
 Kuhlman envisions that lawyers will be able to generate new revenue by converting agreements they’ve created into products that can be sold through these networks. These “archetypes,” as Kuhlman calls them, would combine legal text with smart-contract workflows to allow commercial clients to create their own active agreements.
