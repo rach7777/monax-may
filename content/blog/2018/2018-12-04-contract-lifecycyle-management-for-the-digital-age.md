@@ -56,7 +56,7 @@ Regardless of size, industry or turnover, if you’re in business there’s no e
 
 Conversely, failure to maintain sufficient insight into contractual liabilities and relationships that affect your business is a well-established, commonly experienced operational risk, and the consequences can be dire indeed.
 
-# “Estimates indicate that the inability to properly manage effective contracts costs the buyers’ bottom lines 20% year-over-year.” (Forbes)
+### “Estimates indicate that the inability to properly manage effective contracts costs the buyers’ bottom lines 20% year-over-year.” (Forbes)
 
 The very nature of business today gives rise to ever-increasing contractual difficulty - from intricately nuanced supply agreements to performance-led remuneration packages. It is no longer sufficient to sign something, stick it in a drawer, grab a coffee and forget about it. Contract management has been elevated from mere operational necessity for legal auditing, to  “an enterprise-level core system addressing business risk, costs and the pursuit of revenue maximization” (Gartner*)
 
