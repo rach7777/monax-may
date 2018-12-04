@@ -67,7 +67,7 @@ At Monax we believe contracts need to work for you. We believe in activating agr
 There are a plethora of CLM offerings on the market, so just what is it that makes the Monax Platform the best choice for your CLM needs? 
 
 
-We live in the age of the programmable economy (to quote Gartner again) with revolutionary changes occurring across the global economy driven by technological innovations. It’s time for legal services to drive forwards, and the newly launched Monax Platform (MP) elevates contract lifecycle management to meet these changes. It does this by leveraging three distinct yet complementary technologies: solidity code, business process modeling (BPM) and blockchain. 
+### We live in the age of the programmable economy (to quote Gartner again) with revolutionary changes occurring across the global economy driven by technological innovations. It’s time for legal services to drive forwards, and the newly launched Monax Platform (MP) elevates contract lifecycle management to meet these changes. It does this by leveraging three distinct yet complementary technologies: solidity code, business process modeling (BPM) and blockchain. 
 
 The Monax Platform empowers your business with a truly agile and intelligent CLM system - the ability to respond to and take advantage of these programmable economy trends. Not only can users procure quality legal products to suit a wide variety of operational needs, the Platform gives users the ability to delegate and co-ordinate team actions on contracts, to track the state of play across every agreement the company is party to, and to perform necessary audits quickly and easily. 
 
