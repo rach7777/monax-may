@@ -10,7 +10,7 @@ excerpt:   "Casey talks to Bob Ambrogi on his LawNext podcast, Dec 3rd 2018"
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: law-next.jpg
+thumbnail: law-sites.jpg
 
 # check the categories on the existing blog. should only have ONE
 categories:
@@ -44,7 +44,7 @@ utm:
 ---
 
 <!-- In general the filename below should match thumbnail category above -->
-{{< image_blog "law-next-jpg" >}}
+{{< image_blog "law-sites.jpg" >}}
 
 <!-- if this article is part of a series, related articles will automatically appear here -->
 {{< blog_series >}}
