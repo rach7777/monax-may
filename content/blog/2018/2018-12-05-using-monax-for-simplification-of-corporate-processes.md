@@ -14,13 +14,14 @@ categories:
 tags:
   - legal products
   - monax
+ 
 
 draft: false
 
 utm:
   source: "website"
   medium: "blog"
-  campaign: "monax"
+  campaign: "legal engineering"
 
 ---
 
@@ -41,7 +42,8 @@ Including a corporate process in your models simplifies the execution of that pr
 Not only is the process itself automated, but the record keeping also becomes a seamless process. Let us continue with our signature collection example. When a signing task has been completed by the signing party, an event log is created. The event log provided by the Monax Platform notifies each party of the precise date and time each user’s signature was collected. This event log provides the evidence needed to bind each signing party to the terms of the document. Monax provides an event log not just for signing tasks but for all tasks. Voting is equally easy to track and prove, as would be the establishment of a quorum, the appointment of an officer, and the submission of a filing form to the secretary of state or other relevant state entity. Monax simplifies the organization, tracking, and record-keeping related to each task included in the model.
 
 The usefulness and corresponding monetary value of a template that includes a business process model far exceeds the usefulness and monetary value of its hard copy counterpart.
+
 A consumer in possession of a Template that includes a business process model holds a far greater value than does the holder of an old-school paper agreement. Incorporation of process models into a template changes (1) the value proposition offered to the consumer by the Template creator as well as (2) the value proposition offered by the Template consumer to its customers. Over time, that digital asset accumulates data that will give you unprecedented insight into the value to your business, and that can be monetized in its own right. With Monax, you can upgrade the value of all of your company’s agreements.
 
 
-Photo by Jamie Street on Unsplash
+Photo by Jamie Street on Unsplash 
