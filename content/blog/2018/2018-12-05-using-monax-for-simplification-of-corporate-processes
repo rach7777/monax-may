@@ -1,7 +1,7 @@
 ---
 
 # Pretty normal stuff
-date:       2018-12-05T00:00:00+00:00
+date:       2018-12-06T00:00:00+00:00
 title:     "Using Monax for Simplification of Corporate Processes"
 author:    "Anjlee Khurana, Senior Legal Engineer"
 excerpt:   "Monax simplifies the organization, tracking, and record-keeping related to each task included in the model"
@@ -14,13 +14,14 @@ categories:
 tags:
   - legal products
   - monax
+ 
 
 draft: false
 
 utm:
   source: "website"
   medium: "blog"
-  campaign: "monax"
+  campaign: "legal engineering"
 
 ---
 
