@@ -49,7 +49,21 @@ utm:
 {{< blog_series >}}
 
 <!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
-Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+#### Welcome to Marmota Prime, a daily blockchain-based weather prediction game powered by Monax! The marmots love a game or two here at MonaxHQ - not only do they make great educational tools, they promote innovation and bring folks together. 
 
-<!-- IF NEEDED use the below. Unsplash is recommended for images that have the right licensing. This should be at the end of the post -->
+We decided to launch Marmota Prime to showcase how Monax legal products have the ability to power pretty much any kind of legal relationship. Given our affinity with marmots,we start the game today (Dec 10) and wrap it up on the the most important prognosticating holiday in the marmot calendar, Groundhog Day, February 2. Make like Punxsutawney Phil - check the accuracy of your inner weathervane by playing Marmota Prime.
+
+
+Marmota Prime runs for 55 days. Players from across the world will be challenged to guess the daily average temperature in a world city each day (calculated based on the temperature 24 hours starting at the time of the player’s guess.) We'll be tweeting facts about the chosen ‘game city’ each day so do keep an eye on our dedicated Marmota Prime [Twitter page](https://twitter.com/marmotaprime?lang=en-gb) You’ll find even more info on our [Facebook page](https://www.facebook.com/monaxHQ/) so check back daily!
+
+
+At the end of each day’s guessing period, players are rewarded for guessing correctly (or nearly so!). In order to inform predictions about the likely temperatures in the game cities, players are encouraged to search for information online before making their guess. We will post daily clues to help in the search also. Players receive reward points and credit for donations of cuddly marmot toys to some kids who could use a smile.
+
+Marmota Prime kicks off today, which is Nobel Prize Day. Fittingly, today’s city of choice is Stockholm, Sweden, home of the Nobel Committee. Marmota Prime takes a bit of inspiration from this year’s 2018 winners of the Nobel Prize in Economics, Paul Romer and William Nordhaus.  Romer’s work discusses the power of seemingly small technological improvements to create efficiencies, value, and endogenous growth within markets and communities. Nordhaus’ work leverages multidimensional quantitative models to simulate how climate and economy evolve in tandem. A match made in marmot heaven! 
+
+
+
+
+
+
 [Photo](LINK) by PHOTOGRAPHER on [Unsplash](https://unsplash.com).
