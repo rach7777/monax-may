@@ -10,7 +10,7 @@ excerpt:   "Monax invites you to participate in Marmota Prime - our new, free, b
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: marmota-prime-logo.png
+thumbnail: marmota_prime_logo.png
 
 # check the categories on the existing blog. should only have ONE
 categories:
@@ -44,7 +44,7 @@ utm:
 ---
 
 <!-- In general the filename below should match thumbnail category above -->
-{{< image_blog "marmota-prime-logo.png" >}}
+{{< image_blog "marmota_prime_logo.png" >}}
 
 <!-- if this article is part of a series, related articles will automatically appear here -->
 {{< blog_series >}}
