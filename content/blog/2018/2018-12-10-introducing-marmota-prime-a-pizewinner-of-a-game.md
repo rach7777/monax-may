@@ -6,11 +6,11 @@ title:     "Introducing Marmota Prime - a Prizewinner of a Game!"
 author:    "Rachel Davidson, Senior Marketing Associate"
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
-excerpt:   "When people think about legal they think almost entirely of the provision of bespoke services. Yet the world is changing, and legal needs to keep up."
+excerpt:   "Monax invites you to participate in Marmota Prime - our new, free, blockchain-based challenge..."
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: example-image.jpg
+thumbnail: marmota-prime-logo.png
 
 # check the categories on the existing blog. should only have ONE
 categories:
@@ -32,7 +32,7 @@ tags:
 #   about: "This is a series of posts where the marmots will be outlining how the Monax Platform and the Agreements Network can be used in harmony to create the legal products of the future."
 
 # set draft to 'false' when you're ready to publish
-draft: true
+draft: false
 
 # used when using the shortcode utm_link in a blog post to another
 # the campaign generally should match the category above
@@ -44,7 +44,7 @@ utm:
 ---
 
 <!-- In general the filename below should match thumbnail category above -->
-{{< image_blog "example-image.jpg" >}}
+{{< image_blog "marmota-prime-logo.png" >}}
 
 <!-- if this article is part of a series, related articles will automatically appear here -->
 {{< blog_series >}}
@@ -77,5 +77,3 @@ CEO Casey said of the game:
 
 
 
-
-[Photo](LINK) by PHOTOGRAPHER on [Unsplash](https://unsplash.com).
