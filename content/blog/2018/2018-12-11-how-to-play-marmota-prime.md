@@ -1,8 +1,8 @@
 ---
 
 # Pretty normal stuff
-date:      2018-04-26T00:00:00Z
-title:     "Blog Post Title Here"
+date:      2018-12-11T00:00:00Z
+title:     "Marmota Primes - how to play"
 author:    "Your Name, Title Here"
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
