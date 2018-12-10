@@ -72,7 +72,7 @@ CEO Casey said of the game:
 > “At Monax we are pleased to partner with Wolfram Blockchain Labs to demonstrate the usability and power of the Monax Platform and the Agreements Network. The Marmota Prime game is proof that legal technology can be not only very powerful, but also quite fun! Good luck.”
 
 
-#### For rules of the game, game play, information about Monax and more, [CLICK HERE]
+#### For more about the game [CLICK HERE](https://twitter.com/marmotaprime)
 
 
 
