@@ -1,7 +1,7 @@
 ---
 
 # Pretty normal stuff
-date:      2018-12-10T00:00:00Z
+date:      2018-12-11T00:00:00Z
 title:     "Introducing Marmota Prime - a Prizewinner of a Game!"
 author:    "Rachel Davidson, Senior Marketing Associate"
 
@@ -56,11 +56,11 @@ The marmots love a game or two here at MonaxHQ - not only do they make great edu
 
 We decided to launch Marmota Prime to showcase how Monax legal products have the ability to power pretty much any kind of legal relationship. Given our affinity with marmots, we start the game tomorrow (Dec 11) and wrap it up on the the most important prognosticating holiday in the marmot calendar, Groundhog Day, February 2. So make like Punxsutawney Phil and check the accuracy of your inner weathervane by playing Marmota Prime!
 
-Marmota Prime runs for 54 days. Players from across the world will be challenged to guess the daily average temperature in a world city each day (calculated based on the temperature over 24 hours starting at the time of the player’s guess.) We'll be tweeting facts about the chosen ‘game city’ each day so do keep an eye on our dedicated Marmota Prime [Twitter page](https://twitter.com/marmotaprime?lang=en-gb) and you’ll find even more info on our [Facebook page](https://www.facebook.com/monaxHQ/), so check back daily!
+Marmota Prime runs for 53 days. Players from across the world will be challenged to guess the daily average temperature in a world city each day (calculated based on the temperature over 24 hours starting at the time of the player’s guess.) We'll be tweeting facts about the chosen ‘game city’ each day so do keep an eye on our dedicated Marmota Prime [Twitter page](https://twitter.com/marmotaprime?lang=en-gb) and you’ll find even more info on our [Facebook page](https://www.facebook.com/monaxHQ/), so check back daily!
 
 At the end of each day’s guessing period, players are rewarded for guessing correctly (or nearly so!). In order to inform predictions about the likely temperatures in the game cities, players are encouraged to search for information online before making their guess. We'll post daily clues to help in the search also. Players receive reward points and credit for donations of cuddly marmot toys to some kids who could use a smile :)
 
-Marmota Prime officially kicks off tomorrow, however today we celebrate Nobel Prize Day. Marmota Prime takes a bit of inspiration from this year’s [2018 winners](https://www.nobelprize.org/prizes/economic-sciences/2018/press-release/) of the Nobel Prize in Economics, Paul Romer and William Nordhaus.  Romer’s work discusses the power of seemingly small technological improvements to create efficiencies, value, and endogenous growth within markets and communities. Nordhaus’ work leverages multidimensional quantitative models to simulate how climate and economy evolve in tandem. A match made in marmot heaven! 
+Marmota Prime officially kicks off tomorrow, so check out our official game twitter account [here](https://twitter.com/marmotaprime) for links and game play details.
 
 Marmota Prime’s daily guessing game is a neat way to learn about climatic conditions around the globe. On the back end, the Monax Platform provides the technological backbone, tooled for legal operations, to power and prove gameplay with as legal product infrastructure. The functionality provided by the Monax Platform enables new business models and growth in digital markets. We could talk for hours about how the Monax Platform enables access to legal infrastructure, technological goods and services, education and justice, and about how using computational data like a simple temperature reading can turn legal relationships into products, solutions and markets of the future...
 
