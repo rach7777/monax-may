@@ -98,3 +98,13 @@ After a game concludes, the player will be notified to check back and/or if they
 There may be weekly and final winners with an equal amount of points. To resolve a tie, the player with the lowest number of predictions is favored, i.e. two players having an equal amount of points, but one having participated in less games than the other, the player with less games wins.
 
 - If the number of played games is also equal, then the player who placed predictions earlier is favored to break the tie.
+
+## Example Game:
+
+- Game is posted on Dec. 24th 12:00 pm noon. Predictions can be placed until Dec. 25th 12:00 pm noon.
+
+- Challenge: “Predict the mean temperature in Sidney, Australia, for the time period Dec. 24th 5 pm - Dec. 25th 5 pm”
+ 
+{{< image_blog "game_one.jpg" >}}
+
+
