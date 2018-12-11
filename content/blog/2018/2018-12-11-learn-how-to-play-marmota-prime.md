@@ -10,17 +10,18 @@ excerpt:   "Learn how to play Marmota Prime."
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: example-image.jpg
+thumbnail: game_screenshot.png
 
 # check the categories on the existing blog. should only have ONE
 categories:
-  - legal products
+  - monax
 
 # tags should be meaningful for your blog. if you want this article to show on a 'use case' page, you can use
 # the following TAGS -  'fleetleasing' 'contentcreators' 'lawyers' or 'corporate'
 tags:
   - legal products
   - agreements network
+  - monax
 
 # if this post is part of a series, uncomment the information below. The 'article series' box
 # will only display if there is more than one article in the series. 'id', 'number' and 'about' all must be present.
@@ -31,7 +32,7 @@ tags:
 #   about: "This is a series of posts where the marmots will be outlining how the Monax Platform and the Agreements Network can be used in harmony to create the legal products of the future."
 
 # set draft to 'false' when you're ready to publish
-draft: true
+draft: false
 
 # used when using the shortcode utm_link in a blog post to another
 # the campaign generally should match the category above
@@ -43,7 +44,7 @@ utm:
 ---
 
 <!-- In general the filename below should match thumbnail category above -->
-{{< image_blog "example-image.jpg" >}}
+{{< image_blog "game_screenshot.png" >}}
 
 <!-- if this article is part of a series, related articles will automatically appear here -->
 {{< blog_series >}}
@@ -105,11 +106,11 @@ There may be weekly and final winners with an equal amount of points. To resolve
 
 - Challenge: “Predict the mean temperature in Sidney, Australia, for the time period Dec. 24th 5 pm - Dec. 25th 5 pm”
  
-{{< image_blog "game_one.jpg" >}}
+{{< image_blog "game_one.png" >}}
 
 - Point weights for predictions placed during the game period. The weights serve the purpose of rewarding early prediction that deal with higher uncertainty. The later in the game a prediction is placed, the easier it is to predict, because the prediction period has already started and a mean temperature has started to emerge.
 
-{{< image_blog "game_two.jpg" >}}
+{{< image_blog "game_two.png" >}}
 
 Points earned for prediction correctness:
 
@@ -118,7 +119,7 @@ Any deviation from the actual result is determined by a Gaussian distribution (b
 
 Prediction examples:
 
-{{< image_blog "game_three.jpg" >}}
+{{< image_blog "game_three.png" >}}
 
 **Actual Result determined from Wolfram Alpha oracle after the prediction window ends: 75 degrees**
 
@@ -126,7 +127,7 @@ Points after this game is resolved:
 
 - Formula: Points from Gaussian distribution * weight when prediction was placed
 
-{{< image_blog "game_four.jpg" >}}
+{{< image_blog "game_four.png" >}}
 
 ## Architecture / Technical Specifications
 
@@ -147,7 +148,7 @@ The agreement and process do not actively calculate the winner, but they control
 - The user also receives a link to the HOARD file (via the agreement) to verify that the prediction is recorded correctly.
 - The HOARD file by default is encrypted, but the API provides access to this file for users who already have placed a predict
 
-{{< image_blog "game_five.jpg" >}}
+{{< image_blog "game_five.png" >}}
 
 ## Agreement Specification
 
@@ -165,10 +166,13 @@ Agreement Parameters:
 
 ## Process Specification
 
-{{< image_blog "game_six.jpg" >}}
+{{< image_blog "game_six.png" >}}
 
 Explanation:
-While the game is open, the supporting legal process is stopped in the “Close Game Period” activity. Only in this state is it possible to update the file hash referencing the entered predictions. I.e. when Monax as the operator completes this task, the reference to the file containing all the predictions for the game can no longer be changed.
-A “Wait for Prediction Period Close” activity will further block the process to wait until the end of the prediction window is reached.
+
+- While the game is open, the supporting legal process is stopped in the “Close Game Period” activity. Only in this state is it possible to update the file hash referencing the entered predictions. I.e. when Monax as the operator completes this task, the reference to the file containing all the predictions for the game can no longer be changed.
+- A “Wait for Prediction Period Close” activity will further block the process to wait until the end of the prediction window is reached.
 The “Query Prediction Result” activity invokes the Wolfram Alpha oracle to retrieve and store the actual answer to the predictions.
 Finally, the “Trigger Result Calculations” activity sends out an event that kicks of the calculation of how points are to be distributed based on the predictions and the result recorded in the process.
+
+Any questions, please email contact@monax.io - HAVE FUN!
