@@ -112,10 +112,7 @@ There may be weekly and final winners with an equal amount of points. To resolve
 
 {{< image_blog "game_two.png" >}}
 
-Points earned for prediction correctness:
-
-- 100% correct = 100 points
-Any deviation from the actual result is determined by a Gaussian distribution (bell curve) with a standard deviation of 2.5 degrees.
+(Any deviation from the actual result is determined by a Gaussian distribution (bell curve) with a standard deviation of 2.5 degrees.)
 
 Prediction examples:
 
