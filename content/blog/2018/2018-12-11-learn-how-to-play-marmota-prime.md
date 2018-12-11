@@ -64,5 +64,13 @@ utm:
 
 - Players earn points daily, which will accumulate to produce a weekly winner. We have decided that the prizes will be a donation in kind to a selection of kids’ charities - for games played pre-christmas the winners will be given a chouce of causes and Monax will make the donations on their behalf. For games played after Christmas we will be making a donation of cuddly marmot toys (why of course!) to kids hospitals near our offices in Edinburgh and New York (the winner of each round gets to choose which city they would like the toys to go to). 
 
-- At the resolution of each round, the [Wolfram Alpha] API is used as an oracle to  retrieve the actual mean temperature and the result and prediction data, both recorded on a blockchain backend, are used to determine how points are distributed among the participants.
+- At the resolution of each round, the [Wolfram Alpha](https://www.wolframalpha.com) API is used as an oracle to  retrieve the actual mean temperature and the result and prediction data, both recorded on a blockchain backend, are used to determine how points are distributed among the participants.
+
+## Legal Agreements
+
+The game is backed and operated by legal agreements on the Agreements Network:
+
+- The Terms of Service (ToS) each player accepts when signing up for the game is recorded as an Active Agreements signed by Monax and the player.
+- 
+- Each game is represented as a legal Active Agreements binding Monax to perform the calculations based on the defined game rules and fulfill obligations to the winners of the different rounds. This agreement further contains a process configuration which supports the execution of the game by controlling its timeline, thus being part of the legal agreement as much as the data itself.
 
