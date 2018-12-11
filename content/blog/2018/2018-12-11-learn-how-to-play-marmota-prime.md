@@ -107,4 +107,68 @@ There may be weekly and final winners with an equal amount of points. To resolve
  
 {{< image_blog "game_one.jpg" >}}
 
+- Point weights for predictions placed during the game period. The weights serve the purpose of rewarding early prediction that deal with higher uncertainty. The later in the game a prediction is placed, the easier it is to predict, because the prediction period has already started and a mean temperature has started to emerge.
 
+{{< image_blog "game_two.jpg" >}}
+
+Points earned for prediction correctness:
+
+- 100% correct = 100 points
+Any deviation from the actual result is determined by a Gaussian distribution (bell curve) with a standard deviation of 2.5 degrees.
+
+Prediction examples:
+
+{{< image_blog "game_three.jpg" >}}
+
+**Actual Result determined from Wolfram Alpha oracle after the prediction window ends: 75 degrees**
+
+Points after this game is resolved:
+
+- Formula: Points from Gaussian distribution * weight when prediction was placed
+
+{{< image_blog "game_four.jpg" >}}
+
+## Architecture / Technical Specifications
+
+- Timer/CRON job starts a (daily or otherwise scheduled) game
+- Starting a new game consists of:
+- Picking a city and prediction period from the list of predetermined cities
+- Creating an agreement from an archetype and populating it with parameters
+- Monax (Org) signs the agreement 
+- Starting the formation and execution processes for the active agreement.
+
+The agreement and process do not actively calculate the winner, but they control the timeline of a game and record all evidence that allows the verification of the correct function of the game logic that determines the points for participants.
+
+## Predictions Specification
+
+- Each prediction is entered via a REST API and recorded as a JSON object in a HOARD file.
+- The hash of this file is updated in the agreement on the blockchain.
+- After placing a prediction, the user is given a link agreement where they can verify that the HOARD file reference is updated.
+- The user also receives a link to the HOARD file (via the agreement) to verify that the prediction is recorded correctly.
+- The HOARD file by default is encrypted, but the API provides access to this file for users who already have placed a predict
+
+{{< image_blog "game_five.jpg" >}}
+
+## Agreement Specification
+
+Agreement Parameters:
+
+- Operator : Signatory (Monax)
+- Round Start: Timestamp
+- Round End: Timestamp
+- Mean Temperature Start : Timestamp
+- Mean Temperature End: Timestamp
+- Location: String
+- Predictions Hash : string (Hoard file reference)
+- Predictions Access Key: string
+- Result Temperature : Number (stores Wolfram result)
+
+## Process Specification
+
+{{< image_blog "game_six.jpg" >}}
+
+Explanation:
+While the game is open, the supporting legal process is stopped in the “Close Game Period” activity. Only in this state is it possible to update the file hash referencing the entered predictions. I.e. when Monax as the operator completes this task, the reference to the file containing all the predictions for the game can no longer be changed.
+A “Wait for Prediction Period Close” activity will further block the process to wait until the end of the prediction window is reached.
+The “Query Prediction Result” activity invokes the Wolfram Alpha oracle to retrieve and store the actual answer to the predictions.
+Finally, the “Trigger Result Calculations” activity sends out an event that kicks of the calculation of how points are to be distributed based on the predictions and the result recorded in the process.
