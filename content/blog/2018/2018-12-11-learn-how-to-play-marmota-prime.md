@@ -71,6 +71,30 @@ utm:
 The game is backed and operated by legal agreements on the Agreements Network:
 
 - The Terms of Service (ToS) each player accepts when signing up for the game is recorded as an Active Agreements signed by Monax and the player.
-- 
+ 
 - Each game is represented as a legal Active Agreements binding Monax to perform the calculations based on the defined game rules and fulfill obligations to the winners of the different rounds. This agreement further contains a process configuration which supports the execution of the game by controlling its timeline, thus being part of the legal agreement as much as the data itself.
 
+## Sign-up
+
+The unregistered player arrives on the game website and decides to participate in the daily game. The player can use a “Register” button or click on a button to enter a prediction for the current game. The player is then informed that they needs to register and is redirected to the registration page. Signing up via email/password results in an activation email. Social login is also an option. In either case the user needs to accept the Terms of Service (ToS) represented as Active Agreement between the user and Monax. In case of an activation email, clicking the link in the email opens a success screen and a link to “proceed to the game”. Social media login leads directly to the game landing page after confirming the setup.
+
+## Gameplay
+
+The player arrives on the game site and logs in. Upon choosing to place a prediction, the player is transitioned to a screen where they are presented with the current challenge: to enter a mean temperature for a designated city and time window. Afterwards, the player is directed back to the game landing page where they can see the information about the running game as well as the prediction placed by the player.
+After a game concludes, the player will be notified to check back and/or if they have won. The notification also informs the player about any points earned in this round and invites to check the the player’s position in the weekly / total ranking.
+
+
+## Game Rules
+
+- A daily game challenge consists of a 24hr window during which predictions can be entered.
+
+- One prediction per user per game.
+
+- The prediction is about the mean temperature of a given city for a 24hr period in the future, e.g. “Predict the mean temperature in Sidney, Australia, during the time period 3 pm, Dec. 24th - 3pm, Dec. 25th.”
+
+- This prediction period starts during a game period, but does not 100% match the game period. This creates a situation of higher uncertainty for predictions placed at the beginning of a game window which will be rewarded with a higher point weight. A linear weight function is applied that decreases points earned the later a prediction is placed in the game challenge. (Example below)
+
+- A rounded down gaussian function is used to distribute points for participants that are close to the actual temperature determined by the oracle
+There may be weekly and final winners with an equal amount of points. To resolve a tie, the player with the lowest number of predictions is favored, i.e. two players having an equal amount of points, but one having participated in less games than the other, the player with less games wins.
+
+- If the number of played games is also equal, then the player who placed predictions earlier is favored to break the tie.
