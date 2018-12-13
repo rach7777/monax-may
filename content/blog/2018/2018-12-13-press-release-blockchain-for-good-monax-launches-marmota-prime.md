@@ -54,8 +54,7 @@ utm:
 
 *Prizes for predictions challenge include in kind donations to children’s charities*
 
-- Edinburgh - December 13, 2018
-Monax, a leader in digital legal infrastructure, has announced the launch of Marmota Prime, a blockchain-based game in which players win donations in kind to charitable organisations, such as The Salvation Army, Toys for Tots and Edinburgh's Royal Hospital for Sick Children. Beginning today, new challenges will launch on the platform every 24 hours until February 2nd, 2019. 
+Edinburgh - December 13, 2018- Monax, a leader in digital legal infrastructure, has announced the launch of Marmota Prime, a blockchain-based game in which players win donations in kind to charitable organisations, such as The Salvation Army, Toys for Tots and Edinburgh's Royal Hospital for Sick Children. Beginning today, new challenges will launch on the platform every 24 hours until February 2nd, 2019. 
 
 Casey Kuhlman, CEO and Co-founder of Monax, said, “At Monax, we aim to make professional functions more efficient through blockchain-based collaborative platforms. We have launched Marmota Prime as a method of simplifying and demonstrating the potential of blockchain technology to connect people around the world to create one ecosystem, as well as to support worthy charitable causes that we wholeheartedly believe in.” 
 Marmota Prime players will make predictions on precise temperatures in designated cities around the world. Monax will perform the calculations based on the defined game rules and fulfill obligations to the winners of the different rounds using blockchain technology. 
@@ -66,9 +65,9 @@ Jon Woodard, Wolfram Blockchain Labs, said, "We are pleased to support Monax wit
 Monax is a leader in smart contract and blockchain technology, having recently announced the official beta launch of The Monax Platform as the latest in its line of smart contract products. The Monax Platform is a collaborative workspace for professionals, complete with market-ready smart contract templates available for individual or commercial use. 
 Kuhlman concluded, “With the functions in the game mirrored in the Monax Platform, we hope that this daily challenge will provide a useful introduction to blockchain technology. The Marmota Prime game is proof that legal technology can be not only very powerful, but also quite fun and rewarding. Good luck!”
 
-For more information, visit www.monax.io.
+### Link to the game is [here](https://app.monax.io/marmota-prime)
 
-- Casey Kuhlman, CEO and Co-founder of Monax Industries, is available for interview. 
+(Casey Kuhlman, CEO and Co-founder of Monax Industries, is available for interview) 
 
 Media contact
 Liam Murphy
@@ -76,6 +75,6 @@ Senior Account Supervisor // Wachsman
 liam@wachsman.com
 +353 87 119 2107
 
-- About Monax Industries
+### About Monax Industries
 
 Monax was co-founded in 2014. The Monax Platform is a contract lifecycle management tool which allows consumers to easily procure lawyer-tested agreements and stay in full control of their business contracting. Harnessing a unique combination of active agreements, blockchain technology and a business process modelling engine, the platform is designed to move business legal obligations into the networked world. In April 2018, Monax became one of the founding companies behind the Agreements Network, which allows anyone to develop, customize, sell and reproduce legal products. Monax is headquartered in Edinburgh and has an office in New York. For more information, visit: https://monax.io. 
