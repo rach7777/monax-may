@@ -10,7 +10,8 @@ excerpt:   "Learn about the tech powering our new blockchain-based game"
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: example-image.jpg
+thumbnail: marmota_prime_logo.png
+
 
 # check the categories on the existing blog. should only have ONE
 categories:
@@ -43,7 +44,7 @@ utm:
 ---
 
 <!-- In general the filename below should match thumbnail category above -->
-{{< image_blog "example-image.jpg" >}}
+{{< image_blog "marmota_prime_logo.png" >}}
 
 <!-- if this article is part of a series, related articles will automatically appear here -->
 {{< blog_series >}}
@@ -57,12 +58,11 @@ The Terms of Service (ToS) each player accepts when signing up for the game is r
 
 Each game played is represented as an Active Agreement. In exchange for gameplay, Monax promises to perform the calculations based on the defined game rules and fulfill obligations to the winners of the different rounds, or in other words, to operate fairly. The template process model supports the execution of the game by controlling the timing of game play, making it as much a part of the agreement as much as the data itself. Game players can monitor the game process, to see for themselves the game status and operations. Powering the workflows are authenticated temperature data provided by the Wolfram Blockchain Labs computational data oracle. 
 
-{{< image_blog "example-image.jpg" >}}
+{{< image_blog "mp_homepage.png" >}}
 
 In this same way, Monax users can automate legal operations as well as monitor ongoing contract performance. This simple breakthrough will change the way humans and entities interact with the world, and create tremendous opportunities for commercialization. 
 
-Come play Marmota Prime to learn more! 
+Come play Marmota Prime to learn more! Link is [here](https://app.monax.io/marmota-prime)
 
 
-<!-- IF NEEDED use the below. Unsplash is recommended for images that have the right licensing. This should be at the end of the post -->
-[Photo](LINK) by PHOTOGRAPHER on [Unsplash](https://unsplash.com).
+
