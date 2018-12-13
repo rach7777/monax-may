@@ -56,7 +56,7 @@ utm:
 
 - The Terms of Service (ToS) each player accepts when signing up for the game is recorded as an Active Agreements signed by Monax and the player, and the individual games between users. 
 
-- Each game played is represented as an Active Agreement. In exchange for gameplay, Monax promises to perform the calculations based on the defined game rules and fulfill obligations to the winners of the different rounds, or in other words, to operate fairly. The template process model supports the execution of the game by controlling the timing of game play, making it as much a part of the agreement as much as the data itself. Game players can monitor the game process, to see for themselves the game status and operations. Powering the workflows are authenticated temperature data provided by the Wolfram Blockchain Labs computational data oracle. 
+- Each game played is represented as an Active Agreement. In exchange for gameplay, Monax promises to perform the calculations based on the defined game rules and fulfill obligations to the winners of the different rounds, or in other words, to operate fairly. The template process model supports the execution of the game by controlling the timing of game play, making it as much a part of the agreement as much as the data itself. Game players can monitor the game process, to see for themselves the game status and operations. Powering the workflows are authenticated temperature data provided by Wolfram computational intelligence.
 
 {{< image_blog "MP_homepage.png" >}}
 
