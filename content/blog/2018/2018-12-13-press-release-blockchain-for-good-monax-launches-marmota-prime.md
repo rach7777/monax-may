@@ -2,7 +2,7 @@
 
 # Pretty normal stuff
 date:      2018-12-13T00:00:00Z
-title:     "Press Release -Blockchain for Good: Monax Launches Marmota Prime"
+title:     "Press Release - Blockchain for Good: Monax Launches Marmota Prime"
 author:    "Rachel Davidson, Senior Marketing Associate"
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog

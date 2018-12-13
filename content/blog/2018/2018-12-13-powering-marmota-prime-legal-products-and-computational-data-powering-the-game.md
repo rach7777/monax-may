@@ -58,7 +58,7 @@ utm:
 
 - Each game played is represented as an Active Agreement. In exchange for gameplay, Monax promises to perform the calculations based on the defined game rules and fulfill obligations to the winners of the different rounds, or in other words, to operate fairly. The template process model supports the execution of the game by controlling the timing of game play, making it as much a part of the agreement as much as the data itself. Game players can monitor the game process, to see for themselves the game status and operations. Powering the workflows are authenticated temperature data provided by the Wolfram Blockchain Labs computational data oracle. 
 
-{{< image_blog "mp_homepage.png" >}}
+{{< image_blog "MP_homepage.png" >}}
 
 - In this same way, Monax users can automate legal operations as well as monitor ongoing contract performance. This simple breakthrough will change the way humans and entities interact with the world, and create tremendous opportunities for commercialization. 
 
