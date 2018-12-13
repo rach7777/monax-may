@@ -1,7 +1,7 @@
 ---
 
 # Pretty normal stuff
-date:      2018-04-26T00:00:00Z
+date:      2018-12-13T00:00:00Z
 title:     "Powering Marmota Prime: Legal Products and Computational Data Powering the Game"
 author:    "Nina Kilbride, CCO"
 
