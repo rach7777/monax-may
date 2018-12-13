@@ -10,7 +10,7 @@ excerpt:   "Our new game is here!"
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: monax_press_release.png
+thumbnail: monax-press-release.png
 
 # check the categories on the existing blog. should only have ONE
 categories:
@@ -44,7 +44,7 @@ utm:
 ---
 
 <!-- In general the filename below should match thumbnail category above -->
-{{< image_blog "monax_press_release.png" >}}
+{{< image_blog "monax-press-release.png" >}}
 
 <!-- if this article is part of a series, related articles will automatically appear here -->
 {{< blog_series >}}
