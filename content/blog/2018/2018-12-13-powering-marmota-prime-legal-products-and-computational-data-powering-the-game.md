@@ -50,7 +50,7 @@ utm:
 {{< blog_series >}}
 
 <!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
-- [Marmota Prime](bit.ly/2EtB9l2) is a simple game backed by powerful technologies. In fact, the Monax Platform technology powering the game is the same we use to turn cumbersome legal processes into Active Agreements, software-based legal products that work for you, throughout the lifecycle of your legal relationships.
+- [Marmota Prime](https://app.monax.io/marmota-prime) is a simple game backed by powerful technologies. In fact, the Monax Platform technology powering the game is the same we use to turn cumbersome legal processes into Active Agreements, software-based legal products that work for you, throughout the lifecycle of your legal relationships.
 
 - Marmota Prime is a neat example of combining a number of generic legal processes and turning them into an Active Agreement fit for your purposes. Specifically, the game requires two legal product templates designed with the Monax Legal Product Modeler (LPM). 
 
