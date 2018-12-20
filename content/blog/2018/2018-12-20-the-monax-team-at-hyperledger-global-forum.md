@@ -73,7 +73,10 @@ Casey gave not just one but three talks during the week, and had this to say abo
 
 The team at Hyperledger put on a fab event and the team had a great time...it would be a shame to end this blog without at least one cheeky tweet from the marmots: 
 
-{{< image_blog "fallon_brian.png" >}}
+
+<blockquote class="twitter-tweet" data-lang="en-gb"><p lang="en" dir="ltr"><a href="https://twitter.com/brianbehlendorf?ref_src=twsrc%5Etfw">@brianbehlendorf</a> furious at lack of coverage of production usecases <a href="https://twitter.com/hashtag/hyperledger?src=hash&amp;ref_src=twsrc%5Etfw">#hyperledger</a> <a href="https://twitter.com/hashtag/hyperledgerforum?src=hash&amp;ref_src=twsrc%5Etfw">#hyperledgerforum</a> <a href="https://t.co/K1EL6gFoqJ">pic.twitter.com/K1EL6gFoqJ</a></p>&mdash; Silas Davis (@silas_davis) <a href="https://twitter.com/silas_davis/status/1073289940790845445?ref_src=twsrc%5Etfw">13 December 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+
 
 Till next year!
 
