@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  {{ partial "head_fonts.html" . }}
+
+  <body>
+
+    <div id="all" class="single-post">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        <div id="content">
+            <div class="container">
+                <div class="row padding-top-lg padding-bottom-xl">
+                    <div class="col-md-12 padding-bottom-lg">
+                      <div id="post-content" class="range-left-sm">
+                        {{ .Content }}
+                      </div>
+                    </div> <!-- .post content -->
+                </div> <!-- .row -->
+            </div> <!-- .container -->
+        </div> <!-- .#content -->
+
+        {{ partial "footer.html" . }}
+
+
+    </div> <!-- .#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

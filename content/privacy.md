@@ -1,5 +1,6 @@
 +++
 title = "Monax | Privacy Policy"
+layout = "wide"
 +++
 
 # Monax Privacy Policy

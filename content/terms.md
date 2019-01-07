@@ -1,5 +1,6 @@
 +++
 title = "Monax | Terms of Use"
+layout = "wide"
 +++
 
 # TERMS OF USE
