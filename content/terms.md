@@ -3,8 +3,6 @@ title = "Monax | Terms of Use"
 layout = "wide"
 +++
 
-# TERMS OF USE
-
 **Your attention is particularly drawn to the provisions of Clause 12 (Limitation of liability).**
 
 Skip to:
