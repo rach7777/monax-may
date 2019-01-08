@@ -2,7 +2,7 @@
 
 # Pretty normal stuff
 date:      2018-12-20T00:00:00Z
-title:     "Buisness law Today: Custody, Control, and Assurances: Improving Legal Operations with Blockchain"
+title:     "Business law Today: Custody, Control, and Assurances: Improving Legal Operations with Blockchain"
 author:    "Rachel Davidson, Senior Marketing Associate"
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
