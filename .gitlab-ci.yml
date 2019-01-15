@@ -11,7 +11,10 @@ variables:
 # Job templates
 .build_site: &build_template
   stage: build
+  before_script:
+    - apk add --update --no-cache bash curl jq
   script:
+    - scripts/pricing_getter.sh
     - |
       hugo \
         --baseURL="https://$SITE_NAME/" \
@@ -40,7 +43,7 @@ variables:
 
 .deploy_template: &deploy_template
   stage: deploy
-  image: quay.io/monax/build:latest
+  image: quay.io/monax/builder:latest
   before_script:
     - |
       echo $GCS_CLIENT_SECRET_SITES > client-secret.json

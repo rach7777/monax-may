@@ -1,0 +1,393 @@
+{
+  "starter": {
+    "title": "Starter",
+    "price_annual": "30000",
+    "price_monthly": "3100",
+    "description": "Organize your contracts and gain clarity over your business relationships",
+    "users": 1,
+    "templates": 1,
+    "contracts": 5,
+    "ndas": 10,
+    "contract_events": 25,
+    "contract_reminders": 1,
+    "contract_external_parties": 1,
+    "integrations": {
+      "api_rest": true,
+      "notifications_email": true,
+      "notifications_slack": true,
+      "notifications_sms": true,
+      "notifications_zapier": false,
+      "notifications_webhooks": false,
+      "system_docusign": false,
+      "system_stripe": false,
+      "system_dropbox": false,
+      "notifications_chatbots": false,
+      "system_xero": false,
+      "system_hubspot": false,
+      "system_bamboo": false,
+      "engine_ergo": false,
+      "engine_custom": false
+    },
+    "features_contracts": [
+      {
+        "desc": "Organize existing contracts with tags",
+        "disabled": false
+      },
+      {
+        "desc": "In-application task management",
+        "disabled": false
+      },
+      {
+        "desc": "Alerts and notifications on contractual execution steps",
+        "disabled": false
+      },
+      {
+        "desc": "Operate approved open souce contracts",
+        "disabled": false
+      },
+      {
+        "desc": "Buy and operate Monax approved contracts (additional fees apply)",
+        "disabled": false
+      },
+      {
+        "desc": "Exclusive first access to legal products created by Monax platform partners",
+        "disabled": true
+      }
+    ],
+    "features_templates": [
+      {
+        "desc": "Create custom collaborative templates and parameters",
+        "disabled": false
+      },
+      {
+        "desc": "Select contract workflows from Monax's extensive library",
+        "disabled": false
+      },
+      {
+        "desc": "Import / export custom workflows",
+        "disabled": true
+      },
+      {
+        "desc": "Set governing templates and subtemplates",
+        "disabled": true
+      },
+      {
+        "desc": "Package templates into custom multi-contract workflows",
+        "disabled": true
+      }
+    ],
+    "features_users": [
+      {
+        "desc": "Collaborate within your organization",
+        "disabled": true
+      },
+      {
+        "desc": "Structure your team into multiple departments",
+        "disabled": true
+      },
+      {
+        "desc": "Custom branded portal for external counterparties (tba)",
+        "disabled": true
+      }
+    ],
+    "features_support": [
+      {
+        "desc": "Self-help resouce center",
+        "disabled": false
+      },
+      {
+        "desc": "Public webinars",
+        "disabled": false
+      },
+      {
+        "desc": "Multilingual user interface",
+        "disabled": false
+      },
+      {
+        "desc": "In-app chat support (response within 12 hours)",
+        "disabled": false
+      },
+      {
+        "desc": "Email support (response within 12 hours)",
+        "disabled": true
+      },
+      {
+        "desc": "Monax team 'office hours' each month on Zoom",
+        "disabled": true
+      },
+      {
+        "desc": "Dedicated on-boarding assistant (3 hours bespoke training)",
+        "disabled": true
+      }
+    ]
+  },
+  "essential": {
+    "title": "Essential",
+    "price_annual": "180000",
+    "price_monthly": "18900",
+    "description": "Streamline your operations and collectively manage your contracts",
+    "users": 3,
+    "templates": 5,
+    "contracts": 25,
+    "ndas": 50,
+    "contract_events": 250,
+    "contract_reminders": 5,
+    "contract_external_parties": 3,
+    "integrations": {
+      "api_rest": true,
+      "notifications_email": true,
+      "notifications_slack": true,
+      "notifications_sms": true,
+      "notifications_zapier": true,
+      "notifications_webhooks": true,
+      "system_docusign": true,
+      "system_stripe": true,
+      "system_dropbox": true,
+      "notifications_chatbots": false,
+      "system_xero": false,
+      "system_hubspot": false,
+      "system_bamboo": false,
+      "engine_ergo": false,
+      "engine_custom": false
+    },
+    "features_contracts": [
+      {
+        "desc": "Organize existing contracts with tags",
+        "disabled": false
+      },
+      {
+        "desc": "In-application task management",
+        "disabled": false
+      },
+      {
+        "desc": "Alerts and notifications on contractual execution steps",
+        "disabled": false
+      },
+      {
+        "desc": "Operate approved open souce contracts",
+        "disabled": false
+      },
+      {
+        "desc": "Buy and operate Monax approved contracts (additional fees apply)",
+        "disabled": false
+      },
+      {
+        "desc": "Exclusive first access to legal products created by Monax platform partners",
+        "disabled": false
+      }
+    ],
+    "features_templates": [
+      {
+        "desc": "Create custom collaborative templates and parameters",
+        "disabled": false
+      },
+      {
+        "desc": "Select contract workflows from Monax's extensive library",
+        "disabled": false
+      },
+      {
+        "desc": "Import / export custom workflows",
+        "disabled": false
+      },
+      {
+        "desc": "Set governing templates and subtemplates",
+        "disabled": false
+      },
+      {
+        "desc": "Package templates into custom multi-contract workflows",
+        "disabled": true
+      }
+    ],
+    "features_users": [
+      {
+        "desc": "Collaborate within your organization",
+        "disabled": false
+      },
+      {
+        "desc": "Structure your team into multiple departments",
+        "disabled": true
+      },
+      {
+        "desc": "Custom branded portal for external counterparties (tba)",
+        "disabled": true
+      }
+    ],
+    "features_support": [
+      {
+        "desc": "Self-help resouce center",
+        "disabled": false
+      },
+      {
+        "desc": "Public webinars",
+        "disabled": false
+      },
+      {
+        "desc": "Multilingual user interface",
+        "disabled": false
+      },
+      {
+        "desc": "In-app chat support (response within 12 hours)",
+        "disabled": false
+      },
+      {
+        "desc": "Email support (response within 12 hours)",
+        "disabled": false
+      },
+      {
+        "desc": "Monax team 'office hours' each month on Zoom",
+        "disabled": false
+      },
+      {
+        "desc": "Dedicated on-boarding assistant (3 hours bespoke training)",
+        "disabled": true
+      }
+    ]
+  },
+  "professional": {
+    "title": "Professional",
+    "price_annual": "600000",
+    "price_monthly": "62500",
+    "description": "Scale operations, manage permissions and customize your processes",
+    "users": 10,
+    "templates": 15,
+    "contracts": 75,
+    "ndas": 150,
+    "contract_events": 1200,
+    "contract_reminders": 10,
+    "contract_external_parties": 7,
+    "integrations": {
+      "api_rest": true,
+      "notifications_email": true,
+      "notifications_slack": true,
+      "notifications_sms": true,
+      "notifications_zapier": true,
+      "notifications_webhooks": true,
+      "system_docusign": true,
+      "system_stripe": true,
+      "system_dropbox": true,
+      "notifications_chatbots": true,
+      "system_xero": true,
+      "system_hubspot": true,
+      "system_bamboo": true,
+      "engine_ergo": true,
+      "engine_custom": true
+    },
+    "features_contracts": [
+      {
+        "desc": "Organize existing contracts with tags",
+        "disabled": false
+      },
+      {
+        "desc": "In-application task management",
+        "disabled": false
+      },
+      {
+        "desc": "Alerts and notifications on contractual execution steps",
+        "disabled": false
+      },
+      {
+        "desc": "Operate approved open souce contracts",
+        "disabled": false
+      },
+      {
+        "desc": "Buy and operate Monax approved contracts (additional fees apply)",
+        "disabled": false
+      },
+      {
+        "desc": "Exclusive first access to legal products created by Monax platform partners",
+        "disabled": false
+      }
+    ],
+    "features_templates": [
+      {
+        "desc": "Create custom collaborative templates and parameters",
+        "disabled": false
+      },
+      {
+        "desc": "Select contract workflows from Monax's extensive library",
+        "disabled": false
+      },
+      {
+        "desc": "Import / export custom workflows",
+        "disabled": false
+      },
+      {
+        "desc": "Set governing templates and subtemplates",
+        "disabled": false
+      },
+      {
+        "desc": "Package templates into custom multi-contract workflows",
+        "disabled": false
+      }
+    ],
+    "features_users": [
+      {
+        "desc": "Collaborate within your organization",
+        "disabled": false
+      },
+      {
+        "desc": "Structure your team into multiple departments",
+        "disabled": false
+      },
+      {
+        "desc": "Custom branded portal for external counterparties (tba)",
+        "disabled": false
+      }
+    ],
+    "features_support": [
+      {
+        "desc": "Self-help resouce center",
+        "disabled": false
+      },
+      {
+        "desc": "Public webinars",
+        "disabled": false
+      },
+      {
+        "desc": "Multilingual user interface",
+        "disabled": false
+      },
+      {
+        "desc": "In-app chat support (response within 12 hours)",
+        "disabled": false
+      },
+      {
+        "desc": "Email support (response within 12 hours)",
+        "disabled": false
+      },
+      {
+        "desc": "Monax team 'office hours' each month on Zoom",
+        "disabled": false
+      },
+      {
+        "desc": "Dedicated on-boarding assistant (3 hours bespoke training)",
+        "disabled": false
+      }
+    ]
+  },
+  "addtional_users": {
+    "title": "Additional Users",
+    "price_monthly": "2500",
+    "description": "Add additional users to your account (per user charge)"
+  },
+  "addtional_templates": {
+    "title": "Additional Templates",
+    "price_monthly": "10000",
+    "description": "Add additional templates to your account (packages of 5 additional active templates)"
+  },
+  "addtional_contracts": {
+    "title": "Additional Contracts",
+    "price_monthly": "5000",
+    "description": "Add additional contracts to your account (packages of 10 additional contracts)"
+  },
+  "additional_transactions": {
+    "title": "Additional Contractual Transactions",
+    "price_monthly": "2500",
+    "description": "Add additional contractual transactions to your account (packages of 100 additional transactions)"
+  },
+  "additional_externals": {
+    "title": "Additional External Parties",
+    "price_monthly": "2500",
+    "description": "Add additional external parties to your account (packages of 10 additional external parties)"
+  }
+}

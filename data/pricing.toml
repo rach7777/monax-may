@@ -5,14 +5,6 @@
 
 [pricing_table]
     enable = true
-    features_addons_list = [
-      "New Contractual Transactions / month: (packages of 100): $25 / month",
-      "New Contracts / month: (packages of 10 contracts): $50 / month",
-      "New Templates / month: (packages of 5 templates): $100 / month",
-      "Additional users: $50 / month / user",
-      "Premium Integrations: $75 / month / integration (requires additional purchase of contractual execution engine integration)",
-      "Bespoke Training and Onboarding Consultation: (packages of 4 hours): $2,000",
-    ]
 
     [pricing_table.tier1]
       enable = true
@@ -21,24 +13,13 @@
       subtitle = "Starts at $150 USD"
       content_title = "<strong>Empowering Productive Game-changing</strong>"
 
-      [[pricing_table.tier1.column]]
+      [pricing_table.tier1.essential]
         enable = true
         highlight_column = true
         title = "Essential"
-        billed_yearly_price = "$150" # /month
-        billed_monthly_price = "$189" # /month
-        subtitle = "Streamline your operations and collectively manage your contracts"
         link_title = "Request A Demo"
         link_triggers_demo_form = true # if false set url
         link_url = "#demo1"
-        features_title = ""
-        features_list = [
-          "<strong>3</strong> users",
-          "<strong>5</strong> active contract templates",
-          "<strong>25</strong> new contracts /month",
-          "<strong>50</strong> active CantingTribe NDAs",
-          "<strong>Unlimited</strong> storage for fulfilled contracts",
-        ]
         benefits_title = ""
         benefits_list = [
           "Access advanced integrations",
@@ -46,61 +27,8 @@
           "Collaboratively manage contracts within your organization",
         ]
         enable_show_all_features = true # if true, link reveals table
-        all_features_managing_contracts = [
-          { desc = "25 new contracts / month", disabled = false },
-          { desc = "250 contractual transactions / month", disabled = false },
-          { desc = "Organize existing contracts with tags", disabled = false },
-          { desc = "50 active CantingTribe NDAs", disabled = false },
-          { desc = "In-application task management", disabled = false },
-          { desc = "5 reminder notifications / contract", disabled = false },
-          { desc = "Alerts and notifications on contractual execution steps", disabled = false },
-          { desc = "Operate approved open souce contracts", disabled = false },
-          { desc = "Buy and operate Monax approved contracts (additional fees apply)", disabled = false },
-          { desc = "Exclusive first access to legal products created by Monax platform partners", disabled = false },
-        ]
-        all_features_managing_templates = [
-          { desc = "5 active contract templates", disabled = false },
-          { desc = "Create custom collaborative templates and parameters", disabled = false },
-          { desc = "Select contract workflows from Monax's extensive library", disabled = false },
-          { desc = "Import / export custom workflows", disabled = false },
-          { desc = "Set governing templates and subtemplates", disabled = false },
-          { desc = "Package templates into custom multi-contract workflows", disabled = true },
-        ]
-        all_features_managing_people = [
-          { desc = "Invite 3 external partners or counterparties to collaborate / contract", disabled = false },
-          { desc = "Collaborate within your organization", disabled = false },
-          { desc = "Structure your team into multiple departments", disabled = true },
-          { desc = "Custom branded portal for external counterparties (tba)", disabled = true },
-        ]
-        all_features_integrations = [
-          { desc = "Full-featured REST API", disabled = false },
-          { desc = "Email", disabled = false },
-          { desc = "Slack", disabled = false },
-          { desc = "SMS (tba)", disabled = false },
-          { desc = "Zapier (tba)", disabled = false },
-          { desc = "DocuSign (tba)", disabled = false },
-          { desc = "Stripe, PayPal", disabled = false },
-          { desc = "Custom Webhooks (tba)", disabled = false },
-          { desc = "DropBox, GDrive (tba)", disabled = false },
-          { desc = "WhatsApp, Facebook Messenger (tba)", disabled = true },
-          { desc = "Xero, FreeAgent, QuickBooks (tba)", disabled = true },
-          { desc = "HubSpot, Salesforce (tba)", disabled = true },
-          { desc = "Bamboo, Workday (tba)", disabled = true },
-          { desc = "Ergo contract logic execution engine by Accord (tba)", disabled = true },
-          { desc = "OpenLawVM contract logic execution engine (tba)", disabled = true },
-          { desc = "Contract logic execution engines in Python, Node.js, Ruby, PHP, Golang, .NET, Ballerina (tba)", disabled = true },
-        ]
-        all_features_support_services = [
-          { desc = "Self-help resouce center", disabled = false },
-          { desc = "Public webinars", disabled = false },
-          { desc = "Multilingual user interface", disabled = false },
-          { desc = "In-app chat support (response within 12 hours)", disabled = false },
-          { desc = "Email support (response within 12 hours)", disabled = false },
-          { desc = "Monax team 'office hours' each month on Zoom", disabled = false },
-          { desc = "Dedicated on-boarding assistant (3 hours bespoke training)", disabled = true },
-        ]
 
-        [[pricing_table.tier1.column.form]]
+        [[pricing_table.tier1.essential.form]]
           enable = true
           id = "demo1"
           source = "pricing essential demo request" # required for Segment to process
@@ -111,24 +39,13 @@
           company_name = true
           submit_text = "Book A Time <i class='fa fa-angle-right'></i>"
 
-      [[pricing_table.tier1.column]]
+      [pricing_table.tier1.professional]
         enable = true
         highlight_column = false
         title = "Professional"
-        billed_yearly_price = "$500" # /month
-        billed_monthly_price = "$625" # /month
-        subtitle = "Scale operations, manage permissions and customize your processes"
         link_title = "Request A Demo"
         link_triggers_demo_form = true # if false set url
         link_url = "#demo2"
-        features_title = ""
-        features_list = [
-          "<strong>10</strong> users",
-          "<strong>15</strong> active contract templates",
-          "<strong>75</strong> new contracts /month",
-          "<strong>150</strong> active CantingTribe NDAs",
-          "<strong>Unlimited</strong> storage for fulfilled contracts",
-        ]
         benefits_title = "All of Essential plus:"
         benefits_list = [
           "Access premium integrations",
@@ -136,61 +53,8 @@
           "Package and execute multicontract workflows",
         ]
         enable_show_all_features = true # if true, link reveals table
-        all_features_managing_contracts = [
-          { desc = "75 new contracts / month", disabled = false },
-          { desc = "1200 contractual transactions / month", disabled = false },
-          { desc = "Organize existing contracts with tags", disabled = false },
-          { desc = "150 active CantingTribe NDAs", disabled = false },
-          { desc = "In-application task management", disabled = false },
-          { desc = "10 reminder notifications / contract", disabled = false },
-          { desc = "Alerts and notifications on contractual execution steps", disabled = false },
-          { desc = "Operate approved open souce contracts", disabled = false },
-          { desc = "Buy and operate Monax approved contracts (additional fees apply)", disabled = false },
-          { desc = "Exclusive first access to legal products created by Monax platform partners", disabled = false },
-        ]
-        all_features_managing_templates = [
-          { desc = "15 active contract templates", disabled = false },
-          { desc = "Create custom collaborative templates and parameters", disabled = false },
-          { desc = "Select contract workflows from Monax's extensive library", disabled = false },
-          { desc = "Import / export custom workflows", disabled = false },
-          { desc = "Set governing templates and subtemplates", disabled = false },
-          { desc = "Package templates into custom multi-contract workflows", disabled = false },
-        ]
-        all_features_managing_people = [
-          { desc = "Invite 5 external partners or counterparties to collaborate / contract", disabled = false },
-          { desc = "Collaborate within your organization", disabled = false },
-          { desc = "Structure your team into multiple departments", disabled = false },
-          { desc = "Custom branded portal for external counterparties (tba)", disabled = false },
-        ]
-        all_features_integrations = [
-          { desc = "Full-featured REST API", disabled = false },
-          { desc = "Email", disabled = false },
-          { desc = "Slack", disabled = false },
-          { desc = "SMS (tba)", disabled = false },
-          { desc = "Zapier (tba)", disabled = false },
-          { desc = "DocuSign, HelloSign (tba)", disabled = false },
-          { desc = "Stripe, TrueLayer", disabled = false },
-          { desc = "Custom Webhooks (tba)", disabled = false },
-          { desc = "DropBox, GDrive (tba)", disabled = false },
-          { desc = "WhatsApp, Facebook Messenger (tba)", disabled = false },
-          { desc = "Xero, FreeAgent, QuickBooks (tba)", disabled = false },
-          { desc = "HubSpot, Salesforce (tba)", disabled = false },
-          { desc = "Bamboo, Workday (tba)", disabled = false },
-          { desc = "Ergo contract logic execution engine by Accord (tba)", disabled = false },
-          { desc = "OpenLawVM contract logic execution engine (tba)", disabled = false },
-          { desc = "Contract logic execution engines in Python, Node.js, Ruby, PHP, Golang, .NET, Ballerina (tba)", disabled = false },
-        ]
-        all_features_support_services = [
-          { desc = "Self-help resouce center", disabled = false },
-          { desc = "Public webinars", disabled = false },
-          { desc = "Multilingual user interface", disabled = false },
-          { desc = "In-app chat support (response within 12 hours)", disabled = false },
-          { desc = "Email support (response within 12 hours)", disabled = false },
-          { desc = "Monax team 'office hours' each month on Zoom", disabled = false },
-          { desc = "Dedicated on-boarding assistant (3 hours bespoke training)", disabled = false },
-        ]
 
-        [[pricing_table.tier1.column.form]]
+        [[pricing_table.tier1.professional.form]]
           enable = true
           id = "demo2"
           source = "pricing professional demo request" # required for Segment to process
@@ -208,25 +72,14 @@
       subtitle = "Starts at $25 USD"
       content_title = "<strong>Freelancer or just starting out?</strong><br>Get going on the right foot"
 
-      [[pricing_table.tier2.column]]
+      [pricing_table.tier2.starter]
         enable = true
         highlight_column = true
         title = "Starter"
-        billed_yearly_price = "$25" # /month
-        billed_monthly_price = "$31" # /month
-        subtitle = "Organize your contracts and gain clarity over your business relationships"
         link_title = "Request A Demo"
         link_triggers_demo_form = true # if false set url
         link_url = "#demo3"
         link_style_outline = false
-        features_title = ""
-        features_list = [
-          "<strong>1</strong> user",
-          "<strong>1</strong> active contract template",
-          "<strong>5</strong> new contracts /month",
-          "<strong>10</strong> active CantingTribe NDAs",
-          "<strong>Unlimited</strong> storage for fulfilled contracts",
-        ]
         benefits_title = ""
         benefits_list = [
           "Access basic integrations",
@@ -234,61 +87,8 @@
           "Create custom collaborative templates",
         ]
         enable_show_all_features = true # if true, link reveals table
-        all_features_managing_contracts = [
-          { desc = "5 new contracts / month", disabled = false },
-          { desc = "25 contractual transactions / month", disabled = false },
-          { desc = "Organize existing contracts with tags", disabled = false },
-          { desc = "10 active CantingTribe NDAs", disabled = false },
-          { desc = "In-application task management", disabled = false },
-          { desc = "1 reminder notifications / contract", disabled = false },
-          { desc = "Alerts and notifications on contractual execution steps", disabled = false },
-          { desc = "Operate approved open souce contracts", disabled = false },
-          { desc = "Buy and operate Monax approved contracts (additional fees apply)", disabled = false },
-          { desc = "Exclusive first access to legal products created by Monax platform partners", disabled = true },
-        ]
-        all_features_managing_templates = [
-          { desc = "1 active contract templates", disabled = false },
-          { desc = "Create custom collaborative templates and parameters", disabled = false },
-          { desc = "Select contract workflows from Monax's extensive library", disabled = false },
-          { desc = "Import / export custom workflows", disabled = true },
-          { desc = "Set governing templates and subtemplates", disabled = true },
-          { desc = "Package templates into custom multi-contract workflows", disabled = true },
-        ]
-        all_features_managing_people = [
-          { desc = "Invite 1 external partner or counterparty to collaborate / contract", disabled = false },
-          { desc = "Collaborate within your organization", disabled = true },
-          { desc = "Structure your team into multiple departments", disabled = true },
-          { desc = "Custom branded portal for external counterparties (tba)", disabled = true },
-        ]
-        all_features_integrations = [
-          { desc = "Full-featured REST API", disabled = false },
-          { desc = "Email", disabled = false },
-          { desc = "Slack", disabled = false },
-          { desc = "SMS (tba)", disabled = false },
-          { desc = "Zapier (tba)", disabled = true },
-          { desc = "DocuSign (tba)", disabled = true },
-          { desc = "Stripe, PayPal", disabled = true },
-          { desc = "Custom Webhooks (tba)", disabled = true },
-          { desc = "DropBox, GDrive (tba)", disabled = true },
-          { desc = "WhatsApp, Facebook Messenger (tba)", disabled = true },
-          { desc = "Xero, FreeAgent, QuickBooks (tba)", disabled = true },
-          { desc = "HubSpot, Salesforce (tba)", disabled = true },
-          { desc = "Bamboo, Workday (tba)", disabled = true },
-          { desc = "Ergo contract logic execution engine by Accord (tba)", disabled = true },
-          { desc = "OpenLawVM contract logic execution engine (tba)", disabled = true },
-          { desc = "Contract logic execution engines in Python, Node.js, Ruby, PHP, Golang, .NET, Ballerina (tba)", disabled = true },
-        ]
-        all_features_support_services = [
-          { desc = "Self-help resouce center", disabled = false },
-          { desc = "Public webinars", disabled = false },
-          { desc = "Multilingual user interface", disabled = false },
-          { desc = "In-app chat support (response within 12 hours)", disabled = false },
-          { desc = "Email support (response within 12 hours)", disabled = true },
-          { desc = "Monax team 'office hours' each month on Zoom", disabled = true },
-          { desc = "Dedicated on-boarding assistant (3 hours bespoke training)", disabled = true },
-        ]
 
-        [[pricing_table.tier2.column.form]]
+        [[pricing_table.tier2.starter.form]]
           enable = true
           id = "demo3"
           source = "pricing starter demo request" # required for Segment to process
