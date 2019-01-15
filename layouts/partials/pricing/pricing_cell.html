@@ -1,0 +1,105 @@
+{{ $baseData := .baseData }}
+{{ $containerSize := .containerSize }}
+{{ with .dynamicData }}
+<div class="{{ if eq $containerSize "small" }}col-sm-6{{ else }}col-sm-12{{end}} padding-bottom-md">
+
+{{ if eq $containerSize "small" }}
+  <div class="panel pricing-table">
+    <div class="panel-heading {{ if $baseData.highlight_column }}highlight{{ end }}">
+      <h3 class="">{{ $baseData.title }}</h3>
+    </div>
+    <div class="panel-body text-center">
+        <p class="p1">$<span class="price" data-billed-yearly="{{ div ( int .price_annual) 1200 }}" data-billed-monthly="{{ div (int .price_monthly) 100 }}">{{ div (int .price_annual) 1200 }}</span>/month</p>
+{{ else }}
+  <div class="panel pricing-table">
+    <div class="panel-heading {{ if $baseData.highlight_column }}highlight{{ end }}">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3 class="range-left-sm">{{ $baseData.title }}</h3>
+        </div>
+        <div class="col-sm-6">
+          <p class="p1 range-left-sm">$<span class="price" data-billed-yearly="{{ div ( int .price_annual) 1200 }}" data-billed-monthly="{{ div (int .price_monthly) 100 }}">{{ div ( int .price_annual) 1200 }}</span>/month</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel-body">
+{{ end }}
+{{ if eq $containerSize "small" }}
+        <p class="p1 padding-bottom-sm">{{ .description }}</p>
+{{ else }}
+        <h4 class="padding-bottom-sm range-left-sm">{{ .description }}</h4>
+{{ end }}
+        <a {{ if $baseData.link_triggers_demo_form }} id="pricing-trigger-demo" {{ else }} href="{{ $baseData.link_url }}" {{ end }} class="btn btn-xl {{ if not $baseData.highlight_column }}btn-outline{{ end }}">{{ $baseData.link_title }}</a>
+
+        {{ range $baseData.form }}
+        {{ if .enable }}
+        <form id="pricing-demo-signup" data-source="{{ with .source }}{{.}}{{ end }}" class="form form-white padding-top-md" style="display: none;">
+          {{ with .source }}
+            <input type="text" name="source" value="{{ . }}" class="hidden">
+          {{ end }}
+          {{ with .email }}
+            <input type="text" placeholder="Email" name="email" class="field-email">
+          {{ end }}
+          {{ with .fname }}
+            <input type="text" placeholder="First Name" name="firstName" class="field-fname">
+          {{ end }}
+          {{ with .lname }}
+            <input type="text" placeholder="Last Name" name="lastName" class="field-lname">
+          {{ end }}
+          {{ with .company_name }}
+            <input type="text" placeholder="Company Name" name="company" class="field-company">
+          {{ end }}
+          <div class="btn-container padding-top-sm">
+            <!-- Calendly block -->
+            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+            <button type="submit" value="Submit" class="btn btn-xl field-submit">
+              <span>{{ .submit_text | default "Submit" | markdownify }}</span>
+            </button>
+          </div>
+        </form>
+        <div class="success-message-container"> <!-- must be directly after form -->
+          <div class="success-message">
+            <img class="success-doug-img" src="/img/assets/doug/doug_lo.png" alt="Doug">
+            <span class="success-text">Requested <i class="fa fa-check"></i></span>
+          </div>
+          <p class="success-info" style="margin-top: 20px;">Thanks for getting in touch! We'll get back to you soon.</p>
+        </div>
+        {{ end }}
+        {{ end }}
+
+    </div>
+{{ if eq $containerSize "large" }}
+<div class="row">
+  <div class="col-sm-6">
+{{ end }}
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><strong>{{ .users }}</strong> users</li>
+      <li class="list-group-item"><strong>{{ .templates }}</strong> active contract templates</li>
+      <li class="list-group-item"><strong>{{ .contracts }}</strong> new contracts /month</li>
+      <li class="list-group-item"><strong>{{ .ndas }}</strong> active CantingTribe NDAs</li>
+      <li class="list-group-item"><strong>Unlimited</strong> storage for fulfilled contracts</li>
+    </ul>
+{{ if eq $containerSize "large" }}
+</div>
+<div class="col-sm-6">
+{{ end }}
+    <div class="range-left">
+      <p class="strong inner-heading">{{ $baseData.benefits_title }}&nbsp;</p>
+    </div>
+    <ul class="list-group list-group-flush fa-ul">
+      {{ range $baseData.benefits_list }}
+        <li class="list-group-item"><span class="fa-li" ><i class="fa fa-check"></i></span> {{ . | markdownify }}</li>
+      {{ end }}
+    </ul>
+  </div>
+{{ if eq $containerSize "large" }}
+</div>
+</div>
+{{ end }}
+  {{ if $baseData.enable_show_all_features }}
+    <p><a id="trigger-all-features-table" class="hidden-xs" href="#features-table">Show all features</a></p>
+  {{ end }}
+
+</div>
+{{ end }}
