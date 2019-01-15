@@ -11,7 +11,10 @@ variables:
 # Job templates
 .build_site: &build_template
   stage: build
+  before_script:
+    - apk add --update --no-cache bash curl jq
   script:
+    - scripts/pricing_getter.sh
     - |
       hugo \
         --baseURL="https://$SITE_NAME/" \

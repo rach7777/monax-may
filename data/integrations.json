@@ -1,0 +1,81 @@
+[
+  {
+    "id": "api_rest",
+    "description": "Full-featured REST API",
+    "enabled": true
+  },
+  {
+    "id": "notifications_email",
+    "description": "Email Notifications",
+    "enabled": true
+  },
+  {
+    "id": "notifications_slack",
+    "description": "Slack Notifications",
+    "enabled": true
+  },
+  {
+    "id": "notifications_sms",
+    "description": "SMS Notifications",
+    "enabled": false
+  },
+  {
+    "id": "notifications_webhooks",
+    "description": "Custom Webhooks",
+    "enabled": false
+  },
+  {
+    "id": "notifications_zapier",
+    "description": "Zapier Events",
+    "enabled": false
+  },
+  {
+    "id": "system_docusign",
+    "description": "DocuSign",
+    "enabled": false
+  },
+  {
+    "id": "system_stripe",
+    "description": "Stripe, Paypal",
+    "enabled": false
+  },
+  {
+    "id": "system_dropbox",
+    "description": "DropBox, GDrive",
+    "enabled": false
+  },
+  {
+    "id": "notifications_chatbots",
+    "description": "WhatsApp, Facebook Messenger",
+    "enabled": false,
+    "visible": false
+  },
+  {
+    "id": "system_xero",
+    "description": "Xero, FreeAgent, QuickBooks",
+    "enabled": false
+  },
+  {
+    "id": "system_hubspot",
+    "description": "HubSpot, Salesforce",
+    "enabled": false
+  },
+  {
+    "id": "system_bamboo",
+    "description": "Bamboo, Workday",
+    "enabled": false,
+    "visible": false
+  },
+  {
+    "id": "engine_ergo",
+    "description": "Accord Ergo contract logic execution engine",
+    "enabled": false,
+    "visible": false
+  },
+  {
+    "id": "engine_custom",
+    "description": "Contract logic execution engines in Python, Node.js, Ruby, PHP, Golang, .NET, Ballerina",
+    "enabled": false,
+    "visible": false
+  }
+]
