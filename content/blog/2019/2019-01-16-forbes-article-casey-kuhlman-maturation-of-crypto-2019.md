@@ -2,11 +2,11 @@
 
 # Pretty normal stuff
 date:      2019-01-16T00:00:00Z
-title:     "The Maturation of Crypto in 2019 - Casey Kuhlman,CEO"
+title:     "The Maturation of Crypto in 2019 - Casey Kuhlman CEO"
 author:    "Rachel Davidson, Senior Marketing Associate"
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
-excerpt:   "Aticle by Casey Kuhlman, CEO, which originally appeared in Forbes 01/15/19" 
+excerpt:   "Article by Casey Kuhlman which originally appeared in Forbes 01/15/19" 
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
