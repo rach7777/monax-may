@@ -10,7 +10,7 @@ excerpt:   "Monax is the enabling technology for the most innovative businesses 
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: nina-ces-collage.jpg
+thumbnail: nina-ces-collage.png
 
 # check the categories on the existing blog. should only have ONE
 categories:
@@ -44,7 +44,7 @@ utm:
 ---
 
 <!-- In general the filename below should match thumbnail category above -->
-{{< image_blog "nina-ces-collage.jpg" >}}
+{{< image_blog "nina-ces-collage.png" >}}
 
 <!-- if this article is part of a series, related articles will automatically appear here -->
 {{< blog_series >}}
@@ -62,13 +62,13 @@ I got interested in CES a few years back because I saw its infinite array of sma
 2. Compliant, engineered investment models will be in demand. Think "STO" or other derivative obligations that enable network-level fundraising.
 3. New business models will rule.  One recurring theme was the need to #BUIDL revenue-generating business models that capture value from "smart contracts," or, as we call them, "legal products." Fundraising aside, the networked economy can only grow if there are companies with viable business models that generate revenue. (My two cents is that business model should come before fundraising, but hey, I'm old-fashioned that way.)
 
-Monax ties all these themes together in a product that delivers information focused on needs of real customers. We see automated *legal products* (software that executes a job related to legal relationships) as the key to unblocking markets in the networked economy.
+Monax ties all these themes together in a product that delivers information focused on needs of real customers. We see automated *legal products* (software that executes a job related to legal relationships) as the key to unblocking markets in the networked economy. For more in-depth info, have a look at this [blog](https://monax.io/blog/2018/09/20/the-monax-stack-what-makes-legal-products-go./).
 
 **RegTech: staying constantly compliant and proving it.** The Monax Platform enables users to operate contracts at scale that are seamless to update at scale and prove compliance. Like good legal infrastructure, Monax reflects the way real business gets done, and enables companies to work more smoothly on their priorities, not paperwork.
 
-**Fundraising contracts: unlocking markets with legal products.** As the digital economy grows, one of the most pressing needs companies have is for fundraising to stand up market-making solutions. Once you know how you want to raise money, the Monax platform is purpose built for you to model, test, operate and prove the value of the fundraising contract, as well as its compliance with best practices.
+**Fundraising contracts: unlocking markets with legal products.** As the digital economy grows, one of the most pressing needs companies have is for fundraising to stand up market-making solutions. Once you know how you want to raise money, the Monax platform is purpose built for you to model, test, operate and prove the value of the fundraising contract, as well as its compliance with best practices. This [blog](https://monax.io/blog/2018/09/18/startups-future-proof-your-contracting/) goes into a bit more detail on how the Monax Platform gives companies the edge in this area. 
 
-**"Best practices" brings us to my favorite theme at CES, Business Modeling on Monax!** The economy has evolved to the digital industrial age. Old business models centered around products are being replaced by relationship-centric companies. To capture value in this new age, it's necessary to get a grasp on your complete contract "situation" and drill down at a click to see what is going on in the business process and make nimble adjustments. The Monax Platform toolkit of dashboard, process models and Legal Product Studio give you what you need to create a roadmap, execute milestones and adjust course as necessary.
+**"Best practices" brings us to my favorite theme at CES, [Business Modeling](https://monax.io/blog/2018/09/25/introducing-the-monax-bpmn-engine---the-powerhouse-for-legal-products./) on Monax!** The economy has evolved to the digital industrial age. Old business models centered around products are being replaced by relationship-centric companies. To capture value in this new age, it's necessary to get a grasp on your complete contract "situation" and drill down at a click to see what is going on in the business process and make nimble adjustments. The Monax Platform toolkit of [dashboard](https://www.youtube.com/watch?v=8nlM_lKfzkI), [process models](https://monax.io/blog/2018/09/25/introducing-the-monax-bpmn-engine---the-powerhouse-for-legal-products./) and [Legal Product Studio](https://monax.io/blog/2018/11/22/introducing-the-monax-legal-product-studio/) give you what you need to create a roadmap, execute milestones and adjust course as necessary.
 
 Or, as I like to put it, outrace your competition, not just at the starting block, but to the finish line.
 
