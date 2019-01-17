@@ -2,7 +2,7 @@
 
 # Pretty normal stuff
 date:      2019-01-17T00:00:00Z
-title:     "Monax at CES 2019: The Year of Legal Tech"
+title:     "Monax at CES 2019 - The Year of Legal Tech"
 author:    "Nina Kilbride, CCO"
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
@@ -50,9 +50,7 @@ utm:
 {{< blog_series >}}
 
 <!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
-Last week I had the pleasure of speaking about Monax to the CES Digital Money Forum in Las Vegas, part of the largest tech trade show in the world. I described of our journey and some tips for getting started with legal products; you can see my slide deck here: 
-
-<iframe src="https://www.slideshare.net/RachDavidson/slideshelf" width="615px" height="470px" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:none;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>.
+Last week I had the pleasure of speaking about Monax to the CES Digital Money Forum in Las Vegas, part of the largest tech trade show in the world. I described of our journey and some tips for getting started with legal products; you can see my slide deck [here](https://www.slideshare.net/RachDavidson/nina-kilbride-monax-ces-presentation-getting-smart-about-smart-contracts)
 
 After watching and meeting countless luminaries and hands-on innovators, it was clear that Monax is the enabling technology for the most innovative businesses at [CES](https://thedigitalmoneyforum.com/2019-agenda/).
 
