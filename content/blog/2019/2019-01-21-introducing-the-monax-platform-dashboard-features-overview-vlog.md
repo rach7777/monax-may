@@ -1,7 +1,7 @@
 ---
 
 # Pretty normal stuff
-date:      2019-01-18T00:00:00Z
+date:      2019-01-21T00:00:00Z
 title:     "Introducing the Monax Platform Dashboard - Features Overview Vlog"
 author:    "Chenxiao Hu Wu - Producer Experience Associate"
 
@@ -61,20 +61,25 @@ Hi this is [Chenxiao](https://www.linkedin.com/in/chenxiaoh/) from Monax, today'
 
 Once you log in you will land in this overview page:
 
-MP Platform dashboard features
-* Tasks: This is your obligational to-do list, here your legal obligations will be outlined for you to take care of. Keeping an eye on your obligations has never been easier!
-* Agreements: At a sight, how many agreements you are involved in and which is their legal state.
-* Collaborators: A list with the top five counterparties you have been signing your contracts with, keep an eye to whom you are doing your business with!
-* Frequently used templates: A shortcut to the templates you have been using the most.
+`MP Platform dashboard features`
+
+- **Tasks** This is your obligational to-do list, here your legal obligations will be outlined for you to take care of. Keeping an eye on your obligations has never been easier!
+
+- **Agreements** At a sight, how many agreements you are involved in and which is their legal state.
+
+- **Collaborators** A list with the top five counterparties you have been signing your contracts with, keep an eye to whom you are doing your business with!
+
+- **Frequently used templates** A shortcut to the templates you have been using the most.
 
 Ok, so now you may wonder "But what does these information mean to me?"
+
 That's why I built an example for you:
 
-Let's imagine that I am professional photographer called Lucy,  
-1. Tasks: Will tell me when my signature is expected in a contract, and I will be notified when I need to take photographs for my clients.
-2. Agreements: I will be able to keep track on how many works I am about to sign up to deliver and how many works I've already committed to, helping me to organise my time more efficiently. 
-3. Collaborators: I can check quickly who are the businesses or individuals that hires me the most.
-4. Frequently used templates: Here, my most frequently used template is the independent contractor agreement I send to most clients. Each time I get a request for services I can easily access this document and send the customer an agreement that has all terms filled out and is ready for signing.
+Let's imagine that I am professional photographer called Lucy:  
+1. `Tasks` Will tell me when my signature is expected in a contract, and I will be notified when I need to take photographs for my clients.
+2. `Agreements` I will be able to keep track on how many works I am about to sign up to deliver and how many works I've already committed to, helping me to organise my time more efficiently. 
+3. `Collaborators` I can check quickly who are the businesses or individuals that hires me the most.
+4. `Frequently used templates` Here, my most frequently used template is the independent contractor agreement I send to most clients. Each time I get a request for services I can easily access this document and send the customer an agreement that has all terms filled out and is ready for signing.
 
 I hope this vlog has been clarifying, I'd love to hear your feedback, so feel free to drop me a message in the little chat bot in the bottom right corner. 
 
