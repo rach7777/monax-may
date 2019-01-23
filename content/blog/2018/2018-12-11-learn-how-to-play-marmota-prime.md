@@ -6,7 +6,7 @@ title:     "How to Play Marmota Prime"
 author:    "Rachel Davidson, Senior Marketing Associate"
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
-excerpt:   "Learn how to play Marmota Prime."
+excerpt:   "Learn how to play [Marmota Prime](https://app.monax.io/marmota-prime)."
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
@@ -52,7 +52,7 @@ utm:
 <!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
 ## About the Game
 
-- Marmota Prime is a daily, free blockchain-based guessing game designed to showcase the tools we’ve been building here at MonaxHQ.
+- [Marmota Prime](https://app.monax.io/marmota-prime) is a daily, free blockchain-based guessing game designed to showcase the tools we’ve been building here at MonaxHQ.
 
 - Contestants compete in daily rounds to guess the mean temperature of a designated world city in a 24 hour time window each day. 
 
