@@ -6,7 +6,7 @@ title:     "Powering Marmota Prime: Legal Products and Computational Data Poweri
 author:    "Nina Kilbride, CCO"
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
-excerpt:   "Learn about the tech powering our new blockchain-based [game](https://app.monax.io/marmota-prime)"
+excerpt:   "Learn about the tech powering our new blockchain-based game."
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
@@ -50,6 +50,8 @@ utm:
 {{< blog_series >}}
 
 <!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
+To play - click [here](https://app.monax.io/marmota-prime)
+
 - [Marmota Prime](https://app.monax.io/marmota-prime) is a simple game backed by powerful technologies. In fact, the Monax Platform technology powering the game is the same we use to turn cumbersome legal processes into Active Agreements, software-based legal products that work for you, throughout the lifecycle of your legal relationships.
 
 - [Marmota Prime](https://app.monax.io/marmota-prime) is a neat example of combining a number of generic legal processes and turning them into an Active Agreement fit for your purposes. Specifically, the game requires two legal product templates designed with the Monax Legal Product Modeler (LPM). 

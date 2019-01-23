@@ -50,6 +50,9 @@ utm:
 {{< blog_series >}}
 
 <!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
+
+To play - click [here](https://app.monax.io/marmota-prime)
+
 ### Blockchain for Good: Monax Launches ‘Marmota Prime’ Game
 
 *Prizes for predictions challenge include in kind donations to children’s charities*
