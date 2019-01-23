@@ -50,6 +50,9 @@ utm:
 {{< blog_series >}}
 
 <!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
+To play - click [here](https://app.monax.io/marmota-prime)
+
+
 #### Welcome to Marmota Prime, a daily blockchain-based weather prediction game powered by Monax! 
 
 The marmots love a game or two here at MonaxHQ - not only do they make great educational tools, they promote innovation and bring folks together. 

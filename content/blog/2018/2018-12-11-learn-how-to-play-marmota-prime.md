@@ -50,9 +50,11 @@ utm:
 {{< blog_series >}}
 
 <!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
+To play - click [here](https://app.monax.io/marmota-prime)
+
 ## About the Game
 
-- Marmota Prime is a daily, free blockchain-based guessing game designed to showcase the tools we’ve been building here at MonaxHQ.
+- [Marmota Prime](https://app.monax.io/marmota-prime) is a daily, free blockchain-based guessing game designed to showcase the tools we’ve been building here at MonaxHQ.
 
 - Contestants compete in daily rounds to guess the mean temperature of a designated world city in a 24 hour time window each day. 
 
