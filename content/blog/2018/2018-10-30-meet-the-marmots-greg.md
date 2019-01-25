@@ -6,7 +6,7 @@ title:     "Meet the Marmots: Greg Hill, Site Reliability Engineer"
 author:    Rachel Davidson, Senior Marketing Associate
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
-excerpt:   "When people think about legal they think almost entirely of the provision of bespoke services. Yet the world is changing, and legal needs to keep up."
+excerpt:   "This is a series of posts where each of our hardworking marmots* have a chance to talk about themselves - what they get up to at Monax and in their wider habitats - so you can understand a bit more about the folks who are bringing the Monax vision to life."
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
@@ -52,7 +52,7 @@ utm:
 <!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
 Monax is bursting at the seams with talent from both tech, legal and business.  Our team is split between offices in London,  Edinburgh and New York - and a few remote marmots too!
 
-We’re a diverse bunch of characters, and work hard to bring about the future of legal tech (and we have a lot of fun doing so!). Each post in this blog series will focus on an individual marmot, so you can understand a bit more about the team who are busy bringing the Monax vision to life. First up is one of our friendly Scottish marmots, Greg Hill from Team Distribution:
+We’re a diverse bunch of characters, and work hard to bring about the future of legal tech (and we have a lot of fun doing so!). Each post in this blog series will focus on an individual marmot, so you can understand a bit more about the team who are busy bringing the Monax vision to life. First up is one of our friendly Scottish marmots, [Greg Hill](https://www.linkedin.com/in/gregorydhill95/?originalSubdomain=uk) from Team Distribution:
 
 ### Hey Greg, can you introduce yourself in a sentence?
 
