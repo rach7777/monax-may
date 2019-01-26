@@ -6,7 +6,7 @@ title:     "2019 - The Year of the Marmot!"
 author:    "Rachel Davidson, Senior Marketing Associate"
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
-excerpt:   "2018 was a whirlwind of growth at Monax - and there are exciting times ahead... `#YearoftheMarmot`"
+excerpt:   "2018 was a whirlwind of growth at Monax - with more exciting times ahead #YearoftheMarmot"
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
