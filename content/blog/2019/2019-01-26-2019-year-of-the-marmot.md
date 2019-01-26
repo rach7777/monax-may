@@ -57,7 +57,7 @@ utm:
 
 - We [pivoted](https://monax.io/blog/2018/04/26/monax-is-pivoting.-heres-why/), turning our focus from horizontal software company and moving up the stack to build a vertically integrated legal technology solution.
 
-- We tripled our team - adding crucial staff to our development, support and sales/marketing teams. Read about a few of these additions to the marmot fold: [Adam](https://monax.io/blog/2018/10/23/meet-the-marmots-adam-locklin-director-of-partnerships/) [Anjlee](https://monax.io/blog/2018/09/17/meet-the-marmots-anjlee-khurana-legal-engineer/) [Chenxiao](https://monax.io/blog/2018/10/05/meet-the-marmots-chenxiao-hu-wu-producer-experience-associate/) and [Greg](https://monax.io/blog/2018/10/30/meet-the-marmots-greg-hill-site-reliability-engineer/).
+- We tripled our team - adding crucial staff to our development, support and sales/marketing teams. Read about a few of these additions to the marmot fold: [Adam](https://monax.io/blog/2018/10/23/meet-the-marmots-adam-locklin-director-of-partnerships/),  [Anjlee](https://monax.io/blog/2018/09/17/meet-the-marmots-anjlee-khurana-legal-engineer/), [Chenxiao](https://monax.io/blog/2018/10/05/meet-the-marmots-chenxiao-hu-wu-producer-experience-associate/) and [Greg](https://monax.io/blog/2018/10/30/meet-the-marmots-greg-hill-site-reliability-engineer/).
 
 - We began development of the [Agreements Network](https://monax.io/blog/2018/04/27/monax-is-pleased-to-introduce-the-agreements-network/) together with the first [group of collaborators](https://www.forbes.com/sites/sarahhansen/2018/07/26/11-companies-join-agreements-network-to-develop-ethereum-platform-for-lawyers/#31925a5d4aec)
 
