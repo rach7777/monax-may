@@ -80,14 +80,15 @@ We've packed in so much in one year - here's an **interactive timeline** of the 
 
 Here at Monax towers we like to think of 2019 as `Year of the Marmot`.
 
-Let me explain. The Chinese New Year on Feb 5th heralds the [Year of the Pig](https://chinesenewyear.net/zodiac/pig/)... the hoary marmot (Marmota caligata) is a species of marmot that inhabits the mountains of North America. These animals are also know as “whistle pigs”. Hence the stars have aligned and it is officially `‘Year of the Marmot’` (aka whistle pig) around here!  
+Let me explain. The Chinese New Year on Feb 5th heralds the [Year of the Pig](https://chinesenewyear.net/zodiac/pig/)... the hoary marmot (Marmota caligata) is a species of marmot that inhabits the mountains of North America. These animals are also know as “whistle pigs”. Hence the stars have aligned and it is officially `Year of the Marmot` (aka whistle pig) around here!  
 
 In February the [Monax Platform](https://monax.io/platform/) enters public beta, and there's lots more in the pipeline, the most significant being the launch of the [Agreements Network](https://agreements.network) later this year. Interested to hear how the platform can save you time and money, and give you complete oversight of your buisness contracting? Monax CCO Nina kilbride gives the lowdown in this [video](https://youtu.be/8yTzIKc0KdM) from her recent appearance at CES in Las Vegas. Our packages are laid out [here](https://monax.io/pricing/) and we open to Beta customers early February - be one of the first to try this innovative software.
 
 
-*Watch this space, the marmots are coming!*
+**Watch this space, the marmots are coming!**
 
-Follow our journey on [Twitter](https://twitter.com/monaxHQ?lang=en), [Instagram](https://www.instagram.com/monaxhq/?hl=en), [LinkedIn](https://www.linkedin.com/company/monax/), [YouTube](https://www.youtube.com/channel/UCTNwr9rWLg3C3gtZolFZDOQ/videos) and [Medium](https://medium.com/monaxhq).
+Follow our journey on [Twitter](https://twitter.com/monaxHQ?lang=en), [Instagram](https://www.instagram.com/monaxhq/?hl=en), [LinkedIn](https://www.linkedin.com/company/monax/), [YouTube](https://www.youtube.com/channel/UCTNwr9rWLg3C3gtZolFZDOQ/videos) and [Medium](https://medium.com/monaxhq). To receive our monthly newsletter, email `contact@monax.io`. 
+
 
 #HappyContracting #YearoftheMarmot #LegalProducts #MonaxPlatform #DealSpace #LegalTech #ContractManagment
 
