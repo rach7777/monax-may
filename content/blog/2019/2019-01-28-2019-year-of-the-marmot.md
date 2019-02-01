@@ -90,6 +90,6 @@ In February the [Monax Platform](https://monax.io/platform/) enters public beta,
 Follow our journey on [Twitter](https://twitter.com/monaxHQ?lang=en), [Instagram](https://www.instagram.com/monaxhq/?hl=en), [LinkedIn](https://www.linkedin.com/company/monax/), [YouTube](https://www.youtube.com/channel/UCTNwr9rWLg3C3gtZolFZDOQ/videos) and [Medium](https://medium.com/monaxhq). To receive our monthly newsletter, email `contact@monax.io`. 
 
 
-#HappyContracting #YearoftheMarmot #LegalProducts #MonaxPlatform #DealSpace #LegalTech #ContractManagment
+#HappyContracting #YearoftheMarmot #LegalProducts #MonaxPlatform #DealSpace #LegalTech #ContractManagement 
 
 [Photo](https://unsplash.com/photos/u2CBtdDg46E) by DEVIN AVERY on [Unsplash](https://unsplash.com).
