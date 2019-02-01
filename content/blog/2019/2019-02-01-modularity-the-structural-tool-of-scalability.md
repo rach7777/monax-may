@@ -1,7 +1,7 @@
 ---
 
 # Pretty normal stuff
-date:      2019-01-31T00:00:00Z
+date:      2019-02-01T00:00:00Z
 title:     "Modularity: Structural Tool of Scalability"
 author:    "Anjlee Khurana, Senior Legal Engineer"
 
@@ -77,6 +77,6 @@ In February the [Monax Platform](https://monax.io/platform/) enters public beta,
 
 Follow our journey on [Twitter](https://twitter.com/monaxHQ?lang=en), [Instagram](https://www.instagram.com/monaxhq/?hl=en), [LinkedIn](https://www.linkedin.com/company/monax/), [YouTube](https://www.youtube.com/channel/UCTNwr9rWLg3C3gtZolFZDOQ/videos) and [Medium](https://medium.com/monaxhq). To receive our monthly newsletter, email `contact@monax.io`. 
 
-[Anjlee](https://www.linkedin.com/in/anjlee-khurana-286630122), Senior Legal Engineer
+[Anjlee](https://www.linkedin.com/in/anjlee-khurana-286630122) is Senior Legal Engineer at Monax. 
 
 
