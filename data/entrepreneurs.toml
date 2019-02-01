@@ -90,11 +90,11 @@
 
       [[integrations.logo]]
         img = "/img/integrations-logos/docusign-logo.png"
-        text = "coming late 2018"
+        text = ""
 
       [[integrations.logo]]
         img = "/img/integrations-logos/stripe-logo.png"
-        text = "coming early 2019"
+        text = ""
 
 
 [cta_two_button] # global
