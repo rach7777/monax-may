@@ -37,7 +37,12 @@ utm:
 
 {{< image_blog "yosh-ginsu-146166-unsplash.jpg" >}}
 
-Within the zeitgeist of blockchain technology there is an understand of two things which lead people to believe something that is really a red herring when it comes to technical solutions. First people understand that blockchains and smart contracts are built to be "immutable". Second people understand that whenever code is involved there are bugs. The result of the intersection of these two understandings is an idea that the adoption of smart contract technology -- particularly when applied to actual, legal, contractual duties -- will **never** work. The problem with the idea is that it is just dead wrong when it comes to how actual, real-world systems are built.
+Within the zeitgeist of blockchain technology there is an understanding of two fundamentals of the technology which lead people to a mental result that is really a red herring when it comes to technical solutions. 
+
+1. First people understand that blockchains and smart contracts are built to be "immutable". 
+2. Second people understand that whenever code is involved there are bugs. 
+
+The result of the intersection of these two understandings is an idea that the adoption of smart contract technology -- particularly when applied to actual, legal, contractual duties -- will **never** work. The problem with the idea is that it is just dead wrong when it comes to how actual, real-world systems are built.
 
 > tl;dr: If your blockchain system does not allow you to overcome code bugs then it has been built by amateurs.
 
