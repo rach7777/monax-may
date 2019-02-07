@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  {{ partial "head_fonts.html" . }}
+
+  <body>
+
+    <div id="all" class="single-post">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        <section>
+          <div class="content-container padding-top-xl">
+            {{ with .Title }}
+            <div class="strong">
+              <h1>{{ . | markdownify }}</h1>
+            </div>
+            {{ end }}
+            <div id="post-content" class="padding-bottom-xl">
+              {{ .Content }}
+            </div>
+          </div>
+        </section>
+
+      
+        {{ partial "footer.html" . }}
+
+  </body>
+</html>
