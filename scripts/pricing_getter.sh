@@ -76,4 +76,4 @@ jq --null-input \
   1> data/pricing_new.json
 
 echo -e "\n\nPricing information\n"
-cat pricing_new.json | jq .
+cat data/pricing_new.json | jq .
