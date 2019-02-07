@@ -88,9 +88,9 @@
         img = "/img/integrations-logos/slack-logo.png"
         text = ""
 
-      [[integrations.logo]]
-        img = "/img/integrations-logos/docusign-logo.png"
-        text = ""
+      # [[integrations.logo]]
+      #   img = "/img/integrations-logos/docusign-logo.png"
+      #   text = ""
 
       [[integrations.logo]]
         img = "/img/integrations-logos/stripe-logo.png"
