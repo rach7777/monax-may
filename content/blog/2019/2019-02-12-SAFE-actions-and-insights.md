@@ -10,7 +10,7 @@ excerpt:   "The Monax Platform is tooled to manage the complex processes, rights
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: safe-blog.jpg
+thumbnail: safe-blog.png
 
 # check the categories on the existing blog. should only have ONE
 categories:
@@ -51,13 +51,13 @@ An automated SAFE is a smarter document that helps investors and startups alike 
 
 The [Monax Platform](https://monax.io/blog/2018/12/04/introducing-the-monax-platform---contract-lifecycle-management-for-the-digital-age/) categorizes agreements based on whether they are in the process of *formation*, where conditions precedent are fulfilled and signatures applied, and *execution*, the stage where a document has become a live contract, with binding effect and asset status.
 
-{{< image_blog "safe-formation.jpg" >}}
+{{< image_blog "safe-formation.png" >}}
 
 With the Monax platform, the SAFE-based legal product collects the necessary signatures in a single lane the process modeler uses to track when all identified parties have signed. In this workflow, financing contract signatures constitute agreements to a valuation cap used in the execution workflow. This seemingly simple innovation provides instant status on who has signed, and we think will prevent a lot of wasted checking-in with legal to see who has signed! This instant process insight, without friction, tells us if there's a holdup. The actions of the legal product after signing unlock far more value on the Monax Platform.
 
 Execution of a SAFE through its lifecycle is a bit more complex, but this is where Monax shines!
 
-{{< image_blog "safe-execution.jpg" >}}
+{{< image_blog "safe-execution.png" >}}
 
 **Instant Insight.** In the execution model, we can track where the investor(s) and company stand in the process of execution of the SAFE contract, through the Monax DealSpace Dashboard. Task boxes and arrows reflect what needs to happen when, while decision points enable the model to react to events and choose the appropriate path, in this case, to issue standard preferred stock if the company's pre-money valuation exceeds its valuation cap. Actions required by the company and investors are organized in horizontal swim lanes. Green-highlight task boxes are completed, while the task that is currently "to-do" is shown in amber highlight. The Monax Dealspace delivers a history of every event, as well as tamper-proof references to event provenance.
 
