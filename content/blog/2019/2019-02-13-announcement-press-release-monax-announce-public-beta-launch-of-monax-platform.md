@@ -12,6 +12,8 @@ excerpt:   "Monax is thrilled to announce the public beta launch of the Monax Pl
 # as well as at the top of the post itself
 thumbnail: press-release-logo.png
 
+#dealspace #legalproducts #monaxstudio #yearofthemarmot #happycontracting
+
 # check the categories on the existing blog. should only have ONE
 categories:
   - press
@@ -53,6 +55,7 @@ utm:
 {{< blog_series >}}
 
 <!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
+
 **Relationship-Centric Contract Obligations Management Platform Available for Commercial Use**
 
 Edinburgh – February 13, 2019 - Monax, a leader in digital legal infrastructure, today announced the public beta launch of the [Monax Platform](https://monax.io/blog/2018/12/04/introducing-the-monax-platform---contract-lifecycle-management-for-the-digital-age/), which is now available for production-level commercial use. The Monax Platform is a relationship-centric workspace for small-to-midsize businesses enabling users to leverage digital contracts to control risk and drive business systems. It features ready-to-use tooling that allows businesses to model, track, and visualize their contractual obligations in a real-time, secure environment. Since its private beta launch in December 2018, the platform has successfully helped dozens of corporations and individuals with their legal contract needs.
