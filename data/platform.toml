@@ -132,4 +132,4 @@
 
 
 [cta] # global
-    enable = true
+    enable = false
