@@ -1,7 +1,7 @@
 ---
 
 # Pretty normal stuff
-date:      2019-02-12T10:46:38Z
+date:      2019-02-14T10:46:38Z
 title:     "Legal Product Actions and Insights: The SAFE"
 author:    "Nina Kilbride, CCO"
 
@@ -24,7 +24,7 @@ tags:
   - bpmn
 
 # set draft to 'false' when you're ready to publish
-draft: false
+draft: true
 
 # used when using the shortcode utm_link in a blog post to another
 # the campaign generally should match the category above
