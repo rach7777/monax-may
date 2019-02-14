@@ -24,7 +24,7 @@ tags:
   - bpmn
 
 # set draft to 'false' when you're ready to publish
-draft: true
+draft: false
 
 # used when using the shortcode utm_link in a blog post to another
 # the campaign generally should match the category above
