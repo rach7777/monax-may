@@ -10,4 +10,4 @@
   default_img = "/img/assets/backgrounds/mountains-1.jpg"
 
 [cta] # global
-    enable = true
+    enable = false
