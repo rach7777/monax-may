@@ -66,11 +66,12 @@ Helm uses a thing called Tiller to manage what is deployed in your cluster.
 > Tiller is the in-cluster component of Helm. It interacts directly with the Kubernetes API server to install, upgrade, query, and remove Kubernetes resources. It also stores the objects that represent releases.
 
 Note the final point in that description. Every time we communicate a change to Tiller, it consults its release store to form an opinion of the difference between the current state and the desired state. It will then instruct the Kubernetes API server to alter, delete or create new objects. With Terraform’s own [state management](https://www.terraform.io/docs/state/), this meant storing two distinctly separate views of each deployment. Unfortunately, the Helm provider never actually compares its view of the stack to Tiller directly which means that it is never called until a drift has been detected in Terraform’s current configuration versus its previous state. This is great in a number of less stateful settings, but actually introduced more problems in this case than it solved.
+
 Additionally, in its typical stance on lifecycle management, we also found that Terraform would non-deterministically delete resources before re-installation, instead of upgrading. This is less than ideal, especially when we’ve taken the effort to define rolling upgrade strategies in our Helm templates to ensure minimal downtime. It’s possible to plan these executions in advance but this requires significant overhead from operators and is simply not doable in automated CD setups.
 
 **New Direction**
 
-We essentially required a simple pipelining tool for Helm where we could define an agnostic but configurable buildflow for multiple environments. The lightbulb moment came a few weeks ago after playing around with a tool called bashful which provides a way to stitch together shell commands by way of a readable YAML specification:
+We essentially required a simple pipelining tool for Helm where we could define an agnostic but configurable buildflow for multiple environments. The lightbulb moment came a few weeks ago after playing around with a tool called [bashful](https://github.com/wagoodman/bashful) which provides a way to stitch together shell commands by way of a readable YAML specification:
 
 {{< image_blog "compass-blog-2.png" >}}
 
