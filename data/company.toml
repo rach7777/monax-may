@@ -57,6 +57,13 @@
       logo_icon = "/img/logos/AgreementsNetwork_icon_white.png"
       # logo_full = "/img/logos/AgreementsNetwork.png"
       description_text = "In collaboration with some of the world's most prominent law and technology firms, the Agreements Network will provide the legal layer for a networked world."
+      
+      [[history.time]]
+      date = "February 2019"
+      label = "Monax Platform Launched"
+      logo_icon = "/img/logos/monax-platform-logo-small.png"
+      # logo_full = "/img/logos/monax-platform-logo-large.png"
+      description_text = "Monax Platform (beta) released - a relationship-centric contract management platform."
 
 [team]
     enable = true
