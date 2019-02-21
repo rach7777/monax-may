@@ -1,6 +1,6 @@
 +++
 layout = "webinars"
-title = "Monax | Webinars"
+title = "Webinars"
 
 +++
 

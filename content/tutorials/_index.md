@@ -1,6 +1,6 @@
 +++
 layout = "tutorials"
-title = "Monax | Tutorials"
+title = "Tutorials"
 
 +++
 
