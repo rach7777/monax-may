@@ -1,5 +1,5 @@
 +++
-title = "Monax | Privacy Policy"
+title = "Privacy Policy"
 layout = "wide"
 +++
 

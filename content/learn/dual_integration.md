@@ -1,7 +1,7 @@
 ---
 
 layout: single
-title:      "Dual Integration"
+title: "Learn | Dual Integration"
 excerpt:    "Putting the Contracts in Smart Contracts"
 # thumbnail: example-image.jpg
 categories:

@@ -1,6 +1,6 @@
 +++
 layout = "status"
-title = "Monax | Status"
+title = "Status"
 
 +++
 
