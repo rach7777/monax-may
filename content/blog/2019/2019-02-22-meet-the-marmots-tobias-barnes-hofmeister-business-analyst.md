@@ -110,7 +110,7 @@ Driving combined harvesters at the age of 7.
 Thanks - my pleasure!
 
 
-{{< image_blog "tobi_bike.png" >}}
+{{< image_blog "tobias_bike.png" >}}
 
 *The word ‘Monax’ comprises part of the binomial name for a groundhog (marmota monax) and our company mascot is a rock n’ roll marmot called Doug. Folks who work for Monax traditionally refer to themselves as marmots, and no prizes for guessing how we came up with the name [Hyperledger Burrow](https://www.hyperledger.org/projects/hyperledger-burrow)! Read more about our marmoty history [here](https://monax.io/blog/2019/02/03/from-doug-to-burrow-to-marmota-prime...monax-loves-marmots/).
 
