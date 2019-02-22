@@ -65,7 +65,9 @@ I came across Monax on a job site in February 2018. At the time I had little und
 
 ### What’s your background?
 
-My background is fairly broad. As a kid I enjoyed art, building things, cycling and the sciences. In university I found it challenging to decide between design, social sciences and engineering, ultimately choosing engineering, trusting in the promise to get a well-paying job in some German engineering company. Life has had a different plan, taking me around the world to Scandinavia where I started a masters in sustainable energy and ended with a thesis on how to leverage design and technology to make cycle-friendly cities. As a stepping stone to start a life in Edinburgh I then did a year in marketing for an organisation supporting entrepreneurs. The major learning in that year was that I wanted to be in the arena of the entrepreneurial world instead of just being a spectator.
+My background is fairly broad. As a kid I enjoyed art, building things, cycling and the sciences. In university I found it challenging to decide between design, social sciences and engineering, ultimately choosing engineering, trusting in the promise to get a well-paying job in some German engineering company.
+
+Life has had a different plan, taking me around the world to Scandinavia where I started a masters in sustainable energy and ended with a thesis on how to leverage design and technology to make cycle-friendly cities. As a stepping stone to start a life in Edinburgh I then did a year in marketing for an organisation supporting entrepreneurs. The major learning in that year was that I wanted to be in the arena of the entrepreneurial world instead of just being a spectator.
 
 
 ### What does your work at Monax involve?
@@ -78,7 +80,7 @@ The other thing I’m growing increasingly aware of is my responsibility in shap
 
 ### If you had to choose one aspect of our culture that best defines you, which  one would it be and why?
 
-I think my absolute favourite is playing the infinite game. The way how Simon Sinek described this paradigm shift resonates a lot with my personal development. I like the idea to reframe competitors into rivals and remaining rooted in one’s own values and beliefs. For me there’s a profound change from scarcity to abundance in this thinking. When I hear competitors I associate it with the need to be better for the sake of securing scarce resources, in some way driven by external factors beyond my realm of influence. On the contrary, when I reframe to seeing rivals it actually empowers me to shine light upon my weaknesses and areas that I can better myself in. In this frame of mind I’m not driven by the fear of not getting my needs met, but rather by the genuine desire to live a life in accordance to the most authentic and highest of my ability. That’s empowering, being a better version of myself today than I was yesterday. 
+I think my absolute favourite is playing the infinite game. The way how Simon Sinek described this paradigm shift resonates a lot with my personal development. I like the idea to reframe competitors into rivals and remaining rooted in one’s own values and beliefs. For me there’s a profound change from scarcity to abundance in this thinking. When I hear competitors I associate it with the need to be better for the sake of securing scarce resources, in some way driven by external factors beyond my realm of influence. On the contrary, when I re-frame to seeing rivals it actually empowers me to shine light upon my weaknesses and areas that I can better myself in. In this frame of mind I’m not driven by the fear of not getting my needs met, but rather by the genuine desire to live a life in accordance to the most authentic and highest of my ability. That’s empowering, being a better version of myself today than I was yesterday. 
 
 ### What challenges does your role bring and how do you meet them?
 
@@ -110,7 +112,7 @@ Driving combined harvesters at the age of 7.
 Thanks - my pleasure!
 
 
-{{< image_blog "tobi_bike.png" >}}
+{{< image_blog "tobias_bike.png" >}}
 
 *The word ‘Monax’ comprises part of the binomial name for a groundhog (marmota monax) and our company mascot is a rock n’ roll marmot called Doug. Folks who work for Monax traditionally refer to themselves as marmots, and no prizes for guessing how we came up with the name [Hyperledger Burrow](https://www.hyperledger.org/projects/hyperledger-burrow)! Read more about our marmoty history [here](https://monax.io/blog/2019/02/03/from-doug-to-burrow-to-marmota-prime...monax-loves-marmots/).
 
