@@ -61,9 +61,9 @@
       [[history.time]]
       date = "February 2019"
       label = "Monax Platform Launched"
-      logo_icon = "/img/logos/monax-platform-logo-small.png"
-      # logo_full = "/img/logos/monax-platform-logo-large.png"
-      description_text = "Monax Platform (beta) released - a relationship-centric contract management platform."
+      logo_icon = "/img/logos/monax_icon_white.png"
+      # logo_full = "/img/logos/logo-small.png"
+      description_text = "Monax Platform (beta) released - a relationship-centric obligations management platform."
 
 [team]
     enable = true
