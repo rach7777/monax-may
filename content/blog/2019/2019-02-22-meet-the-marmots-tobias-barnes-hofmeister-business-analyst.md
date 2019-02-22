@@ -49,7 +49,7 @@ utm:
 {{< blog_series >}}
 
 <!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
-Monax is bursting at the seams with talent from both tech, legal and business. Our team is split between offices in Edinburgh, London and New York - with a few remote marmots too.
+Monax is bursting at the seams with talent from both tech, legal and business. Our team is split between offices in Edinburgh, London and New York - with a few remote [marmots](https://monax.io/blog/2019/02/03/from-doug-to-burrow-to-marmota-prime...monax-loves-marmots/) too.
 
 We've been extra busy over the past few months in the run up to the launch of the [Monax Platform](https://monax.io/blog/2019/02/13/press-release---monax-announces-public-beta-launch-of-the-monax-platform/) so this is the first team blog in a while!
 
