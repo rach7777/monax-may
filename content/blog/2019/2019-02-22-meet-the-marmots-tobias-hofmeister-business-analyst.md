@@ -6,7 +6,7 @@ title:     "Meet the Marmots - Tobias"
 author:    "Rachel Davidson, Senior Marketing Associate"
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
-excerpt:   "This is a series of posts where each of our hardworking [marmots](https://monax.io/blog/2019/02/03/from-doug-to-burrow-to-marmota-prime...monax-loves-marmots/)* have a chance to talk about themselves - what they get up to at Monax and in their wider habitats - so you can understand a bit more about the folks who bring the Monax vision to life."
+excerpt:   "This is a series of posts where each of our hardworking marmots* has a chance to talk about themselves - what they get up to at Monax and in their wider habitats - so you can understand a bit more about the folks who bring the Monax vision to life."
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
@@ -43,7 +43,7 @@ utm:
 ---
 
 <!-- In general the filename below should match thumbnail category above -->
-{{< image_blog "tobi_normal.png" >}}
+{{< image_blog "tobias_graffiti.png" >}}
 
 <!-- if this article is part of a series, related articles will automatically appear here -->
 {{< blog_series >}}
