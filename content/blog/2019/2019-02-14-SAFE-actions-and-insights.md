@@ -10,7 +10,7 @@ excerpt:   "The Monax Platform is tooled to manage the complex processes, rights
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: safe-blog.png
+thumbnail: new-safe-blog.png
 
 # check the categories on the existing blog. should only have ONE
 categories:

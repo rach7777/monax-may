@@ -77,7 +77,7 @@
 
 
 [integrations]
-    enable = true
+    enable = false
     title = "Seamlessly integrates with your systems"
 
       [[integrations.logo]]
