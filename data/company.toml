@@ -208,18 +208,6 @@
       # website = "#"
 
     [[team.item]]
-      name = "Nina Kilbride"
-      position = "CCO"
-      weight = 202
-      location = "remote" #set to edn, lon, nyc, remote or none
-      img = "/img/team/team-nk.jpg"
-      twitter = "https://twitter.com/NinaKilbride"
-      linkedin = "https://www.linkedin.com/in/nina-kilbride-71185610b/"
-      keybase = "https://keybase.io/ninakilbride"
-      github = "https://github.com/ngk26200"
-      # website = "http://cryptolawyer.net/"
-
-    [[team.item]]
       name = "Ommi Shimizu"
       position = "Full Stack Engineer"
       weight = 106
@@ -269,7 +257,7 @@
     [[team.item]]
       name = "Silas Davis"
       position = "CTO"
-      weight = 203
+      weight = 202
       location = "remote" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-sd.jpg"
       twitter = "https://twitter.com/silas_davis"
