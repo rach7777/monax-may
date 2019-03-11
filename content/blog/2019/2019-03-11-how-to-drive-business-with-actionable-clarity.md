@@ -1,7 +1,7 @@
 ---
 
 # Pretty normal stuff
-date:      2010-03-08T00:00:00Z
+date:      2019-03-11T00:00:00Z
 title:     "How to drive business with actionable clarity"
 author:    "Tobias Hofmeister, Strategic Designer"
 
