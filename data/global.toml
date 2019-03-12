@@ -34,10 +34,10 @@
 [webinars]
 
   [webinars.top]
-    # hero_signup = true
+    # hero_signup = false
 
   [webinars.form]
-    enable_signup_form = true
+    enable_signup_form = false
     source = "single webinar signup" # required for Segment to process
     webinar_signup = "true" # required for Segment to process
     email = true
@@ -47,7 +47,7 @@
     submit_text = "Get notified"
 
   [webinars.cta] # global
-    enable = true
+    enable = false
 
 
 # [SINLE TUTORIAL POSTS]
@@ -198,7 +198,7 @@
     show_button_separator = false
 
     [cta_two_button.form_one]
-      enable = true
+      enable = false
       id = "webinar"
       source = "cta_two_button webinar signup" # required for Segment to process
       webinar_signup = "true" # required for Segment to process
