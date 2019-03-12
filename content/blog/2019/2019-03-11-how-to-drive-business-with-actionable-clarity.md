@@ -3,7 +3,7 @@
 # Pretty normal stuff
 date:      2019-03-11T00:00:00Z
 title:     "How to drive business with actionable clarity"
-author:    "Tobias Hofmeister, Strategic Designer"
+author:    "Tobias Barnes Hofmeister, Strategic Designer"
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
 excerpt:   "Want to increase operational efficiency? Read on..."
@@ -68,10 +68,10 @@ To attain this level of relationship insight Monax uses four layers as shown in 
 
 {{< image_blog "ia-blog-pyramid.png" >}}
 
-* **Insights and notifications** are driven by the data in specific agreements.
-* **Variables** there might be the involved parties, price, delivered service etc.
-* **Agreements** again are derived from templates which are blueprints for particular kinds of relationships, for example sale of goods, leases, statements of work, etc.
-* **The foundation** gives life to all the layers above are workflows, which are maps for specific relationship types making tacit knowledge explicitly available to all contractual parties.
+* **Insight and notifications** are driven by the data in specific agreements.
+* **Agreements** contain specific information about involved parties, price, delivery service or which ever variable information is relevant to the specific contract.
+* **Templates** are blueprints for particular kinds of relationships, for example sale of goods, leases, statements of work, etc.
+* **Workflows** gives life to all the layers above, through their nature of being maps for specific relationship types making tacit knowledge explicitly available to all contractual parties.
 
 To keep each party actionable the dashboard provides an overview over all required tasks. These are driven by the underlying workflows and provide a snapshot of the current state of all active business relationships. 
 
@@ -84,4 +84,4 @@ Tobias is the strategic designer at Monax - read more about him [here](https://m
 
 
 <!-- IF NEEDED use the below. Unsplash is recommended for images that have the right licensing. This should be at the end of the post -->
-[Photo](LINK) by PHOTOGRAPHER on [Unsplash](https://unsplash.com).
+[Photo](https://unsplash.com/photos/b4l3Mn4pRKk) by ROB LAUGHTER on [Unsplash](https://unsplash.com).
