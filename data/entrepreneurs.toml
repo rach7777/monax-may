@@ -1,11 +1,11 @@
 [top]
     enable = true
-    title = "Build and run your company without the legal hassle"
+    title = "Stay focused on your business - let your contracts work for you"
     # subtitle = "How Monax can simplify and speed up your corporate governance and give you full control over your agreements"
     request_demo = true
     # enable youtube_id or img_right
-    youtube_id = "V9aPrgCrI_k" # after ?v= on YouTube urls, e.g. "sdX0jFFZKuo"
-    # img_right = "/img/assets/landing-pages/corporate-governance/corporate-governance-header.png"
+    # youtube_id = "V9aPrgCrI_k" # after ?v= on YouTube urls, e.g. "sdX0jFFZKuo"
+    img_right = "/img/assets/audiences/customers-header.png"
 
 
 [intro]
