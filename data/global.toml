@@ -190,7 +190,7 @@
     button_one_style_outline = true # outline if true, solid if false
 
     enable_button_two = true # links to url or form two
-    button_two_text = "Request a demo"
+    button_two_text = "Book a demo"
     button_two_trigger_form = true # if false set url
     button_two_url = "#demo"
     button_two_style_outline = false # outline if true, solid if false
