@@ -10,7 +10,7 @@
       # img_base = "/img/assets/animations/monax-laptop/laptop-animation-base.png"
       # img_layer_one = "/img/assets/animations/monax-laptop/laptop-animation-layer-1.png"
       # img_layer_two = "/img/assets/animations/monax-laptop/laptop-animation-layer-2.png"
-    img_right = "/img/assets/illustrations/home-page-header.png"
+    img_right = "/img/assets/audiences/home-page-header.png"
 
 [audiences]
   enable = false
