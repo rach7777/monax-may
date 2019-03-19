@@ -1,7 +1,7 @@
 [top]
     enable = true
     title = "Blog"
-    subtitle = "Discover happy contracting for your SaaS startup, and how the Monax Platform is transforming obligations management."  
+    subtitle = "Discover happy contracting for your SaaS startup, and how the Monax Platform is transforming obligations management"  
 
 [articles]
   enable = true
