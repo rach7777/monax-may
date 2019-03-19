@@ -32,7 +32,7 @@
     [[bullets.section]]
       title = "Speed to Market"
       text = "BLURB"
-      img_src = "/img/assets/entrepreneurs/entrepreneurs-icon-1.png"
+      img_src = "/img/assets/entrepreneurs/entrepreneurs/speed_to_market.png"
       bullets_list = [
         "Incorporations",
         "Shareholder Agreements",
@@ -42,7 +42,7 @@
     [[bullets.section]]
       title = "Transparent, Scalable Pricing"
       text = "BLURB"
-      img_src = "/img/assets/entrepreneurs/entrepreneurs-icon-2.png"
+      img_src = "/img/assets/entrepreneurs/entrepreneurs/transparent_pricing.png"
       bullets_list = [
         "Sales",
         "Employment Agreements",
@@ -52,7 +52,7 @@
     [[bullets.section]]
       title = "Low Resource Allocation"
       text = "At some point, most growing companies need liquidity. Active Agreements make due diligence fast and easy, while the Monax Platform makes it easier to find the right funding partners for your company."
-      img_src = "/img/assets/entrepreneurs/entrepreneurs-icon-3.png"
+      img_src = "/img/assets/entrepreneurs/entrepreneurs/low_resource.png"
       bullets_list = [
         "Loans",
         "Investment Agreements",
@@ -62,7 +62,7 @@
     [[bullets.section]]
       title = "Features to Succeed"
       text = "Entrepreneurs and creatives dreaming of big returns need access to flexible tools that will grow with them. The Monax platform contains a complete toolkit to take your company's growth to the next level, at the cutting edge of technology."
-      img_src = "/img/assets/entrepreneurs/entrepreneurs-icon-4.png"
+      img_src = "/img/assets/entrepreneurs/entrepreneurs/features_to_succeed.png"
       bullets_list = [
         "Analytics",
         "Data Monetization",
