@@ -1,7 +1,7 @@
 [top]
     enable = true
     title = "Blog posts"
-    subtitle = "Discover our journey, how we think and the paradigm shift towards legal products"
+    subtitle = "Discover happy contracting for your SaaS startup, and how the Monax Platform is transforming obligations management"
     hero_signup = false
 
 [articles]
@@ -10,4 +10,4 @@
   default_img = "/img/assets/backgrounds/mountains-1.jpg"
 
 [cta] # global
-    enable = false
+    enable = true
