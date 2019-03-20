@@ -2,7 +2,7 @@
     enable = true
     title = "Explainers"
     subtitle = "Learn how Monax can help your company grow revenue and shrink risk - information for every step of the process"
-    hero_signup = false
+    hero_signup = true
 
 [articles]
     enable = true
@@ -22,4 +22,4 @@
       title = "Creating Contracts"
 
 [cta] # global
-    enable = true
+    enable = false
