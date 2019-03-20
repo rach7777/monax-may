@@ -267,7 +267,7 @@
 [col_4]
     enable = true
     title = "Company"
-    # subtitle = "Deploy smart, legally-binding contracts on the blockchain."
+    subtitle = "Collaboratively execute your legal obligations"
 
     [[col_4.link]]
         link_title = "About"
