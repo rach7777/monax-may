@@ -34,9 +34,7 @@
       text = "BLURB"
       img_src = "/img/assets/entrepreneurs/entrepreneurs/speed_to_market.png"
       bullets_list = [
-        "Incorporations",
-        "Shareholder Agreements",
-        "Resolutions",
+        
       ]
 
     [[bullets.section]]
