@@ -10,8 +10,8 @@
 
 [intro]
     enable = true
-    title = "Monax supports enterprise-focused tech startups to follow their dreams while taking care of business"
-    subtitle = "Our customers demand four key things from us:"
+    title = "Monax supports enterprise-focused tech startups throughout the contract lifecycle, so they can concentrate on their product vision"
+    subtitle = "Our customers require four key things from us:"
 
 # [testimonials]
 #     enable = true
@@ -30,40 +30,40 @@
     enable_request_demo = true
 
     [[bullets.section]]
-      title = "Speed to Market"
+      title = "Speed to market"
       text = "BLURB"
       img_src = "/img/assets/entrepreneurs/entrepreneurs/speed_to_market.png"
-      bullets_list = [
+      #bullets_list = [
         "Incorporations",
         "Shareholder Agreements",
         "Resolutions",
       ]
 
     [[bullets.section]]
-      title = "Transparent, Scalable Pricing"
-      text = "BLURB"
+      title = "Transparent, scalable pricing"
+      text = "No-nonsense base subscription plus scalable volume triggers for when your needs grow (we use Chargbee)"
       img_src = "/img/assets/entrepreneurs/entrepreneurs/transparent_pricing.png"
-      bullets_list = [
+      #bullets_list = [
         "Sales",
         "Employment Agreements",
         "Insurance Agreements",
       ]
 
     [[bullets.section]]
-      title = "Low Resource Allocation"
+      title = "Low resource allocation"
       text = "At some point, most growing companies need liquidity. Active Agreements make due diligence fast and easy, while the Monax Platform makes it easier to find the right funding partners for your company."
       img_src = "/img/assets/entrepreneurs/entrepreneurs/low_resource.png"
-      bullets_list = [
+      #bullets_list = [
         "Loans",
         "Investment Agreements",
         "Due Diligence Processes",
       ]
 
     [[bullets.section]]
-      title = "Features to Succeed"
+      title = "Features to succeed"
       text = "Entrepreneurs and creatives dreaming of big returns need access to flexible tools that will grow with them. The Monax platform contains a complete toolkit to take your company's growth to the next level, at the cutting edge of technology."
       img_src = "/img/assets/entrepreneurs/entrepreneurs/features_to_succeed.png"
-      bullets_list = [
+      #bullets_list = [
         "Analytics",
         "Data Monetization",
         "Productization",
