@@ -312,10 +312,10 @@
     copyright_notice = "<strong>&copy; Monax Industries. All rights reserved.</strong> US registered company: 132978319257."
     enable_attribution = true
 
-    [[copyright.link]]
+    [[copyright.privacy]]
     link_title = "Privacy Policy"
     link_url = "/privacy/"
 
-    # [[copyright.link]]
-    # link_title = "Terms of Service"
-    # link_url = "#"
+    [[copyright.terms]]
+    link_title = "Terms of Service"
+    link_url = "/terms"
