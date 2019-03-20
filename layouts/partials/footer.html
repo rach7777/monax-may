@@ -126,7 +126,11 @@
               <p class="pull-left">
                 <span>{{ .copyright_notice | markdownify }}</span>
 
-                {{ range .link }}
+                {{ range .privacy }}
+                <span>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{ .link_url }}">{{ .link_title }}</a></span>
+                {{ end }}
+
+                {{ range .terms }}
                 <span>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{ .link_url }}">{{ .link_title }}</a></span>
                 {{ end }}
               </p>
