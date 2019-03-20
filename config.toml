@@ -50,12 +50,12 @@ quality = 80
       Post = "How Monax can simplify and speed up your corporate governance, and give you full control over your agreements"
       Weight = 2
 
-    [[menu.main]]
-      Name = "Creatives"
-      parent = "customers"
-      URL = "/creatives/"
-      Post = "How Monax can strengthen your brand, protect your IP and drive new revenue streams for your content"
-      Weight = 3
+    #[[menu.main]]
+    #  Name = "Creatives"
+    #  parent = "customers"
+    #  URL = "/creatives/"
+    # Post = "How Monax can strengthen your brand, protect your IP and drive new revenue streams for your content"
+    #  Weight = 3
 
 [[menu.main]]
     Name = "Lawyers"
@@ -120,7 +120,7 @@ quality = 80
     Weight = 5
 
 [[menu.register]]
-    name = "Request a demo"
+    name = "Book a demo"
     url  = "#"
     weight = 1
 
