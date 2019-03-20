@@ -31,7 +31,7 @@
 
     [[bullets.section]]
       title = "Speed to market"
-      text = "Digitising the obligations process removes blockers across the sales process to accelerate your go-to-market "
+      text = "Digitising the obligations process means you can close deals faster and accelerate your go-to-market "
       img_src = "/img/assets/entrepreneurs/entrepreneurs/speed_to_market.png"
       bullets_list = [
         
@@ -64,16 +64,16 @@
       ]
 
 
-# [testimonials]
-#     enable = true
-#
-#     [testimonials.card_link]
-#       img = "/img/assets/audiences/entrepreneurs_600.jpg"
-#       title = "John Johnson, CEO Tupix"
-#       blurb = "Testimonial blurb"
-#       icon = "fa-angle-right"
-#       link_url = "/entrepreneurs/"
-#       link_title = "John's Story"
+ [testimonials]
+     enable = true
+
+     [testimonials.card_link]
+       img = "/img/assets/audiences/entrepreneurs_600.jpg"
+       title = "Kurt Watkins, Counsel MG Miller"
+       blurb = "By using new technology, the Monax Platform provides a combination of consistency, transparency, and sophistication for contract management previously not available to small to mid-size businesses. We are hopeful that the Monax Platform will catalyze an infrastructural upgrade to business and legal transactions across the board."
+       icon = "fa-angle-right"
+       link_url = "/entrepreneurs/"
+       link_title = "IP law firm MG MIller"
 
 
 
