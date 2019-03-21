@@ -1,79 +1,119 @@
 #!/usr/bin/env bash
 set -e
 
-url="https://monax.chargebee.com/api/v2"
-key="live_nGUcdtzydZcZPJglPcudm8iir4wFOffX8n:"
+echo -e "\n\nPricing information"
+
+if [[ "$CI_COMMIT_REF_NAME" == "production" ]]; then
+  echo -e "For Environment: chargebee-production\n"
+  url="https://monax.chargebee.com/api/v2"
+  key="live_nGUcdtzydZcZPJglPcudm8iir4wFOffX8n:"
+else
+  echo -e "For Environment: chargebee-test\n"
+  url="https://monax-test.chargebee.com/api/v2"
+  key="test_WPOrlXdx5bultihv74cuk8fSBeQZBGPgj:"
+fi
 
 plansList=$(mktemp)
 addsList=$(mktemp)
 curl $url/plans -sSL -u $key > $plansList
 curl $url/addons -sSL -u $key > $addsList
 
-starter_monthly_price=$(cat $plansList | jq '.list | .[] | select(.plan.id=="starter-monthly") | .plan.price')
-starter_annual_price=$(cat $plansList | jq '.list | .[] | select(.plan.id=="starter-annual") | .plan.price')
 starter_description=$(cat $plansList | jq -cr '.list | .[] | select(.plan.id=="starter-monthly") | .plan.description')
-starter_metadata=$(cat $plansList | jq '.list | .[] | select(.plan.id=="starter-monthly") | .plan.meta_data')
+starter_price_annual=$(cat $plansList | jq '.list | .[] | select(.plan.id=="starter-annual") | .plan.price')
+starter_price_monthly=$(cat $plansList | jq '.list | .[] | select(.plan.id=="starter-monthly") | .plan.price')
+starter_metadata_annual=$(cat $plansList | jq '.list | .[] | select(.plan.id=="starter-annual") | .plan.meta_data')
+starter_metadata_monthly=$(cat $plansList | jq '.list | .[] | select(.plan.id=="starter-monthly") | .plan.meta_data')
 
-essential_monthly_price=$(cat $plansList | jq '.list | .[] | select(.plan.id=="essential-monthly") | .plan.price')
-essential_annual_price=$(cat $plansList | jq '.list | .[] | select(.plan.id=="essential-annual") | .plan.price')
 essential_description=$(cat $plansList | jq -cr '.list | .[] | select(.plan.id=="essential-monthly") | .plan.description')
-essential_metadata=$(cat $plansList | jq '.list | .[] | select(.plan.id=="essential-monthly") | .plan.meta_data')
+essential_price_annual=$(cat $plansList | jq '.list | .[] | select(.plan.id=="essential-annual") | .plan.price')
+essential_price_monthly=$(cat $plansList | jq '.list | .[] | select(.plan.id=="essential-monthly") | .plan.price')
+essential_metadata_annual=$(cat $plansList | jq '.list | .[] | select(.plan.id=="essential-annual") | .plan.meta_data')
+essential_metadata_monthly=$(cat $plansList | jq '.list | .[] | select(.plan.id=="essential-monthly") | .plan.meta_data')
 
-professional_monthly_price=$(cat $plansList | jq '.list | .[] | select(.plan.id=="professional-monthly") | .plan.price')
-professional_annual_price=$(cat $plansList | jq '.list | .[] | select(.plan.id=="professional-annual") | .plan.price')
 professional_description=$(cat $plansList | jq -cr '.list | .[] | select(.plan.id=="professional-monthly") | .plan.description')
-professional_metadata=$(cat $plansList | jq '.list | .[] | select(.plan.id=="professional-monthly") | .plan.meta_data')
+professional_price_annual=$(cat $plansList | jq '.list | .[] | select(.plan.id=="professional-annual") | .plan.price')
+professional_price_monthly=$(cat $plansList | jq '.list | .[] | select(.plan.id=="professional-monthly") | .plan.price')
+professional_metadata_annual=$(cat $plansList | jq '.list | .[] | select(.plan.id=="professional-annual") | .plan.meta_data')
+professional_metadata_monthly=$(cat $plansList | jq '.list | .[] | select(.plan.id=="professional-monthly") | .plan.meta_data')
 
-additional_users_name=$(cat $addsList | jq -cr '.list | .[] | select(.addon.id=="additional-users") | .addon.name')
-additional_users_price=$(cat $addsList | jq '.list | .[] | select(.addon.id=="additional-users") | .addon.price')
-additional_users_description=$(cat $addsList | jq -cr '.list | .[] | select(.addon.id=="additional-users") | .addon.description')
+# todo massage add ons
+additional_users_description=$(cat $addsList | jq -cr '.list | .[] | select(.addon.id=="annual-additional-user") | .addon.description')
+additional_users_price_annual=$(cat $addsList | jq '.list | .[] | select(.addon.id=="annual-additional-user") | .addon.price')
+additional_users_price_monthly=$(cat $addsList | jq '.list | .[] | select(.addon.id=="monthly-additional-user") | .addon.price')
 
-additional_templates_name=$(cat $addsList | jq -cr '.list | .[] | select(.addon.id=="additional-templates") | .addon.name')
-additional_templates_price=$(cat $addsList | jq '.list | .[] | select(.addon.id=="additional-templates") | .addon.price')
-additional_templates_description=$(cat $addsList | jq -cr '.list | .[] | select(.addon.id=="additional-templates") | .addon.description')
-
-additional_contracts_name=$(cat $addsList | jq -cr '.list | .[] | select(.addon.id=="additional-contracts") | .addon.name')
-additional_contracts_price=$(cat $addsList | jq '.list | .[] | select(.addon.id=="additional-contracts") | .addon.price')
-additional_contracts_description=$(cat $addsList | jq -cr '.list | .[] | select(.addon.id=="additional-contracts") | .addon.description')
-
-additional_transactions_name=$(cat $addsList | jq -cr '.list | .[] | select(.addon.id=="additional-contractual-transactions") | .addon.name')
-additional_transactions_price=$(cat $addsList | jq '.list | .[] | select(.addon.id=="additional-contractual-transactions") | .addon.price')
-additional_transactions_description=$(cat $addsList | jq -cr '.list | .[] | select(.addon.id=="additional-contractual-transactions") | .addon.description')
-
-additional_externals_name=$(cat $addsList | jq -cr '.list | .[] | select(.addon.id=="additional-external-parties") | .addon.name')
-additional_externals_price=$(cat $addsList | jq '.list | .[] | select(.addon.id=="additional-external-parties") | .addon.price')
-additional_externals_description=$(cat $addsList | jq -cr '.list | .[] | select(.addon.id=="additional-external-parties") | .addon.description')
+additional_contracts_description=$(cat $addsList | jq -cr '.list | .[] | select(.addon.id=="annual-templates-contracts") | .addon.description')
+additional_contracts_price_annual=$(cat $addsList | jq '.list | .[] | select(.addon.id=="annual-templates-contracts") | .addon.price')
+additional_contracts_price_monthly=$(cat $addsList | jq '.list | .[] | select(.addon.id=="monthly-templates-contracts") | .addon.price')
 
 jq --null-input \
-  --arg     STAR_MONTHLY "$starter_monthly_price" \
-  --arg     STAR_ANNUAL "$starter_annual_price" \
   --arg     STAR_DESC "$starter_description" \
-  --argjson STAR_META "$starter_metadata" \
-  --arg     ESSL_MONTHLY "$essential_monthly_price" \
-  --arg     ESSL_ANNUAL "$essential_annual_price" \
+  --arg     STAR_PRICE_ANNUAL "$starter_price_annual" \
+  --arg     STAR_PRICE_MONTHLY "$starter_price_monthly" \
+  --argjson STAR_META_ANNUAL "$starter_metadata_annual" \
+  --argjson STAR_META_MONTHLY "$starter_metadata_monthly" \
   --arg     ESSL_DESC "$essential_description" \
-  --argjson ESSL_META "$essential_metadata" \
-  --arg     PROF_MONTHLY "$professional_monthly_price" \
-  --arg     PROF_ANNUAL "$professional_annual_price" \
+  --arg     ESSL_PRICE_ANNUAL "$essential_price_annual" \
+  --arg     ESSL_PRICE_MONTHLY "$essential_price_monthly" \
+  --argjson ESSL_META_ANNUAL "$essential_metadata_annual" \
+  --argjson ESSL_META_MONTHLY "$essential_metadata_monthly" \
   --arg     PROF_DESC "$professional_description" \
-  --argjson PROF_META "$professional_metadata" \
-  --arg     ADD_USER_NAME "$additional_users_name" \
-  --arg     ADD_USER_PRICE "$additional_users_price" \
+  --arg     PROF_PRICE_ANNUAL "$professional_price_annual" \
+  --arg     PROF_PRICE_MONTHLY "$professional_price_monthly" \
+  --argjson PROF_META_ANNUAL "$professional_metadata_annual" \
+  --argjson PROF_META_MONTHLY "$professional_metadata_monthly" \
   --arg     ADD_USER_DESC "$additional_users_description" \
-  --arg     ADD_TEMP_NAME "$additional_templates_name" \
-  --arg     ADD_TEMP_PRICE "$additional_templates_price" \
-  --arg     ADD_TEMP_DESC "$additional_templates_description" \
-  --arg     ADD_CONT_NAME "$additional_contracts_name" \
-  --arg     ADD_CONT_PRICE "$additional_contracts_price" \
+  --arg     ADD_USER_PRICE_ANNUAL "$additional_users_price_annual" \
+  --arg     ADD_USER_PRICE_MONTHLY "$additional_users_price_monthly" \
   --arg     ADD_CONT_DESC "$additional_contracts_description" \
-  --arg     ADD_TX_NAME "$additional_transactions_name" \
-  --arg     ADD_TX_PRICE "$additional_transactions_price" \
-  --arg     ADD_TX_DESC "$additional_transactions_description" \
-  --arg     ADD_EXT_NAME "$additional_externals_name" \
-  --arg     ADD_EXT_PRICE "$additional_externals_price" \
-  --arg     ADD_EXT_DESC "$additional_externals_description" \
-  '{"starter":({"title":"Starter","price_annual":($STAR_ANNUAL),"price_monthly":($STAR_MONTHLY),"description":($STAR_DESC)} * ($STAR_META)),"essential":({"title":"Essential","price_annual":($ESSL_ANNUAL),"price_monthly":($ESSL_MONTHLY),"description":($ESSL_DESC)} * ($ESSL_META)),"professional":({"title":"Professional","price_annual":($PROF_ANNUAL),"price_monthly":($PROF_MONTHLY),"description":($PROF_DESC)} * ($PROF_META)),"addtional_users":{"title":($ADD_USER_NAME),"price_monthly":($ADD_USER_PRICE),"description":($ADD_USER_DESC)},"addtional_templates":{"title":($ADD_TEMP_NAME),"price_monthly":($ADD_TEMP_PRICE),"description":($ADD_TEMP_DESC)},"addtional_contracts":{"title":($ADD_CONT_NAME),"price_monthly":($ADD_CONT_PRICE),"description":($ADD_CONT_DESC)},"additional_transactions":{"title":($ADD_TX_NAME),"price_monthly":($ADD_TX_PRICE),"description":($ADD_TX_DESC)},"additional_externals":{"title":($ADD_EXT_NAME),"price_monthly":($ADD_EXT_PRICE),"description":($ADD_EXT_DESC)}}' \
+  --arg     ADD_CONT_PRICE_ANNUAL "$additional_contracts_price_annual" \
+  --arg     ADD_CONT_PRICE_MONTHLY "$additional_contracts_price_monthly" \
+  '{
+    "starter":(
+      { "title":"Starter",
+        "price_annual":($STAR_PRICE_ANNUAL),
+        "price_monthly":($STAR_PRICE_MONTHLY),
+        "description":($STAR_DESC)
+      } * {
+        "meta_annual":($STAR_META_ANNUAL)
+      } * {
+        "meta_monthly":($STAR_META_MONTHLY)
+      }
+    ),
+    "essential":(
+      { "title":"Essential",
+        "price_annual":($ESSL_PRICE_ANNUAL),
+        "price_monthly":($ESSL_PRICE_MONTHLY),
+        "description":($ESSL_DESC)
+      } * {
+        "meta_annual":($ESSL_META_ANNUAL)
+      } * {
+        "meta_monthly":($ESSL_META_MONTHLY)
+      }
+    ),
+    "professional":(
+      { "title":"Professional",
+        "price_annual":($PROF_PRICE_ANNUAL),
+        "price_monthly":($PROF_PRICE_MONTHLY),
+        "description":($PROF_DESC)
+      } * {
+        "meta_annual":($PROF_META_ANNUAL)
+      } * {
+        "meta_monthly":($PROF_META_MONTHLY)
+      }
+    ),
+    "addtional_users":{
+      "title":"Additional Users",
+      "price_monthly":($ADD_USER_PRICE_MONTHLY),
+      "price_annual":($ADD_USER_PRICE_ANNUAL),
+      "description":($ADD_USER_DESC)
+    },
+    "addtional_contracts":{
+      "title":"Package of 10 additional contracts",
+      "price_monthly":($ADD_CONT_PRICE_MONTHLY),
+      "price_annual":($ADD_CONT_PRICE_ANNUAL),
+      "description":($ADD_CONT_DESC)
+    }
+  }' \
   1> data/pricing_new.json
 
-echo -e "\n\nPricing information\n"
 cat data/pricing_new.json | jq .

@@ -9,7 +9,7 @@
       <h3 class="">{{ $baseData.title }}</h3>
     </div>
     <div class="panel-body text-center">
-        <p class="p1">$<span class="price" data-billed-yearly="{{ div ( int .price_annual) 1200 }}" data-billed-monthly="{{ div (int .price_monthly) 100 }}">{{ div (int .price_annual) 1200 }}</span>/month</p>
+        <p class="p1">$<span class="frequency" data-billed-yearly="{{ div ( int .price_annual) 1200 }}" data-billed-monthly="{{ div (int .price_monthly) 100 }}">{{ div (int .price_annual) 1200 }}</span> / month</p>
 {{ else }}
   <div class="panel pricing-table">
     <div class="panel-heading {{ if $baseData.highlight_column }}highlight{{ end }}">
@@ -18,7 +18,7 @@
           <h3 class="range-left-sm">{{ $baseData.title }}</h3>
         </div>
         <div class="col-sm-6">
-          <p class="p1 range-left-sm">$<span class="price" data-billed-yearly="{{ div ( int .price_annual) 1200 }}" data-billed-monthly="{{ div (int .price_monthly) 100 }}">{{ div ( int .price_annual) 1200 }}</span>/month</p>
+          <p class="p1 range-left-sm">$<span class="frequency" data-billed-yearly="{{ div ( int .price_annual) 1200 }}" data-billed-monthly="{{ div (int .price_monthly) 100 }}">{{ div ( int .price_annual) 1200 }}</span> / month</p>
         </div>
       </div>
     </div>
@@ -74,10 +74,9 @@
   <div class="col-sm-6">
 {{ end }}
     <ul class="list-group list-group-flush">
-      <li class="list-group-item"><strong>{{ .users }}</strong> users</li>
-      <li class="list-group-item"><strong>{{ .templates }}</strong> active contract templates</li>
-      <li class="list-group-item"><strong>{{ .contracts }}</strong> new contracts /month</li>
-      <li class="list-group-item"><strong>{{ .ndas }}</strong> active CantingTribe NDAs</li>
+      <li class="list-group-item"><strong><span class="frequency" data-billed-yearly="{{ .meta_annual.users }}" data-billed-monthly="{{ .meta_monthly.users }}">{{ .meta_annual.users }}</span></strong> users</li>
+      <li class="list-group-item"><strong><span class="frequency" data-billed-yearly="{{ .meta_annual.contracts }}" data-billed-monthly="{{ .meta_monthly.contracts }}">{{ .meta_annual.contracts }}</span></strong> new contracts per <span class="frequency" data-billed-yearly="year" data-billed-monthly="month">year</span></li>
+      <li class="list-group-item"><strong>Unlimited</strong> active CantingTribe NDAs</li>
       <li class="list-group-item"><strong>Unlimited</strong> storage for fulfilled contracts</li>
     </ul>
 {{ if eq $containerSize "large" }}

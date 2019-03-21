@@ -320,13 +320,6 @@ $(document).ready(function() {
     }
   });
 
-
-
-
-
-
-
-
   // DOCUMENTS - '.dip-opacity' EFFECT
   $('.container-docs').hover(function(){
     if ($(window).width() > 750) {
@@ -877,14 +870,14 @@ $(document).ready(function() {
 
     // switch pricing period
     $('#billing-period-switch').change(function(){
-      const prices_arr = $('span.price');
+      const frequency_array = $('span.frequency');
       if( this.checked ) {
-        $.each( prices_arr, function(i, elm){
+        $.each( frequency_array, function(i, elm){
           // console.log(elm);
           $(elm).html( $(this).data('billedYearly') );
         });
       } else {
-        $.each( prices_arr, function(i, elm){
+        $.each( frequency_array, function(i, elm){
           // console.log(elm);
           $(elm).html( $(this).data('billedMonthly') );
         });
@@ -980,9 +973,4 @@ $(document).ready(function() {
         }
       });
     })
-
-
-
-
-
 });

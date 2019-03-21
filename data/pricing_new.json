@@ -4,390 +4,474 @@
     "price_annual": "30000",
     "price_monthly": "3100",
     "description": "Organize your contracts and gain clarity over your business relationships",
-    "users": 1,
-    "templates": 1,
-    "contracts": 5,
-    "ndas": 10,
-    "contract_events": 25,
-    "contract_reminders": 1,
-    "contract_external_parties": 1,
-    "integrations": {
-      "api_rest": true,
-      "notifications_email": true,
-      "notifications_slack": true,
-      "notifications_sms": true,
-      "notifications_zapier": false,
-      "notifications_webhooks": false,
-      "system_docusign": false,
-      "system_stripe": false,
-      "system_dropbox": false,
-      "notifications_chatbots": false,
-      "system_xero": false,
-      "system_hubspot": false,
-      "system_bamboo": false,
-      "engine_ergo": false,
-      "engine_custom": false
+    "meta_annual": {
+      "users": 1,
+      "templates": 60,
+      "contracts": 60,
+      "contract_events": 300,
+      "contract_reminders": 12,
+      "contract_external_parties": 12,
+      "special_contracts": [
+        {
+          "id": "NDA",
+          "versions": [
+            "967D866652263BEBB1096E053A6B7B3F52B9A8F6"
+          ],
+          "quota": 0
+        },
+        {
+          "id": "TERMS_OF_SERVICE",
+          "versions": [
+            "1421E21D155829259E5D23DC019E482382CC87E3"
+          ],
+          "quota": 0
+        }
+      ],
+      "integrations": {
+        "api_rest": true,
+        "notifications_email": true,
+        "notifications_slack": true,
+        "notifications_sms": true,
+        "notifications_zapier": false,
+        "notifications_webhooks": false,
+        "system_docusign": false,
+        "system_stripe": false,
+        "system_dropbox": false,
+        "notifications_chatbots": false,
+        "system_xero": false,
+        "system_hubspot": false,
+        "system_bamboo": false,
+        "engine_ergo": false,
+        "engine_custom": false
+      },
+      "features": {
+        "contracts": {
+          "contracts_unlimited_ndas": true,
+          "contracts_tags": true,
+          "contracts_tasks": true,
+          "contracts_alerts": true,
+          "contracts_operate_open_source": true,
+          "contracts_buy_monax_approved": true,
+          "contracts_exclusive_first_access": false
+        },
+        "templates": {
+          "templates_custom": true,
+          "templates_monax_workflow_library": true,
+          "templates_import_export_workflows": false,
+          "templates_governing_templates": false,
+          "templates_packages": false
+        },
+        "users": {
+          "users_externals": true,
+          "users_organizations": false,
+          "users_departments": false,
+          "users_branded_portal": false
+        },
+        "support": {
+          "support_knowledge_base": true,
+          "support_webinars": true,
+          "support_multilingual": true,
+          "support_inapp_chat": true,
+          "support_email": false,
+          "support_office_hours": false,
+          "support_onboarding_assistant": false
+        }
+      }
     },
-    "features_contracts": [
-      {
-        "desc": "Organize existing contracts with tags",
-        "disabled": false
+    "meta_monthly": {
+      "users": 1,
+      "templates": 5,
+      "contracts": 5,
+      "contract_events": 25,
+      "contract_reminders": 1,
+      "contract_external_parties": 1,
+      "special_contracts": [
+        {
+          "id": "NDA",
+          "versions": [
+            "9D1F4376AEF9DB3DE741BAF746FC7D73EAAA0236"
+          ],
+          "quota": 0
+        },
+        {
+          "id": "TERMS_OF_SERVICE",
+          "versions": [
+            "8E528D017CB5D90048A92C98E06F9030739DB7CB"
+          ],
+          "quota": 0
+        }
+      ],
+      "integrations": {
+        "api_rest": true,
+        "notifications_email": true,
+        "notifications_slack": true,
+        "notifications_sms": true,
+        "notifications_zapier": false,
+        "notifications_webhooks": false,
+        "system_docusign": false,
+        "system_stripe": false,
+        "system_dropbox": false,
+        "notifications_chatbots": false,
+        "system_xero": false,
+        "system_hubspot": false,
+        "system_bamboo": false,
+        "engine_ergo": false,
+        "engine_custom": false
       },
-      {
-        "desc": "In-application task management",
-        "disabled": false
-      },
-      {
-        "desc": "Alerts and notifications on contractual execution steps",
-        "disabled": false
-      },
-      {
-        "desc": "Operate approved open souce contracts",
-        "disabled": false
-      },
-      {
-        "desc": "Buy and operate Monax approved contracts (additional fees apply)",
-        "disabled": false
-      },
-      {
-        "desc": "Exclusive first access to legal products created by Monax platform partners",
-        "disabled": true
+      "features": {
+        "contracts": {
+          "contracts_unlimited_ndas": true,
+          "contracts_tags": true,
+          "contracts_tasks": true,
+          "contracts_alerts": true,
+          "contracts_operate_open_source": true,
+          "contracts_buy_monax_approved": true,
+          "contracts_exclusive_first_access": false
+        },
+        "templates": {
+          "templates_custom": true,
+          "templates_monax_workflow_library": true,
+          "templates_import_export_workflows": false,
+          "templates_governing_templates": false,
+          "templates_packages": false
+        },
+        "users": {
+          "users_externals": true,
+          "users_organizations": false,
+          "users_departments": false,
+          "users_branded_portal": false
+        },
+        "support": {
+          "support_knowledge_base": true,
+          "support_webinars": true,
+          "support_multilingual": true,
+          "support_inapp_chat": true,
+          "support_email": false,
+          "support_office_hours": false,
+          "support_onboarding_assistant": false
+        }
       }
-    ],
-    "features_templates": [
-      {
-        "desc": "Create custom collaborative templates and parameters",
-        "disabled": false
-      },
-      {
-        "desc": "Select contract workflows from Monax's extensive library",
-        "disabled": false
-      },
-      {
-        "desc": "Import / export custom workflows",
-        "disabled": true
-      },
-      {
-        "desc": "Set governing templates and subtemplates",
-        "disabled": true
-      },
-      {
-        "desc": "Package templates into custom multi-contract workflows",
-        "disabled": true
-      }
-    ],
-    "features_users": [
-      {
-        "desc": "Collaborate within your organization",
-        "disabled": true
-      },
-      {
-        "desc": "Structure your team into multiple departments",
-        "disabled": true
-      },
-      {
-        "desc": "Custom branded portal for external counterparties (tba)",
-        "disabled": true
-      }
-    ],
-    "features_support": [
-      {
-        "desc": "Self-help resouce center",
-        "disabled": false
-      },
-      {
-        "desc": "Public webinars",
-        "disabled": false
-      },
-      {
-        "desc": "Multilingual user interface",
-        "disabled": false
-      },
-      {
-        "desc": "In-app chat support (response within 12 hours)",
-        "disabled": false
-      },
-      {
-        "desc": "Email support (response within 12 hours)",
-        "disabled": true
-      },
-      {
-        "desc": "Monax team 'office hours' each month on Zoom",
-        "disabled": true
-      },
-      {
-        "desc": "Dedicated on-boarding assistant (3 hours bespoke training)",
-        "disabled": true
-      }
-    ]
+    }
   },
   "essential": {
     "title": "Essential",
     "price_annual": "180000",
     "price_monthly": "18900",
     "description": "Streamline your operations and collectively manage your contracts",
-    "users": 3,
-    "templates": 5,
-    "contracts": 25,
-    "ndas": 50,
-    "contract_events": 250,
-    "contract_reminders": 5,
-    "contract_external_parties": 3,
-    "integrations": {
-      "api_rest": true,
-      "notifications_email": true,
-      "notifications_slack": true,
-      "notifications_sms": true,
-      "notifications_zapier": true,
-      "notifications_webhooks": true,
-      "system_docusign": true,
-      "system_stripe": true,
-      "system_dropbox": true,
-      "notifications_chatbots": false,
-      "system_xero": false,
-      "system_hubspot": false,
-      "system_bamboo": false,
-      "engine_ergo": false,
-      "engine_custom": false
+    "meta_annual": {
+      "users": 3,
+      "templates": 300,
+      "contracts": 300,
+      "contract_events": 3000,
+      "contract_reminders": 60,
+      "contract_external_parties": 36,
+      "special_contracts": [
+        {
+          "id": "NDA",
+          "versions": [
+            "967D866652263BEBB1096E053A6B7B3F52B9A8F6"
+          ],
+          "quota": 0
+        },
+        {
+          "id": "TERMS_OF_SERVICE",
+          "versions": [
+            "1421E21D155829259E5D23DC019E482382CC87E3"
+          ],
+          "quota": 0
+        }
+      ],
+      "integrations": {
+        "api_rest": true,
+        "notifications_email": true,
+        "notifications_slack": true,
+        "notifications_sms": true,
+        "notifications_zapier": true,
+        "notifications_webhooks": true,
+        "system_docusign": true,
+        "system_stripe": true,
+        "system_dropbox": true,
+        "notifications_chatbots": false,
+        "system_xero": false,
+        "system_hubspot": false,
+        "system_bamboo": false,
+        "engine_ergo": false,
+        "engine_custom": false
+      },
+      "features": {
+        "contracts": {
+          "contracts_unlimited_ndas": true,
+          "contracts_tags": true,
+          "contracts_tasks": true,
+          "contracts_alerts": true,
+          "contracts_operate_open_source": true,
+          "contracts_buy_monax_approved": true,
+          "contracts_exclusive_first_access": true
+        },
+        "templates": {
+          "templates_custom": true,
+          "templates_monax_workflow_library": true,
+          "templates_import_export_workflows": true,
+          "templates_governing_templates": true,
+          "templates_packages": false
+        },
+        "users": {
+          "users_externals": true,
+          "users_organizations": true,
+          "users_departments": false,
+          "users_branded_portal": false
+        },
+        "support": {
+          "support_knowledge_base": true,
+          "support_webinars": true,
+          "support_multilingual": true,
+          "support_inapp_chat": true,
+          "support_email": true,
+          "support_office_hours": true,
+          "support_onboarding_assistant": false
+        }
+      }
     },
-    "features_contracts": [
-      {
-        "desc": "Organize existing contracts with tags",
-        "disabled": false
+    "meta_monthly": {
+      "users": 3,
+      "templates": 25,
+      "contracts": 25,
+      "contract_events": 250,
+      "contract_reminders": 5,
+      "contract_external_parties": 3,
+      "special_contracts": [
+        {
+          "id": "NDA",
+          "versions": [
+            "967D866652263BEBB1096E053A6B7B3F52B9A8F6",
+            "9D1F4376AEF9DB3DE741BAF746FC7D73EAAA0236"
+          ],
+          "quota": 0
+        },
+        {
+          "id": "TERMS_OF_SERVICE",
+          "versions": [
+            "1421E21D155829259E5D23DC019E482382CC87E3"
+          ],
+          "quota": 0
+        }
+      ],
+      "integrations": {
+        "api_rest": true,
+        "notifications_email": true,
+        "notifications_slack": true,
+        "notifications_sms": true,
+        "notifications_zapier": true,
+        "notifications_webhooks": true,
+        "system_docusign": true,
+        "system_stripe": true,
+        "system_dropbox": true,
+        "notifications_chatbots": false,
+        "system_xero": false,
+        "system_hubspot": false,
+        "system_bamboo": false,
+        "engine_ergo": false,
+        "engine_custom": false
       },
-      {
-        "desc": "In-application task management",
-        "disabled": false
-      },
-      {
-        "desc": "Alerts and notifications on contractual execution steps",
-        "disabled": false
-      },
-      {
-        "desc": "Operate approved open souce contracts",
-        "disabled": false
-      },
-      {
-        "desc": "Buy and operate Monax approved contracts (additional fees apply)",
-        "disabled": false
-      },
-      {
-        "desc": "Exclusive first access to legal products created by Monax platform partners",
-        "disabled": false
+      "features": {
+        "contracts": {
+          "contracts_unlimited_ndas": true,
+          "contracts_tags": true,
+          "contracts_tasks": true,
+          "contracts_alerts": true,
+          "contracts_operate_open_source": true,
+          "contracts_buy_monax_approved": true,
+          "contracts_exclusive_first_access": true
+        },
+        "templates": {
+          "templates_custom": true,
+          "templates_monax_workflow_library": true,
+          "templates_import_export_workflows": true,
+          "templates_governing_templates": true,
+          "templates_packages": false
+        },
+        "users": {
+          "users_externals": true,
+          "users_organizations": true,
+          "users_departments": false,
+          "users_branded_portal": false
+        },
+        "support": {
+          "support_knowledge_base": true,
+          "support_webinars": true,
+          "support_multilingual": true,
+          "support_inapp_chat": true,
+          "support_email": true,
+          "support_office_hours": true,
+          "support_onboarding_assistant": false
+        }
       }
-    ],
-    "features_templates": [
-      {
-        "desc": "Create custom collaborative templates and parameters",
-        "disabled": false
-      },
-      {
-        "desc": "Select contract workflows from Monax's extensive library",
-        "disabled": false
-      },
-      {
-        "desc": "Import / export custom workflows",
-        "disabled": false
-      },
-      {
-        "desc": "Set governing templates and subtemplates",
-        "disabled": false
-      },
-      {
-        "desc": "Package templates into custom multi-contract workflows",
-        "disabled": true
-      }
-    ],
-    "features_users": [
-      {
-        "desc": "Collaborate within your organization",
-        "disabled": false
-      },
-      {
-        "desc": "Structure your team into multiple departments",
-        "disabled": true
-      },
-      {
-        "desc": "Custom branded portal for external counterparties (tba)",
-        "disabled": true
-      }
-    ],
-    "features_support": [
-      {
-        "desc": "Self-help resouce center",
-        "disabled": false
-      },
-      {
-        "desc": "Public webinars",
-        "disabled": false
-      },
-      {
-        "desc": "Multilingual user interface",
-        "disabled": false
-      },
-      {
-        "desc": "In-app chat support (response within 12 hours)",
-        "disabled": false
-      },
-      {
-        "desc": "Email support (response within 12 hours)",
-        "disabled": false
-      },
-      {
-        "desc": "Monax team 'office hours' each month on Zoom",
-        "disabled": false
-      },
-      {
-        "desc": "Dedicated on-boarding assistant (3 hours bespoke training)",
-        "disabled": true
-      }
-    ]
+    }
   },
   "professional": {
     "title": "Professional",
     "price_annual": "600000",
     "price_monthly": "62500",
     "description": "Scale operations, manage permissions and customize your processes",
-    "users": 10,
-    "templates": 15,
-    "contracts": 75,
-    "ndas": 150,
-    "contract_events": 1200,
-    "contract_reminders": 10,
-    "contract_external_parties": 7,
-    "integrations": {
-      "api_rest": true,
-      "notifications_email": true,
-      "notifications_slack": true,
-      "notifications_sms": true,
-      "notifications_zapier": true,
-      "notifications_webhooks": true,
-      "system_docusign": true,
-      "system_stripe": true,
-      "system_dropbox": true,
-      "notifications_chatbots": true,
-      "system_xero": true,
-      "system_hubspot": true,
-      "system_bamboo": true,
-      "engine_ergo": true,
-      "engine_custom": true
+    "meta_annual": {
+      "users": 10,
+      "templates": 900,
+      "contracts": 900,
+      "contract_events": 14400,
+      "contract_reminders": 120,
+      "contract_external_parties": 84,
+      "special_contracts": [
+        {
+          "id": "NDA",
+          "versions": [
+            "967D866652263BEBB1096E053A6B7B3F52B9A8F6"
+          ],
+          "quota": 0
+        },
+        {
+          "id": "TERMS_OF_SERVICE",
+          "versions": [
+            "1421E21D155829259E5D23DC019E482382CC87E3"
+          ],
+          "quota": 0
+        }
+      ],
+      "integrations": {
+        "api_rest": true,
+        "notifications_email": true,
+        "notifications_slack": true,
+        "notifications_sms": true,
+        "notifications_zapier": true,
+        "notifications_webhooks": true,
+        "system_docusign": true,
+        "system_stripe": true,
+        "system_dropbox": true,
+        "notifications_chatbots": true,
+        "system_xero": true,
+        "system_hubspot": true,
+        "system_bamboo": true,
+        "engine_ergo": true,
+        "engine_custom": true
+      },
+      "features": {
+        "contracts": {
+          "contracts_unlimited_ndas": true,
+          "contracts_tags": true,
+          "contracts_tasks": true,
+          "contracts_alerts": true,
+          "contracts_operate_open_source": true,
+          "contracts_buy_monax_approved": true,
+          "contracts_exclusive_first_access": true
+        },
+        "templates": {
+          "templates_custom": true,
+          "templates_monax_workflow_library": true,
+          "templates_import_export_workflows": true,
+          "templates_governing_templates": true,
+          "templates_packages": true
+        },
+        "users": {
+          "users_externals": true,
+          "users_organizations": true,
+          "users_departments": true,
+          "users_branded_portal": true
+        },
+        "support": {
+          "support_knowledge_base": true,
+          "support_webinars": true,
+          "support_multilingual": true,
+          "support_inapp_chat": true,
+          "support_email": true,
+          "support_office_hours": true,
+          "support_onboarding_assistant": true
+        }
+      }
     },
-    "features_contracts": [
-      {
-        "desc": "Organize existing contracts with tags",
-        "disabled": false
+    "meta_monthly": {
+      "users": 10,
+      "templates": 75,
+      "contracts": 75,
+      "contract_events": 1200,
+      "contract_reminders": 10,
+      "contract_external_parties": 7,
+      "special_contracts": [
+        {
+          "id": "NDA",
+          "versions": [
+            "967D866652263BEBB1096E053A6B7B3F52B9A8F6"
+          ],
+          "quota": 0
+        },
+        {
+          "id": "TERMS_OF_SERVICE",
+          "versions": [
+            "1421E21D155829259E5D23DC019E482382CC87E3"
+          ],
+          "quota": 0
+        }
+      ],
+      "integrations": {
+        "api_rest": true,
+        "notifications_email": true,
+        "notifications_slack": true,
+        "notifications_sms": true,
+        "notifications_zapier": true,
+        "notifications_webhooks": true,
+        "system_docusign": true,
+        "system_stripe": true,
+        "system_dropbox": true,
+        "notifications_chatbots": true,
+        "system_xero": true,
+        "system_hubspot": true,
+        "system_bamboo": true,
+        "engine_ergo": true,
+        "engine_custom": true
       },
-      {
-        "desc": "In-application task management",
-        "disabled": false
-      },
-      {
-        "desc": "Alerts and notifications on contractual execution steps",
-        "disabled": false
-      },
-      {
-        "desc": "Operate approved open souce contracts",
-        "disabled": false
-      },
-      {
-        "desc": "Buy and operate Monax approved contracts (additional fees apply)",
-        "disabled": false
-      },
-      {
-        "desc": "Exclusive first access to legal products created by Monax platform partners",
-        "disabled": false
+      "features": {
+        "contracts": {
+          "contracts_unlimited_ndas": true,
+          "contracts_tags": true,
+          "contracts_tasks": true,
+          "contracts_alerts": true,
+          "contracts_operate_open_source": true,
+          "contracts_buy_monax_approved": true,
+          "contracts_exclusive_first_access": true
+        },
+        "templates": {
+          "templates_custom": true,
+          "templates_monax_workflow_library": true,
+          "templates_import_export_workflows": true,
+          "templates_governing_templates": true,
+          "templates_packages": true
+        },
+        "users": {
+          "users_externals": true,
+          "users_organizations": true,
+          "users_departments": true,
+          "users_branded_portal": true
+        },
+        "support": {
+          "support_knowledge_base": true,
+          "support_webinars": true,
+          "support_multilingual": true,
+          "support_inapp_chat": true,
+          "support_email": true,
+          "support_office_hours": true,
+          "support_onboarding_assistant": true
+        }
       }
-    ],
-    "features_templates": [
-      {
-        "desc": "Create custom collaborative templates and parameters",
-        "disabled": false
-      },
-      {
-        "desc": "Select contract workflows from Monax's extensive library",
-        "disabled": false
-      },
-      {
-        "desc": "Import / export custom workflows",
-        "disabled": false
-      },
-      {
-        "desc": "Set governing templates and subtemplates",
-        "disabled": false
-      },
-      {
-        "desc": "Package templates into custom multi-contract workflows",
-        "disabled": false
-      }
-    ],
-    "features_users": [
-      {
-        "desc": "Collaborate within your organization",
-        "disabled": false
-      },
-      {
-        "desc": "Structure your team into multiple departments",
-        "disabled": false
-      },
-      {
-        "desc": "Custom branded portal for external counterparties (tba)",
-        "disabled": false
-      }
-    ],
-    "features_support": [
-      {
-        "desc": "Self-help resouce center",
-        "disabled": false
-      },
-      {
-        "desc": "Public webinars",
-        "disabled": false
-      },
-      {
-        "desc": "Multilingual user interface",
-        "disabled": false
-      },
-      {
-        "desc": "In-app chat support (response within 12 hours)",
-        "disabled": false
-      },
-      {
-        "desc": "Email support (response within 12 hours)",
-        "disabled": false
-      },
-      {
-        "desc": "Monax team 'office hours' each month on Zoom",
-        "disabled": false
-      },
-      {
-        "desc": "Dedicated on-boarding assistant (3 hours bespoke training)",
-        "disabled": false
-      }
-    ]
+    }
   },
   "addtional_users": {
     "title": "Additional Users",
     "price_monthly": "2500",
-    "description": "Add additional users to your account (per user charge)"
-  },
-  "addtional_templates": {
-    "title": "Additional Templates",
-    "price_monthly": "10000",
-    "description": "Add additional templates to your account (packages of 5 additional active templates)"
+    "price_annual": "30000",
+    "description": "An additional seat on the Monax Platform"
   },
   "addtional_contracts": {
-    "title": "Additional Contracts",
-    "price_monthly": "5000",
-    "description": "Add additional contracts to your account (packages of 10 additional contracts)"
-  },
-  "additional_transactions": {
-    "title": "Additional Contractual Transactions",
-    "price_monthly": "2500",
-    "description": "Add additional contractual transactions to your account (packages of 100 additional transactions)"
-  },
-  "additional_externals": {
-    "title": "Additional External Parties",
-    "price_monthly": "2500",
-    "description": "Add additional external parties to your account (packages of 10 additional external parties)"
+    "title": "Package of 10 additional contracts",
+    "price_monthly": "7000",
+    "price_annual": "7000",
+    "description": "A pack of 10 templates and 10 contracts"
   }
 }
