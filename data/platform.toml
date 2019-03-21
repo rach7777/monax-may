@@ -23,7 +23,7 @@
       animation_id = "feature-animation-B"
       animation_type = "multipop"
       #img_base = "/img/assets/animations/shared/base-mac.png"
-      img_content_container = "mac" # set to 'mac' or 'iphone'
+      #img_content_container = "mac" # set to 'mac' or 'iphone'
       #img_content_layer_src = "/img/assets/animations/workflows_high_level.png"
       animation_delay = "0"
       animation_duration = "300"
