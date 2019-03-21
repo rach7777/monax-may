@@ -17,8 +17,8 @@
     enable = true
 
     [[features.consumer.section]]
-      title = "Create agreements"
-      subtitle = "Select, fill out a form then press create. You’ve made both a legally binding agreement and an auto-enforceable smart contract with just a couple of clicks. As simple as filling out a form."
+      title = "CLARITY"
+      subtitle = "Monax provides a high level insight into every contractual obligation your business has. Know precisely where you (and your conterparties) are at each stage. "
       #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
       animation_id = "feature-animation-B"
       animation_type = "multipop"
