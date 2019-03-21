@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
 set -e
 
-if [[ "$BUILD_REFSPEC" == "production" ]]; then
+echo -e "\n\nPricing information"
+
+if [[ "$CI_COMMIT_REF_NAME" == "production" ]]; then
+  echo -e "For Environment: chargebee-production\n"
   url="https://monax.chargebee.com/api/v2"
   key="live_nGUcdtzydZcZPJglPcudm8iir4wFOffX8n:"
 else
+  echo -e "For Environment: chargebee-test\n"
   url="https://monax-test.chargebee.com/api/v2"
   key="test_WPOrlXdx5bultihv74cuk8fSBeQZBGPgj:"
 fi
@@ -112,5 +116,4 @@ jq --null-input \
   }' \
   1> data/pricing_new.json
 
-echo -e "\n\nPricing information\n"
 cat data/pricing_new.json | jq .
