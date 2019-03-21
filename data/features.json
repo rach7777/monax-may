@@ -1,0 +1,148 @@
+{
+  "contracts": [
+    {
+      "id": "contracts_unlimited_ndas",
+      "description": "Unlimited active Canting Tribe NDAs",
+      "enabled": true,
+      "visible": true
+    },
+    {
+      "id": "contracts_tags",
+      "description": "Organize existing contracts with tags",
+      "enabled": true,
+      "visible": true
+    },
+    {
+      "id": "contracts_tasks",
+      "description": "In-application task management",
+      "enabled": true,
+      "visible": true
+    },
+    {
+      "id": "contracts_alerts",
+      "description": "Alerts and notifications on contractual execution steps",
+      "enabled": true,
+      "visible": true
+    },
+    {
+      "id": "contracts_operate_open_source",
+      "description": "Operate approved open source contracts",
+      "enabled": true,
+      "visible": true
+    },
+    {
+      "id": "contracts_buy_monax_approved",
+      "description": "Buy and operate Monax approved contracts (additional fees apply)",
+      "enabled": false,
+      "visible": false
+    },
+    {
+      "id": "contracts_exclusive_first_access",
+      "description": "Exclusive first access to legal products created by Monax platform partners",
+      "enabled": false,
+      "visible": true
+    }
+  ],
+  "templates": [
+    {
+      "id": "templates_custom",
+      "description": "Create custom collaborative templates and parameters",
+      "enabled": true,
+      "visible": true
+    },
+    {
+      "id": "templates_monax_workflow_library",
+      "description": "Select contract workflows from Monax's extensive library",
+      "enabled": true,
+      "visible": true
+    },
+    {
+      "id": "templates_import_export_workflows",
+      "description": "Import / export custom workflows",
+      "enabled": true,
+      "visible": true
+    },
+    {
+      "id": "templates_governing_templates",
+      "description": "Set governing templates and sub-templates",
+      "enabled": true,
+      "visible": true
+    },
+    {
+      "id": "templates_packages",
+      "description": "Package templates into custom multi-contract workflows",
+      "enabled": false,
+      "visible": false
+    }
+  ],
+  "users": [
+    {
+      "id": "users_externals",
+      "description": "Invite external counter-parties to collaborate",
+      "enabled": true,
+      "visible": true
+    },
+    {
+      "id": "users_organizations",
+      "description": "Collaborate within your organization",
+      "enabled": true,
+      "visible": true
+    },
+    {
+      "id": "users_departments",
+      "description": "Structure your team into multiple departments",
+      "enabled": true,
+      "visible": true
+    },
+    {
+      "id": "users_branded_portal",
+      "description": "Custom branded portal for external counter-parties",
+      "enabled": false,
+      "visible": false
+    }
+  ],
+  "support": [
+    {
+      "id": "support_knowledge_base",
+      "description": "Self-help resource center",
+      "enabled": true,
+      "visible": true
+    },
+    {
+      "id": "support_webinars",
+      "description": "Public webinars",
+      "enabled": true,
+      "visible": true
+    },
+    {
+      "id": "support_multilingual",
+      "description": "Multilingual user interface",
+      "enabled": true,
+      "visible": true
+    },
+    {
+      "id": "support_inapp_chat",
+      "description": "In-app chat support (response within 12 hours)",
+      "enabled": true,
+      "visible": true
+    },
+    {
+      "id": "support_email",
+      "description": "Email support (response within 12 hours)",
+      "enabled": true,
+      "visible": true
+    },
+    {
+      "id": "support_office_hours",
+      "description": "Monax team 'office hours' each month on Zoom",
+      "enabled": false,
+      "visible": false
+    },
+    {
+      "id": "support_onboarding_assistant",
+      "description": "Dedicated on-boarding assistant (3 hours bespoke training)",
+      "enabled": true,
+      "visible": true
+    }
+  ]
+}
