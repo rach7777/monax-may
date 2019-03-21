@@ -8,7 +8,7 @@
 [features]
   enable = true
   title = "Built for tech-focused entrepreneurs"
-  subtitle = "Gain 100% oversight on your contractual agreements, track progress and obligations and keep everything important in one place. We help you to stay focused on what you do best: growing your business."
+  subtitle = "Gain 360◦ vision on your contractual agreements - Monax gives you the insights and actions you need.  drives downstream systems services. Our users grow revenue and shrink risk with this intuitive software"
   consumer_option = "Use legal templates"
   producer_option = "Create legal templates"
   enable_title_block = false
@@ -18,13 +18,13 @@
 
     [[features.consumer.section]]
       title = "CLARITY"
-      subtitle = "Monax provides a high level insight into every contractual obligation your business has. Know precisely where you (and your conterparties) are at each stage. "
+      subtitle = "Monax enables a high level insight into every contractual obligation your business has. Know precisely where you (and your conterparties) are at each stage"
       #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
       animation_id = "feature-animation-B"
       animation_type = "multipop"
-      img_base = "/img/assets/animations/shared/base-mac.png"
+      #img_base = "/img/assets/animations/shared/base-mac.png"
       img_content_container = "mac" # set to 'mac' or 'iphone'
-      img_content_layer_src = "/img/assets/animations/3-self-executable-agreements/content-agreements-detail.png"
+      img_content_layer_src = "/img/assets/animations/workflows_high_level.png"
       animation_delay = "0"
       animation_duration = "300"
 
