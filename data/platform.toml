@@ -22,9 +22,9 @@
       #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
       animation_id = "feature-animation-B"
       animation_type = "multipop"
-      #img_base = "/img/assets/animations/shared/base-mac.png"
-      #img_content_container = "mac" # set to 'mac' or 'iphone'
-      #img_content_layer_src = "/img/assets/animations/workflows_high_level.png"
+      img_base = "/img/assets/animations/shared/base-mac.png"
+      img_content_container = "mac" # set to 'mac' or 'iphone'
+      img_content_layer_src = "/img/assets/animations/workflows_high_level.png"
       animation_delay = "0"
       animation_duration = "300"
 
@@ -42,11 +42,11 @@
       #### ZOOM TEMPLATE
       animation_id = "feature-animation-1"
       animation_type = "zoom"
-      #img_base = "/img/assets/animations/shared/base-mac.png"
-      #img_content_container = "mac" # set to 'mac' or 'iphone'
-      #img_content_layer_src = "/img/assets/animations/1-100-percent-transparency/content-agreement-grid.png"
-      #img_content_animation_delay = "600"
-      #img_content_animation_duration = "300"
+      img_base = "/img/assets/animations/shared/base-mac.png"
+      img_content_container = "mac" # set to 'mac' or 'iphone'
+      img_content_layer_src = "/img/assets/animations/1-100-percent-transparency/content-agreement-grid.png"
+      img_content_animation_delay = "600"
+      img_content_animation_duration = "300"
       img_popover_layer_src = "/img/assets/animations/workflows_integrations.png"
       img_popover_animation_delay = "1500"
       img_popover_animation_duration = "600"
