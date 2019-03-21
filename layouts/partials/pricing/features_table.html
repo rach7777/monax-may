@@ -11,21 +11,16 @@
         </div>
       </div>
       <div style="order:{{ add $i 5 }};" class="flex-td hidden-xs">
-        <span class="fa-li"><i class="fa fa-check"></i></span>{{ .contracts }} new contracts / month
+        <span class="fa-li"><i class="fa fa-check"></i></span><span class="frequency" data-billed-yearly="{{ .meta_annual.contracts }}" data-billed-monthly="{{ .meta_monthly.contracts }}">{{ .meta_annual.contracts }}</span> new contracts / <span class="frequency" data-billed-yearly="year" data-billed-monthly="month">year</span>
       </div>
-      <div style="order:{{ add $i 10 }};" class="flex-td hidden-xs">
-        <span class="fa-li"><i class="fa fa-check"></i></span>{{ .contract_events }} contractual transactions / month
-      </div>
-      <div style="order:{{ add $i 15 }};" class="flex-td hidden-xs">
-        <span class="fa-li"><i class="fa fa-check"></i></span>{{ .contract_reminders }} reminder notifications / contract
-      </div>
-      <div style="order:{{ add $i 20 }};" class="flex-td hidden-xs">
-        <span class="fa-li"><i class="fa fa-check"></i></span>{{ .ndas }} active CantingTribe NDAs
-      </div>
-      {{ range $i, $p := .features_contracts }}
-        <div style="order:{{ add $i 25 }};" class="flex-td hidden-xs {{ if eq .disabled true }} disabled {{ end }}">
-          <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+      {{ $myContractsFeatures := .meta_annual.features.contracts }}
+      {{ range $i, $p:= $.Site.Data.features.contracts }}
+        {{ if .visible }}
+        {{ $enabled := index $myContractsFeatures .id }}
+        <div style="order:{{ add $i 25 }};" class="flex-td hidden-xs {{ if not $enabled }} disabled {{ end }}">
+          <span class="fa-li"><i class="fa fa-check"></i></span>{{ .description }}{{ if not (.enabled) }} (coming soon){{ end }}
         </div>
+        {{ end }}
       {{ end }}
       <div style="order:45;" class="flex-td flex-td-separator padding-top-md hidden-xs {{ if eq $i 0 }} flex-td-colspan-3 {{ else }} visible-xs-block {{ end }}">
         <div class="inner-content">
@@ -33,12 +28,17 @@
         </div>
       </div>
       <div style="order:{{ add $i 50 }};" class="flex-td hidden-xs">
-        <span class="fa-li"><i class="fa fa-check"></i></span>{{ .templates }} active contract templates
+        <span class="fa-li"><i class="fa fa-check"></i></span><span class="frequency"
+          data-billed-yearly="{{ .meta_annual.templates }}" data-billed-monthly="{{ .meta_monthly.templates }}">{{ .meta_annual.templates }}</span> active contract templates
       </div>
-      {{ range $i, $p:= .features_templates }}
-        <div style="order:{{ add $i 55 }};" class="flex-td hidden-xs {{ if eq .disabled true }} disabled {{ end }}">
-          <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+      {{ $myTemplatesFeatures := .meta_annual.features.templates }}
+      {{ range $i, $p:= $.Site.Data.features.templates }}
+        {{ if .visible }}
+        {{ $enabled := index $myTemplatesFeatures .id }}
+        <div style="order:{{ add $i 55 }};" class="flex-td hidden-xs {{ if not $enabled }} disabled {{ end }}">
+          <span class="fa-li"><i class="fa fa-check"></i></span>{{ .description }}{{ if not (.enabled) }} (coming soon){{ end }}
         </div>
+        {{ end }}
       {{ end }}
       <div style="order:95;" class="flex-td flex-td-separator padding-top-md hidden-xs {{ if eq $i 0 }} flex-td-colspan-3 {{ else }} visible-xs-block {{ end }}">
         <div class="inner-content">
@@ -46,27 +46,28 @@
         </div>
       </div>
       <div style="order:{{ add $i 100 }};" class="flex-td hidden-xs">
-        <span class="fa-li"><i class="fa fa-check"></i></span>{{ .users }} active users
+        <span class="fa-li"><i class="fa fa-check"></i></span><span class="frequency" data-billed-yearly="{{ .meta_annual.users }}" data-billed-monthly="{{ .meta_monthly.users }}">{{ .meta_annual.users }}</span> active users
       </div>
-      <div style="order:{{ add $i 105 }};" class="flex-td hidden-xs">
-        <span class="fa-li"><i class="fa fa-check"></i></span>Invite {{ .contract_external_parties }} external partners or counterparties to collaborate / contract
-      </div>
-      {{ range $i, $p:= .features_users }}
-        <div style="order:{{ add $i 110 }};" class="flex-td hidden-xs {{ if eq .disabled true }} disabled {{ end }}">
-          <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+      {{ $myUserFeatures := .meta_annual.features.users }}
+      {{ range $i, $p:= $.Site.Data.features.users }}
+        {{ if .visible }}
+        {{ $enabled := index $myUserFeatures .id }}
+        <div style="order:{{ add $i 110 }};" class="flex-td hidden-xs {{ if not $enabled }} disabled {{ end }}">
+          <span class="fa-li"><i class="fa fa-check"></i></span>{{ .description }}{{ if not (.enabled) }} (coming soon){{ end }}
         </div>
+        {{ end }}
       {{ end }}
       <div style="order:145;" class="flex-td flex-td-separator padding-top-md hidden-xs {{ if eq $i 0 }} flex-td-colspan-3 {{ else }} visible-xs-block {{ end }}">
         <div class="inner-content">
           <h6>Integrations</h6>
         </div>
       </div>
-      {{ $myIntegrations := .integrations }}
+      {{ $myIntegrations := .meta_annual.integrations }}
       {{ range $i, $p := $.Site.Data.integrations }}
-        {{ if not (eq .visible false) }}
+        {{ if .visible }}
         {{ $enabled := index $myIntegrations .id }}
-        <div style="order:{{ add $i 150 }};" class="flex-td hidden-xs {{ if not (eq $enabled true) }} disabled {{ end }}">
-          <span class="fa-li"><i class="fa fa-check"></i></span>{{ .description }}{{ if not (eq .enabled true) }} (coming soon){{ end }}
+        <div style="order:{{ add $i 150 }};" class="flex-td hidden-xs {{ if not $enabled }} disabled {{ end }}">
+          <span class="fa-li"><i class="fa fa-check"></i></span>{{ .description }}{{ if not (.enabled) }} (coming soon){{ end }}
         </div>
         {{ end }}
       {{ end }}
@@ -75,10 +76,14 @@
           <h6>Support and services</h6>
         </div>
       </div>
-      {{ range $i, $p:= .features_support }}
-        <div style="order:{{ add $i 200 }};" class="flex-td hidden-xs {{ if eq .disabled true }} disabled {{ end }}">
-          <span class="fa-li"><i class="fa fa-check"></i></span>{{ .desc }}
+      {{ $mySupportFeatures := .meta_annual.features.support }}
+      {{ range $i, $p := $.Site.Data.features.support }}
+        {{ if .visible }}
+        {{ $enabled := index $mySupportFeatures .id }}
+        <div style="order:{{ add $i 200 }};" class="flex-td hidden-xs {{ if not $enabled }} disabled {{ end }}">
+          <span class="fa-li"><i class="fa fa-check"></i></span>{{ .description }}{{ if not (.enabled) }} (coming soon){{ end }}
         </div>
+        {{ end }}
       {{ end }}
 
       <div style="order:245;" class="flex-td flex-td-separator padding-top-md hidden-xs {{ if eq $i 0 }} flex-td-colspan-3 {{ else }} visible-xs-block {{ end }}">
@@ -87,19 +92,12 @@
         </div>
       </div>
       <div style="order:250;" class="flex-td hidden-xs {{ if eq .title "Starter" }} disabled {{ end }}">
-        {{ $.Site.Data.pricing_new.addtional_users.description }}: ${{ div (int $.Site.Data.pricing_new.addtional_users.price_monthly) 100 }} / month
-      </div>
-      <div style="order:255;" class="flex-td hidden-xs {{ if eq .title "Starter" }} disabled {{ end }}">
-        {{ $.Site.Data.pricing_new.addtional_templates.description }}: ${{ div (int $.Site.Data.pricing_new.addtional_templates.price_monthly) 100 }} / month
+        {{ $.Site.Data.pricing_new.addtional_users.description }}: $<span class="frequency" data-billed-yearly="{{ div ( int $.Site.Data.pricing_new.addtional_users.price_annual) 100 }}" data-billed-monthly="{{ div (int $.Site.Data.pricing_new.addtional_users.price_monthly) 100 }}">{{ div ( int $.Site.Data.pricing_new.addtional_users.price_annual) 1200 }}</span> / <span class="frequency" data-billed-yearly="year" data-billed-monthly="month">year</span>
       </div>
       <div style="order:260;" class="flex-td hidden-xs {{ if eq .title "Starter" }} disabled {{ end }}">
-        {{ $.Site.Data.pricing_new.addtional_contracts.description }}: ${{ div (int $.Site.Data.pricing_new.addtional_contracts.price_monthly) 100 }} / month
-      </div>
-      <div style="order:265;" class="flex-td hidden-xs {{ if eq .title "Starter" }} disabled {{ end }}">
-        {{ $.Site.Data.pricing_new.additional_transactions.description }}: ${{ div (int $.Site.Data.pricing_new.additional_transactions.price_monthly) 100 }} / month
-      </div>
-      <div style="order:270;" class="flex-td hidden-xs {{ if eq .title "Starter" }} disabled {{ end }}">
-        {{ $.Site.Data.pricing_new.additional_externals.description }}: ${{ div (int $.Site.Data.pricing_new.additional_externals.price_monthly) 100 }} / month
+        {{ $.Site.Data.pricing_new.addtional_contracts.description }}: $<span class="frequency" data-billed-yearly="{{ div ( int $.Site.Data.pricing_new.addtional_contracts.price_annual) 100 }}"
+          data-billed-monthly="{{ div (int $.Site.Data.pricing_new.addtional_contracts.price_monthly) 100 }}">{{ div ( int $.Site.Data.pricing_new.addtional_contracts.price_annual) 1200 }}</span>
+        / <span class="frequency" data-billed-yearly="year" data-billed-monthly="month">year</span>
       </div>
     {{ end }}
   </div>
