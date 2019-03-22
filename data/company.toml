@@ -2,7 +2,7 @@
     enable = true
     title = "<strong>We believe in a world where law empowers</strong>"
     subtitle = "Monax is on a mission to empower people with a new way to execute law. Active legal products merge the current practice of law with the power of distributed computing to create collaborative ecosystems in which innovative business models can grow."
-    hero_signup = false
+    hero_signup = true
 
 [history]
     enable = true
