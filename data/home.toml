@@ -1,7 +1,7 @@
 [top]
     enable = true
-    title = "<strong>Collaboratively execute your contractual obligations"
-    subtitle = "The platform for the future of making and managing agreements"
+    title = "<strong>"Collaboratively execute your contractual obligations"
+    subtitle = "Discover revenue through obligations management
     hero_signup = true
     img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
 
@@ -14,7 +14,7 @@
 
 [audiences]
   enable = false
-  title = "Built for entrepreneurs and creatives"
+  title = "Built for enterprize-focused startups"
   subtitle = "Gain 100% oversight on your contractual agreements, track progress and obligations, and keep everything important in one place. We enable you to stay focused on what you do best: growing your business."
 
   [[audiences.card_link]]
@@ -32,8 +32,8 @@
 
 [demo]
   enable = true
-  title = "Designed to empower you"
-  subtitle = "Turn contracts into the common thread of your business relationships. Gain actionable clarity, know where to focus and fulfill your contracts collaboratively."
+  title = "Learn how Monax can help your business grow revenue and shrink risk"
+  subtitle = "Turn agreements into the common thread of your business relationships. Gain actionable clarity, know where to focus and fulfill your contracts collaboratively."
   youtube_url = "CWvLgyb0Vw8"
 
 
