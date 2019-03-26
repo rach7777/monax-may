@@ -1,7 +1,7 @@
 [top]
     enable = true
-    title = "<strong>We believe in a world where law empowers</strong>"
-    subtitle = "Monax is on a mission to empower people with a new way to execute law. Active legal products merge the current practice of law with the power of distributed computing to create collaborative ecosystems in which innovative business models can grow."
+    title = "<strong>Taking obligations management into the digital future</strong>"
+    subtitle = "Monax gives enterprise companies the tools to manage obligations in a new, streamlined way, and enables continuous value creation"
     hero_signup = true
 
 [history]
@@ -63,7 +63,7 @@
       label = "Monax Platform Launched"
       logo_icon = "/img/logos/monax_icon_white.png"
       # logo_full = "/img/logos/logo-small.png"
-      description_text = "Monax Platform released - collaboratively execute your contractual obligations."
+      description_text = "Monax Platform released - collaboratively execute your obligations."
 
 [team]
     enable = true
@@ -341,7 +341,7 @@
 
 [pressreleases]
     enable = true
-    title = "Press highlights"
+    title = "In the press"
     filter_by_category = "press" # changed in partials/company/pressreleases.html
     default_img = "/img/assets/backgrounds/mountains-1.jpg"
     next_page_url = "/categories/press/"
