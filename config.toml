@@ -68,7 +68,7 @@ quality = 80
     name = "Resources"
     identifier = "resources"
     url  = "#"
-    weight = 4
+    weight = 5
 
     # sub menu items
     [[menu.main]]
@@ -110,18 +110,20 @@ quality = 80
         name = "Company"
         parent = "resources"
         url  = "/company/"
-        Post = "Learn about the history of Monax and meet the team behind smart, legally binding contacts on the blockchain."
+        Post = "Monax is on a mission to change the way folks track & manage their contractual obligations"
         weight = 5
 
 [[menu.main]]
     Name = "Pricing"
     indentifier = "pricing"
     URL = "/pricing/"
-    Weight = 5
+    Post = "Transparent base subscription with scalable add-ons - start small and scale your growth"
+    Weight = 6
 
 [[menu.register]]
     name = "Book a demo"
     url  = "#"
+    Post = "Book a demo tailored for your business"
     weight = 1
 
 # commenting this until we're closer to GA
