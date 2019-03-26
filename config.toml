@@ -123,7 +123,7 @@ quality = 80
 [[menu.register]]
     name = "Book a demo"
     url  = "#"
-    Post = "Book a demo tailored for your business"
+    Post = "Book a demo tailored to your business needs"
     weight = 1
 
 # commenting this until we're closer to GA

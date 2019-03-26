@@ -1,7 +1,8 @@
 [top]
     enable = true
-    title = "Stay focused on your business - let your contracts work for you"
-    # subtitle = "How Monax can simplify and speed up your corporate governance and give you full control over your agreements"
+    title = "Monax helps you manage your obligations"
+     subtitle = "The journey to untapped revenue is here"
+
     request_demo = true
     # enable youtube_id or img_right
     # youtube_id = "V9aPrgCrI_k" # after ?v= on YouTube urls, e.g. "sdX0jFFZKuo"
@@ -31,10 +32,10 @@
 
     [[bullets.section]]
       title = "Speed to market"
-      text = "Digitising the obligations process means you can close deals faster and accelerate your go-to-market "
+      text = "Digitizing the obligations process means you can close deals faster and accelerate your go-to-market "
       img_src = "/img/assets/entrepreneurs/entrepreneurs/speed_to_market.png"
       bullets_list = [
-        
+
       ]
 
     [[bullets.section]]
@@ -42,7 +43,7 @@
       text = "No-nonsense base subscription plus scalable volume triggers for when your needs grow (we use Chargbee)"
       img_src = "/img/assets/entrepreneurs/entrepreneurs/transparent_pricing.png"
       bullets_list = [
-       
+
       ]
 
     [[bullets.section]]
@@ -50,12 +51,12 @@
       text = "Monax features a powerful workflow engine which allows you to truly automate every stage of your business obligations"
       img_src = "/img/assets/entrepreneurs/entrepreneurs/low_resource.png"
       bullets_list = [
-      
+
       ]
 
     [[bullets.section]]
       title = "Features to succeed"
-      text = "Tech enterprise companies seeking big returns need access to flexible tools that will grow as fast as they are. Monax contains a complete toolkit to shift your company's growth up a gear"
+      text = "Tech enterprise companies seeking big returns need access to flexible tools that will grow as fast as them. Monax contains a complete toolkit to shift your company's growth up a gear"
       img_src = "/img/assets/entrepreneurs/entrepreneurs/features_to_succeed.png"
       bullets_list = [
         "Analytics",
