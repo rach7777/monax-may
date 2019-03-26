@@ -18,7 +18,7 @@
 
     [[history.time]]
       date = "Dec 2014"
-      label = "World's first permissioned blockchain (Burrow) launched"
+      label = "World's first permissioned blockchain (HL Burrow) launched"
       logo_icon = "/img/logos/Burrow_icon_white.png"
       # logo_full = "/img/logos/Hyperledger_Burrow.png"
       description_text = "Burrow, the world's first permissioned Ethereum smart-contract blockchain node, is launched."
@@ -57,7 +57,7 @@
       logo_icon = "/img/logos/AgreementsNetwork_icon_white.png"
       # logo_full = "/img/logos/AgreementsNetwork.png"
       description_text = "In collaboration with some of the world's most prominent law and technology firms, the Agreements Network will provide the legal layer for a networked world."
-      
+
       [[history.time]]
       date = "February 2019"
       label = "Monax Platform Launched"
