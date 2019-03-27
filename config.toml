@@ -29,16 +29,16 @@ quality = 80
     url  = "/platform/"
     weight = 1
 
-#[[menu.main]]
-#    name = "Customers"
-#    identifier = "customers"
-  #  url  = "#"
-  #  weight = 2
+[[menu.main]]
+    name = "Customers"
+    identifier = "customers"
+    url  = "#"
+    weight = 2
 
-
+ #sub menu items
 [[menu.main]]
       Name = "Entrepreneurs"
-      identifier = "entrepreneurs"
+      parent = "customers"
       URL = "/entrepreneurs/"
       Post = "How monax can help you grow revenue while shrinking risk"
       Weight = 2
@@ -53,10 +53,10 @@ quality = 80
 
 [[menu.main]]
     Name = "Lawyers"
-    identifier = "lawyers"
+    parent = "customers"
     URL = "/lawyers/"
     Post = "How Monax can simplify your workflow and turn your knowledge into commoditisable legal products"
-    Weight = 3
+    Weight = 4
 
         #[[menu.main]]
         #  Name = "Creatives"
@@ -69,7 +69,7 @@ quality = 80
     name = "Resources"
     identifier = "resources"
     url  = "#"
-    weight = 4
+    weight = 3
 
     # sub menu items
     [[menu.main]]
@@ -119,7 +119,7 @@ quality = 80
     indentifier = "pricing"
     URL = "/pricing/"
     Post = "Transparent base subscription with scalable add-ons - start small and scale your growth"
-    Weight = 5
+    Weight = 4
 
 [[menu.register]]
     name = "Book a demo"
