@@ -18,12 +18,12 @@
 
     [[features.consumer.section]]
       title = "CLARITY"
-      subtitle = "Monax enables a high level insight into every contractual obligation your business has. Know precisely where you (and your conterparties) are at each stage"
+      subtitle = "Monax enables a high level insight into every contractual obligation your business has - know precisely where you (and your conterparties) are at each stage"
       #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
       animation_id = "feature-animation-B"
-      animation_type = "multipop"
-      img_base = "/img/assets/animations/shared/base-mac.png"
-      img_content_container = "mac" # set to 'mac' or 'iphone'
+      animation_type = "zoom"
+      #img_base = "/img/assets/animations/shared/base-mac.png"
+      #img_content_container = "mac" # set to 'mac' or 'iphone'
       img_content_layer_src = "/img/assets/animations/workflows_high_level.png"
       animation_delay = "0"
       animation_duration = "300"
@@ -47,8 +47,8 @@
       animation_id = "feature-animation-1"
       animation_type = "zoom"
       img_base = "/img/assets/animations/shared/base-mac.png"
-      img_content_container = "mac" # set to 'mac' or 'iphone'
-      img_content_layer_src = "/img/assets/animations/1-100-percent-transparency/content-agreement-grid.png"
+      #img_content_container = "mac" # set to 'mac' or 'iphone'
+      #img_content_layer_src = "/img/assets/animations/1-100-percent-transparency/content-agreement-grid.png"
       img_content_animation_delay = "600"
       img_content_animation_duration = "300"
       img_popover_layer_src = "/img/assets/animations/1-100-percent-transparency/zoom-agreement-detail.png"
