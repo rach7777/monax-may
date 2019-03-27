@@ -33,7 +33,7 @@ quality = 80
     name = "Customers"
     identifier = "customers"
     url  = "#"
-    weight = 3
+    weight = 2
 
     # sub menu items
     # [[menu.main]]
@@ -47,8 +47,8 @@ quality = 80
       Name = "Entrepreneurs"
       parent = "customers"
       URL = "/entrepreneurs/"
-      Post = "How Monax can simplify and speed up your corporate governance, and give you full control over your agreements"
-      Weight = 2
+      Post = "How monax can help you grow revenue while shrinking risk"
+      Weight = 1
 
     #[[menu.main]]
     #  Name = "Creatives"
@@ -59,10 +59,10 @@ quality = 80
 
 [[menu.main]]
     Name = "Lawyers"
-    indentifier = "lawyers"
+    indentifier = "customers"
     URL = "/lawyers/"
     Post = "How Monax can simplify your workflow and turn your knowledge into commoditisable legal products"
-    Weight = 4
+    Weight = 2
 
 [[menu.main]]
     name = "Resources"
