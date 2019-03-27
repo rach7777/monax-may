@@ -41,8 +41,8 @@
         animation_duration = "300"
 
     [[features.consumer.section]]
-      title = "Track every obligation"
-      subtitle = "Track every contract and obligation in one place. Each event is permanently recorded on a blockchain - no more admin stress."
+      title = "ACTION"
+      subtitle = "Drive downstream business systems from the events in your contract execution to automate obligations"
       #### ZOOM TEMPLATE
       animation_id = "feature-animation-1"
       animation_type = "zoom"
@@ -56,8 +56,8 @@
       img_popover_animation_duration = "600"
 
     [[features.consumer.section]]
-      title = "Fulfill"
-      subtitle = "Visualise, monitor and control the execution of the contract throughout its entire life-cycle. Obtain the transparency you need to focus on your business."
+      title = "UNDERSTANDING"
+      subtitle = "Create visual representations of your contracts so everyone understands their obligations right from the start"
       #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
       animation_id = "feature-animation-4"
       animation_type = "multipop"
@@ -103,13 +103,13 @@
         animation_delay = "900"
         animation_duration = "300"
 
-      [[workflow.section.pop]]
+      #[[workflow.section.pop]]
         img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_2_crop.png"
         img_pop_id = "pop-2"
         animation_delay = "1500"
         animation_duration = "300"
 
-      [[workflow.section.pop]]
+      #[[workflow.section.pop]]
         img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_3_crop.png"
         img_pop_id = "pop-3"
         animation_delay = "2100"
