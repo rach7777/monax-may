@@ -91,7 +91,7 @@
     logo_1 = "/img/press-logos/bloomsberg_lo_grey.png"
     logo_1_url = "https://www.bloomberg.com/news/audio/2018-08-07/bloomberg-markets-zillow-s-wobbly-results-tesla-going-private"
     logo_2 = "/img/press-logos/forbes_lo_grey.png"
-    logo_2_url = "https://www.forbes.com/sites/sarahhansen/2018/07/26/11-companies-join-agreements-network-to-develop-ethereum-platform-for-lawyers/#3d1be5e94aec"
+    logo_2_url = "https://www.forbes.com/sites/rebeccacampbell1/2019/02/19/this-former-us-marine-is-changing-the-face-of-law-through-the-use-of-smart-contracts/#5d695666509d"
     logo_3 = "/img/press-logos/digital-journal_lo_grey.png"
     logo_3_url = "http://www.digitaljournal.com/business/q-a-how-technology-is-shaking-up-legal-firms/article/525554"
     logo_4 = "/img/press-logos/market-watch_lo_grey.png"
@@ -101,7 +101,7 @@
 # MAIN CTA SECTION
 
 [cta]
-    title = "Let your contracts work for you"
+    title = "GROW revenue. SHRINK risk."
 
     [cta.form]
       enable = false
@@ -114,6 +114,7 @@
         "Consulting & professional services",
         "Agriculture industry",
         "Chemical industry",
+        "SaaS",
         "Software industry",
         "Technology industry",
         "Construction industry",
@@ -190,7 +191,7 @@
     button_one_style_outline = true # outline if true, solid if false
 
     enable_button_two = true # links to url or form two
-    button_two_text = "Request a demo"
+    button_two_text = "Book a demo"
     button_two_trigger_form = true # if false set url
     button_two_url = "#demo"
     button_two_style_outline = false # outline if true, solid if false
@@ -266,7 +267,7 @@
 [col_4]
     enable = true
     title = "Company"
-    # subtitle = "Deploy smart, legally-binding contracts on the blockchain."
+    subtitle = "Collaboratively execute your legal obligations"
 
     [[col_4.link]]
         link_title = "About"

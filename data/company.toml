@@ -1,41 +1,41 @@
 [top]
     enable = true
-    title = "<strong>We believe in a world where law empowers</strong>"
-    subtitle = "Monax is on a mission to empower people with a new way to execute law. Active legal products merge the current practice of law with the power of distributed computing to create collaborative ecosystems in which innovative business models can grow."
-    hero_signup = false
+    title = "<strong>Taking obligations management into the digital future</strong>"
+    subtitle = "Monax gives enterprise companies the tools to manage obligations in a new, streamlined way, and enables continuous value creation"
+    hero_signup = true
 
 [history]
     enable = true
-    title = "<strong>Pioneers of blockchain technology</strong>"
-    subtitle = ""
+    title = "<strong>Our Story</strong>"
+    subtitle = "The original blockchain-native SaaS startup"
 
     [[history.time]]
       date = "June 2014"
-      label = "Eris Industries founded"
+      label = "Company founded"
       logo_icon = "/img/logos/Eris_icon_white.png"
       # logo_full = "/img/logos/Eris.png"
       description_text = "Born out of Ethereum skype rooms, Eris Industries set out to replace the Bitcoin Foundation as part of a US$100,000 contest."
 
     [[history.time]]
       date = "Dec 2014"
-      label = "Burrow launched"
+      label = "World's first permissioned blockchain (HL Burrow) launched"
       logo_icon = "/img/logos/Burrow_icon_white.png"
       # logo_full = "/img/logos/Hyperledger_Burrow.png"
       description_text = "Burrow, the world's first permissioned Ethereum smart-contract blockchain node, is launched."
 
     [[history.time]]
       date = "2015"
-      label = "Eris Platform launched"
+      label = "World's first OS smart contract suite"
       logo_icon = "/img/logos/Eris_icon_white.png"
       # logo_full = "/img/logos/Eris.png"
       description_text = "Eris 0.10, the world's first open-source smart contract suite, is launched."
 
-    [[history.time]]
-      date = "2016"
-      label = "Rebrand to Monax"
-      logo_icon = "/img/logos/monax_icon_white.png"
+    #[[history.time]]
+     # date = "2016"
+     # label = "Rebrand to Monax"
+     # logo_icon = "/img/logos/monax_icon_white.png"
       # logo_full = "/img/logo-small.png"
-      description_text = "Eris rebrands to Monax, pivoting its business focus from enterprise grade solutions to the small business community."
+     # description_text = "Eris rebrands to Monax, pivoting its business focus from enterprise grade solutions to the small business community."
 
     [[history.time]]
       date = "Feb 2017"
@@ -46,29 +46,29 @@
 
     [[history.time]]
       date = "March 2017"
-      label = "Monax Joins the EEA"
+      label = "Monax joins the EEA"
       logo_icon = "/img/logos/eea_icon_white.png"
       # logo_full = "/img/logos/eea.png"
       description_text = "Monax joins the Enterprise Ethereum Alliance (EEA) connecting Fortune 500 enterprises, startups, academics and technology vendors."
 
     [[history.time]]
       date = "April 2018"
-      label = "Agreements Network Established"
+      label = "Agreements Network established"
       logo_icon = "/img/logos/AgreementsNetwork_icon_white.png"
       # logo_full = "/img/logos/AgreementsNetwork.png"
       description_text = "In collaboration with some of the world's most prominent law and technology firms, the Agreements Network will provide the legal layer for a networked world."
-      
+
       [[history.time]]
       date = "February 2019"
       label = "Monax Platform Launched"
       logo_icon = "/img/logos/monax_icon_white.png"
       # logo_full = "/img/logos/logo-small.png"
-      description_text = "Monax Platform (beta) released - a relationship-centric obligations management platform."
+      description_text = "Monax Platform released - collaboratively execute your obligations."
 
 [team]
     enable = true
-    title = "Our people and offices"
-    subtitle = ""
+    title = "Humans of Monax"
+    subtitle = "We are on a mission to change the way folks track and manage their contractual obligations"
 
     [[team.office]]
     city = "Edinburgh"
@@ -280,7 +280,7 @@
 
     [[team.item]]
       name = "Tobias Barnes Hofmeister"
-      position = "Marketing Analyst"
+      position = "Strategic Designer"
       weight = 110
       location = "edn" #set to edn, lon, nyc, remote or none
       img = "/img/team/team-th.jpg"
@@ -317,8 +317,8 @@
 
 [positions]
     enable = true
-    title = "Join us in shaping a new paradigm"
-    subtitle = "We're a diverse and talented team, complementing each other in our strengths to build a truly remarkable product."
+    title = "We're hiring"
+    subtitle = "Be part of a group of innovators building a truly remarkable product"
     enable_bamboo = true # if true, [[positions.jobs]] posted below will not display
     contact_info = "Please email <a href='mailto:contact@monax.io'>contact@monax.io</a> with your CV."
 
@@ -341,14 +341,14 @@
 
 [pressreleases]
     enable = true
-    title = "Press highlights"
+    title = "In the press"
     filter_by_category = "press" # changed in partials/company/pressreleases.html
     default_img = "/img/assets/backgrounds/mountains-1.jpg"
     next_page_url = "/categories/press/"
 
     [pressreleases.cta]
       enable = true
-      link_text = "Interested in writing about Monax?"
+      link_text = "CONTACT OUR PRESS OFFICE"
       link_url = "mailto:contact@monax.io"
       outline_style = true
 

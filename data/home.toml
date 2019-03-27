@@ -1,20 +1,20 @@
 [top]
     enable = true
-    title = "<strong>Stay focused on what you're building.</strong> Let your contracts work for you."
-    # subtitle = "The platform for the future of making and managing agreements"
+    title = "Collaboratively execute your contractual obligations"
+    subtitle = "Discover revenue through obligations management"
     hero_signup = true
     img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
 
     [top.illustration]
-      enable = true   # replaces img_right
-      img_base = "/img/assets/animations/monax-laptop/laptop-animation-base.png"
-      img_layer_one = "/img/assets/animations/monax-laptop/laptop-animation-layer-1.png"
-      img_layer_two = "/img/assets/animations/monax-laptop/laptop-animation-layer-2.png"
-
+      enable = false   # replaces img_right
+      # img_base = "/img/assets/animations/monax-laptop/laptop-animation-base.png"
+      # img_layer_one = "/img/assets/animations/monax-laptop/laptop-animation-layer-1.png"
+      # img_layer_two = "/img/assets/animations/monax-laptop/laptop-animation-layer-2.png"
+    img_right = "/img/assets/audiences/home-page-header.png"
 
 [audiences]
   enable = false
-  title = "Built for entrepreneurs and creatives"
+  title = "Built for enterprize-focused startups"
   subtitle = "Gain 100% oversight on your contractual agreements, track progress and obligations, and keep everything important in one place. We enable you to stay focused on what you do best: growing your business."
 
   [[audiences.card_link]]
@@ -32,8 +32,8 @@
 
 [demo]
   enable = true
-  title = "Designed to empower you"
-  subtitle = "Turn contracts into the common thread of your business relationships. Gain clarity, know where to focus and fulfill your contracts collaboratively."
+  title = "Learn how Monax can help your business grow revenue and shrink risk"
+  subtitle = "Turn agreements into the common thread of your business relationships. Gain actionable clarity, know where to focus and fulfill your contracts collaboratively."
   youtube_url = "CWvLgyb0Vw8"
 
 

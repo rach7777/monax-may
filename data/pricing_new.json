@@ -3,7 +3,7 @@
     "title": "Starter",
     "price_annual": "30000",
     "price_monthly": "3100",
-    "description": "Organize your contracts and gain clarity over your business relationships",
+    "description": "Organize your agreements and gain clarity over your business relationships",
     "meta_annual": {
       "users": 1,
       "templates": 60,
@@ -157,7 +157,7 @@
     "title": "Essential",
     "price_annual": "180000",
     "price_monthly": "18900",
-    "description": "Streamline your operations and collectively manage your contracts",
+    "description": "Streamline your operations and collectively manage your agreements",
     "meta_annual": {
       "users": 3,
       "templates": 300,
