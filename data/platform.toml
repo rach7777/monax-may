@@ -113,7 +113,7 @@
         #img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_3_crop.png"
         #img_pop_id = "pop-3"
         #animation_delay = "2100"
-        
+
     [[workflow.section]]
       title = "Upgrade and automate your own templates"
       subtitle = "Add workflows to your own contract templates and turn them into facilitators for your business."
