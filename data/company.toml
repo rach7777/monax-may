@@ -1,7 +1,7 @@
 [top]
     enable = true
     title = "<strong>Taking obligations management into the digital future</strong>"
-    subtitle = "Monax gives enterprise companies the tools to manage obligations in a new, streamlined way, and enables continuous value creation"
+    subtitle = "Monax is a respected blockchain-native SaaS company on mission to change the way people consume and manage their legal agreements"
     hero_signup = true
 
 [history]
@@ -18,17 +18,17 @@
 
     [[history.time]]
       date = "Dec 2014"
-      label = "World's first permissioned blockchain (HL Burrow) launched"
+      label =  "World's first permissioned blockchain"
       logo_icon = "/img/logos/Burrow_icon_white.png"
       # logo_full = "/img/logos/Hyperledger_Burrow.png"
-      description_text = "Burrow, the world's first permissioned Ethereum smart-contract blockchain node, is launched."
+      description_text = "Burrow, the world's first permissioned Ethereum smart-contract blockchain node, is launched"
 
     [[history.time]]
       date = "2015"
-      label = "World's first OS smart contract suite"
+      label = "World's first open-source smart contract suite"
       logo_icon = "/img/logos/Eris_icon_white.png"
       # logo_full = "/img/logos/Eris.png"
-      description_text = "Eris 0.10, the world's first open-source smart contract suite, is launched."
+      description_text = "Eris 0.10, the world's first open-source smart contract suite, is launched"
 
     #[[history.time]]
      # date = "2016"
@@ -42,33 +42,33 @@
       label = "Monax joins Hyperledger"
       logo_icon = "/img/logos/Hyperledger_icon_white.png"
       # logo_full = "/img/logos/Hyperledger.png"
-      description_text = "Monax submits its smart contract machine to Hyperledger for the furtherance of cross-industry blockchain technologies."
+      description_text = "Monax submits its smart contract machine to Hyperledger for the furtherance of cross-industry blockchain technologies"
 
     [[history.time]]
       date = "March 2017"
-      label = "Monax joins the EEA"
+      label = "Monax joins the Enterprise Ethereum Alliance (EEA)"
       logo_icon = "/img/logos/eea_icon_white.png"
       # logo_full = "/img/logos/eea.png"
-      description_text = "Monax joins the Enterprise Ethereum Alliance (EEA) connecting Fortune 500 enterprises, startups, academics and technology vendors."
+      description_text = "Monax joins the EEA connecting Fortune 500 enterprises, startups, academics and technology vendors"
 
     [[history.time]]
       date = "April 2018"
       label = "Agreements Network established"
       logo_icon = "/img/logos/AgreementsNetwork_icon_white.png"
       # logo_full = "/img/logos/AgreementsNetwork.png"
-      description_text = "In collaboration with some of the world's most prominent law and technology firms, the Agreements Network will provide the legal layer for a networked world."
+      description_text = "In collaboration with some of the world's most prominent law and technology firms, the Agreements Network will provide the legal layer for a networked world"
 
       [[history.time]]
       date = "February 2019"
       label = "Monax Platform Launched"
       logo_icon = "/img/logos/monax_icon_white.png"
       # logo_full = "/img/logos/logo-small.png"
-      description_text = "Monax Platform released - collaboratively execute your obligations."
+      description_text = "Monax Platform released - collaboratively execute your obligations"
 
 [team]
     enable = true
     title = "Humans of Monax"
-    subtitle = "We are on a mission to change the way folks track and manage their contractual obligations"
+    subtitle = "The team consists of 15 employees (marmots) - 8 software engineers, 2 legal engineers, 3 lawyers, 9 cultures, 6 females, 3 military veterans, and overall a bunch of awesome humans!"
 
     [[team.office]]
     city = "Edinburgh"
