@@ -68,7 +68,7 @@
 [team]
     enable = true
     title = "Humans of Monax"
-    subtitle = "The team consists of 15 employees (marmots) - 8 software engineers, 2 legal engineers, 3 lawyers, 9 cultures, 6 females, 3 military veterans, and overall a bunch of awesome humans!#
+    subtitle = "The team consists of 15 employees (marmots) - 8 software engineers, 2 legal engineers, 3 lawyers, 9 cultures, 6 females, 3 military veterans, and overall a bunch of awesome humans!"
 
     [[team.office]]
     city = "Edinburgh"
