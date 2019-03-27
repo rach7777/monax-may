@@ -1,18 +1,18 @@
 [top]
     enable = true
-    title = "Build and run your company without the legal hassle"
-    # subtitle = "How Monax can simplify and speed up your corporate governance and give you full control over your agreements"
+    title = "Monax helps you manage your obligations"
+     subtitle = "The journey to untapped revenue is here"
+
     request_demo = true
     # enable youtube_id or img_right
-    youtube_id = "V9aPrgCrI_k" # after ?v= on YouTube urls, e.g. "sdX0jFFZKuo"
-    # img_right = "/img/assets/landing-pages/corporate-governance/corporate-governance-header.png"
+    # youtube_id = "V9aPrgCrI_k" # after ?v= on YouTube urls, e.g. "sdX0jFFZKuo"
+    img_right = "/img/assets/audiences/customers-header.png"
 
 
 [intro]
     enable = true
-    title = "Empowering every step of the process"
-    subtitle = "The Monax platform supports entrepreneurs following their dreams while taking care of business."
-
+    title = "Monax supports enterprise-focused tech startups throughout the contract lifecycle, so they can concentrate on building and selling their products"
+    subtitle = "Our customers require four key things from us:"
 
 # [testimonials]
 #     enable = true
@@ -31,44 +31,52 @@
     enable_request_demo = true
 
     [[bullets.section]]
-      title = "Form a Company"
-      text = "Company Active Agreements manage internal legal matters from organization, shareholders, boards and beyond. Use Active Agreements to automate, execute and simplify basic company functions."
-      img_src = "/img/assets/entrepreneurs/entrepreneurs-icon-1.png"
+      title = "Speed to market"
+      text = "Digitizing the obligations process means you can close deals faster and accelerate your go-to-market "
+      img_src = "/img/assets/entrepreneurs/entrepreneurs/speed_to_market.png"
       bullets_list = [
-        "Incorporations",
-        "Shareholder Agreements",
-        "Resolutions",
+
       ]
 
     [[bullets.section]]
-      title = "Streamline Operations"
-      text = "Active Agreements for daily operations enable companies and individuals to execute and fulfill their commercial obligations more easily, so you can focus on building value for your brand."
-      img_src = "/img/assets/entrepreneurs/entrepreneurs-icon-2.png"
+      title = "Transparent, scalable pricing"
+      text = "No-nonsense base subscription plus scalable volume triggers for when your needs grow (we use Chargbee)"
+      img_src = "/img/assets/entrepreneurs/entrepreneurs/transparent_pricing.png"
       bullets_list = [
-        "Sales",
-        "Employment Agreements",
-        "Insurance Agreements",
+
       ]
 
     [[bullets.section]]
-      title = "Simplify Funding"
-      text = "At some point, most growing companies need liquidity. Active Agreements make due diligence fast and easy, while the Monax Platform makes it easier to find the right funding partners for your company."
-      img_src = "/img/assets/entrepreneurs/entrepreneurs-icon-3.png"
+      title = "Low resource allocation"
+      text = "Monax features a powerful workflow engine which allows you to truly automate every stage of your business obligations"
+      img_src = "/img/assets/entrepreneurs/entrepreneurs/low_resource.png"
       bullets_list = [
-        "Loans",
-        "Investment Agreements",
-        "Due Diligence Processes",
+
       ]
 
     [[bullets.section]]
-      title = "Take the Leap"
-      text = "Entrepreneurs and creatives dreaming of big returns need access to flexible tools that will grow with them. The Monax platform contains a complete toolkit to take your company's growth to the next level, at the cutting edge of technology."
-      img_src = "/img/assets/entrepreneurs/entrepreneurs-icon-4.png"
+      title = "Features to succeed"
+      text = "Tech enterprise companies seeking big returns need access to flexible tools that will grow as fast as them. Monax contains a complete toolkit to shift your company's growth up a gear"
+      img_src = "/img/assets/entrepreneurs/entrepreneurs/features_to_succeed.png"
       bullets_list = [
         "Analytics",
         "Data Monetization",
         "Productization",
       ]
+
+
+ [testimonials]
+     enable = true
+
+     [testimonials.card_link]
+       img = "/img/assets/audiences/entrepreneurs_600.jpg"
+       title = "Kurt Watkins, Counsel MG Miller"
+       blurb = "By using new technology, the Monax Platform provides a combination of consistency, transparency, and sophistication for contract management previously not available to small to mid-size businesses. We are hopeful that the Monax Platform will catalyze an infrastructural upgrade to business and legal transactions across the board."
+       icon = "fa-angle-right"
+       link_url = "/entrepreneurs/"
+       link_title = "IP law firm MG MIller"
+
+
 
 
 [secondary_cta]
