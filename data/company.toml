@@ -25,7 +25,7 @@
 
     [[history.time]]
       date = "2015"
-      label = "World's first open-source smart contract suite"
+      label = "World's first OS smart contract suite"
       logo_icon = "/img/logos/Eris_icon_white.png"
       # logo_full = "/img/logos/Eris.png"
       description_text = "Eris 0.10, the world's first open-source smart contract suite, is launched"
