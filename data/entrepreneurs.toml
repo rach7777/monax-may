@@ -11,7 +11,7 @@
 
 [intro]
     enable = true
-    title = "Monax supports enterprise-focused tech startups throughout the contract lifecycle, so they can concentrate on building and selling their products"
+    title = "Monax supports enterprise-focused startups throughout each agreement lifecycle, so they can concentrate on business"
     subtitle = "Our customers require four key things from us:"
 
 # [testimonials]
@@ -33,15 +33,15 @@
     [[bullets.section]]
       title = "Speed to market"
       text = "Digitizing the obligations process means you can close deals faster and accelerate your go-to-market "
-      img_src = "/img/assets/entrepreneurs/entrepreneurs/speed_to_market.png"
+      img_src = "/img/assets/entrepreneurs/speed_to_market.png"
       bullets_list = [
 
       ]
 
     [[bullets.section]]
-      title = "Transparent, scalable pricing"
+      title = "Transparent & scalable pricing"
       text = "No-nonsense base subscription plus scalable volume triggers for when your needs grow (we use Chargbee)"
-      img_src = "/img/assets/entrepreneurs/entrepreneurs/transparent_pricing.png"
+      img_src = "/img/assets/entrepreneurs/transparent_pricing.png"
       bullets_list = [
 
       ]
@@ -49,15 +49,15 @@
     [[bullets.section]]
       title = "Low resource allocation"
       text = "Monax features a powerful workflow engine which allows you to truly automate every stage of your business obligations"
-      img_src = "/img/assets/entrepreneurs/entrepreneurs/low_resource.png"
+      img_src = "/img/assets/entrepreneurs/low_resource.png"
       bullets_list = [
 
       ]
 
     [[bullets.section]]
       title = "Features to succeed"
-      text = "Tech enterprise companies seeking big returns need access to flexible tools that will grow as fast as them. Monax contains a complete toolkit to shift your company's growth up a gear"
-      img_src = "/img/assets/entrepreneurs/entrepreneurs/features_to_succeed.png"
+      text = "Tech enterprise companies seeking big returns need access to scalable tools - Monax has the features to accelerate growth"
+      img_src = "/img/assets/entrepreneurs/features_to_succeed.png"
       bullets_list = [
         "Analytics",
         "Data Monetization",
@@ -66,7 +66,7 @@
 
 
  [testimonials]
-     enable = false
+     enable = true
 
      [testimonials.card_link]
        img = "/img/assets/audiences/entrepreneurs_600.jpg"
@@ -106,7 +106,7 @@
 
 
 [cta_two_button] # global
-    enable = false
+    enable = true
 
 
 [press] # global
