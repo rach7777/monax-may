@@ -35,7 +35,14 @@ quality = 80
     url  = "#"
     weight = 2
 
-    # sub menu items
+    #sub menu items
+[[menu.main]]
+      Name = "Entrepreneurs"
+      parent = "customers"
+      URL = "/entrepreneurs/"
+      Post = "How monax can help you grow revenue while shrinking risk"
+      Weight = 2
+
     # [[menu.main]]
     #   Name = "Fleet leasing"
     #   parent = "customers"
@@ -43,26 +50,20 @@ quality = 80
     #   Post = "How Monax can power your fleet leases, simplify your business processes and drive new revenue streams"
     #   Weight = 1
 
-    [[menu.main]]
-      Name = "Entrepreneurs"
-      parent = "customers"
-      URL = "/entrepreneurs/"
-      Post = "How monax can help you grow revenue while shrinking risk"
-      Weight = 2
-
-    #[[menu.main]]
-    #  Name = "Creatives"
-    #  parent = "customers"
-    #  URL = "/creatives/"
-    # Post = "How Monax can strengthen your brand, protect your IP and drive new revenue streams for your content"
-    #  Weight = 3
-
+    
 [[menu.main]]
     Name = "Lawyers"
     parent = "customers"
     URL = "/lawyers/"
     Post = "How Monax can simplify your workflow and turn your knowledge into commoditisable legal products"
     Weight = 4
+
+        #[[menu.main]]
+        #  Name = "Creatives"
+        #  parent = "customers"
+        #  URL = "/creatives/"
+        # Post = "How Monax can strengthen your brand, protect your IP and drive new revenue streams for your content"
+        #  Weight = 3
 
 [[menu.main]]
     name = "Resources"
