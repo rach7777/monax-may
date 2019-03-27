@@ -1,6 +1,6 @@
 [top]
     enable = true
-    title = "<strong>Collaboratively execute your contractual obligations<strong>"
+    title = "Collaboratively execute your contractual obligations"
     subtitle = "Discover revenue through obligations management"
     hero_signup = true
     #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
