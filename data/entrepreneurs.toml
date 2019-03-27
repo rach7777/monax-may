@@ -3,10 +3,10 @@
     title = "Monax helps you manage your obligations"
      subtitle = "The journey to untapped revenue is here"
 
-    request_demo = false
+    request_demo = true
     # enable youtube_id or img_right
     # youtube_id = "V9aPrgCrI_k" # after ?v= on YouTube urls, e.g. "sdX0jFFZKuo"
-    img_right = "/img/assets/audiences/customers-header.png"
+    img_right = "/img/assets/audiences/customers_header.png"
 
 
 [intro]
@@ -59,14 +59,12 @@
       text = "Tech enterprise companies seeking big returns need access to scalable tools - Monax has the features to accelerate growth"
       img_src = "/img/assets/entrepreneurs/features_to_succeed.png"
       bullets_list = [
-        "Analytics",
-        "Data Monetization",
-        "Productization",
+
       ]
 
 
  [testimonials]
-     enable = true
+     enable = false
 
      [testimonials.card_link]
        img = "/img/assets/audiences/entrepreneurs_600.jpg"
