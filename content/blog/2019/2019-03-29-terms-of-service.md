@@ -6,7 +6,7 @@ title:     "Terms of Service"
 author:    "Anjlee Khurana, Senior Legal Engineer"
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
-excerpt:   "When people think about legal they think almost entirely of the provision of bespoke services. Yet the world is changing, and legal needs to keep up."
+excerpt:   ""
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
@@ -50,7 +50,7 @@ utm:
 
 <!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
 
-##Monax Demonstrates Upgradability with its own Terms of Service
+### Monax Demonstrates Upgradability with its own Terms of Service
 
 ##HOW WE ACHIEVE FLEXIBILITY TODAY
 In the world of paper contracts, there is very little compliance enforcement beyond formal dispute resolution mechanisms. While that may strike you as a deficiency, there is at least one beneficial byproduct: flexibility. In the real world, things do not always go quite as planned. Formal dispute mechanisms require substantial commitment of time and money, which disincentivizes their use whenever the disputed amount falls below a certain threshold of loss. Disputes and discrepancies of lesser amounts enjoy the flexibility that accompanies a lack of structure. This flexibility, which is necessary to accommodate normal variance in the execution of agreed terms, becomes inordinately desirable in the face of the perverse incentives created by taxing dispute resolution mechanisms.
