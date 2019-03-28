@@ -1,12 +1,12 @@
 ---
 
 # Pretty normal stuff
-date:      2019-03-29T00:00:00Z
-title:     "Terms of Service"
+date:      2019-03-28T00:00:00Z
+title:     "Terms of Service - Monax in action"
 author:    "Anjlee Khurana, Senior Legal Engineer"
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
-excerpt:   ""
+excerpt:   "Monax Demonstrates Upgradability with its own Terms of Service"
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
@@ -21,6 +21,8 @@ categories:
 tags:
   - legal products
   - agreements network
+  - monax platform
+  - legal engineering
 
 # if this post is part of a series, uncomment the information below. The 'article series' box
 # will only display if there is more than one article in the series. 'id', 'number' and 'about' all must be present.
@@ -38,7 +40,7 @@ draft: true
 utm:
   source: "website"
   medium: "blog"
-  campaign: ""
+  campaign: "legal products"
 
 ---
 
