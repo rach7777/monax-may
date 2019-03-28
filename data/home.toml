@@ -1,21 +1,22 @@
 [top]
     enable = true
-    title = "Collaboratively execute your contractual obligations"
-    subtitle = "Discover revenue through obligations management"
+    title = "Make your contracts work for you"
+    subtitle = "Ditigize your obligations management"
     hero_signup = true
     #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
+    img_right = "/img/assets/audiences/Home_page_header.png"
 
-    [top.illustration]
-      enable = true   # replaces img_right
+  #[top.illustration]
+      #enable = false  # replaces img_right
       # img_base = "/img/assets/animations/monax-laptop/laptop-animation-base.png"
       # img_layer_one = "/img/assets/animations/monax-laptop/laptop-animation-layer-1.png"
       # img_layer_two = "/img/assets/animations/monax-laptop/laptop-animation-layer-2.png"
-    img_right = "/img/assets/audiences/home-page-header.png"
+    # img_right = "/img/assets/audiences/Home_page_header.png"
 
 [audiences]
   enable = false
   title = "Built for enterprize-focused startups"
-  subtitle = "Gain 100% oversight on your contractual agreements, track progress and obligations, and keep everything important in one place. We enable you to stay focused on what you do best: growing your business."
+  subtitle = "360◦ vision on your contractual agreements - Monax gives you the insights and actions you need to increase revnue and decrease risk"
 
   [[audiences.card_link]]
     title = "For entrepreneurs"
@@ -32,8 +33,8 @@
 
 [demo]
   enable = true
-  title = "Learn how Monax can help your business grow revenue and shrink risk"
-  subtitle = "Gain 100% oversight on your contractual agreements, track progress and obligations, and keep everything important in one place. We enable you to stay focused on what you do best: growing your business"
+  title = "Learn how MONAX can help your business grow"
+  subtitle = "360◦ vision on your contractual agreements - MONAX gives you the insights and actions you need to increase revenue and decrease risk"
   youtube_url = "CWvLgyb0Vw8"
 
 

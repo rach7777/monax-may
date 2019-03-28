@@ -182,7 +182,7 @@
 
 [cta_two_button]
     enable = true
-    title = "Let your contracts work for you"
+    title = "Make your contracts work for you"
 
     enable_button_one = true # links to url or triggers form one
     button_one_text = "Sign up to a webinar"
@@ -225,8 +225,8 @@
 
 [col_1]
     enable = true
-    title = "Subscribe To Updates"
-    subtitle = "Be the first to hear about all things Monax"
+    title = "Subscribe to our newsletter"
+    subtitle = "The latest MONAX news direct to your inbox"
     enable_newsletter_signup_form = true
 
 [col_2]
@@ -267,7 +267,7 @@
 [col_4]
     enable = true
     title = "Company"
-    subtitle = "Collaboratively execute your legal obligations"
+    subtitle = ""
 
     [[col_4.link]]
         link_title = "About"
