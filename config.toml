@@ -40,7 +40,7 @@ quality = 80
       Name = "Entrepreneurs"
       parent = "customers"
       URL = "/entrepreneurs/"
-      Post = "How monax can help you grow revenue while shrinking risk"
+      Post = "MONAX helps you increase revenue and decrease risk"
       Weight = 2
 
     # [[menu.main]]
@@ -55,7 +55,7 @@ quality = 80
     Name = "Lawyers"
     parent = "customers"
     URL = "/lawyers/"
-    Post = "How Monax can simplify your workflow and turn your knowledge into commoditisable legal products"
+    Post = "MONAX helps simplify your workflow and turn your knowledge into commoditisable legal products"
     Weight = 4
 
         #[[menu.main]]
@@ -76,7 +76,7 @@ quality = 80
       Name = "Blog"
       parent = "resources"
       URL = "/blog/"
-      Post = "Discover our journey, how we think and the paradigm shift we see happening toward legal products."
+      Post = "Industry insights, MONAX news and more"
       Weight = 1
 
     # [[menu.main]]
@@ -97,7 +97,7 @@ quality = 80
       Name = "Explainers"
       parent = "resources"
       URL = "/learn/"
-      Post = "Learn how Monax can help you streamline your business. Explore best practices and ask questions."
+      Post = "Explore best practices and ask questions"
       Weight = 4
 
     # [[menu.main]]
@@ -111,7 +111,7 @@ quality = 80
         name = "Company"
         parent = "resources"
         url  = "/company/"
-        Post = "Monax is on a mission to change the way folks track & manage their contractual obligations"
+        Post = "MONAX is on a mission to change the way folks track and manage their contractual obligations"
         weight = 5
 
 [[menu.main]]
