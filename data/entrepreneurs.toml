@@ -1,6 +1,6 @@
 [top]
     enable = true
-    title = "Monax helps you manage your obligations"
+    title = "Increase revenue and decrease risk"
      subtitle = "The journey to untapped revenue is here"
 
     request_demo = true
@@ -11,7 +11,7 @@
 
 [intro]
     enable = true
-    title = "Monax supports enterprise-focused startups throughout each agreement lifecycle, so they can concentrate on business"
+    title = "Monax supports enterprise-focused startups by digitizing obligations management"
     subtitle = "Our customers require four key things from us:"
 
 # [testimonials]
@@ -39,8 +39,8 @@
       ]
 
     [[bullets.section]]
-      title = "Transparent & scalable pricing"
-      text = "No-nonsense base subscription plus scalable volume triggers for when your needs grow (we use Chargbee)"
+      title = "Transparent and scalable pricing"
+      text = "No-nonsense base subscription plus scalable volume triggers for when your needs grow (we use Chargebee)"
       img_src = "/img/assets/entrepreneurs/transparent_pricing.png"
       bullets_list = [
 
@@ -48,7 +48,7 @@
 
     [[bullets.section]]
       title = "Low resource allocation"
-      text = "Monax features a powerful workflow engine which allows you to truly automate every stage of your business obligations"
+      text = "Monax has a powerful BPM workflow engine so you can truly automate every step of your business obligations"
       img_src = "/img/assets/entrepreneurs/low_resource.png"
       bullets_list = [
 
@@ -56,7 +56,7 @@
 
     [[bullets.section]]
       title = "Features to succeed"
-      text = "Tech enterprise companies seeking big returns need access to scalable tools - Monax has the features to accelerate growth"
+      text = "Companies seeking big returns need access to scalable tools - MONAX has the features to accelerate growth"
       img_src = "/img/assets/entrepreneurs/features_to_succeed.png"
       bullets_list = [
 

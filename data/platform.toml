@@ -96,7 +96,7 @@
 
         [[features.consumer.section]]
           title = "Understanding"
-          subtitle = "Create visual representations of your contracts so everyone understands their obligations right from the start"
+          subtitle = "Create visual representations of your contracts so everyone understands their obligations right from the start (and every other step along the way)"
           #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
           animation_id = "feature-animation-4"
           animation_type = "multipop"
@@ -144,7 +144,7 @@
 
 
 [workflow]
-    enable = true
+    enable = false
     title = "Automate your templates."
     # subtitle = "Turn contracts into the backbone of your business relationships. Gain clarity, know where to focus and fulfil contracts collaboratively."
 
@@ -166,16 +166,16 @@
         animation_delay = "900"
         animation_duration = "300"
 
-      #[[workflow.section.pop]]
-        #img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_2_crop.png"
-        #img_pop_id = "pop-2"
-        #animation_delay = "1500"
-        #animation_duration = "300"
+      [[workflow.section.pop]]
+       img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_2_crop.png"
+       img_pop_id = "pop-2"
+       animation_delay = "1500"
+       animation_duration = "300"
 
-      #[[workflow.section.pop]]
-        #img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_3_crop.png"
-        #img_pop_id = "pop-3"
-        #animation_delay = "2100"
+      [[workflow.section.pop]]
+       img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_3_crop.png"
+       img_pop_id = "pop-3"
+       animation_delay = "2100"
 
     [[workflow.section]]
       title = "Upgrade and automate your own templates"
@@ -193,21 +193,21 @@
       img_popover_animation_duration = "600"
 
       [[workflow.section.pop]]
-        img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_1_crop.png"
+        img_pop_src = "/img/assets/animations/A-zoom-popup_1_crop.png"
         img_pop_id = "pop-1"
         animation_delay = "900"
         animation_duration = "300"
 
-      #[[workflow.section.pop]]
-        #img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_2_crop.png"
-        #img_pop_id = "pop-2"
-        #animation_delay = "1500"
-        #animation_duration = "300"
+      [[workflow.section.pop]]
+        img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_2_crop.png"
+        img_pop_id = "pop-2"
+        animation_delay = "1500"
+        animation_duration = "300"
 
-      #[[workflow.section.pop]]
-        #img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_3_crop.png"
-        #img_pop_id = "pop-3"
-        #animation_delay = "2100"
+      [[workflow.section.pop]]
+        img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_3_crop.png"
+        img_pop_id = "pop-3"
+        animation_delay = "2100"
 
 
 [cta] # global
