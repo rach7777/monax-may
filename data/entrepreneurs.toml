@@ -1,12 +1,21 @@
 [top]
+    #enable = true
+    #title = "Stay focused on business - make your contracts work for you"
+    #subtitle = "The journey to untapped revenue is here"
+
     enable = true
-    title = "Stay focused on business - make your contracts work for you"
+     title = "Stay focused on business - make your contracts work for you"
      subtitle = "The journey to untapped revenue is here"
+     hero_signup = true
+     #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
+     img_right = "/img/assets/audiences/Home_page_header.png"
+
+
 
     request_demo = true
     # enable youtube_id or img_right
     # youtube_id = "V9aPrgCrI_k" # after ?v= on YouTube urls, e.g. "sdX0jFFZKuo"
-    img_right = "/img/assets/audiences/customers_header.png"
+    #img_right = "/img/assets/audiences/customers_header.png"
 
 
 [intro]
@@ -78,7 +87,7 @@
 
 
 [secondary_cta]
-    enable = true
+    enable = false
     source = "entrepreneurs secondary_cta demo signup"
 
 
