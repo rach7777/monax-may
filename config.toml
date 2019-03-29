@@ -1,7 +1,7 @@
 baseurl = "https://monax.io"
 title = "Monax"
 theme = "hugo-universal-theme"
-site_about = "Contracting for the digital age - collaboratively execute contractial obligations"
+site_about = "Contracting for the digital age - Monax is an obligations management platform"
 themesDir = "./themes/"
 languageCode = "en-us"
 # Site language. Available translations in the theme's `/i18n` directory.
@@ -51,12 +51,12 @@ quality = 80
     #   Weight = 1
 
 
-[[menu.main]]
-    Name = "Lawyers"
-    parent = "customers"
-    URL = "/lawyers/"
-    Post = "MONAX helps simplify your workflow and turn your knowledge into commoditisable legal products"
-    Weight = 4
+#[[menu.main]]
+    #Name = "Lawyers"
+    #parent = "customers"
+    #URL = "/lawyers/"
+    #Post = "MONAX helps simplify your workflow and turn your knowledge into commoditisable legal products"
+    #Weight = 4
 
         #[[menu.main]]
         #  Name = "Creatives"
