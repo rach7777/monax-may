@@ -39,7 +39,7 @@
 
 
 [cta_two_button] # global
-    enable = true
+    enable = false
 
 
 [press] # global

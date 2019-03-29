@@ -243,9 +243,9 @@
         #link_title = "Creatives"
         #link_url = "/creatives/"
 
-    [[col_2.link]]
-        link_title = "Lawyers"
-        link_url = "/lawyers/"
+    #[[col_2.link]]
+    #   link_title = "Lawyers"
+    #   link_url = "/lawyers/"
 
 [col_3]
     enable = true
