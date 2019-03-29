@@ -113,8 +113,8 @@
 
 
 [cta_two_button] # global
-    enable = true
-
-
+    enable = false
+    hero_signup = true
+    
 [press] # global
     enable = true

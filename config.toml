@@ -29,16 +29,16 @@ quality = 80
     url  = "/platform/"
     weight = 1
 
-[[menu.main]]
-    name = "Customers"
-    identifier = "customers"
-    url  = "#"
-    weight = 2
+#[[menu.main]]
+    #   name = "Customers"
+    #   identifier = "customers"
+    #   url  = "#"
+    #   weight = 2
 
- #sub menu items
+ 
 [[menu.main]]
       Name = "Entrepreneurs"
-      parent = "customers"
+      identifier = "entrepreneurs"
       URL = "/entrepreneurs/"
       Post = "MONAX helps you increase revenue and decrease risk"
       Weight = 2
