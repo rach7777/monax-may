@@ -1,7 +1,7 @@
 [top]
     enable = true
     title = "Make your contracts work for you"
-    subtitle = "Ditigize your obligations management"
+    subtitle = "An obligations management platform for digitally native companies"
     hero_signup = true
     #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
     img_right = "/img/assets/audiences/Home_page_header.png"
