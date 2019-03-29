@@ -7,7 +7,7 @@
 [features]
   enable = true
   title = "Built for tech-focused entrepreneurs"
-  subtitle = "Gain 360◦ vision on your contractual agreements - Monax gives you the insights and actions you need.  drives downstream systems services. Our users grow revenue and shrink risk with this intuitive software"
+  subtitle = "Gain 360◦ vision on your contractual agreements - Monax gives you the insights and actions you need"
   consumer_option = "Use legal templates"
   producer_option = "Create legal templates"
   enable_title_block = false
@@ -19,7 +19,7 @@
 
         [[features.consumer.section]]
           title = "Clarity"
-          subtitle = "Monax enables a high level insight into every contractual obligation your business has - know precisely where you (and your conterparties) are at each stage"
+          subtitle = "Monax gives a high level insight into each contractual obligation - know precisely where you (and your counterparties) are at all stages - auditing becomes straightforward with reporting at your fingertips"
           #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
           animation_id = "feature-animation-4"
           animation_type = "multipop"
@@ -43,7 +43,7 @@
 
           [[features.consumer.section]]
             title = "Action"
-            subtitle = "Drive downstream business systems from the events in your contract execution to automate obligations"
+            subtitle = "Monax drives downstream business processes from events in your contract terms and orchestrate counterparty interactions smoothly"
             #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
             animation_id = "feature-animation-4"
             animation_type = "multipop"
@@ -96,7 +96,7 @@
 
         [[features.consumer.section]]
           title = "Understanding"
-          subtitle = "Create visual representations of your contracts so everyone understands their obligations right from the start (and every other step along the way)"
+          subtitle = "Monax creates visual maps of your contracts so everyone understands their obligations right from the start and every other step along the way"
           #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
           animation_id = "feature-animation-4"
           animation_type = "multipop"
