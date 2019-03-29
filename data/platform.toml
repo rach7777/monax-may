@@ -96,7 +96,7 @@
 
         [[features.consumer.section]]
           title = "Understanding"
-          subtitle = "Monax creates visual maps of your contracts so everyone understands their obligations right from the start and every other step along the way"
+          subtitle = "Monax creates user-friendly maps of your contracts so everyone understands their obligations every step of the way"
           #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
           animation_id = "feature-animation-4"
           animation_type = "multipop"
