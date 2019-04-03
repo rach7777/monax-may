@@ -7,7 +7,7 @@
 [features]
   enable = true
   title = "Built for tech-focused entrepreneurs"
-  subtitle = "Gain 360◦ vision on your contractual agreements - Monax gives you the insights and actions you need"
+  subtitle = "Gain 360 vision on your contractual agreements - Monax gives you the insights and actions you need"
   consumer_option = "Use legal templates"
   producer_option = "Create legal templates"
   enable_title_block = false
@@ -18,8 +18,8 @@
 
 
         [[features.consumer.section]]
-          title = "Clarity"
-          subtitle = "Monax gives a high level insight into each contractual obligation - know precisely where you (and your counterparties) are at all stages - auditing becomes straightforward with reporting at your fingertips"
+          title = "Digital contracts repository"
+          subtitle = "Know the status of all your contractual business relationships. Get notified and understand actionable obligations to keep things moving."
           #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
           animation_id = "feature-animation-4"
           animation_type = "multipop"
@@ -42,8 +42,8 @@
           #  animation_duration = "600"
 
           [[features.consumer.section]]
-            title = "Action"
-            subtitle = "Monax drives downstream business processes from events in your contract terms and orchestrate counterparty interactions smoothly"
+            title = "Business systems integration"
+            subtitle = "Connect your business systems to contract milestones. Monitor contract performance, receive notifications and set triggers."
             #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
             animation_id = "feature-animation-4"
             animation_type = "multipop"
@@ -95,8 +95,8 @@
     #    animation_duration = "600"
 
         [[features.consumer.section]]
-          title = "Understanding"
-          subtitle = "Monax creates user-friendly maps of your contracts so everyone understands their obligations every step of the way"
+          title = "Auditibility and intelligence"
+          subtitle = "Prove compliance via immutable audit trails recorded on a blockchain. Create reports across your entire portfolio and view all contractual interactions."
           #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
           animation_id = "feature-animation-4"
           animation_type = "multipop"
@@ -212,3 +212,4 @@
 
 [cta] # global
     enable = false
+    hero_signup = true

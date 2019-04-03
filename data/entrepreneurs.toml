@@ -5,10 +5,10 @@
 
     enable = true
      title = "Stay focused on business - make your contracts work for you"
-     subtitle = "The journey to untapped revenue is here"
+     subtitle = "Increase revenue and decrease risk with MONAX"
      hero_signup = true
      #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
-     img_right = "/img/assets/audiences/Home_page_header.png"
+     img_right = "/img/assets/audiences/customers_header.png"
 
 
 
@@ -20,7 +20,7 @@
 
 [intro]
     enable = true
-    title = "Monax supports enterprise-focused startups by digitizing obligations management"
+    title = "Digitized contract execution for digitally native companies"
     subtitle = "Our customers require four key things from us:"
 
 # [testimonials]
@@ -49,7 +49,7 @@
 
     [[bullets.section]]
       title = "Transparent and scalable pricing"
-      text = "No-nonsense base subscription plus scalable volume triggers for when your needs grow (we use Chargebee)"
+      text = "Base subscription plus scalable volume triggers for when your needs grow"
       img_src = "/img/assets/entrepreneurs/transparent_pricing.png"
       bullets_list = [
 
@@ -65,7 +65,7 @@
 
     [[bullets.section]]
       title = "Features to succeed"
-      text = "Companies seeking big returns need access to scalable tools - MONAX has the features to accelerate growth"
+      text = "MONAX features scalable tools which enable growth acceleration"
       img_src = "/img/assets/entrepreneurs/features_to_succeed.png"
       bullets_list = [
 
@@ -115,6 +115,6 @@
 [cta_two_button] # global
     enable = false
     hero_signup = true
-    
+
 [press] # global
     enable = true

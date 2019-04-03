@@ -1,7 +1,7 @@
 baseurl = "https://monax.io"
-title = "Monax"
+title = "MONAX"
 theme = "hugo-universal-theme"
-site_about = "Contracting for the digital age - Monax is an obligations management platform"
+site_about = "Contracting for the digital age - MONAX is an obligations management platform"
 themesDir = "./themes/"
 languageCode = "en-us"
 # Site language. Available translations in the theme's `/i18n` directory.
@@ -27,6 +27,7 @@ quality = 80
 [[menu.main]]
     name = "Platform"
     url  = "/platform/"
+    Post = "What MONAX can do"
     weight = 1
 
 #[[menu.main]]
@@ -35,10 +36,10 @@ quality = 80
     #   url  = "#"
     #   weight = 2
 
- 
+
 [[menu.main]]
-      Name = "Entrepreneurs"
-      identifier = "entrepreneurs"
+      Name = "Customers"
+      identifier = "customers"
       URL = "/entrepreneurs/"
       Post = "MONAX helps you increase revenue and decrease risk"
       Weight = 2
@@ -118,7 +119,7 @@ quality = 80
     Name = "Pricing"
     indentifier = "pricing"
     URL = "/pricing/"
-    Post = "Transparent base subscription with scalable add-ons - start small and scale your growth"
+    Post = "Transparent base subscription with scalable add-ons"
     Weight = 4
 
 [[menu.register]]
