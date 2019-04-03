@@ -1,13 +1,13 @@
 [top]
     enable = true
-    title = "<strong>Taking obligations management into the digital future</strong>"
-    subtitle = "MONAX is a respected blockchain-native SaaS company on mission to change the way people consume and manage their legal obligations"
-    hero_signup = true
+    title = "<strong>Obligations management for the digital future</strong>"
+    subtitle = "The original blockchain-native SaaS startup"
+    hero_signup = false
 
 [history]
     enable = true
     title = "<strong>Our Story</strong>"
-    subtitle = "The original blockchain-native SaaS startup"
+    subtitle = "MONAX milestones"
 
     [[history.time]]
       date = "June 2014"
@@ -39,17 +39,17 @@
 
     [[history.time]]
       date = "Feb 2017"
-      label = "Monax joins Hyperledger"
+      label = "MONAX joins Hyperledger"
       logo_icon = "/img/logos/Hyperledger_icon_white.png"
       # logo_full = "/img/logos/Hyperledger.png"
       description_text = "Monax submits its smart contract machine to Hyperledger for the furtherance of cross-industry blockchain technologies"
 
     [[history.time]]
       date = "March 2017"
-      label = "Monax joins Enterprise Ethereum Alliance"
+      label = "MONAX joins EEA"
       logo_icon = "/img/logos/eea_icon_white.png"
       # logo_full = "/img/logos/eea.png"
-      description_text = "Monax joins the EEA connecting Fortune 500 enterprises, startups, academics and technology vendors"
+      description_text = "Monax joins Enterprise Ethereum Alliance connecting Fortune 500 enterprises, startups, academics and technology vendors"
 
     [[history.time]]
       date = "April 2018"
@@ -67,8 +67,8 @@
 
 [team]
     enable = true
-    title = "Humans of Monax"
-    subtitle = "There are 15 of us - 8 software engineers, 2 legal engineers, 3 lawyers, 9 cultures, 6 females and 3 military veterans!"
+    title = "Humans of MONAX"
+    subtitle = "There are 15 of us - 8 software engineers, 2 legal engineers, 3 lawyers, 6 women and 2 military veterans"
 
     [[team.office]]
     city = "Edinburgh"
