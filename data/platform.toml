@@ -1,7 +1,7 @@
 [top]
     enable = true
     title = "Powerful and intuitive obligations management"
-    subtitle = "Make your contracts work for you"
+    subtitle = "We make your contracts work for you"
     hero_signup = false
 
 [features]
@@ -43,7 +43,7 @@
 
           [[features.consumer.section]]
             title = "Business systems integration"
-            subtitle = "Connect your business systems to contract milestones. Monitor contract performance, receive notifications and set triggers."
+            subtitle = "Connect your systems to contract milestones. Monitor contract performance, receive notifications and set triggers."
             #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
             animation_id = "feature-animation-4"
             animation_type = "multipop"

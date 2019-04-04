@@ -4,7 +4,7 @@
     #subtitle = "The journey to untapped revenue is here"
 
     enable = true
-     title = "Stay focused on business - make your contracts work for you"
+     title = "We make your contracts work for you"
      subtitle = "Increase revenue and decrease risk with MONAX"
      hero_signup = true
      #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
@@ -20,7 +20,7 @@
 
 [intro]
     enable = true
-    title = "Digitized contract execution for digitally native companies"
+    title = "Contract execution for digitally native companies"
     subtitle = "Our customers require four key things from us:"
 
 # [testimonials]
