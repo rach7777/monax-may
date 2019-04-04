@@ -11,7 +11,7 @@
       active_tab = true
       title = "Growing Businesses"
       subtitle = "Starts at $150 USD"
-      content_title = "<strong>Empowering Productive Game-changing</strong>"
+      content_title = "<strong>We make your contracts work for you</strong>"
 
       [pricing_table.tier1.essential]
         enable = true

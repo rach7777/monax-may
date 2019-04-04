@@ -52,6 +52,9 @@ utm:
 
 <!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1-4hicU_Evc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ### Monax Demonstrates Upgradability with its own Terms of Service
 
 ### How we achieve flexibility today
@@ -68,8 +71,8 @@ Monax enhances contractual arrangements by including process models, which are d
 
 Monax goes a step further and allows upgradability. Parties have the ability to amend the terms of their agreement without sacrificing either the visibility on the relationship or the chosen compliance structure. For example, Monax’s own terms of service for the use of the Monax Platform operate as upgradable agreements on the Monax Platform. For each Monax subscriber, the Monax Platform terms of service is the first agreement they enter into using the Monax Platform. It appears in the subscriber’s agreement library as the agreement that governs their use of the Monax services. Whenever we upgrade our terms of service, each subscriber is prompted at their next login to agree to the changed terms. A new terms of service agreement is added to their agreement library as the current version while the old version is listed as a fulfilled agreement. The flexibility offered by upgradability is a more deliberate and controlled exercise than the amorphous flexibility achieved previously through a lack of structure. Through upgradability, the Monax Platform enhances compliance *and* flexibility.
 
-**Happy contracting!**
+**#HappyContracting!**
 
 Follow our journey on [Twitter](https://twitter.com/monaxHQ?lang=en), [Instagram](https://www.instagram.com/monaxhq/?hl=en), [LinkedIn](https://www.linkedin.com/company/monax/), [YouTube](https://www.youtube.com/channel/UCTNwr9rWLg3C3gtZolFZDOQ/videos) and [Medium](https://medium.com/monaxhq). To receive our monthly newsletter, email `contact@monax.io`
 
-[Anjlee](https://www.linkedin.com/in/anjlee-khurana-286630122) is Senior Legal Engineer at Monax. 
+[Anjlee](https://www.linkedin.com/in/anjlee-khurana-286630122) is Senior Legal Engineer at Monax.

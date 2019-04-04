@@ -1,6 +1,6 @@
 [top]
     enable = true
-    title = "<STRONG>Make your contracts work for you<STRONG>"
+    title = "We make your contracts work for you"
     subtitle = "Obligations management for the digital economy and digitally native companies"
     hero_signup = true
     #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
@@ -33,7 +33,7 @@
 
 [demo]
   enable = true
-  title = "Learn how MONAX can help your business grow"
+  title = "Learn how we can help your business grow"
   subtitle = "360 vision on your contractual agreements - MONAX gives you the insights and actions you need to increase revenue and decrease risk"
   youtube_url = "ZX2SlZquJgE"
 
