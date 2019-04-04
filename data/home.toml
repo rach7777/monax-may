@@ -22,7 +22,7 @@
     title = "For entrepreneurs"
     img = "/img/assets/audiences/entrepreneurs_600.jpg"
     icon = "fa-angle-right"
-    link_url = "/entrepreneurs/"
+    link_url = "/customers/"
 
   [[audiences.card_link]]
     title = "For creatives"
