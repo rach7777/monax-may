@@ -31,7 +31,7 @@
     [[onepager.section]]
         button = "Monax for Enterprise SaaS (letter)"
         url = "content/onepagers/SaaS_one_letter.pdf"
-        
+
     [[onepager.section]]
         button = "Monax for Real Estate (A4)"
         url = "content/onepagers/RE_one_pager_A4.pdf"
@@ -39,7 +39,7 @@
     [[onepager.section]]
         button = "Monax for Real Estate (letter)"
         url = "content/onepagers/RE_letter.pdf"
-    
+
     [[onepager.section]]
         button = "Monax for Venture Funds (A4)"
         url = "content/onepagers/venture_one_pager_A4.pdf"
@@ -59,7 +59,7 @@ enable = true
 #       title = "John Johnson, CEO Tupix"
 #       blurb = "Testimonial blurb"
 #       icon = "fa-angle-right"
-#       link_url = "/entrepreneurs/"
+#       link_url = "/customers/"
 #       link_title = "John's Story"
 
 
@@ -70,7 +70,7 @@ enable = true
     [[bullets.section]]
       title = "Speed to market"
       text = "Digitizing the obligations process means you can close deals faster and accelerate your go-to-market "
-      img_src = "/img/assets/entrepreneurs/speed_to_market.png"
+      img_src = "/img/assets/customers/speed_to_market.png"
       bullets_list = [
 
       ]
@@ -78,7 +78,7 @@ enable = true
     [[bullets.section]]
       title = "Transparent and scalable pricing"
       text = "Base subscription plus scalable volume triggers for when your needs grow"
-      img_src = "/img/assets/entrepreneurs/transparent_pricing.png"
+      img_src = "/img/assets/customers/transparent_pricing.png"
       bullets_list = [
 
       ]
@@ -86,7 +86,7 @@ enable = true
     [[bullets.section]]
       title = "Low resource allocation"
       text = "Monax has a powerful BPM workflow engine so you can truly automate every step of your business obligations"
-      img_src = "/img/assets/entrepreneurs/low_resource.png"
+      img_src = "/img/assets/customers/low_resource.png"
       bullets_list = [
 
       ]
@@ -94,7 +94,7 @@ enable = true
     [[bullets.section]]
       title = "Features to succeed"
       text = "MONAX features scalable tools which enable growth acceleration"
-      img_src = "/img/assets/entrepreneurs/features_to_succeed.png"
+      img_src = "/img/assets/customers/features_to_succeed.png"
       bullets_list = [
 
       ]
@@ -108,7 +108,7 @@ enable = true
        title = "Kurt Watkins, Counsel MG Miller"
        blurb = "By using new technology, the Monax Platform provides a combination of consistency, transparency, and sophistication for contract management previously not available to small to mid-size businesses. We are hopeful that the Monax Platform will catalyze an infrastructural upgrade to business and legal transactions across the board."
        icon = "fa-angle-right"
-       link_url = "/entrepreneurs/"
+       link_url = "/customers/"
        link_title = "IP law firm MG MIller"
 
 
@@ -116,7 +116,7 @@ enable = true
 
 [secondary_cta]
     enable = false
-    source = "entrepreneurs secondary_cta demo signup"
+    source = "customers secondary_cta demo signup"
 
 
 [integrations]
