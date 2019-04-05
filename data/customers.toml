@@ -10,7 +10,7 @@
      #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
      img_right = "/img/assets/audiences/customers_header.png"
 
-
+[Monax for Enterprise SaaS (A4)(content/onepagers/SaaS_one_letter.pdf)
 
     request_demo = true
     # enable youtube_id or img_right
@@ -22,11 +22,11 @@
     title = "Contract execution for digitally native companies"
       description = "Download our customer fact sheets:"
       button = "Onepager.button"
-      url = "files/an_whitepaper_v1.0.pdf"
+    
 
     [[bullets.section]]
         button = "Monax for Enterprise SaaS (A4)"
-        url = "content/onepagers/SaaS_one_pager_A4.pdf"
+        url = "Monax for Enterprise SaaS (A4)"
 
     [[bullets.section]]
         button = "Monax for Enterprise SaaS (letter)"
