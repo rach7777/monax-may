@@ -17,7 +17,7 @@
     # youtube_id = "V9aPrgCrI_k" # after ?v= on YouTube urls, e.g. "sdX0jFFZKuo"
     #img_right = "/img/assets/audiences/customers_header.png"
 
-    [bullets]
+        [bullets]
         enable = true
             title = "Our customers require four key things from us:"
 
@@ -54,9 +54,9 @@
           ]
 
 
-    title = "Contract execution for digitally native companies"
-      description = "Download our customer fact sheets:"
-      button = "Onepager.button"
+    #title = "Contract execution for digitally native companies"
+      #description = "Download our customer fact sheets:"
+    #  button = "Onepager.button"
 
 
     [[bullets.section]]

@@ -28,7 +28,7 @@ quality = 80
     name = "Platform"
     url  = "/platform/"
     Post = "What MONAX can do"
-    weight = 1
+    weight = 2
 
 #[[menu.main]]
     #   name = "Customers"
@@ -42,7 +42,7 @@ quality = 80
       identifier = "customers"
       URL = "/customers/"
       Post = "MONAX helps you increase revenue and decrease risk"
-      Weight = 2
+      Weight = 1
 
     # [[menu.main]]
     #   Name = "Fleet leasing"
