@@ -17,8 +17,47 @@
     # youtube_id = "V9aPrgCrI_k" # after ?v= on YouTube urls, e.g. "sdX0jFFZKuo"
     #img_right = "/img/assets/audiences/customers_header.png"
 
-[bullets]
-    enable = true
+    [bullets]
+        enable = true
+        enable_request_demo = true
+
+
+        [[bullets.section]]
+          title = "Speed to market"
+          text = "Digitizing the obligations process means you can close deals faster and accelerate your go-to-market "
+          img_src = "/img/assets/customers/speed_to_market.png"
+          bullets_list = [
+
+          ]
+
+        [[bullets.section]]
+          title = "Transparent and scalable pricing"
+          text = "Base subscription plus scalable volume triggers for when your needs grow"
+          img_src = "/img/assets/customers/transparent_pricing.png"
+          bullets_list = [
+
+          ]
+
+        [[bullets.section]]
+          title = "Low resource allocation"
+          text = "Monax has a powerful BPM workflow engine so you can truly automate every step of your business obligations"
+          img_src = "/img/assets/customers/low_resource.png"
+          bullets_list = [
+
+          ]
+
+        [[bullets.section]]
+          title = "Features to succeed"
+          text = "MONAX features scalable tools which enable growth acceleration"
+          img_src = "/img/assets/customers/features_to_succeed.png"
+          bullets_list = [
+
+          ]
+
+
+
+
+
     title = "Contract execution for digitally native companies"
       description = "Download our customer fact sheets:"
       button = "Onepager.button"
@@ -65,40 +104,6 @@ enable = true
 
 
 
-
-    #enable_request_demo = true
-
-    [[bullets.section]]
-      title = "Speed to market"
-      text = "Digitizing the obligations process means you can close deals faster and accelerate your go-to-market "
-      img_src = "/img/assets/customers/speed_to_market.png"
-      bullets_list = [
-
-      ]
-
-    [[bullets.section]]
-      title = "Transparent and scalable pricing"
-      text = "Base subscription plus scalable volume triggers for when your needs grow"
-      img_src = "/img/assets/customers/transparent_pricing.png"
-      bullets_list = [
-
-      ]
-
-    [[bullets.section]]
-      title = "Low resource allocation"
-      text = "Monax has a powerful BPM workflow engine so you can truly automate every step of your business obligations"
-      img_src = "/img/assets/customers/low_resource.png"
-      bullets_list = [
-
-      ]
-
-    [[bullets.section]]
-      title = "Features to succeed"
-      text = "MONAX features scalable tools which enable growth acceleration"
-      img_src = "/img/assets/customers/features_to_succeed.png"
-      bullets_list = [
-
-      ]
 
 
  [testimonials]
