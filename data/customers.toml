@@ -19,8 +19,7 @@
 
     [bullets]
         enable = true
-        enable_request_demo = true
-
+            title = "Our customers require four key things from us:"
 
         [[bullets.section]]
           title = "Speed to market"
@@ -55,13 +54,10 @@
           ]
 
 
-
-
-
     title = "Contract execution for digitally native companies"
       description = "Download our customer fact sheets:"
       button = "Onepager.button"
-      url = "files/an_whitepaper_v1.0.pdf"
+
 
     [[bullets.section]]
         button = "Monax for Enterprise SaaS (A4)"
@@ -88,8 +84,7 @@
         button = "Monax for Venture Funds (letter)"
         url = "content/onepagers/venture_one_pager_letter.pdf"
 
-enable = true
-    title = "Our customers require four key things from us:"
+
 
 # [testimonials]
 #     enable = true
