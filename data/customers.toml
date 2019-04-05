@@ -17,34 +17,34 @@
     # youtube_id = "V9aPrgCrI_k" # after ?v= on YouTube urls, e.g. "sdX0jFFZKuo"
     #img_right = "/img/assets/audiences/customers_header.png"
 
-[intro]
+[bullets]
     enable = true
     title = "Contract execution for digitally native companies"
       description = "Download our customer fact sheets:"
       button = "Onepager.button"
       url = "files/an_whitepaper_v1.0.pdf"
 
-    [[onepager.section]]
+    [[bullets.section]]
         button = "Monax for Enterprise SaaS (A4)"
         url = "content/onepagers/SaaS_one_pager_A4.pdf"
 
-    [[onepager.section]]
+    [[bullets.section]]
         button = "Monax for Enterprise SaaS (letter)"
         url = "content/onepagers/SaaS_one_letter.pdf"
 
-    [[onepager.section]]
+    [[bullets.section]]
         button = "Monax for Real Estate (A4)"
         url = "content/onepagers/RE_one_pager_A4.pdf"
 
-    [[onepager.section]]
+    [[bullets.section]]
         button = "Monax for Real Estate (letter)"
         url = "content/onepagers/RE_letter.pdf"
 
-    [[onepager.section]]
+    [[bullets.section]]
         button = "Monax for Venture Funds (A4)"
         url = "content/onepagers/venture_one_pager_A4.pdf"
 
-    [[onepager.section]]
+    [[bullets.section]]
         button = "Monax for Venture Funds (letter)"
         url = "content/onepagers/venture_one_pager_letter.pdf"
 
