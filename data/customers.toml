@@ -44,6 +44,7 @@
         button = "Monax for Venture Funds (A4)"
         url = "content/onepagers/venture_one_pager_A4.pdf"
 
+
     [[bullets.section]]
         button = "Monax for Venture Funds (letter)"
         url = "content/onepagers/venture_one_pager_letter.pdf"
@@ -64,8 +65,8 @@ enable = true
 
 
 
-    enable = true
-    enable_request_demo = true
+
+    #enable_request_demo = true
 
     [[bullets.section]]
       title = "Speed to market"
