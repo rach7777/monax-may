@@ -10,47 +10,74 @@
      #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
      img_right = "/img/assets/audiences/customers_header.png"
 
-[Monax for Enterprise SaaS (A4)(content/onepagers/SaaS_one_letter.pdf)
-
     request_demo = true
     # enable youtube_id or img_right
     # youtube_id = "V9aPrgCrI_k" # after ?v= on YouTube urls, e.g. "sdX0jFFZKuo"
     #img_right = "/img/assets/audiences/customers_header.png"
 
-[bullets]
-    enable = true
-    title = "Contract execution for digitally native companies"
-      description = "Download our customer fact sheets:"
-      button = "Onepager.button"
-    
+        [bullets]
+        enable = true
+            title = "Our customers require four key things from us:"
 
-    [[bullets.section]]
-        button = "Monax for Enterprise SaaS (A4)"
-        url = "Monax for Enterprise SaaS (A4)"
+        [[bullets.section]]
+          title = "Speed to market"
+          text = "Digitizing the obligations process means you can close deals faster and accelerate your go-to-market "
+          img_src = "/img/assets/customers/speed_to_market.png"
+          bullets_list = [
 
-    [[bullets.section]]
-        button = "Monax for Enterprise SaaS (letter)"
-        url = "content/onepagers/SaaS_one_letter.pdf"
+          ]
 
-    [[bullets.section]]
-        button = "Monax for Real Estate (A4)"
-        url = "content/onepagers/RE_one_pager_A4.pdf"
+        [[bullets.section]]
+          title = "Transparent and scalable pricing"
+          text = "Base subscription plus scalable volume triggers for when your needs grow"
+          img_src = "/img/assets/customers/transparent_pricing.png"
+          bullets_list = [
 
-    [[bullets.section]]
-        button = "Monax for Real Estate (letter)"
-        url = "content/onepagers/RE_letter.pdf"
+          ]
 
-    [[bullets.section]]
-        button = "Monax for Venture Funds (A4)"
-        url = "content/onepagers/venture_one_pager_A4.pdf"
+        [[bullets.section]]
+          title = "Low resource allocation"
+          text = "Monax has a powerful BPM workflow engine so you can truly automate every step of your business obligations"
+          img_src = "/img/assets/customers/low_resource.png"
+          bullets_list = [
 
+          ]
 
-    [[bullets.section]]
-        button = "Monax for Venture Funds (letter)"
-        url = "content/onepagers/venture_one_pager_letter.pdf"
+        [[bullets.section]]
+          title = "Features to succeed"
+          text = "MONAX features scalable tools which enable growth acceleration"
+          img_src = "/img/assets/customers/features_to_succeed.png"
+          bullets_list = [
 
-enable = true
-    title = "Our customers require four key things from us:"
+          ]
+
+        [[bullets.section]]
+        title = "Contract execution for digitally native companies"
+        subtitle= "Download our customer fact sheets:"
+
+        [[bullets.section]]
+        title = "Monax for Enterprise SaaS (A4)"
+        onepager_info = "Please <a href='content/onepagers/SaaS_one_pager_A4.pdf'>Click Here</a> for A4 version"
+
+        [[bullets.section]]
+        title = "Monax for Enterprise SaaS (letter)"
+        onepager_info = "Please <a href='content/onepagers/SaaS_one_pager_letter.pdf'>Click Here</a> for letter version"
+
+        [[bullets.section]]
+        title = "Monax for Real Estate (A4)"
+        onepager_info = "Please <a href='content/onepagers/RE_one_pager_A4.pdf'>Click Here</a> for A4 version"
+
+        [[bullets.section]]
+        title = "Monax for Real Estate (letter)"
+        onepager_info = "Please <a href='content/onepagers/RE_one_pager_letter.pdf'>Click Here</a> for letter version"
+
+        [[bullets.section]]
+        title = "Monax for Venture Funds(A4)"
+        onepager_info = "Please <a href='content/onepagers/venture_one_pager_A4.pdf'>Click Here</a> for A4 version"
+
+        [[bullets.section]]
+        title = "Monax for Venture Funds (letter)"
+        onepager_info = "Please <a href='content/onepagers/SaaS_one_pager_letter.pdf'>Click Here</a> for letter version"
 
 # [testimonials]
 #     enable = true
@@ -65,40 +92,6 @@ enable = true
 
 
 
-
-    #enable_request_demo = true
-
-    [[bullets.section]]
-      title = "Speed to market"
-      text = "Digitizing the obligations process means you can close deals faster and accelerate your go-to-market "
-      img_src = "/img/assets/customers/speed_to_market.png"
-      bullets_list = [
-
-      ]
-
-    [[bullets.section]]
-      title = "Transparent and scalable pricing"
-      text = "Base subscription plus scalable volume triggers for when your needs grow"
-      img_src = "/img/assets/customers/transparent_pricing.png"
-      bullets_list = [
-
-      ]
-
-    [[bullets.section]]
-      title = "Low resource allocation"
-      text = "Monax has a powerful BPM workflow engine so you can truly automate every step of your business obligations"
-      img_src = "/img/assets/customers/low_resource.png"
-      bullets_list = [
-
-      ]
-
-    [[bullets.section]]
-      title = "Features to succeed"
-      text = "MONAX features scalable tools which enable growth acceleration"
-      img_src = "/img/assets/customers/features_to_succeed.png"
-      bullets_list = [
-
-      ]
 
 
  [testimonials]
