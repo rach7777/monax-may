@@ -63,7 +63,7 @@ enable = true
 #       link_title = "John's Story"
 
 
-[bullets]
+
     enable = true
     enable_request_demo = true
 
