@@ -61,6 +61,23 @@
         title = "Monax for Enterprise SaaS (A4)"
         onepager_info = "Please <a href='content/onepagers/SaaS_one_pager_A4.pdf'>Click Here</a> for A4 version"
 
+        [[bullets.section]]
+        title = "Monax for Enterprise SaaS (letter)"
+        onepager_info = "Please <a href='content/onepagers/SaaS_one_pager_letter.pdf'>Click Here</a> for letter version"
+
+        [[bullets.section]]
+        title = "Monax for Real Estate (A4)"
+        onepager_info = "Please <a href='content/onepagers/RE_one_pager_A4.pdf'>Click Here</a> for A4 version"
+        onepager_info = "Please <a href='content/onepagers/RE_one_pager_letter.pdf'>Click Here</a> for A4 version"
+
+        [[bullets.section]]
+        title = "Monax for Enterprise SaaS (A4)"
+        onepager_info = "Please <a href='content/onepagers/SaaS_one_pager_A4.pdf'>Click Here</a> for A4 version"
+
+        [[bullets.section]]
+        title = "Monax for Enterprise SaaS (A4)"
+        onepager_info = "Please <a href='content/onepagers/SaaS_one_pager_A4.pdf'>Click Here</a> for A4 version"
+
 
     [[bullets.section]]
         button = "Monax for Enterprise SaaS (A4)"
@@ -68,7 +85,7 @@
 
     [[bullets.section]]
         button = "Monax for Enterprise SaaS (letter)"
-        url = "content/onepagers/SaaS_one_letter.pdf"
+        url = "content/onepagers/SaaS_one_pager_letter.pdf"
 
     [[bullets.section]]
         button = "Monax for Real Estate (A4)"
