@@ -1,4 +1,4 @@
-{{ with .Site.Data.cusomters.bullets }}
+{{ with .Site.Data.customers.bullets }}
 {{ if .enable }}
   <section class="section-feature padding-top-lg">
       <div class="container">
@@ -21,15 +21,24 @@
                   </p>
                 {{ end }}
                 <div class="row flex-container-sm content-container bullets-list">
+                  {{ if not (eq .img_src "") }}
                   <div class="col-sm-4 col-xs-5 col-valign-center">
                     <div class="img-container">
                       <img class="img-responsive img-right img-bullets-icon" src="{{ .img_src }}" alt="">
                     </div>
                   </div>
+                  {{ end }}
                   <div class="col-sm-8 col-xs-7 col-valign-center">
                       <ul class="ul-no-list">
                         {{ range .bullets_list }}
                         <li><p class="p2 range-left">{{ . }}</p></li>
+                        {{ end }}
+                        {{range $1, $l := .link }}
+                        <li>
+                          <p class="p2 range-left">
+                            <a href="{{ .link }}" target="_blank">{{ .text }}</a>
+                          </p>
+                        </li>
                         {{ end }}
                       </ul>
                   </div>

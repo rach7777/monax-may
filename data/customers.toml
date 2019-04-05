@@ -51,33 +51,30 @@
 
           ]
 
-        [[bullets.section]]
-        title = "Contract execution for digitally native companies"
-        subtitle= "Download our customer fact sheets:"
-
-        [[bullets.section]]
-        title = "Monax for Enterprise SaaS (A4)"
-        onepager_info = "Please <a href='content/onepagers/SaaS_one_pager_A4.pdf'>Click Here</a> for A4 version"
-
-        [[bullets.section]]
-        title = "Monax for Enterprise SaaS (letter)"
-        onepager_info = "Please <a href='content/onepagers/SaaS_one_pager_letter.pdf'>Click Here</a> for letter version"
-
-        [[bullets.section]]
-        title = "Monax for Real Estate (A4)"
-        onepager_info = "Please <a href='content/onepagers/RE_one_pager_A4.pdf'>Click Here</a> for A4 version"
-
-        [[bullets.section]]
-        title = "Monax for Real Estate (letter)"
-        onepager_info = "Please <a href='content/onepagers/RE_one_pager_letter.pdf'>Click Here</a> for letter version"
-
-        [[bullets.section]]
-        title = "Monax for Venture Funds(A4)"
-        onepager_info = "Please <a href='content/onepagers/venture_one_pager_A4.pdf'>Click Here</a> for A4 version"
-
-        [[bullets.section]]
-        title = "Monax for Venture Funds (letter)"
-        onepager_info = "Please <a href='content/onepagers/SaaS_one_pager_letter.pdf'>Click Here</a> for letter version"
+         [[bullets.section]]
+          title = "Contract execution for digitally native companies"
+          text= "Download our customer fact sheets:"
+          img_src = ""
+          bullets_list = [
+          ]
+            [[bullets.section.link]]
+              text = "Monax for Enterprise SaaS (A4)"
+              link = "/onepagers/SaaS_one_pager_A4.pdf"
+            [[bullets.section.link]]
+              text = "Monax for Enterprise SaaS (letter)"
+              link = "/onepagers/SaaS_one_pager_letter.pdf.pdf"
+            [[bullets.section.link]]
+              text = "Monax for Real Estate (A4)"
+              link = "/onepagers/RE_one_pager_A4.pdf.pdf"
+            [[bullets.section.link]]
+              text = "Monax for Real Estate (letter)"
+              link = "/onepagers/RE_one_pager_letter.pdf"
+            [[bullets.section.link]]
+              text = "Monax for Venture Funds(A4)"
+              link = "/onepagers/venture_one_pager_A4.pdf"
+            [[bullets.section.link]]
+              text = "Monax for Venture Funds (letter)"
+              link = "/onepagers/SaaS_one_pager_letter.pdf"
 
 # [testimonials]
 #     enable = true
