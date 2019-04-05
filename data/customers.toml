@@ -52,13 +52,12 @@
           bullets_list = [
 
           ]
+[       [bullets.section]]
+        title = "Contract execution for digitally native companies"
+        subtitle= "Download our customer fact sheets:"
 
-
-    #title = "Contract execution for digitally native companies"
-      #description = "Download our customer fact sheets:"
-    #  button = "Onepager.button"
-
-  title = "Monax for Enterprise SaaS (A4)"<a href="content/onepagers/SaaS_one_pager_A4.pdf">Click Here</a>
+        [[bullets.section]]
+        title = "Monax for Enterprise SaaS (A4)"<a href="content/onepagers/SaaS_one_pager_A4.pdf">Click Here</a>
 
 
     [[bullets.section]]
