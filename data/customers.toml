@@ -52,7 +52,8 @@
           bullets_list = [
 
           ]
-[       [bullets.section]]
+          
+        [[bullets.section]]
         title = "Contract execution for digitally native companies"
         subtitle= "Download our customer fact sheets:"
 
