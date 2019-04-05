@@ -91,7 +91,7 @@
     logo_1 = "/img/press-logos/bloomsberg_lo_grey.png"
     logo_1_url = "https://www.bloomberg.com/news/audio/2018-08-07/bloomberg-markets-zillow-s-wobbly-results-tesla-going-private"
     logo_2 = "/img/press-logos/forbes_lo_grey.png"
-    logo_2_url = "https://www.forbes.com/sites/sarahhansen/2018/07/26/11-companies-join-agreements-network-to-develop-ethereum-platform-for-lawyers/#3d1be5e94aec"
+    logo_2_url = "https://www.forbes.com/sites/rebeccacampbell1/2019/02/19/this-former-us-marine-is-changing-the-face-of-law-through-the-use-of-smart-contracts/#5d695666509d"
     logo_3 = "/img/press-logos/digital-journal_lo_grey.png"
     logo_3_url = "http://www.digitaljournal.com/business/q-a-how-technology-is-shaking-up-legal-firms/article/525554"
     logo_4 = "/img/press-logos/market-watch_lo_grey.png"
@@ -101,7 +101,7 @@
 # MAIN CTA SECTION
 
 [cta]
-    title = "Let your contracts work for you"
+    title = "GROW revenue. SHRINK risk."
 
     [cta.form]
       enable = false
@@ -114,6 +114,7 @@
         "Consulting & professional services",
         "Agriculture industry",
         "Chemical industry",
+        "SaaS",
         "Software industry",
         "Technology industry",
         "Construction industry",
@@ -181,7 +182,7 @@
 
 [cta_two_button]
     enable = true
-    title = "Let your contracts work for you"
+    title = "We make your contracts work for you"
 
     enable_button_one = true # links to url or triggers form one
     button_one_text = "Sign up to a webinar"
@@ -190,7 +191,7 @@
     button_one_style_outline = true # outline if true, solid if false
 
     enable_button_two = true # links to url or form two
-    button_two_text = "Request a demo"
+    button_two_text = "Book a demo"
     button_two_trigger_form = true # if false set url
     button_two_url = "#demo"
     button_two_style_outline = false # outline if true, solid if false
@@ -224,27 +225,27 @@
 
 [col_1]
     enable = true
-    title = "Subscribe To Updates"
-    subtitle = "Be the first to hear about all things Monax"
+    title = "Subscribe to our newsletter"
+    subtitle = "The latest MONAX news direct to your inbox"
     enable_newsletter_signup_form = true
 
 [col_2]
     enable = true
-    title = "Customers"
+    title = "Product"
     # subtitle = "Find all the resources you need as a developer.<br><br><a href='mailto:contact@monax.io' target='_blank'>Contact us about 3rd party integrations&nbsp;&rsaquo;</a>"
     # <a href='https://docs.agreements.network/'>Read our developer docs &nbsp;&rsaquo;</a><br><br>
 
     [[col_2.link]]
-        link_title = "Entrepreneurs"
-        link_url = "/entrepreneurs/"
+        link_title = "Customers"
+        link_url = "/customers/"
 
     [[col_2.link]]
-        link_title = "Creatives"
-        link_url = "/creatives/"
+        link_title = "Platform"
+        link_url = "/platform/"
 
     [[col_2.link]]
-        link_title = "Lawyers"
-        link_url = "/lawyers/"
+       link_title = "Pricing"
+       link_url = "/pricing/"
 
 [col_3]
     enable = true
@@ -266,7 +267,7 @@
 [col_4]
     enable = true
     title = "Company"
-    # subtitle = "Deploy smart, legally-binding contracts on the blockchain."
+    subtitle = ""
 
     [[col_4.link]]
         link_title = "About"

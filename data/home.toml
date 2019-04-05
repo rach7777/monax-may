@@ -1,27 +1,28 @@
 [top]
     enable = true
-    title = "<strong>Stay focused on what you're building.</strong> Let your contracts work for you."
-    # subtitle = "The platform for the future of making and managing agreements"
+    title = "We make your contracts work for you"
+    subtitle = "Obligations management for the digital economy and digitally native companies"
     hero_signup = true
-    img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
+    #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
+    img_right = "/img/assets/audiences/Home_page_header.png"
 
-    [top.illustration]
-      enable = true   # replaces img_right
-      img_base = "/img/assets/animations/monax-laptop/laptop-animation-base.png"
-      img_layer_one = "/img/assets/animations/monax-laptop/laptop-animation-layer-1.png"
-      img_layer_two = "/img/assets/animations/monax-laptop/laptop-animation-layer-2.png"
-
+  #[top.illustration]
+      #enable = false  # replaces img_right
+      # img_base = "/img/assets/animations/monax-laptop/laptop-animation-base.png"
+      # img_layer_one = "/img/assets/animations/monax-laptop/laptop-animation-layer-1.png"
+      # img_layer_two = "/img/assets/animations/monax-laptop/laptop-animation-layer-2.png"
+    # img_right = "/img/assets/audiences/Home_page_header.png"
 
 [audiences]
   enable = false
-  title = "Built for entrepreneurs and creatives"
-  subtitle = "Gain 100% oversight on your contractual agreements, track progress and obligations, and keep everything important in one place. We enable you to stay focused on what you do best: growing your business."
+  title = "Built for enterprize-focused startups"
+  subtitle = "360◦ vision on your contractual agreements - Monax gives you the insights and actions you need to increase revnue and decrease risk"
 
   [[audiences.card_link]]
     title = "For entrepreneurs"
     img = "/img/assets/audiences/entrepreneurs_600.jpg"
     icon = "fa-angle-right"
-    link_url = "/entrepreneurs/"
+    link_url = "/customers/"
 
   [[audiences.card_link]]
     title = "For creatives"
@@ -32,13 +33,13 @@
 
 [demo]
   enable = true
-  title = "Designed to empower you"
-  subtitle = "Turn contracts into the common thread of your business relationships. Gain clarity, know where to focus and fulfill your contracts collaboratively."
-  youtube_url = "CWvLgyb0Vw8"
+  title = "Learn how we can help your business grow"
+  subtitle = "360 vision on your contractual agreements - MONAX gives you the insights and actions you need to increase revenue and decrease risk"
+  youtube_url = "ZX2SlZquJgE"
 
 
 [cta_two_button] # global
-    enable = true
+    enable = false
 
 
 [press] # global

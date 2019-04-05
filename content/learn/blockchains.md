@@ -10,7 +10,7 @@ tags:
   - fleetleasing
   - creatives
   - lawyers
-  - entrepreneurs
+  - customers
 explainer_category: templates
 # Set the explainer_category to 'workflows', 'templates' or 'contracts'
 ---

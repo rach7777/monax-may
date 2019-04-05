@@ -15,28 +15,28 @@
 
         </header>
 
-        {{ partial "entrepreneurs/top.html" . }}
+        {{ partial "customers/top.html" . }}
 
-        {{ partial "entrepreneurs/intro.html" . }}
+        {{ partial "customers/intro.html" . }}
 
-        {{ partial "entrepreneurs/testimonials.html" . }}
+        {{ partial "customers/testimonials.html" . }}
 
-        {{ partial "entrepreneurs/bullets.html" . }}
+        {{ partial "customers/bullets.html" . }}
 
-        {{ partial "entrepreneurs/secondary_cta.html" . }}
+        {{ partial "customers/secondary_cta.html" . }}
 
-        {{ partial "entrepreneurs/integrations.html" . }}
+        {{ partial "customers/integrations.html" . }}
 
         <!-- global section -->
-        {{ if isset .Site.Data.entrepreneurs "cta_two_button" }}
-          {{ if .Site.Data.entrepreneurs.cta_two_button.enable }}
+        {{ if isset .Site.Data.customers "cta_two_button" }}
+          {{ if .Site.Data.customers.cta_two_button.enable }}
             {{ partial "_global/cta_two_button.html" . }}
           {{ end }}
         {{ end }}
 
         <!-- global section -->
-        {{ if isset .Site.Data.entrepreneurs "press" }}
-          {{ if .Site.Data.entrepreneurs.press.enable }}
+        {{ if isset .Site.Data.customers "press" }}
+          {{ if .Site.Data.customers.press.enable }}
             {{ partial "_global/press.html" . }}
           {{ end }}
         {{ end }}

@@ -1,8 +1,8 @@
 [top]
     enable = true
     title = "Explainers"
-    subtitle = "Learn how Monax can help you streamline your business - explore best practices for the Monax platform and ask questions."
-    hero_signup = false
+    subtitle = "Learn how we can help your company grow revenue and shrink risk - information for every step of the process"
+    hero_signup = true
 
 [articles]
     enable = true

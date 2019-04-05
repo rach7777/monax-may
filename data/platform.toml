@@ -1,87 +1,150 @@
 [top]
     enable = true
-    title = "Stay in control of your contracts"
-    subtitle = "Turn contracts into the backbone of your business relationships. Gain clarity, know where to focus and fulfill contracts collaboratively."
+    title = "Powerful and intuitive obligations management"
+    subtitle = "We make your contracts work for you"
     hero_signup = false
-
 
 [features]
   enable = true
-  title = "Built for entrepreneurs and creatives"
-  subtitle = "Gain 100% oversight on your contractual agreements, track progress and obligations and keep everything important in one place. We help you to stay focused on what you do best: growing your business."
+  title = "Built for tech-focused operators"
+  subtitle = "Gain 360 vision on your contractual agreements - Monax gives you the insights and actions you need"
   consumer_option = "Use legal templates"
   producer_option = "Create legal templates"
   enable_title_block = false
 
+
   [features.consumer]
     enable = true
 
-    [[features.consumer.section]]
-      title = "Create agreements"
-      subtitle = "Select, fill out a form then press create. You’ve made both a legally binding agreement and an auto-enforceable smart contract with just a couple of clicks. As simple as filling out a form."
+
+        [[features.consumer.section]]
+          title = "Digital contracts repository"
+          subtitle = "Know the status of all your contractual business relationships. Get notified and understand actionable obligations to keep things moving."
+          #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
+          animation_id = "feature-animation-4"
+          animation_type = "multipop"
+          img_base = "/img/assets/animations/shared/workflows_high_level.png"
+          img_content_container = "mac" # set to 'mac' or 'iphone'
+          #img_content_layer_src"/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
+          animation_delay = "0"
+          animation_duration = "300"
+
+          #[[features.consumer.section.pop]]
+          #  img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-1-reviewed-agreement.png"
+          #  img_pop_id = "pop-1"
+          #  animation_delay = "900"
+          #  animation_duration = "600"
+
+          #[[features.consumer.section.pop]]
+          #  img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-2-signed-agreement.png"
+          #  img_pop_id = "pop-2"
+          #  animation_delay = "1500"
+          #  animation_duration = "600"
+
+          [[features.consumer.section]]
+            title = "Business systems integration"
+            subtitle = "Connect your systems to contract milestones. Monitor contract performance, receive notifications and set triggers."
+            #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
+            animation_id = "feature-animation-4"
+            animation_type = "multipop"
+            img_base = "/img/assets/animations/shared/workflows_Integrations.png"
+            img_content_container = "mac" # set to 'mac' or 'iphone'
+            #img_content_layer_src"/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
+            animation_delay = "0"
+            animation_duration = "300"
+
+            #[[features.consumer.section.pop]]
+            #img_pop_src = "/img/assets/animations/"
+            #img_pop_id = "pop-1"
+            #animation_delay = "900"
+            #animation_duration = "600"
+
+            #[[features.consumer.section.pop]]
+            #  img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-2-signed-agreement.png"
+            #  img_pop_id = "pop-2"
+            #  animation_delay = "1500"
+            #  animation_duration = "600"
+
+
+
+
+
+
+    #[[features.consumer.section]]
+    #  title = "UNDERSTANDING"
+    #  subtitle = "Create visual representations of your contracts so everyone understands their obligations right from the start"
       #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
-      animation_id = "feature-animation-B"
-      animation_type = "multipop"
-      img_base = "/img/assets/animations/shared/base-mac.png"
-      img_content_container = "mac" # set to 'mac' or 'iphone'
-      img_content_layer_src = "/img/assets/animations/3-self-executable-agreements/content-agreements-detail.png"
-      animation_delay = "0"
-      animation_duration = "300"
+    #  animation_id = "feature-animation-4"
+    #  animation_type = "multipop"
+    #  img_base = "/img/assets/animations/shared/base-mac.png"
+    #  img_content_container = "mac" # set to 'mac' or 'iphone'
+    #  img_content_layer_src = "/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
+    #  animation_delay = "0"
+    #  animation_duration = "300"
 
-      [[features.consumer.section.pop]]
-        img_pop_src = "/img/assets/animations/3-self-executable-agreements/zoom-1-draft.png"
-        img_pop_id = "pop-1"
-        animation_delay = "900"
-        animation_duration = "300"
+    #  [[features.consumer.section.pop]]
+    #    img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-1-reviewed-agreement.png"
+    #    img_pop_id = "pop-1"
+    #    animation_delay = "900"
+    #    animation_duration = "600"
 
-      [[features.consumer.section.pop]]
-        img_pop_src = "/img/assets/animations/3-self-executable-agreements/zoom-2-formulated.png"
-        img_pop_id = "pop-2"
-        animation_delay = "1500"
-        animation_duration = "300"
+    #  [[features.consumer.section.pop]]
+    #    img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-2-signed-agreement.png"
+    #    img_pop_id = "pop-2"
+    #    animation_delay = "1500"
+    #    animation_duration = "600"
 
-    [[features.consumer.section]]
-      title = "Track every obligation"
-      subtitle = "Track every contract and obligation in one place. Each event is permanently recorded on a blockchain - no more admin stress."
-      #### ZOOM TEMPLATE
-      animation_id = "feature-animation-1"
-      animation_type = "zoom"
-      img_base = "/img/assets/animations/shared/base-mac.png"
-      img_content_container = "mac" # set to 'mac' or 'iphone'
-      img_content_layer_src = "/img/assets/animations/1-100-percent-transparency/content-agreement-grid.png"
-      img_content_animation_delay = "600"
-      img_content_animation_duration = "300"
-      img_popover_layer_src = "/img/assets/animations/1-100-percent-transparency/zoom-agreement-detail.png"
-      img_popover_animation_delay = "1500"
-      img_popover_animation_duration = "600"
+        [[features.consumer.section]]
+          title = "Auditibility and intelligence"
+          subtitle = "Prove compliance via immutable audit trails recorded on a blockchain. Create reports across your entire portfolio and view all contractual interactions."
+          #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
+          animation_id = "feature-animation-4"
+          animation_type = "multipop"
+          img_base = "/img/assets/animations/shared/workflows_Know_where_you_are.png"
+          img_content_container = "mac" # set to 'mac' or 'iphone'
+          #img_content_layer_src"/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
+          animation_delay = "0"
+          animation_duration = "300"
 
-    [[features.consumer.section]]
-      title = "Fulfill"
-      subtitle = "Visualise, monitor and control the execution of the contract throughout its entire life-cycle. Obtain the transparency you need to focus on your business."
-      #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
-      animation_id = "feature-animation-4"
-      animation_type = "multipop"
-      img_base = "/img/assets/animations/shared/base-mac.png"
-      img_content_container = "mac" # set to 'mac' or 'iphone'
-      img_content_layer_src = "/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
-      animation_delay = "0"
-      animation_duration = "300"
+          #[[features.consumer.section.pop]]
+          #  img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-1-reviewed-agreement.png"
+          #  img_pop_id = "pop-1"
+          #  animation_delay = "900"
+          #  animation_duration = "600"
 
-      [[features.consumer.section.pop]]
-        img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-1-reviewed-agreement.png"
-        img_pop_id = "pop-1"
-        animation_delay = "900"
-        animation_duration = "600"
+          #[[features.consumer.section.pop]]
+          #  img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-2-signed-agreement.png"
+          #  img_pop_id = "pop-2"
+          #  animation_delay = "1500"
+          #  animation_duration = "600"
 
-      [[features.consumer.section.pop]]
-        img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-2-signed-agreement.png"
-        img_pop_id = "pop-2"
-        animation_delay = "1500"
-        animation_duration = "600"
+        #  [[features.consumer.section]]
+        #    title = "AUDITABILITY"
+        #    subtitle = ""
+            #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
+        #    animation_id = "feature-animation-4"
+        #    animation_type = "multipop"
+            #img_base = "/img/assets/animations/shared/workflows_know_where_you_are.png"
+        #    img_content_container = "mac" # set to 'mac' or 'iphone'
+            #img_content_layer_src"/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
+        #    animation_delay = "0"
+        #    animation_duration = "300"
+
+            #[[features.consumer.section.pop]]
+            #  img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-1-reviewed-agreement.png"
+            #  img_pop_id = "pop-1"
+            #  animation_delay = "900"
+            #  animation_duration = "600"
+
+            #[[features.consumer.section.pop]]
+            #  img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-2-signed-agreement.png"
+            #  img_pop_id = "pop-2"
+            #  animation_delay = "1500"
+            #  animation_duration = "600"
 
 
 [workflow]
-    enable = true
+    enable = false
     title = "Automate your templates."
     # subtitle = "Turn contracts into the backbone of your business relationships. Gain clarity, know where to focus and fulfil contracts collaboratively."
 
@@ -104,16 +167,15 @@
         animation_duration = "300"
 
       [[workflow.section.pop]]
-        img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_2_crop.png"
-        img_pop_id = "pop-2"
-        animation_delay = "1500"
-        animation_duration = "300"
+       img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_2_crop.png"
+       img_pop_id = "pop-2"
+       animation_delay = "1500"
+       animation_duration = "300"
 
       [[workflow.section.pop]]
-        img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_3_crop.png"
-        img_pop_id = "pop-3"
-        animation_delay = "2100"
-        animation_duration = "300"
+       img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_3_crop.png"
+       img_pop_id = "pop-3"
+       animation_delay = "2100"
 
     [[workflow.section]]
       title = "Upgrade and automate your own templates"
@@ -130,6 +192,24 @@
       img_popover_animation_delay = "100" # too large - set via css to 6.5s
       img_popover_animation_duration = "600"
 
+      [[workflow.section.pop]]
+        img_pop_src = "/img/assets/animations/A-zoom-popup_1_crop.png"
+        img_pop_id = "pop-1"
+        animation_delay = "900"
+        animation_duration = "300"
+
+      [[workflow.section.pop]]
+        img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_2_crop.png"
+        img_pop_id = "pop-2"
+        animation_delay = "1500"
+        animation_duration = "300"
+
+      [[workflow.section.pop]]
+        img_pop_src = "/img/assets/animations/A-browse-templates/zoom-popup_3_crop.png"
+        img_pop_id = "pop-3"
+        animation_delay = "2100"
+
 
 [cta] # global
     enable = false
+    hero_signup = true

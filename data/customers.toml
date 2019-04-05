@@ -1,0 +1,139 @@
+[top]
+    #enable = true
+    #title = "Stay focused on business - make your contracts work for you"
+    #subtitle = "The journey to untapped revenue is here"
+
+    enable = true
+     title = "We make your contracts work for you"
+     subtitle = "Increase revenue and decrease risk with MONAX"
+     hero_signup = true
+     #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
+     img_right = "/img/assets/audiences/customers_header.png"
+
+    request_demo = true
+    # enable youtube_id or img_right
+    # youtube_id = "V9aPrgCrI_k" # after ?v= on YouTube urls, e.g. "sdX0jFFZKuo"
+    #img_right = "/img/assets/audiences/customers_header.png"
+
+        [bullets]
+        enable = true
+            title = "Our customers require four key things from us:"
+
+        [[bullets.section]]
+          title = "Speed to market"
+          text = "Digitizing the obligations process means you can close deals faster and accelerate your go-to-market "
+          img_src = "/img/assets/customers/speed_to_market.png"
+          bullets_list = [
+
+          ]
+
+        [[bullets.section]]
+          title = "Transparent and scalable pricing"
+          text = "Base subscription plus scalable volume triggers for when your needs grow"
+          img_src = "/img/assets/customers/transparent_pricing.png"
+          bullets_list = [
+
+          ]
+
+        [[bullets.section]]
+          title = "Low resource allocation"
+          text = "Monax has a powerful BPM workflow engine so you can truly automate every step of your business obligations"
+          img_src = "/img/assets/customers/low_resource.png"
+          bullets_list = [
+
+          ]
+
+        [[bullets.section]]
+          title = "Features to succeed"
+          text = "MONAX features scalable tools which enable growth acceleration"
+          img_src = "/img/assets/customers/features_to_succeed.png"
+          bullets_list = [
+
+          ]
+
+         [[bullets.section]]
+          title = "Contract execution for digitally native companies"
+          text= "Download our customer fact sheets:"
+          img_src = ""
+          bullets_list = [
+          ]
+            [[bullets.section.link]]
+              text = "Monax for Enterprise SaaS (A4)"
+              link = "/onepagers/SaaS_one_pager_A4.pdf"
+            [[bullets.section.link]]
+              text = "Monax for Enterprise SaaS (letter)"
+              link = "/onepagers/Saas_one_pager_letter.pdf"
+            [[bullets.section.link]]
+              text = "Monax for Real Estate (A4)"
+              link = "/onepagers/RE_one_pager_A4.pdf"
+            [[bullets.section.link]]
+              text = "Monax for Real Estate (letter)"
+              link = "/onepagers/RE_one_pager_letter.pdf"
+            [[bullets.section.link]]
+              text = "Monax for Venture Funds(A4)"
+              link = "/onepagers/venture_one_pager_A4.pdf"
+            [[bullets.section.link]]
+              text = "Monax for Venture Funds (letter)"
+              link = "/onepagers/venture_one_pager_letter.pdf"
+
+# [testimonials]
+#     enable = true
+#
+#     [testimonials.card_link]
+#       img = "/img/assets/audiences/entrepreneurs_600.jpg"
+#       title = "John Johnson, CEO Tupix"
+#       blurb = "Testimonial blurb"
+#       icon = "fa-angle-right"
+#       link_url = "/customers/"
+#       link_title = "John's Story"
+
+
+
+
+
+ [testimonials]
+     enable = false
+
+     [testimonials.card_link]
+       img = "/img/assets/audiences/entrepreneurs_600.jpg"
+       title = "Kurt Watkins, Counsel MG Miller"
+       blurb = "By using new technology, the Monax Platform provides a combination of consistency, transparency, and sophistication for contract management previously not available to small to mid-size businesses. We are hopeful that the Monax Platform will catalyze an infrastructural upgrade to business and legal transactions across the board."
+       icon = "fa-angle-right"
+       link_url = "/customers/"
+       link_title = "IP law firm MG MIller"
+
+
+
+
+[secondary_cta]
+    enable = false
+    source = "customers secondary_cta demo signup"
+
+
+[integrations]
+    enable = false
+    title = "Seamlessly integrates with your systems"
+
+      [[integrations.logo]]
+        img = "/img/integrations-logos/mail-logo.png"
+        text = ""
+
+      [[integrations.logo]]
+        img = "/img/integrations-logos/slack-logo.png"
+        text = ""
+
+      # [[integrations.logo]]
+      #   img = "/img/integrations-logos/docusign-logo.png"
+      #   text = ""
+
+      [[integrations.logo]]
+        img = "/img/integrations-logos/stripe-logo.png"
+        text = ""
+
+
+[cta_two_button] # global
+    enable = false
+    hero_signup = true
+
+[press] # global
+    enable = true
