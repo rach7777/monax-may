@@ -19,7 +19,7 @@ categories:
 # tags should be meaningful for your blog. if you want this article to show on a 'use case' page, you can use
 # the following TAGS -  'fleetleasing' 'creatives' 'lawyers' or 'entrepreneurs'
 tags:
-  - entrepreneurs
+  - customers
   - lawyers
   - bpmn
 
@@ -47,7 +47,7 @@ The Simple Agreement for Future Equity ("SAFE") is an example of how open-source
 
 [Released by Y-Combinator](https://www.ycombinator.com/documents/) in 2013, the SAFE was a contract innovation that made it simpler and easier for startups to get financing from venture capitalists. By giving this innovation away, Y-Combinator lowered the bar of entry startups faced due to complexity, speed and expense of legal services for their young companies. This in turn made more bankable startups for VC to invest in, and competition for innovation. In other words, the SAFE is a critical contract that unlocked the potential of the VC market we see today.
 
-An automated SAFE is a smarter document that helps investors and startups alike manage their legal contracts and assets, assess their situations and make nimble decisions. The Monax Platform is tooled to manage the complex processes, rights and obligations created by a SAFE, or any agreement. The SAFE template manages the asynchronous processes for multiple stakeholders, while providing seamless proof of what happened when. Because it of the Monax Platform's extensibility, a SAFE operating through Monax can support companies and investors throughout their value cycle.   
+An automated SAFE is a smarter document that helps investors and startups alike manage their legal contracts and assets, assess their situations and make nimble decisions. The Monax Platform is tooled to manage the complex processes, rights and obligations created by a SAFE, or any agreement. The SAFE template manages the asynchronous processes for multiple stakeholders, while providing seamless proof of what happened when. Because it of the Monax Platform's extensibility, a SAFE operating through Monax can support companies and investors throughout their value cycle.
 
 The [Monax Platform](https://monax.io/blog/2018/12/04/introducing-the-monax-platform---contract-lifecycle-management-for-the-digital-age/) categorizes agreements based on whether they are in the process of *formation*, where conditions precedent are fulfilled and signatures applied, and *execution*, the stage where a document has become a live contract, with binding effect and asset status.
 

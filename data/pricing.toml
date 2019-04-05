@@ -1,7 +1,7 @@
 [top]
     enable = true
-    title = "Stay in control of your contracts"
-    subtitle = "Turn contracts into the backbone of your business relationships - gain clarity, know where to focus and fulfill your contracts collaboratively."
+    title = "Maximize financial performance and minimize transactional risk"
+    subtitle = "Transparent base subscription with scalable add-ons"
 
 [pricing_table]
     enable = true
@@ -11,7 +11,7 @@
       active_tab = true
       title = "Growing Businesses"
       subtitle = "Starts at $150 USD"
-      content_title = "<strong>Empowering Productive Game-changing</strong>"
+      content_title = "<strong>We make your contracts work for you</strong>"
 
       [pricing_table.tier1.essential]
         enable = true

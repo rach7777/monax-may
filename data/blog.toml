@@ -1,7 +1,7 @@
 [top]
     enable = true
-    title = "Blog posts"
-    subtitle = "Discover our journey, how we think and the paradigm shift towards legal products"
+    title = "Blog"
+    subtitle = "Discover #HappyContracting for your SaaS startup - Monax is transforming obligations management"
     hero_signup = false
 
 [articles]
