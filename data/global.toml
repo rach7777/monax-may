@@ -310,7 +310,7 @@
 
 [copyright]
     enable = true
-    copyright_notice = "<strong>&copy; Monax Industries. All rights reserved.</strong> US registered company: 132978319257."
+    copyright_notice = "<strong>&copy; Monax Industries. All rights reserved.</strong> Limited in the UK- company number 09101660."
     enable_attribution = true
 
     [[copyright.privacy]]
