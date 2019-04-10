@@ -1,26 +1,27 @@
 ---
 
 # Pretty normal stuff
-date:      2018-04-26T00:00:00Z
-title:     "Blog Post Title Here"
-author:    "Your Name, Title Here"
+date:      2019-04-10T00:00:00Z
+title:     "Press Release - Auditchain Partners with Monax to Integrate Dynamic Legal Contracts into DCARPE Assurance & Disclosure Platform"
+author:    "Rachel Davidson, senior marketing associate"
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
-excerpt:   "When people think about legal they think almost entirely of the provision of bespoke services. Yet the world is changing, and legal needs to keep up."
+excerpt:   "The strategic alliance represents a major step for both firms to work toward transforming the $500 billion a year assurance industry"
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: example-image.jpg
+thumbnail: auditchain-monax.png
 
 # check the categories on the existing blog. should only have ONE
 categories:
-  - legal products
+  - press
 
 # tags should be meaningful for your blog. if you want this article to show on a 'use case' page, you can use
 # the following TAGS -  'fleetleasing' 'contentcreators' 'lawyers' or 'corporate'
 tags:
   - legal products
-  - agreements network
+  - press
+  - monax
 
 # if this post is part of a series, uncomment the information below. The 'article series' box
 # will only display if there is more than one article in the series. 'id', 'number' and 'about' all must be present.
@@ -38,7 +39,7 @@ draft: true
 utm:
   source: "website"
   medium: "blog"
-  campaign: ""
+  campaign: "press"
 
 ---
 
