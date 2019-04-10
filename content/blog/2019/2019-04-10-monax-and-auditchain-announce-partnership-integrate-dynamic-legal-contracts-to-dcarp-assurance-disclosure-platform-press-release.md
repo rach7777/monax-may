@@ -32,7 +32,7 @@ tags:
 #   about: "This is a series of posts where the marmots will be outlining how the Monax Platform and the Agreements Network can be used in harmony to create the legal products of the future."
 
 # set draft to 'false' when you're ready to publish
-draft: false 
+draft: false
 
 # used when using the shortcode utm_link in a blog post to another
 # the campaign generally should match the category above
@@ -44,7 +44,7 @@ utm:
 ---
 
 <!-- In general the filename below should match thumbnail category above -->
-{{< image_blog "auditchain-monax.png" >}}
+{{< image_blog "auditchain-monax-infographic.png" >}}
 
 <!-- if this article is part of a series, related articles will automatically appear here -->
 {{< blog_series >}}
