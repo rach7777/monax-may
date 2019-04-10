@@ -32,7 +32,7 @@ tags:
 #   about: "This is a series of posts where the marmots will be outlining how the Monax Platform and the Agreements Network can be used in harmony to create the legal products of the future."
 
 # set draft to 'false' when you're ready to publish
-draft: true
+draft: false 
 
 # used when using the shortcode utm_link in a blog post to another
 # the campaign generally should match the category above
@@ -44,13 +44,13 @@ utm:
 ---
 
 <!-- In general the filename below should match thumbnail category above -->
-{{< image_blog "example-image.jpg" >}}
+{{< image_blog "auditchain-monax.png" >}}
 
 <!-- if this article is part of a series, related articles will automatically appear here -->
 {{< blog_series >}}
 
 <!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
-*ZUG, ZUG, SWITZERLAND, April 9, 2019 (originally on EINPresswire.com)|*
+*ZUG, ZUG, SWITZERLAND, April 9, 2019 (originally on EINPresswire.com)*
 
 [Auditchain GmbH](https://auditchain.com/), the developer of the world’s first decentralized continuous audit and reporting protocol ecosystem for digital asset and enterprise assurance and disclosure, announced today that it is entering into a strategic alliance with [Monax](www.monax.io) to integrate its blockchain-based legal products and business process automation platform into the [DCARPETM assurance and disclosure network](https://dcarpe.org/).
 
@@ -79,11 +79,11 @@ Download associated media and imagery [here](www.auditchain.com/media)
 
 ### About Auditchain:
 
-Auditchain is the developer of the world's first Decentralized Continuous Audit & Reporting Protocol EcosystemTM for digital asset and enterprise assurance and disclosure. Auditchain is developing a public blockchain ecosystem populated with CPAs and Chartered Accountants who externally validate enterprise system and control state and financial condition on a continuous basis and in near real time. The DCARPETM Explorer is a subscription based public block explorer that renders financial statements and audit analytics in real time to subscribers. For more information please [visit](https://auditchain.com/).
+Auditchain is the developer of the world's first Decentralized Continuous Audit & Reporting Protocol EcosystemTM for digital asset and enterprise assurance and disclosure. Auditchain is developing a public blockchain ecosystem populated with CPAs and Chartered Accountants who externally validate enterprise system and control state and financial condition on a continuous basis and in near real time. The DCARPETM Explorer is a subscription based public block explorer that renders financial statements and audit analytics in real time to subscribers. For more information please [visit here](https://auditchain.com/).
 
 ### About Monax: 
 
-Founded in 2014, Monax is transforming the legal industry. A respected blockchain-native Software-as-a-Service company, Monax builds decentralized systems and growing ecosystem applications. It is on a mission to change the way people consume and manage their legal agreements using the Monax Platform, a powerful contract lifecycle management (CLM) suite. The Monax Platform is a comprehensive toolkit comprising an intuitive interface, first-in-class business process modeling engine and smart contract technology to propel CLM to the digital age. Monax is also one of the cofounders of the Agreements Network, which allows anyone to develop, customize, sell and reproduce legal products. For more information, [visit](www.monax.io).
+Founded in 2014, Monax is transforming the legal industry. A respected blockchain-native Software-as-a-Service company, Monax builds decentralized systems and growing ecosystem applications. It is on a mission to change the way people consume and manage their legal agreements using the Monax Platform, a powerful contract lifecycle management (CLM) suite. The Monax Platform is a comprehensive toolkit comprising an intuitive interface, first-in-class business process modeling engine and smart contract technology to propel CLM to the digital age. Monax is also one of the cofounders of the Agreements Network, which allows anyone to develop, customize, sell and reproduce legal products. For more information, [visit here](www.monax.io).
 
 ### About DCARPETM Alliance
 
