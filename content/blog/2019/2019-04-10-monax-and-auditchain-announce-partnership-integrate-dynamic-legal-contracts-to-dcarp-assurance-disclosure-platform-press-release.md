@@ -2,7 +2,7 @@
 
 # Pretty normal stuff
 date:      2019-04-10T00:00:00Z
-title:     "Press Release - Auditchain Partners with Monax to Integrate Dynamic Legal Contracts into DCARPE Assurance & Disclosure Platform"
+title:     "Press Release - Auditchain Partners with Monax"
 author:    "Rachel Davidson, senior marketing associate"
 
 # excerpt is used for the text below the title when we share and also is the summary of the post on https://monax.io/blog
@@ -10,7 +10,7 @@ excerpt:   "The strategic alliance represents a major step for both firms to wor
 
 # this image should be stored in /content/blog/images/YEAR/. It will appear as a thumbnail on any listings,
 # as well as at the top of the post itself
-thumbnail: auditchain-monax.png
+thumbnail: monax-auditchain.png
 
 # check the categories on the existing blog. should only have ONE
 categories:
@@ -50,6 +50,8 @@ utm:
 {{< blog_series >}}
 
 <!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
+## Auditchain Partners with Monax to Integrate Dynamic Legal Contracts into DCARPE Assurance and Disclosure Platform
+
 *ZUG, ZUG, SWITZERLAND, April 9, 2019 (originally on EINPresswire.com)*
 
 [Auditchain GmbH](https://auditchain.com/), the developer of the world’s first decentralized continuous audit and reporting protocol ecosystem for digital asset and enterprise assurance and disclosure, announced today that it is entering into a strategic alliance with [Monax](www.monax.io) to integrate its blockchain-based legal products and business process automation platform into the [DCARPETM assurance and disclosure network](https://dcarpe.org/).
