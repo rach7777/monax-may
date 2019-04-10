@@ -72,6 +72,8 @@ Casey Kuhlman, CEO of Monax added;
 
 Auditchain is expected to launch a minimally viable version of its platform in Q2 this year. The two firms will work toward including the Monax platform as part of the launch. 
 
+{{< image_blog "auditchain.png" >}}
+
 For media enquiries and interviews, please contact:
 [Jason Meyers](jm@auditcahin.com) (Auditchain) and [Kati Bergou](kbergou@rubensteinpr.com) (Monax)
 
