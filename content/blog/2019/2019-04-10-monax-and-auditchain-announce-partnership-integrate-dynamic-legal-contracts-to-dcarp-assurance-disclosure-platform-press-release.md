@@ -50,7 +50,59 @@ utm:
 {{< blog_series >}}
 
 <!-- Content markdown here - first title on page is auto generated from title in frontmatter -->
-Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+*ZUG, ZUG, SWITZERLAND, April 9, 2019 (originally on EINPresswire.com)|*
 
-<!-- IF NEEDED use the below. Unsplash is recommended for images that have the right licensing. This should be at the end of the post -->
-[Photo](LINK) by PHOTOGRAPHER on [Unsplash](https://unsplash.com).
+[*Auditchain GmbH*](https://auditchain.com/), the developer of the world’s first decentralized continuous audit and reporting protocol ecosystem for digital asset and enterprise assurance and disclosure, announced today that it is entering into a strategic alliance with *Monax* to integrate its blockchain-based legal products and business process automation platform into the *DCARPETM* assurance and disclosure network.
+
+The strategic alliance represents a major step for both firms to work toward transforming the $500 billion a year assurance industry now dominated by four major accounting firms. Monax will join the DCARPETM Alliance and become a premier provider of blockchain-based legal products to customers on the DCARPETM assurance and disclosure network.
+
+Pursuant to the terms of the strategic alliance, Monax will integrate its dealspace, OAuth2 credentialing and production studio environment for the development of API level integration, testing and production between the DCARPETM and Monax platforms. The end goal of the alliance will be to offer Monax’s legal backbone to DCARPETM users via API integration so that users of both platforms can gain legal and audit certainty in real time for their obligations.
+
+Auditchain will enable customers to use the DCARPETM Explorer to build, deploy and monitor “enterprise state machines” which will include accounting and HR systems into the DCARPETM layer two protocol as part of the enterprise internal audit and external validation architecture.
+
+Monax, who has been developing its legal agreements platform since 2014, will integrate its blockchain-based contractual obligations management system, which is built on Hyperledger Burrow, into the DCARPETM Explorer via the Monax Platform API. This will enable enterprise customers to include a variety of smart contracts as a part of enterprise state integration and enable the external validation of, and compliance with, all contractual relationships.
+
+Jason Meyers, Auditchain’s founder explains; “Continuous enterprise external validation and financial reporting in near real time requires machine readability and the cryptographic verifiability of the existence of and compliance with all contractual agreements. We are excited to partner with Monax who will provide this ability for enterprise users of DCARPETM and help enable 100% enterprise external validation”.
+
+The DCARPETM platform will enable financial statement reporting in real time, contemporaneous external attestations and related analyses for stakeholders to be produced continuously for the first time, with the potential to make traditional quarterly and annual reporting methods obsolete.
+
+Casey Kuhlman, CEO of Monax added; “We are excited to work with Auditchain to integrate the Monax Platform. Continuous assurance and reporting is a significant use case for our legal products. Audit and legal are two fundamental back office business functions which are ripe for disruption.” 
+
+Auditchain is expected to launch a minimally viable version of its platform in Q2 this year. The two firms will work toward including the Monax platform as part of the launch. 
+
+For media enquiries and interviews, please contact:
+Jason Meyers
+jm@auditcahin.com
+
+Kati Bergou
+kbergou@rubensteinpr.com 
+Download associated media and imagery at www.auditchain.com/media 
+
+About Auditchain:
+
+Auditchain is the developer of the world's first Decentralized Continuous Audit & Reporting Protocol EcosystemTM for digital asset and enterprise assurance and disclosure. Auditchain is developing a public blockchain ecosystem populated with CPAs and Chartered Accountants who externally validate enterprise system and control state and financial condition on a continuous basis and in near real time. The DCARPETM Explorer is a subscription based public block explorer that renders financial statements and audit analytics in real time to subscribers. For more information please visit https://auditchain.com/
+
+About Monax Industries Limited: 
+
+Founded in 2014, Monax is transforming the legal industry. A respected blockchain-native Software-as-a-Service company, Monax builds decentralized systems and growing ecosystem applications. It is on a mission to change the way people consume and manage their legal agreements using the Monax Platform, a powerful contract lifecycle management (CLM) suite. The Monax Platform is a comprehensive toolkit comprising an intuitive interface, first-in-class business process modeling engine and smart contract technology to propel CLM to the digital age. Monax is also one of the cofounders of the Agreements Network, which allows anyone to develop, customize, sell and reproduce legal products. For more information, visit monax.io.
+
+About DCARPETM Alliance
+
+
+Auditchain is the founding member of the DCARPE™ Alliance which is comprised of members of the accounting, audit, financial reporting and blockchain community. The DCARPE™ Alliance was formed to collaborate with its members and invite thought leadership on matters such as regulation, implementation, scaling and adoption of the DCARPETM assurance and disclosure platform. The DCARPE™ Alliance will hold events and symposiums as well as educate the investment, enterprise and regulatory community about the benefits of continuous audit and real time reporting using the DCARPETM assurance and disclosure platform. To join the DCARPE Alliance please visit https://dcarpe.org/
+
+Website: https://auditchain.com/
+Whitepaper: https://auditchain.com/Auditchain-Whitepaper.pdf
+Twitter: https://twitter.com/Auditchain
+Telegram: https://t.me/Auditchain_Community 
+LinkedIn: https://www.linkedin.com/company/auditchain 
+Facebook: https://www.facebook.com/Auditchain/
+Youtube: https://www.youtube.com/channel/UC7NlWkYBlsPRZ26e8e2-yKw
+Jason Meyers
+Auditchain GmbH
+email us here
+.
+Visit us on social media:
+Facebook
+Twitter
+LinkedIn
