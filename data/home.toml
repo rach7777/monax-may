@@ -14,25 +14,31 @@
     # img_right = "/img/assets/audiences/Home_page_header.png"
 
 [audiences]
-  enable = false
-  title = "Built for enterprize-focused startups"
-  subtitle = "360◦ vision on your contractual agreements - Monax gives you the insights and actions you need to increase revnue and decrease risk"
+  enable = true
+  title = "Learn how we can help your business grow"
+  subtitle = "360 vision on your contractual agreements - MONAX gives you the insights and actions you need to increase revenue and decrease risk"
 
   [[audiences.card_link]]
-    title = "For entrepreneurs"
-    img = "/img/assets/audiences/entrepreneurs_600.jpg"
+    title = "Enterprise SaaS"
+    img = "/img/assets/audiences/saas_thumb.png"
     icon = "fa-angle-right"
-    link_url = "/customers/"
+    link_url = "/onepagers/Saas_one_pager_letter.pdf"
 
   [[audiences.card_link]]
-    title = "For creatives"
-    img = "/img/assets/audiences/creatives_600.jpg"
+    title = "Real Estate"
+    img = "/img/assets/audiences/re_thumb.png"
     icon = "fa-angle-right"
-    link_url = "/creatives/"
-
+    link_url = "/onepagers/RE_one_pager_letter.pdf"
+    
+     [[audiences.card_link]]
+    title = "Venture Funds"
+    img = "/img/assets/audiences/venture_thumb.png"
+    icon = "fa-angle-right"
+    link_url = "/onepagers/venture_one_pager_letter.pdf"
+    
 
 [demo]
-  enable = true
+  enable = false
   title = "Learn how we can help your business grow"
   subtitle = "360 vision on your contractual agreements - MONAX gives you the insights and actions you need to increase revenue and decrease risk"
   youtube_url = "ZX2SlZquJgE"
