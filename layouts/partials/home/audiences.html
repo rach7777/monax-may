@@ -4,7 +4,7 @@
 <section class="section-audience padding-top-md padding-bottom-lg">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 padding-bottom-md">
+        <div class="padding-bottom-md">
           {{ with .title }}
             <div class="strong">
                 <h2>{{ . | markdownify }}</h2>
@@ -16,23 +16,23 @@
             </div>
           {{ end }}
         </div>
-        <div class="row">
-          {{ range .card_link }}
-          <div class="col-md-6 padding-bottom-md">
-            <a class="flex-container-sm a-card" href="{{ .link_url }}">
-              <div class="content-container content-card-full content-card-shadow-sm flex-container-sm card-grey">
-                <div class="row flex-container">
-                  <div class="col-xs-4 col-valign-center">
-                    <img class="img-responsive" src="{{ .img }}" alt="">
-                  </div>
-                  <div class="col-xs-8 col-valign-center range-left">
-                    <h4>{{ .title | markdownify }} <i class="fa {{.icon}}"></i></h4>
-                  </div>
+        <div class="timeline-container">
+          <img src="{{ .Site.BaseURL }}img/logo.png" alt="{{ .Title }} logo" style="max-width: 280px"/>
+          <h4 class="padding-bottom-sm">
+            for
+          </h4>
+          <div class="flex-grid-sm">
+            {{ range .card_link }}
+            <div class="col-flex-sm-4 padding-bottom-md">
+              <a class="a-card" href="{{ .link_url }}">
+                <div class="">
+                  <h3>{{ .title | markdownify }} <i class="fa {{.icon}}"></i></h3>
                 </div>
-              </div>
-            </a>
+                <img class="img-responsive" src="{{ .img }}" alt="{{ .title }}" style="max-width: 75%; margin: 0 auto;">
+              </a>
+            </div>
+            {{ end }}
           </div>
-          {{ end }}
         </div>
       </div>
     </div>
