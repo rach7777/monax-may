@@ -15,8 +15,8 @@
 
 [audiences]
   enable = true
-  title = "Built for enterprize-focused startups"
-  subtitle = "360◦ vision on your contractual agreements - Monax gives you the insights and actions you need to increase revnue and decrease risk"
+  title = "Learn how we can help your business grow"
+  subtitle = "360 vision on your contractual agreements - MONAX gives you the insights and actions you need to increase revenue and decrease risk"
 
   [[audiences.card_link]]
     title = "MONAX for Enterprise SaaS"
@@ -36,31 +36,6 @@
     icon = "fa-angle-right"
     link_url = "/onepagers/venture_one_pager_letter.pdf"
     
-    
-  [[bullets.section]]
-          title = "Contract execution for digitally native companies"
-          text= "Download our customer fact sheets:"
-          img_src = ""
-          bullets_list = [
-          ]
-            [[bullets.section.link]]
-              text = "Monax for Enterprise SaaS (A4)"
-              link = "/onepagers/SaaS_one_pager_A4.pdf"
-            [[bullets.section.link]]
-              text = "Monax for Enterprise SaaS (letter)"
-              link = "/onepagers/Saas_one_pager_letter.pdf"
-            [[bullets.section.link]]
-              text = "Monax for Real Estate (A4)"
-              link = "/onepagers/RE_one_pager_A4.pdf"
-            [[bullets.section.link]]
-              text = "Monax for Real Estate (letter)"
-              link = "/onepagers/RE_one_pager_letter.pdf"
-            [[bullets.section.link]]
-              text = "Monax for Venture Funds(A4)"
-              link = "/onepagers/venture_one_pager_A4.pdf"
-            [[bullets.section.link]]
-              text = "Monax for Venture Funds (letter)"
-              link = "/onepagers/venture_one_pager_letter.pdf"
 
 [demo]
   enable = false
