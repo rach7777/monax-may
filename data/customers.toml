@@ -51,11 +51,11 @@
 
           ]
 
-         [[bullets.section]]
-          title = "Contract execution for digitally native companies"
-          text= "Download our customer fact sheets:"
-          img_src = ""
-          bullets_list = [
+         #[[bullets.section]]
+         # title = "Contract execution for digitally native companies"
+         #text= "Download our customer fact sheets:"
+         # img_src = ""
+         # bullets_list = [
           ]
             [[bullets.section.link]]
               text = "Monax for Enterprise SaaS (A4)"
