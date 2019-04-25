@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
   // ANALYTICS
-  const analyticsIdentifyAndTrack = (form, eventName) => {
+  const analyticsIdentifyAndTrack = (form, eventName, callback) => {
     const serialized = Array.isArray(form) ? form : $(form).serializeArray();
     const formData = { [eventName]: true };
     serialized.forEach((input) => formData[input.name] = input.value);
@@ -25,7 +25,7 @@ $(document).ready(function() {
       analytics.track(`${eventName}_${formData.source}`, formData);
     }).fail((err) => {
       console.log('Error requesting lead creation');
-    });
+    }).always(() => { if (typeof callback === 'function') callback(); });
     return formData;
   };
 
@@ -74,16 +74,21 @@ $(document).ready(function() {
             }
           },
           submitHandler: function(form) {
-            analyticsIdentifyAndTrack(form, 'Demo Requested');
             // get form data and pass onto Calendly
-            var formDataArr = {};
-            $.each( $(form).serializeArray(), function(i, field) {
+            const afterAnalytics = () => {
+              var formDataArr = {};
+              $.each( $(form).serializeArray(), function(i, field) {
                 formDataArr[field.name] = field.value;
-            });
-            const qString = "?name=" + encodeURIComponent( formDataArr['firstName'] + " " + formDataArr['lastName'] ) + "&email=" + encodeURIComponent( formDataArr['email'] ) + "&a1=" + encodeURIComponent( formDataArr['company'] );
-            var calendlyUrl = 'https://calendly.com/monax/demo' + qString;
-            // redirect for mobile
-            window.location.href = calendlyUrl;
+              });
+              const qString = "?name=" + encodeURIComponent( formDataArr['firstName'] + " " + formDataArr['lastName'] ) + "&email=" + encodeURIComponent( formDataArr['email'] ) + "&a1=" + encodeURIComponent( formDataArr['company'] );
+              var calendlyUrl = 'https://calendly.com/monax/demo' + qString;
+              // redirect for mobile
+              window.location.href = calendlyUrl;
+            }
+
+            analyticsIdentifyAndTrack(form, 'Demo Requested', afterAnalytics);
+
+            // Calendly.showPopupWidget( calendlyUrl );
 
             // // vars
             // const formFields = $('#nav-signup .form-fields');
