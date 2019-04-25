@@ -2,7 +2,7 @@
   "contracts": [
     {
       "id": "contracts_unlimited_ndas",
-      "description": "Unlimited active Canting Tribe NDAs",
+      "description": "Unlimited active Waypoint NDAs",
       "enabled": true,
       "visible": true
     },
