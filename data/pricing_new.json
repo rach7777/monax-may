@@ -314,7 +314,7 @@
     "price_monthly": "62500",
     "description": "Scale operations, manage permissions and customize your processes",
     "meta_annual": {
-      "users": 10,
+      "users": 25,
       "templates": 900,
       "contracts": 900,
       "contract_events": 14400,
