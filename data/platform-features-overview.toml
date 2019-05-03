@@ -13,11 +13,11 @@
   enable_title_block = false
 
 
-  [features.platform]
+  [features.consumer]
     enable = true
 
 
-        [[features.platform.section]]
+        [[features.consumer.section]]
           title = "CREATE: Contract Templating & Repository"
           subtitle = "Move beyond simple storage of unsearchable electronic records. Create templates to fit your business processes. Set them up for repeatable use. Electronically sign and store your legal contracts. Provide secure access to all parties."
           #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
@@ -41,7 +41,7 @@
           #  animation_delay = "1500"
           #  animation_duration = "600"
 
-          [[features.platform.section]]
+          [[features.consumer.section]]
             title = "TRACK: Digital Workflows & Integrations"
             subtitle = "Monitor performance, receive notifications and set reminders with digital workflows. Identify, track, and automate delivery of obligations across integrated business systems. Enhance revenue recognition through visualized understanding across the parties. "
             #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
@@ -94,7 +94,7 @@
     #    animation_delay = "1500"
     #    animation_duration = "600"
 
-        [[features.platform.section]]
+        [[features.consumer.section]]
           title = "PROVE: Reporting & Intelligence "
           subtitle = "Gain insights via sophisticated reports - these are taken from a comprehensive evidence chain across your entire contractual journey. Prove compliance via immutable audit trails recorded on a permissioned blockchain."
           #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
