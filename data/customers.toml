@@ -5,7 +5,7 @@
 
     enable = true
      title = "What can MONAX do for you?"
-     subtitle = "Everything your business does from sales, to human resources, to inventory is governed by contracts. Those contracts provide the rules for an entire journey."
+     subtitle =  "The digital era has changed the way we do business, but has barely affected how we contract"
      hero_signup = true
      #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
      img_right = "/img/assets/audiences/customers_header.png"
@@ -17,65 +17,54 @@
 
         [bullets]
         enable = true
-            title = "Our customers require four key things from us:"
+            title = "Current tooling only covers a small part of the journey your contracting takes"
+            subtitle = "MONAX gives you truly digital contracting to help you uncover unrealized potential:"
 
-        [[bullets.section]]
-          title = "Speed to market"
-          text = "Digitizing the obligations process means you can close deals faster and accelerate your go-to-market "
+        [[bullets.section]]"
+          title = "Unrealized Potential 1"
+          text = "Both parties clearly understand the obligations they agreed to"
           img_src = "/img/assets/customers/speed_to_market.png"
           bullets_list = [
 
           ]
 
         [[bullets.section]]
-          title = "Transparent and scalable pricing"
-          text = "Base subscription plus scalable volume triggers for when your needs grow"
+          title = "Unrealized Potential 2"
+          text = "Get notified and understand actionable obligations to keep things moving"
           img_src = "/img/assets/customers/transparent_pricing.png"
           bullets_list = [
 
           ]
 
         [[bullets.section]]
-          title = "Low resource allocation"
-          text = "Monax has a powerful BPM workflow engine so you can truly automate every step of your business obligations"
+          title = "Unrealized Potential 3"
+          text = "Connect your business systems to contract milestones and integrate data flows"
           img_src = "/img/assets/customers/low_resource.png"
           bullets_list = [
-
           ]
 
         [[bullets.section]]
-          title = "Features to succeed"
-          text = "MONAX features scalable tools which enable growth acceleration"
+          title = "Unrealized Potential 4"
+          text = "Systematize revenue recognition by identifying contractual performance obligations and proving delivery"
           img_src = "/img/assets/customers/features_to_succeed.png"
           bullets_list = [
 
           ]
 
          [[bullets.section]]
-          title = "Contract execution for digitally native companies"
-          text= "Download our customer fact sheets:"
+          title = "Unrealized Potential 5"
+          text= "Automatic creation of audit trails in parallel to the fulfillment of your contract"
           img_src = ""
           bullets_list = [
           ]
-            [[bullets.section.link]]
-              text = "Monax for Enterprise SaaS (A4)"
-              link = "/onepagers/SaaS_one_pager_A4.pdf"
-            [[bullets.section.link]]
-              text = "Monax for Enterprise SaaS (letter)"
-              link = "/onepagers/Saas_one_pager_letter.pdf"
-            [[bullets.section.link]]
-              text = "Monax for Real Estate (A4)"
-              link = "/onepagers/RE_one_pager_A4.pdf"
-            [[bullets.section.link]]
-              text = "Monax for Real Estate (letter)"
-              link = "/onepagers/RE_one_pager_letter.pdf"
-            [[bullets.section.link]]
-              text = "Monax for Venture Funds(A4)"
-              link = "/onepagers/venture_one_pager_A4.pdf"
-            [[bullets.section.link]]
-              text = "Monax for Venture Funds (letter)"
-              link = "/onepagers/venture_one_pager_letter.pdf"
-
+          
+          [[bullets.section]]
+          title = "Unrealized Potential 6"
+          text= "Detailed intelligence of your cumulative contractual obligations down to the granular level for specific contracts"
+          img_src = ""
+          bullets_list = [
+          ]  
+        
 # [testimonials]
 #     enable = true
 #
