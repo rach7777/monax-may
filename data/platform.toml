@@ -1,7 +1,7 @@
 [top]
     enable = true
-    title = "Powerful and intuitive obligations management"
-    subtitle = "We make your contracts work for you"
+    title = "What does MONAX do?"
+    subtitle = "Monax offers the most advanced technology for truly digital contracting"
     hero_signup = false
 
 [features]
@@ -18,8 +18,8 @@
 
 
         [[features.consumer.section]]
-          title = "Digital contracts repository"
-          subtitle = "Know the status of all your contractual business relationships. Get notified and understand actionable obligations to keep things moving."
+          title = "CREATE: Contract Templating & Repository"
+          subtitle = "Move beyond simple storage of unsearchable electronic records. Create templates to fit your business processes. Set them up for repeatable use. Electronically sign and store your legal contracts. Provide secure access to all parties."
           #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
           animation_id = "feature-animation-4"
           animation_type = "multipop"
@@ -42,8 +42,8 @@
           #  animation_duration = "600"
 
           [[features.consumer.section]]
-            title = "Business systems integration"
-            subtitle = "Connect your systems to contract milestones. Monitor contract performance, receive notifications and set triggers."
+            title = "TRACK: Digital Workflows & Integrations"
+            subtitle = "Monitor performance, receive notifications and set reminders with digital workflows. Identify, track, and automate delivery of obligations across integrated business systems. Enhance revenue recognition through visualized understanding across the parties. "
             #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
             animation_id = "feature-animation-4"
             animation_type = "multipop"
@@ -95,8 +95,8 @@
     #    animation_duration = "600"
 
         [[features.consumer.section]]
-          title = "Auditibility and intelligence"
-          subtitle = "Prove compliance via immutable audit trails recorded on a blockchain. Create reports across your entire portfolio and view all contractual interactions."
+          title = "PROVE: Reporting & Intelligence "
+          subtitle = "Glean insights via sophisticated reports drawn from a comprehensive evidence chain across your entire contractual journey. Prove compliance via immutable audit trails recorded on a permissioned blockchain."
           #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
           animation_id = "feature-animation-4"
           animation_type = "multipop"
