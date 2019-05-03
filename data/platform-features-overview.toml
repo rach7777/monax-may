@@ -5,7 +5,7 @@
     hero_signup = false
 
 [features]
-  enable = true
+  enable = false
   title = "Built for tech-focused operators"
   subtitle = "Gain 360 vision on your contractual agreements - Monax gives you the insights and actions you need"
   consumer_option = "Use legal templates"
