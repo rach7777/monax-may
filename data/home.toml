@@ -20,13 +20,14 @@ title = "Contracts are the life-blood of your business - not just pieces of pape
 
 [bullets]
         enable = true
-            title = "Digitized contract execution for digitally native companies"
+            title = "We make your contracts work for you"
 
         [[bullets.section]]
           title = "CREATE contracts"
           text = "Move beyond simple storage of electronic records. Electronically sign and store your legal contracts. Know the status of all your contractual business relationships and understand the actionable steps to keep things moving forward."
           img_src = "/img/assets/create_homepage.png"
-          bullets_list = [
+          bullets_list = [- Document management
+          -Templating
 
           ]
 
