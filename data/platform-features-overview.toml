@@ -142,7 +142,7 @@
             #  animation_delay = "1500"
             #  animation_duration = "600"
             
-{{< image_blog "" >}}
+
 
 [workflow]
     enable = false
