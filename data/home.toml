@@ -17,101 +17,34 @@
 [features.consumer]
 enable = true 
 title = "Contracts are the life-blood of your business - not just pieces of paper"
-subtitle = "CREATE contracts. TRACK deliverables. PROVE complaince."
 
+[bullets]
+        enable = true
+            title = "Digitized contract execution for digitally native companies"
 
-        [[features.consumer.section]]
-          title = "CREATE"
-          subtitle = "Document Management. Templating. Esigning. "
-          #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
-          animation_id = "feature-animation-4"
-          animation_type = "multipop"
-          img_base = "/img/assets/create_homepage.png"
-          img_content_container = "mac" # set to 'mac' or 'iphone'
-          #img_content_layer_src"/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
-          animation_delay = "0"
-          animation_duration = "300"
+        [[bullets.section]]
+          title = "CREATE contracts"
+          text = "Move beyond simple storage of electronic records. Electronically sign and store your legal contracts. Know the status of all your contractual business relationships and understand the actionable steps to keep things moving forward."
+          img_src = "/img/assets/create_homepage.png"
+          bullets_list = [
 
-          #[[features.consumer.section.pop]]
-          #  img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-1-reviewed-agreement.png"
-          #  img_pop_id = "pop-1"
-          #  animation_delay = "900"
-          #  animation_duration = "600"
+          ]
 
-          #[[features.consumer.section.pop]]
-          #  img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-2-signed-agreement.png"
-          #  img_pop_id = "pop-2"
-          #  animation_delay = "1500"
-          #  animation_duration = "600"
+        [[bullets.section]]
+          title =  "TRACK deliverables"
+          text = "Connect your legal contracts to your business systems. Monitor performance, receive notifications, and set reminders. Identify, track, and automate delivery of obligations. Enhance revenue recognition through visualized understanding across the parties."
+          img_src = "/img/assets/track_homepage.png"
+          bullets_list = [
 
-          [[features.consumer.section]]
-            title = "TRACK"
-            subtitle = "Delivery Tracking. Integrations. Reminders. "
-            #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
-            animation_id = "feature-animation-4"
-            animation_type = "multipop"
-            img_base = "/img/assets/track_homepage.png"
-            img_content_container = "mac" # set to 'mac' or 'iphone'
-            #img_content_layer_src"/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
-            animation_delay = "0"
-            animation_duration = "300"
+          ]
 
-            #[[features.consumer.section.pop]]
-            #img_pop_src = "/img/assets/animations/"
-            #img_pop_id = "pop-1"
-            #animation_delay = "900"
-            #animation_duration = "600"
+        [[bullets.section]]
+          title = "PROVE compliance"
+          text = "Prove compliance via immutable audit trails recorded on a permissioned blockchain. Create reports across your entire portfolio and view all contractual interactions. Glean insights to increase operational performance."
+          img_src = "/img/assets/prove_homepage.png"
+          bullets_list = [
 
-            #[[features.consumer.section.pop]]
-            #  img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-2-signed-agreement.png"
-            #  img_pop_id = "pop-2"
-            #  animation_delay = "1500"
-            #  animation_duration = "600"
-
-
-
-
-
-
-    #[[features.consumer.section]]
-    #  title = "UNDERSTANDING"
-    #  subtitle = "Create visual representations of your contracts so everyone understands their obligations right from the start"
-      #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
-    #  animation_id = "feature-animation-4"
-    #  animation_type = "multipop"
-    #  img_base = "/img/assets/animations/shared/base-mac.png"
-    #  img_content_container = "mac" # set to 'mac' or 'iphone'
-    #  img_content_layer_src = "/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
-    #  animation_delay = "0"
-    #  animation_duration = "300"
-
-    #  [[features.consumer.section.pop]]
-    #    img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-1-reviewed-agreement.png"
-    #    img_pop_id = "pop-1"
-    #    animation_delay = "900"
-    #    animation_duration = "600"
-
-    #  [[features.consumer.section.pop]]
-    #    img_pop_src = "/img/assets/animations/4-increased-quality-reduced-cost/zoom-2-signed-agreement.png"
-    #    img_pop_id = "pop-2"
-    #    animation_delay = "1500"
-    #    animation_duration = "600"
-
-        [[features.consumer.section]]
-          title = "PROVE"
-          subtitle = "Continuous Audit. Sophisticated Reporting. Data Rooms."
-          #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
-          animation_id = "feature-animation-4"
-          animation_type = "multipop"
-          img_base = "/img/assets/prove_homepage.png"
-          img_content_container = "mac" # set to 'mac' or 'iphone'
-          #img_content_layer_src"/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
-          animation_delay = "0"
-          animation_duration = "300"
-
-
-
-
+          ]
 
 
 [audiences]
