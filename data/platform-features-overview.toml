@@ -143,7 +143,7 @@
             #  animation_duration = "600"
             
 
-
+  img_right = "/img/assets/audiences/comparison_table.png"
 [workflow]
     enable = false
     title = "Automate your templates."
