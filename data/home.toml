@@ -14,7 +14,7 @@
     # img_right = "/img/assets/audiences/Home_page_header.png"
 
 
-[features.consumer]
+[intro]
 enable = true 
 title = "Contracts are the life-blood of your business - not just pieces of paper"
 
