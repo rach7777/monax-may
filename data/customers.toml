@@ -4,8 +4,8 @@
     #subtitle = "The journey to untapped revenue is here"
 
     enable = true
-     title = "We make your contracts work for you"
-     subtitle = "Increase revenue and decrease risk with MONAX"
+     title = "What can MONAX do for you?"
+     subtitle = "Everything your business does from sales, to human resources, to inventory is governed by contracts. Those contracts provide the rules for an entire journey."
      hero_signup = true
      #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
      img_right = "/img/assets/audiences/customers_header.png"
