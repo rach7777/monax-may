@@ -26,7 +26,7 @@ subtitle = "CREATE contracts. TRACK deliverables. PROVE complaince."
           #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
           animation_id = "feature-animation-4"
           animation_type = "multipop"
-          img_base = "/img/assets/animations/shared/workflows_high_level.png"
+          img_base = "/img/assets/create_homepage.png"
           img_content_container = "mac" # set to 'mac' or 'iphone'
           #img_content_layer_src"/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
           animation_delay = "0"
@@ -50,7 +50,7 @@ subtitle = "CREATE contracts. TRACK deliverables. PROVE complaince."
             #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
             animation_id = "feature-animation-4"
             animation_type = "multipop"
-            img_base = "/img/assets/animations/shared/workflows_Integrations.png"
+            img_base = "/img/assets/track_homepage.png"
             img_content_container = "mac" # set to 'mac' or 'iphone'
             #img_content_layer_src"/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
             animation_delay = "0"
@@ -103,7 +103,7 @@ subtitle = "CREATE contracts. TRACK deliverables. PROVE complaince."
           #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
           animation_id = "feature-animation-4"
           animation_type = "multipop"
-          img_base = "/img/assets/animations/shared/workflows_Know_where_you_are.png"
+          img_base = "/img/assets/prove_homepage.png"
           img_content_container = "mac" # set to 'mac' or 'iphone'
           #img_content_layer_src"/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
           animation_delay = "0"
