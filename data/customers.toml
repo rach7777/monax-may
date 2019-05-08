@@ -21,51 +21,34 @@
         enable = true
             title = "Current tooling only covers a small part of the journey your contracting takes"
             subtitle = "MONAX gives you truly digital contracting to help you uncover unrealized potential:"
+            
+            
 
         [[bullets.section]]
-          title = "Unrealized Potential 1"
-          text = "Both parties clearly understand the obligations they agreed to"
+          title = "Contract Templating and Repository"
+          text = "Increase your execution speed via templating and e-signatures while setting clear boundaries and controls. Increase your effectiveness at running and scaling your business by centralizing your contracts in one secure location."
           img_src = "/img/assets/customers/speed_to_market.png"
           bullets_list = [
 
           ]
 
         [[bullets.section]]
-          title = "Unrealized Potential 2"
-          text = "Get notified and understand actionable obligations to keep things moving"
+          title = "Digital Workflows and Integrations"
+          text = "Increase your sales and renewal efficiency by clearly knowing the state of deliverables and when you can bill. Provide superior experience to those you do business with by a visualized understanding of contractual obligations."
           img_src = "/img/assets/customers/transparent_pricing.png"
           bullets_list = [
 
           ]
 
         [[bullets.section]]
-          title = "Unrealized Potential 3"
-          text = "Connect your business systems to contract milestones and integrate data flows"
-          img_src = "/img/assets/customers/low_resource.png"
-          bullets_list = [
-          ]
-
-        [[bullets.section]]
-          title = "Unrealized Potential 4"
-          text = "Systematize revenue recognition by identifying contractual performance obligations and proving delivery"
+          title = "Reporting and Intelligence"
+          text = "Reduce transactional execution risk by having a clear and detailed picture of who did what when. Save money during audits or due diligence by keeping a continuous audit of contract fulfillment."
           img_src = "/img/assets/customers/features_to_succeed.png"
           bullets_list = [
 
           ]
 
-         [[bullets.section]]
-          title = "Unrealized Potential 5"
-          text= "Automatic creation of audit trails in parallel to the fulfillment of your contract"
-          img_src = ""
-          bullets_list = [
-          ]
-          
-          [[bullets.section]]
-          title = "Unrealized Potential 6"
-          text= "Detailed intelligence of your cumulative contractual obligations down to the granular level for specific contracts"
-          img_src = ""
-          bullets_list = [
-          ]  
+       
         
 # [testimonials]
 #     enable = true
