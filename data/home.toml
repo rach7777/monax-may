@@ -52,10 +52,10 @@
 
 
 
-    enable = false
-    title = "What is MONAX?"
-    subtitle = "Next generation contract management"
-    hero_signup = true
+    #enable = false
+    #title = "What is MONAX?"
+    #subtitle = "Next generation contract management"
+    #hero_signup = true
     #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
     #img_right = "/img/assets/audiences/Home_page_header.png"
 
