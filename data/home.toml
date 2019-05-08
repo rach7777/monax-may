@@ -1,8 +1,61 @@
 [top]
     enable = true
-    title = "What is MONAX?"
+    title = "What is Monax?"
     subtitle = "Next generation contract management"
-    hero_signup = true
+    request_demo = true
+    # enable youtube_id or img_right
+    youtube_id = "V9aPrgCrI_k" # after ?v= on YouTube urls, e.g. "sdX0jFFZKuo"
+    # img_right = "/img/assets/"
+
+
+[summary]
+    enable = true
+    title = "Contracts are the life-blood of your business not just pieces of paper"
+    #subtitle = ""
+
+
+[feature]
+    enable = true
+
+    [[feature.section]]
+      title = "CREATE contracts"
+      subtitle = "Move beyond simple storage of electronic records. Electronically sign and store your legal contracts. Know the status of all your contractual business relationships and understand the actionable steps to keep things moving forward"
+      #### ZOOM TEMPLATE
+      animation_id = "feature-animation-5"
+      animation_type = "zoom"
+      img_base = "/img/assets/animations/create_homepage.png"
+      #img_content_container = "mac" # set to 'mac' or 'iphone'
+      #img_content_layer_src = "/img/assets/animations/5-legal-knowledge-assets/content-archetypes-new.png"
+      #img_content_animation_delay = "300"
+      #img_content_animation_duration = "300"
+      #img_popover_layer_src = "/img/assets/animations/5-legal-knowledge-assets/zoom-archetype-created.png"
+      img_popover_animation_delay = "100" # too large - set via css to 6.5s
+      img_popover_animation_duration = "600"
+
+
+    [[feature.section]]
+      title = "Increase your margins"
+      subtitle = "Offer your legal expertise through legal products via the Monax platform and broaden your customer base. Monax allows process automation and reproducibility of your legal assets"
+      #### ZOOM TEMPLATE
+      animation_id = "feature-animation-6"
+      animation_type = "zoom"
+      img_base = "/img/assets/animations/shared/base-mac.png"
+      img_content_container = "mac" # set to 'mac' or 'iphone'
+      img_content_layer_src = "/img/assets/animations/6-increase-your-margins/content-overview.png"
+      img_content_animation_delay = "300"
+      img_content_animation_duration = "300"
+      img_popover_layer_src = "/img/assets/animations/6-increase-your-margins/zoom-earnings.png"
+      img_popover_animation_delay = "1000"
+      img_popover_animation_duration = "300"
+
+
+
+
+
+    #enable = false
+    #title = "What is MONAX?"
+    #subtitle = "Next generation contract management"
+    #hero_signup = true
     #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
     #img_right = "/img/assets/audiences/Home_page_header.png"
 

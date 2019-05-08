@@ -21,5 +21,23 @@
       id = "contracts" # search query for explainer_category set in explainer FM
       title = "Creating Contracts"
 
+    #[[articles.explainer_category]]
+    #  id = "contracts" # search query for explainer_category set in explainer FM
+    #  title = "Securing your Data"
+
+    #[[articles.explainer_category]]
+    # id = "contracts" # search query for explainer_category set in explainer FM
+    #title = "How Monax uses Blockchain to Empower your Business"
+      
+    #[[articles.explainer_category]]
+    #  id = "contracts" # search query for explainer_category set in explainer FM
+     # title = "Onboarding and Implementation"
+
+    #[[articles.explainer_category]]
+    #  id = "contracts" # search query for explainer_category set in explainer FM
+    #  title = "How Monax integrates with your Business Tools" 
+      
+      
+      
 [cta] # global
     enable = false

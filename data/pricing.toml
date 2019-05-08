@@ -9,7 +9,7 @@
     [pricing_table.tier1]
       enable = true
       active_tab = true
-      title = "Growing Businesses"
+      title = "Essential"
       subtitle = "Starts at $150 USD"
       content_title = "<strong>We make your contracts work for you</strong>"
 
@@ -68,7 +68,7 @@
     [pricing_table.tier2]
       enable = true
       active_tab = false
-      title = "New Businesses"
+      title = "Starter"
       subtitle = "Starts at $25 USD"
       content_title = "<strong>Freelancer or just starting out?</strong><br>Get going on the right foot"
 
