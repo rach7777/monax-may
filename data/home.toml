@@ -2,10 +2,10 @@
     enable = true
     title = "What is Monax?"
     subtitle = "Next generation contract management"
-    request_demo = true
+    hero_signup = true
     # enable youtube_id or img_right
-    youtube_id = "V9aPrgCrI_k" # after ?v= on YouTube urls, e.g. "sdX0jFFZKuo"
-    # img_right = "/img/assets/"
+    #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
+    img_right = "/img/assets/audiences/Home_page_header.png"
 
 [audiences]
     enable = true
@@ -24,7 +24,7 @@
         animation_delay = "0"
         animation_duration = "300"
         
-    [[audiences.section]]
+    [[audiences.card_link]]
         title = "TRACK: deliverables"
         subtitle = "Connect your legal contracts to your business systems. Monitor performance, receive notifications, and set reminders. Identify, track, and automate delivery of obligations. Enhance revenue recognition through visualized understanding across the parties"
         #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
@@ -36,7 +36,7 @@
         animation_delay = "0"
         animation_duration = "300"    
 
-   [[audiences.section]]
+   [[audiences.card_link]]
         title = "PROVE: compliance"
         subtitle = "Prove compliance via immutable audit trails recorded on a permissioned blockchain. Create reports across your entire portfolio and view all contractual interactions. Glean insights to increase operational performance"
         #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
@@ -101,7 +101,7 @@
 
 
 
-  enable = false
+  enable = true
   subtitle = "Download one-page information forms"
 
   [[audiences.card_link]]
