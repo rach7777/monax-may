@@ -11,7 +11,8 @@
     enable = true
     title = "Contracts are the life-blood of your business not just pieces of paper"
     #subtitle = ""
-    [[audiences.card_link]]
+    
+    [[audiences.section]]
         title = "CREATE: Contracts"
         subtitle = "Move beyond simple storage of unsearchable electronic records. Create templates to fit your business processes. Set them up for repeatable use. Electronically sign and store your legal contracts. Provide secure access to all parties"
         #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
