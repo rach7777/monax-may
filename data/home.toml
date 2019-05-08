@@ -2,10 +2,20 @@
     enable = true
     title = "What is Monax?"
     subtitle = "Next generation contract management"
-    request_demo = true
+    hero_signup = true
     # enable youtube_id or img_right
-    youtube_id = "V9aPrgCrI_k" # after ?v= on YouTube urls, e.g. "sdX0jFFZKuo"
-    # img_right = "/img/assets/"
+    #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
+    img_right = "/img/assets/audiences/Home_page_header.png"
+
+[top]
+    enable = true
+    title = "We make your contracts work for you"
+    subtitle = "Obligations management for the digital economy and digitally native companies"
+    hero_signup = true
+    #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
+    img_right = "/img/assets/audiences/Home_page_header.png"
+
+
 
 [audiences]
     enable = true
