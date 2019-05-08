@@ -26,27 +26,27 @@
       img_base = "/img/assets/animations/create_homepage.png"
       #img_content_container = "mac" # set to 'mac' or 'iphone'
       #img_content_layer_src = "/img/assets/animations/5-legal-knowledge-assets/content-archetypes-new.png"
-      #img_content_animation_delay = "300"
-      #img_content_animation_duration = "300"
-      #img_popover_layer_src = "/img/assets/animations/5-legal-knowledge-assets/zoom-archetype-created.png"
-      img_popover_animation_delay = "100" # too large - set via css to 6.5s
-      img_popover_animation_duration = "600"
+      img_content_animation_delay = "300"
+      img_content_animation_duration = "300"
+      img_popover_layer_src = "/img/assets/animations/5-legal-knowledge-assets/zoom-archetype-created.png"
+      #img_popover_animation_delay = "100" # too large - set via css to 6.5s
+      #img_popover_animation_duration = "600"
 
 
     [[feature.section]]
-      title = "Increase your margins"
-      subtitle = "Offer your legal expertise through legal products via the Monax platform and broaden your customer base. Monax allows process automation and reproducibility of your legal assets"
+      title = "TRACK deliverables"
+      subtitle = "Connect your legal contracts to your business systems. Monitor performance, receive notifications, and set reminders. Identify, track, and automate delivery of obligations. Enhance revenue recognition through visualized understanding across the parties"
       #### ZOOM TEMPLATE
       animation_id = "feature-animation-6"
       animation_type = "zoom"
-      img_base = "/img/assets/animations/shared/base-mac.png"
-      img_content_container = "mac" # set to 'mac' or 'iphone'
+      #img_base = "/img/assets/animations/shared/base-mac.png"
+      #img_content_container = "mac" # set to 'mac' or 'iphone'
       img_content_layer_src = "/img/assets/animations/6-increase-your-margins/content-overview.png"
       img_content_animation_delay = "300"
       img_content_animation_duration = "300"
-      img_popover_layer_src = "/img/assets/animations/6-increase-your-margins/zoom-earnings.png"
-      img_popover_animation_delay = "1000"
-      img_popover_animation_duration = "300"
+      #img_popover_layer_src = "/img/assets/animations/6-increase-your-margins/zoom-earnings.png"
+      #img_popover_animation_delay = "1000"
+      #img_popover_animation_duration = "300"
 
 
 
