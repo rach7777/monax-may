@@ -19,7 +19,7 @@
 
     [[feature.section]]
         title = "CREATE: Contracts"
-        subtitle = "Move beyond simple storage of unsearchable electronic records. Create templates to fit your business processes. Set them up for repeatable use. Electronically sign and store your legal contracts. Provide secure access to all parties."
+        subtitle = "Move beyond simple storage of unsearchable electronic records. Create templates to fit your business processes. Set them up for repeatable use. Electronically sign and store your legal contracts. Provide secure access to all parties"
         #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
         animation_id = "feature-animation-4"
         animation_type = "multipop"
@@ -82,7 +82,7 @@
 
         [[bullets.section]]
           title = "CREATE contracts"
-          text = "Move beyond simple storage of electronic records. Electronically sign and store your legal contracts. Know the status of all your contractual business relationships and understand the actionable steps to keep things moving forward."
+          text = "Move beyond simple storage of electronic records. Electronically sign and store your legal contracts. Know the status of all your contractual business relationships and understand the actionable steps to keep things moving forward"
           img_src = "/img/assets/create_homepage.png"
           bullets_list = [
 
