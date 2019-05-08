@@ -7,16 +7,6 @@
     #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
     img_right = "/img/assets/audiences/Home_page_header.png"
 
-[top]
-    enable = true
-    title = "We make your contracts work for you"
-    subtitle = "Obligations management for the digital economy and digitally native companies"
-    hero_signup = true
-    #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
-    img_right = "/img/assets/audiences/Home_page_header.png"
-
-
-
 [audiences]
     enable = true
     title = "Contracts are the life-blood of your business not just pieces of paper"
