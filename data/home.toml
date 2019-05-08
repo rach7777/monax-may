@@ -51,8 +51,8 @@
 
 
 
-[top]
-    enable = true
+
+    enable = false
     title = "What is MONAX?"
     subtitle = "Next generation contract management"
     hero_signup = true
