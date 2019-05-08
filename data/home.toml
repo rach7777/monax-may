@@ -23,12 +23,12 @@
       #### ZOOM TEMPLATE
       animation_id = "feature-animation-5"
       animation_type = "zoom"
-      #img_base = "/img/assets/animations/shared/base-mac.png"
+      img_base = "/img/assets/animations/create_homepage.png"
       #img_content_container = "mac" # set to 'mac' or 'iphone'
       #img_content_layer_src = "/img/assets/animations/5-legal-knowledge-assets/content-archetypes-new.png"
       #img_content_animation_delay = "300"
       #img_content_animation_duration = "300"
-      img_popover_layer_src = "/img/assets/animations/5-legal-knowledge-assets/zoom-archetype-created.png"
+      #img_popover_layer_src = "/img/assets/animations/5-legal-knowledge-assets/zoom-archetype-created.png"
       img_popover_animation_delay = "100" # too large - set via css to 6.5s
       img_popover_animation_duration = "600"
 
