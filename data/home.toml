@@ -7,11 +7,29 @@
     #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
     img_right = "/img/assets/audiences/Home_page_header.png"
 
+    [feature]
+      enable = true
+
+      [[feature.section]]
+        title = "100% transparency on your legal matters"
+        subtitle = "Maintain constant insight about what is going on with your contracts. Track every step along the way, gathering the evidence required to fulfil an agreement, from signing to shipping to payments and so on. Put your mind at ease and concentrate on growing your business."
+        #### ZOOM TEMPLATE
+        animation_id = "feature-animation-1"
+        animation_type = "zoom"
+        img_base = "/img/assets/animations/shared/base-mac.png"
+        img_content_container = "mac" # set to 'mac' or 'iphone'
+        img_content_layer_src = "/img/assets/animations/1-100-percent-transparency/content-agreement-grid.png"
+        img_content_animation_delay = "600"
+        img_content_animation_duration = "300"
+        img_popover_layer_src = "/img/assets/animations/1-100-percent-transparency/zoom-agreement-detail.png"
+        img_popover_animation_delay = "1500"
+
+
 [audiences]
     enable = true
     title = "Contracts are the life-blood of your business not just pieces of paper"
     #subtitle = ""
-    
+
     [[audiences.section]]
         title = "CREATE: Contracts"
         subtitle = "Move beyond simple storage of unsearchable electronic records. Create templates to fit your business processes. Set them up for repeatable use. Electronically sign and store your legal contracts. Provide secure access to all parties"
@@ -23,7 +41,7 @@
         #img_content_layer_src"/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
         animation_delay = "0"
         animation_duration = "300"
-        
+
     [[audiences.card_link]]
         title = "TRACK: deliverables"
         subtitle = "Connect your legal contracts to your business systems. Monitor performance, receive notifications, and set reminders. Identify, track, and automate delivery of obligations. Enhance revenue recognition through visualized understanding across the parties"
@@ -34,7 +52,7 @@
         img_content_container = "mac" # set to 'mac' or 'iphone'
         #img_content_layer_src"/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
         animation_delay = "0"
-        animation_duration = "300"    
+        animation_duration = "300"
 
    [[audiences.card_link]]
         title = "PROVE: compliance"
@@ -46,7 +64,7 @@
         img_content_container = "mac" # set to 'mac' or 'iphone'
         #img_content_layer_src"/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
         animation_delay = "0"
-        animation_duration = "300"   
+        animation_duration = "300"
 
 
 
@@ -68,7 +86,7 @@
 
 
 #[intro]
-#enable = true 
+#enable = true
 #title = "Contracts are the life-blood of your business - not just pieces of paper"
 
 [bullets]
@@ -115,13 +133,13 @@
     img = "/img/assets/audiences/re_thumb.png"
     icon = "fa-angle-right"
     link_url = "/onepagers/RE_one_pager_letter.pdf"
-    
+
      [[audiences.card_link]]
     title = "Venture Funds"
     img = "/img/assets/audiences/venture_thumb.png"
     icon = "fa-angle-right"
     link_url = "/onepagers/venture_one_pager_letter.pdf"
-    
+
 
 [demo]
   enable = false
