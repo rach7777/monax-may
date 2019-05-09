@@ -75,26 +75,26 @@
 
 
 
-  enable = false
-  subtitle = "Download one-page information forms"
+#  enable = false
+#    subtitle = "Download one-page information forms"
+#
+#    [[audiences.card_link]]
+#      title = "Enterprise SaaS"
+#      img = "/img/assets/audiences/saas_thumb.png"
+#      icon = "fa-angle-right"
+#      link_url = "/onepagers/Saas_one_pager_letter.pdf"
+#
+#    [[audiences.card_link]]
+#      title = "Real Estate"
+#      img = "/img/assets/audiences/re_thumb.png"
+#      icon = "fa-angle-right"
+#      link_url = "/onepagers/RE_one_pager_letter.pdf"
 
-  [[audiences.card_link]]
-    title = "Enterprise SaaS"
-    img = "/img/assets/audiences/saas_thumb.png"
-    icon = "fa-angle-right"
-    link_url = "/onepagers/Saas_one_pager_letter.pdf"
-
-  [[audiences.card_link]]
-    title = "Real Estate"
-    img = "/img/assets/audiences/re_thumb.png"
-    icon = "fa-angle-right"
-    link_url = "/onepagers/RE_one_pager_letter.pdf"
-
-     [[audiences.card_link]]
-    title = "Venture Funds"
-    img = "/img/assets/audiences/venture_thumb.png"
-    icon = "fa-angle-right"
-    link_url = "/onepagers/venture_one_pager_letter.pdf"
+#       [[audiences.card_link]]
+#      title = "Venture Funds"
+#      img = "/img/assets/audiences/venture_thumb.png"
+#      icon = "fa-angle-right"
+#      link_url = "/onepagers/venture_one_pager_letter.pdf"
 
 
 [demo]
