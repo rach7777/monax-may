@@ -7,101 +7,75 @@
     #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
     img_right = "/img/assets/audiences/Home_page_header.png"
 
-[audiences]
+[features]
     enable = true
     title = "Contracts are the life-blood of your business not just pieces of paper"
     #subtitle = ""
-    
-    [[audiences.section]]
-        title = "CREATE: Contracts"
-        subtitle = "Move beyond simple storage of unsearchable electronic records. Create templates to fit your business processes. Set them up for repeatable use. Electronically sign and store your legal contracts. Provide secure access to all parties"
-        #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
-        animation_id = "feature-animation-4"
-        animation_type = "multipop"
-        img_base = "/img/assets/animations/shared/create_homepage.png"
-        img_content_container = "mac" # set to 'mac' or 'iphone'
-        #img_content_layer_src"/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
-        animation_delay = "0"
-        animation_duration = "300"
-        
-    [[audiences.card_link]]
-        title = "TRACK: deliverables"
-        subtitle = "Connect your legal contracts to your business systems. Monitor performance, receive notifications, and set reminders. Identify, track, and automate delivery of obligations. Enhance revenue recognition through visualized understanding across the parties"
-        #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
-        animation_id = "feature-animation-4"
-        animation_type = "multipop"
-        img_base = "/img/assets/animations/shared/track_homepage.png"
-        img_content_container = "mac" # set to 'mac' or 'iphone'
-        #img_content_layer_src"/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
-        animation_delay = "0"
-        animation_duration = "300"    
 
-   [[audiences.card_link]]
-        title = "PROVE: compliance"
-        subtitle = "Prove compliance via immutable audit trails recorded on a permissioned blockchain. Create reports across your entire portfolio and view all contractual interactions. Glean insights to increase operational performance"
-        #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
-        animation_id = "feature-animation-4"
-        animation_type = "multipop"
-        img_base = "/img/assets/animations/shared/prove_homepage.png"
-        img_content_container = "mac" # set to 'mac' or 'iphone'
-        #img_content_layer_src"/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
-        animation_delay = "0"
-        animation_duration = "300"   
+          [[features.section]]
+            title = "CREATE: Contract Templating & Repository"
+            subtitle = "Move beyond simple storage of unsearchable electronic records. Create templates to fit your business processes. Set them up for repeatable use. Electronically sign and store your legal contracts. Provide secure access to all parties."
+            #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
+            animation_id = "feature-animation-4"
+            animation_type = "multipop"
+            img_base = "/img/assets/animations/shared/create_homepage.png"
+            img_content_container = "mac" # set to 'mac' or 'iphone'
+            #img_content_layer_src"/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
+            animation_delay = "0"
+            animation_duration = "300"
 
 
+            [[features.section]]
+              title = "TRACK: Digital Workflows & Integrations"
+              subtitle = "Monitor performance, receive notifications and set reminders with digital workflows. Identify, track, and automate delivery of obligations across integrated business systems. Enhance revenue recognition through visualized understanding across the parties. "
+              #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
+              animation_id = "feature-animation-4"
+              animation_type = "multipop"
+              img_base = "/img/assets/animations/shared/track_homepage.png"
+              img_content_container = "mac" # set to 'mac' or 'iphone'
+              #img_content_layer_src"/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
+              animation_delay = "0"
+              animation_duration = "300"
 
 
+          [[features.section]]
+            title = "PROVE: Reporting & Intelligence "
+            subtitle = "Gain insights via sophisticated reports - these are taken from a comprehensive evidence chain across your entire contractual journey. Prove compliance via immutable audit trails recorded on a permissioned blockchain."
+            #### MULTIPLE POPOVERS 'MULTIPOP' TEMPLATE
+            animation_id = "feature-animation-4"
+            animation_type = "multipop"
+            img_base = "/img/assets/animations/shared/prove_homepage.png"
+            img_content_container = "mac" # set to 'mac' or 'iphone'
+            #img_content_layer_src"/img/assets/animations/4-increased-quality-reduced-cost/content-notifications-history.png"
+            animation_delay = "0"
+            animation_duration = "300"
 
-    #enable = false
-    #title = "What is MONAX?"
-    #subtitle = "Next generation contract management"
-    #hero_signup = true
-    #img_right = "/img/assets/illustrations/monax-laptop/Composition_Layer_03_Blockchain.png"
-    #img_right = "/img/assets/audiences/Home_page_header.png"
+            [icons]
+                enable = true
+                title = "Power your business with embedded contracts: MSAs, SOWs, NDAs, ToS"
+                subtitle = "Digitized contract execution for digitally native companies"
 
-  #[top.illustration]
-      #enable = false  # replaces img_right
-      # img_base = "/img/assets/animations/monax-laptop/laptop-animation-base.png"
-      # img_layer_one = "/img/assets/animations/monax-laptop/laptop-animation-layer-1.png"
-      # img_layer_two = "/img/assets/animations/monax-laptop/laptop-animation-layer-2.png"
-    # img_right = "/img/assets/audiences/Home_page_header.png"
+                [[icons.section]]
+                icon_img = "/img/assets/shared/animations/create_homepage.png"
+                title = "CREATE"
+                subtitle = "Document management - Templating - Esigning"
 
+                [[icons.section]]
+                icon_img = "/img/assets/shared/animations/track_homepage.png"
+                title = "TRACK"
+                subtitle = "Delivery tracking - Integrations - Reminders"
 
-#[intro]
-#enable = true 
-#title = "Contracts are the life-blood of your business - not just pieces of paper"
-
-[bullets]
-        enable = false
-            title = "We make your contracts work for you"
-
-        [[bullets.section]]
-          title = "CREATE contracts"
-          text = "Move beyond simple storage of electronic records. Electronically sign and store your legal contracts. Know the status of all your contractual business relationships and understand the actionable steps to keep things moving forward"
-          img_src = "/img/assets/create_homepage.png"
-          bullets_list = [
-
-          ]
-
-        [[bullets.section]]
-          title =  "TRACK deliverables"
-          text = "Connect your legal contracts to your business systems. Monitor performance, receive notifications, and set reminders. Identify, track, and automate delivery of obligations. Enhance revenue recognition through visualized understanding across the parties."
-          img_src = "/img/assets/track_homepage.png"
-          bullets_list = [
-
-          ]
-
-        [[bullets.section]]
-          title = "PROVE compliance"
-          text = "Prove compliance via immutable audit trails recorded on a permissioned blockchain. Create reports across your entire portfolio and view all contractual interactions. Glean insights to increase operational performance."
-          img_src = "/img/assets/prove_homepage.png"
-          bullets_list = [
-
-          ]
+                  [[icons.section]]
+                icon_img = "/img/assets/shared/animations/prove_homepage.png"
+                title = "PROVE"
+                subtitle = "Continuous Audit - Sophisticated Reporting - Data Rooms"
 
 
 
-  enable = true
+
+
+
+  enable = false
   subtitle = "Download one-page information forms"
 
   [[audiences.card_link]]
@@ -115,13 +89,13 @@
     img = "/img/assets/audiences/re_thumb.png"
     icon = "fa-angle-right"
     link_url = "/onepagers/RE_one_pager_letter.pdf"
-    
+
      [[audiences.card_link]]
     title = "Venture Funds"
     img = "/img/assets/audiences/venture_thumb.png"
     icon = "fa-angle-right"
     link_url = "/onepagers/venture_one_pager_letter.pdf"
-    
+
 
 [demo]
   enable = false
